@@ -51,22 +51,22 @@ export default function HeroSection() {
             <div className="grid grid-cols-4 gap-2 sm:gap-3">
               {/* Stat 1 */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">95%+</div>
+                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">95%</div>
                 <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Placement</div>
               </div>
               {/* Stat 2 */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">3500+</div>
+                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">1200</div>
                 <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Students</div>
               </div>
               {/* Stat 3 */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">18+</div>
+                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">17</div>
                 <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Programs</div>
               </div>
               {/* Stat 4 */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">25+</div>
+                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">74+</div>
                 <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Years</div>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function HeroSection() {
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl border border-white/20 sm:border-2">
                 <div className="aspect-[4/3] relative">
                   <Image
-                    src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=600&fit=crop"
+                    src="/images/homepage/JKKN Arts - Homepage First Image (1).png"
                     alt="JKKN College Campus"
                     fill
                     className="object-cover"

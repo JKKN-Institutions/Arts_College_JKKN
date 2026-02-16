@@ -219,7 +219,7 @@ export default function BScVisualCommunicationPage() {
                 {
                   icon: <BookOpen className="w-8 h-8 text-white" />,
                   title: 'Documents Required',
-                  items: ['10th & 12th Mark Sheets', 'Transfer Certificate', 'Community Certificate', 'Passport Size Photographs', 'Aadhaar Card Copy']
+                  items: ['10th & 12th Mark Sheets', 'Transfer Certificate', 'Community Certificate', 'Passport Size Photographs', 'Aadhaar Card Copy', 'Income Certificate', 'Bank Details']
                 }
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
@@ -285,11 +285,23 @@ export default function BScVisualCommunicationPage() {
                 {[
                   {
                     title: 'Semester I',
-                    subjects: ['Introduction to Visual Communication', 'Fundamentals of Design', 'Drawing & Illustration Basics', 'Photography Fundamentals', 'Computer Applications for Design', 'Communication Theory']
+                    subjects: [
+                      'Introduction to Human Communication - 24UVCC01',
+                      'Visual Arts and Aesthetics - 24UVCC02',
+                      'Graphic Design & Aesthetics (Practical) - 24UVCDEP01',
+                      'Digital & Drawing and Painting (Practical) - 24UVCSEFP01',
+                      'Digital Storytelling and Script Writing (Practical) - 24UVCSECP01'
+                    ]
                   },
                   {
                     title: 'Semester II',
-                    subjects: ['Typography & Layout Design', 'Digital Imaging & Photo Editing', 'Color Theory & Application', 'Print Media Design', 'Mass Communication Basics', 'Studio Practice I']
+                    subjects: [
+                      'Understanding Visual Communication - 24UVCC03',
+                      'Photography & Videography (Practical) - 24UVCCP04',
+                      'Publication Design (Practical) - 24UVCDEP02',
+                      'Image Editing and Colour Management (Practical) - 24UVCSECP02',
+                      'Digital Photography - 24UVCSECP03'
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -318,11 +330,25 @@ export default function BScVisualCommunicationPage() {
                 {[
                   {
                     title: 'Semester III',
-                    subjects: ['Graphic Design & Branding', 'Video Production Fundamentals', 'Advertising & Campaign Design', 'Web Design Basics', '2D Animation Principles', 'Studio Practice II']
+                    subjects: [
+                      'Multimedia Technologies & Standards - 24UVCC05',
+                      'Audio & Visual Editing (Practical) - 24UVCCP06',
+                      '2D & 3D Modelling (Practical) - 24UVCDEP06',
+                      'Multimedia Content Packaging (Practical) - 24UVCSECP04',
+                      'Design Thinking - 24UVCSEC03',
+                      'EVS - 24UEVS01'
+                    ]
                   },
                   {
                     title: 'Semester IV',
-                    subjects: ['Advanced Photography & Lighting', 'Motion Graphics & VFX Basics', 'Packaging Design', 'Digital Marketing Fundamentals', 'Film Studies & Appreciation', 'Industry Exposure Programme']
+                    subjects: [
+                      'Film Appreciation and Analysis - 24UVCC07',
+                      'Animation and Character Design (Practical) - 24UVCCP08',
+                      'Compositing and Visual Effects (Practical) - 24UVCDEP07',
+                      'Script Writing and Storyboard Development (Practical) - 24UVCSEP05',
+                      'Digital Skill for Employability (Practical) - 24UVCSECP6',
+                      'EVS - 24UEVS01'
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -351,11 +377,26 @@ export default function BScVisualCommunicationPage() {
                 {[
                   {
                     title: 'Semester V',
-                    subjects: ['Advanced Video Editing & Post-Production', 'UI/UX Design Principles', 'Corporate Communication Design', '3D Modeling & Animation', 'Social Media Content Strategy', 'Specialization Elective I']
+                    subjects: [
+                      'Advertising and Brand Communication - 24UVCCP09',
+                      'User Experience Design - 24UVCCP09',
+                      'Advanced 3D Texturing and Sculpting (Practical) - 24UVCCP10',
+                      '3D Environment Design (Practical) - 24UVCCP12',
+                      'Immersive Media Design - 24UVCDSE08',
+                      'Shortfilm Making - 24UVCDEP09',
+                      'Internship - 24UVCSI01'
+                    ]
                   },
                   {
                     title: 'Semester VI',
-                    subjects: ['Documentary & Short Film Production', 'Portfolio Development & Presentation', 'Media Law & Ethics', 'Specialization Elective II', 'Industry Internship', 'Capstone Project']
+                    subjects: [
+                      'Media Culture in TamilNadu - 24UVCC13',
+                      'Media Entrepreneurship - 24UVCC14',
+                      'Extended Reality Design (Practical) - 24UVCCP15',
+                      'Capstone Project - 24UVCDEP08',
+                      'Cyber Security - 24UVCDE09',
+                      'Extension Activity - 24UEX01'
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -511,9 +552,6 @@ export default function BScVisualCommunicationPage() {
                 { title: 'Digital Design Studio', description: 'Fully equipped computer lab with high-performance workstations running Adobe Creative Suite, Autodesk, and other industry-standard software.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Design+Studio' },
                 { title: 'Photography Studio', description: 'Professional photography setup with DSLR cameras, studio lighting equipment, backdrops, and post-processing facilities for commercial shoots.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Photo+Studio' },
                 { title: 'Video Production Lab', description: 'Equipped with professional cameras, green screen facilities, audio recording equipment, and non-linear editing suites for film production.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Video+Lab' },
-                { title: 'Animation & VFX Lab', description: 'Dedicated workstations with 3D modeling, animation, and visual effects software including Maya, Blender, and After Effects.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Animation+Lab' },
-                { title: 'Drawing & Illustration Studio', description: 'Spacious studio with drawing boards, lighting setups, reference materials, and digital tablets for traditional and digital illustration work.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Drawing+Studio' },
-                { title: 'Media Resource Library', description: 'Extensive collection of design books, magazines, journals, and digital resources including stock footage and image libraries.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Media+Library' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

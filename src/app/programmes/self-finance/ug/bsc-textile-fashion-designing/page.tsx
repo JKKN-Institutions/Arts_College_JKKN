@@ -178,7 +178,7 @@ export default function BSCTextileFashionDesigningPage() {
               {[
                 { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited', desc: 'Quality assured education' },
                 { icon: <Palette className="w-7 h-7" />, stat: 'Design', title: 'Studios', desc: 'State-of-art facilities' },
-                { icon: <Briefcase className="w-7 h-7" />, stat: '90%+', title: 'Placement', desc: 'Top fashion brands' },
+                { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement', desc: 'Top fashion brands' },
                 { icon: <Sparkles className="w-7 h-7" />, stat: 'Fashion', title: 'Shows & Events', desc: 'Annual exhibitions' },
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
@@ -277,21 +277,8 @@ export default function BSCTextileFashionDesigningPage() {
                     title: 'Age Criteria',
                     items: ['Candidates should be 17-45 years old at the time of admission']
                   },
-                  {
-                    icon: <FileText className="w-8 h-8 text-white" />,
-                    title: 'Selection Process',
-                    items: ['Merit-based admission with portfolio review and personal interview']
-                  },
-                  {
-                    icon: <Target className="w-8 h-8 text-white" />,
-                    title: 'Creative Aptitude',
-                    items: ['Interest in art, design, creativity, and fashion trends is essential']
-                  },
-                  {
-                    icon: <Calendar className="w-8 h-8 text-white" />,
-                    title: 'Admission Timeline',
-                    items: ['Applications open from May to July', 'Classes commencing in August']
-                  }
+
+
                 ].map((card, idx) => (
                   <RevealSection key={idx} delay={idx * 100}>
                     <GlassCard className="p-8 h-full">
@@ -636,7 +623,6 @@ export default function BSCTextileFashionDesigningPage() {
                   { title: 'Garment Construction Lab', description: 'Modern sewing lab with industrial sewing machines, overlock machines, button-hole machines, and specialized equipment for garment production.' },
                   { title: 'Textile Testing Lab', description: 'Well-equipped lab for fabric analysis, fiber identification, quality testing, and textile performance evaluation with industry-standard instruments.' },
                   { title: 'Embroidery & Print Studio', description: 'Specialized studio for surface ornamentation techniques including hand embroidery, machine embroidery, screen printing, and textile painting.' },
-                  { title: 'Fashion Resource Centre', description: 'Comprehensive library with fashion magazines, trend forecasting books, digital resources, fabric swatches, and industry publication subscriptions.' }
                 ].map((facility, idx) => (
                   <RevealSection key={idx} delay={idx * 100}>
                     <GlassCard className="p-6 group h-full">

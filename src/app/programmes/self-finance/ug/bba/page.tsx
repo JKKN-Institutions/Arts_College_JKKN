@@ -176,7 +176,7 @@ export default function BBAPage() {
               {[
                 { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited', desc: 'Quality assured education' },
                 { icon: <Rocket className="w-7 h-7" />, stat: 'MBA', title: 'Pathway Ready', desc: 'Direct MBA preparation' },
-                { icon: <Briefcase className="w-7 h-7" />, stat: '90%+', title: 'Placement Rate', desc: 'Top corporate recruiters' },
+                { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Rate', desc: 'Top corporate recruiters' },
                 { icon: <CheckCircle2 className="w-7 h-7" />, stat: 'Industry', title: 'Internships', desc: 'Real-world experience' },
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>

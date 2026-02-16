@@ -150,7 +150,7 @@ export default function BScComputerSciencePage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '95%+', title: 'Placement Record', desc: 'Career opportunities assured' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Award className="w-7 h-7" />, stat: '₹5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
@@ -247,7 +247,7 @@ export default function BScComputerSciencePage() {
                 {
                   icon: <BookOpen className="w-8 h-8 text-white" />,
                   title: 'Documents Required',
-                  items: ['10th & 12th Mark Sheets', 'Transfer Certificate', 'Community Certificate', 'Passport Size Photographs', 'Aadhaar Card Copy']
+                  items: ['10th & 12th Mark Sheets', 'Transfer Certificate', 'Community Certificate', 'Passport Size Photographs', 'Aadhaar Card Copy', 'Income Certificate', 'Bank Details']
                 }
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
@@ -411,11 +411,11 @@ export default function BScComputerSciencePage() {
                 {[
                   {
                     title: 'Semester V',
-                    subjects: ['Design & Analysis of Algorithms', 'Artificial Intelligence', 'Cloud Computing', 'Mobile Application Development', 'Practical: Python & AI Lab', 'Elective: Data Science / IoT']
+                    subjects: ['Core Courses including Project / Elective Based 22 26', 'Value Education 2 2', 'Internship / Industrial Visit / Field Visit']
                   },
                   {
                     title: 'Semester VI',
-                    subjects: ['Machine Learning', 'Cybersecurity Fundamentals', 'Big Data Analytics', 'Research Methodology', 'Project Work & Viva', 'Elective: Blockchain / DevOps']
+                    subjects: ['Core Courses including Project / Elective Based & LAB', 'Extension Activity', 'Professional Competency Skill']
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -802,62 +802,7 @@ export default function BScComputerSciencePage() {
         </div>
       </section>
 
-      {/* Related Programmes */}
-      <section className="py-16 bg-brand-cream">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <RevealSection>
-              <div className="text-center mb-12">
-                <SectionBadge text="Explore More" />
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Explore Related{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Programmes
-                  </span>
-                </h2>
-                <p className="text-lg text-gray-600">
-                  Discover other technology programmes at our college
-                </p>
-              </div>
-            </RevealSection>
 
-            <div className="grid md:grid-cols-3 gap-6">
-              {[
-                { title: 'BCA', description: 'Bachelor of Computer Applications with focus on software development and applications', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BCA' },
-                { title: 'B.Sc Mathematics', description: 'Pure and applied mathematics with computational methods and analysis', duration: '3 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=BSc+Mathematics' },
-                { title: 'B.Sc Physics', description: 'Fundamental physics with electronics and computational physics components', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+Physics' }
-              ].map((programme, idx) => (
-                <RevealSection key={idx} delay={idx * 150}>
-                  <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
-                    <div className="relative h-44 overflow-hidden">
-                      <img
-                        src={programme.image}
-                        alt={programme.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-brand-green/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-brand-green mb-2 group-hover:text-emerald-500 transition-colors">{programme.title}</h3>
-                      <p className="text-gray-600 text-sm mb-4">{programme.description}</p>
-                      <div className="flex items-center gap-4 text-sm text-gray-500">
-                        <div className="flex items-center gap-1">
-                          <Clock className="w-4 h-4" />
-                          <span>{programme.duration}</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <Users className="w-4 h-4" />
-                          <span>Full-time</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </RevealSection>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

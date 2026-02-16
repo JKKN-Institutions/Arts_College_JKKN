@@ -271,8 +271,8 @@ export default function BAEnglishPage() {
                     key={year}
                     onClick={() => setActiveYear(year)}
                     className={`px-6 py-3 rounded-lg font-semibold transition-all ${activeYear === year
-                        ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
-                        : 'bg-white text-brand-green hover:bg-brand-green/5'
+                      ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
+                      : 'bg-white text-brand-green hover:bg-brand-green/5'
                       }`}
                   >
                     Year {year}
@@ -631,15 +631,19 @@ export default function BAEnglishPage() {
 
             <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
               {[
-                { name: 'Dr. Priya Sundaram', designation: 'Head of Department', qualification: 'Ph.D. in English Literature' },
-                { name: 'Dr. Rajesh Kumar', designation: 'Associate Professor', qualification: 'Ph.D. in Linguistics' },
-                { name: 'Ms. Anitha Ramachandran', designation: 'Assistant Professor', qualification: 'M.Phil., NET Qualified' },
-                { name: 'Mr. Vikram Subramanian', designation: 'Assistant Professor', qualification: 'M.A., SLET Qualified' }
+                { name: 'Dr. K. Radhai', designation: 'HOD & Associate Professor', qualification: 'M.A., M.Phil., Ph.D.', image: '/images/faculties/aided/english/Dr.-K.-Radhai-240x300.png' },
+                { name: 'Dr. M. Eshwari ', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., Ph. D.', image: '/images/faculties/aided/english/Dr.-M.-Eshwari-240x300.png' },
+                { name: 'Dr. R. Malathi', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., Ph. D.', image: '/images/faculties/aided/english/Dr.-R.-Malathi-240x300.png' },
+                { name: 'Dr. C. Bharathi', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., Ph. D.', image: '/images/faculties/aided/english/Dr.-C.-Bharathi-240x300.png' },
+                { name: 'Dr. S. Sumathi', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., Ph. D.', image: '/images/faculties/aided/english/Dr.-S.-Sumathi-240x300.png' },
+                { name: 'Dr. A. Aravinth Raja', designation: 'Assistant Professor', qualification: 'M.A., M.A.(Linguistics),PGDTE, Ph.D., NET, SET', image: '/images/faculties/aided/english/Dr.-A.-Aravinth-Raja-240x300.png' }
+
+
               ].map((faculty, idx) => (
                 <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
                   <div className="relative h-56 overflow-hidden flex-shrink-0">
                     <Image
-                      src="/images/faculties/placeholder-avatar.jpg"
+                      src={faculty.image}
                       alt={faculty.name}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"

@@ -93,6 +93,39 @@ export default function BComBankingInsurancePage() {
   const [activeYear, setActiveYear] = useState(1);
   const [activeFAQ, setActiveFAQ] = useState(0);
 
+  const facultyMembers = [
+    {
+      name: "Mrs.M.S.Punithamalar",
+      designation: "HOD & Assistant Professor",
+      education: "M.Com(CA), MBA, M.Phil.,(Ph.D)",
+      image: "/images/faculties/Mrs.M.S.Punithamalar-300x199.png"
+    },
+    {
+      name: "Ms.G.Buvaneswari",
+      designation: "Assistant Professor",
+      education: "M.Com, B.ED, M.Phil",
+      image: "/images/faculties/Ms.G.Buvaneswari-300x199.png"
+    },
+    {
+      name: "Mrs.N.Lingameena",
+      designation: "Assistant Professor",
+      education: "M.Com.,M.Phil.",
+      image: "/images/faculties/Mrs.N.Lingameena-300x199.png"
+    },
+    {
+      name: "Mr.A.Jegadishkumar",
+      designation: "Assistant Professor",
+      education: "M.Com.,B.Ed.,MBA",
+      image: "/images/faculties/Mr.A.Jegadishkumar-300x199.png"
+    },
+    {
+      name: "Ms.C.Agalya",
+      designation: "Assistant Professor",
+      education: "M.Com(CA).",
+      image: "/images/faculties/Ms.C.Agalya-300x199.png"
+    }
+  ];
+
   const faqs = [
     {
       question: "What is the duration and structure of the B.Com Banking and Insurance programme?",
@@ -204,7 +237,7 @@ export default function BComBankingInsurancePage() {
               {[
                 { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
                 { icon: <CreditCard className="w-7 h-7" />, stat: 'BFSI', title: 'Industry Focus', desc: 'Banking & insurance sector' },
-                { icon: <Briefcase className="w-7 h-7" />, stat: '90%+', title: 'Placement Record', desc: 'Top BFSI recruiters' },
+                { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Top BFSI recruiters' },
                 { icon: <Award className="w-7 h-7" />, stat: 'Certifications', title: 'IRDA, NISM, NCFM', desc: 'Industry credentials' },
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
@@ -290,20 +323,13 @@ export default function BComBankingInsurancePage() {
                     icon: <GraduationCap className="w-7 h-7" />,
                     title: "Academic Qualification",
                     points: [
-                      "Higher Secondary (10+2) from a recognized board in any stream. Commerce stream preferred but not mandatory.",
-                      "Candidates from Science or Arts streams are also eligible to apply for the programme."
+                      "Higher Secondary +2 from recognized board",
+                      "Commerce/Science/Arts stream eligible",
+                      "Minimum 50% aggregate marks",
+                      "45% for OBC, 40% for SC/ST"
                     ]
                   },
-                  {
-                    icon: <FileText className="w-7 h-7" />,
-                    title: "Minimum Marks",
-                    points: [
-                      "General Category: 50% aggregate",
-                      "OBC Category: 45% aggregate",
-                      "SC/ST Category: 40% aggregate",
-                      "Differently Abled: 40% aggregate"
-                    ]
-                  },
+
                   {
                     icon: <BookOpen className="w-7 h-7" />,
                     title: "Accepted Streams",
@@ -324,27 +350,9 @@ export default function BComBankingInsurancePage() {
                       "Passport Size Photographs",
                       "Aadhaar Card Copy"
                     ]
-                  },
-                  {
-                    icon: <Calendar className="w-7 h-7" />,
-                    title: "Admission Process",
-                    points: [
-                      "Online/Offline Application",
-                      "Document Verification",
-                      "Merit-based Selection",
-                      "Fee Payment & Enrollment"
-                    ]
-                  },
-                  {
-                    icon: <DollarSign className="w-7 h-7" />,
-                    title: "Scholarships Available",
-                    points: [
-                      "Merit Scholarships (Top 10%)",
-                      "Government Scholarships",
-                      "Financial Aid for EWS",
-                      "Sports Quota Benefits"
-                    ]
                   }
+
+
                 ].map((card, idx) => (
                   <RevealSection key={idx} delay={idx * 100}>
                     <GlassCard className="p-6 h-full">
@@ -388,11 +396,10 @@ export default function BComBankingInsurancePage() {
                   <button
                     key={year}
                     onClick={() => setActiveYear(year)}
-                    className={`px-8 py-3 rounded-xl font-semibold transition-all ${
-                      activeYear === year
-                        ? 'bg-brand-green text-white shadow-md'
-                        : 'text-gray-700 hover:text-gray-900 hover:bg-white/50'
-                    }`}
+                    className={`px-8 py-3 rounded-xl font-semibold transition-all ${activeYear === year
+                      ? 'bg-brand-green text-white shadow-md'
+                      : 'text-gray-700 hover:text-gray-900 hover:bg-white/50'
+                      }`}
                   >
                     Year {year}
                   </button>
@@ -412,12 +419,13 @@ export default function BComBankingInsurancePage() {
                       </div>
                       <div className="p-6 space-y-4">
                         {[
-                          { name: "Financial Accounting I", code: "BBI101" },
-                          { name: "Principles of Banking", code: "BBI102" },
-                          { name: "Business Economics I", code: "BBI103" },
-                          { name: "Business Communication", code: "BBI104" },
-                          { name: "Foundation Course I", code: "BBI105" },
-                          { name: "Environmental Studies", code: "EVS101" }
+                          { name: "Tamil - I", code: "19UETA01" },
+                          { name: "English - I", code: "20UENC01" },
+                          { name: "Principles of Accounting", code: "19UVE01" },
+                          { name: "Banking Theory", code: "19UCB02" },
+                          { name: "Business Economics", code: "19UECA07" },
+                          { name: "Value Education", code: "19UVE01" },
+                          { name: "Professional English for Commerce and Management - I", code: "20UPEC01" }
                         ].map((subject, index) => (
                           <div key={index} className="flex items-center justify-between py-2 border-b border-gray-200/50 last:border-0">
                             <div className="flex items-center gap-3">
@@ -439,12 +447,13 @@ export default function BComBankingInsurancePage() {
                       </div>
                       <div className="p-6 space-y-4">
                         {[
-                          { name: "Financial Accounting II", code: "BBI201" },
-                          { name: "Principles of Insurance", code: "BBI202" },
-                          { name: "Business Economics II", code: "BBI203" },
-                          { name: "Quantitative Methods I", code: "BBI204" },
-                          { name: "Foundation Course II", code: "BBI205" },
-                          { name: "Value Education", code: "VAL101" }
+                          { name: "Tamil - II", code: "19UFTA02" },
+                          { name: "English - II", code: "20UFEN02" },
+                          { name: "Financial Accounting", code: "19UCB03" },
+                          { name: "Banking Law & Practice", code: "19UCB04" },
+                          { name: "Indian Economy", code: "19UECA08" },
+                          { name: "Environmental Studies", code: "19UES01" },
+                          { name: "Professional English for Commerce Management - II", code: "20UPEC02" }
                         ].map((subject, index) => (
                           <div key={index} className="flex items-center justify-between py-2 border-b border-gray-200/50 last:border-0">
                             <div className="flex items-center gap-3">
@@ -470,12 +479,13 @@ export default function BComBankingInsurancePage() {
                       </div>
                       <div className="p-6 space-y-4">
                         {[
-                          { name: "Corporate Accounting I", code: "BBI301" },
-                          { name: "Banking Law & Operations", code: "BBI302" },
-                          { name: "Life Insurance", code: "BBI303" },
-                          { name: "Business Law", code: "BBI304" },
-                          { name: "Information Technology in Banking", code: "BBI305" },
-                          { name: "Soft Skills Development", code: "SKL301" }
+                          { name: "Business law", code: "19UCB05" },
+                          { name: "Corporate Accounting - I", code: "19UCB06" },
+                          { name: "E - Banking", code: "19UCB07" },
+                          { name: "Marketing of Banking Service", code: "19UCBS02" },
+                          { name: "Statistics", code: "19USTA10" },
+                          { name: "Capital Market", code: "19UCBS01" },
+                          { name: "Road Safety", code: "19UTLN01" }
                         ].map((subject, index) => (
                           <div key={index} className="flex items-center justify-between py-2 border-b border-gray-200/50 last:border-0">
                             <div className="flex items-center gap-3">
@@ -497,12 +507,13 @@ export default function BComBankingInsurancePage() {
                       </div>
                       <div className="p-6 space-y-4">
                         {[
-                          { name: "Corporate Accounting II", code: "BBI401" },
-                          { name: "Central Banking (RBI)", code: "BBI402" },
-                          { name: "General Insurance", code: "BBI403" },
-                          { name: "Cost Accounting", code: "BBI404" },
-                          { name: "Marketing in Banking & Insurance", code: "BBI405" },
-                          { name: "Extension Activities", code: "EXT401" }
+                          { name: "Company law", code: "19UCB09" },
+                          { name: "Corporate Accounting - II", code: "19UCB10" },
+                          { name: "Bank Management", code: "19UCB08" },
+                          { name: "Project Management", code: "19UCBS03" },
+                          { name: "Credit Management", code: "19UCBS04" },
+                          { name: "Business Statistical Decision & Techniques", code: "19USTA18" },
+                          { name: "Advertising", code: "19UTLN02" }
                         ].map((subject, index) => (
                           <div key={index} className="flex items-center justify-between py-2 border-b border-gray-200/50 last:border-0">
                             <div className="flex items-center gap-3">
@@ -528,12 +539,11 @@ export default function BComBankingInsurancePage() {
                       </div>
                       <div className="p-6 space-y-4">
                         {[
-                          { name: "Financial Management", code: "BBI501" },
-                          { name: "International Banking", code: "BBI502" },
-                          { name: "Risk Management in Insurance", code: "BBI503" },
-                          { name: "Investment Management", code: "BBI504" },
-                          { name: "Auditing & Taxation", code: "BBI505" },
-                          { name: "Elective: Mutual Funds / Derivatives", code: "BBI506E" }
+                          { name: "Cost Accounting", code: "19UCB11" },
+                          { name: "Financial Marketing and Services", code: "19UCB12" },
+                          { name: "Income Tax Law and Practice - I", code: "19UCB13" },
+                          { name: "Fundamental of Insurance", code: "19UCB14" },
+                          { name: "Office Organisation", code: "19UCBE01" }
                         ].map((subject, index) => (
                           <div key={index} className="flex items-center justify-between py-2 border-b border-gray-200/50 last:border-0">
                             <div className="flex items-center gap-3">
@@ -555,12 +565,11 @@ export default function BComBankingInsurancePage() {
                       </div>
                       <div className="p-6 space-y-4">
                         {[
-                          { name: "Financial Markets & Institutions", code: "BBI601" },
-                          { name: "Retail Banking", code: "BBI602" },
-                          { name: "Health & Motor Insurance", code: "BBI603" },
-                          { name: "Rural & Agricultural Banking", code: "BBI604" },
-                          { name: "Project Work & Viva", code: "BBI605P" },
-                          { name: "Elective: Fintech / Micro-insurance", code: "BBI606E" }
+                          { name: "Management Accounting", code: "19UCB15" },
+                          { name: "Insurance Management System", code: "19UCB16" },
+                          { name: "Income Tax Law and Practice - II", code: "19UCB17" },
+                          { name: "Secretary Practice", code: "19UCBE05" },
+                          { name: "Commerce Practical", code: "19UCBP01" }
                         ].map((subject, index) => (
                           <div key={index} className="flex items-center justify-between py-2 border-b border-gray-200/50 last:border-0">
                             <div className="flex items-center gap-3">
@@ -600,48 +609,44 @@ export default function BComBankingInsurancePage() {
                 {[
                   {
                     icon: <Building className="w-6 h-6" />,
-                    number: "01",
                     title: "Banking Operations Expertise",
                     desc: "Master comprehensive banking operations including deposits, loans, credit management, foreign exchange, and treasury functions in commercial banking environments."
                   },
                   {
                     icon: <Shield className="w-6 h-6" />,
-                    number: "02",
+
                     title: "Insurance Product Knowledge",
                     desc: "Develop thorough understanding of life, general, health, and motor insurance products, underwriting principles, claims processing, and actuarial concepts."
                   },
                   {
                     icon: <BarChart className="w-6 h-6" />,
-                    number: "03",
+
                     title: "Financial Analysis Skills",
                     desc: "Acquire proficiency in financial statement analysis, ratio analysis, investment evaluation, portfolio management, and risk assessment techniques."
                   },
                   {
                     icon: <Activity className="w-6 h-6" />,
-                    number: "04",
+
                     title: "Risk Management Competency",
                     desc: "Understand risk identification, measurement, mitigation strategies, and regulatory compliance requirements in the BFSI sector with practical applications."
                   },
                   {
                     icon: <Database className="w-6 h-6" />,
-                    number: "05",
+
                     title: "Digital Banking Proficiency",
                     desc: "Gain hands-on experience with core banking systems, fintech applications, digital payment platforms, and emerging technologies transforming the financial industry."
                   },
                   {
                     icon: <Users className="w-6 h-6" />,
-                    number: "06",
+
                     title: "Professional Communication",
                     desc: "Effectively communicate financial concepts, prepare professional reports, presentations, and engage with diverse stakeholders in banking and insurance contexts."
                   }
                 ].map((outcome, idx) => (
                   <RevealSection key={idx} delay={idx * 100}>
                     <GlassCard className="p-6 h-full">
-                      <div className="flex items-start justify-between mb-4">
-                        <div className="w-12 h-12 bg-brand-green/10 backdrop-blur-sm rounded-lg flex items-center justify-center border border-brand-green/15 text-brand-green">
-                          {outcome.icon}
-                        </div>
-                        <span className="text-emerald-500 text-sm font-bold">{outcome.number}</span>
+                      <div className="w-12 h-12 bg-brand-green/10 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4 border border-brand-green/15 text-brand-green">
+                        {outcome.icon}
                       </div>
                       <h3 className="text-lg font-bold text-brand-green mb-3">{outcome.title}</h3>
                       <p className="text-gray-600 text-sm leading-relaxed">{outcome.desc}</p>
@@ -799,50 +804,46 @@ export default function BComBankingInsurancePage() {
         </section>
 
         {/* Faculty Section */}
-        <section className="py-16 bg-brand-cream" id="faculty">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <RevealSection>
-                <div className="text-center mb-12">
-                  <SectionBadge text="Faculty" />
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                    Our Learning{' '}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                      Facilitators
-                    </span>
-                  </h2>
-                  <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Meet our experienced and dedicated department team
-                  </p>
-                </div>
-              </RevealSection>
+        <section className="py-20 bg-white relative overflow-hidden" id="faculty">
+          <div className="container mx-auto px-4 md:px-6 relative">
+            <RevealSection>
+              <div className="max-w-4xl mx-auto text-center mb-16">
+                <SectionBadge text="Our Team" />
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-6">
+                  Expert Faculty Members
+                </h2>
+                <div className="w-24 h-1.5 bg-gradient-to-r from-brand-green to-emerald-500 mx-auto rounded-full mb-6"></div>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Learn from experienced faculty with industry expertise in banking and insurance.
+                </p>
+              </div>
+            </RevealSection>
 
-              <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
-                {[
-                  { name: 'Dr. Faculty Name 1', designation: 'Head of Department', qualification: 'M.Com., Ph.D.', image: 'https://placehold.co/240x300/0b6d41/FFFFFF?text=Faculty+1' },
-                  { name: 'Dr. Faculty Name 2', designation: 'Assistant Professor', qualification: 'M.Com., M.Phil., Ph.D.', image: 'https://placehold.co/240x300/0b6d41/FFFFFF?text=Faculty+2' },
-                  { name: 'Mrs. Faculty Name 3', designation: 'Assistant Professor', qualification: 'M.Com., M.Phil., CAIIB', image: 'https://placehold.co/240x300/0b6d41/FFFFFF?text=Faculty+3' },
-                  { name: 'Mr. Faculty Name 4', designation: 'Assistant Professor', qualification: 'M.Com., MBA (Finance)', image: 'https://placehold.co/240x300/0b6d41/FFFFFF?text=Faculty+4' }
-                ].map((faculty, idx) => (
-                  <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
-                    <div className="relative h-56 overflow-hidden flex-shrink-0">
-                      <Image
-                        src={faculty.image}
-                        alt={faculty.name}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-brand-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div className="p-5 text-center flex-1 flex flex-col justify-center">
-                      <h4 className="text-lg font-bold text-brand-green mb-1">{faculty.name}</h4>
-                      <p className="text-sm font-semibold text-emerald-500 mb-1">{faculty.designation}</p>
-                      <p className="text-xs text-gray-600">{faculty.qualification}</p>
-                    </div>
-                  </div>
-                ))}
-              </Marquee>
-            </div>
+            <RevealSection>
+              <div className="max-w-7xl mx-auto">
+                <Marquee pauseOnHover className="[--duration:40s]">
+                  {facultyMembers.map((faculty, index) => (
+                    <GlassCard key={index} className="w-80 mx-4">
+                      <div className="p-6">
+                        <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-green/20">
+                          <Image
+                            src={faculty.image}
+                            alt={faculty.name}
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+                        <div className="text-center">
+                          <h3 className="text-xl font-bold text-brand-green mb-2">{faculty.name}</h3>
+                          <p className="text-sm font-semibold text-gray-600 mb-2">{faculty.designation}</p>
+                          <p className="text-xs text-gray-500">{faculty.education}</p>
+                        </div>
+                      </div>
+                    </GlassCard>
+                  ))}
+                </Marquee>
+              </div>
+            </RevealSection>
           </div>
         </section>
 
@@ -921,22 +922,23 @@ export default function BComBankingInsurancePage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <RevealSection className="text-center mb-12">
-              <SectionBadge text="FAQs" />
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Frequently Asked{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                  Questions
-                </span>
-              </h2>
+        <section className="py-20 bg-gradient-to-br from-emerald-50 via-brand-cream to-blue-50 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/patterns/grid.svg')] opacity-5"></div>
+          <div className="container mx-auto px-4 md:px-6 relative">
+            <RevealSection>
+              <div className="max-w-4xl mx-auto text-center mb-16">
+                <SectionBadge text="Got Questions?" />
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-6">
+                  Frequently Asked Questions
+                </h2>
+                <div className="w-24 h-1.5 bg-gradient-to-r from-brand-green to-emerald-500 mx-auto rounded-full"></div>
+              </div>
             </RevealSection>
 
-            <div className="max-w-4xl mx-auto space-y-4">
-              {faqs.map((faq, index) => (
-                <RevealSection key={index} delay={index * 50}>
-                  <GlassCard hover={false} className="overflow-hidden">
+            <RevealSection>
+              <div className="max-w-4xl mx-auto space-y-4">
+                {faqs.map((faq, index) => (
+                  <GlassCard key={index} className="overflow-hidden" hover={false}>
                     <button
                       onClick={() => setActiveFAQ(activeFAQ === index ? -1 : index)}
                       className="w-full p-6 text-left flex items-center justify-between hover:bg-white/60 transition-colors"
@@ -944,46 +946,46 @@ export default function BComBankingInsurancePage() {
                     >
                       <h3 className="font-semibold text-brand-green pr-4">{faq.question}</h3>
                       <ChevronDown
-                        className={`w-5 h-5 text-emerald-500 flex-shrink-0 transition-transform ${
-                          activeFAQ === index ? 'rotate-180' : ''
-                        }`}
+                        className={`w-5 h-5 text-brand-green flex-shrink-0 transition-transform ${activeFAQ === index ? 'rotate-180' : ''
+                          }`}
                       />
                     </button>
                     <div
-                      className={`overflow-hidden transition-all duration-300 ${
-                        activeFAQ === index ? 'max-h-96' : 'max-h-0'
-                      }`}
+                      className={`overflow-hidden transition-all duration-300 ${activeFAQ === index ? 'max-h-96' : 'max-h-0'
+                        }`}
                     >
-                      <div className="p-6 pt-0 text-gray-600">{faq.answer}</div>
+                      <div className="p-6 pt-0 text-gray-600">
+                        {faq.answer}
+                      </div>
                     </div>
                   </GlassCard>
-                </RevealSection>
-              ))}
-            </div>
+                ))}
+              </div>
+            </RevealSection>
           </div>
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-16 bg-brand-cream" id="admission">
-          <div className="container mx-auto px-4 text-center">
+        <section className="py-20 bg-white relative overflow-hidden" id="admission">
+          <div className="absolute inset-0 bg-[url('/patterns/circuit.svg')] opacity-5"></div>
+          <div className="container mx-auto px-4 md:px-6 text-center relative">
             <RevealSection>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
-                Ready to Start Your{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                  Banking & Insurance Journey?
-                </span>
-              </h2>
-              <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-                Join JKKN&apos;s B.Com Banking and Insurance programme and build a successful career in the BFSI sector
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <a href="#" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-                  Apply Now
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-                <a href="#" className="inline-flex items-center gap-2 bg-white/40 hover:bg-white/60 backdrop-blur-xl border-2 border-white/60 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all">
-                  Schedule Campus Visit
-                </a>
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl md:text-3xl font-bold text-brand-green mb-6">
+                  Ready to Start Your Banking & Insurance Journey?
+                </h2>
+                <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                  Join JKKN&apos;s B.Com Banking and Insurance programme and build a successful career in the BFSI sector
+                </p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <button className="group bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1 flex items-center gap-2">
+                    Apply Now
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </button>
+                  <button className="bg-white border-2 border-brand-green hover:bg-brand-green text-brand-green hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1">
+                    Schedule Campus Visit
+                  </button>
+                </div>
               </div>
             </RevealSection>
           </div>

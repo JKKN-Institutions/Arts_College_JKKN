@@ -499,15 +499,19 @@ export default function PhDChemistryPage() {
 
             <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
               {[
-                { name: 'Dr. Ramanathan Venkatesh', designation: 'Research Supervisor', qualification: 'Ph.D (Organic Chemistry), PDF' },
-                { name: 'Dr. Lakshmi Narayanan', designation: 'Research Supervisor', qualification: 'Ph.D (Inorganic Chemistry)' },
-                { name: 'Dr. Priya Sundaramoorthy', designation: 'Research Supervisor', qualification: 'Ph.D (Physical Chemistry)' },
-                { name: 'Dr. Kumar Selvakumar', designation: 'Research Supervisor', qualification: 'Ph.D (Analytical Chemistry)' }
+                { name: 'Dr. B. Palanisamy', designation: 'Assistant Professor & Head', qualification: 'M.Sc., Ph.D.', image: '/images/faculties/aided/chemistry/Dr.-B.-Palanisamy-240x300.png' },
+                { name: 'Dr. R. Mohan Raj', designation: 'Assistant Professor', qualification: 'M.Sc., M.Phil., Ph.D. (SET, NET)', image: '/images/faculties/aided/chemistry/Dr.-R.-Mohan-Raj-240x300.png' },
+                { name: 'Dr. S. Tamilselvi', designation: 'Assistant Professor', qualification: 'M.Sc., M.Phil., Ph.D.', image: '/images/faculties/aided/chemistry/Dr.-S.-Tamilselvi-240x300.png' },
+                { name: 'Dr. K. Kalaiselvi', designation: 'Assistant Professor', qualification: 'M.Sc., M.Phil., Ph.D.', image: '/images/faculties/aided/chemistry/Dr.-K.-Kalaiselvi-240x300.png' },
+                { name: 'Dr. D. Navaneethan', designation: 'Assistant Professor', qualification: 'M.Sc., Ph.D. (SET)', image: '/images/faculties/aided/chemistry/Dr.-D.-Navaneethan-240x300.png' },
+                { name: 'Dr. V. Gopalakannan', designation: 'Assistant Professor', qualification: 'M.Sc., M.Phil., Ph.D.', image: '/images/faculties/aided/chemistry/Dr.-V.-Gopalakannan-240x300.png' },
+                { name: 'Dr. G. Devagi', designation: 'Assistant Professor', qualification: 'M.Sc., Ph.D.', image: '/images/faculties/aided/chemistry/Dr.-G.-Devagi-240x300.png' },
+                { name: 'Dr. N. Madankumar', designation: 'Assistant Professor', qualification: 'M.Sc., Ph.D. (NET, GATE)', image: '/images/faculties/aided/chemistry/Dr.-N.-Madankumar-240x300.png' }
               ].map((faculty, idx) => (
                 <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
                   <div className="relative h-56 overflow-hidden flex-shrink-0">
                     <Image
-                      src="/images/faculties/placeholder-avatar.jpg"
+                      src={faculty.image}
                       alt={faculty.name}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"

@@ -718,15 +718,19 @@ export default function BComPage() {
 
             <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
               {[
-                { name: 'Dr. Meenakshi Sharma', designation: 'Head of Department', qualification: 'Ph.D. in Commerce, CA' },
-                { name: 'Dr. Ramesh Kumar', designation: 'Associate Professor', qualification: 'Ph.D. in Finance, CMA' },
-                { name: 'Ms. Lakshmi Patel', designation: 'Assistant Professor', qualification: 'M.Com, M.Phil., CS' },
-                { name: 'Mr. Arun Krishnan', designation: 'Assistant Professor', qualification: 'M.Com, MBA, NET' }
+                { name: 'Dr. S. Gokila', designation: 'Associate Professor & Head', qualification: 'M.Com., M.Phil., PGDCA., Ph.D.', image: '/images/faculties/aided/bcom/Dr.-S.-Gokila-240x300.png' },
+                { name: 'Dr. V. K. Sasikala', designation: 'Assistant Professor', qualification: 'M.Com., M.Phil., Ph.D., PGDCA', image: '/images/faculties/aided/bcom/Dr.-V.-K.-Sasikala-240x300.png' },
+                { name: 'Dr. M. Boovathi', designation: 'Assistant Professor', qualification: 'M.Com., M.Phil., PGDCA., Ph.D., NET', image: '/images/faculties/aided/bcom/Dr.-M.-Boovathi-240x300.png' },
+                { name: 'Dr. S. Thenmozhi', designation: 'Assistant Professor', qualification: 'M.Com., M.Phil., Ph.D., PGDCA., M.B.A., SET', image: '/images/faculties/aided/bcom/Dr.-S.-Thenmozhi-240x300.png' },
+                { name: 'Dr. L. Kavitha', designation: 'Assistant Professor', qualification: 'M.Com., M.Phil., Ph.D., SET', image: '/images/faculties/aided/bcom/Dr.-L.-Kavitha-240x300.png' },
+                { name: 'Dr. S. V. Ramesh', designation: 'Assistant Professor', qualification: 'M.Com., M.Phil., Ph.D., NET', image: '/images/faculties/aided/bcom/Dr.-S.-V.-Ramesh-240x300.png' },
+                { name: 'Dr. R. Mubeen', designation: 'Assistant Professor', qualification: 'M.Com (CA)., M.Phil., Ph.D.', image: '/images/faculties/aided/bcom/Dr.-R.-Mubeen-240x300.png' },
+                { name: 'Dr. S. Pavithra', designation: 'Assistant Professor', qualification: 'M.Com (CA)., B.Ed., M.Phil., Ph.D., SET', image: '/images/faculties/aided/bcom/Dr.-S.-Pavithra-240x300.png' }
               ].map((faculty, idx) => (
                 <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
                   <div className="relative h-56 overflow-hidden flex-shrink-0">
                     <Image
-                      src="/images/faculties/placeholder-avatar.jpg"
+                      src={faculty.image}
                       alt={faculty.name}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"

@@ -81,7 +81,7 @@ export default function BAHistoryPage() {
                 <span className="text-brand-green">
                   History
                 </span>{' '}
-                (Honours)
+
               </h1>
               <p className="text-xl md:text-2xl font-medium mb-6 text-gray-700">
                 Explore the Past, Shape the Future
@@ -123,7 +123,7 @@ export default function BAHistoryPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '85%+', title: 'Placement Record', desc: 'Civil services & careers' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Civil services & careers' },
               { icon: <Award className="w-7 h-7" />, stat: '500+', title: 'UPSC Selections', desc: 'Successful alumni' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
@@ -154,7 +154,7 @@ export default function BAHistoryPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Bachelor of Arts in History (Honours) is a comprehensive three-year undergraduate programme designed to develop critical thinking, analytical skills, and deep understanding of historical events, civilizations, and their impact on contemporary society. This UGC-recognized programme offers an in-depth study of ancient, medieval, and modern history with special focus on Indian and World History.
+                The Bachelor of Arts in History is a comprehensive three-year undergraduate programme designed to develop critical thinking, analytical skills, and deep understanding of historical events, civilizations, and their impact on contemporary society. This UGC-recognized programme offers an in-depth study of ancient, medieval, and modern history with special focus on Indian and World History.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Students engage with primary sources, archaeological evidence, and historiographical debates while developing research methodologies essential for historical scholarship. The curriculum combines theoretical knowledge with practical fieldwork, heritage site visits, and archival research training, preparing graduates for competitive examinations like UPSC Civil Services, careers in teaching, research, museums, archaeology, and heritage management.
@@ -220,7 +220,7 @@ export default function BAHistoryPage() {
                 {
                   icon: <BookOpen className="w-8 h-8 text-white" />,
                   title: 'Documents Required',
-                  items: ['10th & 12th Mark Sheets', 'Transfer Certificate', 'Community Certificate', 'Passport Size Photographs', 'Aadhaar Card Copy']
+                  items: ['10th & 12th Mark Sheets', 'Transfer Certificate', 'Community Certificate', 'Passport Size Photographs', 'Aadhaar Card Copy', 'Income Certificate', 'Bank Passbook Xerox']
                 }
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
@@ -271,8 +271,8 @@ export default function BAHistoryPage() {
                     key={year}
                     onClick={() => setActiveYear(year)}
                     className={`px-6 py-3 rounded-lg font-semibold transition-all ${activeYear === year
-                        ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
-                        : 'bg-white text-brand-green hover:bg-brand-green/5'
+                      ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
+                      : 'bg-white text-brand-green hover:bg-brand-green/5'
                       }`}
                   >
                     Year {year}
@@ -631,15 +631,19 @@ export default function BAHistoryPage() {
 
             <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
               {[
-                { name: 'Dr. Subramanian Iyer', designation: 'Head of Department', qualification: 'Ph.D. in Ancient Indian History' },
-                { name: 'Dr. Meenakshi Pillai', designation: 'Associate Professor', qualification: 'Ph.D. in Medieval History' },
-                { name: 'Mr. Arun Kumar', designation: 'Assistant Professor', qualification: 'M.Phil., NET Qualified' },
-                { name: 'Ms. Divya Krishnan', designation: 'Assistant Professor', qualification: 'M.A., SLET Qualified' }
+                { name: 'Dr. R. Kalpana Devi Priya', designation: 'Head of Department', qualification: 'M.A., M.Phil., Ph.D.', image: '/images/faculties/aided/history/Dr.-R.-Kalpana-Devi-Priya-240x300.png' },
+                { name: 'Dr. P. Vennila', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., Ph.D.', image: '/images/faculties/aided/history/Dr.-B.-Suresh-240x300.png' },
+                { name: 'Mrs. S. Sarala', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., B.Ed., (SET)', image: '/images/faculties/aided/history/Mrs.-S.-Sarala-240x300.png' },
+                { name: 'Mrs. E. Jaya', designation: 'Assistant Professor', qualification: 'B.Sc., M.A., M.Phil., M.Ed., (SET)', image: '/images/faculties/aided/history/Mrs.-E.-Jaya-240x300.png' },
+                { name: 'Dr. C. Jothi', designation: 'Assistant Professor', qualification: 'M.A., Ph.D.', image: '/images/faculties/aided/history/Dr.-C.-Jothi-240x300.png' },
+                { name: 'Dr. M. Samyuktha', designation: 'Assistant Professor', qualification: 'M.A., Ph.D.', image: '/images/faculties/aided/history/Dr.-M.-Samyuktha-240x300.png' },
+                { name: 'Dr. S. Abirami', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., Ph.D., (SET)', image: '/images/faculties/aided/history/Dr.-S.-Abirami-240x300.png' },
+                { name: 'Mrs. C. Rathipriya', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., (SET)', image: '/images/faculties/aided/history/Mrs.-C.-Rathipriya-240x300.png' }
               ].map((faculty, idx) => (
                 <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
                   <div className="relative h-56 overflow-hidden flex-shrink-0">
                     <Image
-                      src="/images/faculties/placeholder-avatar.jpg"
+                      src={faculty.image}
                       alt={faculty.name}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -739,7 +743,7 @@ export default function BAHistoryPage() {
       </section>
 
       {/* Related Programmes */}
-      <section className="py-16 bg-brand-cream">
+      {/* <section className="py-16 bg-brand-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -793,7 +797,7 @@ export default function BAHistoryPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

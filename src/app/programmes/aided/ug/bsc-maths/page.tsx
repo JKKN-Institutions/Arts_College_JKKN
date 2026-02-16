@@ -63,6 +63,7 @@ function SectionBadge({ text }: { text: string }) {
 
 export default function BScMathematicsPage() {
   const [activeFAQ, setActiveFAQ] = useState(0);
+  const [activeYear, setActiveYear] = useState(1);
 
   return (
     <div className="min-h-screen bg-white">
@@ -81,8 +82,8 @@ export default function BScMathematicsPage() {
                   Mathematics
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl font-medium mb-6 text-white drop-shadow-md">
-                Master Mathematical Sciences for a Quantitative Career
+              <p className="text-xl md:text-2xl font-medium mb-6 text-brand-green drop-shadow-md">
+                Mastering Mathematical Sciences for a Quantitative Career
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -121,8 +122,8 @@ export default function BScMathematicsPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '90%+', title: 'Placement Record', desc: 'Career opportunities assured' },
-              { icon: <Award className="w-7 h-7" />, stat: '₹4L', title: 'Average Package', desc: 'Competitive starting salary' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Career opportunities assured' },
+              { icon: <Award className="w-7 h-7" />, stat: '₹3L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">
@@ -155,7 +156,7 @@ export default function BScMathematicsPage() {
                 The Bachelor of Science in Mathematics programme is a comprehensive 3-year undergraduate degree designed to develop strong analytical thinking, problem-solving abilities, and quantitative reasoning skills essential for success in today's data-driven world.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our curriculum combines Pure Mathematics, Applied Mathematics, and Computational Methods, providing learners with a solid foundation in mathematical theory while emphasizing practical applications in science, technology, finance, and research. Learners gain proficiency in mathematical software tools like MATLAB, Mathematica, Python, and R, making them industry-ready upon graduation.
+                Our curriculum combines Pure Mathematics, Applied Mathematics, and Computational Methods, providing learners with a solid foundation in mathematical theory while emphasizing practical applications in science and technology.Learners gain proficiency in mathematical software tools like MATLAB, Mathematica, Python, and R, making them industry-ready upon graduation.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
@@ -213,12 +214,12 @@ export default function BScMathematicsPage() {
                 {
                   icon: <BookOpen className="w-8 h-8 text-white" />,
                   title: 'Subject Requirements',
-                  items: ['Mathematics as mandatory subject', 'Physics or Chemistry preferred', 'Science stream students', 'Strong mathematical aptitude']
+                  items: ['Mathematics,Physics,Chemistry as mandatory subject', 'Physics or Chemistry preferred', 'Strong mathematical aptitude']
                 },
                 {
                   icon: <FileText className="w-8 h-8 text-white" />,
                   title: 'Documents Required',
-                  items: ['10th & 12th Mark Sheets', 'Transfer Certificate', 'Community Certificate', 'Passport Size Photographs', 'Aadhaar Card Copy']
+                  items: ['10th & 12th Mark Sheets', 'Transfer Certificate', 'Community Certificate', 'Passport Size Photographs', 'Aadhaar Card Copy', 'Bank Pass Book Copy', 'Income Certificate', 'First Graduation Certificate']
                 }
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
@@ -262,34 +263,183 @@ export default function BScMathematicsPage() {
               </div>
             </RevealSection>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { semester: 'I', subjects: ['Calculus & Analytical Geometry', 'Algebra & Number Theory', 'Programming in C', 'Environmental Studies', 'Tamil/Hindi', 'English'] },
-                { semester: 'II', subjects: ['Differential Equations', 'Vector Calculus', 'Data Structures', 'Value Education', 'Tamil/Hindi', 'English'] },
-                { semester: 'III', subjects: ['Real Analysis', 'Linear Algebra', 'Operations Research', 'Statistics I', 'Python Programming', 'English'] },
-                { semester: 'IV', subjects: ['Complex Analysis', 'Abstract Algebra', 'Numerical Methods', 'Statistics II', 'Database Management', 'English'] },
-                { semester: 'V', subjects: ['Topology', 'Graph Theory', 'Mechanics', 'Elective I', 'Research Methodology', 'Soft Skills'] },
-                { semester: 'VI', subjects: ['Differential Geometry', 'Mathematical Modeling', 'Fuzzy Set Theory', 'Elective II', 'Project Work', 'Comprehensive Viva'] }
-              ].map((sem, idx) => (
-                <RevealSection key={idx} delay={idx * 100}>
-                  <GlassCard className="overflow-hidden" hover={false}>
-                    <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                      <h4 className="text-xl font-bold">Semester {sem.semester}</h4>
-                    </div>
-                    <div className="p-6">
-                      <ul className="space-y-3">
-                        {sem.subjects.map((subject, i) => (
-                          <li key={i} className="flex items-start gap-2 text-gray-700">
-                            <span className="text-emerald-500 mt-1">•</span>
-                            <span>{subject}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </GlassCard>
-                </RevealSection>
-              ))}
-            </div>
+            {/* Year Tabs */}
+            <RevealSection delay={100}>
+              <div className="flex justify-center mb-8">
+                <div className="inline-flex bg-white/60 backdrop-blur-sm rounded-xl p-1.5 border border-white/80 shadow-lg">
+                  {[1, 2, 3].map((year) => (
+                    <button
+                      key={year}
+                      onClick={() => setActiveYear(year)}
+                      className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${activeYear === year
+                          ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/30'
+                          : 'text-gray-600 hover:text-brand-green hover:bg-white/50'
+                        }`}
+                    >
+                      Year {year}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </RevealSection>
+
+            {/* Year 1 Content */}
+            {activeYear === 1 && (
+              <div className="grid md:grid-cols-2 gap-6">
+                {[
+                  {
+                    semester: 'I',
+                    courses: [
+                      { code: '24UGTA01', name: 'General Tamil – I' },
+                      { code: '24UGEN01', name: 'General English – I' },
+                      { code: '24UMAC01', name: 'Core I – Algebra and Trigonometry' },
+                      { code: '24UMAC02', name: 'Core II – Differential Calculus' },
+                      { code: '24UPHGE1 / 24UCHGE1', name: 'Generic Elective Physics / Chemistry for Physical Sciences – I' },
+                      { code: '24UPHGEP01 / 24UCHGEP01', name: 'Physics Practical / Chemistry Practical for Physical & Biological Sciences – I' },
+                      { code: '24UMANM1', name: 'NME – 1 Mathematics for Competitive Examination – I' },
+                      { code: '24UMAS01', name: 'SEC – I Bridge Mathematics' }
+                    ]
+                  },
+                  {
+                    semester: 'II',
+                    courses: [
+                      { code: '24UGTA02', name: 'General Tamil – II' },
+                      { code: '24UGEN02', name: 'General English – II' },
+                      { code: '24UMAC03', name: 'Core III – Analytical Geometry (Two & Three Dimensions)' },
+                      { code: '24UMAC04', name: 'Core IV – Integral Calculus' },
+                      { code: '24UPHGE2 / 24UCHGE2', name: 'Generic Elective Physics / Chemistry for Physical Sciences – II' },
+                      { code: '24UPHGEP02 / 24UCHGEP02', name: 'Physics Practical / Chemistry Practical – II' },
+                      { code: '24UMANM2', name: 'NME – 2 Mathematics for Competitive Examination – II' },
+                      { code: '24UMAS02', name: 'SEC – 2 Computational Mathematics' }
+                    ]
+                  }
+                ].map((sem, idx) => (
+                  <RevealSection key={idx} delay={idx * 100}>
+                    <GlassCard className="overflow-hidden" hover={false}>
+                      <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
+                        <h4 className="text-xl font-bold">Semester {sem.semester}</h4>
+                      </div>
+                      <div className="p-6">
+                        <div className="space-y-4">
+                          {sem.courses.map((course, i) => (
+                            <div key={i} className="border-l-2 border-emerald-500 pl-3 py-1">
+                              <div className="text-xs font-semibold text-emerald-600 mb-0.5">{course.code}</div>
+                              <div className="text-sm text-gray-700">{course.name}</div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </GlassCard>
+                  </RevealSection>
+                ))}
+              </div>
+            )}
+
+            {/* Year 2 Content */}
+            {activeYear === 2 && (
+              <div className="grid md:grid-cols-2 gap-6">
+                {[
+                  {
+                    semester: 'III',
+                    courses: [
+                      { code: '24UGTA03', name: 'General Tamil – III' },
+                      { code: '24UGEN03', name: 'General English – III' },
+                      { code: '24UMAC05', name: 'Core V – Vector Calculus and its Applications' },
+                      { code: '24UMAC06', name: 'Core VI – Differential Equations and its Applications' },
+                      { code: '24USTDE1', name: 'Discipline Specific Elective – Statistical Methods I' },
+                      { code: '24USTDEP01', name: 'Discipline Specific Elective – Statistics Practical I' },
+                      { code: '24UMAS03', name: 'SEC – III Statistics with Excel Programming' },
+                      { code: '24UMAS04', name: 'SEC – IV Programming in C (Theory)' },
+                      { code: '24UEVS01', name: 'Environmental Studies' },
+                      { code: '24UHAWP01', name: 'Health & Wellness' }
+                    ]
+                  },
+                  {
+                    semester: 'IV',
+                    courses: [
+                      { code: '24UGTA04', name: 'General Tamil – IV' },
+                      { code: '24UGEN04', name: 'General English – IV' },
+                      { code: '24UMAC07', name: 'Core VII – Industrial Statistics' },
+                      { code: '24UMAC08', name: 'Core VIII – Elements of Mathematical Analysis' },
+                      { code: '24USTDE2', name: 'Discipline Specific Elective – Statistical Methods II' },
+                      { code: '24USTDEP02', name: 'Discipline Specific Elective – Statistics Practical II' },
+                      { code: '24UMASP01', name: 'SEC – V Programming in C Practical' },
+                      { code: '24UMASP02', name: 'SEC – VI Latex Practical' },
+                      { code: '24UEVS01', name: 'Environmental Studies' }
+                    ]
+                  }
+                ].map((sem, idx) => (
+                  <RevealSection key={idx} delay={idx * 100}>
+                    <GlassCard className="overflow-hidden" hover={false}>
+                      <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
+                        <h4 className="text-xl font-bold">Semester {sem.semester}</h4>
+                      </div>
+                      <div className="p-6">
+                        <div className="space-y-4">
+                          {sem.courses.map((course, i) => (
+                            <div key={i} className="border-l-2 border-emerald-500 pl-3 py-1">
+                              <div className="text-xs font-semibold text-emerald-600 mb-0.5">{course.code}</div>
+                              <div className="text-sm text-gray-700">{course.name}</div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </GlassCard>
+                  </RevealSection>
+                ))}
+              </div>
+            )}
+
+            {/* Year 3 Content */}
+            {activeYear === 3 && (
+              <div className="grid md:grid-cols-2 gap-6">
+                {[
+                  {
+                    semester: 'V',
+                    courses: [
+                      { code: '23UMACT09', name: 'Abstract Algebra' },
+                      { code: '23UMACT10', name: 'Real Analysis' },
+                      { code: '23UMACT11', name: 'Mathematical Modelling' },
+                      { code: '23UMACT12', name: 'Optimization Techniques' },
+                      { code: '—', name: 'Elective Course I (From Group-I)' },
+                      { code: '—', name: 'Elective Course II (From Group-II)' },
+                      { code: '—', name: 'Value Education Yoga' },
+                      { code: '—', name: 'Internship / Industrial Training' }
+                    ]
+                  },
+                  {
+                    semester: 'VI',
+                    courses: [
+                      { code: '23UMACT13', name: 'Linear Algebra' },
+                      { code: '23UMACT14', name: 'Complex Analysis' },
+                      { code: '23UMACT15', name: 'Mechanics' },
+                      { code: '—', name: 'Elective Course III (From Group-I)' },
+                      { code: '—', name: 'Elective Course IV (From Group-II)' },
+                      { code: '23UMAPC01', name: 'Professional Competency Skill – Statistics with R Programming (Theory)' },
+                      { code: '—', name: 'Extension Activity' }
+                    ]
+                  }
+                ].map((sem, idx) => (
+                  <RevealSection key={idx} delay={idx * 100}>
+                    <GlassCard className="overflow-hidden" hover={false}>
+                      <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
+                        <h4 className="text-xl font-bold">Semester {sem.semester}</h4>
+                      </div>
+                      <div className="p-6">
+                        <div className="space-y-4">
+                          {sem.courses.map((course, i) => (
+                            <div key={i} className="border-l-2 border-emerald-500 pl-3 py-1">
+                              <div className="text-xs font-semibold text-emerald-600 mb-0.5">{course.code}</div>
+                              <div className="text-sm text-gray-700">{course.name}</div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </GlassCard>
+                  </RevealSection>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -542,15 +692,15 @@ export default function BScMathematicsPage() {
 
             <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
               {[
-                { name: 'Dr. Ramesh Kumar', designation: 'Head of Department', qualification: 'Ph.D. in Pure Mathematics' },
-                { name: 'Dr. Kavitha Sundaram', designation: 'Associate Professor', qualification: 'Ph.D. in Applied Mathematics' },
-                { name: 'Mr. Vijay Anand', designation: 'Assistant Professor', qualification: 'M.Phil., NET Qualified' },
-                { name: 'Ms. Priya Devi', designation: 'Assistant Professor', qualification: 'M.Sc., SLET Qualified' }
+                { name: 'Dr. T. Santhi', designation: 'HOD & Associate Professor', qualification: 'M.Sc., M.Phil., Ph.D.', image: '/images/faculties/aided/maths/Dr.-T.-Santhi-240x300.png' },
+                { name: 'Dr. V. Radhamani', designation: 'Assistant Professor', qualification: 'M.Sc., Ph.D., (SET)', image: '/images/faculties/aided/maths/Dr.-V.-Radhamani-240x300.png' },
+                { name: 'Dr. A. Kavitha', designation: 'Assistant Professor', qualification: 'M.Sc., B.Ed., M.Phil., Ph.D.', image: '/images/faculties/aided/maths/Dr.-A.-Kavitha-240x300.png' },
+                { name: 'Dr. G. Sharmiladevi', designation: 'Assistant Professor', qualification: 'M.Sc., M.Phil., Ph.D., SET', image: '/images/faculties/aided/maths/Dr.-G.-Sharmiladevi-240x300.png' }
               ].map((faculty, idx) => (
                 <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
                   <div className="relative h-56 overflow-hidden flex-shrink-0">
                     <Image
-                      src="/images/faculties/placeholder-avatar.jpg"
+                      src={faculty.image}
                       alt={faculty.name}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -648,7 +798,7 @@ export default function BScMathematicsPage() {
       </section>
 
       {/* Related Programmes */}
-      <section className="py-16 bg-brand-cream">
+      {/* <section className="py-16 bg-brand-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -702,7 +852,7 @@ export default function BScMathematicsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

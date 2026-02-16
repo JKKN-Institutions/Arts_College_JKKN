@@ -620,15 +620,15 @@ export default function PhDTamilPage() {
 
             <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
               {[
-                { name: 'Dr. Meenakshi Sundaram', designation: 'Research Supervisor', qualification: 'Ph.D. in Classical Tamil Literature' },
-                { name: 'Dr. Karthikeyan Raman', designation: 'Research Supervisor', qualification: 'Ph.D. in Tamil Linguistics' },
-                { name: 'Dr. Lakshmi Priya', designation: 'Research Supervisor', qualification: 'Ph.D. in Modern Tamil Literature' },
-                { name: 'Dr. Anandan Pillai', designation: 'Research Supervisor', qualification: 'Ph.D. in Comparative Dravidian Studies' }
+                { name: 'Dr. S. Uma', designation: 'Associate Professor & Head', qualification: 'M.A., M.Phil., Ph.D.', image: '/images/faculties/aided/tamil/Dr.-S.-Uma-240x300.png' },
+                { name: 'Mrs. S. Umarani', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., B.Ed., PGDCA', image: '/images/faculties/aided/tamil/Mrs.-S.-Umarani-240x300.png' },
+                { name: 'Mr. A. R. Sathiyaprakash', designation: 'Assistant Professor', qualification: 'M.A., B.Ed., NET., SET., PGDTTM', image: '/images/faculties/aided/tamil/Mr.-A.-R.-Sathiyaprakash-240x300.png' },
+                { name: 'Dr. D. Sathiya', designation: 'Assistant Professor', qualification: 'M.A., M.A (Ling)., M.Phil., Ph.D. (SET)', image: '/images/faculties/aided/tamil/Dr.-D.-Sathiya-240x300.png' }
               ].map((faculty, idx) => (
                 <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
                   <div className="relative h-56 overflow-hidden flex-shrink-0">
                     <Image
-                      src="/images/faculties/placeholder-avatar.jpg"
+                      src={faculty.image}
                       alt={faculty.name}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"

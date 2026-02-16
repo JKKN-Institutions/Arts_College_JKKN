@@ -89,6 +89,39 @@ export default function BComAccountingFinancePage() {
   const [activeYear, setActiveYear] = useState(1);
   const [activeFAQ, setActiveFAQ] = useState(0);
 
+  const facultyMembers = [
+    {
+      name: "Mrs.M.S.Punithamalar",
+      designation: "HOD & Assistant Professor",
+      education: "M.Com(CA), MBA, M.Phil.,(Ph.D)",
+      image: "/images/faculties/Mrs.M.S.Punithamalar-300x199.png"
+    },
+    {
+      name: "Ms.G.Buvaneswari",
+      designation: "Assistant Professor",
+      education: "M.Com, B.ED, M.Phil",
+      image: "/images/faculties/Ms.G.Buvaneswari-300x199.png"
+    },
+    {
+      name: "Mrs.N.Lingameena",
+      designation: "Assistant Professor",
+      education: "M.Com.,M.Phil.",
+      image: "/images/faculties/Mrs.N.Lingameena-300x199.png"
+    },
+    {
+      name: "Mr.A.Jegadishkumar",
+      designation: "Assistant Professor",
+      education: "M.Com.,B.Ed.,MBA",
+      image: "/images/faculties/Mr.A.Jegadishkumar-300x199.png"
+    },
+    {
+      name: "Ms.C.Agalya",
+      designation: "Assistant Professor",
+      education: "M.Com(CA).",
+      image: "/images/faculties/Ms.C.Agalya-300x199.png"
+    }
+  ];
+
   const faqs = [
     {
       question: "What is the difference between B.Com and B.Com Accounting and Finance?",
@@ -294,58 +327,36 @@ export default function BComAccountingFinancePage() {
                     icon: <GraduationCap className="w-7 h-7" />,
                     title: "Academic Qualification",
                     points: [
-                      "Higher Secondary (10+2) from a recognized board in any stream. Commerce background preferred but not mandatory.",
-                      "Candidates from Science or Arts streams with basic mathematics are also eligible."
+                      "Higher Secondary +2 from recognized board",
+                      "Commerce/Science/Arts stream eligible",
+                      "Minimum 50% aggregate marks",
+                      "45% for OBC, 40% for SC/ST"
                     ]
                   },
                   {
-                    icon: <FileText className="w-7 h-7" />,
-                    title: "Minimum Marks",
+                    icon: <Calendar className="w-7 h-7" />,
+                    title: "Accepted Streams",
                     points: [
-                      "General Category: 50% aggregate",
-                      "OBC Category: 45% aggregate",
-                      "SC/ST Category: 40% aggregate",
-                      "Differently Abled: 40% aggregate"
-                    ]
-                  },
-                  {
-                    icon: <UserCheck className="w-7 h-7" />,
-                    title: "Age Criteria",
-                    points: [
-                      "No upper age limit for admission.",
-                      "Candidates who have completed 17 years of age as on December 31st of the admission year are eligible to apply for the programme."
+                      "Commerce stream preferred",
+                      "Science with basic mathematics",
+                      "Arts with accounting knowledge",
+                      "Basic computer literacy required"
                     ]
                   },
                   {
                     icon: <FileText className="w-7 h-7" />,
                     title: "Required Documents",
                     points: [
-                      "10th & 12th Mark Sheets",
+                      "110th,11th & 12th Mark Sheets",
                       "Transfer Certificate",
                       "Community Certificate",
-                      "Passport Size Photographs"
-                    ]
-                  },
-                  {
-                    icon: <Calendar className="w-7 h-7" />,
-                    title: "Admission Process",
-                    points: [
-                      "Online/Offline Application",
-                      "Document Verification",
-                      "Merit-based Selection",
-                      "Fee Payment & Enrollment"
-                    ]
-                  },
-                  {
-                    icon: <DollarSign className="w-7 h-7" />,
-                    title: "Scholarships Available",
-                    points: [
-                      "Merit Scholarships (Top 10%)",
-                      "Government Scholarships",
-                      "Financial Aid for EWS",
-                      "Sports Quota Benefits"
+                      "Passport Size Photographs",
+                      "Aadhaar Card Copy",
+                      "Bank Details"
                     ]
                   }
+
+
                 ].map((card, idx) => (
                   <RevealSection key={idx} delay={idx * 100}>
                     <GlassCard className="p-6 h-full">
@@ -389,11 +400,10 @@ export default function BComAccountingFinancePage() {
                   <button
                     key={year}
                     onClick={() => setActiveYear(year)}
-                    className={`px-8 py-3 rounded-xl font-semibold transition-all ${
-                      activeYear === year
-                        ? 'bg-brand-green text-white shadow-md'
-                        : 'text-gray-700 hover:text-gray-900 hover:bg-white/50'
-                    }`}
+                    className={`px-8 py-3 rounded-xl font-semibold transition-all ${activeYear === year
+                      ? 'bg-brand-green text-white shadow-md'
+                      : 'text-gray-700 hover:text-gray-900 hover:bg-white/50'
+                      }`}
                   >
                     Year {year}
                   </button>
@@ -413,12 +423,13 @@ export default function BComAccountingFinancePage() {
                       </div>
                       <div className="p-6 space-y-4">
                         {[
-                          { name: "Financial Accounting I", code: "ACC101" },
-                          { name: "Business Economics", code: "ECO101" },
-                          { name: "Business Mathematics", code: "MAT101" },
-                          { name: "Business Communication", code: "ENG101" },
-                          { name: "Principles of Management", code: "MGT101" },
-                          { name: "Environmental Studies", code: "EVS101" }
+                          { name: "Tamil - I", code: "19UETA01" },
+                          { name: "English - I", code: "20UENC01" },
+                          { name: "Principles of Accounting", code: "19UVE01" },
+                          { name: "Banking Theory", code: "19UCB02" },
+                          { name: "Business Economics", code: "19UECA07" },
+                          { name: "Value Education", code: "19UVE01" },
+                          { name: "Professional English for Commerce and Management - I", code: "20UPEC01" }
                         ].map((subject, index) => (
                           <div key={index} className="flex items-center justify-between py-2 border-b border-gray-200/50 last:border-0">
                             <div className="flex items-center gap-3">
@@ -440,12 +451,13 @@ export default function BComAccountingFinancePage() {
                       </div>
                       <div className="p-6 space-y-4">
                         {[
-                          { name: "Financial Accounting II", code: "ACC102" },
-                          { name: "Business Statistics", code: "STA101" },
-                          { name: "Banking Theory & Practice", code: "BNK101" },
-                          { name: "Business Law", code: "LAW101" },
-                          { name: "Organizational Behaviour", code: "MGT102" },
-                          { name: "Value Education", code: "VAL101" }
+                          { name: "Tamil - II", code: "19UFTA02" },
+                          { name: "English - II", code: "20UENC02" },
+                          { name: "EVS", code: "19UES01" },
+                          { name: "Financial Accounting", code: "19UAF03" },
+                          { name: "Banking Theory Law & Practice", code: "19UAF04" },
+                          { name: "Indian Economy", code: "19UECA08" },
+                          { name: "Professional English for Commerce Management - II", code: "20UPEC02" }
                         ].map((subject, index) => (
                           <div key={index} className="flex items-center justify-between py-2 border-b border-gray-200/50 last:border-0">
                             <div className="flex items-center gap-3">
@@ -471,12 +483,13 @@ export default function BComAccountingFinancePage() {
                       </div>
                       <div className="p-6 space-y-4">
                         {[
-                          { name: "Corporate Accounting I", code: "ACC201" },
-                          { name: "Cost Accounting I", code: "COS201" },
-                          { name: "Income Tax Law & Practice", code: "TAX201" },
-                          { name: "Financial Management", code: "FIN201" },
-                          { name: "Computer Applications (Tally)", code: "COM201" },
-                          { name: "Soft Skills Development", code: "SKL201" }
+                          { name: "Business law", code: "19UAF05" },
+                          { name: "Corporate Accounting - I", code: "19UAF06" },
+                          { name: "Indian Financial Services", code: "19UAF07" },
+                          { name: "Capital Market", code: "19UAES01" },
+                          { name: "Business Statistical Method", code: "19USTA10" },
+                          { name: "Salaipathukappu Vithikal", code: "19UTLN01" },
+                          { name: "Business Management", code: "19UAFS02" }
                         ].map((subject, index) => (
                           <div key={index} className="flex items-center justify-between py-2 border-b border-gray-200/50 last:border-0">
                             <div className="flex items-center gap-3">
@@ -498,12 +511,13 @@ export default function BComAccountingFinancePage() {
                       </div>
                       <div className="p-6 space-y-4">
                         {[
-                          { name: "Corporate Accounting II", code: "ACC202" },
-                          { name: "Cost Accounting II", code: "COS202" },
-                          { name: "Goods & Services Tax (GST)", code: "TAX202" },
-                          { name: "Investment Management", code: "FIN202" },
-                          { name: "E-Commerce & Digital Marketing", code: "COM202" },
-                          { name: "Extension Activities", code: "EXT201" }
+                          { name: "Company law", code: "19UAF08" },
+                          { name: "Corporate Accounting - II", code: "19UAF09" },
+                          { name: "Tally Practicals", code: "19USFP01" },
+                          { name: "Project Methodology", code: "19UAFS03" },
+                          { name: "Fund Management", code: "19UAF04" },
+                          { name: "Business Statistical Decision Techniques", code: "19USTA18" },
+                          { name: "Vilambarakkalai", code: "19UTLN02" }
                         ].map((subject, index) => (
                           <div key={index} className="flex items-center justify-between py-2 border-b border-gray-200/50 last:border-0">
                             <div className="flex items-center gap-3">
@@ -529,12 +543,11 @@ export default function BComAccountingFinancePage() {
                       </div>
                       <div className="p-6 space-y-4">
                         {[
-                          { name: "Advanced Financial Accounting", code: "ACC301" },
-                          { name: "Auditing & Assurance", code: "AUD301" },
-                          { name: "Management Accounting", code: "MGA301" },
-                          { name: "Financial Markets & Services", code: "FIN301" },
-                          { name: "Corporate Law", code: "LAW301" },
-                          { name: "Elective: International Finance", code: "FIN302E" }
+                          { name: "Cost Accounting", code: "19UAF10" },
+                          { name: "Auditing", code: "19UAF11" },
+                          { name: "Income Tax Law and Practice", code: "19UAF12" },
+                          { name: "Financial Control System", code: "19UAF13" },
+                          { name: "Principles of Marketing", code: "19UAFE02" }
                         ].map((subject, index) => (
                           <div key={index} className="flex items-center justify-between py-2 border-b border-gray-200/50 last:border-0">
                             <div className="flex items-center gap-3">
@@ -556,12 +569,11 @@ export default function BComAccountingFinancePage() {
                       </div>
                       <div className="p-6 space-y-4">
                         {[
-                          { name: "Advanced Auditing", code: "AUD302" },
-                          { name: "Financial Statement Analysis", code: "FIN303" },
-                          { name: "Strategic Financial Management", code: "FIN304" },
-                          { name: "Research Methodology", code: "RES301" },
-                          { name: "Project Work & Viva", code: "PRJ301" },
-                          { name: "Elective: Financial Modeling", code: "FIN305E" }
+                          { name: "Management Accounting", code: "19UAF14" },
+                          { name: "Financial Management", code: "19UAF15" },
+                          { name: "Income Tax Law and Practice - II", code: "19UAF16" },
+                          { name: "Fundamental of Insurance", code: "19UAFE04" },
+                          { name: "Commerce Practicals", code: "19UAFP02" }
                         ].map((subject, index) => (
                           <div key={index} className="flex items-center justify-between py-2 border-b border-gray-200/50 last:border-0">
                             <div className="flex items-center gap-3">
@@ -799,6 +811,50 @@ export default function BComAccountingFinancePage() {
           </div>
         </section>
 
+        {/* Faculty Section */}
+        <section className="py-20 bg-white relative overflow-hidden" id="faculty">
+          <div className="container mx-auto px-4 md:px-6 relative">
+            <RevealSection>
+              <div className="max-w-4xl mx-auto text-center mb-16">
+                <SectionBadge text="Our Team" />
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-6">
+                  Expert Faculty Members
+                </h2>
+                <div className="w-24 h-1.5 bg-gradient-to-r from-brand-green to-emerald-500 mx-auto rounded-full mb-6"></div>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Learn from experienced faculty with expertise in accounting and finance.
+                </p>
+              </div>
+            </RevealSection>
+
+            <RevealSection>
+              <div className="max-w-7xl mx-auto">
+                <Marquee pauseOnHover className="[--duration:40s]">
+                  {facultyMembers.map((faculty, index) => (
+                    <GlassCard key={index} className="w-80 mx-4">
+                      <div className="p-6">
+                        <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-green/20">
+                          <Image
+                            src={faculty.image}
+                            alt={faculty.name}
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+                        <div className="text-center">
+                          <h3 className="text-xl font-bold text-brand-green mb-2">{faculty.name}</h3>
+                          <p className="text-sm font-semibold text-gray-600 mb-2">{faculty.designation}</p>
+                          <p className="text-xs text-gray-500">{faculty.education}</p>
+                        </div>
+                      </div>
+                    </GlassCard>
+                  ))}
+                </Marquee>
+              </div>
+            </RevealSection>
+          </div>
+        </section>
+
         {/* Why Choose JKKN */}
         <section className="py-16 bg-brand-cream">
           <div className="container mx-auto px-4">
@@ -874,22 +930,23 @@ export default function BComAccountingFinancePage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <RevealSection className="text-center mb-12">
-              <SectionBadge text="FAQs" />
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Frequently Asked{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                  Questions
-                </span>
-              </h2>
+        <section className="py-20 bg-gradient-to-br from-emerald-50 via-brand-cream to-blue-50 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/patterns/grid.svg')] opacity-5"></div>
+          <div className="container mx-auto px-4 md:px-6 relative">
+            <RevealSection>
+              <div className="max-w-4xl mx-auto text-center mb-16">
+                <SectionBadge text="Got Questions?" />
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-6">
+                  Frequently Asked Questions
+                </h2>
+                <div className="w-24 h-1.5 bg-gradient-to-r from-brand-green to-emerald-500 mx-auto rounded-full"></div>
+              </div>
             </RevealSection>
 
-            <div className="max-w-4xl mx-auto space-y-4">
-              {faqs.map((faq, index) => (
-                <RevealSection key={index} delay={index * 50}>
-                  <GlassCard hover={false} className="overflow-hidden">
+            <RevealSection>
+              <div className="max-w-4xl mx-auto space-y-4">
+                {faqs.map((faq, index) => (
+                  <GlassCard key={index} className="overflow-hidden" hover={false}>
                     <button
                       onClick={() => setActiveFAQ(activeFAQ === index ? -1 : index)}
                       className="w-full p-6 text-left flex items-center justify-between hover:bg-white/60 transition-colors"
@@ -897,46 +954,46 @@ export default function BComAccountingFinancePage() {
                     >
                       <h3 className="font-semibold text-brand-green pr-4">{faq.question}</h3>
                       <ChevronDown
-                        className={`w-5 h-5 text-emerald-500 flex-shrink-0 transition-transform ${
-                          activeFAQ === index ? 'rotate-180' : ''
-                        }`}
+                        className={`w-5 h-5 text-brand-green flex-shrink-0 transition-transform ${activeFAQ === index ? 'rotate-180' : ''
+                          }`}
                       />
                     </button>
                     <div
-                      className={`overflow-hidden transition-all duration-300 ${
-                        activeFAQ === index ? 'max-h-96' : 'max-h-0'
-                      }`}
+                      className={`overflow-hidden transition-all duration-300 ${activeFAQ === index ? 'max-h-96' : 'max-h-0'
+                        }`}
                     >
-                      <div className="p-6 pt-0 text-gray-600">{faq.answer}</div>
+                      <div className="p-6 pt-0 text-gray-600">
+                        {faq.answer}
+                      </div>
                     </div>
                   </GlassCard>
-                </RevealSection>
-              ))}
-            </div>
+                ))}
+              </div>
+            </RevealSection>
           </div>
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-16 bg-brand-cream" id="admission">
-          <div className="container mx-auto px-4 text-center">
+        <section className="py-20 bg-white relative overflow-hidden" id="admission">
+          <div className="absolute inset-0 bg-[url('/patterns/circuit.svg')] opacity-5"></div>
+          <div className="container mx-auto px-4 md:px-6 text-center relative">
             <RevealSection>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
-                Ready to Start Your{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                  Accounting & Finance Journey?
-                </span>
-              </h2>
-              <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-                Join JKKN&apos;s B.Com Accounting and Finance programme and build a successful career in accounting, finance, and business management
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <a href="#" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-                  Apply Now
-                  <ArrowRight className="w-5 h-5" />
-                </a>
-                <a href="#" className="inline-flex items-center gap-2 bg-white/40 hover:bg-white/60 backdrop-blur-xl border-2 border-white/60 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all">
-                  Schedule Campus Visit
-                </a>
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl md:text-3xl font-bold text-brand-green mb-6">
+                  Ready to Start Your Accounting & Finance Journey?
+                </h2>
+                <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                  Join JKKN&apos;s B.Com Accounting and Finance programme and build a successful career in accounting, finance, and business management
+                </p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <button className="group bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1 flex items-center gap-2">
+                    Apply Now
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </button>
+                  <button className="bg-white border-2 border-brand-green hover:bg-brand-green text-brand-green hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1">
+                    Schedule Campus Visit
+                  </button>
+                </div>
               </div>
             </RevealSection>
           </div>

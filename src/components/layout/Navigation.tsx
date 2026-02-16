@@ -1182,6 +1182,14 @@ export default function Navigation() {
                                     >
                                       M.A English
                                     </Link>
+                                    <Link
+                                      href="/programmes/aided/pg/ma-history"
+                                      role="menuitem"
+                                      tabIndex={0}
+                                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                                    >
+                                      M.A History
+                                    </Link>
                                   </div>
                                 </div>
                               )}
@@ -1377,6 +1385,14 @@ export default function Navigation() {
                               {selfFinancePgOpen && (
                                 <div className="absolute left-full top-0 pl-1 w-80 z-[110]">
                                   <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
+                                    <Link
+                                      href="/programmes/self-finance/pg/mcom"
+                                      role="menuitem"
+                                      tabIndex={0}
+                                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                                    >
+                                      M.Com
+                                    </Link>
                                     <Link
                                       href="/programmes/self-finance/pg/msc-computer-science"
                                       role="menuitem"
@@ -2562,6 +2578,13 @@ export default function Navigation() {
                                 >
                                   M.A English
                                 </Link>
+                                <Link
+                                  href="/programmes/aided/pg/ma-history"
+                                  onClick={toggleMobileMenu}
+                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                                >
+                                  M.A History
+                                </Link>
                               </div>
                             )}
                           </div>
@@ -2730,6 +2753,13 @@ export default function Navigation() {
 
                             {mobileSelfFinancePgExpanded && (
                               <div className="pb-2">
+                                <Link
+                                  href="/programmes/self-finance/pg/mcom"
+                                  onClick={toggleMobileMenu}
+                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                                >
+                                  M.Com
+                                </Link>
                                 <Link
                                   href="/programmes/self-finance/pg/msc-computer-science"
                                   onClick={toggleMobileMenu}
