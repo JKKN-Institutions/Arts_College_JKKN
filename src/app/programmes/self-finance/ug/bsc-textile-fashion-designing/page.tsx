@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Users, Award, Briefcase, GraduationCap, Building2, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, Palette, Scissors, Ruler, Shirt, PenTool, Layers, TrendingUp, Calendar, UserCheck, DollarSign, Database, LineChart } from 'lucide-react';
+import Marquee from '@/components/ui/Marquee';
 
 /* ─── Scroll-reveal hook ─── */
 function useScrollReveal() {
@@ -158,7 +159,7 @@ export default function BSCTextileFashionDesigningPage() {
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-4">
-                  <a href="#admission" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                  <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                     Apply Now
                     <ArrowRight className="w-4 h-4" />
                   </a>
@@ -228,13 +229,13 @@ export default function BSCTextileFashionDesigningPage() {
               <RevealSection className="lg:col-span-2" delay={200}>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="https://placehold.co/600x450/0b6d41/FFFFFF?text=Fashion+Design"
+                    src="/images/programmes/tfd/JKKN B.Sc Textile and Fashion Designing.png"
                     alt="Fashion Design"
                     className="w-full h-auto"
                   />
-                  <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
+                  {/* <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
                     Since 1954
-                  </span>
+                  </span> */}
                 </div>
               </RevealSection>
             </div>
@@ -642,45 +643,103 @@ export default function BSCTextileFashionDesigningPage() {
         {/* Why Choose JKKN */}
         <section className="py-16 bg-brand-cream">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
               <RevealSection>
-                <div className="text-center mb-12">
-                  <SectionBadge text="Why JKKN" />
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                    Why Choose JKKN for{' '}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                      Fashion Design?
-                    </span>
-                  </h2>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[500px]">
+                  <Image
+                    src="/images/programmes/Campus Life.png"
+                    alt="Campus Life at JKKN"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </RevealSection>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {[
-                  { icon: <Users className="w-6 h-6 text-white" />, title: 'Industry-Experienced Learning Facilitators', description: 'Learn from faculty with extensive experience in fashion design, textile technology, and industry practices' },
-                  { icon: <Building2 className="w-6 h-6 text-white" />, title: 'Strong Industry Partnerships', description: 'Collaborations with leading fashion brands, textile manufacturers, and export houses for internships and placements' },
-                  { icon: <Sparkles className="w-6 h-6 text-white" />, title: 'Annual Fashion Shows', description: 'Showcase your creativity through college fashion shows, exhibitions, and participation in national design competitions' },
-                  { icon: <Globe className="w-6 h-6 text-white" />, title: 'Global Design Exposure', description: 'Access to international fashion trends, guest lectures from industry experts, and exposure to global design practices' },
-                  { icon: <TrendingUp className="w-6 h-6 text-white" />, title: 'Entrepreneurship Support', description: 'Incubation facilities and mentorship for students aspiring to launch their own fashion labels and businesses' },
-                  { icon: <Award className="w-6 h-6 text-white" />, title: 'NAAC Accreditation', description: 'Quality-assured education with government recognition and industry partnerships ensuring excellent learning outcomes' }
-                ].map((reason, idx) => (
-                  <RevealSection key={idx} delay={idx * 100}>
-                    <GlassCard className="p-6 group h-full">
-                      <div className="w-12 h-12 bg-gradient-to-br from-brand-green to-emerald-500 rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-brand-green/20 group-hover:shadow-brand-green/30 transition-shadow">
+              <RevealSection delay={200}>
+                <SectionBadge text="Why JKKN" />
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                  Why Choose JKKN for{' '}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
+                    Fashion Design?
+                  </span>
+                </h2>
+
+                <div className="space-y-4">
+                  {[
+                    { icon: <Users className="w-6 h-6" />, title: 'Industry-Experienced Learning Facilitators', description: 'Learn from faculty with extensive experience in fashion design, textile technology, and industry practices' },
+                    { icon: <Building2 className="w-6 h-6" />, title: 'Strong Industry Partnerships', description: 'Collaborations with leading fashion brands, textile manufacturers, and export houses for internships and placements' },
+                    { icon: <Sparkles className="w-6 h-6" />, title: 'Annual Fashion Shows', description: 'Showcase your creativity through college fashion shows, exhibitions, and participation in national design competitions' },
+                    { icon: <Globe className="w-6 h-6" />, title: 'Global Design Exposure', description: 'Access to international fashion trends, guest lectures from industry experts, and exposure to global design practices' },
+                    { icon: <TrendingUp className="w-6 h-6" />, title: 'Entrepreneurship Support', description: 'Incubation facilities and mentorship for students aspiring to launch their own fashion labels and businesses' },
+                    { icon: <Award className="w-6 h-6" />, title: 'NAAC Accreditation', description: 'Quality-assured education with government recognition and industry partnerships ensuring excellent learning outcomes' }
+                  ].map((reason, idx) => (
+                    <div key={idx} className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-white/40 backdrop-blur-xl rounded-lg flex items-center justify-center flex-shrink-0 border border-white/60 text-brand-green">
                         {reason.icon}
                       </div>
-                      <h3 className="text-lg font-bold text-brand-green mb-2">{reason.title}</h3>
-                      <p className="text-gray-600 text-sm">{reason.description}</p>
-                    </GlassCard>
-                  </RevealSection>
+                      <div>
+                        <h4 className="text-lg font-bold text-brand-green mb-2">{reason.title}</h4>
+                        <p className="text-gray-600 text-sm leading-relaxed">{reason.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </RevealSection>
+            </div>
+          </div>
+        </section>
+
+        {/* Faculty Section */}
+        <section className="py-16 bg-white" id="faculty">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <RevealSection>
+                <div className="text-center mb-12">
+                  <SectionBadge text="Faculty" />
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Our Learning{' '}
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
+                      Facilitators
+                    </span>
+                  </h2>
+                  <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Meet our experienced and dedicated department team
+                  </p>
+                </div>
+              </RevealSection>
+
+              <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
+                {[
+                  { name: 'Mr. G.Arulkumar', designation: 'Head of Department', qualification: ' M.Sc.,PGDCA.,', image: '/images/programmes/tfd/Mr.-G.Arulkumar-300x199 (1).png' },
+                  { name: 'Mrs. S.Sri Tharunya', designation: 'Assistant Professor', qualification: 'M.Sc.,', image: '/images/programmes/tfd/Mrs.-S.Sri-Tharunya-300x199 (1).png' },
+                  { name: 'Mrs. R.Sindhupriyadharshini', designation: 'Assistant Professor', qualification: 'M.Sc.,', image: '/images/programmes/tfd/Mrs.-R.Sindhupriyadharshini-300x199 (2).png' },
+                  { name: 'Mrs.Keerthika', designation: 'Assistant Professor', qualification: 'M.SC (T&FD)', image: '/images/programmes/tfd/MRS.KEERTHIKA-300x199 (1).png' },
+                  { name: 'Ms.K.Krishnapriya', designation: 'Assistant Professor', qualification: 'B.SC (T&FD)', image: '/images/programmes/tfd/MS.K.KRISHNAPRIYA-300x199 (1).png' }
+                ].map((faculty, idx) => (
+                  <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
+                    <div className="relative h-56 overflow-hidden flex-shrink-0">
+                      <Image
+                        src={faculty.image || '/images/faculties/placeholder-avatar.jpg'}
+                        alt={faculty.name}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-brand-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div className="p-5 text-center flex-1 flex flex-col justify-center">
+                      <h4 className="text-lg font-bold text-brand-green mb-1">{faculty.name}</h4>
+                      <p className="text-sm font-semibold text-emerald-500 mb-1">{faculty.designation}</p>
+                      <p className="text-xs text-gray-600">{faculty.qualification}</p>
+                    </div>
+                  </div>
                 ))}
-              </div>
+              </Marquee>
             </div>
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-white" id="faq">
+        <section className="py-16 bg-brand-cream" id="faq">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <RevealSection>

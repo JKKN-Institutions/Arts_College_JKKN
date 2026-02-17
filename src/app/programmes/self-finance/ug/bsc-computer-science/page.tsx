@@ -130,7 +130,7 @@ export default function BScComputerSciencePage() {
               </div>
 
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="#admission" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                   Apply Now
                   <ArrowRight className="w-4 h-4" />
                 </a>
@@ -200,13 +200,13 @@ export default function BScComputerSciencePage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=Computer+Science+Lab"
+                  src="/images/faculties/self/cs/JKKN B.Sc Computer Science.png"
                   alt="Computer Science Laboratory"
                   className="w-full h-auto"
                 />
-                <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
+                {/* <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
                   Since 1954
-                </span>
+                </span> */}
               </div>
             </RevealSection>
           </div>
@@ -411,11 +411,28 @@ export default function BScComputerSciencePage() {
                 {[
                   {
                     title: 'Semester V',
-                    subjects: ['Core Courses including Project / Elective Based 22 26', 'Value Education 2 2', 'Internship / Industrial Visit / Field Visit']
+                    subjects: [
+                      '23UCSCC05 - CC9 - Software Engineering',
+                      '23UCSCC06 - CC10 - Database Management System',
+                      '23UCSCCP05 - CC11 - Practical: Database Management System Lab',
+                      'Elective Course - EC5 (Discipline Specific)',
+                      'Elective Course - EC6 (Discipline Specific)',
+                      '23UCSCCPR1 - CC12 - Project with Viva voce',
+                      'Value Education',
+                      'Internship / Industrial Training'
+                    ]
                   },
                   {
                     title: 'Semester VI',
-                    subjects: ['Core Courses including Project / Elective Based & LAB', 'Extension Activity', 'Professional Competency Skill']
+                    subjects: [
+                      '23UCSCC07 - CC13 - Computer Networks',
+                      '23UCSCC08 - CC14 - .NET Programming',
+                      '23UCSCCP06 - CC15 - Practical: .NET Programming Lab',
+                      'Elective Course – EC7 (Discipline Specific)',
+                      'Elective Course – EC8 (Discipline Specific)',
+                      'Skill Enhancement Course - SEC8',
+                      'Extension Activity'
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -602,34 +619,13 @@ export default function BScComputerSciencePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <RevealSection>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="https://placehold.co/600x500/0b6d41/FFFFFF?text=Campus+Life"
-                  alt="Campus Life"
-                  className="w-full h-auto"
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[500px]">
+                <Image
+                  src="/images/programmes/Campus Life.png"
+                  alt="Campus Life at JKKN"
+                  fill
+                  className="object-cover"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-green/95 to-transparent p-8">
-                  <div className="grid grid-cols-3 gap-4 text-center text-white">
-                    <div>
-                      <h4 className="text-3xl font-bold text-emerald-300 mb-1">
-                        <CountUp end={70} suffix="+" />
-                      </h4>
-                      <p className="text-xs">Years of Excellence</p>
-                    </div>
-                    <div>
-                      <h4 className="text-3xl font-bold text-emerald-300 mb-1">
-                        <CountUp end={5000} suffix="+" />
-                      </h4>
-                      <p className="text-xs">Active Learners</p>
-                    </div>
-                    <div>
-                      <h4 className="text-3xl font-bold text-emerald-300 mb-1">
-                        <CountUp end={500} suffix="+" />
-                      </h4>
-                      <p className="text-xs">Learning Facilitators</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </RevealSection>
 

@@ -179,18 +179,11 @@ const LIBRARY_RESOURCES: LibraryResource[] = [
 const STAFF_MEMBERS: StaffMember[] = [
   {
     sno: 1,
-    name: 'Dr. S. Nandhini',
+    name: 'Dr. S. Sasikala',
     designation: 'Librarian',
-    qualification: 'M.L.I.Sc., M.Phil., Ph.D.',
+    qualification: 'B.Com., M.L.I.S., Ph.D.,PGDLAN., NET',
     contact: 'nandhini@jkkncas.ac.in',
-  },
-  {
-    sno: 2,
-    name: 'Ms. R. Priya',
-    designation: 'Assistant Librarian',
-    qualification: 'M.L.I.Sc.',
-    contact: 'priya@jkkncas.ac.in',
-  },
+  }
 ];
 
 export default function LibraryPage() {

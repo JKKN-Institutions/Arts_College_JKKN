@@ -2358,7 +2358,7 @@ export default function Navigation() {
               )}
             </div>
 
-            <Link href="#" className="text-gray-700 hover:text-brand-green transition font-bold uppercase hover:underline text-sm">
+            <Link href="/contact" className="text-gray-700 hover:text-brand-green transition font-bold uppercase hover:underline text-sm">
               Contact
             </Link>
           </div>
@@ -3514,7 +3514,7 @@ export default function Navigation() {
               </div>
 
               <Link
-                href="#"
+                href="/contact"
                 onClick={toggleMobileMenu}
                 className="block py-3 px-4 text-gray-700 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
               >

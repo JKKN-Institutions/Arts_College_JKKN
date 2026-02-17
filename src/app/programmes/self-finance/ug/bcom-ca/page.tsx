@@ -216,6 +216,36 @@ export default function BComCAPage() {
           ]
         }
       ]
+    },
+    3: {
+      year: "Third Year",
+      semesters: [
+        {
+          semester: "Semester V",
+          subjects: [
+            { code: "23UCC08", name: "Cost Accounting - I" },
+            { code: "23UCC09", name: "Banking Law and Practice" },
+            { code: "23UCC10", name: "Income Tax Law and Practice - I" },
+            { code: "23UCCE02", name: "Indirect Taxation" },
+            { code: "23UCCEP07", name: "Software Engineer UML Lab" },
+            { code: "23UCCIT1", name: "Internship Training" },
+            { code: "NMAST51", name: "Accounting and Trading Essentials Employment" },
+            { code: "23UVE01", name: "Yoga for Human Excellence" },
+            { code: "23UCCPR1", name: "Project Viva Voce" }
+          ]
+        },
+        {
+          semester: "Semester VI",
+          subjects: [
+            { code: "", name: "Cost Accounting" },
+            { code: "", name: "Management Accounting" },
+            { code: "", name: "Income Tax Law and Practice" },
+            { code: "", name: "Human Resources Management" },
+            { code: "", name: "General Awareness for Competitive Examinations" },
+            { code: "", name: "Tally Practicals" }
+          ]
+        }
+      ]
     }
   };
 
@@ -271,11 +301,11 @@ export default function BComCAPage() {
               <div className="flex flex-wrap justify-center gap-4 mb-8">
                 <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/80 text-gray-900">
                   <Clock className="w-5 h-5 text-brand-green" />
-                  <span>2 Years Duration</span>
+                  <span>3 Years Duration</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/80 text-gray-900">
                   <BookOpen className="w-5 h-5 text-brand-green" />
-                  <span>4 Semesters</span>
+                  <span>6 Semesters</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/80 text-gray-900">
                   <Users className="w-5 h-5 text-brand-green" />
@@ -284,7 +314,7 @@ export default function BComCAPage() {
               </div>
 
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="#admission" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                   Apply Now
                   <ArrowRight className="w-4 h-4" />
                 </a>
@@ -367,7 +397,7 @@ export default function BComCAPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Bachelor of Commerce in Computer Application is a comprehensive two-year undergraduate programme designed to provide learners with in-depth knowledge of financial accounting, corporate finance, taxation, auditing, and financial management integrated with advanced computer applications. This UGC-recognized programme offers a perfect blend of theoretical foundations and practical business experience, preparing graduates for diverse career pathways in the financial and technology sectors.
+                The Bachelor of Commerce in Computer Application is a comprehensive three-year undergraduate programme designed to provide learners with in-depth knowledge of financial accounting, corporate finance, taxation, auditing, and financial management integrated with advanced computer applications. This UGC-recognized programme offers a perfect blend of theoretical foundations and practical business experience, preparing graduates for diverse career pathways in the financial and technology sectors.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy ensures that learners develop analytical thinking, professional competence, and ethical values through experiential learning. The curriculum integrates classical accounting principles with modern financial technologies including Tally, SAP, and financial modeling software, equipping graduates with skills demanded by accounting firms, banks, corporations, and financial institutions.
@@ -386,15 +416,12 @@ export default function BComCAPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/programmes/bcom-ca-hero.jpg"
+                  src="/images/faculties/self/bcomca/JKKN B.Com CA (1).png"
                   alt="Commerce Computer Lab"
                   width={600}
                   height={450}
                   className="w-full h-auto object-cover"
                 />
-                <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                  Since 1954
-                </span>
               </div>
             </RevealSection>
           </div>
@@ -478,7 +505,7 @@ export default function BComCAPage() {
             <div className="max-w-6xl mx-auto">
               {/* Year Selector */}
               <div className="flex flex-wrap justify-center gap-4 mb-12">
-                {[1, 2].map((year) => (
+                {[1, 2, 3].map((year) => (
                   <button
                     key={year}
                     onClick={() => setActiveYear(year)}
@@ -858,15 +885,13 @@ export default function BComCAPage() {
             <div className="max-w-6xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left Side */}
-                <div className="relative">
-                  <GlassCard className="p-16 min-h-[500px] flex items-center justify-center bg-gradient-to-br from-brand-green/90 to-emerald-600/90" hover={false}>
-                    <div className="text-center">
-                      <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
-                        Why Choose JKKN
-                      </h3>
-                      <div className="w-24 h-1.5 bg-white/80 mx-auto rounded-full"></div>
-                    </div>
-                  </GlassCard>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[500px]">
+                  <Image
+                    src="/images/programmes/Campus Life.png"
+                    alt="Campus Life at JKKN"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
 
                 {/* Right Side */}
@@ -1070,10 +1095,10 @@ export default function BComCAPage() {
                 Join JKKN's B.Com CA programme and build a successful career in accounting, finance, and technology
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <button className="group bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1 flex items-center gap-2">
+                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="group bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1 flex items-center gap-2">
                   Apply Now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
                 <button className="bg-white border-2 border-brand-green hover:bg-brand-green text-brand-green hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1">
                   Schedule Campus Visit
                 </button>

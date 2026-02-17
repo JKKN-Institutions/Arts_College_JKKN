@@ -124,6 +124,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
           { label: 'BCA', href: '/programmes/self-finance/ug/bca' },
           { label: 'B.Sc. IT', href: '/programmes/self-finance/ug/bsc-it' },
           { label: 'B.Sc. CS', href: '/programmes/self-finance/ug/bsc-cs' },
+          { label: 'B.Sc. AI & DS', href: '/programmes/self-finance/ug/bsc-ai-ds' },
           { label: 'B.Com CA', href: '/programmes/self-finance/ug/bcom-ca' },
         ],
       },
@@ -251,6 +252,13 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     ],
   },
 
+  // Contact - Simple link
+  {
+    id: 'contact',
+    label: 'Contact',
+    href: '/contact',
+  },
+
   // More - Mega Dropdown
   {
     id: 'more',
@@ -292,16 +300,6 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
           {
             label: 'NIRF 2025',
             href: '/documents/nirf/NIRF-2025-COLLEGE.pdf',
-          },
-        ],
-      },
-      {
-        id: 'contact',
-        label: 'Contact',
-        items: [
-          {
-            label: 'Contact Us',
-            href: '/contact',
           },
         ],
       },

@@ -160,7 +160,7 @@ export default function BScPhysicsPage() {
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-4">
-                  <a href="#admission" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                  <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                     Apply Now
                     <ArrowRight className="w-4 h-4" />
                   </a>
@@ -230,13 +230,13 @@ export default function BScPhysicsPage() {
               <RevealSection className="lg:col-span-2" delay={200}>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="https://placehold.co/600x450/0b6d41/FFFFFF?text=Physics+Laboratory"
+                    src="/images/faculties/self/physics/JKKN B.Sc Physics.png"
                     alt="Physics Laboratory"
                     className="w-full h-auto"
                   />
-                  <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
+                  {/* <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
                     Since 1954
-                  </span>
+                  </span> */}
                 </div>
               </RevealSection>
             </div>
@@ -663,45 +663,101 @@ export default function BScPhysicsPage() {
         {/* Why Choose JKKN */}
         <section className="py-16 bg-brand-cream">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
               <RevealSection>
-                <div className="text-center mb-12">
-                  <SectionBadge text="Why JKKN" />
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                    Why Choose Our{' '}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                      B.Sc Physics Programme?
-                    </span>
-                  </h2>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[500px]">
+                  <Image
+                    src="/images/programmes/Campus Life.png"
+                    alt="Campus Life at JKKN"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </RevealSection>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {[
-                  { icon: <GraduationCap className="w-6 h-6 text-white" />, title: 'Expert Learning Facilitators', description: 'Learn from experienced faculty with doctoral degrees and active research in specialized physics fields.' },
-                  { icon: <Microscope className="w-6 h-6 text-white" />, title: 'Research-Oriented Learning', description: 'Engage in research projects with collaboration opportunities with national laboratories like ISRO and DRDO.' },
-                  { icon: <Briefcase className="w-6 h-6 text-white" />, title: 'Excellent Placement Support', description: 'Strong industry connections ensuring placement opportunities in leading technology and research organizations.' },
-                  { icon: <FlaskConical className="w-6 h-6 text-white" />, title: 'Modern Infrastructure', description: 'Access to well-equipped laboratories, computational facilities, and latest scientific instruments.' },
-                  { icon: <TrendingUp className="w-6 h-6 text-white" />, title: 'Higher Education Pathways', description: 'Strong foundation for M.Sc Physics, integrated PhD programmes, and competitive exams like IIT-JAM, GATE, and CSIR-NET,M.Sc. Electronics,M.Sc. NanoScience,MBA,MCA,AstroPhysics,M.Sc. Medical Physics.' },
-                  { icon: <Award className="w-6 h-6 text-white" />, title: 'NAAC Accreditation', description: 'Quality-assured education with government recognition and industry partnerships ensuring excellent learning outcomes.' }
-                ].map((reason, idx) => (
-                  <RevealSection key={idx} delay={idx * 100}>
-                    <GlassCard className="p-6 group h-full">
-                      <div className="w-12 h-12 bg-gradient-to-br from-brand-green to-emerald-500 rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-brand-green/20 group-hover:shadow-brand-green/30 transition-shadow">
+              <RevealSection delay={200}>
+                <SectionBadge text="Why JKKN" />
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                  Why Choose Our{' '}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
+                    B.Sc Physics Programme?
+                  </span>
+                </h2>
+
+                <div className="space-y-4">
+                  {[
+                    { icon: <GraduationCap className="w-6 h-6" />, title: 'Expert Learning Facilitators', description: 'Learn from experienced faculty with doctoral degrees and active research in specialized physics fields.' },
+                    { icon: <Microscope className="w-6 h-6" />, title: 'Research-Oriented Learning', description: 'Engage in research projects with collaboration opportunities with national laboratories like ISRO and DRDO.' },
+                    { icon: <Briefcase className="w-6 h-6" />, title: 'Excellent Placement Support', description: 'Strong industry connections ensuring placement opportunities in leading technology and research organizations.' },
+                    { icon: <FlaskConical className="w-6 h-6" />, title: 'Modern Infrastructure', description: 'Access to well-equipped laboratories, computational facilities, and latest scientific instruments.' },
+                    { icon: <TrendingUp className="w-6 h-6" />, title: 'Higher Education Pathways', description: 'Strong foundation for M.Sc Physics, integrated PhD programmes, and competitive exams like IIT-JAM, GATE, and CSIR-NET,M.Sc. Electronics,M.Sc. NanoScience,MBA,MCA,AstroPhysics,M.Sc. Medical Physics.' },
+                    { icon: <Award className="w-6 h-6" />, title: 'NAAC Accreditation', description: 'Quality-assured education with government recognition and industry partnerships ensuring excellent learning outcomes.' }
+                  ].map((reason, idx) => (
+                    <div key={idx} className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-white/40 backdrop-blur-xl rounded-lg flex items-center justify-center flex-shrink-0 border border-white/60 text-brand-green">
                         {reason.icon}
                       </div>
-                      <h3 className="text-lg font-bold text-brand-green mb-2">{reason.title}</h3>
-                      <p className="text-gray-600 text-sm">{reason.description}</p>
-                    </GlassCard>
-                  </RevealSection>
+                      <div>
+                        <h4 className="text-lg font-bold text-brand-green mb-2">{reason.title}</h4>
+                        <p className="text-gray-600 text-sm leading-relaxed">{reason.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </RevealSection>
+            </div>
+          </div>
+        </section>
+
+        {/* Faculty Section */}
+        <section className="py-16 bg-white" id="faculty">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <RevealSection>
+                <div className="text-center mb-12">
+                  <SectionBadge text="Faculty" />
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Our Learning{' '}
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
+                      Facilitators
+                    </span>
+                  </h2>
+                  <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Meet our experienced and dedicated Physics faculty members
+                  </p>
+                </div>
+              </RevealSection>
+
+              <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
+                {[
+                  { name: 'Dr. N. Latha', designation: 'Assistant Professor', qualification: 'M.Sc., M.Phil., Ph.D., B.Ed.', image: '/images/faculties/self/physics/Dr.N.LATHA_-300x199.png' },
+                  { name: 'Mr. K. Dinesh', designation: 'Assistant Professor', qualification: 'M.Sc., B.Ed., PGDCA., D.Yoga., (PhD)', image: '/images/faculties/self/physics/Mr.K.DINESH-300x199.png' },
+                  { name: 'Mr. V. Yasodharan', designation: 'Assistant Professor', qualification: 'M.Sc., B.Ed., PGDCA., D.Yoga.', image: '/images/faculties/self/physics/Mr.V.YASODHARAN-300x199.png' }
+                ].map((faculty, idx) => (
+                  <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
+                    <div className="relative h-56 overflow-hidden flex-shrink-0">
+                      <Image
+                        src={faculty.image || '/images/faculties/placeholder-avatar.jpg'}
+                        alt={faculty.name}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-brand-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div className="p-5 text-center flex-1 flex flex-col justify-center">
+                      <h4 className="text-lg font-bold text-brand-green mb-1">{faculty.name}</h4>
+                      <p className="text-sm font-semibold text-emerald-500 mb-1">{faculty.designation}</p>
+                      <p className="text-xs text-gray-600">{faculty.qualification}</p>
+                    </div>
+                  </div>
                 ))}
-              </div>
+              </Marquee>
             </div>
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-white" id="faq">
+        <section className="py-16 bg-brand-cream" id="faq">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <RevealSection>

@@ -58,9 +58,8 @@ function RevealSection({ children, className = '', delay = 0 }: { children: Reac
   return (
     <div
       ref={ref}
-      className={`transition-all duration-1000 ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      } ${className}`}
+      className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        } ${className}`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
@@ -98,28 +97,22 @@ export default function BCAPage() {
   // Faculty data
   const facultyMembers = [
     {
-      name: "Dr. Rajesh Kumar",
-      designation: "HOD & Associate Professor",
-      education: "PhD in Computer Science, M.Tech (AI & ML)",
-      image: "/images/faculties/faculty-placeholder.jpg"
+      name: "Dr. M. Malathi",
+      designation: "Assistant Professor & HOD",
+      education: "M.Sc., M.Phil., Ph.D.",
+      image: "/images/faculties/self/bca/DR.M.MALATHI-300x199.png"
     },
     {
-      name: "Prof. Anitha Lakshmi",
+      name: "Mr. T. Sathes Kumar",
       designation: "Assistant Professor",
-      education: "M.C.A, M.Phil, Pursuing PhD",
-      image: "/images/faculties/faculty-placeholder.jpg"
+      education: "M.C.A., M.Phil.",
+      image: "/images/faculties/self/bca/Mr.T.Sathes-kumar-300x199.png"
     },
     {
-      name: "Mr. Karthik Venkatesh",
+      name: "Mrs. J. Devi",
       designation: "Assistant Professor",
-      education: "M.Tech (Cloud Computing), AWS Certified",
-      image: "/images/faculties/faculty-placeholder.jpg"
-    },
-    {
-      name: "Ms. Priya Dharshini",
-      designation: "Assistant Professor",
-      education: "M.C.A, Oracle Certified Professional",
-      image: "/images/faculties/faculty-placeholder.jpg"
+      education: "M.Sc., M.Phil.",
+      image: "/images/faculties/self/bca/Mrs.J.Devi_-300x199.png"
     }
   ];
 
@@ -131,23 +124,26 @@ export default function BCAPage() {
         {
           semester: "Semester I",
           subjects: [
-            { code: "BCA101", name: "Programming in C" },
-            { code: "BCA102", name: "Digital Electronics" },
-            { code: "BCA103", name: "Computer Organization" },
-            { code: "BCA104", name: "Mathematics - I (Discrete Mathematics)" },
-            { code: "BCA105", name: "Communication Skills" },
-            { code: "BCA106", name: "Environmental Studies" }
+            { code: "24UGTA01", name: "General Tamil-I" },
+            { code: "24UGEN01", name: "General English-I" },
+            { code: "24UCAC01", name: "Python Programming" },
+            { code: "24UCACP01", name: "Python Programming Lab" },
+            { code: "24UMAGE3/6/7/9", name: "Discrete Mathematics-I / Optimization Techniques / Introduction to Linear Algebra / Numerical Methods-I" },
+            { code: "24UCSNM1", name: "Fundamentals of Information Technology" },
+            { code: "24UCAS01", name: "Structured Programming in C" }
           ]
         },
         {
           semester: "Semester II",
           subjects: [
-            { code: "BCA201", name: "Programming in C++" },
-            { code: "BCA202", name: "Data Structures" },
-            { code: "BCA203", name: "Computer Networks" },
-            { code: "BCA204", name: "Mathematics - II (Linear Algebra)" },
-            { code: "BCA205", name: "Web Technologies (HTML, CSS, JavaScript)" },
-            { code: "BCA206", name: "Financial Accounting" }
+            { code: "24UGTA02", name: "General Tamil-II" },
+            { code: "24UGEN02", name: "General English-II" },
+            { code: "24UCAC02", name: "Object Oriented Programming using C++" },
+            { code: "24UCACP02", name: "C++ Programming Lab" },
+            { code: "24UMAGE4/5/8/10", name: "Discrete Mathematics-II / Numerical Methods / Graph Theory and its Applications / Numerical Methods-II" },
+            { code: "24UMAGEP02-06", name: "Discrete Mathematics / Numerical Methods / Optimization Techniques / Introduction to Linear Algebra / Graph Theory and its Applications" },
+            { code: "24UCSNM2", name: "Advanced Excel" },
+            { code: "24UCSS02", name: "Introduction to HTML" }
           ]
         }
       ]
@@ -185,23 +181,26 @@ export default function BCAPage() {
         {
           semester: "Semester V",
           subjects: [
-            { code: "BCA501", name: "Cloud Computing (AWS, Azure)" },
-            { code: "BCA502", name: "Machine Learning & AI Fundamentals" },
-            { code: "BCA503", name: "Cyber Security & Ethical Hacking" },
-            { code: "BCA504", name: "Full Stack Development - II (React, Node.js, MongoDB)" },
-            { code: "BCA505", name: "DevOps & CI/CD (Docker, Kubernetes)" },
-            { code: "BCA506", name: "Elective - I (Blockchain / IoT / Data Science)" }
+            { code: "23UCACC05", name: "CC9 – Operating System" },
+            { code: "23UCACC06", name: "CC10 - ASP.Net Programming" },
+            { code: "23UCACCP05", name: "CC11 - Practical: ASP.Net Programming Lab" },
+            { code: "EC5", name: "Elective Course – EC5 (Discipline Specific)" },
+            { code: "EC6", name: "Elective Course – EC6 (Discipline Specific)" },
+            { code: "23UCACCPR1", name: "CC12 - Project with Viva voce" },
+            { code: "VE", name: "Value Education" },
+            { code: "IT", name: "Internship / Industrial Training" }
           ]
         },
         {
           semester: "Semester VI",
           subjects: [
-            { code: "BCA601", name: "Advanced Cloud Technologies (Serverless, Microservices)" },
-            { code: "BCA602", name: "Big Data Analytics" },
-            { code: "BCA603", name: "Project Work & Internship" },
-            { code: "BCA604", name: "Soft Skills & Interview Preparation" },
-            { code: "BCA605", name: "Elective - II (Advanced Python / React Native / Flutter)" },
-            { code: "BCA606", name: "Industry Certification Training (AWS / Azure / Google Cloud)" }
+            { code: "23UCACC07", name: "CC13 - Computer Networks" },
+            { code: "23UCACC08", name: "CC14 – Data Analytics using R Programming" },
+            { code: "23UCACCP06", name: "CC15 - Practical: R Programming Lab" },
+            { code: "EC7", name: "Elective Course – EC7 (Discipline Specific)" },
+            { code: "EC8", name: "Elective Course – EC8 (Discipline Specific)" },
+            { code: "SEC8", name: "Skill Enhancement Course - SEC8" },
+            { code: "EA", name: "Extension Activity" }
           ]
         }
       ]
@@ -289,7 +288,7 @@ export default function BCAPage() {
               </div>
 
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="#admission" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                   Apply Now
                   <ArrowRight className="w-4 h-4" />
                 </a>
@@ -303,7 +302,7 @@ export default function BCAPage() {
       </section>
 
       {/* Quick Stats Section */}
-      <section className="py-16 bg-white relative">
+      {/* <section className="py-16 bg-white relative">
         <div className="container mx-auto px-4 md:px-6">
           <RevealSection>
             <div className="max-w-6xl mx-auto">
@@ -336,7 +335,7 @@ export default function BCAPage() {
             </div>
           </RevealSection>
         </div>
-      </section>
+      </section> */}
 
       {/* Programme Overview */}
       <section className="py-16 bg-brand-cream">
@@ -370,15 +369,15 @@ export default function BCAPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/programmes/bca-hero.jpg"
+                  src="/images/programmes/bca/JKKN BCA.png"
                   alt="BCA Computer Lab"
                   width={600}
                   height={450}
                   className="w-full h-auto object-cover"
                 />
-                <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
+                {/* <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
                   Since 1954
-                </span>
+                </span> */}
               </div>
             </RevealSection>
           </div>
@@ -469,11 +468,10 @@ export default function BCAPage() {
                   <button
                     key={year}
                     onClick={() => setActiveYear(year)}
-                    className={`px-8 py-3 rounded-xl font-semibold transition-all ${
-                      activeYear === year
-                        ? 'bg-brand-green text-white shadow-xl shadow-brand-green/25 scale-105'
-                        : 'bg-white/60 backdrop-blur-sm text-gray-700 hover:bg-white/80 border border-gray-200'
-                    }`}
+                    className={`px-8 py-3 rounded-xl font-semibold transition-all ${activeYear === year
+                      ? 'bg-brand-green text-white shadow-xl shadow-brand-green/25 scale-105'
+                      : 'bg-white/60 backdrop-blur-sm text-gray-700 hover:bg-white/80 border border-gray-200'
+                      }`}
                   >
                     {curriculum[year as keyof typeof curriculum].year}
                   </button>
@@ -848,15 +846,13 @@ export default function BCAPage() {
             <div className="max-w-6xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left Side - Image/Graphic Box */}
-                <div className="relative">
-                  <GlassCard className="p-16 min-h-[500px] flex items-center justify-center bg-gradient-to-br from-brand-green/90 to-emerald-600/90" hover={false}>
-                    <div className="text-center">
-                      <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
-                        Why Choose JKKN
-                      </h3>
-                      <div className="w-24 h-1.5 bg-white/80 mx-auto rounded-full"></div>
-                    </div>
-                  </GlassCard>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[500px]">
+                  <Image
+                    src="/images/programmes/Campus Life.png"
+                    alt="Campus Life at JKKN"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
 
                 {/* Right Side - Content */}
@@ -1034,15 +1030,13 @@ export default function BCAPage() {
                   >
                     <h3 className="font-semibold text-brand-green pr-4">{faq.question}</h3>
                     <ChevronDown
-                      className={`w-5 h-5 text-brand-green flex-shrink-0 transition-transform ${
-                        activeFAQ === index ? 'rotate-180' : ''
-                      }`}
+                      className={`w-5 h-5 text-brand-green flex-shrink-0 transition-transform ${activeFAQ === index ? 'rotate-180' : ''
+                        }`}
                     />
                   </button>
                   <div
-                    className={`overflow-hidden transition-all duration-300 ${
-                      activeFAQ === index ? 'max-h-96' : 'max-h-0'
-                    }`}
+                    className={`overflow-hidden transition-all duration-300 ${activeFAQ === index ? 'max-h-96' : 'max-h-0'
+                      }`}
                   >
                     <div className="p-6 pt-0 text-gray-600">
                       {faq.answer}
@@ -1061,19 +1055,19 @@ export default function BCAPage() {
         <div className="container mx-auto px-4 md:px-6 text-center relative">
           <RevealSection>
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-3xl font-bold mb-6">
+              <h2 className="text-3xl md:text-3xl font-bold text-brand-green mb-6">
                 Ready to Start Your Software Development Journey?
               </h2>
-              <p className="text-xl text-emerald-50 mb-8 leading-relaxed">
+              <p className="text-xl text-black mb-8 leading-relaxed">
                 Join JKKN's BCA programme and build a successful career in software development, cloud computing, and technology innovation
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <button className="group bg-white hover:bg-brand-cream text-brand-green px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1 flex items-center gap-2">
+                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="group bg-white hover:bg-brand-cream text-brand-green px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1 flex items-center gap-2">
                   Apply Now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
-                <button className="bg-transparent border-2 border-white hover:bg-white hover:text-brand-green text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1">
-                  Schedule Campus Visit
+                </a>
+                <button className="bg-transparent   bg-white hover:bg-brand-cream text-brand-green px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1">
+                  Download Brochure
                 </button>
               </div>
             </div>

@@ -65,6 +65,34 @@ export default function BBAPage() {
   const [activeYear, setActiveYear] = useState(1);
   const [activeFAQ, setActiveFAQ] = useState(0);
 
+  // Faculty data
+  const facultyMembers = [
+    {
+      name: "Mrs. M. Umarani",
+      designation: "Assistant Professor",
+      education: "M.Com., MBA., M.Phil.",
+      image: "/images/faculties/self/bba/Mrs.M.Umarani-300x199.png"
+    },
+    {
+      name: "Mrs. P. Mathiananthi",
+      designation: "Assistant Professor",
+      education: "MBA.",
+      image: "/images/faculties/self/bba/Mrs.P.Mathiananthi-300x199.png"
+    },
+    {
+      name: "Mr. A. K. Prithiviraja",
+      designation: "Assistant Professor",
+      education: "MBA., M.Phil.",
+      image: "/images/faculties/self/bba/Mr.A.K.Prithiviraja-300x199.png"
+    },
+    {
+      name: "Mr. A. Jegadishkumar",
+      designation: "Assistant Professor",
+      education: "M.Com., B.Ed., MBA.",
+      image: "/images/faculties/self/bba/Mr.A.Jegadishkumar-300x199 (1).png"
+    }
+  ];
+
   const faqs = [
     {
       question: "What is the duration of the BBA programme?",
@@ -156,7 +184,7 @@ export default function BBAPage() {
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-4">
-                  <a href="#admission" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                  <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                     Apply Now
                     <ArrowRight className="w-4 h-4" />
                   </a>
@@ -225,14 +253,14 @@ export default function BBAPage() {
 
               <RevealSection className="lg:col-span-2" delay={200}>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                  <img
-                    src="https://placehold.co/600x450/0b6d41/FFFFFF?text=Business+Administration"
-                    alt="Business Administration"
-                    className="w-full h-auto"
+                  <Image
+                    src="/images/faculties/self/bba/JKKN BBA.png"
+                    alt="BBA - Business Administration Programme"
+                    width={600}
+                    height={450}
+                    className="w-full h-auto object-cover"
+                    priority
                   />
-                  <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                    Since 1954
-                  </span>
                 </div>
               </RevealSection>
             </div>
@@ -271,24 +299,9 @@ export default function BBAPage() {
                     items: ['General Category: 50% aggregate', 'OBC Category: 45% aggregate', 'SC/ST Category: 40% aggregate', 'Differently Abled: 40% aggregate']
                   },
                   {
-                    icon: <UserCheck className="w-8 h-8 text-white" />,
-                    title: 'Age Criteria',
-                    items: ['No upper age limit for admission', 'Candidates must have completed 17 years of age as on December 31st of the admission year']
-                  },
-                  {
                     icon: <FileText className="w-8 h-8 text-white" />,
                     title: 'Required Documents',
                     items: ['10th & 12th Mark Sheets & Certificates', 'Transfer Certificate (TC)', 'Community Certificate (if applicable)', 'Passport Size Photographs']
-                  },
-                  {
-                    icon: <Calendar className="w-8 h-8 text-white" />,
-                    title: 'Admission Process',
-                    items: ['Online/Offline Application Submission', 'Merit-based Selection Process', 'Personal Interview (if required)', 'Document Verification & Enrollment']
-                  },
-                  {
-                    icon: <DollarSign className="w-8 h-8 text-white" />,
-                    title: 'Scholarships Available',
-                    items: ['Merit Scholarships (Top 10%)', 'Government Scholarships', 'Financial Aid for EWS', 'Sports Quota Benefits']
                   }
                 ].map((card, idx) => (
                   <RevealSection key={idx} delay={idx * 100}>
@@ -355,23 +368,25 @@ export default function BBAPage() {
                     {
                       title: 'Semester I',
                       subjects: [
-                        { name: 'Principles of Management', code: 'BBA101' },
-                        { name: 'Business Economics', code: 'BBA102' },
-                        { name: 'Financial Accounting', code: 'BBA103' },
-                        { name: 'Business Communication', code: 'BBA104' },
-                        { name: 'Business Mathematics', code: 'BBA105' },
-                        { name: 'Computer Applications for Business', code: 'BBA106' }
+                        { name: 'General Tamil - I', code: '24UGTA01' },
+                        { name: 'General English – I', code: '24UGEN01' },
+                        { name: 'Principles of Management', code: '24UBAC01' },
+                        { name: 'Accounting for Managers I', code: '24UBAC02' },
+                        { name: 'Managerial Economics', code: '24UECGE3' },
+                        { name: 'Basics of Event Management', code: '24UBANM1' },
+                        { name: 'Managerial Communication', code: '24UBAS01' }
                       ]
                     },
                     {
                       title: 'Semester II',
                       subjects: [
-                        { name: 'Organizational Behaviour', code: 'BBA201' },
-                        { name: 'Business Environment', code: 'BBA202' },
-                        { name: 'Cost Accounting', code: 'BBA203' },
-                        { name: 'Business Statistics', code: 'BBA204' },
-                        { name: 'Environmental Studies', code: 'EVS201' },
-                        { name: 'Professional Communication Skills', code: 'BBA206' }
+                        { name: 'General Tamil – II', code: '24UGTA02' },
+                        { name: 'General English – II', code: '24UGEN02' },
+                        { name: 'Marketing Management', code: '24UBAC03' },
+                        { name: 'Accounting for Managers - II', code: '24UBAC04' },
+                        { name: 'International Business', code: '24UECGE5' },
+                        { name: 'Managerial Skill Development', code: '24UBANM2' },
+                        { name: 'Business Etiquette and Corporate Grooming', code: '24UBAS02' }
                       ]
                     }
                   ].map((sem, idx) => (
@@ -405,23 +420,28 @@ export default function BBAPage() {
                     {
                       title: 'Semester III',
                       subjects: [
-                        { name: 'Marketing Management', code: 'BBA301' },
-                        { name: 'Human Resource Management', code: 'BBA302' },
-                        { name: 'Financial Management', code: 'BBA303' },
-                        { name: 'Production & Operations Management', code: 'BBA304' },
-                        { name: 'Business Law', code: 'BBA305' },
-                        { name: 'Management Information Systems', code: 'BBA306' }
+                        { name: 'General Tamil - III', code: '24UGTA03' },
+                        { name: 'General English - III', code: '24UGENO3' },
+                        { name: 'Organizational Behaviour', code: '24UBACO5' },
+                        { name: 'Financial Management', code: '24UBACO6' },
+                        { name: 'Business Statistics', code: '24UBADE1' },
+                        { name: 'Computer Application in Business - Practical', code: '24UBASP01' },
+                        { name: 'Business Entrepreneurial Skill New Venture Management', code: '24UBAS03' },
+                        { name: 'Environmental Studies', code: '24UEVS01' },
+                        { name: 'Health & Wellness', code: '24UHAWP01' }
                       ]
                     },
                     {
                       title: 'Semester IV',
                       subjects: [
-                        { name: 'Consumer Behaviour & Marketing Research', code: 'BBA401' },
-                        { name: 'Training & Development', code: 'BBA402' },
-                        { name: 'Investment Management', code: 'BBA403' },
-                        { name: 'Supply Chain Management', code: 'BBA404' },
-                        { name: 'Corporate Law', code: 'BBA405' },
-                        { name: 'Summer Internship Project', code: 'BBA406P' }
+                        { name: 'General Tamil - IV', code: '24UGTA04' },
+                        { name: 'General English - IV', code: '24UGENO4' },
+                        { name: 'Business Environment', code: '24UBACO7' },
+                        { name: 'Business Regulatory Frame Work', code: '24UBACO8' },
+                        { name: 'Operations Research', code: '24UBADE2' },
+                        { name: 'Tally Practical', code: '24UBASP02' },
+                        { name: 'Intellectual Property Rights', code: '24UBAS04' },
+                        { name: 'Environmental Studies', code: '24UEVS01' }
                       ]
                     }
                   ].map((sem, idx) => (
@@ -436,9 +456,9 @@ export default function BBAPage() {
                               <li key={i} className="flex items-center justify-between text-gray-700">
                                 <div className="flex items-start gap-2">
                                   <span className="text-emerald-500 mt-1">•</span>
-                                  <span>{subject.name}</span>
+                                  <span className="text-sm">{subject.name}</span>
                                 </div>
-                                <span className="text-brand-green font-semibold text-sm ml-2">{subject.code}</span>
+                                <span className="text-brand-green font-semibold text-xs ml-2 whitespace-nowrap">{subject.code}</span>
                               </li>
                             ))}
                           </ul>
@@ -455,23 +475,31 @@ export default function BBAPage() {
                     {
                       title: 'Semester V',
                       subjects: [
-                        { name: 'Strategic Management', code: 'BBA501' },
-                        { name: 'Entrepreneurship Development', code: 'BBA502' },
-                        { name: 'Business Analytics', code: 'BBA503' },
-                        { name: 'International Business Management', code: 'BBA504' },
-                        { name: 'Digital Marketing', code: 'BBA505' },
-                        { name: 'Elective: Banking & Insurance / Retail Management', code: 'BBA506E' }
+                        { name: 'Human Resource Management', code: '24UBAC09' },
+                        { name: 'Research Methodology', code: '24UBAC10' },
+                        { name: 'Business Taxation', code: '24UBAC11' },
+                        { name: 'Management Information System', code: '24UBAC12' },
+                        { name: 'Digital Marketing', code: '24UBADE3' },
+                        { name: 'Industrial Relations', code: '24UBADE4' },
+                        { name: 'Financial Services', code: '24UBADE5' },
+                        { name: 'Project with Viva – Voce-Value Education', code: '24UBAPRO01' },
+                        { name: 'Summer Internship / Industrial Training', code: '24UBASI001' }
                       ]
                     },
                     {
                       title: 'Semester VI',
                       subjects: [
-                        { name: 'Corporate Governance & Ethics', code: 'BBA601' },
-                        { name: 'E-Commerce & Digital Business', code: 'BBA602' },
-                        { name: 'Business Research Methods', code: 'BBA603' },
-                        { name: 'Leadership & Change Management', code: 'BBA604' },
-                        { name: 'Project Report & Viva Voce', code: 'BBA605P' },
-                        { name: 'Elective: Event Management / Startup Ecosystem', code: 'BBA606E' }
+                        { name: 'Entrepreneurial Development', code: '24UBAC13' },
+                        { name: 'Services Marketing', code: '24UBAC14' },
+                        { name: 'Production and Materials Management', code: '24UBAC15' },
+                        { name: 'Consumer Behaviour', code: '24UBADE6' },
+                        { name: 'Innovation Management', code: '24UBADE7' },
+                        { name: 'Security Analysis & Portfolio Management', code: '24UBADE8' },
+                        { name: 'Fundamentals of Logistics', code: '24UBADE9' },
+                        { name: 'E-Business', code: '24UBADE10' },
+                        { name: 'Strategic Management', code: '24UBADE11' },
+                        { name: 'Quantitative Aptitude - I', code: '24UBAPCE001' },
+                        { name: 'Quantitative Aptitude - II', code: '24UBAPCE002' }
                       ]
                     }
                   ].map((sem, idx) => (
@@ -486,9 +514,9 @@ export default function BBAPage() {
                               <li key={i} className="flex items-center justify-between text-gray-700">
                                 <div className="flex items-start gap-2">
                                   <span className="text-emerald-500 mt-1">•</span>
-                                  <span>{subject.name}</span>
+                                  <span className="text-sm">{subject.name}</span>
                                 </div>
-                                <span className="text-brand-green font-semibold text-sm ml-2">{subject.code}</span>
+                                <span className="text-brand-green font-semibold text-xs ml-2 whitespace-nowrap">{subject.code}</span>
                               </li>
                             ))}
                           </ul>
@@ -654,45 +682,102 @@ export default function BBAPage() {
         {/* Why Choose JKKN */}
         <section className="py-16 bg-brand-cream">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
               <RevealSection>
-                <div className="text-center mb-12">
-                  <SectionBadge text="Why JKKN" />
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                    Why Choose Our{' '}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                      BBA Programme?
-                    </span>
-                  </h2>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[500px]">
+                  <Image
+                    src="/images/programmes/Campus Life.png"
+                    alt="Campus Life at JKKN"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </RevealSection>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {[
-                  { icon: <GraduationCap className="w-6 h-6 text-white" />, title: '70+ Years of Academic Excellence', description: 'Part of J.K.K. Nattraja Educational Institutions with proven legacy in progressive education since 1954.' },
-                  { icon: <CheckCircle2 className="w-6 h-6 text-white" />, title: 'Industry-Integrated Curriculum', description: 'Curriculum designed in consultation with business leaders and corporate professionals for real-world relevance.' },
-                  { icon: <Users className="w-6 h-6 text-white" />, title: 'Expert Learning Facilitators', description: 'Faculty with MBA qualifications and industry experience providing practical insights and mentorship.' },
-                  { icon: <TrendingUp className="w-6 h-6 text-white" />, title: 'Strong Placement Record', description: '90%+ placement with leading MNCs, startups, and corporate giants recruiting from campus annually.' },
-                  { icon: <Award className="w-6 h-6 text-white" />, title: 'MBA Preparation Support', description: 'In-house coaching for CAT, MAT, XAT, and other MBA entrance exams with dedicated preparation programs.' },
-                  { icon: <Briefcase className="w-6 h-6 text-white" />, title: 'Industry Internships', description: 'Mandatory internship program with leading companies providing hands-on business experience and networking opportunities.' }
-                ].map((reason, idx) => (
-                  <RevealSection key={idx} delay={idx * 100}>
-                    <GlassCard className="p-6 group h-full">
-                      <div className="w-12 h-12 bg-gradient-to-br from-brand-green to-emerald-500 rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-brand-green/20 group-hover:shadow-brand-green/30 transition-shadow">
+              <RevealSection delay={200}>
+                <SectionBadge text="Why JKKN" />
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+                  Why Choose Our{' '}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
+                    BBA Programme?
+                  </span>
+                </h2>
+
+                <div className="space-y-4">
+                  {[
+                    { icon: <GraduationCap className="w-6 h-6" />, title: '70+ Years of Academic Excellence', description: 'Part of J.K.K. Nattraja Educational Institutions with proven legacy in progressive education since 1954.' },
+                    { icon: <CheckCircle2 className="w-6 h-6" />, title: 'Industry-Integrated Curriculum', description: 'Curriculum designed in consultation with business leaders and corporate professionals for real-world relevance.' },
+                    { icon: <Users className="w-6 h-6" />, title: 'Expert Learning Facilitators', description: 'Faculty with MBA qualifications and industry experience providing practical insights and mentorship.' },
+                    { icon: <TrendingUp className="w-6 h-6" />, title: 'Strong Placement Record', description: '90%+ placement with leading MNCs, startups, and corporate giants recruiting from campus annually.' },
+                    { icon: <Award className="w-6 h-6" />, title: 'MBA Preparation Support', description: 'In-house coaching for CAT, MAT, XAT, and other MBA entrance exams with dedicated preparation programs.' },
+                    { icon: <Briefcase className="w-6 h-6" />, title: 'Industry Internships', description: 'Mandatory internship program with leading companies providing hands-on business experience and networking opportunities.' }
+                  ].map((reason, idx) => (
+                    <div key={idx} className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-white/40 backdrop-blur-xl rounded-lg flex items-center justify-center flex-shrink-0 border border-white/60 text-brand-green">
                         {reason.icon}
                       </div>
-                      <h3 className="text-lg font-bold text-brand-green mb-2">{reason.title}</h3>
-                      <p className="text-gray-600 text-sm">{reason.description}</p>
-                    </GlassCard>
-                  </RevealSection>
-                ))}
-              </div>
+                      <div>
+                        <h4 className="text-lg font-bold text-brand-green mb-2">{reason.title}</h4>
+                        <p className="text-gray-600 text-sm leading-relaxed">{reason.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </RevealSection>
+            </div>
+          </div>
+        </section>
+
+        {/* Faculty Section */}
+        <section className="py-16 bg-white" id="faculty">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <RevealSection>
+                <div className="text-center mb-12">
+                  <SectionBadge text="Our Team" />
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Expert{' '}
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
+                      Faculty Members
+                    </span>
+                  </h2>
+                  <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Learn from industry-certified professionals with expertise in business management, entrepreneurship, and corporate leadership
+                  </p>
+                </div>
+              </RevealSection>
+
+              <RevealSection>
+                <div className="max-w-7xl mx-auto">
+                  <Marquee pauseOnHover className="[--duration:40s]">
+                    {facultyMembers.map((faculty, index) => (
+                      <GlassCard key={index} className="w-80 mx-4">
+                        <div className="p-6">
+                          <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-green/20">
+                            <Image
+                              src={faculty.image}
+                              alt={faculty.name}
+                              fill
+                              className="object-cover"
+                            />
+                          </div>
+                          <div className="text-center">
+                            <h3 className="text-xl font-bold text-brand-green mb-2">{faculty.name}</h3>
+                            <p className="text-sm font-semibold text-gray-600 mb-2">{faculty.designation}</p>
+                            <p className="text-xs text-gray-500">{faculty.education}</p>
+                          </div>
+                        </div>
+                      </GlassCard>
+                    ))}
+                  </Marquee>
+                </div>
+              </RevealSection>
             </div>
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-white" id="faq">
+        <section className="py-16 bg-brand-cream" id="faq">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <RevealSection>
@@ -741,7 +826,7 @@ export default function BBAPage() {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-16 bg-brand-cream" id="admission">
+        <section className="py-16 bg-white" id="admission">
           <div className="container mx-auto px-4">
             <RevealSection>
               <div className="max-w-4xl mx-auto text-center">
@@ -755,7 +840,7 @@ export default function BBAPage() {
                   Join JKKN's BBA programme and build a successful career in business, management, and entrepreneurship
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                  <a href="#" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                  <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                     Apply Now
                     <ArrowRight className="w-5 h-5" />
                   </a>

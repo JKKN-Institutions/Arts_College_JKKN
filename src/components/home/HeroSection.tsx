@@ -95,10 +95,13 @@ export default function HeroSection() {
                 Apply for 2026-27
                 <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 group-hover:translate-x-1 transition-transform" />
               </a>
-              <button className="group bg-white/10 backdrop-blur-md border-2 border-white/40 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold text-[14px] sm:text-[15px] hover:bg-white/20 transition-all duration-300 shadow-xl inline-flex items-center justify-center gap-2">
+              <a
+                href="#programs"
+                className="group bg-white/10 backdrop-blur-md border-2 border-white/40 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold text-[14px] sm:text-[15px] hover:bg-white/20 transition-all duration-300 shadow-xl inline-flex items-center justify-center gap-2"
+              >
                 Explore Programs
                 <BookOpen className="h-3.5 w-3.5 sm:h-4 sm:w-4 group-hover:rotate-12 transition-transform" />
-              </button>
+              </a>
             </div>
           </div>
 

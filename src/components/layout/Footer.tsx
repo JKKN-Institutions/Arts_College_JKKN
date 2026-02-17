@@ -39,32 +39,50 @@ export default function Footer() {
               OUR INSTITUTIONS
             </h3>
             <ul className="space-y-3 mt-6">
-              <li className="hover:text-brand-yellow transition cursor-pointer">
-                JKKN Dental College and Hospital
+              <li>
+                <a href="https://dental.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition">
+                  JKKN Dental College and Hospital
+                </a>
               </li>
-              <li className="hover:text-brand-yellow transition cursor-pointer">
-                JKKN College of Allied Health Sciences
+              <li>
+                <a href="https://ahs.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition">
+                  JKKN College of Allied Health Sciences
+                </a>
               </li>
-              <li className="hover:text-brand-yellow transition cursor-pointer">
-                JKKN College of Pharmacy
+              <li>
+                <a href="https://pharmacy.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition">
+                  JKKN College of Pharmacy
+                </a>
               </li>
-              <li className="hover:text-brand-yellow transition cursor-pointer">
-                Sresakthimayeil Institute of Nursing and Research
+              <li>
+                <a href="https://nursing.sresakthimayeil.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition">
+                  Sresakthimayeil Institute of Nursing and Research
+                </a>
               </li>
-              <li className="hover:text-brand-yellow transition cursor-pointer">
-                JKKN College of Education
+              <li>
+                <a href="https://edu.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition">
+                  JKKN College of Education
+                </a>
               </li>
-              <li className="hover:text-brand-yellow transition cursor-pointer">
-                JKKN College of Arts and Science (Autonomous)
+              <li>
+                <a href="https://cas.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition">
+                  JKKN College of Arts and Science (Autonomous)
+                </a>
               </li>
-              <li className="hover:text-brand-yellow transition cursor-pointer">
-                JKKN College of Engineering and Technology
+              <li>
+                <a href="https://engg.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition">
+                  JKKN College of Engineering and Technology
+                </a>
               </li>
-              <li className="hover:text-brand-yellow transition cursor-pointer">
-                JKKN Matriculation Higher Secondary School
+              <li>
+                <a href="https://school.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition">
+                  JKKN Matriculation Higher Secondary School
+                </a>
               </li>
-              <li className="hover:text-brand-yellow transition cursor-pointer">
-                Nattraja Vidyalaya
+              <li>
+                <a href="https://nv.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition">
+                  Nattraja Vidyalaya
+                </a>
               </li>
             </ul>
           </div>

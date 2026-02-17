@@ -81,7 +81,7 @@ export default function BAEnglishPage() {
                 <span className="text-brand-green">
                   English
                 </span>{' '}
-                (Honours)
+
               </h1>
               <p className="text-xl md:text-2xl font-medium mb-6 text-gray-700">
                 Master the Art of Language, Literature & Communication
@@ -103,7 +103,7 @@ export default function BAEnglishPage() {
               </div>
 
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="#admission" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                   Apply Now
                   <ArrowRight className="w-4 h-4" />
                 </a>
@@ -123,7 +123,7 @@ export default function BAEnglishPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '90%+', title: 'Placement Record', desc: 'Career opportunities assured' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Award className="w-7 h-7" />, stat: '₹3.5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
@@ -154,7 +154,7 @@ export default function BAEnglishPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Bachelor of Arts in English (Honours) is a comprehensive three-year undergraduate programme designed to develop proficient communicators, critical thinkers, and creative writers. This UGC-recognized programme offers an in-depth exploration of English literature spanning various periods, genres, and cultural contexts while building strong foundations in language studies, linguistics, and professional communication.
+                The Bachelor of Arts in English is a comprehensive three-year undergraduate programme designed to develop proficient communicators, critical thinkers, and creative writers. This UGC-recognized programme offers an in-depth exploration of English literature spanning various periods, genres, and cultural contexts while building strong foundations in language studies, linguistics, and professional communication.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy ensures that Learners receive holistic development through experiential learning, industry exposure, and skill-based training. The curriculum integrates classical literary studies with contemporary communication needs, preparing graduates for diverse career pathways in education, media, corporate communications, and creative industries.
@@ -173,12 +173,12 @@ export default function BAEnglishPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=English+Literature+Library"
+                  src="/images/programmes/ba-english/JKKN BA English copy.png"
                   alt="English Literature Library"
                   className="w-full h-auto"
                 />
                 <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                  Since 1954
+                  Since 1974
                 </span>
               </div>
             </RevealSection>
@@ -286,12 +286,16 @@ export default function BAEnglishPage() {
                 {[
                   {
                     title: 'Semester I',
-                    subjects: ['Introduction to Literary Studies', 'English Grammar & Usage', 'British Literature: Poetry', 'Communication Skills I', 'Indian Writing in English', 'Environmental Studies']
+                    subjects: ['Introduction to Literature', 'Indian Writing in English', 'Social History of England I', 'English & Communication', 'Functional English']
                   },
                   {
                     title: 'Semester II',
-                    subjects: ['British Literature: Prose', 'Phonetics & Phonology', 'Social History of England', 'Communication Skills II', 'Women\'s Writing', 'Value Education']
+                    subjects: ['British Literature I', 'American Literature', 'Social History of England I', 'Film Studies', 'Digital Literacy & Concepts', 'Distaster Management']
                   }
+
+
+
+
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
                     <GlassCard className="overflow-hidden" hover={false}>
@@ -319,11 +323,11 @@ export default function BAEnglishPage() {
                 {[
                   {
                     title: 'Semester III',
-                    subjects: ['British Literature: Drama', 'American Literature', 'Linguistics I: Morphology & Syntax', 'Literary Criticism', 'Creative Writing', 'Soft Skills Development']
+                    subjects: ['British Literature II', 'Childrens Literature', 'History of English Literature I', 'Entrepreneurial Skills', 'Personality Development', 'Environmental Studies', 'Health & Wealness']
                   },
                   {
                     title: 'Semester IV',
-                    subjects: ['British Literature: Fiction', 'Commonwealth Literature', 'Linguistics II: Semantics & Pragmatics', 'Literary Theory', 'Translation Studies', 'Professional Ethics']
+                    subjects: ['World Literature in Translation', 'Language & Linguistics', 'History of English Literature II', 'Interview Skills', 'Creative Writing', 'Environmental Studies']
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -352,11 +356,11 @@ export default function BAEnglishPage() {
                 {[
                   {
                     title: 'Semester V',
-                    subjects: ['Shakespeare Studies', 'Postcolonial Literature', 'English Language Teaching', 'Journalism & Mass Communication', 'Research Methodology', 'Internship / Project Work']
+                    subjects: ['Womens Writing', 'Introduction to Folk Literature', 'Indian Writing & Translation', 'Myth & Literature', 'Literary Forms', 'Literature & Environment', 'Value Education - Yoga', 'Finaly Summary Intenship']
                   },
                   {
                     title: 'Semester VI',
-                    subjects: ['Modern & Contemporary Literature', 'World Literature', 'Business Communication', 'Film Studies', 'Digital Humanities', 'Dissertation / Project']
+                    subjects: ['Literary Criticism', 'New Literatures in English', 'Shakespeare', 'English Language Teaching', 'Journalism & Mass Communication', 'English for Competitative Examination', 'EXtension Activities']
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -449,7 +453,7 @@ export default function BAEnglishPage() {
               {[
                 { icon: <Pen className="w-6 h-6" />, title: 'Content Writer', desc: 'Create engaging content for websites, blogs, and digital platforms' },
                 { icon: <FileText className="w-6 h-6" />, title: 'Journalist', desc: 'Report news, write articles for print and digital media' },
-                { icon: <GraduationCap className="w-6 h-6" />, title: 'English Teacher', desc: 'Teach English language and literature at schools' },
+                { icon: <GraduationCap className="w-6 h-6" />, title: 'English Teacher', desc: 'Teach English language and literature at Schools & Colleges' },
                 { icon: <Users className="w-6 h-6" />, title: 'Public Relations', desc: 'Manage communications for organizations and brands' },
                 { icon: <BookOpen className="w-6 h-6" />, title: 'Editor', desc: 'Edit and publish books, magazines, and online content' },
                 { icon: <Globe className="w-6 h-6" />, title: 'Translator', desc: 'Translate documents and literary works between languages' },
@@ -475,7 +479,7 @@ export default function BAEnglishPage() {
                   {[
                     'Publishing Houses', 'Media & Entertainment', 'Education Sector', 'IT & Software',
                     'Advertising Agencies', 'Government Departments', 'Banking & Finance', 'NGOs & Social Sector',
-                    'E-commerce', 'Healthcare Communications'
+                    'E-commerce', 'Healthcare Communications', 'Travel & Tourism'
                   ].map((sector, idx) => (
                     <span key={idx} className="px-4 py-2 bg-brand-green/5 hover:bg-gradient-to-r hover:from-brand-green hover:to-emerald-500 hover:text-white text-brand-green rounded-full text-sm font-medium transition-all cursor-default border border-brand-green/15">
                       {sector}
@@ -510,10 +514,10 @@ export default function BAEnglishPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { title: 'Dedicated English Library', description: 'Over 15,000 books covering British, American, Indian, and World Literature with digital access to JSTOR and other academic databases.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=English+Library' },
-                { title: 'Language Laboratory', description: 'Advanced language lab with audio-visual equipment for phonetics training, accent improvement, and communication practice.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Language+Lab' },
-                { title: 'Digital Content Studio', description: 'Equipped studio for podcasting, video creation, and multimedia content development for journalism and media courses.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Studio' },
+                // { title: 'Language Laboratory', description: 'Advanced language lab with audio-visual equipment for phonetics training, accent improvement, and communication practice.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Language+Lab' },
+                // { title: 'Digital Content Studio', description: 'Equipped studio for podcasting, video creation, and multimedia content development for journalism and media courses.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Studio' },
                 { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for literary discussions, guest lectures, and workshops.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Seminar+Hall' },
-                { title: 'Reading Room', description: 'Peaceful reading spaces with current periodicals, literary magazines, and research journals for focused academic study.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Reading+Room' },
+                // { title: 'Reading Room', description: 'Peaceful reading spaces with current periodicals, literary magazines, and research journals for focused academic study.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Reading+Room' },
                 { title: 'Smart Learning Studios', description: 'Technology-enabled learning studios with interactive boards, projectors, and high-speed internet connectivity.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Smart+Classroom' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
@@ -543,34 +547,13 @@ export default function BAEnglishPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <RevealSection>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="https://placehold.co/600x500/0b6d41/FFFFFF?text=Campus+Life"
-                  alt="Campus Life"
-                  className="w-full h-auto"
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[500px]">
+                <Image
+                  src="/images/programmes/Campus Life.png"
+                  alt="Campus Life at JKKN"
+                  fill
+                  className="object-cover"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-green/95 to-transparent p-8">
-                  <div className="grid grid-cols-3 gap-4 text-center text-white">
-                    <div>
-                      <h4 className="text-3xl font-bold text-emerald-300 mb-1">
-                        <CountUp end={70} suffix="+" />
-                      </h4>
-                      <p className="text-xs">Years of Excellence</p>
-                    </div>
-                    <div>
-                      <h4 className="text-3xl font-bold text-emerald-300 mb-1">
-                        <CountUp end={5000} suffix="+" />
-                      </h4>
-                      <p className="text-xs">Active Learners</p>
-                    </div>
-                    <div>
-                      <h4 className="text-3xl font-bold text-emerald-300 mb-1">
-                        <CountUp end={500} suffix="+" />
-                      </h4>
-                      <p className="text-xs">Learning Facilitators</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </RevealSection>
 
@@ -631,8 +614,8 @@ export default function BAEnglishPage() {
 
             <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
               {[
-                { name: 'Dr. K. Radhai', designation: 'HOD & Associate Professor', qualification: 'M.A., M.Phil., Ph.D.', image: '/images/faculties/aided/english/Dr.-K.-Radhai-240x300.png' },
-                { name: 'Dr. M. Eshwari ', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., Ph. D.', image: '/images/faculties/aided/english/Dr.-M.-Eshwari-240x300.png' },
+                // { name: 'Dr. K. Radhai', designation: 'HOD & Associate Professor', qualification: 'M.A., M.Phil., Ph.D.', image: '/images/faculties/aided/english/Dr.-K.-Radhai-240x300.png' },
+                { name: 'Dr. M. Eshwari ', designation: 'HOD & Assistant Professor', qualification: 'M.A., M.Phil., Ph. D., SET', image: '/images/faculties/aided/english/Dr.-M.-Eshwari-240x300.png' },
                 { name: 'Dr. R. Malathi', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., Ph. D.', image: '/images/faculties/aided/english/Dr.-R.-Malathi-240x300.png' },
                 { name: 'Dr. C. Bharathi', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., Ph. D.', image: '/images/faculties/aided/english/Dr.-C.-Bharathi-240x300.png' },
                 { name: 'Dr. S. Sumathi', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., Ph. D.', image: '/images/faculties/aided/english/Dr.-S.-Sumathi-240x300.png' },
@@ -683,13 +666,13 @@ export default function BAEnglishPage() {
 
             <div className="space-y-4">
               {[
-                { question: 'What is the duration of the BA English programme?', answer: 'The BA English (Honours) programme is a 3-year full-time undergraduate degree comprising six semesters. Each academic year consists of two semesters, with examinations conducted at the end of each semester. The programme follows the Choice Based Credit System (CBCS) pattern as prescribed by the UGC.' },
+                { question: 'What is the duration of the BA English programme?', answer: 'The BA English programme is a 3-year full-time undergraduate degree comprising six semesters. Each academic year consists of two semesters, with examinations conducted at the end of each semester. The programme follows the Choice Based Credit System (CBCS) pattern as prescribed by the UGC.' },
                 { question: 'What are the career opportunities after BA English?', answer: 'BA English graduates have diverse career opportunities including Content Writing and Copywriting, Journalism and Media, Publishing and Editing, Teaching (after B.Ed.), Public Relations and Corporate Communications, Translation and Interpretation, Civil Services (IAS, IPS, IFS), and Advertising and Marketing.' },
                 { question: 'What is the eligibility criteria for BA English admission?', answer: 'Candidates must have completed Higher Secondary (10+2) from a recognized board with English as a compulsory subject. A minimum aggregate of 50% marks is required for general category candidates, while 45% is required for reserved categories (SC/ST/OBC). Candidates from any stream (Arts, Science, or Commerce) are eligible to apply.' },
                 { question: 'What is the fee structure for BA English?', answer: 'The fee structure varies based on the category of admission. Please contact the admission office for the current academic year\'s detailed fee structure. The college offers various scholarship opportunities for meritorious students and those from economically weaker sections. Government scholarships are also facilitated through the institution.' },
                 { question: 'Can I pursue higher studies after BA English?', answer: 'Yes, BA English opens multiple pathways for higher education including MA English (Literature/Linguistics), M.Phil. and Ph.D. in English, B.Ed. for teaching career, MBA (Management Studies), Mass Communication and Journalism, Law (LLB), and Diploma in Creative Writing.' },
                 { question: 'Does the college provide placement assistance?', answer: 'Yes, our dedicated Placement Cell actively supports learners through campus recruitment drives, soft skills training, resume building workshops, mock interviews, and industry interaction sessions. We have partnerships with leading companies in media, publishing, IT, education, and corporate sectors. The placement rate for BA English graduates has consistently been above 85%.' },
-                { question: 'What makes this BA English programme unique?', answer: 'Our BA English programme stands out due to its industry-aligned curriculum, emphasis on practical skills like digital content creation and journalism, dedicated language laboratory, expert learning facilitators with research experience, strong placement support, and focus on holistic development through co-curricular activities. The programme also offers specialization options in areas like Creative Writing, ELT, and Media Studies.' },
+                { question: 'What makes this BA English programme unique?', answer: 'Our BA English programme stands out due to its industry-aligned curriculum, emphasis on practical skills like digital content creation and journalism, dedicated language laboratory, expert learning facilitators with research experience, strong placement support, and focus on holistic development through co-curricular activities. The programme also offers specialization options in areas like Creative Writing, ELT, and Media Studies. Our Students are consistently publishing their creative outputs in social media and winning prizes.' },
                 { question: 'Are internships mandatory in the BA English programme?', answer: 'Yes, the programme includes a mandatory internship component in the fifth semester. Learners gain practical experience in fields such as journalism, content writing, publishing, teaching, or corporate communications. The department assists in securing internship placements with reputed organizations, newspapers, magazines, and educational institutions.' }
               ].map((faq, idx) => (
                 <RevealSection key={idx} delay={idx * 60}>
@@ -748,7 +731,7 @@ export default function BAEnglishPage() {
       </section>
 
       {/* Related Programmes */}
-      <section className="py-16 bg-brand-cream">
+      {/* <section className="py-16 bg-brand-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -802,7 +785,7 @@ export default function BAEnglishPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

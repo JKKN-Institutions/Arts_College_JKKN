@@ -103,7 +103,7 @@ export default function BAHistoryPage() {
               </div>
 
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="#admission" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                   Apply Now
                   <ArrowRight className="w-4 h-4" />
                 </a>
@@ -178,7 +178,7 @@ export default function BAHistoryPage() {
                   className="w-full h-auto"
                 />
                 <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                  Since 1954
+                  Since 1975
                 </span>
               </div>
             </RevealSection>
@@ -286,11 +286,28 @@ export default function BAHistoryPage() {
                 {[
                   {
                     title: 'Semester I',
-                    subjects: ['Ancient Indian History & Culture', 'World History: Renaissance to Industrial Revolution', 'Introduction to Historical Methods', 'Archaeology & Epigraphy', 'Language Paper I', 'Environmental Studies']
+                    subjects: [
+                      { code: '24UGTA01', title: 'General Tamil – I' },
+                      { code: '24UGEN01', title: 'General English –I' },
+                      { code: '24UHIC01', title: 'Core – I: History of Ancient India upto 1206 CE' },
+                      { code: '24UHIC02', title: 'Core – II: History of Tamil Nadu upto 1311 CE' },
+                      { code: '24UHIDE1', title: 'Discipline Specific Course-I: Outlines of Comparative Governments-I / Generic Elective Course-1: Geography of India' },
+                      { code: '24UHINM1', title: 'NME – I: Indian Polity' },
+                      { code: '24UHIS01', title: 'SEC-I: Introduction to Tourism' }
+                    ]
                   },
                   {
                     title: 'Semester II',
-                    subjects: ['Medieval Indian History', 'World History: World Wars & Post-War Era', 'Historiography', 'Art & Architecture in India', 'Language Paper II', 'Value Education']
+                    subjects: [
+                      { code: '24UGTA02', title: 'General Tamil – II' },
+                      { code: '24UGEN02', title: 'General English – II' },
+                      { code: '24UHIC03', title: 'Core - III: History of Medieval India 1206-1707 CE' },
+                      { code: '24UHIC04', title: 'Core – IV: History of Tamil Nadu 1311 -1801 CE' },
+                      { code: '24UHIDE2', title: 'Discipline Specific Course-II: Outlines of Comparative Governments-II / Generic Elective Course-2: Geography of Tamil Nadu' },
+                      { code: '24UHINM2', title: 'NME – II: Basic Journalism' },
+                      { code: '25UHIS02', title: 'SEC - II: Indian Constitution' },
+                      { code: '25UDIM01', title: 'Disaster Management' }
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -301,9 +318,10 @@ export default function BAHistoryPage() {
                       <div className="p-6">
                         <ul className="space-y-3">
                           {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
+                            <li key={i} className="text-gray-700">
+                              <span className="font-semibold text-brand-green">{subject.code}</span>
+                              <br />
+                              <span className="text-sm">{subject.title}</span>
                             </li>
                           ))}
                         </ul>
@@ -319,11 +337,30 @@ export default function BAHistoryPage() {
                 {[
                   {
                     title: 'Semester III',
-                    subjects: ['Modern Indian History (1757-1947)', 'History of USA', 'Social & Economic History of India', 'Heritage Management', 'Allied Paper I', 'Skill Enhancement Course I']
+                    subjects: [
+                      { code: '24UGTA03', title: 'General Tamil – III' },
+                      { code: '24UGEN03', title: 'General English –III' },
+                      { code: '24UHIC05', title: 'Core - V: History of India from 1707 CE to 1857 CE' },
+                      { code: '24UHIC06', title: 'Core - VI: History of Tamil Nadu since 1801 CE' },
+                      { code: '24UHIDE3', title: 'Discipline Specific Course-III: Evolution of Indian Constitution from 1773 to 1947 CE / Generic Elective Course-III: Indian Economy Problems and Policies –I' },
+                      { code: '24UHIS03', title: 'SEC-III: Museology' },
+                      { code: '24UHIS04/05', title: 'SEC-IV: Basic Concepts of Archaeology / IKS in Architecture and Town Planning' },
+                      { code: '24UEVS01', title: 'EVS' },
+                      { code: '24UHAWP01', title: 'Health & Wellness' }
+                    ]
                   },
                   {
                     title: 'Semester IV',
-                    subjects: ['Contemporary India (1947-Present)', 'History of China & Japan', 'Women in History', 'Museum & Archive Management', 'Allied Paper II', 'Skill Enhancement Course II']
+                    subjects: [
+                      { code: '24UGTA04', title: 'General Tamil – IV' },
+                      { code: '24UGEN04', title: 'General English – IV' },
+                      { code: '24UHIC07', title: 'Core - VII: Freedom Struggle in India' },
+                      { code: '24UHIC08', title: 'Core - VIII: History of Modern Europe from 1789 CE to 1919 CE' },
+                      { code: '24UHIDE4', title: 'Discipline Specific Course-IV: Evolution of Indian Constitution Since1947 CE / Generic Elective Course-IV: Indian Economy Problems and Policies –II' },
+                      { code: '24UHIS06', title: 'SEC – V: Computer Training' },
+                      { code: '24UHIS07', title: 'SEC - VI: Introduction to Journalism' },
+                      { code: '24UEVS01', title: 'EVS' }
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -334,9 +371,10 @@ export default function BAHistoryPage() {
                       <div className="p-6">
                         <ul className="space-y-3">
                           {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
+                            <li key={i} className="text-gray-700">
+                              <span className="font-semibold text-brand-green">{subject.code}</span>
+                              <br />
+                              <span className="text-sm">{subject.title}</span>
                             </li>
                           ))}
                         </ul>
@@ -352,11 +390,28 @@ export default function BAHistoryPage() {
                 {[
                   {
                     title: 'Semester V',
-                    subjects: ['History of Tamil Nadu', 'Research Methodology', 'Public History & Digital Humanities', 'History of Science & Technology', 'Elective Paper I', 'Extension Activities']
+                    subjects: [
+                      { code: '24UHIC09', title: 'Core – IX History of the World Since 1919 to 2020 CE' },
+                      { code: '24UHIC10', title: 'Core – X Selected Themes in History of U.S.A' },
+                      { code: '24UHIC11', title: 'Core – XI: Regional History (History of Kongu Nadu)' },
+                      { code: '24UHIPR1', title: 'Core – XII: Project (With viva voce)' },
+                      { code: '24UHIED5', title: 'Discipline Specific Course-V: Elements of Human Rights / Women Studies' },
+                      { code: '24UHIED6', title: 'Discipline Specific Elective VI: History of Dravidian Movements' },
+                      { code: '24UVED01', title: 'Value Education' },
+                      { code: '24UHIIN01', title: 'Summer Internship /Ind. Training' }
+                    ]
                   },
                   {
                     title: 'Semester VI',
-                    subjects: ['Indian Freedom Movement', 'International Relations (20th Century)', 'Tourism & Cultural Heritage', 'Project Work / Dissertation', 'Elective Paper II', 'Internship / Field Study']
+                    subjects: [
+                      { code: '24UHIC13', title: 'Core – XIII Contemporary History of India' },
+                      { code: '24UHIC14', title: 'Core – XIV India and Her Neighbours' },
+                      { code: '24UHIC15', title: 'Core – XV: History of Science and Technology in India' },
+                      { code: '24UHIED7', title: 'Discipline Specific Elective VII: International Relations since 1919' },
+                      { code: '24UHIED8', title: 'Discipline Specific Elective VIII: History of China Japan' },
+                      { code: '24UHIPC1', title: 'General Studies for Competitive Examination' },
+                      { code: '24UEXA01', title: 'Extension Activity' }
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -367,9 +422,10 @@ export default function BAHistoryPage() {
                       <div className="p-6">
                         <ul className="space-y-3">
                           {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
+                            <li key={i} className="text-gray-700">
+                              <span className="font-semibold text-brand-green">{subject.code}</span>
+                              <br />
+                              <span className="text-sm">{subject.title}</span>
                             </li>
                           ))}
                         </ul>
@@ -543,34 +599,13 @@ export default function BAHistoryPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <RevealSection>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="https://placehold.co/600x500/0b6d41/FFFFFF?text=History+Department"
-                  alt="History Department"
-                  className="w-full h-auto"
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[500px]">
+                <Image
+                  src="/images/programmes/Campus Life.png"
+                  alt="Campus Life at JKKN"
+                  fill
+                  className="object-cover"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand-green/95 to-transparent p-8">
-                  <div className="grid grid-cols-3 gap-4 text-center text-white">
-                    <div>
-                      <h4 className="text-3xl font-bold text-emerald-300 mb-1">
-                        <CountUp end={70} suffix="+" />
-                      </h4>
-                      <p className="text-xs">Years of Excellence</p>
-                    </div>
-                    <div>
-                      <h4 className="text-3xl font-bold text-emerald-300 mb-1">
-                        <CountUp end={500} suffix="+" />
-                      </h4>
-                      <p className="text-xs">UPSC Selections</p>
-                    </div>
-                    <div>
-                      <h4 className="text-3xl font-bold text-emerald-300 mb-1">
-                        <CountUp end={100} suffix="+" />
-                      </h4>
-                      <p className="text-xs">Heritage Sites Visited</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </RevealSection>
 

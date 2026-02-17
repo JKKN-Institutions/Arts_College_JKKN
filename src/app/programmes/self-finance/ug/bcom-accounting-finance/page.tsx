@@ -221,7 +221,7 @@ export default function BComAccountingFinancePage() {
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-4">
-                  <a href="#admission" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                  <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                     Apply Now
                     <ArrowRight className="w-4 h-4" />
                   </a>
@@ -289,15 +289,16 @@ export default function BComAccountingFinancePage() {
               </RevealSection>
 
               <RevealSection className="lg:col-span-2" delay={200}>
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                  <img
-                    src="https://placehold.co/600x450/0b6d41/FFFFFF?text=Accounting+%26+Finance"
-                    alt="Accounting and Finance"
-                    className="w-full h-auto"
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[450px]">
+                  <Image
+                    src="/images/faculties/self/bcom A&F/JKKN B.Com Accounting and Finance (1).png"
+                    alt="B.Com Accounting and Finance Programme"
+                    fill
+                    className="object-cover"
                   />
-                  <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
+                  {/* <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
                     Since 1954
-                  </span>
+                  </span> */}
                 </div>
               </RevealSection>
             </div>
@@ -347,7 +348,7 @@ export default function BComAccountingFinancePage() {
                     icon: <FileText className="w-7 h-7" />,
                     title: "Required Documents",
                     points: [
-                      "110th,11th & 12th Mark Sheets",
+                      "10th,11th & 12th Mark Sheets",
                       "Transfer Certificate",
                       "Community Certificate",
                       "Passport Size Photographs",
@@ -860,11 +861,13 @@ export default function BComAccountingFinancePage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <RevealSection className="grid lg:grid-cols-2 gap-12 items-center">
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl min-h-[500px] flex items-center justify-center">
-                  <div className="absolute inset-0 bg-gradient-to-br from-brand-green to-emerald-600"></div>
-                  <h3 className="relative text-3xl font-bold text-white text-center z-10 px-8">
-                    Why Choose JKKN
-                  </h3>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[500px]">
+                  <Image
+                    src="/images/programmes/Campus Life.png"
+                    alt="Campus Life at JKKN"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
 
                 <div>
@@ -986,10 +989,10 @@ export default function BComAccountingFinancePage() {
                   Join JKKN&apos;s B.Com Accounting and Finance programme and build a successful career in accounting, finance, and business management
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                  <button className="group bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1 flex items-center gap-2">
+                  <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="group bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1 flex items-center gap-2">
                     Apply Now
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </button>
+                  </a>
                   <button className="bg-white border-2 border-brand-green hover:bg-brand-green text-brand-green hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1">
                     Schedule Campus Visit
                   </button>
