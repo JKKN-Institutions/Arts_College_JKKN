@@ -60,33 +60,20 @@ export default function OurManagementPage() {
 
                 {/* Content wrapper */}
                 <div className="relative z-10">
-                  {/* Profile Image with Golden Border */}
+                  {/* Profile Image */}
                   <div className="flex flex-col items-center mb-6">
-                    <div className="relative w-40 h-40 md:w-48 md:h-48 mb-6 group-hover:scale-105 transition-transform duration-300">
-                      {/* Glow effect */}
-                      <div className="absolute inset-0 rounded-full bg-[#ffde59]/20 blur-xl group-hover:bg-[#ffde59]/30 transition-all duration-300"></div>
-
-                      {/* Golden decorative border - multiple layers with glass effect */}
-                      <div className="absolute inset-0 rounded-full border-[6px] border-[#ffde59] shadow-[0_0_20px_rgba(255,222,89,0.3)]">
-                        <div className="absolute inset-2 rounded-full border-[6px] border-[#d4a829] bg-gradient-to-br from-[#ffde59]/20 via-transparent to-transparent">
-                          <div className="absolute inset-2 rounded-full border-[4px] border-[#ffde59]/60 backdrop-blur-sm">
-                            <div className="w-full h-full rounded-full overflow-hidden bg-white shadow-inner">
-                              {/* Profile image */}
-                              {member.image ? (
-                                <Image
-                                  src={member.image}
-                                  alt={`${member.name} - ${member.position}`}
-                                  fill
-                                  className="object-cover"
-                                  sizes="(max-width: 768px) 160px, 192px"
-                                />
-                              ) : (
-                                <div className="w-full h-full bg-gradient-to-br from-blue-200 to-blue-400"></div>
-                              )}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div className="relative w-40 h-48 md:w-48 md:h-56 mb-6 overflow-hidden">
+                      {member.image ? (
+                        <Image
+                          src={member.image}
+                          alt={`${member.name} - ${member.position}`}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 160px, 192px"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-gradient-to-br from-blue-200 to-blue-400"></div>
+                      )}
                     </div>
 
                     {/* Name */}

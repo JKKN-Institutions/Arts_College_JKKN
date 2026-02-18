@@ -122,7 +122,7 @@ export default function MScChemistryPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'UGC', title: 'Recognized Programme', desc: 'Quality postgraduate education' },
               { icon: <Microscope className="w-7 h-7" />, stat: '10:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized research guidance' },
-              { icon: <Award className="w-7 h-7" />, stat: '95%+', title: 'Research Placement', desc: 'Industry & academic positions' },
+              { icon: <Award className="w-7 h-7" />, stat: 'Good', title: 'Research Placement', desc: 'Industry & academic positions' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '₹5.5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
@@ -156,7 +156,7 @@ export default function MScChemistryPage() {
                 The Master of Science in Chemistry is a rigorous two-year postgraduate programme designed to provide Learners with advanced knowledge in Organic, Inorganic, Physical, and Analytical Chemistry. This UGC-recognized programme offers comprehensive training in modern chemical research methodologies, spectroscopic techniques, and industrial applications, preparing graduates for careers in research, academia, and chemical industries.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our programme emphasizes hands-on laboratory experience, research dissertation, and advanced instrumentation training. Learners work with state-of-the-art equipment including NMR, IR, UV-Vis spectroscopy, and chromatography systems. The curriculum integrates theoretical concepts with practical applications, fostering scientific temper and research excellence.
+                Our programme emphasizes hands-on laboratory experience, research dissertation. The curriculum integrates theoretical concepts with practical applications, fostering scientific temper and research excellence.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
@@ -172,12 +172,12 @@ export default function MScChemistryPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=Chemistry+Laboratory"
+                  src="/images/programmes/chemistry/JKKN M.Sc Chemistry.png"
                   alt="Chemistry Laboratory"
                   className="w-full h-auto"
                 />
                 <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                  Since 1954
+                  Since 1983
                 </span>
               </div>
             </RevealSection>
@@ -209,12 +209,12 @@ export default function MScChemistryPage() {
                 {
                   icon: <GraduationCap className="w-8 h-8 text-white" />,
                   title: 'Academic Qualification',
-                  items: ['B.Sc Chemistry from recognized university', 'B.Sc with Chemistry as major subject', 'Minimum 50% aggregate marks', '45% for reserved categories']
+                  items: ['B.Sc Chemistry from recognized university', 'B.Sc with Chemistry as major subject', 'Minimum 50% aggregate marks', 'Reserved categories as per government norms']
                 },
                 {
                   icon: <FileText className="w-8 h-8 text-white" />,
                   title: 'Accepted Degrees',
-                  items: ['B.Sc Chemistry (Major/Honours)', 'B.Sc Physical Sciences with Chemistry', 'B.Sc Applied Chemistry', 'B.Sc Industrial Chemistry']
+                  items: ['B.Sc Chemistry Major', 'B.Sc Applied Chemistry']
                 },
                 {
                   icon: <BookOpen className="w-8 h-8 text-white" />,
@@ -270,8 +270,8 @@ export default function MScChemistryPage() {
                     key={year}
                     onClick={() => setActiveYear(year)}
                     className={`px-6 py-3 rounded-lg font-semibold transition-all ${activeYear === year
-                        ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
-                        : 'bg-white text-brand-green hover:bg-brand-green/5'
+                      ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
+                      : 'bg-white text-brand-green hover:bg-brand-green/5'
                       }`}
                   >
                     Year {year}
@@ -285,11 +285,25 @@ export default function MScChemistryPage() {
                 {[
                   {
                     title: 'Semester I',
-                    subjects: ['Organic Chemistry – Reaction Mechanisms', 'Inorganic Chemistry – Coordination Chemistry', 'Physical Chemistry – Quantum Chemistry', 'Analytical Chemistry – Separation Techniques', 'Practical: Organic Synthesis Lab', 'Practical: Inorganic Analysis Lab']
+                    subjects: [
+                      { code: '24PCHC01', type: 'Core-I', name: 'Organic Reaction Mechanism-I' },
+                      { code: '24PCHC02', type: 'Core-II', name: 'Structure and Bonding in Inorganic Compounds' },
+                      { code: '24PCHE01 / 24PCHE02', type: 'Elective-I', name: 'Pharmaceutical Chemistry / Nanomaterials and Nanotechnology' },
+                      { code: '24PCHE03 / 24PCHE04', type: 'Elective-II', name: 'Electrochemistry / Molecular Spectroscopy' },
+                      { code: '24PCHCP01', type: 'Core Practical-I', name: 'Organic Chemistry Practical' },
+                    ]
                   },
                   {
                     title: 'Semester II',
-                    subjects: ['Organic Chemistry – Stereochemistry & Pericyclic', 'Inorganic Chemistry – Organometallics', 'Physical Chemistry – Chemical Kinetics', 'Spectroscopic Methods (NMR, IR, Mass)', 'Practical: Analytical Instrumentation', 'Practical: Physical Chemistry Lab']
+                    subjects: [
+                      { code: '24PCHC03', type: 'Core-III', name: 'Organic Reaction Mechanism-II' },
+                      { code: '24PCHC04', type: 'Core-IV', name: 'Physical Chemistry-I' },
+                      { code: '24PCHE05 / 24PCHE06', type: 'Elective-III', name: 'Medicinal Chemistry / Green Chemistry' },
+                      { code: '24PCHE07 / 24PCHE08', type: 'Elective-IV', name: 'Bio Inorganic Chemistry / Material Science' },
+                      { code: '24PCHED1', type: 'EDC-1', name: 'Chemistry for Food Preservation' },
+                      { code: '24PHR001', type: '', name: 'Fundamental Study of Human Rights' },
+                      { code: '24PCHCP02', type: 'Core Practical-II', name: 'Inorganic Chemistry Practical' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -297,15 +311,18 @@ export default function MScChemistryPage() {
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
                         <h4 className="text-xl font-bold">{sem.title}</h4>
                       </div>
-                      <div className="p-6">
-                        <ul className="space-y-3">
+                      <div className="p-4">
+                        <div className="space-y-2">
                           {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
-                            </li>
+                            <div key={i} className="flex gap-3 py-2 border-b border-gray-100 last:border-0">
+                              <span className="text-xs font-mono bg-brand-green/10 text-brand-green px-2 py-1 rounded shrink-0 self-start mt-0.5 whitespace-nowrap">{subject.code}</span>
+                              <div>
+                                {subject.type && <span className="text-xs font-semibold text-emerald-600 block mb-0.5">{subject.type}</span>}
+                                <span className="text-sm text-gray-700">{subject.name}</span>
+                              </div>
+                            </div>
                           ))}
-                        </ul>
+                        </div>
                       </div>
                     </GlassCard>
                   </RevealSection>
@@ -318,11 +335,26 @@ export default function MScChemistryPage() {
                 {[
                   {
                     title: 'Semester III',
-                    subjects: ['Organic Chemistry – Natural Products', 'Inorganic Chemistry – Bioinorganic Chemistry', 'Physical Chemistry – Surface & Catalysis', 'Green Chemistry & Environmental Chemistry', 'Research Methodology & Seminar', 'Elective: Polymer / Pharmaceutical Chemistry']
+                    subjects: [
+                      { code: '24PCHC05', type: 'Core-V', name: 'Organic Synthesis and Photochemistry' },
+                      { code: '24PCHC06', type: 'Core-VI', name: 'Coordination Chemistry-I' },
+                      { code: '24PCHE09 / 24PCHE10', type: 'Elective-V', name: 'Pharmacognosy and Phytochemistry / Biomolecules and Heterocyclic Compounds' },
+                      { code: '24PCHED2', type: 'EDC-2', name: 'Chemistry in Consumer Products' },
+                      { code: '24PCHCP03', type: 'Core Practical-III', name: 'Physical Chemistry Practical' },
+                      { code: '24PCHS01', type: 'Skill Enhancement Course-I', name: 'Preparation of Consumer Products' },
+                      { code: '24PCHIT1', type: '', name: 'Internship / Industrial Activity' },
+                    ]
                   },
                   {
                     title: 'Semester IV',
-                    subjects: ['Advanced Organic Synthesis', 'Solid State & Materials Chemistry', 'Electrochemistry & Corrosion Science', 'Industrial Chemistry & Quality Control', 'Dissertation / Research Project', 'Comprehensive Viva-Voce']
+                    subjects: [
+                      { code: '24PCHC07', type: 'Core-VII', name: 'Coordination Chemistry-II' },
+                      { code: '24PCHC08', type: 'Core-VIII', name: 'Physical Chemistry-II' },
+                      { code: '24PCHCP04', type: 'Core Practical-IV', name: 'Analytical Instrumentation Technique Practical (Industry Entrepreneurship)' },
+                      { code: '24PCHS02', type: 'Skill Enhancement Course-II', name: 'Professional Competency Skill Enhancement Course' },
+                      { code: '24PCHPR1', type: '', name: 'Core Project with Viva Voce' },
+                      { code: '24PEXTN1', type: '', name: 'Extension Activity' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -330,15 +362,18 @@ export default function MScChemistryPage() {
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
                         <h4 className="text-xl font-bold">{sem.title}</h4>
                       </div>
-                      <div className="p-6">
-                        <ul className="space-y-3">
+                      <div className="p-4">
+                        <div className="space-y-2">
                           {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
-                            </li>
+                            <div key={i} className="flex gap-3 py-2 border-b border-gray-100 last:border-0">
+                              <span className="text-xs font-mono bg-brand-green/10 text-brand-green px-2 py-1 rounded shrink-0 self-start mt-0.5 whitespace-nowrap">{subject.code}</span>
+                              <div>
+                                {subject.type && <span className="text-xs font-semibold text-emerald-600 block mb-0.5">{subject.type}</span>}
+                                <span className="text-sm text-gray-700">{subject.name}</span>
+                              </div>
+                            </div>
                           ))}
-                        </ul>
+                        </div>
                       </div>
                     </GlassCard>
                   </RevealSection>
@@ -416,7 +451,7 @@ export default function MScChemistryPage() {
                 { icon: <Microscope className="w-6 h-6" />, title: 'Research Scientist', desc: 'Conduct research in academic and industrial laboratories' },
                 { icon: <TestTube className="w-6 h-6" />, title: 'Quality Control Analyst', desc: 'Ensure product quality in pharmaceutical and chemical industries' },
                 { icon: <FlaskConical className="w-6 h-6" />, title: 'Pharmaceutical Researcher', desc: 'Develop new drugs and pharmaceutical formulations' },
-                { icon: <Droplet className="w-6 h-6" />, title: 'Chemical Engineer', desc: 'Design and optimize chemical processes and plants' },
+                { icon: <Droplet className="w-6 h-6" />, title: 'Production Chemist', desc: 'Chemical manufacturing process handling.' },
                 { icon: <Globe className="w-6 h-6" />, title: 'Environmental Chemist', desc: 'Monitor and protect environmental quality' },
                 { icon: <BookOpen className="w-6 h-6" />, title: 'Forensic Scientist', desc: 'Analyze evidence for law enforcement agencies' },
                 { icon: <GraduationCap className="w-6 h-6" />, title: 'Academic Professor', desc: 'Teach and research in universities and colleges' },
@@ -440,7 +475,7 @@ export default function MScChemistryPage() {
                 <div className="flex flex-wrap justify-center gap-3">
                   {[
                     'Pharmaceutical Industry', 'Chemical Manufacturing', 'Research & Development', 'Quality Control Labs',
-                    'Environmental Agencies', 'Forensic Laboratories', 'Academic Institutions', 'Government Research',
+                    'Environmental Agencies', 'Forensic Laboratories', 'Academic Institutions',
                     'Petrochemical Industry', 'Food & Beverage Industry'
                   ].map((sector, idx) => (
                     <span key={idx} className="px-4 py-2 bg-brand-green/5 hover:bg-gradient-to-r hover:from-brand-green hover:to-emerald-500 hover:text-white text-brand-green rounded-full text-sm font-medium transition-all cursor-default border border-brand-green/15">
@@ -475,12 +510,12 @@ export default function MScChemistryPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Organic Synthesis Laboratory', description: 'Advanced organic lab with fume hoods, distillation units, and synthesis equipment for organic reactions and purification.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Organic+Lab' },
-                { title: 'Analytical Instrumentation Lab', description: 'Equipped with HPLC, GC, UV-Vis, AAS, and other analytical instruments for chemical analysis and research.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Analytical+Lab' },
+                { title: 'Organic Laboratory', description: 'Advanced organic lab with fume hoods, distillation units, and synthesis equipment for organic reactions and purification.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Organic+Lab' },
+                // { title: 'Analytical Instrumentation Lab', description: 'Equipped with HPLC, GC, UV-Vis, AAS, and other analytical instruments for chemical analysis and research.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Analytical+Lab' },
                 { title: 'Physical Chemistry Laboratory', description: 'Modern equipment for thermodynamics, kinetics, electrochemistry, and surface chemistry experiments.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Physical+Lab' },
                 { title: 'PG Research Laboratory', description: 'Dedicated research space for M.Sc students with individual workstations and advanced research equipment.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Lab' },
-                { title: 'Spectroscopy Suite', description: 'NMR, FTIR, UV-Vis, and Mass spectrometry facilities for structural elucidation and molecular characterization.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Spectroscopy' },
-                { title: 'Digital Library & Journals', description: 'Access to international chemistry journals, e-books, and research databases like SciFinder and PubChem.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Library' }
+                // { title: 'Spectroscopy Suite', description: 'NMR, FTIR, UV-Vis, and Mass spectrometry facilities for structural elucidation and molecular characterization.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Spectroscopy' },
+                // { title: 'Digital Library & Journals', description: 'Access to international chemistry journals, e-books, and research databases like SciFinder and PubChem.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Library' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -534,7 +569,7 @@ export default function MScChemistryPage() {
               <div className="space-y-4">
                 {[
                   { title: 'Advanced Research Infrastructure', description: 'State-of-the-art laboratories with modern instrumentation for cutting-edge research.' },
-                  { title: 'Expert Research Supervisors', description: 'Highly qualified faculty with Ph.D. degrees and active research publications.' },
+                  { title: 'Expert Research Supervisors', description: 'Highly qualified faculty members with Ph.D. degrees and active research publications.' },
                   { title: 'Industry Collaborations', description: 'Partnerships with pharmaceutical and chemical industries for internships and placements.' },
                   { title: 'Research Publication Support', description: 'Guidance and support for publishing research papers in reputed journals.' },
                   { title: 'CSIR-NET / GATE Coaching', description: 'Preparation support for national-level examinations and research fellowships.' }
@@ -630,12 +665,12 @@ export default function MScChemistryPage() {
               {[
                 { question: 'What is the duration of the M.Sc Chemistry programme?', answer: 'The M.Sc Chemistry programme is a 2-year full-time postgraduate degree comprising four semesters with intensive laboratory sessions and a mandatory research dissertation in the final semester.' },
                 { question: 'What are the career opportunities after M.Sc Chemistry?', answer: 'Graduates can pursue careers as Research Scientists, Quality Control Analysts, Pharmaceutical Researchers, Chemical Engineers, Environmental Chemists, Forensic Scientists, Academic Professors, and can appear for competitive examinations like CSIR-NET, GATE, and UPSC.' },
-                { question: 'What is the eligibility criteria for M.Sc Chemistry admission?', answer: 'Candidates must have completed B.Sc in Chemistry or B.Sc with Chemistry as a major subject from a recognized university with minimum 50% aggregate marks (45% for reserved categories).' },
+                { question: 'What is the eligibility criteria for M.Sc Chemistry admission?', answer: 'Candidates must have completed B.Sc in Chemistry or B.Sc with Chemistry as a major subject from a recognized university with minimum 50% aggregate marks (Reserved categories as per government norms).' },
                 { question: 'Is research dissertation mandatory?', answer: 'Yes, a research dissertation is mandatory in the fourth semester. Students work under the guidance of faculty supervisors on original research projects, conduct experiments, analyze data, and submit a comprehensive thesis followed by viva-voce examination.' },
-                { question: 'What instrumentation facilities are available?', answer: 'The department is equipped with advanced instruments including NMR, FTIR, UV-Vis Spectrophotometer, HPLC, GC, AAS, pH meters, centrifuges, and other modern analytical equipment. Students receive hands-on training on all major instruments.' },
+                // { question: 'What instrumentation facilities are available?', answer: 'The department is equipped with advanced instruments including NMR, FTIR, UV-Vis Spectrophotometer, HPLC, GC, AAS, pH meters, centrifuges, and other modern analytical equipment. Students receive hands-on training on all major instruments.' },
                 { question: 'Can I pursue Ph.D. after M.Sc Chemistry?', answer: 'Yes, M.Sc Chemistry graduates are eligible to pursue Ph.D. in Chemistry or related fields. Our programme prepares students for research careers through comprehensive training in research methodology, literature review, and scientific writing.' },
-                { question: 'Does the programme offer specializations?', answer: 'The programme covers all major branches of chemistry - Organic, Inorganic, Physical, and Analytical. In the final year, students can choose electives in specialized areas like Polymer Chemistry, Pharmaceutical Chemistry, Environmental Chemistry, or Materials Science based on their research interests.' },
-                { question: 'What is the placement support for M.Sc Chemistry?', answer: 'Our placement cell actively connects students with pharmaceutical companies, chemical industries, research laboratories, and quality control labs. We also provide training for CSIR-NET, GATE, and other competitive exams. The placement rate for M.Sc Chemistry is consistently above 90%.' }
+                { question: 'Does the programme offer specializations?', answer: 'The programme covers all major branches of Chemistry - Organic, Inorganic, Physical, and Analytical. In the first three semesters, students can choose electives in specialized areas like Polymer Chemistry, Pharmaceutical Chemistry, Environmental Chemistry, or Materials Science based on their research interests.' },
+                { question: 'What is the placement support for M.Sc Chemistry?', answer: 'Our placement cell actively connects students with pharmaceutical companies, chemical industries, research laboratories, and quality control labs. We also provide training for CSIR-NET, GATE,Competitive exams and conducted hands on training, supported by ours MOU companies/Lab. The placement rate for M.Sc Chemistry is consistently above 90%.' }
               ].map((faq, idx) => (
                 <RevealSection key={idx} delay={idx * 60}>
                   <div className="bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:border-brand-green/20 transition-all overflow-hidden">
@@ -691,7 +726,7 @@ export default function MScChemistryPage() {
       </section>
 
       {/* Related Programmes */}
-      <section className="py-16 bg-brand-cream">
+      {/* <section className="py-16 bg-brand-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -745,7 +780,7 @@ export default function MScChemistryPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

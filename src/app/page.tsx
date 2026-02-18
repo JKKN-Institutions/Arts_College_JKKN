@@ -506,7 +506,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="text-[#0b6d41] text-[14px] font-semibold leading-[20px] tracking-wide uppercase mb-4">
-                ADMISSIONS 2025-26
+                ADMISSIONS 2026-27
               </div>
               <h2 className="text-[24px] md:text-[30px] lg:text-[36px] leading-[32px] md:leading-[36px] lg:leading-[40px] font-bold tracking-[-0.75px] lg:tracking-[-0.9px] text-gray-900 mb-6">
                 Begin Your Journey<br />
@@ -555,35 +555,50 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="bg-white p-8 rounded-2xl shadow-xl">
-                <h3 className="text-[20px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold tracking-[-0.5px] md:tracking-[-0.6px] text-gray-900 mb-6">Request Information</h3>
-                <form className="space-y-4">
-                  <div>
-                    <label className="block text-[14px] leading-[20px] font-medium text-gray-700 mb-2">Full Name</label>
-                    <input type="text" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0b6d41] focus:border-transparent" placeholder="Enter your name" />
-                  </div>
-                  <div>
-                    <label className="block text-[14px] leading-[20px] font-medium text-gray-700 mb-2">Email Address</label>
-                    <input type="email" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0b6d41] focus:border-transparent" placeholder="Enter your email" />
-                  </div>
-                  <div>
-                    <label className="block text-[14px] leading-[20px] font-medium text-gray-700 mb-2">Phone Number</label>
-                    <input type="tel" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0b6d41] focus:border-transparent" placeholder="Enter your phone" />
-                  </div>
-                  <div>
-                    <label className="block text-[14px] leading-[20px] font-medium text-gray-700 mb-2">Program of Interest</label>
-                    <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0b6d41] focus:border-transparent">
-                      <option>Select a program</option>
-                      <option>B.Sc Computer Science</option>
-                      <option>B.Com Commerce</option>
-                      <option>B.A English</option>
-                      <option>BCA Computer Applications</option>
-                    </select>
-                  </div>
-                  <button type="submit" className="w-full bg-[#0b6d41] text-white py-4 rounded-lg text-[16px] leading-[24px] font-semibold hover:bg-[#095c37] transition">
-                    Submit Request
-                  </button>
-                </form>
+              <div className="bg-white rounded-2xl shadow-xl p-8">
+                {/* Badge */}
+                <div className="inline-flex items-center gap-2 bg-[#0b6d41] text-white text-[13px] font-semibold px-4 py-2 rounded-full mb-6">
+                  <span>🎓</span>
+                  <span>Admissions Open 2026–27</span>
+                </div>
+                {/* Highlights */}
+                <ul className="space-y-4 mb-8">
+                  {[
+                    "Limited Seats Available",
+                    "NAAC Accredited Programs",
+                    "100% Scholarships for Merits",
+                    "Industry-Integrated Curriculum",
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-3 text-[16px] leading-[24px] text-gray-700">
+                      <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#e6f4ed] flex items-center justify-center">
+                        <svg className="w-3.5 h-3.5 text-[#0b6d41]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                {/* CTA Button */}
+                <a
+                  href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-[#0b6d41] hover:bg-[#095c37] text-white text-center py-4 rounded-xl text-[16px] leading-[24px] font-semibold transition mb-6"
+                >
+                  Apply Now – Admissions Open
+                </a>
+                {/* Contact Row */}
+                <div className="flex flex-col sm:flex-row gap-4 text-[14px] text-gray-600">
+                  <a href="tel:+919345855001" className="flex items-center gap-2 hover:text-[#0b6d41] transition">
+                    <span>📞</span>
+                    <span>+91 9345855001</span>
+                  </a>
+                  <a href="mailto:arts@jkkn.org" className="flex items-center gap-2 hover:text-[#0b6d41] transition">
+                    <span>📧</span>
+                    <span>arts@jkkn.org</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

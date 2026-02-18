@@ -122,7 +122,7 @@ export default function MScMathematicsPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Award className="w-7 h-7" />, stat: 'NET/SET', title: 'Exam Preparation', desc: 'Competitive exam coaching' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '90%+', title: 'Placement Record', desc: 'Career opportunities assured' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Brain className="w-7 h-7" />, stat: 'Research', title: 'Oriented Learning', desc: 'Dissertation & publications' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
@@ -172,7 +172,7 @@ export default function MScMathematicsPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=M.Sc+Mathematics"
+                  src="/images/programmes/bsc-maths/JKKN M.Sc Mathematics.png"
                   alt="MSc Mathematics Learning"
                   className="w-full h-auto"
                 />
@@ -270,8 +270,8 @@ export default function MScMathematicsPage() {
                     key={year}
                     onClick={() => setActiveYear(year)}
                     className={`px-6 py-3 rounded-lg font-semibold transition-all ${activeYear === year
-                        ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
-                        : 'bg-white text-brand-green hover:bg-brand-green/5'
+                      ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
+                      : 'bg-white text-brand-green hover:bg-brand-green/5'
                       }`}
                   >
                     Year {year}
@@ -623,15 +623,14 @@ export default function MScMathematicsPage() {
 
             <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
               {[
-                { name: 'Dr. Ramesh Kumar', designation: 'Head of Department', qualification: 'Ph.D. in Pure Mathematics' },
-                { name: 'Dr. Lakshmi Narayanan', designation: 'Associate Professor', qualification: 'Ph.D. in Applied Mathematics' },
-                { name: 'Dr. Priya Venkatesh', designation: 'Assistant Professor', qualification: 'Ph.D. in Computational Mathematics' },
-                { name: 'Mr. Arun Prakash', designation: 'Assistant Professor', qualification: 'M.Phil., NET Qualified' }
+                { name: 'Mrs.R.Poongodi', designation: 'HOD & Assistant Professor', qualification: 'M.Sc ., B.Ed', image: '/images/faculties/self/maths/Mrs.R.Poongodi-300x199.png' },
+                { name: 'Mr.K.Murugan', designation: 'Assistant Professor', qualification: 'M.Sc ., B.Ed', image: '/images/faculties/self/maths/Mr.K.Murugan-300x199.png' },
+                { name: 'Mrs.N.Sathya', designation: 'Assistant Professor', qualification: 'M.Sc., M.Phil', image: '/images/faculties/self/maths/Mrs.N.Sathya-300x199.png' }
               ].map((faculty, idx) => (
                 <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
                   <div className="relative h-56 overflow-hidden flex-shrink-0">
                     <Image
-                      src="/images/faculties/placeholder-avatar.jpg"
+                      src={faculty.image}
                       alt={faculty.name}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -734,7 +733,7 @@ export default function MScMathematicsPage() {
       </section>
 
       {/* Related Programmes */}
-      <section className="py-16 bg-brand-cream">
+      {/* <section className="py-16 bg-brand-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -788,7 +787,7 @@ export default function MScMathematicsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

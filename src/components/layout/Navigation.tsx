@@ -1175,14 +1175,6 @@ export default function Navigation() {
                                       M.Sc Physics
                                     </Link>
                                     <Link
-                                      href="/programmes/aided/pg/ma-english"
-                                      role="menuitem"
-                                      tabIndex={0}
-                                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
-                                    >
-                                      M.A English
-                                    </Link>
-                                    <Link
                                       href="/programmes/aided/pg/ma-history"
                                       role="menuitem"
                                       tabIndex={0}
@@ -1392,6 +1384,14 @@ export default function Navigation() {
                                       className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
                                     >
                                       M.Com
+                                    </Link>
+                                    <Link
+                                      href="/programmes/self-finance/pg/ma-english"
+                                      role="menuitem"
+                                      tabIndex={0}
+                                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                                    >
+                                      M.A English
                                     </Link>
                                     <Link
                                       href="/programmes/self-finance/pg/msc-computer-science"
@@ -2572,13 +2572,6 @@ export default function Navigation() {
                                   M.Sc Physics
                                 </Link>
                                 <Link
-                                  href="/programmes/aided/pg/ma-english"
-                                  onClick={toggleMobileMenu}
-                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
-                                >
-                                  M.A English
-                                </Link>
-                                <Link
                                   href="/programmes/aided/pg/ma-history"
                                   onClick={toggleMobileMenu}
                                   className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
@@ -2759,6 +2752,13 @@ export default function Navigation() {
                                   className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                                 >
                                   M.Com
+                                </Link>
+                                <Link
+                                  href="/programmes/self-finance/pg/ma-english"
+                                  onClick={toggleMobileMenu}
+                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                                >
+                                  M.A English
                                 </Link>
                                 <Link
                                   href="/programmes/self-finance/pg/msc-computer-science"

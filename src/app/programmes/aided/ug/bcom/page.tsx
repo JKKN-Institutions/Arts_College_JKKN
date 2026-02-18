@@ -122,7 +122,7 @@ export default function BComPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '95%+', title: 'Placement Record', desc: 'Career opportunities assured' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Award className="w-7 h-7" />, stat: '₹4.5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
@@ -172,13 +172,13 @@ export default function BComPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=Commerce+Learning+Studio"
+                  src="/images/faculties/self/bcomca/JKKN B.Com CA (1).png"
                   alt="Commerce Learning Studio"
                   className="w-full h-auto"
                 />
-                <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
+                {/* <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
                   Since 1954
-                </span>
+                </span> */}
               </div>
             </RevealSection>
           </div>
@@ -270,8 +270,8 @@ export default function BComPage() {
                     key={year}
                     onClick={() => setActiveYear(year)}
                     className={`px-6 py-3 rounded-lg font-semibold transition-all ${activeYear === year
-                        ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
-                        : 'bg-white text-brand-green hover:bg-brand-green/5'
+                      ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
+                      : 'bg-white text-brand-green hover:bg-brand-green/5'
                       }`}
                   >
                     Year {year}
@@ -285,11 +285,11 @@ export default function BComPage() {
                 {[
                   {
                     title: 'Semester I',
-                    subjects: ['Financial Accounting - I', 'Business Organisation', 'Business Economics - I', 'Business Mathematics', 'Business Communication', 'Environmental Studies']
+                    subjects: ['General Tamil - I', 'General English - I', 'Financial Accounting - I', 'Principles of Management', 'Business Communication', 'Indian Economic Development / Business Economics', 'Business Organisation', 'Elements of Industry 4.0']
                   },
                   {
                     title: 'Semester II',
-                    subjects: ['Financial Accounting - II', 'Business Law', 'Business Economics - II', 'Business Statistics', 'Principles of Management', 'Value Education']
+                    subjects: ['General Tamil - II', 'General English - II', 'Financial Accounting - II', 'Business Law', 'Business Environment / Insurance & Risk Management', 'International Trade', 'Advertising', 'Industrial Law']
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -318,11 +318,11 @@ export default function BComPage() {
                 {[
                   {
                     title: 'Semester III',
-                    subjects: ['Corporate Accounting', 'Company Law', 'Cost Accounting - I', 'Banking Theory & Practice', 'Marketing Management', 'Computer Applications in Business']
+                    subjects: ['General Tamil - III', 'General English - III', 'Corporate Accounting I', 'Company Law', 'Business Legislation / E-Commerce', 'Business Mathematics & Statistics', 'Tally Practical', 'Capital Markets', 'Environmental Studies', 'Health & Wellness']
                   },
                   {
                     title: 'Semester IV',
-                    subjects: ['Advanced Corporate Accounting', 'Cost Accounting - II', 'Income Tax Law & Practice - I', 'Financial Management', 'Human Resource Management', 'E-Commerce']
+                    subjects: ['General Tamil - IV', 'General English - IV', 'Corporate Accounting II', 'Principles of Marketing', 'Financial Services / Consumerism & Consumer Protection', 'Operations Research', 'Project Methodology', 'Commerce Practical', 'Environmental Studies']
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -351,11 +351,11 @@ export default function BComPage() {
                 {[
                   {
                     title: 'Semester V',
-                    subjects: ['Management Accounting', 'Income Tax Law & Practice - II', 'Auditing & Corporate Governance', 'Goods & Services Tax (GST)', 'Elective: Investment Analysis', 'Practical Training / Internship']
+                    subjects: ['Cost Accounting I', 'Banking Law and Practice', 'Income Tax Law and Practice I', 'Project Viva voce / Auditing and Corporate Governance', 'Financial Management / Indirect Taxation', 'Human Resource Management / Office Management & Secretarial Practice', 'Value Education', 'Summer Internship / Industrial Training']
                   },
                   {
                     title: 'Semester VI',
-                    subjects: ['Financial Markets & Services', 'Entrepreneurship Development', 'International Business', 'Business Research Methods', 'Elective: Stock Market Operations', 'Project Work']
+                    subjects: ['Cost Accounting II', 'Management Accounting', 'Income Tax Law and Practice II', 'Entrepreneurial Development / Computer Application in Business', 'Logistics and Supply Chain Management / Spreadsheet for Business', 'General Awareness for Competitive Examination', 'Extension Activity']
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -754,7 +754,7 @@ export default function BComPage() {
                 { question: 'Can Science or Arts students pursue B.Com?', answer: 'Yes, students from any stream (Commerce, Science, or Arts) who have completed their Higher Secondary (10+2) from a recognized board are eligible to pursue B.Com. While Commerce stream students may have an advantage in foundational subjects like accountancy, students from other streams receive additional support to bridge any knowledge gaps in the first year.' },
                 { question: 'What professional courses can I pursue after B.Com?', answer: 'After B.Com, you can pursue several prestigious professional qualifications including CA (Chartered Accountancy) from ICAI, CMA (Cost and Management Accountancy) from ICMAI, CS (Company Secretary) from ICSI, CFA (Chartered Financial Analyst), MBA, M.Com, CFP (Certified Financial Planner), and ACCA. Our department provides foundation coaching support for CA and CMA courses integrated with the regular curriculum.' },
                 { question: 'Is there practical training included in the B.Com programme?', answer: 'Yes, our B.Com programme includes extensive practical training. This includes hands-on experience with accounting software like Tally Prime and SAP, practical sessions in taxation and GST filing, a mandatory internship in the fifth semester with CA firms, banks, or corporate finance departments, and project work in the final semester. We also have a finance lab with stock market simulation for investment analysis practice.' },
-                { question: 'What makes this B.Com programme different from others?', answer: 'Our B.Com programme stands out due to its industry-aligned curriculum, integrated CA/CMA foundation coaching, state-of-the-art computer and finance labs, experienced Learning Facilitators with industry expertise, strong placement cell with 95%+ placement record, and partnerships with leading CA firms, banks, and corporates for internships. We also offer specializations in Accounting & Finance, Taxation, Banking & Insurance, and Business Analytics.' },
+                { question: 'What makes this B.Com programme different from others?', answer: 'Our B.Com programme stands out due to its industry-aligned curriculum, integrated CA/CMA foundation coaching, state-of-the-art computer and finance labs, experienced Learning Facilitators with industry expertise, strong placement cell with 95% placement record, and partnerships with leading CA firms, banks, and corporates for internships. We also offer specializations in Accounting & Finance, Taxation, Banking & Insurance, and Business Analytics.' },
                 { question: 'What is the fee structure for the B.Com programme?', answer: 'The fee structure for our B.Com programme is competitive and affordable. The annual tuition fee is structured to be accessible to students from all backgrounds. Scholarships are available for meritorious students and those from economically weaker sections. For detailed fee information and scholarship details, please contact the admission office or download the fee brochure from our website.' },
                 { question: 'Are internships mandatory in the B.Com programme?', answer: 'Yes, internships are a mandatory component of the programme. Students undergo practical training in the fifth semester, typically lasting 4-6 weeks. Our placement cell assists in securing internships with reputed CA firms, banks, corporate finance departments, and other financial institutions. This hands-on experience provides valuable industry exposure and often leads to placement opportunities.' }
               ].map((faq, idx) => (
@@ -812,7 +812,7 @@ export default function BComPage() {
       </section>
 
       {/* Related Programmes */}
-      <section className="py-16 bg-brand-cream">
+      {/* <section className="py-16 bg-brand-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -866,7 +866,7 @@ export default function BComPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

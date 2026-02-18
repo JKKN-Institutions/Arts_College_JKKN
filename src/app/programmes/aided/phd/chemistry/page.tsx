@@ -593,7 +593,7 @@ export default function PhDChemistryPage() {
       </section>
 
       {/* Related Programmes */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -647,7 +647,7 @@ export default function PhDChemistryPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

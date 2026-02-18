@@ -142,13 +142,6 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
                   active: pathname === '/programmes/aided/pg/mca'
                 },
                 {
-                  id: 'aided-pg-ma-english',
-                  label: 'M.A. English',
-                  icon: GraduationCap,
-                  href: '/programmes/aided/pg/ma-english',
-                  active: pathname === '/programmes/aided/pg/ma-english'
-                },
-                {
                   id: 'aided-pg-mcom',
                   label: 'M.Com',
                   icon: GraduationCap,
@@ -319,6 +312,13 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
                   icon: GraduationCap,
                   href: '/programmes/self-finance/pg/mcom',
                   active: pathname === '/programmes/self-finance/pg/mcom'
+                },
+                {
+                  id: 'self-finance-pg-ma-english',
+                  label: 'M.A. English',
+                  icon: GraduationCap,
+                  href: '/programmes/self-finance/pg/ma-english',
+                  active: pathname === '/programmes/self-finance/pg/ma-english'
                 },
                 {
                   id: 'self-finance-pg-msc-computer-science',

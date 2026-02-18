@@ -100,7 +100,6 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
         label: 'Aided PG',
         items: [
           { label: 'MCA', href: '/programmes/aided/pg/mca' },
-          { label: 'M.A. English', href: '/programmes/aided/pg/ma-english' },
           { label: 'M.Sc. Chemistry', href: '/programmes/aided/pg/msc-chemistry' },
           { label: 'M.Sc. Mathematics', href: '/programmes/aided/pg/msc-maths' },
           { label: 'M.Com', href: '/programmes/aided/pg/mcom' },
@@ -133,6 +132,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
         label: 'Self-Finance PG',
         items: [
           { label: 'MBA', href: '/programmes/self-finance/pg/mba' },
+          { label: 'M.A. English', href: '/programmes/self-finance/pg/ma-english' },
           { label: 'M.Sc. IT', href: '/programmes/self-finance/pg/msc-it' },
           { label: 'M.Sc. CS', href: '/programmes/self-finance/pg/msc-cs' },
         ],

@@ -345,23 +345,25 @@ export default function BSCTextileFashionDesigningPage() {
                     {
                       title: 'Semester I',
                       subjects: [
-                        { name: 'Elements of Fashion Design', code: 'TFD101' },
-                        { name: 'Textile Science Fundamentals', code: 'TFD102' },
-                        { name: 'Fashion Illustration I', code: 'TFD103' },
-                        { name: 'Pattern Making Basics', code: 'TFD104' },
-                        { name: 'Practical: Sewing Techniques', code: 'TFD105P' },
-                        { name: 'Environmental Studies', code: 'EVS101' }
+                        { name: 'General Tamil - I', code: '24UGTA01' },
+                        { name: 'General English - I', code: '24UGEN01' },
+                        { name: 'Core - I, Fiber and Yarn Science', code: '24UTFC01' },
+                        { name: 'Core - II, Basic Apparel Designing Practical', code: '24UTFCP01' },
+                        { name: 'DSE - I, Pattern Making and Grading / Basic Apparel Designing / Fashion Forecasting', code: '24UTFDE01 / 24UTFDE02 / 24UTFDE03' },
+                        { name: 'NME - I, E-Designing Practical', code: '24UTFNMP01' },
+                        { name: 'SEC - I (Foundation Course), Basic Illustration and Sketching Practical', code: '24UTFFP01' }
                       ]
                     },
                     {
                       title: 'Semester II',
                       subjects: [
-                        { name: 'History of Costumes & Textiles', code: 'TFD201' },
-                        { name: 'Fabric Study & Analysis', code: 'TFD202' },
-                        { name: 'Fashion Illustration II', code: 'TFD203' },
-                        { name: 'Garment Construction I', code: 'TFD204' },
-                        { name: 'Practical: Draping Techniques', code: 'TFD205P' },
-                        { name: 'Value Education', code: 'VAL101' }
+                        { name: 'General Tamil - II', code: '24UGTA02' },
+                        { name: 'General English - II', code: '24UGEN02' },
+                        { name: 'Core - III, Woven Fabric Science', code: '24UTFC02' },
+                        { name: 'Core - IV, Fiber to Fabric Science Practical', code: '24UTFCP02' },
+                        { name: 'DSE - II, Apparel Manufacturing Machineries and Equipments / Care and Maintenance of Textiles / Garment Accessories and Trims', code: '24UTFDE04 / 24UTFDE05 / 24UTFDE06' },
+                        { name: 'NME - II, Needle Craft and Fabric Painting Practical', code: '24UTFNMP02' },
+                        { name: 'SEC - II, Basic Pattern Making Practical', code: '24UTFSP01' }
                       ]
                     }
                   ].map((sem, idx) => (
@@ -395,23 +397,27 @@ export default function BSCTextileFashionDesigningPage() {
                     {
                       title: 'Semester III',
                       subjects: [
-                        { name: 'Surface Ornamentation I', code: 'TFD301' },
-                        { name: 'Traditional Indian Textiles', code: 'TFD302' },
-                        { name: 'Computer Aided Design (CAD)', code: 'TFD303' },
-                        { name: 'Garment Construction II', code: 'TFD304' },
-                        { name: 'Practical: Embroidery Techniques', code: 'TFD305P' },
-                        { name: 'Soft Skills Development', code: 'SKL301' }
+                        { name: 'General Tamil - III', code: '24UGTA03' },
+                        { name: 'General English - III', code: '24UGEN03' },
+                        { name: 'Core - V, Textile Wet Processing', code: '24UTFC03' },
+                        { name: 'Core - VI, Children\'s Apparel Practical', code: '24UTFCP03' },
+                        { name: 'DSE - III, Fashion Draping Practical / Fashion Business Communication / Basics of Cosmetology', code: '24UTFDEP01 / 24UTFDE07 / 24UTFDE08' },
+                        { name: 'SEC - III (Entrepreneurial Skill), Beauty Care Practical', code: '24UTFSP02' },
+                        { name: 'SEC - IV, Textile Wet Processing Practical', code: '24UTFSP03' },
+                        { name: 'Environmental Studies', code: '24UEVS01' }
                       ]
                     },
                     {
                       title: 'Semester IV',
                       subjects: [
-                        { name: 'Surface Ornamentation II', code: 'TFD401' },
-                        { name: 'Textile Dyeing & Printing', code: 'TFD402' },
-                        { name: 'Fashion Merchandising', code: 'TFD403' },
-                        { name: 'Advanced Pattern Making', code: 'TFD404' },
-                        { name: 'Practical: Print Design Lab', code: 'TFD405P' },
-                        { name: 'Extension Activities', code: 'EXT401' }
+                        { name: 'General Tamil - IV', code: '24UGTA04' },
+                        { name: 'General English - IV', code: '24UGEN04' },
+                        { name: 'Core - VII, Textile Finishing', code: '24UTFC04' },
+                        { name: 'Core - VIII, Women\'s Apparel Practical', code: '24UTFCP04' },
+                        { name: 'DSE - IV, Fashion Designing Practical / Costumes and Textiles of India / Fashion Appreciation', code: '24UTFDEP02 / 24UTFDE09 / 24UTFDE10' },
+                        { name: 'SEC - V, Fashion Designing', code: '24UTFS01' },
+                        { name: 'SEC - VI, Boutique Management', code: '24UTFS02' },
+                        { name: 'Environmental Studies', code: '24UEVS01' }
                       ]
                     }
                   ].map((sem, idx) => (
@@ -445,23 +451,26 @@ export default function BSCTextileFashionDesigningPage() {
                     {
                       title: 'Semester V',
                       subjects: [
-                        { name: 'Apparel Production Management', code: 'TFD501' },
-                        { name: 'Fashion Marketing & Branding', code: 'TFD502' },
-                        { name: 'Sustainable Fashion Design', code: 'TFD503' },
-                        { name: 'Costume Design for Media', code: 'TFD504' },
-                        { name: 'Practical: Portfolio Development', code: 'TFD505P' },
-                        { name: 'Elective: Accessory Design / Knitwear', code: 'TFD506E' }
+                        { name: 'Core - IX, Apparel Costing and Merchandising', code: '24UTFC05' },
+                        { name: 'Core - X, Knitting and Non-woven', code: '24UTFC06' },
+                        { name: 'Core - XI, Surface Embellishment and Fashion Accessories Practical', code: '24UTFCP05' },
+                        { name: 'Core - XII, Men\'s Apparel Practical', code: '24UTFCP06' },
+                        { name: 'DSE - V, Home Textile Practical / Organization of Garment Unit / Computer Application in Garment Designing', code: '24UTFDEP03 / 24UTFDE11 / 24UTFDE12' },
+                        { name: 'DSE - VI, Entrepreneurship Development / Fashion Photography / Eco Textile', code: '24UTFDE13 / 24UTFDE14 / 24UTFDE15' },
+                        { name: 'Value Education', code: '24UVED01' },
+                        { name: 'Internship Project - Viva-Voce', code: '24UTFSI01' }
                       ]
                     },
                     {
                       title: 'Semester VI',
                       subjects: [
-                        { name: 'Fashion Entrepreneurship', code: 'TFD601' },
-                        { name: 'Visual Merchandising & Retail', code: 'TFD602' },
-                        { name: 'Fashion Forecasting & Trends', code: 'TFD603' },
-                        { name: 'Industry Internship', code: 'TFD604' },
-                        { name: 'Final Collection Project', code: 'TFD605P' },
-                        { name: 'Elective: Fashion Journalism / Styling', code: 'TFD606E' }
+                        { name: 'Core - XIII, Textile Testing and Quality Control', code: '24UTFC07' },
+                        { name: 'Core - XIV, CAD in Garment Designing Practical', code: '24UTFCP07' },
+                        { name: 'Core - XV, Fashion Portfolio Presentation Viva Voce', code: '24UTFCP08' },
+                        { name: 'DSE - VII, Apparel Production Management / Technical Textiles / Fashion Marketing', code: '24UTFDE16 / 24UTFDE17 / 24UTFDE18' },
+                        { name: 'DSE - VIII, International Trade and Documentation / Industrial Engineering / Apparel Brand Management', code: '24UTFDE19 / 24UTFDE20 / 24UTFDE21' },
+                        { name: 'Professional Competency Skill, Employability Readiness (Naandi/Unnati/Quest/Izapy/IBM Skillbuild)', code: '—' },
+                        { name: 'Extension Activity', code: '24UEX01' }
                       ]
                     }
                   ].map((sem, idx) => (

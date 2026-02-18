@@ -176,7 +176,7 @@ export default function MAHistoryPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=MA+History+Programme"
+                  src="/images/programmes/ba-history/Bachelor of Arts in History.png"
                   alt="MA History Programme Overview"
                   className="w-full h-auto"
                 />
@@ -488,7 +488,7 @@ export default function MAHistoryPage() {
       </section>
 
       {/* Learning Facilities */}
-      <section className="py-16 bg-white" id="facilities">
+      {/* <section className="py-16 bg-white" id="facilities">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -532,7 +532,7 @@ export default function MAHistoryPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why Choose Us */}
       <section className="py-16 bg-brand-cream" id="why-choose">

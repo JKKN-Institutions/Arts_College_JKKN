@@ -122,7 +122,7 @@ export default function BScChemistryPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '85%+', title: 'Placement Record', desc: 'Career opportunities assured' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: 'Good', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Award className="w-7 h-7" />, stat: '₹3.5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
@@ -156,7 +156,7 @@ export default function BScChemistryPage() {
                 The Bachelor of Science in Chemistry programme offers a comprehensive study of chemical sciences, exploring the composition, structure, properties, and reactions of matter. Our curriculum combines theoretical knowledge with extensive practical training in modern laboratories equipped with advanced instrumentation and research facilities.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Students develop strong analytical, research, and problem-solving skills through hands-on experiments, project work, and industry exposure. The programme prepares graduates for diverse careers in chemical industries, pharmaceuticals, research institutions, environmental sciences, quality control, and education sectors.
+                Student develop strong analytical, research, and problem-solving skills through hands-on experiments, project work, and industry exposure. The programme for diverse careers in chemical industries, pharmaceuticals, research institutions, environmental sciences, quality control, and education sectors.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
@@ -177,7 +177,7 @@ export default function BScChemistryPage() {
                   className="w-full h-auto"
                 />
                 <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                  Since 1954
+                  Since 1980
                 </span>
               </div>
             </RevealSection>
@@ -209,12 +209,12 @@ export default function BScChemistryPage() {
                 {
                   icon: <School className="w-8 h-8 text-white" />,
                   title: 'Academic Qualification',
-                  items: ['Higher Secondary (10+2) from recognized board', 'Minimum aggregate marks as per norms', '45% for reserved categories', 'Science stream students']
+                  items: ['Higher Secondary (10+2) from recognized board', 'Minimum aggregate marks as per norms', 'Reserved categories as per government nomrs', 'Science stream students']
                 },
                 {
                   icon: <BookOpen className="w-8 h-8 text-white" />,
                   title: 'Subject Requirements',
-                  items: ['Chemistry as mandatory subject', 'Physics or Mathematics preferred', 'Science stream with Chemistry', 'Laboratory experience beneficial']
+                  items: ['Chemistry as mandatory subject', 'Any science stream and Science stream with Chemistry', 'Laboratory experience beneficial']
                 },
                 {
                   icon: <FileText className="w-8 h-8 text-white" />,
@@ -285,11 +285,29 @@ export default function BScChemistryPage() {
                 {[
                   {
                     title: 'Semester I',
-                    subjects: ['Inorganic Chemistry I', 'Organic Chemistry I', 'Physical Chemistry I', 'General English', 'Allied Mathematics', 'Environmental Studies']
+                    subjects: [
+                      { code: '24UGTA01', name: 'General Tamil-I' },
+                      { code: '24UGEN01', name: 'General English-I' },
+                      { code: '24UCHC01', name: 'Core-1 General Chemistry-1' },
+                      { code: '24UCHS01', name: 'SEC-1 Foundation Course in Chemistry' },
+                      { code: '24UCHNM1', name: 'NME-1 Food Chemistry (For other major)' },
+                      { code: '24UMAGE1 / 24UZOGE1', name: 'Generic Elective Mathematics I: Algebra and Calculus / Generic Elective Zoology-1' },
+                      { code: '24UMAGEP01 / 24UZOGEP01', name: 'Generic Elective Mathematics Practical / Generic Elective Zoology Practical' },
+                      { code: '24UCHCP01', name: 'Core Practical-1 Quantitative Inorganic Estimations (Titrimetry) and Inorganic Preparations' },
+                    ]
                   },
                   {
                     title: 'Semester II',
-                    subjects: ['Inorganic Chemistry I (Continued)', 'Organic Chemistry I (Continued)', 'Physical Chemistry I (Continued)', 'Tamil/Hindi', 'Allied Physics']
+                    subjects: [
+                      { code: '24UGTA02', name: 'General Tamil-II' },
+                      { code: '24UGEN02', name: 'General English-II' },
+                      { code: '24UCHC02', name: 'Core-2 General Chemistry-II' },
+                      { code: '24UCHNM2', name: 'NME-2 Dairy Chemistry (For other major)' },
+                      { code: '24UCHS02', name: 'SEC-2 Cosmetics and Personal Care Products' },
+                      { code: '24UMAGE2 / 24UZOGE2', name: 'Generic Elective Mathematics II: Differential Equations and Laplace Transforms / Generic Elective Zoology-2' },
+                      { code: '24UMAGEP01 / 24UZOGEP01', name: 'Generic Elective Mathematics Practical / Generic Elective Zoology Practical' },
+                      { code: '24UCHCP02', name: 'Core Practical-2 Qualitative Organic Analysis and Preparation of Organic Compounds' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -297,15 +315,23 @@ export default function BScChemistryPage() {
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
                         <h4 className="text-xl font-bold">{sem.title}</h4>
                       </div>
-                      <div className="p-6">
-                        <ul className="space-y-3">
-                          {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="p-0">
+                        <table className="w-full text-sm">
+                          <thead>
+                            <tr className="bg-brand-green/8 border-b border-brand-green/15">
+                              <th className="text-left px-4 py-2.5 font-semibold text-brand-green w-[38%]">Course Code</th>
+                              <th className="text-left px-4 py-2.5 font-semibold text-brand-green">Course Name</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {sem.subjects.map((subject, i) => (
+                              <tr key={i} className={`border-b border-gray-100 last:border-0 ${i % 2 === 0 ? 'bg-white' : 'bg-brand-green/3'}`}>
+                                <td className="px-4 py-2.5 font-mono text-xs text-brand-green font-medium align-top">{subject.code}</td>
+                                <td className="px-4 py-2.5 text-gray-700 align-top">{subject.name}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
                       </div>
                     </GlassCard>
                   </RevealSection>
@@ -318,11 +344,32 @@ export default function BScChemistryPage() {
                 {[
                   {
                     title: 'Semester III',
-                    subjects: ['Inorganic Chemistry II', 'Organic Chemistry II', 'Physical Chemistry II', 'Analytical Chemistry', 'Allied Subject III']
+                    subjects: [
+                      { code: '24UGTA03', name: 'General Tamil-III' },
+                      { code: '24UGEN03', name: 'General English-III' },
+                      { code: '24UCHC03', name: 'Core-3 General Chemistry-III' },
+                      { code: '24UPHGE1', name: 'Generic Elective Physics-I' },
+                      { code: '24UPHGEP01', name: 'Generic Elective Physics Practical-I' },
+                      { code: '24UCHCP03', name: 'Core Practical-3: Quantitative Inorganic Analysis' },
+                      { code: '24UCHS03', name: 'SEC-3 Entrepreneurial Skills in Chemistry' },
+                      { code: '24UCHS04', name: 'SEC-4 Agricultural Chemistry' },
+                      { code: '24UEVS01', name: 'Environmental Studies' },
+                      { code: '24UHAWP01', name: 'Health and Wellness' },
+                    ]
                   },
                   {
                     title: 'Semester IV',
-                    subjects: ['Inorganic Chemistry II (Continued)', 'Organic Chemistry II (Continued)', 'Physical Chemistry II (Continued)', 'Environmental Science', 'Allied Subject IV']
+                    subjects: [
+                      { code: '24UGTA04', name: 'General Tamil-IV' },
+                      { code: '24UGEN04', name: 'General English-IV' },
+                      { code: '24UCHC04', name: 'Core-4 General Chemistry-IV' },
+                      { code: '24UPHGE2', name: 'Generic Elective Physics-II' },
+                      { code: '24UPHGEP02', name: 'Generic Elective Physics Practical-II' },
+                      { code: '24UCHCP04', name: 'Core Practical-4: Physical Chemistry Practical' },
+                      { code: '24UCHS05', name: 'SEC-5: Instrumental Methods of Chemical Analysis' },
+                      { code: '24UCHS06', name: 'SEC-6 Water Pollution and Management' },
+                      { code: '24UEVS01', name: 'Environmental Studies' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -330,15 +377,23 @@ export default function BScChemistryPage() {
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
                         <h4 className="text-xl font-bold">{sem.title}</h4>
                       </div>
-                      <div className="p-6">
-                        <ul className="space-y-3">
-                          {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="p-0">
+                        <table className="w-full text-sm">
+                          <thead>
+                            <tr className="bg-brand-green/8 border-b border-brand-green/15">
+                              <th className="text-left px-4 py-2.5 font-semibold text-brand-green w-[38%]">Course Code</th>
+                              <th className="text-left px-4 py-2.5 font-semibold text-brand-green">Course Name</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {sem.subjects.map((subject, i) => (
+                              <tr key={i} className={`border-b border-gray-100 last:border-0 ${i % 2 === 0 ? 'bg-white' : 'bg-brand-green/3'}`}>
+                                <td className="px-4 py-2.5 font-mono text-xs text-brand-green font-medium align-top">{subject.code}</td>
+                                <td className="px-4 py-2.5 text-gray-700 align-top">{subject.name}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
                       </div>
                     </GlassCard>
                   </RevealSection>
@@ -351,11 +406,31 @@ export default function BScChemistryPage() {
                 {[
                   {
                     title: 'Semester V',
-                    subjects: ['Spectroscopy & Molecular Structure', 'Industrial Chemistry', 'Biochemistry', 'Green Chemistry', 'Elective I']
+                    subjects: [
+                      { code: '23UCHCC09', name: 'Organic Chemistry-I (CC9)' },
+                      { code: '23UCHCC10', name: 'Inorganic Chemistry-I (CC10)' },
+                      { code: '23UCHCC11', name: 'Physical Chemistry-I (CC11)' },
+                      { code: '23UCHEC05', name: 'Biochemistry (EC5)' },
+                      { code: '23UCHEC06', name: 'Industrial Chemistry (EC6)' },
+                      { code: '23UCHCC12', name: 'Physical Chemistry Practical-II (CC12)' },
+                      { code: '23UCHCC13', name: 'Project with Viva-Voce (CC13)' },
+                      { code: '23UCHSI01', name: 'Internship / Industrial Visit / Field Visit (Carried out in II Year Summer Vacation – 2 Weeks)' },
+                    ]
                   },
                   {
                     title: 'Semester VI',
-                    subjects: ['Advanced Organic Chemistry', 'Advanced Inorganic Chemistry', 'Research Project', 'Elective II', 'Internship/Industrial Training']
+                    subjects: [
+                      { code: '23UCHCC14', name: 'Organic Chemistry-II (CC14)' },
+                      { code: '23UCHCC15', name: 'Inorganic Chemistry-II (CC15)' },
+                      { code: '23UCHCC16', name: 'Physical Chemistry-II (CC16)' },
+                      { code: '23UCHCC17', name: 'Gravimetric Estimation Practical (CC17)' },
+                      { code: '23UCHEC07', name: 'Fundamentals of Spectroscopy (EC7)' },
+                      { code: '23UCHEC08A', name: 'NanoScience – Elective based (EC8A)' },
+                      { code: '23UCHEC08B', name: 'Polymer Science – Elective based (EC8B)' },
+                      { code: '23UCHEC08C', name: 'Pharmaceutical Chemistry – Elective based (EC8C)' },
+                      { code: '23UCHPC01', name: 'Professional Competency Skill' },
+                      { code: '23UEX01', name: 'Extension Activity' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -363,15 +438,23 @@ export default function BScChemistryPage() {
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
                         <h4 className="text-xl font-bold">{sem.title}</h4>
                       </div>
-                      <div className="p-6">
-                        <ul className="space-y-3">
-                          {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="p-0">
+                        <table className="w-full text-sm">
+                          <thead>
+                            <tr className="bg-brand-green/8 border-b border-brand-green/15">
+                              <th className="text-left px-4 py-2.5 font-semibold text-brand-green w-[38%]">Course Code</th>
+                              <th className="text-left px-4 py-2.5 font-semibold text-brand-green">Course Name</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {sem.subjects.map((subject, i) => (
+                              <tr key={i} className={`border-b border-gray-100 last:border-0 ${i % 2 === 0 ? 'bg-white' : 'bg-brand-green/3'}`}>
+                                <td className="px-4 py-2.5 font-mono text-xs text-brand-green font-medium align-top">{subject.code}</td>
+                                <td className="px-4 py-2.5 text-gray-700 align-top">{subject.name}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
                       </div>
                     </GlassCard>
                   </RevealSection>
@@ -403,7 +486,7 @@ export default function BScChemistryPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { icon: <Atom className="w-6 h-6 text-white" />, title: 'Chemical Knowledge', description: 'Comprehensive understanding of chemical principles, reactions, and molecular structures across all chemistry branches.' },
+                { icon: <Atom className="w-6 h-6 text-white" />, title: 'Chemistry Knowledge', description: 'Comprehensive understanding of chemistry principles, reactions, and molecular structures across all chemistry branches.' },
                 { icon: <Microscope className="w-6 h-6 text-white" />, title: 'Analytical Skills', description: 'Proficiency in using modern analytical instruments and techniques for chemical analysis and research.' },
                 { icon: <TestTube className="w-6 h-6 text-white" />, title: 'Laboratory Expertise', description: 'Hands-on experience with chemical experiments, safety protocols, and laboratory management practices.' },
                 { icon: <Brain className="w-6 h-6 text-white" />, title: 'Research Aptitude', description: 'Ability to design experiments, conduct research, and contribute to scientific knowledge in chemistry.' },
@@ -474,7 +557,7 @@ export default function BScChemistryPage() {
                   {[
                     'Pharmaceutical Companies', 'Chemical Industries', 'Research Institutions', 'Quality Control Labs',
                     'Environmental Agencies', 'Food & Beverage Industry', 'Cosmetics Industry', 'Petroleum Sector',
-                    'Academic Institutions', 'Forensic Laboratories', 'Government Departments', 'Biotechnology Firms'
+                    'Academic Institutions', 'Forensic Laboratories', 'Government Departments', 'Biotechnology Firms', 'Textile', 'Healthcare', 'Agrochemicals', 'Water Board', 'Thermal power station', 'Steel Industries', 'Soilan', 'Paint industries(Polymer)'
                   ].map((sector, idx) => (
                     <span key={idx} className="px-4 py-2 bg-brand-green/5 hover:bg-gradient-to-r hover:from-brand-green hover:to-emerald-500 hover:text-white text-brand-green rounded-full text-sm font-medium transition-all cursor-default border border-brand-green/15">
                       {sector}
@@ -509,11 +592,10 @@ export default function BScChemistryPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { title: 'Advanced Laboratories', description: 'Modern chemistry labs with latest equipment for organic, inorganic, physical, and analytical chemistry with safety protocols.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Chemistry+Lab' },
-                { title: 'Digital Library', description: 'Extensive chemistry research resources, journals, reference books, and digital databases for academic study.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Library' },
+                { title: 'Department Library', description: 'Extensive chemistry research resources, journals, reference books, and digital databases for academic study.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Library' },
                 { title: 'Research Center', description: 'Dedicated research and project facilities with modern instruments for undergraduate and postgraduate research.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Center' },
-                { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for academic discussions, guest lectures, and workshops.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Seminar+Hall' },
-                { title: 'Instrumentation Room', description: 'Advanced analytical instruments including spectrophotometers, pH meters, centrifuges, and chromatography equipment.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Instruments' },
-                { title: 'Smart Learning Studios', description: 'Technology-enabled learning spaces with interactive boards, projectors, and high-speed internet connectivity.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Smart+Classroom' }
+                // { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for academic discussions, guest lectures, and workshops.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Seminar+Hall' },
+                // { title: 'Smart Learning Studios', description: 'Technology-enabled learning spaces with interactive boards, projectors, and high-speed internet connectivity.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Smart+Classroom' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -569,7 +651,7 @@ export default function BScChemistryPage() {
                   { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
                   { title: 'Comprehensive Curriculum', description: 'Balance of theoretical knowledge and hands-on laboratory experience with modern equipment.' },
                   { title: 'Expert Learning Facilitators', description: 'Highly qualified faculty with doctoral degrees, research publications, and industry experience.' },
-                  { title: 'Advanced Laboratory Infrastructure', description: 'Well-equipped labs with modern instruments for organic, inorganic, physical, and analytical chemistry.' },
+                  { title: 'Advanced Laboratory Infrastructure', description: 'Well-equipped labs with suffficient instruments for organic, inorganic, physical, and practical.' },
                   { title: 'Industry Collaborations', description: 'Partnerships with chemical and pharmaceutical companies providing real-world exposure and placements.' }
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:shadow-lg hover:-translate-y-0.5 transition-all">
@@ -662,10 +744,10 @@ export default function BScChemistryPage() {
             <div className="space-y-4">
               {[
                 { question: 'What is the duration of the B.Sc Chemistry programme?', answer: 'The B.Sc Chemistry programme is a 3-year full-time undergraduate degree comprising six semesters with both theoretical and practical components. Each academic year consists of two semesters, with examinations conducted at the end of each semester following the Choice Based Credit System (CBCS) pattern.' },
-                { question: 'What are the career opportunities after B.Sc Chemistry?', answer: 'Graduates can pursue careers in pharmaceutical companies, chemical industries, quality control laboratories, research institutions, environmental agencies, teaching, and can also opt for higher studies like M.Sc Chemistry, M.Phil., Ph.D., or professional courses in pharmaceutical sciences, analytical chemistry, and environmental sciences.' },
+                { question: 'What are the career opportunities after B.Sc Chemistry?', answer: 'Graduates can pursue careers in pharmaceutical companies, chemical industries, quality control laboratories, research institutions, environmental agencies, teaching, and can also opt for higher studies like M.Sc Chemistry, Ph.D., or professional courses in pharmaceutical sciences, analytical chemistry, and environmental sciences.' },
                 { question: 'What is the eligibility criteria for admission?', answer: 'Candidates must have completed Higher Secondary (10+2) from a recognized board with Chemistry as a mandatory subject and preferably Physics or Mathematics. Science stream students with minimum aggregate marks are eligible to apply. The minimum percentage varies by category (General/OBC/SC/ST).' },
-                { question: 'What laboratory facilities are available?', answer: 'The department has well-equipped laboratories for Organic, Inorganic, Physical, and Analytical Chemistry with modern instruments including spectrophotometers, pH meters, centrifuges, chromatography equipment, and other advanced instruments for hands-on learning and research projects.' },
-                { question: 'Are there opportunities for research and projects?', answer: 'Yes, students undertake research projects in the final year and are encouraged to participate in scientific research, paper presentations, and academic conferences. The department provides research facilities and guidance from experienced faculty members to develop research aptitude and analytical skills.' },
+                { question: 'What laboratory facilities are available?', answer: 'The department has well-equipped laboratories for Organic, Inorganic, Physical, and Analytical Chemistry with  pH meters, centrifuges, chromatography equipment for hands-on learning and research projects.' },
+                { question: 'Are there opportunities for research and projects?', answer: 'Yes, students undertake research projects in the end of 2nd year and are encouraged to participate in scientific research, paper presentations, and academic conferences. The department provides research facilities and guidance from experienced faculty members to develop research aptitude and analytical skills.' },
                 { question: 'Does the college provide placement assistance?', answer: 'Yes, our dedicated Placement Cell actively supports learners through campus recruitment drives, soft skills training, resume building workshops, mock interviews, and industry interaction sessions. We have partnerships with leading chemical, pharmaceutical, and research companies for internships and career opportunities.' },
                 { question: 'What makes this B.Sc Chemistry programme unique?', answer: 'Our programme stands out due to its comprehensive curriculum balancing theory and practice, state-of-the-art laboratory infrastructure, expert learning facilitators with research experience, strong industry collaborations, emphasis on research projects, and holistic development through co-curricular activities in chemistry clubs and scientific societies.' }
               ].map((faq, idx) => (
@@ -723,7 +805,7 @@ export default function BScChemistryPage() {
       </section>
 
       {/* Related Programmes */}
-      <section className="py-16 bg-brand-cream">
+      {/* <section className="py-16 bg-brand-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -777,7 +859,7 @@ export default function BScChemistryPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

@@ -68,27 +68,27 @@ export default function BScAIDSPage() {
   // Faculty data (placeholder)
   const facultyMembers = [
     {
-      name: "Dr. Anand Kumar",
+      name: "Mrs.S.Priyanga",
       designation: "Head of Department",
-      education: "Ph.D. in Artificial Intelligence",
-      image: "/images/faculties/placeholder-avatar.jpg"
+      education: "M.C.A., M.Phil.,",
+      image: "/images/programmes/computerscience/Mrs.S.Priyanga-300x199.png"
     },
     {
-      name: "Dr. Meena Sundaram",
-      designation: "Associate Professor",
-      education: "Ph.D. in Machine Learning",
-      image: "/images/faculties/placeholder-avatar.jpg"
-    },
-    {
-      name: "Mr. Karthik Ramachandran",
+      name: "Ms.K.Epshiba",
       designation: "Assistant Professor",
-      education: "M.Tech., Data Science Expert",
-      image: "/images/faculties/placeholder-avatar.jpg"
+      education: "M.Sc.",
+      image: "/images/programmes/computerscience/Ms.K.Epshiba-300x199.png"
     },
     {
-      name: "Ms. Divya Krishnan",
+      name: "Dr.A.Kamalaveni",
       designation: "Assistant Professor",
-      education: "M.Phil., AI Researcher",
+      education: "MCA., MEd., NET., SET., M.Phil., PhD., M.Sc.,NET.,",
+      image: "/images/programmes/computerscience/Dr.A.Kamalaveni-300x199.png"
+    },
+    {
+      name: "Ms.P.Subashini",
+      designation: "Assistant Professor",
+      education: "MCA ",
       image: "/images/faculties/placeholder-avatar.jpg"
     }
   ];
@@ -150,8 +150,8 @@ export default function BScAIDSPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Cpu className="w-7 h-7" />, stat: 'GPU', title: 'High-Performance Labs', desc: 'NVIDIA RTX workstations' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '95%+', title: 'Placement Record', desc: 'AI/ML career opportunities' },
-              { icon: <Award className="w-7 h-7" />, stat: '100+', title: 'Industry Partners', desc: 'Tech giants & startups' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'AI/ML career opportunities' },
+              { icon: <Award className="w-7 h-7" />, stat: '₹5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">
@@ -200,7 +200,7 @@ export default function BScAIDSPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=AI+%26+Data+Science+Lab"
+                  src="/images/programmes/computerscience/JKKN B.Sc Artificial Intelligence and Data Science.png"
                   alt="AI & Data Science Laboratory"
                   className="w-full h-auto"
                 />
@@ -314,23 +314,26 @@ export default function BScAIDSPage() {
                   {
                     title: 'Semester I',
                     subjects: [
-                      'Programming Fundamentals with Python (AIDS101)',
-                      'Mathematical Foundations for AI (AIDS102)',
-                      'Introduction to Data Science (AIDS103)',
-                      'Computer Organization & Architecture (AIDS104)',
-                      'Python Programming Lab (AIDS105P)',
-                      'Communication Skills (GEN101)'
+                      'General Tamil - I (24UGTA01)',
+                      'General English - I (24UGEN01)',
+                      'Core – I - Data Structures (24UADC01)',
+                      'Core Practical - I – Computer Programming Lab (24UADCP01)',
+                      'Generic Elective – I: Discrete Mathematics-I / Introduction to Linear Algebra / Optimization Techniques / Numerical Methods-I (24UMAGE3 / 24UMAGE5 / 24UMAGE7 / 24UMAGE9)',
+                      'NME – I – Fundamentals of Information Technology (24UCSNM1)',
+                      'SEC-I - Fundamentals of Computer Programming (24UADS01)',
                     ]
                   },
                   {
                     title: 'Semester II',
                     subjects: [
-                      'Data Structures & Algorithms (AIDS201)',
-                      'Statistics & Probability Theory (AIDS202)',
-                      'Database Management Systems (AIDS203)',
-                      'Introduction to AI Concepts (AIDS204)',
-                      'Data Structures Lab (AIDS205P)',
-                      'Environmental Studies (GEN102)'
+                      'General Tamil – II (24UGTA02)',
+                      'General English – II (24UGEN02)',
+                      'Core – II - Introduction on Python (24UADC02)',
+                      'Core Practical – II - Python Programming Lab (24UADCP02)',
+                      'Generic Elective – II: Discrete Mathematics-II / Numerical Methods / Graph Theory and its Applications / Numerical Methods-II (24UMAGE4 / 24UMAGE6 / 24UMAGE8 / 24UMAGE10)',
+                      'Generic Elective - Practical - I: Discrete Mathematics / Introduction to Linear Algebra / Optimization Techniques / Graph Theory and its Applications / Numerical Methods (24UMAGEP02 / 24UMAGEP03 / 24UMAGEP04 / 24UMAGEP05 / 24UMAGEP06)',
+                      'NME - II - Advanced Excel (24UCSNM2)',
+                      'SEC- II - Introduction to HTML (24UCSS02)',
                     ]
                   }
                 ].map((sem, idx) => (
@@ -361,23 +364,29 @@ export default function BScAIDSPage() {
                   {
                     title: 'Semester III',
                     subjects: [
-                      'Machine Learning Fundamentals (AIDS301)',
-                      'Data Visualization & Analytics (AIDS302)',
-                      'Object-Oriented Programming with Java (AIDS303)',
-                      'Linear Algebra for Data Science (AIDS304)',
-                      'Machine Learning Lab (AIDS305P)',
-                      'Soft Skills Development (SKL301)'
+                      'General Tamil - III (24UGTA03)',
+                      'General English - III (24UGEN03)',
+                      'Core - III - Foundation of Artificial Intelligence (24UADC03)',
+                      'Core Practical - III: Internet Programming Lab (24UADCP03)',
+                      'Generic Elective – III - Statistical Methods and its Application - I (24USTAGE1)',
+                      'SEC III - Web Designing (24UCSS03)',
+                      'SEC IV - Advanced Excel (24UCSS04)',
+                      'Environmental Studies (24UEVS01)',
+                      'Health and Wellness (24UHAWP01)',
                     ]
                   },
                   {
                     title: 'Semester IV',
                     subjects: [
-                      'Deep Learning & Neural Networks (AIDS401)',
-                      'Big Data Technologies (AIDS402)',
-                      'Natural Language Processing (AIDS403)',
-                      'Web Technologies & APIs (AIDS404)',
-                      'Deep Learning Lab (AIDS405P)',
-                      'Professional Ethics (GEN401)'
+                      'General Tamil - IV (24UGTA04)',
+                      'General English - IV (24UGEN04)',
+                      'Core - IV: Fundamental of Data Science (24UADC04)',
+                      'Practical - IV: Database Programming Lab (24UADCP04)',
+                      'Generic Elective – IV: Statistical Methods and its Application - II (24USTAGE2)',
+                      'Statistical Practical (24USTAGEP01)',
+                      'SEC V - PHP Programming (24UCSS05)',
+                      'SEC VI - Multimedia Systems (24UCSS06)',
+                      'Environmental Studies (24UEVS01)',
                     ]
                   }
                 ].map((sem, idx) => (
@@ -408,23 +417,24 @@ export default function BScAIDSPage() {
                   {
                     title: 'Semester V',
                     subjects: [
-                      'Computer Vision & Image Processing (AIDS501)',
-                      'Cloud Computing & DevOps (AIDS502)',
-                      'Reinforcement Learning (AIDS503)',
-                      'Data Mining & Warehousing (AIDS504)',
-                      'Computer Vision Lab (AIDS505P)',
-                      'Elective: IoT / Cybersecurity (AIDS506E)'
+                      'Core V - Database Design and Management (24UADC05)',
+                      'Core Practical VI - Data Science Lab (24UADCP05)',
+                      'Core VI - Ethics of Artificial Intelligence (24UADC06)',
+                      'Core VII - Project with Viva Voce (24UADCPR1)',
+                      'Elective Course - V (Discipline Specific) (24UADCDSE)',
+                      'Elective Course - VI (Discipline Specific) (24UADCSDSE)',
+                      'Value Education - Yoga (24UVED01)',
+                      'Summer Internship / Industrial Training (24UADCTR1)',
                     ]
                   },
                   {
                     title: 'Semester VI',
                     subjects: [
-                      'Generative AI & LLMs (AIDS601)',
-                      'MLOps & Model Deployment (AIDS602)',
-                      'AI Ethics & Governance (AIDS603)',
-                      'Research Methodology (AIDS604)',
-                      'Industry Capstone Project (AIDS605P)',
-                      'Elective: Blockchain / Robotics (AIDS606E)'
+                      'Core VI - Natural Language Processing (24UADC06)',
+                      'Core Practical VI - Practical: Programming in UI Path Automation Lab (24UADCP06)',
+                      'Core VII - Robotic Process Automation (24UADC07)',
+                      'Elective Course - VII (Discipline Specific) (24UADCDSE)',
+                      'Elective Course - VIII (Discipline Specific) (24UADCDSE)',
                     ]
                   }
                 ].map((sem, idx) => (

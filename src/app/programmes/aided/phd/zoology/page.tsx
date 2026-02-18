@@ -122,7 +122,7 @@ export default function PhDZoologyPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'UGC', title: 'Recognized Programme', desc: 'Quality doctoral education' },
               { icon: <Users className="w-7 h-7" />, stat: '8+', title: 'Research Supervisors', desc: 'Expert guidance available' },
-              { icon: <BookOpen className="w-7 h-7" />, stat: '50+', title: 'Ph.D Awarded', desc: 'Strong research legacy' },
+              { icon: <BookOpen className="w-7 h-7" />, stat: '10+', title: 'Ph.D Awarded', desc: 'Strong research legacy' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '100%', title: 'Career Placement', desc: 'Academia & research positions' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
@@ -172,12 +172,12 @@ export default function PhDZoologyPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=Zoology+Research+Lab"
+                  src="/images/programmes/zoology/JKKN Ph.D Zoology.png"
                   alt="Zoology Research Laboratory"
                   className="w-full h-auto"
                 />
                 <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                  Since 1954
+                  Since 2001
                 </span>
               </div>
             </RevealSection>
@@ -265,8 +265,8 @@ export default function PhDZoologyPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { icon: <FlaskConical className="w-6 h-6 text-white" />, title: 'Animal Physiology & Biochemistry', description: 'Research on metabolic pathways, hormonal regulation, neurophysiology, comparative physiology, and stress biology in animals.' },
-                { icon: <Dna className="w-6 h-6 text-white" />, title: 'Molecular Biology & Genetics', description: 'DNA/RNA analysis, gene expression studies, molecular markers, population genetics, and biotechnological applications in animal sciences.' },
+                { icon: <FlaskConical className="w-6 h-6 text-white" />, title: 'Nanotoxicology', description: 'Understand toxicity and safety of nanomaterials,study exposure pathways (air, water, food, skin),analyze biological and environmental risks and develop safe nanotechnology applications.' },
+                { icon: <Dna className="w-6 h-6 text-white" />, title: 'Fishery Biology & Molecular Genetics', description: 'Study fish life cycles and behavior,Identify species using genetic markers,Improve breeding and disease resistance,protect biodiversity and aquatic resources' },
                 { icon: <Globe className="w-6 h-6 text-white" />, title: 'Ecology & Environmental Biology', description: 'Ecosystem dynamics, ecological modeling, climate change impact, pollution biology, and environmental assessment studies.' },
                 { icon: <Bug className="w-6 h-6 text-white" />, title: 'Entomology & Pest Management', description: 'Insect taxonomy, agricultural pest control, integrated pest management, vector biology, and beneficial insect research.' },
                 { icon: <Microscope className="w-6 h-6 text-white" />, title: 'Immunology & Toxicology', description: 'Immune response mechanisms, vaccine development, ecotoxicology, biomarkers, and toxicity assessment in aquatic and terrestrial organisms.' },
@@ -316,8 +316,8 @@ export default function PhDZoologyPage() {
                     key={phase}
                     onClick={() => setActivePhase(phase)}
                     className={`px-6 py-3 rounded-lg font-semibold transition-all ${activePhase === phase
-                        ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
-                        : 'bg-white text-brand-green hover:bg-brand-green/5'
+                      ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
+                      : 'bg-white text-brand-green hover:bg-brand-green/5'
                       }`}
                   >
                     Phase {phase}
@@ -330,14 +330,14 @@ export default function PhDZoologyPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Research Methodology (Semester I)',
+                    title: 'Semester I',
                     subjects: [
-                      'Research Methodology in Life Sciences (4 Credits)',
-                      'Biostatistics & Data Analysis (4 Credits)',
-                      'Scientific Writing & Publication Ethics (2 Credits)',
-                      'Bioinformatics & Computational Tools (2 Credits)',
-                      'Literature Review & Documentation (2 Credits)',
-                      'Research Seminar Presentation (2 Credits)'
+                      'Aquaculture & Fishery Biology',
+                      'Research Methodology',
+                      'Recent Trends in Zoology',
+                      'Research and Publication Ethics',
+                      'Guide Paper : Toxicology'
+
                     ]
                   },
                   {
@@ -597,11 +597,7 @@ export default function PhDZoologyPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { title: 'Advanced Research Laboratory', description: 'Fully equipped laboratory with PCR, electrophoresis, spectrophotometer, and advanced molecular biology instruments for cutting-edge research.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Lab' },
-                { title: 'Microscopy & Imaging Center', description: 'High-resolution microscopy facility with phase contrast, fluorescence microscopes, and image analysis systems for detailed cellular studies.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Microscopy+Center' },
-                { title: 'Institutional Animal House', description: 'CPCSEA-approved animal facility for maintaining research animals with proper housing, breeding, and ethical research protocols.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Animal+House' },
-                { title: 'Zoology Museum', description: 'Extensive collection of preserved specimens, taxidermy mounts, skeletal systems, and comparative anatomy exhibits for teaching and research.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Zoology+Museum' },
-                { title: 'Bioinformatics Laboratory', description: 'High-performance computing facility with specialized software for genomic analysis, molecular modeling, and statistical data processing.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Bioinformatics+Lab' },
-                { title: 'Field Research Station', description: 'Access to biodiversity hotspots, aquatic ecosystems, and protected areas for field research, sample collection, and ecological monitoring.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Field+Station' }
+                { title: 'Zoology Museum', description: 'Extensive collection of preserved specimens, taxidermy mounts, skeletal systems, and comparative anatomy exhibits for teaching and research.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Zoology+Museum' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -813,7 +809,7 @@ export default function PhDZoologyPage() {
       </section>
 
       {/* Related Programmes */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -867,7 +863,7 @@ export default function PhDZoologyPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

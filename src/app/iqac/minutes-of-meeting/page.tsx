@@ -4,11 +4,10 @@ import { FileText, ArrowRight, Home, ChevronRight } from 'lucide-react';
 
 // Meeting data with years and PDF paths
 const minutesData = [
-  { year: "2022-2023", pdfPath: "/documents/iqac/minutes/minutes-2022-2023.pdf" },
-  { year: "2021-2022", pdfPath: "/documents/iqac/minutes/minutes-2021-2022.pdf" },
-  { year: "2020-2021", pdfPath: "/documents/iqac/minutes/minutes-2020-2021.pdf" },
-  { year: "2019-2020", pdfPath: "/documents/iqac/minutes/minutes-2019-2020.pdf" },
-  { year: "2018-2019", pdfPath: "/documents/iqac/minutes/minutes-2018-2019.pdf" },
+  { year: "2022-2023", pdfPath: "/documents/Minutes-IQAC-Meeting/Minutes-of-Meeting-2022-2023.pdf" },
+  { year: "2020-2021", pdfPath: "/documents/Minutes-IQAC-Meeting/Minutes-of-Meetings-2020-2021.pdf" },
+  { year: "2019-2020", pdfPath: "/documents/Minutes-IQAC-Meeting/Minutes-of-IQAC-Meetings-2019-2020.pdf" },
+  { year: "2018-2019", pdfPath: "/documents/Minutes-IQAC-Meeting/Minutes-of-Meeting-2018-2019.pdf" },
 ];
 
 export default function MinutesOfMeetingPage() {
@@ -63,7 +62,7 @@ export default function MinutesOfMeetingPage() {
                 </div>
 
                 {/* Title */}
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 flex-grow">
+                <h2 className="text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-4 flex-grow">
                   Minutes of IQAC meeting - {meeting.year}
                 </h2>
 

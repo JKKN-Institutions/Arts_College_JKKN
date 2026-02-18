@@ -127,7 +127,7 @@ export default function MComAidedPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '12:1', title: 'Learner-Facilitator Ratio', desc: 'Enhanced personal attention' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '98%+', title: 'Placement Record', desc: 'Premium career opportunities' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Premium career opportunities' },
               { icon: <Award className="w-7 h-7" />, stat: '₹6.5L', title: 'Average Package', desc: 'Higher starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
@@ -275,8 +275,8 @@ export default function MComAidedPage() {
                     key={year}
                     onClick={() => setActiveYear(year)}
                     className={`px-6 py-3 rounded-lg font-semibold transition-all ${activeYear === year
-                        ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
-                        : 'bg-white text-brand-green hover:bg-brand-green/5'
+                      ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
+                      : 'bg-white text-brand-green hover:bg-brand-green/5'
                       }`}
                   >
                     Year {year}
@@ -291,23 +291,23 @@ export default function MComAidedPage() {
                   {
                     title: 'Semester I',
                     subjects: [
-                      { name: 'Advanced Financial Accounting', code: 'MCO101' },
-                      { name: 'Managerial Economics', code: 'MCO102' },
-                      { name: 'Organizational Behaviour', code: 'MCO103' },
-                      { name: 'Business Research Methods', code: 'MCO104' },
-                      { name: 'Statistical Analysis for Business', code: 'MCO105' },
-                      { name: 'Corporate Governance & Ethics', code: 'MCO106' }
+                      { name: 'Business Finance', code: '' },
+                      { name: 'Digital Marketing', code: '' },
+                      { name: 'Banking and Insurance', code: '' },
+                      { name: 'Security Analysis and Portfolio Management / Operations Research', code: '' },
+                      { name: 'Labour Laws / Strategic Human Resource Management', code: '' }
                     ]
                   },
                   {
                     title: 'Semester II',
                     subjects: [
-                      { name: 'Advanced Cost & Management Accounting', code: 'MCO201' },
-                      { name: 'Financial Management', code: 'MCO202' },
-                      { name: 'Corporate Tax Planning', code: 'MCO203' },
-                      { name: 'Strategic Management', code: 'MCO204' },
-                      { name: 'E-Business & Digital Commerce', code: 'MCO205' },
-                      { name: 'Advanced Business Law', code: 'MCO206' }
+                      { name: 'Strategic Cost Management', code: '' },
+                      { name: 'Corporate Accounting', code: '' },
+                      { name: 'Setting up of Business Entities', code: '' },
+                      { name: 'Business Ethics and Corporate Sustainability / Audit and Due Diligence', code: '' },
+                      { name: 'Rural and Agricultural Marketing / Logistics and Supply Chain Management', code: '' },
+                      { name: 'Business Environment', code: '' },
+                      { name: 'Fundamental Study of Human Rights', code: '' }
                     ]
                   }
                 ].map((sem, idx) => (
@@ -341,23 +341,24 @@ export default function MComAidedPage() {
                   {
                     title: 'Semester III',
                     subjects: [
-                      { name: 'Advanced Auditing & Assurance', code: 'MCO301' },
-                      { name: 'International Financial Management', code: 'MCO302' },
-                      { name: 'Investment Analysis & Portfolio Management', code: 'MCO303' },
-                      { name: 'Elective I: Banking & Financial Services', code: 'MCO304' },
-                      { name: 'Elective II: GST & Indirect Taxation', code: 'MCO305' },
-                      { name: 'Summer Internship / Field Study', code: 'INT301' }
+                      { name: 'Taxation', code: '' },
+                      { name: 'Research Methodology', code: '' },
+                      { name: 'Computer Applications in Business (Practical)', code: '' },
+                      { name: 'International Business', code: '' },
+                      { name: 'Strategic Management / International Financial Management', code: '' },
+                      { name: 'Business Communication', code: '' },
+                      { name: 'Internship / Industrial Activity', code: '' }
                     ]
                   },
                   {
                     title: 'Semester IV',
                     subjects: [
-                      { name: 'Financial Derivatives & Risk Management', code: 'MCO401' },
-                      { name: 'Advanced Business Analytics', code: 'MCO402' },
-                      { name: 'Elective III: Mergers, Acquisitions & Corporate Restructuring', code: 'MCO403' },
-                      { name: 'Elective IV: Forensic Accounting', code: 'MCO404' },
-                      { name: 'Comprehensive Viva-Voce', code: 'MCO405' },
-                      { name: 'Dissertation / Project Work', code: 'PRJ401' }
+                      { name: 'Corporate and Economic Laws', code: '' },
+                      { name: 'Human Resource Analytics', code: '' },
+                      { name: 'Project with Viva-Voce', code: '' },
+                      { name: 'Organizational Behaviour / Insolvency Law and Practice', code: '' },
+                      { name: 'E-filing of GST Return', code: '' },
+                      { name: 'Extension Activity', code: '' }
                     ]
                   }
                 ].map((sem, idx) => (

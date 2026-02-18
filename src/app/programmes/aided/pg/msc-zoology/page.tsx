@@ -128,7 +128,7 @@ export default function MScZoologyPage() {
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '10:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized mentorship' },
               { icon: <Microscope className="w-7 h-7" />, stat: '100%', title: 'Research Oriented', desc: 'Dissertation project' },
-              { icon: <Award className="w-7 h-7" />, stat: '₹4.5L+', title: 'Average Package', desc: 'Competitive starting salary' },
+              { icon: <Award className="w-7 h-7" />, stat: '₹6.5L+', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">
@@ -182,7 +182,7 @@ export default function MScZoologyPage() {
                   className="w-full h-auto"
                 />
                 <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                  Since 1954
+                  Since 1979
                 </span>
               </div>
             </RevealSection>
@@ -219,7 +219,7 @@ export default function MScZoologyPage() {
                 {
                   icon: <FileText className="w-8 h-8 text-white" />,
                   title: 'Eligible Degrees',
-                  items: ['B.Sc Zoology (Primary eligibility)', 'B.Sc Life Sciences with Zoology major', 'B.Sc Biotechnology / Microbiology', 'B.Sc Biochemistry / Genetics']
+                  items: ['B.Sc Zoology (Primary eligibility)']
                 },
                 {
                   icon: <BookOpen className="w-8 h-8 text-white" />,
@@ -275,8 +275,8 @@ export default function MScZoologyPage() {
                     key={year}
                     onClick={() => setActiveYear(year)}
                     className={`px-6 py-3 rounded-lg font-semibold transition-all ${activeYear === year
-                        ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
-                        : 'bg-white text-brand-green hover:bg-brand-green/5'
+                      ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/25'
+                      : 'bg-white text-brand-green hover:bg-brand-green/5'
                       }`}
                   >
                     Year {year}
@@ -290,11 +290,25 @@ export default function MScZoologyPage() {
                 {[
                   {
                     title: 'Semester I',
-                    subjects: ['Biosystematics & Taxonomy', 'Comparative Animal Physiology', 'Cell & Molecular Biology', 'Advanced Genetics & Cytogenetics', 'Practical: Advanced Techniques Lab I', 'Research Methodology & Biostatistics']
+                    courses: [
+                      { code: '24PZOC01', name: 'Core-I, Structure and Function of Invertebrates' },
+                      { code: '24PZOC02', name: 'Core-II, Comparative Anatomy of Vertebrates' },
+                      { code: '24PZOCP01', name: 'Core Lab I, Invertebrates and Vertebrates' },
+                      { code: '24PZOE01 / 24PZOE02', name: 'Elective-I, Molecules their Interaction to Biology / Microbiology' },
+                      { code: '24PZOE03 / 24PZOE04', name: 'Elective-II, Biostatistics / Bioinstrumentation' },
+                    ]
                   },
                   {
                     title: 'Semester II',
-                    subjects: ['Developmental Biology', 'Endocrinology & Reproductive Biology', 'Immunology & Immunotechnology', 'Animal Biotechnology', 'Practical: Advanced Techniques Lab II', 'Elective I: Aquatic Biology / Entomology']
+                    courses: [
+                      { code: '24PZOC03', name: 'Core-III, Cell and Molecular Biology' },
+                      { code: '24PZOC04', name: 'Core-IV, Developmental Biology' },
+                      { code: '24PZOCP02', name: 'Core Lab-II, Cell Biology and Developmental Biology' },
+                      { code: '24PZOE05 / 24PZOE06', name: 'Elective-III, Economic Entomology / Medical Parasitology' },
+                      { code: '24PZOE07 / 24PZOE08', name: 'Elective-IV, Research Methodology / Bioethics & Biosafety' },
+                      { code: '24PZOED1 / 24PZOED2', name: 'EDC-I, Poultry Farming / Apiculture' },
+                      { code: '24PHR001', name: 'Fundamental Study of Human Rights' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -302,15 +316,23 @@ export default function MScZoologyPage() {
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
                         <h4 className="text-xl font-bold">{sem.title}</h4>
                       </div>
-                      <div className="p-6">
-                        <ul className="space-y-3">
-                          {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="p-4">
+                        <table className="w-full text-sm">
+                          <thead>
+                            <tr className="border-b border-brand-green/15">
+                              <th className="text-left py-2 px-3 font-semibold text-brand-green w-[38%]">Course Code</th>
+                              <th className="text-left py-2 px-3 font-semibold text-brand-green">Course Name</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {sem.courses.map((course, i) => (
+                              <tr key={i} className={i % 2 === 0 ? 'bg-brand-green/5' : ''}>
+                                <td className="py-2.5 px-3 font-mono text-xs text-emerald-700 font-semibold align-top">{course.code}</td>
+                                <td className="py-2.5 px-3 text-gray-700 align-top">{course.name}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
                       </div>
                     </GlassCard>
                   </RevealSection>
@@ -323,11 +345,27 @@ export default function MScZoologyPage() {
                 {[
                   {
                     title: 'Semester III',
-                    subjects: ['Ecology & Environmental Biology', 'Evolutionary Biology & Paleozoology', 'Wildlife Conservation & Management', 'Bioinformatics & Computational Biology', 'Practical: Ecology & Wildlife Lab', 'Elective II: Parasitology / Toxicology']
+                    courses: [
+                      { code: '24PZOC05', name: 'Core-V, Genetics' },
+                      { code: '24PZOC06', name: 'Core-VI, Evolution' },
+                      { code: '24PZOC07', name: 'Core-VII, Animal Physiology' },
+                      { code: '24PZOCP03', name: 'Core Lab Course-III, Genetics, Evolution and Animal Physiology' },
+                      { code: '24PZOE09', name: 'Elective-V, Medical Laboratory Techniques' },
+                      { code: '24PZOED3 / 24PZOED4', name: 'EDC-II, Dairy Farming / Vermiculture' },
+                      { code: '24PZOIN01', name: 'Internship / Field Survey / Industrial Activity' },
+                    ]
                   },
                   {
                     title: 'Semester IV',
-                    subjects: ['Animal Behaviour & Neurobiology', 'Advanced Instrumentation Techniques', 'Elective III: Specialization Paper', 'Dissertation Project', 'Project Viva-Voce', 'Internship / Field Study Report']
+                    courses: [
+                      { code: '24PZOC08', name: 'Core-VIII, Immunology' },
+                      { code: '24PZOC09', name: 'Core-IX, Ecology' },
+                      { code: '24PZOCP04', name: 'Core Lab Course-IV, Immunology & Ecology' },
+                      { code: '24PZOPR1', name: 'Project Viva Voce' },
+                      { code: '24PZOE10', name: 'Elective-VI, Aquaculture' },
+                      { code: '24PZOSEC1', name: 'Skill Enhancement Course, Animal Behaviour' },
+                      { code: '24PEXA01', name: 'Extension Activity' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -335,15 +373,23 @@ export default function MScZoologyPage() {
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
                         <h4 className="text-xl font-bold">{sem.title}</h4>
                       </div>
-                      <div className="p-6">
-                        <ul className="space-y-3">
-                          {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="p-4">
+                        <table className="w-full text-sm">
+                          <thead>
+                            <tr className="border-b border-brand-green/15">
+                              <th className="text-left py-2 px-3 font-semibold text-brand-green w-[38%]">Course Code</th>
+                              <th className="text-left py-2 px-3 font-semibold text-brand-green">Course Name</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {sem.courses.map((course, i) => (
+                              <tr key={i} className={i % 2 === 0 ? 'bg-brand-green/5' : ''}>
+                                <td className="py-2.5 px-3 font-mono text-xs text-emerald-700 font-semibold align-top">{course.code}</td>
+                                <td className="py-2.5 px-3 text-gray-700 align-top">{course.name}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
                       </div>
                     </GlassCard>
                   </RevealSection>
@@ -481,12 +527,7 @@ export default function MScZoologyPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Molecular Biology Laboratory', description: 'Equipped with PCR thermal cyclers, gel documentation systems, spectrophotometers, and DNA sequencing facilities for advanced genetic research.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Molecular+Biology+Lab' },
-                { title: 'Cell Culture Facility', description: 'Sterile cell culture rooms with laminar flow hoods, CO2 incubators, inverted microscopes, and cryopreservation facilities for tissue culture research.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Cell+Culture+Facility' },
-                { title: 'Bioinformatics Center', description: 'High-performance computing facility with bioinformatics software suites, molecular modeling tools, and access to global biological databases.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Bioinformatics+Center' },
-                { title: 'Animal House Facility', description: 'Modern animal house with controlled environment for experimental research following ethical guidelines and CPCSEA regulations.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Animal+House' },
-                { title: 'Research Library', description: 'Extensive collection of journals, books, and digital resources with access to academic databases for literature review and research.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Research+Library' },
-                { title: 'Smart Seminar Hall', description: 'Technology-enabled seminar hall for presentations, conferences, and interactive sessions with video conferencing facilities.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Seminar+Hall' }
+                { title: 'Research Lab', description: 'Extensive collection of journals, books, and digital resources with access to academic databases for literature review and research.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Research+Library' },
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -582,7 +623,7 @@ export default function MScZoologyPage() {
 
             <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
               {[
-                { name: 'Dr. S. Umavathi', designation: 'Associate Professor & Head', qualification: 'M.Sc., Ph.D., PGDCA.', image: '/images/faculties/aided/zoology/Dr.-S.-Umavathi-240x300.png' },
+                { name: 'Dr. S. Umavathi', designation: 'Assistant Professor & Head', qualification: 'M.Sc., Ph.D., PGDCA.', image: '/images/faculties/aided/zoology/Dr.-S.-Umavathi-240x300.png' },
                 { name: 'Dr. Y. Thangam', designation: 'Assistant Professor', qualification: 'M.Sc., M.Phil., M.Ed., Ph.D.', image: '/images/faculties/aided/zoology/Dr.-Y.-Thangam-240x300.png' },
                 { name: 'Dr. R. Sowdeswari', designation: 'Assistant Professor', qualification: 'M.Sc., Ph.D.', image: '/images/faculties/aided/zoology/Dr.-R.-Sowdeswari-240x300.png' },
                 { name: 'Dr. K. M. Syed Ali Fathima', designation: 'Assistant Professor', qualification: 'M.Sc., M.Phil., Ph.D., D.C.A.', image: '/images/faculties/aided/zoology/Dr.-K.-M.-Syed-Ali-Fathima-240x300.png' },
@@ -637,9 +678,9 @@ export default function MScZoologyPage() {
               {[
                 { question: 'What is the duration of the M.Sc Zoology programme?', answer: 'The M.Sc Zoology programme is a 2-year full-time postgraduate degree comprising four semesters with advanced coursework, specialized electives, and a mandatory dissertation project.' },
                 { question: 'What are the career opportunities after M.Sc Zoology?', answer: 'M.Sc Zoology graduates can pursue careers as Research Scientists, Wildlife Biologists, University Lecturers, Conservation Officers, Biotechnology Researchers, Environmental Consultants, and positions in pharmaceutical R&D. The degree also qualifies candidates for Ph.D programs and competitive examinations like CSIR-NET, GATE, and UPSC.' },
-                { question: 'What is the eligibility criteria for M.Sc Zoology admission?', answer: 'Candidates must have completed B.Sc in Zoology or equivalent degree in Life Sciences from a recognized university with minimum 50% aggregate marks (45% for reserved categories). Candidates with B.Sc in Biotechnology, Microbiology, or Biochemistry may also be eligible.' },
+                { question: 'What is the eligibility criteria for M.Sc Zoology admission?', answer: 'Candidates must have completed B.Sc in Zoology or equivalent degree in Life Sciences from a recognized university with minimum 50% aggregate marks (45% for reserved categories). ' },
                 { question: 'Is dissertation project mandatory in M.Sc Zoology?', answer: 'Yes, the dissertation project is a mandatory component of the M.Sc Zoology programme conducted in the final semester. Learners undertake independent research under faculty supervision, culminating in a thesis submission and viva-voce examination.' },
-                { question: 'What research facilities are available for M.Sc learners?', answer: 'The department provides advanced research facilities including molecular biology lab with PCR and electrophoresis equipment, cell culture facility, bioinformatics center, animal house facility, and access to scientific journals and databases for research work.' },
+                // { question: 'What research facilities are available for M.Sc learners?', answer: 'The department provides advanced research facilities including molecular biology lab with PCR and electrophoresis equipment, cell culture facility, bioinformatics center, animal house facility, and access to scientific journals and databases for research work.' },
                 { question: 'Can I pursue Ph.D after M.Sc Zoology?', answer: 'Yes, M.Sc Zoology graduates are eligible to pursue Ph.D programs in Zoology, Wildlife Biology, Biotechnology, Ecology, and related fields in Indian and international universities. Many learners also qualify for research fellowships through CSIR-NET, GATE, and other examinations.' },
                 { question: 'Are there opportunities for research publications?', answer: 'Yes, learners are encouraged to publish their research work in peer-reviewed journals. The department supports learners in preparing manuscripts, participating in conferences, and presenting research papers at national and international symposia.' },
                 { question: 'What is the placement scenario for M.Sc Zoology graduates?', answer: 'M.Sc Zoology graduates have excellent placement opportunities in research institutions, pharmaceutical companies, biotechnology firms, environmental agencies, and academic institutions. The placement cell provides training, internship opportunities, and campus recruitment drives to facilitate career placement.' }

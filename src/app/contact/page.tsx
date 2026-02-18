@@ -63,10 +63,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
                     <a
-                      href="mailto:alliedhealth@jkkn.ac.in"
+                      href="mailto:arts@jkkn.org"
                       className="text-brand-green hover:underline text-sm md:text-base break-all"
                     >
-                      alliedhealth@jkkn.ac.in
+                      arts@jkkn.org
                     </a>
                   </div>
                 </div>
@@ -79,9 +79,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Address</h3>
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                      JKKN College of Allied Health Sciences<br />
-                      NH-544, Kumarapalayam (TK)<br />
-                      Namakkal (DT), Tamil Nadu - 638183
+                      J.K.K Nataraja College of Arts &amp; Science<br />
+                      NH-544 (Salem to Coimbatore National Highway)<br />
+                      Kumarapalayam (TK), Namakkal (DT)<br />
+                      Tamil Nadu - 638183
                     </p>
                   </div>
                 </div>
@@ -139,8 +140,8 @@ export default function ContactPage() {
           <div className="w-16 h-1 bg-brand-yellow mb-8" />
           <div className="rounded-xl overflow-hidden shadow-md w-full h-80 md:h-[450px]">
             <iframe
-              title="JKKN College of Allied Health Sciences Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.832!2d77.6977!3d11.4397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96a9b0000000%3A0x0!2sJKKN+College+Kumarapalayam!5e0!3m2!1sen!2sin!4v1"
+              title="JKKN College Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.500184215895!2d77.7302436!3d11.443778499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba969831c528ab9%3A0xe42ccce966098e5d!2sJKKN%20College%20of%20Arts%20and%20Science!5e0!3m2!1sen!2sin!4v1769438942755!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -170,7 +171,7 @@ export default function ContactPage() {
               Call Us Now
             </a>
             <a
-              href="mailto:alliedhealth@jkkn.ac.in"
+              href="mailto:arts@jkkn.org"
               className="inline-flex items-center justify-center gap-2 border-2 border-brand-green text-brand-green font-semibold px-8 py-3 rounded-lg hover:bg-brand-green hover:text-white transition-colors"
             >
               <Mail className="w-5 h-5" />

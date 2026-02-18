@@ -172,7 +172,7 @@ export default function MScComputerSciencePage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=M.Sc+Computer+Science"
+                  src="/images/programmes/computerscience/JKKN M.Sc Computer Science.png"
                   alt="MSc Computer Science Laboratory"
                   className="w-full h-auto"
                 />
@@ -723,7 +723,7 @@ export default function MScComputerSciencePage() {
       </section>
 
       {/* Related Programmes */}
-      <section className="py-16 bg-brand-cream">
+      {/* <section className="py-16 bg-brand-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -777,7 +777,7 @@ export default function MScComputerSciencePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

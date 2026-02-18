@@ -172,7 +172,7 @@ export default function MCAPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=MCA+Programme+Overview"
+                  src="/images/programmes/mca/JKKN MCA.png"
                   alt="MCA Programme Overview"
                   className="w-full h-auto"
                 />
@@ -328,11 +328,40 @@ export default function MCAPage() {
                 {[
                   {
                     title: 'Semester I',
-                    subjects: ['Advanced Data Structures & Algorithms', 'Object-Oriented Programming with Java', 'Database Management Systems', 'Computer Networks & Security', 'Discrete Mathematics & Statistics', 'Practical: Programming & Database Lab']
+                    subjects: [
+                      { code: '24PCAC01', name: 'Core I: Discrete Mathematics' },
+                      { code: '24PCAC02', name: 'Core II: Linux and Shell Programming' },
+                      { code: '24PCAC03', name: 'Core III: Python Programming' },
+                      { code: '24PCACP01', name: 'Core IV Lab \u2013 I: Linux and Shell Programming Lab' },
+                      { code: '24PCACP02', name: 'Core V Lab \u2013 II: Python Programming Lab' },
+                      { code: '24PCAE01', name: 'Elective \u2013 I: Data Engineering and Management' },
+                      { code: '24PCAE02', name: 'Elective \u2013 I: Architecture and Frameworks' },
+                      { code: '24PCAE03', name: 'Elective \u2013 I: Software Development Technologies' },
+                      { code: '24PCAE04', name: 'Elective \u2013 I: Soft Computing' },
+                      { code: '24PCAEP01', name: 'Elective \u2013 II: Data Engineering and Management Lab' },
+                      { code: '24PCAEP02', name: 'Elective \u2013 II: Architecture and Frameworks Lab' },
+                      { code: '24PCAEP03', name: 'Elective \u2013 II: Software Development Technologies Lab' },
+                      { code: '24PCAEP04', name: 'Elective \u2013 II: Soft Computing Lab' },
+                    ]
                   },
                   {
                     title: 'Semester II',
-                    subjects: ['Operating Systems & Linux Administration', 'Software Engineering & Project Management', 'Web Technologies & Frameworks', 'Python Programming & Data Analysis', 'Cloud Computing Fundamentals', 'Practical: Web Development & Cloud Lab']
+                    subjects: [
+                      { code: '24PCAC04', name: 'Core VI: Data Structures and Algorithms' },
+                      { code: '24PCAC05', name: 'Core VII: Data Mining and Warehousing' },
+                      { code: '24PCACP03', name: 'Core VIII Lab III: Data Structures and Algorithms Lab' },
+                      { code: '24PCACP04', name: 'Core IX Industry Dynamics Technology \u2013 I: Data Visualisation Lab (Self-Study Course)' },
+                      { code: '24PCAE05', name: 'Elective \u2013 III: Internet of Things' },
+                      { code: '24PCAE06', name: 'Elective \u2013 III: Computer Vision' },
+                      { code: '24PCAE07', name: 'Elective \u2013 III: Cyber Security' },
+                      { code: '24PCAE08', name: 'Elective \u2013 III: Block Chain Technologies' },
+                      { code: '24PCAEP05', name: 'Elective \u2013 IV: Internet of Things Lab' },
+                      { code: '24PCAEP06', name: 'Elective \u2013 IV: Computer Vision Lab' },
+                      { code: '24PCAEP07', name: 'Elective \u2013 IV: Cyber Security Lab' },
+                      { code: '24PCAEP08', name: 'Elective \u2013 IV: Block Chain Technologies Lab' },
+                      { code: '24P--ED-', name: 'Extra Disciplinary Course [EDC] \u2013 I' },
+                      { code: '24PHR001', name: 'Fundamental Study of Human Rights' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -343,9 +372,9 @@ export default function MCAPage() {
                       <div className="p-6">
                         <ul className="space-y-3">
                           {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
+                            <li key={i} className="flex items-start gap-3 text-gray-700">
+                              <span className="inline-block bg-brand-green/10 text-brand-green text-xs font-mono font-semibold px-2 py-0.5 rounded mt-0.5 flex-shrink-0">{subject.code}</span>
+                              <span className="text-sm">{subject.name}</span>
                             </li>
                           ))}
                         </ul>
@@ -361,11 +390,33 @@ export default function MCAPage() {
                 {[
                   {
                     title: 'Semester III',
-                    subjects: ['Artificial Intelligence & Machine Learning', 'Big Data Analytics & Hadoop Ecosystem', 'Mobile Application Development', 'DevOps & Agile Methodologies', 'Elective I (Specialization Course)', 'Practical: AI/ML & Mobile App Lab']
+                    subjects: [
+                      { code: '24PCAC06', name: 'Core X: Advanced Java Programming' },
+                      { code: '24PCAC07', name: 'Core XI: Web Technology' },
+                      { code: '24PCAC08', name: 'Core XII: Advanced Machine Learning' },
+                      { code: '24PCACP05', name: 'Core XIII Lab \u2013 IV: Advanced Java Programming Lab' },
+                      { code: '24PCACP06', name: 'Core XIV Lab \u2013 V: Web Technology Lab' },
+                      { code: '24PCAE09', name: 'Elective \u2013 V: Social Networks' },
+                      { code: '24PCAE10', name: 'Elective \u2013 V: High Performance Computing' },
+                      { code: '24PCAE11', name: 'Elective \u2013 V: Digital Marketing' },
+                      { code: '24PCAE12', name: 'Elective \u2013 V: Agile Methodologies' },
+                      { code: '24P--ED-', name: 'Extra Disciplinary Course [EDC] \u2013 II' },
+                      { code: '24PINT001', name: 'Internship / Industrial Activity' },
+                    ]
                   },
                   {
                     title: 'Semester IV',
-                    subjects: ['Deep Learning & Neural Networks', 'Cybersecurity & Ethical Hacking', 'Elective II (Specialization Course)', 'Industry Internship (8-12 Weeks)', 'Research Dissertation & Viva', 'Comprehensive Project']
+                    subjects: [
+                      { code: '24PCAC09', name: 'Core XV: Dot Net Programming' },
+                      { code: '24PCAC10', name: 'Core XVI: Big Data Analytics' },
+                      { code: '24PCAPR1', name: 'Project Work and Viva-Voce' },
+                      { code: '24PCAEP09', name: 'Elective \u2013 VI: Social Networks Lab' },
+                      { code: '24PCAEP10', name: 'Elective \u2013 VI: High Performance Computing Lab' },
+                      { code: '24PCAEP11', name: 'Elective \u2013 VI: Advanced Machine Learning Lab' },
+                      { code: '24PCAEP12', name: 'Elective \u2013 VI: Dot Net Programming Lab' },
+                      { code: '24PCASE01', name: 'Skill Enhancement Course \u2013 Lab: Generative AI Tools' },
+                      { code: '24PEXA01', name: 'Extension Activity' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -376,9 +427,9 @@ export default function MCAPage() {
                       <div className="p-6">
                         <ul className="space-y-3">
                           {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
+                            <li key={i} className="flex items-start gap-3 text-gray-700">
+                              <span className="inline-block bg-brand-green/10 text-brand-green text-xs font-mono font-semibold px-2 py-0.5 rounded mt-0.5 flex-shrink-0">{subject.code}</span>
+                              <span className="text-sm">{subject.name}</span>
                             </li>
                           ))}
                         </ul>

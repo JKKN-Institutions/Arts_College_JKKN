@@ -121,8 +121,8 @@ export default function BScZoologyPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Microscope className="w-7 h-7" />, stat: '6+', title: 'Specialized Labs', desc: 'Advanced research facilities' },
-              { icon: <TrendingUp className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Career opportunities assured' },
+              { icon: <Microscope className="w-7 h-7" />, stat: 'Labs', title: 'Specialized Labs', desc: 'Advanced research facilities' },
+              { icon: <TrendingUp className="w-7 h-7" />, stat: 'Good', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <MapPin className="w-7 h-7" />, stat: 'Annual', title: 'Field Study Trips', desc: 'Wildlife sanctuary visits' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
@@ -153,10 +153,10 @@ export default function BScZoologyPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Bachelor of Science in Zoology programme is a comprehensive 3-year undergraduate degree designed to provide in-depth knowledge of animal biology, diversity, evolution, ecology, and conservation. The curriculum blends theoretical learning with extensive practical laboratory sessions and field studies.
+                The Bachelor of Science in Zoology programme is a comprehensive 3-year Undergraduate degree designed to provide in-depth knowledge of animal biology, diversity, evolution, ecology, and conservation. The curriculum blends theoretical learning with extensive practical laboratory sessions and field studies.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Students explore fascinating topics including animal physiology, genetics, biotechnology, entomology, wildlife conservation, and environmental biology. Our department is equipped with state-of-the-art laboratories, a zoological museum, aquarium facilities, and molecular biology research units. Graduates are well-prepared for careers in research, healthcare, biotechnology, environmental consulting, and wildlife conservation.
+                Students explore fascinating topics including animal physiology, genetics, biotechnology, entomology, wildlife conservation, and environmental biology. Our department is equipped with state-of-the-art laboratories, a zoological museum, aquarium facilities, and molecular biology research units. Graduates are well-prepared for careers in research, healthcare, biotechnology, environmental consulting and wildlife conservation.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
@@ -177,7 +177,7 @@ export default function BScZoologyPage() {
                   className="w-full h-auto"
                 />
                 <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                  Since 1954
+                  Since 1976
                 </span>
               </div>
             </RevealSection>
@@ -272,8 +272,8 @@ export default function BScZoologyPage() {
                       key={year}
                       onClick={() => setActiveYear(year)}
                       className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${activeYear === year
-                          ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/30'
-                          : 'text-gray-600 hover:text-brand-green hover:bg-white/50'
+                        ? 'bg-gradient-to-r from-brand-green to-emerald-500 text-white shadow-lg shadow-brand-green/30'
+                        : 'text-gray-600 hover:text-brand-green hover:bg-white/50'
                         }`}
                     >
                       Year {year}
@@ -290,23 +290,32 @@ export default function BScZoologyPage() {
                   {
                     semester: 'I',
                     courses: [
-                      { code: 'ZOO101', name: 'Non-Chordates I (Theory)' },
-                      { code: 'ZOO101P', name: 'Non-Chordates I (Practical)' },
-                      { code: 'ALL101', name: 'Allied Paper I (Theory)' },
-                      { code: 'ALL101P', name: 'Allied Paper I (Practical)' },
-                      { code: 'LANG101', name: 'Language Paper I' },
-                      { code: 'EVS101', name: 'Environmental Studies' }
+                      { code: '24UGTA01', name: 'General Tamil-I' },
+                      { code: '24UGEN01', name: 'General English-I' },
+                      { code: '24UZOC01', name: 'Core-I, Invertebrata - I' },
+                      { code: '24UZOC02', name: 'Core-II, Invertebrata - II' },
+                      { code: '24UZOCP01', name: 'Core Lab – I, Invertebrata and Chordata' },
+                      { code: '24UBOGE01', name: 'Generic Elective-I - Botany' },
+                      { code: '24UBOGEP01', name: 'Generic Elective - Botany Practical' },
+                      { code: '24UZONM1/24UZONM2', name: 'NME-I, Animal Behavior / Sericulture' },
+                      { code: '24UZOFC1', name: 'Foundation Course - Economic Zoology' },
+                      { code: '24UZOGE01', name: 'Generic Elective Zoology-I' },
+                      { code: '24UZOGEP01', name: 'Generic Elective Zoology Practical-I' }
                     ]
                   },
                   {
                     semester: 'II',
                     courses: [
-                      { code: 'ZOO102', name: 'Non-Chordates II & Chordata (Theory)' },
-                      { code: 'ZOO102P', name: 'Non-Chordates II & Chordata (Practical)' },
-                      { code: 'ALL102', name: 'Allied Paper II (Theory)' },
-                      { code: 'ALL102P', name: 'Allied Paper II (Practical)' },
-                      { code: 'LANG102', name: 'Language Paper II' },
-                      { code: 'VE102', name: 'Value Education' }
+                      { code: '24UGTA02', name: 'General Tamil-II' },
+                      { code: '24UGEN02', name: 'General English-II' },
+                      { code: '24UZOC03', name: 'Core-III, Chordata' },
+                      { code: '24UZOCP01', name: 'Core Lab – I, Invertebrata and Chordata' },
+                      { code: '24UBOGE02', name: 'Generic Elective - Botany II' },
+                      { code: '24UBOGEP01', name: 'Generic Elective - Botany Practical' },
+                      { code: '24UZONM3/24UZONM4', name: 'NME-II, Wildlife Conservation and Management / Apiculture' },
+                      { code: '24UZOS01', name: 'SEC-I, Basics of Marine Biology' },
+                      { code: '24UZOGE02', name: 'Generic Elective Zoology-II' },
+                      { code: '24UZOGEP01', name: 'Generic Elective - Zoology Practical-I' }
                     ]
                   }
                 ].map((sem, idx) => (
@@ -338,23 +347,31 @@ export default function BScZoologyPage() {
                   {
                     semester: 'III',
                     courses: [
-                      { code: 'ZOO201', name: 'Animal Physiology (Theory)' },
-                      { code: 'ZOO201P', name: 'Animal Physiology (Practical)' },
-                      { code: 'ALL201', name: 'Allied Paper III (Theory)' },
-                      { code: 'ALL201P', name: 'Allied Paper III (Practical)' },
-                      { code: 'ELEC201', name: 'Core Elective' },
-                      { code: 'SBC201', name: 'Skill-Based Course' }
+                      { code: '24UGTA03', name: 'General Tamil-III' },
+                      { code: '24UGEN03', name: 'General English-III' },
+                      { code: '24UZOC04', name: 'Core-IV, Cell Biology' },
+                      { code: '24UZOC05', name: 'Core-V, Genetics' },
+                      { code: '24UZOCP02', name: 'Core Lab Course-II, Cell Biology, Genetics and Developmental Biology' },
+                      { code: '24UCHGE03', name: 'Chemistry for Biological Sciences I' },
+                      { code: '24UCHGEP01', name: 'Chemistry Practical for Physical and Biological Sciences - I' },
+                      { code: '24UZOS02', name: 'SEC-II, Aquarium Keeping' },
+                      { code: '24UZOS03/24UZOS04', name: 'SEC-III, Biocomposting for Entrepreneurship / Zoological Concepts in Indian Knowledge Systems' },
+                      { code: '24UHAWP01', name: 'Health and Wellness' },
+                      { code: '24UEVS01', name: 'Environmental Studies' }
                     ]
                   },
                   {
                     semester: 'IV',
                     courses: [
-                      { code: 'ZOO202', name: 'Genetics & Evolution (Theory)' },
-                      { code: 'ZOO202P', name: 'Genetics & Evolution (Practical)' },
-                      { code: 'ZOO203', name: 'Cell Biology & Developmental Biology (Theory)' },
-                      { code: 'ZOO203P', name: 'Cell Biology & Developmental Biology (Practical)' },
-                      { code: 'ELEC202', name: 'Core Elective' },
-                      { code: 'EXT202', name: 'Extension Activities' }
+                      { code: '24UGTA04', name: 'General Tamil-IV' },
+                      { code: '24UGEN04', name: 'General English-IV' },
+                      { code: '24UZOC06', name: 'Core-VI, Developmental Biology' },
+                      { code: '24UZOCP02', name: 'Core Lab – II, Cell Biology, Genetics and Developmental Biology' },
+                      { code: '24UCHGE04', name: 'Chemistry for Biological Sciences II' },
+                      { code: '24UCHGEP02', name: 'Chemistry Practical for Physical and Biological Sciences - II' },
+                      { code: '24UZOS05', name: 'SEC-IV, Food, Nutrition and Health' },
+                      { code: '24UZOS06', name: 'SEC-V, Ornamental Fish Farming and Management' },
+                      { code: '24UEVS01', name: 'Environmental Studies' }
                     ]
                   }
                 ].map((sem, idx) => (
@@ -386,23 +403,27 @@ export default function BScZoologyPage() {
                   {
                     semester: 'V',
                     courses: [
-                      { code: 'ZOO301', name: 'Ecology & Ethology (Theory)' },
-                      { code: 'ZOO301P', name: 'Ecology & Ethology (Practical)' },
-                      { code: 'ZOO302', name: 'Biotechnology & Microbiology (Theory)' },
-                      { code: 'ZOO302P', name: 'Biotechnology & Microbiology (Practical)' },
-                      { code: 'ELEC301', name: 'Elective Paper' },
-                      { code: 'PROJ301', name: 'Project Work' }
+                      { code: '23UZOCO07', name: 'Evolutionary Biology' },
+                      { code: '23UZOCO08', name: 'Animal Physiology' },
+                      { code: '23UZOCO09', name: 'Environmental Biology' },
+                      { code: '23UZOCOP03 & P04', name: 'Core Lab - III & IV' },
+                      { code: 'Elective Course-V', name: 'Agricultural Entomology' },
+                      { code: 'Elective Course-VI', name: 'Medical Laboratory Techniques' },
+                      { code: '23UZOVE01', name: 'Value Education' },
+                      { code: '23UZOSI01', name: 'Summer Internship – Internship / Industrial Training / Fauna Survey' }
                     ]
                   },
                   {
                     semester: 'VI',
                     courses: [
-                      { code: 'ZOO303', name: 'Applied Zoology & Immunology (Theory)' },
-                      { code: 'ZOO303P', name: 'Applied Zoology & Immunology (Practical)' },
-                      { code: 'ZOO304', name: 'Molecular Biology & Bioinformatics (Theory)' },
-                      { code: 'ZOO304P', name: 'Molecular Biology & Bioinformatics (Practical)' },
-                      { code: 'ELEC302', name: 'Elective Paper' },
-                      { code: 'PROJ302', name: 'Project & Viva-Voce' }
+                      { code: '23UZOCO10', name: 'Animal Biotechnology' },
+                      { code: '23UZOCO11', name: 'Microbiology' },
+                      { code: '23UZOCO12', name: 'Immunology' },
+                      { code: '23UZOCOP03', name: 'Core Lab - III' },
+                      { code: '23UZOCOP04', name: 'Core Lab - IV' },
+                      { code: '23UZOPR01', name: 'Project with Viva Voce' },
+                      { code: '23UZOEA01', name: 'Extension Activity' },
+                      { code: '-', name: 'Professional Competency Skill – Employability Readiness' }
                     ]
                   }
                 ].map((sem, idx) => (
@@ -557,11 +578,7 @@ export default function BScZoologyPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { title: 'Zoology Laboratory', description: 'Advanced compound microscopes, stereo microscopes for dissection, specimen preservation units, and digital imaging systems for detailed study.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Zoology+Lab' },
-                { title: 'Zoological Museum', description: 'Preserved animal specimens, taxidermy collections, skeletal displays, and educational models for comprehensive taxonomic understanding.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Museum' },
-                { title: 'Molecular Biology Lab', description: 'PCR & electrophoresis units, centrifuges, incubators, gel documentation systems, and genetic analysis equipment for advanced research.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Molecular+Lab' },
-                { title: 'Aquarium & Fish Culture', description: 'Freshwater aquarium setups, marine ecosystem models, fish breeding facilities, and water quality monitoring systems.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Aquarium' },
-                { title: 'Bioinformatics Lab', description: 'High-speed computers with sequence analysis software, phylogenetic tools, protein modeling applications, and database access.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Bioinformatics' },
-                { title: 'Animal House Facility', description: 'Small animal breeding facility with ethical research protocols following CPCSEA guidelines under veterinary supervision.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Animal+House' }
+                { title: 'Zoological Museum', description: 'Preserved animal specimens, taxidermy collections, skeletal displays, and educational models for comprehensive taxonomic understanding.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Museum' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -657,7 +674,7 @@ export default function BScZoologyPage() {
 
             <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
               {[
-                { name: 'Dr. S. Umavathi', designation: 'Associate Professor & Head', qualification: 'M.Sc., Ph.D., PGDCA.', image: '/images/faculties/aided/zoology/Dr.-S.-Umavathi-240x300.png' },
+                { name: 'Dr. S. Umavathi', designation: 'Assistant Professor & Head', qualification: 'M.Sc., Ph.D., PGDCA.', image: '/images/faculties/aided/zoology/Dr.-S.-Umavathi-240x300.png' },
                 { name: 'Dr. Y. Thangam', designation: 'Assistant Professor', qualification: 'M.Sc., M.Phil., M.Ed., Ph.D.', image: '/images/faculties/aided/zoology/Dr.-Y.-Thangam-240x300.png' },
                 { name: 'Dr. R. Sowdeswari', designation: 'Assistant Professor', qualification: 'M.Sc., Ph.D.', image: '/images/faculties/aided/zoology/Dr.-R.-Sowdeswari-240x300.png' },
                 { name: 'Dr. K. M. Syed Ali Fathima', designation: 'Assistant Professor', qualification: 'M.Sc., M.Phil., Ph.D., D.C.A.', image: '/images/faculties/aided/zoology/Dr.-K.-M.-Syed-Ali-Fathima-240x300.png' },
@@ -710,8 +727,8 @@ export default function BScZoologyPage() {
 
             <div className="space-y-4">
               {[
-                { question: 'What is the duration of the B.Sc Zoology programme?', answer: 'The B.Sc Zoology programme is a 3-year full-time undergraduate degree comprising six semesters with practical laboratory sessions.' },
-                { question: 'What are the career opportunities after B.Sc Zoology?', answer: 'Graduates can pursue careers in wildlife conservation, pharmaceutical research, biotechnology, environmental consulting, teaching, forensic science, healthcare, and government services including Forest Service and UPSC examinations.' },
+                { question: 'What is the duration of the B.Sc Zoology programme?', answer: 'The B.Sc Zoology programme is a 3-year full-time Undergraduate degree comprising six semesters with practical laboratory sessions.' },
+                { question: 'What are the career opportunities after B.Sc Zoology?', answer: 'Graduates can pursue careers in wildlife conservation, pharmaceutical research, biotechnology, environmental consulting teaching, forensic science, healthcare, and government services including Forest Service and UPSC examinations.' },
                 { question: 'What is the eligibility criteria for B.Sc Zoology admission?', answer: 'Candidates must have completed Higher Secondary (10+2) from a recognized board with Biology as a mandatory subject. Minimum aggregate marks requirement is typically 50% for general category.' }
               ].map((faq, idx) => (
                 <RevealSection key={idx} delay={idx * 60}>

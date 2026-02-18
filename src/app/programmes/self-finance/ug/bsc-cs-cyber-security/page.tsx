@@ -172,7 +172,7 @@ export default function BScCSCyberSecurityPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=Cyber+Security+Lab"
+                  src="/images/programmes/computerscience/JKKN B.Sc Cyber Security.png"
                   alt="Cyber Security Laboratory"
                   className="w-full h-auto"
                 />

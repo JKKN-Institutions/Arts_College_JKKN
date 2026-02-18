@@ -69,12 +69,6 @@ export default function MScCSDataAnalyticsPage() {
     <div className="min-h-screen bg-white">
       {/* Hero Banner Section */}
       <section className="relative min-h-[70vh] flex items-center overflow-hidden py-12" style={{ backgroundColor: '#eaf1e2' }}>
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-green via-emerald-600 to-teal-700"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,_rgba(255,255,255,0.1)_0%,_transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,_rgba(255,255,255,0.1)_0%,_transparent_50%)]"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-[120px] bg-gradient-to-t from-white to-transparent"></div>
-
         <div className="container mx-auto px-4 relative z-10">
           <RevealSection>
             <div className="max-w-4xl mx-auto text-center">
@@ -88,7 +82,7 @@ export default function MScCSDataAnalyticsPage() {
                   Computer Science
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl font-medium mb-6 text-white/95">
+              <p className="text-xl md:text-2xl font-medium mb-6 text-gray-700">
                 Specialization in Data Analytics & Machine Learning
               </p>
 
@@ -108,11 +102,11 @@ export default function MScCSDataAnalyticsPage() {
               </div>
 
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-brand-green px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                   Apply Now
                   <ArrowRight className="w-4 h-4" />
                 </a>
-                <a href="#curriculum" className="inline-flex items-center gap-2 bg-transparent hover:bg-white text-white hover:text-brand-green border-2 border-white/80 hover:border-white px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
+                <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
                   View Curriculum
                 </a>
               </div>
@@ -291,11 +285,28 @@ export default function MScCSDataAnalyticsPage() {
                 {[
                   {
                     title: 'Semester I',
-                    subjects: ['Advanced Data Structures & Algorithms', 'Statistical Methods for Data Analytics', 'Python for Data Science', 'Database Management Systems', 'Practical: Python & Statistics Lab', 'Research Methodology']
+                    subjects: [
+                      '25PDAC01 – Descriptive Statistics',
+                      '25PDAC02 – Foundations of Data Science',
+                      '25PDAC03 – Linear Algebra',
+                      '25PDACP01 – Oracle and SQL Lab',
+                      '25PDACP02 – Data Analytics Lab I (R, SPSS, SciLab)',
+                      '25PDAE01 / 25PDAE02 – Data Structures / Information Retrieval',
+                      '25PDAE03 / 25PDAE04 – RDBMS and SQL / Information Security',
+                    ]
                   },
                   {
                     title: 'Semester II',
-                    subjects: ['Machine Learning Fundamentals', 'Big Data Technologies', 'Data Visualization & Business Intelligence', 'R Programming for Analytics', 'Practical: ML & Big Data Lab', 'Soft Skills & Professional Communication']
+                    subjects: [
+                      '25PDAC04 – Machine Learning',
+                      '25PDAC05 – Big Data Framework',
+                      '25PDACP03 – Data Analytics Lab II (Hadoop, Map Reduce & R, SPSS)',
+                      '25PDACP04 – Machine Learning and Python Lab',
+                      '25PDAE05 / 25PDAE06 – Data Science with Python / Web Data Analytics',
+                      '25PDAE07 / 25PDAE08 – Social Media Analytics / Customer Analytics',
+                      'Extra Disciplinary Course [EDC] – I',
+                      '25PHR001 – Fundamental Study of Human Rights',
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -324,11 +335,28 @@ export default function MScCSDataAnalyticsPage() {
                 {[
                   {
                     title: 'Semester III',
-                    subjects: ['Deep Learning & Neural Networks', 'Natural Language Processing', 'Cloud Computing & Data Engineering', 'Time Series Analysis & Forecasting', 'Practical: Deep Learning Lab', 'Elective: Computer Vision / Reinforcement Learning']
+                    subjects: [
+                      '23PDA07 – Core 7: Big Data with Spark and Hive',
+                      '23PDA08 – Core 8: Applied Statistics',
+                      '23PDA09 – Core 9: Data Mining',
+                      '23PDA10 – Core 10: Research Methodology',
+                      '23PDAE – Elective V',
+                      '23PDAP05 – Lab 5: Data Analytics Lab III (Spark, Hive)',
+                      '23PDAP06 – Lab 6: Data Mining and Visualization Lab',
+                      '23PDASP – NME / Skill Enhancement Course (SEC)',
+                      '23PDAIT1 – Internship / Industrial Activity',
+                    ]
                   },
                   {
                     title: 'Semester IV',
-                    subjects: ['Advanced Analytics & AI Applications', 'Data Ethics & Privacy', 'Elective: IoT Analytics / Healthcare Analytics', 'Industry Internship', 'Dissertation & Research Project', 'Comprehensive Viva Voce']
+                    subjects: [
+                      '23PDA11 – Core 11: Cloud Computing',
+                      '23PDA12 – Core 12: Cyber Security',
+                      '23PDAPR1 – Project Work and Viva-Voce',
+                      '23PDAE – Elective VI',
+                      '23PDASP – Skill Enhancement Course – III / Professional Competency Skill',
+                      '23PDAEX01 – Extension Activity',
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
