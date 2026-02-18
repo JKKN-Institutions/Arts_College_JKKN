@@ -285,11 +285,22 @@ export default function BSCMicrobiologyPage() {
                 {[
                   {
                     title: 'Semester I',
-                    subjects: ['General Microbiology', 'Cell Biology & Genetics', 'Biochemistry - I', 'Allied Chemistry', 'Practical: Microbiology Lab I', 'Environmental Studies']
+                    subjects: [
+                      { name: 'Fundamental of Microbiology and Microbial Diversity', code: '24UMBC01' },
+                      { name: 'Fundamental of Microbiology Practicals', code: '24UMBCP01' },
+                      { name: 'Basic and Clinical Biochemistry', code: '24UMBDE01' },
+                      { name: 'Foundation Course - Introduction to Microbial World', code: '24UMBFC01' },
+                    ]
                   },
                   {
                     title: 'Semester II',
-                    subjects: ['Bacteriology', 'Biochemistry - II', 'Biostatistics & Computer Applications', 'Allied Botany', 'Practical: Bacteriology Lab', 'Value Education']
+                    subjects: [
+                      { name: 'Microbial Physiology and Metabolism', code: '24UMBC02' },
+                      { name: 'Microbial Physiology and Metabolism Practicals', code: '24UMBCP02' },
+                      { name: 'Bioinstrumentation', code: '24UMBDE02' },
+                      { name: 'Sericulture', code: '24UMBSE01' },
+                      { name: 'AI Acceleration with Microbiology', code: '24UMBSE02' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -300,9 +311,12 @@ export default function BSCMicrobiologyPage() {
                       <div className="p-6">
                         <ul className="space-y-3">
                           {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
+                            <li key={i} className="flex items-start justify-between gap-3 text-gray-700">
+                              <div className="flex items-start gap-2">
+                                <span className="text-emerald-500 mt-1">•</span>
+                                <span>{subject.name}</span>
+                              </div>
+                              <span className="flex-shrink-0 text-xs font-mono bg-brand-green/10 text-brand-green px-2 py-0.5 rounded border border-brand-green/20 mt-0.5">{subject.code}</span>
                             </li>
                           ))}
                         </ul>
@@ -318,11 +332,24 @@ export default function BSCMicrobiologyPage() {
                 {[
                   {
                     title: 'Semester III',
-                    subjects: ['Virology', 'Mycology & Phycology', 'Immunology', 'Microbial Physiology', 'Practical: Virology & Mycology Lab', 'Skill Enhancement: Bioinstrumentation']
+                    subjects: [
+                      { name: 'Molecular Biology and Microbial Genetics', code: '24UMBC03' },
+                      { name: 'Molecular Biology and Microbial Genetics Practicals', code: '24UMBCP03' },
+                      { name: 'Clinical Laboratory Technology', code: '24UMBDE03' },
+                      { name: 'Aquaculture', code: '24UMBSE03' },
+                      { name: 'Organic Farming and Biofertiliser', code: '24UMBSE04' },
+                    ]
                   },
                   {
                     title: 'Semester IV',
-                    subjects: ['Medical Microbiology', 'Food & Dairy Microbiology', 'Molecular Biology', 'Environmental Microbiology', 'Practical: Medical Microbiology Lab', 'Skill Enhancement: Diagnostic Techniques']
+                    subjects: [
+                      { name: 'Immunology and Immunotechnology', code: '24UMBC04' },
+                      { name: 'Immunology and Immunotechnology Practicals', code: '24UMBCP04' },
+                      { name: 'Food Processing Technology', code: '24UMBDE04' },
+                      { name: 'Vaccine Technology', code: '24UMBSE05' },
+                      { name: 'Apiculture', code: '24UMBSE06' },
+                      { name: 'Environmental Studies', code: '24EVS01' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -333,9 +360,12 @@ export default function BSCMicrobiologyPage() {
                       <div className="p-6">
                         <ul className="space-y-3">
                           {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
+                            <li key={i} className="flex items-start justify-between gap-3 text-gray-700">
+                              <div className="flex items-start gap-2">
+                                <span className="text-emerald-500 mt-1">•</span>
+                                <span>{subject.name}</span>
+                              </div>
+                              <span className="flex-shrink-0 text-xs font-mono bg-brand-green/10 text-brand-green px-2 py-0.5 rounded border border-brand-green/20 mt-0.5">{subject.code}</span>
                             </li>
                           ))}
                         </ul>
@@ -351,11 +381,28 @@ export default function BSCMicrobiologyPage() {
                 {[
                   {
                     title: 'Semester V',
-                    subjects: ['Industrial Microbiology', 'Genetic Engineering & rDNA Technology', 'Microbial Biotechnology', 'Elective I: Pharmaceutical Microbiology', 'Practical: Industrial & Biotech Lab', 'Internship Training']
+                    subjects: [
+                      { name: 'Bacteriology and Mycology', code: '24UMBC05' },
+                      { name: 'Virology and Parasitology', code: '24UMBC06' },
+                      { name: 'Core Practical-V', code: '24UMBCP05' },
+                      { name: 'Project Viva Voce', code: '—' },
+                      { name: 'Recombinant DNA Technology', code: '24UMBDE05' },
+                      { name: 'Bio-Safety and Bioethics', code: '24UMBDE06' },
+                      { name: 'Value Education', code: '24UMBVE01' },
+                      { name: 'Internship / Industrial Visit / Field Visit', code: '—' },
+                    ]
                   },
                   {
                     title: 'Semester VI',
-                    subjects: ['Agricultural Microbiology', 'Soil & Marine Microbiology', 'Elective II: Clinical Microbiology / Bioremediation', 'Research Project & Dissertation', 'Project Viva-Voce', 'Comprehensive Practical Examination']
+                    subjects: [
+                      { name: 'Environmental and Agriculture Microbiology', code: '24UMBC07' },
+                      { name: 'Food, Dairy and Probiotic Microbiology', code: '24UMBC08' },
+                      { name: 'Core Practical-VI', code: '24UMBCP06' },
+                      { name: 'Pharmaceutical Microbiology', code: '24UMBDE07' },
+                      { name: 'Entrepreneurship and Bio-Business', code: '24UMBDE08' },
+                      { name: 'Microbial Quality Control and Testing', code: '24UMBPCS01' },
+                      { name: 'Extension Activity', code: '—' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -366,9 +413,12 @@ export default function BSCMicrobiologyPage() {
                       <div className="p-6">
                         <ul className="space-y-3">
                           {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
+                            <li key={i} className="flex items-start justify-between gap-3 text-gray-700">
+                              <div className="flex items-start gap-2">
+                                <span className="text-emerald-500 mt-1">•</span>
+                                <span>{subject.name}</span>
+                              </div>
+                              <span className="flex-shrink-0 text-xs font-mono bg-brand-green/10 text-brand-green px-2 py-0.5 rounded border border-brand-green/20 mt-0.5">{subject.code}</span>
                             </li>
                           ))}
                         </ul>
