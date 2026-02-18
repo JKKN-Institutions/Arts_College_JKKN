@@ -3435,7 +3435,7 @@ export default function Navigation() {
                             Internal Quality Assurance Cell
                           </Link>
                           <Link
-                            href="/documents/committees/Anti_Ragging-committee-2024.pdf"
+                            href="/documents/committees/2-Anti Ragging Committee 2025.pdf"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >

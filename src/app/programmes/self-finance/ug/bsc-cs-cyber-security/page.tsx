@@ -176,9 +176,9 @@ export default function BScCSCyberSecurityPage() {
                   alt="Cyber Security Laboratory"
                   className="w-full h-auto"
                 />
-                <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
+                {/* <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
                   Since 2010
-                </span>
+                </span> */}
               </div>
             </RevealSection>
           </div>
@@ -285,11 +285,28 @@ export default function BScCSCyberSecurityPage() {
                 {[
                   {
                     title: 'Semester I',
-                    subjects: ['Programming in C', 'Digital Fundamentals', 'Computer Organization', 'Mathematics for Computing I', 'Introduction to Cyber Security', 'Environmental Studies']
+                    courses: [
+                      { code: '24UGTA01', name: 'General Tamil – I' },
+                      { code: '24UGEN01', name: 'General English – I' },
+                      { code: '24UCYC01', name: 'Core – I – Programming in C' },
+                      { code: '24UCYCP01', name: 'Core Practical – I - Programming in C Lab' },
+                      { code: '24UMAGE3 / 24UMAGE5 / 24UMAGE7 / 24UMAGE9', name: 'Generic Elective – I (Discrete Mathematics-I / Introduction to Linear Algebra / Optimization Techniques / Numerical Methods-I)' },
+                      { code: '24UCSNM1', name: 'NME – I – Fundamentals of Information Technology' },
+                      { code: '24UCSS01', name: 'SEC – I - Problem Solving Techniques' },
+                    ]
                   },
                   {
                     title: 'Semester II',
-                    subjects: ['Data Structures', 'Object-Oriented Programming', 'Operating Systems', 'Mathematics for Computing II', 'Network Fundamentals', 'Value Education']
+                    courses: [
+                      { code: '24UGTA02', name: 'General Tamil – II' },
+                      { code: '24UGEN02', name: 'General English – II' },
+                      { code: '24UCYC02', name: 'Core – II – Data Structures and Algorithms' },
+                      { code: '24UCYCP02', name: 'Core Practical – II - Data Structures and Algorithms Lab' },
+                      { code: '24UMAGE4 / 24UMAGE6 / 24UMAGE8 / 24UMAGE10', name: 'Generic Elective – II (Discrete Mathematics-II / Numerical Methods / Graph Theory and its Applications / Numerical Methods-II)' },
+                      { code: '24UMAGEP02 / 24UMAGEP03 / 24UMAGEP04 / 24UMAGEP05 / 24UMAGEP06', name: 'Generic Elective - Practical - I (Discrete Mathematics / Introduction to Linear Algebra / Optimization Techniques / Graph Theory and its Applications / Numerical Methods)' },
+                      { code: '24UCSNM2', name: 'NME - II - Advanced Excel' },
+                      { code: '24UCSS02', name: 'SEC – II - Introduction to HTML' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -297,15 +314,23 @@ export default function BScCSCyberSecurityPage() {
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
                         <h4 className="text-xl font-bold">{sem.title}</h4>
                       </div>
-                      <div className="p-6">
-                        <ul className="space-y-3">
-                          {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="p-4">
+                        <table className="w-full text-sm">
+                          <thead>
+                            <tr className="border-b border-brand-green/10">
+                              <th className="text-left py-2 px-2 text-brand-green font-semibold w-2/5">Course Code</th>
+                              <th className="text-left py-2 px-2 text-brand-green font-semibold">Course Name</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {sem.courses.map((course, i) => (
+                              <tr key={i} className={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-brand-green/[0.02]' : ''}`}>
+                                <td className="py-2 px-2 text-gray-500 font-mono text-xs align-top">{course.code}</td>
+                                <td className="py-2 px-2 text-gray-700 align-top">{course.name}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
                       </div>
                     </GlassCard>
                   </RevealSection>
@@ -318,11 +343,31 @@ export default function BScCSCyberSecurityPage() {
                 {[
                   {
                     title: 'Semester III',
-                    subjects: ['Object-Oriented Programming with Java', 'Database Management Systems', 'Network Security Fundamentals', 'Cryptography & Network Security', 'Linux System Administration', 'Soft Skills Development']
+                    courses: [
+                      { code: '24UGTA03', name: 'General Tamil – III' },
+                      { code: '24UGEN03', name: 'General English – III' },
+                      { code: '24UCYC03', name: 'Core III - Object Oriented Programming with Java' },
+                      { code: '24UCYCP03', name: 'Core Practical – III - Object Oriented Programming with Java Lab' },
+                      { code: '24USTAGE1', name: 'Generic Elective – III - Statistical Methods and its Application-I' },
+                      { code: '24UCSS03', name: 'SEC III - Web Designing' },
+                      { code: '24UCSS04', name: 'SEC IV - Advanced Excel' },
+                      { code: '24UEVS01', name: 'Environmental Studies' },
+                      { code: '24UHAWP01', name: 'Health and Wellness' },
+                    ]
                   },
                   {
                     title: 'Semester IV',
-                    subjects: ['Web Technologies', 'Information Security Management', 'Ethical Hacking Basics', 'Firewall & IDS/IPS', 'Python for Security', 'Professional Ethics']
+                    courses: [
+                      { code: '24UGTA04', name: 'General Tamil – IV' },
+                      { code: '24UGEN04', name: 'General English – IV' },
+                      { code: '24UCYC04', name: 'Core IV - Tools and Techniques for Cyber Security' },
+                      { code: '24UCYCP04', name: 'Core Practical IV - Cyber Security Lab' },
+                      { code: '24USTAGE2', name: 'Generic Elective – IV Statistical Methods and its Application-II' },
+                      { code: '24USTAGEP01', name: 'Statistical Practical' },
+                      { code: '24UCSS05', name: 'SEC V - PHP Programming' },
+                      { code: '24UCSS06', name: 'SEC VI - Multimedia Systems' },
+                      { code: '24UEVS01', name: 'Environmental Studies' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -330,15 +375,23 @@ export default function BScCSCyberSecurityPage() {
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
                         <h4 className="text-xl font-bold">{sem.title}</h4>
                       </div>
-                      <div className="p-6">
-                        <ul className="space-y-3">
-                          {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="p-4">
+                        <table className="w-full text-sm">
+                          <thead>
+                            <tr className="border-b border-brand-green/10">
+                              <th className="text-left py-2 px-2 text-brand-green font-semibold w-2/5">Course Code</th>
+                              <th className="text-left py-2 px-2 text-brand-green font-semibold">Course Name</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {sem.courses.map((course, i) => (
+                              <tr key={i} className={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-brand-green/[0.02]' : ''}`}>
+                                <td className="py-2 px-2 text-gray-500 font-mono text-xs align-top">{course.code}</td>
+                                <td className="py-2 px-2 text-gray-700 align-top">{course.name}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
                       </div>
                     </GlassCard>
                   </RevealSection>
@@ -351,11 +404,28 @@ export default function BScCSCyberSecurityPage() {
                 {[
                   {
                     title: 'Semester V',
-                    subjects: ['Penetration Testing & Vulnerability Assessment', 'Digital Forensics & Incident Response', 'Malware Analysis', 'Cloud Security', 'Wireless Network Security', 'Internship / Project Work']
+                    courses: [
+                      { code: '24UCYC05', name: 'Core V - Relational Database Management System' },
+                      { code: '24UCYCP05', name: 'Core Practical V - Practical: RDBMS using ORACLE Lab' },
+                      { code: '24UCYC06', name: 'Core VI - Essentials of Cyber Security' },
+                      { code: '24UCYCPR1', name: 'Core VII - Project with Viva Voce' },
+                      { code: '24UCYCDSE', name: 'Elective Course - V (Discipline Specific)' },
+                      { code: '24UCYCDSE', name: 'Elective Course - VI (Discipline Specific)' },
+                      { code: '24UVED01', name: 'Value Education - Yoga' },
+                      { code: '24UCYCTR1', name: 'Summer Internship / Industrial Training' },
+                    ]
                   },
                   {
                     title: 'Semester VI',
-                    subjects: ['Advanced Ethical Hacking', 'Security Operations Center (SOC)', 'Web Application Security', 'IoT Security', 'Cyber Law & Ethics', 'Major Project / Dissertation']
+                    courses: [
+                      { code: '24UCYC06', name: 'Core VI - Ethical Hacking and Cyber Security' },
+                      { code: '24UCYCP06', name: 'Core Practical VI - Practical: Ethical Hacking Lab' },
+                      { code: '24UCYC07', name: 'Core VII - Network Security' },
+                      { code: '24UCYCDSE', name: 'Elective Course - VII (Discipline Specific)' },
+                      { code: '24UCYCDSE', name: 'Elective Course - VIII (Discipline Specific)' },
+                      { code: '—', name: 'Professional Competency Skill Enhancement Course' },
+                      { code: '24UEXA01', name: 'Extension Activity' },
+                    ]
                   }
                 ].map((sem, idx) => (
                   <RevealSection key={idx} delay={idx * 150}>
@@ -363,15 +433,23 @@ export default function BScCSCyberSecurityPage() {
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
                         <h4 className="text-xl font-bold">{sem.title}</h4>
                       </div>
-                      <div className="p-6">
-                        <ul className="space-y-3">
-                          {sem.subjects.map((subject, i) => (
-                            <li key={i} className="flex items-start gap-2 text-gray-700">
-                              <span className="text-emerald-500 mt-1">•</span>
-                              <span>{subject}</span>
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="p-4">
+                        <table className="w-full text-sm">
+                          <thead>
+                            <tr className="border-b border-brand-green/10">
+                              <th className="text-left py-2 px-2 text-brand-green font-semibold w-2/5">Course Code</th>
+                              <th className="text-left py-2 px-2 text-brand-green font-semibold">Course Name</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {sem.courses.map((course, i) => (
+                              <tr key={i} className={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-brand-green/[0.02]' : ''}`}>
+                                <td className="py-2 px-2 text-gray-500 font-mono text-xs align-top">{course.code}</td>
+                                <td className="py-2 px-2 text-gray-700 align-top">{course.name}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
                       </div>
                     </GlassCard>
                   </RevealSection>

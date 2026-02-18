@@ -2302,7 +2302,7 @@ export default function Navigation() {
                               Internal Quality Assurance Cell
                             </Link>
                             <Link
-                              href="/documents/committees/Anti_Ragging-committee-2024.pdf"
+                              href="/documents/committees/2-Anti%20Ragging%20Committee%202025.pdf"
                               role="menuitem"
                               tabIndex={0}
                               className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -2310,7 +2310,7 @@ export default function Navigation() {
                               Anti-Ragging Committee
                             </Link>
                             <Link
-                              href="/documents/committees/Grievance-Redressal-Cell-2024.pdf"
+                              href="/documents/committees/3-Grievance-Redressal%20cell.pdf"
                               role="menuitem"
                               tabIndex={0}
                               className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -2326,7 +2326,7 @@ export default function Navigation() {
                               Student Grievance Form
                             </Link>
                             <Link
-                              href="/documents/committees/Internal-committee-2024.pdf"
+                              href="/documents/committees/4-ICC-Merged.pdf"
                               role="menuitem"
                               tabIndex={0}
                               className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -2334,7 +2334,7 @@ export default function Navigation() {
                               Internal Committee
                             </Link>
                             <Link
-                              href="/documents/committees/Institution-Industry-Cell-2024.pdf"
+                              href="/documents/committees/27-institution industry cell IIC 2025.pdf"
                               role="menuitem"
                               tabIndex={0}
                               className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -2342,7 +2342,7 @@ export default function Navigation() {
                               Institution Industry Cell
                             </Link>
                             <Link
-                              href="/documents/committees/SC-ST-Committee-2024.pdf"
+                              href="/documents/committees/5-SCST Cell.pdf"
                               role="menuitem"
                               tabIndex={0}
                               className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -3262,7 +3262,7 @@ export default function Navigation() {
                 {mobileAicteExpanded && (
                   <div className="pb-2">
                     <Link
-                      href="/documents/aicte/LOA_EOA_Report_23-24.pdf"
+                      href="/documents/committees/28-LOA_EOA_merged_2026.pdf"
                       onClick={toggleMobileMenu}
                       className="block py-2 px-8 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                     >
@@ -3465,14 +3465,14 @@ export default function Navigation() {
                             Internal Quality Assurance Cell
                           </Link>
                           <Link
-                            href="/documents/committees/Anti_Ragging-committee-2024.pdf"
+                            href="/documents/committees/2-Anti%20Ragging%20Committee%202025.pdf"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
                             Anti-Ragging Committee
                           </Link>
                           <Link
-                            href="/documents/committees/Grievance-Redressal-Cell-2024.pdf"
+                            href="/documents/committees/27-institution industry cell IIC 2025.pdf"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
@@ -3486,21 +3486,21 @@ export default function Navigation() {
                             Student Grievance Form
                           </Link>
                           <Link
-                            href="/documents/committees/Internal-committee-2024.pdf"
+                            href="/documents/committees/4-ICC-Merged.pdf"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
                             Internal Committee
                           </Link>
                           <Link
-                            href="/documents/committees/Institution-Industry-Cell-2024.pdf"
+                            href="/documents/committees/27-institution industry cell IIC 2025.pdf"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
                             Institution Industry Cell
                           </Link>
                           <Link
-                            href="/documents/committees/SC-ST-Committee-2024.pdf"
+                            href="/documents/committees/5-SCST Cell.pdf"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
