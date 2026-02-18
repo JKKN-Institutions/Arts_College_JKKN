@@ -13,6 +13,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "JKKN College",
   description: "JKKN College of Arts and Science",
+  verification: {
+    google: "ONbewRpXBBv1QVV7f0lrEarMUyhdD4n0X8xHflc77jc",
+  },
 };
 
 export default function RootLayout({
