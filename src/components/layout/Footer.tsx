@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Left Column - College Info & Map */}
           <div>
             <h3 className="text-xl font-bold mb-4 border-b-2 border-brand-yellow pb-2 inline-block">
-              J.K.K NATARAJA COLLEGE OF ARTS & SCIENCE
+              JKKN College of Arts and Science
             </h3>
 
             {/* Map Embed */}
@@ -41,7 +41,7 @@ export default function Footer() {
             <ul className="space-y-3 mt-6">
               <li>
                 <a href="https://dental.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition">
-                  JKKN Dental College and Hospital
+                  JKKN Dental College & Hospital
                 </a>
               </li>
               <li>
@@ -81,7 +81,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="https://nv.jkkn.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition">
-                  Nattraja Vidyalaya
+                  Nattraja Vidhyalaya
                 </a>
               </li>
             </ul>
@@ -108,7 +108,7 @@ export default function Footer() {
               <div>
                 <span className="font-semibold">Address:</span>
                 <p className="mt-2 leading-relaxed">
-                  J.K.K NATARAJA COLLEGE OF ARTS & SCIENCE .NH-544 (Salem To Coimbatore National Highway), Kumarapalayam (TK), Namakkal (DT). Tamil Nadu. 638183.
+                  JKKN College of Arts and Science, NH-544 (Salem To Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT). Tamil Nadu. 638183.
                 </p>
               </div>
             </div>

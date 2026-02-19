@@ -909,7 +909,7 @@ export default function BComCAPage() {
                       </div>
                       <div>
                         <h4 className="text-lg font-bold text-brand-green mb-2">
-                          74+ Years of Academic Excellence
+                          31+ Years of Academic Excellence
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
                           Part of JKKN Educational Institutions with proven legacy in progressive education since 1954.

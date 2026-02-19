@@ -115,7 +115,7 @@ export default function PrivacyPolicyPage() {
             <div className="text-gray-700 space-y-1">
               <p><strong>Call:</strong> +917845945001</p>
               <p><strong>Email:</strong> admin@jkkn.org</p>
-              <p><strong>Address:</strong> JKKN Educational Institutions, Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Kumarapalayam (TK), Namakkal (DT), Tamil Nadu, 638183</p>
+              <p><strong>Address:</strong> JKKN Educational Institutions, Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Komarapalayam (TK), Namakkal (DT), Tamil Nadu, 638183</p>
             </div>
             <p className="text-gray-700 leading-relaxed mt-4">
               We will endeavor to resolve any complaints or disputes about our privacy practices in a timely and fair manner.

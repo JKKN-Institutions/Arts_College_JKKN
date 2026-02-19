@@ -1,6 +1,4 @@
-'use client';
-
-import { Award, TrendingUp, Users, BookOpen, Sparkles, ArrowRight, GraduationCap, Star, Building2 } from 'lucide-react';
+import { BookOpen, Sparkles, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 
 export default function HeroSection() {
@@ -9,8 +7,8 @@ export default function HeroSection() {
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         {/* Gradient Orbs */}
-        <div className="absolute top-10 right-10 w-96 h-96 bg-brand-yellow/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-10 left-10 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-10 right-10 w-96 h-96 bg-brand-yellow/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 left-10 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
         {/* Decorative pattern */}
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4wNSIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9nPjwvc3ZnPg==')] opacity-20"></div>
       </div>
@@ -44,7 +42,7 @@ export default function HeroSection() {
 
             {/* Description - More Compact */}
             <p className="text-[13px] sm:text-[15px] lg:text-[16px] leading-[20px] sm:leading-[24px] lg:leading-[26px] text-white/90 font-normal max-w-xl">
-              Transform your career with <span className="text-brand-yellow font-semibold">industry-integrated programs</span> in Science, Commerce, IT &amp; Management. Join <span className="text-brand-yellow font-semibold">3500+ students</span> building successful careers since 1995.
+              Transform your career with <span className="text-brand-yellow font-semibold">industry-integrated programs</span> in Science, Commerce, IT &amp; Management. Join <span className="text-brand-yellow font-semibold">1300+ students</span> building successful careers since 1995.
             </p>
 
             {/* Stats Row - Compact */}
@@ -56,7 +54,7 @@ export default function HeroSection() {
               </div>
               {/* Stat 2 */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">1200</div>
+                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">1300+</div>
                 <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Students</div>
               </div>
               {/* Stat 3 */}
@@ -66,7 +64,7 @@ export default function HeroSection() {
               </div>
               {/* Stat 4 */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">74+</div>
+                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">31+</div>
                 <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Years</div>
               </div>
             </div>
@@ -122,7 +120,7 @@ export default function HeroSection() {
                     className="object-cover"
                     priority
                     sizes="(max-width: 640px) 280px, (max-width: 1024px) 400px, 40vw"
-                    quality={90}
+                    quality={75}
                   />
                   {/* Subtle Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>

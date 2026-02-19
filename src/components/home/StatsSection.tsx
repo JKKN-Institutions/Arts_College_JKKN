@@ -18,7 +18,7 @@ const stats = [
   },
   {
     icon: Users,
-    end: 3500,
+    end: 1300,
     suffix: '+',
     label: 'Learners',
   },

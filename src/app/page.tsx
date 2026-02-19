@@ -221,7 +221,7 @@ export default function Home() {
               </div>
               <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Digital Library</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                50,000+ books, e-journals, NPTEL courses, and online learning resources accessible 24/7
+                5,000+ books, e-journals, NPTEL courses, and online learning resources accessible 24/7
               </p>
             </div>
 
@@ -395,7 +395,7 @@ export default function Home() {
               </div>
               <h3 className="text-[18px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold tracking-[-0.45px] md:tracking-[-0.6px] text-[#0b6d41] mb-4">Digital Library</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                80,000+ books, e-journals, NPTEL courses, and online databases with comfortable reading space
+                5,000+ books, e-journals, NPTEL courses, and online databases with comfortable reading space
               </p>
             </div>
 

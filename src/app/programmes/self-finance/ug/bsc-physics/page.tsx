@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Users, Award, Briefcase, GraduationCap, Building2, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, Atom, Microscope, FlaskConical, Database, Zap, Brain, Calendar, UserCheck, DollarSign, TrendingUp } from 'lucide-react';
 import CountUp from '@/components/ui/CountUp';
-import Marquee from '@/components/ui/Marquee';
 
 /* ─── Scroll-reveal hook ─── */
 function useScrollReveal() {
@@ -109,10 +108,10 @@ export default function BScPhysicsPage() {
             "description": "A comprehensive 3-year undergraduate programme in Physics covering classical mechanics, quantum physics, electromagnetism, thermodynamics, nuclear physics, and electronics designed to develop scientific thinking, research aptitude, and practical laboratory skills.",
             "provider": {
               "@type": "CollegeOrUniversity",
-              "name": "J.K.K. Nattraja College of Arts and Science",
+              "name": "JKKN College of Arts and Science",
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "Kumarapalayam",
+                "addressLocality": "Komarapalayam",
                 "addressRegion": "Tamil Nadu",
                 "addressCountry": "India"
               }
@@ -728,7 +727,7 @@ export default function BScPhysicsPage() {
                 </div>
               </RevealSection>
 
-              <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
+              <div className="flex flex-wrap justify-center gap-6">
                 {[
                   { name: 'Dr. N. Latha', designation: 'Assistant Professor', qualification: 'M.Sc., M.Phil., Ph.D., B.Ed.', image: '/images/faculties/self/physics/Dr.N.LATHA_-300x199.png' },
                   { name: 'Mr. K. Dinesh', designation: 'Assistant Professor', qualification: 'M.Sc., B.Ed., PGDCA., D.Yoga., (PhD)', image: '/images/faculties/self/physics/Mr.K.DINESH-300x199.png' },
@@ -751,7 +750,7 @@ export default function BScPhysicsPage() {
                     </div>
                   </div>
                 ))}
-              </Marquee>
+              </div>
             </div>
           </div>
         </section>

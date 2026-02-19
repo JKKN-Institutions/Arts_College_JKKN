@@ -79,9 +79,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-gray-800 mb-1">Address</h3>
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                      J.K.K Nataraja College of Arts &amp; Science<br />
+                      JKKN College of Arts and Science<br />
                       NH-544 (Salem to Coimbatore National Highway)<br />
-                      Kumarapalayam (TK), Namakkal (DT)<br />
+                      Komarapalayam (TK), Namakkal (DT)<br />
                       Tamil Nadu - 638183
                     </p>
                   </div>

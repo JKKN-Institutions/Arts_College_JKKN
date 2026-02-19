@@ -108,10 +108,10 @@ export default function BSCTextileFashionDesigningPage() {
             "description": "A comprehensive 3-year undergraduate programme combining creative design thinking with technical textile knowledge, covering fashion illustration, garment construction, CAD, merchandising, and sustainable fashion practices.",
             "provider": {
               "@type": "CollegeOrUniversity",
-              "name": "J.K.K. Nattraja College of Arts and Science",
+              "name": "JKKN College of Arts and Science",
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "Kumarapalayam",
+                "addressLocality": "Komarapalayam",
                 "addressRegion": "Tamil Nadu",
                 "addressCountry": "India"
               }

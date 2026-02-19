@@ -120,7 +120,7 @@ export default function OurTrust() {
           <div className="bg-white/10 backdrop-blur-xl rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 border border-white/20 shadow-2xl">
             <div className="space-y-4 md:space-y-6 text-white/90 text-sm md:text-base leading-relaxed">
               <p className="border-l-4 border-brand-yellow pl-4 md:pl-6">
-                In the 1960s, female children in Kumarapalayam had to walk 2.5 km to the nearby town of Bhavani for their schooling. Some families hesitated to send their daughters on such long journeys. Realizing the need for women's education, a visionary philanthropist of the zone, Shri. J.K.K. Natarajah Chettiar, initiated a girls' school in Kumarapalayam that started functioning.
+                In the 1960s, female children in Komarapalayam had to walk 2.5 km to the nearby town of Bhavani for their schooling. Some families hesitated to send their daughters on such long journeys. Realizing the need for women's education, a visionary philanthropist of the zone, Shri. J.K.K. Natarajah Chettiar, initiated a girls' school in Komarapalayam that started functioning.
               </p>
 
               <p>
@@ -229,7 +229,7 @@ export default function OurTrust() {
                   <h3 className="text-2xl font-bold text-brand-yellow mb-2">1952</h3>
                   <h4 className="text-lg font-semibold text-white mb-2">Girls School Founded</h4>
                   <p className="text-white/80 text-sm">
-                    Shri. J.K.K. Natarajah Chettiar established the first girls' school in Kumarapalayam
+                    Shri. J.K.K. Natarajah Chettiar established the first girls' school in Komarapalayam
                   </p>
                 </div>
               </div>

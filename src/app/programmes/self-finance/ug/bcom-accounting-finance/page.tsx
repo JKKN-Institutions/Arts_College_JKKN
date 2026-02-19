@@ -170,10 +170,10 @@ export default function BComAccountingFinancePage() {
             "description": "A comprehensive 3-year undergraduate programme in Accounting and Finance covering financial accounting, corporate finance, taxation, auditing, cost accounting, and financial management designed to develop analytical thinking, professional competence, and practical business skills.",
             "provider": {
               "@type": "CollegeOrUniversity",
-              "name": "J.K.K. Nattraja College of Arts and Science",
+              "name": "JKKN College of Arts and Science",
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "Kumarapalayam",
+                "addressLocality": "Komarapalayam",
                 "addressRegion": "Tamil Nadu",
                 "addressCountry": "India"
               }

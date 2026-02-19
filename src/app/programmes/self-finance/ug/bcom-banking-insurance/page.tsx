@@ -166,10 +166,10 @@ export default function BComBankingInsurancePage() {
             "description": "A comprehensive 3-year undergraduate programme in Banking and Insurance covering financial management, risk assessment, insurance principles, banking operations, and investment strategies designed to develop analytical thinking, financial expertise, and professional skills for the BFSI sector.",
             "provider": {
               "@type": "CollegeOrUniversity",
-              "name": "J.K.K. Nattraja College of Arts and Science",
+              "name": "JKKN College of Arts and Science",
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "Kumarapalayam",
+                "addressLocality": "Komarapalayam",
                 "addressRegion": "Tamil Nadu",
                 "addressCountry": "India"
               }
