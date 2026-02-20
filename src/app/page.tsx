@@ -289,46 +289,49 @@ export default function Home() {
           <div>
             <h3 className="text-[24px] md:text-[30px] lg:text-[36px] leading-[32px] md:leading-[36px] lg:leading-[40px] font-bold tracking-[-0.75px] lg:tracking-[-0.9px] text-center mb-8 text-brand-green">Our Top Recruiters</h3>
 
-            {/* Recruiters Grid */}
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-4 mb-4">
-              <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-center h-16 hover:shadow-lg transition border border-gray-200">
-                <span className="text-gray-900 font-semibold text-sm md:text-base">TCS</span>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-center h-16 hover:shadow-lg transition border border-gray-200">
-                <span className="text-gray-900 font-semibold text-sm md:text-base">Infosys</span>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-center h-16 hover:shadow-lg transition border border-gray-200">
-                <span className="text-gray-900 font-semibold text-sm md:text-base">Wipro</span>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-center h-16 hover:shadow-lg transition border border-gray-200">
-                <span className="text-gray-900 font-semibold text-sm md:text-base">Cognizant</span>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-center h-16 hover:shadow-lg transition border border-gray-200">
-                <span className="text-gray-900 font-semibold text-sm md:text-base">HCL</span>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-center h-16 hover:shadow-lg transition border border-gray-200">
-                <span className="text-gray-900 font-semibold text-sm md:text-base">Accenture</span>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-              <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-center h-16 hover:shadow-lg transition border border-gray-200">
-                <span className="text-gray-900 font-semibold text-sm md:text-base">Tech Mahindra</span>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-center h-16 hover:shadow-lg transition border border-gray-200">
-                <span className="text-gray-900 font-semibold text-sm md:text-base">Zoho</span>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-center h-16 hover:shadow-lg transition border border-gray-200">
-                <span className="text-gray-900 font-semibold text-sm md:text-base">Amazon</span>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-center h-16 hover:shadow-lg transition border border-gray-200">
-                <span className="text-gray-900 font-semibold text-sm md:text-base">Flipkart</span>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-center h-16 hover:shadow-lg transition border border-gray-200">
-                <span className="text-gray-900 font-semibold text-sm md:text-base">HDFC Bank</span>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4 flex items-center justify-center h-16 hover:shadow-lg transition border border-gray-200">
-                <span className="text-gray-900 font-semibold text-sm md:text-base">ICICI Bank</span>
+            {/* Marquee */}
+            <div className="overflow-hidden">
+              <style>{`
+                @keyframes marquee-scroll {
+                  0% { transform: translateX(0); }
+                  100% { transform: translateX(-50%); }
+                }
+                .marquee-track {
+                  display: flex;
+                  width: max-content;
+                  animation: marquee-scroll 18s linear infinite;
+                }
+                .marquee-track:hover {
+                  animation-play-state: paused;
+                }
+              `}</style>
+              <div className="marquee-track">
+                {[
+                  { src: '/images/recruiters/Foxconn.png', alt: 'Foxconn' },
+                  { src: '/images/recruiters/Infronex.jpg', alt: 'Infronex' },
+                  { src: '/images/recruiters/premier.png', alt: 'Premier' },
+                  { src: '/images/recruiters/Rinex (2).png', alt: 'Rinex' },
+                  { src: '/images/recruiters/sakthi.png', alt: 'Sakthi' },
+                  { src: '/images/recruiters/TVS.jpg', alt: 'TVS' },
+                  { src: '/images/recruiters/Foxconn.png', alt: 'Foxconn' },
+                  { src: '/images/recruiters/Infronex.jpg', alt: 'Infronex' },
+                  { src: '/images/recruiters/premier.png', alt: 'Premier' },
+                  { src: '/images/recruiters/Rinex (2).png', alt: 'Rinex' },
+                  { src: '/images/recruiters/sakthi.png', alt: 'Sakthi' },
+                  { src: '/images/recruiters/TVS.jpg', alt: 'TVS' },
+                ].map((logo, i) => (
+                  <div
+                    key={i}
+                    className="flex-shrink-0 mx-6 bg-white border border-gray-200 rounded-xl shadow-sm flex items-center justify-center"
+                    style={{ width: 160, height: 80 }}
+                  >
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="max-h-14 max-w-[130px] object-contain"
+                    />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
