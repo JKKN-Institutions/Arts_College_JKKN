@@ -2,13 +2,26 @@ import {
   Home,
   Info,
   GraduationCap,
-  Building2,
   FileCheck,
   Warehouse,
   UserPlus,
   FileText,
   LayoutGrid,
   Phone,
+  BookOpen,
+  FlaskConical,
+  Mic2,
+  Users,
+  School,
+  UtensilsCrossed,
+  Dumbbell,
+  Landmark,
+  Bus,
+  BedDouble,
+  Building2,
+  Heart,
+  Target,
+  Briefcase,
   LucideIcon
 } from 'lucide-react';
 import { BottomNavGroup, FlatMenuItem, HierarchicalMenuItem } from '@/components/BottomNav/types';
@@ -40,25 +53,25 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
         {
           href: '/about/our-institution',
           label: 'Our Institution',
-          icon: Info,
+          icon: Building2,
           active: pathname === '/about/our-institution'
         },
         {
           href: '/about/our-trust',
           label: 'Our Trust',
-          icon: Info,
+          icon: Heart,
           active: pathname === '/about/our-trust'
         },
         {
           href: '/about/vision-mission',
           label: 'Vision & Mission',
-          icon: Info,
+          icon: Target,
           active: pathname === '/about/vision-mission'
         },
         {
           href: '/about/our-management',
           label: 'Our Management',
-          icon: Info,
+          icon: Briefcase,
           active: pathname === '/about/our-management'
         }
       ]
@@ -510,58 +523,6 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
       menus: []
     },
 
-    // Group 5: Departments (More menu — hierarchical drill-down)
-    {
-      id: 'departments',
-      groupLabel: 'Departments',
-      icon: Building2,
-      isHierarchical: true,
-      hierarchicalMenus: [
-        {
-          id: 'departments-aided',
-          label: 'Aided',
-          icon: Building2,
-          children: [
-            { id: 'dept-aided-tamil', label: 'Department of Tamil', icon: Building2, href: '/departments/aided/tamil', active: pathname === '/departments/aided/tamil' },
-            { id: 'dept-aided-english', label: 'Department of English', icon: Building2, href: '/departments/aided/english', active: pathname === '/departments/aided/english' },
-            { id: 'dept-aided-mathematics', label: 'Department of Mathematics', icon: Building2, href: '/departments/aided/mathematics', active: pathname === '/departments/aided/mathematics' },
-            { id: 'dept-aided-computer-science', label: 'Department of Computer Science', icon: Building2, href: '/departments/aided/computer-science', active: pathname === '/departments/aided/computer-science' },
-            { id: 'dept-aided-commerce', label: 'Department of Commerce', icon: Building2, href: '/departments/aided/commerce', active: pathname === '/departments/aided/commerce' },
-            { id: 'dept-aided-economics', label: 'Department of Economics', icon: Building2, href: '/departments/aided/economics', active: pathname === '/departments/aided/economics' },
-            { id: 'dept-aided-history', label: 'Department of History', icon: Building2, href: '/departments/aided/history', active: pathname === '/departments/aided/history' },
-            { id: 'dept-aided-physics', label: 'Department of Physics', icon: Building2, href: '/departments/aided/physics', active: pathname === '/departments/aided/physics' },
-            { id: 'dept-aided-zoology', label: 'Department of Zoology', icon: Building2, href: '/departments/aided/zoology', active: pathname === '/departments/aided/zoology' },
-            { id: 'dept-aided-chemistry', label: 'Department of Chemistry', icon: Building2, href: '/departments/aided/chemistry', active: pathname === '/departments/aided/chemistry' },
-            { id: 'dept-aided-geography', label: 'Department of Geography', icon: Building2, href: '/departments/aided/geography', active: pathname === '/departments/aided/geography' },
-            { id: 'dept-aided-physical-education', label: 'Department of Physical Education', icon: Building2, href: '/departments/aided/physical-education', active: pathname === '/departments/aided/physical-education' },
-            { id: 'dept-aided-library', label: 'Department of Library', icon: Building2, href: '/departments/aided/library', active: pathname === '/departments/aided/library' },
-            { id: 'dept-aided-botany', label: 'Department of Botany', icon: Building2, href: '/departments/aided/botany', active: pathname === '/departments/aided/botany' }
-          ]
-        },
-        {
-          id: 'departments-self-finance',
-          label: 'Self Finance',
-          icon: Building2,
-          children: [
-            { id: 'dept-sf-tamil', label: 'Department of Tamil (SF)', icon: Building2, href: '/departments/self-finance/tamil', active: pathname === '/departments/self-finance/tamil' },
-            { id: 'dept-sf-english', label: 'Department of English (SF)', icon: Building2, href: '/departments/self-finance/english', active: pathname === '/departments/self-finance/english' },
-            { id: 'dept-sf-mathematics', label: 'Department of Mathematics (SF)', icon: Building2, href: '/departments/self-finance/mathematics', active: pathname === '/departments/self-finance/mathematics' },
-            { id: 'dept-sf-computer-science', label: 'Department of Computer Science (SF)', icon: Building2, href: '/departments/self-finance/computer-science', active: pathname === '/departments/self-finance/computer-science' },
-            { id: 'dept-sf-computer-applications', label: 'Department of Computer Applications (SF)', icon: Building2, href: '/departments/self-finance/computer-applications', active: pathname === '/departments/self-finance/computer-applications' },
-            { id: 'dept-sf-commerce', label: 'Department of Commerce (SF)', icon: Building2, href: '/departments/self-finance/commerce', active: pathname === '/departments/self-finance/commerce' },
-            { id: 'dept-sf-physics', label: 'Department of Physics (SF)', icon: Building2, href: '/departments/self-finance/physics', active: pathname === '/departments/self-finance/physics' },
-            { id: 'dept-sf-microbiology', label: 'Department of Microbiology (SF)', icon: Building2, href: '/departments/self-finance/microbiology', active: pathname === '/departments/self-finance/microbiology' },
-            { id: 'dept-sf-visual-communication', label: 'Department of Visual Communication (SF)', icon: Building2, href: '/departments/self-finance/visual-communication', active: pathname === '/departments/self-finance/visual-communication' },
-            { id: 'dept-sf-textile', label: 'Department of Textile and Fashion Designing (SF)', icon: Building2, href: '/departments/self-finance/textile-fashion-designing', active: pathname === '/departments/self-finance/textile-fashion-designing' },
-            { id: 'dept-sf-bba', label: 'Department of Business Administration (BBA) (SF)', icon: Building2, href: '/departments/self-finance/business-administration', active: pathname === '/departments/self-finance/business-administration' },
-            { id: 'dept-sf-ai-ds', label: 'Department of AI & Data Science (SF)', icon: Building2, href: '/departments/self-finance/ai-data-science', active: pathname === '/departments/self-finance/ai-data-science' },
-            { id: 'dept-sf-cyber-security', label: 'Department of Cyber Security (SF)', icon: Building2, href: '/departments/self-finance/cyber-security', active: pathname === '/departments/self-finance/cyber-security' }
-          ]
-        }
-      ],
-      menus: []
-    },
-
     // Group 5: Facilities (More menu)
     {
       id: 'facilities',
@@ -571,70 +532,70 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
         {
           href: '/library',
           label: 'Library',
-          icon: Warehouse,
+          icon: BookOpen,
           active: pathname === '/library'
         },
         {
           href: '/facilities/labs',
           label: 'Labs',
-          icon: Warehouse,
+          icon: FlaskConical,
           active: pathname === '/facilities/labs'
         },
         {
           href: '/facilities/auditorium',
           label: 'Auditorium',
-          icon: Warehouse,
+          icon: Mic2,
           active: pathname === '/facilities/auditorium'
         },
         {
           href: '/facilities/seminar-hall',
           label: 'Seminar Hall',
-          icon: Warehouse,
+          icon: Users,
           active: pathname === '/facilities/seminar-hall'
         },
         {
           href: '/facilities/classroom',
           label: 'Classroom',
-          icon: Warehouse,
+          icon: School,
           active: pathname === '/facilities/classroom'
         },
         {
           href: '/facilities/food-court',
           label: 'Food Court',
-          icon: Warehouse,
+          icon: UtensilsCrossed,
           active: pathname === '/facilities/food-court'
         },
         {
           href: '/facilities/sports-club',
           label: 'Sports Club',
-          icon: Warehouse,
+          icon: Dumbbell,
           active: pathname === '/facilities/sports-club'
         },
         {
           href: '/facilities/bank-post-office',
           label: 'Bank & Post Office',
-          icon: Warehouse,
+          icon: Landmark,
           active: pathname === '/facilities/bank-post-office'
         },
         {
           href: '/facilities/transport',
           label: 'Transport',
-          icon: Warehouse,
+          icon: Bus,
           active: pathname === '/facilities/transport'
         },
         {
           href: '/facilities/hostel',
           label: 'Hostel',
-          icon: Warehouse,
+          icon: BedDouble,
           active: pathname === '/facilities/hostel'
         }
       ]
     },
 
-    // Group 6: Admissions & Exams (More menu)
+    // Group 6: Examination (More menu)
     {
       id: 'admissions',
-      groupLabel: 'Admissions',
+      groupLabel: 'Examination',
       icon: UserPlus,
       menus: [
         {
@@ -661,10 +622,10 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
       ]
     },
 
-    // Group 8: Others (More menu)
+    // Group 8: AICTE (More menu)
     {
-      id: 'others',
-      groupLabel: 'Others',
+      id: 'aicte',
+      groupLabel: 'AICTE',
       icon: LayoutGrid,
       menus: [
         {
@@ -690,13 +651,34 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
           label: 'AICTE Feedback',
           icon: LayoutGrid,
           active: false
-        },
-        {
-          href: '/committees',
-          label: 'Committees',
-          icon: LayoutGrid,
-          active: pathname === '/committees'
-        },
+        }
+      ]
+    },
+
+    // Group 9: Committees (hierarchical — matches desktop nested submenu)
+    {
+      id: 'committees',
+      groupLabel: 'Committees',
+      icon: LayoutGrid,
+      isHierarchical: true,
+      hierarchicalMenus: [
+        { id: 'committee-iqac', label: 'Internal Quality Assurance Cell', icon: LayoutGrid, href: '/documents/committees/Internal-Quality-Assurance-Cell-2024.pdf', active: false },
+        { id: 'committee-anti-ragging', label: 'Anti-Ragging Committee', icon: LayoutGrid, href: '/documents/committees/2-Anti%20Ragging%20Committee%202025.pdf', active: false },
+        { id: 'committee-grievance', label: 'Grievance Redressal Cell', icon: LayoutGrid, href: '/documents/committees/3-Grievance-Redressal%20cell.pdf', active: false },
+        { id: 'committee-grievance-form', label: 'Student Grievance Form', icon: LayoutGrid, href: 'https://docs.google.com/forms/d/e/1FAIpQLSdsEgswc7mGZIlP7NdedDOJd84J9Gqm9PG2_9RPXa6QMvusBQ/viewform', active: false },
+        { id: 'committee-icc', label: 'Internal Committee', icon: LayoutGrid, href: '/documents/committees/4-ICC-Merged.pdf', active: false },
+        { id: 'committee-iic', label: 'Institution Industry Cell', icon: LayoutGrid, href: '/documents/committees/27-institution industry cell IIC 2025.pdf', active: false },
+        { id: 'committee-scst', label: 'SC-ST Committee', icon: LayoutGrid, href: '/documents/committees/5-SCST Cell.pdf', active: false }
+      ],
+      menus: []
+    },
+
+    // Group 10: Others (More menu)
+    {
+      id: 'others',
+      groupLabel: 'Others',
+      icon: LayoutGrid,
+      menus: [
         {
           href: '/documents/nirf/J.K.K-Nataraja-College-of-Arts-Science20240313-.pdf',
           label: 'NIRF 2024',
