@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Sports Club | JKKN College of Arts and Science",
@@ -10,9 +11,43 @@ export default function SportsClubPage() {
     <div className="min-h-screen bg-brand-cream">
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Page Title */}
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-12">
-          Sports club
-        </h1>
+        <div className="mb-10">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-2">
+            Sports Club
+          </h1>
+          <div className="w-16 h-1 bg-[#ffde59]"></div>
+        </div>
+
+        {/* Image Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/images/facilities/JKKN Arts Sport.png"
+              alt="JKKN Arts and Science College sports facilities"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/images/facilities/JKKN Arts Sport - 1.png"
+              alt="JKKN Arts and Science College sports ground"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/images/facilities/sports3.png"
+              alt="JKKN Arts and Science College sports activities"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className="object-cover"
+            />
+          </div>
+        </div>
 
         {/* Hero Intro */}
         <p className="text-base md:text-lg text-gray-700 text-justify leading-relaxed mb-8">
@@ -25,7 +60,7 @@ export default function SportsClubPage() {
           <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 space-y-3">
             <div className="flex items-start gap-3">
               <span className="text-brand-green text-xl font-bold">•</span>
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green">
+              <h3 className="text-base md:text-lg font-bold text-brand-green">
                 World-class Facilities:
               </h3>
             </div>
@@ -38,7 +73,7 @@ export default function SportsClubPage() {
           <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 space-y-3">
             <div className="flex items-start gap-3">
               <span className="text-brand-green text-xl font-bold">•</span>
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green">
+              <h3 className="text-base md:text-lg font-bold text-brand-green">
                 Expert Instructors:
               </h3>
             </div>
@@ -51,7 +86,7 @@ export default function SportsClubPage() {
           <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 space-y-3">
             <div className="flex items-start gap-3">
               <span className="text-brand-green text-xl font-bold">•</span>
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green">
+              <h3 className="text-base md:text-lg font-bold text-brand-green">
                 Cutting-edge Equipment:
               </h3>
             </div>
@@ -64,7 +99,7 @@ export default function SportsClubPage() {
           <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 space-y-3">
             <div className="flex items-start gap-3">
               <span className="text-brand-green text-xl font-bold">•</span>
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green">
+              <h3 className="text-base md:text-lg font-bold text-brand-green">
                 Free Memberships:
               </h3>
             </div>
@@ -77,7 +112,7 @@ export default function SportsClubPage() {
           <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 space-y-3">
             <div className="flex items-start gap-3">
               <span className="text-brand-green text-xl font-bold">•</span>
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green">
+              <h3 className="text-base md:text-lg font-bold text-brand-green">
                 Community Spirit:
               </h3>
             </div>

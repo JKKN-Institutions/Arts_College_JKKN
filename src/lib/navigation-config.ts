@@ -247,6 +247,11 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
             href: '/aicte',
             description: 'AICTE approval and compliance',
           },
+          {
+            label: 'AICTE Feedback',
+            href: 'https://www.aicte.gov.in/feedback/index.php',
+            description: 'Submit feedback through the official AICTE portal',
+          },
         ],
       },
     ],

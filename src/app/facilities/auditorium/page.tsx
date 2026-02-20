@@ -17,44 +17,32 @@ export default function AuditoriumPage() {
 
         {/* Three-column Image Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden bg-gray-200 flex items-center justify-center">
-            {/* <Image
-              src="/images/auditorium/auditorium-1.jpg"
-              alt="Main auditorium hall with seating arrangement"
+          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/images/facilities/JKKN Arts Auditorium.png"
+              alt="JKKN Arts and Science College auditorium hall"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"
-            /> */}
-            <div className="text-gray-500 text-center p-4">
-              <p className="font-semibold">Auditorium Hall</p>
-              <p className="text-sm">Image placeholder</p>
-            </div>
+            />
           </div>
-          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden bg-gray-200 flex items-center justify-center">
-            {/* <Image
-              src="/images/auditorium/auditorium-2.jpg"
-              alt="Stage view with lighting and audio systems"
+          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/images/facilities/JKKN Arts Auditorium - 1.png"
+              alt="JKKN Arts and Science College auditorium stage view"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"
-            /> */}
-            <div className="text-gray-500 text-center p-4">
-              <p className="font-semibold">Stage & Audio Systems</p>
-              <p className="text-sm">Image placeholder</p>
-            </div>
+            />
           </div>
-          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden bg-gray-200 flex items-center justify-center">
-            {/* <Image
-              src="/images/auditorium/auditorium-3.jpg"
-              alt="Auditorium interior during an event"
+          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/images/facilities/JKKN Arts Auditorium - 2.png"
+              alt="JKKN Arts and Science College auditorium interior"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"
-            /> */}
-            <div className="text-gray-500 text-center p-4">
-              <p className="font-semibold">Event Interior</p>
-              <p className="text-sm">Image placeholder</p>
-            </div>
+            />
           </div>
         </div>
 

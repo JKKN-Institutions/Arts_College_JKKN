@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import {
   BookOpen,
   Clock,
@@ -33,13 +34,13 @@ interface Service {
 
 // Data Constants
 const LIBRARY_HOURS = {
-  working: '9:00 AM - 4:45 PM',
-  issue: '9:00 AM - 4:30 PM',
+  working: '9:30 AM - 4:45 PM',
+  issue: '9:30 AM - 4:30 PM',
   days: 'Monday to Friday',
 };
 
 const LIBRARY_CONTACT = {
-  phone: '+91 9345855001',
+  phone: '+91 9965522229',
   email: 'jkkncaslibrary@gmail.com',
   libraryBlog: 'https://jkkncaslibrary.wordpress.com/',
 };
@@ -117,6 +118,39 @@ export default function LibraryPage() {
           <div className="w-16 h-1 bg-[#ffde59]"></div>
         </div>
 
+        {/* Library Photo Gallery */}
+        <section className="mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+              <Image
+                src="/images/facilities/JKKN Arts Library.png"
+                alt="JKKN Arts and Science College library interior"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+              <Image
+                src="/images/facilities/JKKN Arts Library - 1.png"
+                alt="JKKN Arts and Science College library reading area"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+              <Image
+                src="/images/facilities/JKKN Arts Library - 2.png"
+                alt="JKKN Arts and Science College library book collection"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* About the Library Section */}
         <section className="mb-12">
           <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8">
@@ -133,7 +167,7 @@ export default function LibraryPage() {
                 faculty members, fostering academic growth and intellectual exploration. Spanning an area of
                 3,328 square feet with a seating capacity for 130 readers, the library is thoughtfully
                 designed to provide a comfortable and conducive environment for learning. It boasts a
-                remarkable collection of over 26,700 books across diverse disciplines, 23 esteemed national
+                remarkable collection of over 27,000 books across diverse disciplines, 23 esteemed national
                 and international journals, 31 magazines, 4 newspapers, 636 back volumes, and a wealth of
                 e-resources. Recent publications and journals in the fields of arts, science, and social
                 sciences further enrich the library&apos;s comprehensive offerings, along with access to online

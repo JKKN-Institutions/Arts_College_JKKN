@@ -19,8 +19,8 @@ export default function ClassroomPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/classroom/classroom-1.jpg"
-              alt="Student in blue uniform using digital learning technology"
+              src="/images/facilities/JKKN Arts Classroom.png"
+              alt="JKKN Arts and Science College classroom"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"
@@ -28,8 +28,8 @@ export default function ClassroomPage() {
           </div>
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/classroom/classroom-2.jpg"
-              alt="Student in yellow uniform engaged in digital classroom learning"
+              src="/images/facilities/JKKN Arts Classroom - 1.png"
+              alt="JKKN Arts and Science College classroom interior"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"
@@ -37,8 +37,8 @@ export default function ClassroomPage() {
           </div>
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/classroom/classroom-3.jpg"
-              alt="Students in classroom setting with modern learning facilities"
+              src="/images/facilities/classroom.avif"
+              alt="JKKN Arts and Science College classroom view"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"

@@ -37,14 +37,14 @@ export default function HostelPage() {
     <div className="min-h-screen bg-brand-cream">
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* FACILITIES Badge */}
-        <div className="text-left mb-4">
+        <div className="text-center mb-4">
           <span className="inline-block px-4 py-1.5 bg-gray-100 text-gray-600 text-xs font-semibold tracking-wider rounded-full">
             FACILITIES
           </span>
         </div>
 
         {/* Page Title */}
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-6 text-left">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-6 text-center">
           Hostel
         </h1>
 
@@ -84,7 +84,7 @@ export default function HostelPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
                 <Image
-                  src="/images/hostel/boys/hostel-1.jpg"
+                  src="/images/facilities/boys-hostel-1.avif"
                   alt="JKKN boys hostel building exterior view"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -93,7 +93,7 @@ export default function HostelPage() {
               </div>
               <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
                 <Image
-                  src="/images/hostel/boys/hostel-2.jpg"
+                  src="/images/facilities/boys-hostel-1 (1).avif"
                   alt="JKKN boys hostel dormitory room interior"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -102,7 +102,7 @@ export default function HostelPage() {
               </div>
               <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
                 <Image
-                  src="/images/hostel/boys/hostel-3.jpg"
+                  src="/images/facilities/boys-hostel-2.avif"
                   alt="JKKN boys hostel common area and facilities"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -140,7 +140,7 @@ export default function HostelPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
                 <Image
-                  src="/images/hostel/girls/hostel-1.jpg"
+                  src="/images/facilities/girls-hostel-1.avif"
                   alt="JKKN girls hostel building exterior view"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -149,7 +149,7 @@ export default function HostelPage() {
               </div>
               <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
                 <Image
-                  src="/images/hostel/girls/hostel-2.jpg"
+                  src="/images/facilities/girls-hostel-2.avif"
                   alt="JKKN girls hostel dormitory room interior"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -158,7 +158,7 @@ export default function HostelPage() {
               </div>
               <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
                 <Image
-                  src="/images/hostel/girls/hostel-3.jpg"
+                  src="/images/facilities/girls-hostel-3.avif"
                   alt="JKKN girls hostel common area and facilities"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"

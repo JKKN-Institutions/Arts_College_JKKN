@@ -336,6 +336,7 @@ export function BottomNavbar() {
             items={hierarchicalMenus}
             isOpen={isExpanded}
             onItemClick={handleSubmenuClick}
+            title={activeGroup?.groupLabel}
           />
         ) : (
           <BottomNavSubmenu

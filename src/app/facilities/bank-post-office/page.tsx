@@ -31,34 +31,55 @@ export default function BankPostOfficePage() {
           BANK & POST OFFICE
         </h1>
 
-        {/* Hero Image */}
-        <div className="relative w-full aspect-video rounded-lg shadow-lg overflow-hidden mb-12 bg-gray-200">
-          <Image
-            src="/images/bank-post-office/bank-exterior.jpg"
-            alt="Bank and Post Office facility at JKKN College campus"
-            fill
-            className="object-cover"
-            priority
-          />
+        {/* Image Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/images/facilities/Post Office.webp"
+              alt="JKKN College Post Office facility"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className="object-cover"
+              priority
+            />
+          </div>
+          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/images/facilities/Post Office (2).webp"
+              alt="JKKN College Post Office services"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/images/facilities/Post Office (3).webp"
+              alt="JKKN College Post Office interior"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className="object-cover"
+            />
+          </div>
         </div>
 
         {/* Introduction Card */}
         <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mb-6">
-          <p className="text-base md:text-lg text-gray-700 leading-relaxed text-justify">
+          <p className="text-sm md:text-base text-gray-800 leading-relaxed text-justify">
             Our bank offers a comprehensive range of financial services to fulfill your banking needs. Our courteous and knowledgeable staff can assist you with opening new accounts, making deposits or withdrawals, and providing financial guidance. With various products and services, such as personal loans, mortgages, and credit cards, our bank caters to all your financial requirements.
           </p>
         </div>
 
         {/* Banking Facilities Card */}
         <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mb-6">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-6">
+          <h2 className="text-xl md:text-2xl font-bold text-brand-green mb-6">
             BANKING FACILITIES:
           </h2>
           <ul className="space-y-4">
             {bankingFeatures.map((feature, index) => (
               <li key={index} className="flex gap-3">
-                <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-brand-green flex-shrink-0 mt-1" />
-                <span className="text-base md:text-lg text-gray-700 leading-relaxed">
+                <CheckCircle2 className="h-5 w-5 text-brand-green flex-shrink-0 mt-0.5" />
+                <span className="text-sm md:text-base text-gray-800 leading-relaxed">
                   {feature}
                 </span>
               </li>
@@ -68,14 +89,14 @@ export default function BankPostOfficePage() {
 
         {/* Postal Services Card */}
         <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mb-6">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-6">
+          <h2 className="text-xl md:text-2xl font-bold text-brand-green mb-6">
             POSTAL SERVICES:
           </h2>
           <ul className="space-y-4">
             {postalServices.map((service, index) => (
               <li key={index} className="flex gap-3">
-                <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-brand-green flex-shrink-0 mt-1" />
-                <span className="text-base md:text-lg text-gray-700 leading-relaxed">
+                <CheckCircle2 className="h-5 w-5 text-brand-green flex-shrink-0 mt-0.5" />
+                <span className="text-sm md:text-base text-gray-800 leading-relaxed">
                   {service}
                 </span>
               </li>

@@ -1,0 +1,236 @@
+[
+  {
+    "url": "/",
+    "name": "01-home",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/about/our-institution",
+    "name": "02-about-institution",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/about/our-trust",
+    "name": "03-about-trust",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/about/vision-mission",
+    "name": "04-about-vision-mission",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/about/our-management",
+    "name": "05-about-management",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/ug/ba-english",
+    "name": "06-aided-ug-ba-english",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/ug/ba-history",
+    "name": "07-aided-ug-ba-history",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/ug/bsc-chemistry",
+    "name": "08-aided-ug-bsc-chemistry",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/ug/bsc-maths",
+    "name": "09-aided-ug-bsc-maths",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/ug/bsc-zoology",
+    "name": "10-aided-ug-bsc-zoology",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/ug/bcom",
+    "name": "11-aided-ug-bcom",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/pg/mca",
+    "name": "12-aided-pg-mca",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/pg/mcom",
+    "name": "13-aided-pg-mcom",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/pg/msc-chemistry",
+    "name": "14-aided-pg-msc-chemistry",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/pg/msc-computer-science",
+    "name": "15-aided-pg-msc-cs",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/pg/msc-physics",
+    "name": "16-aided-pg-msc-physics",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/pg/msc-zoology",
+    "name": "17-aided-pg-msc-zoology",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/phd/chemistry",
+    "name": "18-aided-phd-chemistry",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/phd/tamil",
+    "name": "19-aided-phd-tamil",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/aided/phd/zoology",
+    "name": "20-aided-phd-zoology",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/self-finance/ug/bca",
+    "name": "21-sf-ug-bca",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/self-finance/ug/bcom-accounting-finance",
+    "name": "22-sf-ug-bcom-af",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/self-finance/ug/bcom-banking-insurance",
+    "name": "23-sf-ug-bcom-bi",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/self-finance/ug/bsc-computer-science",
+    "name": "24-sf-ug-bsc-cs",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/self-finance/ug/bsc-ai-ds",
+    "name": "25-sf-ug-bsc-ai-ds",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/self-finance/ug/bsc-microbiology",
+    "name": "26-sf-ug-bsc-micro",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/self-finance/ug/bsc-physics",
+    "name": "27-sf-ug-bsc-physics",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/self-finance/ug/bsc-textile-fashion-designing",
+    "name": "28-sf-ug-textile",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/self-finance/ug/bsc-visual-communication",
+    "name": "29-sf-ug-visual-comm",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/self-finance/pg/mcom",
+    "name": "30-sf-pg-mcom",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/self-finance/pg/ma-english",
+    "name": "31-sf-pg-ma-english",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/self-finance/pg/msc-computer-science",
+    "name": "32-sf-pg-msc-cs",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/programmes/self-finance/pg/msc-cs-data-analytics",
+    "name": "33-sf-pg-msc-da",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/iqac/naac",
+    "name": "34-iqac-naac",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/facilities/library",
+    "name": "35-facilities-library",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/facilities/hostel",
+    "name": "36-facilities-hostel",
+    "status": "ok",
+    "title": "Hostel | JKKN College of Arts and Science"
+  },
+  {
+    "url": "/facilities/sports",
+    "name": "37-facilities-sports",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/library",
+    "name": "38-library",
+    "status": "ok",
+    "title": "JKKN College"
+  },
+  {
+    "url": "/contact",
+    "name": "39-contact",
+    "status": "ok",
+    "title": "JKKN College"
+  }
+]

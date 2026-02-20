@@ -29,8 +29,8 @@ export default function FoodCourtPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/food-court/exterior.jpg"
-              alt="Food court building exterior view"
+              src="/images/facilities/JKKN Arts Food Court.png"
+              alt="JKKN Arts and Science College food court"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"
@@ -38,8 +38,8 @@ export default function FoodCourtPage() {
           </div>
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/food-court/interior-1.jpg"
-              alt="Food court dining area with seating"
+              src="/images/facilities/JKKN Arts Food Court - 1.png"
+              alt="JKKN Arts and Science College food court dining area"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"
@@ -47,8 +47,8 @@ export default function FoodCourtPage() {
           </div>
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/food-court/interior-2.jpg"
-              alt="Food court interior seating and atmosphere"
+              src="/images/facilities/JKKN Arts Food Court - 2.png"
+              alt="JKKN Arts and Science College food court seating"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"

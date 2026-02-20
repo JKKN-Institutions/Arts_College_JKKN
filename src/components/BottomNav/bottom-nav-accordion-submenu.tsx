@@ -11,12 +11,14 @@ interface BottomNavAccordionSubmenuProps {
   items: HierarchicalMenuItem[];
   isOpen: boolean;
   onItemClick: (href: string) => void;
+  title?: string;
 }
 
 export function BottomNavAccordionSubmenu({
   items,
   isOpen,
-  onItemClick
+  onItemClick,
+  title
 }: BottomNavAccordionSubmenuProps) {
   const pathname = usePathname();
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
@@ -166,7 +168,7 @@ export function BottomNavAccordionSubmenu({
           {/* Header */}
           <div className="px-4 py-2 bg-gray-50 border-b border-gray-200">
             <span className="text-sm font-medium text-gray-700">
-              Select Programme
+              {title ? `Select ${title}` : 'Select'}
             </span>
           </div>
 

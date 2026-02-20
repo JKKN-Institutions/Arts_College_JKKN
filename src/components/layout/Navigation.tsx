@@ -2151,6 +2151,16 @@ export default function Navigation() {
                     >
                       MANDATORY-DISCLOSURE
                     </Link>
+                    <a
+                      href="https://www.aicte.gov.in/feedback/index.php"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      AICTE Feedback
+                    </a>
                   </div>
                 </div>
               )}
@@ -2242,6 +2252,15 @@ export default function Navigation() {
                       className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
                     >
                       Privacy Policy
+                    </Link>
+
+                    <Link
+                      href="/gallery"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      Gallery
                     </Link>
 
                     {/* NIRF Nested Submenu */}
@@ -3275,6 +3294,15 @@ export default function Navigation() {
                     >
                       MANDATORY-DISCLOSURE
                     </Link>
+                    <a
+                      href="https://www.aicte.gov.in/feedback/index.php"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={toggleMobileMenu}
+                      className="block py-2 px-8 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                    >
+                      AICTE Feedback
+                    </a>
                   </div>
                 )}
               </div>

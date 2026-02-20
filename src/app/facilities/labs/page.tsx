@@ -17,44 +17,32 @@ export default function LabsPage() {
 
         {/* Lab Images Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden bg-gray-200 flex items-center justify-center">
-            {/* <Image
-              src="/images/labs/lab-1.jpg"
-              alt="Chemistry and Biology laboratory with students in white coats conducting experiments"
+          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/images/facilities/JKKN Arts lab.png"
+              alt="JKKN Arts and Science College laboratory facilities"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"
-            /> */}
-            <div className="text-gray-500 text-center p-4">
-              <p className="font-semibold">Chemistry/Biology Lab</p>
-              <p className="text-sm">Image placeholder</p>
-            </div>
+            />
           </div>
-          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden bg-gray-200 flex items-center justify-center">
-            {/* <Image
-              src="/images/labs/lab-2.jpg"
-              alt="Modern equipment and research laboratory with advanced technology"
+          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/images/facilities/JKKN Arts lab - 1.png"
+              alt="JKKN Arts and Science College laboratory equipment and workspace"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"
-            /> */}
-            <div className="text-gray-500 text-center p-4">
-              <p className="font-semibold">Equipment/Research Lab</p>
-              <p className="text-sm">Image placeholder</p>
-            </div>
+            />
           </div>
-          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden bg-gray-200 flex items-center justify-center">
-            {/* <Image
-              src="/images/labs/lab-3.jpg"
-              alt="Computer laboratory with students working at modern computer stations"
+          <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
+            <Image
+              src="/images/facilities/JKKN Arts lab - 2.png"
+              alt="JKKN Arts and Science College lab with students conducting experiments"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               className="object-cover"
-            /> */}
-            <div className="text-gray-500 text-center p-4">
-              <p className="font-semibold">Computer Lab</p>
-              <p className="text-sm">Image placeholder</p>
-            </div>
+            />
           </div>
         </div>
 

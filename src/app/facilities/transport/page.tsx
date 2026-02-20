@@ -49,25 +49,33 @@ export default function TransportPage() {
         </h1>
 
         {/* Image Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 md:mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 md:mb-12">
           <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/images/transport/transport-1.jpg"
-              alt="JKKN College transport buses parked at campus"
+              src="/images/facilities/Transport.png"
+              alt="JKKN College transport buses"
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 768px) 100vw, 33vw"
               priority
             />
           </div>
           <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/images/transport/transport-2.jpg"
-              alt="JKKN College transport fleet providing safe student transportation"
+              src="/images/facilities/transport2.png"
+              alt="JKKN College transport fleet"
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              priority
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+          </div>
+          <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+            <Image
+              src="/images/facilities/transport3.png"
+              alt="JKKN College transport service"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 33vw"
             />
           </div>
         </div>

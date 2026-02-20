@@ -156,19 +156,18 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
                   active: pathname === '/programmes/aided/pg/msc-chemistry'
                 },
                 {
-                  id: 'aided-pg-msc-computer-science',
-                  label: 'M.Sc. Computer Science',
-                  icon: GraduationCap,
-                  href: '/programmes/aided/pg/msc-computer-science',
-                  active: pathname === '/programmes/aided/pg/msc-computer-science'
-                },
-
-                {
                   id: 'aided-pg-msc-zoology',
                   label: 'M.Sc. Zoology',
                   icon: GraduationCap,
                   href: '/programmes/aided/pg/msc-zoology',
                   active: pathname === '/programmes/aided/pg/msc-zoology'
+                },
+                {
+                  id: 'aided-pg-ma-history',
+                  label: 'M.A. History',
+                  icon: GraduationCap,
+                  href: '/programmes/aided/pg/ma-history',
+                  active: pathname === '/programmes/aided/pg/ma-history'
                 }
               ]
             },
@@ -291,6 +290,13 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
                   icon: GraduationCap,
                   href: '/programmes/self-finance/ug/bsc-visual-communication',
                   active: pathname === '/programmes/self-finance/ug/bsc-visual-communication'
+                },
+                {
+                  id: 'self-finance-ug-bsc-ai-ds',
+                  label: 'B.Sc. AI & DS',
+                  icon: GraduationCap,
+                  href: '/programmes/self-finance/ug/bsc-ai-ds',
+                  active: pathname === '/programmes/self-finance/ug/bsc-ai-ds'
                 }
               ]
             },
@@ -439,61 +445,121 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
     //   ]
     // },
 
-    // Group 4: IQAC & Quality
+    // Group 4: IQAC & Quality (Hierarchical — matches desktop nested structure)
     {
       id: 'iqac',
       groupLabel: 'IQAC',
       icon: FileCheck,
-      menus: [
+      isHierarchical: true,
+      hierarchicalMenus: [
+        { id: 'iqac-vision-mission', label: 'Vision & Mission', icon: FileCheck, href: '/iqac/vision-mission', active: pathname === '/iqac/vision-mission' },
+        { id: 'iqac-objectives-functions', label: 'Objectives/Functions', icon: FileCheck, href: '/iqac/objectives-functions', active: pathname === '/iqac/objectives-functions' },
+        { id: 'iqac-role-responsibilities', label: 'Role / Responsibilities', icon: FileCheck, href: '/iqac/role-responsibilities', active: pathname === '/iqac/role-responsibilities' },
+        { id: 'iqac-minutes', label: 'Minutes of IQAC Meeting', icon: FileCheck, href: '/iqac/minutes-of-meeting', active: pathname === '/iqac/minutes-of-meeting' },
+        { id: 'iqac-naac', label: 'NAAC', icon: FileCheck, href: '/iqac/naac', active: pathname === '/iqac/naac' },
         {
-          href: '/iqac/composition',
-          label: 'IQAC Composition',
-          icon: FileCheck,
-          active: pathname === '/iqac/composition'
-        },
-        {
-          href: '/iqac/minutes',
-          label: 'Meeting Minutes',
-          icon: FileCheck,
-          active: pathname === '/iqac/minutes'
-        },
-        {
-          href: '/iqac/naac',
-          label: 'NAAC',
-          icon: FileCheck,
-          active: pathname === '/iqac/naac'
-        },
-        {
-          href: '/iqac/iiqa',
+          id: 'iqac-iiqa',
           label: 'IIQA',
           icon: FileCheck,
-          active: pathname === '/iqac/iiqa'
+          children: [
+            { id: 'iqac-iiqa-cycle1', label: 'Cycle-I', icon: FileCheck, href: '/documents/iqac/iiqa/cycle-1.pdf', active: false }
+          ]
         },
         {
-          href: '/iqac/ssr',
-          label: 'SSR',
+          id: 'iqac-ssr',
+          label: 'Self-Study-Report (SSR)',
           icon: FileCheck,
-          active: pathname === '/iqac/ssr'
+          children: [
+            { id: 'iqac-ssr-cycle1', label: 'Cycle-I (2013-2018)', icon: FileCheck, href: '/documents/iqac/ssr/cycle-1-2013-2018.pdf', active: false }
+          ]
         },
         {
-          href: '/iqac/aqar',
+          id: 'iqac-aqar',
           label: 'AQAR',
           icon: FileCheck,
-          active: pathname === '/iqac/aqar'
+          children: [
+            { id: 'iqac-aqar-2022-23', label: '2022-2023', icon: FileCheck, href: '/documents/iqac/aqar/aqar-2022-2023.pdf', active: false },
+            { id: 'iqac-aqar-2021-22', label: '2021-2022', icon: FileCheck, href: '/documents/iqac/aqar/aqar-2021-2022.pdf', active: false },
+            { id: 'iqac-aqar-2020-21', label: '2020-2021', icon: FileCheck, href: '/documents/iqac/aqar/aqar-2020-2021.pdf', active: false },
+            { id: 'iqac-aqar-2019-20', label: '2019-2020', icon: FileCheck, href: '/documents/iqac/aqar/aqar-2019-2020.pdf', active: false },
+            { id: 'iqac-aqar-2018-19', label: '2018-2019', icon: FileCheck, href: '/documents/iqac/aqar/aqar-2018-2019.pdf', active: false }
+          ]
         },
         {
-          href: '/iqac/best-practices',
+          id: 'iqac-best-practices',
           label: 'Best Practices',
           icon: FileCheck,
-          active: pathname === '/iqac/best-practices'
+          children: [
+            { id: 'iqac-bp-2022-23', label: '2022-2023', icon: FileCheck, href: '/documents/iqac/best-practices/best-practice-2022-2023.pdf', active: false },
+            { id: 'iqac-bp-2021-22', label: '2021-2022', icon: FileCheck, href: '/documents/iqac/best-practices/best-practice-2021-2022.pdf', active: false },
+            { id: 'iqac-bp-2020-21', label: '2020-2021', icon: FileCheck, href: '/documents/iqac/best-practices/best-practice-2020-2021.pdf', active: false },
+            { id: 'iqac-bp-2019-20', label: '2019-2020', icon: FileCheck, href: '/documents/iqac/best-practices/best-practice-2019-2020.pdf', active: false },
+            { id: 'iqac-bp-2018-19', label: '2018-2019', icon: FileCheck, href: '/documents/iqac/best-practices/best-practice-2018-2019.pdf', active: false }
+          ]
         },
         {
-          href: '/iqac/college-calendar',
-          label: 'College Calendar',
+          id: 'iqac-college-magazine',
+          label: 'College Magazine',
           icon: FileCheck,
-          active: pathname === '/iqac/college-calendar'
+          children: [
+            { id: 'iqac-cm-2022-23', label: '2022-2023', icon: FileCheck, href: '/documents/iqac/college-magazine/magazine-2022-2023.pdf', active: false },
+            { id: 'iqac-cm-2020-21', label: '2020-2021', icon: FileCheck, href: '/documents/iqac/college-magazine/magazine-2020-2021.pdf', active: false }
+          ]
         }
-      ]
+      ],
+      menus: []
+    },
+
+    // Group 5: Departments (More menu — hierarchical drill-down)
+    {
+      id: 'departments',
+      groupLabel: 'Departments',
+      icon: Building2,
+      isHierarchical: true,
+      hierarchicalMenus: [
+        {
+          id: 'departments-aided',
+          label: 'Aided',
+          icon: Building2,
+          children: [
+            { id: 'dept-aided-tamil', label: 'Department of Tamil', icon: Building2, href: '/departments/aided/tamil', active: pathname === '/departments/aided/tamil' },
+            { id: 'dept-aided-english', label: 'Department of English', icon: Building2, href: '/departments/aided/english', active: pathname === '/departments/aided/english' },
+            { id: 'dept-aided-mathematics', label: 'Department of Mathematics', icon: Building2, href: '/departments/aided/mathematics', active: pathname === '/departments/aided/mathematics' },
+            { id: 'dept-aided-computer-science', label: 'Department of Computer Science', icon: Building2, href: '/departments/aided/computer-science', active: pathname === '/departments/aided/computer-science' },
+            { id: 'dept-aided-commerce', label: 'Department of Commerce', icon: Building2, href: '/departments/aided/commerce', active: pathname === '/departments/aided/commerce' },
+            { id: 'dept-aided-economics', label: 'Department of Economics', icon: Building2, href: '/departments/aided/economics', active: pathname === '/departments/aided/economics' },
+            { id: 'dept-aided-history', label: 'Department of History', icon: Building2, href: '/departments/aided/history', active: pathname === '/departments/aided/history' },
+            { id: 'dept-aided-physics', label: 'Department of Physics', icon: Building2, href: '/departments/aided/physics', active: pathname === '/departments/aided/physics' },
+            { id: 'dept-aided-zoology', label: 'Department of Zoology', icon: Building2, href: '/departments/aided/zoology', active: pathname === '/departments/aided/zoology' },
+            { id: 'dept-aided-chemistry', label: 'Department of Chemistry', icon: Building2, href: '/departments/aided/chemistry', active: pathname === '/departments/aided/chemistry' },
+            { id: 'dept-aided-geography', label: 'Department of Geography', icon: Building2, href: '/departments/aided/geography', active: pathname === '/departments/aided/geography' },
+            { id: 'dept-aided-physical-education', label: 'Department of Physical Education', icon: Building2, href: '/departments/aided/physical-education', active: pathname === '/departments/aided/physical-education' },
+            { id: 'dept-aided-library', label: 'Department of Library', icon: Building2, href: '/departments/aided/library', active: pathname === '/departments/aided/library' },
+            { id: 'dept-aided-botany', label: 'Department of Botany', icon: Building2, href: '/departments/aided/botany', active: pathname === '/departments/aided/botany' }
+          ]
+        },
+        {
+          id: 'departments-self-finance',
+          label: 'Self Finance',
+          icon: Building2,
+          children: [
+            { id: 'dept-sf-tamil', label: 'Department of Tamil (SF)', icon: Building2, href: '/departments/self-finance/tamil', active: pathname === '/departments/self-finance/tamil' },
+            { id: 'dept-sf-english', label: 'Department of English (SF)', icon: Building2, href: '/departments/self-finance/english', active: pathname === '/departments/self-finance/english' },
+            { id: 'dept-sf-mathematics', label: 'Department of Mathematics (SF)', icon: Building2, href: '/departments/self-finance/mathematics', active: pathname === '/departments/self-finance/mathematics' },
+            { id: 'dept-sf-computer-science', label: 'Department of Computer Science (SF)', icon: Building2, href: '/departments/self-finance/computer-science', active: pathname === '/departments/self-finance/computer-science' },
+            { id: 'dept-sf-computer-applications', label: 'Department of Computer Applications (SF)', icon: Building2, href: '/departments/self-finance/computer-applications', active: pathname === '/departments/self-finance/computer-applications' },
+            { id: 'dept-sf-commerce', label: 'Department of Commerce (SF)', icon: Building2, href: '/departments/self-finance/commerce', active: pathname === '/departments/self-finance/commerce' },
+            { id: 'dept-sf-physics', label: 'Department of Physics (SF)', icon: Building2, href: '/departments/self-finance/physics', active: pathname === '/departments/self-finance/physics' },
+            { id: 'dept-sf-microbiology', label: 'Department of Microbiology (SF)', icon: Building2, href: '/departments/self-finance/microbiology', active: pathname === '/departments/self-finance/microbiology' },
+            { id: 'dept-sf-visual-communication', label: 'Department of Visual Communication (SF)', icon: Building2, href: '/departments/self-finance/visual-communication', active: pathname === '/departments/self-finance/visual-communication' },
+            { id: 'dept-sf-textile', label: 'Department of Textile and Fashion Designing (SF)', icon: Building2, href: '/departments/self-finance/textile-fashion-designing', active: pathname === '/departments/self-finance/textile-fashion-designing' },
+            { id: 'dept-sf-bba', label: 'Department of Business Administration (BBA) (SF)', icon: Building2, href: '/departments/self-finance/business-administration', active: pathname === '/departments/self-finance/business-administration' },
+            { id: 'dept-sf-ai-ds', label: 'Department of AI & Data Science (SF)', icon: Building2, href: '/departments/self-finance/ai-data-science', active: pathname === '/departments/self-finance/ai-data-science' },
+            { id: 'dept-sf-cyber-security', label: 'Department of Cyber Security (SF)', icon: Building2, href: '/departments/self-finance/cyber-security', active: pathname === '/departments/self-finance/cyber-security' }
+          ]
+        }
+      ],
+      menus: []
     },
 
     // Group 5: Facilities (More menu)
@@ -503,40 +569,64 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
       icon: Warehouse,
       menus: [
         {
-          href: '/facilities/library',
+          href: '/library',
           label: 'Library',
           icon: Warehouse,
-          active: pathname === '/facilities/library'
+          active: pathname === '/library'
+        },
+        {
+          href: '/facilities/labs',
+          label: 'Labs',
+          icon: Warehouse,
+          active: pathname === '/facilities/labs'
+        },
+        {
+          href: '/facilities/auditorium',
+          label: 'Auditorium',
+          icon: Warehouse,
+          active: pathname === '/facilities/auditorium'
+        },
+        {
+          href: '/facilities/seminar-hall',
+          label: 'Seminar Hall',
+          icon: Warehouse,
+          active: pathname === '/facilities/seminar-hall'
+        },
+        {
+          href: '/facilities/classroom',
+          label: 'Classroom',
+          icon: Warehouse,
+          active: pathname === '/facilities/classroom'
+        },
+        {
+          href: '/facilities/food-court',
+          label: 'Food Court',
+          icon: Warehouse,
+          active: pathname === '/facilities/food-court'
+        },
+        {
+          href: '/facilities/sports-club',
+          label: 'Sports Club',
+          icon: Warehouse,
+          active: pathname === '/facilities/sports-club'
+        },
+        {
+          href: '/facilities/bank-post-office',
+          label: 'Bank & Post Office',
+          icon: Warehouse,
+          active: pathname === '/facilities/bank-post-office'
+        },
+        {
+          href: '/facilities/transport',
+          label: 'Transport',
+          icon: Warehouse,
+          active: pathname === '/facilities/transport'
         },
         {
           href: '/facilities/hostel',
           label: 'Hostel',
           icon: Warehouse,
           active: pathname === '/facilities/hostel'
-        },
-        {
-          href: '/facilities/sports',
-          label: 'Sports',
-          icon: Warehouse,
-          active: pathname === '/facilities/sports'
-        },
-        {
-          href: '/facilities/nss',
-          label: 'NSS',
-          icon: Warehouse,
-          active: pathname === '/facilities/nss'
-        },
-        {
-          href: '/facilities/ncc',
-          label: 'NCC',
-          icon: Warehouse,
-          active: pathname === '/facilities/ncc'
-        },
-        {
-          href: '/facilities/placement-cell',
-          label: 'Placement Cell',
-          icon: Warehouse,
-          active: pathname === '/facilities/placement-cell'
         }
       ]
     },
@@ -584,13 +674,31 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
           active: pathname === '/aicte'
         },
         {
+          href: '/documents/aicte/LOA_EOA_Report_23-24.pdf',
+          label: 'LOA & EOA Report',
+          icon: LayoutGrid,
+          active: false
+        },
+        {
+          href: '/documents/aicte/MANDATORY-DISCLOSURE-23-24.pdf',
+          label: 'Mandatory Disclosure',
+          icon: LayoutGrid,
+          active: false
+        },
+        {
+          href: 'https://www.aicte.gov.in/feedback/index.php',
+          label: 'AICTE Feedback',
+          icon: LayoutGrid,
+          active: false
+        },
+        {
           href: '/committees',
           label: 'Committees',
           icon: LayoutGrid,
           active: pathname === '/committees'
         },
         {
-          href: '/documents/nirf/NIRF-2024-COLLEGE.pdf',
+          href: '/documents/nirf/J.K.K-Nataraja-College-of-Arts-Science20240313-.pdf',
           label: 'NIRF 2024',
           icon: LayoutGrid,
           active: false
@@ -600,6 +708,12 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
           label: 'NIRF 2025',
           icon: LayoutGrid,
           active: false
+        },
+        {
+          href: '/gallery',
+          label: 'Gallery',
+          icon: LayoutGrid,
+          active: pathname === '/gallery'
         }
       ]
     },
