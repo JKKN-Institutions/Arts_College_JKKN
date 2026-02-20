@@ -182,7 +182,7 @@ export default function MScZoologyPage() {
                   className="w-full h-auto"
                 />
                 <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                  Since 1979
+                  Since 1952
                 </span>
               </div>
             </RevealSection>
@@ -507,7 +507,7 @@ export default function MScZoologyPage() {
       </section>
 
       {/* Learning Facilities */}
-      <section className="py-16 bg-white" id="facilities">
+      {/* <section className="py-16 bg-white" id="facilities">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -549,7 +549,7 @@ export default function MScZoologyPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why Choose Us */}
       <section className="py-16 bg-brand-cream" id="why-choose">
@@ -739,7 +739,7 @@ export default function MScZoologyPage() {
       </section>
 
       {/* Related Programmes */}
-      <section className="py-16 bg-brand-cream">
+      {/* <section className="py-16 bg-brand-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -793,7 +793,7 @@ export default function MScZoologyPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

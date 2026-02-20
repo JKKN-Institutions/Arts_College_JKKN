@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Phone, Mail, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Youtube, Phone, Mail, MapPin } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -120,35 +120,36 @@ export default function Footer() {
               </h3>
               <div className="flex gap-4 mt-6">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/jkknarts"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded flex items-center justify-center hover:bg-brand-yellow hover:text-brand-green transition"
                   aria-label="Facebook"
                 >
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/jkknarts"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded flex items-center justify-center hover:bg-brand-yellow hover:text-brand-green transition"
                   aria-label="Instagram"
                 >
                   <Instagram className="h-5 w-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/school/jkknarts"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded flex items-center justify-center hover:bg-brand-yellow hover:text-brand-green transition"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a
-                  href="#"
-                  className="w-10 h-10 bg-white/10 rounded flex items-center justify-center hover:bg-brand-yellow hover:text-brand-green transition"
-                  aria-label="Twitter"
-                >
-                  <Twitter className="h-5 w-5" />
-                </a>
-                <a
-                  href="#"
+                  href="https://www.youtube.com/watch?v=yxvebMX0R8I&list=PL6QsTq-__HhsywKQN5jOeRSMJVyUuV8Ve"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded flex items-center justify-center hover:bg-brand-yellow hover:text-brand-green transition"
                   aria-label="YouTube"
                 >

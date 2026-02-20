@@ -122,7 +122,7 @@ export default function BSCMicrobiologyPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '85%+', title: 'Placement Record', desc: 'Career opportunities assured' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Award className="w-7 h-7" />, stat: '₹4L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
@@ -659,10 +659,9 @@ export default function BSCMicrobiologyPage() {
 
             <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
               {[
-                { name: 'Dr. Lakshmi Narayan', designation: 'Head of Department', qualification: 'Ph.D. in Microbiology' },
-                { name: 'Dr. Ramesh Kumar', designation: 'Associate Professor', qualification: 'Ph.D. in Medical Microbiology' },
-                { name: 'Ms. Priya Venkatesh', designation: 'Assistant Professor', qualification: 'M.Phil., NET Qualified' },
-                { name: 'Mr. Arun Subramanian', designation: 'Assistant Professor', qualification: 'M.Sc., GATE Qualified' }
+                { name: 'Dr.D.Hemalatha', designation: 'Head of Department', qualification: 'P.hD., Microbial Genetics' },
+                { name: 'S. Kayathri', designation: 'Assistant Professor', qualification: 'M.Sc,B.Ed,M.Phil.,Life Science' },
+                { name: 'S. Kamali', designation: 'Assistant Professor', qualification: 'M.Sc., Biochemistry' }
               ].map((faculty, idx) => (
                 <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
                   <div className="relative h-56 overflow-hidden flex-shrink-0">
@@ -770,7 +769,7 @@ export default function BSCMicrobiologyPage() {
       </section>
 
       {/* Related Programmes */}
-      <section className="py-16 bg-brand-cream">
+      {/* <section className="py-16 bg-brand-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -824,7 +823,7 @@ export default function BSCMicrobiologyPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

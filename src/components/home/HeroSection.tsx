@@ -42,7 +42,7 @@ export default function HeroSection() {
 
             {/* Description - More Compact */}
             <p className="text-[13px] sm:text-[15px] lg:text-[16px] leading-[20px] sm:leading-[24px] lg:leading-[26px] text-white/90 font-normal max-w-xl">
-              Transform your career with <span className="text-brand-yellow font-semibold">industry-integrated programs</span> in Science, Commerce, IT &amp; Management. Join <span className="text-brand-yellow font-semibold">1300+ students</span> building successful careers since 1995.
+              Transform your career with <span className="text-brand-yellow font-semibold">industry-integrated programs</span> in Science, Commerce, IT &amp; Management. Join <span className="text-brand-yellow font-semibold">1300+ students</span> building successful careers since 1952.
             </p>
 
             {/* Stats Row - Compact */}
@@ -64,7 +64,7 @@ export default function HeroSection() {
               </div>
               {/* Stat 4 */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">31+</div>
+                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">74+</div>
                 <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Years</div>
               </div>
             </div>

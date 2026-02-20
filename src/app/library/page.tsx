@@ -6,13 +6,13 @@ import {
   Mail,
   CheckCircle2,
   BookMarked,
-  Newspaper,
-  Database,
   BarChart,
   User,
   GraduationCap,
+  Eye,
+  Target,
+  Globe,
 } from 'lucide-react';
-import Image from 'next/image';
 
 // TypeScript Interfaces
 interface LibraryResource {
@@ -25,155 +25,74 @@ interface StaffMember {
   name: string;
   designation: string;
   qualification: string;
-  contact: string;
-}
-
-interface EResource {
-  name: string;
-  description: string;
 }
 
 interface Service {
   title: string;
-  description: string;
 }
 
 // Data Constants
 const LIBRARY_HOURS = {
-  morning: '09:00 AM - 12:30 PM',
-  afternoon: '01:30 PM - 05:00 PM',
+  working: '9:00 AM - 4:45 PM',
+  issue: '9:00 AM - 4:30 PM',
+  days: 'Monday to Friday',
 };
 
 const LIBRARY_CONTACT = {
-  phone: '+91 4288 274741',
-  email: 'library@jkkncas.ac.in',
+  phone: '+91 9345855001',
+  email: 'jkkncaslibrary@gmail.com',
+  libraryBlog: 'https://jkkncaslibrary.wordpress.com/',
 };
 
 const LIBRARY_RULES = [
-  'Silence must be maintained in the library at all times',
-  'Mobile phones must be kept in silent mode',
-  'No food or beverages are allowed inside the library',
-  'Handle books and materials with care',
-  'Return borrowed books on or before the due date',
-  'Fines will be charged for overdue books',
-  'Do not mark, underline, or damage library materials',
-  'Bags must be left at the designated counter',
-  'Use library resources for academic purposes only',
-  'Report damaged or missing books to the librarian immediately',
-  'Maintain cleanliness and orderliness',
-  'Follow the instructions of library staff at all times',
+  'Silence should be strictly maintained in the library.',
+  'Students and staff must scan their ID cards at the E-gate register scanner when entering the library.',
+  'Personal books and files are not allowed inside the library. Only plain sheets for notes may be brought in.',
+  'Books will be issued solely upon presentation of a valid ID card. Sub-lending of borrowed books is strictly prohibited.',
+  'Any form of damage to books or misuse of library resources (underlining, scribbling, tearing pages) will attract penalties, including fines or other disciplinary actions.',
+  'Borrowing limits: UG students may borrow 2 books, PG students may borrow 3 books, and Research scholars 5 books at a time.',
+  'Books are issued for 14 days, with a renewal option. A fine of Rs. 2 per day for overdue books.',
+  'Borrowers must inspect books for damages before borrowing and report any issues to the librarian immediately.',
+  'Reference materials (dictionaries, encyclopedias, journals, expensive books) are for in-library use only and cannot be issued.',
+  'Lost or damaged books must be replaced, or a penalty equivalent to three times the cost of the book will be imposed.',
+  'The librarian reserves the right to recall any book at any time.',
+  'Students must clear all dues before obtaining a transfer certificate or conduct certificate.',
 ];
 
 const LIBRARY_SERVICES: Service[] = [
-  {
-    title: 'Book Lending Service',
-    description: 'Borrow books for a specified period with your library card',
-  },
-  {
-    title: 'Reference Service',
-    description: 'Access reference materials and research assistance',
-  },
-  {
-    title: 'Digital Library Access',
-    description: 'Access to e-books, e-journals, and online databases',
-  },
-  {
-    title: 'Inter-Library Loan',
-    description: 'Request books from other libraries through our network',
-  },
-  {
-    title: 'Reprography Service',
-    description: 'Photocopying and scanning facilities available',
-  },
-  {
-    title: 'OPAC System',
-    description: 'Online Public Access Catalog for easy book search',
-  },
-  {
-    title: 'Internet Access',
-    description: 'High-speed internet connectivity for research',
-  },
-  {
-    title: 'Reading Room Facility',
-    description: 'Quiet study spaces for focused learning',
-  },
-  {
-    title: 'Newspaper & Magazine Service',
-    description: 'Daily newspapers and popular magazines available',
-  },
-  {
-    title: 'Career Guidance Resources',
-    description: 'Competitive exam preparation materials',
-  },
-];
-
-const JOURNALS_MAGAZINES = [
-  'Nature',
-  'Science',
-  'Current Science',
-  'The Hindu',
-  'Indian Express',
-  'Times of India',
-  'India Today',
-  'Outlook',
-  'Frontline',
-  'Sportstar',
-  'Competition Success Review',
-  'Employment News',
-  'Journal of Chemistry',
-  'Journal of Physics',
-  'Journal of Mathematics',
-  'Biological Sciences',
-  'Environmental Science Journal',
-  'Computer Science Review',
-];
-
-const E_RESOURCES: EResource[] = [
-  {
-    name: 'DELNET',
-    description: 'Developing Library Network - Access to union catalogue and resource sharing',
-  },
-  {
-    name: 'INFLIBNET',
-    description: 'Information and Library Network Centre - Academic e-resources and journals',
-  },
-  {
-    name: 'N-LIST',
-    description: 'National Library and Information Services Infrastructure for Scholarly Content',
-  },
-  {
-    name: 'NPTEL',
-    description: 'National Programme on Technology Enhanced Learning - Free online courses and video lectures',
-  },
-  {
-    name: 'NDL',
-    description: 'National Digital Library of India - Digital repository of learning resources',
-  },
-  {
-    name: 'e-PG Pathshala',
-    description: 'High quality curriculum-based e-content for postgraduate courses',
-  },
-  {
-    name: 'Shodhganga',
-    description: 'Digital repository of Indian Electronic Theses and Dissertations',
-  },
-  {
-    name: 'e-ShodhSindhu',
-    description: 'Consortium for Higher Education Electronic Resources',
-  },
+  { title: 'Automated and Barcoded Circulation' },
+  { title: 'E-Gate Entry Register' },
+  { title: 'Reference Service' },
+  { title: 'User Awareness Service' },
+  { title: 'Periodicals Service' },
+  { title: 'Internet Browsing' },
+  { title: 'Question Bank' },
+  { title: 'Current Awareness Service' },
+  { title: 'Display of New Arrivals' },
+  { title: 'Newspaper Clipping Service' },
+  { title: 'Books for Competitive Exams / Career Guidance' },
+  { title: 'Bound Back Issues of Journals' },
+  { title: 'Remote Access to Subscribed E-Resources' },
+  { title: 'WEB OPAC' },
+  { title: 'Library Blog' },
+  { title: 'Best Library User Award' },
+  { title: 'Digitization of Rare Books' },
 ];
 
 const LIBRARY_RESOURCES: LibraryResource[] = [
-  { type: 'Books', number: '25,842' },
-  { type: 'Book Titles', number: '12,456' },
-  { type: 'E-Books', number: '10,000+' },
-  { type: 'Print Journals', number: '156' },
-  { type: 'E-Journals', number: '5,000+' },
-  { type: 'Reference Books', number: '3,245' },
-  { type: 'Magazines', number: '32' },
-  { type: 'Newspapers', number: '12' },
-  { type: 'Back Volumes', number: '2,850' },
-  { type: 'CD/DVD Resources', number: '450' },
+  { type: 'No. of Books in Volumes', number: '26,797' },
+  { type: 'No. of Books in Titles', number: '17,979' },
+  { type: 'No. of Reference Books', number: '2,494' },
+  { type: 'No. of Journals', number: '23' },
+  { type: 'No. of Magazines', number: '31' },
+  { type: 'No. of Newspapers', number: '6' },
+  { type: 'No. of CD/DVD', number: '86' },
+  { type: 'No. of Back Volumes', number: '636' },
+  { type: 'Ph.D Thesis', number: '31' },
+  { type: 'M.Phil Dissertation', number: '124' },
+  { type: 'N-LIST E-Journals', number: '6,000' },
+  { type: 'E-Books', number: '1,99,500' },
+  { type: 'National Digital Library E-Books', number: '6,00,000' },
 ];
 
 const STAFF_MEMBERS: StaffMember[] = [
@@ -181,9 +100,8 @@ const STAFF_MEMBERS: StaffMember[] = [
     sno: 1,
     name: 'Dr. S. Sasikala',
     designation: 'Librarian',
-    qualification: 'B.Com., M.L.I.S., Ph.D.,PGDLAN., NET',
-    contact: 'nandhini@jkkncas.ac.in',
-  }
+    qualification: 'B.Com., M.L.I.S., Ph.D., PGDLAN., NET',
+  },
 ];
 
 export default function LibraryPage() {
@@ -204,31 +122,75 @@ export default function LibraryPage() {
           <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8">
             <div className="flex items-center gap-3 mb-6">
               <BookOpen className="h-6 w-6 text-[#0b6d41]" />
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0b6d41]">
+              <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41]">
                 About the Library
               </h2>
             </div>
 
             <div className="space-y-4 text-sm md:text-base leading-relaxed text-gray-800">
               <p>
-                The JKKN College of Arts and Science Library is the academic hub of our institution,
-                serving as a vital resource center for students, faculty, and research scholars.
-                Established with the vision of supporting academic excellence, our library houses an
-                extensive collection of books, journals, and digital resources across various disciplines.
+                Established in 1974, College Library serves as an invaluable knowledge hub for students and
+                faculty members, fostering academic growth and intellectual exploration. Spanning an area of
+                3,328 square feet with a seating capacity for 130 readers, the library is thoughtfully
+                designed to provide a comfortable and conducive environment for learning. It boasts a
+                remarkable collection of over 26,700 books across diverse disciplines, 23 esteemed national
+                and international journals, 31 magazines, 4 newspapers, 636 back volumes, and a wealth of
+                e-resources. Recent publications and journals in the fields of arts, science, and social
+                sciences further enrich the library&apos;s comprehensive offerings, along with access to online
+                resources through the N-LIST program under UGC-INFONET, available free of cost.
               </p>
 
+              <h3 className="text-lg font-bold text-[#0b6d41] mt-4">
+                Modernized Facilities for a Seamless Experience
+              </h3>
               <p>
-                With a collection of over 25,000 books and access to more than 5,000 e-journals, our
-                library caters to the diverse academic needs of our vibrant campus community. The library
-                is equipped with modern facilities including a digital library section, reading rooms,
-                internet access, and an Online Public Access Catalog (OPAC) system for easy resource discovery.
+                Equipped with the advanced automation software &quot;Campes I Lib,&quot; the library is fully
+                computerized and integrated with barcode technology for efficient book transactions. Staff
+                and students are issued personalized ID cards with barcodes for streamlined access and
+                borrowing procedures. The WEB OPAC service enables users to search the library catalog
+                with ease, while 10 computer systems in the digital library provide internet and printing
+                facilities. Ensuring a secure and user-friendly environment, the library is monitored by
+                CCTV cameras.
               </p>
+            </div>
+          </div>
+        </section>
 
-              <p>
-                Our library is committed to fostering a culture of reading, research, and lifelong learning.
-                We provide a conducive environment for study and research, supported by a dedicated team of
-                library professionals who are always ready to assist users in their quest for knowledge.
+        {/* Vision & Mission */}
+        <section className="mb-12">
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Vision */}
+            <div className="bg-white border border-gray-200 rounded-lg p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Eye className="h-6 w-6 text-[#0b6d41]" />
+                <h3 className="text-xl font-bold text-[#0b6d41]">Vision</h3>
+              </div>
+              <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+                To be a dynamic hub of knowledge, empowering students and faculty with resources,
+                technology, and inspiration to achieve academic excellence and foster lifelong learning.
               </p>
+            </div>
+
+            {/* Mission */}
+            <div className="bg-white border border-gray-200 rounded-lg p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Target className="h-6 w-6 text-[#0b6d41]" />
+                <h3 className="text-xl font-bold text-[#0b6d41]">Mission</h3>
+              </div>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-[#0b6d41] flex-shrink-0 mt-0.5" />
+                  <span className="text-sm md:text-base text-gray-800">
+                    To provide comprehensive access to diverse learning resources and services to the academic community.
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-[#0b6d41] flex-shrink-0 mt-0.5" />
+                  <span className="text-sm md:text-base text-gray-800">
+                    To provide a technologically advanced, inclusive, and student-centric environment for holistic research and academic enrichment.
+                  </span>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -240,22 +202,21 @@ export default function LibraryPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <div className="flex items-center gap-3 mb-4">
                 <Clock className="h-6 w-6 text-[#0b6d41]" />
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0b6d41]">
-                  Library Hours
+                <h3 className="text-xl font-bold text-[#0b6d41]">
+                  Working Hours
                 </h3>
               </div>
-              <div className="space-y-3">
-                <div>
-                  <p className="text-sm font-semibold text-gray-700 mb-1">Morning Session</p>
-                  <p className="text-base md:text-lg text-gray-900">{LIBRARY_HOURS.morning}</p>
+              <div className="space-y-4">
+                <div className="border-b border-gray-100 pb-3">
+                  <p className="text-sm font-semibold text-gray-700 mb-1">Working Hours</p>
+                  <p className="text-sm text-gray-500 mb-1">{LIBRARY_HOURS.days}</p>
+                  <p className="text-base md:text-lg font-medium text-gray-900">{LIBRARY_HOURS.working}</p>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-gray-700 mb-1">Afternoon Session</p>
-                  <p className="text-base md:text-lg text-gray-900">{LIBRARY_HOURS.afternoon}</p>
+                  <p className="text-sm font-semibold text-gray-700 mb-1">Book Issue & Return</p>
+                  <p className="text-sm text-gray-500 mb-1">{LIBRARY_HOURS.days}</p>
+                  <p className="text-base md:text-lg font-medium text-gray-900">{LIBRARY_HOURS.issue}</p>
                 </div>
-                <p className="text-xs text-gray-600 mt-3">
-                  * Closed on Sundays and Public Holidays
-                </p>
               </div>
             </div>
 
@@ -263,7 +224,7 @@ export default function LibraryPage() {
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <div className="flex items-center gap-3 mb-4">
                 <Mail className="h-6 w-6 text-[#0b6d41]" />
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0b6d41]">
+                <h3 className="text-xl font-bold text-[#0b6d41]">
                   Contact Information
                 </h3>
               </div>
@@ -292,6 +253,20 @@ export default function LibraryPage() {
                     </a>
                   </div>
                 </div>
+                <div className="flex items-start gap-3">
+                  <Globe className="h-5 w-5 text-[#0b6d41] flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-sm font-semibold text-gray-700 mb-1">Library Blog</p>
+                    <a
+                      href={LIBRARY_CONTACT.libraryBlog}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-[#0b6d41] hover:underline break-all"
+                    >
+                      {LIBRARY_CONTACT.libraryBlog}
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -302,7 +277,7 @@ export default function LibraryPage() {
           <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8">
             <div className="flex items-center gap-3 mb-6">
               <CheckCircle2 className="h-6 w-6 text-[#0b6d41]" />
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0b6d41]">
+              <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41]">
                 Library Rules and Regulations
               </h2>
             </div>
@@ -323,87 +298,23 @@ export default function LibraryPage() {
           <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8">
             <div className="flex items-center gap-3 mb-6">
               <BookMarked className="h-6 w-6 text-[#0b6d41]" />
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0b6d41]">
-                Library Services
+              <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41]">
+                Library Services and Best Practices
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
               {LIBRARY_SERVICES.map((service, index) => (
                 <div
                   key={index}
-                  className="bg-gray-50 border border-gray-200 rounded-lg p-5 hover:shadow-md transition"
+                  className="bg-gray-50 border border-gray-200 rounded-lg px-4 py-3 hover:bg-[#0b6d41] hover:text-white hover:border-[#0b6d41] transition group"
                 >
-                  <h4 className="font-bold text-base md:text-lg text-[#0b6d41] mb-2">
-                    {service.title}
-                  </h4>
-                  <p className="text-sm text-gray-700 leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Journals and Magazines */}
-        <section className="mb-12">
-          <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8">
-            <div className="flex items-center gap-3 mb-6">
-              <Newspaper className="h-6 w-6 text-[#0b6d41]" />
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0b6d41]">
-                Journals and Magazines
-              </h2>
-            </div>
-
-            <p className="text-sm md:text-base text-gray-700 mb-6">
-              The library subscribes to a wide range of national and international journals,
-              magazines, and newspapers to keep our academic community updated with the latest
-              developments in various fields.
-            </p>
-
-            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-3">
-              {JOURNALS_MAGAZINES.map((journal, index) => (
-                <div
-                  key={index}
-                  className="bg-gray-50 border border-gray-200 rounded px-4 py-3 text-sm md:text-base text-gray-800 hover:bg-[#0b6d41] hover:text-white transition"
-                >
-                  {journal}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* E-Resources & Databases */}
-        <section className="mb-12">
-          <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8">
-            <div className="flex items-center gap-3 mb-6">
-              <Database className="h-6 w-6 text-[#0b6d41]" />
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0b6d41]">
-                E-Resources & Databases
-              </h2>
-            </div>
-
-            <p className="text-sm md:text-base text-gray-700 mb-6">
-              Access to comprehensive digital resources and databases for enhanced learning and research.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              {E_RESOURCES.map((resource, index) => (
-                <div
-                  key={index}
-                  className="border border-gray-200 rounded-lg p-5 hover:shadow-lg transition"
-                >
-                  <div className="flex items-center gap-3 mb-3">
-                    <Database className="h-5 w-5 text-[#0b6d41] flex-shrink-0" />
-                    <h4 className="font-bold text-base md:text-lg text-[#0b6d41]">
-                      {resource.name}
-                    </h4>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-[#0b6d41] group-hover:text-white flex-shrink-0" />
+                    <span className="text-sm font-medium text-gray-800 group-hover:text-white">
+                      {service.title}
+                    </span>
                   </div>
-                  <p className="text-sm text-gray-700 leading-relaxed">
-                    {resource.description}
-                  </p>
                 </div>
               ))}
             </div>
@@ -415,7 +326,7 @@ export default function LibraryPage() {
           <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8">
             <div className="flex items-center gap-3 mb-6">
               <BarChart className="h-6 w-6 text-[#0b6d41]" />
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0b6d41]">
+              <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41]">
                 Library Resources
               </h2>
             </div>
@@ -437,7 +348,7 @@ export default function LibraryPage() {
                   {LIBRARY_RESOURCES.map((resource, index) => (
                     <tr
                       key={index}
-                      className="border-t border-gray-200 hover:bg-gray-50"
+                      className={`border-t border-gray-200 hover:bg-gray-50 ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}
                     >
                       <td className="px-6 py-4 text-sm text-gray-800 border border-gray-300">
                         {resource.type}
@@ -456,12 +367,12 @@ export default function LibraryPage() {
               {LIBRARY_RESOURCES.map((resource, index) => (
                 <div
                   key={index}
-                  className="bg-gray-50 border border-gray-200 rounded-lg p-4"
+                  className="bg-gray-50 border border-gray-200 rounded-lg p-4 flex justify-between items-center"
                 >
-                  <p className="text-sm font-semibold text-gray-700 mb-1">
+                  <p className="text-sm font-medium text-gray-700">
                     {resource.type}
                   </p>
-                  <p className="text-lg font-bold text-[#0b6d41]">
+                  <p className="text-base font-bold text-[#0b6d41]">
                     {resource.number}
                   </p>
                 </div>
@@ -475,37 +386,9 @@ export default function LibraryPage() {
           <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8">
             <div className="flex items-center gap-3 mb-6">
               <GraduationCap className="h-6 w-6 text-[#0b6d41]" />
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0b6d41]">
-                Library Staff
+              <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41]">
+                Staff Details
               </h2>
-            </div>
-
-            {/* Librarian Photo and Info */}
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-6 text-center">
-              <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#0b6d41] bg-gray-200">
-                <div className="w-full h-full flex items-center justify-center">
-                  <User className="h-16 w-16 text-gray-400" />
-                </div>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-1">
-                {STAFF_MEMBERS[0].name}
-              </h3>
-              <p className="text-sm text-gray-600 mb-1">
-                {STAFF_MEMBERS[0].designation}
-              </p>
-              <p className="text-xs text-gray-500 mb-4">
-                {STAFF_MEMBERS[0].qualification}
-              </p>
-
-              <div className="flex flex-wrap gap-3 justify-center mt-4">
-                <a
-                  href={`mailto:${STAFF_MEMBERS[0].contact}`}
-                  className="inline-flex items-center gap-2 bg-[#0b6d41] text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-[#094d2e] transition"
-                >
-                  <Mail className="h-4 w-4" />
-                  Email
-                </a>
-              </div>
             </div>
 
             {/* Staff Table - Desktop */}
@@ -520,13 +403,10 @@ export default function LibraryPage() {
                       Name
                     </th>
                     <th className="px-6 py-3 text-left text-sm font-semibold border border-gray-300">
+                      Degree / Qualification
+                    </th>
+                    <th className="px-6 py-3 text-left text-sm font-semibold border border-gray-300">
                       Designation
-                    </th>
-                    <th className="px-6 py-3 text-left text-sm font-semibold border border-gray-300">
-                      Qualification
-                    </th>
-                    <th className="px-6 py-3 text-left text-sm font-semibold border border-gray-300">
-                      Contact
                     </th>
                   </tr>
                 </thead>
@@ -543,18 +423,10 @@ export default function LibraryPage() {
                         {staff.name}
                       </td>
                       <td className="px-6 py-4 text-sm text-gray-800 border border-gray-300">
-                        {staff.designation}
-                      </td>
-                      <td className="px-6 py-4 text-sm text-gray-800 border border-gray-300">
                         {staff.qualification}
                       </td>
-                      <td className="px-6 py-4 text-sm border border-gray-300">
-                        <a
-                          href={`mailto:${staff.contact}`}
-                          className="text-[#0b6d41] hover:underline"
-                        >
-                          {staff.contact}
-                        </a>
+                      <td className="px-6 py-4 text-sm text-gray-800 border border-gray-300">
+                        {staff.designation}
                       </td>
                     </tr>
                   ))}
@@ -569,32 +441,18 @@ export default function LibraryPage() {
                   key={staff.sno}
                   className="bg-gray-50 border border-gray-200 rounded-lg p-4"
                 >
-                  <div className="grid grid-cols-2 gap-3">
-                    <div>
-                      <p className="text-xs text-gray-600 mb-1">S.No.</p>
-                      <p className="text-sm font-semibold text-gray-900">{staff.sno}</p>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-full bg-[#0b6d41] flex items-center justify-center flex-shrink-0">
+                      <User className="h-5 w-5 text-white" />
                     </div>
                     <div>
-                      <p className="text-xs text-gray-600 mb-1">Name</p>
-                      <p className="text-sm font-semibold text-gray-900">{staff.name}</p>
+                      <p className="text-sm font-bold text-gray-900">{staff.name}</p>
+                      <p className="text-xs text-[#0b6d41] font-medium">{staff.designation}</p>
                     </div>
-                    <div>
-                      <p className="text-xs text-gray-600 mb-1">Designation</p>
-                      <p className="text-sm text-gray-800">{staff.designation}</p>
-                    </div>
-                    <div>
-                      <p className="text-xs text-gray-600 mb-1">Qualification</p>
-                      <p className="text-sm text-gray-800">{staff.qualification}</p>
-                    </div>
-                    <div className="col-span-2">
-                      <p className="text-xs text-gray-600 mb-1">Contact</p>
-                      <a
-                        href={`mailto:${staff.contact}`}
-                        className="text-sm text-[#0b6d41] hover:underline"
-                      >
-                        {staff.contact}
-                      </a>
-                    </div>
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 mb-1">Qualification</p>
+                    <p className="text-sm text-gray-800">{staff.qualification}</p>
                   </div>
                 </div>
               ))}

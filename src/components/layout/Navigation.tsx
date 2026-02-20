@@ -925,7 +925,7 @@ export default function Navigation() {
             <img
               src="/logo.svg"
               alt="JKKN College Logo"
-              className="h-12 md:h-20 w-12 md:w-20"
+              className="h-12 md:h-20 w-auto"
             />
           </Link>
 
@@ -1165,14 +1165,6 @@ export default function Navigation() {
                                       className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
                                     >
                                       M.Sc Chemistry
-                                    </Link>
-                                    <Link
-                                      href="/programmes/aided/pg/msc-physics"
-                                      role="menuitem"
-                                      tabIndex={0}
-                                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
-                                    >
-                                      M.Sc Physics
                                     </Link>
                                     <Link
                                       href="/programmes/aided/pg/ma-history"
@@ -1775,6 +1767,14 @@ export default function Navigation() {
                       className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
                     >
                       Minutes of IQAC Meeting
+                    </Link>
+                    <Link
+                      href="/iqac/naac"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      NAAC
                     </Link>
 
                     {/* IIQA Nested Submenu */}
@@ -2565,13 +2565,6 @@ export default function Navigation() {
                                   M.Sc Chemistry
                                 </Link>
                                 <Link
-                                  href="/programmes/aided/pg/msc-physics"
-                                  onClick={toggleMobileMenu}
-                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
-                                >
-                                  M.Sc Physics
-                                </Link>
-                                <Link
                                   href="/programmes/aided/pg/ma-history"
                                   onClick={toggleMobileMenu}
                                   className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
@@ -3066,6 +3059,13 @@ export default function Navigation() {
                       className="block py-2 px-8 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                     >
                       Role / Responsibilities
+                    </Link>
+                    <Link
+                      href="/iqac/naac"
+                      onClick={toggleMobileMenu}
+                      className="block py-2 px-8 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                    >
+                      NAAC
                     </Link>
 
                     {/* IIQA nested accordion */}

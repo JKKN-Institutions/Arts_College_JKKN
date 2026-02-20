@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Users, Award, Briefcase, GraduationCap, CheckCircle2, Clock, FileText, ChevronDown, ArrowRight, Sparkles, Camera, Video, Palette, Film, Monitor, Globe } from 'lucide-react';
 import CountUp from '@/components/ui/CountUp';
-import Marquee from '@/components/ui/Marquee';
 
 /* ─── Scroll-reveal hook ─── */
 function useScrollReveal() {
@@ -645,11 +644,11 @@ export default function BScVisualCommunicationPage() {
               </div>
             </RevealSection>
 
-            <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
+            <div className="flex justify-center">
               {[
                 { name: 'Mr.B.Baranidharan', designation: 'Head of Department', qualification: 'M.SC (EM).,' }
               ].map((faculty, idx) => (
-                <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
+                <div key={idx} className="w-[260px] bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
                   <div className="relative h-56 overflow-hidden flex-shrink-0">
                     <Image
                       src="/images/faculties/self/visual/MR.B.BARANIDHARAN-300x199.png"
@@ -666,7 +665,7 @@ export default function BScVisualCommunicationPage() {
                   </div>
                 </div>
               ))}
-            </Marquee>
+            </div>
           </div>
         </div>
       </section>

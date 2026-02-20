@@ -69,16 +69,11 @@ export default function PhDTamilPage() {
     <div className="min-h-screen bg-white">
       {/* Hero Banner Section */}
       <section className="relative min-h-[70vh] flex items-center overflow-hidden py-12" style={{ backgroundColor: '#eaf1e2' }}>
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-green via-emerald-600 to-brand-green"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(255,255,255,0.15)_0%,transparent_50%),radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.15)_0%,transparent_50%)]"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-[120px] bg-gradient-to-t from-white to-transparent"></div>
-
         <div className="container mx-auto px-4 relative z-10">
           <RevealSection>
             <div className="max-w-4xl mx-auto text-center">
-              <span className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/30 text-white">
-                <GraduationCap className="w-4 h-4" />
+              <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
+                <GraduationCap className="w-4 h-4 text-brand-green" />
                 UGC Recognized Doctoral Programme
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-brand-green">
@@ -87,31 +82,31 @@ export default function PhDTamilPage() {
                   Tamil
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl font-medium mb-6 text-white/95">
+              <p className="text-xl md:text-2xl font-medium mb-6 text-gray-700">
                 Advanced Research in Tamil Language, Literature & Linguistics
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
-                <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/30 text-white">
-                  <Clock className="w-5 h-5" />
+                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/80 text-gray-900">
+                  <Clock className="w-5 h-5 text-brand-green" />
                   <span>3-5 Years Duration</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/30 text-white">
-                  <FileText className="w-5 h-5" />
+                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/80 text-gray-900">
+                  <FileText className="w-5 h-5 text-brand-green" />
                   <span>Full-time / Part-time</span>
                 </div>
-                <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/30 text-white">
-                  <Users className="w-5 h-5" />
+                <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/80 text-gray-900">
+                  <Users className="w-5 h-5 text-brand-green" />
                   <span>Research Programme</span>
                 </div>
               </div>
 
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-brand-green px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                   Apply Now
                   <ArrowRight className="w-4 h-4" />
                 </a>
-                <a href="#research-areas" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white text-white hover:text-brand-green border-2 border-white/30 hover:border-white px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
+                <a href="#research-areas" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
                   View Research Areas
                 </a>
               </div>
@@ -182,7 +177,7 @@ export default function PhDTamilPage() {
                   className="w-full h-auto"
                 />
                 <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                  Since 1954
+                  Since 1952
                 </span>
               </div>
             </RevealSection>

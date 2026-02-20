@@ -61,7 +61,7 @@ export default function Home() {
               {/* Description Paragraphs - black color only */}
               <div className="space-y-4 text-[14px] sm:text-[18px] lg:text-[20px] leading-[20px] sm:leading-[29.25px] lg:leading-[28px] text-black font-normal">
                 <p>
-                  JKKN College of Arts and Science, established in 1995, is a premier institution committed to transforming lives through accessible, progressive education. As part of JKKN Institutions&apos; 100-year legacy (JKKN100), we blend traditional values with modern, industry-ready curriculum.
+                  JKKN College of Arts and Science is a premier institution committed to transforming lives through accessible, progressive education. As part of JKKN Institutions&apos; 74+ year legacy (est. 1952), we blend traditional values with modern, industry-ready curriculum.
                 </p>
                 <p>
                   Our NAAC accreditation and UGC recognition reflect our commitment to academic excellence. With experienced Learning Facilitators, state-of-the-art infrastructure, and strong industry partnerships, we prepare Learners not just for jobs, but for successful careers.
@@ -501,7 +501,7 @@ export default function Home() {
       </section>
 
       {/* Journey Section */}
-      <section className="py-20 bg-[#fbfbee]">
+      {/* <section className="py-20 bg-[#fbfbee]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -556,12 +556,12 @@ export default function Home() {
             </div>
             <div>
               <div className="bg-white rounded-2xl shadow-xl p-8">
-                {/* Badge */}
+
                 <div className="inline-flex items-center gap-2 bg-[#0b6d41] text-white text-[13px] font-semibold px-4 py-2 rounded-full mb-6">
                   <span>🎓</span>
                   <span>Admissions Open 2026–27</span>
                 </div>
-                {/* Highlights */}
+
                 <ul className="space-y-4 mb-8">
                   {[
                     "Limited Seats Available",
@@ -579,7 +579,7 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                {/* CTA Button */}
+
                 <a
                   href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
                   target="_blank"
@@ -588,7 +588,7 @@ export default function Home() {
                 >
                   Apply Now – Admissions Open
                 </a>
-                {/* Contact Row */}
+
                 <div className="flex flex-col sm:flex-row gap-4 text-[14px] text-gray-600">
                   <a href="tel:+919345855001" className="flex items-center gap-2 hover:text-[#0b6d41] transition">
                     <span>📞</span>
@@ -603,7 +603,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-20 bg-white">

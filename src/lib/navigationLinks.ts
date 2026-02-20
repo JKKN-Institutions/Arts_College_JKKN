@@ -162,13 +162,7 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
                   href: '/programmes/aided/pg/msc-computer-science',
                   active: pathname === '/programmes/aided/pg/msc-computer-science'
                 },
-                {
-                  id: 'aided-pg-msc-physics',
-                  label: 'M.Sc. Physics',
-                  icon: GraduationCap,
-                  href: '/programmes/aided/pg/msc-physics',
-                  active: pathname === '/programmes/aided/pg/msc-physics'
-                },
+
                 {
                   id: 'aided-pg-msc-zoology',
                   label: 'M.Sc. Zoology',
@@ -462,6 +456,12 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
           label: 'Meeting Minutes',
           icon: FileCheck,
           active: pathname === '/iqac/minutes'
+        },
+        {
+          href: '/iqac/naac',
+          label: 'NAAC',
+          icon: FileCheck,
+          active: pathname === '/iqac/naac'
         },
         {
           href: '/iqac/iiqa',

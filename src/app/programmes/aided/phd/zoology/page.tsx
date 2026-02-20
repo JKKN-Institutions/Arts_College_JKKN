@@ -311,7 +311,7 @@ export default function PhDZoologyPage() {
 
             <RevealSection>
               <div className="flex justify-center gap-2 mb-8">
-                {[1, 2, 3].map((phase) => (
+                {[1].map((phase) => (
                   <button
                     key={phase}
                     onClick={() => setActivePhase(phase)}
@@ -327,10 +327,10 @@ export default function PhDZoologyPage() {
             </RevealSection>
 
             {activePhase === 1 && (
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex justify-center">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Semester',
                     subjects: [
                       'Aquaculture & Fishery Biology',
                       'Research Methodology',
@@ -340,19 +340,19 @@ export default function PhDZoologyPage() {
 
                     ]
                   },
-                  {
-                    title: 'Specialization Courses (Semester II)',
-                    subjects: [
-                      'Advanced Techniques in Zoology (4 Credits)',
-                      'Molecular & Cellular Biology (4 Credits)',
-                      'Ecological Research Methods (2 Credits)',
-                      'Elective: Area of Specialization (4 Credits)',
-                      'Research Synopsis Development (2 Credits)',
-                      'Comprehensive Examination (Qualifying)'
-                    ]
-                  }
+                  // {
+                  //   title: 'Specialization Courses (Semester II)',
+                  //   subjects: [
+                  //     'Advanced Techniques in Zoology (4 Credits)',
+                  //     'Molecular & Cellular Biology (4 Credits)',
+                  //     'Ecological Research Methods (2 Credits)',
+                  //     'Elective: Area of Specialization (4 Credits)',
+                  //     'Research Synopsis Development (2 Credits)',
+                  //     'Comprehensive Examination (Qualifying)'
+                  //   ]
+                  // }
                 ].map((phase, idx) => (
-                  <RevealSection key={idx} delay={idx * 150}>
+                  <RevealSection key={idx} delay={idx * 150} className="w-full max-w-lg">
                     <GlassCard className="overflow-hidden" hover={false}>
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
                         <h4 className="text-xl font-bold">{phase.title}</h4>
@@ -373,7 +373,7 @@ export default function PhDZoologyPage() {
               </div>
             )}
 
-            {activePhase === 2 && (
+            {/* {activePhase === 2 && (
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
@@ -418,9 +418,9 @@ export default function PhDZoologyPage() {
                   </RevealSection>
                 ))}
               </div>
-            )}
+            )} */}
 
-            {activePhase === 3 && (
+            {/* {activePhase === 3 && (
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
@@ -465,7 +465,7 @@ export default function PhDZoologyPage() {
                   </RevealSection>
                 ))}
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </section>
@@ -576,7 +576,7 @@ export default function PhDZoologyPage() {
       </section>
 
       {/* Research Facilities */}
-      <section className="py-16 bg-brand-cream" id="facilities">
+      {/* <section className="py-16 bg-brand-cream" id="facilities">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
@@ -619,7 +619,7 @@ export default function PhDZoologyPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why Choose Us */}
       <section className="py-16 bg-white" id="why-choose">
