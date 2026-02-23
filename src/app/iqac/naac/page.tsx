@@ -125,7 +125,7 @@ export default function NAACPage() {
 }
 
 /* ─────────────────── Shared Styles ─────────────────── */
-const heading2 = 'text-2xl font-extrabold text-brand-green mb-4';
+const heading2 = 'text-2xl font-bold text-brand-green mb-4';
 const heading3 = 'text-lg font-bold text-gray-800 mt-6 mb-3';
 const para = 'text-gray-700 text-base leading-relaxed text-justify mb-4';
 

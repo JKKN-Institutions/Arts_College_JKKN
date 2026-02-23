@@ -1,8 +1,12 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import Navigation from "./Navigation";
-import Footer from "./Footer";
 import { BottomNavbar } from "../BottomNav";
+
+const Footer = dynamic(() => import("./Footer"), {
+  loading: () => null,
+});
 
 export function ClientLayoutWrapper({
   children,

@@ -262,7 +262,7 @@ export default function BCAPage() {
                 <GraduationCap className="w-4 h-4 text-brand-green" />
                 Self-Finance Programme
               </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-brand-green">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Bachelor of{' '}
                 <span className="text-brand-green">
                   Computer Applications

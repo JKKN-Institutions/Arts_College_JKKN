@@ -247,7 +247,7 @@ export default function MComPage() {
                 <GraduationCap className="w-4 h-4 text-brand-green" />
                 Self-Finance Postgraduate Programme
               </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-brand-green">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Master of Commerce{' '}
                 <span className="text-brand-green">(M.Com)</span>
               </h1>

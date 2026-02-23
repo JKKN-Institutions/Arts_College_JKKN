@@ -18,7 +18,7 @@ export default function OurTrust() {
             <div className="inline-block mb-4">
               <span className="text-brand-yellow text-xs font-bold tracking-widest uppercase">EST. 1952</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
               OUR TRUST
             </h1>
             <div className="w-24 h-1 bg-brand-yellow mx-auto mb-6"></div>

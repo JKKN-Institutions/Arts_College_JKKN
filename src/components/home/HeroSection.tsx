@@ -27,7 +27,7 @@ export default function HeroSection() {
 
             {/* Main Heading - Optimized Size */}
             <div>
-              <h1 className="font-extrabold leading-tight">
+              <h1 className="font-bold leading-tight">
                 <span className="text-white text-[22px] sm:text-[34px] lg:text-[40px] xl:text-[44px] leading-[30px] sm:leading-[42px] lg:leading-[48px] xl:leading-[52px] block mb-1 sm:mb-1.5">
                   Shape Your Future at  JKKN College  of Arts and Science (Autonomous)
                 </span>

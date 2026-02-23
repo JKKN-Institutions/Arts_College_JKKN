@@ -76,7 +76,7 @@ export default function BScMathematicsPage() {
                 <GraduationCap className="w-4 h-4 text-brand-green" />
                 UGC Recognized Programme
               </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-brand-green drop-shadow-lg">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green drop-shadow-lg">
                 Bachelor of Science in{' '}
                 <span className="text-brand-green">
                   Mathematics
