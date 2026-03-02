@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   verification: {
     google: "ONbewRpXBBv1QVV7f0lrEarMUyhdD4n0X8xHflc77jc",
   },
+  icons: {
+    icon: "/logo.svg",
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.variable}>
-      <body className={poppins.className}>
+      <body className={poppins.className} suppressHydrationWarning>
         <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
       </body>
     </html>
