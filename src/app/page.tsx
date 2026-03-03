@@ -32,6 +32,8 @@ import {
 import HeroSection from '@/components/home/HeroSection';
 import StatsSection from '@/components/home/StatsSection';
 import AcademicProgramsSection from '@/components/home/AcademicProgramsSection';
+import EventsSection from '@/components/home/EventsSection';
+import { Suspense } from 'react';
 
 export default function Home() {
   return (
@@ -426,6 +428,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Events Section */}
+      <Suspense fallback={null}>
+        <EventsSection />
+      </Suspense>
 
       {/* Testimonials Section */}
       <section className="py-20 bg-white">
