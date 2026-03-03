@@ -989,7 +989,7 @@ function CardDetailsFields({
   readTime: string;
   imagePreview: string;
   isEdit: boolean;
-  fileInputRef: React.RefObject<HTMLInputElement>;
+  fileInputRef: React.RefObject<HTMLInputElement | null>;
   onTitleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onSlugChange: (v: string) => void;
   onExcerptChange: (v: string) => void;

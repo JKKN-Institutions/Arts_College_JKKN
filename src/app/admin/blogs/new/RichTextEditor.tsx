@@ -88,7 +88,7 @@ export default function RichTextEditor({
     const current = editor.getHTML();
     if (value !== current) {
       isUpdatingRef.current = true;
-      editor.commands.setContent(value, false);
+      editor.commands.setContent(value);
       isUpdatingRef.current = false;
     }
   }, [editor, value]);
@@ -108,13 +108,16 @@ export default function RichTextEditor({
     if (!editor) return;
     const url = window.prompt('Enter URL:');
     if (!url) return;
-    editor.chain().focus().extendMarkToNextWord().setLink({ href: url }).run();
+    editor.chain().focus().setLink({ href: url }).run();
   }, [editor]);
 
 if (!editor) return null;
 
   const isActive = (name: string, attrs?: Record<string, unknown>) =>
     editor.isActive(name, attrs);
+  const isAlignActive = (align: string) =>
+    editor.isActive('paragraph', { textAlign: align }) ||
+    editor.isActive('heading', { textAlign: align });
 
   return (
     <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
@@ -210,22 +213,22 @@ if (!editor) return null;
         <Divider />
 
         {/* Alignment */}
-        <ToolbarBtn onClick={() => editor.chain().focus().setTextAlign('left').run()} active={isActive({ textAlign: 'left' })} title="Align Left">
+        <ToolbarBtn onClick={() => editor.chain().focus().setTextAlign('left').run()} active={isAlignActive('left')} title="Align Left">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <line x1="21" y1="6" x2="3" y2="6"/><line x1="15" y1="12" x2="3" y2="12"/><line x1="17" y1="18" x2="3" y2="18"/>
           </svg>
         </ToolbarBtn>
-        <ToolbarBtn onClick={() => editor.chain().focus().setTextAlign('center').run()} active={isActive({ textAlign: 'center' })} title="Align Center">
+        <ToolbarBtn onClick={() => editor.chain().focus().setTextAlign('center').run()} active={isAlignActive('center')} title="Align Center">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <line x1="21" y1="6" x2="3" y2="6"/><line x1="18" y1="12" x2="6" y2="12"/><line x1="21" y1="18" x2="3" y2="18"/>
           </svg>
         </ToolbarBtn>
-        <ToolbarBtn onClick={() => editor.chain().focus().setTextAlign('right').run()} active={isActive({ textAlign: 'right' })} title="Align Right">
+        <ToolbarBtn onClick={() => editor.chain().focus().setTextAlign('right').run()} active={isAlignActive('right')} title="Align Right">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="12" x2="9" y2="12"/><line x1="21" y1="18" x2="7" y2="18"/>
           </svg>
         </ToolbarBtn>
-        <ToolbarBtn onClick={() => editor.chain().focus().setTextAlign('justify').run()} active={isActive({ textAlign: 'justify' })} title="Justify">
+        <ToolbarBtn onClick={() => editor.chain().focus().setTextAlign('justify').run()} active={isAlignActive('justify')} title="Justify">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="12" x2="3" y2="12"/><line x1="21" y1="18" x2="3" y2="18"/>
           </svg>
