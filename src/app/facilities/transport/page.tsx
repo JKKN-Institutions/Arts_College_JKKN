@@ -1,9 +1,18 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: 'Transport | JKKN College of Arts and Science',
-  description: 'Safe, reliable, and affordable transportation facility at JKKN College of Arts and Science with well-maintained buses, trained drivers, and accessibility features.',
+  title: 'Transport Facilities | JKKN College of Arts and Science',
+  description: 'College bus transport covering Erode, Salem, Namakkal and surrounding areas. Safe daily commute to JKKN College of Arts and Science campus.',
+  alternates: { canonical: 'https://cas.jkkn.ac.in/facilities/transport' },
+  openGraph: {
+    title: 'Transport Facilities | JKKN College of Arts and Science',
+    description: 'College bus transport covering Erode, Salem, Namakkal and surrounding areas. Safe daily commute to JKKN College of Arts and Science campus.',
+    url: 'https://cas.jkkn.ac.in/facilities/transport',
+    siteName: 'JKKN College of Arts and Science',
+    type: 'website',
+  },
 };
 
 export default function TransportPage() {
@@ -42,6 +51,11 @@ export default function TransportPage() {
 
   return (
     <div className="min-h-screen bg-brand-cream">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Facilities", url: "https://cas.jkkn.ac.in/facilities" },
+        { name: "Transport", url: "https://cas.jkkn.ac.in/facilities/transport" },
+      ]} />
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-12">
         {/* Page Title */}
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-8 md:mb-12">

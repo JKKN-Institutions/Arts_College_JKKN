@@ -1,14 +1,28 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: 'Auditorium | JKKN College of Arts and Science',
-  description: 'State-of-the-art auditorium facility at JKKN Educational Institutions',
+  description: 'State-of-the-art auditorium at JKKN College of Arts and Science for seminars, cultural events and conferences. Modern facilities near Erode, Tamil Nadu.',
+  alternates: { canonical: 'https://cas.jkkn.ac.in/facilities/auditorium' },
+  openGraph: {
+    title: 'Auditorium | JKKN College of Arts and Science',
+    description: 'State-of-the-art auditorium at JKKN College of Arts and Science for seminars, cultural events and conferences. Modern facilities near Erode, Tamil Nadu.',
+    url: 'https://cas.jkkn.ac.in/facilities/auditorium',
+    siteName: 'JKKN College of Arts and Science',
+    type: 'website',
+  },
 };
 
 export default function AuditoriumPage() {
   return (
     <div className="min-h-screen bg-brand-cream">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Facilities", url: "https://cas.jkkn.ac.in/facilities" },
+        { name: "Auditorium", url: "https://cas.jkkn.ac.in/facilities/auditorium" },
+      ]} />
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Page Title */}
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-12">

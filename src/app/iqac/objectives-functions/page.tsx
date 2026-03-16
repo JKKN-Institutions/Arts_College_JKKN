@@ -1,8 +1,32 @@
+import type { Metadata } from "next";
 import React from "react";
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+
+export const metadata: Metadata = {
+  title: "IQAC Objectives & Functions | JKKN College of Arts and Science",
+  description:
+    "Internal Quality Assurance Cell objectives and functions at JKKN College of Arts and Science (Autonomous). Quality assurance framework and initiatives.",
+  alternates: {
+    canonical: "https://cas.jkkn.ac.in/iqac/objectives-functions",
+  },
+  openGraph: {
+    title: "IQAC Objectives & Functions | JKKN College of Arts and Science",
+    description:
+      "Internal Quality Assurance Cell objectives and functions at JKKN College of Arts and Science (Autonomous). Quality assurance framework and initiatives.",
+    url: "https://cas.jkkn.ac.in/iqac/objectives-functions",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
+};
 
 export default function IQACObjectivesFunctions() {
   return (
     <main className="min-h-screen bg-brand-cream py-12 px-4">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "IQAC", url: "https://cas.jkkn.ac.in/iqac" },
+        { name: "Objectives & Functions", url: "https://cas.jkkn.ac.in/iqac/objectives-functions" },
+      ]} />
       <div className="container mx-auto max-w-6xl">
         {/* Page Title */}
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-8">

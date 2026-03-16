@@ -1,5 +1,24 @@
+import type { Metadata } from "next";
 import React from 'react';
 import Image from 'next/image';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+
+export const metadata: Metadata = {
+  title: "Library | JKKN College of Arts and Science",
+  description:
+    "Well-stocked college library with digital resources, journals and reference materials at JKKN College of Arts and Science near Erode, Tamil Nadu.",
+  alternates: {
+    canonical: "https://cas.jkkn.ac.in/library",
+  },
+  openGraph: {
+    title: "Library | JKKN College of Arts and Science",
+    description:
+      "Well-stocked college library with digital resources, journals and reference materials at JKKN College of Arts and Science near Erode, Tamil Nadu.",
+    url: "https://cas.jkkn.ac.in/library",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
+};
 import {
   BookOpen,
   Clock,
@@ -108,6 +127,10 @@ const STAFF_MEMBERS: StaffMember[] = [
 export default function LibraryPage() {
   return (
     <div className="min-h-screen bg-[#f5f5f5]">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Library", url: "https://cas.jkkn.ac.in/library" },
+      ]} />
       <div className="container mx-auto px-4 py-12 md:py-16 lg:py-20">
 
         {/* Page Header */}

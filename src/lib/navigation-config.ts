@@ -275,6 +275,11 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
         label: 'Admissions',
         items: [
           {
+            label: 'Admissions 2025-26',
+            href: '/admissions',
+            description: 'Apply now — 27+ UG, PG & PhD programmes',
+          },
+          {
             label: 'Exam Timetable',
             href: '/documents/examinations/Autonomous_Semester-Timetable_AprilMay-_2025.pdf',
           },

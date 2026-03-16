@@ -1,6 +1,25 @@
+import type { Metadata } from "next";
 import { createClient } from '@/lib/supabase/server';
 import { siteConfig } from '@/lib/site-config';
 import GalleryClient from './GalleryClient';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+
+export const metadata: Metadata = {
+  title: "Photo Gallery | JKKN College of Arts and Science",
+  description:
+    "View campus photos, events and academic activities at JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
+  alternates: {
+    canonical: "https://cas.jkkn.ac.in/gallery",
+  },
+  openGraph: {
+    title: "Photo Gallery | JKKN College of Arts and Science",
+    description:
+      "View campus photos, events and academic activities at JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
+    url: "https://cas.jkkn.ac.in/gallery",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
+};
 
 interface AdminImage {
   src: string;
@@ -51,5 +70,13 @@ export default async function GalleryPage() {
     // On error, fall back to hardcoded gallery (handled in GalleryClient)
   }
 
-  return <GalleryClient adminCategories={adminCategories} />;
+  return (
+    <>
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Gallery", url: "https://cas.jkkn.ac.in/gallery" },
+      ]} />
+      <GalleryClient adminCategories={adminCategories} />
+    </>
+  );
 }

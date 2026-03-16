@@ -1,6 +1,25 @@
+import type { Metadata } from "next";
 import React from 'react';
 import Link from 'next/link';
 import { FileText, ArrowRight, Home, ChevronRight } from 'lucide-react';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+
+export const metadata: Metadata = {
+  title: "IQAC Minutes of Meeting | JKKN College of Arts and Science",
+  description:
+    "IQAC meeting minutes and resolutions at JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
+  alternates: {
+    canonical: "https://cas.jkkn.ac.in/iqac/minutes-of-meeting",
+  },
+  openGraph: {
+    title: "IQAC Minutes of Meeting | JKKN College of Arts and Science",
+    description:
+      "IQAC meeting minutes and resolutions at JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
+    url: "https://cas.jkkn.ac.in/iqac/minutes-of-meeting",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
+};
 
 // Meeting data with years and PDF paths
 const minutesData = [
@@ -13,6 +32,11 @@ const minutesData = [
 export default function MinutesOfMeetingPage() {
   return (
     <main className="min-h-screen bg-brand-cream">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "IQAC", url: "https://cas.jkkn.ac.in/iqac" },
+        { name: "Minutes of Meeting", url: "https://cas.jkkn.ac.in/iqac/minutes-of-meeting" },
+      ]} />
       <div className="max-w-7xl mx-auto py-16 md:py-24 px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center space-x-2 text-sm mb-8" aria-label="Breadcrumb">

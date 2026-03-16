@@ -2,10 +2,19 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { CheckCircle2 } from 'lucide-react';
 import FloatingChatButtons from '@/components/ui/FloatingChatButtons';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: 'Bank & Post Office | JKKN College of Arts and Science',
-  description: 'On-campus banking and postal services at JKKN College with comprehensive financial services, account management, and mail delivery facilities for students and staff.',
+  description: 'On-campus banking and postal services at JKKN College of Arts and Science, Komarapalayam. Convenient facilities for students and staff.',
+  alternates: { canonical: 'https://cas.jkkn.ac.in/facilities/bank-post-office' },
+  openGraph: {
+    title: 'Bank & Post Office | JKKN College of Arts and Science',
+    description: 'On-campus banking and postal services at JKKN College of Arts and Science, Komarapalayam. Convenient facilities for students and staff.',
+    url: 'https://cas.jkkn.ac.in/facilities/bank-post-office',
+    siteName: 'JKKN College of Arts and Science',
+    type: 'website',
+  },
 };
 
 const bankingFeatures = [
@@ -25,6 +34,11 @@ const postalServices = [
 export default function BankPostOfficePage() {
   return (
     <main className="min-h-screen bg-brand-cream">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Facilities", url: "https://cas.jkkn.ac.in/facilities" },
+        { name: "Bank & Post Office", url: "https://cas.jkkn.ac.in/facilities/bank-post-office" },
+      ]} />
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Page Title */}
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-12 text-center">

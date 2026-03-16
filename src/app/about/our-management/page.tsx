@@ -1,6 +1,21 @@
+import type { Metadata } from "next";
 import React from 'react';
 import Image from 'next/image';
 import { Crown, Building2, GraduationCap, MapPin } from 'lucide-react';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+
+export const metadata: Metadata = {
+  title: "Our Management | JKKN College of Arts and Science",
+  description: "Meet the management team of JKKN College of Arts and Science (Autonomous). Leadership committed to academic excellence since 1994, Komarapalayam, Tamil Nadu.",
+  alternates: { canonical: "https://cas.jkkn.ac.in/about/our-management" },
+  openGraph: {
+    title: "Our Management | JKKN College of Arts and Science",
+    description: "Meet the management team of JKKN College of Arts and Science (Autonomous). Leadership committed to academic excellence since 1994, Komarapalayam, Tamil Nadu.",
+    url: "https://cas.jkkn.ac.in/about/our-management",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
+};
 
 interface ManagementMember {
   name: string;
@@ -30,6 +45,11 @@ const managementTeam: ManagementMember[] = [
 export default function OurManagementPage() {
   return (
     <main className="min-h-screen bg-[#e1e9d4]">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "About", url: "https://cas.jkkn.ac.in/about" },
+        { name: "Our Management", url: "https://cas.jkkn.ac.in/about/our-management" },
+      ]} />
       {/* Hero Section */}
       <section className="relative py-20 px-4 overflow-hidden">
         {/* Decorative circles */}

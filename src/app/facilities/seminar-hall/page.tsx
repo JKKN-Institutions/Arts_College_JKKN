@@ -1,14 +1,28 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: 'Seminar Hall | JKKN College of Arts and Science',
-  description: 'Modern seminar hall at JKKN Educational Institutions equipped with audio-visual equipment, air conditioning, comfortable seating, and high-speed internet connectivity for conferences and events.',
+  description: 'Modern seminar halls for academic presentations and workshops at JKKN College of Arts and Science, Komarapalayam.',
+  alternates: { canonical: 'https://cas.jkkn.ac.in/facilities/seminar-hall' },
+  openGraph: {
+    title: 'Seminar Hall | JKKN College of Arts and Science',
+    description: 'Modern seminar halls for academic presentations and workshops at JKKN College of Arts and Science, Komarapalayam.',
+    url: 'https://cas.jkkn.ac.in/facilities/seminar-hall',
+    siteName: 'JKKN College of Arts and Science',
+    type: 'website',
+  },
 };
 
 export default function SeminarHallPage() {
   return (
     <div className="min-h-screen bg-brand-cream">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Facilities", url: "https://cas.jkkn.ac.in/facilities" },
+        { name: "Seminar Hall", url: "https://cas.jkkn.ac.in/facilities/seminar-hall" },
+      ]} />
       <div className="max-w-6xl mx-auto px-4 py-12">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-12">
           Seminar Hall

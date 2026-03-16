@@ -1,8 +1,32 @@
+import type { Metadata } from "next";
 import React from "react";
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+
+export const metadata: Metadata = {
+  title: "IQAC Roles & Responsibilities | JKKN College of Arts and Science",
+  description:
+    "IQAC roles and responsibilities for institutional quality at JKKN College of Arts and Science (Autonomous), Komarapalayam.",
+  alternates: {
+    canonical: "https://cas.jkkn.ac.in/iqac/role-responsibilities",
+  },
+  openGraph: {
+    title: "IQAC Roles & Responsibilities | JKKN College of Arts and Science",
+    description:
+      "IQAC roles and responsibilities for institutional quality at JKKN College of Arts and Science (Autonomous), Komarapalayam.",
+    url: "https://cas.jkkn.ac.in/iqac/role-responsibilities",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
+};
 
 export default function IQACRoleResponsibilities() {
   return (
     <main className="min-h-screen bg-brand-cream py-12 px-4">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "IQAC", url: "https://cas.jkkn.ac.in/iqac" },
+        { name: "Role & Responsibilities", url: "https://cas.jkkn.ac.in/iqac/role-responsibilities" },
+      ]} />
       <div className="container mx-auto max-w-6xl">
         {/* Page Title */}
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-8">

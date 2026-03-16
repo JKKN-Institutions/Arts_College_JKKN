@@ -1,8 +1,32 @@
+import type { Metadata } from "next";
 import React from "react";
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+
+export const metadata: Metadata = {
+  title: "IQAC Vision & Mission | JKKN College of Arts and Science",
+  description:
+    "IQAC vision and mission for quality enhancement at JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
+  alternates: {
+    canonical: "https://cas.jkkn.ac.in/iqac/vision-mission",
+  },
+  openGraph: {
+    title: "IQAC Vision & Mission | JKKN College of Arts and Science",
+    description:
+      "IQAC vision and mission for quality enhancement at JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
+    url: "https://cas.jkkn.ac.in/iqac/vision-mission",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
+};
 
 export default function IQACVisionMission() {
   return (
     <main className="min-h-screen bg-brand-cream py-12 px-4">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "IQAC", url: "https://cas.jkkn.ac.in/iqac" },
+        { name: "Vision & Mission", url: "https://cas.jkkn.ac.in/iqac/vision-mission" },
+      ]} />
       <div className="container mx-auto max-w-6xl">
         {/* Page Title */}
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-8">

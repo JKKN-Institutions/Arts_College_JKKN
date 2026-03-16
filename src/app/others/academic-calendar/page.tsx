@@ -1,8 +1,31 @@
+import type { Metadata } from "next";
 import React from 'react';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+
+export const metadata: Metadata = {
+  title: "Academic Calendar | JKKN College of Arts and Science",
+  description:
+    "Academic calendar with important dates, exam schedules and events at JKKN College of Arts and Science (Autonomous) near Erode, Tamil Nadu.",
+  alternates: {
+    canonical: "https://cas.jkkn.ac.in/others/academic-calendar",
+  },
+  openGraph: {
+    title: "Academic Calendar | JKKN College of Arts and Science",
+    description:
+      "Academic calendar with important dates, exam schedules and events at JKKN College of Arts and Science (Autonomous) near Erode, Tamil Nadu.",
+    url: "https://cas.jkkn.ac.in/others/academic-calendar",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
+};
 
 export default function AcademicCalendarPage() {
   return (
     <main className="min-h-screen bg-gray-50">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Academic Calendar", url: "https://cas.jkkn.ac.in/others/academic-calendar" },
+      ]} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">ACADEMIC CALENDAR</h1>
 

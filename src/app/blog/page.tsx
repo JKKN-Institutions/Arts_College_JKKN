@@ -1,7 +1,26 @@
+import type { Metadata } from "next";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Calendar, Clock } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+
+export const metadata: Metadata = {
+  title: "Blog | JKKN College of Arts and Science",
+  description:
+    "Read the latest articles, news, career guidance and campus updates from JKKN College of Arts and Science (Autonomous) near Erode, Tamil Nadu.",
+  alternates: {
+    canonical: "https://cas.jkkn.ac.in/blog",
+  },
+  openGraph: {
+    title: "Blog | JKKN College of Arts and Science",
+    description:
+      "Read the latest articles, news, career guidance and campus updates from JKKN College of Arts and Science (Autonomous) near Erode, Tamil Nadu.",
+    url: "https://cas.jkkn.ac.in/blog",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
+};
 
 export const revalidate = 60;
 
@@ -29,6 +48,10 @@ export default async function BlogPage() {
 
   return (
     <div className="min-h-screen bg-[#FBFBEE]">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Blog", url: "https://cas.jkkn.ac.in/blog" },
+      ]} />
       {/* <Header /> */}
 
       {/* ── Campus News (Admin Posts) Section — shown only when posts exist ── */}

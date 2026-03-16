@@ -1,14 +1,28 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: 'Labs | JKKN College of Arts and Science',
-  description: 'State-of-the-art laboratory facilities at JKKN Educational Institutions covering physics, chemistry, biology, and engineering with the latest technology and equipment.',
+  title: 'Laboratories | JKKN College of Arts and Science',
+  description: 'Well-equipped science and computer laboratories at JKKN College of Arts and Science for practical learning and research near Erode, Tamil Nadu.',
+  alternates: { canonical: 'https://cas.jkkn.ac.in/facilities/labs' },
+  openGraph: {
+    title: 'Laboratories | JKKN College of Arts and Science',
+    description: 'Well-equipped science and computer laboratories at JKKN College of Arts and Science for practical learning and research near Erode, Tamil Nadu.',
+    url: 'https://cas.jkkn.ac.in/facilities/labs',
+    siteName: 'JKKN College of Arts and Science',
+    type: 'website',
+  },
 };
 
 export default function LabsPage() {
   return (
     <div className="min-h-screen bg-brand-cream">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Facilities", url: "https://cas.jkkn.ac.in/facilities" },
+        { name: "Labs", url: "https://cas.jkkn.ac.in/facilities/labs" },
+      ]} />
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Page Title */}
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-12">

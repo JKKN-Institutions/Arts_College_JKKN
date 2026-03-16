@@ -1,14 +1,28 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Sports Club | JKKN College of Arts and Science",
-  description: "Discover our world-class Sports Club facility with expert instructors, cutting-edge equipment, and a vibrant community. Join JKKN Educational Institutions for the ultimate fitness and sporting experience.",
+  title: "Sports & Recreation | JKKN College of Arts and Science",
+  description: "Sports facilities and athletics infrastructure at JKKN College of Arts and Science. Indoor and outdoor sports near Erode, Tamil Nadu.",
+  alternates: { canonical: "https://cas.jkkn.ac.in/facilities/sports-club" },
+  openGraph: {
+    title: "Sports & Recreation | JKKN College of Arts and Science",
+    description: "Sports facilities and athletics infrastructure at JKKN College of Arts and Science. Indoor and outdoor sports near Erode, Tamil Nadu.",
+    url: "https://cas.jkkn.ac.in/facilities/sports-club",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
 };
 
 export default function SportsClubPage() {
   return (
     <div className="min-h-screen bg-brand-cream">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Facilities", url: "https://cas.jkkn.ac.in/facilities" },
+        { name: "Sports & Club", url: "https://cas.jkkn.ac.in/facilities/sports-club" },
+      ]} />
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Page Title */}
         <div className="mb-10">

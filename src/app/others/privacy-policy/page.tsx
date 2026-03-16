@@ -1,15 +1,32 @@
 import React from 'react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - JKKN College',
-  description: 'Privacy Policy for JKKN Educational Institutions. Learn how we collect, use, and protect your personal information.',
+  title: "Privacy Policy | JKKN College of Arts and Science",
+  description:
+    "Privacy policy for JKKN College of Arts and Science website. How we collect, use and protect your information.",
+  alternates: {
+    canonical: "https://cas.jkkn.ac.in/others/privacy-policy",
+  },
+  openGraph: {
+    title: "Privacy Policy | JKKN College of Arts and Science",
+    description:
+      "Privacy policy for JKKN College of Arts and Science website. How we collect, use and protect your information.",
+    url: "https://cas.jkkn.ac.in/others/privacy-policy",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
 };
 
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-gray-50">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Privacy Policy", url: "https://cas.jkkn.ac.in/others/privacy-policy" },
+      ]} />
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Breadcrumb */}
         <nav className="mb-6 text-sm text-gray-600">

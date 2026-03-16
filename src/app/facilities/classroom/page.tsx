@@ -1,14 +1,28 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: 'Digital Classroom | JKKN College of Arts and Science',
-  description: 'Exceptional digital classroom facilities at JKKN Educational Institutions equipped with state-of-the-art technology, interactive whiteboards, and comfortable learning environments.',
+  title: 'Smart Classrooms | JKKN College of Arts and Science',
+  description: 'Modern smart classrooms with digital learning tools at JKKN College of Arts and Science. Technology-enabled education near Erode, Tamil Nadu.',
+  alternates: { canonical: 'https://cas.jkkn.ac.in/facilities/classroom' },
+  openGraph: {
+    title: 'Smart Classrooms | JKKN College of Arts and Science',
+    description: 'Modern smart classrooms with digital learning tools at JKKN College of Arts and Science. Technology-enabled education near Erode, Tamil Nadu.',
+    url: 'https://cas.jkkn.ac.in/facilities/classroom',
+    siteName: 'JKKN College of Arts and Science',
+    type: 'website',
+  },
 };
 
 export default function ClassroomPage() {
   return (
     <div className="min-h-screen bg-brand-cream">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Facilities", url: "https://cas.jkkn.ac.in/facilities" },
+        { name: "Classroom", url: "https://cas.jkkn.ac.in/facilities/classroom" },
+      ]} />
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Page Title */}
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-12">

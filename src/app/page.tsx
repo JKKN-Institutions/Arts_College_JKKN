@@ -34,10 +34,40 @@ import StatsSection from '@/components/home/StatsSection';
 import AcademicProgramsSection from '@/components/home/AcademicProgramsSection';
 import EventsSection from '@/components/home/EventsSection';
 import { Suspense } from 'react';
+import { FAQSchema } from '@/components/seo/FAQSchema';
+
+const homepageFAQs = [
+  {
+    question: "What are the admission requirements for undergraduate programs?",
+    answer:
+      "Students must have completed their 12th standard with relevant subjects and minimum required percentage. Specific requirements vary by program. Please contact our admissions office for detailed eligibility criteria.",
+  },
+  {
+    question: "Does JKKN College provide placement assistance?",
+    answer:
+      "Yes, we have a dedicated placement cell that works year-round to connect students with top employers. We maintain strong industry partnerships and achieve a 95% placement rate across all programs.",
+  },
+  {
+    question: "What facilities are available on campus?",
+    answer:
+      "Our campus features modern computer labs, a well-stocked library, smart classrooms, research centers, sports facilities, hostel accommodation, cafeteria, and much more to support your academic and personal development.",
+  },
+  {
+    question: "Are scholarships available for students?",
+    answer:
+      "Yes, we offer various merit-based and need-based scholarships to deserving students. Additionally, we assist students in applying for government scholarships and financial aid programs.",
+  },
+  {
+    question: "How can I apply for admission?",
+    answer:
+      "You can apply online through our website by filling out the admission form. Alternatively, you can visit our campus to complete the application process in person. Our admissions team is available to guide you through every step.",
+  },
+];
 
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <FAQSchema faqs={homepageFAQs} />
       {/* Hero Section - Fits exactly one screen */}
       <HeroSection />
 

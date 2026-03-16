@@ -1,8 +1,28 @@
+import type { Metadata } from "next";
 import Image from 'next/image';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+
+export const metadata: Metadata = {
+  title: "Our Institution | JKKN College of Arts and Science",
+  description: "Learn about JKKN College of Arts and Science (Autonomous), an institution affiliated to Periyar University offering 27+ programmes in Arts, Science and Commerce near Erode, Tamil Nadu.",
+  alternates: { canonical: "https://cas.jkkn.ac.in/about/our-institution" },
+  openGraph: {
+    title: "Our Institution | JKKN College of Arts and Science",
+    description: "Learn about JKKN College of Arts and Science (Autonomous), an institution affiliated to Periyar University offering 27+ programmes in Arts, Science and Commerce near Erode, Tamil Nadu.",
+    url: "https://cas.jkkn.ac.in/about/our-institution",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
+};
 
 export default function OurInstitutionPage() {
   return (
     <div className="min-h-screen bg-[#f5f5f5]">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "About", url: "https://cas.jkkn.ac.in/about" },
+        { name: "Our Institution", url: "https://cas.jkkn.ac.in/about/our-institution" },
+      ]} />
       <div className="container mx-auto px-4 py-12 md:py-16 lg:py-20">
         {/* Header */}
         <div className="mb-8">

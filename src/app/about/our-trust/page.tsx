@@ -1,10 +1,30 @@
+import type { Metadata } from "next";
 import React from 'react';
 import { Calendar, Building2, GraduationCap, Users, Heart, Award, Target, Lightbulb, Shield, HandHeart } from 'lucide-react';
 import Image from 'next/image';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+
+export const metadata: Metadata = {
+  title: "JKKN Trust | JKKN College of Arts and Science",
+  description: "Learn about the JKKN Educational Trust established in 1952. The trust manages 10 institutions including JKKN College of Arts and Science near Erode, Tamil Nadu.",
+  alternates: { canonical: "https://cas.jkkn.ac.in/about/our-trust" },
+  openGraph: {
+    title: "JKKN Trust | JKKN College of Arts and Science",
+    description: "Learn about the JKKN Educational Trust established in 1952. The trust manages 10 institutions including JKKN College of Arts and Science near Erode, Tamil Nadu.",
+    url: "https://cas.jkkn.ac.in/about/our-trust",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
+};
 
 export default function OurTrust() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-brand-green via-[#0a5d39] to-[#074a2e] font-sans">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "About", url: "https://cas.jkkn.ac.in/about" },
+        { name: "Our Trust", url: "https://cas.jkkn.ac.in/about/our-trust" },
+      ]} />
 
       {/* Hero Section */}
       <section className="relative py-16 md:py-20 px-4 overflow-hidden">

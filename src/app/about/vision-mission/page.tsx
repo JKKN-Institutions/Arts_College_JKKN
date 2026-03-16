@@ -1,9 +1,29 @@
+import type { Metadata } from "next";
 import React from 'react';
 import { Eye, Target, Sparkles, Lightbulb, Users, TrendingUp } from 'lucide-react';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+
+export const metadata: Metadata = {
+  title: "Vision and Mission | JKKN College of Arts and Science",
+  description: "Discover the vision and mission of JKKN College of Arts and Science (Autonomous). Committed to holistic education, research, and community development near Erode, Tamil Nadu.",
+  alternates: { canonical: "https://cas.jkkn.ac.in/about/vision-mission" },
+  openGraph: {
+    title: "Vision and Mission | JKKN College of Arts and Science",
+    description: "Discover the vision and mission of JKKN College of Arts and Science (Autonomous). Committed to holistic education, research, and community development near Erode, Tamil Nadu.",
+    url: "https://cas.jkkn.ac.in/about/vision-mission",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
+};
 
 export default function VisionMission() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-brand-green via-[#0a5d39] to-[#074a2e] relative overflow-hidden font-sans">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "About", url: "https://cas.jkkn.ac.in/about" },
+        { name: "Vision & Mission", url: "https://cas.jkkn.ac.in/about/vision-mission" },
+      ]} />
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 right-20 w-96 h-96 bg-brand-yellow/10 rounded-full blur-3xl animate-pulse"></div>

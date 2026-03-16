@@ -1,8 +1,17 @@
 import type { Metadata } from 'next';
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: 'Hostel | JKKN College of Arts and Science',
-  description: 'Safe and comfortable hostel facilities at JKKN Educational Institutions with 24/7 security, nutritious food, high-speed Wi-Fi, and state-of-the-art amenities for both boys and girls students.',
+  title: 'Hostel Accommodation | JKKN College of Arts and Science',
+  description: 'Separate hostel facilities for boys and girls at JKKN College of Arts and Science. Safe, comfortable accommodation near Erode, Tamil Nadu.',
+  alternates: { canonical: 'https://cas.jkkn.ac.in/facilities/hostel' },
+  openGraph: {
+    title: 'Hostel Accommodation | JKKN College of Arts and Science',
+    description: 'Separate hostel facilities for boys and girls at JKKN College of Arts and Science. Safe, comfortable accommodation near Erode, Tamil Nadu.',
+    url: 'https://cas.jkkn.ac.in/facilities/hostel',
+    siteName: 'JKKN College of Arts and Science',
+    type: 'website',
+  },
 };
 
 export default function HostelLayout({
@@ -10,5 +19,14 @@ export default function HostelLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Facilities", url: "https://cas.jkkn.ac.in/facilities" },
+        { name: "Hostel", url: "https://cas.jkkn.ac.in/facilities/hostel" },
+      ]} />
+      {children}
+    </>
+  );
 }

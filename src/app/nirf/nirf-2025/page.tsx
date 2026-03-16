@@ -1,5 +1,24 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Home } from "lucide-react";
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+
+export const metadata: Metadata = {
+  title: "NIRF 2025 | JKKN College of Arts and Science",
+  description:
+    "NIRF 2025 ranking data and institutional performance of JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
+  alternates: {
+    canonical: "https://cas.jkkn.ac.in/nirf/nirf-2025",
+  },
+  openGraph: {
+    title: "NIRF 2025 | JKKN College of Arts and Science",
+    description:
+      "NIRF 2025 ranking data and institutional performance of JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
+    url: "https://cas.jkkn.ac.in/nirf/nirf-2025",
+    siteName: "JKKN College of Arts and Science",
+    type: "website",
+  },
+};
 
 const nirfData = [
   { title: "OVERAll", pdfPath: "/documents/nirf/NIRF-2025-OVER-All.pdf" },
@@ -10,6 +29,11 @@ const nirfData = [
 export default function Nirf2025Page() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "NIRF", url: "https://cas.jkkn.ac.in/nirf" },
+        { name: "NIRF 2025", url: "https://cas.jkkn.ac.in/nirf/nirf-2025" },
+      ]} />
       {/* Breadcrumb */}
       <div className="bg-white border-b">
         <div className="container mx-auto px-4 py-4">
