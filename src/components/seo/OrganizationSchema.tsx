@@ -45,6 +45,10 @@ export function OrganizationSchema() {
     sameAs: [
       "https://www.jkkn.ac.in",
       "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
+      "https://www.facebook.com/jkknarts",
+      "https://www.instagram.com/jkknarts",
+      "https://www.linkedin.com/school/jkknarts",
+      "https://www.youtube.com/playlist?list=PL6QsTq-__Hht5kIiyJS5HkiYk-YNCMjxu",
     ],
     hasCredential: [
       {
@@ -81,6 +85,14 @@ export function OrganizationSchema() {
     alumniOf: {
       "@type": "EducationalOrganization",
       name: "JKKN College of Arts and Science",
+    },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [
+        "h1",
+        ".hero-description",
+        "[data-speakable]",
+      ],
     },
   };
 

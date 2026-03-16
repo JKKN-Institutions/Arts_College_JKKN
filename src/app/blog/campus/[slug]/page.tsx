@@ -1,11 +1,53 @@
+import type { Metadata } from 'next';
 import { createClient } from '@/lib/supabase/server';
 import { notFound } from 'next/navigation';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import CampusBlogContent from './CampusBlogContent';
+import { ArticleSchema } from '@/components/seo/ArticleSchema';
+
+const SITE_URL = 'https://cas.jkkn.ac.in';
 
 export const revalidate = 300;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const supabase = await createClient();
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
+
+  const { data: post } = await supabase
+    .from('blogs')
+    .select('title, excerpt, meta_description, cover_image_url')
+    .eq('slug', slug)
+    .eq('college_id', collegeId)
+    .eq('is_published', true)
+    .single();
+
+  if (!post) {
+    return { title: 'Blog Post Not Found' };
+  }
+
+  const description =
+    post.meta_description ?? post.excerpt?.slice(0, 155) ?? `${post.title} — JKKN College of Arts and Science Blog`;
+
+  return {
+    title: post.title,
+    description,
+    openGraph: {
+      title: post.title,
+      description,
+      url: `${SITE_URL}/blog/campus/${slug}`,
+      type: 'article',
+      ...(post.cover_image_url && { images: [{ url: post.cover_image_url }] }),
+    },
+    alternates: {
+      canonical: `${SITE_URL}/blog/campus/${slug}`,
+    },
+  };
+}
 
 /** Extract h2/h3 headings from HTML and inject id attributes for TOC */
 function processContent(
@@ -123,6 +165,14 @@ export default async function CampusBlogPost({
 
   return (
     <div className="min-h-screen bg-white">
+      <ArticleSchema
+        headline={post.title}
+        description={post.meta_description ?? post.excerpt ?? post.title}
+        datePublished={post.published_at ?? post.created_at}
+        dateModified={post.updated_at ?? post.published_at ?? post.created_at}
+        url={`${SITE_URL}/blog/campus/${slug}`}
+        imageUrl={post.cover_image_url}
+      />
       <CampusBlogContent
         post={post}
         processedContent={processedHtml}

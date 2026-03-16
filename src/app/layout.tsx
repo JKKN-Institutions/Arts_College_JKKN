@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { ClientLayoutWrapper } from "@/components/layout/ClientLayoutWrapper";
 import { OrganizationSchema } from "@/components/seo/OrganizationSchema";
+import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | JKKN College of Arts and Science",
   },
   description:
-    "JKKN College of Arts and Science (Autonomous) offers 27+ UG, PG and PhD programmes in Arts, Science and Commerce. Highest package ₹18 LPA. Affiliated to Periyar University. Located near Erode, Tamil Nadu.",
+    "Autonomous college offering 27+ UG, PG & PhD programmes in Arts, Science & Commerce. Highest package ₹18 LPA. Near Erode, Tamil Nadu.",
   keywords: [
     "JKKN College of Arts and Science",
     "arts and science college near Erode",
@@ -81,7 +83,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.variable}>
       <body className={poppins.className} suppressHydrationWarning>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-QW6LQV7XE5"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QW6LQV7XE5');`}
+        </Script>
         <OrganizationSchema />
+        <LocalBusinessSchema />
         <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
       </body>
     </html>

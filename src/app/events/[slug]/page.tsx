@@ -1,10 +1,51 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import Image from "next/image";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { createClient } from "@/lib/supabase/server";
 import { CalendarDays, Clock, MapPin } from "lucide-react";
+import { EventSchema } from "@/components/seo/EventSchema";
+
+const SITE_URL = "https://cas.jkkn.ac.in";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const supabase = await createClient();
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? "arts-science";
+
+  const { data: event } = await supabase
+    .from("events")
+    .select("title, description, image_url")
+    .eq("slug", slug)
+    .eq("college_id", collegeId)
+    .eq("is_published", true)
+    .single();
+
+  if (!event) {
+    return { title: "Event Not Found" };
+  }
+
+  const description =
+    event.description?.slice(0, 155) ?? `${event.title} at JKKN College of Arts and Science`;
+
+  return {
+    title: event.title,
+    description,
+    openGraph: {
+      title: event.title,
+      description,
+      url: `${SITE_URL}/events/${slug}`,
+      type: "article",
+      ...(event.image_url && { images: [{ url: event.image_url }] }),
+    },
+    alternates: {
+      canonical: `${SITE_URL}/events/${slug}`,
+    },
+  };
+}
 
 export default async function EventPage({
   params,
@@ -13,7 +54,7 @@ export default async function EventPage({
 }) {
   const { slug } = await params;
   const supabase = await createClient();
-  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? "nursing";
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? "arts-science";
 
   const { data: event } = await supabase
     .from("events")
@@ -35,7 +76,14 @@ export default async function EventPage({
 
   return (
     <>
-      
+      <EventSchema
+        name={event.title}
+        description={event.description ?? ""}
+        startDate={event.event_date ?? event.created_at}
+        location={event.venue}
+        imageUrl={event.image_url}
+        url={`${SITE_URL}/events/${slug}`}
+      />
       <main className="min-h-screen bg-[#FBFBEE]">
         {/* Hero */}
         <section className="bg-gradient-to-br from-[#006837] to-[#004d29] py-16 px-8 md:px-16 lg:px-24">
