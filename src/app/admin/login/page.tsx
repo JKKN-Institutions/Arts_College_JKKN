@@ -19,11 +19,23 @@ export default function AdminLogin() {
 
     try {
       const supabase = createClient();
-      const { error: authError } = await supabase.auth.signInWithPassword({ email, password });
+      const { data: authData, error: authError } = await supabase.auth.signInWithPassword({ email, password });
       if (authError) {
         setError(authError.message);
       } else {
-        window.location.href = '/admin/dashboard';
+        const userId = authData.user?.id;
+        const { data: profile } = await supabase
+          .from('staff_profiles')
+          .select('college_id')
+          .eq('id', userId)
+          .single();
+
+        if (profile?.college_id !== process.env.NEXT_PUBLIC_COLLEGE_ID) {
+          await supabase.auth.signOut({ scope: 'local' });
+          setError("You are not authorized to access this college's admin panel.");
+        } else {
+          window.location.href = '/admin/dashboard';
+        }
       }
     } catch {
       setError('Network error — please check your connection and try again.');

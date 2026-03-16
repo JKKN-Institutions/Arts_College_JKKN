@@ -165,7 +165,7 @@ export default function CampusBlogContent({
         {post.excerpt && (
           <div className="bg-white border-l-4 border-[#006837] rounded-r-xl p-5 mb-10 shadow-sm">
             <p className="text-[#006837] text-xs font-bold uppercase tracking-wider mb-2">Quick Answer</p>
-            <p className="text-gray-700 text-sm leading-relaxed">{post.excerpt}</p>
+            <p className="text-gray-700 text-sm leading-relaxed break-words overflow-hidden">{post.excerpt}</p>
           </div>
         )}
 
