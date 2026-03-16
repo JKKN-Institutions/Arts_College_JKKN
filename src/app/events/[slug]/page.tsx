@@ -1,83 +1,99 @@
-import { createClient } from '@/lib/supabase/server';
-import { siteConfig } from '@/lib/site-config';
-import { notFound } from 'next/navigation';
-import Link from 'next/link';
-import { ArrowLeft, CalendarDays, Clock, MapPin } from 'lucide-react';
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { createClient } from "@/lib/supabase/server";
+import { CalendarDays, Clock, MapPin } from "lucide-react";
 
-export default async function EventDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function EventPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const supabase = await createClient();
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? "nursing";
 
   const { data: event } = await supabase
-    .from('events')
-    .select('id, title, description, event_date, event_time, venue, image_url')
-    .eq('college_id', siteConfig.id)
-    .eq('slug', slug)
-    .eq('is_published', true)
+    .from("events")
+    .select("*")
+    .eq("slug", slug)
+    .eq("college_id", collegeId)
+    .eq("is_published", true)
     .single();
 
   if (!event) notFound();
 
-  function formatDate(d: string) {
-    return new Date(d).toLocaleDateString('en-IN', {
-      day: '2-digit',
-      month: 'long',
-      year: 'numeric',
-    });
-  }
+  const formattedDate = event.event_date
+    ? new Date(event.event_date).toLocaleDateString("en-IN", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      })
+    : null;
 
   return (
-    <main className="min-h-screen bg-[#fbfbee]">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-[#0b6d41] mb-8 transition"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Back to Home
-        </Link>
-
-        {event.image_url && (
-          <div className="rounded-2xl overflow-hidden mb-8 aspect-[16/7]">
-            <img
-              src={event.image_url}
-              alt={event.title}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        )}
-
-        <div className="bg-white rounded-2xl p-8 shadow-sm">
-          <h1 className="text-[28px] sm:text-[36px] leading-[36px] sm:leading-[44px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-6">
-            {event.title}
-          </h1>
-
-          <div className="flex flex-wrap gap-4 mb-8 pb-8 border-b border-gray-100">
-            <div className="flex items-center gap-2 text-[14px] text-gray-600">
-              <CalendarDays className="w-5 h-5 text-[#0b6d41]" />
-              <span>{formatDate(event.event_date)}</span>
+    <>
+      
+      <main className="min-h-screen bg-[#FBFBEE]">
+        {/* Hero */}
+        <section className="bg-gradient-to-br from-[#006837] to-[#004d29] py-16 px-8 md:px-16 lg:px-24">
+          <div className="container mx-auto max-w-4xl">
+<h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+              {event.title}
+            </h1>
+            <div className="flex flex-wrap gap-6 text-green-100 text-sm">
+              {formattedDate && (
+                <div className="flex items-center gap-2">
+                  <CalendarDays className="w-5 h-5" />
+                  <span>{formattedDate}</span>
+                </div>
+              )}
+              {event.event_time && (
+                <div className="flex items-center gap-2">
+                  <Clock className="w-5 h-5" />
+                  <span>{event.event_time}</span>
+                </div>
+              )}
+              {event.venue && (
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-5 h-5" />
+                  <span>{event.venue}</span>
+                </div>
+              )}
             </div>
-            {event.event_time && (
-              <div className="flex items-center gap-2 text-[14px] text-gray-600">
-                <Clock className="w-5 h-5 text-[#0b6d41]" />
-                <span>{event.event_time}</span>
+          </div>
+        </section>
+
+        {/* Content */}
+        <section className="py-16 px-8 md:px-16 lg:px-24">
+          <div className="container mx-auto max-w-4xl">
+            {event.image_url && (
+              <div className="relative w-full h-72 md:h-96 rounded-3xl overflow-hidden mb-8 shadow-lg">
+                <Image
+                  src={event.image_url}
+                  alt={event.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 896px"
+                  className="object-cover"
+                  unoptimized
+                />
               </div>
             )}
-            {event.venue && (
-              <div className="flex items-center gap-2 text-[14px] text-gray-600">
-                <MapPin className="w-5 h-5 text-[#0b6d41]" />
-                <span>{event.venue}</span>
+            <div className="bg-white rounded-3xl shadow-lg p-8 md:p-12">
+              <h2 className="text-2xl font-bold text-[#006837] mb-6">
+                About This Event
+              </h2>
+              <div className="text-gray-700 leading-relaxed whitespace-pre-line break-words">
+                {event.description}
               </div>
-            )}
-          </div>
-
-          {event.description && (
-            <div className="text-[16px] leading-[28px] text-gray-700 whitespace-pre-wrap">
-              {event.description}
             </div>
-          )}
-        </div>
-      </div>
-    </main>
+
+          </div>
+        </section>
+      </main>
+     
+    </>
   );
 }

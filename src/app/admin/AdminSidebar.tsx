@@ -62,6 +62,7 @@ export default function AdminSidebar({
   const [mobileOpen, setMobileOpen] = useState(false);
   const [collegeSwitcherOpen, setCollegeSwitcherOpen] = useState(false);
   const [switching, setSwitching] = useState(false);
+  const [showLogoutModal, setShowLogoutModal] = useState(false);
 
   const isBlogActive = pathname === '/admin/blogs' || pathname.startsWith('/admin/blogs/');
   const [blogOpen, setBlogOpen] = useState(isBlogActive);
@@ -71,7 +72,7 @@ export default function AdminSidebar({
 
   async function handleLogout() {
     const supabase = createClient();
-    await supabase.auth.signOut();
+    await supabase.auth.signOut({ scope: 'local' });
     router.push('/admin/login');
     router.refresh();
   }
@@ -111,50 +112,6 @@ export default function AdminSidebar({
         </div>
       </div>
 
-      {/* College Switcher — visible to super_admin and seo */}
-      {canSwitchCollege && colleges.length > 0 && (
-        <div className="px-3 pt-3 pb-2 border-b border-white/10">
-          <p className="text-white/40 text-[10px] font-semibold uppercase tracking-wider px-2 mb-1.5">
-            Active College
-          </p>
-          <div className="relative">
-            <button
-              onClick={() => setCollegeSwitcherOpen((o) => !o)}
-              disabled={switching}
-              className="w-full flex items-center gap-2.5 px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 transition text-left"
-            >
-              <Building2 size={15} className="text-white/60 flex-shrink-0" />
-              <span className="text-white text-xs font-medium truncate flex-1 leading-tight">
-                {switching ? 'Switching…' : currentCollegeName}
-              </span>
-              <ChevronsUpDown size={13} className="text-white/40 flex-shrink-0" />
-            </button>
-
-            {collegeSwitcherOpen && (
-              <>
-                <div
-                  className="fixed inset-0 z-10"
-                  onClick={() => setCollegeSwitcherOpen(false)}
-                />
-                <div className="absolute left-0 right-0 top-full mt-1 bg-[#001a06] border border-white/10 rounded-xl shadow-xl z-20 overflow-hidden">
-                  {colleges.map((col) => (
-                    <button
-                      key={col.id}
-                      onClick={() => switchCollege(col.id)}
-                      className="w-full flex items-center gap-2.5 px-3 py-2.5 text-left hover:bg-white/10 transition"
-                    >
-                      <span className="text-xs text-white/80 flex-1 truncate">{col.name}</span>
-                      {col.id === currentCollegeId && (
-                        <Check size={13} className="text-green-400 flex-shrink-0" />
-                      )}
-                    </button>
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
-        </div>
-      )}
 
       {/* Nav */}
       <nav className="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
@@ -258,7 +215,7 @@ export default function AdminSidebar({
           </div>
         </div>
         <button
-          onClick={handleLogout}
+          onClick={() => setShowLogoutModal(true)}
           className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-white/70 hover:bg-red-500/20 hover:text-red-300 transition-all"
         >
           <LogOut size={18} />
@@ -270,6 +227,30 @@ export default function AdminSidebar({
 
   return (
     <>
+      {/* Sign Out Confirmation Modal */}
+      {showLogoutModal && (
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50">
+          <div className="bg-white rounded-2xl shadow-xl p-6 w-80 mx-4">
+            <h2 className="text-lg font-bold text-gray-900 mb-2">Sign Out</h2>
+            <p className="text-sm text-gray-500 mb-6">Are you sure you want to sign out?</p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setShowLogoutModal(false)}
+                className="flex-1 px-4 py-2.5 rounded-xl border border-gray-200 text-sm font-medium text-gray-700 hover:bg-gray-50 transition"
+              >
+                No
+              </button>
+              <button
+                onClick={handleLogout}
+                className="flex-1 px-4 py-2.5 rounded-xl bg-red-500 text-sm font-medium text-white hover:bg-red-600 transition"
+              >
+                Yes, Sign Out
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Mobile toggle button */}
       <button
         onClick={() => setMobileOpen(!mobileOpen)}

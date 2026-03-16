@@ -35,6 +35,7 @@ import AcademicProgramsSection from '@/components/home/AcademicProgramsSection';
 import EventsSection from '@/components/home/EventsSection';
 import { Suspense } from 'react';
 import { FAQSchema } from '@/components/seo/FAQSchema';
+import ScrollToSection from '@/components/ScrollToSection';
 
 const homepageFAQs = [
   {
@@ -68,6 +69,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <FAQSchema faqs={homepageFAQs} />
+      <Suspense fallback={null}><ScrollToSection /></Suspense>
       {/* Hero Section - Fits exactly one screen */}
       <HeroSection />
 
