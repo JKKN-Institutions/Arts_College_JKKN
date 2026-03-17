@@ -280,8 +280,29 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
             description: 'Apply now — 27+ UG, PG & PhD programmes',
           },
           {
+            label: 'Placements',
+            href: '/placements',
+            description: 'Placement stats, recruiters & career outcomes',
+          },
+          {
             label: 'Exam Timetable',
             href: '/documents/examinations/Autonomous_Semester-Timetable_AprilMay-_2025.pdf',
+          },
+        ],
+      },
+      {
+        id: 'resources',
+        label: 'Resources',
+        items: [
+          {
+            label: 'Blog',
+            href: '/blog',
+            description: 'News, insights & campus updates',
+          },
+          {
+            label: 'Events',
+            href: '/events',
+            description: 'Upcoming events & past highlights',
           },
         ],
       },
