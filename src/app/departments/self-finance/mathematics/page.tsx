@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Department of Mathematics (SF) | JKKN College of Arts and Science',
+  title: 'Department of Mathematics (SF)',
   description: 'Department of Mathematics (Self Finance) at JKKN College offers comprehensive programs in mathematical sciences with practical applications.',
 };
 

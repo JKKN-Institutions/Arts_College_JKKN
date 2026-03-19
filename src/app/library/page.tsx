@@ -4,14 +4,14 @@ import Image from 'next/image';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Library | JKKN College of Arts and Science",
+  title: "Library",
   description:
     "Well-stocked college library with digital resources, journals and reference materials at JKKN College of Arts and Science near Erode, Tamil Nadu.",
   alternates: {
     canonical: "https://cas.jkkn.ac.in/library",
   },
   openGraph: {
-    title: "Library | JKKN College of Arts and Science",
+    title: "Library | JKKN Arts & Science",
     description:
       "Well-stocked college library with digital resources, journals and reference materials at JKKN College of Arts and Science near Erode, Tamil Nadu.",
     url: "https://cas.jkkn.ac.in/library",

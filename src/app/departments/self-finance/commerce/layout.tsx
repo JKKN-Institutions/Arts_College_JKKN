@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Department of Commerce | JKKN College of Arts and Science",
+  title: "Department of Commerce",
   description: "Department of Commerce (Self-Finance) at JKKN College of Arts and Science (Autonomous). Expert faculty, research opportunities and placements near Erode, Tamil Nadu.",
   alternates: { canonical: "https://cas.jkkn.ac.in/departments/self-finance/commerce" },
   openGraph: {
-    title: "Department of Commerce | JKKN College of Arts and Science",
+    title: "Department of Commerce | JKKN Arts & Science",
     description: "Department of Commerce (Self-Finance) at JKKN College of Arts and Science (Autonomous). Expert faculty, research opportunities and placements near Erode, Tamil Nadu.",
     url: "https://cas.jkkn.ac.in/departments/self-finance/commerce",
     siteName: "JKKN College of Arts and Science",

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Department of Microbiology (SF) | JKKN College of Arts and Science',
+  title: 'Department of Microbiology (SF)',
   description: 'Department of Microbiology (Self Finance) at JKKN College offers specialized programs in microbial sciences with modern laboratory facilities.',
 };
 

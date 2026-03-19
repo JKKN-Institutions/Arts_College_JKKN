@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Department of Botany | JKKN College of Arts and Science",
+  title: "Department of Botany",
   description: "Department of Botany (Aided) at JKKN College of Arts and Science (Autonomous). Expert faculty, research opportunities and placements near Erode, Tamil Nadu.",
   alternates: { canonical: "https://cas.jkkn.ac.in/departments/aided/botany" },
   openGraph: {
-    title: "Department of Botany | JKKN College of Arts and Science",
+    title: "Department of Botany | JKKN Arts & Science",
     description: "Department of Botany (Aided) at JKKN College of Arts and Science (Autonomous). Expert faculty, research opportunities and placements near Erode, Tamil Nadu.",
     url: "https://cas.jkkn.ac.in/departments/aided/botany",
     siteName: "JKKN College of Arts and Science",

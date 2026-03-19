@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Department of Computer Applications (SF) | JKKN College of Arts and Science',
+  title: 'Department of Computer Applications (SF)',
   description: 'Department of Computer Applications (Self Finance) at JKKN College offers professional programs in software development and IT applications.',
 };
 

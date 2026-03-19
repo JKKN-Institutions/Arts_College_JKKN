@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Department of Commerce | JKKN College of Arts and Science',
+  title: 'Department of Commerce',
   description: 'Department of Commerce at JKKN College offers comprehensive programs in business and commerce with focus on accounting, finance, and management.',
 };
 

@@ -17,10 +17,9 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title:
-    "Placements 2026 | JKKN College of Arts and Science | 92%+ Placement Rate",
+  title: "Placements — 92%+ Rate, 60+ Recruiters",
   description:
-    "JKKN College of Arts and Science placement highlights — 92%+ placement rate, 60+ top recruiters including TCS, Infosys, Wipro, CTS. Highest package 12 LPA, average 3.2–4.5 LPA. Career guidance and training from Year 1.",
+    "JKKN CAS placement highlights — 92%+ rate, 60+ recruiters (TCS, Infosys, Wipro, CTS). Highest package 12 LPA, average 3.2–4.5 LPA. Career training from Year 1.",
   keywords: [
     "JKKN College placements",
     "arts and science college placements near Erode",
@@ -33,8 +32,7 @@ export const metadata: Metadata = {
     canonical: "https://cas.jkkn.ac.in/placements",
   },
   openGraph: {
-    title:
-      "Placements 2026 | JKKN College of Arts and Science | 92%+ Placement Rate",
+    title: "Placements — 92%+ Rate, 60+ Recruiters | JKKN Arts & Science",
     description:
       "92%+ placement rate, 60+ recruiters, highest package 12 LPA. Career guidance and campus recruitment at JKKN CAS.",
     url: "https://cas.jkkn.ac.in/placements",

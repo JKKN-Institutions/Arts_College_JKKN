@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Department of Botany | JKKN College of Arts and Science',
+  title: 'Department of Botany',
   description: 'Department of Botany at JKKN College offers comprehensive programs in plant biology with modern laboratories and research facilities.',
 };
 

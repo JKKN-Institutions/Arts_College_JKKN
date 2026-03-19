@@ -3,11 +3,11 @@ import Image from 'next/image';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: 'Transport Facilities | JKKN College of Arts and Science',
+  title: 'Transport Facilities',
   description: 'College bus transport covering Erode, Salem, Namakkal and surrounding areas. Safe daily commute to JKKN College of Arts and Science campus.',
   alternates: { canonical: 'https://cas.jkkn.ac.in/facilities/transport' },
   openGraph: {
-    title: 'Transport Facilities | JKKN College of Arts and Science',
+    title: 'Transport Facilities',
     description: 'College bus transport covering Erode, Salem, Namakkal and surrounding areas. Safe daily commute to JKKN College of Arts and Science campus.',
     url: 'https://cas.jkkn.ac.in/facilities/transport',
     siteName: 'JKKN College of Arts and Science',

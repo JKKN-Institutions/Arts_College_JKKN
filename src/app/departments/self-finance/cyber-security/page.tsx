@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Department of Cyber Security (SF) | JKKN College of Arts and Science',
+  title: 'Department of Cyber Security (SF)',
   description: 'Department of Cyber Security (Self Finance) at JKKN College offers specialized programs in cybersecurity and information security.',
 };
 

@@ -27,7 +27,7 @@ export default function HeroSection() {
 
             {/* Main Heading - Optimized Size */}
             <div>
-              <h1 className="font-bold leading-tight">
+              <h1 className="font-bold leading-tight" data-speakable>
                 <span className="text-white text-[22px] sm:text-[34px] lg:text-[40px] xl:text-[44px] leading-[30px] sm:leading-[42px] lg:leading-[48px] xl:leading-[52px] block mb-1 sm:mb-1.5">
                   Shape Your Future at  JKKN College  of Arts and Science (Autonomous)
                 </span>
@@ -46,7 +46,7 @@ export default function HeroSection() {
             </p>
 
             {/* Stats Row - Compact */}
-            <div className="grid grid-cols-4 gap-2 sm:gap-3">
+            <div className="grid grid-cols-4 gap-2 sm:gap-3" data-speakable>
               {/* Stat 1 */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
                 <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">95%</div>

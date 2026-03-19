@@ -3,11 +3,11 @@ import Image from 'next/image';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: 'Smart Classrooms | JKKN College of Arts and Science',
+  title: 'Smart Classrooms',
   description: 'Modern smart classrooms with digital learning tools at JKKN College of Arts and Science. Technology-enabled education near Erode, Tamil Nadu.',
   alternates: { canonical: 'https://cas.jkkn.ac.in/facilities/classroom' },
   openGraph: {
-    title: 'Smart Classrooms | JKKN College of Arts and Science',
+    title: 'Smart Classrooms',
     description: 'Modern smart classrooms with digital learning tools at JKKN College of Arts and Science. Technology-enabled education near Erode, Tamil Nadu.',
     url: 'https://cas.jkkn.ac.in/facilities/classroom',
     siteName: 'JKKN College of Arts and Science',

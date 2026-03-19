@@ -5,11 +5,11 @@ import FloatingChatButtons from '@/components/ui/FloatingChatButtons';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: 'Food Court | JKKN College of Arts and Science',
+  title: 'Food Court',
   description: 'Hygienic food court and cafeteria at JKKN College of Arts and Science campus. Nutritious meals for students near Erode, Tamil Nadu.',
   alternates: { canonical: 'https://cas.jkkn.ac.in/facilities/food-court' },
   openGraph: {
-    title: 'Food Court | JKKN College of Arts and Science',
+    title: 'Food Court',
     description: 'Hygienic food court and cafeteria at JKKN College of Arts and Science campus. Nutritious meals for students near Erode, Tamil Nadu.',
     url: 'https://cas.jkkn.ac.in/facilities/food-court',
     siteName: 'JKKN College of Arts and Science',

@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import {
   GraduationCap,
   Users,
@@ -33,9 +34,30 @@ import HeroSection from '@/components/home/HeroSection';
 import StatsSection from '@/components/home/StatsSection';
 import AcademicProgramsSection from '@/components/home/AcademicProgramsSection';
 import EventsSection from '@/components/home/EventsSection';
+import Image from 'next/image';
 import { Suspense } from 'react';
 import { FAQSchema } from '@/components/seo/FAQSchema';
+import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 import ScrollToSection from '@/components/ScrollToSection';
+
+export const metadata: Metadata = {
+  title: {
+    absolute: 'JKKN College of Arts and Science | Autonomous | Erode, TN',
+  },
+  description:
+    'Autonomous college offering 27+ UG, PG & PhD programmes in Arts, Science & Commerce. Highest package ₹18 LPA. Near Erode, Tamil Nadu.',
+  alternates: {
+    canonical: 'https://cas.jkkn.ac.in',
+  },
+  openGraph: {
+    title: 'JKKN College of Arts and Science | Autonomous | Erode, TN',
+    description:
+      'Autonomous college offering 27+ UG, PG & PhD programmes in Arts, Science & Commerce. Highest package ₹18 LPA. Near Erode, Tamil Nadu.',
+    url: 'https://cas.jkkn.ac.in',
+    siteName: 'JKKN College of Arts and Science',
+    type: 'website',
+  },
+};
 
 const homepageFAQs = [
   {
@@ -69,6 +91,9 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <FAQSchema faqs={homepageFAQs} />
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+      ]} />
       <Suspense fallback={null}><ScrollToSection /></Suspense>
       {/* Hero Section - Fits exactly one screen */}
       <HeroSection />
@@ -88,7 +113,7 @@ export default function Home() {
               </div>
 
               {/* Main Title */}
-              <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] leading-[32px] sm:leading-[36px] lg:leading-[40px] font-bold tracking-[-0.75px] lg:tracking-[-0.9px] text-[#0b6d41] mb-6">
+              <h2 className="text-[24px] sm:text-[30px] lg:text-[36px] leading-[32px] sm:leading-[36px] lg:leading-[40px] font-bold tracking-[-0.75px] lg:tracking-[-0.9px] text-[#0b6d41] mb-6" data-speakable>
                 Nurturing Future Leaders Through Progressive Education
               </h2>
 
@@ -146,10 +171,13 @@ export default function Home() {
             {/* Right - Image */}
             <div className="relative order-2 lg:order-2">
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=600&fit=crop"
                   alt="JKKN College Campus"
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                  priority
                 />
               </div>
               {/* Accent decoration */}
@@ -293,7 +321,7 @@ export default function Home() {
           </div>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16" data-speakable>
             {/* Stat 1: Placement Rate */}
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
               <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">95%</div>
@@ -359,9 +387,11 @@ export default function Home() {
                     className="flex-shrink-0 mx-6 bg-white border border-gray-200 rounded-xl shadow-sm flex items-center justify-center"
                     style={{ width: 160, height: 80 }}
                   >
-                    <img
+                    <Image
                       src={logo.src}
                       alt={logo.alt}
+                      width={130}
+                      height={56}
                       className="max-h-14 max-w-[130px] object-contain"
                     />
                   </div>
@@ -648,7 +678,7 @@ export default function Home() {
       </section> */}
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white" data-speakable>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="text-[#0b6d41] text-[14px] font-semibold leading-[20px] tracking-wide uppercase mb-4">

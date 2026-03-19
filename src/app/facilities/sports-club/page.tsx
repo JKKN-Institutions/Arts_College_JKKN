@@ -3,11 +3,11 @@ import Image from "next/image";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Sports & Recreation | JKKN College of Arts and Science",
+  title: "Sports & Recreation",
   description: "Sports facilities and athletics infrastructure at JKKN College of Arts and Science. Indoor and outdoor sports near Erode, Tamil Nadu.",
   alternates: { canonical: "https://cas.jkkn.ac.in/facilities/sports-club" },
   openGraph: {
-    title: "Sports & Recreation | JKKN College of Arts and Science",
+    title: "Sports & Recreation",
     description: "Sports facilities and athletics infrastructure at JKKN College of Arts and Science. Indoor and outdoor sports near Erode, Tamil Nadu.",
     url: "https://cas.jkkn.ac.in/facilities/sports-club",
     siteName: "JKKN College of Arts and Science",

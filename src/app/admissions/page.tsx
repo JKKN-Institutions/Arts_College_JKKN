@@ -17,9 +17,9 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Admissions 2026 | JKKN College of Arts and Science",
+  title: "Admissions 2026 — Apply Now",
   description:
-    "Apply for admission to JKKN College of Arts and Science (Autonomous). 27+ UG, PG and PhD programmes. Step-by-step admission process, eligibility, documents required and important dates. Near Erode, Tamil Nadu.",
+    "Apply to JKKN College of Arts and Science (Autonomous). 27+ UG, PG & PhD programmes. Admission process, eligibility, documents & dates. Near Erode, TN.",
   keywords: [
     "JKKN College admission",
     "arts and science college admission near Erode",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     canonical: "https://cas.jkkn.ac.in/admissions",
   },
   openGraph: {
-    title: "Admissions 2026 | JKKN College of Arts and Science",
+    title: "Admissions 2026 — Apply Now | JKKN Arts & Science",
     description:
-      "Apply for admission to JKKN College of Arts and Science (Autonomous). 27+ programmes, step-by-step process, eligibility and documents.",
+      "Apply to JKKN College of Arts and Science (Autonomous). 27+ programmes, step-by-step process, eligibility and documents.",
     url: "https://cas.jkkn.ac.in/admissions",
     siteName: "JKKN College of Arts and Science",
     type: "website",

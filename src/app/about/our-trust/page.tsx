@@ -5,11 +5,11 @@ import Image from 'next/image';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "JKKN Trust | JKKN College of Arts and Science",
+  title: "JKKN Trust",
   description: "Learn about the JKKN Educational Trust established in 1952. The trust manages 10 institutions including JKKN College of Arts and Science near Erode, Tamil Nadu.",
   alternates: { canonical: "https://cas.jkkn.ac.in/about/our-trust" },
   openGraph: {
-    title: "JKKN Trust | JKKN College of Arts and Science",
+    title: "JKKN Trust | JKKN Arts & Science",
     description: "Learn about the JKKN Educational Trust established in 1952. The trust manages 10 institutions including JKKN College of Arts and Science near Erode, Tamil Nadu.",
     url: "https://cas.jkkn.ac.in/about/our-trust",
     siteName: "JKKN College of Arts and Science",

@@ -6,6 +6,8 @@ interface CourseSchemaProps {
   educationalLevel: "UG" | "PG" | "PhD";
   category: "Aided" | "Self-Finance";
   url: string;
+  programPrerequisites?: string;
+  educationalCredentialAwarded?: string;
 }
 
 export function CourseSchema({
@@ -16,11 +18,25 @@ export function CourseSchema({
   educationalLevel,
   category,
   url,
+  programPrerequisites,
+  educationalCredentialAwarded,
 }: CourseSchemaProps) {
   const levelMap = {
     UG: "Undergraduate",
     PG: "Postgraduate",
     PhD: "Doctoral",
+  };
+
+  const defaultPrerequisites = {
+    UG: "Higher Secondary (10+2) from a recognized board",
+    PG: "Bachelor's degree in a relevant discipline from a recognized university",
+    PhD: "Master's degree in the relevant discipline with qualifying score",
+  };
+
+  const defaultCredentials = {
+    UG: `Bachelor's Degree (${name})`,
+    PG: `Master's Degree (${name})`,
+    PhD: "Doctor of Philosophy (Ph.D.)",
   };
 
   const schema = {
@@ -38,6 +54,8 @@ export function CourseSchema({
     timeRequired: duration,
     educationalLevel: levelMap[educationalLevel],
     occupationalCategory: category,
+    programPrerequisites: programPrerequisites ?? defaultPrerequisites[educationalLevel],
+    educationalCredentialAwarded: educationalCredentialAwarded ?? defaultCredentials[educationalLevel],
     inLanguage: "en",
     availableLanguage: ["English", "Tamil"],
     hasCourseInstance: {

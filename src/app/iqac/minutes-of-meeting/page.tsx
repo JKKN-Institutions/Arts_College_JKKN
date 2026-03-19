@@ -5,14 +5,14 @@ import { FileText, ArrowRight, Home, ChevronRight } from 'lucide-react';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "IQAC Minutes of Meeting | JKKN College of Arts and Science",
+  title: "IQAC Minutes of Meeting",
   description:
     "IQAC meeting minutes and resolutions at JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
   alternates: {
     canonical: "https://cas.jkkn.ac.in/iqac/minutes-of-meeting",
   },
   openGraph: {
-    title: "IQAC Minutes of Meeting | JKKN College of Arts and Science",
+    title: "IQAC Minutes of Meeting | JKKN Arts & Science",
     description:
       "IQAC meeting minutes and resolutions at JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
     url: "https://cas.jkkn.ac.in/iqac/minutes-of-meeting",

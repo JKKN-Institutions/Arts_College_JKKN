@@ -4,14 +4,14 @@ import type { Metadata } from 'next';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | JKKN College of Arts and Science",
+  title: "Privacy Policy",
   description:
     "Privacy policy for JKKN College of Arts and Science website. How we collect, use and protect your information.",
   alternates: {
     canonical: "https://cas.jkkn.ac.in/others/privacy-policy",
   },
   openGraph: {
-    title: "Privacy Policy | JKKN College of Arts and Science",
+    title: "Privacy Policy | JKKN Arts & Science",
     description:
       "Privacy policy for JKKN College of Arts and Science website. How we collect, use and protect your information.",
     url: "https://cas.jkkn.ac.in/others/privacy-policy",

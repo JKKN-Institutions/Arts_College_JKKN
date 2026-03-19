@@ -3,11 +3,11 @@ import Image from 'next/image';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: 'Laboratories | JKKN College of Arts and Science',
+  title: 'Laboratories',
   description: 'Well-equipped science and computer laboratories at JKKN College of Arts and Science for practical learning and research near Erode, Tamil Nadu.',
   alternates: { canonical: 'https://cas.jkkn.ac.in/facilities/labs' },
   openGraph: {
-    title: 'Laboratories | JKKN College of Arts and Science',
+    title: 'Laboratories',
     description: 'Well-equipped science and computer laboratories at JKKN College of Arts and Science for practical learning and research near Erode, Tamil Nadu.',
     url: 'https://cas.jkkn.ac.in/facilities/labs',
     siteName: 'JKKN College of Arts and Science',

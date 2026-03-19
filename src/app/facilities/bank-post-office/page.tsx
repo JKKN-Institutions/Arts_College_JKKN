@@ -5,11 +5,11 @@ import FloatingChatButtons from '@/components/ui/FloatingChatButtons';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: 'Bank & Post Office | JKKN College of Arts and Science',
+  title: 'Bank & Post Office',
   description: 'On-campus banking and postal services at JKKN College of Arts and Science, Komarapalayam. Convenient facilities for students and staff.',
   alternates: { canonical: 'https://cas.jkkn.ac.in/facilities/bank-post-office' },
   openGraph: {
-    title: 'Bank & Post Office | JKKN College of Arts and Science',
+    title: 'Bank & Post Office',
     description: 'On-campus banking and postal services at JKKN College of Arts and Science, Komarapalayam. Convenient facilities for students and staff.',
     url: 'https://cas.jkkn.ac.in/facilities/bank-post-office',
     siteName: 'JKKN College of Arts and Science',

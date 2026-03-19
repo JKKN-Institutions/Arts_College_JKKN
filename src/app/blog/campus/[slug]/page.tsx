@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import CampusBlogContent from './CampusBlogContent';
 import { ArticleSchema } from '@/components/seo/ArticleSchema';
+import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 
 const SITE_URL = 'https://cas.jkkn.ac.in';
 
@@ -172,6 +173,13 @@ export default async function CampusBlogPost({
         dateModified={post.updated_at ?? post.published_at ?? post.created_at}
         url={`${SITE_URL}/blog/campus/${slug}`}
         imageUrl={post.cover_image_url}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: SITE_URL },
+          { name: "Blog", url: `${SITE_URL}/blog` },
+          { name: post.title, url: `${SITE_URL}/blog/campus/${slug}` },
+        ]}
       />
       <CampusBlogContent
         post={post}

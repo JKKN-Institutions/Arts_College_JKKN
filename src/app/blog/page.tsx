@@ -6,14 +6,14 @@ import { createClient } from '@/lib/supabase/server';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Blog | JKKN College of Arts and Science",
+  title: "Blog — News & Career Guidance",
   description:
     "Read the latest articles, news, career guidance and campus updates from JKKN College of Arts and Science (Autonomous) near Erode, Tamil Nadu.",
   alternates: {
     canonical: "https://cas.jkkn.ac.in/blog",
   },
   openGraph: {
-    title: "Blog | JKKN College of Arts and Science",
+    title: "Blog — News & Career Guidance | JKKN Arts & Science",
     description:
       "Read the latest articles, news, career guidance and campus updates from JKKN College of Arts and Science (Autonomous) near Erode, Tamil Nadu.",
     url: "https://cas.jkkn.ac.in/blog",

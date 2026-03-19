@@ -3,14 +3,14 @@ import React from "react";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "IQAC Objectives & Functions | JKKN College of Arts and Science",
+  title: "IQAC Objectives & Functions",
   description:
     "Internal Quality Assurance Cell objectives and functions at JKKN College of Arts and Science (Autonomous). Quality assurance framework and initiatives.",
   alternates: {
     canonical: "https://cas.jkkn.ac.in/iqac/objectives-functions",
   },
   openGraph: {
-    title: "IQAC Objectives & Functions | JKKN College of Arts and Science",
+    title: "IQAC Objectives & Functions | JKKN Arts & Science",
     description:
       "Internal Quality Assurance Cell objectives and functions at JKKN College of Arts and Science (Autonomous). Quality assurance framework and initiatives.",
     url: "https://cas.jkkn.ac.in/iqac/objectives-functions",

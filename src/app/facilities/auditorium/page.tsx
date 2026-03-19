@@ -3,11 +3,11 @@ import Image from 'next/image';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: 'Auditorium | JKKN College of Arts and Science',
+  title: 'Auditorium',
   description: 'State-of-the-art auditorium at JKKN College of Arts and Science for seminars, cultural events and conferences. Modern facilities near Erode, Tamil Nadu.',
   alternates: { canonical: 'https://cas.jkkn.ac.in/facilities/auditorium' },
   openGraph: {
-    title: 'Auditorium | JKKN College of Arts and Science',
+    title: 'Auditorium',
     description: 'State-of-the-art auditorium at JKKN College of Arts and Science for seminars, cultural events and conferences. Modern facilities near Erode, Tamil Nadu.',
     url: 'https://cas.jkkn.ac.in/facilities/auditorium',
     siteName: 'JKKN College of Arts and Science',

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Department of Economics | JKKN College of Arts and Science',
+  title: 'Department of Economics',
   description: 'Department of Economics at JKKN College offers comprehensive programs in economic theory, policy analysis, and quantitative methods.',
 };
 

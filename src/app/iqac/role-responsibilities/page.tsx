@@ -3,14 +3,14 @@ import React from "react";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "IQAC Roles & Responsibilities | JKKN College of Arts and Science",
+  title: "IQAC Roles & Responsibilities",
   description:
     "IQAC roles and responsibilities for institutional quality at JKKN College of Arts and Science (Autonomous), Komarapalayam.",
   alternates: {
     canonical: "https://cas.jkkn.ac.in/iqac/role-responsibilities",
   },
   openGraph: {
-    title: "IQAC Roles & Responsibilities | JKKN College of Arts and Science",
+    title: "IQAC Roles & Responsibilities | JKKN Arts & Science",
     description:
       "IQAC roles and responsibilities for institutional quality at JKKN College of Arts and Science (Autonomous), Komarapalayam.",
     url: "https://cas.jkkn.ac.in/iqac/role-responsibilities",

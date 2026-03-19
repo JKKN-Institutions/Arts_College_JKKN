@@ -4,11 +4,11 @@ import { Eye, Target, Sparkles, Lightbulb, Users, TrendingUp } from 'lucide-reac
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Vision and Mission | JKKN College of Arts and Science",
+  title: "Vision and Mission",
   description: "Discover the vision and mission of JKKN College of Arts and Science (Autonomous). Committed to holistic education, research, and community development near Erode, Tamil Nadu.",
   alternates: { canonical: "https://cas.jkkn.ac.in/about/vision-mission" },
   openGraph: {
-    title: "Vision and Mission | JKKN College of Arts and Science",
+    title: "Vision & Mission | JKKN Arts & Science",
     description: "Discover the vision and mission of JKKN College of Arts and Science (Autonomous). Committed to holistic education, research, and community development near Erode, Tamil Nadu.",
     url: "https://cas.jkkn.ac.in/about/vision-mission",
     siteName: "JKKN College of Arts and Science",

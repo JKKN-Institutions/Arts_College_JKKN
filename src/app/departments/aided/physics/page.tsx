@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Department of Physics | JKKN College of Arts and Science',
+  title: 'Department of Physics',
   description: 'Department of Physics at JKKN College offers comprehensive programs in physics with advanced laboratories and research facilities.',
 };
 

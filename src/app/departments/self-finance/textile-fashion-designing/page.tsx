@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Department of Textile and Fashion Designing (SF) | JKKN College of Arts and Science',
+  title: 'Department of Textile and Fashion Designing (SF)',
   description: 'Department of Textile and Fashion Designing (Self Finance) at JKKN College offers creative programs in fashion design and textile technology.',
 };
 

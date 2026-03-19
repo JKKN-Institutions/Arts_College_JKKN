@@ -3,14 +3,14 @@ import React from 'react';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Academic Calendar | JKKN College of Arts and Science",
+  title: "Academic Calendar",
   description:
     "Academic calendar with important dates, exam schedules and events at JKKN College of Arts and Science (Autonomous) near Erode, Tamil Nadu.",
   alternates: {
     canonical: "https://cas.jkkn.ac.in/others/academic-calendar",
   },
   openGraph: {
-    title: "Academic Calendar | JKKN College of Arts and Science",
+    title: "Academic Calendar | JKKN Arts & Science",
     description:
       "Academic calendar with important dates, exam schedules and events at JKKN College of Arts and Science (Autonomous) near Erode, Tamil Nadu.",
     url: "https://cas.jkkn.ac.in/others/academic-calendar",

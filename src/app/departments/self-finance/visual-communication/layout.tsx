@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Department of Visual Communication | JKKN College of Arts and Science",
+  title: "Department of Visual Communication",
   description: "Department of Visual Communication (Self-Finance) at JKKN College of Arts and Science (Autonomous). Expert faculty, research opportunities and placements near Erode, Tamil Nadu.",
   alternates: { canonical: "https://cas.jkkn.ac.in/departments/self-finance/visual-communication" },
   openGraph: {
-    title: "Department of Visual Communication | JKKN College of Arts and Science",
+    title: "Department of Visual Communication | JKKN Arts & Science",
     description: "Department of Visual Communication (Self-Finance) at JKKN College of Arts and Science (Autonomous). Expert faculty, research opportunities and placements near Erode, Tamil Nadu.",
     url: "https://cas.jkkn.ac.in/departments/self-finance/visual-communication",
     siteName: "JKKN College of Arts and Science",

@@ -4,15 +4,16 @@ export function OrganizationSchema() {
     "@type": "CollegeOrUniversity",
     "@id": "https://cas.jkkn.ac.in/#organization",
     name: "JKKN College of Arts and Science",
-    alternateName: ["CAS JKKN", "JKKN Arts and Science College"],
+    alternateName: ["CAS JKKN", "JKKN Arts and Science College", "J.K.K.Nataraja College of Arts and Science"],
     url: "https://cas.jkkn.ac.in",
     logo: "https://cas.jkkn.ac.in/logo.svg",
     image: "https://cas.jkkn.ac.in/logo.svg",
     description:
-      "JKKN College of Arts and Science is an autonomous institution affiliated to Periyar University, offering 27+ undergraduate, postgraduate and doctoral programmes in Arts, Science and Commerce near Erode, Tamil Nadu.",
+      "JKKN College of Arts and Science is an autonomous institution affiliated to Periyar University, offering 27+ undergraduate, postgraduate and doctoral programmes in Arts, Science and Commerce near Erode, Tamil Nadu. Founded in 1994 as part of J.K.K. Nattraja Educational Institutions (est. 1952), the college serves 1,969+ students across a 15-acre campus on NH-544.",
     foundingDate: "1994",
     telephone: "+91-93458-55001",
     email: "arts@jkkn.ac.in",
+    numberOfStudents: 1969,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Natarajapuram, NH-544 (Salem-Coimbatore Highway)",
@@ -48,7 +49,7 @@ export function OrganizationSchema() {
       "https://www.facebook.com/jkknarts",
       "https://www.instagram.com/jkknarts",
       "https://www.linkedin.com/school/jkknarts",
-      "https://www.youtube.com/playlist?list=PL6QsTq-__Hht5kIiyJS5HkiYk-YNCMjxu",
+      "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions",
     ],
     hasCredential: [
       {
@@ -62,9 +63,11 @@ export function OrganizationSchema() {
       {
         "@type": "EducationalOccupationalCredential",
         credentialCategory: "NAAC Accreditation",
+        description: "NAAC Accredited Institution",
         recognizedBy: {
           "@type": "Organization",
           name: "National Assessment and Accreditation Council (NAAC)",
+          url: "https://www.naac.gov.in",
         },
       },
     ],
@@ -81,11 +84,10 @@ export function OrganizationSchema() {
       "Data Analytics",
       "Cyber Security",
       "Artificial Intelligence",
+      "Visual Communication",
+      "Textile and Fashion Designing",
+      "Microbiology",
     ],
-    alumniOf: {
-      "@type": "EducationalOrganization",
-      name: "JKKN College of Arts and Science",
-    },
     speakable: {
       "@type": "SpeakableSpecification",
       cssSelector: [

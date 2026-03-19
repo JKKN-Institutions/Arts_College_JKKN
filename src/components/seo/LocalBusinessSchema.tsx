@@ -43,7 +43,7 @@ export function LocalBusinessSchema() {
       "https://www.facebook.com/jkknarts",
       "https://www.instagram.com/jkknarts",
       "https://www.linkedin.com/school/jkknarts",
-      "https://www.youtube.com/playlist?list=PL6QsTq-__Hht5kIiyJS5HkiYk-YNCMjxu",
+      "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions",
     ],
   };
 

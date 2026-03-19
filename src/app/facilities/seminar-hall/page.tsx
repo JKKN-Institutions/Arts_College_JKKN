@@ -3,11 +3,11 @@ import Image from 'next/image';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: 'Seminar Hall | JKKN College of Arts and Science',
+  title: 'Seminar Hall',
   description: 'Modern seminar halls for academic presentations and workshops at JKKN College of Arts and Science, Komarapalayam.',
   alternates: { canonical: 'https://cas.jkkn.ac.in/facilities/seminar-hall' },
   openGraph: {
-    title: 'Seminar Hall | JKKN College of Arts and Science',
+    title: 'Seminar Hall',
     description: 'Modern seminar halls for academic presentations and workshops at JKKN College of Arts and Science, Komarapalayam.',
     url: 'https://cas.jkkn.ac.in/facilities/seminar-hall',
     siteName: 'JKKN College of Arts and Science',

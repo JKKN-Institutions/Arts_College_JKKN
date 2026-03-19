@@ -5,6 +5,7 @@ import "./globals.css";
 import { ClientLayoutWrapper } from "@/components/layout/ClientLayoutWrapper";
 import { OrganizationSchema } from "@/components/seo/OrganizationSchema";
 import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
+import { WebSiteSchema } from "@/components/seo/WebSiteSchema";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      "JKKN College of Arts and Science | Autonomous | 27+ Programmes | Near Erode, Tamil Nadu",
+      "JKKN College of Arts and Science | Autonomous | Erode, TN",
     template: "%s | JKKN College of Arts and Science",
   },
   description:
@@ -51,6 +52,14 @@ export const metadata: Metadata = {
       "JKKN College of Arts and Science | Autonomous | 27+ Programmes",
     description:
       "Autonomous institution offering 27+ UG, PG and PhD programmes. Highest package ₹18 LPA. Affiliated to Periyar University, near Erode, Tamil Nadu.",
+    images: [
+      {
+        url: `${SITE_URL}/opengraph-image`,
+        width: 1200,
+        height: 630,
+        alt: "JKKN College of Arts and Science — Autonomous Institution near Erode, Tamil Nadu",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -92,6 +101,7 @@ export default function RootLayout({
         </Script>
         <OrganizationSchema />
         <LocalBusinessSchema />
+        <WebSiteSchema />
         <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
       </body>
     </html>

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Department of Visual Communication (SF) | JKKN College of Arts and Science',
+  title: 'Department of Visual Communication (SF)',
   description: 'Department of Visual Communication (Self Finance) at JKKN College offers creative programs in media, photography, and digital content creation.',
 };
 

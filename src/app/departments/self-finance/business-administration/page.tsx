@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Department of Business Administration (BBA) (SF) | JKKN College of Arts and Science',
+  title: 'Department of Business Administration (BBA) (SF)',
   description: 'Department of Business Administration (BBA) at JKKN College offers comprehensive programs in management and entrepreneurship.',
 };
 

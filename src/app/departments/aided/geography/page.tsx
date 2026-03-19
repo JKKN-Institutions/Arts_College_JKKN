@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Department of Geography | JKKN College of Arts and Science',
+  title: 'Department of Geography',
   description: 'Department of Geography at JKKN College offers comprehensive programs in physical and human geography with focus on environmental studies and GIS.',
 };
 

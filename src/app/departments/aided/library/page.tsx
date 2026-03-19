@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Department of Library | JKKN College of Arts and Science',
+  title: 'Department of Library',
   description: 'Department of Library at JKKN College offers comprehensive programs in library science and information management.',
 };
 

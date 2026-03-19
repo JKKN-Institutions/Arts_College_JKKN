@@ -5,14 +5,14 @@ import GalleryClient from './GalleryClient';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Photo Gallery | JKKN College of Arts and Science",
+  title: "Photo Gallery",
   description:
     "View campus photos, events and academic activities at JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
   alternates: {
     canonical: "https://cas.jkkn.ac.in/gallery",
   },
   openGraph: {
-    title: "Photo Gallery | JKKN College of Arts and Science",
+    title: "Photo Gallery | JKKN Arts & Science",
     description:
       "View campus photos, events and academic activities at JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
     url: "https://cas.jkkn.ac.in/gallery",

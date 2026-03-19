@@ -3,14 +3,14 @@ import React from "react";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "IQAC Vision & Mission | JKKN College of Arts and Science",
+  title: "IQAC Vision & Mission",
   description:
     "IQAC vision and mission for quality enhancement at JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
   alternates: {
     canonical: "https://cas.jkkn.ac.in/iqac/vision-mission",
   },
   openGraph: {
-    title: "IQAC Vision & Mission | JKKN College of Arts and Science",
+    title: "IQAC Vision & Mission | JKKN Arts & Science",
     description:
       "IQAC vision and mission for quality enhancement at JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
     url: "https://cas.jkkn.ac.in/iqac/vision-mission",
