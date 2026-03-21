@@ -7,7 +7,7 @@ export function OrganizationSchema() {
     alternateName: ["CAS JKKN", "JKKN Arts and Science College", "J.K.K.Nataraja College of Arts and Science"],
     url: "https://cas.jkkn.ac.in",
     logo: "https://cas.jkkn.ac.in/logo.svg",
-    image: "https://cas.jkkn.ac.in/logo.svg",
+    image: "https://cas.jkkn.ac.in/opengraph-image",
     description:
       "JKKN College of Arts and Science is an autonomous institution affiliated to Periyar University, offering 27+ undergraduate, postgraduate and doctoral programmes in Arts, Science and Commerce near Erode, Tamil Nadu. Founded in 1994 as part of J.K.K. Nattraja Educational Institutions (est. 1952), the college serves 1,969+ students across a 15-acre campus on NH-544.",
     foundingDate: "1994",
@@ -49,6 +49,7 @@ export function OrganizationSchema() {
       "https://www.facebook.com/jkknarts",
       "https://www.instagram.com/jkknarts",
       "https://www.linkedin.com/school/jkknarts",
+      "https://www.youtube.com/@jkknarts",
       "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions",
     ],
     hasCredential: [

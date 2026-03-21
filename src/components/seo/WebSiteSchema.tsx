@@ -9,14 +9,6 @@ export function WebSiteSchema() {
     publisher: {
       "@id": "https://cas.jkkn.ac.in/#organization",
     },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: "https://cas.jkkn.ac.in/search?q={search_term_string}",
-      },
-      "query-input": "required name=search_term_string",
-    },
     inLanguage: "en-IN",
   };
 

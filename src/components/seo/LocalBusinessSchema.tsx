@@ -7,7 +7,7 @@ export function LocalBusinessSchema() {
     url: "https://cas.jkkn.ac.in",
     telephone: "+91-93458-55001",
     email: "arts@jkkn.ac.in",
-    image: "https://cas.jkkn.ac.in/logo.svg",
+    image: "https://cas.jkkn.ac.in/opengraph-image",
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
@@ -37,14 +37,9 @@ export function LocalBusinessSchema() {
         closes: "13:00",
       },
     ],
-    sameAs: [
-      "https://www.jkkn.ac.in",
-      "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
-      "https://www.facebook.com/jkknarts",
-      "https://www.instagram.com/jkknarts",
-      "https://www.linkedin.com/school/jkknarts",
-      "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions",
-    ],
+    isPartOf: {
+      "@id": "https://cas.jkkn.ac.in/#organization",
+    },
   };
 
   return (

@@ -67,6 +67,14 @@ export const metadata: Metadata = {
       "JKKN College of Arts and Science | Autonomous | 27+ Programmes",
     description:
       "Autonomous institution offering 27+ UG, PG and PhD programmes. Highest package ₹18 LPA. Near Erode, Tamil Nadu.",
+    images: [
+      {
+        url: `${SITE_URL}/opengraph-image`,
+        width: 1200,
+        height: 630,
+        alt: "JKKN College of Arts and Science — Autonomous Institution near Erode, Tamil Nadu",
+      },
+    ],
   },
   alternates: {
     canonical: SITE_URL,
@@ -90,7 +98,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={poppins.variable}>
+    <html lang="en-IN" className={poppins.variable}>
       <body className={poppins.className} suppressHydrationWarning>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QW6LQV7XE5"

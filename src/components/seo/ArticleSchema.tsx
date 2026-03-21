@@ -36,7 +36,7 @@ export function ArticleSchema({
       name: "JKKN College of Arts and Science",
       logo: {
         "@type": "ImageObject",
-        url: "https://cas.jkkn.ac.in/logo.svg",
+        url: "https://cas.jkkn.ac.in/opengraph-image",
       },
     },
     mainEntityOfPage: {
