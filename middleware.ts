@@ -63,7 +63,9 @@ function hasSession(request: NextRequest): boolean {
 function clearAuthCookies(response: NextResponse) {
   if (!projectRef) return;
   const base = `sb-${projectRef}-auth-token`;
-  for (const name of [base, `${base}.0`, `${base}.1`]) {
+  const names = [base];
+  for (let i = 0; i <= 5; i++) names.push(`${base}.${i}`);
+  for (const name of names) {
     response.cookies.delete(name);
   }
 }

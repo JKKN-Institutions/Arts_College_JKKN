@@ -3,40 +3,19 @@ import { createServerClient } from '@supabase/ssr';
 import https from 'node:https';
 import http from 'node:http';
 import tls from 'node:tls';
-import { execSync } from 'node:child_process';
+import net from 'node:net';
 
 // ---------------------------------------------------------------------------
-// Proxy detection — env vars first, then Windows Internet Settings registry.
-// Chrome/Edge on Windows use the system proxy automatically; Node.js does not.
+// Proxy detection — env vars only (no platform-specific registry reads).
 // ---------------------------------------------------------------------------
 function getProxy(): string | null {
-  const fromEnv =
+  return (
     process.env.HTTPS_PROXY ||
     process.env.https_proxy ||
     process.env.HTTP_PROXY ||
-    process.env.http_proxy;
-  if (fromEnv) return fromEnv;
-
-  if (process.platform !== 'win32') return null;
-
-  try {
-    const enabled = execSync(
-      'reg query "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" /v ProxyEnable',
-      { encoding: 'utf-8', timeout: 1500 }
-    );
-    if (!enabled.includes('0x1')) return null;
-
-    const server = execSync(
-      'reg query "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" /v ProxyServer',
-      { encoding: 'utf-8', timeout: 1500 }
-    );
-    const m = server.match(/ProxyServer\s+REG_SZ\s+(\S+)/);
-    if (!m) return null;
-    const p = m[1].trim();
-    return p.includes('://') ? p : `http://${p}`;
-  } catch {
-    return null;
-  }
+    process.env.http_proxy ||
+    null
+  );
 }
 
 const PROXY = getProxy(); // resolved once at module load
@@ -90,8 +69,7 @@ function httpsRequest(
           const req = https.request(
             {
               ...commonOpts,
-              // supply the already-established TLS socket
-              createConnection: () => tlsSocket as unknown as ReturnType<typeof https.request['prototype']['socket']['constructor']>,
+              createConnection: () => tlsSocket as unknown as net.Socket,
             },
             onResponse
           );
@@ -144,7 +122,17 @@ const customFetch = (url: RequestInfo | URL, init?: RequestInit): Promise<Respon
 // ---------------------------------------------------------------------------
 export async function POST(request: NextRequest) {
   try {
-    const { email, password } = await request.json();
+    const body = await request.json();
+    const { email, password } = body;
+
+    // Input validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || typeof email !== 'string' || !emailRegex.test(email)) {
+      return NextResponse.json({ error: 'Valid email is required' }, { status: 400 });
+    }
+    if (!password || typeof password !== 'string' || password.length < 6 || password.length > 128) {
+      return NextResponse.json({ error: 'Password must be 6–128 characters' }, { status: 400 });
+    }
 
     const pendingCookies: Array<{
       name: string;

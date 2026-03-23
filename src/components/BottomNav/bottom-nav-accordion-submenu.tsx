@@ -27,8 +27,6 @@ export function BottomNavAccordionSubmenu({
     e.stopPropagation();
     e.preventDefault();
 
-    console.log('Toggling item:', itemId, 'Currently expanded:', expandedItems.has(itemId));
-
     setExpandedItems((prev) => {
       const newSet = new Set(prev);
       if (newSet.has(itemId)) {
@@ -36,7 +34,6 @@ export function BottomNavAccordionSubmenu({
       } else {
         newSet.add(itemId);
       }
-      console.log('New expanded items:', Array.from(newSet));
       return newSet;
     });
   };
@@ -44,7 +41,6 @@ export function BottomNavAccordionSubmenu({
   const handleLeafClick = (href: string, e: React.MouseEvent) => {
     e.stopPropagation();
     e.preventDefault();
-    console.log('Navigating to:', href);
     onItemClick(href);
   };
 

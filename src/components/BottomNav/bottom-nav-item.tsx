@@ -37,6 +37,9 @@ export function BottomNavItem({
   return (
     <motion.button
       onClick={onClick}
+      aria-label={label}
+      aria-current={isActive ? 'page' : undefined}
+      aria-expanded={hasSubmenu ? isActive : undefined}
       className={cn(
         'relative flex flex-col items-center justify-center px-2 py-2 min-w-[64px] flex-1',
         'transition-colors duration-150',

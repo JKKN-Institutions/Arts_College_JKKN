@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Clock, Calendar, Tag, MessageSquare, Send, Check, Loader2, ChevronUp, ChevronDown } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
+import toast from 'react-hot-toast';
 
 // ── Types ──────────────────────────────────────────────────────────────────
 interface Post {
@@ -87,6 +88,7 @@ export default function CampusBlogContent({
   const [commentText, setCommentText] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [honeypot, setHoneypot] = useState('');
 
   const tags = parseTags(post.tags);
   const date = formatDate(post.published_at ?? post.created_at);
@@ -96,17 +98,23 @@ export default function CampusBlogContent({
 
   async function handleCommentSubmit(e: React.FormEvent) {
     e.preventDefault();
+    // Honeypot: bots fill hidden fields, humans don't
+    if (honeypot) return;
     if (!authorName.trim() || !commentText.trim()) return;
     setSubmitting(true);
-    await supabase.from('blog_comments').insert({
+    const { error } = await supabase.from('blog_comments').insert({
       blog_id: post.id,
       author_name: authorName.trim(),
       author_email: authorEmail.trim(),
       content: commentText.trim(),
       status: 'pending',
-      college_id: process.env.NEXT_PUBLIC_COLLEGE_ID!,
+      college_id: process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts-science',
     });
     setSubmitting(false);
+    if (error) {
+      toast.error('Failed to submit comment. Please try again.');
+      return;
+    }
     setSubmitted(true);
     setAuthorName('');
     setAuthorEmail('');
@@ -262,6 +270,17 @@ export default function CampusBlogContent({
 
             {/* Form */}
             <form onSubmit={handleCommentSubmit} className="px-6 py-6 bg-gray-50 space-y-5">
+              {/* Honeypot field — hidden from users, filled only by bots */}
+              <div style={{ display: 'none' }} aria-hidden="true">
+                <input
+                  type="text"
+                  name="website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={honeypot}
+                  onChange={(e) => setHoneypot(e.target.value)}
+                />
+              </div>
               <div>
                 <label className="block text-sm font-semibold text-[#002309] mb-1.5">
                   Name <span className="text-red-400">*</span>

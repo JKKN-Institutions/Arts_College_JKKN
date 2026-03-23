@@ -154,34 +154,7 @@ export default function BComBankingInsurancePage() {
   ];
 
   return (
-    <>
-      {/* SEO Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Course",
-            "name": "Bachelor of Commerce in Banking and Insurance",
-            "description": "A comprehensive 3-year undergraduate programme in Banking and Insurance covering financial management, risk assessment, insurance principles, banking operations, and investment strategies designed to develop analytical thinking, financial expertise, and professional skills for the BFSI sector.",
-            "provider": {
-              "@type": "CollegeOrUniversity",
-              "name": "JKKN College of Arts and Science",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Komarapalayam",
-                "addressRegion": "Tamil Nadu",
-                "addressCountry": "India"
-              }
-            },
-            "educationalCredentialAwarded": "Bachelor of Commerce (B.Com) in Banking and Insurance",
-            "timeToComplete": "P3Y",
-            "occupationalCredentialAwarded": "UGC Recognized Degree"
-          })
-        }}
-      />
-
-      <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white">
         {/* Hero Banner Section */}
         <section className="relative min-h-[70vh] flex items-center overflow-hidden py-12" style={{ backgroundColor: '#eaf1e2' }}>
           <div className="container mx-auto px-4 relative z-10">
@@ -994,6 +967,5 @@ export default function BComBankingInsurancePage() {
           </div>
         </section>
       </div>
-    </>
   );
 }

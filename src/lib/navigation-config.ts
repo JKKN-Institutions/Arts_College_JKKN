@@ -274,6 +274,13 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     href: '/contact',
   },
 
+  // Blog - Simple link
+  {
+    id: 'blog',
+    label: 'Blog',
+    href: '/blog',
+  },
+
   // More - Mega Dropdown
   {
     id: 'more',

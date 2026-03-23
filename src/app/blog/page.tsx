@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import { Calendar, Clock } from 'lucide-react';
 import { createClient } from '@/lib/supabase/server';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
@@ -22,12 +20,12 @@ export const metadata: Metadata = {
   },
 };
 
-export const revalidate = 60;
+export const revalidate = 3600;
 
 export default async function BlogPage() {
   // Fetch admin-created posts from Supabase
   const supabase = await createClient();
-  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts-science';
   const { data: campusPosts } = await supabase
     .from('blogs')
     .select('id, title, slug, excerpt, author_name, category, cover_image_url, published_at, created_at, read_time')
@@ -52,7 +50,16 @@ export default async function BlogPage() {
         { name: "Home", url: "https://cas.jkkn.ac.in" },
         { name: "Blog", url: "https://cas.jkkn.ac.in/blog" },
       ]} />
-      {/* <Header /> */}
+      {/* ── Coming Soon — shown when no posts exist ── */}
+      {!hasCampusPosts && (
+        <section className="min-h-[60vh] flex flex-col items-center justify-center px-4 text-center">
+          <div className="text-6xl mb-6">📝</div>
+          <h1 className="text-3xl font-bold text-[#002309] mb-3">Blog Coming Soon</h1>
+          <p className="text-gray-500 max-w-md">
+            We&apos;re working on articles, campus news, and career insights. Check back soon!
+          </p>
+        </section>
+      )}
 
       {/* ── Campus News (Admin Posts) Section — shown only when posts exist ── */}
       {hasCampusPosts && (
@@ -154,7 +161,6 @@ export default async function BlogPage() {
         </section>
       )}
 
-      {/* <Footer /> */}
     </div>
   );
 }

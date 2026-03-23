@@ -97,7 +97,7 @@ export default function AcademicProgramsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                onClick={() => setActiveCategory(category.id as any)}
+                onClick={() => setActiveCategory(category.id as 'science' | 'commerce' | 'computer')}
                 className={cn(
                   'flex items-center gap-3 px-6 py-3 rounded-xl font-semibold transition-all duration-300',
                   'border-2',

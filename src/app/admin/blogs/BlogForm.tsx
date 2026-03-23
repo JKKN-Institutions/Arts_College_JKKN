@@ -7,205 +7,22 @@ import toast from 'react-hot-toast';
 import { useAdminCollege } from '../AdminCollegeContext';
 import {
   Loader2,
-  X,
-  ImageIcon,
-  Upload,
   Download,
-  Plus,
-  Trash2,
+  Upload,
   ChevronRight,
   ChevronLeft,
   FileText,
 } from 'lucide-react';
-
-// ── Types ──────────────────────────────────────────────────────────────────
-interface BlogSections {
-  what_is_bed: string;
-  what_is_bed_title: string;
-  eligibility: string;
-  eligibility_title: string;
-  curriculum: string;
-  curriculum_title: string;
-  tnteu_counseling: string;
-  tnteu_counseling_title: string;
-  fee_structure: string;
-  fee_structure_title: string;
-  career_scope: string;
-  career_scope_title: string;
-  mid_cta_heading: string;
-  mid_cta_description: string;
-  mid_cta_button1: string;
-  mid_cta_button2: string;
-  why_jkkn: string;
-  why_jkkn_title: string;
-  admission_process: string;
-  admission_process_title: string;
-  faq_title: string;
-  author_bio: string;
-  sidebar_status: string;
-  sidebar_heading: string;
-  sidebar_description: string;
-  sidebar_phone: string;
-}
-
-interface FaqItem {
-  q: string;
-  a: string;
-}
-
-const DEFAULT_SECTIONS: BlogSections = {
-  what_is_bed: '',
-  what_is_bed_title: 'What is B.Ed? Course Overview',
-  eligibility: '',
-  eligibility_title: 'B.Ed Eligibility Criteria',
-  curriculum: '',
-  curriculum_title: 'B.Ed Course Curriculum',
-  tnteu_counseling: '',
-  tnteu_counseling_title: 'TNTEU Counseling 2026',
-  fee_structure: '',
-  fee_structure_title: 'B.Ed Fee Structure',
-  career_scope: '',
-  career_scope_title: 'Career Scope After B.Ed',
-  mid_cta_heading: 'Ready to Start Your Teaching Career?',
-  mid_cta_description:
-    'Apply for B.Ed 2026 at JKKN College of Education — 100 seats, NCTE approved, TNTEU affiliated, and 98% placement rate.',
-  mid_cta_button1: 'Apply Now →',
-  mid_cta_button2: 'Contact Admissions',
-  why_jkkn: '',
-  why_jkkn_title: 'Why Choose JKKN College of Education?',
-  admission_process: '',
-  admission_process_title: 'Admission Process 2026',
-  faq_title: 'Frequently Asked Questions',
-  author_bio:
-    'The content team at JKKN College of Education creates evidence-based educational content about teacher education, career guidance, and academic pathways. Our faculty includes experienced teacher-educators and researchers affiliated to Tamil Nadu Teachers Education University (TNTEU).',
-  sidebar_status: 'OPEN',
-  sidebar_heading: 'B.Ed Admission 2026',
-  sidebar_description: '100 Seats Available at JKKN College of Education, Komarapalayam',
-  sidebar_phone: '+91 9345855001',
-};
-
-const CATEGORIES = [
-  'Academic',
-  'Achievement',
-  'News',
-  'Campus Life',
-  'Events',
-  'B.Ed Admissions',
-  'Teaching Careers',
-  'General',
-  'Other',
-];
-
-interface BlogFormProps {
-  blog?: {
-    id: string;
-    title: string;
-    slug: string;
-    excerpt: string;
-    content: string;
-    author_name: string;
-    category: string;
-    cover_image_url: string;
-    is_published: boolean;
-    tags?: string | null;
-    read_time?: string | null;
-    sections?: (BlogSections & { faqs?: FaqItem[] }) | null;
-  };
-}
-
-// ── Helpers ────────────────────────────────────────────────────────────────
-function slugify(text: string) {
-  return text
-    .toLowerCase()
-    .replace(/[^\w\s-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .trim();
-}
-
-function extractKV(text: string, key: string): string {
-  const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const regex = new RegExp(escaped + ':\\s*(.+?)(?=\\s+[A-Z][\\w\\s]*:|$)', 'i');
-  return text.match(regex)?.[1]?.trim() || '';
-}
-
-function parseFaqs(text: string): FaqItem[] {
-  const faqs: FaqItem[] = [];
-  const cleaned = text.replace(/\s+/g, ' ').trim();
-  const regex = /Q:\s*(.+?)\s+A:\s*(.+?)(?=\s+Q:|$)/g;
-  let m;
-  while ((m = regex.exec(cleaned)) !== null) {
-    if (m[1] && m[2]) faqs.push({ q: m[1].trim(), a: m[2].trim() });
-  }
-  return faqs;
-}
-
-function parseSectionsFromHtml(
-  html: string
-): { sections: Partial<BlogSections>; faqs: FaqItem[] } {
-  const parsed: Partial<BlogSections> = {};
-  let faqs: FaqItem[] = [];
-
-  // Collect all h2 positions
-  const h2Re = /<h2[^>]*>([\s\S]*?)<\/h2>/gi;
-  const headings: { index: number; heading: string }[] = [];
-  let m;
-  while ((m = h2Re.exec(html)) !== null) {
-    headings.push({
-      index: m.index,
-      heading: m[1].replace(/<[^>]+>/g, '').trim().toLowerCase(),
-    });
-  }
-
-  for (let i = 0; i < headings.length; i++) {
-    const startOfContent = html.indexOf('</h2>', headings[i].index) + 5;
-    const endOfContent =
-      i + 1 < headings.length ? headings[i + 1].index : html.length;
-    const content = html.slice(startOfContent, endOfContent).trim();
-    const text = content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-    const h = headings[i].heading;
-
-    if (h.includes('what is b') || h.includes('course overview')) {
-      parsed.what_is_bed = content;
-    } else if (h.includes('eligibility')) {
-      parsed.eligibility = content;
-    } else if (h.includes('curriculum')) {
-      parsed.curriculum = content;
-    } else if (h.includes('tnteu') || h.includes('counseling')) {
-      parsed.tnteu_counseling = content;
-    } else if (h.includes('fee structure')) {
-      parsed.fee_structure = content;
-    } else if (h.includes('career scope')) {
-      parsed.career_scope = content;
-    } else if (h.includes('cta banner') || h.includes('mid-content')) {
-      parsed.mid_cta_heading =
-        extractKV(text, 'Heading') || 'Ready to Start Your Teaching Career?';
-      parsed.mid_cta_description = extractKV(text, 'Description') || '';
-      parsed.mid_cta_button1 =
-        extractKV(text, 'Button 1 Text') || 'Apply Now →';
-      parsed.mid_cta_button2 =
-        extractKV(text, 'Button 2 Text') || 'Contact Admissions';
-    } else if (h.includes('why choose') || h.includes('why jkkn')) {
-      parsed.why_jkkn = content;
-    } else if (h.includes('admission process')) {
-      parsed.admission_process = content;
-    } else if (h.includes('frequently asked') || h === 'faq') {
-      faqs = parseFaqs(text);
-    } else if (h.includes('author')) {
-      parsed.author_bio =
-        extractKV(text, 'Author Bio') ||
-        extractKV(text, 'Bio') ||
-        text;
-    } else if (h.includes('sidebar')) {
-      parsed.sidebar_status = extractKV(text, 'Status') || 'OPEN';
-      parsed.sidebar_heading = extractKV(text, 'Heading') || '';
-      parsed.sidebar_description = extractKV(text, 'Description') || '';
-      parsed.sidebar_phone = extractKV(text, 'Phone') || '';
-    }
-  }
-
-  return { sections: parsed, faqs };
-}
+import {
+  BlogSections,
+  FaqItem,
+  BlogFormProps,
+  DEFAULT_SECTIONS,
+  CATEGORIES,
+} from './blog-form-types';
+import { slugify, parseSectionsFromHtml } from './blog-docx-parser';
+import FaqEditor from './FaqEditor';
+import ImageUploader from './ImageUploader';
 
 // ── Sub-components ─────────────────────────────────────────────────────────
 function SectionTextarea({
@@ -346,10 +163,9 @@ export default function BlogForm({ blog }: BlogFormProps) {
     }
     setParsing(true);
     try {
-      const mammoth = await import('mammoth');
+      const mammoth = await import('mammoth') as unknown as { convertToHtml: (opts: { arrayBuffer: ArrayBuffer }) => Promise<{ value: string }> };
       const buffer = await file.arrayBuffer();
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const result = await (mammoth as any).convertToHtml({ arrayBuffer: buffer });
+      const result = await mammoth.convertToHtml({ arrayBuffer: buffer });
       const { sections: parsed, faqs: parsedFaqs } = parseSectionsFromHtml(
         result.value
       );
@@ -783,91 +599,12 @@ export default function BlogForm({ blog }: BlogFormProps) {
             />
 
             {/* ── FAQ Editor ── */}
-            <div className="space-y-3">
-              <div className="flex items-center justify-between gap-3">
-                <div className="flex items-center gap-2 flex-1">
-                  <span className="text-sm font-bold text-gray-500 flex-shrink-0">9.</span>
-                  <input
-                    type="text"
-                    value={sections.faq_title}
-                    onChange={(e) => setSections((s) => ({ ...s, faq_title: e.target.value }))}
-                    className="flex-1 text-sm font-semibold text-gray-700 border border-gray-200 rounded-lg px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-[#006837] transition"
-                    placeholder="Section heading..."
-                  />
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setFaqs((f) => [...f, { q: '', a: '' }])}
-                  className="flex items-center gap-1.5 text-xs font-semibold text-[#006837] hover:text-[#005a2e] border border-[#006837] px-3 py-1.5 rounded-lg transition"
-                >
-                  <Plus className="w-3.5 h-3.5" />
-                  Add FAQ
-                </button>
-              </div>
-              {faqs.length === 0 && (
-                <p className="text-xs text-gray-400 italic">
-                  No FAQs yet. Upload a Word file or click &quot;Add FAQ&quot; to add
-                  manually.
-                </p>
-              )}
-              {faqs.map((faq, i) => (
-                <div
-                  key={i}
-                  className="border border-gray-200 rounded-xl p-4 space-y-3 bg-gray-50"
-                >
-                  <div className="flex items-center justify-between mb-1">
-                    <span className="text-xs font-bold text-gray-500">
-                      FAQ #{i + 1}
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() =>
-                        setFaqs((f) => f.filter((_, idx) => idx !== i))
-                      }
-                      className="w-6 h-6 bg-red-50 rounded-full flex items-center justify-center text-red-500 hover:bg-red-100 transition"
-                    >
-                      <Trash2 className="w-3 h-3" />
-                    </button>
-                  </div>
-                  <div>
-                    <label className="text-xs font-semibold text-gray-600 mb-1 block">
-                      Question
-                    </label>
-                    <input
-                      type="text"
-                      value={faq.q}
-                      onChange={(e) =>
-                        setFaqs((f) =>
-                          f.map((item, idx) =>
-                            idx === i ? { ...item, q: e.target.value } : item
-                          )
-                        )
-                      }
-                      placeholder="Enter the question..."
-                      className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#006837] transition bg-white"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-xs font-semibold text-gray-600 mb-1 block">
-                      Answer
-                    </label>
-                    <textarea
-                      value={faq.a}
-                      onChange={(e) =>
-                        setFaqs((f) =>
-                          f.map((item, idx) =>
-                            idx === i ? { ...item, a: e.target.value } : item
-                          )
-                        )
-                      }
-                      rows={3}
-                      placeholder="Enter the answer..."
-                      className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#006837] transition resize-none bg-white"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+            <FaqEditor
+              faqTitle={sections.faq_title}
+              faqs={faqs}
+              onFaqTitleChange={(v) => setSections((s) => ({ ...s, faq_title: v }))}
+              onFaqsChange={setFaqs}
+            />
 
             {/* ── Author Box ── */}
             <div className="border border-gray-200 rounded-2xl p-5 space-y-3">
@@ -1139,49 +876,12 @@ function CardDetailsFields({
       </div>
 
       {/* Cover Image */}
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1.5">
-          Cover Image
-        </label>
-        <div
-          onClick={() => fileInputRef.current?.click()}
-          className="border-2 border-dashed border-gray-200 rounded-xl p-6 text-center cursor-pointer hover:border-[#006837] hover:bg-green-50/30 transition"
-        >
-          {imagePreview ? (
-            <div className="relative">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={imagePreview}
-                alt="Preview"
-                className="h-40 mx-auto rounded-lg object-cover"
-              />
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onImageClear();
-                }}
-                className="absolute top-1 right-1 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center text-white hover:bg-red-600"
-              >
-                <X className="w-3 h-3" />
-              </button>
-            </div>
-          ) : (
-            <div className="flex flex-col items-center gap-2 text-gray-400">
-              <ImageIcon className="w-8 h-8" />
-              <p className="text-sm">Click to upload cover image</p>
-              <p className="text-xs">JPG, PNG, WebP up to 5MB</p>
-            </div>
-          )}
-        </div>
-        <input
-          ref={fileInputRef}
-          type="file"
-          accept="image/*"
-          onChange={onImageSelect}
-          className="hidden"
-        />
-      </div>
+      <ImageUploader
+        imagePreview={imagePreview}
+        onImageSelect={onImageSelect}
+        onImageClear={onImageClear}
+        fileInputRef={fileInputRef}
+      />
     </>
   );
 }

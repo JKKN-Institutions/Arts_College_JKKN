@@ -50,6 +50,27 @@ export async function generateMetadata({
   };
 }
 
+export async function generateStaticParams() {
+  const { createClient } = await import('@/lib/supabase/server');
+  const supabase = await createClient();
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts-science';
+  const { data } = await supabase
+    .from('blogs')
+    .select('slug')
+    .eq('college_id', collegeId)
+    .eq('is_published', true);
+  return (data ?? []).map((post) => ({ slug: post.slug }));
+}
+
+/** Strip dangerous HTML patterns to prevent XSS */
+function sanitizeHtml(html: string): string {
+  return html
+    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+    .replace(/javascript\s*:/gi, '')
+    .replace(/on\w+\s*=\s*["'][^"']*["']/gi, '')
+    .replace(/on\w+\s*=[^\s>]*/gi, '');
+}
+
 /** Extract h2/h3 headings from HTML and inject id attributes for TOC */
 function processContent(
   html: string
@@ -160,7 +181,7 @@ export default async function CampusBlogPost({
 
   const { processedHtml, tocItems } = isStructured
     ? { processedHtml: '', tocItems: [] }
-    : processContent(rawHtml);
+    : processContent(sanitizeHtml(rawHtml));
 
   const { words, readTime } = calcReadMeta(rawHtml);
 

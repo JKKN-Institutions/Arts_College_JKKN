@@ -121,34 +121,7 @@ export default function BBAPage() {
   ];
 
   return (
-    <>
-      {/* SEO Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Course",
-            "name": "Bachelor of Business Administration (BBA)",
-            "description": "A comprehensive 3-year undergraduate programme in Business Administration covering management principles, marketing, finance, human resources, entrepreneurship, and business analytics designed to develop leadership, strategic thinking, and professional management skills.",
-            "provider": {
-              "@type": "CollegeOrUniversity",
-              "name": "JKKN College of Arts and Science",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Komarapalayam",
-                "addressRegion": "Tamil Nadu",
-                "addressCountry": "India"
-              }
-            },
-            "educationalCredentialAwarded": "Bachelor of Business Administration (BBA)",
-            "timeToComplete": "P3Y",
-            "occupationalCredentialAwarded": "UGC Recognized Degree"
-          })
-        }}
-      />
-
-      <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white">
         {/* Hero Banner Section */}
         <section className="relative min-h-[70vh] flex items-center overflow-hidden py-12" style={{ backgroundColor: '#eaf1e2' }}>
           <div className="container mx-auto px-4 relative z-10">
@@ -853,6 +826,5 @@ export default function BBAPage() {
           </div>
         </section>
       </div>
-    </>
   );
 }

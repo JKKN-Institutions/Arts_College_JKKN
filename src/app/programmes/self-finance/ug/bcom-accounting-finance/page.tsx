@@ -158,34 +158,7 @@ export default function BComAccountingFinancePage() {
   ];
 
   return (
-    <>
-      {/* SEO Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Course",
-            "name": "Bachelor of Commerce in Accounting and Finance",
-            "description": "A comprehensive 3-year undergraduate programme in Accounting and Finance covering financial accounting, corporate finance, taxation, auditing, cost accounting, and financial management designed to develop analytical thinking, professional competence, and practical business skills.",
-            "provider": {
-              "@type": "CollegeOrUniversity",
-              "name": "JKKN College of Arts and Science",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Komarapalayam",
-                "addressRegion": "Tamil Nadu",
-                "addressCountry": "India"
-              }
-            },
-            "educationalCredentialAwarded": "Bachelor of Commerce in Accounting and Finance",
-            "timeToComplete": "P3Y",
-            "occupationalCredentialAwarded": "UGC Recognized Degree"
-          })
-        }}
-      />
-
-      <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white">
         {/* Hero Banner Section */}
         <section className="relative min-h-[70vh] flex items-center overflow-hidden py-12" style={{ backgroundColor: '#eaf1e2' }}>
           <div className="container mx-auto px-4 relative z-10">
@@ -1002,6 +975,5 @@ export default function BComAccountingFinancePage() {
           </div>
         </section>
       </div>
-    </>
   );
 }

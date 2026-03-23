@@ -12,10 +12,7 @@
  * }
  */
 
-'use client';
-
 import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
 import {
   BookOpen, Users, Award, Briefcase, GraduationCap, CheckCircle2,
   Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, School,
@@ -24,6 +21,10 @@ import {
 import { cn } from '@/lib/utils';
 import { responsive } from '@/lib/responsive-utils';
 import { DESIGN_TOKENS } from '@/lib/design-tokens';
+import { RevealSection } from './RevealSection';
+import { CurriculumSection } from './CurriculumSection';
+import { FAQSection } from './FAQSection';
+import { GlassCard, SectionBadge, MetaTag } from './ProgrammePageHelpers';
 
 // ============================================================================
 // TYPES
@@ -126,95 +127,10 @@ export interface ProgrammePageProps {
 }
 
 // ============================================================================
-// UTILITY COMPONENTS
-// ============================================================================
-
-function useScrollReveal() {
-  const ref = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.15 }
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
-
-  return { ref, isVisible };
-}
-
-function RevealSection({
-  children,
-  className = '',
-  delay = 0
-}: {
-  children: React.ReactNode;
-  className?: string;
-  delay?: number;
-}) {
-  const { ref, isVisible } = useScrollReveal();
-  return (
-    <div
-      ref={ref}
-      className={cn(
-        'transition-all duration-700 ease-out',
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8',
-        className
-      )}
-      style={{ transitionDelay: `${delay}ms` }}
-    >
-      {children}
-    </div>
-  );
-}
-
-function GlassCard({
-  children,
-  className = '',
-  hover = true
-}: {
-  children: React.ReactNode;
-  className?: string;
-  hover?: boolean;
-}) {
-  return (
-    <div
-      className={cn(
-        'bg-white/40 backdrop-blur-xl rounded-2xl shadow-[0_8px_32px_rgba(11,109,65,0.08)] border border-white/60',
-        hover && 'hover:bg-white/60 hover:shadow-[0_8px_32px_rgba(11,109,65,0.15)] hover:-translate-y-2',
-        responsive.transition('all', 'normal'),
-        className
-      )}
-    >
-      {children}
-    </div>
-  );
-}
-
-function SectionBadge({ text }: { text: string }) {
-  return (
-    <span className="inline-flex items-center gap-2 bg-brand-green/10 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold border border-brand-green/15 text-brand-green mb-4">
-      <Sparkles className="w-3.5 h-3.5" />
-      {text}
-    </span>
-  );
-}
-
-// ============================================================================
 // MAIN TEMPLATE COMPONENT
 // ============================================================================
 
 export function ProgrammePage(props: ProgrammePageProps) {
-  const [activeYear, setActiveYear] = useState(1);
-  const [activeFAQ, setActiveFAQ] = useState(0);
-
   const heroColor = props.heroColor || '#eaf1e2';
 
   return (
@@ -234,8 +150,6 @@ export function ProgrammePage(props: ProgrammePageProps) {
       {/* Curriculum */}
       <CurriculumSection
         curriculum={props.curriculum}
-        activeYear={activeYear}
-        setActiveYear={setActiveYear}
       />
 
       {/* Learning Outcomes */}
@@ -256,8 +170,6 @@ export function ProgrammePage(props: ProgrammePageProps) {
       {/* FAQ */}
       <FAQSection
         faq={props.faq}
-        activeFAQ={activeFAQ}
-        setActiveFAQ={setActiveFAQ}
       />
 
       {/* Admission CTA */}
@@ -336,15 +248,6 @@ function HeroSection(props: ProgrammePageProps & { heroColor: string }) {
         </RevealSection>
       </div>
     </section>
-  );
-}
-
-function MetaTag({ icon, text }: { icon: React.ReactNode; text: string }) {
-  return (
-    <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/80 text-gray-900">
-      {icon}
-      <span>{text}</span>
-    </div>
   );
 }
 
@@ -456,75 +359,6 @@ function EligibilitySection({ cards }: { cards: EligibilityCard[] }) {
               </RevealSection>
             ))}
           </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function CurriculumSection({
-  curriculum,
-  activeYear,
-  setActiveYear
-}: {
-  curriculum: CurriculumYear[];
-  activeYear: number;
-  setActiveYear: (year: number) => void;
-}) {
-  return (
-    <section className={cn(responsive.section(), 'bg-brand-cream')} id="curriculum">
-      <div className={cn('container mx-auto', responsive.container())}>
-        <div className="max-w-6xl mx-auto">
-          <RevealSection>
-            <div className="text-center mb-12">
-              <SectionBadge text="Curriculum" />
-              <h2 className={cn(responsive.heading('h1'), 'text-gray-900 mb-4')}>
-                Course Structure
-              </h2>
-            </div>
-          </RevealSection>
-
-          {/* Year Tabs */}
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
-            {curriculum.map((year) => (
-              <button
-                key={year.year}
-                onClick={() => setActiveYear(year.year)}
-                className={cn(
-                  responsive.button(),
-                  activeYear === year.year
-                    ? 'bg-brand-green text-white'
-                    : 'bg-white/70 text-gray-700 hover:bg-white',
-                  'border border-brand-green/20'
-                )}
-              >
-                Year {year.year}
-              </button>
-            ))}
-          </div>
-
-          {/* Semester Content */}
-          {curriculum.map((year) => year.year === activeYear && (
-            <div key={year.year} className={cn(responsive.grid('features', 'lg'))}>
-              {year.semesters.map((semester, idx) => (
-                <RevealSection key={semester.number} delay={idx * 100}>
-                  <GlassCard className={cn(responsive.card())}>
-                    <h3 className={cn(responsive.heading('h3'), 'text-brand-green mb-4')}>
-                      Semester {semester.number}
-                    </h3>
-                    <ul className="space-y-2">
-                      {semester.subjects.map((subject, i) => (
-                        <li key={i} className="flex items-start gap-2 text-gray-700">
-                          <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
-                          <span className="text-sm">{subject}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </GlassCard>
-                </RevealSection>
-              ))}
-            </div>
-          ))}
         </div>
       </div>
     </section>
@@ -672,66 +506,6 @@ function WhyChooseSection({ items }: { items: { icon: React.ReactNode; title: st
                   <h3 className={cn(responsive.heading('h4'), 'text-brand-green mb-3')}>{item.title}</h3>
                   <p className={cn(responsive.text('small'), 'text-gray-600')}>{item.description}</p>
                 </GlassCard>
-              </RevealSection>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function FAQSection({
-  faq,
-  activeFAQ,
-  setActiveFAQ
-}: {
-  faq: FAQItem[];
-  activeFAQ: number;
-  setActiveFAQ: (idx: number) => void;
-}) {
-  return (
-    <section className={cn(responsive.section(), 'bg-white')} id="faq">
-      <div className={cn('container mx-auto', responsive.container())}>
-        <div className="max-w-4xl mx-auto">
-          <RevealSection>
-            <div className="text-center mb-12">
-              <SectionBadge text="FAQ" />
-              <h2 className={cn(responsive.heading('h1'), 'text-gray-900 mb-4')}>
-                Frequently Asked Questions
-              </h2>
-            </div>
-          </RevealSection>
-
-          <div className="space-y-4">
-            {faq.map((item, idx) => (
-              <RevealSection key={idx} delay={idx * 50}>
-                <div className="border border-gray-200 rounded-xl overflow-hidden bg-white shadow-sm">
-                  <button
-                    onClick={() => setActiveFAQ(activeFAQ === idx ? -1 : idx)}
-                    className={cn(
-                      'w-full px-6 py-4 text-left flex items-center justify-between',
-                      'hover:bg-brand-cream/50',
-                      responsive.transition('colors', 'fast')
-                    )}
-                  >
-                    <span className="font-semibold text-gray-900 pr-4">{item.question}</span>
-                    <ChevronDown
-                      className={cn(
-                        'w-5 h-5 text-brand-green flex-shrink-0',
-                        responsive.transition('transform', 'fast'),
-                        activeFAQ === idx && 'rotate-180'
-                      )}
-                    />
-                  </button>
-                  {activeFAQ === idx && (
-                    <div className="px-6 py-4 bg-brand-cream/30 border-t border-gray-200">
-                      <p className={cn(responsive.text('body'), 'text-gray-700')}>
-                        {item.answer}
-                      </p>
-                    </div>
-                  )}
-                </div>
               </RevealSection>
             ))}
           </div>

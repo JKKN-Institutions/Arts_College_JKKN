@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo, useCallback, useLayoutEffect, useRef } from 'react';
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MoreHorizontal } from 'lucide-react';
@@ -163,24 +163,16 @@ export function BottomNavbar() {
 
   // Check if current group uses hierarchical navigation
   const isHierarchicalNav = useMemo(() => {
-    const isHier = activeGroup?.isHierarchical || false;
-    if (isHier) {
-      console.log('Active group is hierarchical:', activeGroup?.groupLabel, 'Menus count:', activeGroup?.hierarchicalMenus?.length);
-    }
-    return isHier;
+    return activeGroup?.isHierarchical || false;
   }, [activeGroup]);
 
   // Hierarchical menu items
   const hierarchicalMenus = useMemo(() => {
-    const menus = activeGroup?.hierarchicalMenus || [];
-    if (menus.length > 0) {
-      console.log('Hierarchical menus:', menus.map(m => m.label));
-    }
-    return menus;
+    return activeGroup?.hierarchicalMenus || [];
   }, [activeGroup]);
 
-  // Update active page IMMEDIATELY when currentActivePage changes (before paint)
-  useLayoutEffect(() => {
+  // Update active page when currentActivePage changes
+  useEffect(() => {
     if (currentActivePage) {
       setActivePage(currentActivePage);
 
@@ -310,6 +302,8 @@ export function BottomNavbar() {
       {/* Full bottom navigation - always visible on mobile */}
       <motion.nav
         data-bottom-nav
+        role="navigation"
+        aria-label="Mobile navigation"
         initial={{ y: 80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 80, opacity: 0 }}

@@ -9,11 +9,15 @@ export async function POST(request: Request) {
   }
 
   // Only super_admins may switch colleges
-  const { data: profile } = await supabase
+  const { data: profile, error: profileError } = await supabase
     .from('staff_profiles')
     .select('role')
     .eq('id', session.user.id)
     .single();
+
+  if (profileError) {
+    return NextResponse.json({ error: 'Service unavailable' }, { status: 503 });
+  }
 
   if (!['super_admin', 'seo'].includes(profile?.role ?? '')) {
     return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
@@ -27,7 +31,7 @@ export async function POST(request: Request) {
 
   const response = NextResponse.json({ ok: true, college_id: collegeId });
   response.cookies.set('admin_college_id', collegeId, {
-    httpOnly: false,       // readable by client so context can re-seed on hydration if needed
+    httpOnly: true,
     maxAge: 60 * 60 * 24 * 7, // 1 week
     path: '/admin',
     sameSite: 'lax',
