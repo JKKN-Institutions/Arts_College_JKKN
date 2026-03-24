@@ -51,8 +51,11 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
-  const { createClient } = await import('@/lib/supabase/server');
-  const supabase = await createClient();
+  const { createClient: createSupabaseClient } = await import('@supabase/supabase-js');
+  const supabase = createSupabaseClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  );
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts-science';
   const { data } = await supabase
     .from('blogs')
