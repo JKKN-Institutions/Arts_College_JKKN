@@ -188,6 +188,46 @@ export default function MobileNav(props: MobileNavProps) {
                     >
                       Our Management
                     </Link>
+                    <div className="border-t border-gray-100 mt-2 pt-2 mx-4">
+                      <div className="px-4 py-1 text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                        Why Students Choose JKKN?
+                      </div>
+                      <Link
+                        href="/erode"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                      >
+                        Why Erode Students?
+                      </Link>
+                      <Link
+                        href="/salem"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                      >
+                        Why Salem Students?
+                      </Link>
+                      <Link
+                        href="/tiruppur"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                      >
+                        Why Tiruppur Students?
+                      </Link>
+                      <Link
+                        href="/namakkal"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                      >
+                        Why Namakkal Students?
+                      </Link>
+                      <Link
+                        href="/coimbatore"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                      >
+                        Why Coimbatore Students?
+                      </Link>
+                    </div>
                   </div>
                 )}
               </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
 interface DesktopNavProps {
@@ -194,7 +194,7 @@ export default function DesktopNav(props: DesktopNavProps) {
             role="menu"
             aria-label="About submenu"
             onKeyDown={handleDropdownKeyDown}
-            className="absolute top-full left-0 pt-2 w-48 z-[100]"
+            className="absolute top-full left-0 pt-2 w-64 z-[100]"
           >
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
               <Link
@@ -229,6 +229,56 @@ export default function DesktopNav(props: DesktopNavProps) {
               >
                 Our Management
               </Link>
+              <div className="border-t border-gray-100 mt-2 pt-2">
+                <div className="relative group/why">
+                  <button className="w-full flex items-center justify-between px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm">
+                    Why Students Choose JKKN?
+                    <ChevronRight className="w-4 h-4 flex-shrink-0" />
+                  </button>
+                  <div className="absolute left-full top-0 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 hidden group-hover/why:block z-[200]">
+                    <Link
+                      href="/erode"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      Why Erode Students?
+                    </Link>
+                    <Link
+                      href="/salem"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      Why Salem Students?
+                    </Link>
+                    <Link
+                      href="/tiruppur"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      Why Tiruppur Students?
+                    </Link>
+                    <Link
+                      href="/namakkal"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      Why Namakkal Students?
+                    </Link>
+                    <Link
+                      href="/coimbatore"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      Why Coimbatore Students?
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         )}

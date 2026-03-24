@@ -74,6 +74,37 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
           },
         ],
       },
+      {
+        id: 'why-jkkn',
+        label: 'Why Students Choose JKKN?',
+        items: [
+          {
+            label: 'Why Erode Students?',
+            href: '/erode',
+            description: 'Best arts and science college near Erode',
+          },
+          {
+            label: 'Why Salem Students?',
+            href: '/salem',
+            description: 'Best arts and science college near Salem',
+          },
+          {
+            label: 'Why Tiruppur Students?',
+            href: '/tiruppur',
+            description: 'Best arts and science college near Tiruppur',
+          },
+          {
+            label: 'Why Namakkal Students?',
+            href: '/namakkal',
+            description: 'Best arts and science college near Namakkal',
+          },
+          {
+            label: 'Why Coimbatore Students?',
+            href: '/coimbatore',
+            description: 'Best arts and science college near Coimbatore',
+          },
+        ],
+      },
     ],
   },
 

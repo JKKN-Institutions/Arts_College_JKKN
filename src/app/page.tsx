@@ -33,6 +33,7 @@ import {
 import HeroSection from '@/components/home/HeroSection';
 import StatsSection from '@/components/home/StatsSection';
 import AcademicProgramsSection from '@/components/home/AcademicProgramsSection';
+import ScrollOnLoad from '@/components/ScrollOnLoad';
 import EventsSection from '@/components/home/EventsSection';
 import Image from 'next/image';
 import { Suspense } from 'react';
@@ -189,7 +190,10 @@ export default function Home() {
       </section>
 
       {/* Academic Programs Section - With Category Tabs */}
-      <AcademicProgramsSection />
+      <ScrollOnLoad />
+      <div id="academic-excellence">
+        <AcademicProgramsSection />
+      </div>
 
       {/* Why Choose JKKN Section */}
       <section className="py-16 md:py-24 bg-[#fbfbee]">
