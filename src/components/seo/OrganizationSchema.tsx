@@ -89,6 +89,13 @@ export function OrganizationSchema() {
       "Textile and Fashion Designing",
       "Microbiology",
     ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.3",
+      bestRating: "5",
+      ratingCount: "76",
+      reviewCount: "76",
+    },
     speakable: {
       "@type": "SpeakableSpecification",
       cssSelector: [

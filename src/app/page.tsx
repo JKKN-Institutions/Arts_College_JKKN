@@ -39,21 +39,22 @@ import Image from 'next/image';
 import { Suspense } from 'react';
 import { FAQSchema } from '@/components/seo/FAQSchema';
 import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
+import { AllCoursesSchema } from '@/components/seo/AllCoursesSchema';
 import ScrollToSection from '@/components/ScrollToSection';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'JKKN College of Arts and Science | Autonomous | Erode, TN',
+    absolute: 'Best Arts and Science College in Tamil Nadu | JKKN College (Autonomous)',
   },
   description:
-    'Autonomous college offering 27+ UG, PG & PhD programmes in Arts, Science & Commerce. Highest package ₹18 LPA. Near Erode, Tamil Nadu.',
+    'JKKN College — the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited, 95% placement, ₹18 LPA highest package. 27+ UG, PG & PhD programmes near Erode.',
   alternates: {
     canonical: 'https://cas.jkkn.ac.in',
   },
   openGraph: {
-    title: 'JKKN College of Arts and Science | Autonomous | Erode, TN',
+    title: 'Best Arts and Science College in Tamil Nadu | JKKN College (Autonomous)',
     description:
-      'Autonomous college offering 27+ UG, PG & PhD programmes in Arts, Science & Commerce. Highest package ₹18 LPA. Near Erode, Tamil Nadu.',
+      'JKKN College — the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited, 95% placement, ₹18 LPA highest package. 27+ UG, PG & PhD programmes near Erode.',
     url: 'https://cas.jkkn.ac.in',
     siteName: 'JKKN College of Arts and Science',
     type: 'website',
@@ -61,6 +62,21 @@ export const metadata: Metadata = {
 };
 
 const homepageFAQs = [
+  {
+    question: "Why is JKKN considered the best arts and science college in Tamil Nadu?",
+    answer:
+      "JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation, UGC-recognized autonomous status, 95% placement rate with a highest package of ₹18 LPA, and industry partnerships with 50+ recruiters including TCS, Infosys, and Wipro. The college offers 27+ programmes with AI/IoT labs and in-built internship pathways.",
+  },
+  {
+    question: "What makes JKKN different from other arts and science colleges in Tamil Nadu?",
+    answer:
+      "Unlike many arts and science colleges in Tamil Nadu, JKKN offers an industry-integrated curriculum with collaborations from NASSCOM, CII, and leading MNCs. Students benefit from dedicated AI and IoT research labs, 150+ PhD-qualified faculty, and a training and placement cell that delivers measurable outcomes — 95% placement and career opportunities across India and abroad.",
+  },
+  {
+    question: "What programmes does JKKN Arts and Science College offer in Tamil Nadu?",
+    answer:
+      "JKKN College offers 27+ programmes including B.Sc Computer Science, BCA, B.Sc AI & Data Science, B.Com, BBA, B.Sc Cyber Security, B.Sc Visual Communication, B.Sc Microbiology, and more. Postgraduate options include M.Sc Computer Science, M.Com, and MA English. All programmes are affiliated to Periyar University and designed for career readiness.",
+  },
   {
     question: "What are the admission requirements for undergraduate programs?",
     answer:
@@ -95,12 +111,13 @@ export default function Home() {
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://cas.jkkn.ac.in" },
       ]} />
+      <AllCoursesSchema />
       <Suspense fallback={null}><ScrollToSection /></Suspense>
       {/* Hero Section - Fits exactly one screen */}
       <HeroSection />
 
       {/* Stats Section - Counting animation */}
-      {/* <StatsSection /> */}
+      <StatsSection />
 
       {/* About JKKN Arts & Science Section */}
       <section className="py-16 md:py-24 bg-[#fbfbee]">
@@ -121,7 +138,7 @@ export default function Home() {
               {/* Description Paragraphs - black color only */}
               <div className="space-y-4 text-[14px] sm:text-[18px] lg:text-[20px] leading-[20px] sm:leading-[29.25px] lg:leading-[28px] text-black font-normal">
                 <p>
-                  JKKN College of Arts and Science is a premier institution committed to transforming lives through accessible, progressive education. As part of JKKN Institutions&apos; 74+ year legacy (est. 1952), we blend traditional values with modern, industry-ready curriculum.
+                  JKKN College of Arts and Science is a premier institution in Tamil Nadu committed to transforming lives through accessible, progressive education. As part of JKKN Institutions&apos; 74+ year legacy (est. 1952), we blend traditional values with modern, industry-ready curriculum.
                 </p>
                 <p>
                   Our NAAC accreditation and UGC recognition reflect our commitment to academic excellence. With experienced Learning Facilitators, state-of-the-art infrastructure, and strong industry partnerships, we prepare Learners not just for jobs, but for successful careers.
@@ -189,6 +206,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Why JKKN is the Best — Keyword-Rich Content Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="text-[#0b6d41] text-[14px] font-semibold leading-[20px] tracking-wide uppercase mb-4">
+              WHY WE STAND OUT
+            </div>
+            <h2 className="text-[24px] md:text-[30px] lg:text-[36px] leading-[32px] md:leading-[36px] lg:leading-[40px] font-bold tracking-[-0.75px] lg:tracking-[-0.9px] text-[#0b6d41] mb-6" data-speakable>
+              Why JKKN Is the Best Arts and Science College in Tamil Nadu
+            </h2>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6 text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] text-gray-700">
+            <p>
+              With over seven decades of academic heritage, JKKN College of Arts and Science has earned its reputation as one of the <strong>best arts and science colleges in Tamil Nadu</strong>. Located on the Salem–Coimbatore Highway in Komarapalayam, the college combines the strength of a well-established institution with a forward-looking, industry-aligned curriculum that prepares students for real-world careers.
+            </p>
+            <p>
+              What sets JKKN apart from other arts and science colleges in Tamil Nadu is the focus on measurable outcomes. A <strong>95% placement rate</strong>, a highest package of <strong>₹18 LPA</strong>, and partnerships with 50+ recruiters — including TCS, Infosys, Wipro, and Foxconn — demonstrate that academic quality here translates directly into career success. Students from across Tamil Nadu, Kerala, and Karnataka choose JKKN for this proven track record.
+            </p>
+            <p>
+              The college offers 27+ UG, PG, and doctoral programmes across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research labs, NASSCOM and CII collaborations, and in-built internship pathways make JKKN a <strong>top arts college near Erode</strong> for students seeking future-ready education in Tamil Nadu.
+            </p>
+
+            {/* Key Differentiators Grid */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+              <div className="bg-green-50 border border-green-200 rounded-xl p-5 text-center">
+                <div className="text-[24px] font-bold text-[#0b6d41] mb-1">74+</div>
+                <div className="text-[14px] text-gray-600">Years of Legacy (Est. 1952)</div>
+              </div>
+              <div className="bg-green-50 border border-green-200 rounded-xl p-5 text-center">
+                <div className="text-[24px] font-bold text-[#0b6d41] mb-1">Autonomous</div>
+                <div className="text-[14px] text-gray-600">UGC Recognized &amp; NAAC Accredited</div>
+              </div>
+              <div className="bg-green-50 border border-green-200 rounded-xl p-5 text-center">
+                <div className="text-[24px] font-bold text-[#0b6d41] mb-1">27+</div>
+                <div className="text-[14px] text-gray-600">Programmes in Arts, Science &amp; Commerce</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Academic Programs Section - With Category Tabs */}
       <ScrollOnLoad />
       <div id="academic-excellence">
@@ -207,8 +266,8 @@ export default function Home() {
               Your Success Is Our Mission
             </h2>
             <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[29.25px] font-normal text-gray-600 max-w-3xl mx-auto">
-              Experience the JKKN advantage with industry-aligned education, modern infrastructure,<br className="hidden md:block" />
-              and dedicated career support
+              Experience the JKKN advantage — industry-aligned education, modern infrastructure,<br className="hidden md:block" />
+              and dedicated career support that sets us apart from other colleges in Tamil Nadu
             </p>
           </div>
 
@@ -232,7 +291,7 @@ export default function Home() {
               </div>
               <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">95% Placement</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Exceptional placement record with 100+ recruiters including TCS, Infosys, Wipro, and leading MNCs
+                Exceptional placement record with 100+ recruiters across Tamil Nadu and India — TCS, Infosys, Wipro, and leading MNCs
               </p>
             </div>
 
@@ -320,7 +379,7 @@ export default function Home() {
             </h2>
             <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[29.25px] font-normal text-gray-600 max-w-3xl mx-auto">
               Our dedicated Training and Placement Cell ensures every Learner is industry-ready with<br className="hidden md:block" />
-              exceptional career opportunities.
+              exceptional career opportunities across Tamil Nadu and beyond.
             </p>
           </div>
 
@@ -419,7 +478,7 @@ export default function Home() {
               Development
             </h2>
             <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[29.25px] font-normal text-gray-600 max-w-3xl mx-auto">
-              Experience learning in a modern, technology-enabled campus designed for academic<br className="hidden md:block" />
+              Experience learning in a modern, technology-enabled campus in Tamil Nadu designed for academic<br className="hidden md:block" />
               excellence and personal growth
             </p>
           </div>
@@ -692,10 +751,34 @@ export default function Home() {
               Have Questions? We Have <span className="text-[#0b6d41]">Answers</span>
             </h2>
             <p className="text-[18px] md:text-[20px] leading-[29.25px] md:leading-[28px] font-normal text-gray-600">
-              Find answers to commonly asked questions about admissions, programs, and campus life
+              Find answers to commonly asked questions about admissions, programs, and campus life at JKKN Arts and Science College, Tamil Nadu
             </p>
           </div>
           <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="item-best-1" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
+              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
+                Why is JKKN considered the best arts and science college in Tamil Nadu?
+              </AccordionTrigger>
+              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
+                JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation, UGC-recognized autonomous status, 95% placement rate with a highest package of ₹18 LPA, and industry partnerships with 50+ recruiters including TCS, Infosys, and Wipro. The college offers 27+ programmes with AI/IoT labs and in-built internship pathways.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-best-2" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
+              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
+                What makes JKKN different from other arts and science colleges in Tamil Nadu?
+              </AccordionTrigger>
+              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
+                Unlike many arts and science colleges in Tamil Nadu, JKKN offers an industry-integrated curriculum with collaborations from NASSCOM, CII, and leading MNCs. Students benefit from dedicated AI and IoT research labs, 150+ PhD-qualified faculty, and a training and placement cell that delivers measurable outcomes — 95% placement and career opportunities across India and abroad.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-best-3" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
+              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
+                What programmes does JKKN Arts and Science College offer in Tamil Nadu?
+              </AccordionTrigger>
+              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
+                JKKN College offers 27+ programmes including B.Sc Computer Science, BCA, B.Sc AI &amp; Data Science, B.Com, BBA, B.Sc Cyber Security, B.Sc Visual Communication, B.Sc Microbiology, and more. Postgraduate options include M.Sc Computer Science, M.Com, and MA English. All programmes are affiliated to Periyar University and designed for career readiness.
+              </AccordionContent>
+            </AccordionItem>
             <AccordionItem value="item-1" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
               <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
                 What are the admission requirements for undergraduate programs?
