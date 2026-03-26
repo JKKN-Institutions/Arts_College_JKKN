@@ -15,11 +15,13 @@ import {
 } from "lucide-react";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { HowToSchema } from "@/components/seo/HowToSchema";
+import { WebPageSchema } from "@/components/seo/WebPageSchema";
 
 export const metadata: Metadata = {
-  title: "Placements — 92%+ Rate, 60+ Recruiters",
+  title: "Placements 2025 — 92%+ Rate, 60+ Recruiters | JKKN Arts & Science",
   description:
-    "JKKN CAS placement highlights — 92%+ rate, 60+ recruiters (TCS, Infosys, Wipro, CTS). Highest package 12 LPA, average 3.2–4.5 LPA. Career training from Year 1.",
+    "JKKN College of Arts and Science Komarapalayam placement 2024-25 — 92%+ placement rate, 60+ recruiters (TCS, Infosys, Wipro, CTS), highest package 12 LPA, average 3.2–4.5 LPA. Career training from Year 1.",
   keywords: [
     "JKKN College placements",
     "arts and science college placements near Erode",
@@ -27,17 +29,42 @@ export const metadata: Metadata = {
     "college placements Namakkal",
     "JKKN campus recruitment",
     "best placement college Tamil Nadu",
+    "placement cell JKKN",
+    "campus recruitment 2025",
+    "highest package arts college Tamil Nadu",
+    "JKKN placement training",
+    "top recruiters arts college Komarapalayam",
+    "JKKN CAS placement statistics",
   ],
   alternates: {
     canonical: "https://cas.jkkn.ac.in/placements",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: "Placements — 92%+ Rate, 60+ Recruiters | JKKN Arts & Science",
+    title: "Placements 2025 — 92%+ Rate, 60+ Recruiters | JKKN Arts & Science",
     description:
-      "92%+ placement rate, 60+ recruiters, highest package 12 LPA. Career guidance and campus recruitment at JKKN CAS.",
+      "92%+ placement rate, 60+ recruiters, highest package 12 LPA. Career guidance and campus recruitment at JKKN College of Arts and Science, Komarapalayam.",
     url: "https://cas.jkkn.ac.in/placements",
     siteName: "JKKN College of Arts and Science",
     type: "website",
+    images: [
+      {
+        url: "https://cas.jkkn.ac.in/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "JKKN College of Arts and Science — Placements",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Placements 2025 — 92%+ Rate, 60+ Recruiters | JKKN Arts & Science",
+    description:
+      "92%+ placement rate, 60+ recruiters, highest package 12 LPA. Campus recruitment at JKKN CAS Komarapalayam.",
+    images: ["https://cas.jkkn.ac.in/opengraph-image"],
   },
 };
 
@@ -196,6 +223,21 @@ export default function PlacementsPage() {
         ]}
       />
       <FAQSchema faqs={placementFAQs} />
+      <HowToSchema
+        name="JKKN College of Arts and Science Placement Process"
+        description="5-step campus placement process at JKKN CAS — from pre-placement training to offer and onboarding."
+        steps={placementProcess.map((item) => ({
+          name: item.title,
+          text: item.description,
+        }))}
+      />
+      <WebPageSchema
+        name="Placements — JKKN College of Arts and Science"
+        description="Campus placement highlights, top recruiters, placement process, and training programmes at JKKN College of Arts and Science, Komarapalayam."
+        url="https://cas.jkkn.ac.in/placements"
+        lastReviewed="2025-03-26"
+        speakable={["h1", ".hero-description"]}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-brand-green overflow-hidden py-16 md:py-20 px-4">
@@ -309,9 +351,9 @@ export default function PlacementsPage() {
           </h2>
           <div className="w-16 h-1 bg-brand-yellow mx-auto mb-10" />
 
-          <div className="max-w-3xl mx-auto space-y-6">
+          <ol className="max-w-3xl mx-auto space-y-6 list-none p-0 m-0">
             {placementProcess.map((item) => (
-              <div key={item.step} className="flex gap-4">
+              <li key={item.step} className="flex gap-4">
                 <div className="flex-shrink-0 w-10 h-10 bg-brand-green text-white rounded-full flex items-center justify-center font-bold text-lg">
                   {item.step}
                 </div>
@@ -323,9 +365,9 @@ export default function PlacementsPage() {
                     {item.description}
                   </p>
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
