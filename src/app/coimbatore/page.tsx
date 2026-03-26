@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { CourseSchema } from "@/components/seo/CourseSchema";
+import { FAQSchema } from "@/components/seo/FAQSchema";
 import ViewProgrammesButton from "@/components/ViewProgrammesButton";
 import {
   MapPin,
@@ -21,6 +24,13 @@ import {
   Wifi,
   Mountain,
   Target,
+  IndianRupee,
+  Clock,
+  ShieldCheck,
+  Building2,
+  Award,
+  CheckCircle,
+  ChevronRight,
 } from "lucide-react";
 import {
   Accordion,
@@ -33,7 +43,7 @@ import {
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
   description:
-    "JKKN College of Arts and Science — just 105 km from Coimbatore via NH-544. World-class education at affordable fees with 80%+ placement support. UG programmes in Science, Commerce, BBA & BCA.",
+    "JKKN CAS — 105 km from Coimbatore via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
   keywords: [
     "arts and science college near Coimbatore",
     "best college near Coimbatore",
@@ -48,18 +58,141 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
     description:
-      "JKKN College of Arts and Science — just 105 km from Coimbatore. Affordable fees, 80%+ placements, UG programmes in Science, Commerce, BBA & BCA.",
+      "JKKN CAS — 105 km from Coimbatore. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/coimbatore",
     siteName: "JKKN College of Arts and Science",
     type: "website",
+    images: [
+      {
+        url: "https://cas.jkkn.ac.in/images/facilities/JKKN%20Arts%20Classroom.png",
+        width: 1200,
+        height: 630,
+        alt: "JKKN College of Arts and Science — modern classroom facility",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
+    description: "JKKN CAS — 105 km from Coimbatore. NAAC-accredited, 80%+ placements. Admissions open 2026-27.",
   },
 };
 
 export default function CoimbatorePage() {
+  const faqs = [
+    {
+      q: "What is the best arts and science college in Coimbatore?",
+      a: "JKKN College of Arts and Science, located just 100-110 km from Coimbatore on NH-544, is widely regarded as one of the top arts and science colleges accessible from Coimbatore. Approved by UGC, NAAC and affiliated to Periyar University / Bharathiar University, it offers excellent programmes with strong placement support.",
+    },
+    {
+      q: "How far is JKKN CAS from Coimbatore?",
+      a: "JKKN CAS is approximately 100-110 km from Coimbatore city centre, which takes about 2-2.5 hours by road via NH-544 (Coimbatore-Salem Highway) — direct route. Regular bus services are available from Coimbatore.",
+    },
+    {
+      q: "Which courses are popular among Coimbatore students at JKKN CAS?",
+      a: "BCA and B.Sc Computer Science are the most popular choices among Coimbatore students, given the city's thriving IT corridor. B.Com and BBA are also in demand. JKKN CAS offers 34 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
+    },
+    {
+      q: "Can BCA students from Coimbatore get IT jobs?",
+      a: "Yes. BCA graduates from JKKN CAS are placed at companies like TCS, Infosys BPO, and other IT firms. Coimbatore's booming IT corridor (TIDEL Park, Elcot SEZ) means BCA graduates have excellent local job prospects. The college provides placement training, aptitude coaching, and mock interviews.",
+    },
+    {
+      q: "Are JKKN CAS fees affordable compared to Coimbatore colleges?",
+      a: "Yes. JKKN CAS fees are competitively priced — often 30-50% lower than private colleges in Coimbatore city. Government scholarships (BC/MBC/SC/ST) and merit-based concessions are available. Contact the admission office at +91 9345855001 for the full fee structure.",
+    },
+    {
+      q: "Does JKKN CAS provide hostel for Coimbatore students?",
+      a: "Yes, JKKN CAS provides separate hostel facilities for boys and girls. Students from Coimbatore can also opt for daily commute as the campus is just 2-2.5 hours away. College transport services are available.",
+    },
+    {
+      q: "How can I apply for admission at JKKN CAS?",
+      a: "You can apply online through the official website at https://cas.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
+    },
+    {
+      q: "Is there a direct bus from Coimbatore to JKKN CAS?",
+      a: "Yes. Regular government (TNSTC) and private buses run from Gandhipuram and Ukkadam bus stands towards Namakkal and Salem via NH-544. Get off at Komarapalayam — the campus is right on the highway. Journey time is approximately 2 to 2.5 hours. College transport is also available for hostellers.",
+    },
+    {
+      q: "How much does the hostel cost for Coimbatore students at JKKN?",
+      a: "Hostel fees at JKKN CAS are significantly lower than Coimbatore city PG accommodations. The fee includes furnished rooms, three meals a day, WiFi, and 24/7 security. Contact the admission office at +91 9345855001 for the current hostel fee structure.",
+    },
+    {
+      q: "Why should I choose JKKN CAS over colleges in Coimbatore city?",
+      a: "JKKN CAS offers several advantages: fees are 30-50% lower than most Coimbatore city colleges, class sizes are smaller with more personal faculty attention, the 50+ acre green campus provides a distraction-free study environment, and placement rates (80%+) are on par with city institutions. The same top companies — TCS, Infosys, HDFC, Amazon — recruit from JKKN.",
+    },
+  ];
+
   return (
-    <>
+    <main>
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Coimbatore", url: "https://cas.jkkn.ac.in/coimbatore" },
+      ]} />
+      <FAQSchema faqs={faqs.map(f => ({ question: f.q, answer: f.a }))} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollegeOrUniversity",
+            "name": "JKKN College of Arts and Science",
+            "url": "https://cas.jkkn.ac.in",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
+              "addressLocality": "Komarapalayam",
+              "addressRegion": "Tamil Nadu",
+              "postalCode": "638183",
+              "addressCountry": "IN"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Coimbatore",
+              "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 11.44518,
+              "longitude": 77.726549
+            }
+          })
+        }}
+      />
+      <CourseSchema
+        name="B.Sc (Various Specialisations)"
+        description="3-year undergraduate science programme with specialisations in Chemistry, Mathematics, Zoology, Physics, Microbiology, Computer Science, and more at JKKN CAS — 105 km from Coimbatore."
+        duration="PT3Y"
+        educationalLevel="UG"
+        category="Aided"
+        url="/programmes/aided/ug/bsc-chemistry"
+      />
+      <CourseSchema
+        name="B.Com (Bachelor of Commerce)"
+        description="3-year undergraduate commerce programme with strong industry exposure and placement support at JKKN CAS, accessible from Coimbatore via NH-544."
+        duration="PT3Y"
+        educationalLevel="UG"
+        category="Aided"
+        url="/programmes/aided/ug/bcom"
+      />
+      <CourseSchema
+        name="BBA (Bachelor of Business Administration)"
+        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — 105 km from Coimbatore on NH-544."
+        duration="PT3Y"
+        educationalLevel="UG"
+        category="Self-Finance"
+        url="/programmes/self-finance/ug/bba"
+      />
+      <CourseSchema
+        name="BCA (Bachelor of Computer Applications)"
+        description="3-year undergraduate IT programme with hands-on training and 80%+ placement rate at JKKN CAS, a cost-effective alternative to Coimbatore city colleges."
+        duration="PT3Y"
+        educationalLevel="UG"
+        category="Self-Finance"
+        url="/programmes/self-finance/ug/bca"
+      />
+
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#002309] via-[#006837] to-[#002309] text-white overflow-hidden">
+      <section aria-label="Hero" className="relative bg-gradient-to-br from-[#002309] via-[#006837] to-[#002309] text-white overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#006837]/60 via-[#002309]/80 to-black/90" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center">
           {/* Badge */}
@@ -146,7 +279,7 @@ export default function CoimbatorePage() {
       </section>
 
       {/* Distance Card */}
-      <section className="bg-[#FBFBEE] py-10 sm:py-12">
+      <section aria-label="Distance from Coimbatore" className="bg-[#FBFBEE] py-10 sm:py-12">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
@@ -177,11 +310,11 @@ export default function CoimbatorePage() {
       </section>
 
       {/* Why Coimbatore Students Choose JKKN CAS */}
-      <section className="bg-white py-14 sm:py-16">
+      <section aria-label="Why choose JKKN" className="bg-white py-14 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-              Why Coimbatore Students Choose JKKN CAS
+              Why Coimbatore Students Travel to JKKN CAS
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
               While Coimbatore has many colleges, JKKN offers a distinct
@@ -241,12 +374,84 @@ export default function CoimbatorePage() {
         </div>
       </section>
 
+      {/* Why 105 km Is Worth It — Cost Comparison */}
+      <section aria-label="Cost comparison with Coimbatore colleges" className="bg-[#FBFBEE] py-14 sm:py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+              Why 105 km from Coimbatore Is Worth It
+            </h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+              Coimbatore has dozens of arts and science colleges — but crowded
+              classrooms, high fees, and limited personal attention are common
+              complaints. Here&apos;s how JKKN compares.
+            </p>
+            <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
+          </div>
+
+          {/* Comparison Table */}
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden mb-8">
+            <div className="grid grid-cols-3 bg-[#006837] text-white text-xs sm:text-sm font-semibold">
+              <div className="px-4 py-3">Factor</div>
+              <div className="px-4 py-3 text-center">Coimbatore City Colleges</div>
+              <div className="px-4 py-3 text-center">JKKN CAS</div>
+            </div>
+            {[
+              { factor: "Tuition Fees", city: "Higher (city premium)", jkkn: "30-50% lower", icon: IndianRupee },
+              { factor: "Class Size", city: "60-100+ students", jkkn: "40-60 students", icon: Users },
+              { factor: "Campus", city: "Compact, urban", jkkn: "50+ acre green campus", icon: Leaf },
+              { factor: "Faculty Access", city: "Limited one-on-one time", jkkn: "Personalised mentoring", icon: GraduationCap },
+              { factor: "Placement Rate", city: "Varies widely", jkkn: "80%+ consistent", icon: TrendingUp },
+              { factor: "Living Cost", city: "High PG/transport costs", jkkn: "Affordable hostel + meals included", icon: Home },
+            ].map((row) => (
+              <div key={row.factor} className="grid grid-cols-3 border-t border-gray-100 text-sm">
+                <div className="px-4 py-3 flex items-center gap-2 font-medium text-gray-800">
+                  <row.icon className="w-4 h-4 text-[#006837] flex-shrink-0 hidden sm:block" />
+                  {row.factor}
+                </div>
+                <div className="px-4 py-3 text-center text-gray-500">{row.city}</div>
+                <div className="px-4 py-3 text-center text-[#006837] font-medium">{row.jkkn}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {[
+              {
+                Icon: IndianRupee,
+                title: "Save on Total Cost",
+                desc: "Lower tuition + affordable hostel + included meals = significant savings over 3 years compared to a Coimbatore city college with PG accommodation.",
+              },
+              {
+                Icon: Building2,
+                title: "Same Top Recruiters",
+                desc: "TCS, Infosys, HDFC Bank, Amazon, Flipkart — the same companies that recruit from Coimbatore colleges also visit JKKN CAS every year.",
+              },
+              {
+                Icon: ShieldCheck,
+                title: "Safe & Focused Environment",
+                desc: "A residential campus away from city distractions. 24/7 security, warden-supervised hostels, and a tight-knit student community.",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="bg-[#FBFBEE] border border-gray-100 rounded-2xl p-6 text-center flex flex-col items-center gap-3"
+              >
+                <item.Icon className="w-8 h-8 text-[#006837]" />
+                <div className="font-bold text-gray-800">{item.title}</div>
+                <div className="text-gray-500 text-sm leading-relaxed">{item.desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Programmes Offered */}
-      <section className="bg-[#FBFBEE] py-14 sm:py-16">
+      <section aria-label="Programmes offered" className="bg-white py-14 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-              Programmes Offered
+              Programmes Accessible from Coimbatore
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
               Choose the right programme for your career goals
@@ -263,6 +468,7 @@ export default function CoimbatorePage() {
                 level: "UG",
                 intake: "200+ seats",
                 eligibility: "10+2 with relevant subjects",
+                href: "/programmes/aided/ug/bsc-chemistry",
               },
               {
                 Icon: BarChart2,
@@ -271,6 +477,7 @@ export default function CoimbatorePage() {
                 level: "UG",
                 intake: "150 seats",
                 eligibility: "10+2 (Commerce preferred)",
+                href: "/programmes/aided/ug/bcom",
               },
               {
                 Icon: Briefcase,
@@ -279,6 +486,7 @@ export default function CoimbatorePage() {
                 level: "UG",
                 intake: "60 seats",
                 eligibility: "10+2 (any stream)",
+                href: "/programmes/self-finance/ug/bba",
               },
               {
                 Icon: Monitor,
@@ -287,6 +495,7 @@ export default function CoimbatorePage() {
                 level: "UG",
                 intake: "60 seats",
                 eligibility: "10+2 with Maths",
+                href: "/programmes/self-finance/ug/bca",
               },
             ].map((prog) => (
               <div
@@ -296,9 +505,9 @@ export default function CoimbatorePage() {
                 <div className="mb-3">
                   <prog.Icon className="w-8 h-8 text-[#006837]" />
                 </div>
-                <div className="font-bold text-gray-800 text-sm mb-4 leading-snug">
+                <h3 className="font-bold text-gray-800 text-sm mb-4 leading-snug">
                   {prog.name}
-                </div>
+                </h3>
                 <div className="space-y-2 text-sm flex-1">
                   <div className="flex justify-between">
                     <span className="text-gray-400">Duration</span>
@@ -322,24 +531,156 @@ export default function CoimbatorePage() {
                 <div className="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-400">
                   {prog.eligibility}
                 </div>
+                <Link
+                  href={prog.href}
+                  className="mt-3 text-[#006837] hover:text-[#004d28] font-medium text-sm text-center transition-colors"
+                >
+                  View Programme Details →
+                </Link>
                 <a
                   href="tel:+919345855001"
-                  className="mt-4 bg-[#FBFBEE] hover:bg-[#7cb983]/20 text-[#006837] font-medium text-sm px-4 py-2.5 rounded-xl text-center transition-colors"
+                  className="mt-2 bg-[#FBFBEE] hover:bg-[#7cb983]/20 text-[#006837] font-medium text-sm px-4 py-2.5 rounded-xl text-center transition-colors"
                 >
                   Call Us
                 </a>
               </div>
             ))}
           </div>
+
+          {/* Complete Programme List */}
+          <div className="mt-12 pt-10 border-t border-gray-200">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">
+              All 34 Programmes Accessible from Coimbatore
+            </h3>
+            <p className="text-gray-500 text-sm text-center mb-8">
+              Grouped by stream — click any programme for full details
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Aided UG */}
+              <div>
+                <h4 className="text-xs font-bold text-[#006837] tracking-wider mb-3 uppercase">Aided — UG</h4>
+                <ul className="space-y-1.5">
+                  {[
+                    { name: "B.A. English", href: "/programmes/aided/ug/ba-english" },
+                    { name: "B.A. History", href: "/programmes/aided/ug/ba-history" },
+                    { name: "B.Com", href: "/programmes/aided/ug/bcom" },
+                    { name: "B.Sc Chemistry", href: "/programmes/aided/ug/bsc-chemistry" },
+                    { name: "B.Sc Mathematics", href: "/programmes/aided/ug/bsc-maths" },
+                    { name: "B.Sc Zoology", href: "/programmes/aided/ug/bsc-zoology" },
+                  ].map((p) => (
+                    <li key={p.href}>
+                      <Link href={p.href} className="text-sm text-gray-600 hover:text-[#006837] flex items-center gap-1.5 transition-colors">
+                        <ChevronRight className="w-3.5 h-3.5 text-gray-300 flex-shrink-0" />
+                        {p.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Self-Finance UG */}
+              <div>
+                <h4 className="text-xs font-bold text-[#006837] tracking-wider mb-3 uppercase">Self-Finance — UG</h4>
+                <ul className="space-y-1.5">
+                  {[
+                    { name: "B.A. English", href: "/programmes/self-finance/ug/ba-english" },
+                    { name: "BBA", href: "/programmes/self-finance/ug/bba" },
+                    { name: "BCA", href: "/programmes/self-finance/ug/bca" },
+                    { name: "B.Com (Accounting & Finance)", href: "/programmes/self-finance/ug/bcom-accounting-finance" },
+                    { name: "B.Com (Banking & Insurance)", href: "/programmes/self-finance/ug/bcom-banking-insurance" },
+                    { name: "B.Com (CA)", href: "/programmes/self-finance/ug/bcom-ca" },
+                    { name: "B.Sc (AI & Data Science)", href: "/programmes/self-finance/ug/bsc-ai-ds" },
+                    { name: "B.Sc Computer Science", href: "/programmes/self-finance/ug/bsc-computer-science" },
+                    { name: "B.Sc (Cyber Security)", href: "/programmes/self-finance/ug/bsc-cs-cyber-security" },
+                    { name: "B.Sc Microbiology", href: "/programmes/self-finance/ug/bsc-microbiology" },
+                    { name: "B.Sc Physics", href: "/programmes/self-finance/ug/bsc-physics" },
+                    { name: "B.Sc Textile & Fashion Design", href: "/programmes/self-finance/ug/bsc-textile-fashion-designing" },
+                    { name: "B.Sc Visual Communication", href: "/programmes/self-finance/ug/bsc-visual-communication" },
+                  ].map((p) => (
+                    <li key={p.href}>
+                      <Link href={p.href} className="text-sm text-gray-600 hover:text-[#006837] flex items-center gap-1.5 transition-colors">
+                        <ChevronRight className="w-3.5 h-3.5 text-gray-300 flex-shrink-0" />
+                        {p.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* PG + Ph.D */}
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-xs font-bold text-[#006837] tracking-wider mb-3 uppercase">Aided — PG</h4>
+                  <ul className="space-y-1.5">
+                    {[
+                      { name: "M.A. History", href: "/programmes/aided/pg/ma-history" },
+                      { name: "MCA", href: "/programmes/aided/pg/mca" },
+                      { name: "M.Com", href: "/programmes/aided/pg/mcom" },
+                      { name: "M.Sc Chemistry", href: "/programmes/aided/pg/msc-chemistry" },
+                      { name: "M.Sc Computer Science", href: "/programmes/aided/pg/msc-computer-science" },
+                      { name: "M.Sc Physics", href: "/programmes/aided/pg/msc-physics" },
+                      { name: "M.Sc Zoology", href: "/programmes/aided/pg/msc-zoology" },
+                    ].map((p) => (
+                      <li key={p.href}>
+                        <Link href={p.href} className="text-sm text-gray-600 hover:text-[#006837] flex items-center gap-1.5 transition-colors">
+                          <ChevronRight className="w-3.5 h-3.5 text-gray-300 flex-shrink-0" />
+                          {p.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="text-xs font-bold text-[#006837] tracking-wider mb-3 uppercase">Self-Finance — PG</h4>
+                  <ul className="space-y-1.5">
+                    {[
+                      { name: "M.A. English", href: "/programmes/self-finance/pg/ma-english" },
+                      { name: "M.Com", href: "/programmes/self-finance/pg/mcom" },
+                      { name: "M.Sc Computer Science", href: "/programmes/self-finance/pg/msc-computer-science" },
+                      { name: "M.Sc (Data Analytics)", href: "/programmes/self-finance/pg/msc-cs-data-analytics" },
+                      { name: "M.Sc Mathematics", href: "/programmes/self-finance/pg/msc-mathematics" },
+                    ].map((p) => (
+                      <li key={p.href}>
+                        <Link href={p.href} className="text-sm text-gray-600 hover:text-[#006837] flex items-center gap-1.5 transition-colors">
+                          <ChevronRight className="w-3.5 h-3.5 text-gray-300 flex-shrink-0" />
+                          {p.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="text-xs font-bold text-[#006837] tracking-wider mb-3 uppercase">Research — Ph.D</h4>
+                  <ul className="space-y-1.5">
+                    {[
+                      { name: "Ph.D Chemistry", href: "/programmes/aided/phd/chemistry" },
+                      { name: "Ph.D Tamil", href: "/programmes/aided/phd/tamil" },
+                      { name: "Ph.D Zoology", href: "/programmes/aided/phd/zoology" },
+                    ].map((p) => (
+                      <li key={p.href}>
+                        <Link href={p.href} className="text-sm text-gray-600 hover:text-[#006837] flex items-center gap-1.5 transition-colors">
+                          <ChevronRight className="w-3.5 h-3.5 text-gray-300 flex-shrink-0" />
+                          {p.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Placement Highlights */}
-      <section className="bg-white py-14 sm:py-16">
+      <section aria-label="Placement highlights" className="bg-[#FBFBEE] py-14 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-              Placement Highlights
+              Placement Success for Coimbatore Students
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
               Our placement cell connects you with India&apos;s top employers
@@ -394,8 +735,128 @@ export default function CoimbatorePage() {
         </div>
       </section>
 
+      {/* Admission Process */}
+      <section aria-label="Admission process" className="bg-white py-14 sm:py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+              How to Apply — Admission Process
+            </h2>
+            <p className="text-gray-500 text-sm sm:text-base">
+              5 simple steps to start your journey at JKKN CAS
+            </p>
+            <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
+          </div>
+
+          <div className="space-y-4">
+            {[
+              {
+                step: 1,
+                title: "Visit Website or Campus",
+                desc: "Explore programmes, facilities, and campus life at cas.jkkn.ac.in or visit the campus in person for a tour.",
+              },
+              {
+                step: 2,
+                title: "Fill the Application Form",
+                desc: "Apply online at admission.jkkn.ac.in or collect the application form from the campus admission office.",
+              },
+              {
+                step: 3,
+                title: "Submit Documents",
+                desc: "Upload or submit 10th and 12th mark sheets, transfer certificate, community certificate, and passport-size photos.",
+              },
+              {
+                step: 4,
+                title: "Counseling & Seat Allocation",
+                desc: "Attend the counseling session (in-person or online). Seats are allotted based on eligibility and availability.",
+              },
+              {
+                step: 5,
+                title: "Fee Payment & Enrollment",
+                desc: "Pay the semester fees, collect your ID card, and complete enrollment. Hostel booking available at this stage.",
+              },
+            ].map((item) => (
+              <div
+                key={item.step}
+                className="bg-[#FBFBEE] rounded-2xl p-5 border border-gray-100 flex items-start gap-4"
+              >
+                <div className="bg-[#006837] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                  {item.step}
+                </div>
+                <div>
+                  <div className="font-bold text-gray-800 text-sm mb-1">{item.title}</div>
+                  <div className="text-gray-500 text-xs leading-relaxed">{item.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 text-center flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-8 py-3 rounded-full text-base transition-colors"
+            >
+              Apply Online Now
+            </a>
+            <a
+              href="tel:+919345855001"
+              className="bg-[#006837] hover:bg-[#002309] text-white font-semibold px-8 py-3 rounded-full text-base transition-colors"
+            >
+              Call Admission Office
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Scholarships & Financial Aid */}
+      <section aria-label="Scholarships and financial aid" className="bg-[#FBFBEE] py-14 sm:py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+              Scholarships &amp; Financial Aid
+            </h2>
+            <p className="text-gray-500 text-sm sm:text-base">
+              Multiple scholarship options to make quality education affordable
+            </p>
+            <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
+            <div className="bg-white rounded-2xl p-6 border border-gray-100">
+              <Award className="w-8 h-8 text-[#006837] mb-3" />
+              <h3 className="font-bold text-gray-800 mb-2">Government Scholarships</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Tamil Nadu government scholarships for BC, MBC, SC, and ST students.
+                Covers tuition fees partially or fully depending on community and income.
+                Applied through the State Scholarship Portal.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-6 border border-gray-100">
+              <CheckCircle className="w-8 h-8 text-[#006837] mb-3" />
+              <h3 className="font-bold text-gray-800 mb-2">Merit-Based Concessions</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Fee concessions for students with outstanding academic performance in
+                10th and 12th examinations. Sports achievers and NCC cadets may also
+                be eligible for special concessions.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl p-6 border border-gray-100">
+              <Banknote className="w-8 h-8 text-[#006837] mb-3" />
+              <h3 className="font-bold text-gray-800 mb-2">Affordable Fee Structure</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                JKKN CAS fees are among the most affordable in the region — significantly
+                lower than city-based private colleges. EMI payment options available.
+                Contact the admission office for the complete fee breakdown.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How to Reach from Coimbatore */}
-      <section className="bg-[#FBFBEE] py-14 sm:py-16">
+      <section aria-label="How to reach" className="bg-white py-14 sm:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
@@ -453,7 +914,7 @@ export default function CoimbatorePage() {
                 {
                   Icon: Home,
                   label: "CAMPUS ADDRESS",
-                  info: "JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183",
+                  info: (<address className="not-italic inline">JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183</address>),
                   bg: "bg-[#FBFBEE]",
                 },
               ].map(({ Icon, label, info, bg }) => (
@@ -477,7 +938,7 @@ export default function CoimbatorePage() {
       </section>
 
       {/* Campus & Facilities */}
-      <section className="bg-white py-14 sm:py-16">
+      <section aria-label="Campus facilities" className="bg-[#FBFBEE] py-14 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
@@ -549,7 +1010,86 @@ export default function CoimbatorePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Hostel & Weekend Life for Coimbatore Students */}
+      <section aria-label="Hostel life for Coimbatore students" className="bg-white py-14 sm:py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+              Hostel &amp; Weekend Life for Coimbatore Students
+            </h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+              Living on campus is one of the biggest advantages for students from
+              Coimbatore. Here&apos;s what to expect from the JKKN hostel experience.
+            </p>
+            <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+            {[
+              {
+                Icon: Home,
+                title: "Separate Boys & Girls Hostels",
+                desc: "Well-maintained, warden-supervised hostels with furnished rooms. Separate blocks for boys and girls with round-the-clock security.",
+              },
+              {
+                Icon: Activity,
+                title: "South Indian Home-Style Meals",
+                desc: "The hostel mess serves fresh, nutritious South Indian meals three times a day — breakfast, lunch, and dinner. Special meals on festivals.",
+              },
+              {
+                Icon: Bus,
+                title: "Weekend Buses to Coimbatore",
+                desc: "Regular weekend bus services let you visit home comfortably. Saturday departures from campus, Sunday returns. Many Coimbatore students go home every other weekend.",
+              },
+              {
+                Icon: Wifi,
+                title: "WiFi & Study Rooms",
+                desc: "High-speed internet access in hostel premises. Dedicated study rooms and common areas for group discussions and project work.",
+              },
+              {
+                Icon: ShieldCheck,
+                title: "24/7 Security & Medical Support",
+                desc: "Gated campus with CCTV surveillance and security personnel. Medical facilities available on campus for emergencies. Parents can visit anytime.",
+              },
+              {
+                Icon: Users,
+                title: "Coimbatore Student Community",
+                desc: "A growing number of students from Coimbatore choose JKKN each year. You will find batchmates from your city to form study groups and travel together on weekends.",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="bg-white rounded-2xl p-5 border border-gray-100 flex items-start gap-4"
+              >
+                <div className="bg-[#FBFBEE] p-2.5 rounded-lg flex-shrink-0">
+                  <item.Icon className="w-5 h-5 text-[#006837]" />
+                </div>
+                <div>
+                  <div className="font-bold text-gray-800 text-sm mb-1">
+                    {item.title}
+                  </div>
+                  <div className="text-gray-500 text-xs leading-relaxed">
+                    {item.desc}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 text-center">
+            <a
+              href="tel:+919345855001"
+              className="inline-flex items-center gap-2 bg-[#006837] hover:bg-[#002309] text-white font-semibold px-8 py-3 rounded-full text-base transition-colors"
+            >
+              <CheckCircle className="w-5 h-5" />
+              Enquire About Hostel — Call Now
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials — hidden until real testimonials are collected */}
+      {false && (
       <section className="bg-[#FBFBEE] py-14 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
@@ -613,9 +1153,10 @@ export default function CoimbatorePage() {
           </div>
         </div>
       </section>
+      )}
 
       {/* FAQ Section */}
-      <section className="bg-white py-14 sm:py-16">
+      <section aria-label="Frequently asked questions" className="bg-[#FBFBEE] py-14 sm:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
@@ -628,36 +1169,7 @@ export default function CoimbatorePage() {
           </div>
 
           <Accordion type="single" collapsible className="space-y-3">
-            {[
-              {
-                q: "What is the best arts and science college in Coimbatore?",
-                a: "JKKN College of Arts and Science, located just 100-110 km from Coimbatore on NH-544, is widely regarded as one of the top arts and science colleges accessible from Coimbatore. Approved by UGC, NAAC and affiliated to Periyar University / Bharathiar University, it offers excellent programmes with strong placement support.",
-              },
-              {
-                q: "How far is JKKN CAS from Coimbatore?",
-                a: "JKKN CAS is approximately 100-110 km from Coimbatore city centre, which takes about 2-2.5 hours by road via NH-544 (Coimbatore-Salem Highway) — direct route. Regular bus services are available from Coimbatore.",
-              },
-              {
-                q: "What courses are available at JKKN CAS?",
-                a: "JKKN College of Arts and Science offers a wide range of undergraduate and postgraduate programmes including B.Sc, B.Com, BBA, BCA, and more. The college is known for its strong B.Com, BCA, and BBA programmes with good career outcomes.",
-              },
-              {
-                q: "Is BCA a good course for an IT career?",
-                a: "Yes, BCA (Bachelor of Computer Applications) is an excellent starting point for an IT career. At JKKN College of Arts and Science, BCA students learn programming, database management, web development, and software engineering. Graduates are eligible for jobs at IT companies.",
-              },
-              {
-                q: "What is the fee structure at JKKN CAS?",
-                a: "The fees at JKKN College of Arts and Science vary by programme and are competitively priced compared to city-based colleges. For the complete fee structure and scholarship information, contact the admission office.",
-              },
-              {
-                q: "Does JKKN CAS provide hostel for Coimbatore students?",
-                a: "Yes, JKKN CAS provides separate hostel facilities for boys and girls. Students from Coimbatore can also opt for daily commute as the campus is just 2-2.5 hours away. College transport services are available.",
-              },
-              {
-                q: "How can I apply for admission at JKKN CAS?",
-                a: "You can apply online through the official website at https://cas.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
-              },
-            ].map((item, i) => (
+            {faqs.map((item, i) => (
               <AccordionItem
                 key={i}
                 value={`item-${i}`}
@@ -676,7 +1188,7 @@ export default function CoimbatorePage() {
       </section>
 
       {/* Explore More Cities */}
-      <section className="bg-[#FBFBEE] py-14 sm:py-16">
+      <nav aria-label="Other city pages" className="bg-white py-14 sm:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
@@ -713,7 +1225,7 @@ export default function CoimbatorePage() {
             <ViewProgrammesButton />
           </div>
         </div>
-      </section>
-    </>
+      </nav>
+    </main>
   );
 }
