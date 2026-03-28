@@ -42,28 +42,28 @@ export default function HeroSection() {
 
             {/* Description - More Compact */}
             <p className="hero-description text-[13px] sm:text-[15px] lg:text-[16px] leading-[20px] sm:leading-[24px] lg:leading-[26px] text-white/90 font-normal max-w-xl">
-              Transform your career at Tamil Nadu&apos;s top-rated arts and science college with <span className="text-brand-yellow font-semibold">industry-integrated programs</span> in Science, Commerce, IT &amp; Management. Join <span className="text-brand-yellow font-semibold">1300+ students</span> building successful careers since 1952.
+              Transform your career at Tamil Nadu&apos;s top-rated arts and science college with <span className="text-brand-yellow font-semibold">industry-integrated programs</span> in Science, Commerce, IT &amp; Management. Join <span className="text-brand-yellow font-semibold">1300+ students</span> building successful careers since 1952. <span className="text-brand-yellow font-semibold">2026–27 admissions now open — limited seats.</span>
             </p>
 
             {/* Stats Row - Compact */}
             <div className="grid grid-cols-4 gap-2 sm:gap-3" data-speakable>
               {/* Stat 1 */}
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105" aria-label="95 percent placement rate">
                 <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">95%</div>
                 <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Placement</div>
               </div>
               {/* Stat 2 */}
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105" aria-label="1300 plus students enrolled">
                 <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">1300+</div>
                 <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Students</div>
               </div>
               {/* Stat 3 */}
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">17</div>
-                <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Programs</div>
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105" aria-label="27 plus UG PG and PhD programmes">
+                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">27+</div>
+                <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Programmes</div>
               </div>
               {/* Stat 4 */}
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105" aria-label="74 plus years of academic legacy since 1952">
                 <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">74+</div>
                 <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Years</div>
               </div>

@@ -12,9 +12,9 @@ const stats = [
   },
   {
     icon: BookOpen,
-    end: 18,
+    end: 27,
     suffix: '+',
-    label: 'UG & PG Programs',
+    label: 'UG, PG & PhD Programmes',
   },
   {
     icon: Users,
@@ -24,7 +24,7 @@ const stats = [
   },
   {
     icon: Briefcase,
-    end: 100,
+    end: 50,
     suffix: '+',
     label: 'Top Recruiters',
   },

@@ -9,11 +9,11 @@ export function OrganizationSchema() {
     logo: "https://cas.jkkn.ac.in/logo.svg",
     image: "https://cas.jkkn.ac.in/opengraph-image",
     description:
-      "JKKN College of Arts and Science is an autonomous institution affiliated to Periyar University, offering 27+ undergraduate, postgraduate and doctoral programmes in Arts, Science and Commerce near Erode, Tamil Nadu. Founded in 1994 as part of J.K.K. Nattraja Educational Institutions (est. 1952), the college serves 1,969+ students across a 15-acre campus on NH-544.",
+      "JKKN College of Arts and Science is an autonomous institution affiliated to Periyar University, offering 27+ undergraduate, postgraduate and doctoral programmes in Arts, Science and Commerce near Erode, Tamil Nadu. Founded in 1994 as part of J.K.K. Nattraja Educational Institutions (est. 1952), the college serves 1,300+ students across a 15-acre campus on NH-544.",
     foundingDate: "1994",
     telephone: "+91-93458-55001",
     email: "arts@jkkn.ac.in",
-    numberOfStudents: 1969,
+    numberOfStudents: 1300,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Natarajapuram, NH-544 (Salem-Coimbatore Highway)",
@@ -51,6 +51,8 @@ export function OrganizationSchema() {
       "https://www.linkedin.com/school/jkknarts",
       "https://www.youtube.com/@jkknarts",
       "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions",
+      "https://www.wikidata.org/wiki/Q115690880",
+      "https://www.shiksha.com/college/jkkn-college-of-arts-and-science-namakkal-64693",
     ],
     hasCredential: [
       {
@@ -76,6 +78,27 @@ export function OrganizationSchema() {
       "@type": "Organization",
       name: "Periyar University",
       url: "https://www.periyaruniversity.ac.in",
+    },
+    department: [
+      { "@type": "Organization", name: "Department of Computer Science" },
+      { "@type": "Organization", name: "Department of Commerce" },
+      { "@type": "Organization", name: "Department of Business Administration" },
+      { "@type": "Organization", name: "Department of Data Analytics" },
+      { "@type": "Organization", name: "Department of Artificial Intelligence" },
+      { "@type": "Organization", name: "Department of Visual Communication" },
+      { "@type": "Organization", name: "Department of Microbiology" },
+      { "@type": "Organization", name: "Department of Mathematics" },
+      { "@type": "Organization", name: "Department of English" },
+      { "@type": "Organization", name: "Department of Tamil" },
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Academic Programmes 2026-27",
+      itemListElement: [
+        { "@type": "OfferCatalog", name: "Undergraduate Programmes (UG)", numberOfItems: 18 },
+        { "@type": "OfferCatalog", name: "Postgraduate Programmes (PG)", numberOfItems: 7 },
+        { "@type": "OfferCatalog", name: "Doctoral Programmes (PhD)", numberOfItems: 2 },
+      ],
     },
     knowsAbout: [
       "Arts Education",
