@@ -43,7 +43,7 @@ import {
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
   description:
-    "JKKN CAS — 105 km from Coimbatore via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+    "JKKN CAS — 105 km from Coimbatore. NAAC-accredited. Fees 30–50% lower than city colleges. BCA, B.Sc CS, BBA, B.Com. 80%+ placements. 2026-27 open.",
   keywords: [
     "arts and science college near Coimbatore",
     "best college near Coimbatore",
@@ -51,6 +51,11 @@ export const metadata: Metadata = {
     "college 2 hours from Coimbatore",
     "affordable college near Coimbatore",
     "BCA BBA B.Com B.Sc near Coimbatore",
+    "BCA college near Coimbatore with placement",
+    "B.Sc Computer Science near Coimbatore",
+    "B.Sc AI Data Science college near Coimbatore",
+    "NAAC accredited college near Coimbatore",
+    "arts college Komarapalayam",
   ],
   alternates: {
     canonical: "https://cas.jkkn.ac.in/coimbatore",
@@ -67,7 +72,7 @@ export const metadata: Metadata = {
         url: "https://cas.jkkn.ac.in/images/facilities/JKKN%20Arts%20Classroom.png",
         width: 1200,
         height: 630,
-        alt: "JKKN College of Arts and Science — modern classroom facility",
+        alt: "JKKN College of Arts and Science — arts college 105 km from Coimbatore, Tamil Nadu",
       },
     ],
   },
@@ -82,43 +87,51 @@ export default function CoimbatorePage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Coimbatore?",
-      a: "JKKN College of Arts and Science, located just 100-110 km from Coimbatore on NH-544, is widely regarded as one of the top arts and science colleges accessible from Coimbatore. Approved by UGC, NAAC and affiliated to Periyar University / Bharathiar University, it offers excellent programmes with strong placement support.",
+      a: "JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC-accredited, 74-year-old institution with 34 programmes and 80%+ placements. Admissions open for 2026–27.",
     },
     {
       q: "How far is JKKN CAS from Coimbatore?",
-      a: "JKKN CAS is approximately 100-110 km from Coimbatore city centre, which takes about 2-2.5 hours by road via NH-544 (Coimbatore-Salem Highway) — direct route. Regular bus services are available from Coimbatore.",
+      a: "JKKN CAS is 105 km from Coimbatore city centre — approximately 2 to 2.5 hours via NH-544. Direct TNSTC and private buses run from Gandhipuram and Ukkadam bus stands.",
     },
     {
       q: "Which courses are popular among Coimbatore students at JKKN CAS?",
-      a: "BCA and B.Sc Computer Science are the most popular choices among Coimbatore students, given the city's thriving IT corridor. B.Com and BBA are also in demand. JKKN CAS offers 34 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
+      a: "BCA, B.Sc Computer Science, and B.Sc AI and Data Science are most popular among Coimbatore students, aligned to the city's IT sector demand. B.Com and BBA are also widely chosen.",
     },
     {
       q: "Can BCA students from Coimbatore get IT jobs?",
-      a: "Yes. BCA graduates from JKKN CAS are placed at companies like TCS, Infosys BPO, and other IT firms. Coimbatore's booming IT corridor (TIDEL Park, Elcot SEZ) means BCA graduates have excellent local job prospects. The college provides placement training, aptitude coaching, and mock interviews.",
+      a: "Yes. JKKN CAS BCA graduates are placed at TCS, Infosys BPO, and other IT firms. Coimbatore's TIDEL Park and Elcot SEZ provide strong local job prospects for IT graduates.",
     },
     {
       q: "Are JKKN CAS fees affordable compared to Coimbatore colleges?",
-      a: "Yes. JKKN CAS fees are competitively priced — often 30-50% lower than private colleges in Coimbatore city. Government scholarships (BC/MBC/SC/ST) and merit-based concessions are available. Contact the admission office at +91 9345855001 for the full fee structure.",
+      a: "Yes. JKKN CAS annual tuition is 30–50% lower than comparable private colleges in Coimbatore. Government scholarships for BC, MBC, SC, and ST students are available. Call +91 9345855001 for details.",
     },
     {
       q: "Does JKKN CAS provide hostel for Coimbatore students?",
-      a: "Yes, JKKN CAS provides separate hostel facilities for boys and girls. Students from Coimbatore can also opt for daily commute as the campus is just 2-2.5 hours away. College transport services are available.",
+      a: "Yes. JKKN CAS provides separate hostel facilities for boys and girls. Weekend bus services run on Saturday from campus and Sunday returns, making Coimbatore students' home visits convenient.",
     },
     {
       q: "How can I apply for admission at JKKN CAS?",
-      a: "You can apply online through the official website at https://cas.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
+      a: "Apply online at cas.jkkn.ac.in or admission.jkkn.ac.in. Admissions for 2026–27 are open. Contact the admission office at +91 9345855001 for step-by-step guidance.",
     },
     {
       q: "Is there a direct bus from Coimbatore to JKKN CAS?",
-      a: "Yes. Regular government (TNSTC) and private buses run from Gandhipuram and Ukkadam bus stands towards Namakkal and Salem via NH-544. Get off at Komarapalayam — the campus is right on the highway. Journey time is approximately 2 to 2.5 hours. College transport is also available for hostellers.",
+      a: "Yes. TNSTC and private buses run from Gandhipuram and Ukkadam bus stands via NH-544. Alight at Komarapalayam — the campus is on the highway. Journey time is 2 to 2.5 hours.",
     },
     {
       q: "How much does the hostel cost for Coimbatore students at JKKN?",
-      a: "Hostel fees at JKKN CAS are significantly lower than Coimbatore city PG accommodations. The fee includes furnished rooms, three meals a day, WiFi, and 24/7 security. Contact the admission office at +91 9345855001 for the current hostel fee structure.",
+      a: "JKKN CAS hostel fees are lower than Coimbatore city PG rates. The fee covers furnished rooms, three meals daily, WiFi, and 24/7 security. Call +91 9345855001 for the current fee structure.",
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Coimbatore city?",
-      a: "JKKN CAS offers several advantages: fees are 30-50% lower than most Coimbatore city colleges, class sizes are smaller with more personal faculty attention, the 50+ acre green campus provides a distraction-free study environment, and placement rates (80%+) are on par with city institutions. The same top companies — TCS, Infosys, HDFC, Amazon — recruit from JKKN.",
+      a: "JKKN CAS offers 30–50% lower fees, smaller classes with personal attention, an 80%+ placement rate, and the same top recruiters — TCS, Infosys, Amazon — as Coimbatore city colleges. Hostel and weekend buses available.",
+    },
+    {
+      q: "Which IT companies recruit JKKN CAS graduates in Coimbatore?",
+      a: "TCS, Infosys BPO, Amazon, and other IT companies recruit JKKN CAS BCA and Computer Science graduates. TIDEL Park and Elcot SEZ in Coimbatore are key hiring destinations for the college's IT alumni.",
+    },
+    {
+      q: "Is JKKN CAS NAAC accredited and UGC approved?",
+      a: "Yes. JKKN College of Arts and Science is NAAC-accredited and UGC-approved. UG programmes are affiliated to Periyar University; select PG programmes are affiliated to Bharathiar University.",
     },
   ];
 
@@ -136,7 +149,13 @@ export default function CoimbatorePage() {
             "@context": "https://schema.org",
             "@type": "CollegeOrUniversity",
             "name": "JKKN College of Arts and Science",
+            "alternateName": "JKKN CAS",
+            "description": "JKKN College of Arts and Science is a NAAC-accredited, UGC-approved institution in Komarapalayam, Namakkal district, Tamil Nadu, offering 34 programmes in arts, science, commerce, and computer applications. Founded in 1952, affiliated to Periyar University and Bharathiar University.",
             "url": "https://cas.jkkn.ac.in",
+            "logo": "https://cas.jkkn.ac.in/images/logo.png",
+            "foundingDate": "1952",
+            "telephone": "+919345855001",
+            "email": "info@jkkn.ac.in",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
@@ -145,16 +164,111 @@ export default function CoimbatorePage() {
               "postalCode": "638183",
               "addressCountry": "IN"
             },
-            "areaServed": {
-              "@type": "City",
-              "name": "Coimbatore",
-              "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-            },
             "geo": {
               "@type": "GeoCoordinates",
               "latitude": 11.44518,
               "longitude": 77.726549
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Coimbatore",
+                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
+              },
+              {
+                "@type": "City",
+                "name": "Komarapalayam",
+                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
+              }
+            ],
+            "accreditation": "NAAC",
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "JKKN Institutions",
+              "url": "https://jkkn.ac.in"
+            },
+            "sameAs": [
+              "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
+              "https://jkkn.ac.in"
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Academic Programmes",
+              "numberOfItems": 34
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+919345855001",
+              "contactType": "admissions",
+              "areaServed": "IN",
+              "availableLanguage": ["English", "Tamil"]
             }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Best Arts and Science College Near Coimbatore — JKKN CAS",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                ".aeo-citation-block",
+                ".faq-voice-answer",
+                ".distance-card-summary",
+                "h2.snippet-trigger"
+              ]
+            },
+            "url": "https://cas.jkkn.ac.in/coimbatore"
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Apply for Admission at JKKN College of Arts and Science from Coimbatore",
+            "description": "5 steps to apply for admission at JKKN CAS — accessible from Coimbatore via NH-544.",
+            "totalTime": "PT7D",
+            "step": [
+              {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Visit Website or Campus",
+                "text": "Explore programmes and campus life at cas.jkkn.ac.in or visit the campus in Komarapalayam, 105 km from Coimbatore.",
+                "url": "https://cas.jkkn.ac.in"
+              },
+              {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Fill the Application Form",
+                "text": "Apply online at admission.jkkn.ac.in or collect the application form from the campus admission office.",
+                "url": "https://admission.jkkn.ac.in"
+              },
+              {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Submit Documents",
+                "text": "Upload or submit 10th and 12th mark sheets, transfer certificate, community certificate, and passport-size photos."
+              },
+              {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Counseling and Seat Allocation",
+                "text": "Attend the counseling session — in-person or online. Seats are allotted based on eligibility and availability."
+              },
+              {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Fee Payment and Enrollment",
+                "text": "Pay semester fees and complete enrollment. Hostel booking available at this stage for students from Coimbatore."
+              }
+            ]
           })
         }}
       />
@@ -184,7 +298,7 @@ export default function CoimbatorePage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 80%+ placement rate at JKKN CAS, a cost-effective alternative to Coimbatore city colleges."
+        description="3-year undergraduate IT programme at JKKN CAS — 105 km from Coimbatore. Pipeline to Coimbatore TIDEL Park and Elcot SEZ IT companies. Fees 30–50% lower than city colleges. 80%+ placement rate."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -214,6 +328,19 @@ export default function CoimbatorePage() {
             Coimbatore. JKKN College of Arts and Science offers top-tier arts
             and science programmes with 80%+ placement support — world-class
             education at a fraction of Coimbatore city college fees.
+          </p>
+
+          {/* AEO Citation Block — AI Overview anchor paragraph */}
+          <p className="aeo-citation-block text-white/70 text-sm max-w-2xl mx-auto mt-4 leading-relaxed">
+            JKKN College of Arts and Science is a NAAC-accredited, UGC-approved institution
+            located in Komarapalayam, Namakkal district, Tamil Nadu — 105 km from Coimbatore
+            via NH-544. Founded in 1952 and affiliated to Periyar University and Bharathiar
+            University, JKKN CAS offers 34 undergraduate, postgraduate, and research programmes
+            spanning arts, science, commerce, and computer applications. The institution maintains
+            an 80%+ placement rate with recruiters including TCS, Infosys BPO, HDFC Bank, Amazon,
+            and Flipkart. A 50+ acre residential campus with separate hostel facilities, digital
+            library, modern laboratories, and weekend bus services to Coimbatore makes it an
+            accessible choice for students from Coimbatore seeking affordable quality education.
           </p>
 
           {/* Stats */}
@@ -281,7 +408,7 @@ export default function CoimbatorePage() {
       {/* Distance Card */}
       <section aria-label="Distance from Coimbatore" className="bg-[#FBFBEE] py-10 sm:py-12">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between gap-4 p-6">
+          <div className="distance-card-summary bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
                 105<span className="text-2xl font-semibold text-[#006837]">km</span>
@@ -378,13 +505,16 @@ export default function CoimbatorePage() {
       <section aria-label="Cost comparison with Coimbatore colleges" className="bg-[#FBFBEE] py-14 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-              Why 105 km from Coimbatore Is Worth It
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 snippet-trigger">
+              Which is the Most Affordable Arts and Science College for Coimbatore Students?
             </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-              Coimbatore has dozens of arts and science colleges — but crowded
-              classrooms, high fees, and limited personal attention are common
-              complaints. Here&apos;s how JKKN compares.
+            <p className="aeo-citation-block text-gray-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+              For students from Coimbatore evaluating arts and science colleges, JKKN CAS offers
+              a cost-effective residential alternative. Annual tuition at JKKN CAS is 30–50% lower
+              than comparable private colleges in Coimbatore city. When combined with affordable
+              on-campus hostel accommodation — which includes three meals daily, WiFi, and 24/7
+              security — the total three-year cost at JKKN CAS is substantially lower than attending
+              a city college while managing private PG accommodation.
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -672,6 +802,14 @@ export default function CoimbatorePage() {
               </div>
             </div>
           </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/departments"
+              className="inline-flex items-center gap-2 text-[#006837] hover:text-[#004d28] font-medium text-sm transition-colors"
+            >
+              All Departments →
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -731,6 +869,74 @@ export default function CoimbatorePage() {
                 </span>
               ))}
             </div>
+          </div>
+          <div className="mt-8 text-center">
+            <a
+              href="https://placements.jkkn.ac.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-[#006837] hover:text-[#004d28] font-medium text-sm transition-colors"
+            >
+              Full Placement Statistics →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* IT Corridor Section — BCA and CS Pipeline for Coimbatore */}
+      <section aria-label="BCA and IT programmes for Coimbatore" className="bg-white py-14 sm:py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 snippet-trigger">
+              BCA and IT Programmes for Coimbatore&apos;s Tech Industry
+            </h2>
+            <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
+          </div>
+
+          {/* IT Corridor Citation Block */}
+          <p className="aeo-citation-block text-gray-600 max-w-3xl mx-auto text-sm sm:text-base leading-relaxed mb-8 text-center">
+            Coimbatore&apos;s technology corridor — anchored by TIDEL Park and the Elcot SEZ —
+            creates consistent demand for BCA, B.Sc Computer Science, and B.Sc AI and Data Science
+            graduates. JKKN CAS BCA and computer science alumni have been placed at IT companies
+            operating in and around Coimbatore. Students from Coimbatore who enroll at JKKN CAS
+            benefit from JKKN&apos;s established corporate placement network while saving
+            significantly on total education costs compared to Coimbatore city private colleges.
+          </p>
+
+          {/* IT Programme List */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
+            {[
+              {
+                name: "BCA (Bachelor of Computer Applications)",
+                detail: "3-year UG · 60 seats · Pipeline to Coimbatore TIDEL Park and Elcot SEZ IT companies",
+                href: "/programmes/self-finance/ug/bca",
+              },
+              {
+                name: "B.Sc Computer Science",
+                detail: "3-year UG · Software and IT roles in Coimbatore manufacturing-tech sector",
+                href: "/programmes/self-finance/ug/bsc-computer-science",
+              },
+              {
+                name: "B.Sc AI and Data Science",
+                detail: "3-year UG · Emerging programme aligned to Coimbatore digital transformation demand",
+                href: "/programmes/self-finance/ug/bsc-ai-ds",
+              },
+              {
+                name: "B.Sc Cyber Security",
+                detail: "3-year UG · Growing demand from Coimbatore IT and fintech companies",
+                href: "/programmes/self-finance/ug/bsc-cs-cyber-security",
+              },
+            ].map((prog) => (
+              <Link
+                key={prog.name}
+                href={prog.href}
+                className="bg-[#FBFBEE] rounded-2xl p-5 border border-gray-100 hover:border-[#7cb983] transition-colors flex flex-col gap-2"
+              >
+                <div className="font-bold text-gray-800 text-sm">{prog.name}</div>
+                <div className="text-gray-500 text-xs leading-relaxed">{prog.detail}</div>
+                <div className="text-[#006837] text-xs font-medium mt-1">View Programme Details →</div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -867,6 +1073,15 @@ export default function CoimbatorePage() {
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
+
+          <p className="aeo-citation-block text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+            Coimbatore students can reach JKKN CAS in 2 to 2.5 hours via NH-544. TNSTC government
+            buses depart regularly from Gandhipuram and Ukkadam bus stands toward Komarapalayam;
+            the campus is on the highway. Students opting for hostel accommodation benefit from
+            weekend bus services operated by the college, with Saturday departures from campus and
+            Sunday returns. Coimbatore International Airport (CJB) and Coimbatore Junction railway
+            station are both approximately 100–105 km from the campus.
+          </p>
 
           <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
             {/* Route Header */}
@@ -1006,6 +1221,14 @@ export default function CoimbatorePage() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/facilities"
+              className="inline-flex items-center gap-2 text-[#006837] hover:text-[#004d28] font-medium text-sm transition-colors"
+            >
+              Explore All Facilities →
+            </Link>
           </div>
         </div>
       </section>
@@ -1178,7 +1401,7 @@ export default function CoimbatorePage() {
                 <AccordionTrigger className="text-sm sm:text-base font-semibold text-gray-800 text-left py-5 hover:no-underline">
                   {item.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-500 text-sm leading-relaxed pb-5">
+                <AccordionContent className="faq-voice-answer text-gray-500 text-sm leading-relaxed pb-5">
                   {item.a}
                 </AccordionContent>
               </AccordionItem>

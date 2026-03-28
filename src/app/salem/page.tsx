@@ -40,7 +40,7 @@ import {
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Salem | JKKN CAS",
   description:
-    "JKKN CAS — 45 km from Salem via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.",
+    "JKKN CAS — top arts and science college accessible from Salem (~58 km via NH-544). NAAC-accredited, BCA, BBA, B.Com, B.Sc. Admissions 2026-27.",
   keywords: [
     "arts and science college near Salem",
     "best college near Salem",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Salem | JKKN CAS",
     description:
-      "JKKN CAS — 45 km from Salem. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — ~58 km from Salem. NAAC-accredited, 80%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/salem",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Salem | JKKN CAS",
-    description: "JKKN CAS — 45 km from Salem. NAAC-accredited, 80%+ placements. Admissions open 2026-27.",
+    description: "JKKN CAS — ~58 km from Salem. NAAC-accredited, 80%+ placements. Admissions open 2026-27.",
   },
 };
 
@@ -79,15 +79,15 @@ export default function SalemPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Salem?",
-      a: "JKKN College of Arts and Science, located just 40-50 km from Salem on NH-544, is widely regarded as one of the top arts and science colleges accessible from Salem. Approved by UGC, NAAC and affiliated to Periyar University / Bharathiar University, it offers excellent programmes with strong placement support.",
+      a: "JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 34 programmes and 80%+ placement rate.",
     },
     {
       q: "How far is JKKN CAS from Salem?",
-      a: "JKKN CAS is approximately 40-50 km from Salem city centre, which takes about 50-60 minutes by road via NH-544 (Salem-Coimbatore Highway) — direct route. Regular bus services are available from Salem New Bus Stand to Komarapalayam every 15-20 minutes.",
+      a: "JKKN CAS is approximately 58 km from Salem via NH-544, taking 60–70 minutes by road.",
     },
     {
       q: "Which courses are popular among Salem students at JKKN CAS?",
-      a: "BCA and B.Com are the most popular choices among Salem students, given the city's industrial economy and growing IT sector. BBA is also in demand. JKKN CAS offers 34 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
+      a: "JKKN CAS offers BCA, BBA, B.Com, B.Sc (multiple specialisations), MCA, M.Com, M.Sc, and Ph.D — 34 programmes total across aided and self-finance streams.",
     },
     {
       q: "Can BCA students from Salem get IT jobs?",
@@ -95,11 +95,11 @@ export default function SalemPage() {
     },
     {
       q: "Are JKKN CAS fees affordable compared to Salem colleges?",
-      a: "Yes. JKKN CAS fees are competitively priced — often 30-50% lower than private colleges in Salem city. Government scholarships (BC/MBC/SC/ST) and merit-based concessions are available. Contact the admission office at +91 9345855001 for the full fee structure.",
+      a: "JKKN CAS fees are 30–50% lower than city-based private colleges. Government scholarships (BC, MBC, SC, ST) are available. Contact +91 9345855001 for the current fee structure.",
     },
     {
       q: "Does JKKN CAS provide hostel for Salem students?",
-      a: "Yes, JKKN CAS provides separate hostel facilities for boys and girls. Students from Salem can also opt for daily commute as the campus is just 50-60 minutes away. College transport services are available.",
+      a: "Yes. JKKN CAS provides separate hostels for boys and girls with mess, WiFi, and 24/7 security. College buses also connect Salem.",
     },
     {
       q: "How can I apply for admission at JKKN CAS?",
@@ -107,15 +107,15 @@ export default function SalemPage() {
     },
     {
       q: "Is there a direct bus from Salem to JKKN CAS?",
-      a: "Yes. Regular TNSTC government buses and private buses run from Salem New Bus Stand towards Namakkal/Erode via NH-544. Get off at Komarapalayam — the campus is right on the highway. Journey time is approximately 50 to 60 minutes. College transport is also available for hostellers.",
+      a: "Yes. TNSTC government buses from Salem New Bus Stand to Komarapalayam run every 15–20 minutes via NH-544, reaching the campus in under 70 minutes.",
     },
     {
       q: "How much does the hostel cost for Salem students at JKKN?",
-      a: "Hostel fees at JKKN CAS are significantly lower than city PG accommodations. The fee includes furnished rooms, three meals a day, WiFi, and 24/7 security. Many Salem students prefer the hostel for a focused academic environment. Contact the admission office at +91 9345855001 for the current fee structure.",
+      a: "Hostel fees are significantly lower than Salem city PG rates. Mess, WiFi, and security are included. Contact the admissions office for exact annual rates.",
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Salem?",
-      a: "JKKN CAS offers several advantages over Salem city colleges: fees are 30-50% lower, class sizes are smaller with personalised faculty attention, the 50+ acre green campus provides a distraction-free environment, and placement rates (80%+) are on par with city institutions. The same top recruiters — TCS, Infosys, HDFC, Amazon — visit JKKN CAS.",
+      a: "JKKN CAS offers NAAC accreditation, 34 programmes, 80%+ placement, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~58 km from Salem.",
     },
   ];
 
@@ -132,8 +132,16 @@ export default function SalemPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "CollegeOrUniversity",
+            "@id": "https://cas.jkkn.ac.in/#organization",
             "name": "JKKN College of Arts and Science",
+            "alternateName": "JKKN CAS",
             "url": "https://cas.jkkn.ac.in",
+            "logo": "https://cas.jkkn.ac.in/images/logo/jkkn-cas-logo.png",
+            "image": "https://cas.jkkn.ac.in/images/facilities/JKKN%20Arts%20Classroom.png",
+            "telephone": "+919345855001",
+            "email": "info@jkkn.ac.in",
+            "foundingDate": "1952",
+            "description": "JKKN College of Arts and Science is a NAAC-accredited institution offering 34 UG, PG, and Ph.D programmes. Located at Komarapalayam, approximately 58 km from Salem via NH-544. Affiliated to Periyar University and Bharathiar University.",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
@@ -142,22 +150,61 @@ export default function SalemPage() {
               "postalCode": "638183",
               "addressCountry": "IN"
             },
-            "areaServed": {
-              "@type": "City",
-              "name": "Salem",
-              "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-            },
             "geo": {
               "@type": "GeoCoordinates",
               "latitude": 11.44518,
               "longitude": 77.726549
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Salem",
+                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
+              },
+              {
+                "@type": "City",
+                "name": "Erode",
+                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
+              },
+              {
+                "@type": "City",
+                "name": "Namakkal",
+                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
+              }
+            ],
+            "numberOfStudents": {
+              "@type": "QuantitativeValue",
+              "description": "Large student body across 34 programmes"
+            },
+            "accreditedBy": {
+              "@type": "Organization",
+              "name": "National Assessment and Accreditation Council",
+              "alternateName": "NAAC",
+              "url": "https://www.naac.gov.in"
+            },
+            "memberOf": {
+              "@type": "Organization",
+              "name": "University Grants Commission",
+              "alternateName": "UGC",
+              "url": "https://www.ugc.ac.in"
+            },
+            "sameAs": [
+              "https://www.facebook.com/jkkngroup",
+              "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
+              "https://jkkn.ac.in"
+            ],
+            "parentOrganization": {
+              "@type": "Organization",
+              "@id": "https://jkkn.ac.in/#organization",
+              "name": "JKKN Institutions",
+              "url": "https://jkkn.ac.in"
             }
           })
         }}
       />
       <CourseSchema
         name="B.Sc (Various Specialisations)"
-        description="3-year undergraduate science programme with specialisations in Chemistry, Mathematics, Zoology, Physics, Microbiology, Computer Science, and more at JKKN CAS — 45 km from Salem."
+        description="3-year undergraduate science programme with specialisations in Chemistry, Mathematics, Zoology, Physics, Microbiology, Computer Science, and more at JKKN CAS — approximately 58 km from Salem."
         duration="PT3Y"
         educationalLevel="UG"
         category="Aided"
@@ -173,7 +220,7 @@ export default function SalemPage() {
       />
       <CourseSchema
         name="BBA (Bachelor of Business Administration)"
-        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — 45 km from Salem on NH-544."
+        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — approximately 58 km from Salem on NH-544."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -186,6 +233,86 @@ export default function SalemPage() {
         educationalLevel="UG"
         category="Self-Finance"
         url="/programmes/self-finance/ug/bca"
+      />
+
+      {/* LocalBusiness Schema — Salem */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "@id": "https://cas.jkkn.ac.in/salem#localbusiness",
+            "name": "JKKN College of Arts and Science — Salem Region",
+            "url": "https://cas.jkkn.ac.in/salem",
+            "telephone": "+919345855001",
+            "priceRange": "$$",
+            "currenciesAccepted": "INR",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
+              "addressLocality": "Komarapalayam",
+              "addressRegion": "Tamil Nadu",
+              "postalCode": "638183",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 11.44518,
+              "longitude": 77.726549
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Salem"
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "09:00",
+              "closes": "17:00"
+            },
+            "hasMap": "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7"
+          })
+        }}
+      />
+
+      {/* WebPage + SpeakableSpecification Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://cas.jkkn.ac.in/salem#webpage",
+            "name": "Arts and Science College Near Salem — JKKN CAS",
+            "url": "https://cas.jkkn.ac.in/salem",
+            "description": "JKKN CAS is a NAAC-accredited arts and science college approximately 58 km from Salem via NH-544. Offers BCA, BBA, B.Com, B.Sc and 30+ more programmes.",
+            "datePublished": "2025-01-01",
+            "dateModified": "2026-03-28",
+            "inLanguage": "en-IN",
+            "isPartOf": {
+              "@type": "WebSite",
+              "@id": "https://cas.jkkn.ac.in/#website",
+              "name": "JKKN College of Arts and Science",
+              "url": "https://cas.jkkn.ac.in"
+            },
+            "about": {
+              "@type": "CollegeOrUniversity",
+              "@id": "https://cas.jkkn.ac.in/#organization"
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cas.jkkn.ac.in" },
+                { "@type": "ListItem", "position": 2, "name": "Salem", "item": "https://cas.jkkn.ac.in/salem" }
+              ]
+            },
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".aeo-snippet-primary", ".aeo-distance-answer", ".faq-answer-voice"]
+            }
+          })
+        }}
       />
 
       {/* Hero Section */}
@@ -217,8 +344,8 @@ export default function SalemPage() {
             {[
               { value: "80%+", label: "PLACEMENTS" },
               { value: "5-7", label: "LPA HIGHEST" },
-              { value: "45km", label: "FROM SALEM" },
-              { value: "4", label: "PROGRAMMES" },
+              { value: "~58km", label: "FROM SALEM" },
+              { value: "34", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -280,14 +407,14 @@ export default function SalemPage() {
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
-                45<span className="text-2xl font-semibold text-[#006837]">km</span>
+                ~58<span className="text-2xl font-semibold text-[#006837]">km</span>
               </span>
               <div>
                 <div className="font-bold text-gray-800 text-base sm:text-lg">
                   From Salem to JKKN CAS
                 </div>
                 <div className="text-gray-500 text-sm mt-1">
-                  50-60 minutes via NH-544 (Salem-Coimbatore Highway) — direct
+                  60-70 minutes via NH-544 (Salem-Coimbatore Highway) — direct
                   route
                 </div>
               </div>
@@ -352,7 +479,7 @@ export default function SalemPage() {
               {
                 Icon: Bus,
                 title: "Easy Commute",
-                desc: "Just 40-50 km from Salem. Daily commute or comfortable hostel — your choice.",
+                desc: "Just ~58 km from Salem. Daily commute or comfortable hostel — your choice.",
               },
             ].map((item) => (
               <div
@@ -803,7 +930,7 @@ export default function SalemPage() {
                   Salem → JKKN CAS Campus
                 </div>
                 <div className="text-[#7cb983] text-sm">
-                  40-50 km • 50-60 minutes
+                  ~58 km • 60-70 minutes
                 </div>
               </div>
             </div>
@@ -826,7 +953,7 @@ export default function SalemPage() {
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Salem Junction (~45 km from campus)",
+                  info: "Salem Junction (~58 km from campus)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -1024,7 +1151,7 @@ export default function SalemPage() {
                 <AccordionTrigger className="text-sm sm:text-base font-semibold text-gray-800 text-left py-5 hover:no-underline">
                   {item.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-500 text-sm leading-relaxed pb-5">
+                <AccordionContent className="text-gray-500 text-sm leading-relaxed pb-5 faq-answer-voice">
                   {item.a}
                 </AccordionContent>
               </AccordionItem>

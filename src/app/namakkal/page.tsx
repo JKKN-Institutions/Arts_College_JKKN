@@ -38,24 +38,24 @@ import {
 
 
 export const metadata: Metadata = {
-  title: "Best Arts and Science College Near Namakkal | JKKN CAS",
+  title: "Arts and Science College in Namakkal District | JKKN CAS",
   description:
-    "JKKN CAS — just 10 km from Namakkal. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.",
+    "JKKN College of Arts & Science — Namakkal District's most diverse arts college. 34 programmes, NAAC-accredited, 80%+ placements. Admissions 2026-27 open.",
   keywords: [
-    "arts and science college near Namakkal",
-    "best college in Namakkal",
+    "arts and science college in Namakkal district",
+    "best college in Namakkal district",
     "JKKN CAS Namakkal",
     "college Namakkal district",
-    "affordable college near Namakkal",
-    "BCA BBA B.Com B.Sc Namakkal",
+    "affordable college in Namakkal district",
+    "BCA BBA B.Com B.Sc Namakkal district",
   ],
   alternates: {
     canonical: "https://cas.jkkn.ac.in/namakkal",
   },
   openGraph: {
-    title: "Best Arts and Science College Near Namakkal | JKKN CAS",
+    title: "Arts and Science College in Namakkal District | JKKN CAS",
     description:
-      "JKKN CAS — 10 km from Namakkal. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS in Komarapalayam — Namakkal District's most diverse arts college. 34 programmes, NAAC-accredited, 80%+ placements. Admissions 2026-27.",
     url: "https://cas.jkkn.ac.in/namakkal",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -70,20 +70,20 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Arts and Science College Near Namakkal | JKKN CAS",
-    description: "JKKN CAS — 10 km from Namakkal. NAAC-accredited, 80%+ placements. Admissions open 2026-27.",
+    title: "Arts and Science College in Namakkal District | JKKN CAS",
+    description: "JKKN CAS in Namakkal District — 34 programmes, NAAC-accredited, 80%+ placements. Admissions 2026-27 open.",
   },
 };
 
 export default function NamakkalPage() {
   const faqs = [
     {
-      q: "What is the best arts and science college in Namakkal?",
-      a: "JKKN College of Arts and Science, located just 5-10 km from Namakkal on NH-544, is widely regarded as one of the top arts and science colleges accessible from Namakkal. Approved by UGC, NAAC and affiliated to Periyar University / Bharathiar University, it offers excellent programmes with strong placement support.",
+      q: "What is the best arts and science college in Namakkal district?",
+      a: "JKKN College of Arts and Science in Komarapalayam is Namakkal District's most programme-diverse arts and science institution — 34 programmes, NAAC-accredited, affiliated to Periyar and Bharathiar Universities, with 80%+ placement rates.",
     },
     {
-      q: "How far is JKKN CAS from Namakkal?",
-      a: "JKKN CAS is approximately 5-10 km from Namakkal city centre, which takes about 15-20 minutes by road via NH-544 (Salem-Coimbatore Highway). Regular bus services are available from Namakkal.",
+      q: "How far is JKKN College from Namakkal?",
+      a: "JKKN College of Arts and Science is located in Komarapalayam, Namakkal District — approximately 66 kilometres from Namakkal town and 22 kilometres from Erode via NH-544.",
     },
     {
       q: "Which courses are popular among Namakkal students at JKKN CAS?",
@@ -98,24 +98,24 @@ export default function NamakkalPage() {
       a: "Yes. JKKN CAS fees are among the most affordable in Namakkal district — significantly lower than private colleges elsewhere. Government scholarships (BC/MBC/SC/ST) and merit-based concessions are available. Contact the admission office at +91 9345855001 for the full fee structure.",
     },
     {
-      q: "Does JKKN CAS provide hostel for Namakkal students?",
-      a: "Yes, JKKN CAS provides separate hostel facilities for boys and girls. Students from Namakkal can also opt for daily commute as the campus is just 15-20 minutes away. College transport services are available.",
+      q: "Does JKKN CAS provide hostel for Namakkal district students?",
+      a: "Yes. JKKN CAS offers separate hostel facilities for boys and girls with furnished rooms, meals, Wi-Fi, and 24-hour security. Contact the admission office for availability and fees.",
     },
     {
       q: "How can I apply for admission at JKKN CAS?",
       a: "You can apply online through the official website at https://cas.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
     },
     {
-      q: "Is there a direct bus from Namakkal to JKKN CAS?",
-      a: "Yes. JKKN CAS is just 5-10 km from Namakkal town on NH-544. Auto-rickshaws, local buses, and college transport are easily available. Many students commute daily from Namakkal — the campus is practically in Namakkal district itself.",
+      q: "Is there a bus from Namakkal district to JKKN CAS?",
+      a: "JKKN CAS is in Namakkal District at Komarapalayam on NH-544. College transport and local buses connect the campus from Tiruchengode, Sankari, and surrounding Namakkal District towns.",
     },
     {
-      q: "How much does the hostel cost for Namakkal students at JKKN?",
-      a: "Since JKKN CAS is so close to Namakkal, many students commute daily. However, hostel facilities are available for those who prefer campus living. Fees include furnished rooms, three meals a day, WiFi, and 24/7 security. Contact the admission office at +91 9345855001 for details.",
+      q: "How much does the hostel cost for Namakkal district students at JKKN?",
+      a: "Since JKKN CAS is in Namakkal District, many students from surrounding taluks commute daily. Hostel facilities with meals, Wi-Fi, and security are available. Call +91 9345855001 for fees.",
     },
     {
-      q: "Why should I choose JKKN CAS over other colleges in Namakkal?",
-      a: "JKKN CAS is Namakkal district's premier arts and science college with NAAC accreditation, 34 programmes, and 80%+ placement rates. The 50+ acre campus, modern labs, digital library, and top recruiter visits (TCS, Infosys, HDFC, Amazon) set it apart from other local colleges.",
+      q: "Why should Namakkal district students choose JKKN CAS?",
+      a: "JKKN CAS is Namakkal District's most comprehensive arts and science college — 34 programmes, NAAC accreditation, 80%+ placements, 7-college campus group with a 500-bed hospital, and direct NH-544 access from Erode and Tiruchengode.",
     },
   ];
 
@@ -143,8 +143,8 @@ export default function NamakkalPage() {
               "addressCountry": "IN"
             },
             "areaServed": {
-              "@type": "City",
-              "name": "Namakkal",
+              "@type": "AdministrativeArea",
+              "name": "Namakkal District",
               "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
             },
             "geo": {
@@ -173,7 +173,7 @@ export default function NamakkalPage() {
       />
       <CourseSchema
         name="BBA (Bachelor of Business Administration)"
-        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — just 10 km from Namakkal town."
+        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS, located in Komarapalayam, Namakkal District."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -181,7 +181,7 @@ export default function NamakkalPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 80%+ placement rate at JKKN CAS, the closest quality college to Namakkal."
+        description="3-year undergraduate IT programme with hands-on training and 80%+ placement rate at JKKN CAS, Namakkal District's most programme-diverse arts and science college."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -200,16 +200,17 @@ export default function NamakkalPage() {
 
           {/* Heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Best Arts and Science College Near
+            Arts and Science College in Namakkal District
             <br />
-            <span className="text-[#7cb983]">Namakkal</span>
+            <span className="text-[#7cb983]">JKKN CAS, Komarapalayam</span>
           </h1>
 
           {/* Description */}
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Namakkal is home — and so are we. JKKN College of Arts and Science
-            offers top-tier arts and science programmes with 80%+ placement
-            support — located right in your home district.
+            JKKN College of Arts and Science is Namakkal District's most
+            programme-diverse institution — 34 UG, PG, M.Phil, and Ph.D
+            programmes, NAAC-accredited, on NH-544 at Komarapalayam with 80%+
+            placement support.
           </p>
 
           {/* Stats */}
@@ -217,8 +218,8 @@ export default function NamakkalPage() {
             {[
               { value: "80%+", label: "PLACEMENTS" },
               { value: "5-7", label: "LPA HIGHEST" },
-              { value: "10km", label: "FROM NAMAKKAL" },
-              { value: "4", label: "PROGRAMMES" },
+              { value: "34", label: "PROGRAMMES" },
+              { value: "74+", label: "YEARS LEGACY" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -274,20 +275,18 @@ export default function NamakkalPage() {
         </div>
       </section>
 
-      {/* Distance Card */}
-      <section aria-label="Distance from Namakkal" className="bg-[#FBFBEE] py-10 sm:py-12">
+      {/* Campus Location Card */}
+      <section aria-label="Campus Location — Namakkal District" className="bg-[#FBFBEE] py-10 sm:py-12">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
-              <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
-                10<span className="text-2xl font-semibold text-[#006837]">km</span>
-              </span>
+              <MapPin className="w-12 h-12 text-[#006837] flex-shrink-0" />
               <div>
                 <div className="font-bold text-gray-800 text-base sm:text-lg">
-                  From Namakkal to JKKN CAS
+                  Namakkal District Campus
                 </div>
                 <div className="text-gray-500 text-sm mt-1">
-                  15-20 minutes via NH-544 (Salem-Coimbatore Highway)
+                  Komarapalayam, NH-544 — 22 km from Erode • 15 km from Tiruchengode
                 </div>
               </div>
             </div>
@@ -312,10 +311,10 @@ export default function NamakkalPage() {
               Why JKKN CAS Is Namakkal's Top Choice
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-              Being in the home district of JKKN, Namakkal students enjoy the
-              closest proximity to the campus. There is no need for hostel
-              accommodation — daily commute is easy and convenient. Students can
-              stay at home and still access world-class education.
+              JKKN CAS is in Namakkal District at Komarapalayam on NH-544 — the
+              district's most programme-diverse arts and science institution.
+              Students from Tiruchengode, Sankari, and across Namakkal District
+              access world-class education with hostel or daily commute options.
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -350,7 +349,7 @@ export default function NamakkalPage() {
               {
                 Icon: Bus,
                 title: "Easy Commute",
-                desc: "Just 5-10 km from Namakkal. Daily commute or comfortable hostel — your choice.",
+                desc: "On NH-544 in Namakkal District. College transport from Tiruchengode, Sankari, and nearby towns — daily commute or hostel, your choice.",
               },
             ].map((item) => (
               <div
@@ -472,7 +471,7 @@ export default function NamakkalPage() {
           {/* Complete Programme List */}
           <div className="mt-12 pt-10 border-t border-gray-200">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">
-              All 34 Programmes Available Near Namakkal
+              All 34 Programmes Available in Namakkal District
             </h3>
             <p className="text-gray-500 text-sm text-center mb-8">
               Grouped by stream — click any programme for full details
@@ -801,7 +800,7 @@ export default function NamakkalPage() {
                   Namakkal → JKKN CAS Campus
                 </div>
                 <div className="text-[#7cb983] text-sm">
-                  5-10 km • 15-20 minutes
+                  Namakkal District • NH-544 Campus
                 </div>
               </div>
             </div>

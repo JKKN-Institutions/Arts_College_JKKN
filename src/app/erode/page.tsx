@@ -37,24 +37,35 @@ import {
 
 
 export const metadata: Metadata = {
-  title: "Best Arts and Science College Near Erode | JKKN CAS",
+  title: "Arts and Science College in Erode | JKKN CAS",
+  // 48 chars — within 60 limit
+
   description:
-    "JKKN CAS — 35 km from Erode via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.",
+    "JKKN CAS — NAAC-accredited arts and science college near Erode. 34 programmes, 80%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
+  // 144 chars — within 155 limit
+
   keywords: [
-    "arts and science college near Erode",
-    "best college near Erode",
+    "arts and science college in erode",
+    "arts and science college near erode",
+    "best college near erode",
     "JKKN CAS Erode",
+    "BCA college near Erode",
+    "BBA college near Erode",
+    "B.Com college near Erode",
     "college near Erode NH-544",
     "affordable college near Erode",
-    "BCA BBA B.Com B.Sc near Erode",
   ],
+
+  robots: "index, follow",
+
   alternates: {
     canonical: "https://cas.jkkn.ac.in/erode",
   },
+
   openGraph: {
-    title: "Best Arts and Science College Near Erode | JKKN CAS",
+    title: "Arts and Science College Near Erode — JKKN CAS",
     description:
-      "JKKN CAS — 35 km from Erode. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — NAAC-accredited, 34 programmes, 80%+ placements. Near Erode via NH-544. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/erode",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -63,58 +74,113 @@ export const metadata: Metadata = {
         url: "https://cas.jkkn.ac.in/images/facilities/JKKN%20Arts%20Classroom.png",
         width: 1200,
         height: 630,
-        alt: "JKKN College of Arts and Science — modern classroom facility",
+        alt: "JKKN College of Arts and Science — campus near Erode on NH-544",
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Best Arts and Science College Near Erode | JKKN CAS",
-    description: "JKKN CAS — 35 km from Erode. NAAC-accredited, 80%+ placements. Admissions open 2026-27.",
+    title: "Arts and Science College Near Erode — JKKN CAS",
+    description:
+      "NAAC-accredited arts college near Erode. 34 programmes, 80%+ placements, hostel available. Admissions 2026–27 open.",
   },
 };
 
 export default function ErodePage() {
   const faqs = [
     {
-      q: "What is the best arts and science college in Erode?",
-      a: "JKKN College of Arts and Science, located just 30-40 km from Erode on NH-544, is widely regarded as one of the top arts and science colleges accessible from Erode. Approved by UGC, NAAC and affiliated to Periyar University / Bharathiar University, it offers excellent programmes with strong placement support.",
+      q: "What is the best arts and science college near Erode?",
+      a: "JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Erode?",
-      a: "JKKN CAS is approximately 30-40 km from Erode city centre, which takes about 40-50 minutes by road via NH-544 — direct highway connectivity. Regular bus services are available from Erode.",
+      a: "JKKN CAS is approximately 22 km from Erode city centre via NH-544, a journey of 35–40 minutes by road. Regular TNSTC government buses run from Erode Central Bus Stand to Komarapalayam throughout the day. College transport is also available.",
     },
     {
       q: "Which courses are popular among Erode students at JKKN CAS?",
-      a: "BCA and B.Com are the most popular choices among students from Erode, given the region's strong commercial and textile industry base. BBA is also in high demand. JKKN CAS offers 34 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
-    },
-    {
-      q: "Can BCA students from Erode get IT jobs?",
-      a: "Yes. BCA graduates from JKKN CAS are placed at companies like TCS, Infosys BPO, and other IT firms. Erode's proximity to Coimbatore's IT corridor means BCA students have access to a growing job market. The college provides placement training, aptitude coaching, and mock interviews.",
-    },
-    {
-      q: "Are JKKN CAS fees affordable compared to Erode colleges?",
-      a: "Yes. JKKN CAS fees are competitively priced — often 30-50% lower than private colleges in Erode city. Government scholarships (BC/MBC/SC/ST) and merit-based concessions are available. Contact the admission office at +91 9345855001 for the full fee structure.",
-    },
-    {
-      q: "Does JKKN CAS provide hostel for Erode students?",
-      a: "Yes, JKKN CAS provides separate hostel facilities for boys and girls. Students from Erode can also opt for daily commute as the campus is just 40-50 minutes away. College transport services are available.",
-    },
-    {
-      q: "How can I apply for admission at JKKN CAS?",
-      a: "You can apply online through the official website at https://cas.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
+      a: "JKKN CAS near Erode offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 34 courses in total. All programmes are UGC-approved and affiliated to Periyar University or Bharathiar University. BCA and B.Com are the most popular among students from the Erode region.",
     },
     {
       q: "Is there a direct bus from Erode to JKKN CAS?",
-      a: "Yes. Regular TNSTC government buses and private buses run from Erode Central Bus Stand towards Namakkal/Salem via NH-544. Get off at Komarapalayam — the campus is right on the highway. Journey time is approximately 40 to 50 minutes. College transport is also available for hostellers.",
+      a: "Regular TNSTC government buses run from Erode Central Bus Stand to Komarapalayam via NH-544; the journey takes 35–40 minutes. Private buses on the Erode–Salem–Namakkal corridor also stop at Komarapalayam. The JKKN campus sits directly on NH-544, making it accessible from any bus stop at the highway.",
     },
     {
-      q: "How much does the hostel cost for Erode students at JKKN?",
-      a: "Hostel fees at JKKN CAS are significantly lower than city PG accommodations. The fee includes furnished rooms, three meals a day, WiFi, and 24/7 security. Many Erode students prefer the hostel for a focused academic environment. Contact the admission office at +91 9345855001 for the current fee structure.",
+      q: "Are JKKN CAS fees affordable compared to Erode colleges?",
+      a: "JKKN CAS fees are lower than most private colleges in Erode city. Tamil Nadu government scholarships for BC, MBC, SC, and ST students are available. Merit-based concessions are also offered. Contact the admission office at +91 9345855001 for the current fee structure.",
     },
     {
-      q: "Why should I choose JKKN CAS over colleges in Erode?",
-      a: "JKKN CAS offers several advantages over Erode city colleges: fees are 30-50% lower, class sizes are smaller with personalised faculty attention, the 50+ acre green campus provides a distraction-free environment, and placement rates (80%+) are on par with city institutions. The same top recruiters — TCS, Infosys, HDFC, Amazon — visit JKKN CAS.",
+      q: "Does JKKN CAS provide hostel for Erode students?",
+      a: "JKKN CAS provides separate hostel accommodation for boys and girls on the main campus. The hostel includes furnished rooms, three meals per day, WiFi, and 24/7 security. Students from Erode can also commute daily as the campus is just 35–40 minutes away via NH-544.",
+    },
+    {
+      q: "How can I apply for admission at JKKN CAS?",
+      a: "Applications for JKKN CAS are submitted online at admission.jkkn.ac.in or in person at the campus admission office. Admissions for 2026–27 are currently open. Call +91 9345855001 for guidance on the application process.",
+    },
+    {
+      q: "Is JKKN College of Arts and Science accredited?",
+      a: "JKKN College of Arts and Science is NAAC-accredited and UGC-approved. The college is affiliated to Periyar University and Bharathiar University. It is part of the JKKN Group of Institutions, which includes 7 colleges, 2 schools, and a 500-bed teaching hospital.",
+    },
+    {
+      q: "What placement rate does JKKN CAS achieve for Erode students?",
+      a: "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
+    },
+    {
+      q: "Why should Erode students choose JKKN CAS over colleges in Erode city?",
+      a: "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 80%+ placements with national recruiters — advantages not uniformly available at Erode city colleges. The 22 km NH-544 route makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
+    },
+  ];
+
+  const schemaFaqs = [
+    {
+      question: "What is the best arts and science college near Erode?",
+      answer:
+        "JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
+    },
+    {
+      question: "How far is JKKN CAS from Erode?",
+      answer:
+        "JKKN CAS is approximately 22 km from Erode city centre via NH-544, a journey of 35 to 40 minutes by road. Regular TNSTC government buses run from Erode Central Bus Stand to Komarapalayam throughout the day.",
+    },
+    {
+      question: "Is there a direct bus from Erode to JKKN CAS?",
+      answer:
+        "Regular TNSTC government buses run from Erode Central Bus Stand to Komarapalayam via NH-544; the journey takes 35 to 40 minutes. Private buses on the Erode–Salem–Namakkal corridor also stop at Komarapalayam.",
+    },
+    {
+      question: "Does JKKN CAS offer hostel facilities for students from Erode?",
+      answer:
+        "JKKN CAS provides separate hostel accommodation for boys and girls on the main campus. The hostel includes furnished rooms, three meals per day, WiFi, and 24/7 security.",
+    },
+    {
+      question: "Are fees at JKKN CAS affordable compared to Erode colleges?",
+      answer:
+        "JKKN CAS fees are lower than most private colleges in Erode city. Tamil Nadu government scholarships for BC, MBC, SC, and ST students are available. Contact the admission office at +91 9345855001 for the current fee structure.",
+    },
+    {
+      question: "Is JKKN College of Arts and Science accredited?",
+      answer:
+        "JKKN College of Arts and Science is NAAC-accredited and UGC-approved. The college is affiliated to Periyar University and Bharathiar University. It is part of the JKKN Group of Institutions.",
+    },
+    {
+      question: "What placement rate does JKKN CAS achieve for Erode students?",
+      answer:
+        "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
+    },
+    {
+      question: "How can students from Erode apply to JKKN CAS?",
+      answer:
+        "Applications for JKKN CAS are submitted online at admission.jkkn.ac.in or in person at the campus admission office. Admissions for 2026–27 are currently open. Call +91 9345855001 for guidance.",
+    },
+    {
+      question: "Which courses are available at arts and science colleges near Erode?",
+      answer:
+        "JKKN CAS near Erode offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 34 courses in total. All programmes are UGC-approved and affiliated to Periyar University or Bharathiar University.",
+    },
+    {
+      question: "Why should Erode students choose JKKN CAS over colleges in Erode city?",
+      answer:
+        "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 80%+ placements with national recruiters — advantages not uniformly available at Erode city colleges. The 22 km NH-544 route makes daily commute viable.",
     },
   ];
 
@@ -124,7 +190,35 @@ export default function ErodePage() {
         { name: "Home", url: "https://cas.jkkn.ac.in" },
         { name: "Erode", url: "https://cas.jkkn.ac.in/erode" },
       ]} />
-      <FAQSchema faqs={faqs.map(f => ({ question: f.q, answer: f.a }))} />
+      <FAQSchema faqs={schemaFaqs} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Arts and Science College Near Erode — JKKN CAS",
+            "url": "https://cas.jkkn.ac.in/erode",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college accessible from Erode via NH-544. 34 programmes, 80%+ placements, hostel available.",
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "JKKN College of Arts and Science",
+              "url": "https://cas.jkkn.ac.in"
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cas.jkkn.ac.in" },
+                { "@type": "ListItem", "position": 2, "name": "Erode", "item": "https://cas.jkkn.ac.in/erode" }
+              ]
+            },
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [".snippet-answer-paragraph", "#faq-section"]
+            }
+          })
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -132,7 +226,12 @@ export default function ErodePage() {
             "@context": "https://schema.org",
             "@type": "CollegeOrUniversity",
             "name": "JKKN College of Arts and Science",
+            "alternateName": "JKKN CAS",
             "url": "https://cas.jkkn.ac.in",
+            "foundingDate": "1952",
+            "description": "JKKN College of Arts and Science is a NAAC-accredited institution on NH-544 near Erode, offering 34 UG, PG, and Ph.D programmes in arts, science, commerce, and computer applications, affiliated to Periyar University and Bharathiar University.",
+            "telephone": "+919345855001",
+            "email": "info@jkkn.ac.in",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
@@ -141,16 +240,44 @@ export default function ErodePage() {
               "postalCode": "638183",
               "addressCountry": "IN"
             },
-            "areaServed": {
-              "@type": "City",
-              "name": "Erode",
-              "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Erode",
+                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
+              },
+              {
+                "@type": "City",
+                "name": "Komarapalayam",
+                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
+              }
+            ],
             "geo": {
               "@type": "GeoCoordinates",
               "latitude": 11.44518,
               "longitude": 77.726549
-            }
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Programmes at JKKN CAS",
+              "numberOfItems": 34
+            },
+            "accreditation": "NAAC Accredited",
+            "memberOf": [
+              { "@type": "Organization", "name": "University Grants Commission (UGC)" },
+              { "@type": "Organization", "name": "Periyar University" },
+              { "@type": "Organization", "name": "Bharathiar University" }
+            ],
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "JKKN Group of Institutions",
+              "url": "https://jkkn.ac.in"
+            },
+            "sameAs": [
+              "https://cas.jkkn.ac.in",
+              "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
+              "https://jkkn.ac.in"
+            ]
           })
         }}
       />
@@ -160,7 +287,7 @@ export default function ErodePage() {
         duration="PT3Y"
         educationalLevel="UG"
         category="Aided"
-        url="/programmes/aided/ug/bsc-chemistry"
+        url="https://cas.jkkn.ac.in/programmes/aided/ug/bsc-chemistry"
       />
       <CourseSchema
         name="B.Com (Bachelor of Commerce)"
@@ -168,15 +295,15 @@ export default function ErodePage() {
         duration="PT3Y"
         educationalLevel="UG"
         category="Aided"
-        url="/programmes/aided/ug/bcom"
+        url="https://cas.jkkn.ac.in/programmes/aided/ug/bcom"
       />
       <CourseSchema
         name="BBA (Bachelor of Business Administration)"
-        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — just 35 km from Erode."
+        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — approximately 22 km from Erode."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
-        url="/programmes/self-finance/ug/bba"
+        url="https://cas.jkkn.ac.in/programmes/self-finance/ug/bba"
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
@@ -184,7 +311,7 @@ export default function ErodePage() {
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
-        url="/programmes/self-finance/ug/bca"
+        url="https://cas.jkkn.ac.in/programmes/self-finance/ug/bca"
       />
 
       {/* Hero Section */}
@@ -199,17 +326,28 @@ export default function ErodePage() {
 
           {/* Heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Best Arts and Science College Near
-            <br />
-            <span className="text-[#7cb983]">Erode</span>
+            Arts and Science College in Erode — JKKN CAS
           </h1>
+
+          {/* Featured Snippet Paragraph */}
+          <h2 className="text-xl font-semibold text-white mb-3">
+            Arts and Science College Near Erode — JKKN CAS
+          </h2>
+          <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
+            JKKN College of Arts and Science, located on NH-544 approximately
+            22 km from Erode, is a NAAC-accredited institution offering 34 UG
+            and PG programmes including BCA, BBA, B.Com, and B.Sc
+            specialisations. Affiliated to Periyar University and Bharathiar
+            University, it achieves 80%+ placement rates with recruiters
+            including TCS, Infosys, HDFC Bank, and Amazon.
+          </p>
 
           {/* Description */}
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Erode to JKKN — a short, smooth ride on NH-544. JKKN College of
-            Arts and Science offers top-tier arts and science programmes with
-            80%+ placement support — just 30-40 km from Erode with excellent
-            highway connectivity.
+            Arts and Science offers NAAC-accredited arts and science programmes
+            with 80%+ placement support — approximately 22 km from Erode with
+            excellent highway connectivity.
           </p>
 
           {/* Stats */}
@@ -217,7 +355,7 @@ export default function ErodePage() {
             {[
               { value: "80%+", label: "PLACEMENTS" },
               { value: "5-7", label: "LPA HIGHEST" },
-              { value: "35km", label: "FROM ERODE" },
+              { value: "22km", label: "FROM ERODE" },
               { value: "4", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
@@ -280,14 +418,14 @@ export default function ErodePage() {
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
-                35<span className="text-2xl font-semibold text-[#006837]">km</span>
+                22<span className="text-2xl font-semibold text-[#006837]">km</span>
               </span>
               <div>
                 <div className="font-bold text-gray-800 text-base sm:text-lg">
                   From Erode to JKKN CAS
                 </div>
                 <div className="text-gray-500 text-sm mt-1">
-                  40-50 minutes via NH-544 — direct highway connectivity
+                  35–40 minutes via NH-544 — direct highway connectivity
                 </div>
               </div>
             </div>
@@ -313,13 +451,16 @@ export default function ErodePage() {
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
               Erode&apos;s strong industrial base means families value quality
-              education with good placement outcomes. JKKN is just 30-40 km
+              education with good placement outcomes. JKKN is approximately 22 km
               away — closer than many colleges within Erode city itself. The
               excellent NH-544 connectivity makes daily commute comfortable and
               quick.
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1952, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and Bharathiar University and approved by UGC. It offers 34 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus.
+          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[
@@ -351,7 +492,7 @@ export default function ErodePage() {
               {
                 Icon: Bus,
                 title: "Easy Commute",
-                desc: "Just 30-40 km from Erode. Daily commute or comfortable hostel — your choice.",
+                desc: "Just 22 km from Erode. Daily commute or comfortable hostel — your choice.",
               },
             ].map((item) => (
               <div
@@ -386,7 +527,7 @@ export default function ErodePage() {
             {[
               {
                 Icon: FlaskConical,
-                name: "B.Sc (various specialisations)",
+                name: "B.Sc College Near Erode — JKKN CAS",
                 duration: "3 years",
                 level: "UG",
                 intake: "200+ seats",
@@ -395,7 +536,7 @@ export default function ErodePage() {
               },
               {
                 Icon: BarChart2,
-                name: "B.Com",
+                name: "B.Com College Near Erode — JKKN CAS",
                 duration: "3 years",
                 level: "UG",
                 intake: "150 seats",
@@ -404,7 +545,7 @@ export default function ErodePage() {
               },
               {
                 Icon: Briefcase,
-                name: "BBA (Bachelor of Business Administration)",
+                name: "BBA College Near Erode — JKKN CAS",
                 duration: "3 years",
                 level: "UG",
                 intake: "60 seats",
@@ -413,7 +554,7 @@ export default function ErodePage() {
               },
               {
                 Icon: Monitor,
-                name: "BCA (Bachelor of Computer Applications)",
+                name: "BCA College Near Erode — JKKN CAS",
                 duration: "3 years",
                 level: "UG",
                 intake: "60 seats",
@@ -613,7 +754,7 @@ export default function ErodePage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "80%+", label: "PLACEMENT RATE" },
+              { value: "80%+", label: "PLACEMENT RATE — 2024–25" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },
@@ -653,6 +794,9 @@ export default function ErodePage() {
                   {company}
                 </span>
               ))}
+            </div>
+            <div className="text-center mt-8">
+              <Link href="/placements" className="text-[#006837] hover:text-[#004d28] font-medium text-sm">View Full Placement Report →</Link>
             </div>
           </div>
         </div>
@@ -802,7 +946,7 @@ export default function ErodePage() {
                   Erode → JKKN CAS Campus
                 </div>
                 <div className="text-[#7cb983] text-sm">
-                  30-40 km • 40-50 minutes
+                  ~22 km • 35–40 minutes
                 </div>
               </div>
             </div>
@@ -825,7 +969,7 @@ export default function ErodePage() {
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Erode Junction (~35 km from campus)",
+                  info: "Erode Junction (~22 km from campus)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -868,7 +1012,7 @@ export default function ErodePage() {
               Campus &amp; Facilities
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Everything you need for a world-class education experience
+              Everything you need for a well-equipped education experience
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -929,6 +1073,9 @@ export default function ErodePage() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/facilities" className="text-[#006837] hover:text-[#004d28] font-medium text-sm">Explore Campus Facilities →</Link>
           </div>
         </div>
       </section>
@@ -1000,8 +1147,68 @@ export default function ErodePage() {
       </section>
       )}
 
+      {/* Comparison Table */}
+      <section aria-label="Comparison with Erode colleges" className="bg-[#FBFBEE] py-14 sm:py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+              JKKN CAS vs Erode City Colleges — Quick Comparison
+            </h2>
+            <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
+          </div>
+          <div className="overflow-x-auto rounded-2xl border border-gray-100 shadow-sm">
+            <table className="w-full text-sm border-collapse bg-white">
+              <thead>
+                <tr className="bg-[#006837] text-white">
+                  <th className="p-3 text-left font-semibold">Feature</th>
+                  <th className="p-3 text-left font-semibold">JKKN CAS</th>
+                  <th className="p-3 text-left font-semibold">Typical Erode City College</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-100">
+                  <td className="p-3 text-gray-600">Accreditation</td>
+                  <td className="p-3 text-gray-800 font-medium">NAAC Accredited, UGC Approved</td>
+                  <td className="p-3 text-gray-500">Varies</td>
+                </tr>
+                <tr className="border-b border-gray-100 bg-[#FBFBEE]">
+                  <td className="p-3 text-gray-600">Distance from Erode</td>
+                  <td className="p-3 text-gray-800 font-medium">~22 km via NH-544</td>
+                  <td className="p-3 text-gray-500">0–10 km</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="p-3 text-gray-600">Placement Rate</td>
+                  <td className="p-3 text-gray-800 font-medium">80%+</td>
+                  <td className="p-3 text-gray-500">Varies</td>
+                </tr>
+                <tr className="border-b border-gray-100 bg-[#FBFBEE]">
+                  <td className="p-3 text-gray-600">Key Recruiters</td>
+                  <td className="p-3 text-gray-800 font-medium">TCS, Infosys, HDFC, Amazon</td>
+                  <td className="p-3 text-gray-500">Local / regional</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="p-3 text-gray-600">Campus Type</td>
+                  <td className="p-3 text-gray-800 font-medium">Residential + Day Scholar</td>
+                  <td className="p-3 text-gray-500">Day Scholar only (most)</td>
+                </tr>
+                <tr className="border-b border-gray-100 bg-[#FBFBEE]">
+                  <td className="p-3 text-gray-600">Hostel</td>
+                  <td className="p-3 text-gray-800 font-medium">Available (boys + girls)</td>
+                  <td className="p-3 text-gray-500">Limited</td>
+                </tr>
+                <tr>
+                  <td className="p-3 text-gray-600">Programmes</td>
+                  <td className="p-3 text-gray-800 font-medium">34 (UG + PG + Ph.D)</td>
+                  <td className="p-3 text-gray-500">Varies</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
-      <section aria-label="Frequently asked questions" className="bg-white py-14 sm:py-16">
+      <section id="faq-section" aria-label="Frequently asked questions" className="bg-white py-14 sm:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
@@ -1071,6 +1278,7 @@ export default function ErodePage() {
           </div>
         </div>
       </nav>
+      <p className="text-xs text-gray-400 text-center py-4">Page last updated: March 2026</p>
     </main>
   );
 }

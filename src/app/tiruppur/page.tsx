@@ -39,7 +39,7 @@ import {
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
   description:
-    "JKKN CAS — 85 km from Tiruppur via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.",
+    "JKKN CAS — 67 km from Tiruppur via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.",
   keywords: [
     "arts and science college near Tiruppur",
     "best college near Tiruppur",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
     description:
-      "JKKN CAS — 85 km from Tiruppur. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 67 km from Tiruppur. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/tiruppur",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
-    description: "JKKN CAS — 85 km from Tiruppur. NAAC-accredited, 80%+ placements. Admissions open 2026-27.",
+    description: "JKKN CAS — 67 km from Tiruppur. NAAC-accredited, 80%+ placements. Admissions open 2026-27.",
   },
 };
 
@@ -78,11 +78,11 @@ export default function TiruppurPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Tiruppur?",
-      a: "JKKN College of Arts and Science, located just 80-90 km from Tiruppur on NH-544, is widely regarded as one of the top arts and science colleges accessible from Tiruppur. Approved by UGC, NAAC and affiliated to Periyar University / Bharathiar University, it offers excellent programmes with strong placement support.",
+      a: "JKKN College of Arts and Science, ~67 km from Tiruppur on NH-544, is one of the top arts and science colleges accessible from Tiruppur. Approved by UGC, NAAC and affiliated to Periyar University / Bharathiar University, it offers excellent programmes with strong placement support.",
     },
     {
       q: "How far is JKKN CAS from Tiruppur?",
-      a: "JKKN CAS is approximately 80-90 km from Tiruppur city centre, which takes about 1.5-2 hours by road via NH-544 via Erode, then State Highway towards Tiruppur. Regular bus services are available from Tiruppur.",
+      a: "JKKN CAS is approximately 67 km from Tiruppur city centre, about 1.5 hours by road via NH-544 through Erode. Regular bus services are available from Tiruppur New Bus Stand towards Komarapalayam.",
     },
     {
       q: "Which courses are popular among Tiruppur students at JKKN CAS?",
@@ -98,7 +98,7 @@ export default function TiruppurPage() {
     },
     {
       q: "Does JKKN CAS provide hostel for Tiruppur students?",
-      a: "Yes, JKKN CAS provides separate hostel facilities for boys and girls. Students from Tiruppur can also opt for daily commute as the campus is just 1.5-2 hours away. College transport services are available.",
+      a: "Yes, JKKN CAS provides separate hostel facilities for boys and girls. Students from Tiruppur can also opt for daily commute as the campus is just ~1.5 hours away via NH-544. College transport services are available.",
     },
     {
       q: "How can I apply for admission at JKKN CAS?",
@@ -106,7 +106,7 @@ export default function TiruppurPage() {
     },
     {
       q: "Is there a direct bus from Tiruppur to JKKN CAS?",
-      a: "Yes. Regular buses run from Tiruppur New Bus Stand towards Erode and then onwards to Komarapalayam via NH-544. You can also take buses via Perundurai to Komarapalayam. Journey time is approximately 1.5 to 2 hours. College transport is also available for hostellers.",
+      a: "Yes. Regular buses run from Tiruppur New Bus Stand to Komarapalayam via Erode on NH-544, with journey time of approximately 1.5 hours. You can also take buses via Perundurai to Komarapalayam. College transport is also available for hostellers.",
     },
     {
       q: "How much does the hostel cost for Tiruppur students at JKKN?",
@@ -114,7 +114,7 @@ export default function TiruppurPage() {
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Tiruppur?",
-      a: "JKKN CAS offers several advantages over Tiruppur city colleges: fees are 30-50% lower, class sizes are smaller with personalised faculty attention, the 50+ acre green campus provides a distraction-free environment, and placement rates (80%+) are on par with city institutions. The same top recruiters — TCS, Infosys, HDFC, Amazon — visit JKKN CAS.",
+      a: "JKKN CAS offers clear advantages over Tiruppur city colleges. Fees are 30-50% lower, class sizes are smaller, the 50+ acre green campus is distraction-free, and placement rates (80%+) match city institutions. The same top recruiters — TCS, Infosys, HDFC, Amazon — visit JKKN CAS.",
     },
   ];
 
@@ -134,6 +134,12 @@ export default function TiruppurPage() {
             "@type": "CollegeOrUniversity",
             "name": "JKKN College of Arts and Science",
             "url": "https://cas.jkkn.ac.in",
+            "telephone": "+91-9345855001",
+            "sameAs": [
+              "https://www.facebook.com/jkkncas",
+              "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
+              "https://jkkn.ac.in"
+            ],
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
@@ -142,11 +148,18 @@ export default function TiruppurPage() {
               "postalCode": "638183",
               "addressCountry": "IN"
             },
-            "areaServed": {
-              "@type": "City",
-              "name": "Tiruppur",
-              "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Tiruppur",
+                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
+              },
+              {
+                "@type": "City",
+                "name": "Erode",
+                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
+              }
+            ],
             "geo": {
               "@type": "GeoCoordinates",
               "latitude": 11.44518,
@@ -174,7 +187,7 @@ export default function TiruppurPage() {
       />
       <CourseSchema
         name="BBA (Bachelor of Business Administration)"
-        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — 85 km from Tiruppur."
+        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — 67 km from Tiruppur."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -219,7 +232,7 @@ export default function TiruppurPage() {
             {[
               { value: "80%+", label: "PLACEMENTS" },
               { value: "5-7", label: "LPA HIGHEST" },
-              { value: "85km", label: "FROM TIRUPPUR" },
+              { value: "67km", label: "FROM TIRUPPUR" },
               { value: "4", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
@@ -282,15 +295,14 @@ export default function TiruppurPage() {
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
-                85<span className="text-2xl font-semibold text-[#006837]">km</span>
+                67<span className="text-2xl font-semibold text-[#006837]">km</span>
               </span>
               <div>
                 <div className="font-bold text-gray-800 text-base sm:text-lg">
                   From Tiruppur to JKKN CAS
                 </div>
                 <div className="text-gray-500 text-sm mt-1">
-                  1.5-2 hours via NH-544 via Erode, then State Highway towards
-                  Tiruppur
+                  ~1.5 hours via NH-544 through Erode to Komarapalayam
                 </div>
               </div>
             </div>
@@ -354,7 +366,7 @@ export default function TiruppurPage() {
               {
                 Icon: Bus,
                 title: "Easy Commute",
-                desc: "Just 80-90 km from Tiruppur. Daily commute or comfortable hostel — your choice.",
+                desc: "Just ~67 km from Tiruppur. Daily commute or comfortable hostel — your choice.",
               },
             ].map((item) => (
               <div
@@ -805,7 +817,7 @@ export default function TiruppurPage() {
                   Tiruppur → JKKN CAS Campus
                 </div>
                 <div className="text-[#7cb983] text-sm">
-                  80-90 km • 1.5-2 hours
+                  ~67 km • ~1.5 hours
                 </div>
               </div>
             </div>
@@ -816,7 +828,7 @@ export default function TiruppurPage() {
                 {
                   Icon: MapPin,
                   label: "ROUTE",
-                  info: "NH-544 via Erode, then State Highway towards Tiruppur",
+                  info: "Tiruppur → Erode → NH-544 → Komarapalayam (~67 km)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -828,7 +840,7 @@ export default function TiruppurPage() {
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Tiruppur Junction (~85 km from campus)",
+                  info: "Tiruppur Junction (~67 km from campus)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
