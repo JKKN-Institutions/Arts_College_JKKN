@@ -26,11 +26,12 @@ export default function AdminLogin() {
         const userId = authData.user?.id;
         const { data: profile } = await supabase
           .from('staff_profiles')
-          .select('college_id')
+          .select('college_id, role')
           .eq('id', userId)
           .single();
 
-        if (profile?.college_id !== process.env.NEXT_PUBLIC_COLLEGE_ID) {
+        const isCrossCollegeRole = profile?.role === 'seo' || profile?.role === 'super_admin';
+        if (!isCrossCollegeRole && profile?.college_id !== process.env.NEXT_PUBLIC_COLLEGE_ID) {
           await supabase.auth.signOut({ scope: 'local' });
           setError("You are not authorized to access this college's admin panel.");
         } else {

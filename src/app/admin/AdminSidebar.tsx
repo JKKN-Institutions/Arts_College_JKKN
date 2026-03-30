@@ -45,6 +45,7 @@ interface College { id: string; name: string }
 interface AdminSidebarProps {
   userEmail: string;
   isSuperAdmin?: boolean;
+  isStaff?: boolean;
   canSwitchCollege?: boolean;
   colleges?: College[];
   currentCollegeId?: string;
@@ -53,6 +54,7 @@ interface AdminSidebarProps {
 export default function AdminSidebar({
   userEmail,
   isSuperAdmin = false,
+  isStaff = false,
   canSwitchCollege = false,
   colleges = [],
   currentCollegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'education',
@@ -113,9 +115,38 @@ export default function AdminSidebar({
       </div>
 
 
+      {/* College Switcher */}
+      {canSwitchCollege && colleges.length > 0 && (
+        <div className="px-3 py-3 border-b border-white/10 relative">
+          <button
+            onClick={() => setCollegeSwitcherOpen((o) => !o)}
+            className="w-full flex items-center gap-2 px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 transition-all text-sm text-white"
+            disabled={switching}
+          >
+            <Building2 size={15} className="flex-shrink-0 text-white/60" />
+            <span className="flex-1 text-left truncate text-xs font-medium">{currentCollegeName}</span>
+            <ChevronsUpDown size={14} className="flex-shrink-0 text-white/50" />
+          </button>
+          {collegeSwitcherOpen && (
+            <div className="absolute left-3 right-3 top-full mt-1 bg-[#001a07] border border-white/10 rounded-xl shadow-xl z-50 overflow-hidden">
+              {colleges.map((c) => (
+                <button
+                  key={c.id}
+                  onClick={() => switchCollege(c.id)}
+                  className="w-full flex items-center gap-2 px-3 py-2.5 text-xs text-white/80 hover:bg-white/10 hover:text-white transition-all text-left"
+                >
+                  <Check size={13} className={c.id === currentCollegeId ? 'text-green-400' : 'invisible'} />
+                  <span className="truncate">{c.name}</span>
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
       {/* Nav */}
       <nav className="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
-        {topNavLinks.map(({ href, label, icon: Icon }) => {
+        {(isStaff ? topNavLinks.filter(l => l.href === '/admin/events' || l.href === '/admin/faculty') : topNavLinks).map(({ href, label, icon: Icon }) => {
           const active = pathname === href || pathname.startsWith(href + '/');
           return (
             <Link
@@ -136,7 +167,7 @@ export default function AdminSidebar({
         })}
 
         {/* Blog expandable section */}
-        <div>
+        {!isStaff && <div>
           <button
             onClick={() => setBlogOpen((o) => !o)}
             className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${
@@ -179,7 +210,7 @@ export default function AdminSidebar({
               })}
             </div>
           )}
-        </div>
+        </div>}
 
         {/* Colleges link — super_admin only */}
         {isSuperAdmin && (

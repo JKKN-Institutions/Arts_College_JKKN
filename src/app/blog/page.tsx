@@ -50,13 +50,27 @@ export default async function BlogPage() {
         { name: "Home", url: "https://cas.jkkn.ac.in" },
         { name: "Blog", url: "https://cas.jkkn.ac.in/blog" },
       ]} />
+
+      {/* ── Hero Banner ── */}
+      <section className="bg-[#0b6d41] py-16 px-4 text-center">
+        <p className="text-[#ffde59] text-xs font-semibold uppercase tracking-widest mb-3">
+          JKKN College of Arts and Science
+        </p>
+        <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">Our Blog</h1>
+        <p className="text-white/80 text-base sm:text-lg max-w-xl mx-auto">
+          Latest articles, insights and updates on arts &amp; science education, campus life, and careers.
+        </p>
+      </section>
+
       {/* ── Coming Soon — shown when no posts exist ── */}
       {!hasCampusPosts && (
-        <section className="min-h-[60vh] flex flex-col items-center justify-center px-4 text-center">
-          <div className="text-6xl mb-6">📝</div>
-          <h1 className="text-3xl font-bold text-[#002309] mb-3">Blog Coming Soon</h1>
+        <section className="min-h-[40vh] flex flex-col items-center justify-center px-4 text-center">
+          <div className="w-16 h-16 rounded-full bg-[#e8f0ec] flex items-center justify-center mb-5">
+            <Clock className="w-7 h-7 text-[#0b6d41]" />
+          </div>
+          <h2 className="text-2xl font-bold text-[#002309] mb-2">Coming Soon</h2>
           <p className="text-gray-500 max-w-md">
-            We&apos;re working on articles, campus news, and career insights. Check back soon!
+            We&apos;re working on some great articles for you. Stay tuned!
           </p>
         </section>
       )}
