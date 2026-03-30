@@ -29,7 +29,7 @@ export default function HeroSection() {
             <div>
               <h1 className="font-bold leading-tight" data-speakable>
                 <span className="text-white text-[22px] sm:text-[34px] lg:text-[40px] xl:text-[44px] leading-[30px] sm:leading-[42px] lg:leading-[48px] xl:leading-[52px] block mb-1 sm:mb-1.5">
-                  Shape Your Future at  JKKN College  of Arts and Science (Autonomous)
+                  Best Arts and Science College in Tamil Nadu — JKKN College (Autonomous)
                 </span>
                 {/* <span className="bg-gradient-to-r from-brand-yellow via-yellow-300 to-brand-yellow bg-clip-text text-transparent text-[30px] sm:text-[38px] lg:text-[44px] xl:text-[48px] leading-[38px] sm:leading-[46px] lg:leading-[52px] xl:leading-[56px] block mb-1.5">
                   JKKN College
@@ -42,28 +42,28 @@ export default function HeroSection() {
 
             {/* Description - More Compact */}
             <p className="hero-description text-[13px] sm:text-[15px] lg:text-[16px] leading-[20px] sm:leading-[24px] lg:leading-[26px] text-white/90 font-normal max-w-xl">
-              Transform your career with <span className="text-brand-yellow font-semibold">industry-integrated programs</span> in Science, Commerce, IT &amp; Management. Join <span className="text-brand-yellow font-semibold">1300+ students</span> building successful careers since 1952.
+              Transform your career at Tamil Nadu&apos;s top-rated arts and science college with <span className="text-brand-yellow font-semibold">industry-integrated programs</span> in Science, Commerce, IT &amp; Management. Join <span className="text-brand-yellow font-semibold">1300+ students</span> building successful careers since 1952. <span className="text-brand-yellow font-semibold">2026–27 admissions now open — limited seats.</span>
             </p>
 
             {/* Stats Row - Compact */}
             <div className="grid grid-cols-4 gap-2 sm:gap-3" data-speakable>
               {/* Stat 1 */}
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105" aria-label="95 percent placement rate">
                 <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">95%</div>
                 <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Placement</div>
               </div>
               {/* Stat 2 */}
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105" aria-label="1300 plus students enrolled">
                 <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">1300+</div>
                 <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Students</div>
               </div>
               {/* Stat 3 */}
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">17</div>
-                <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Programs</div>
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105" aria-label="27 plus UG PG and PhD programmes">
+                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">27+</div>
+                <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Programmes</div>
               </div>
               {/* Stat 4 */}
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105" aria-label="74 plus years of academic legacy since 1952">
                 <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">74+</div>
                 <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Years</div>
               </div>

@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { CourseSchema } from "@/components/seo/CourseSchema";
+import { FAQSchema } from "@/components/seo/FAQSchema";
 import ViewProgrammesButton from "@/components/ViewProgrammesButton";
 import {
   MapPin,
@@ -21,6 +24,9 @@ import {
   Wifi,
   Mountain,
   Star,
+  Award,
+  CheckCircle,
+  ChevronRight,
 } from "lucide-react";
 import {
   Accordion,
@@ -33,7 +39,7 @@ import {
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
   description:
-    "JKKN College of Arts and Science — just 85 km from Tiruppur via NH-544. World-class education at affordable fees with 80%+ placement support. UG programmes in Science, Commerce, BBA & BCA.",
+    "JKKN CAS — 67 km from Tiruppur via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.",
   keywords: [
     "arts and science college near Tiruppur",
     "best college near Tiruppur",
@@ -48,18 +54,156 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
     description:
-      "JKKN College of Arts and Science — just 85 km from Tiruppur. Affordable fees, 80%+ placements, UG programmes in Science, Commerce, BBA & BCA.",
+      "JKKN CAS — 67 km from Tiruppur. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/tiruppur",
     siteName: "JKKN College of Arts and Science",
     type: "website",
+    images: [
+      {
+        url: "https://cas.jkkn.ac.in/images/facilities/JKKN%20Arts%20Classroom.png",
+        width: 1200,
+        height: 630,
+        alt: "JKKN College of Arts and Science — modern classroom facility",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
+    description: "JKKN CAS — 67 km from Tiruppur. NAAC-accredited, 80%+ placements. Admissions open 2026-27.",
   },
 };
 
 export default function TiruppurPage() {
+  const faqs = [
+    {
+      q: "What is the best arts and science college in Tiruppur?",
+      a: "JKKN College of Arts and Science, ~67 km from Tiruppur on NH-544, is one of the top arts and science colleges accessible from Tiruppur. Approved by UGC, NAAC and affiliated to Periyar University / Bharathiar University, it offers excellent programmes with strong placement support.",
+    },
+    {
+      q: "How far is JKKN CAS from Tiruppur?",
+      a: "JKKN CAS is approximately 67 km from Tiruppur city centre, about 1.5 hours by road via NH-544 through Erode. Regular bus services are available from Tiruppur New Bus Stand towards Komarapalayam.",
+    },
+    {
+      q: "Which courses are popular among Tiruppur students at JKKN CAS?",
+      a: "BBA and B.Com are the most popular choices among Tiruppur students, given the city's thriving knitwear export industry. BCA is also in high demand as textile companies digitalise. JKKN CAS offers 34 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
+    },
+    {
+      q: "Can BCA students from Tiruppur get IT jobs?",
+      a: "Yes. BCA graduates from JKKN CAS are placed at companies like TCS, Infosys BPO, and other IT firms. Tiruppur's textile industry is increasingly adopting digital platforms and e-commerce, creating new IT opportunities for BCA graduates. The college provides placement training, aptitude coaching, and mock interviews.",
+    },
+    {
+      q: "Are JKKN CAS fees affordable compared to Tiruppur colleges?",
+      a: "Yes. JKKN CAS fees are competitively priced — often 30-50% lower than private colleges in Tiruppur city. Government scholarships (BC/MBC/SC/ST) and merit-based concessions are available. Contact the admission office at +91 9345855001 for the full fee structure.",
+    },
+    {
+      q: "Does JKKN CAS provide hostel for Tiruppur students?",
+      a: "Yes, JKKN CAS provides separate hostel facilities for boys and girls. Students from Tiruppur can also opt for daily commute as the campus is just ~1.5 hours away via NH-544. College transport services are available.",
+    },
+    {
+      q: "How can I apply for admission at JKKN CAS?",
+      a: "You can apply online through the official website at https://cas.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
+    },
+    {
+      q: "Is there a direct bus from Tiruppur to JKKN CAS?",
+      a: "Yes. Regular buses run from Tiruppur New Bus Stand to Komarapalayam via Erode on NH-544, with journey time of approximately 1.5 hours. You can also take buses via Perundurai to Komarapalayam. College transport is also available for hostellers.",
+    },
+    {
+      q: "How much does the hostel cost for Tiruppur students at JKKN?",
+      a: "Hostel fees at JKKN CAS are significantly lower than city PG accommodations. The fee includes furnished rooms, three meals a day, WiFi, and 24/7 security. Many Tiruppur students prefer the hostel for a focused academic environment. Contact the admission office at +91 9345855001 for the current fee structure.",
+    },
+    {
+      q: "Why should I choose JKKN CAS over colleges in Tiruppur?",
+      a: "JKKN CAS offers clear advantages over Tiruppur city colleges. Fees are 30-50% lower, class sizes are smaller, the 50+ acre green campus is distraction-free, and placement rates (80%+) match city institutions. The same top recruiters — TCS, Infosys, HDFC, Amazon — visit JKKN CAS.",
+    },
+  ];
+
   return (
-    <>
+    <main>
+      <BreadcrumbSchema items={[
+        { name: "Home", url: "https://cas.jkkn.ac.in" },
+        { name: "Tiruppur", url: "https://cas.jkkn.ac.in/tiruppur" },
+      ]} />
+      <FAQSchema faqs={faqs.map(f => ({ question: f.q, answer: f.a }))} />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollegeOrUniversity",
+            "name": "JKKN College of Arts and Science",
+            "url": "https://cas.jkkn.ac.in",
+            "telephone": "+91-9345855001",
+            "sameAs": [
+              "https://www.facebook.com/jkkncas",
+              "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
+              "https://jkkn.ac.in"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
+              "addressLocality": "Komarapalayam",
+              "addressRegion": "Tamil Nadu",
+              "postalCode": "638183",
+              "addressCountry": "IN"
+            },
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Tiruppur",
+                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
+              },
+              {
+                "@type": "City",
+                "name": "Erode",
+                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
+              }
+            ],
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 11.44518,
+              "longitude": 77.726549
+            }
+          })
+        }}
+      />
+
+      <CourseSchema
+        name="B.Sc (Various Specialisations)"
+        description="3-year undergraduate science programme with specialisations in Chemistry, Mathematics, Zoology, Physics, Microbiology, Computer Science, and more at JKKN CAS — accessible from Tiruppur."
+        duration="PT3Y"
+        educationalLevel="UG"
+        category="Aided"
+        url="/programmes/aided/ug/bsc-chemistry"
+      />
+      <CourseSchema
+        name="B.Com (Bachelor of Commerce)"
+        description="3-year undergraduate commerce programme with strong industry exposure and placement support at JKKN CAS, reachable from Tiruppur via NH-544."
+        duration="PT3Y"
+        educationalLevel="UG"
+        category="Aided"
+        url="/programmes/aided/ug/bcom"
+      />
+      <CourseSchema
+        name="BBA (Bachelor of Business Administration)"
+        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — 67 km from Tiruppur."
+        duration="PT3Y"
+        educationalLevel="UG"
+        category="Self-Finance"
+        url="/programmes/self-finance/ug/bba"
+      />
+      <CourseSchema
+        name="BCA (Bachelor of Computer Applications)"
+        description="3-year undergraduate IT programme with hands-on training and 80%+ placement rate at JKKN CAS, a quality alternative to Tiruppur city colleges."
+        duration="PT3Y"
+        educationalLevel="UG"
+        category="Self-Finance"
+        url="/programmes/self-finance/ug/bca"
+      />
+
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#002309] via-[#006837] to-[#002309] text-white overflow-hidden">
+      <section aria-label="Hero" className="relative bg-gradient-to-br from-[#002309] via-[#006837] to-[#002309] text-white overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#006837]/60 via-[#002309]/80 to-black/90" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center">
           {/* Badge */}
@@ -88,7 +232,7 @@ export default function TiruppurPage() {
             {[
               { value: "80%+", label: "PLACEMENTS" },
               { value: "5-7", label: "LPA HIGHEST" },
-              { value: "85km", label: "FROM TIRUPPUR" },
+              { value: "67km", label: "FROM TIRUPPUR" },
               { value: "4", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
@@ -146,20 +290,19 @@ export default function TiruppurPage() {
       </section>
 
       {/* Distance Card */}
-      <section className="bg-[#FBFBEE] py-10 sm:py-12">
+      <section aria-label="Distance from Tiruppur" className="bg-[#FBFBEE] py-10 sm:py-12">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
-                85<span className="text-2xl font-semibold text-[#006837]">km</span>
+                67<span className="text-2xl font-semibold text-[#006837]">km</span>
               </span>
               <div>
                 <div className="font-bold text-gray-800 text-base sm:text-lg">
                   From Tiruppur to JKKN CAS
                 </div>
                 <div className="text-gray-500 text-sm mt-1">
-                  1.5-2 hours via NH-544 via Erode, then State Highway towards
-                  Tiruppur
+                  ~1.5 hours via NH-544 through Erode to Komarapalayam
                 </div>
               </div>
             </div>
@@ -177,11 +320,11 @@ export default function TiruppurPage() {
       </section>
 
       {/* Why Tiruppur Students Choose JKKN CAS */}
-      <section className="bg-white py-14 sm:py-16">
+      <section aria-label="Why choose JKKN" className="bg-white py-14 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-              Why Tiruppur Students Choose JKKN CAS
+              Why Tiruppur Students Choose JKKN CAS for Their Future
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
               Tiruppur students no longer need to travel all the way to
@@ -223,7 +366,7 @@ export default function TiruppurPage() {
               {
                 Icon: Bus,
                 title: "Easy Commute",
-                desc: "Just 80-90 km from Tiruppur. Daily commute or comfortable hostel — your choice.",
+                desc: "Just ~67 km from Tiruppur. Daily commute or comfortable hostel — your choice.",
               },
             ].map((item) => (
               <div
@@ -242,11 +385,11 @@ export default function TiruppurPage() {
       </section>
 
       {/* Programmes Offered */}
-      <section className="bg-[#FBFBEE] py-14 sm:py-16">
+      <section aria-label="Programmes offered" className="bg-[#FBFBEE] py-14 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-              Programmes Offered
+              UG &amp; PG Programmes Near Tiruppur
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
               Choose the right programme for your career goals
@@ -263,6 +406,7 @@ export default function TiruppurPage() {
                 level: "UG",
                 intake: "200+ seats",
                 eligibility: "10+2 with relevant subjects",
+                href: "/programmes/aided/ug/bsc-chemistry",
               },
               {
                 Icon: BarChart2,
@@ -271,6 +415,7 @@ export default function TiruppurPage() {
                 level: "UG",
                 intake: "150 seats",
                 eligibility: "10+2 (Commerce preferred)",
+                href: "/programmes/aided/ug/bcom",
               },
               {
                 Icon: Briefcase,
@@ -279,6 +424,7 @@ export default function TiruppurPage() {
                 level: "UG",
                 intake: "60 seats",
                 eligibility: "10+2 (any stream)",
+                href: "/programmes/self-finance/ug/bba",
               },
               {
                 Icon: Monitor,
@@ -287,6 +433,7 @@ export default function TiruppurPage() {
                 level: "UG",
                 intake: "60 seats",
                 eligibility: "10+2 with Maths",
+                href: "/programmes/self-finance/ug/bca",
               },
             ].map((prog) => (
               <div
@@ -296,9 +443,9 @@ export default function TiruppurPage() {
                 <div className="mb-3">
                   <prog.Icon className="w-8 h-8 text-[#006837]" />
                 </div>
-                <div className="font-bold text-gray-800 text-sm mb-4 leading-snug">
+                <h3 className="font-bold text-gray-800 text-sm mb-4 leading-snug">
                   {prog.name}
-                </div>
+                </h3>
                 <div className="space-y-2 text-sm flex-1">
                   <div className="flex justify-between">
                     <span className="text-gray-400">Duration</span>
@@ -322,24 +469,156 @@ export default function TiruppurPage() {
                 <div className="mt-4 pt-4 border-t border-gray-100 text-xs text-gray-400">
                   {prog.eligibility}
                 </div>
+                <Link
+                  href={prog.href}
+                  className="mt-3 text-[#006837] hover:text-[#004d28] font-medium text-sm text-center transition-colors"
+                >
+                  View Programme Details →
+                </Link>
                 <a
                   href="tel:+919345855001"
-                  className="mt-4 bg-[#FBFBEE] hover:bg-[#7cb983]/20 text-[#006837] font-medium text-sm px-4 py-2.5 rounded-xl text-center transition-colors"
+                  className="mt-2 bg-[#FBFBEE] hover:bg-[#7cb983]/20 text-[#006837] font-medium text-sm px-4 py-2.5 rounded-xl text-center transition-colors"
                 >
                   Call Us
                 </a>
               </div>
             ))}
           </div>
+
+          {/* Complete Programme List */}
+          <div className="mt-12 pt-10 border-t border-gray-200">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">
+              All 34 Programmes Available Near Tiruppur
+            </h3>
+            <p className="text-gray-500 text-sm text-center mb-8">
+              Grouped by stream — click any programme for full details
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Aided UG */}
+              <div>
+                <h4 className="text-xs font-bold text-[#006837] tracking-wider mb-3 uppercase">Aided — UG</h4>
+                <ul className="space-y-1.5">
+                  {[
+                    { name: "B.A. English", href: "/programmes/aided/ug/ba-english" },
+                    { name: "B.A. History", href: "/programmes/aided/ug/ba-history" },
+                    { name: "B.Com", href: "/programmes/aided/ug/bcom" },
+                    { name: "B.Sc Chemistry", href: "/programmes/aided/ug/bsc-chemistry" },
+                    { name: "B.Sc Mathematics", href: "/programmes/aided/ug/bsc-maths" },
+                    { name: "B.Sc Zoology", href: "/programmes/aided/ug/bsc-zoology" },
+                  ].map((p) => (
+                    <li key={p.href}>
+                      <Link href={p.href} className="text-sm text-gray-600 hover:text-[#006837] flex items-center gap-1.5 transition-colors">
+                        <ChevronRight className="w-3.5 h-3.5 text-gray-300 flex-shrink-0" />
+                        {p.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Self-Finance UG */}
+              <div>
+                <h4 className="text-xs font-bold text-[#006837] tracking-wider mb-3 uppercase">Self-Finance — UG</h4>
+                <ul className="space-y-1.5">
+                  {[
+                    { name: "B.A. English", href: "/programmes/self-finance/ug/ba-english" },
+                    { name: "BBA", href: "/programmes/self-finance/ug/bba" },
+                    { name: "BCA", href: "/programmes/self-finance/ug/bca" },
+                    { name: "B.Com (Accounting & Finance)", href: "/programmes/self-finance/ug/bcom-accounting-finance" },
+                    { name: "B.Com (Banking & Insurance)", href: "/programmes/self-finance/ug/bcom-banking-insurance" },
+                    { name: "B.Com (CA)", href: "/programmes/self-finance/ug/bcom-ca" },
+                    { name: "B.Sc (AI & Data Science)", href: "/programmes/self-finance/ug/bsc-ai-ds" },
+                    { name: "B.Sc Computer Science", href: "/programmes/self-finance/ug/bsc-computer-science" },
+                    { name: "B.Sc (Cyber Security)", href: "/programmes/self-finance/ug/bsc-cs-cyber-security" },
+                    { name: "B.Sc Microbiology", href: "/programmes/self-finance/ug/bsc-microbiology" },
+                    { name: "B.Sc Physics", href: "/programmes/self-finance/ug/bsc-physics" },
+                    { name: "B.Sc Textile & Fashion Design", href: "/programmes/self-finance/ug/bsc-textile-fashion-designing" },
+                    { name: "B.Sc Visual Communication", href: "/programmes/self-finance/ug/bsc-visual-communication" },
+                  ].map((p) => (
+                    <li key={p.href}>
+                      <Link href={p.href} className="text-sm text-gray-600 hover:text-[#006837] flex items-center gap-1.5 transition-colors">
+                        <ChevronRight className="w-3.5 h-3.5 text-gray-300 flex-shrink-0" />
+                        {p.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* PG + Ph.D */}
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-xs font-bold text-[#006837] tracking-wider mb-3 uppercase">Aided — PG</h4>
+                  <ul className="space-y-1.5">
+                    {[
+                      { name: "M.A. History", href: "/programmes/aided/pg/ma-history" },
+                      { name: "MCA", href: "/programmes/aided/pg/mca" },
+                      { name: "M.Com", href: "/programmes/aided/pg/mcom" },
+                      { name: "M.Sc Chemistry", href: "/programmes/aided/pg/msc-chemistry" },
+                      { name: "M.Sc Computer Science", href: "/programmes/aided/pg/msc-computer-science" },
+                      { name: "M.Sc Physics", href: "/programmes/aided/pg/msc-physics" },
+                      { name: "M.Sc Zoology", href: "/programmes/aided/pg/msc-zoology" },
+                    ].map((p) => (
+                      <li key={p.href}>
+                        <Link href={p.href} className="text-sm text-gray-600 hover:text-[#006837] flex items-center gap-1.5 transition-colors">
+                          <ChevronRight className="w-3.5 h-3.5 text-gray-300 flex-shrink-0" />
+                          {p.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="text-xs font-bold text-[#006837] tracking-wider mb-3 uppercase">Self-Finance — PG</h4>
+                  <ul className="space-y-1.5">
+                    {[
+                      { name: "M.A. English", href: "/programmes/self-finance/pg/ma-english" },
+                      { name: "M.Com", href: "/programmes/self-finance/pg/mcom" },
+                      { name: "M.Sc Computer Science", href: "/programmes/self-finance/pg/msc-computer-science" },
+                      { name: "M.Sc (Data Analytics)", href: "/programmes/self-finance/pg/msc-cs-data-analytics" },
+                      { name: "M.Sc Mathematics", href: "/programmes/self-finance/pg/msc-mathematics" },
+                    ].map((p) => (
+                      <li key={p.href}>
+                        <Link href={p.href} className="text-sm text-gray-600 hover:text-[#006837] flex items-center gap-1.5 transition-colors">
+                          <ChevronRight className="w-3.5 h-3.5 text-gray-300 flex-shrink-0" />
+                          {p.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="text-xs font-bold text-[#006837] tracking-wider mb-3 uppercase">Research — Ph.D</h4>
+                  <ul className="space-y-1.5">
+                    {[
+                      { name: "Ph.D Chemistry", href: "/programmes/aided/phd/chemistry" },
+                      { name: "Ph.D Tamil", href: "/programmes/aided/phd/tamil" },
+                      { name: "Ph.D Zoology", href: "/programmes/aided/phd/zoology" },
+                    ].map((p) => (
+                      <li key={p.href}>
+                        <Link href={p.href} className="text-sm text-gray-600 hover:text-[#006837] flex items-center gap-1.5 transition-colors">
+                          <ChevronRight className="w-3.5 h-3.5 text-gray-300 flex-shrink-0" />
+                          {p.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Placement Highlights */}
-      <section className="bg-white py-14 sm:py-16">
+      <section aria-label="Placement highlights" className="bg-white py-14 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-              Placement Highlights
+              Career Outcomes for Tiruppur Students
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
               Our placement cell connects you with India&apos;s top employers
@@ -394,8 +673,128 @@ export default function TiruppurPage() {
         </div>
       </section>
 
+      {/* Admission Process */}
+      <section aria-label="Admission process" className="bg-[#FBFBEE] py-14 sm:py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+              How to Apply — Admission Process
+            </h2>
+            <p className="text-gray-500 text-sm sm:text-base">
+              5 simple steps to start your journey at JKKN CAS
+            </p>
+            <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
+          </div>
+
+          <div className="space-y-4">
+            {[
+              {
+                step: 1,
+                title: "Visit Website or Campus",
+                desc: "Explore programmes, facilities, and campus life at cas.jkkn.ac.in or visit the campus in person for a tour.",
+              },
+              {
+                step: 2,
+                title: "Fill the Application Form",
+                desc: "Apply online at admission.jkkn.ac.in or collect the application form from the campus admission office.",
+              },
+              {
+                step: 3,
+                title: "Submit Documents",
+                desc: "Upload or submit 10th and 12th mark sheets, transfer certificate, community certificate, and passport-size photos.",
+              },
+              {
+                step: 4,
+                title: "Counseling & Seat Allocation",
+                desc: "Attend the counseling session (in-person or online). Seats are allotted based on eligibility and availability.",
+              },
+              {
+                step: 5,
+                title: "Fee Payment & Enrollment",
+                desc: "Pay the semester fees, collect your ID card, and complete enrollment. Hostel booking available at this stage.",
+              },
+            ].map((item) => (
+              <div
+                key={item.step}
+                className="bg-white rounded-2xl p-5 border border-gray-100 flex items-start gap-4"
+              >
+                <div className="bg-[#006837] text-white w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
+                  {item.step}
+                </div>
+                <div>
+                  <div className="font-bold text-gray-800 text-sm mb-1">{item.title}</div>
+                  <div className="text-gray-500 text-xs leading-relaxed">{item.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 text-center flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-8 py-3 rounded-full text-base transition-colors"
+            >
+              Apply Online Now
+            </a>
+            <a
+              href="tel:+919345855001"
+              className="bg-[#006837] hover:bg-[#002309] text-white font-semibold px-8 py-3 rounded-full text-base transition-colors"
+            >
+              Call Admission Office
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Scholarships & Financial Aid */}
+      <section aria-label="Scholarships and financial aid" className="bg-white py-14 sm:py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+              Scholarships &amp; Financial Aid
+            </h2>
+            <p className="text-gray-500 text-sm sm:text-base">
+              Multiple scholarship options to make quality education affordable
+            </p>
+            <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
+            <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-gray-100">
+              <Award className="w-8 h-8 text-[#006837] mb-3" />
+              <h3 className="font-bold text-gray-800 mb-2">Government Scholarships</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Tamil Nadu government scholarships for BC, MBC, SC, and ST students.
+                Covers tuition fees partially or fully depending on community and income.
+                Applied through the State Scholarship Portal.
+              </p>
+            </div>
+            <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-gray-100">
+              <CheckCircle className="w-8 h-8 text-[#006837] mb-3" />
+              <h3 className="font-bold text-gray-800 mb-2">Merit-Based Concessions</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Fee concessions for students with outstanding academic performance in
+                10th and 12th examinations. Sports achievers and NCC cadets may also
+                be eligible for special concessions.
+              </p>
+            </div>
+            <div className="bg-[#FBFBEE] rounded-2xl p-6 border border-gray-100">
+              <Banknote className="w-8 h-8 text-[#006837] mb-3" />
+              <h3 className="font-bold text-gray-800 mb-2">Affordable Fee Structure</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                JKKN CAS fees are among the most affordable in the region — significantly
+                lower than city-based private colleges. EMI payment options available.
+                Contact the admission office for the complete fee breakdown.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How to Reach from Tiruppur */}
-      <section className="bg-[#FBFBEE] py-14 sm:py-16">
+      <section aria-label="How to reach" className="bg-[#FBFBEE] py-14 sm:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
@@ -418,7 +817,7 @@ export default function TiruppurPage() {
                   Tiruppur → JKKN CAS Campus
                 </div>
                 <div className="text-[#7cb983] text-sm">
-                  80-90 km • 1.5-2 hours
+                  ~67 km • ~1.5 hours
                 </div>
               </div>
             </div>
@@ -429,7 +828,7 @@ export default function TiruppurPage() {
                 {
                   Icon: MapPin,
                   label: "ROUTE",
-                  info: "NH-544 via Erode, then State Highway towards Tiruppur",
+                  info: "Tiruppur → Erode → NH-544 → Komarapalayam (~67 km)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -441,7 +840,7 @@ export default function TiruppurPage() {
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Tiruppur Junction (~85 km from campus)",
+                  info: "Tiruppur Junction (~67 km from campus)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -453,7 +852,7 @@ export default function TiruppurPage() {
                 {
                   Icon: Home,
                   label: "CAMPUS ADDRESS",
-                  info: "JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183",
+                  info: (<address className="not-italic inline">JKKN Institutions, Natarajapuram, NH-544, Komarapalayam (TK), Namakkal (DT), Tamil Nadu - 638183</address>),
                   bg: "bg-[#FBFBEE]",
                 },
               ].map(({ Icon, label, info, bg }) => (
@@ -477,7 +876,7 @@ export default function TiruppurPage() {
       </section>
 
       {/* Campus & Facilities */}
-      <section className="bg-white py-14 sm:py-16">
+      <section aria-label="Campus facilities" className="bg-white py-14 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
@@ -549,7 +948,8 @@ export default function TiruppurPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials — hidden until real testimonials are collected */}
+      {false && (
       <section className="bg-[#FBFBEE] py-14 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
@@ -613,9 +1013,10 @@ export default function TiruppurPage() {
           </div>
         </div>
       </section>
+      )}
 
       {/* FAQ Section */}
-      <section className="bg-white py-14 sm:py-16">
+      <section aria-label="Frequently asked questions" className="bg-white py-14 sm:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
@@ -628,36 +1029,7 @@ export default function TiruppurPage() {
           </div>
 
           <Accordion type="single" collapsible className="space-y-3">
-            {[
-              {
-                q: "What is the best arts and science college in Tiruppur?",
-                a: "JKKN College of Arts and Science, located just 80-90 km from Tiruppur on NH-544, is widely regarded as one of the top arts and science colleges accessible from Tiruppur. Approved by UGC, NAAC and affiliated to Periyar University / Bharathiar University, it offers excellent programmes with strong placement support.",
-              },
-              {
-                q: "How far is JKKN CAS from Tiruppur?",
-                a: "JKKN CAS is approximately 80-90 km from Tiruppur city centre, which takes about 1.5-2 hours by road via NH-544 via Erode, then State Highway towards Tiruppur. Regular bus services are available from Tiruppur.",
-              },
-              {
-                q: "What courses are available at JKKN CAS?",
-                a: "JKKN College of Arts and Science offers a wide range of undergraduate and postgraduate programmes including B.Sc, B.Com, BBA, BCA, and more. The college is known for its strong B.Com, BCA, and BBA programmes with good career outcomes.",
-              },
-              {
-                q: "Is BCA a good course for an IT career?",
-                a: "Yes, BCA (Bachelor of Computer Applications) is an excellent starting point for an IT career. At JKKN College of Arts and Science, BCA students learn programming, database management, web development, and software engineering. Graduates are eligible for jobs at IT companies.",
-              },
-              {
-                q: "What is the fee structure at JKKN CAS?",
-                a: "The fees at JKKN College of Arts and Science vary by programme and are competitively priced compared to city-based colleges. For the complete fee structure and scholarship information, contact the admission office.",
-              },
-              {
-                q: "Does JKKN CAS provide hostel for Tiruppur students?",
-                a: "Yes, JKKN CAS provides separate hostel facilities for boys and girls. Students from Tiruppur can also opt for daily commute as the campus is just 1.5-2 hours away. College transport services are available.",
-              },
-              {
-                q: "How can I apply for admission at JKKN CAS?",
-                a: "You can apply online through the official website at https://cas.jkkn.ac.in/ or visit the campus directly. Admissions for 2026-27 are currently open. Contact the admission office for guidance.",
-              },
-            ].map((item, i) => (
+            {faqs.map((item, i) => (
               <AccordionItem
                 key={i}
                 value={`item-${i}`}
@@ -676,7 +1048,7 @@ export default function TiruppurPage() {
       </section>
 
       {/* Explore More Cities */}
-      <section className="bg-[#FBFBEE] py-14 sm:py-16">
+      <nav aria-label="Other city pages" className="bg-[#FBFBEE] py-14 sm:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
@@ -713,7 +1085,7 @@ export default function TiruppurPage() {
             <ViewProgrammesButton />
           </div>
         </div>
-      </section>
-    </>
+      </nav>
+    </main>
   );
 }

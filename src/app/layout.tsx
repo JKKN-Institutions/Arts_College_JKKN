@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      "JKKN College of Arts and Science | Autonomous | Erode, TN",
+      "Best Arts and Science College in Tamil Nadu | JKKN College (Autonomous)",
     template: "%s | JKKN College of Arts and Science",
   },
   description:
-    "Autonomous college offering 27+ UG, PG & PhD programmes in Arts, Science & Commerce. Highest package ₹18 LPA. Near Erode, Tamil Nadu.",
+    "JKKN College — the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited, 95% placement, ₹18 LPA highest package. 27+ UG, PG & PhD programmes near Erode.",
   keywords: [
     "JKKN College of Arts and Science",
     "arts and science college near Erode",

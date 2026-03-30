@@ -121,6 +121,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/facilities/seminar-hall`, "yearly", 0.7),
     s(`${SITE_URL}/facilities/sports-club`, "yearly", 0.7),
     s(`${SITE_URL}/facilities/transport`, "yearly", 0.7),
+
+    // City landing pages
+    s(`${SITE_URL}/erode`, "monthly", 0.8),
+    s(`${SITE_URL}/namakkal`, "monthly", 0.8),
+    s(`${SITE_URL}/salem`, "monthly", 0.8),
+    s(`${SITE_URL}/tiruppur`, "monthly", 0.8),
+    s(`${SITE_URL}/coimbatore`, "monthly", 0.8),
   ];
 
   // Dynamic routes from Supabase
