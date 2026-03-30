@@ -1279,6 +1279,8 @@ export default function MobileNav(props: MobileNavProps) {
                           </Link>
                           <Link
                             href="https://docs.google.com/forms/d/e/1FAIpQLSdsEgswc7mGZIlP7NdedDOJd84J9Gqm9PG2_9RPXa6QMvusBQ/viewform"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >

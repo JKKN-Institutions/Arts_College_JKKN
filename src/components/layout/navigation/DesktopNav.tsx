@@ -1612,6 +1612,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="https://docs.google.com/forms/d/e/1FAIpQLSdsEgswc7mGZIlP7NdedDOJd84J9Gqm9PG2_9RPXa6QMvusBQ/viewform"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1650,6 +1652,10 @@ export default function DesktopNav(props: DesktopNavProps) {
           </div>
         )}
       </div>
+
+      <Link href="/admissions" className="text-gray-700 hover:text-brand-green transition font-bold uppercase hover:underline text-sm">
+        Admission
+      </Link>
 
       <Link href="/blog" className="text-gray-700 hover:text-brand-green transition font-bold uppercase hover:underline text-sm">
         Blog

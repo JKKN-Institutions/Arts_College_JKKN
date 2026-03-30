@@ -305,6 +305,13 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     href: '/contact',
   },
 
+  // Admission - Simple link
+  {
+    id: 'admission',
+    label: 'Admission',
+    href: '/admissions',
+  },
+
   // Blog - Simple link
   {
     id: 'blog',
