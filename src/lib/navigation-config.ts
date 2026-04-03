@@ -384,8 +384,34 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
             href: '/documents/nirf/NIRF-2024-COLLEGE.pdf',
           },
           {
-            label: 'NIRF 2025',
+            label: 'NIRF 2025 Overall',
+            href: '/documents/nirf/NIRF-2025-OVER-All.pdf',
+          },
+          {
+            label: 'NIRF 2025 Arts',
             href: '/documents/nirf/NIRF-2025-COLLEGE.pdf',
+          },
+          {
+            label: 'NIRF 2025 SDG',
+            href: '/documents/nirf/NIRF-2025-SDG.pdf',
+          },
+        ],
+      },
+      {
+        id: 'nirf-2026',
+        label: 'NIRF 2026',
+        items: [
+          {
+            label: 'Overall',
+            href: '/documents/nirf/J.K.K Nataraja College of Arts & Science20260402- Overall.pdf',
+          },
+          {
+            label: 'Arts',
+            href: '/documents/nirf/J.K.K Nataraja College of Arts & Science20260402-college.pdf',
+          },
+          {
+            label: 'SDG',
+            href: '/documents/nirf/J.K.K Nataraja College of Arts & Science20260402-  Sustainable Institutions.pdf',
           },
         ],
       },

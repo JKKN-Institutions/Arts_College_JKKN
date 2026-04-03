@@ -18,6 +18,8 @@ interface MobileNavProps {
   mobileFacilitiesExpanded: boolean;
   mobileOthersExpanded: boolean;
   mobileNirfExpanded: boolean;
+  mobileNirf2025Expanded: boolean;
+  mobileNirf2026Expanded: boolean;
   mobileCommitteesExpanded: boolean;
   mobileProgrammesExpanded: boolean;
   mobileAidedExpanded: boolean;
@@ -44,6 +46,8 @@ interface MobileNavProps {
   toggleMobileFacilities: () => void;
   toggleMobileOthers: () => void;
   toggleMobileNirf: () => void;
+  toggleMobileNirf2025: () => void;
+  toggleMobileNirf2026: () => void;
   toggleMobileCommittees: () => void;
   toggleMobileProgrammes: () => void;
   toggleMobileAided: () => void;
@@ -73,6 +77,8 @@ export default function MobileNav(props: MobileNavProps) {
     mobileFacilitiesExpanded,
     mobileOthersExpanded,
     mobileNirfExpanded,
+    mobileNirf2025Expanded,
+    mobileNirf2026Expanded,
     mobileCommitteesExpanded,
     mobileProgrammesExpanded,
     mobileAidedExpanded,
@@ -99,6 +105,8 @@ export default function MobileNav(props: MobileNavProps) {
     toggleMobileFacilities,
     toggleMobileOthers,
     toggleMobileNirf,
+    toggleMobileNirf2025,
+    toggleMobileNirf2026,
     toggleMobileCommittees,
     toggleMobileProgrammes,
     toggleMobileAided,
@@ -1233,13 +1241,76 @@ export default function MobileNav(props: MobileNavProps) {
                           >
                             NIRF 2024
                           </Link>
-                          <Link
-                            href="/documents/nirf/NIRF-2025-COLLEGE.pdf"
-                            onClick={toggleMobileMenu}
-                            className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
-                          >
-                            NIRF 2025
-                          </Link>
+                          {/* NIRF 2025 nested accordion */}
+                          <div className="ml-4">
+                            <button
+                              onClick={toggleMobileNirf2025}
+                              className="w-full flex items-center justify-between py-2 px-4 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                            >
+                              <span>NIRF 2025</span>
+                              <ChevronDown className={`w-4 h-4 transition-transform ${mobileNirf2025Expanded ? 'rotate-180' : ''}`} />
+                            </button>
+                            {mobileNirf2025Expanded && (
+                              <div className="pb-2">
+                                <Link
+                                  href="/documents/nirf/NIRF-2025-OVER-All.pdf"
+                                  onClick={toggleMobileMenu}
+                                  className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                                >
+                                  Overall
+                                </Link>
+                                <Link
+                                  href="/documents/nirf/NIRF-2025-COLLEGE.pdf"
+                                  onClick={toggleMobileMenu}
+                                  className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                                >
+                                  Arts
+                                </Link>
+                                <Link
+                                  href="/documents/nirf/NIRF-2025-SDG.pdf"
+                                  onClick={toggleMobileMenu}
+                                  className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                                >
+                                  SDG
+                                </Link>
+                              </div>
+                            )}
+                          </div>
+                          {/* NIRF 2026 nested accordion */}
+                          <div className="ml-4">
+                            <button
+                              onClick={toggleMobileNirf2026}
+                              className="w-full flex items-center justify-between py-2 px-4 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                            >
+                              <span>NIRF 2026</span>
+                              <ChevronDown className={`w-4 h-4 transition-transform ${mobileNirf2026Expanded ? 'rotate-180' : ''}`} />
+                            </button>
+                            {mobileNirf2026Expanded && (
+                              <div className="pb-2">
+                                <Link
+                                  href="/documents/nirf/J.K.K Nataraja College of Arts & Science20260402- Overall.pdf"
+                                  onClick={toggleMobileMenu}
+                                  className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                                >
+                                  Overall
+                                </Link>
+                                <Link
+                                  href="/documents/nirf/J.K.K Nataraja College of Arts & Science20260402-college.pdf"
+                                  onClick={toggleMobileMenu}
+                                  className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                                >
+                                  Arts
+                                </Link>
+                                <Link
+                                  href="/documents/nirf/J.K.K Nataraja College of Arts & Science20260402-  Sustainable Institutions.pdf"
+                                  onClick={toggleMobileMenu}
+                                  className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                                >
+                                  SDG
+                                </Link>
+                              </div>
+                            )}
+                          </div>
                         </div>
                       )}
                     </div>

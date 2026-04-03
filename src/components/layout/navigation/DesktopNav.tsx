@@ -92,6 +92,8 @@ interface DesktopNavProps {
   // Others
   othersOpen: boolean;
   nirfOpen: boolean;
+  nirf2025Open: boolean;
+  nirf2026Open: boolean;
   committeesOpen: boolean;
   othersButtonRef: React.RefObject<HTMLButtonElement | null>;
   othersDropdownRef: React.RefObject<HTMLDivElement | null>;
@@ -101,6 +103,8 @@ interface DesktopNavProps {
   handleOthersKeyDown: (e: React.KeyboardEvent) => void;
   handleOthersDropdownKeyDown: (e: React.KeyboardEvent) => void;
   setNirfOpen: (v: boolean) => void;
+  setNirf2025Open: (v: boolean) => void;
+  setNirf2026Open: (v: boolean) => void;
   setCommitteesOpen: (v: boolean) => void;
 
   // Departments (used by commented-out section, kept for completeness)
@@ -149,11 +153,11 @@ export default function DesktopNav(props: DesktopNavProps) {
     handleRtiMouseEnter, handleRtiMouseLeave,
     handleRtiClick, handleRtiKeyDown, handleRtiDropdownKeyDown,
 
-    othersOpen, nirfOpen, committeesOpen,
+    othersOpen, nirfOpen, nirf2025Open, nirf2026Open, committeesOpen,
     othersButtonRef, othersDropdownRef,
     handleOthersMouseEnter, handleOthersMouseLeave,
     handleOthersClick, handleOthersKeyDown, handleOthersDropdownKeyDown,
-    setNirfOpen, setCommitteesOpen,
+    setNirfOpen, setNirf2025Open, setNirf2026Open, setCommitteesOpen,
 
     departmentsOpen, aidedDeptOpen, selfFinanceDeptOpen,
     departmentsButtonRef, departmentsDropdownRef,
@@ -1559,14 +1563,88 @@ export default function DesktopNav(props: DesktopNavProps) {
                       >
                         NIRF 2024
                       </Link>
-                      <Link
-                        href="/documents/nirf/NIRF-2025-COLLEGE.pdf"
-                        role="menuitem"
-                        tabIndex={0}
-                        className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                      {/* NIRF 2025 Nested Submenu */}
+                      <div
+                        className="relative"
+                        onMouseEnter={() => setNirf2025Open(true)}
+                        onMouseLeave={() => setNirf2025Open(false)}
                       >
-                        NIRF 2025
-                      </Link>
+                        <div className="flex items-center justify-between px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition cursor-pointer text-sm">
+                          <span>NIRF 2025</span>
+                          <ChevronDown className="w-3 h-3 -rotate-90" />
+                        </div>
+                        {nirf2025Open && (
+                          <div className="absolute left-full top-0 pl-1 w-48 z-[120]">
+                            <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
+                              <Link
+                                href="/documents/nirf/NIRF-2025-OVER-All.pdf"
+                                role="menuitem"
+                                tabIndex={0}
+                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                              >
+                                Overall
+                              </Link>
+                              <Link
+                                href="/documents/nirf/NIRF-2025-COLLEGE.pdf"
+                                role="menuitem"
+                                tabIndex={0}
+                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                              >
+                                Arts
+                              </Link>
+                              <Link
+                                href="/documents/nirf/NIRF-2025-SDG.pdf"
+                                role="menuitem"
+                                tabIndex={0}
+                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                              >
+                                SDG
+                              </Link>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                      {/* NIRF 2026 Nested Submenu */}
+                      <div
+                        className="relative"
+                        onMouseEnter={() => setNirf2026Open(true)}
+                        onMouseLeave={() => setNirf2026Open(false)}
+                      >
+                        <div className="flex items-center justify-between px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition cursor-pointer text-sm">
+                          <span>NIRF 2026</span>
+                          <ChevronDown className="w-3 h-3 -rotate-90" />
+                        </div>
+                        {nirf2026Open && (
+                          <div className="absolute left-full top-0 pl-1 w-48 z-[120]">
+                            <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
+                              <Link
+                                href="/documents/nirf/J.K.K Nataraja College of Arts & Science20260402- Overall.pdf"
+                                role="menuitem"
+                                tabIndex={0}
+                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                              >
+                                Overall
+                              </Link>
+                              <Link
+                                href="/documents/nirf/J.K.K Nataraja College of Arts & Science20260402-college.pdf"
+                                role="menuitem"
+                                tabIndex={0}
+                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                              >
+                                Arts
+                              </Link>
+                              <Link
+                                href="/documents/nirf/J.K.K Nataraja College of Arts & Science20260402-  Sustainable Institutions.pdf"
+                                role="menuitem"
+                                tabIndex={0}
+                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                              >
+                                SDG
+                              </Link>
+                            </div>
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </div>
                 )}

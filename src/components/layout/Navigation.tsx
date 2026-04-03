@@ -36,9 +36,13 @@ export default function Navigation() {
   const [othersOpen, setOthersOpen] = useState(false);
   const [othersInteractionMode, setOthersInteractionMode] = useState<'hover' | 'click' | 'keyboard' | null>(null);
   const [nirfOpen, setNirfOpen] = useState(false);
+  const [nirf2025Open, setNirf2025Open] = useState(false);
+  const [nirf2026Open, setNirf2026Open] = useState(false);
   const [committeesOpen, setCommitteesOpen] = useState(false);
   const [mobileOthersExpanded, setMobileOthersExpanded] = useState(false);
   const [mobileNirfExpanded, setMobileNirfExpanded] = useState(false);
+  const [mobileNirf2025Expanded, setMobileNirf2025Expanded] = useState(false);
+  const [mobileNirf2026Expanded, setMobileNirf2026Expanded] = useState(false);
   const [mobileCommitteesExpanded, setMobileCommitteesExpanded] = useState(false);
 
   // Programmes Offered states
@@ -628,6 +632,14 @@ export default function Navigation() {
     setMobileNirfExpanded(!mobileNirfExpanded);
   };
 
+  const toggleMobileNirf2025 = () => {
+    setMobileNirf2025Expanded(!mobileNirf2025Expanded);
+  };
+
+  const toggleMobileNirf2026 = () => {
+    setMobileNirf2026Expanded(!mobileNirf2026Expanded);
+  };
+
   const toggleMobileCommittees = () => {
     setMobileCommitteesExpanded(!mobileCommitteesExpanded);
   };
@@ -1023,6 +1035,8 @@ export default function Navigation() {
             // Others
             othersOpen={othersOpen}
             nirfOpen={nirfOpen}
+            nirf2025Open={nirf2025Open}
+            nirf2026Open={nirf2026Open}
             committeesOpen={committeesOpen}
             othersButtonRef={othersButtonRef}
             othersDropdownRef={othersDropdownRef}
@@ -1032,6 +1046,8 @@ export default function Navigation() {
             handleOthersKeyDown={handleOthersKeyDown}
             handleOthersDropdownKeyDown={handleOthersDropdownKeyDown}
             setNirfOpen={setNirfOpen}
+            setNirf2025Open={setNirf2025Open}
+            setNirf2026Open={setNirf2026Open}
             setCommitteesOpen={setCommitteesOpen}
             // Departments
             departmentsOpen={departmentsOpen}
@@ -1064,6 +1080,8 @@ export default function Navigation() {
         mobileFacilitiesExpanded={mobileFacilitiesExpanded}
         mobileOthersExpanded={mobileOthersExpanded}
         mobileNirfExpanded={mobileNirfExpanded}
+        mobileNirf2025Expanded={mobileNirf2025Expanded}
+        mobileNirf2026Expanded={mobileNirf2026Expanded}
         mobileCommitteesExpanded={mobileCommitteesExpanded}
         mobileProgrammesExpanded={mobileProgrammesExpanded}
         mobileAidedExpanded={mobileAidedExpanded}
@@ -1089,6 +1107,8 @@ export default function Navigation() {
         toggleMobileFacilities={toggleMobileFacilities}
         toggleMobileOthers={toggleMobileOthers}
         toggleMobileNirf={toggleMobileNirf}
+        toggleMobileNirf2025={toggleMobileNirf2025}
+        toggleMobileNirf2026={toggleMobileNirf2026}
         toggleMobileCommittees={toggleMobileCommittees}
         toggleMobileProgrammes={toggleMobileProgrammes}
         toggleMobileAided={toggleMobileAided}

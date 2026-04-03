@@ -686,8 +686,38 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
           active: false
         },
         {
+          href: '/documents/nirf/NIRF-2025-OVER-All.pdf',
+          label: 'NIRF 2025 Overall',
+          icon: LayoutGrid,
+          active: false
+        },
+        {
           href: '/documents/nirf/NIRF-2025-COLLEGE.pdf',
-          label: 'NIRF 2025',
+          label: 'NIRF 2025 Arts',
+          icon: LayoutGrid,
+          active: false
+        },
+        {
+          href: '/documents/nirf/NIRF-2025-SDG.pdf',
+          label: 'NIRF 2025 SDG',
+          icon: LayoutGrid,
+          active: false
+        },
+        {
+          href: '/documents/nirf/J.K.K Nataraja College of Arts & Science20260402- Overall.pdf',
+          label: 'NIRF 2026 Overall',
+          icon: LayoutGrid,
+          active: false
+        },
+        {
+          href: '/documents/nirf/J.K.K Nataraja College of Arts & Science20260402-college.pdf',
+          label: 'NIRF 2026 Arts',
+          icon: LayoutGrid,
+          active: false
+        },
+        {
+          href: '/documents/nirf/J.K.K Nataraja College of Arts & Science20260402-  Sustainable Institutions.pdf',
+          label: 'NIRF 2026 SDG',
           icon: LayoutGrid,
           active: false
         },
