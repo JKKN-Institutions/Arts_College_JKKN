@@ -31,9 +31,10 @@ export default function DeleteAlbumButton({ id }: { id: string }) {
       <button
         onClick={() => setModalOpen(true)}
         disabled={loading}
-        className="flex items-center justify-center gap-1 text-xs font-medium text-red-500 hover:text-red-700 bg-red-50 hover:bg-red-100 px-3 py-2 rounded-lg transition disabled:opacity-50"
+        className="w-8 h-8 rounded-lg flex items-center justify-center text-gray-400 hover:text-red-600 hover:bg-red-50 transition-colors disabled:opacity-50"
+        title="Delete"
       >
-        {loading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Trash2 className="w-3.5 h-3.5" />}
+        {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Trash2 className="w-4 h-4" />}
       </button>
       <ConfirmModal
         open={modalOpen}

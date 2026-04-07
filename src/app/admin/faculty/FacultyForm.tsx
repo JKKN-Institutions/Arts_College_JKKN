@@ -34,9 +34,9 @@ const TABS = [
 ];
 
 const I =
-  'w-full px-3 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#006837] transition bg-white';
+  'w-full px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#0b6d41]/20 focus:border-[#0b6d41] transition bg-white';
 const IE =
-  'w-full px-3 py-2.5 border border-red-500 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-red-500 transition bg-white';
+  'w-full px-4 py-3 border border-red-400 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-red-500/20 focus:border-red-500 transition bg-white';
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -150,7 +150,7 @@ function AddBtn({ label, onClick }: { label: string; onClick: () => void }) {
     <button
       type="button"
       onClick={onClick}
-      className="flex items-center gap-1.5 text-xs font-medium text-[#006837] hover:text-[#005a2e] border border-[#006837] hover:bg-green-50 rounded-lg px-3 py-1.5 transition mt-2"
+      className="flex items-center gap-1.5 text-xs font-medium text-[#0b6d41] hover:text-[#004d28] border border-[#0b6d41] hover:bg-green-50 rounded-lg px-3 py-1.5 transition mt-2"
     >
       <Plus className="w-3.5 h-3.5" />
       {label}
@@ -479,7 +479,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
           <div className="flex items-start gap-4">
             <div
               onClick={() => fileInputRef.current?.click()}
-              className={`relative w-24 h-24 rounded-2xl border-2 border-dashed overflow-hidden cursor-pointer transition flex-shrink-0 ${errors.photo ? 'border-red-500 hover:border-red-600' : 'border-gray-200 hover:border-[#006837]'}`}
+              className={`relative w-24 h-24 rounded-2xl border-2 border-dashed overflow-hidden cursor-pointer transition flex-shrink-0 ${errors.photo ? 'border-red-500 hover:border-red-600' : 'border-gray-200 hover:border-[#0b6d41]'}`}
             >
               {photoPreview ? (
                 <>
@@ -1686,16 +1686,16 @@ export default function FacultyForm({ member }: FacultyFormProps) {
   return (
     <form onSubmit={handleSubmit}>
       {/* Tab Navigation */}
-      <div className="flex gap-1 border-b border-gray-100 mb-6 overflow-x-auto">
+      <div className="flex gap-1 border-b border-gray-200 mb-8 overflow-x-auto scrollbar-none" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
         {TABS.map((tab, i) => (
           <button
             key={tab}
             type="button"
             onClick={() => setActiveTab(i)}
-            className={`px-4 py-2.5 text-sm font-medium whitespace-nowrap rounded-t-lg transition ${
+            className={`px-5 py-3 text-sm font-medium whitespace-nowrap transition-colors relative ${
               activeTab === i
-                ? 'bg-[#006837] text-white'
-                : 'text-gray-500 hover:text-gray-800 hover:bg-gray-50'
+                ? 'text-[#0b6d41] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#0b6d41] after:rounded-full'
+                : 'text-gray-500 hover:text-gray-800'
             }`}
           >
             {tab}
@@ -1707,7 +1707,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
       <div className="space-y-6">{renderTab()}</div>
 
       {/* Footer Buttons */}
-      <div className="flex items-center gap-3 pt-6 border-t border-gray-100 mt-8">
+      <div className="flex items-center justify-end gap-3 pt-6 border-t border-gray-200 mt-8">
         {activeTab < TABS.length - 1 ? (
           <button
             type="button"
@@ -1738,7 +1738,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
               }
               setActiveTab(activeTab + 1);
             }}
-            className="flex items-center gap-2 bg-[#006837] text-white text-sm font-semibold px-6 py-2.5 rounded-xl hover:bg-[#005a2e] transition"
+            className="flex items-center gap-2 bg-[#0b6d41] text-white text-sm font-semibold px-6 py-2.5 rounded-xl hover:bg-[#004d28] transition"
           >
             Save &amp; Next
           </button>
@@ -1746,7 +1746,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
           <button
             type="submit"
             disabled={saving || uploading}
-            className="flex items-center gap-2 bg-[#006837] text-white text-sm font-semibold px-6 py-2.5 rounded-xl hover:bg-[#005a2e] transition disabled:opacity-50"
+            className="flex items-center gap-2 bg-[#0b6d41] text-white text-sm font-semibold px-6 py-2.5 rounded-xl hover:bg-[#004d28] transition disabled:opacity-50"
           >
             {(saving || uploading) && <Loader2 className="w-4 h-4 animate-spin" />}
             {isEdit ? 'Update Member' : 'Add Faculty Member'}

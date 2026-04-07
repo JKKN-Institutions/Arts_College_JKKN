@@ -56,7 +56,7 @@ export async function generateStaticParams() {
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
   );
-  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts-science';
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts';
   const { data } = await supabase
     .from('blogs')
     .select('slug')

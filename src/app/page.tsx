@@ -544,14 +544,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Did You Know? — Micro-fact for AI citation */}
-            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 border-2 border-yellow-300 rounded-xl p-6 text-center hover:shadow-lg transition md:col-span-2 lg:col-span-4">
-              <div className="text-[14px] font-semibold text-[#0b6d41] uppercase tracking-wide mb-2">Did You Know?</div>
-              <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] text-gray-800 max-w-3xl mx-auto">
-                JKKN College of Arts and Science is part of <strong>J.K.K. Nattraja Educational Institutions</strong>, one of the oldest educational groups in Tamil Nadu with a <strong>74+ year legacy since 1952</strong>. The group operates 8 colleges and 2 schools — including Dental, Pharmacy, Nursing, Engineering, and Allied Health Sciences — all on a single integrated campus on NH-544.
-              </p>
-            </div>
-
             {/* Card 8: Hostel Facilities */}
             <div className="bg-white border border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition">
               <div className="bg-[#0b6d41] p-4 rounded-xl w-16 h-16 flex items-center justify-center mx-auto mb-4">
@@ -560,6 +552,14 @@ export default function Home() {
               <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Hostel Facilities</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
                 Separate hostels for men and women with modern amenities, Wi-Fi, and 24/7 security
+              </p>
+            </div>
+
+            {/* Did You Know? — Micro-fact for AI citation */}
+            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 border-2 border-yellow-300 rounded-xl p-6 text-center hover:shadow-lg transition md:col-span-2 lg:col-span-4">
+              <div className="text-[14px] font-semibold text-[#0b6d41] uppercase tracking-wide mb-2">Did You Know?</div>
+              <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] text-gray-800 max-w-3xl mx-auto">
+                JKKN College of Arts and Science is part of <strong>J.K.K. Nattraja Educational Institutions</strong>, one of the oldest educational groups in Tamil Nadu with a <strong>74+ year legacy since 1952</strong>. The group operates 8 colleges and 2 schools — including Dental, Pharmacy, Nursing, Engineering, and Allied Health Sciences — all on a single integrated campus on NH-544.
               </p>
             </div>
           </div>

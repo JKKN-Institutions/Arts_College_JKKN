@@ -1,8 +1,11 @@
 import { createClient } from '@/lib/supabase/server';
 import { getAdminCollegeId } from '@/lib/get-admin-college';
 import AdminSidebar from './AdminSidebar';
+import TopHeader from './TopHeader';
 import ToastProvider from './ToastProvider';
 import { AdminCollegeProvider } from './AdminCollegeContext';
+import { AdminPanelProvider } from './AdminPanelContext';
+import { AdminMainContent } from './AdminShell';
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient();
@@ -13,28 +16,30 @@ export default async function AdminLayout({ children }: { children: React.ReactN
   let currentCollegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
 
   try {
-    // getSession reads from the cookie — no network round-trip to Supabase auth server.
     const { data: { session } } = await supabase.auth.getSession();
     user = session?.user ?? null;
 
     if (user) {
-      const { data: profile } = await supabase
-        .from('staff_profiles')
-        .select('role')
-        .eq('id', user.id)
-        .single();
+      const [profileResult, collegesResult] = await Promise.all([
+        supabase
+          .from('staff_profiles')
+          .select('role')
+          .eq('id', user.id)
+          .single(),
+        supabase
+          .from('colleges')
+          .select('id, name')
+          .eq('is_active', true)
+          .order('name'),
+      ]);
 
+      const profile = profileResult.data;
       isSuperAdmin = profile?.role === 'super_admin';
       isStaff = profile?.role === 'staff';
       const canSwitchCollege = isSuperAdmin || profile?.role === 'seo';
 
       if (canSwitchCollege) {
-        const { data } = await supabase
-          .from('colleges')
-          .select('id, name')
-          .eq('is_active', true)
-          .order('name');
-        colleges = data ?? [];
+        colleges = collegesResult.data ?? [];
         currentCollegeId = await getAdminCollegeId();
       }
     }
@@ -44,20 +49,30 @@ export default async function AdminLayout({ children }: { children: React.ReactN
 
   return (
     <AdminCollegeProvider collegeId={currentCollegeId}>
-      <div className="min-h-screen bg-gray-50 flex">
-        <ToastProvider />
-        {user && (
-          <AdminSidebar
-            userEmail={user.email ?? ''}
-            isSuperAdmin={isSuperAdmin}
-            isStaff={isStaff}
-            colleges={colleges}
-            currentCollegeId={currentCollegeId}
-            canSwitchCollege={isSuperAdmin || colleges.length > 0}
-          />
-        )}
-        <main className={`flex-1 ${user ? 'lg:ml-64' : ''} min-h-screen`}>{children}</main>
-      </div>
+      <AdminPanelProvider>
+        <div className="min-h-screen flex">
+          <ToastProvider />
+          {user && (
+            <AdminSidebar
+              userEmail={user.email ?? ''}
+              isSuperAdmin={isSuperAdmin}
+              isStaff={isStaff}
+              colleges={colleges}
+              currentCollegeId={currentCollegeId}
+              canSwitchCollege={isSuperAdmin || colleges.length > 0}
+            />
+          )}
+          <AdminMainContent hasUser={!!user}>
+            {user && (
+              <TopHeader
+                userEmail={user.email ?? ''}
+                isSuperAdmin={isSuperAdmin}
+              />
+            )}
+            <main className="flex-1">{children}</main>
+          </AdminMainContent>
+        </div>
+      </AdminPanelProvider>
     </AdminCollegeProvider>
   );
 }

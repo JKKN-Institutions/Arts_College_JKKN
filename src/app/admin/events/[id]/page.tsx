@@ -10,14 +10,14 @@ export default async function EditEvent({ params }: { params: Promise<{ id: stri
 
   const { data: event } = await supabase
     .from('events')
-    .select('id, title, slug, description, event_date, event_time, venue, image_url, is_published')
+    .select('*')
     .eq('id', id)
     .single();
 
   if (!event) notFound();
 
   return (
-    <div className="p-4 sm:p-6 lg:p-8 max-w-3xl">
+    <div className="p-4 sm:p-6 lg:p-8">
       <Link
         href="/admin/events"
         className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-800 mb-6 transition"
@@ -28,7 +28,7 @@ export default async function EditEvent({ params }: { params: Promise<{ id: stri
 
       <h1 className="text-2xl font-bold text-gray-900 mb-6">Edit Event</h1>
 
-      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 sm:p-6">
+      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 sm:p-8">
         <EventForm event={event} />
       </div>
     </div>

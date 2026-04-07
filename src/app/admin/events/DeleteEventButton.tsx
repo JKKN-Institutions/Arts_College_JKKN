@@ -31,10 +31,10 @@ export default function DeleteEventButton({ id }: { id: string }) {
       <button
         onClick={() => setModalOpen(true)}
         disabled={loading}
-        className="flex items-center gap-1.5 text-xs font-medium text-red-500 hover:text-red-700 px-3 py-1.5 rounded-lg hover:bg-red-50 transition disabled:opacity-50"
+        className="w-8 h-8 rounded-lg flex items-center justify-center text-gray-400 hover:text-red-600 hover:bg-red-50 transition-colors disabled:opacity-50"
+        title="Delete"
       >
-        {loading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Trash2 className="w-3.5 h-3.5" />}
-        Delete
+        {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Trash2 className="w-4 h-4" />}
       </button>
       <ConfirmModal
         open={modalOpen}

@@ -10,7 +10,7 @@
  */
 export const siteConfig = {
   /** Database college identifier — must match the `id` in the colleges table */
-  id: process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts-science',
+  id: process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts',
 
   /** Full institution name shown in metadata, headers, footer */
   name:

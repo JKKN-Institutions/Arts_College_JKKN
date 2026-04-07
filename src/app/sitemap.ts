@@ -135,7 +135,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   try {
     const supabase = await createClient();
-    const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? "arts-science";
+    const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? "arts";
 
     const [{ data: blogs }, { data: events }] = await Promise.all([
       supabase

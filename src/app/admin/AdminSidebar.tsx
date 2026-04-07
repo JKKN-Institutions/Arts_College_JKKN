@@ -3,15 +3,14 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { createClient } from '@/lib/supabase/client';
 import { siteConfig } from '@/lib/site-config';
+import { useAdminPanel } from './AdminPanelContext';
 import {
   GraduationCap,
   LayoutDashboard,
   FileText,
   Image as ImageIcon,
   Bell,
-  LogOut,
   Menu,
   X,
   ChevronRight,
@@ -26,18 +25,33 @@ import {
   Check,
 } from 'lucide-react';
 
-const topNavLinks = [
+/* ------------------------------------------------------------------ */
+/*  Navigation config                                                  */
+/* ------------------------------------------------------------------ */
+
+const mainNavLinks = [
   { href: '/admin/dashboard', label: 'Dashboard', icon: LayoutDashboard },
+];
+
+const contentLinks = [
   { href: '/admin/events', label: 'Events', icon: CalendarDays },
   { href: '/admin/gallery', label: 'Gallery', icon: ImageIcon },
   { href: '/admin/notices', label: 'Notices', icon: Bell },
-  { href: '/admin/faculty', label: 'Faculty', icon: Users },
 ];
 
-const blogSubLinksFixed = [
+const blogSubLinks = [
   { href: '/admin/blogs', label: 'All Posts', icon: Pencil },
   { href: '/admin/blogs/categories', label: 'Categories', icon: FolderOpen },
   { href: '/admin/blogs/comments', label: 'Comments', icon: MessageSquare },
+];
+
+const peopleLinks = [
+  { href: '/admin/faculty', label: 'Faculty', icon: Users },
+];
+
+const staffLinks = [
+  { href: '/admin/events', label: 'Events', icon: CalendarDays },
+  { href: '/admin/faculty', label: 'Faculty', icon: Users },
 ];
 
 interface College { id: string; name: string }
@@ -61,23 +75,17 @@ export default function AdminSidebar({
 }: AdminSidebarProps) {
   const pathname = usePathname();
   const router = useRouter();
+  const { sidebarCollapsed, theme } = useAdminPanel();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [collegeSwitcherOpen, setCollegeSwitcherOpen] = useState(false);
   const [switching, setSwitching] = useState(false);
-  const [showLogoutModal, setShowLogoutModal] = useState(false);
-
   const isBlogActive = pathname === '/admin/blogs' || pathname.startsWith('/admin/blogs/');
   const [blogOpen, setBlogOpen] = useState(isBlogActive);
 
   const currentCollege = colleges.find((c) => c.id === currentCollegeId);
   const currentCollegeName = currentCollege?.name ?? currentCollegeId;
-
-  async function handleLogout() {
-    const supabase = createClient();
-    await supabase.auth.signOut({ scope: 'local' });
-    router.push('/admin/login');
-    router.refresh();
-  }
+  const collapsed = sidebarCollapsed;
+  const isDark = theme === 'dark';
 
   async function switchCollege(collegeId: string) {
     if (collegeId === currentCollegeId || switching) return;
@@ -95,220 +103,273 @@ export default function AdminSidebar({
     }
   }
 
-  const initials = userEmail ? userEmail[0].toUpperCase() : 'A';
+  function isActive(href: string) {
+    if (href === '/admin/dashboard') return pathname === '/admin/dashboard';
+    return pathname === href || pathname.startsWith(href + '/');
+  }
 
-  const SidebarContent = () => (
-    <div className="flex flex-col h-full">
-      {/* Logo */}
-      <div className="px-6 py-5 border-b border-white/10">
-        <div className="flex items-center gap-3">
-          <div className="w-9 h-9 bg-white/15 rounded-xl flex items-center justify-center flex-shrink-0">
-            <GraduationCap className="w-5 h-5 text-white" />
-          </div>
-          <div>
-            <p className="text-white font-bold text-sm leading-tight">{siteConfig.shortName}</p>
-            <p className="text-white/50 text-[11px]">
-              {isSuperAdmin ? 'Super Admin' : 'Admin Panel'}
-            </p>
-          </div>
-        </div>
-      </div>
+  /* ---------------------------------------------------------------- */
+  /*  Nav link                                                         */
+  /* ---------------------------------------------------------------- */
 
+  function NavLink({ href, label, icon: Icon }: { href: string; label: string; icon: React.ElementType }) {
+    const active = isActive(href);
+    return (
+      <Link
+        href={href}
+        onClick={() => setMobileOpen(false)}
+        className={`flex items-center gap-3 rounded-xl text-[13px] font-medium transition-all duration-200 ${
+          collapsed ? 'justify-center px-0 py-2.5' : 'px-3 py-2.5'
+        } ${
+          active
+            ? 'bg-[#0b6d41] text-white'
+            : isDark
+              ? 'text-gray-400 hover:bg-gray-700/50 hover:text-gray-200'
+              : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+        }`}
+        title={collapsed ? label : undefined}
+      >
+        <Icon className="w-[18px] h-[18px] flex-shrink-0" />
+        {!collapsed && <span>{label}</span>}
+      </Link>
+    );
+  }
 
-      {/* College Switcher */}
-      {canSwitchCollege && colleges.length > 0 && (
-        <div className="px-3 py-3 border-b border-white/10 relative">
-          <button
-            onClick={() => setCollegeSwitcherOpen((o) => !o)}
-            className="w-full flex items-center gap-2 px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 transition-all text-sm text-white"
-            disabled={switching}
-          >
-            <Building2 size={15} className="flex-shrink-0 text-white/60" />
-            <span className="flex-1 text-left truncate text-xs font-medium">{currentCollegeName}</span>
-            <ChevronsUpDown size={14} className="flex-shrink-0 text-white/50" />
-          </button>
-          {collegeSwitcherOpen && (
-            <div className="absolute left-3 right-3 top-full mt-1 bg-[#001a07] border border-white/10 rounded-xl shadow-xl z-50 overflow-hidden">
-              {colleges.map((c) => (
-                <button
-                  key={c.id}
-                  onClick={() => switchCollege(c.id)}
-                  className="w-full flex items-center gap-2 px-3 py-2.5 text-xs text-white/80 hover:bg-white/10 hover:text-white transition-all text-left"
-                >
-                  <Check size={13} className={c.id === currentCollegeId ? 'text-green-400' : 'invisible'} />
-                  <span className="truncate">{c.name}</span>
-                </button>
-              ))}
+  /* ---------------------------------------------------------------- */
+  /*  Section label                                                    */
+  /* ---------------------------------------------------------------- */
+
+  function SectionLabel({ label }: { label: string }) {
+    if (collapsed) {
+      return <div className="my-3 mx-2 h-px bg-gray-200 dark:bg-gray-700" />;
+    }
+    return (
+      <p className={`px-3 pt-5 pb-1.5 text-[10px] font-semibold tracking-[0.08em] uppercase ${
+        isDark ? 'text-gray-500' : 'text-gray-400'
+      }`}>
+        {label}
+      </p>
+    );
+  }
+
+  /* ---------------------------------------------------------------- */
+  /*  Sidebar bg/border classes                                        */
+  /* ---------------------------------------------------------------- */
+
+  const sidebarBg = isDark
+    ? 'bg-gray-800 border-r border-gray-700'
+    : 'bg-white border-r border-gray-200';
+
+  /* ---------------------------------------------------------------- */
+  /*  Sidebar content                                                  */
+  /* ---------------------------------------------------------------- */
+
+  const SidebarContent = ({ isMobile = false }: { isMobile?: boolean }) => {
+    const isCollapsed = isMobile ? false : collapsed;
+
+    return (
+      <div className="flex flex-col h-full">
+        {/* Logo + Identity */}
+        <div className={`py-5 ${isCollapsed ? 'px-3 flex justify-center' : 'px-5'}`}>
+          <div className={`flex items-center ${isCollapsed ? 'justify-center' : 'gap-3'}`}>
+            <div className="w-10 h-10 bg-[#0b6d41] rounded-xl flex items-center justify-center flex-shrink-0">
+              <GraduationCap className="w-5 h-5 text-white" />
             </div>
-          )}
-        </div>
-      )}
-
-      {/* Nav */}
-      <nav className="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
-        {(isStaff ? topNavLinks.filter(l => l.href === '/admin/events' || l.href === '/admin/faculty') : topNavLinks).map(({ href, label, icon: Icon }) => {
-          const active = pathname === href || pathname.startsWith(href + '/');
-          return (
-            <Link
-              key={href}
-              href={href}
-              onClick={() => setMobileOpen(false)}
-              className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${
-                active
-                  ? 'bg-white text-[#006837]'
-                  : 'text-white/70 hover:bg-white/10 hover:text-white'
-              }`}
-            >
-              <Icon className="w-4.5 h-4.5 flex-shrink-0" size={18} />
-              <span>{label}</span>
-              {active && <ChevronRight className="ml-auto w-3.5 h-3.5 text-[#006837]" />}
-            </Link>
-          );
-        })}
-
-        {/* Blog expandable section */}
-        {!isStaff && <div>
-          <button
-            onClick={() => setBlogOpen((o) => !o)}
-            className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${
-              isBlogActive
-                ? 'bg-white/10 text-white'
-                : 'text-white/70 hover:bg-white/10 hover:text-white'
-            }`}
-          >
-            <FileText size={18} className="flex-shrink-0" />
-            <span>Blog</span>
-            {blogOpen ? (
-              <ChevronDown className="ml-auto w-3.5 h-3.5" />
-            ) : (
-              <ChevronRight className="ml-auto w-3.5 h-3.5" />
+            {!isCollapsed && (
+              <div className="min-w-0">
+                <p className={`font-semibold text-sm leading-tight truncate ${isDark ? 'text-gray-100' : 'text-[#002309]'}`}>
+                  {siteConfig.shortName}
+                </p>
+                <p className="text-[#0b6d41] text-[11px] font-medium flex items-center gap-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#0b6d41] inline-block" />
+                  {isSuperAdmin ? 'Super Admin' : isStaff ? 'Staff' : 'Admin Panel'}
+                </p>
+              </div>
             )}
-          </button>
+          </div>
+        </div>
 
-          {blogOpen && (
-            <div className="mt-1 ml-4 pl-3 border-l border-white/10 space-y-0.5">
-              {blogSubLinksFixed.map(({ href, label, icon: Icon }) => {
-                const active =
-                  href === '/admin/blogs'
-                    ? pathname === '/admin/blogs'
-                    : pathname === href || pathname.startsWith(href + '/');
-                return (
-                  <Link
-                    key={href}
-                    href={href}
-                    onClick={() => setMobileOpen(false)}
-                    className={`flex items-center gap-3 px-3 py-2 rounded-xl text-sm font-medium transition-all ${
-                      active
-                        ? 'bg-white text-[#006837]'
-                        : 'text-white/60 hover:bg-white/10 hover:text-white'
+        {/* College Switcher — hidden when collapsed */}
+        {!isCollapsed && canSwitchCollege && colleges.length > 0 && (
+          <div className="px-3 pb-3 relative">
+            <button
+              onClick={() => setCollegeSwitcherOpen((o) => !o)}
+              className={`w-full flex items-center gap-2.5 px-3 py-2.5 rounded-xl transition-all text-sm border ${
+                isDark
+                  ? 'bg-gray-700/50 hover:bg-gray-700 text-gray-300 border-gray-600'
+                  : 'bg-gray-50 hover:bg-gray-100 text-gray-700 border-gray-200'
+              }`}
+              disabled={switching}
+            >
+              <Building2 size={15} className="flex-shrink-0 text-gray-400" />
+              <span className="flex-1 text-left truncate text-xs font-medium">{currentCollegeName}</span>
+              <ChevronsUpDown size={14} className="flex-shrink-0 text-gray-400" />
+            </button>
+            {collegeSwitcherOpen && (
+              <div className={`absolute left-3 right-3 top-full mt-1 border rounded-xl shadow-xl z-50 overflow-hidden max-h-60 overflow-y-auto ${
+                isDark ? 'bg-gray-800 border-gray-600' : 'bg-white border-gray-200'
+              }`}>
+                {colleges.map((c) => (
+                  <button
+                    key={c.id}
+                    onClick={() => switchCollege(c.id)}
+                    className={`w-full flex items-center gap-2.5 px-3 py-2.5 text-xs transition-all text-left ${
+                      isDark
+                        ? 'text-gray-300 hover:bg-gray-700 hover:text-gray-100'
+                        : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                     }`}
                   >
-                    <Icon size={16} className="flex-shrink-0" />
-                    <span>{label}</span>
-                  </Link>
-                );
-              })}
-            </div>
-          )}
-        </div>}
-
-        {/* Colleges link — super_admin only */}
-        {isSuperAdmin && (
-          <Link
-            href="/admin/colleges"
-            onClick={() => setMobileOpen(false)}
-            className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${
-              pathname === '/admin/colleges' || pathname.startsWith('/admin/colleges/')
-                ? 'bg-white text-[#006837]'
-                : 'text-white/70 hover:bg-white/10 hover:text-white'
-            }`}
-          >
-            <Building2 size={18} className="flex-shrink-0" />
-            <span>Colleges</span>
-            {(pathname === '/admin/colleges' || pathname.startsWith('/admin/colleges/')) && (
-              <ChevronRight className="ml-auto w-3.5 h-3.5 text-[#006837]" />
+                    <Check size={13} className={c.id === currentCollegeId ? 'text-[#0b6d41]' : 'invisible'} />
+                    <span className="truncate">{c.name}</span>
+                  </button>
+                ))}
+              </div>
             )}
-          </Link>
+          </div>
         )}
-      </nav>
 
-      {/* User + Logout */}
-      <div className="px-3 pb-4 border-t border-white/10 pt-4">
-        <div className="flex items-center gap-3 px-3 mb-3">
-          <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-            <span className="text-white font-bold text-xs">{initials}</span>
-          </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-white/70 text-xs truncate">{userEmail}</p>
-            {isSuperAdmin && (
-              <p className="text-green-400/70 text-[10px] font-medium">Super Admin</p>
-            )}
-          </div>
+        {/* Navigation */}
+        <nav className={`flex-1 overflow-y-auto scrollbar-none ${isCollapsed ? 'px-2' : 'px-3'}`} style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+          {isStaff ? (
+            <div className="space-y-0.5">
+              <NavLink href="/admin/dashboard" label="Dashboard" icon={LayoutDashboard} />
+              {staffLinks.map((link) => (
+                <NavLink key={link.href} {...link} />
+              ))}
+            </div>
+          ) : (
+            <>
+              <div className="space-y-0.5">
+                {mainNavLinks.map((link) => (
+                  <NavLink key={link.href} {...link} />
+                ))}
+              </div>
+
+              <SectionLabel label="Content" />
+              <div className="space-y-0.5">
+                {contentLinks.map((link) => (
+                  <NavLink key={link.href} {...link} />
+                ))}
+
+                {/* Blog expandable */}
+                {isCollapsed ? (
+                  /* Collapsed: just show blog icon linking to /admin/blogs */
+                  <NavLink href="/admin/blogs" label="Blog" icon={FileText} />
+                ) : (
+                  <div>
+                    <button
+                      onClick={() => setBlogOpen((o) => !o)}
+                      className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-[13px] font-medium transition-all duration-200 ${
+                        isBlogActive
+                          ? isDark ? 'bg-gray-700/50 text-gray-200' : 'bg-[#0b6d41]/10 text-[#0b6d41]'
+                          : isDark ? 'text-gray-400 hover:bg-gray-700/50 hover:text-gray-200' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+                      }`}
+                    >
+                      <FileText size={18} className="flex-shrink-0" />
+                      <span>Blog</span>
+                      {blogOpen ? (
+                        <ChevronDown className="ml-auto w-3.5 h-3.5 text-gray-400" />
+                      ) : (
+                        <ChevronRight className="ml-auto w-3.5 h-3.5 text-gray-400" />
+                      )}
+                    </button>
+                    {blogOpen && (
+                      <div className={`mt-0.5 ml-4 pl-3 border-l space-y-0.5 ${isDark ? 'border-gray-700' : 'border-gray-200'}`}>
+                        {blogSubLinks.map(({ href, label, icon: Icon }) => {
+                          const active =
+                            href === '/admin/blogs'
+                              ? pathname === '/admin/blogs'
+                              : pathname === href || pathname.startsWith(href + '/');
+                          return (
+                            <Link
+                              key={href}
+                              href={href}
+                              onClick={() => setMobileOpen(false)}
+                              className={`flex items-center gap-3 px-3 py-2 rounded-xl text-[13px] font-medium transition-all duration-200 ${
+                                active
+                                  ? 'bg-[#0b6d41] text-white'
+                                  : isDark
+                                    ? 'text-gray-500 hover:bg-gray-700/50 hover:text-gray-200'
+                                    : 'text-gray-500 hover:bg-gray-100 hover:text-gray-900'
+                              }`}
+                            >
+                              <Icon size={15} className="flex-shrink-0" />
+                              <span>{label}</span>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              <SectionLabel label="People" />
+              <div className="space-y-0.5">
+                {peopleLinks.map((link) => (
+                  <NavLink key={link.href} {...link} />
+                ))}
+              </div>
+
+              {isSuperAdmin && (
+                <>
+                  <SectionLabel label="Admin" />
+                  <div className="space-y-0.5">
+                    <NavLink href="/admin/colleges" label="Colleges" icon={Building2} />
+                  </div>
+                </>
+              )}
+            </>
+          )}
+        </nav>
+
+        {/* Footer — Version only */}
+        <div className={`px-3 pb-4 pt-3 border-t ${isDark ? 'border-gray-700' : 'border-gray-100'}`}>
+          {!isCollapsed && (
+            <p className={`px-3 text-[10px] uppercase tracking-wider ${isDark ? 'text-gray-600' : 'text-gray-300'}`}>
+              {siteConfig.shortName} · CMS v2.0
+            </p>
+          )}
         </div>
-        <button
-          onClick={() => setShowLogoutModal(true)}
-          className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-white/70 hover:bg-red-500/20 hover:text-red-300 transition-all"
-        >
-          <LogOut size={18} />
-          Sign Out
-        </button>
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <>
-      {/* Sign Out Confirmation Modal */}
-      {showLogoutModal && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50">
-          <div className="bg-white rounded-2xl shadow-xl p-6 w-80 mx-4">
-            <h2 className="text-lg font-bold text-gray-900 mb-2">Sign Out</h2>
-            <p className="text-sm text-gray-500 mb-6">Are you sure you want to sign out?</p>
-            <div className="flex gap-3">
-              <button
-                onClick={() => setShowLogoutModal(false)}
-                className="flex-1 px-4 py-2.5 rounded-xl border border-gray-200 text-sm font-medium text-gray-700 hover:bg-gray-50 transition"
-              >
-                No
-              </button>
-              <button
-                onClick={handleLogout}
-                className="flex-1 px-4 py-2.5 rounded-xl bg-red-500 text-sm font-medium text-white hover:bg-red-600 transition"
-              >
-                Yes, Sign Out
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
       {/* Mobile toggle button */}
       <button
         onClick={() => setMobileOpen(!mobileOpen)}
-        className="lg:hidden fixed top-4 left-4 z-50 w-10 h-10 bg-[#006837] rounded-xl flex items-center justify-center shadow-lg"
+        className={`lg:hidden fixed top-4 left-4 z-50 w-10 h-10 rounded-xl flex items-center justify-center shadow-lg border ${
+          isDark
+            ? 'bg-gray-800 border-gray-700 text-gray-300'
+            : 'bg-white border-gray-200 text-gray-700'
+        }`}
       >
-        {mobileOpen ? <X className="w-5 h-5 text-white" /> : <Menu className="w-5 h-5 text-white" />}
+        {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
       </button>
 
       {/* Mobile overlay */}
       {mobileOpen && (
         <div
-          className="lg:hidden fixed inset-0 bg-black/50 z-40"
+          className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
           onClick={() => setMobileOpen(false)}
         />
       )}
 
-      {/* Mobile sidebar */}
+      {/* Mobile sidebar — always full width, never collapsed */}
       <div
-        className={`lg:hidden fixed left-0 top-0 bottom-0 w-64 bg-[#002309] z-40 transition-transform duration-300 ${
+        className={`lg:hidden fixed left-0 top-0 bottom-0 w-[260px] z-40 transition-transform duration-300 shadow-xl ${sidebarBg} ${
           mobileOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
-        <SidebarContent />
+        <SidebarContent isMobile />
       </div>
 
-      {/* Desktop sidebar */}
-      <div className="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-[#002309] flex-col z-30">
+      {/* Desktop sidebar — collapsible */}
+      <div className={`hidden lg:flex fixed left-0 top-0 bottom-0 flex-col z-30 transition-all duration-300 ${sidebarBg} ${
+        collapsed ? 'w-[72px]' : 'w-[260px]'
+      }`}>
         <SidebarContent />
       </div>
     </>

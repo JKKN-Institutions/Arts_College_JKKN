@@ -26,7 +26,7 @@ export default async function EditFaculty({ params }: { params: Promise<{ id: st
   if (!member) notFound();
 
   return (
-    <div className="p-4 sm:p-6 lg:p-8 max-w-5xl">
+    <div className="p-4 sm:p-6 lg:p-8">
       <Link
         href="/admin/faculty"
         className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-800 mb-6 transition"
@@ -37,7 +37,7 @@ export default async function EditFaculty({ params }: { params: Promise<{ id: st
 
       <h1 className="text-2xl font-bold text-gray-900 mb-6">Edit Faculty Member</h1>
 
-      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 sm:p-6">
+      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 sm:p-8">
         <FacultyForm member={member} />
       </div>
     </div>
