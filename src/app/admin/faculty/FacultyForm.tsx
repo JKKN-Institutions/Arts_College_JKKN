@@ -370,35 +370,6 @@ export default function FacultyForm({ member }: FacultyFormProps) {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
-    const newErrors: Record<string, string> = {};
-    if (!name.trim()) newErrors.name = 'Name is required.';
-    if (!photoPreview && !photoFile) newErrors.photo = 'Photo is required.';
-    if (!designation.trim()) newErrors.designation = 'Designation is required.';
-    if (!department.trim()) newErrors.department = 'Department is required.';
-    if (!qualification.trim()) newErrors.qualification = 'Qualification is required.';
-    if (!email.trim()) newErrors.email = 'Email is required.';
-    if (!summary.trim()) newErrors.summary = 'Professional Summary is required.';
-    if (academicQualifications.length === 0) newErrors.academicQualifications = 'At least one Academic Qualification is required.';
-    if (areasOfSpecialisation.length === 0) newErrors.areasOfSpecialisation = 'At least one Area of Specialisation is required.';
-    if (experienceEntries.length === 0) newErrors.experienceEntries = 'At least one Experience Entry is required.';
-    if (researchFocus.length === 0) newErrors.researchFocus = 'At least one Research Focus Area is required.';
-    if (publications.length === 0) newErrors.publications = 'At least one Selected Publication is required.';
-    if (!googleScholarUrl.trim()) newErrors.googleScholarUrl = 'Google Scholar URL is required.';
-
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      toast.error('Please fill in all required fields.');
-      // Switch to the tab of the first error
-      const tab0Fields = ['name', 'photo', 'designation', 'department', 'qualification', 'email'];
-      const tab1Fields = ['summary', 'academicQualifications', 'areasOfSpecialisation'];
-      const tab2Fields = ['experienceEntries'];
-      if (tab0Fields.some((f) => newErrors[f])) setActiveTab(0);
-      else if (tab1Fields.some((f) => newErrors[f])) setActiveTab(1);
-      else if (tab2Fields.some((f) => newErrors[f])) setActiveTab(2);
-      else setActiveTab(3);
-      return;
-    }
-
     setSaving(true);
 
     const memberId = isEdit ? member!.id : crypto.randomUUID();
@@ -479,7 +450,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
           <div className="flex items-start gap-4">
             <div
               onClick={() => fileInputRef.current?.click()}
-              className={`relative w-24 h-24 rounded-2xl border-2 border-dashed overflow-hidden cursor-pointer transition flex-shrink-0 ${errors.photo ? 'border-red-500 hover:border-red-600' : 'border-gray-200 hover:border-[#006837]'}`}
+              className={`relative w-24 h-24 rounded-2xl border-2 border-dashed overflow-hidden cursor-pointer transition flex-shrink-0 border-gray-200 hover:border-[#006837]`}
             >
               {photoPreview ? (
                 <>
@@ -508,7 +479,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
               )}
             </div>
             <div className="text-sm text-gray-500 pt-2">
-              <p className="font-medium text-gray-700 mb-1">Upload faculty photo *</p>
+              <p className="font-medium text-gray-700 mb-1">Upload faculty photo</p>
               <p>Click the box to select an image.</p>
               <p className="text-xs text-gray-400 mt-1">
                 JPG, PNG up to 5MB. Square photos work best.
@@ -522,35 +493,32 @@ export default function FacultyForm({ member }: FacultyFormProps) {
             onChange={(e) => { handlePhotoSelect(e); clearError('photo'); }}
             className="hidden"
           />
-          {errors.photo && <p className="text-xs text-red-500 mt-1">{errors.photo}</p>}
         </div>
 
         {/* Full Name */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1.5">
-            Full Name *
+            Full Name
           </label>
           <input
             type="text"
             value={name}
             onChange={(e) => { setName(e.target.value); clearError('name'); }}
-            required
             placeholder="Dr. Firstname Lastname"
-            className={errors.name ? IE : I}
+            className={I}
           />
-          {errors.name && <p className="text-xs text-red-500 mt-1">{errors.name}</p>}
         </div>
 
         {/* Designation & Department */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              Designation *
+              Designation
             </label>
             <select
               value={designation}
               onChange={(e) => { setDesignation(e.target.value); clearError('designation'); }}
-              className={errors.designation ? IE : I}
+              className={I}
             >
               {DESIGNATIONS.map((d) => (
                 <option key={d} value={d}>
@@ -558,20 +526,18 @@ export default function FacultyForm({ member }: FacultyFormProps) {
                 </option>
               ))}
             </select>
-            {errors.designation && <p className="text-xs text-red-500 mt-1">{errors.designation}</p>}
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              Department *
+              Department
             </label>
             <input
               type="text"
               value={department}
               onChange={(e) => { setDepartment(e.target.value); clearError('department'); }}
               placeholder="e.g. Department of Orthodontics"
-              className={errors.department ? IE : I}
+              className={I}
             />
-            {errors.department && <p className="text-xs text-red-500 mt-1">{errors.department}</p>}
           </div>
         </div>
 
@@ -579,16 +545,15 @@ export default function FacultyForm({ member }: FacultyFormProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              Qualification *
+              Qualification
             </label>
             <input
               type="text"
               value={qualification}
               onChange={(e) => { setQualification(e.target.value); clearError('qualification'); }}
               placeholder="e.g. M.D.S., Ph.D."
-              className={errors.qualification ? IE : I}
+              className={I}
             />
-            {errors.qualification && <p className="text-xs text-red-500 mt-1">{errors.qualification}</p>}
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1.5">
@@ -667,16 +632,15 @@ export default function FacultyForm({ member }: FacultyFormProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1.5">
-              Email *
+              Email
             </label>
             <input
               type="email"
               value={email}
               onChange={(e) => { setEmail(e.target.value); clearError('email'); }}
               placeholder="name@jkkn.ac.in"
-              className={errors.email ? IE : I}
+              className={I}
             />
-            {errors.email && <p className="text-xs text-red-500 mt-1">{errors.email}</p>}
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1.5">
@@ -742,22 +706,21 @@ export default function FacultyForm({ member }: FacultyFormProps) {
         {/* Professional Summary */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1.5">
-            Professional Summary *
+            Professional Summary
           </label>
           <textarea
             value={summary}
             onChange={(e) => { setSummary(e.target.value); clearError('summary'); }}
             rows={5}
             placeholder="Write a professional summary paragraph about this faculty member..."
-            className={(errors.summary ? IE : I) + ' resize-none'}
+            className={I + ' resize-none'}
           />
-          {errors.summary && <p className="text-xs text-red-500 mt-1">{errors.summary}</p>}
         </div>
 
         {/* Academic Qualifications */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Academic Qualifications *
+            Academic Qualifications
           </label>
           <div className="space-y-2">
             {academicQualifications.map((q, i) => (
@@ -836,30 +799,26 @@ export default function FacultyForm({ member }: FacultyFormProps) {
               clearError('academicQualifications');
             }}
           />
-          {errors.academicQualifications && <p className="text-xs text-red-500 mt-1">{errors.academicQualifications}</p>}
         </div>
 
         {/* Areas of Specialisation */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1.5">
-            Areas of Specialisation *
+            Areas of Specialisation
           </label>
-          <div className={errors.areasOfSpecialisation ? 'rounded-lg ring-1 ring-red-500' : ''}>
-            <TagInputField
-              tags={areasOfSpecialisation}
-              input={specialisationInput}
-              onInputChange={setSpecialisationInput}
-              onAdd={(v) => {
-                addTag(v, areasOfSpecialisation, setAreasOfSpecialisation, setSpecialisationInput);
-                clearError('areasOfSpecialisation');
-              }}
-              onRemove={(i) =>
-                setAreasOfSpecialisation(areasOfSpecialisation.filter((_, j) => j !== i))
-              }
-              placeholder="e.g. Orthodontic biomechanics — press Enter to add"
-            />
-          </div>
-          {errors.areasOfSpecialisation && <p className="text-xs text-red-500 mt-1">{errors.areasOfSpecialisation}</p>}
+          <TagInputField
+            tags={areasOfSpecialisation}
+            input={specialisationInput}
+            onInputChange={setSpecialisationInput}
+            onAdd={(v) => {
+              addTag(v, areasOfSpecialisation, setAreasOfSpecialisation, setSpecialisationInput);
+              clearError('areasOfSpecialisation');
+            }}
+            onRemove={(i) =>
+              setAreasOfSpecialisation(areasOfSpecialisation.filter((_, j) => j !== i))
+            }
+            placeholder="e.g. Orthodontic biomechanics — press Enter to add"
+          />
         </div>
       </>
     );
@@ -870,7 +829,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
       <>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
-            Experience Entries *
+            Experience Entries
           </label>
           <p className="text-xs text-gray-400 mb-3">
             Add teaching and clinical experience. These appear as a timeline on the
@@ -1012,7 +971,6 @@ export default function FacultyForm({ member }: FacultyFormProps) {
               clearError('experienceEntries');
             }}
           />
-          {errors.experienceEntries && <p className="text-xs text-red-500 mt-1">{errors.experienceEntries}</p>}
         </div>
       </>
     );
@@ -1024,28 +982,25 @@ export default function FacultyForm({ member }: FacultyFormProps) {
         {/* Research Focus */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1.5">
-            Research Focus Areas *
+            Research Focus Areas
           </label>
-          <div className={errors.researchFocus ? 'rounded-lg ring-1 ring-red-500' : ''}>
-            <TagInputField
-              tags={researchFocus}
-              input={researchFocusInput}
-              onInputChange={setResearchFocusInput}
-              onAdd={(v) => {
-                addTag(v, researchFocus, setResearchFocus, setResearchFocusInput);
-                clearError('researchFocus');
-              }}
-              onRemove={(i) => setResearchFocus(researchFocus.filter((_, j) => j !== i))}
-              placeholder="e.g. Orthodontic biomechanics — press Enter to add"
-            />
-          </div>
-          {errors.researchFocus && <p className="text-xs text-red-500 mt-1">{errors.researchFocus}</p>}
+          <TagInputField
+            tags={researchFocus}
+            input={researchFocusInput}
+            onInputChange={setResearchFocusInput}
+            onAdd={(v) => {
+              addTag(v, researchFocus, setResearchFocus, setResearchFocusInput);
+              clearError('researchFocus');
+            }}
+            onRemove={(i) => setResearchFocus(researchFocus.filter((_, j) => j !== i))}
+            placeholder="e.g. Orthodontic biomechanics — press Enter to add"
+          />
         </div>
 
         {/* Publications */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Selected Publications *
+            Selected Publications
           </label>
           <div className="space-y-2">
             {publications.map((pub, i) => (
@@ -1152,7 +1107,6 @@ export default function FacultyForm({ member }: FacultyFormProps) {
               clearError('publications');
             }}
           />
-          {errors.publications && <p className="text-xs text-red-500 mt-1">{errors.publications}</p>}
         </div>
 
         {/* Funded Research */}
@@ -1259,15 +1213,14 @@ export default function FacultyForm({ member }: FacultyFormProps) {
           </label>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <div>
-              <label className="text-xs text-gray-500 mb-1 block">Google Scholar *</label>
+              <label className="text-xs text-gray-500 mb-1 block">Google Scholar</label>
               <input
                 type="url"
                 value={googleScholarUrl}
                 onChange={(e) => { setGoogleScholarUrl(e.target.value); clearError('googleScholarUrl'); }}
                 placeholder="https://scholar.google.com/..."
-                className={errors.googleScholarUrl ? IE : I}
+                className={I}
               />
-              {errors.googleScholarUrl && <p className="text-xs text-red-500 mt-1">{errors.googleScholarUrl}</p>}
             </div>
             <div>
               <label className="text-xs text-gray-500 mb-1 block">ResearchGate</label>
@@ -1712,30 +1665,6 @@ export default function FacultyForm({ member }: FacultyFormProps) {
           <button
             type="button"
             onClick={() => {
-              const tabErrors: Record<string, string> = {};
-              if (activeTab === 0) {
-                if (!name.trim()) tabErrors.name = 'Name is required.';
-                if (!photoPreview && !photoFile) tabErrors.photo = 'Photo is required.';
-                if (!designation.trim()) tabErrors.designation = 'Designation is required.';
-                if (!department.trim()) tabErrors.department = 'Department is required.';
-                if (!qualification.trim()) tabErrors.qualification = 'Qualification is required.';
-                if (!email.trim()) tabErrors.email = 'Email is required.';
-              } else if (activeTab === 1) {
-                if (!summary.trim()) tabErrors.summary = 'Professional Summary is required.';
-                if (academicQualifications.length === 0) tabErrors.academicQualifications = 'At least one Academic Qualification is required.';
-                if (areasOfSpecialisation.length === 0) tabErrors.areasOfSpecialisation = 'At least one Area of Specialisation is required.';
-              } else if (activeTab === 2) {
-                if (experienceEntries.length === 0) tabErrors.experienceEntries = 'At least one Experience Entry is required.';
-              } else if (activeTab === 3) {
-                if (researchFocus.length === 0) tabErrors.researchFocus = 'At least one Research Focus Area is required.';
-                if (publications.length === 0) tabErrors.publications = 'At least one Selected Publication is required.';
-                if (!googleScholarUrl.trim()) tabErrors.googleScholarUrl = 'Google Scholar URL is required.';
-              }
-              if (Object.keys(tabErrors).length > 0) {
-                setErrors((prev) => ({ ...prev, ...tabErrors }));
-                toast.error('Please fill in all required fields.');
-                return;
-              }
               setActiveTab(activeTab + 1);
             }}
             className="flex items-center gap-2 bg-[#006837] text-white text-sm font-semibold px-6 py-2.5 rounded-xl hover:bg-[#005a2e] transition"
