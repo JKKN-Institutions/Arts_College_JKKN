@@ -12,6 +12,7 @@ import {
   Calendar,
   BookOpen,
   Award,
+  IndianRupee,
 } from "lucide-react";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";

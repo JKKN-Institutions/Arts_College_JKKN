@@ -388,36 +388,7 @@ export default function AdminSidebar({
 
   return (
     <>
-      {/* Mobile toggle button */}
-      <button
-        onClick={() => setMobileOpen(!mobileOpen)}
-        className={`lg:hidden fixed top-4 left-4 z-50 w-10 h-10 rounded-xl flex items-center justify-center shadow-lg border ${
-          isDark
-            ? 'bg-gray-800 border-gray-700 text-gray-300'
-            : 'bg-white border-gray-200 text-gray-700'
-        }`}
-      >
-        {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-      </button>
-
-      {/* Mobile overlay */}
-      {mobileOpen && (
-        <div
-          className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
-          onClick={() => setMobileOpen(false)}
-        />
-      )}
-
-      {/* Mobile sidebar — always full width, never collapsed */}
-      <div
-        className={`lg:hidden fixed left-0 top-0 bottom-0 w-[260px] z-40 transition-transform duration-300 shadow-xl ${sidebarBg} ${
-          mobileOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
-      >
-        <SidebarContent isMobile />
-      </div>
-
-      {/* Desktop sidebar — collapsible */}
+      {/* Desktop sidebar only — mobile uses bottom navbar */}
       <div className={`hidden lg:flex fixed left-0 top-0 bottom-0 flex-col z-30 transition-all duration-300 ${sidebarBg} ${
         collapsed ? 'w-[72px]' : 'w-[260px]'
       }`}>

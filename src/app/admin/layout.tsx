@@ -1,6 +1,7 @@
 import { createClient } from '@/lib/supabase/server';
 import { getAdminCollegeId } from '@/lib/get-admin-college';
 import AdminSidebar from './AdminSidebar';
+import AdminBottomNavbar from './AdminBottomNavbar';
 import TopHeader from './TopHeader';
 import ToastProvider from './ToastProvider';
 import { AdminCollegeProvider } from './AdminCollegeContext';
@@ -69,8 +70,11 @@ export default async function AdminLayout({ children }: { children: React.ReactN
                 isSuperAdmin={isSuperAdmin}
               />
             )}
-            <main className="flex-1">{children}</main>
+            <main className="flex-1 pb-20 lg:pb-0">{children}</main>
           </AdminMainContent>
+          {user && (
+            <AdminBottomNavbar isStaff={isStaff} isSuperAdmin={isSuperAdmin} />
+          )}
         </div>
       </AdminPanelProvider>
     </AdminCollegeProvider>

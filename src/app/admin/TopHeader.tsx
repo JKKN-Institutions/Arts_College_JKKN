@@ -89,7 +89,7 @@ export default function TopHeader({ userEmail, isSuperAdmin }: TopHeaderProps) {
           >
             <PanelLeft className="w-[18px] h-[18px]" />
           </button>
-          <div className="lg:hidden w-10" />
+          {/* No placeholder on mobile — bottom navbar handles navigation */}
           <nav className={`text-sm font-medium ${isDark ? 'text-gray-300' : 'text-gray-500'}`}>
             {breadcrumb}
           </nav>
