@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Clock, Calendar, Tag, MessageSquare, Send, Check, Loader2, ChevronUp, ChevronDown } from 'lucide-react';
+import Link from 'next/link';
+import { Clock, Calendar, Tag, MessageSquare, Send, Check, Loader2, ChevronUp, ChevronDown, ArrowLeft } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 import toast from 'react-hot-toast';
 
@@ -159,7 +160,7 @@ export default function CampusBlogContent({
 
         {/* Cover image */}
         {post.cover_image_url && (
-          <div className="mb-10 rounded-2xl overflow-hidden shadow-sm w-[600px] h-[420px] max-w-full mx-auto">
+          <div className="mb-10 rounded-2xl overflow-hidden shadow-sm w-full aspect-[16/9]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={post.cover_image_url}
@@ -376,6 +377,16 @@ export default function CampusBlogContent({
             </div>
           </div>
         )}
+        {/* Back to Blog */}
+        <div className="mt-10">
+          <Link
+            href="/blog"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-[#0b6d41] hover:text-[#004d28] transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to All Posts
+          </Link>
+        </div>
       </main>
 
       <style>{`

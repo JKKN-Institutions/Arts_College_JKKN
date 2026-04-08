@@ -3,11 +3,21 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
-import { CalendarDays, Clock, MapPin, ArrowLeft, Images } from "lucide-react";
+import { CalendarDays, ArrowLeft, User } from "lucide-react";
 import { EventSchema } from "@/components/seo/EventSchema";
-import EventGallery from "./EventGallery";
 
 const SITE_URL = "https://cas.jkkn.ac.in";
+
+export const revalidate = 60;
+
+/** Strip dangerous HTML patterns to prevent XSS */
+function sanitizeHtml(html: string): string {
+  return html
+    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+    .replace(/javascript\s*:/gi, '')
+    .replace(/on\w+\s*=\s*["'][^"']*["']/gi, '')
+    .replace(/on\w+\s*=[^\s>]*/gi, '');
+}
 
 export async function generateMetadata({
   params,
@@ -18,30 +28,31 @@ export async function generateMetadata({
   const supabase = await createClient();
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? "arts";
 
-  const { data: event } = await supabase
-    .from("events")
-    .select("title, description, image_url")
+  const { data: post } = await supabase
+    .from("blogs")
+    .select("title, excerpt, meta_description, cover_image_url")
     .eq("slug", slug)
     .eq("college_id", collegeId)
     .eq("is_published", true)
+    .eq("category", "Events")
     .single();
 
-  if (!event) {
+  if (!post) {
     return { title: "Event Not Found" };
   }
 
   const description =
-    event.description?.slice(0, 155) ?? `${event.title} at JKKN College of Arts and Science`;
+    post.meta_description ?? post.excerpt?.slice(0, 155) ?? `${post.title} at JKKN College of Arts and Science`;
 
   return {
-    title: event.title,
+    title: post.title,
     description,
     openGraph: {
-      title: event.title,
+      title: post.title,
       description,
       url: `${SITE_URL}/events/${slug}`,
       type: "article",
-      ...(event.image_url && { images: [{ url: event.image_url }] }),
+      ...(post.cover_image_url && { images: [{ url: post.cover_image_url }] }),
     },
     alternates: {
       canonical: `${SITE_URL}/events/${slug}`,
@@ -58,63 +69,51 @@ export default async function EventPage({
   const supabase = await createClient();
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? "arts";
 
-  const { data: event } = await supabase
-    .from("events")
+  const { data: post } = await supabase
+    .from("blogs")
     .select("*")
     .eq("slug", slug)
     .eq("college_id", collegeId)
     .eq("is_published", true)
+    .eq("category", "Events")
     .single();
 
-  if (!event) notFound();
+  if (!post) notFound();
 
-  // Fetch gallery images from linked album
-  let galleryImages: { id: string; image_url: string; caption: string | null }[] = [];
+  const displayDate = post.published_at ?? post.created_at;
 
-  if (event.gallery_album_id) {
-    const { data: images } = await supabase
-      .from("gallery_images")
-      .select("id, image_url, caption")
-      .eq("album_id", event.gallery_album_id)
-      .order("display_order", { ascending: true });
+  const formattedDate = new Date(displayDate).toLocaleDateString("en-IN", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
 
-    galleryImages = images ?? [];
-  }
-
-  const formattedDate = event.event_date
-    ? new Date(event.event_date).toLocaleDateString("en-IN", {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-      })
-    : null;
-
-  const formattedDay = event.event_date
-    ? new Date(event.event_date).toLocaleDateString("en-IN", { weekday: "long" })
-    : null;
-
-  // Split description into paragraphs
-  const descParagraphs = (event.description ?? "")
-    .split(/\n\n|\n/)
-    .filter((p: string) => p.trim());
+  // Process content — support HTML or plain text
+  const contentHtml = post.content ?? "";
+  const isHtml = contentHtml.includes("<");
+  const processedContent = isHtml
+    ? sanitizeHtml(contentHtml)
+    : contentHtml
+        .split(/\n\n+/)
+        .map((p: string) => `<p>${p.replace(/\n/g, "<br/>")}</p>`)
+        .join("");
 
   return (
     <>
       <EventSchema
-        name={event.title}
-        description={event.description ?? ""}
-        startDate={event.event_date ?? event.created_at}
-        location={event.venue}
-        imageUrl={event.image_url}
+        name={post.title}
+        description={post.excerpt ?? post.title}
+        startDate={displayDate}
+        imageUrl={post.cover_image_url}
         url={`${SITE_URL}/events/${slug}`}
       />
       <main className="min-h-screen bg-[#FBFBEE]">
         {/* Hero Image — Full Width */}
-        {event.image_url && (
+        {post.cover_image_url && (
           <div className="relative w-full h-[50vh] sm:h-[55vh] md:h-[60vh] max-h-[500px]">
             <Image
-              src={event.image_url}
-              alt={event.title}
+              src={post.cover_image_url}
+              alt={post.title}
               fill
               sizes="100vw"
               className="object-cover"
@@ -128,25 +127,17 @@ export default async function EventPage({
             <div className="absolute bottom-0 left-0 right-0 px-4 sm:px-6 lg:px-8 pb-8 sm:pb-10">
               <div className="max-w-5xl mx-auto">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4 drop-shadow-lg">
-                  {event.title}
+                  {post.title}
                 </h1>
                 <div className="flex flex-wrap gap-4 sm:gap-6">
-                  {formattedDate && (
+                  <div className="flex items-center gap-2 text-white/90 text-sm sm:text-base">
+                    <CalendarDays className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                    <span>{formattedDate}</span>
+                  </div>
+                  {post.author_name && (
                     <div className="flex items-center gap-2 text-white/90 text-sm sm:text-base">
-                      <CalendarDays className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                      <span>{formattedDate}</span>
-                    </div>
-                  )}
-                  {event.event_time && (
-                    <div className="flex items-center gap-2 text-white/90 text-sm sm:text-base">
-                      <Clock className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                      <span>{event.event_time}</span>
-                    </div>
-                  )}
-                  {event.venue && (
-                    <div className="flex items-center gap-2 text-white/90 text-sm sm:text-base">
-                      <MapPin className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                      <span>{event.venue}</span>
+                      <User className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                      <span>{post.author_name}</span>
                     </div>
                   )}
                 </div>
@@ -156,23 +147,21 @@ export default async function EventPage({
         )}
 
         {/* If no image — text-only hero */}
-        {!event.image_url && (
+        {!post.cover_image_url && (
           <section className="bg-gradient-to-br from-[#0b6d41] to-[#004d28] py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
-                {event.title}
+                {post.title}
               </h1>
               <div className="flex flex-wrap gap-4 sm:gap-6 text-green-100 text-sm sm:text-base">
-                {formattedDate && (
+                <div className="flex items-center gap-2">
+                  <CalendarDays className="w-5 h-5 flex-shrink-0" />
+                  <span>{formattedDate}</span>
+                </div>
+                {post.author_name && (
                   <div className="flex items-center gap-2">
-                    <CalendarDays className="w-5 h-5 flex-shrink-0" />
-                    <span>{formattedDate}</span>
-                  </div>
-                )}
-                {event.venue && (
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-5 h-5 flex-shrink-0" />
-                    <span>{event.venue}</span>
+                    <User className="w-5 h-5 flex-shrink-0" />
+                    <span>{post.author_name}</span>
                   </div>
                 )}
               </div>
@@ -180,19 +169,16 @@ export default async function EventPage({
           </section>
         )}
 
-        {/* About This Event — Full Width */}
+        {/* Event Content — Rich HTML */}
         <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-10 lg:p-12">
             <h2 className="text-xl sm:text-2xl font-bold text-[#002309] mb-6">
               About This Event
             </h2>
-            <div className="space-y-4 max-w-4xl">
-              {descParagraphs.map((para: string, i: number) => (
-                <p key={i} className="text-gray-600 leading-relaxed text-[15px] sm:text-base lg:text-[17px] lg:leading-[1.8]">
-                  {para.trim()}
-                </p>
-              ))}
-            </div>
+            <div
+              className="prose prose-lg max-w-4xl prose-headings:text-[#002309] prose-a:text-[#0b6d41] prose-img:rounded-xl"
+              dangerouslySetInnerHTML={{ __html: processedContent }}
+            />
           </div>
         </section>
 
@@ -222,7 +208,7 @@ export default async function EventPage({
                   LinkedIn
                 </a>
                 <a
-                  href={`https://wa.me/?text=${encodeURIComponent(event.title + " " + SITE_URL + "/events/" + slug)}`}
+                  href={`https://wa.me/?text=${encodeURIComponent(post.title + " " + SITE_URL + "/events/" + slug)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#25D366]/10 text-[#25D366] text-sm font-semibold hover:bg-[#25D366]/20 transition-colors"
@@ -233,24 +219,6 @@ export default async function EventPage({
             </div>
           </div>
         </section>
-
-        {/* Event Gallery — Full Width */}
-        {galleryImages.length > 0 && (
-          <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-14">
-            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-10 lg:p-12">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-10 h-10 bg-[#0b6d41]/10 rounded-xl flex items-center justify-center">
-                  <Images className="w-5 h-5 text-[#0b6d41]" />
-                </div>
-                <div>
-                  <h2 className="text-xl sm:text-2xl font-bold text-[#002309]">Event Gallery</h2>
-                  <p className="text-sm text-gray-500">{galleryImages.length} photos from the event</p>
-                </div>
-              </div>
-              <EventGallery images={galleryImages} eventTitle={event.title} />
-            </div>
-          </section>
-        )}
 
         {/* Back to Events */}
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-14">

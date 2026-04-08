@@ -27,7 +27,16 @@ export default function AdminDashboard() {
       </Suspense>
 
       {/* Quick Actions */}
-      <QuickActions />
+      <Suspense fallback={
+        <div className="bg-white rounded-2xl border border-gray-100 p-5 mb-6 animate-pulse">
+          <div className="h-5 w-32 bg-gray-200 rounded-lg mb-4" />
+          <div className="flex gap-2.5">
+            {[1,2,3].map(i => <div key={i} className="h-10 w-32 bg-gray-100 rounded-xl" />)}
+          </div>
+        </div>
+      }>
+        <QuickActions />
+      </Suspense>
 
       {/* Two-column: Content Health + Recently Edited */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
