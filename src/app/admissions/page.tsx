@@ -134,6 +134,55 @@ const howToSchema = {
   })),
 };
 
+const feeStructure = [
+  {
+    category: "UG — Arts",
+    programmes: [
+      { name: "B.A. English", fee: 24500 },
+    ],
+  },
+  {
+    category: "UG — Science",
+    programmes: [
+      { name: "B.Sc. Computer Science", fee: 34000 },
+      { name: "B.Sc. Computer Science (AI & Data Science)", fee: 34000 },
+      { name: "B.Sc. Computer Science (Cyber Security)", fee: 32000 },
+      { name: "B.Sc. Microbiology", fee: 34000 },
+      { name: "B.Sc. Clinical Lab Technology", fee: 32000 },
+      { name: "B.Sc. Mathematics", fee: 26000 },
+      { name: "B.Sc. Physics", fee: 25000 },
+    ],
+  },
+  {
+    category: "UG — Commerce & Management",
+    programmes: [
+      { name: "B.Com (Computer Applications)", fee: 34000 },
+      { name: "B.C.A.", fee: 33000 },
+      { name: "B.B.A.", fee: 25500 },
+      { name: "B.Com (AI)", fee: 34000, isNew: true },
+    ],
+  },
+  {
+    category: "UG — Creative & Design",
+    programmes: [
+      { name: "B.Sc. Textile and Fashion Designing (AI)", fee: 34000, isNew: true },
+      { name: "B.Sc. Visual Communication (AI)", fee: 34000, isNew: true },
+      { name: "B.Sc. Textile and Fashion Designing", fee: 32000 },
+      { name: "B.Sc. Visual Communication", fee: 32000 },
+    ],
+  },
+  {
+    category: "Postgraduate",
+    programmes: [
+      { name: "M.A. English", fee: 20000 },
+      { name: "M.Com", fee: 24000 },
+      { name: "M.Sc. Computer Science", fee: 25000 },
+      { name: "M.Sc. Computer Science (Data Analytics)", fee: 21000 },
+      { name: "M.Sc. Mathematics", fee: 20000 },
+    ],
+  },
+];
+
 export default function AdmissionsPage() {
   return (
     <>
@@ -395,6 +444,93 @@ export default function AdmissionsPage() {
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Fee Structure */}
+        <section className="py-16 md:py-20 bg-white">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-14">
+              <span className="inline-flex items-center gap-2 bg-[#0b6d41]/10 px-4 py-1.5 rounded-full text-sm font-semibold text-[#0b6d41] mb-4">
+                <IndianRupee className="w-3.5 h-3.5" />
+                Academic Year 2026-27
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Fee Structure
+              </h2>
+              <p className="text-lg text-gray-600">
+                Annual tuition fees for self-finance programmes at JKKN College
+                of Arts and Science
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              {feeStructure.map((group) => (
+                <div
+                  key={group.category}
+                  className="bg-[#fbfbee] rounded-2xl border border-gray-200 overflow-hidden"
+                >
+                  <div className="bg-[#0b6d41] px-6 py-3.5">
+                    <h3 className="text-lg font-bold text-white">
+                      {group.category}
+                    </h3>
+                  </div>
+                  <div className="overflow-x-auto">
+                    <table className="w-full">
+                      <thead>
+                        <tr className="border-b border-gray-200">
+                          <th className="text-left px-6 py-3 text-sm font-semibold text-gray-600 uppercase tracking-wider">
+                            Programme
+                          </th>
+                          <th className="text-right px-6 py-3 text-sm font-semibold text-gray-600 uppercase tracking-wider">
+                            Annual Fee
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {group.programmes.map((prog, idx) => (
+                          <tr
+                            key={prog.name}
+                            className={
+                              idx !== group.programmes.length - 1
+                                ? "border-b border-gray-100"
+                                : ""
+                            }
+                          >
+                            <td className="px-6 py-4 text-gray-800">
+                              {prog.name}
+                              {prog.isNew && (
+                                <span className="ml-2 inline-flex items-center bg-[#ffde59] text-[#002309] text-xs font-bold px-2 py-0.5 rounded-full">
+                                  NEW
+                                </span>
+                              )}
+                            </td>
+                            <td className="px-6 py-4 text-right font-semibold text-[#0b6d41] whitespace-nowrap">
+                              ₹{prog.fee.toLocaleString("en-IN")}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 bg-[#0b6d41]/5 rounded-xl p-5 border border-[#0b6d41]/10">
+              <p className="text-sm text-gray-600 leading-relaxed">
+                <strong className="text-gray-800">Note:</strong> Fees shown are
+                for the Management Quota (MQ) category. Government Quota (GQ)
+                fees are regulated by the government and are significantly lower.
+                Programmes marked{" "}
+                <span className="inline-flex items-center bg-[#ffde59] text-[#002309] text-xs font-bold px-2 py-0.5 rounded-full">
+                  NEW
+                </span>{" "}
+                are newly introduced for 2026-27. For detailed fee breakdowns,
+                hostel charges, and scholarship information, contact the
+                admissions office.
+              </p>
             </div>
           </div>
         </section>

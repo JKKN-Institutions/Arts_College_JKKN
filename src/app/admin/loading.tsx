@@ -1,6 +1,6 @@
 export default function AdminLoading() {
   return (
-    <div className="p-6 lg:p-8 max-w-6xl animate-pulse">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-6xl animate-pulse">
       {/* Header skeleton */}
       <div className="mb-8">
         <div className="h-7 w-40 bg-gray-200 rounded-lg mb-2" />

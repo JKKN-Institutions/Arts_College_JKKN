@@ -38,7 +38,7 @@ export default function NewAlbum() {
   }
 
   return (
-    <div className="p-6 lg:p-8 max-w-xl">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-xl">
       <Link
         href="/admin/gallery"
         className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-800 mb-6 transition"

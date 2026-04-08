@@ -372,18 +372,6 @@ export default function FacultyForm({ member }: FacultyFormProps) {
 
     const newErrors: Record<string, string> = {};
     if (!name.trim()) newErrors.name = 'Name is required.';
-    if (!photoPreview && !photoFile) newErrors.photo = 'Photo is required.';
-    if (!designation.trim()) newErrors.designation = 'Designation is required.';
-    if (!department.trim()) newErrors.department = 'Department is required.';
-    if (!qualification.trim()) newErrors.qualification = 'Qualification is required.';
-    if (!email.trim()) newErrors.email = 'Email is required.';
-    if (!summary.trim()) newErrors.summary = 'Professional Summary is required.';
-    if (academicQualifications.length === 0) newErrors.academicQualifications = 'At least one Academic Qualification is required.';
-    if (areasOfSpecialisation.length === 0) newErrors.areasOfSpecialisation = 'At least one Area of Specialisation is required.';
-    if (experienceEntries.length === 0) newErrors.experienceEntries = 'At least one Experience Entry is required.';
-    if (researchFocus.length === 0) newErrors.researchFocus = 'At least one Research Focus Area is required.';
-    if (publications.length === 0) newErrors.publications = 'At least one Selected Publication is required.';
-    if (!googleScholarUrl.trim()) newErrors.googleScholarUrl = 'Google Scholar URL is required.';
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -1715,25 +1703,10 @@ export default function FacultyForm({ member }: FacultyFormProps) {
               const tabErrors: Record<string, string> = {};
               if (activeTab === 0) {
                 if (!name.trim()) tabErrors.name = 'Name is required.';
-                if (!photoPreview && !photoFile) tabErrors.photo = 'Photo is required.';
-                if (!designation.trim()) tabErrors.designation = 'Designation is required.';
-                if (!department.trim()) tabErrors.department = 'Department is required.';
-                if (!qualification.trim()) tabErrors.qualification = 'Qualification is required.';
-                if (!email.trim()) tabErrors.email = 'Email is required.';
-              } else if (activeTab === 1) {
-                if (!summary.trim()) tabErrors.summary = 'Professional Summary is required.';
-                if (academicQualifications.length === 0) tabErrors.academicQualifications = 'At least one Academic Qualification is required.';
-                if (areasOfSpecialisation.length === 0) tabErrors.areasOfSpecialisation = 'At least one Area of Specialisation is required.';
-              } else if (activeTab === 2) {
-                if (experienceEntries.length === 0) tabErrors.experienceEntries = 'At least one Experience Entry is required.';
-              } else if (activeTab === 3) {
-                if (researchFocus.length === 0) tabErrors.researchFocus = 'At least one Research Focus Area is required.';
-                if (publications.length === 0) tabErrors.publications = 'At least one Selected Publication is required.';
-                if (!googleScholarUrl.trim()) tabErrors.googleScholarUrl = 'Google Scholar URL is required.';
               }
               if (Object.keys(tabErrors).length > 0) {
                 setErrors((prev) => ({ ...prev, ...tabErrors }));
-                toast.error('Please fill in all required fields.');
+                toast.error('Please fill in the required fields.');
                 return;
               }
               setActiveTab(activeTab + 1);
