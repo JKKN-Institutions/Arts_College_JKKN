@@ -150,7 +150,7 @@ Gate C means the page cannot win AEO positions immediately. The primary barriers
 | UGC Approval | Yes | [HIGH] | `page.tsx` line 197 | Trust bar badge |
 | Contact Number | +91 9345855001 | [HIGH] | CLAUDE.md, `page.tsx` lines 250, 728 | Consistent across sources |
 | Campus GPS | 11.44518, 77.726549 | [HIGH] | `page.tsx` lines 151–152 | Matches CLAUDE.md (11.4387, 77.7062 — slight variation; use pharmacy page coords as primary reference) |
-| Admission URL | https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8 | [HIGH] | `page.tsx` lines 240, 719 | Active URL in production |
+| Admission URL | https://www.jkkn.ai/apply/jkkn-admission-2026 | [HIGH] | `page.tsx` lines 240, 719 | Active URL in production |
 | Recruiters | TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, Jio | [MEDIUM] | `page.tsx` lines 641–655 | Page lists 7 recruiters; global CLAUDE.md lists TCS, Infosys, Apollo, Sun Pharma for group |
 | Bus route from Erode | Regular TNSTC from Erode Central Bus Stand to Komarapalayam | [HIGH] | `page.tsx` line 822 | Standard TNSTC route NH-544 |
 | Nearest airport | Coimbatore International (CJB) ~80 km | [HIGH] | `page.tsx` line 834 | Accurate |

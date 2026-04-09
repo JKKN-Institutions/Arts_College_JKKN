@@ -696,7 +696,7 @@ Recommended H1 → H2 → H3 hierarchy with word count targets for AEO optimizat
     "@type": "ApplyAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8",
+      "urlTemplate": "https://www.jkkn.ai/apply/jkkn-admission-2026",
       "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
     },
     "result": {
@@ -738,7 +738,7 @@ Recommended H1 → H2 → H3 hierarchy with word count targets for AEO optimizat
       "position": 2,
       "name": "Fill the Application Form",
       "text": "Apply online at admission.jkkn.ac.in or collect the form at the campus admission office.",
-      "url": "https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+      "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
     },
     {
       "@type": "HowToStep",

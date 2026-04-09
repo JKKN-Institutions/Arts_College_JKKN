@@ -109,7 +109,7 @@ All 10 FAQ items in the `faqs` array (lines 78–119) require answer replacement
 | S-01 | Replace CollegeOrUniversity JSON-LD block — add `description`, `alternateName`, `foundingDate`, `telephone`, `email`, `logo`, `accreditedBy`, `memberOf` | `src/app/tiruppur/page.tsx` | 129–157 | Basic schema: name, url, address, areaServed (single city), geo | Enhanced schema with all fields from spec Section 14.2 (see §2.4 code block) | 30 min | None |
 | S-02 | Add `sameAs` array to CollegeOrUniversity schema — `["https://cas.jkkn.ac.in", "https://jkkn.ac.in"]` | `src/app/tiruppur/page.tsx` | Within lines 129–157 (new field) | `sameAs` absent | `"sameAs": ["https://cas.jkkn.ac.in", "https://jkkn.ac.in"]` | 5 min | S-01 |
 | S-03 | Add `speakable` SpeakableSpecification to CollegeOrUniversity schema — cssSelector targeting `.snippet-paragraph`, `.faq-voice-answer`, `h1`, `.placement-stats` | `src/app/tiruppur/page.tsx` | Within S-01 block | `speakable` absent | `"speakable": {"@type": "SpeakableSpecification", "cssSelector": [".snippet-paragraph", ".faq-voice-answer", "h1", ".placement-stats"]}` | 10 min | S-01, C-01, F-11, C-11 |
-| S-04 | Add `potentialAction` (ApplyAction) to CollegeOrUniversity schema — admission URL as EntryPoint | `src/app/tiruppur/page.tsx` | Within S-01 block | `potentialAction` absent | `"potentialAction": {"@type": "ApplyAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"}}` | 10 min | S-01 |
+| S-04 | Add `potentialAction` (ApplyAction) to CollegeOrUniversity schema — admission URL as EntryPoint | `src/app/tiruppur/page.tsx` | Within S-01 block | `potentialAction` absent | `"potentialAction": {"@type": "ApplyAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://www.jkkn.ai/apply/jkkn-admission-2026"}}` | 10 min | S-01 |
 | S-05 | Add `areaServed` second city entry — add Erode alongside Tiruppur in the array | `src/app/tiruppur/page.tsx` | 145–148 | `areaServed` is a single object for Tiruppur | `areaServed` becomes an array: Tiruppur + Erode | 5 min | S-01 |
 | S-06 | Add `numberOfStudents` field — value 3000 (verify with admin first; omit if unconfirmed by deployment time) | `src/app/tiruppur/page.tsx` | Within S-01 block | `numberOfStudents` absent | `"numberOfStudents": {"@type": "QuantitativeValue", "value": 3000, "unitText": "students"}` — only if admin confirms | 5 min | S-01, P-04 |
 | S-07 | Add HowToApply schema — new `<script type="application/ld+json">` block after existing schema blocks | `src/app/tiruppur/page.tsx` | After line 190 (after CourseSchema blocks) | HowTo schema absent | 5-step HowToApply JSON-LD: Visit Website, Fill Application Form, Submit Documents, Counseling & Seat Allocation, Fee Payment & Enrollment (from spec Section 14.3) | 20 min | None |
@@ -528,7 +528,7 @@ export const metadata: Metadata = {
         "@type": "ApplyAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8",
+          "urlTemplate": "https://www.jkkn.ai/apply/jkkn-admission-2026",
           "actionPlatform": "https://schema.org/DesktopWebPlatform"
         }
       }

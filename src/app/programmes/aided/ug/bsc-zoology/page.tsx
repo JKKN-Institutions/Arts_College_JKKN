@@ -102,7 +102,7 @@ export default function BScZoologyPage() {
               </div>
 
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brand-green hover:bg-emerald-600 text-white px-7 py-3 rounded-lg font-semibold shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1">
+                <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brand-green hover:bg-emerald-600 text-white px-7 py-3 rounded-lg font-semibold shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1">
                   Apply Now
                   <ArrowRight className="w-4 h-4" />
                 </a>

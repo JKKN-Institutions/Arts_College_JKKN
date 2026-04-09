@@ -238,7 +238,7 @@ export default function NamakkalPage() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-8 py-3 rounded-full text-base transition-colors w-full sm:w-auto text-center"
@@ -714,7 +714,7 @@ export default function NamakkalPage() {
 
           <div className="mt-8 text-center flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-8 py-3 rounded-full text-base transition-colors"

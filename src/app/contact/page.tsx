@@ -98,7 +98,7 @@ export default function ContactPage() {
                   Ready to join us? Fill out our online admission form and start your journey with JKKN.
                 </p>
                 <a
-                  href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+                  href="https://www.jkkn.ai/apply/jkkn-admission-2026"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-white text-brand-green font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors"

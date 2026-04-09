@@ -43,7 +43,7 @@ export function AllCoursesSchema() {
       "@type": "Offer",
       category: prog.category,
       availability: "https://schema.org/InStock",
-      url: "https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8",
+      url: "https://www.jkkn.ai/apply/jkkn-admission-2026",
     },
   }));
 

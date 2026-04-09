@@ -221,7 +221,7 @@ export default function AdmissionsPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+                  href="https://www.jkkn.ai/apply/jkkn-admission-2026"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#0b6d41] text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-[#095c37] transition text-center inline-flex items-center justify-center gap-2"
@@ -601,7 +601,7 @@ export default function AdmissionsPage() {
               </a>
             </div>
             <a
-              href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-[#0b6d41] px-10 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition"

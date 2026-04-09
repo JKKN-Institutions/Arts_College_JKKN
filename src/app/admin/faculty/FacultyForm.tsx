@@ -91,6 +91,7 @@ interface FacultyMemberData {
   display_order: number;
   is_active: boolean;
   // Scalar extended fields
+  aided_or_self?: string | null;
   slug?: string | null;
   summary?: string | null;
   research_papers_count?: number;
@@ -236,6 +237,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
   const [displayOrder, setDisplayOrder] = useState(
     member?.display_order?.toString() ?? '0'
   );
+  const [aidedOrSelf, setAidedOrSelf] = useState(member?.aided_or_self ?? '');
   const [isActive, setIsActive] = useState(member?.is_active ?? true);
   const [photoUrl, setPhotoUrl] = useState(member?.photo_url ?? '');
   const [photoFile, setPhotoFile] = useState<File | null>(null);
@@ -385,6 +387,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
       name: name.trim(),
       designation: designation.trim(),
       department: department.trim(),
+      aided_or_self: aidedOrSelf || null,
       qualification: qualification.trim(),
       slug: slug.trim() || null,
       experience_years: parseInt(experienceYears) || 0,
@@ -448,7 +451,8 @@ export default function FacultyForm({ member }: FacultyFormProps) {
           <label className="block text-sm font-medium text-gray-700 mb-1.5">
             Photo
           </label>
-          <div className="flex items-start gap-4">
+          <div className="flex items-start justify-between">
+            <div className="flex items-start gap-4">
             <div
               onClick={() => fileInputRef.current?.click()}
               className={`relative w-24 h-24 rounded-2xl border-2 border-dashed overflow-hidden cursor-pointer transition flex-shrink-0 ${errors.photo ? 'border-red-500 hover:border-red-600' : 'border-gray-200 hover:border-[#0b6d41]'}`}
@@ -486,6 +490,23 @@ export default function FacultyForm({ member }: FacultyFormProps) {
                 JPG, PNG up to 5MB. Square photos work best.
               </p>
             </div>
+            </div>
+            {collegeId === 'arts' && (
+              <div className="min-w-[200px]">
+                <label className="block text-sm font-semibold text-gray-700 mb-1.5">
+                  Aided or Self-Finance
+                </label>
+                <select
+                  value={aidedOrSelf}
+                  onChange={(e) => setAidedOrSelf(e.target.value)}
+                  className={I}
+                >
+                  <option value="">-- Select --</option>
+                  <option value="Aided">Aided</option>
+                  <option value="Self-Finance">Self-Finance</option>
+                </select>
+              </div>
+            )}
           </div>
           <input
             ref={fileInputRef}

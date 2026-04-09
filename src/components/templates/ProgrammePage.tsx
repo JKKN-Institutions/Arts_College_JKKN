@@ -522,7 +522,7 @@ function AdmissionSection({
   title: string;
   admissionUrl?: string;
 }) {
-  const defaultUrl = 'https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8';
+  const defaultUrl = 'https://www.jkkn.ai/apply/jkkn-admission-2026';
 
   return (
     <section className={cn(responsive.section(), 'bg-brand-cream')} id="admission">

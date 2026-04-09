@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 import { UserCircle2 } from 'lucide-react';
+import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
 
@@ -28,7 +29,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function FacultyPage() {
+export default async function FacultyPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ tab?: string }>;
+}) {
+  const { tab } = await searchParams;
+  const activeTab = tab === 'self-finance' ? 'self-finance' : 'govt-aided';
+
   const supabase = await createClient();
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID;
 
@@ -39,6 +47,7 @@ export default async function FacultyPage() {
     )
     .eq('college_id', collegeId)
     .eq('is_active', true)
+    .eq('aided_or_self', activeTab === 'self-finance' ? 'Self-Finance' : 'Aided')
     .order('display_order', { ascending: true })
     .order('name', { ascending: true });
 
@@ -58,8 +67,36 @@ export default async function FacultyPage() {
           </div>
         </section>
 
+        {/* Toggle Tabs */}
+        <section className="max-w-6xl mx-auto px-4 pt-8">
+          <div className="flex justify-center">
+            <div className="inline-flex bg-gray-100 rounded-full p-1 gap-1">
+              <Link
+                href="/faculty"
+                className={`px-6 py-2 rounded-full text-sm font-medium transition ${
+                  activeTab === 'govt-aided'
+                    ? 'bg-[#1B5E20] text-white shadow-sm'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                Govt-Aided
+              </Link>
+              <Link
+                href="/faculty?tab=self-finance"
+                className={`px-6 py-2 rounded-full text-sm font-medium transition ${
+                  activeTab === 'self-finance'
+                    ? 'bg-[#1B5E20] text-white shadow-sm'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                Self Finance
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Faculty Grid */}
-        <section className="max-w-6xl mx-auto px-4 py-12">
+        <section className="max-w-6xl mx-auto px-4 py-8">
           {members && members.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               {members.map((m) => {

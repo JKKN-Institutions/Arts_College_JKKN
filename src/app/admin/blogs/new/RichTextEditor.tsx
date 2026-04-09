@@ -8,6 +8,10 @@ import TextAlign from '@tiptap/extension-text-align';
 import Link from '@tiptap/extension-link';
 import Image from '@tiptap/extension-image';
 import Placeholder from '@tiptap/extension-placeholder';
+import { Table } from '@tiptap/extension-table';
+import { TableRow } from '@tiptap/extension-table-row';
+import { TableCell } from '@tiptap/extension-table-cell';
+import { TableHeader } from '@tiptap/extension-table-header';
 import { useEffect, useRef, useCallback } from 'react';
 
 interface RichTextEditorProps {
@@ -67,6 +71,10 @@ export default function RichTextEditor({
       Link.configure({ openOnClick: false, HTMLAttributes: { class: 'text-blue-600 underline' } }),
       Image.configure({ inline: false, HTMLAttributes: { class: 'max-w-full rounded-lg my-3' } }),
       Placeholder.configure({ placeholder }),
+      Table.configure({ resizable: false }),
+      TableRow,
+      TableCell,
+      TableHeader,
     ],
     immediatelyRender: false,
     content: value,
@@ -309,6 +317,10 @@ if (!editor) return null;
         .ProseMirror hr { border: none; border-top: 2px solid #e5e7eb; margin: 1rem 0; }
 .ProseMirror mark { background: #fef08a; border-radius: 2px; }
         .ProseMirror a { color: #2563eb; text-decoration: underline; }
+        .ProseMirror table { border-collapse: collapse; width: 100%; margin: 0.75rem 0; overflow: hidden; }
+        .ProseMirror table td, .ProseMirror table th { border: 1px solid #d1d5db; padding: 6px 10px; vertical-align: top; min-width: 60px; position: relative; }
+        .ProseMirror table th { background: #f3f4f6; font-weight: 600; text-align: left; }
+        .ProseMirror table tr:nth-child(even) td { background: #fafafa; }
       `}</style>
     </div>
   );
