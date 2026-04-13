@@ -1066,9 +1066,9 @@ export default function BCAPage() {
                   Apply Now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
-                <button className="bg-transparent   bg-white hover:bg-brand-cream text-brand-green px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1">
+                <a href="/pdf/brochure.pdf" download className="bg-transparent bg-white hover:bg-brand-cream text-brand-green px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1">
                   Download Brochure
-                </button>
+                </a>
               </div>
             </div>
           </RevealSection>

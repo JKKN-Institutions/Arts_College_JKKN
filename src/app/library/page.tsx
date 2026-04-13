@@ -131,7 +131,7 @@ export default function LibraryPage() {
         { name: "Home", url: "https://cas.jkkn.ac.in" },
         { name: "Library", url: "https://cas.jkkn.ac.in/library" },
       ]} />
-      <div className="container mx-auto px-4 py-12 md:py-16 lg:py-20">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
 
         {/* Page Header */}
         <div className="mb-10">

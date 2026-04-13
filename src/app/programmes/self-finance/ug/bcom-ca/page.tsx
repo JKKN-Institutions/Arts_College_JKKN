@@ -1099,9 +1099,9 @@ export default function BComCAPage() {
                   Apply Now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
-                <button className="bg-white border-2 border-brand-green hover:bg-brand-green text-brand-green hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1">
-                  Schedule Campus Visit
-                </button>
+                <a href="/pdf/brochure.pdf" download className="bg-white border-2 border-brand-green hover:bg-brand-green text-brand-green hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1">
+                  Download Brochure
+                </a>
               </div>
             </div>
           </RevealSection>

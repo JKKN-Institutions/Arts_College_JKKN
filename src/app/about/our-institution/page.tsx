@@ -23,7 +23,7 @@ export default function OurInstitutionPage() {
         { name: "About", url: "https://cas.jkkn.ac.in/about" },
         { name: "Our Institution", url: "https://cas.jkkn.ac.in/about/our-institution" },
       ]} />
-      <div className="container mx-auto px-4 py-12 md:py-16 lg:py-20">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-2">

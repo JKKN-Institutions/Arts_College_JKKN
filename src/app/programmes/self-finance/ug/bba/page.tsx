@@ -817,8 +817,8 @@ export default function BBAPage() {
                     Apply Now
                     <ArrowRight className="w-5 h-5" />
                   </a>
-                  <a href="#" className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-brand-green border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all">
-                    Schedule Campus Visit
+                  <a href="/pdf/brochure.pdf" download className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-brand-green border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all">
+                    Download Brochure
                   </a>
                 </div>
               </div>

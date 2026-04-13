@@ -819,6 +819,8 @@ export default function MobileNav(props: MobileNavProps) {
 
               <Link
                 href="/documents/examinations/Autonomous_Semester-Timetable_AprilMay-_2025.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={toggleMobileMenu}
                 className="block py-3 px-4 text-gray-700 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
               >
@@ -880,6 +882,8 @@ export default function MobileNav(props: MobileNavProps) {
                         <div className="pb-2">
                           <Link
                             href="/documents/iqac/iiqa/cycle-1.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
@@ -903,6 +907,8 @@ export default function MobileNav(props: MobileNavProps) {
                         <div className="pb-2">
                           <Link
                             href="/documents/iqac/ssr/cycle-1-2013-2018.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
@@ -926,6 +932,8 @@ export default function MobileNav(props: MobileNavProps) {
                         <div className="pb-2">
                           <Link
                             href="/documents/iqac/aqar/aqar-2022-2023.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
@@ -933,6 +941,8 @@ export default function MobileNav(props: MobileNavProps) {
                           </Link>
                           <Link
                             href="/documents/iqac/aqar/aqar-2021-2022.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
@@ -940,6 +950,8 @@ export default function MobileNav(props: MobileNavProps) {
                           </Link>
                           <Link
                             href="/documents/iqac/aqar/aqar-2020-2021.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
@@ -947,6 +959,8 @@ export default function MobileNav(props: MobileNavProps) {
                           </Link>
                           <Link
                             href="/documents/iqac/aqar/aqar-2019-2020.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
@@ -954,6 +968,8 @@ export default function MobileNav(props: MobileNavProps) {
                           </Link>
                           <Link
                             href="/documents/iqac/aqar/aqar-2018-2019.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
@@ -977,6 +993,8 @@ export default function MobileNav(props: MobileNavProps) {
                         <div className="pb-2">
                           <Link
                             href="/documents/iqac/best-practices/best-practice-2022-2023.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition whitespace-nowrap"
                           >
@@ -984,6 +1002,8 @@ export default function MobileNav(props: MobileNavProps) {
                           </Link>
                           <Link
                             href="/documents/iqac/best-practices/best-practice-2021-2022.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition whitespace-nowrap"
                           >
@@ -991,6 +1011,8 @@ export default function MobileNav(props: MobileNavProps) {
                           </Link>
                           <Link
                             href="/documents/iqac/best-practices/best-practice-2020-2021.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition whitespace-nowrap"
                           >
@@ -998,6 +1020,8 @@ export default function MobileNav(props: MobileNavProps) {
                           </Link>
                           <Link
                             href="/documents/iqac/best-practices/best-practice-2019-2020.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition whitespace-nowrap"
                           >
@@ -1005,6 +1029,8 @@ export default function MobileNav(props: MobileNavProps) {
                           </Link>
                           <Link
                             href="/documents/iqac/best-practices/best-practice-2018-2019.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition whitespace-nowrap"
                           >
@@ -1028,6 +1054,8 @@ export default function MobileNav(props: MobileNavProps) {
                         <div className="pb-2">
                           <Link
                             href="/documents/iqac/college-magazine/magazine-2022-2023.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
@@ -1035,6 +1063,8 @@ export default function MobileNav(props: MobileNavProps) {
                           </Link>
                           <Link
                             href="/documents/iqac/college-magazine/magazine-2020-2021.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
@@ -1061,6 +1091,8 @@ export default function MobileNav(props: MobileNavProps) {
                   <div className="pb-2">
                     <Link
                       href="/documents/committees/28-LOA_EOA_merged_2026.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       onClick={toggleMobileMenu}
                       className="block py-2 px-8 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                     >
@@ -1068,20 +1100,13 @@ export default function MobileNav(props: MobileNavProps) {
                     </Link>
                     <Link
                       href="/documents/aicte/MANDATORY-DISCLOSURE-23-24.pdf"
-                      onClick={toggleMobileMenu}
-                      className="block py-2 px-8 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
-                    >
-                      MANDATORY-DISCLOSURE
-                    </Link>
-                    <a
-                      href="https://www.aicte.gov.in/feedback/index.php"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={toggleMobileMenu}
                       className="block py-2 px-8 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                     >
-                      AICTE Feedback
-                    </a>
+                      MANDATORY-DISCLOSURE
+                    </Link>
                   </div>
                 )}
               </div>
@@ -1186,6 +1211,8 @@ export default function MobileNav(props: MobileNavProps) {
                   <div className="pb-2">
                     <Link
                       href="/documents/rti/RTI-2024.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       onClick={toggleMobileMenu}
                       className="block py-2 px-8 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                     >
@@ -1208,13 +1235,6 @@ export default function MobileNav(props: MobileNavProps) {
                 {mobileOthersExpanded && (
                   <div className="pb-2">
                     <Link
-                      href="/others/academic-calendar"
-                      onClick={toggleMobileMenu}
-                      className="block py-2 px-8 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
-                    >
-                      Academic Calendar
-                    </Link>
-                    <Link
                       href="/others/privacy-policy"
                       onClick={toggleMobileMenu}
                       className="block py-2 px-8 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
@@ -1236,6 +1256,8 @@ export default function MobileNav(props: MobileNavProps) {
                         <div className="pb-2">
                           <Link
                             href="/documents/nirf/J.K.K-Nataraja-College-of-Arts-Science20240313-.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={toggleMobileMenu}
                             className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                           >
@@ -1254,6 +1276,8 @@ export default function MobileNav(props: MobileNavProps) {
                               <div className="pb-2">
                                 <Link
                                   href="/documents/nirf/NIRF-2025-OVER-All.pdf"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
                                   onClick={toggleMobileMenu}
                                   className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                                 >
@@ -1261,6 +1285,8 @@ export default function MobileNav(props: MobileNavProps) {
                                 </Link>
                                 <Link
                                   href="/documents/nirf/NIRF-2025-COLLEGE.pdf"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
                                   onClick={toggleMobileMenu}
                                   className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                                 >
@@ -1268,6 +1294,8 @@ export default function MobileNav(props: MobileNavProps) {
                                 </Link>
                                 <Link
                                   href="/documents/nirf/NIRF-2025-SDG.pdf"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
                                   onClick={toggleMobileMenu}
                                   className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                                 >
@@ -1289,6 +1317,8 @@ export default function MobileNav(props: MobileNavProps) {
                               <div className="pb-2">
                                 <Link
                                   href="/documents/nirf/J.K.K Nataraja College of Arts & Science20260402- Overall.pdf"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
                                   onClick={toggleMobileMenu}
                                   className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                                 >
@@ -1296,6 +1326,8 @@ export default function MobileNav(props: MobileNavProps) {
                                 </Link>
                                 <Link
                                   href="/documents/nirf/J.K.K Nataraja College of Arts & Science20260402-college.pdf"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
                                   onClick={toggleMobileMenu}
                                   className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                                 >
@@ -1303,6 +1335,8 @@ export default function MobileNav(props: MobileNavProps) {
                                 </Link>
                                 <Link
                                   href="/documents/nirf/J.K.K Nataraja College of Arts & Science20260402-  Sustainable Institutions.pdf"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
                                   onClick={toggleMobileMenu}
                                   className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                                 >

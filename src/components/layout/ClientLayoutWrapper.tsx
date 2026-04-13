@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import { usePathname } from 'next/navigation';
 import Navigation from "./Navigation";
 import { BottomNavbar } from "../BottomNav";
+import { ScrollToTop } from "../ScrollToTop";
 
 const Footer = dynamic(() => import("./Footer"), {
   loading: () => null,
@@ -29,6 +30,7 @@ export function ClientLayoutWrapper({
       </main>
       <Footer />
       <BottomNavbar />
+      <ScrollToTop />
     </>
   );
 }

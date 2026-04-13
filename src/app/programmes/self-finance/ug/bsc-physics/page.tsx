@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
@@ -792,11 +792,11 @@ export default function BScPhysicsPage() {
                   Join our B.Sc Physics programme and explore the fundamental laws that govern the universe with hands-on research experience
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                  <a href="#" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                  <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
                     Apply for Admission
                     <ArrowRight className="w-5 h-5" />
                   </a>
-                  <a href="#" className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-brand-green border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all">
+                  <a href="/pdf/brochure.pdf" download className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-brand-green border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all">
                     Download Brochure
                   </a>
                 </div>

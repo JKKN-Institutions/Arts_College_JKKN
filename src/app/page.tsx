@@ -1204,9 +1204,9 @@ export default function Home() {
             >
               Apply for Admission
             </a>
-            <button className="bg-white text-brand-green px-8 py-4 rounded-full text-[16px] leading-[24px] font-semibold hover:bg-gray-100 transition border border-gray-300">
-              Schedule Campus Visit
-            </button>
+            <a href="/pdf/brochure.pdf" download className="bg-white text-brand-green px-8 py-4 rounded-full text-[16px] leading-[24px] font-semibold hover:bg-gray-100 transition border border-gray-300">
+              Download Brochure
+            </a>
           </div>
         </div>
       </section>

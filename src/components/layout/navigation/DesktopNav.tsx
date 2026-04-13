@@ -744,6 +744,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                     <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
                       <Link
                         href="/departments/aided/tamil"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -752,6 +754,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/aided/english"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -760,6 +764,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/aided/mathematics"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -768,6 +774,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/aided/computer-science"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -776,6 +784,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/aided/commerce"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -784,6 +794,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/aided/economics"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -792,6 +804,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/aided/history"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -800,6 +814,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/aided/physics"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -808,6 +824,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/aided/zoology"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -816,6 +834,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/aided/chemistry"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -824,6 +844,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/aided/geography"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -832,6 +854,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/aided/physical-education"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -840,6 +864,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/aided/library"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -848,6 +874,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/aided/botany"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -874,6 +902,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                     <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
                       <Link
                         href="/departments/self-finance/tamil"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -882,6 +912,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/self-finance/english"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -890,6 +922,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/self-finance/mathematics"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -898,6 +932,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/self-finance/computer-science"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -906,6 +942,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/self-finance/computer-applications"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -914,6 +952,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/self-finance/commerce"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -922,6 +962,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/self-finance/physics"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -930,6 +972,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/self-finance/microbiology"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -938,6 +982,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/self-finance/visual-communication"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -946,6 +992,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/self-finance/textile-fashion-designing"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -954,6 +1002,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/self-finance/business-administration"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -962,6 +1012,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/self-finance/ai-data-science"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -970,6 +1022,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/departments/self-finance/cyber-security"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1071,6 +1125,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                     <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
                       <Link
                         href="/documents/iqac/iiqa/cycle-1.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1098,6 +1154,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                     <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
                       <Link
                         href="/documents/iqac/ssr/cycle-1-2013-2018.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1125,6 +1183,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                     <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
                       <Link
                         href="/documents/iqac/aqar/aqar-2022-2023.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1133,6 +1193,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/documents/iqac/aqar/aqar-2021-2022.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1141,6 +1203,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/documents/iqac/aqar/aqar-2020-2021.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1149,6 +1213,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/documents/iqac/aqar/aqar-2019-2020.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1157,6 +1223,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/documents/iqac/aqar/aqar-2018-2019.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1184,6 +1252,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                     <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
                       <Link
                         href="/documents/iqac/best-practices/best-practice-2022-2023.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-cream hover:text-brand-green transition whitespace-nowrap"
@@ -1192,6 +1262,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/documents/iqac/best-practices/best-practice-2021-2022.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-cream hover:text-brand-green transition whitespace-nowrap"
@@ -1200,6 +1272,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/documents/iqac/best-practices/best-practice-2020-2021.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-cream hover:text-brand-green transition whitespace-nowrap"
@@ -1208,6 +1282,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/documents/iqac/best-practices/best-practice-2019-2020.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-cream hover:text-brand-green transition whitespace-nowrap"
@@ -1216,6 +1292,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/documents/iqac/best-practices/best-practice-2018-2019.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-cream hover:text-brand-green transition whitespace-nowrap"
@@ -1243,6 +1321,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                     <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
                       <Link
                         href="/documents/iqac/college-magazine/magazine-2022-2023.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1251,6 +1331,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/documents/iqac/college-magazine/magazine-2020-2021.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1380,7 +1462,7 @@ export default function DesktopNav(props: DesktopNavProps) {
         )}
       </div>
 
-      <Link href="/documents/examinations/Autonomous_Semester-Timetable_AprilMay-_2025.pdf" className="text-gray-700 hover:text-brand-green transition font-bold uppercase hover:underline text-sm">
+      <Link href="/documents/examinations/Autonomous_Semester-Timetable_AprilMay-_2025.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-brand-green transition font-bold uppercase hover:underline text-sm">
         Examination
       </Link>
 
@@ -1415,6 +1497,8 @@ export default function DesktopNav(props: DesktopNavProps) {
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
               <Link
                 href="/documents/aicte/LOA_EOA_Report_23-24.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 role="menuitem"
                 tabIndex={0}
                 className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1423,22 +1507,14 @@ export default function DesktopNav(props: DesktopNavProps) {
               </Link>
               <Link
                 href="/documents/aicte/MANDATORY-DISCLOSURE-23-24.pdf"
-                role="menuitem"
-                tabIndex={0}
-                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
-              >
-                MANDATORY-DISCLOSURE
-              </Link>
-              <a
-                href="https://www.aicte.gov.in/feedback/index.php"
                 target="_blank"
                 rel="noopener noreferrer"
                 role="menuitem"
                 tabIndex={0}
                 className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
               >
-                AICTE Feedback
-              </a>
+                MANDATORY-DISCLOSURE
+              </Link>
             </div>
           </div>
         )}
@@ -1475,6 +1551,8 @@ export default function DesktopNav(props: DesktopNavProps) {
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
               <Link
                 href="/documents/rti/RTI-2024.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 role="menuitem"
                 tabIndex={0}
                 className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1516,14 +1594,6 @@ export default function DesktopNav(props: DesktopNavProps) {
           >
             <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
               <Link
-                href="/others/academic-calendar"
-                role="menuitem"
-                tabIndex={0}
-                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
-              >
-                Academic Calendar
-              </Link>
-              <Link
                 href="/others/privacy-policy"
                 role="menuitem"
                 tabIndex={0}
@@ -1557,6 +1627,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                     <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
                       <Link
                         href="/documents/nirf/J.K.K-Nataraja-College-of-Arts-Science20240313-.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1578,6 +1650,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                             <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
                               <Link
                                 href="/documents/nirf/NIRF-2025-OVER-All.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 role="menuitem"
                                 tabIndex={0}
                                 className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1586,6 +1660,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                               </Link>
                               <Link
                                 href="/documents/nirf/NIRF-2025-COLLEGE.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 role="menuitem"
                                 tabIndex={0}
                                 className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1594,6 +1670,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                               </Link>
                               <Link
                                 href="/documents/nirf/NIRF-2025-SDG.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 role="menuitem"
                                 tabIndex={0}
                                 className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1619,6 +1697,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                             <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
                               <Link
                                 href="/documents/nirf/J.K.K Nataraja College of Arts & Science20260402- Overall.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 role="menuitem"
                                 tabIndex={0}
                                 className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1627,6 +1707,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                               </Link>
                               <Link
                                 href="/documents/nirf/J.K.K Nataraja College of Arts & Science20260402-college.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 role="menuitem"
                                 tabIndex={0}
                                 className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1635,6 +1717,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                               </Link>
                               <Link
                                 href="/documents/nirf/J.K.K Nataraja College of Arts & Science20260402-  Sustainable Institutions.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 role="menuitem"
                                 tabIndex={0}
                                 className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1666,6 +1750,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                     <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
                       <Link
                         href="/documents/committees/Internal-Quality-Assurance-Cell-2024.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1674,6 +1760,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/documents/committees/2-Anti%20Ragging%20Committee%202025.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1682,6 +1770,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/documents/committees/3-Grievance-Redressal%20cell.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1692,6 +1782,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                         href="https://docs.google.com/forms/d/e/1FAIpQLSdsEgswc7mGZIlP7NdedDOJd84J9Gqm9PG2_9RPXa6QMvusBQ/viewform"
                         target="_blank"
                         rel="noopener noreferrer"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1700,6 +1792,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/documents/committees/4-ICC-Merged.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1708,6 +1802,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/documents/committees/27-institution industry cell IIC 2025.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
@@ -1716,6 +1812,8 @@ export default function DesktopNav(props: DesktopNavProps) {
                       </Link>
                       <Link
                         href="/documents/committees/5-SCST Cell.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         role="menuitem"
                         tabIndex={0}
                         className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"

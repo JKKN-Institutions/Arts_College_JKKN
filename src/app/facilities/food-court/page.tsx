@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { CheckCircle2 } from 'lucide-react';
-import FloatingChatButtons from '@/components/ui/FloatingChatButtons';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
@@ -90,11 +89,6 @@ export default function FoodCourtPage() {
           ))}
         </div>
 
-        {/* Floating Chat Buttons */}
-        <FloatingChatButtons
-          facebookUrl="https://m.me/jkkncas"
-          whatsappNumber="919345855001"
-        />
       </div>
     </div>
   );

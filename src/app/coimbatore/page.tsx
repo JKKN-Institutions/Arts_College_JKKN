@@ -408,7 +408,7 @@ export default function CoimbatorePage() {
       {/* Distance Card */}
       <section aria-label="Distance from Coimbatore" className="bg-[#FBFBEE] py-10 sm:py-12">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <div className="distance-card-summary bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-between gap-4 p-6">
+          <div className="distance-card-summary bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-wrap sm:flex-nowrap items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
                 105<span className="text-2xl font-semibold text-[#006837]">km</span>
@@ -427,7 +427,7 @@ export default function CoimbatorePage() {
               href="https://maps.app.goo.gl/bsLumyHe3JeaTAZ18"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#006837] hover:bg-[#002309] text-white text-center px-4 py-4 rounded-xl text-sm font-medium transition-colors flex-shrink-0 flex flex-col items-center gap-1 min-w-[90px]"
+              className="bg-[#006837] hover:bg-[#002309] text-white text-center px-4 py-4 rounded-xl text-sm font-medium transition-colors flex-shrink-0 flex flex-col items-center gap-1 min-w-[90px] w-full sm:w-auto"
             >
               <MapPin className="w-5 h-5" />
               <span>View on Map</span>

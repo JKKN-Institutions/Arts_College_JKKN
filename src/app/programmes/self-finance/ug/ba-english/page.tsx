@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
@@ -707,7 +707,7 @@ export default function SFBAEnglishPage() {
                   Apply for Admission
                   <ArrowRight className="w-4 h-4" />
                 </a>
-                <a href="#" className="inline-flex items-center gap-2 bg-transparent hover:bg-brand-green text-brand-green hover:text-white border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all">
+                <a href="/pdf/brochure.pdf" download className="inline-flex items-center gap-2 bg-transparent hover:bg-brand-green text-brand-green hover:text-white border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all">
                   Download Brochure
                 </a>
               </div>

@@ -88,7 +88,7 @@ export default function OurManagementPage() {
                           src={member.image}
                           alt={`${member.name} - ${member.position}`}
                           fill
-                          className="object-cover"
+                          className="object-contain"
                           sizes="(max-width: 768px) 160px, 192px"
                         />
                       ) : (
