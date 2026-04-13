@@ -484,7 +484,10 @@ export default function AdmissionsPage() {
                             Programme
                           </th>
                           <th className="text-right px-6 py-3 text-sm font-semibold text-gray-600 uppercase tracking-wider">
-                            Annual Fee
+                            GQ
+                          </th>
+                          <th className="text-right px-6 py-3 text-sm font-semibold text-gray-600 uppercase tracking-wider">
+                            MQ (Annual Fee)
                           </th>
                         </tr>
                       </thead>
@@ -506,6 +509,9 @@ export default function AdmissionsPage() {
                                 </span>
                               )}
                             </td>
+                            <td className="px-6 py-4 text-right text-gray-500 whitespace-nowrap">
+                              As Per Norms
+                            </td>
                             <td className="px-6 py-4 text-right font-semibold text-[#0b6d41] whitespace-nowrap">
                               ₹{prog.fee.toLocaleString("en-IN")}
                             </td>
@@ -520,9 +526,7 @@ export default function AdmissionsPage() {
 
             <div className="mt-8 bg-[#0b6d41]/5 rounded-xl p-5 border border-[#0b6d41]/10">
               <p className="text-sm text-gray-600 leading-relaxed">
-                <strong className="text-gray-800">Note:</strong> Fees shown are
-                for the Management Quota (MQ) category. Government Quota (GQ)
-                fees are regulated by the government and are significantly lower.
+                <strong className="text-gray-800">Note:</strong> GQ (Government Quota) fees are As Per Norms. MQ fees shown are annual fees for the Management Quota category.
                 Programmes marked{" "}
                 <span className="inline-flex items-center bg-[#ffde59] text-[#002309] text-xs font-bold px-2 py-0.5 rounded-full">
                   NEW

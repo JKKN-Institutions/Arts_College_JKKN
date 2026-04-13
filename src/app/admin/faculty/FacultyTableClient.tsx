@@ -3,7 +3,6 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { Search, Pencil, UserCircle2, ArrowUpDown } from 'lucide-react';
-import DeleteFacultyButton from './DeleteFacultyButton';
 
 interface FacultyMember {
   id: string;
@@ -238,7 +237,6 @@ export default function FacultyTableClient({ members }: { members: FacultyMember
                     >
                       <Pencil className="w-4 h-4" />
                     </Link>
-                    <DeleteFacultyButton id={m.id} />
                   </div>
                 </td>
               </tr>
