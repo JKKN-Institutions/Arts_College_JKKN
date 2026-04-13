@@ -151,7 +151,7 @@ export default async function FacultyPage({
 
                 return (
                   <div key={m.id}>
-                    <a href={`/faculty/${m.slug || m.id}/`} className="block">
+                    <a href={`/faculty/${m.id}/`} className="block">
                       {card}
                     </a>
                   </div>

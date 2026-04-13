@@ -229,7 +229,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
   const [designation, setDesignation] = useState(member?.designation ?? 'Assistant Professor');
   const [department, setDepartment] = useState(member?.department ?? '');
   const [qualification, setQualification] = useState(member?.qualification ?? '');
-  const [slug, setSlug] = useState(member?.slug ?? '');
+  const [slug, setSlug] = useState(member?.slug || (member?.name ? member.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') : ''));
   const [experienceYears, setExperienceYears] = useState(
     member?.experience_years?.toString() ?? '0'
   );
@@ -526,7 +526,7 @@ export default function FacultyForm({ member }: FacultyFormProps) {
           <input
             type="text"
             value={name}
-            onChange={(e) => { setName(e.target.value); clearError('name'); }}
+            onChange={(e) => { setName(e.target.value); clearError('name'); setSlug(e.target.value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')); }}
             placeholder="Dr. Firstname Lastname"
             className={errors.name ? IE : I}
           />
