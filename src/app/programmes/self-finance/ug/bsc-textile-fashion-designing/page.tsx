@@ -336,8 +336,8 @@ export default function BSCTextileFashionDesigningPage() {
                         { name: 'Core - IV, Fiber to Fabric Science Practical', code: '24UTFCP02' },
                         { name: 'DSE - II, Apparel Manufacturing Machineries and Equipments / Care and Maintenance of Textiles / Garment Accessories and Trims', code: '24UTFDE04 / 24UTFDE05 / 24UTFDE06' },
                         { name: 'NME - II, Needle Craft and Fabric Painting Practical', code: '24UTFNMP02' },
-                        { name: 'SEC - II, Basic Pattern Making Practical', code: '24UTFSP01' }
-                      ]
+                        { name: 'SEC - II, Basic Pattern Making Practical', code: '25UTFSP01' },
+                        {name: 'Disaster Management', code: '25UDIM01'}                      ]
                     }
                   ].map((sem, idx) => (
                     <RevealSection key={idx} delay={idx * 150}>
@@ -693,10 +693,8 @@ export default function BSCTextileFashionDesigningPage() {
               <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
                 {[
                   { name: 'Mr. G.Arulkumar', designation: 'Head of Department', qualification: ' M.Sc.,PGDCA.,', image: '/images/programmes/tfd/Mr.-G.Arulkumar-300x199 (1).png' },
-                  { name: 'Mrs. S.Sri Tharunya', designation: 'Assistant Professor', qualification: 'M.Sc.,', image: '/images/programmes/tfd/Mrs.-S.Sri-Tharunya-300x199 (1).png' },
                   { name: 'Mrs. R.Sindhupriyadharshini', designation: 'Assistant Professor', qualification: 'M.Sc.,', image: '/images/programmes/tfd/Mrs.-R.Sindhupriyadharshini-300x199 (2).png' },
-                  { name: 'Mrs.Keerthika', designation: 'Assistant Professor', qualification: 'M.SC (T&FD)', image: '/images/programmes/tfd/MRS.KEERTHIKA-300x199 (1).png' },
-                  { name: 'Ms.K.Krishnapriya', designation: 'Assistant Professor', qualification: 'B.SC (T&FD)', image: '/images/programmes/tfd/MS.K.KRISHNAPRIYA-300x199 (1).png' }
+                  { name: 'Mrs.Keerthika', designation: 'Assistant Professor', qualification: 'M.SC (T&FD)', image: '/images/programmes/tfd/MRS.KEERTHIKA-300x199 (1).png' }
                 ].map((faculty, idx) => (
                   <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
                     <div className="relative h-56 overflow-hidden flex-shrink-0">
