@@ -20,6 +20,7 @@ const DESIGNATIONS = [
   'Guest Faculty',
   'Physical Director',
   'Librarian',
+  'Lab Assistant',
   'Other',
 ];
 
