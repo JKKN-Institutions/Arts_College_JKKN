@@ -9,7 +9,7 @@ export default async function AdminFaculty() {
   const collegeId = await getAdminCollegeId();
   const { data: members } = await supabase
     .from('faculty')
-    .select('id, name, designation, department, qualification, experience_years, photo_url, email, display_order, is_active')
+    .select('id, name, designation, department, qualification, experience_years, photo_url, email, display_order, is_active, aided_or_self')
     .eq('college_id', collegeId)
     .order('display_order', { ascending: true })
     .order('name', { ascending: true });

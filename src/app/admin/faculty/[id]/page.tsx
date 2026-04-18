@@ -12,7 +12,7 @@ export default async function EditFaculty({ params }: { params: Promise<{ id: st
     .from('faculty')
     .select(`
       id, name, designation, department, qualification, experience_years,
-      photo_url, email, display_order, is_active,
+      photo_url, email, display_order, is_active, aided_or_self,
       slug, summary, research_papers_count, phd_scholars_count, awards_won_count,
       google_scholar_url, researchgate_url, orcid_url,
       mentoring_description, pg_dissertations_guided, ug_projects_guided,

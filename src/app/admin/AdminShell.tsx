@@ -21,7 +21,7 @@ export function AdminMainContent({
   return (
     <div
       data-theme={theme}
-      className={`flex-1 flex flex-col min-h-screen transition-all duration-300 ${marginClass} ${
+      className={`flex-1 min-w-0 flex flex-col min-h-screen transition-all duration-300 ${marginClass} ${
         isDark ? 'bg-gray-900 text-gray-100 admin-dark-mode' : 'bg-gray-50/80'
       }`}
     >

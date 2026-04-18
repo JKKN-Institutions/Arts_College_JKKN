@@ -1,8 +1,10 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { Search, Pencil, UserCircle2, ArrowUpDown } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { createClient } from '@/lib/supabase/client';
 
 interface FacultyMember {
   id: string;
@@ -15,6 +17,7 @@ interface FacultyMember {
   email: string | null;
   display_order: number;
   is_active: boolean;
+  aided_or_self: string | null;
 }
 
 type SortKey = 'name' | 'department' | 'designation' | 'experience_years' | 'is_active';
@@ -25,6 +28,50 @@ export default function FacultyTableClient({ members }: { members: FacultyMember
   const [statusFilter, setStatusFilter] = useState<'all' | 'active' | 'inactive'>('all');
   const [sortKey, setSortKey] = useState<SortKey>('name');
   const [sortDir, setSortDir] = useState<SortDir>('asc');
+  const [pendingMap, setPendingMap] = useState<Record<string, string>>({});
+  const [savingId, setSavingId] = useState<string | null>(null);
+  const router = useRouter();
+
+  const tableScrollRef = useRef<HTMLDivElement>(null);
+  const topScrollRef = useRef<HTMLDivElement>(null);
+  const topScrollInnerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const tableScroll = tableScrollRef.current;
+    const topScroll = topScrollRef.current;
+    const topScrollInner = topScrollInnerRef.current;
+    if (!tableScroll || !topScroll || !topScrollInner) return;
+
+    topScrollInner.style.width = `${tableScroll.scrollWidth}px`;
+
+    const syncFromTable = () => { topScroll.scrollLeft = tableScroll.scrollLeft; };
+    const syncFromTop = () => { tableScroll.scrollLeft = topScroll.scrollLeft; };
+
+    tableScroll.addEventListener('scroll', syncFromTable);
+    topScroll.addEventListener('scroll', syncFromTop);
+    return () => {
+      tableScroll.removeEventListener('scroll', syncFromTable);
+      topScroll.removeEventListener('scroll', syncFromTop);
+    };
+  }, [members]);
+
+  async function handleAidedSave(memberId: string) {
+    const value = pendingMap[memberId];
+    if (value === undefined) return;
+    setSavingId(memberId);
+    const supabase = createClient();
+    await supabase
+      .from('faculty')
+      .update({ aided_or_self: value || null })
+      .eq('id', memberId);
+    setSavingId(null);
+    setPendingMap(prev => {
+      const next = { ...prev };
+      delete next[memberId];
+      return next;
+    });
+    router.refresh();
+  }
 
   function toggleSort(key: SortKey) {
     if (sortKey === key) {
@@ -127,8 +174,13 @@ export default function FacultyTableClient({ members }: { members: FacultyMember
         </div>
       </div>
 
+      {/* Top scrollbar mirror */}
+      <div ref={topScrollRef} className="overflow-x-auto border-b border-gray-100">
+        <div ref={topScrollInnerRef} className="h-px" />
+      </div>
+
       {/* Table */}
-      <div className="overflow-x-auto">
+      <div ref={tableScrollRef} className="overflow-x-auto">
         <table className="w-full">
           <thead>
             <tr className="border-b border-gray-100 bg-gray-50/50">
@@ -152,6 +204,9 @@ export default function FacultyTableClient({ members }: { members: FacultyMember
               </th>
               <th className="text-center px-4 py-3">
                 <SortHeader label="Status" field="is_active" />
+              </th>
+              <th className="text-left px-4 py-3 hidden lg:table-cell">
+                <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">Self/Aided</span>
               </th>
               <th className="text-right px-4 py-3">
                 <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">Actions</span>
@@ -225,6 +280,30 @@ export default function FacultyTableClient({ members }: { members: FacultyMember
                   }`}>
                     {m.is_active ? 'Active' : 'Inactive'}
                   </span>
+                </td>
+
+                {/* Self/Aided */}
+                <td className="px-4 py-3 hidden lg:table-cell">
+                  <div className="flex items-center gap-1.5">
+                    <select
+                      value={pendingMap[m.id] ?? m.aided_or_self ?? ''}
+                      onChange={e => setPendingMap(prev => ({ ...prev, [m.id]: e.target.value }))}
+                      className="text-xs border border-gray-200 rounded-lg px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-[#0b6d41]/20 focus:border-[#0b6d41] transition bg-white"
+                    >
+                      <option value="">-- Select --</option>
+                      <option value="Aided">Aided</option>
+                      <option value="Self-Finance">Self-Finance</option>
+                    </select>
+                    {pendingMap[m.id] !== undefined && pendingMap[m.id] !== (m.aided_or_self ?? '') && (
+                      <button
+                        onClick={() => handleAidedSave(m.id)}
+                        disabled={savingId === m.id}
+                        className="text-xs bg-[#0b6d41] text-white px-2.5 py-1.5 rounded-lg hover:bg-[#004d28] disabled:opacity-50 transition"
+                      >
+                        {savingId === m.id ? '...' : 'Save'}
+                      </button>
+                    )}
+                  </div>
                 </td>
 
                 {/* Actions */}
