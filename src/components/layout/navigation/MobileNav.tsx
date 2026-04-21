@@ -529,6 +529,13 @@ export default function MobileNav(props: MobileNavProps) {
                                   B.Sc Visual Communication
                                 </Link>
                                 <Link
+                                  href="/programmes/self-finance/ug/bsc-visual-communication-ai"
+                                  onClick={toggleMobileMenu}
+                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                                >
+                                  B.Sc Visual Communication (AI)
+                                </Link>
+                                <Link
                                   href="/programmes/self-finance/ug/bsc-microbiology"
                                   onClick={toggleMobileMenu}
                                   className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"

@@ -498,7 +498,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     level: "UG",
     category: "Self-Finance",
     description:
-      "Study B.Sc. Visual Communication (AI) at JKKN College of Arts and Science (Autonomous) — a future-ready 3-year UG programme blending design, generative AI, prompt engineering, and AI-powered motion & UI/UX. New for 2026-27, near Erode, Tamil Nadu.",
+      "B.Sc. Visual Communication (AI) at JKKN College of Arts and Science (Autonomous) is a proposed 3-year UG programme blending design, generative AI, prompt engineering, and AI-powered motion & UI/UX. Currently awaiting university approval — register your interest, near Erode, Tamil Nadu.",
     keywords: [
       "BSc Visual Communication AI",
       "generative AI design course",
