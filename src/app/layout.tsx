@@ -6,6 +6,7 @@ import { ClientLayoutWrapper } from "@/components/layout/ClientLayoutWrapper";
 import { OrganizationSchema } from "@/components/seo/OrganizationSchema";
 import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
 import { WebSiteSchema } from "@/components/seo/WebSiteSchema";
+import { MetaPixel } from "@/components/analytics/MetaPixel";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -107,6 +108,7 @@ export default function RootLayout({
         <Script id="ga4-init" strategy="afterInteractive">
           {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QW6LQV7XE5');`}
         </Script>
+        <MetaPixel />
         <OrganizationSchema />
         <LocalBusinessSchema />
         <WebSiteSchema />
