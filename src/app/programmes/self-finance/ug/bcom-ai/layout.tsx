@@ -4,9 +4,9 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 
 export const metadata: Metadata = {
-  title: "Bachelor of Commerce in Artificial Intelligence (B.Com AI)",
+  title: "Bachelor of Commerce in Artificial Intelligence (B.Com AI) — Proposed Programme",
   description:
-    "Study B.Com Artificial Intelligence at JKKN College of Arts and Science (Autonomous). A future-ready commerce programme blending accounting, finance, AI, ML and business analytics near Erode, Tamil Nadu.",
+    "B.Com Artificial Intelligence at JKKN College of Arts and Science (Autonomous) — a proposed future-ready commerce programme blending accounting, finance, AI, ML and business analytics. Currently awaiting university approval; register your interest to be notified when admissions open.",
   keywords: [
     "BCom AI",
     "BCom Artificial Intelligence",
@@ -54,9 +54,14 @@ const faqs = [
       "Yes. The programme includes two structured internships — one in the second year focused on business analytics, and one in the final year with FinTech firms, accounting & audit firms, or corporate finance teams.",
   },
   {
+    question: "Is this programme approved by the university? Can I apply right now?",
+    answer:
+      "B.Com (AI) is a proposed programme currently awaiting official approval from the affiliating university. Admissions will open only after the approval is received. You can register your interest via our Contact page and we will notify you as soon as applications open — no payment or commitment is required at this stage.",
+  },
+  {
     question: "How do I know the admission fee for B.Com AI?",
     answer:
-      "For the latest fee structure, scholarships, and seat availability, please contact the admissions office directly or fill out the enquiry form on the Apply Now page.",
+      "The official fee structure will be published once the programme receives university approval. Register your interest via the Contact page to receive the fee structure as soon as it is finalised.",
   },
 ];
 

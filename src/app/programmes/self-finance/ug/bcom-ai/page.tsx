@@ -25,6 +25,8 @@ import {
   Clock,
   LineChart,
   Code2,
+  AlertCircle,
+  MailQuestion,
 } from 'lucide-react';
 
 function useScrollReveal() {
@@ -199,22 +201,45 @@ export default function BComAIPage() {
       answer: 'Yes. The programme includes two structured internships — one in the second year focused on business analytics, and one in the final year with FinTech firms, accounting & audit firms, or corporate finance teams. This ensures graduates have real-world AI + Commerce exposure before they step into the job market.',
     },
     {
+      question: 'Is this programme approved by the university? Can I apply right now?',
+      answer: 'B.Com (AI) is a proposed programme currently awaiting official approval from the affiliating university. Admissions will open only after the approval is received. In the meantime, you can register your interest via our Contact page and we will notify you as soon as applications open — no payment or commitment is required at this stage.',
+    },
+    {
       question: 'How do I know the admission fee for B.Com AI?',
-      answer: 'For the latest fee structure, scholarships, and seat availability, please contact our admissions office directly or fill out the enquiry form on the Apply Now page. Our team will guide you through the complete fee breakdown and payment options.',
+      answer: 'The official fee structure will be published once the programme receives university approval. Once admissions open, our admissions office will share the complete fee breakdown, scholarship details, and payment options. Register your interest via the Contact page to receive the fee structure as soon as it is finalised.',
     },
   ];
 
   return (
     <>
+      {/* Approval Pending Banner */}
+      <div className="bg-amber-50 border-b-2 border-amber-300 py-3 px-4" role="alert">
+        <div className="container mx-auto flex items-start sm:items-center gap-3 max-w-5xl">
+          <AlertCircle className="w-5 h-5 text-amber-700 flex-shrink-0 mt-0.5 sm:mt-0" aria-hidden="true" />
+          <p className="text-sm md:text-base text-amber-900 leading-relaxed">
+            <span className="font-semibold">Proposed Programme:</span>{' '}
+            This programme is currently awaiting official approval from the affiliating university. Admissions will open once approval is received. You are welcome to{' '}
+            <a href="/contact" className="underline font-semibold hover:text-amber-950">register your interest</a>{' '}
+            and we will keep you informed.
+          </p>
+        </div>
+      </div>
+
       {/* Hero Banner Section */}
       <section className="relative min-h-[70vh] flex items-center overflow-hidden py-12" style={{ backgroundColor: '#eaf1e2' }}>
         <div className="container mx-auto px-4 relative z-10">
           <RevealSection>
             <div className="max-w-4xl mx-auto text-center">
-              <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
-                <GraduationCap className="w-4 h-4 text-brand-green" />
-                Self-Finance Programme
-              </span>
+              <div className="flex flex-wrap justify-center gap-2 mb-6">
+                <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold border border-white/90 text-gray-900">
+                  <GraduationCap className="w-4 h-4 text-brand-green" />
+                  Self-Finance Programme
+                </span>
+                <span className="inline-flex items-center gap-2 bg-amber-100 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold border border-amber-300 text-amber-900">
+                  <AlertCircle className="w-4 h-4" />
+                  Subject to University Approval
+                </span>
+              </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Bachelor of Commerce in{' '}
                 <span className="text-brand-green">
@@ -241,14 +266,17 @@ export default function BComAIPage() {
               </div>
 
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-                  Apply Now
-                  <ArrowRight className="w-4 h-4" />
+                <a href="/contact" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                  <MailQuestion className="w-4 h-4" />
+                  Register Interest
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
                   View Curriculum
                 </a>
               </div>
+              <p className="text-xs text-gray-600 mt-4 italic">
+                Admissions open after university approval. Register your interest to receive updates.
+              </p>
             </div>
           </RevealSection>
         </div>
@@ -919,14 +947,18 @@ export default function BComAIPage() {
           <RevealSection>
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-3xl font-bold text-brand-green mb-6">
-                Ready to Pioneer Commerce in the AI Era?
+                Interested in B.Com (Artificial Intelligence)?
               </h2>
-              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                Join JKKN's B.Com Artificial Intelligence programme and become the kind of commerce graduate the future economy is actively hiring.
+              <p className="text-xl text-gray-700 mb-4 leading-relaxed">
+                This programme is proposed for the upcoming academic year and is currently awaiting official approval from the affiliating university. Register your interest today and we will notify you the moment admissions open.
+              </p>
+              <p className="text-sm text-gray-500 mb-8 italic">
+                No admission fee or commitment required at this stage — this is a free interest registration.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="https://www.jkkn.ai/apply/jkkn-admission-2026" target="_blank" rel="noopener noreferrer" className="group bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1 flex items-center gap-2">
-                  Apply Now
+                <a href="/contact" className="group bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1 flex items-center gap-2">
+                  <MailQuestion className="w-5 h-5" />
+                  Register Interest
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a href="/pdf/brochure.pdf" download className="bg-white border-2 border-brand-green hover:bg-brand-green text-brand-green hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1">
