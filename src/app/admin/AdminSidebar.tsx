@@ -50,7 +50,7 @@ const peopleLinks = [
 ];
 
 const staffLinks = [
-  { href: '/admin/gallery', label: 'Gallery', icon: ImageIcon },
+  { href: '/admin/events', label: 'Events', icon: CalendarDays },
   { href: '/admin/faculty', label: 'Faculty', icon: Users },
 ];
 
@@ -232,61 +232,9 @@ export default function AdminSidebar({
         <nav className={`flex-1 overflow-y-auto scrollbar-none ${isCollapsed ? 'px-2' : 'px-3'}`} style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
           {isStaff ? (
             <div className="space-y-0.5">
-              <NavLink href="/admin/dashboard" label="Dashboard" icon={LayoutDashboard} />
               {staffLinks.map((link) => (
                 <NavLink key={link.href} {...link} />
               ))}
-
-              {/* Blog expandable */}
-              {isCollapsed ? (
-                <NavLink href="/admin/blogs" label="Blog" icon={FileText} />
-              ) : (
-                <div>
-                  <button
-                    onClick={() => setBlogOpen((o) => !o)}
-                    className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-[13px] font-medium transition-all duration-200 ${
-                      isBlogActive
-                        ? isDark ? 'bg-gray-700/50 text-gray-200' : 'bg-[#0b6d41]/10 text-[#0b6d41]'
-                        : isDark ? 'text-gray-400 hover:bg-gray-700/50 hover:text-gray-200' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
-                    }`}
-                  >
-                    <FileText size={18} className="flex-shrink-0" />
-                    <span>Blog</span>
-                    {blogOpen ? (
-                      <ChevronDown className="ml-auto w-3.5 h-3.5 text-gray-400" />
-                    ) : (
-                      <ChevronRight className="ml-auto w-3.5 h-3.5 text-gray-400" />
-                    )}
-                  </button>
-                  {blogOpen && (
-                    <div className={`mt-0.5 ml-4 pl-3 border-l space-y-0.5 ${isDark ? 'border-gray-700' : 'border-gray-200'}`}>
-                      {blogSubLinks.map(({ href, label, icon: Icon }) => {
-                        const active =
-                          href === '/admin/blogs'
-                            ? pathname === '/admin/blogs'
-                            : pathname === href || pathname.startsWith(href + '/');
-                        return (
-                          <Link
-                            key={href}
-                            href={href}
-                            onClick={() => setMobileOpen(false)}
-                            className={`flex items-center gap-3 px-3 py-2 rounded-xl text-[13px] font-medium transition-all duration-200 ${
-                              active
-                                ? 'bg-[#0b6d41] text-white'
-                                : isDark
-                                  ? 'text-gray-500 hover:bg-gray-700/50 hover:text-gray-200'
-                                  : 'text-gray-500 hover:bg-gray-100 hover:text-gray-900'
-                            }`}
-                          >
-                            <Icon size={15} className="flex-shrink-0" />
-                            <span>{label}</span>
-                          </Link>
-                        );
-                      })}
-                    </div>
-                  )}
-                </div>
-              )}
             </div>
           ) : (
             <>

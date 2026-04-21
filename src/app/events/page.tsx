@@ -29,9 +29,9 @@ interface EventBlog {
   id: string;
   title: string;
   slug: string;
-  excerpt: string | null;
-  cover_image_url: string | null;
-  published_at: string | null;
+  description: string | null;
+  image_url: string | null;
+  event_date: string | null;
   created_at: string;
 }
 
@@ -39,12 +39,11 @@ export default async function EventsPage() {
   const supabase = await createClient();
 
   const { data: events } = await supabase
-    .from("blogs")
-    .select("id, title, slug, excerpt, cover_image_url, published_at, created_at")
+    .from("events")
+    .select("id, title, slug, description, image_url, event_date, created_at")
     .eq("college_id", siteConfig.id)
     .eq("is_published", true)
-    .eq("category", "Events")
-    .order("published_at", { ascending: false, nullsFirst: false })
+    .order("event_date", { ascending: false, nullsFirst: false })
     .returns<EventBlog[]>();
 
   return (
@@ -78,7 +77,7 @@ export default async function EventsPage() {
           {events && events.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {events.map((event) => {
-                const displayDate = event.published_at ?? event.created_at;
+                const displayDate = event.event_date ?? event.created_at;
                 return (
                   <Link
                     key={event.id}
@@ -87,11 +86,12 @@ export default async function EventsPage() {
                   >
                     {/* Event Image */}
                     <div className="relative w-full h-48 bg-gray-100">
-                      {event.cover_image_url ? (
+                      {event.image_url ? (
                         <Image
-                          src={event.cover_image_url}
+                          src={event.image_url}
                           alt={event.title}
                           fill
+                          unoptimized
                           className="object-cover group-hover:scale-105 transition-transform duration-300"
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         />
@@ -122,9 +122,9 @@ export default async function EventsPage() {
                       </h2>
 
                       {/* Description */}
-                      {event.excerpt && (
+                      {event.description && (
                         <p className="text-sm text-gray-500 line-clamp-3 mb-4 flex-1">
-                          {event.excerpt}
+                          {event.description}
                         </p>
                       )}
 

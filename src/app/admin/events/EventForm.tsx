@@ -285,37 +285,15 @@ export default function EventForm({ event }: EventFormProps) {
         </div>
       </div>
 
-      {/* Date, Time & Venue */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1.5">Event Date</label>
-          <input
-            type="date"
-            value={eventDate}
-            onChange={(e) => setEventDate(e.target.value)}
-            className={INPUT}
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1.5">Event Time</label>
-          <input
-            type="text"
-            value={eventTime}
-            onChange={(e) => setEventTime(e.target.value)}
-            placeholder="e.g. 1:00 PM to 4:00 PM"
-            className={INPUT}
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1.5">Venue</label>
-          <input
-            type="text"
-            value={venue}
-            onChange={(e) => setVenue(e.target.value)}
-            placeholder="e.g. Vibrant Arangam, JKKN Campus"
-            className={INPUT}
-          />
-        </div>
+      {/* Date */}
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1.5">Event Date</label>
+        <input
+          type="date"
+          value={eventDate}
+          onChange={(e) => setEventDate(e.target.value)}
+          className={INPUT}
+        />
       </div>
 
       {/* Description */}
@@ -368,31 +346,6 @@ export default function EventForm({ event }: EventFormProps) {
           onChange={handleImageSelect}
           className="hidden"
         />
-      </div>
-
-      {/* Gallery Album */}
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1.5">
-          <span className="flex items-center gap-2">
-            <Images className="w-4 h-4 text-[#0b6d41]" />
-            Gallery Album
-          </span>
-        </label>
-        <p className="text-xs text-gray-400 mb-3">
-          Select a gallery album to display event photos on the public page.
-        </p>
-        {loadingAlbums ? (
-          <div className="flex items-center gap-2 text-sm text-gray-400 py-3">
-            <Loader2 className="w-4 h-4 animate-spin" />
-            Loading albums...
-          </div>
-        ) : (
-          <AlbumDropdown
-            albums={albums}
-            value={galleryAlbumId}
-            onChange={setGalleryAlbumId}
-          />
-        )}
       </div>
 
       {/* Actions */}

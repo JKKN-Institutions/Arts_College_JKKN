@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { Search, Pencil, UserCircle2, ArrowUpDown } from 'lucide-react';
+import { Search, Pencil, Trash2, UserCircle2, ArrowUpDown } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
 
@@ -23,13 +23,15 @@ interface FacultyMember {
 type SortKey = 'name' | 'department' | 'designation' | 'experience_years' | 'is_active';
 type SortDir = 'asc' | 'desc';
 
-export default function FacultyTableClient({ members }: { members: FacultyMember[] }) {
+export default function FacultyTableClient({ members, userRole }: { members: FacultyMember[]; userRole: string | null }) {
   const [search, setSearch] = useState('');
   const [statusFilter, setStatusFilter] = useState<'all' | 'active' | 'inactive'>('all');
   const [sortKey, setSortKey] = useState<SortKey>('name');
   const [sortDir, setSortDir] = useState<SortDir>('asc');
   const [pendingMap, setPendingMap] = useState<Record<string, string>>({});
   const [savingId, setSavingId] = useState<string | null>(null);
+  const [deleteTarget, setDeleteTarget] = useState<{ id: string; name: string } | null>(null);
+  const [deletingId, setDeletingId] = useState<string | null>(null);
   const router = useRouter();
 
   const tableScrollRef = useRef<HTMLDivElement>(null);
@@ -70,6 +72,16 @@ export default function FacultyTableClient({ members }: { members: FacultyMember
       delete next[memberId];
       return next;
     });
+    router.refresh();
+  }
+
+  async function confirmDelete() {
+    if (!deleteTarget) return;
+    setDeletingId(deleteTarget.id);
+    const supabase = createClient();
+    await supabase.from('faculty').delete().eq('id', deleteTarget.id);
+    setDeleteTarget(null);
+    setDeletingId(null);
     router.refresh();
   }
 
@@ -316,6 +328,16 @@ export default function FacultyTableClient({ members }: { members: FacultyMember
                     >
                       <Pencil className="w-4 h-4" />
                     </Link>
+                    {userRole === 'seo' && (
+                      <button
+                        onClick={() => setDeleteTarget({ id: m.id, name: m.name })}
+                        disabled={deletingId === m.id}
+                        className="w-8 h-8 rounded-lg flex items-center justify-center text-gray-400 hover:text-red-600 hover:bg-red-50 disabled:opacity-50 transition-colors"
+                        title="Delete"
+                      >
+                        <Trash2 className="w-4 h-4" />
+                      </button>
+                    )}
                   </div>
                 </td>
               </tr>
@@ -337,6 +359,37 @@ export default function FacultyTableClient({ members }: { members: FacultyMember
           Showing {filtered.length} of {members.length} members
         </p>
       </div>
+
+      {/* Delete confirmation modal */}
+      {deleteTarget && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
+          <div className="bg-white rounded-2xl shadow-xl p-6 w-full max-w-sm mx-4">
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-red-50 mx-auto mb-4">
+              <Trash2 className="w-5 h-5 text-red-600" />
+            </div>
+            <h3 className="text-base font-semibold text-gray-900 text-center mb-1">Delete Faculty</h3>
+            <p className="text-sm text-gray-500 text-center mb-6">
+              Are you sure you want to delete <span className="font-medium text-gray-700">&quot;{deleteTarget.name}&quot;</span>? This action cannot be undone.
+            </p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setDeleteTarget(null)}
+                disabled={!!deletingId}
+                className="flex-1 px-4 py-2.5 text-sm font-medium text-gray-700 bg-gray-100 rounded-xl hover:bg-gray-200 disabled:opacity-50 transition"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={confirmDelete}
+                disabled={!!deletingId}
+                className="flex-1 px-4 py-2.5 text-sm font-medium text-white bg-red-600 rounded-xl hover:bg-red-700 disabled:opacity-50 transition"
+              >
+                {deletingId ? 'Deleting...' : 'Delete'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

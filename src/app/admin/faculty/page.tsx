@@ -7,6 +7,18 @@ import FacultyTableClient from './FacultyTableClient';
 export default async function AdminFaculty() {
   const supabase = await createClient();
   const collegeId = await getAdminCollegeId();
+
+  const { data: { session } } = await supabase.auth.getSession();
+  let userRole: string | null = null;
+  if (session?.user) {
+    const { data: profile } = await supabase
+      .from('staff_profiles')
+      .select('role')
+      .eq('id', session.user.id)
+      .single();
+    userRole = profile?.role ?? null;
+  }
+
   const { data: members } = await supabase
     .from('faculty')
     .select('id, name, designation, department, qualification, experience_years, photo_url, email, display_order, is_active, aided_or_self')
@@ -33,7 +45,7 @@ export default async function AdminFaculty() {
 
       {/* Table */}
       {members && members.length > 0 ? (
-        <FacultyTableClient members={members} />
+        <FacultyTableClient members={members} userRole={userRole} />
       ) : (
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm py-16 flex flex-col items-center text-center">
           <div className="w-14 h-14 bg-[#0b6d41]/10 rounded-2xl flex items-center justify-center mb-4">
