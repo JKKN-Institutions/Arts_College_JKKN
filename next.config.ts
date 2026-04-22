@@ -2,11 +2,11 @@ import type { NextConfig } from "next";
 
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com;
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net;
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
   font-src 'self' https://fonts.gstatic.com;
-  img-src 'self' data: blob: https://images.unsplash.com https://*.supabase.co https://www.google-analytics.com;
-  connect-src 'self' https://*.supabase.co https://www.google-analytics.com;
+  img-src 'self' data: blob: https://images.unsplash.com https://*.supabase.co https://www.google-analytics.com https://www.facebook.com;
+  connect-src 'self' https://*.supabase.co https://www.google-analytics.com https://www.facebook.com;
   frame-src 'self' https://www.google.com https://maps.google.com;
   frame-ancestors 'none';
   base-uri 'self';

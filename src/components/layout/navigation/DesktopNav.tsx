@@ -549,6 +549,14 @@ export default function DesktopNav(props: DesktopNavProps) {
                                 B.Com CA
                               </Link>
                               <Link
+                                href="/programmes/self-finance/ug/bcom-ai"
+                                role="menuitem"
+                                tabIndex={0}
+                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                              >
+                                B.Com AI
+                              </Link>
+                              <Link
                                 href="/programmes/self-finance/ug/bca"
                                 role="menuitem"
                                 tabIndex={0}
@@ -613,12 +621,28 @@ export default function DesktopNav(props: DesktopNavProps) {
                                 B.Sc Textile and Fashion Designing
                               </Link>
                               <Link
+                                href="/programmes/self-finance/ug/bsc-textile-fashion-designing-ai"
+                                role="menuitem"
+                                tabIndex={0}
+                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                              >
+                                B.Sc Textile and Fashion Designing (AI)
+                              </Link>
+                              <Link
                                 href="/programmes/self-finance/ug/bsc-visual-communication"
                                 role="menuitem"
                                 tabIndex={0}
                                 className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
                               >
                                 B.Sc Visual Communication
+                              </Link>
+                              <Link
+                                href="/programmes/self-finance/ug/bsc-visual-communication-ai"
+                                role="menuitem"
+                                tabIndex={0}
+                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                              >
+                                B.Sc Visual Communication (AI)
                               </Link>
                               <Link
                                 href="/programmes/self-finance/ug/bsc-microbiology"
