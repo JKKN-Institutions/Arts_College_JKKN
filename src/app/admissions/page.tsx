@@ -145,8 +145,8 @@ const feeStructure = [
     category: "UG — Science",
     programmes: [
       { name: "B.Sc. Computer Science", fee: 34000 },
-      { name: "B.Sc. Computer Science (AI & Data Science)", fee: 34000 },
-      { name: "B.Sc. Computer Science (Cyber Security)", fee: 32000 },
+      { name: "B.Sc. Comp. Sci. (AI & DS)", fee: 34000 },
+      { name: "B.Sc. Comp. Sci. (Cyber Security)", fee: 32000 },
       { name: "B.Sc. Microbiology", fee: 34000 },
       { name: "B.Sc. Clinical Lab Technology", fee: 32000 },
       { name: "B.Sc. Mathematics", fee: 26000 },
@@ -156,17 +156,17 @@ const feeStructure = [
   {
     category: "UG — Commerce & Management",
     programmes: [
-      { name: "B.Com (Computer Applications)", fee: 34000 },
+      { name: "B.Com (CA)", fee: 34000 },
       { name: "B.C.A.", fee: 33000 },
       { name: "B.B.A.", fee: 25500 },
-      { name: "B.Com (AI)", fee: 34000, isNew: true },
+      { name: "B.Com (AI) *", fee: 34000 },
     ],
   },
   {
     category: "UG — Creative & Design",
     programmes: [
-      { name: "B.Sc. Textile and Fashion Designing (AI)", fee: 34000, isNew: true },
-      { name: "B.Sc. Visual Communication (AI)", fee: 34000, isNew: true },
+      { name: "B.Sc. Textile and Fashion Designing (AI) *", fee: 34000 },
+      { name: "B.Sc. Visual Communication (AI) *", fee: 34000 },
       { name: "B.Sc. Textile and Fashion Designing", fee: 32000 },
       { name: "B.Sc. Visual Communication", fee: 32000 },
     ],
@@ -503,14 +503,9 @@ export default function AdmissionsPage() {
                           >
                             <td className="px-6 py-4 text-gray-800">
                               {prog.name}
-                              {prog.isNew && (
-                                <span className="ml-2 inline-flex items-center bg-[#ffde59] text-[#002309] text-xs font-bold px-2 py-0.5 rounded-full">
-                                  NEW
-                                </span>
-                              )}
                             </td>
                             <td className="px-6 py-4 text-right text-gray-500 whitespace-nowrap">
-                              As Per Norms
+                              As Per Govt Norms
                             </td>
                             <td className="px-6 py-4 text-right font-semibold text-[#0b6d41] whitespace-nowrap">
                               ₹{prog.fee.toLocaleString("en-IN")}
@@ -526,14 +521,7 @@ export default function AdmissionsPage() {
 
             <div className="mt-8 bg-[#0b6d41]/5 rounded-xl p-5 border border-[#0b6d41]/10">
               <p className="text-sm text-gray-600 leading-relaxed">
-                <strong className="text-gray-800">Note:</strong> GQ (Government Quota) fees are As Per Norms. MQ fees shown are annual fees for the Management Quota category.
-                Programmes marked{" "}
-                <span className="inline-flex items-center bg-[#ffde59] text-[#002309] text-xs font-bold px-2 py-0.5 rounded-full">
-                  NEW
-                </span>{" "}
-                are newly introduced for 2026-27. For detailed fee breakdowns,
-                hostel charges, and scholarship information, contact the
-                admissions office.
+                <strong className="text-gray-800">Note:</strong> GQ (Government Quota) fees are As Per Govt Norms. MQ fees shown are annual fees for the Management Quota category. Programmes marked with * are newly added courses. For detailed fee breakdowns, hostel charges, and scholarship information, contact the admissions office.
               </p>
             </div>
           </div>

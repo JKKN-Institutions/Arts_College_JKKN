@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JKKN CAS — Website Data Request Sheet</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f4f6f5;color:#222;font-size:14px;line-height:1.5}
+.header{background:#0b6d41;color:#fff;padding:22px 32px}
+.header h1{font-size:20px;font-weight:700;margin-bottom:5px}
+.header p{font-size:12px;opacity:.82}
+.notice{background:#fff9c4;border-bottom:2px solid #e6c200;padding:11px 32px;font-size:13px;color:#5a4300}
+.notice strong{color:#7c5200}
+.statsbar{background:#fff;border-bottom:1px solid #ddd;padding:12px 32px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:5px;padding:4px 11px;border-radius:20px;font-size:12px;font-weight:700}
+.pill-total{background:#e8f5e9;color:#1b5e20}
+.pill-r{background:#ffebee;color:#b71c1c}
+.pill-o{background:#fff3e0;color:#bf360c}
+.pill-y{background:#fffde7;color:#f57f17}
+.pill-g{background:#e8f5e9;color:#2e7d32}
+.pill-w{background:#f5f5f5;color:#555}
+.wrap{padding:22px 32px}
+.legend{background:#fff;border-radius:8px;padding:14px 18px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.legend h3{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#888;margin-bottom:8px}
+.leg-items{display:flex;flex-wrap:wrap;gap:14px}
+.leg-item{display:flex;align-items:center;gap:6px;font-size:12px}
+.section{margin-bottom:28px}
+.sh{padding:9px 16px;border-radius:6px 6px 0 0;font-size:13px;font-weight:700;display:flex;align-items:center;gap:8px}
+.sh-r{background:#ffebee;color:#b71c1c}
+.sh-o{background:#fff3e0;color:#bf360c}
+.sh-y{background:#fffde7;color:#c07000}
+.sh-g{background:#e8f5e9;color:#2e7d32}
+.sh-w{background:#f0f0f0;color:#555}
+.hidden-note{background:#fafafa;border-left:4px solid #bbb;padding:9px 14px;font-size:12px;color:#777}
+table{width:100%;border-collapse:collapse;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.08);border-radius:0 0 6px 6px;overflow:hidden}
+thead th{background:#f8f8f8;padding:9px 11px;text-align:left;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:#999;border-bottom:2px solid #e8e8e8}
+td{padding:9px 11px;border-bottom:1px solid #f2f2f2;vertical-align:top;font-size:13px}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#fafafa}
+tr.hr td{background:#f9f9f9;opacity:.8}
+tr.hr:hover td{background:#f3f3f3}
+.cn{width:36px;text-align:center;color:#aaa;font-weight:600;font-size:12px}
+.cp{width:110px;text-align:center}
+.cs{width:21%}
+.cw{width:27%}
+.ca{background:#fffde7;width:18%}
+.cd{background:#f1f8f1;width:18%;font-family:'Courier New',monospace;font-size:11px;color:#555;word-break:break-word}
+.br{display:inline-block;padding:2px 8px;border-radius:11px;font-size:11px;font-weight:700;white-space:nowrap}
+.br-r{background:#ffebee;color:#c62828}
+.br-o{background:#fff3e0;color:#e65100}
+.br-y{background:#fffde7;color:#f57f17}
+.br-g{background:#e8f5e9;color:#2e7d32}
+.br-w{background:#f5f5f5;color:#666}
+.cl-sec{background:#fff;border-radius:8px;padding:22px 24px;margin-top:28px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.cl-sec h2{font-size:16px;font-weight:700;color:#0b6d41;margin-bottom:18px}
+.cl-g{margin-bottom:22px}
+.cl-g h3{font-size:13px;font-weight:700;color:#0b6d41;margin-bottom:8px;padding-bottom:5px;border-bottom:2px solid #e8f5e9}
+.cl-g ul{list-style:none;padding:0}
+.cl-g li{padding:5px 0 5px 22px;position:relative;font-size:13px;border-bottom:1px solid #f5f5f5;color:#444}
+.cl-g li::before{content:'☐';position:absolute;left:0;color:#0b6d41;font-size:13px}
+footer{text-align:center;padding:18px;font-size:11px;color:#aaa;margin-top:18px}
+@media print{.notice,.statsbar{display:none}body{background:#fff}.wrap{padding:10px}.header{padding:14px}}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>JKKN College of Arts &amp; Science — Website Data Request Sheet</h1>
+  <p>Prepared by: Developer &nbsp;|&nbsp; Date: 24 April 2026 &nbsp;|&nbsp; Action needed from: Content / SEO / Admissions Team &nbsp;|&nbsp; Site: cas.jkkn.ac.in</p>
+</div>
+
+<div class="notice">
+  ⚠️ <strong>How to use:</strong> Fill in the <strong>yellow "Your Answer" column</strong> with the correct real information for each row. The green <strong>Dev Reference</strong> column is for the developer only — it shows exactly where in the code each item lives. Items marked <strong>⚪ HIDDEN</strong> are switched off on the website right now but still need real data before they can go live. Do not modify any code yourself — hand this completed sheet to the developer.
+</div>
+
+<div class="statsbar">
+  <span class="pill pill-total">📋 Total Items: 73</span>
+  <span class="pill pill-r">🔴 Urgent: 32</span>
+  <span class="pill pill-o">🟠 Important: 3</span>
+  <span class="pill pill-y">🟡 Needed: 24</span>
+  <span class="pill pill-g">🟢 Later: 5</span>
+  <span class="pill pill-w">⚪ Hidden: 9</span>
+</div>
+
+<div class="wrap">
+
+<div class="legend">
+  <h3>Priority Legend</h3>
+  <div class="leg-items">
+    <div class="leg-item"><span class="br br-r">🔴 URGENT</span> Wrong or placeholder content is visible to visitors <strong>right now</strong></div>
+    <div class="leg-item"><span class="br br-o">🟠 IMPORTANT</span> Affects SEO, credibility, or trust — not a placeholder but needs verification</div>
+    <div class="leg-item"><span class="br br-y">🟡 NEEDED</span> Element exists on the site but is broken or non-functional (dead links, bad labels)</div>
+    <div class="leg-item"><span class="br br-g">🟢 LATER</span> Minor issue, low-impact item</div>
+    <div class="leg-item"><span class="br br-w">⚪ HIDDEN</span> Section is switched off in the code — not visible yet — data still needed before activation</div>
+  </div>
+</div>
+
+<!-- ======================================================
+     SECTION A — PROGRAMME PAGES: FACILITIES PHOTOS (27)
+     ====================================================== -->
+<div class="section">
+  <div class="sh sh-r">🔴 Programme Pages — Department Facilities &amp; Labs (Placeholder Images Visible to Visitors)</div>
+  <table>
+    <thead><tr>
+      <th class="cn">#</th>
+      <th class="cp">Priority</th>
+      <th class="cs">Page / Section on Website</th>
+      <th class="cw">What's Missing or Needed</th>
+      <th class="ca">Your Answer</th>
+      <th class="cd">Dev Reference</th>
+    </tr></thead>
+    <tbody>
+      <tr><td class="cn">1</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>B.Com (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for: Commerce Library, Computer Lab with Tally, Finance Lab, Seminar Hall, and Research Centre. Visitors currently see solid green colour-block placeholders with text labels instead of actual photos.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/ug/bcom/page.tsx<br>Lines ~599–603 — search "placehold.co"</td></tr>
+      <tr><td class="cn">2</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>B.A. English (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for: English Library and Seminar Hall. Visitors see green colour-block placeholders instead of actual department photos.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/ug/ba-english/page.tsx<br>Lines ~516–519 — search "placehold.co"</td></tr>
+      <tr><td class="cn">3</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>B.Sc Zoology (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders instead of actual photos.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/ug/bsc-zoology/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">4</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>B.Sc Mathematics (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/ug/bsc-maths/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">5</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>B.Sc Chemistry (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/ug/bsc-chemistry/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">6</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>B.A. History (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/ug/ba-history/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">7</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>M.Sc Zoology (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/pg/msc-zoology/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">8</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>M.Sc Physics (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/pg/msc-physics/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">9</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>M.Sc Computer Science (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/pg/msc-computer-science/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">10</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>M.Sc Chemistry (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/pg/msc-chemistry/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">11</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>M.Com (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/pg/mcom/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">12</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>MCA (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/pg/mca/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">13</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>M.A. History (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/pg/ma-history/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">14</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>Ph.D. Zoology (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/phd/zoology/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">15</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>Ph.D. Tamil (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/phd/tamil/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">16</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>Ph.D. Chemistry (Aided) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/phd/chemistry/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">17</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>B.Sc Visual Communication (Self-Finance) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/ug/bsc-visual-communication/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">18</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>B.Sc Microbiology (Self-Finance) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/ug/bsc-microbiology/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">19</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>B.Sc CS with Cyber Security (Self-Finance) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/ug/bsc-cs-cyber-security/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">20</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>B.Sc Computer Science (Self-Finance) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/ug/bsc-computer-science/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">21</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>B.Sc AI &amp; Data Science (Self-Finance) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/ug/bsc-ai-ds/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">22</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>B.A. English (Self-Finance) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/ug/ba-english/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">23</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>B.Com Banking &amp; Insurance (Self-Finance) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/ug/bcom-banking-insurance/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">24</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>M.Sc Computer Science (Self-Finance) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/pg/msc-computer-science/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">25</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>M.Sc Mathematics (Self-Finance) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/pg/msc-mathematics/page.tsx<br>Lines ~756–758 — search "placehold.co"</td></tr>
+      <tr><td class="cn">26</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>M.Sc CS Data Analytics (Self-Finance) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/pg/msc-cs-data-analytics/page.tsx<br>Search "placehold.co"</td></tr>
+      <tr><td class="cn">27</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>M.A. English (Self-Finance) → Facilities &amp; Infrastructure section</td><td>Real photos are missing for the department's facilities. Visitors see green colour-block placeholders.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/pg/ma-english/page.tsx<br>Search "placehold.co"</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ======================================================
+     SECTION B — CITY CONTACT FORMS: PHONE NUMBER (5)
+     ====================================================== -->
+<div class="section">
+  <div class="sh sh-r">🔴 City Landing Pages — Contact Forms (Placeholder Phone Number Displayed to Visitors)</div>
+  <table>
+    <thead><tr>
+      <th class="cn">#</th><th class="cp">Priority</th><th class="cs">Page / Section on Website</th>
+      <th class="cw">What's Missing or Needed</th><th class="ca">Your Answer</th><th class="cd">Dev Reference</th>
+    </tr></thead>
+    <tbody>
+      <tr><td class="cn">28</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>Erode city page → Contact form → "Call us directly" link</td><td>The phone number shown to visitors reads "+91-XXXXXXXXXX" — a placeholder. The real phone number that Erode-area enquiries should call is needed here.</td><td class="ca"></td><td class="cd">src/app/erode/ErodeContactForm.tsx:116<br>(display text of tel: link)</td></tr>
+      <tr><td class="cn">29</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>Coimbatore city page → Contact form → "Call us directly" link</td><td>The phone number shown to visitors reads "+91-XXXXXXXXXX" — a placeholder. The real phone number for Coimbatore-area enquiries is needed.</td><td class="ca"></td><td class="cd">src/app/coimbatore/CoimbatoreContactForm.tsx:116</td></tr>
+      <tr><td class="cn">30</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>Tiruppur city page → Contact form → "Call us directly" link</td><td>The phone number shown to visitors reads "+91-XXXXXXXXXX" — a placeholder. The real phone number for Tiruppur-area enquiries is needed.</td><td class="ca"></td><td class="cd">src/app/tiruppur/TiruppurContactForm.tsx:116</td></tr>
+      <tr><td class="cn">31</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>Salem city page → Contact form → "Call us directly" link</td><td>The phone number shown to visitors reads "+91-XXXXXXXXXX" — a placeholder. The real phone number for Salem-area enquiries is needed.</td><td class="ca"></td><td class="cd">src/app/salem/SalemContactForm.tsx:116</td></tr>
+      <tr><td class="cn">32</td><td class="cp"><span class="br br-r">🔴 URGENT</span></td><td>Namakkal city page → Contact form → "Call us directly" link</td><td>The phone number shown to visitors reads "+91-XXXXXXXXXX" — a placeholder. The real phone number for Namakkal-area enquiries is needed.</td><td class="ca"></td><td class="cd">src/app/namakkal/NamakkalContactForm.tsx:116</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ======================================================
+     SECTION C — HOMEPAGE: IMAGE + STATS (3)
+     ====================================================== -->
+<div class="section">
+  <div class="sh sh-o">🟠 Homepage — About Section Image &amp; Key Statistics</div>
+  <table>
+    <thead><tr>
+      <th class="cn">#</th><th class="cp">Priority</th><th class="cs">Page / Section on Website</th>
+      <th class="cw">What's Missing or Needed</th><th class="ca">Your Answer</th><th class="cd">Dev Reference</th>
+    </tr></thead>
+    <tbody>
+      <tr><td class="cn">33</td><td class="cp"><span class="br br-o">🟠 IMPORTANT</span></td><td>Homepage → "About JKKN" section → Feature image</td><td>The large image displayed here is a stock photo from Unsplash (a generic college photo, not JKKN campus). This can reduce visitor trust. A real JKKN campus or campus-life photo should replace it.</td><td class="ca"></td><td class="cd">src/app/page.tsx:297<br>Replace Unsplash URL with real campus photo URL</td></tr>
+      <tr><td class="cn">34</td><td class="cp"><span class="br br-o">🟠 IMPORTANT</span></td><td>Homepage → Hero section → Statistics → "95% Placement"</td><td>The homepage prominently shows "95% placement" as a headline statistic. Please confirm: (a) is this figure correct for the most recent batch? (b) which year/batch does it cover? (c) how was it calculated (placed vs. eligible)?</td><td class="ca"></td><td class="cd">src/components/home/HeroSection.tsx:52</td></tr>
+      <tr><td class="cn">35</td><td class="cp"><span class="br br-o">🟠 IMPORTANT</span></td><td>Homepage → Hero section → Statistics → "1300+ Students"</td><td>The homepage shows "1300+ students" as a key statistic. Please confirm this is the current enrolment count. If the actual figure is different, it should be updated.</td><td class="ca"></td><td class="cd">src/components/home/HeroSection.tsx:57</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ======================================================
+     SECTION D — PROGRAMME PAGES: DEAD LINKS (19)
+     ====================================================== -->
+<div class="section">
+  <div class="sh sh-y">🟡 Programme Pages — "Explore Similar Programmes" Section (Non-Functional Links)</div>
+  <table>
+    <thead><tr>
+      <th class="cn">#</th><th class="cp">Priority</th><th class="cs">Page / Section on Website</th>
+      <th class="cw">What's Missing or Needed</th><th class="ca">Your Answer</th><th class="cd">Dev Reference</th>
+    </tr></thead>
+    <tbody>
+      <tr><td class="cn">36</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>B.Com (Aided) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page link to nowhere when clicked — nothing happens. The developer needs to know the correct web addresses for the linked programmes.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/ug/bcom/page.tsx:840<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">37</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>B.A. English (Aided) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/ug/ba-english/page.tsx:759<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">38</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>B.Sc Mathematics (Aided) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/ug/bsc-maths/page.tsx:805<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">39</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>B.Sc Chemistry (Aided) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/ug/bsc-chemistry/page.tsx:833<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">40</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>B.A. History (Aided) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/ug/ba-history/page.tsx:806<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">41</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>M.Sc Zoology (Aided) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/pg/msc-zoology/page.tsx:767<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">42</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>M.Sc Physics (Aided) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/pg/msc-physics/page.tsx:715<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">43</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>M.Sc Computer Science (Aided) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/pg/msc-computer-science/page.tsx:714<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">44</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>M.Sc Chemistry (Aided) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/pg/msc-chemistry/page.tsx:754<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">45</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>M.Com (Aided) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/pg/mcom/page.tsx:847<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">46</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>Ph.D. Zoology (Aided) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/phd/zoology/page.tsx:837<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">47</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>Ph.D. Tamil (Aided) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/phd/tamil/page.tsx:733<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">48</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>Ph.D. Chemistry (Aided) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/aided/phd/chemistry/page.tsx:616<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">49</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>B.Sc Microbiology (Self-Finance) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/ug/bsc-microbiology/page.tsx:797<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">50</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>B.Sc CS with Cyber Security (Self-Finance) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/ug/bsc-cs-cyber-security/page.tsx:826<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">51</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>M.Sc Computer Science (Self-Finance) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/pg/msc-computer-science/page.tsx:751<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">52</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>M.Sc Mathematics (Self-Finance) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/pg/msc-mathematics/page.tsx:761<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">53</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>M.Sc CS Data Analytics (Self-Finance) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/pg/msc-cs-data-analytics/page.tsx:749<br>href="#" — needs real path</td></tr>
+      <tr><td class="cn">54</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>M.A. English (Self-Finance) → "Explore Similar Programmes" cards at page bottom</td><td>One or more programme cards at the bottom of this page do not go anywhere when clicked.</td><td class="ca"></td><td class="cd">src/app/programmes/self-finance/pg/ma-english/page.tsx:711<br>href="#" — needs real path</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ======================================================
+     SECTION E — CITY FORMS: FIELD LABELS (5)
+     ====================================================== -->
+<div class="section">
+  <div class="sh sh-y">🟡 City Landing Pages — Contact Forms (Form Field Labels)</div>
+  <table>
+    <thead><tr>
+      <th class="cn">#</th><th class="cp">Priority</th><th class="cs">Page / Section on Website</th>
+      <th class="cw">What's Missing or Needed</th><th class="ca">Your Answer</th><th class="cd">Dev Reference</th>
+    </tr></thead>
+    <tbody>
+      <tr><td class="cn">55</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>Erode city page → Contact form → City input field label</td><td>The contact form uses "Your City" as the visible label next to the city field. This reads like a generic placeholder label. A cleaner label such as "City" or "Current City" would look more professional.</td><td class="ca"></td><td class="cd">src/app/erode/ErodeContactForm.tsx:62</td></tr>
+      <tr><td class="cn">56</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>Coimbatore city page → Contact form → City input field label</td><td>The contact form uses "Your City" as the visible label. Recommend updating to "City" or "Current City".</td><td class="ca"></td><td class="cd">src/app/coimbatore/CoimbatoreContactForm.tsx:62</td></tr>
+      <tr><td class="cn">57</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>Tiruppur city page → Contact form → City input field label</td><td>The contact form uses "Your City" as the visible label. Recommend updating to "City" or "Current City".</td><td class="ca"></td><td class="cd">src/app/tiruppur/TiruppurContactForm.tsx:62</td></tr>
+      <tr><td class="cn">58</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>Salem city page → Contact form → City input field label</td><td>The contact form uses "Your City" as the visible label. Recommend updating to "City" or "Current City".</td><td class="ca"></td><td class="cd">src/app/salem/SalemContactForm.tsx:62</td></tr>
+      <tr><td class="cn">59</td><td class="cp"><span class="br br-y">🟡 NEEDED</span></td><td>Namakkal city page → Contact form → City input field label</td><td>The contact form uses "Your City" as the visible label. Recommend updating to "City" or "Current City".</td><td class="ca"></td><td class="cd">src/app/namakkal/NamakkalContactForm.tsx:62</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ======================================================
+     SECTION F — CITY FORMS: INPUT HINT TEXT (5)
+     ====================================================== -->
+<div class="section">
+  <div class="sh sh-g">🟢 City Landing Pages — Contact Forms (Phone Number Input Hint)</div>
+  <table>
+    <thead><tr>
+      <th class="cn">#</th><th class="cp">Priority</th><th class="cs">Page / Section on Website</th>
+      <th class="cw">What's Missing or Needed</th><th class="ca">Your Answer</th><th class="cd">Dev Reference</th>
+    </tr></thead>
+    <tbody>
+      <tr><td class="cn">60</td><td class="cp"><span class="br br-g">🟢 LATER</span></td><td>Erode city page → Contact form → Mobile number field (hint text inside the box)</td><td>The phone input box shows "+91 XXXXX XXXXX" as a greyed-out hint before the user types (this disappears once they start typing). Using X's may look unpolished. Suggest changing to "+91 98765 43210" or similar realistic example.</td><td class="ca"></td><td class="cd">src/app/erode/ErodeContactForm.tsx:53<br>placeholder attribute</td></tr>
+      <tr><td class="cn">61</td><td class="cp"><span class="br br-g">🟢 LATER</span></td><td>Coimbatore city page → Contact form → Mobile number field (hint text)</td><td>Same as above — input shows "+91 XXXXX XXXXX" before user types. Consider a realistic example format.</td><td class="ca"></td><td class="cd">src/app/coimbatore/CoimbatoreContactForm.tsx:53</td></tr>
+      <tr><td class="cn">62</td><td class="cp"><span class="br br-g">🟢 LATER</span></td><td>Tiruppur city page → Contact form → Mobile number field (hint text)</td><td>Same as above — input shows "+91 XXXXX XXXXX" before user types.</td><td class="ca"></td><td class="cd">src/app/tiruppur/TiruppurContactForm.tsx:53</td></tr>
+      <tr><td class="cn">63</td><td class="cp"><span class="br br-g">🟢 LATER</span></td><td>Salem city page → Contact form → Mobile number field (hint text)</td><td>Same as above — input shows "+91 XXXXX XXXXX" before user types.</td><td class="ca"></td><td class="cd">src/app/salem/SalemContactForm.tsx:53</td></tr>
+      <tr><td class="cn">64</td><td class="cp"><span class="br br-g">🟢 LATER</span></td><td>Namakkal city page → Contact form → Mobile number field (hint text)</td><td>Same as above — input shows "+91 XXXXX XXXXX" before user types.</td><td class="ca"></td><td class="cd">src/app/namakkal/NamakkalContactForm.tsx:53</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ======================================================
+     SECTION G — HIDDEN: CITY TESTIMONIALS (5)
+     ====================================================== -->
+<div class="section">
+  <div class="sh sh-w">⚪ City Landing Pages — Student Testimonials (Section Currently Switched Off)</div>
+  <div class="hidden-note">ℹ️ The student testimonials section on all five city pages is currently <strong>hidden</strong> — it does not appear to any visitors. Real student stories are needed before this section can be switched on. Once you fill in the information below and return it to the developer, each city page will display genuine testimonials.</div>
+  <table>
+    <thead><tr>
+      <th class="cn">#</th><th class="cp">Priority</th><th class="cs">Page / Section on Website</th>
+      <th class="cw">What's Missing or Needed</th><th class="ca">Your Answer</th><th class="cd">Dev Reference</th>
+    </tr></thead>
+    <tbody>
+      <tr class="hr"><td class="cn">65</td><td class="cp"><span class="br br-w">⚪ HIDDEN</span></td><td>Coimbatore city page → Student Testimonials (hidden section)</td><td>2 student testimonials needed from students who came from or near Coimbatore. For each student: (1) Full name, (2) Course name, (3) Batch/graduation year, (4) Current employer or next step, (5) A quote in their own words about their experience at JKKN CAS.</td><td class="ca"></td><td class="cd">src/app/coimbatore/page.tsx:1315<br>Wrapped in {false &amp;&amp; (…)} — remove "false" to activate</td></tr>
+      <tr class="hr"><td class="cn">66</td><td class="cp"><span class="br br-w">⚪ HIDDEN</span></td><td>Erode city page → Student Testimonials (hidden section)</td><td>2 student testimonials needed from students who came from or near Erode. For each: (1) full name, (2) course, (3) batch year, (4) current employer/outcome, (5) quote in own words.</td><td class="ca"></td><td class="cd">src/app/erode/page.tsx:1084<br>Wrapped in {false &amp;&amp; (…)}</td></tr>
+      <tr class="hr"><td class="cn">67</td><td class="cp"><span class="br br-w">⚪ HIDDEN</span></td><td>Tiruppur city page → Student Testimonials (hidden section)</td><td>2 student testimonials needed from students who came from or near Tiruppur. For each: (1) full name, (2) course, (3) batch year, (4) current employer/outcome, (5) quote in own words.</td><td class="ca"></td><td class="cd">src/app/tiruppur/page.tsx:952<br>Wrapped in {false &amp;&amp; (…)}</td></tr>
+      <tr class="hr"><td class="cn">68</td><td class="cp"><span class="br br-w">⚪ HIDDEN</span></td><td>Salem city page → Student Testimonials (hidden section)</td><td>2 student testimonials needed from students who came from or near Salem. For each: (1) full name, (2) course, (3) batch year, (4) current employer/outcome, (5) quote in own words.</td><td class="ca"></td><td class="cd">src/app/salem/page.tsx:1065<br>Wrapped in {false &amp;&amp; (…)}</td></tr>
+      <tr class="hr"><td class="cn">69</td><td class="cp"><span class="br br-w">⚪ HIDDEN</span></td><td>Namakkal city page → Student Testimonials (hidden section)</td><td>2 student testimonials needed from students who came from or near Namakkal. For each: (1) full name, (2) course, (3) batch year, (4) current employer/outcome, (5) quote in own words.</td><td class="ca"></td><td class="cd">src/app/namakkal/page.tsx:935<br>Wrapped in {false &amp;&amp; (…)}</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ======================================================
+     SECTION H — HIDDEN: HERO COMMENTED CODE (4)
+     ====================================================== -->
+<div class="section">
+  <div class="sh sh-w">⚪ Homepage → Hero Section (Commented-Out Code — Not Visible to Visitors)</div>
+  <div class="hidden-note">ℹ️ The following items exist in the Hero Section code but are commented out — they do <strong>not appear to any visitors</strong>. No content team action is needed unless you want to activate specific elements. The developer can decide whether to activate or permanently remove each one.</div>
+  <table>
+    <thead><tr>
+      <th class="cn">#</th><th class="cp">Priority</th><th class="cs">Page / Section on Website</th>
+      <th class="cw">What's Missing or Needed</th><th class="ca">Your Answer</th><th class="cd">Dev Reference</th>
+    </tr></thead>
+    <tbody>
+      <tr class="hr"><td class="cn">70</td><td class="cp"><span class="br br-w">⚪ HIDDEN</span></td><td>Homepage → Hero → College name heading variant (commented out)</td><td>An alternative two-line heading style ("JKKN College / of Arts &amp; Science (Autonomous)") is commented out. Not visible. Developer decides whether to restore or delete.</td><td class="ca"></td><td class="cd">src/components/home/HeroSection.tsx:34–38</td></tr>
+      <tr class="hr"><td class="cn">71</td><td class="cp"><span class="br br-w">⚪ HIDDEN</span></td><td>Homepage → Hero → Top Company Placements callout (commented out)</td><td>A highlighted box showing top recruiters (TCS, Infosys, Wipro, Cognizant, HCL, Accenture) is commented out. <strong>Action needed if activated:</strong> confirm these companies do recruit from JKKN CAS before showing them.</td><td class="ca">Are TCS / Infosys / Wipro / Cognizant / HCL / Accenture confirmed recruiters?</td><td class="cd">src/components/home/HeroSection.tsx:73–84</td></tr>
+      <tr class="hr"><td class="cn">72</td><td class="cp"><span class="br br-w">⚪ HIDDEN</span></td><td>Homepage → Hero → NAAC A+ and Autonomous status badges (commented out)</td><td>Two credibility badges ("NAAC A+" and "Autonomous Status") are built but hidden. These should only be shown if the NAAC A+ accreditation is current and valid. <strong>Confirm: is NAAC A+ active?</strong></td><td class="ca">Is NAAC A+ accreditation current? (Yes / No / Grade:)</td><td class="cd">src/components/home/HeroSection.tsx:136–163</td></tr>
+      <tr class="hr"><td class="cn">73</td><td class="cp"><span class="br br-w">⚪ HIDDEN</span></td><td>Homepage → Hero → Scroll-down indicator (commented out)</td><td>A small animated "Scroll ↓" arrow at the bottom of the hero is commented out. Purely decorative — no content needed. Developer decision to restore or remove.</td><td class="ca"></td><td class="cd">src/components/home/HeroSection.tsx:165–174</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ======================================================
+     INFORMATION TO COLLECT
+     ====================================================== -->
+<div class="cl-sec">
+  <h2>Information to Collect — Grouped by Department</h2>
+
+  <div class="cl-g">
+    <h3>📸 From the Media / Photography Team</h3>
+    <ul>
+      <li>Real photographs of each department's facilities (labs, libraries, computer rooms, seminar halls, classrooms) — needed for 27 programme pages. Landscape format preferred (at least 400×200 px).</li>
+      <li>A genuine JKKN CAS campus or campus-life photograph to replace the stock image on the Homepage → About JKKN section.</li>
+      <li>Photos should ideally be named by facility (e.g., chemistry-lab.jpg, english-library.jpg) for easy matching to programme pages.</li>
+    </ul>
+  </div>
+
+  <div class="cl-g">
+    <h3>📞 From the Admissions / Enquiry Team</h3>
+    <ul>
+      <li>The correct phone number to display for Erode-region student enquiries (currently showing "+91-XXXXXXXXXX" — rows 28)</li>
+      <li>The correct phone number for Coimbatore-region enquiries (row 29)</li>
+      <li>The correct phone number for Tiruppur-region enquiries (row 30)</li>
+      <li>The correct phone number for Salem-region enquiries (row 31)</li>
+      <li>The correct phone number for Namakkal-region enquiries (row 32)</li>
+    </ul>
+  </div>
+
+  <div class="cl-g">
+    <h3>📊 From the Administration / IQAC Team</h3>
+    <ul>
+      <li>Confirm the current placement rate displayed on the homepage (currently "95%") — which batch year, total students placed vs. eligible (row 34)</li>
+      <li>Confirm the current total student enrolment count (currently "1300+" on homepage) (row 35)</li>
+      <li>Confirm whether NAAC A+ accreditation is currently active and the accreditation year (row 72 — badge is ready but hidden)</li>
+      <li>Confirm if TCS, Infosys, Wipro, Cognizant, HCL, and Accenture are current/recent campus recruiters (row 71 — recruiter callout is hidden)</li>
+    </ul>
+  </div>
+
+  <div class="cl-g">
+    <h3>🎓 From Alumni Relations / Student Affairs (for hidden testimonial sections — rows 65–69)</h3>
+    <ul>
+      <li>2 real student testimonials from students who came from Coimbatore or nearby — full name, course, batch year, employer/outcome, and a quote</li>
+      <li>2 real student testimonials from students from Erode or nearby</li>
+      <li>2 real student testimonials from students from Tiruppur or nearby</li>
+      <li>2 real student testimonials from students from Salem or nearby</li>
+      <li>2 real student testimonials from students from Namakkal or nearby</li>
+    </ul>
+  </div>
+
+  <div class="cl-g">
+    <h3>🔗 Developer Tasks (no content input needed — internal fixes)</h3>
+    <ul>
+      <li>Fix 19 broken "href=#" links in the "Explore Similar Programmes" section across 19 programme pages — replace with real internal page URLs (rows 36–54)</li>
+      <li>Update "Your City" field label to "City" or "Current City" on all 5 city contact forms (rows 55–59)</li>
+      <li>Decide whether to keep or permanently remove the 4 commented-out blocks in HeroSection.tsx (rows 70–73)</li>
+    </ul>
+  </div>
+</div>
+
+<footer>Prepared by Developer — 24 April 2026 &nbsp;|&nbsp; No code was modified during this audit &nbsp;|&nbsp; Site: cas.jkkn.ac.in</footer>
+
+</div>
+</body>
+</html>
