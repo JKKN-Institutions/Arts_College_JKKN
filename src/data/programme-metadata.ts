@@ -350,6 +350,23 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "BCom CA college near Erode",
     ],
   },
+  "self-finance/ug/bcom-ai": {
+    name: "B.Com (Artificial Intelligence)",
+    fullName: "Bachelor of Commerce in Artificial Intelligence",
+    degree: "B.Com AI",
+    duration: "3 Years",
+    level: "UG",
+    category: "Self-Finance",
+    description:
+      "Study B.Com Artificial Intelligence at JKKN College of Arts and Science (Autonomous). Future-ready commerce programme blending accounting, finance, AI, ML and business analytics near Erode, Tamil Nadu.",
+    keywords: [
+      "BCom AI",
+      "BCom Artificial Intelligence",
+      "BCom AI college near Erode",
+      "commerce with AI Tamil Nadu",
+      "FinTech degree Namakkal",
+    ],
+  },
   "self-finance/ug/bsc-ai-ds": {
     name: "B.Sc. AI & Data Science",
     fullName: "Bachelor of Science in Artificial Intelligence and Data Science",
@@ -442,6 +459,22 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "textile design degree Tamil Nadu",
     ],
   },
+  "self-finance/ug/bsc-textile-fashion-designing-ai": {
+    name: "B.Sc. T&FD (AI)",
+    fullName: "Bachelor of Science in Textile and Fashion Designing with AI",
+    degree: "B.Sc.",
+    duration: "3 Years",
+    level: "UG",
+    category: "Self-Finance",
+    description:
+      "Study B.Sc. Textile and Fashion Designing with AI at JKKN College of Arts and Science (Autonomous). Future-ready programme blending traditional fashion design with AI-powered tools, generative design, and trend analytics near Erode, Tamil Nadu.",
+    keywords: [
+      "BSc Textile Fashion Designing AI",
+      "AI fashion design college near Erode",
+      "generative AI fashion degree Tamil Nadu",
+      "AI textile design Namakkal",
+    ],
+  },
   "self-finance/ug/bsc-visual-communication": {
     name: "B.Sc. Visual Communication",
     fullName: "Bachelor of Science in Visual Communication",
@@ -455,6 +488,24 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "BSc Visual Communication",
       "visual communication college near Erode",
       "media studies Tamil Nadu",
+    ],
+  },
+  "self-finance/ug/bsc-visual-communication-ai": {
+    name: "B.Sc. Visual Communication (AI)",
+    fullName: "Bachelor of Science in Visual Communication (AI)",
+    degree: "B.Sc.",
+    duration: "3 Years",
+    level: "UG",
+    category: "Self-Finance",
+    description:
+      "B.Sc. Visual Communication (AI) at JKKN College of Arts and Science (Autonomous) is a proposed 3-year UG programme blending design, generative AI, prompt engineering, and AI-powered motion & UI/UX. Currently awaiting university approval — register your interest, near Erode, Tamil Nadu.",
+    keywords: [
+      "BSc Visual Communication AI",
+      "generative AI design course",
+      "AI visual communication Tamil Nadu",
+      "AI design degree Erode",
+      "prompt engineering UG course",
+      "AI creative course JKKN",
     ],
   },
   // ── Self-Finance PG ──

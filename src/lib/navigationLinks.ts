@@ -263,6 +263,13 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
                   active: pathname === '/programmes/self-finance/ug/bcom-ca'
                 },
                 {
+                  id: 'self-finance-ug-bcom-ai',
+                  label: 'B.Com AI',
+                  icon: GraduationCap,
+                  href: '/programmes/self-finance/ug/bcom-ai',
+                  active: pathname === '/programmes/self-finance/ug/bcom-ai'
+                },
+                {
                   id: 'self-finance-ug-bsc-computer-science',
                   label: 'B.Sc. Computer Science',
                   icon: GraduationCap,

@@ -452,6 +452,13 @@ export default function MobileNav(props: MobileNavProps) {
                                   B.Com CA
                                 </Link>
                                 <Link
+                                  href="/programmes/self-finance/ug/bcom-ai"
+                                  onClick={toggleMobileMenu}
+                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                                >
+                                  B.Com AI
+                                </Link>
+                                <Link
                                   href="/programmes/self-finance/ug/bca"
                                   onClick={toggleMobileMenu}
                                   className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
@@ -508,11 +515,25 @@ export default function MobileNav(props: MobileNavProps) {
                                   B.Sc Textile and Fashion Designing
                                 </Link>
                                 <Link
+                                  href="/programmes/self-finance/ug/bsc-textile-fashion-designing-ai"
+                                  onClick={toggleMobileMenu}
+                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                                >
+                                  B.Sc Textile and Fashion Designing (AI)
+                                </Link>
+                                <Link
                                   href="/programmes/self-finance/ug/bsc-visual-communication"
                                   onClick={toggleMobileMenu}
                                   className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                                 >
                                   B.Sc Visual Communication
+                                </Link>
+                                <Link
+                                  href="/programmes/self-finance/ug/bsc-visual-communication-ai"
+                                  onClick={toggleMobileMenu}
+                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                                >
+                                  B.Sc Visual Communication (AI)
                                 </Link>
                                 <Link
                                   href="/programmes/self-finance/ug/bsc-microbiology"

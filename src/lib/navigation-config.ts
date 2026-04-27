@@ -156,6 +156,11 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
           { label: 'B.Sc. CS', href: '/programmes/self-finance/ug/bsc-cs' },
           { label: 'B.Sc. AI & DS', href: '/programmes/self-finance/ug/bsc-ai-ds' },
           { label: 'B.Com CA', href: '/programmes/self-finance/ug/bcom-ca' },
+          { label: 'B.Com AI', href: '/programmes/self-finance/ug/bcom-ai' },
+          { label: 'B.Sc. Textile & Fashion Designing', href: '/programmes/self-finance/ug/bsc-textile-fashion-designing' },
+          { label: 'B.Sc. Textile & Fashion Designing (AI)', href: '/programmes/self-finance/ug/bsc-textile-fashion-designing-ai' },
+          { label: 'B.Sc. Visual Communication', href: '/programmes/self-finance/ug/bsc-visual-communication' },
+          { label: 'B.Sc. Visual Communication (AI)', href: '/programmes/self-finance/ug/bsc-visual-communication-ai' },
         ],
       },
       {
