@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-QW6LQV7XE5";
 
 function PageViewTracker() {
   const pathname = usePathname();
