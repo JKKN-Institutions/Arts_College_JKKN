@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import { ClientLayoutWrapper } from "@/components/layout/ClientLayoutWrapper";
 import { OrganizationSchema } from "@/components/seo/OrganizationSchema";
 import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
 import { WebSiteSchema } from "@/components/seo/WebSiteSchema";
 import { MetaPixel } from "@/components/analytics/MetaPixel";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -101,13 +101,7 @@ export default function RootLayout({
   return (
     <html lang="en-IN" className={poppins.variable}>
       <body className={poppins.className} suppressHydrationWarning>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-QW6LQV7XE5"
-          strategy="afterInteractive"
-        />
-        <Script id="ga4-init" strategy="afterInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QW6LQV7XE5');`}
-        </Script>
+        <GoogleAnalytics />
         <MetaPixel />
         <OrganizationSchema />
         <LocalBusinessSchema />
