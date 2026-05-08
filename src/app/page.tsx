@@ -44,6 +44,7 @@ import { HowToSchema } from '@/components/seo/HowToSchema';
 import { ItemListSchema } from '@/components/seo/ItemListSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import ScrollToSection from '@/components/ScrollToSection';
+import AdmissionPopup from '@/components/home/AdmissionPopup';
 
 export const metadata: Metadata = {
   title: {
@@ -172,6 +173,7 @@ const homepageFAQs = [
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <AdmissionPopup />
       <FAQSchema faqs={homepageFAQs} />
       <BreadcrumbSchema items={[
         { name: "Home", url: "https://cas.jkkn.ac.in" },
