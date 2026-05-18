@@ -7,6 +7,8 @@ export interface ProgrammeInfo {
   category: "Aided" | "Self-Finance";
   description: string;
   keywords: string[];
+  /** Flat slug used for /admissions/{slug} URLs — always suffixed with category */
+  slug: string;
 }
 
 export const programmeMetadata: Record<string, ProgrammeInfo> = {
@@ -26,6 +28,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "English literature degree Tamil Nadu",
       "arts college Namakkal",
     ],
+    slug: "ba-english-aided",
   },
   "aided/ug/ba-history": {
     name: "B.A. History",
@@ -41,6 +44,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "BA History college near Erode",
       "history degree Tamil Nadu",
     ],
+    slug: "ba-history-aided",
   },
   "aided/ug/bcom": {
     name: "B.Com",
@@ -57,6 +61,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "commerce degree Namakkal",
       "aided BCom Tamil Nadu",
     ],
+    slug: "bcom-aided",
   },
   "aided/ug/bsc-chemistry": {
     name: "B.Sc. Chemistry",
@@ -73,6 +78,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "chemistry degree Tamil Nadu",
       "science college Namakkal",
     ],
+    slug: "bsc-chemistry-aided",
   },
   "aided/ug/bsc-maths": {
     name: "B.Sc. Mathematics",
@@ -88,6 +94,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "BSc Maths college near Erode",
       "maths degree Tamil Nadu",
     ],
+    slug: "bsc-maths-aided",
   },
   "aided/ug/bsc-zoology": {
     name: "B.Sc. Zoology",
@@ -103,6 +110,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "BSc Zoology college near Erode",
       "zoology degree Tamil Nadu",
     ],
+    slug: "bsc-zoology-aided",
   },
   // ── Aided PG ──
   "aided/pg/ma-history": {
@@ -119,6 +127,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "MA History college near Erode",
       "postgraduate history Tamil Nadu",
     ],
+    slug: "ma-history-aided",
   },
   "aided/pg/mca": {
     name: "MCA",
@@ -135,6 +144,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "master of computer applications Tamil Nadu",
       "MCA Namakkal",
     ],
+    slug: "mca-aided",
   },
   "aided/pg/mcom": {
     name: "M.Com",
@@ -150,6 +160,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "MCom college near Erode",
       "master of commerce Tamil Nadu",
     ],
+    slug: "mcom-aided",
   },
   "aided/pg/msc-chemistry": {
     name: "M.Sc. Chemistry",
@@ -165,6 +176,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "MSc Chemistry college near Erode",
       "postgraduate chemistry Tamil Nadu",
     ],
+    slug: "msc-chemistry-aided",
   },
   "aided/pg/msc-computer-science": {
     name: "M.Sc. Computer Science",
@@ -180,6 +192,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "MSc CS college near Erode",
       "computer science postgraduate Tamil Nadu",
     ],
+    slug: "msc-computer-science-aided",
   },
   "aided/pg/msc-physics": {
     name: "M.Sc. Physics",
@@ -195,6 +208,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "MSc Physics college near Erode",
       "postgraduate physics Tamil Nadu",
     ],
+    slug: "msc-physics-aided",
   },
   "aided/pg/msc-zoology": {
     name: "M.Sc. Zoology",
@@ -210,6 +224,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "MSc Zoology college near Erode",
       "postgraduate zoology Tamil Nadu",
     ],
+    slug: "msc-zoology-aided",
   },
   // ── Aided PhD ──
   "aided/phd/chemistry": {
@@ -226,6 +241,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "PhD Chemistry college near Erode",
       "doctoral chemistry Tamil Nadu",
     ],
+    slug: "phd-chemistry-aided",
   },
   "aided/phd/tamil": {
     name: "Ph.D. Tamil",
@@ -241,6 +257,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "PhD Tamil college near Erode",
       "doctoral Tamil literature",
     ],
+    slug: "phd-tamil-aided",
   },
   "aided/phd/zoology": {
     name: "Ph.D. Zoology",
@@ -256,6 +273,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "PhD Zoology college near Erode",
       "doctoral zoology Tamil Nadu",
     ],
+    slug: "phd-zoology-aided",
   },
   // ── Self-Finance UG ──
   "self-finance/ug/ba-english": {
@@ -272,6 +290,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "BA English college near Erode",
       "English degree Tamil Nadu",
     ],
+    slug: "ba-english-self-finance",
   },
   "self-finance/ug/bba": {
     name: "BBA",
@@ -288,6 +307,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "business administration Tamil Nadu",
       "BBA Namakkal",
     ],
+    slug: "bba-self-finance",
   },
   "self-finance/ug/bca": {
     name: "BCA",
@@ -304,6 +324,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "computer applications degree Tamil Nadu",
       "BCA Namakkal",
     ],
+    slug: "bca-self-finance",
   },
   "self-finance/ug/bcom-accounting-finance": {
     name: "B.Com (Accounting & Finance)",
@@ -319,6 +340,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "BCom AF college near Erode",
       "accounting degree Tamil Nadu",
     ],
+    slug: "bcom-accounting-finance-self-finance",
   },
   "self-finance/ug/bcom-banking-insurance": {
     name: "B.Com (Banking & Insurance)",
@@ -334,6 +356,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "BCom BI college near Erode",
       "banking degree Tamil Nadu",
     ],
+    slug: "bcom-banking-insurance-self-finance",
   },
   "self-finance/ug/bcom-ca": {
     name: "B.Com (Computer Applications)",
@@ -349,6 +372,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "BCom Computer Applications",
       "BCom CA college near Erode",
     ],
+    slug: "bcom-ca-self-finance",
   },
   "self-finance/ug/bcom-ai": {
     name: "B.Com (Artificial Intelligence)",
@@ -366,6 +390,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "commerce with AI Tamil Nadu",
       "FinTech degree Namakkal",
     ],
+    slug: "bcom-ai-self-finance",
   },
   "self-finance/ug/bsc-ai-ds": {
     name: "B.Sc. AI & Data Science",
@@ -382,6 +407,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "artificial intelligence degree Tamil Nadu",
       "data science Namakkal",
     ],
+    slug: "bsc-ai-ds-self-finance",
   },
   "self-finance/ug/bsc-computer-science": {
     name: "B.Sc. Computer Science",
@@ -397,6 +423,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "BSc CS college near Erode",
       "computer science degree Tamil Nadu",
     ],
+    slug: "bsc-computer-science-self-finance",
   },
   "self-finance/ug/bsc-cs-cyber-security": {
     name: "B.Sc. CS (Cyber Security)",
@@ -413,6 +440,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "cyber security degree near Erode",
       "BSc CS Cyber Security Tamil Nadu",
     ],
+    slug: "bsc-cs-cyber-security-self-finance",
   },
   "self-finance/ug/bsc-microbiology": {
     name: "B.Sc. Microbiology",
@@ -428,6 +456,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "BSc Microbiology college near Erode",
       "microbiology degree Tamil Nadu",
     ],
+    slug: "bsc-microbiology-self-finance",
   },
   "self-finance/ug/bsc-physics": {
     name: "B.Sc. Physics (SF)",
@@ -443,6 +472,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "BSc Physics college near Erode",
       "physics degree Tamil Nadu",
     ],
+    slug: "bsc-physics-self-finance",
   },
   "self-finance/ug/bsc-textile-fashion-designing": {
     name: "B.Sc. Textile & Fashion Designing",
@@ -458,6 +488,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "fashion design college near Erode",
       "textile design degree Tamil Nadu",
     ],
+    slug: "bsc-textile-fashion-designing-self-finance",
   },
   "self-finance/ug/bsc-textile-fashion-designing-ai": {
     name: "B.Sc. T&FD (AI)",
@@ -474,6 +505,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "generative AI fashion degree Tamil Nadu",
       "AI textile design Namakkal",
     ],
+    slug: "bsc-textile-fashion-designing-ai-self-finance",
   },
   "self-finance/ug/bsc-visual-communication": {
     name: "B.Sc. Visual Communication",
@@ -489,6 +521,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "visual communication college near Erode",
       "media studies Tamil Nadu",
     ],
+    slug: "bsc-visual-communication-self-finance",
   },
   "self-finance/ug/bsc-visual-communication-ai": {
     name: "B.Sc. Visual Communication (AI)",
@@ -507,6 +540,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "prompt engineering UG course",
       "AI creative course JKKN",
     ],
+    slug: "bsc-visual-communication-ai-self-finance",
   },
   // ── Self-Finance PG ──
   "self-finance/pg/ma-english": {
@@ -523,6 +557,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "MA English college near Erode",
       "postgraduate English Tamil Nadu",
     ],
+    slug: "ma-english-self-finance",
   },
   "self-finance/pg/mcom": {
     name: "M.Com (SF)",
@@ -538,6 +573,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "MCom college near Erode",
       "postgraduate commerce Tamil Nadu",
     ],
+    slug: "mcom-self-finance",
   },
   "self-finance/pg/msc-computer-science": {
     name: "M.Sc. Computer Science (SF)",
@@ -553,6 +589,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "MSc CS college near Erode",
       "computer science PG Tamil Nadu",
     ],
+    slug: "msc-computer-science-self-finance",
   },
   "self-finance/pg/msc-cs-data-analytics": {
     name: "M.Sc. CS (Data Analytics)",
@@ -569,6 +606,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "MSc CS Data Analytics college near Erode",
       "data analytics degree Tamil Nadu",
     ],
+    slug: "msc-cs-data-analytics-self-finance",
   },
   "self-finance/pg/msc-mathematics": {
     name: "M.Sc. Mathematics (SF)",
@@ -584,6 +622,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "MSc Maths college near Erode",
       "postgraduate mathematics Tamil Nadu",
     ],
+    slug: "msc-mathematics-self-finance",
   },
 };
 
@@ -593,4 +632,32 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
  */
 export function getProgrammeByPath(path: string): ProgrammeInfo | undefined {
   return programmeMetadata[path];
+}
+
+/**
+ * Get programme metadata by admission slug.
+ * Slug format: {name-parts}-{category} e.g. "bsc-chemistry-aided", "ba-english-self-finance"
+ */
+export function getProgrammeBySlug(slug: string):
+  | { path: string; info: ProgrammeInfo }
+  | undefined {
+  for (const [path, info] of Object.entries(programmeMetadata)) {
+    if (info.slug === slug) return { path, info };
+  }
+  return undefined;
+}
+
+/**
+ * Get all admission slugs — used by generateStaticParams() for the
+ * dynamic /admissions/[course] route.
+ */
+export function getAllAdmissionSlugs(): string[] {
+  return Object.values(programmeMetadata).map((p) => p.slug);
+}
+
+/**
+ * Get all programmes as an array (preserves insertion order).
+ */
+export function getAllProgrammes(): Array<{ path: string; info: ProgrammeInfo }> {
+  return Object.entries(programmeMetadata).map(([path, info]) => ({ path, info }));
 }

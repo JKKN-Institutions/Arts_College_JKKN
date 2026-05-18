@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { createClient } from "@/lib/supabase/server";
+import { getAllAdmissionSlugs } from "@/data/programme-metadata";
 
 const SITE_URL = "https://cas.jkkn.ac.in";
 
@@ -23,6 +24,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // Admissions, Contact, Placements, Library, Gallery, IQAC
     s(`${SITE_URL}/admissions`, "monthly", 0.8),
+    s(`${SITE_URL}/admissions/courses`, "monthly", 0.85),
+    ...getAllAdmissionSlugs().map((slug) =>
+      s(`${SITE_URL}/admissions/${slug}`, "monthly", 0.85)
+    ),
     s(`${SITE_URL}/contact`, "yearly", 0.6),
     s(`${SITE_URL}/placements`, "monthly", 0.8),
     s(`${SITE_URL}/library`, "monthly", 0.6),

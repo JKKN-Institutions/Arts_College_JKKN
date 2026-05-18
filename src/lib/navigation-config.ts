@@ -340,6 +340,11 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
             description: 'Apply now — 27+ UG, PG & PhD programmes',
           },
           {
+            label: 'Course-wise Admissions',
+            href: '/admissions/courses',
+            description: 'Browse admission pages for each programme — eligibility, fees, seats',
+          },
+          {
             label: 'Placements',
             href: '/placements',
             description: 'Placement stats, recruiters & career outcomes',
