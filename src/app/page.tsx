@@ -296,7 +296,7 @@ export default function Home() {
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
                 {/* [UPDATE] Replace Unsplash stock image with actual JKKN campus photo */}
                 <Image
-                  src="https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=600&fit=crop"
+                  src="/images/homepage/arts-home-hero.JPG"
                   alt="JKKN College Campus"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
