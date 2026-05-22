@@ -25,7 +25,7 @@ export const revalidate = 3600;
 export default async function BlogPage() {
   // Fetch admin-created posts from Supabase
   const supabase = await createClient();
-  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts';
+  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts-science';
   const { data: campusPosts } = await supabase
     .from('blogs')
     .select('id, title, slug, excerpt, author_name, category, cover_image_url, published_at, created_at, read_time')

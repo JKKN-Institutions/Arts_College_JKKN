@@ -109,7 +109,7 @@ export default function CampusBlogContent({
       author_email: authorEmail.trim(),
       content: commentText.trim(),
       status: 'pending',
-      college_id: process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts',
+      college_id: process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts-science',
     });
     setSubmitting(false);
     if (error) {

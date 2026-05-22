@@ -4,19 +4,18 @@ import { getAllAdmissionSlugs } from "@/data/programme-metadata";
 
 const SITE_URL = "https://cas.jkkn.ac.in";
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // Use a consistent "last content update" date for static pages
-  // Update this when significant content changes are deployed
-  const STATIC_LAST_MODIFIED = "2026-03-17";
+export const revalidate = 3600;
 
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const s = (url: string, changeFrequency: "weekly" | "monthly" | "yearly", priority: number) =>
-    ({ url, lastModified: STATIC_LAST_MODIFIED, changeFrequency, priority });
+    ({ url, changeFrequency, priority });
 
   const staticRoutes: MetadataRoute.Sitemap = [
     // Homepage
     s(SITE_URL, "weekly", 1.0),
 
-    // About pages
+    // About
+    s(`${SITE_URL}/about`, "monthly", 0.7),
     s(`${SITE_URL}/about/our-institution`, "monthly", 0.7),
     s(`${SITE_URL}/about/our-management`, "monthly", 0.7),
     s(`${SITE_URL}/about/our-trust`, "monthly", 0.7),
@@ -32,14 +31,29 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/placements`, "monthly", 0.8),
     s(`${SITE_URL}/library`, "monthly", 0.6),
     s(`${SITE_URL}/gallery`, "monthly", 0.6),
+
+    // IQAC
+    s(`${SITE_URL}/iqac`, "yearly", 0.5),
     s(`${SITE_URL}/iqac/naac`, "yearly", 0.5),
     s(`${SITE_URL}/iqac/objectives-functions`, "yearly", 0.5),
     s(`${SITE_URL}/iqac/role-responsibilities`, "yearly", 0.5),
     s(`${SITE_URL}/iqac/vision-mission`, "yearly", 0.5),
+    s(`${SITE_URL}/iqac/minutes-of-meeting`, "yearly", 0.5),
+
+    // NIRF / Others
+    s(`${SITE_URL}/nirf`, "yearly", 0.5),
     s(`${SITE_URL}/nirf/nirf-2025`, "yearly", 0.5),
+    s(`${SITE_URL}/others`, "yearly", 0.4),
     s(`${SITE_URL}/others/academic-calendar`, "monthly", 0.6),
     s(`${SITE_URL}/others/privacy-policy`, "yearly", 0.3),
+
+    // Blog (parent + static posts)
+    s(`${SITE_URL}/blog`, "weekly", 0.7),
     s(`${SITE_URL}/blog/top-10-career-options-after-bed-2026`, "yearly", 0.7),
+    s(`${SITE_URL}/blog/bed-admission-2026-tamil-nadu`, "yearly", 0.7),
+
+    // Programmes parent
+    s(`${SITE_URL}/programmes`, "monthly", 0.8),
 
     // Programmes — Aided UG
     s(`${SITE_URL}/programmes/aided/ug/ba-english`, "monthly", 0.9),
@@ -77,7 +91,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-microbiology`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-physics`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-textile-fashion-designing`, "monthly", 0.9),
+    s(`${SITE_URL}/programmes/self-finance/ug/bsc-textile-fashion-designing-ai`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-visual-communication`, "monthly", 0.9),
+    s(`${SITE_URL}/programmes/self-finance/ug/bsc-visual-communication-ai`, "monthly", 0.9),
 
     // Programmes — Self-Finance PG
     s(`${SITE_URL}/programmes/self-finance/pg/ma-english`, "monthly", 0.9),
@@ -86,8 +102,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/programmes/self-finance/pg/msc-cs-data-analytics`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/pg/msc-mathematics`, "monthly", 0.9),
 
+    // Departments parent
+    s(`${SITE_URL}/departments`, "monthly", 0.7),
+
     // Departments — Aided
-    s(`${SITE_URL}/departments/aided/botany`, "monthly", 0.8),
     s(`${SITE_URL}/departments/aided/chemistry`, "monthly", 0.8),
     s(`${SITE_URL}/departments/aided/commerce`, "monthly", 0.8),
     s(`${SITE_URL}/departments/aided/computer-science`, "monthly", 0.8),
@@ -117,7 +135,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/departments/self-finance/textile-fashion-designing`, "monthly", 0.8),
     s(`${SITE_URL}/departments/self-finance/visual-communication`, "monthly", 0.8),
 
+    // Faculty parent
+    s(`${SITE_URL}/faculty`, "monthly", 0.7),
+
     // Facilities
+    s(`${SITE_URL}/facilities`, "monthly", 0.7),
     s(`${SITE_URL}/facilities/auditorium`, "yearly", 0.7),
     s(`${SITE_URL}/facilities/bank-post-office`, "yearly", 0.7),
     s(`${SITE_URL}/facilities/classroom`, "yearly", 0.7),
@@ -141,9 +163,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   try {
     const supabase = await createClient();
-    const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? "arts";
+    const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? "arts-science";
 
-    const [{ data: blogs }, { data: events }] = await Promise.all([
+    const [{ data: blogs }, { data: events }, { data: faculty }] = await Promise.all([
       supabase
         .from("blogs")
         .select("slug, updated_at, created_at")
@@ -154,6 +176,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         .select("slug, event_date, created_at")
         .eq("college_id", collegeId)
         .eq("is_published", true),
+      supabase
+        .from("faculty")
+        .select("id, slug, updated_at, created_at")
+        .eq("college_id", collegeId)
+        .eq("is_active", true),
     ]);
 
     if (blogs) {
@@ -177,8 +204,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         }))
       );
     }
-  } catch {
-    // Supabase unavailable at build time — return static routes only
+
+    if (faculty) {
+      dynamicRoutes = dynamicRoutes.concat(
+        faculty
+          .filter((f) => f.slug || f.id)
+          .map((f) => ({
+            url: `${SITE_URL}/faculty/${f.slug ?? f.id}`,
+            lastModified: f.updated_at ?? f.created_at ?? undefined,
+            changeFrequency: "monthly" as const,
+            priority: 0.6,
+          }))
+      );
+    }
+  } catch (err) {
+    console.error("[sitemap] Supabase fetch failed:", err);
   }
 
   return [...staticRoutes, ...dynamicRoutes];
