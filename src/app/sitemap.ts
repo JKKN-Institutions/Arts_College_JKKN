@@ -52,6 +52,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/blog/top-10-career-options-after-bed-2026`, "yearly", 0.7),
     s(`${SITE_URL}/blog/bed-admission-2026-tamil-nadu`, "yearly", 0.7),
 
+    // Events parent
+    s(`${SITE_URL}/events`, "weekly", 0.7),
+
+    // Key PDF assets
+    s(`${SITE_URL}/pdf/brochure.pdf`, "yearly", 0.6),
+    s(`${SITE_URL}/documents/examinations/Autonomous_Semester-Timetable_AprilMay-_2025.pdf`, "yearly", 0.5),
+
     // Programmes parent
     s(`${SITE_URL}/programmes`, "monthly", 0.8),
 
