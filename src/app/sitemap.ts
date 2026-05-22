@@ -55,9 +55,62 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Events parent
     s(`${SITE_URL}/events`, "weekly", 0.7),
 
-    // Key PDF assets
+    // Key PDF assets — auto-discovered from public/ folder
+    // changefreq: yearly, priority: by document type
     s(`${SITE_URL}/pdf/brochure.pdf`, "yearly", 0.6),
     s(`${SITE_URL}/documents/examinations/Autonomous_Semester-Timetable_AprilMay-_2025.pdf`, "yearly", 0.5),
+
+    // NIRF Rankings (high SEO value — searched by prospective students)
+    s(`${SITE_URL}/documents/nirf/NIRF-2025-COLLEGE.pdf`, "yearly", 0.7),
+    s(`${SITE_URL}/documents/nirf/NIRF-2025-OVER-All.pdf`, "yearly", 0.7),
+    s(`${SITE_URL}/documents/nirf/NIRF-2025-SDG.pdf`, "yearly", 0.7),
+    s(`${SITE_URL}/documents/nirf/J.K.K-Nataraja-College-of-Arts-Science20240313-.pdf`, "yearly", 0.5),
+
+    // AICTE Compliance
+    s(`${SITE_URL}/documents/aicte/LOA_EOA_Report_23-24.pdf`, "yearly", 0.6),
+    s(`${SITE_URL}/documents/aicte/MANDATORY-DISCLOSURE-23-24.pdf`, "yearly", 0.6),
+
+    // RTI
+    s(`${SITE_URL}/documents/rti/RTI-2024.pdf`, "yearly", 0.5),
+
+    // IQAC — AQAR (Annual Quality Assurance Reports)
+    s(`${SITE_URL}/documents/iqac/aqar/aqar-2018-2019.pdf`, "yearly", 0.5),
+    s(`${SITE_URL}/documents/iqac/aqar/aqar-2019-2020.pdf`, "yearly", 0.5),
+    s(`${SITE_URL}/documents/iqac/aqar/aqar-2020-2021.pdf`, "yearly", 0.5),
+    s(`${SITE_URL}/documents/iqac/aqar/aqar-2021-2022.pdf`, "yearly", 0.5),
+    s(`${SITE_URL}/documents/iqac/aqar/aqar-2022-2023.pdf`, "yearly", 0.5),
+
+    // IQAC — Best Practices
+    s(`${SITE_URL}/documents/iqac/best-practices/best-practice-2018-2019.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/iqac/best-practices/best-practice-2019-2020.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/iqac/best-practices/best-practice-2020-2021.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/iqac/best-practices/best-practice-2021-2022.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/iqac/best-practices/best-practice-2022-2023.pdf`, "yearly", 0.4),
+
+    // IQAC — College Calendar / Magazine / IIQA / SSR
+    s(`${SITE_URL}/documents/iqac/college-calendar/2022-2023.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/iqac/college-magazine/magazine-2020-2021.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/iqac/college-magazine/magazine-2022-2023.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/iqac/iiqa/cycle-1.pdf`, "yearly", 0.5),
+    s(`${SITE_URL}/documents/iqac/ssr/cycle-1-2013-2018.pdf`, "yearly", 0.5),
+
+    // IQAC Minutes of Meeting
+    s(`${SITE_URL}/documents/Minutes-IQAC-Meeting/Minutes-of-IQAC-Meetings-2019-2020.pdf`, "yearly", 0.3),
+    s(`${SITE_URL}/documents/Minutes-IQAC-Meeting/Minutes-of-Meeting-2018-2019.pdf`, "yearly", 0.3),
+    s(`${SITE_URL}/documents/Minutes-IQAC-Meeting/Minutes-of-Meeting-2019-2020.pdf`, "yearly", 0.3),
+    s(`${SITE_URL}/documents/Minutes-IQAC-Meeting/Minutes-of-Meeting-2022-2023.pdf`, "yearly", 0.3),
+    s(`${SITE_URL}/documents/Minutes-IQAC-Meeting/Minutes-of-Meetings-2020-2021.pdf`, "yearly", 0.3),
+
+    // Committees (latest cycle — clean filenames)
+    s(`${SITE_URL}/documents/committees/Anti_Ragging-committee-2024.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/committees/Grievance-Redressal-Cell-2024.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/committees/Institution-Industry-Cell-2024.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/committees/Internal-committee-2024.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/committees/Internal-Quality-Assurance-Cell-2024.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/committees/SC-ST-Committee-2024.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/committees/4-ICC-Merged.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/committees/6-iqac.pdf`, "yearly", 0.4),
+    s(`${SITE_URL}/documents/committees/28-LOA_EOA_merged_2026.pdf`, "yearly", 0.5),
 
     // Programmes parent
     s(`${SITE_URL}/programmes`, "monthly", 0.8),
