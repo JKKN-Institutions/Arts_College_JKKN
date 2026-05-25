@@ -146,7 +146,7 @@ export default function LibraryPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/facilities/JKKN Arts Library.png"
+                src="/images/facilities/library-1.avif"
                 alt="JKKN Arts and Science College library interior"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -155,7 +155,7 @@ export default function LibraryPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/facilities/JKKN Arts Library - 1.png"
+                src="/images/facilities/library-2.avif"
                 alt="JKKN Arts and Science College library reading area"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -164,7 +164,7 @@ export default function LibraryPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/images/facilities/JKKN Arts Library - 2.png"
+                src="/images/facilities/library-3.avif"
                 alt="JKKN Arts and Science College library book collection"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"

@@ -32,7 +32,7 @@ export default function SeminarHallPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/facilities/JKKN Arts Seminar Hall.png"
+              src="/images/facilities/Seminar-hall-1.avif"
               alt="JKKN Arts and Science College seminar hall"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
@@ -41,7 +41,7 @@ export default function SeminarHallPage() {
           </div>
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/facilities/JKKN Arts Seminar Hall - 1.png"
+              src="/images/facilities/Seminar-hall-2.avif"
               alt="JKKN Arts and Science College seminar hall interior"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
@@ -50,7 +50,7 @@ export default function SeminarHallPage() {
           </div>
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/facilities/Seminar Hall.avif"
+              src="/images/facilities/Seminar-hall-3.avif"
               alt="JKKN Arts and Science College seminar hall view"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"

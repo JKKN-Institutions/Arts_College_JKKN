@@ -33,7 +33,7 @@ export default function ClassroomPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/facilities/JKKN Arts Classroom.png"
+              src="/images/classroom/class_room-1.webp"
               alt="JKKN Arts and Science College classroom"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
@@ -42,7 +42,7 @@ export default function ClassroomPage() {
           </div>
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/facilities/JKKN Arts Classroom - 1.png"
+              src="/images/classroom/class_room-2.webp"
               alt="JKKN Arts and Science College classroom interior"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
@@ -51,7 +51,7 @@ export default function ClassroomPage() {
           </div>
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/facilities/classroom.avif"
+              src="/images/classroom/class_room-3.webp"
               alt="JKKN Arts and Science College classroom view"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
