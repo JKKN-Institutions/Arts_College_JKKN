@@ -369,6 +369,11 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
             href: '/events',
             description: 'Upcoming events & past highlights',
           },
+          {
+            label: 'Careers',
+            href: '/careers',
+            description: 'Job openings at JKKN Institutions',
+          },
         ],
       },
       {

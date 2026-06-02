@@ -1263,6 +1263,16 @@ export default function MobileNav(props: MobileNavProps) {
                       Privacy Policy
                     </Link>
 
+                    <Link
+                      href="https://jobs.cvviz.com/jkkn_institutions"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={toggleMobileMenu}
+                      className="block py-2 px-8 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                    >
+                      Careers
+                    </Link>
+
                     {/* NIRF nested accordion */}
                     <div className="ml-4">
                       <button

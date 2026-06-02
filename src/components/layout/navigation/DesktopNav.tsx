@@ -1635,6 +1635,17 @@ export default function DesktopNav(props: DesktopNavProps) {
                 Gallery
               </Link>
 
+              <Link
+                href="https://jobs.cvviz.com/jkkn_institutions"
+                target="_blank"
+                rel="noopener noreferrer"
+                role="menuitem"
+                tabIndex={0}
+                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+              >
+                Careers
+              </Link>
+
               {/* NIRF Nested Submenu */}
               <div
                 className="relative"
