@@ -1,11 +1,18 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import { createClient } from '@/lib/supabase/client';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
 import { Loader2, X, ImageIcon, Images } from 'lucide-react';
 import { useAdminCollege } from '../AdminCollegeContext';
+
+// Reuse the blog rich text editor (text, headings, lists, images, tables, links, etc.)
+const RichTextEditor = dynamic(() => import('../blogs/new/RichTextEditor'), {
+  ssr: false,
+  loading: () => <div className="border border-gray-200 rounded-xl h-72 bg-gray-50 animate-pulse" />,
+});
 
 function slugify(text: string) {
   return text
@@ -199,6 +206,20 @@ export default function EventForm({ event }: EventFormProps) {
     return publicUrl;
   }
 
+  // Inline images inserted inside the rich-text description
+  async function handleEditorImageUpload(file: File): Promise<string> {
+    const ext = file.name.split('.').pop();
+    const fileName = `content/${new Date().getFullYear()}/${Date.now()}-${slugify(title || 'event')}.${ext}`;
+    const { data, error } = await supabase.storage
+      .from('event-images')
+      .upload(fileName, file, { upsert: true });
+    if (error) {
+      toast.error('Image upload failed: ' + error.message);
+      return URL.createObjectURL(file);
+    }
+    return supabase.storage.from('event-images').getPublicUrl(data.path).data.publicUrl;
+  }
+
   async function handleSubmit(e: React.FormEvent, publish: boolean) {
     e.preventDefault();
     if (!title.trim()) return toast.error('Title is required.');
@@ -212,7 +233,7 @@ export default function EventForm({ event }: EventFormProps) {
       college_id: collegeId,
       title: title.trim(),
       slug: slug.trim(),
-      description: description.trim(),
+      description: description.trim() === '<p></p>' ? '' : description.trim(),
       event_date: eventDate || null,
       event_time: eventTime.trim() || null,
       venue: venue.trim() || null,
@@ -299,12 +320,11 @@ export default function EventForm({ event }: EventFormProps) {
       {/* Description */}
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1.5">Description</label>
-        <textarea
+        <RichTextEditor
           value={description}
-          onChange={(e) => setDescription(e.target.value)}
-          rows={6}
-          placeholder="Describe the event..."
-          className={`${INPUT} resize-none`}
+          onChange={setDescription}
+          onImageUpload={handleEditorImageUpload}
+          placeholder="Describe the event — add text, images, tables, links and more..."
         />
       </div>
 

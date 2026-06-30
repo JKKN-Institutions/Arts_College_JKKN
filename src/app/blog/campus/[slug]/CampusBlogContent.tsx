@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Clock, Calendar, Tag, MessageSquare, Send, Check, Loader2, ChevronUp, ChevronDown, ArrowLeft } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 import toast from 'react-hot-toast';
+import RichContent from '@/components/content/RichContent';
 
 // ── Types ──────────────────────────────────────────────────────────────────
 interface Post {
@@ -180,10 +181,7 @@ export default function CampusBlogContent({
 
         {/* Blog content from rich text editor */}
         {processedContent && (
-          <div
-            className="blog-content mb-12"
-            dangerouslySetInnerHTML={{ __html: processedContent }}
-          />
+          <RichContent html={processedContent} className="blog-content mb-12" />
         )}
 
         {/* Tags */}
@@ -406,6 +404,8 @@ export default function CampusBlogContent({
         .blog-content a { color: #2563eb; text-decoration: underline; }
         .blog-content a:hover { color: #1d4ed8; }
         .blog-content img { max-width: 100%; height: auto; border-radius: 0.75rem; margin: 1.25rem 0; }
+        .blog-content img[data-align="center"] { display: block; margin-left: auto; margin-right: auto; }
+        .blog-content img[data-align="right"] { display: block; margin-left: auto; margin-right: 0; }
         .blog-content strong { font-weight: 700; color: #111827; }
         .blog-content em { font-style: italic; }
         .blog-content table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.9rem; }

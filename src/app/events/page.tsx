@@ -35,6 +35,16 @@ interface EventBlog {
   created_at: string;
 }
 
+// Strip HTML tags so rich-text descriptions show as a clean card excerpt
+function stripHtml(html: string): string {
+  return html
+    .replace(/<[^>]*>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 export default async function EventsPage() {
   const supabase = await createClient();
 
@@ -124,7 +134,7 @@ export default async function EventsPage() {
                       {/* Description */}
                       {event.description && (
                         <p className="text-sm text-gray-500 line-clamp-3 mb-4 flex-1">
-                          {event.description}
+                          {stripHtml(event.description)}
                         </p>
                       )}
 

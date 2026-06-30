@@ -6,7 +6,8 @@ import Underline from '@tiptap/extension-underline';
 import Highlight from '@tiptap/extension-highlight';
 import TextAlign from '@tiptap/extension-text-align';
 import Link from '@tiptap/extension-link';
-import Image from '@tiptap/extension-image';
+import { ResizableImage } from './ResizableImage';
+import { ImageSliderExtension } from './ImageSliderExtension';
 import Placeholder from '@tiptap/extension-placeholder';
 import { Table } from '@tiptap/extension-table';
 import { TableRow } from '@tiptap/extension-table-row';
@@ -69,7 +70,8 @@ export default function RichTextEditor({
       Highlight,
       TextAlign.configure({ types: ['heading', 'paragraph'] }),
       Link.configure({ openOnClick: false, HTMLAttributes: { class: 'text-blue-600 underline' } }),
-      Image.configure({ inline: false, HTMLAttributes: { class: 'max-w-full rounded-lg my-3' } }),
+      ResizableImage.configure({ inline: false, HTMLAttributes: { class: 'max-w-full rounded-lg my-3' } }),
+      ImageSliderExtension.configure({ onImageUpload: onImageUpload ?? null }),
       Placeholder.configure({ placeholder }),
       Table.configure({ resizable: false }),
       TableRow,
@@ -124,8 +126,18 @@ if (!editor) return null;
   const isActive = (name: string, attrs?: Record<string, unknown>) =>
     editor.isActive(name, attrs);
   const isAlignActive = (align: string) =>
+    editor.isActive('image', { align }) ||
     editor.isActive('paragraph', { textAlign: align }) ||
     editor.isActive('heading', { textAlign: align });
+
+  // When an image is selected, alignment buttons align the image; otherwise text
+  const applyAlign = (align: 'left' | 'center' | 'right' | 'justify') => {
+    if (editor.isActive('image')) {
+      editor.chain().focus().updateAttributes('image', { align }).run();
+    } else {
+      editor.chain().focus().setTextAlign(align).run();
+    }
+  };
 
   return (
     <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
@@ -221,22 +233,22 @@ if (!editor) return null;
         <Divider />
 
         {/* Alignment */}
-        <ToolbarBtn onClick={() => editor.chain().focus().setTextAlign('left').run()} active={isAlignActive('left')} title="Align Left">
+        <ToolbarBtn onClick={() => applyAlign('left')} active={isAlignActive('left')} title="Align Left">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <line x1="21" y1="6" x2="3" y2="6"/><line x1="15" y1="12" x2="3" y2="12"/><line x1="17" y1="18" x2="3" y2="18"/>
           </svg>
         </ToolbarBtn>
-        <ToolbarBtn onClick={() => editor.chain().focus().setTextAlign('center').run()} active={isAlignActive('center')} title="Align Center">
+        <ToolbarBtn onClick={() => applyAlign('center')} active={isAlignActive('center')} title="Align Center">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <line x1="21" y1="6" x2="3" y2="6"/><line x1="18" y1="12" x2="6" y2="12"/><line x1="21" y1="18" x2="3" y2="18"/>
           </svg>
         </ToolbarBtn>
-        <ToolbarBtn onClick={() => editor.chain().focus().setTextAlign('right').run()} active={isAlignActive('right')} title="Align Right">
+        <ToolbarBtn onClick={() => applyAlign('right')} active={isAlignActive('right')} title="Align Right">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="12" x2="9" y2="12"/><line x1="21" y1="18" x2="7" y2="18"/>
           </svg>
         </ToolbarBtn>
-        <ToolbarBtn onClick={() => editor.chain().focus().setTextAlign('justify').run()} active={isAlignActive('justify')} title="Justify">
+        <ToolbarBtn onClick={() => applyAlign('justify')} active={isAlignActive('justify')} title="Justify">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="12" x2="3" y2="12"/><line x1="21" y1="18" x2="3" y2="18"/>
           </svg>
@@ -258,6 +270,14 @@ if (!editor) return null;
             <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
             <circle cx="8.5" cy="8.5" r="1.5"/>
             <polyline points="21 15 16 10 5 21"/>
+          </svg>
+        </ToolbarBtn>
+
+        {/* Image Slider (group of images) */}
+        <ToolbarBtn onClick={() => editor.chain().focus().insertImageSlider().run()} title="Insert Image Slider">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <rect x="6" y="6" width="12" height="12" rx="2"/>
+            <path d="M3 8v8M21 8v8"/>
           </svg>
         </ToolbarBtn>
 
