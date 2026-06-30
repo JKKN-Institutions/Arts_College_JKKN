@@ -22,6 +22,7 @@ import {
   Heart,
   Target,
   Briefcase,
+  Calendar,
   LucideIcon
 } from 'lucide-react';
 import { BottomNavGroup, FlatMenuItem, HierarchicalMenuItem } from '@/components/BottomNav/types';
@@ -686,6 +687,12 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
       groupLabel: 'Others',
       icon: LayoutGrid,
       menus: [
+        {
+          href: '/events',
+          label: 'Events',
+          icon: Calendar,
+          active: pathname === '/events'
+        },
         {
           href: '/documents/nirf/J.K.K-Nataraja-College-of-Arts-Science20240313-.pdf',
           label: 'NIRF 2024',
