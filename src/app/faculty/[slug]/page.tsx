@@ -34,6 +34,7 @@ export async function generateMetadata({
     .select('name, designation, department')
     .or(`slug.eq.${slug},id.eq.${slug}`)
     .eq('college_id', process.env.NEXT_PUBLIC_COLLEGE_ID)
+    .eq('synced_from_api', true)
     .single();
 
   if (!data) return { title: 'Faculty | JKKN Dental College & Hospital' };
@@ -76,6 +77,7 @@ export default async function FacultyProfilePage({
     .or(`slug.eq.${slug},id.eq.${slug}`)
     .eq('college_id', collegeId)
     .eq('is_active', true)
+    .eq('synced_from_api', true) // website shows MyJKKN-synced faculty only
     .single();
 
   if (!m) notFound();

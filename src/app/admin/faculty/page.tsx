@@ -3,6 +3,7 @@ import { getAdminCollegeId } from '@/lib/get-admin-college';
 import Link from 'next/link';
 import { Plus, UserCircle2 } from 'lucide-react';
 import FacultyTableClient from './FacultyTableClient';
+import SyncFacultyButton from './SyncFacultyButton';
 
 export default async function AdminFaculty() {
   const supabase = await createClient();
@@ -21,10 +22,12 @@ export default async function AdminFaculty() {
 
   const { data: members } = await supabase
     .from('faculty')
-    .select('id, name, designation, department, qualification, experience_years, photo_url, email, display_order, is_active, aided_or_self')
+    .select('id, name, designation, department, qualification, experience_years, photo_url, email, display_order, is_active, aided_or_self, synced_from_api, staff_id, last_synced_at')
     .eq('college_id', collegeId)
     .order('display_order', { ascending: true })
     .order('name', { ascending: true });
+
+  const syncEditBaseUrl = process.env.JKKN_STAFF_ADMIN_URL ?? null;
 
   return (
     <div className="p-4 sm:p-6 lg:p-8">
@@ -34,18 +37,21 @@ export default async function AdminFaculty() {
           <h1 className="text-2xl font-bold text-gray-900">Faculty</h1>
           <p className="text-gray-500 text-sm mt-0.5">{members?.length ?? 0} total members</p>
         </div>
-        <Link
-          href="/admin/faculty/new"
-          className="flex items-center gap-2 bg-[#0b6d41] text-white text-sm font-semibold px-4 py-2.5 rounded-xl hover:bg-[#004d28] transition"
-        >
-          <Plus className="w-4 h-4" />
-          Add Faculty
-        </Link>
+        <div className="flex flex-col sm:flex-row sm:items-start gap-3">
+          {collegeId === 'arts' && <SyncFacultyButton />}
+          <Link
+            href="/admin/faculty/new"
+            className="flex items-center gap-2 bg-[#0b6d41] text-white text-sm font-semibold px-4 py-2.5 rounded-xl hover:bg-[#004d28] transition h-fit"
+          >
+            <Plus className="w-4 h-4" />
+            Add Faculty
+          </Link>
+        </div>
       </div>
 
       {/* Table */}
       {members && members.length > 0 ? (
-        <FacultyTableClient members={members} userRole={userRole} />
+        <FacultyTableClient members={members} userRole={userRole} syncEditBaseUrl={syncEditBaseUrl} />
       ) : (
         <div className="bg-white rounded-2xl border border-gray-100 shadow-sm py-16 flex flex-col items-center text-center">
           <div className="w-14 h-14 bg-[#0b6d41]/10 rounded-2xl flex items-center justify-center mb-4">

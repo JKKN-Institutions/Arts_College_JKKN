@@ -2,9 +2,10 @@
 
 import { useState, useMemo, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { Search, Pencil, Trash2, UserCircle2, ArrowUpDown } from 'lucide-react';
+import { Search, Pencil, Trash2, UserCircle2, ArrowUpDown, Download, Loader2, ExternalLink, RefreshCw } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
+import { useAdminCollege } from '../AdminCollegeContext';
 
 interface FacultyMember {
   id: string;
@@ -18,12 +19,15 @@ interface FacultyMember {
   display_order: number;
   is_active: boolean;
   aided_or_self: string | null;
+  synced_from_api?: boolean;
+  staff_id?: string | null;
+  last_synced_at?: string | null;
 }
 
 type SortKey = 'name' | 'department' | 'designation' | 'experience_years' | 'is_active';
 type SortDir = 'asc' | 'desc';
 
-export default function FacultyTableClient({ members, userRole }: { members: FacultyMember[]; userRole: string | null }) {
+export default function FacultyTableClient({ members, userRole, syncEditBaseUrl }: { members: FacultyMember[]; userRole: string | null; syncEditBaseUrl?: string | null }) {
   const [search, setSearch] = useState('');
   const [statusFilter, setStatusFilter] = useState<'all' | 'active' | 'inactive'>('all');
   const [sortKey, setSortKey] = useState<SortKey>('name');
@@ -32,7 +36,9 @@ export default function FacultyTableClient({ members, userRole }: { members: Fac
   const [savingId, setSavingId] = useState<string | null>(null);
   const [deleteTarget, setDeleteTarget] = useState<{ id: string; name: string } | null>(null);
   const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [downloading, setDownloading] = useState(false);
   const router = useRouter();
+  const collegeId = useAdminCollege();
 
   const tableScrollRef = useRef<HTMLDivElement>(null);
   const topScrollRef = useRef<HTMLDivElement>(null);
@@ -140,6 +146,92 @@ export default function FacultyTableClient({ members, userRole }: { members: Fac
     return list;
   }, [members, search, statusFilter, sortKey, sortDir]);
 
+  async function downloadCSV() {
+    setDownloading(true);
+    try {
+      const supabase = createClient();
+      const { data: fullData } = await supabase
+        .from('faculty')
+        .select('*')
+        .eq('college_id', collegeId)
+        .order('display_order', { ascending: true })
+        .order('name', { ascending: true });
+
+      if (!fullData || fullData.length === 0) {
+        setDownloading(false);
+        return;
+      }
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const fmt = (arr: any[] | null | undefined, keys: string[]) =>
+        (arr ?? []).map(item => keys.map(k => item[k] ?? '').join(' | ')).join('\n');
+
+      const headers = [
+        'S.No', 'Name', 'Designation', 'Department', 'Qualification', 'Email',
+        'Experience (Years)', 'Status', 'Aided/Self-Finance', 'Display Order',
+        'Slug', 'Badges', 'Summary',
+        'Research Papers Count', 'PhD Scholars Count', 'Awards Won Count',
+        'Academic Qualifications', 'Areas of Specialisation',
+        'Experience Details',
+        'Research Focus', 'Publications', 'Funded Research',
+        'Google Scholar URL', 'ResearchGate URL', 'ORCID URL',
+        'Certifications', 'Awards', 'Memberships',
+        'Mentoring Description', 'PhD Scholars', 'PG Dissertations Guided', 'UG Projects Guided',
+        'FAQs',
+      ];
+
+      const rows = fullData.map((m, i) => [
+        i + 1,
+        m.name ?? '',
+        m.designation ?? '',
+        m.department ?? '',
+        m.qualification ?? '',
+        m.email ?? '',
+        m.experience_years ?? 0,
+        m.is_active ? 'Active' : 'Inactive',
+        m.aided_or_self ?? '',
+        m.display_order ?? 0,
+        m.slug ?? '',
+        (m.badges ?? []).join(', '),
+        (m.summary ?? '').replace(/<[^>]*>/g, ''),
+        m.research_papers_count ?? 0,
+        m.phd_scholars_count ?? 0,
+        m.awards_won_count ?? 0,
+        fmt(m.academic_qualifications, ['degree', 'specialisation', 'university', 'year']),
+        (m.areas_of_specialisation ?? []).join(', '),
+        fmt(m.experience, ['type', 'role', 'institution', 'period_start', 'period_end']),
+        (m.research_focus ?? []).join(', '),
+        fmt(m.publications, ['title', 'authors', 'journal', 'year']),
+        fmt(m.funded_research, ['project', 'agency', 'amount', 'period', 'status']),
+        m.google_scholar_url ?? '',
+        m.researchgate_url ?? '',
+        m.orcid_url ?? '',
+        fmt(m.certifications, ['name', 'organisation', 'year']),
+        fmt(m.awards, ['award', 'body', 'year']),
+        fmt(m.memberships, ['organisation', 'type', 'since']),
+        (m.mentoring_description ?? '').replace(/<[^>]*>/g, ''),
+        fmt(m.phd_scholars, ['scholar', 'research_topic', 'status']),
+        m.pg_dissertations_guided ?? 0,
+        m.ug_projects_guided ?? 0,
+        fmt(m.faqs, ['question', 'answer']),
+      ]);
+
+      const csvContent = [headers, ...rows]
+        .map(row => row.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(','))
+        .join('\n');
+
+      const blob = new Blob(['﻿' + csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `faculty-profiles-${new Date().toISOString().slice(0, 10)}.csv`;
+      link.click();
+      URL.revokeObjectURL(url);
+    } finally {
+      setDownloading(false);
+    }
+  }
+
   function SortHeader({ label, field }: { label: string; field: SortKey }) {
     const active = sortKey === field;
     return (
@@ -183,6 +275,15 @@ export default function FacultyTableClient({ members, userRole }: { members: Fac
               {status === 'all' ? `All (${members.length})` : status}
             </button>
           ))}
+          <button
+            onClick={downloadCSV}
+            disabled={downloading}
+            className="flex items-center gap-1.5 text-xs font-medium px-3 py-2 rounded-lg bg-gray-50 text-gray-600 hover:bg-[#0b6d41] hover:text-white disabled:opacity-50 transition-colors"
+            title="Download all faculty profile data as CSV"
+          >
+            {downloading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Download className="w-3.5 h-3.5" />}
+            {downloading ? 'Downloading...' : 'Download'}
+          </button>
         </div>
       </div>
 
@@ -255,6 +356,12 @@ export default function FacultyTableClient({ members, userRole }: { members: Fac
                       {m.email && (
                         <p className="text-xs text-gray-400 truncate">{m.email}</p>
                       )}
+                      {m.synced_from_api && (
+                        <span className="inline-flex items-center gap-1 mt-0.5 text-[10px] font-semibold text-[#0b6d41] bg-[#0b6d41]/10 border border-[#0b6d41]/20 rounded-full px-1.5 py-0.5">
+                          <RefreshCw className="w-2.5 h-2.5" />
+                          MyJKKN{m.staff_id ? ` · ${m.staff_id}` : ''}
+                        </span>
+                      )}
                       {/* Mobile: show designation inline */}
                       <p className="text-xs text-[#0b6d41] font-medium md:hidden mt-0.5">{m.designation}</p>
                     </div>
@@ -296,47 +403,75 @@ export default function FacultyTableClient({ members, userRole }: { members: Fac
 
                 {/* Self/Aided */}
                 <td className="px-4 py-3 hidden lg:table-cell">
-                  <div className="flex items-center gap-1.5">
-                    <select
-                      value={pendingMap[m.id] ?? m.aided_or_self ?? ''}
-                      onChange={e => setPendingMap(prev => ({ ...prev, [m.id]: e.target.value }))}
-                      className="text-xs border border-gray-200 rounded-lg px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-[#0b6d41]/20 focus:border-[#0b6d41] transition bg-white"
-                    >
-                      <option value="">-- Select --</option>
-                      <option value="Aided">Aided</option>
-                      <option value="Self-Finance">Self-Finance</option>
-                    </select>
-                    {pendingMap[m.id] !== undefined && pendingMap[m.id] !== (m.aided_or_self ?? '') && (
-                      <button
-                        onClick={() => handleAidedSave(m.id)}
-                        disabled={savingId === m.id}
-                        className="text-xs bg-[#0b6d41] text-white px-2.5 py-1.5 rounded-lg hover:bg-[#004d28] disabled:opacity-50 transition"
+                  {m.synced_from_api ? (
+                    <span className="text-xs text-gray-600">{m.aided_or_self ?? '—'}</span>
+                  ) : (
+                    <div className="flex items-center gap-1.5">
+                      <select
+                        value={pendingMap[m.id] ?? m.aided_or_self ?? ''}
+                        onChange={e => setPendingMap(prev => ({ ...prev, [m.id]: e.target.value }))}
+                        className="text-xs border border-gray-200 rounded-lg px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-[#0b6d41]/20 focus:border-[#0b6d41] transition bg-white"
                       >
-                        {savingId === m.id ? '...' : 'Save'}
-                      </button>
-                    )}
-                  </div>
+                        <option value="">-- Select --</option>
+                        <option value="Aided">Aided</option>
+                        <option value="Self-Finance">Self-Finance</option>
+                      </select>
+                      {pendingMap[m.id] !== undefined && pendingMap[m.id] !== (m.aided_or_self ?? '') && (
+                        <button
+                          onClick={() => handleAidedSave(m.id)}
+                          disabled={savingId === m.id}
+                          className="text-xs bg-[#0b6d41] text-white px-2.5 py-1.5 rounded-lg hover:bg-[#004d28] disabled:opacity-50 transition"
+                        >
+                          {savingId === m.id ? '...' : 'Save'}
+                        </button>
+                      )}
+                    </div>
+                  )}
                 </td>
 
                 {/* Actions */}
                 <td className="px-4 py-3">
                   <div className="flex items-center justify-end gap-1">
-                    <Link
-                      href={`/admin/faculty/${m.id}`}
-                      className="w-8 h-8 rounded-lg flex items-center justify-center text-gray-400 hover:text-[#0b6d41] hover:bg-[#0b6d41]/5 transition-colors"
-                      title="Edit"
-                    >
-                      <Pencil className="w-4 h-4" />
-                    </Link>
-                    {userRole === 'seo' && (
-                      <button
-                        onClick={() => setDeleteTarget({ id: m.id, name: m.name })}
-                        disabled={deletingId === m.id}
-                        className="w-8 h-8 rounded-lg flex items-center justify-center text-gray-400 hover:text-red-600 hover:bg-red-50 disabled:opacity-50 transition-colors"
-                        title="Delete"
-                      >
-                        <Trash2 className="w-4 h-4" />
-                      </button>
+                    {m.synced_from_api ? (
+                      syncEditBaseUrl && m.staff_id ? (
+                        <a
+                          href={`${syncEditBaseUrl.replace(/\/$/, '')}/${m.staff_id}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-xs font-medium text-[#0b6d41] hover:underline px-2 py-1.5"
+                          title="This profile is managed in MyJKKN"
+                        >
+                          Edit in MyJKKN
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      ) : (
+                        <span
+                          className="text-xs text-gray-400 px-2 py-1.5"
+                          title="This profile is managed in MyJKKN and cannot be edited here"
+                        >
+                          Managed in MyJKKN
+                        </span>
+                      )
+                    ) : (
+                      <>
+                        <Link
+                          href={`/admin/faculty/${m.id}`}
+                          className="w-8 h-8 rounded-lg flex items-center justify-center text-gray-400 hover:text-[#0b6d41] hover:bg-[#0b6d41]/5 transition-colors"
+                          title="Edit"
+                        >
+                          <Pencil className="w-4 h-4" />
+                        </Link>
+                        {userRole === 'seo' && (
+                          <button
+                            onClick={() => setDeleteTarget({ id: m.id, name: m.name })}
+                            disabled={deletingId === m.id}
+                            className="w-8 h-8 rounded-lg flex items-center justify-center text-gray-400 hover:text-red-600 hover:bg-red-50 disabled:opacity-50 transition-colors"
+                            title="Delete"
+                          >
+                            <Trash2 className="w-4 h-4" />
+                          </button>
+                        )}
+                      </>
                     )}
                   </div>
                 </td>

@@ -47,6 +47,7 @@ export default async function FacultyPage({
     )
     .eq('college_id', collegeId)
     .eq('is_active', true)
+    .eq('synced_from_api', true) // website shows MyJKKN-synced faculty only
     .eq('aided_or_self', activeTab === 'self-finance' ? 'Self-Finance' : 'Aided')
     .order('display_order', { ascending: true })
     .order('name', { ascending: true });
@@ -60,7 +61,7 @@ export default async function FacultyPage({
             <p className="text-[#FFC107] text-xs font-semibold tracking-widest uppercase mb-2">
             JKKN College of Arts and Science
             </p>
-            <h1 className="text-3xl sm:text-4xl font-bold text-white">Our Faculty</h1>
+            <h1 className="text-3xl sm:text-4xl font-bold text-white">Our Senior Learners</h1>
             <p className="text-green-200 mt-3 text-sm sm:text-base max-w-xl mx-auto">
               Experienced specialists guiding the next generation of dental professionals.
             </p>
@@ -163,7 +164,7 @@ export default async function FacultyPage({
               <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mb-4">
                 <UserCircle2 className="w-8 h-8 text-gray-300" />
               </div>
-              <p className="text-gray-500 font-medium">No faculty members found.</p>
+              <p className="text-gray-500 font-medium">No senior learners found.</p>
             </div>
           )}
         </section>
