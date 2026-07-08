@@ -374,6 +374,11 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
             href: '/careers',
             description: 'Job openings at JKKN Institutions',
           },
+          {
+            label: 'Senior Learners',
+            href: '/faculty',
+            description: 'Meet our senior learners — qualifications & expertise',
+          },
         ],
       },
       {
