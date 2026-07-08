@@ -240,7 +240,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         .from("faculty")
         .select("id, slug, updated_at, created_at")
         .eq("college_id", collegeId)
-        .eq("is_active", true),
+        .eq("is_active", true)
+        .eq("synced_from_api", true),
     ]);
 
     if (blogs) {

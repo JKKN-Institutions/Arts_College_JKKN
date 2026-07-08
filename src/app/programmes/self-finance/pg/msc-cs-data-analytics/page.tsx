@@ -107,7 +107,7 @@ export default function MScCSDataAnalyticsPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function MScCSDataAnalyticsPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Aligned Curriculum', 'Expert Learning Facilitators', 'GPU-Powered Lab Infrastructure', 'Industry Internship Programme'].map((item, idx) => (
+                {['Industry-Aligned Learning Framework', 'Expert Senior Learners', 'GPU-Powered Lab Infrastructure', 'Industry Internship Programme'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -244,21 +244,21 @@ export default function MScCSDataAnalyticsPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive syllabus designed to build expertise in data analytics and machine learning
+                  Comprehensive learning pathway designed to build expertise in data analytics and machine learning
                 </p>
               </div>
             </RevealSection>
@@ -284,7 +284,7 @@ export default function MScCSDataAnalyticsPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: [
                       '25PDAC01 – Descriptive Statistics',
                       '25PDAC02 – Foundations of Data Science',
@@ -296,7 +296,7 @@ export default function MScCSDataAnalyticsPage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: [
                       '25PDAC04 – Machine Learning',
                       '25PDAC05 – Big Data Framework',
@@ -334,7 +334,7 @@ export default function MScCSDataAnalyticsPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: [
                       '23PDA07 – Core 7: Big Data with Spark and Hive',
                       '23PDA08 – Core 8: Applied Statistics',
@@ -348,7 +348,7 @@ export default function MScCSDataAnalyticsPage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: [
                       '23PDA11 – Core 11: Cloud Computing',
                       '23PDA12 – Core 12: Cyber Security',
@@ -513,8 +513,8 @@ export default function MScCSDataAnalyticsPage() {
                 { title: 'Cloud Computing Infrastructure', description: 'Access to AWS, Azure, and Google Cloud Platform with dedicated educational credits for Learners to deploy and scale analytics solutions.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Cloud+Lab' },
                 { title: 'Big Data Analytics Cluster', description: 'Dedicated Hadoop and Spark cluster for processing terabytes of data, enabling hands-on experience with distributed computing frameworks.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Big+Data+Cluster' },
                 { title: 'Enterprise Software Suite', description: 'Licensed access to Tableau, Power BI, SAS, SPSS, MATLAB, and industry-standard analytics tools for comprehensive learning experience.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Software+Suite' },
-                { title: 'Research & Innovation Center', description: 'Dedicated space for dissertation work, industry collaborations, and research projects with mentorship from industry experts and Learning Facilitators.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Research+Center' },
-                { title: 'Digital Library & Resources', description: 'Access to IEEE, ACM, Springer, and other academic databases with thousands of research papers, journals, and e-books on data science topics.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Library' }
+                { title: 'Research & Innovation Center', description: 'Dedicated space for dissertation work, industry collaborations, and research projects with mentorship from industry experts and Senior Learners.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Research+Center' },
+                { title: 'Digital Learning Commons & Resources', description: 'Access to IEEE, ACM, Springer, and other academic databases with thousands of research papers, journals, and e-books on data science topics.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Library' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -568,9 +568,9 @@ export default function MScCSDataAnalyticsPage() {
               <div className="space-y-4">
                 {[
                   { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
-                  { title: 'Industry-Ready Curriculum', description: 'Aligned with industry trends covering Python, R, machine learning, big data, and cloud computing.' },
+                  { title: 'Industry-Ready Learning Framework', description: 'Aligned with industry trends covering Python, R, machine learning, big data, and cloud computing.' },
                   { title: 'Advanced Lab Infrastructure', description: 'GPU-powered computing labs with access to AWS, Azure, and Google Cloud Platform.' },
-                  { title: 'Expert Learning Facilitators', description: 'Highly qualified faculty with doctoral degrees and industry experience in data science.' },
+                  { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees and industry experience in data science.' },
                   { title: 'Strong Industry Connections', description: 'Partnerships with leading tech companies, ensuring internships and placement opportunities.' }
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:shadow-lg hover:-translate-y-0.5 transition-all">
@@ -595,11 +595,11 @@ export default function MScCSDataAnalyticsPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">

@@ -153,13 +153,13 @@ export default function BComCAPage() {
 
   ];
 
-  // Curriculum data
+  // Learning Framework data
   const curriculum = {
     1: {
       year: "First Year",
       semesters: [
         {
-          semester: "Semester I",
+          semester: "Learning Period I",
           subjects: [
             { code: "24UGTA01", name: "Tamil - I" },
             { code: "24UGEN01", name: "English - I" },
@@ -171,7 +171,7 @@ export default function BComCAPage() {
           ]
         },
         {
-          semester: "Semester II",
+          semester: "Learning Period II",
           subjects: [
             { code: "24UGTA02", name: "Tamil - II" },
             { code: "24UGEN02", name: "English - II" },
@@ -189,7 +189,7 @@ export default function BComCAPage() {
       year: "Second Year",
       semesters: [
         {
-          semester: "Semester III",
+          semester: "Learning Period III",
           subjects: [
             { code: "24UGTA03", name: "Tamil - III" },
             { code: "24UGEN03", name: "English - III" },
@@ -203,7 +203,7 @@ export default function BComCAPage() {
           ]
         },
         {
-          semester: "Semester IV",
+          semester: "Learning Period IV",
           subjects: [
             { code: "24UGTA04", name: "Tamil - IV" },
             { code: "24UGEN04", name: "English - IV" },
@@ -221,7 +221,7 @@ export default function BComCAPage() {
       year: "Third Year",
       semesters: [
         {
-          semester: "Semester V",
+          semester: "Learning Period V",
           subjects: [
             { code: "23UCC08", name: "Cost Accounting - I" },
             { code: "23UCC09", name: "Banking Law and Practice" },
@@ -235,7 +235,7 @@ export default function BComCAPage() {
           ]
         },
         {
-          semester: "Semester VI",
+          semester: "Learning Period VI",
           subjects: [
             { code: "", name: "Cost Accounting" },
             { code: "", name: "Management Accounting" },
@@ -319,7 +319,7 @@ export default function BComCAPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -333,7 +333,7 @@ export default function BComCAPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
+              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Award className="w-7 h-7" />, stat: '₹4.5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
@@ -404,7 +404,7 @@ export default function BComCAPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Aligned Curriculum', 'Tally & SAP Training', 'CA/CMA Foundation Support', 'Mandatory Internships'].map((item, idx) => (
+                {['Industry-Aligned Learning Framework', 'Tally & SAP Training', 'CA/CMA Foundation Support', 'Mandatory Internships'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -487,7 +487,7 @@ export default function BComCAPage() {
         </div>
       </section>
 
-      {/* Curriculum Section */}
+      {/* Learning Framework Section */}
       <section className="py-20 bg-gradient-to-br from-emerald-50 via-brand-cream to-blue-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/patterns/circuit.svg')] opacity-5"></div>
         <div className="container mx-auto px-4 md:px-6 relative">
@@ -495,7 +495,7 @@ export default function BComCAPage() {
             <div className="max-w-4xl mx-auto text-center mb-16">
               <SectionBadge text="Academic Structure" />
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-6">
-                Course Curriculum
+                Course Learning Framework
               </h2>
               <div className="w-24 h-1.5 bg-gradient-to-r from-brand-green to-emerald-500 mx-auto rounded-full"></div>
             </div>
@@ -785,11 +785,11 @@ export default function BComCAPage() {
                 {/* Computer Lab */}
                 <GlassCard className="overflow-hidden" hover={false}>
                   <div className="bg-gradient-to-br from-brand-green to-emerald-600 p-8 text-center">
-                    <h3 className="text-2xl font-bold text-white">Computer Lab</h3>
+                    <h3 className="text-2xl font-bold text-white">Digital Learning Lab</h3>
                   </div>
                   <div className="p-6">
                     <h4 className="text-lg font-bold text-brand-green mb-3">
-                      Computer Lab with Accounting Software
+                      Digital Learning Lab with Accounting Software
                     </h4>
                     <p className="text-gray-600 text-sm leading-relaxed">
                       Fully equipped labs with Tally Prime, SAP, Advanced Excel, and financial modeling software for hands-on practical training.
@@ -800,11 +800,11 @@ export default function BComCAPage() {
                 {/* Digital Library */}
                 <GlassCard className="overflow-hidden" hover={false}>
                   <div className="bg-white/60 backdrop-blur-sm p-8 text-center border-b-4 border-brand-green">
-                    <h3 className="text-2xl font-bold text-brand-green">Digital Library</h3>
+                    <h3 className="text-2xl font-bold text-brand-green">Digital Learning Commons</h3>
                   </div>
                   <div className="p-6">
                     <h4 className="text-lg font-bold text-brand-green mb-3">
-                      Digital Library & E-Resources
+                      Digital Learning Commons & E-Resources
                     </h4>
                     <p className="text-gray-600 text-sm leading-relaxed">
                       Access to ICAI study materials, financial databases, e-journals, and online resources for research and competitive exam preparation.
@@ -923,10 +923,10 @@ export default function BComCAPage() {
                       </div>
                       <div>
                         <h4 className="text-lg font-bold text-brand-green mb-2">
-                          Industry-Integrated Curriculum
+                          Industry-Integrated Learning Framework
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                          Curriculum designed in consultation with CA/CMA professionals and corporate finance experts.
+                          Learning Framework designed in consultation with CA/CMA professionals and corporate finance experts.
                         </p>
                       </div>
                     </div>
@@ -937,7 +937,7 @@ export default function BComCAPage() {
                       </div>
                       <div>
                         <h4 className="text-lg font-bold text-brand-green mb-2">
-                          Experienced Learning Facilitators
+                          Experienced Senior Learners
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
                           Faculty with CA/CMA qualifications and industry experience providing practical insights.

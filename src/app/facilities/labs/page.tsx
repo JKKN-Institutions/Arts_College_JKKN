@@ -26,7 +26,7 @@ export default function LabsPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Page Title */}
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-12">
-          Labs
+          Learning Labs
         </h1>
 
         {/* Lab Images Grid */}
@@ -63,15 +63,15 @@ export default function LabsPage() {
         {/* Content Paragraphs */}
         <div className="space-y-6 text-base md:text-lg leading-relaxed text-gray-700">
           <p className="text-justify">
-            When it comes to quality education, the availability of advanced laboratory facilities is essential. At JKKN Educational Institutions, we understand the importance of providing our students with top-of-the-line laboratory facilities that cater to their academic and research needs. Our state-of-the-art laboratory facilities are designed to meet the requirements of our students and provide them with the best learning experience.
+            When it comes to quality education, the availability of advanced learning lab facilities is essential. At JKKN Educational Institutions, we understand the importance of providing our learners with top-of-the-line learning lab facilities that cater to their academic and research needs. Our state-of-the-art learning lab facilities are designed to meet the requirements of our learners and provide them with the best learning experience.
           </p>
 
           <p className="text-justify">
-            We have various laboratory facilities that cover various topics, including physics, chemistry, biology, and engineering. Our laboratories are equipped with the latest technology and equipment, allowing our students to conduct experiments and research in a safe and controlled environment. Our facilities are constantly updated to keep up with the latest developments in the field and ensure that our students have access to the most advanced tools and techniques available.
+            We have various learning lab facilities that cover various topics, including physics, chemistry, biology, and engineering. Our learning labs are equipped with the latest technology and equipment, allowing our learners to conduct experiments and research in a safe and controlled environment. Our facilities are constantly updated to keep up with the latest developments in the field and ensure that our learners have access to the most advanced tools and techniques available.
           </p>
 
           <p className="text-justify">
-            Our laboratory facilities are managed by a team of experienced professionals who are dedicated to providing our students with the support they need. They work closely with our faculty to ensure that the laboratory facilities are fully utilized to enhance the learning experience of our students. Our team of professionals is always available to assist our students with any questions or concerns they may have.
+            Our learning lab facilities are managed by a team of experienced professionals who are dedicated to providing our learners with the support they need. They work closely with our senior learners to ensure that the learning lab facilities are fully utilized to enhance the learning experience of our learners. Our team of professionals is always available to assist our learners with any questions or concerns they may have.
           </p>
         </div>
       </div>

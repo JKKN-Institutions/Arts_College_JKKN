@@ -26,7 +26,7 @@ export default function AuditoriumPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Page Title */}
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-12">
-          AUDITORIUM
+          LEARNING AUDITORIUM
         </h1>
 
         {/* Three-column Image Grid */}
@@ -63,15 +63,15 @@ export default function AuditoriumPage() {
         {/* Descriptive Content */}
         <div className="space-y-6 text-base md:text-lg leading-relaxed text-gray-700">
           <p className="text-justify">
-            The JKKN auditorium is a spacious facility that can accommodate a large number of guests comfortably. The seating arrangement is well-designed to provide an uninterrupted view of the stage, and the acoustics are impeccable, ensuring that every note and word is heard clearly. The stage is equipped with the latest audio-visual technology, making it possible to host a wide range of events, including concerts, plays, and theatrical performances.
+            The JKKN learning auditorium is a spacious facility that can accommodate a large number of guests comfortably. The seating arrangement is well-designed to provide an uninterrupted view of the stage, and the acoustics are impeccable, ensuring that every note and word is heard clearly. The stage is equipped with the latest audio-visual technology, making it possible to host a wide range of events, including concerts, plays, and theatrical performances.
           </p>
 
           <p className="text-justify">
-            In addition to its impressive features, the auditorium is designed with utmost attention to detail, making it a truly elegant space. The interior decor features a combination of modern and traditional elements that blend perfectly to create a warm and welcoming atmosphere. The lighting is also carefully selected, ensuring that it adds to the ambiance of the event.
+            In addition to its impressive features, the learning auditorium is designed with utmost attention to detail, making it a truly elegant space. The interior decor features a combination of modern and traditional elements that blend perfectly to create a warm and welcoming atmosphere. The lighting is also carefully selected, ensuring that it adds to the ambiance of the event.
           </p>
 
           <p className="text-justify">
-            The JKKN auditorium is not just an impressive facility, but it is also a versatile one. It can be used for various purposes, including graduation ceremonies, workshops, and seminars, making it an essential resource for the institution. The auditorium is also well-maintained, ensuring that it remains in top condition for every event.
+            The JKKN learning auditorium is not just an impressive facility, but it is also a versatile one. It can be used for various purposes, including graduation ceremonies, workshops, and seminars, making it an essential resource for the institution. The learning auditorium is also well-maintained, ensuring that it remains in top condition for every event.
           </p>
 
           {/* Features List */}
@@ -81,7 +81,7 @@ export default function AuditoriumPage() {
               <li>High-tech sound and lighting systems</li>
               <li>Stage equipment and props</li>
               <li>Excellent acoustics</li>
-              <li>Professional staff</li>
+              <li>Professional team members</li>
             </ul>
           </div>
         </div>

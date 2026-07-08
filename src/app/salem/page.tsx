@@ -454,7 +454,7 @@ export default function SalemPage() {
               {
                 Icon: BookOpen,
                 title: "Wide Range",
-                desc: "Wide range of UG and PG programmes — something for every student",
+                desc: "Wide range of UG and PG programmes — something for every learner",
               },
               {
                 Icon: Banknote,
@@ -469,12 +469,12 @@ export default function SalemPage() {
               {
                 Icon: Leaf,
                 title: "Green Campus",
-                desc: "Green, spacious campus with modern library and computer labs",
+                desc: "Green, spacious campus with modern learning commons and digital learning labs",
               },
               {
                 Icon: Users,
-                title: "Student Life",
-                desc: "Cultural activities, NSS, NCC, and active student clubs",
+                title: "Learner Life",
+                desc: "Cultural activities, NSS, NCC, and active learner clubs",
               },
               {
                 Icon: Bus,
@@ -879,7 +879,7 @@ export default function SalemPage() {
               <Award className="w-8 h-8 text-[#006837] mb-3" />
               <h3 className="font-bold text-gray-800 mb-2">Government Scholarships</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Tamil Nadu government scholarships for BC, MBC, SC, and ST students.
+                Tamil Nadu government scholarships for BC, MBC, SC, and ST learners.
                 Covers tuition fees partially or fully depending on community and income.
                 Applied through the State Scholarship Portal.
               </p>
@@ -888,7 +888,7 @@ export default function SalemPage() {
               <CheckCircle className="w-8 h-8 text-[#006837] mb-3" />
               <h3 className="font-bold text-gray-800 mb-2">Merit-Based Concessions</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                Fee concessions for students with outstanding academic performance in
+                Fee concessions for learners with outstanding academic performance in
                 10th and 12th examinations. Sports achievers and NCC cadets may also
                 be eligible for special concessions.
               </p>
@@ -1005,14 +1005,14 @@ export default function SalemPage() {
             {[
               {
                 Icon: FlaskConical,
-                title: "Modern Labs",
-                desc: "State-of-the-art laboratories and smart classrooms",
+                title: "Modern Learning Labs",
+                desc: "State-of-the-art learning labs and smart learning studios",
                 bg: "bg-[#FBFBEE]",
               },
               {
                 Icon: BookOpen,
-                title: "Digital Library",
-                desc: "Well-stocked library with digital access and journals",
+                title: "Digital Learning Commons",
+                desc: "Well-stocked learning commons with digital access and journals",
                 bg: "bg-[#FBFBEE]",
               },
               {
@@ -1067,10 +1067,10 @@ export default function SalemPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-              Students from Salem Love JKKN CAS
+              Learners from Salem Love JKKN CAS
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Hear from students who made the right choice
+              Hear from learners who made the right choice
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -1082,13 +1082,13 @@ export default function SalemPage() {
                 &ldquo;
               </div>
               <p className="text-gray-500 text-sm leading-relaxed italic">
-                [Student testimonial from Salem to be added here. Include their
+                [Learner testimonial from Salem to be added here. Include their
                 experience at JKKN CAS, what they liked about the campus, and
                 their career outcomes.]
               </p>
               <div className="mt-4">
                 <div className="font-bold text-gray-800 text-sm">
-                  [Student Name]
+                  [Learner Name]
                 </div>
                 <div className="text-gray-400 text-xs mt-0.5">
                   [Course], Batch of [Year] • Now at [Company]
@@ -1102,13 +1102,13 @@ export default function SalemPage() {
                 &ldquo;
               </div>
               <p className="text-gray-500 text-sm leading-relaxed italic">
-                [Second student testimonial from Salem to be added here. Focus
+                [Second learner testimonial from Salem to be added here. Focus
                 on the ease of commute/hostel life and the quality of
                 education.]
               </p>
               <div className="mt-4">
                 <div className="font-bold text-gray-800 text-sm">
-                  [Student Name]
+                  [Learner Name]
                 </div>
                 <div className="text-gray-400 text-xs mt-0.5">
                   [Course], Batch of [Year]
@@ -1119,7 +1119,7 @@ export default function SalemPage() {
             {/* Placeholder Card */}
             <div className="rounded-2xl p-6 border-2 border-dashed border-[#7cb983] bg-[#FBFBEE] flex items-center justify-center">
               <p className="text-[#006837] text-sm font-medium text-center leading-relaxed">
-                Add 2-3 real student testimonials from Salem or nearby areas
+                Add 2-3 real learner testimonials from Salem or nearby areas
                 before deployment.
               </p>
             </div>

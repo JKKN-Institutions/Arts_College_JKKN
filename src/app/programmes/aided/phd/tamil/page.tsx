@@ -156,7 +156,7 @@ export default function PhDTamilPage() {
                 The Doctor of Philosophy (Ph.D) in Tamil is a prestigious doctoral research programme designed to develop advanced research scholars with deep expertise in Tamil language, literature, and linguistics. This UGC-recognized programme offers comprehensive research training spanning classical Sangam literature, medieval devotional poetry, modern Tamil prose and poetry, comparative Dravidian studies, and contemporary Tamil digital humanities.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our progressive education philosophy ensures that Research Scholars receive rigorous academic training combined with practical research skills under the guidance of experienced Learning Facilitators. The programme integrates traditional textual scholarship with modern research methodologies, preparing scholars for distinguished careers in academia, research institutions, government language bodies, and cultural organizations.
+                Our progressive education philosophy ensures that Research Scholars receive rigorous academic training combined with practical research skills under the guidance of experienced Senior Learners. The programme integrates traditional textual scholarship with modern research methodologies, preparing scholars for distinguished careers in academia, research institutions, government language bodies, and cultural organizations.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
@@ -579,7 +579,7 @@ export default function PhDTamilPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Our Research{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">

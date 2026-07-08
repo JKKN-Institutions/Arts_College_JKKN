@@ -58,7 +58,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       "Capstone project blending Commerce + AI",
     ],
     highlights: [
-      "First-of-its-kind Commerce + AI hybrid curriculum",
+      "First-of-its-kind Commerce + AI hybrid learning framework",
       "Hands-on tooling: Python, SQL, Power BI, Tally, RPA",
       "Two industry internships (Analytics + FinTech)",
       "Future-ready for MBA Analytics, M.Sc. Data Science, CA + Analytics",
@@ -105,7 +105,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       "Capstone AI project with real-world dataset",
     ],
     highlights: [
-      "Industry-aligned AI & Data Science curriculum",
+      "Industry-aligned AI & Data Science learning framework",
       "Hands-on tooling: Python, TensorFlow, PyTorch, SQL, Power BI",
       "Internship with AI / analytics firms",
       "Career pathway into MS Data Science, MBA Analytics",
@@ -133,7 +133,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       "Industry certifications mapping (CompTIA Security+, CEH)",
     ],
     highlights: [
-      "Specialised cyber security curriculum within a CS degree",
+      "Specialised cyber security learning framework within a CS degree",
       "Hands-on labs for ethical hacking and penetration testing",
       "Industry certifications mapping",
       "Career-ready for SOC, GRC, and security analyst roles",

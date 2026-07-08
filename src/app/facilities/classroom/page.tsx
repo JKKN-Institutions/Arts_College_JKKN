@@ -26,7 +26,7 @@ export default function ClassroomPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Page Title */}
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-12">
-          Digital class room
+          Smart Learning Studios
         </h1>
 
         {/* Classroom Images Grid */}
@@ -63,27 +63,27 @@ export default function ClassroomPage() {
         {/* Content Paragraphs */}
         <div className="space-y-6 text-base md:text-lg leading-relaxed text-gray-700">
           <p className="text-justify">
-            At JKKN Educational Institutions, we prioritize the importance of exceptional classroom facilities for an excellent learning experience. Our classrooms are specifically designed to create an engaging and comfortable environment where students can immerse themselves in their studies and develop their skills.
+            At JKKN Educational Institutions, we prioritize the importance of exceptional learning studio facilities for an excellent learning experience. Our learning studios are specifically designed to create an engaging and comfortable environment where learners can immerse themselves in their studies and develop their skills.
           </p>
 
           <p className="text-justify">
-            Our facilities are equipped with state-of-the-art technology, including high-speed internet, multimedia projectors, and interactive whiteboards, to provide students with access to a vast amount of information. We also offer comfortable seating arrangements to ensure that students can focus on their studies without any discomfort or distractions.
+            Our facilities are equipped with state-of-the-art technology, including high-speed internet, multimedia projectors, and interactive whiteboards, to provide learners with access to a vast amount of information. We also offer comfortable seating arrangements to ensure that learners can focus on their studies without any discomfort or distractions.
           </p>
 
           <p className="text-justify">
-            Beyond functionality, we believe that the aesthetics of the learning environment are vital in inspiring creativity and nurturing positive attitudes towards learning. Thus, our classrooms are thoughtfully decorated with vibrant colors and motivational posters to create a welcoming atmosphere that fosters a love of learning.
+            Beyond functionality, we believe that the aesthetics of the learning environment are vital in inspiring creativity and nurturing positive attitudes towards learning. Thus, our learning studios are thoughtfully decorated with vibrant colors and motivational posters to create a welcoming atmosphere that fosters a love of learning.
           </p>
 
           <p className="text-justify">
-            We understand that each student has unique learning needs, and that's why we offer various classroom settings to cater to diverse learning styles. Our classrooms range from traditional lecture-style setups to collaborative workspaces, providing students with a comfortable space that suits their learning preferences.
+            We understand that each learner has unique learning needs, and that's why we offer various learning studio settings to cater to diverse learning styles. Our learning studios range from traditional lecture-style setups to collaborative workspaces, providing learners with a comfortable space that suits their learning preferences.
           </p>
 
           <p className="text-justify">
-            Furthermore, we maintain and clean our classrooms regularly to ensure that students can concentrate on their studies without any distractions. We are committed to providing a hygienic learning environment that promotes academic success and personal growth.
+            Furthermore, we maintain and clean our learning studios regularly to ensure that learners can concentrate on their studies without any distractions. We are committed to providing a hygienic learning environment that promotes academic success and personal growth.
           </p>
 
           <p className="text-justify">
-            In summary, at JKKN Educational Institutions, we are dedicated to providing our students with exceptional classroom facilities that inspire learning and growth. We believe that a great learning environment is crucial for academic success, and our classrooms are designed to provide just that.
+            In summary, at JKKN Educational Institutions, we are dedicated to providing our learners with exceptional learning studio facilities that inspire learning and growth. We believe that a great learning environment is crucial for academic success, and our learning studios are designed to provide just that.
           </p>
         </div>
       </div>

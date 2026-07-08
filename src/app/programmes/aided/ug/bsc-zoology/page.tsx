@@ -107,7 +107,7 @@ export default function BScZoologyPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/90 hover:bg-white text-gray-900 border-2 border-white px-7 py-3 rounded-lg font-semibold backdrop-blur-sm shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -156,11 +156,11 @@ export default function BScZoologyPage() {
                 The Bachelor of Science in Zoology programme is a comprehensive 3-year Undergraduate degree designed to provide in-depth knowledge of animal biology, diversity, evolution, ecology, and conservation. The curriculum blends theoretical learning with extensive practical laboratory sessions and field studies.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Students explore fascinating topics including animal physiology, genetics, biotechnology, entomology, wildlife conservation, and environmental biology. Our department is equipped with state-of-the-art laboratories, a zoological museum, aquarium facilities, and molecular biology research units. Graduates are well-prepared for careers in research, healthcare, biotechnology, environmental consulting and wildlife conservation.
+                Students explore fascinating topics including animal physiology, genetics, biotechnology, entomology, wildlife conservation, and environmental biology. Our department is equipped with state-of-the-art learning labs, a zoological museum, aquarium facilities, and molecular biology research units. Graduates are well-prepared for careers in research, healthcare, biotechnology, environmental consulting and wildlife conservation.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Advanced Laboratory Facilities', 'Comprehensive Curriculum', 'Expert Faculty Members', 'Field Study Opportunities'].map((item, idx) => (
+                {['Advanced Laboratory Facilities', 'Comprehensive Learning Framework', 'Expert Faculty Members', 'Field Study Opportunities'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -244,21 +244,21 @@ export default function BScZoologyPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive syllabus covering fundamental to advanced topics in zoology
+                  Comprehensive learning pathway covering fundamental to advanced topics in zoology
                 </p>
               </div>
             </RevealSection>
@@ -322,7 +322,7 @@ export default function BScZoologyPage() {
                   <RevealSection key={idx} delay={idx * 100}>
                     <GlassCard className="overflow-hidden" hover={false}>
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h4 className="text-xl font-bold">Semester {sem.semester}</h4>
+                        <h4 className="text-xl font-bold">Learning Period {sem.semester}</h4>
                       </div>
                       <div className="p-6">
                         <div className="space-y-4">
@@ -378,7 +378,7 @@ export default function BScZoologyPage() {
                   <RevealSection key={idx} delay={idx * 100}>
                     <GlassCard className="overflow-hidden" hover={false}>
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h4 className="text-xl font-bold">Semester {sem.semester}</h4>
+                        <h4 className="text-xl font-bold">Learning Period {sem.semester}</h4>
                       </div>
                       <div className="p-6">
                         <div className="space-y-4">
@@ -430,7 +430,7 @@ export default function BScZoologyPage() {
                   <RevealSection key={idx} delay={idx * 100}>
                     <GlassCard className="overflow-hidden" hover={false}>
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h4 className="text-xl font-bold">Semester {sem.semester}</h4>
+                        <h4 className="text-xl font-bold">Learning Period {sem.semester}</h4>
                       </div>
                       <div className="p-6">
                         <div className="space-y-4">
@@ -632,7 +632,7 @@ export default function BScZoologyPage() {
               <div className="space-y-4">
                 {[
                   { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
-                  { title: 'Expert Learning Facilitators', description: 'Highly qualified faculty with doctoral degrees, active research publications, and extensive field experience.' },
+                  { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, active research publications, and extensive field experience.' },
                   { title: 'Strong Placement Support', description: 'Dedicated placement cell with tie-ups with leading research institutes, pharmaceutical companies, and NGOs.' },
                   { title: 'Field Study Excursions', description: 'Annual trips to wildlife sanctuaries, marine biology stations, biodiversity parks, and research centers.' },
                   { title: 'Modern Infrastructure', description: 'Well-equipped laboratories, zoological museum, aquarium facilities, and molecular biology research units.' }
@@ -659,11 +659,11 @@ export default function BScZoologyPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">

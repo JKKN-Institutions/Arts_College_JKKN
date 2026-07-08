@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const bankingFeatures = [
   "Our campus has a fully-functional branch of a popular bank, so you can handle all your banking needs right here on campus.",
   "The bank offers a range of services, including account opening, cash deposits and withdrawals, fund transfers, and more.",
-  "You can also avail of special offers and discounts exclusively for JKKN students and staff.",
+  "You can also avail of special offers and discounts exclusively for JKKN learners and team members.",
   "With our banking facility, you can save time and effort, and focus on your studies and work without worrying about your financial transactions."
 ];
 
@@ -79,7 +79,7 @@ export default function BankPostOfficePage() {
         {/* Introduction Card */}
         <div className="bg-white rounded-lg shadow-md p-6 md:p-8 mb-6">
           <p className="text-sm md:text-base text-gray-800 leading-relaxed text-justify">
-            Our bank offers a comprehensive range of financial services to fulfill your banking needs. Our courteous and knowledgeable staff can assist you with opening new accounts, making deposits or withdrawals, and providing financial guidance. With various products and services, such as personal loans, mortgages, and credit cards, our bank caters to all your financial requirements.
+            Our bank offers a comprehensive range of financial services to fulfill your banking needs. Our courteous and knowledgeable team members can assist you with opening new accounts, making deposits or withdrawals, and providing financial guidance. With various products and services, such as personal loans, mortgages, and credit cards, our bank caters to all your financial requirements.
           </p>
         </div>
 

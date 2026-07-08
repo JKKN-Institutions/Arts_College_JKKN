@@ -135,7 +135,7 @@ export default function BScComputerSciencePage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function BScComputerSciencePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
+              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Award className="w-7 h-7" />, stat: '₹5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
@@ -188,7 +188,7 @@ export default function BScComputerSciencePage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Aligned Curriculum', 'Expert Learning Facilitators', 'Practical Skill Development', 'Research Opportunities'].map((item, idx) => (
+                {['Industry-Aligned Learning Framework', 'Expert Senior Learners', 'Practical Skill Development', 'Research Opportunities'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -272,21 +272,21 @@ export default function BScComputerSciencePage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive syllabus designed to build expertise in computer science and technology
+                  Comprehensive learning pathway designed to build expertise in computer science and technology
                 </p>
               </div>
             </RevealSection>
@@ -312,7 +312,7 @@ export default function BScComputerSciencePage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: [
                       '25UGTA01 - General Tamil-I',
                       '25UGEN01 - General English-I',
@@ -323,7 +323,7 @@ export default function BScComputerSciencePage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: [
                       '25UGTA02 - General Tamil-II',
                       '25UGEN02 - General English-II',
@@ -359,7 +359,7 @@ export default function BScComputerSciencePage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: [
                       '24UGTA03 - General Tamil – III',
                       '24UGEN03 - General English – III',
@@ -372,7 +372,7 @@ export default function BScComputerSciencePage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: [
                       '24UGTA04 - General Tamil – IV',
                       '24UGEN04 - General English – IV',
@@ -410,7 +410,7 @@ export default function BScComputerSciencePage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester V',
+                    title: 'Learning Period V',
                     subjects: [
                       '23UCSCC05 - CC9 - Software Engineering',
                       '23UCSCC06 - CC10 - Database Management System',
@@ -423,7 +423,7 @@ export default function BScComputerSciencePage() {
                     ]
                   },
                   {
-                    title: 'Semester VI',
+                    title: 'Learning Period VI',
                     subjects: [
                       '23UCSCC07 - CC13 - Computer Networks',
                       '23UCSCC08 - CC14 - .NET Programming',
@@ -585,11 +585,11 @@ export default function BScComputerSciencePage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Advanced Computer Laboratory', description: 'State-of-the-art computer labs with 100+ high-performance workstations, latest software tools, and high-speed internet connectivity for hands-on programming and development work.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Computer+Lab' },
+                { title: 'Advanced Digital Learning Laboratory', description: 'State-of-the-art computer labs with 100+ high-performance workstations, latest software tools, and high-speed internet connectivity for hands-on programming and development work.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Computer+Lab' },
                 { title: 'AI & Machine Learning Lab', description: 'Specialized laboratory equipped with GPU workstations, TensorFlow, PyTorch frameworks, and cloud computing resources for advanced AI and ML projects.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=AI+Lab' },
                 { title: 'Project Development Center', description: 'Dedicated space for final year projects, internship work, and collaborative development with modern tools and infrastructure for software engineering.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Development+Center' },
                 { title: 'Network & Security Lab', description: 'Advanced networking lab with routers, switches, firewalls, and cybersecurity tools for practical training in network administration and security.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Network+Lab' },
-                { title: 'Digital Library Resources', description: 'Access to ACM Digital Library, IEEE Xplore, Springer, and other research databases with extensive collection of computer science books and journals.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Library' },
+                { title: 'Digital Learning Commons Resources', description: 'Access to ACM Digital Learning Commons, IEEE Xplore, Springer, and other research databases with extensive collection of computer science books and journals.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Library' },
                 { title: 'Smart Learning Studios', description: 'Technology-enabled learning studios with interactive boards, projectors, recording facilities, and collaborative learning spaces for modern education.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Smart+Classroom' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
@@ -644,8 +644,8 @@ export default function BScComputerSciencePage() {
               <div className="space-y-4">
                 {[
                   { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation and industry recognition.' },
-                  { title: 'Industry-Aligned Curriculum', description: 'Curriculum designed in consultation with IT industry experts covering latest technologies and market demands.' },
-                  { title: 'Expert Learning Facilitators', description: 'Highly qualified faculty with doctoral degrees, industry experience, and research publications in computer science.' },
+                  { title: 'Industry-Aligned Learning Framework', description: 'Learning Framework designed in consultation with IT industry experts covering latest technologies and market demands.' },
+                  { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, industry experience, and research publications in computer science.' },
                   { title: 'Strong Placement Support', description: 'Dedicated placement cell with partnerships with leading tech companies ensuring excellent career opportunities.' },
                   { title: 'Hands-on Project Experience', description: 'Real-world project work, internships, and industry collaborations providing practical experience and portfolio building.' }
                 ].map((reason, idx) => (
@@ -671,11 +671,11 @@ export default function BScComputerSciencePage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">

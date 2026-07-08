@@ -107,7 +107,7 @@ export default function BComPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function BComPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
+              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Award className="w-7 h-7" />, stat: '₹4.5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
@@ -160,7 +160,7 @@ export default function BComPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Aligned Curriculum', 'CA/CMA/CS Foundation Support', 'Practical Training in Tally & GST', 'Internship with Leading Firms'].map((item, idx) => (
+                {['Industry-Aligned Learning Framework', 'CA/CMA/CS Foundation Support', 'Practical Training in Tally & GST', 'Internship with Leading Firms'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -244,21 +244,21 @@ export default function BComPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive syllabus designed to build expertise in commerce, accounting, and business management
+                  Comprehensive learning pathway designed to build expertise in commerce, accounting, and business management
                 </p>
               </div>
             </RevealSection>
@@ -284,11 +284,11 @@ export default function BComPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: ['General Tamil - I', 'General English - I', 'Financial Accounting - I', 'Principles of Management', 'Business Communication', 'Indian Economic Development / Business Economics', 'Business Organisation', 'Elements of Industry 4.0']
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: ['General Tamil - II', 'General English - II', 'Financial Accounting - II', 'Business Law', 'Business Environment / Insurance & Risk Management', 'International Trade', 'Advertising', 'Industrial Law']
                   }
                 ].map((sem, idx) => (
@@ -317,11 +317,11 @@ export default function BComPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: ['General Tamil - III', 'General English - III', 'Corporate Accounting I', 'Company Law', 'Business Legislation / E-Commerce', 'Business Mathematics & Statistics', 'Tally Practical', 'Capital Markets', 'Environmental Studies', 'Health & Wellness']
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: ['General Tamil - IV', 'General English - IV', 'Corporate Accounting II', 'Principles of Marketing', 'Financial Services / Consumerism & Consumer Protection', 'Operations Research', 'Project Methodology', 'Commerce Practical', 'Environmental Studies']
                   }
                 ].map((sem, idx) => (
@@ -350,11 +350,11 @@ export default function BComPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester V',
+                    title: 'Learning Period V',
                     subjects: ['Cost Accounting I', 'Banking Law and Practice', 'Income Tax Law and Practice I', 'Project Viva voce / Auditing and Corporate Governance', 'Financial Management / Indirect Taxation', 'Human Resource Management / Office Management & Secretarial Practice', 'Value Education', 'Summer Internship / Industrial Training']
                   },
                   {
-                    title: 'Semester VI',
+                    title: 'Learning Period VI',
                     subjects: ['Cost Accounting II', 'Management Accounting', 'Income Tax Law and Practice II', 'Entrepreneurial Development / Computer Application in Business', 'Logistics and Supply Chain Management / Spreadsheet for Business', 'General Awareness for Competitive Examination', 'Extension Activity']
                   }
                 ].map((sem, idx) => (
@@ -597,7 +597,7 @@ export default function BComPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { title: 'Commerce Library', description: 'Over 10,000 books covering accounting, finance, taxation, and business management with digital access to journals.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Commerce+Library' },
-                { title: 'Computer Lab with Tally', description: 'Advanced computer lab with Tally ERP, SAP, and other accounting software for practical training.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Computer+Lab' },
+                { title: 'Digital Learning Lab with Tally', description: 'Advanced computer lab with Tally ERP, SAP, and other accounting software for practical training.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Computer+Lab' },
                 { title: 'Finance Lab', description: 'Stock market simulation lab with live trading terminals for investment analysis and portfolio management practice.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Finance+Lab' },
                 { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for guest lectures and workshops.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Seminar+Hall' },
                 { title: 'Research Center', description: 'Dedicated research facilities with access to business databases and research journals for project work.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Research+Center' },
@@ -657,7 +657,7 @@ export default function BComPage() {
                   { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
                   { title: 'CA/CMA/CS Foundation Support', description: 'Integrated coaching for professional certification courses within the curriculum.' },
                   { title: 'Strong Placement Support', description: 'Dedicated placement cell with industry partnerships ensuring excellent career opportunities.' },
-                  { title: 'Industry-Aligned Curriculum', description: 'Regularly updated syllabus incorporating current industry trends and skill requirements.' },
+                  { title: 'Industry-Aligned Learning Framework', description: 'Regularly updated learning pathway incorporating current industry trends and skill requirements.' },
                   { title: 'Practical Training & Internships', description: 'Hands-on experience with Tally, GST software, and mandatory internships with leading firms.' }
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:shadow-lg hover:-translate-y-0.5 transition-all">
@@ -682,11 +682,11 @@ export default function BComPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -754,7 +754,7 @@ export default function BComPage() {
                 { question: 'Can Science or Arts students pursue B.Com?', answer: 'Yes, students from any stream (Commerce, Science, or Arts) who have completed their Higher Secondary (10+2) from a recognized board are eligible to pursue B.Com. While Commerce stream students may have an advantage in foundational subjects like accountancy, students from other streams receive additional support to bridge any knowledge gaps in the first year.' },
                 { question: 'What professional courses can I pursue after B.Com?', answer: 'After B.Com, you can pursue several prestigious professional qualifications including CA (Chartered Accountancy) from ICAI, CMA (Cost and Management Accountancy) from ICMAI, CS (Company Secretary) from ICSI, CFA (Chartered Financial Analyst), MBA, M.Com, CFP (Certified Financial Planner), and ACCA. Our department provides foundation coaching support for CA and CMA courses integrated with the regular curriculum.' },
                 { question: 'Is there practical training included in the B.Com programme?', answer: 'Yes, our B.Com programme includes extensive practical training. This includes hands-on experience with accounting software like Tally Prime and SAP, practical sessions in taxation and GST filing, a mandatory internship in the fifth semester with CA firms, banks, or corporate finance departments, and project work in the final semester. We also have a finance lab with stock market simulation for investment analysis practice.' },
-                { question: 'What makes this B.Com programme different from others?', answer: 'Our B.Com programme stands out due to its industry-aligned curriculum, integrated CA/CMA foundation coaching, state-of-the-art computer and finance labs, experienced Learning Facilitators with industry expertise, strong placement cell with 95% placement record, and partnerships with leading CA firms, banks, and corporates for internships. We also offer specializations in Accounting & Finance, Taxation, Banking & Insurance, and Business Analytics.' },
+                { question: 'What makes this B.Com programme different from others?', answer: 'Our B.Com programme stands out due to its industry-aligned curriculum, integrated CA/CMA foundation coaching, state-of-the-art computer and finance labs, experienced Senior Learners with industry expertise, strong placement cell with 95% placement record, and partnerships with leading CA firms, banks, and corporates for internships. We also offer specializations in Accounting & Finance, Taxation, Banking & Insurance, and Business Analytics.' },
                 { question: 'What is the fee structure for the B.Com programme?', answer: 'The annual fee for the B.Com (Aided) programme is As Per Norms for both Government Quota (GQ) and Management Quota (MQ). Scholarships are available for meritorious students and those from economically weaker sections. Government scholarships are also facilitated through the institution.' },
                 { question: 'Are internships mandatory in the B.Com programme?', answer: 'Yes, internships are a mandatory component of the programme. Students undergo practical training in the fifth semester, typically lasting 4-6 weeks. Our placement cell assists in securing internships with reputed CA firms, banks, corporate finance departments, and other financial institutions. This hands-on experience provides valuable industry exposure and often leads to placement opportunities.' }
               ].map((faq, idx) => (

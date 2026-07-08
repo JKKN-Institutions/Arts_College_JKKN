@@ -98,7 +98,7 @@ export default function BComAIPage() {
       year: 'First Year',
       semesters: [
         {
-          semester: 'Semester I',
+          semester: 'Learning Period I',
           subjects: [
             { code: '', name: 'Tamil / Language - I' },
             { code: '', name: 'English - I' },
@@ -110,7 +110,7 @@ export default function BComAIPage() {
           ],
         },
         {
-          semester: 'Semester II',
+          semester: 'Learning Period II',
           subjects: [
             { code: '', name: 'Tamil / Language - II' },
             { code: '', name: 'English - II' },
@@ -127,7 +127,7 @@ export default function BComAIPage() {
       year: 'Second Year',
       semesters: [
         {
-          semester: 'Semester III',
+          semester: 'Learning Period III',
           subjects: [
             { code: '', name: 'Corporate Accounting - I' },
             { code: '', name: 'Business Mathematics' },
@@ -138,7 +138,7 @@ export default function BComAIPage() {
           ],
         },
         {
-          semester: 'Semester IV',
+          semester: 'Learning Period IV',
           subjects: [
             { code: '', name: 'Corporate Accounting - II' },
             { code: '', name: 'Company Law' },
@@ -154,7 +154,7 @@ export default function BComAIPage() {
       year: 'Third Year',
       semesters: [
         {
-          semester: 'Semester V',
+          semester: 'Learning Period V',
           subjects: [
             { code: '', name: 'Income Tax Law & Practice' },
             { code: '', name: 'Auditing & AI-Powered Audit Tools' },
@@ -165,7 +165,7 @@ export default function BComAIPage() {
           ],
         },
         {
-          semester: 'Semester VI',
+          semester: 'Learning Period VI',
           subjects: [
             { code: '', name: 'Management Accounting' },
             { code: '', name: 'GST & Indirect Taxation' },
@@ -271,7 +271,7 @@ export default function BComAIPage() {
                   Register Interest
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
               <p className="text-xs text-gray-600 mt-4 italic">
@@ -288,7 +288,7 @@ export default function BComAIPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Brain className="w-7 h-7" />, stat: 'AI+', title: 'Future-Ready Curriculum', desc: 'Commerce meets Artificial Intelligence' },
+              { icon: <Brain className="w-7 h-7" />, stat: 'AI+', title: 'Future-Ready Learning Framework', desc: 'Commerce meets Artificial Intelligence' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '2x', title: 'Internships Included', desc: 'Analytics + FinTech exposure' },
               { icon: <Award className="w-7 h-7" />, stat: 'Hybrid', title: 'Dual-Skill Graduate', desc: 'Commerce + AI employability' },
             ].map((card, idx) => (
@@ -327,7 +327,7 @@ export default function BComAIPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Aligned Curriculum', 'Python, SQL & Power BI Training', 'AI + FinTech Focus', 'Mandatory Internships'].map((item, idx) => (
+                {['Industry-Aligned Learning Framework', 'Python, SQL & Power BI Training', 'AI + FinTech Focus', 'Mandatory Internships'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -425,14 +425,14 @@ export default function BComAIPage() {
         </div>
       </section>
 
-      {/* Curriculum Section */}
+      {/* Learning Framework Section */}
       <section className="py-20 bg-gradient-to-br from-emerald-50 via-brand-cream to-blue-50 relative overflow-hidden" id="curriculum">
         <div className="container mx-auto px-4 md:px-6 relative">
           <RevealSection>
             <div className="max-w-4xl mx-auto text-center mb-16">
               <SectionBadge text="Academic Structure" />
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-6">
-                Course Curriculum
+                Course Learning Framework
               </h2>
               <div className="w-24 h-1.5 bg-gradient-to-r from-brand-green to-emerald-500 mx-auto rounded-full"></div>
               <p className="text-lg text-gray-700 mt-6">
@@ -485,7 +485,7 @@ export default function BComAIPage() {
               </div>
 
               <p className="text-center text-sm text-gray-600 mt-8 italic">
-                Indicative curriculum — subject codes and titles are updated as per the latest university syllabus.
+                Indicative curriculum — subject codes and titles are updated as per the latest university learning pathway.
               </p>
             </div>
           </RevealSection>
@@ -754,7 +754,7 @@ export default function BComAIPage() {
 
                 <GlassCard className="overflow-hidden" hover={false}>
                   <div className="bg-white/60 backdrop-blur-sm p-8 text-center border-b-4 border-brand-green">
-                    <h3 className="text-2xl font-bold text-brand-green">Digital Library</h3>
+                    <h3 className="text-2xl font-bold text-brand-green">Digital Learning Commons</h3>
                   </div>
                   <div className="p-6">
                     <h4 className="text-lg font-bold text-brand-green mb-3">
@@ -827,7 +827,7 @@ export default function BComAIPage() {
                       </div>
                       <div>
                         <h4 className="text-lg font-bold text-brand-green mb-2">
-                          First-of-its-kind Hybrid Curriculum
+                          First-of-its-kind Hybrid Learning Framework
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
                           A rare programme that genuinely blends accounting, taxation, finance with AI, ML and analytics — not a bolt-on.

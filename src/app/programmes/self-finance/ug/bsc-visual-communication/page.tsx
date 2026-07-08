@@ -106,7 +106,7 @@ export default function BScVisualCommunicationPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function BScVisualCommunicationPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
+              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '90%+', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Award className="w-7 h-7" />, stat: '₹4L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
@@ -159,7 +159,7 @@ export default function BScVisualCommunicationPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Aligned Curriculum', 'Expert Learning Facilitators', 'Professional Studio Training', 'Industry Internship Programme'].map((item, idx) => (
+                {['Industry-Aligned Learning Framework', 'Expert Senior Learners', 'Professional Studio Training', 'Industry Internship Programme'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -243,21 +243,21 @@ export default function BScVisualCommunicationPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive syllabus covering graphic design, photography, video production, and digital media
+                  Comprehensive learning pathway covering graphic design, photography, video production, and digital media
                 </p>
               </div>
             </RevealSection>
@@ -283,7 +283,7 @@ export default function BScVisualCommunicationPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: [
                       'Introduction to Human Communication - 24UVCC01',
                       'Visual Arts and Aesthetics - 24UVCC02',
@@ -293,7 +293,7 @@ export default function BScVisualCommunicationPage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: [
                       'Understanding Visual Communication - 24UVCC03',
                       'Photography & Videography (Practical) - 24UVCCP04',
@@ -328,7 +328,7 @@ export default function BScVisualCommunicationPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: [
                       'Multimedia Technologies & Standards - 24UVCC05',
                       'Audio & Visual Editing (Practical) - 24UVCCP06',
@@ -339,7 +339,7 @@ export default function BScVisualCommunicationPage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: [
                       'Film Appreciation and Analysis - 24UVCC07',
                       'Animation and Character Design (Practical) - 24UVCCP08',
@@ -375,7 +375,7 @@ export default function BScVisualCommunicationPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester V',
+                    title: 'Learning Period V',
                     subjects: [
                       'Advertising and Brand Communication - 24UVCCP09',
                       'User Experience Design - 24UVCCP09',
@@ -387,7 +387,7 @@ export default function BScVisualCommunicationPage() {
                     ]
                   },
                   {
-                    title: 'Semester VI',
+                    title: 'Learning Period VI',
                     subjects: [
                       'Media Culture in TamilNadu - 24UVCC13',
                       'Media Entrepreneurship - 24UVCC14',
@@ -604,9 +604,9 @@ export default function BScVisualCommunicationPage() {
               <div className="space-y-4">
                 {[
                   { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
-                  { title: 'Expert Learning Facilitators', description: 'Highly qualified faculty with industry experience in advertising, film production, and digital media.' },
+                  { title: 'Expert Senior Learners', description: 'Highly qualified faculty with industry experience in advertising, film production, and digital media.' },
                   { title: 'Strong Placement Support', description: 'Dedicated placement cell with industry partnerships ensuring excellent career opportunities.' },
-                  { title: 'Industry-Aligned Curriculum', description: 'Regularly updated syllabus incorporating current industry trends and creative skill requirements.' },
+                  { title: 'Industry-Aligned Learning Framework', description: 'Regularly updated learning pathway incorporating current industry trends and creative skill requirements.' },
                   { title: 'Professional Studio Training', description: 'Hands-on experience with professional equipment in photography, video production, and design studios.' }
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:shadow-lg hover:-translate-y-0.5 transition-all">
@@ -631,11 +631,11 @@ export default function BScVisualCommunicationPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -697,7 +697,7 @@ export default function BScVisualCommunicationPage() {
                 { question: 'What software and tools will I learn?', answer: 'The programme provides comprehensive training in industry-standard software including Adobe Creative Suite (Photoshop, Illustrator, InDesign, Premiere Pro, After Effects), 3D software (Maya, Blender), web design tools (Figma, Adobe XD), and video editing platforms. You\'ll also learn photography techniques using professional DSLR cameras and studio equipment.' },
                 { question: 'Can I pursue higher studies after B.Sc Visual Communication?', answer: 'Yes, B.Sc Visual Communication opens multiple pathways for higher education including M.Sc in Visual Communication, M.A. in Mass Communication, M.Des in Graphic Design, MBA in Marketing/Media Management, or specialized programmes in Animation, Film Studies, or Digital Media. Professional certifications in UI/UX Design, Motion Graphics, or Digital Marketing are also valuable additions.' },
                 { question: 'Does the college provide placement assistance?', answer: 'Yes, our dedicated Placement Cell actively supports learners through campus recruitment drives, portfolio development workshops, mock interviews, and industry interaction sessions. We have partnerships with leading companies in advertising, media, publishing, IT, and creative sectors. The placement rate for B.Sc Visual Communication graduates has consistently been above 85%.' },
-                { question: 'What makes this programme unique?', answer: 'Our B.Sc Visual Communication programme stands out due to its industry-aligned curriculum developed in consultation with creative professionals, emphasis on hands-on studio practice with professional equipment, mandatory industry internships, live client projects for portfolio building, expert learning facilitators with active industry experience, and strong placement support connecting graduates with leading creative agencies across India.' },
+                { question: 'What makes this programme unique?', answer: 'Our B.Sc Visual Communication programme stands out due to its industry-aligned curriculum developed in consultation with creative professionals, emphasis on hands-on studio practice with professional equipment, mandatory industry internships, live client projects for portfolio building, expert senior learners with active industry experience, and strong placement support connecting graduates with leading creative agencies across India.' },
                 { question: 'Are internships mandatory?', answer: 'Yes, the programme includes a mandatory industry internship in the final semester. Learners gain practical experience at advertising agencies, production houses, design studios, or media companies. The department assists in securing internship placements with reputed organizations. This hands-on experience is crucial for building your professional portfolio and industry connections.' }
               ].map((faq, idx) => (
                 <RevealSection key={idx} delay={idx * 60}>

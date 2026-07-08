@@ -76,30 +76,30 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
       },
       {
         id: 'why-jkkn',
-        label: 'Why Students Choose JKKN?',
+        label: 'Why Learners Choose JKKN?',
         items: [
           {
-            label: 'Why Erode Students?',
+            label: 'Why Erode Learners?',
             href: '/erode',
             description: 'Best arts and science college near Erode',
           },
           {
-            label: 'Why Salem Students?',
+            label: 'Why Salem Learners?',
             href: '/salem',
             description: 'Best arts and science college near Salem',
           },
           {
-            label: 'Why Tiruppur Students?',
+            label: 'Why Tiruppur Learners?',
             href: '/tiruppur',
             description: 'Best arts and science college near Tiruppur',
           },
           {
-            label: 'Why Namakkal Students?',
+            label: 'Why Namakkal Learners?',
             href: '/namakkal',
             description: 'Best arts and science college near Namakkal',
           },
           {
-            label: 'Why Coimbatore Students?',
+            label: 'Why Coimbatore Learners?',
             href: '/coimbatore',
             description: 'Best arts and science college near Coimbatore',
           },
@@ -225,24 +225,24 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
         label: 'Campus Facilities',
         items: [
           {
-            label: 'Library',
+            label: 'Learning Commons',
             href: '/library',
-            description: 'Digital library with books and e-resources',
+            description: 'Digital learning commons with books and e-resources',
           },
           {
-            label: 'Laboratories',
+            label: 'Learning Labs',
             href: '/facilities/labs',
-            description: 'Science, computer, and research labs',
+            description: 'Science, computer, and research learning labs',
           },
           {
-            label: 'Smart Classrooms',
+            label: 'Smart Learning Studios',
             href: '/facilities/classroom',
             description: 'Technology-enabled learning spaces',
           },
           {
-            label: 'Auditorium',
+            label: 'Learning Auditorium',
             href: '/facilities/auditorium',
-            description: 'Multi-purpose auditorium for events',
+            description: 'Multi-purpose learning auditorium for events',
           },
           {
             label: 'Seminar Hall',

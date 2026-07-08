@@ -155,7 +155,7 @@ export default function PhDChemistryPage() {
                 The Doctor of Philosophy (Ph.D) in Chemistry is a prestigious doctoral research programme designed to develop advanced research scholars with deep expertise in organic, inorganic, physical, analytical, and applied chemistry. This UGC-recognized programme offers comprehensive research training spanning synthetic chemistry, materials science, nanochemistry, green chemistry, medicinal chemistry, and computational chemistry approaches.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our progressive education philosophy ensures that Research Scholars receive rigorous academic and laboratory training combined with practical research skills under the guidance of experienced Learning Facilitators. The programme integrates fundamental chemical principles with cutting-edge research methodologies, preparing scholars for distinguished careers in academia, research institutions, pharmaceutical industries, chemical manufacturing, and government research organizations.
+                Our progressive education philosophy ensures that Research Scholars receive rigorous academic and laboratory training combined with practical research skills under the guidance of experienced Senior Learners. The programme integrates fundamental chemical principles with cutting-edge research methodologies, preparing scholars for distinguished careers in academia, research institutions, pharmaceutical industries, chemical manufacturing, and government research organizations.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
@@ -458,7 +458,7 @@ export default function PhDChemistryPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Our Research{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">

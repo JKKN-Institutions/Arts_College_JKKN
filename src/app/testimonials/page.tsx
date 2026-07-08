@@ -69,11 +69,11 @@ export default function TestimonialsPage() {
               Learner Stories
             </p>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3">
-              What Our Students Say
+              What Our Learners Say
             </h1>
             <div className="w-16 h-1 bg-[#ffde59] mx-auto mb-4"></div>
             <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto">
-              Hear from our students about their transformative experiences at JKKN College of Arts and Science.
+              Hear from our learners about their transformative experiences at JKKN College of Arts and Science.
             </p>
           </div>
         </div>

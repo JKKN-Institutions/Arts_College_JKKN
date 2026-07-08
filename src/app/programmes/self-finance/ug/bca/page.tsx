@@ -116,13 +116,13 @@ export default function BCAPage() {
     }
   ];
 
-  // Curriculum data
+  // Learning Framework data
   const curriculum = {
     1: {
       year: "First Year",
       semesters: [
         {
-          semester: "Semester I",
+          semester: "Learning Period I",
           subjects: [
             { code: "24UGTA01", name: "General Tamil-I" },
             { code: "24UGEN01", name: "General English-I" },
@@ -134,7 +134,7 @@ export default function BCAPage() {
           ]
         },
         {
-          semester: "Semester II",
+          semester: "Learning Period II",
           subjects: [
             { code: "24UGTA02", name: "General Tamil-II" },
             { code: "24UGEN02", name: "General English-II" },
@@ -152,7 +152,7 @@ export default function BCAPage() {
       year: "Second Year",
       semesters: [
         {
-          semester: "Semester III",
+          semester: "Learning Period III",
           subjects: [
             { code: "BCA301", name: "Java Programming" },
             { code: "BCA302", name: "Database Management Systems (MySQL)" },
@@ -163,7 +163,7 @@ export default function BCAPage() {
           ]
         },
         {
-          semester: "Semester IV",
+          semester: "Learning Period IV",
           subjects: [
             { code: "BCA401", name: "Advanced Java (J2EE, Servlets, JSP)" },
             { code: "BCA402", name: "Python Programming" },
@@ -179,7 +179,7 @@ export default function BCAPage() {
       year: "Third Year",
       semesters: [
         {
-          semester: "Semester V",
+          semester: "Learning Period V",
           subjects: [
             { code: "23UCACC05", name: "CC9 – Operating System" },
             { code: "23UCACC06", name: "CC10 - ASP.Net Programming" },
@@ -192,7 +192,7 @@ export default function BCAPage() {
           ]
         },
         {
-          semester: "Semester VI",
+          semester: "Learning Period VI",
           subjects: [
             { code: "23UCACC07", name: "CC13 - Computer Networks" },
             { code: "23UCACC08", name: "CC14 – Data Analytics using R Programming" },
@@ -293,7 +293,7 @@ export default function BCAPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -357,7 +357,7 @@ export default function BCAPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Aligned Curriculum', 'AWS & Azure Certified Labs', 'Expert Learning Facilitators', 'Live Projects & Internships'].map((item, idx) => (
+                {['Industry-Aligned Learning Framework', 'AWS & Azure Certified Labs', 'Expert Senior Learners', 'Live Projects & Internships'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -443,7 +443,7 @@ export default function BCAPage() {
         </div>
       </section>
 
-      {/* Curriculum Section */}
+      {/* Learning Framework Section */}
       <section className="py-20 bg-gradient-to-br from-emerald-50 via-brand-cream to-blue-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/patterns/circuit.svg')] opacity-5"></div>
         <div className="container mx-auto px-4 md:px-6 relative">
@@ -451,7 +451,7 @@ export default function BCAPage() {
             <div className="max-w-4xl mx-auto text-center mb-16">
               <SectionBadge text="Academic Structure" />
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-6">
-                Comprehensive Curriculum
+                Comprehensive Learning Framework
               </h2>
               <div className="w-24 h-1.5 bg-gradient-to-r from-brand-green to-emerald-500 mx-auto rounded-full mb-6"></div>
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -746,7 +746,7 @@ export default function BCAPage() {
                 {/* Facility 1 */}
                 <GlassCard className="overflow-hidden" hover={false}>
                   <div className="bg-gradient-to-br from-brand-green to-emerald-600 p-8 text-center">
-                    <h3 className="text-2xl font-bold text-white">Computer Lab</h3>
+                    <h3 className="text-2xl font-bold text-white">Digital Learning Lab</h3>
                   </div>
                   <div className="p-6">
                     <h4 className="text-lg font-bold text-brand-green mb-3">
@@ -886,10 +886,10 @@ export default function BCAPage() {
                       </div>
                       <div>
                         <h4 className="text-lg font-bold text-brand-green mb-2">
-                          Industry-Aligned Curriculum
+                          Industry-Aligned Learning Framework
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                          Curriculum designed with input from software industry experts, covering latest technologies and market-demanded skills.
+                          Learning Framework designed with input from software industry experts, covering latest technologies and market-demanded skills.
                         </p>
                       </div>
                     </div>

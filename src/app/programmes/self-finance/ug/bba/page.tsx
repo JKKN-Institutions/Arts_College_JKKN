@@ -162,7 +162,7 @@ export default function BBAPage() {
                     <ArrowRight className="w-4 h-4" />
                   </a>
                   <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                    View Curriculum
+                    View Learning Framework
                   </a>
                 </div>
               </div>
@@ -215,7 +215,7 @@ export default function BBAPage() {
                 </p>
 
                 <div className="grid sm:grid-cols-2 gap-3">
-                  {['Industry-integrated curriculum with live projects', 'Expert learning facilitators with corporate experience', 'Mandatory corporate internships and summer projects', 'Guest lectures by industry leaders and entrepreneurs'].map((item, idx) => (
+                  {['Industry-integrated curriculum with live projects', 'Expert senior learners with corporate experience', 'Mandatory corporate internships and summer projects', 'Guest lectures by industry leaders and entrepreneurs'].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-gray-700">
                       <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                       <span>{item}</span>
@@ -299,17 +299,17 @@ export default function BBAPage() {
           </div>
         </section>
 
-        {/* Programme Curriculum */}
+        {/* Programme Learning Framework */}
         <section className="py-16 bg-brand-cream" id="curriculum">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <RevealSection>
                 <div className="text-center mb-12">
-                  <SectionBadge text="Curriculum" />
+                  <SectionBadge text="Learning Framework" />
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                     Programme{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                      Curriculum
+                      Learning Framework
                     </span>
                   </h2>
                   <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -339,7 +339,7 @@ export default function BBAPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
                     {
-                      title: 'Semester I',
+                      title: 'Learning Period I',
                       subjects: [
                         { name: 'General Tamil - I', code: '24UGTA01' },
                         { name: 'General English – I', code: '24UGEN01' },
@@ -351,7 +351,7 @@ export default function BBAPage() {
                       ]
                     },
                     {
-                      title: 'Semester II',
+                      title: 'Learning Period II',
                       subjects: [
                         { name: 'General Tamil – II', code: '24UGTA02' },
                         { name: 'General English – II', code: '24UGEN02' },
@@ -391,7 +391,7 @@ export default function BBAPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
                     {
-                      title: 'Semester III',
+                      title: 'Learning Period III',
                       subjects: [
                         { name: 'General Tamil - III', code: '24UGTA03' },
                         { name: 'General English - III', code: '24UGENO3' },
@@ -405,7 +405,7 @@ export default function BBAPage() {
                       ]
                     },
                     {
-                      title: 'Semester IV',
+                      title: 'Learning Period IV',
                       subjects: [
                         { name: 'General Tamil - IV', code: '24UGTA04' },
                         { name: 'General English - IV', code: '24UGENO4' },
@@ -446,7 +446,7 @@ export default function BBAPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
                     {
-                      title: 'Semester V',
+                      title: 'Learning Period V',
                       subjects: [
                         { name: 'Human Resource Management', code: '24UBAC09' },
                         { name: 'Research Methodology', code: '24UBAC10' },
@@ -460,7 +460,7 @@ export default function BBAPage() {
                       ]
                     },
                     {
-                      title: 'Semester VI',
+                      title: 'Learning Period VI',
                       subjects: [
                         { name: 'Entrepreneurial Development', code: '24UBAC13' },
                         { name: 'Services Marketing', code: '24UBAC14' },
@@ -630,8 +630,8 @@ export default function BBAPage() {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { title: 'Computer Lab with Business Software', description: 'Fully equipped labs with MS Office Suite, business analytics tools, and ERP software for hands-on practical training.' },
-                  { title: 'Digital Library & E-Resources', description: 'Access to business journals, case studies, e-books, and online databases for research and project work.' },
+                  { title: 'Digital Learning Lab with Business Software', description: 'Fully equipped labs with MS Office Suite, business analytics tools, and ERP software for hands-on practical training.' },
+                  { title: 'Digital Learning Commons & E-Resources', description: 'Access to business journals, case studies, e-books, and online databases for research and project work.' },
                   { title: 'Smart Learning Studios', description: 'Air-conditioned learning studios equipped with smart boards, projectors, and modern teaching aids for interactive learning.' },
                   { title: 'Seminar Hall & Conference Room', description: 'Dedicated spaces for seminars, guest lectures by industry experts, workshops, and business conferences.' },
                   { title: 'Placement & Career Guidance Cell', description: 'Dedicated placement cell facilitating campus recruitment, career counseling, resume building, and interview preparation.' },
@@ -679,8 +679,8 @@ export default function BBAPage() {
                 <div className="space-y-4">
                   {[
                     { icon: <GraduationCap className="w-6 h-6" />, title: '70+ Years of Academic Excellence', description: 'Part of J.K.K. Nattraja Educational Institutions with proven legacy in progressive education since 1954.' },
-                    { icon: <CheckCircle2 className="w-6 h-6" />, title: 'Industry-Integrated Curriculum', description: 'Curriculum designed in consultation with business leaders and corporate professionals for real-world relevance.' },
-                    { icon: <Users className="w-6 h-6" />, title: 'Expert Learning Facilitators', description: 'Faculty with MBA qualifications and industry experience providing practical insights and mentorship.' },
+                    { icon: <CheckCircle2 className="w-6 h-6" />, title: 'Industry-Integrated Learning Framework', description: 'Learning Framework designed in consultation with business leaders and corporate professionals for real-world relevance.' },
+                    { icon: <Users className="w-6 h-6" />, title: 'Expert Senior Learners', description: 'Faculty with MBA qualifications and industry experience providing practical insights and mentorship.' },
                     { icon: <TrendingUp className="w-6 h-6" />, title: 'Strong Placement Record', description: '90%+ placement with leading MNCs, startups, and corporate giants recruiting from campus annually.' },
                     { icon: <Award className="w-6 h-6" />, title: 'MBA Preparation Support', description: 'In-house coaching for CAT, MAT, XAT, and other MBA entrance exams with dedicated preparation programs.' },
                     { icon: <Briefcase className="w-6 h-6" />, title: 'Industry Internships', description: 'Mandatory internship program with leading companies providing hands-on business experience and networking opportunities.' }

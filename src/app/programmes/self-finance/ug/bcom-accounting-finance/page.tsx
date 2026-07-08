@@ -199,7 +199,7 @@ export default function BComAccountingFinancePage() {
                     <ArrowRight className="w-4 h-4" />
                   </a>
                   <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                    View Curriculum
+                    View Learning Framework
                   </a>
                 </div>
               </div>
@@ -252,7 +252,7 @@ export default function BComAccountingFinancePage() {
                 </p>
 
                 <div className="grid sm:grid-cols-2 gap-3">
-                  {['Industry-Aligned Curriculum with Tally & SAP', 'CA/CMA/CFA Foundation Preparation', 'Mandatory Internship with Leading Firms', 'Guest Lectures by Industry Professionals'].map((item, idx) => (
+                  {['Industry-Aligned Learning Framework with Tally & SAP', 'CA/CMA/CFA Foundation Preparation', 'Mandatory Internship with Leading Firms', 'Guest Lectures by Industry Professionals'].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-gray-700">
                       <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                       <span>{item}</span>
@@ -354,15 +354,15 @@ export default function BComAccountingFinancePage() {
           </div>
         </section>
 
-        {/* Course Curriculum */}
+        {/* Course Learning Framework */}
         <section className="py-16 bg-brand-cream" id="curriculum">
           <div className="container mx-auto px-4">
             <RevealSection className="text-center mb-12">
-              <SectionBadge text="Curriculum" />
+              <SectionBadge text="Learning Framework" />
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 Course{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                  Curriculum
+                  Learning Framework
                 </span>
               </h2>
             </RevealSection>
@@ -393,7 +393,7 @@ export default function BComAccountingFinancePage() {
                   <RevealSection>
                     <GlassCard hover={false} className="overflow-hidden">
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h3 className="text-xl font-bold">Semester I</h3>
+                        <h3 className="text-xl font-bold">Learning Period I</h3>
                       </div>
                       <div className="p-6 space-y-4">
                         {[
@@ -421,7 +421,7 @@ export default function BComAccountingFinancePage() {
                   <RevealSection delay={100}>
                     <GlassCard hover={false} className="overflow-hidden">
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h3 className="text-xl font-bold">Semester II</h3>
+                        <h3 className="text-xl font-bold">Learning Period II</h3>
                       </div>
                       <div className="p-6 space-y-4">
                         {[
@@ -453,7 +453,7 @@ export default function BComAccountingFinancePage() {
                   <RevealSection>
                     <GlassCard hover={false} className="overflow-hidden">
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h3 className="text-xl font-bold">Semester III</h3>
+                        <h3 className="text-xl font-bold">Learning Period III</h3>
                       </div>
                       <div className="p-6 space-y-4">
                         {[
@@ -481,7 +481,7 @@ export default function BComAccountingFinancePage() {
                   <RevealSection delay={100}>
                     <GlassCard hover={false} className="overflow-hidden">
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h3 className="text-xl font-bold">Semester IV</h3>
+                        <h3 className="text-xl font-bold">Learning Period IV</h3>
                       </div>
                       <div className="p-6 space-y-4">
                         {[
@@ -513,7 +513,7 @@ export default function BComAccountingFinancePage() {
                   <RevealSection>
                     <GlassCard hover={false} className="overflow-hidden">
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h3 className="text-xl font-bold">Semester V</h3>
+                        <h3 className="text-xl font-bold">Learning Period V</h3>
                       </div>
                       <div className="p-6 space-y-4">
                         {[
@@ -539,7 +539,7 @@ export default function BComAccountingFinancePage() {
                   <RevealSection delay={100}>
                     <GlassCard hover={false} className="overflow-hidden">
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h3 className="text-xl font-bold">Semester VI</h3>
+                        <h3 className="text-xl font-bold">Learning Period VI</h3>
                       </div>
                       <div className="p-6 space-y-4">
                         {[
@@ -732,14 +732,14 @@ export default function BComAccountingFinancePage() {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   {
-                    title: "Computer Lab",
-                    subtitle: "Computer Lab with Accounting Software",
+                    title: "Digital Learning Lab",
+                    subtitle: "Digital Learning Lab with Accounting Software",
                     desc: "Fully equipped labs with Tally Prime, SAP, Advanced Excel, and financial modeling software for hands-on practical training.",
                     gradient: "from-brand-green to-emerald-500"
                   },
                   {
-                    title: "Digital Library",
-                    subtitle: "Digital Library & E-Resources",
+                    title: "Digital Learning Commons",
+                    subtitle: "Digital Learning Commons & E-Resources",
                     desc: "Access to ICAI study materials, financial databases, e-journals, and online resources for research and competitive exam preparation.",
                     gradient: "from-emerald-500 to-brand-green"
                   },
@@ -862,12 +862,12 @@ export default function BComAccountingFinancePage() {
                       },
                       {
                         icon: <CheckCircle2 className="w-6 h-6" />,
-                        title: "Industry-Integrated Curriculum",
-                        desc: "Curriculum designed in consultation with CA/CMA professionals and corporate finance experts."
+                        title: "Industry-Integrated Learning Framework",
+                        desc: "Learning Framework designed in consultation with CA/CMA professionals and corporate finance experts."
                       },
                       {
                         icon: <Users className="w-6 h-6" />,
-                        title: "Experienced Learning Facilitators",
+                        title: "Experienced Senior Learners",
                         desc: "Faculty with CA/CMA qualifications and industry experience providing practical insights."
                       },
                       {

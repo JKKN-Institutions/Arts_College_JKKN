@@ -65,18 +65,18 @@ const LIBRARY_CONTACT = {
 };
 
 const LIBRARY_RULES = [
-  'Silence should be strictly maintained in the library.',
-  'Students and staff must scan their ID cards at the E-gate register scanner when entering the library.',
-  'Personal books and files are not allowed inside the library. Only plain sheets for notes may be brought in.',
+  'Silence should be strictly maintained in the learning commons.',
+  'Learners and team members must scan their ID cards at the E-gate register scanner when entering the learning commons.',
+  'Personal books and files are not allowed inside the learning commons. Only plain sheets for notes may be brought in.',
   'Books will be issued solely upon presentation of a valid ID card. Sub-lending of borrowed books is strictly prohibited.',
-  'Any form of damage to books or misuse of library resources (underlining, scribbling, tearing pages) will attract penalties, including fines or other disciplinary actions.',
-  'Borrowing limits: UG students may borrow 2 books, PG students may borrow 3 books, and Research scholars 5 books at a time.',
+  'Any form of damage to books or misuse of learning commons resources (underlining, scribbling, tearing pages) will attract penalties, including fines or other disciplinary actions.',
+  'Borrowing limits: UG learners may borrow 2 books, PG learners may borrow 3 books, and Research scholars 5 books at a time.',
   'Books are issued for 14 days, with a renewal option. A fine of Rs. 2 per day for overdue books.',
   'Borrowers must inspect books for damages before borrowing and report any issues to the librarian immediately.',
-  'Reference materials (dictionaries, encyclopedias, journals, expensive books) are for in-library use only and cannot be issued.',
+  'Reference materials (dictionaries, encyclopedias, journals, expensive books) are for use within the learning commons only and cannot be issued.',
   'Lost or damaged books must be replaced, or a penalty equivalent to three times the cost of the book will be imposed.',
   'The librarian reserves the right to recall any book at any time.',
-  'Students must clear all dues before obtaining a transfer certificate or conduct certificate.',
+  'Learners must clear all dues before obtaining a transfer certificate or conduct certificate.',
 ];
 
 const LIBRARY_SERVICES: Service[] = [
@@ -136,7 +136,7 @@ export default function LibraryPage() {
         {/* Page Header */}
         <div className="mb-10">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0b6d41] mb-2">
-            LIBRARY
+            LEARNING COMMONS
           </h1>
           <div className="w-16 h-1 bg-[#ffde59]"></div>
         </div>
@@ -180,20 +180,20 @@ export default function LibraryPage() {
             <div className="flex items-center gap-3 mb-6">
               <BookOpen className="h-6 w-6 text-[#0b6d41]" />
               <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41]">
-                About the Library
+                About the Learning Commons
               </h2>
             </div>
 
             <div className="space-y-4 text-sm md:text-base leading-relaxed text-gray-800">
               <p>
-                Established in 1974, College Library serves as an invaluable knowledge hub for students and
-                faculty members, fostering academic growth and intellectual exploration. Spanning an area of
-                3,328 square feet with a seating capacity for 130 readers, the library is thoughtfully
+                Established in 1974, College Learning Commons serves as an invaluable knowledge hub for learners and
+                senior learners, fostering academic growth and intellectual exploration. Spanning an area of
+                3,328 square feet with a seating capacity for 130 readers, the learning commons is thoughtfully
                 designed to provide a comfortable and conducive environment for learning. It boasts a
                 remarkable collection of over 27,000 books across diverse disciplines, 23 esteemed national
                 and international journals, 31 magazines, 4 newspapers, 636 back volumes, and a wealth of
                 e-resources. Recent publications and journals in the fields of arts, science, and social
-                sciences further enrich the library&apos;s comprehensive offerings, along with access to online
+                sciences further enrich the learning commons&apos;s comprehensive offerings, along with access to online
                 resources through the N-LIST program under UGC-INFONET, available free of cost.
               </p>
 
@@ -201,12 +201,12 @@ export default function LibraryPage() {
                 Modernized Facilities for a Seamless Experience
               </h3>
               <p>
-                Equipped with the advanced automation software &quot;Campes I Lib,&quot; the library is fully
-                computerized and integrated with barcode technology for efficient book transactions. Staff
-                and students are issued personalized ID cards with barcodes for streamlined access and
-                borrowing procedures. The WEB OPAC service enables users to search the library catalog
-                with ease, while 10 computer systems in the digital library provide internet and printing
-                facilities. Ensuring a secure and user-friendly environment, the library is monitored by
+                Equipped with the advanced automation software &quot;Campes I Lib,&quot; the learning commons is fully
+                computerized and integrated with barcode technology for efficient book transactions. Team members
+                and learners are issued personalized ID cards with barcodes for streamlined access and
+                borrowing procedures. The WEB OPAC service enables users to search the learning commons catalog
+                with ease, while 10 computer systems in the digital learning commons provide internet and printing
+                facilities. Ensuring a secure and user-friendly environment, the learning commons is monitored by
                 CCTV cameras.
               </p>
             </div>
@@ -223,7 +223,7 @@ export default function LibraryPage() {
                 <h3 className="text-xl font-bold text-[#0b6d41]">Vision</h3>
               </div>
               <p className="text-sm md:text-base text-gray-800 leading-relaxed">
-                To be a dynamic hub of knowledge, empowering students and faculty with resources,
+                To be a dynamic hub of knowledge, empowering learners and senior learners with resources,
                 technology, and inspiration to achieve academic excellence and foster lifelong learning.
               </p>
             </div>
@@ -244,7 +244,7 @@ export default function LibraryPage() {
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-[#0b6d41] flex-shrink-0 mt-0.5" />
                   <span className="text-sm md:text-base text-gray-800">
-                    To provide a technologically advanced, inclusive, and student-centric environment for holistic research and academic enrichment.
+                    To provide a technologically advanced, inclusive, and learner-centric environment for holistic research and academic enrichment.
                   </span>
                 </li>
               </ul>
@@ -335,7 +335,7 @@ export default function LibraryPage() {
             <div className="flex items-center gap-3 mb-6">
               <CheckCircle2 className="h-6 w-6 text-[#0b6d41]" />
               <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41]">
-                Library Rules and Regulations
+                Learning Commons Rules and Regulations
               </h2>
             </div>
 
@@ -356,7 +356,7 @@ export default function LibraryPage() {
             <div className="flex items-center gap-3 mb-6">
               <BookMarked className="h-6 w-6 text-[#0b6d41]" />
               <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41]">
-                Library Services and Best Practices
+                Learning Commons Services and Best Practices
               </h2>
             </div>
 
@@ -384,7 +384,7 @@ export default function LibraryPage() {
             <div className="flex items-center gap-3 mb-6">
               <BarChart className="h-6 w-6 text-[#0b6d41]" />
               <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41]">
-                Library Resources
+                Learning Commons Resources
               </h2>
             </div>
 
@@ -444,7 +444,7 @@ export default function LibraryPage() {
             <div className="flex items-center gap-3 mb-6">
               <GraduationCap className="h-6 w-6 text-[#0b6d41]" />
               <h2 className="text-xl md:text-2xl font-bold text-[#0b6d41]">
-                Staff Details
+                Team Member Details
               </h2>
             </div>
 

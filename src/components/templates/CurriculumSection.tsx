@@ -21,7 +21,7 @@ export function CurriculumSection({
         <div className="max-w-6xl mx-auto">
           <RevealSection>
             <div className="text-center mb-12">
-              <SectionBadge text="Curriculum" />
+              <SectionBadge text="Learning Framework" />
               <h2 className={cn(responsive.heading('h1'), 'text-gray-900 mb-4')}>
                 Course Structure
               </h2>
@@ -54,7 +54,7 @@ export function CurriculumSection({
                 <RevealSection key={semester.number} delay={idx * 100}>
                   <GlassCard className={cn(responsive.card())}>
                     <h3 className={cn(responsive.heading('h3'), 'text-brand-green mb-4')}>
-                      Semester {semester.number}
+                      Learning Period {semester.number}
                     </h3>
                     <ul className="space-y-2">
                       {semester.subjects.map((subject, i) => (

@@ -241,7 +241,7 @@ function HeroSection(props: ProgrammePageProps & { heroColor: string }) {
                   'bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green backdrop-blur-sm'
                 )}
               >
-                View Curriculum
+                View Learning Framework
               </a>
             </div>
           </div>
@@ -305,7 +305,7 @@ function OverviewSection(props: ProgrammePageProps) {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src={props.overviewImage}
-                  alt={`${props.title} Laboratory`}
+                  alt={`${props.title} Learning Lab`}
                   className="w-full h-auto"
                 />
                 {props.establishedYear && (

@@ -111,7 +111,7 @@ export default function MAHistoryPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function MAHistoryPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '12:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized mentorship' },
+              { icon: <Users className="w-7 h-7" />, stat: '12:1', title: 'Learners per Senior Learner', desc: 'Personalized mentorship' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement & Higher Studies', desc: 'Career success rate' },
               { icon: <Award className="w-7 h-7" />, stat: 'PhD', title: 'Research Pathway', desc: 'Direct doctoral eligibility' },
             ].map((card, idx) => (
@@ -164,7 +164,7 @@ export default function MAHistoryPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['UGC Recognized Curriculum', 'Research-Oriented Learning', 'Field Visit Opportunities', 'Heritage & Museum Studies'].map((item, idx) => (
+                {['UGC Recognized Learning Framework', 'Research-Oriented Learning', 'Field Visit Opportunities', 'Heritage & Museum Studies'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -248,21 +248,21 @@ export default function MAHistoryPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive syllabus designed to build expertise in historical research and analysis
+                  Comprehensive learning pathway designed to build expertise in historical research and analysis
                 </p>
               </div>
             </RevealSection>
@@ -288,7 +288,7 @@ export default function MAHistoryPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: [
                       '24PHIC01: Core –1: History of Ancient and Early Medieval India - Prehistory to 1206 Common Era (CE)',
                       '24PHIC02: Core – 2: Socio Cultural History of Tamil Nadu up to 1565 CE',
@@ -298,7 +298,7 @@ export default function MAHistoryPage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: [
                       '24PHIC04: Core – 4: History of Medieval India - 1206 - 1707 CE',
                       '24PHIC05: Core –5: Socio Cultural History of Tamil Nadu - 1565 - 1956',
@@ -335,7 +335,7 @@ export default function MAHistoryPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: [
                       '24PHIC07: Colonialism and Nationalism in India',
                       '24PHIC08: Intellectual History of India',
@@ -347,7 +347,7 @@ export default function MAHistoryPage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: [
                       '24PHIC11: Contemporary India',
                       '24PHIC12: International Relations since 1945 C.E',
@@ -564,8 +564,8 @@ export default function MAHistoryPage() {
               <div className="space-y-4">
                 {[
                   { title: 'NAAC Accredited Excellence', description: 'Top-tier recognition ensuring quality education, superior infrastructure, and academic standards' },
-                  { title: 'Expert Learning Facilitators', description: 'PhD-qualified faculty with extensive research experience and active scholarly contributions' },
-                  { title: 'Research-Focused Curriculum', description: 'Comprehensive training in historiography, archival research, and field methodologies' },
+                  { title: 'Expert Senior Learners', description: 'PhD-qualified faculty with extensive research experience and active scholarly contributions' },
+                  { title: 'Research-Focused Learning Framework', description: 'Comprehensive training in historiography, archival research, and field methodologies' },
                   { title: 'Field Study Opportunities', description: 'Regular visits to historical sites, museums, archives, and archaeological excavations' },
                   { title: 'Career & Higher Studies Support', description: 'Strong track record in placements, NET/SET coaching, and PhD admissions guidance' }
                 ].map((reason, idx) => (
@@ -591,11 +591,11 @@ export default function MAHistoryPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">

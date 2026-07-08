@@ -108,7 +108,7 @@ export default function BAEnglishPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -122,7 +122,7 @@ export default function BAEnglishPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
+              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Award className="w-7 h-7" />, stat: '₹3.5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
@@ -161,7 +161,7 @@ export default function BAEnglishPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Aligned Curriculum', 'Expert Learning Facilitators', 'Practical Skill Development', 'Research Opportunities'].map((item, idx) => (
+                {['Industry-Aligned Learning Framework', 'Expert Senior Learners', 'Practical Skill Development', 'Research Opportunities'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -245,21 +245,21 @@ export default function BAEnglishPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive syllabus designed to build expertise in English language and literature
+                  Comprehensive learning pathway designed to build expertise in English language and literature
                 </p>
               </div>
             </RevealSection>
@@ -285,11 +285,11 @@ export default function BAEnglishPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: ['Introduction to Literature', 'Indian Writing in English', 'Social History of England I', 'English & Communication', 'Functional English']
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: ['British Literature I', 'American Literature', 'Social History of England I', 'Film Studies', 'Digital Literacy & Concepts', 'Distaster Management']
                   }
 
@@ -322,11 +322,11 @@ export default function BAEnglishPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: ['British Literature II', 'Childrens Literature', 'History of English Literature I', 'Entrepreneurial Skills', 'Personality Development', 'Environmental Studies', 'Health & Wealness']
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: ['World Literature in Translation', 'Language & Linguistics', 'History of English Literature II', 'Interview Skills', 'Creative Writing', 'Environmental Studies']
                   }
                 ].map((sem, idx) => (
@@ -355,11 +355,11 @@ export default function BAEnglishPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester V',
+                    title: 'Learning Period V',
                     subjects: ['Womens Writing', 'Introduction to Folk Literature', 'Indian Writing & Translation', 'Myth & Literature', 'Literary Forms', 'Literature & Environment', 'Value Education - Yoga', 'Finaly Summary Intenship']
                   },
                   {
-                    title: 'Semester VI',
+                    title: 'Learning Period VI',
                     subjects: ['Literary Criticism', 'New Literatures in English', 'Shakespeare', 'English Language Teaching', 'Journalism & Mass Communication', 'English for Competitative Examination', 'EXtension Activities']
                   }
                 ].map((sem, idx) => (
@@ -572,9 +572,9 @@ export default function BAEnglishPage() {
               <div className="space-y-4">
                 {[
                   { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
-                  { title: 'Expert Learning Facilitators', description: 'Highly qualified faculty with doctoral degrees, research publications, and industry experience.' },
+                  { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and industry experience.' },
                   { title: 'Strong Placement Support', description: 'Dedicated placement cell with industry partnerships ensuring excellent career opportunities.' },
-                  { title: 'Industry-Aligned Curriculum', description: 'Regularly updated syllabus incorporating current industry trends and skill requirements.' },
+                  { title: 'Industry-Aligned Learning Framework', description: 'Regularly updated learning pathway incorporating current industry trends and skill requirements.' },
                   { title: 'Research & Publication Support', description: 'Opportunities for research projects, paper presentations, and academic publications.' }
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:shadow-lg hover:-translate-y-0.5 transition-all">
@@ -599,11 +599,11 @@ export default function BAEnglishPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -672,7 +672,7 @@ export default function BAEnglishPage() {
                 { question: 'What is the fee structure for BA English?', answer: 'The annual fee for BA English (Aided) is As Per Norms for both Government Quota (GQ) and Management Quota (MQ). Scholarships are available for meritorious students and those from economically weaker sections. Government scholarships are also facilitated through the institution.' },
                 { question: 'Can I pursue higher studies after BA English?', answer: 'Yes, BA English opens multiple pathways for higher education including MA English (Literature/Linguistics), M.Phil. and Ph.D. in English, B.Ed. for teaching career, MBA (Management Studies), Mass Communication and Journalism, Law (LLB), and Diploma in Creative Writing.' },
                 { question: 'Does the college provide placement assistance?', answer: 'Yes, our dedicated Placement Cell actively supports learners through campus recruitment drives, soft skills training, resume building workshops, mock interviews, and industry interaction sessions. We have partnerships with leading companies in media, publishing, IT, education, and corporate sectors. The placement rate for BA English graduates has consistently been above 85%.' },
-                { question: 'What makes this BA English programme unique?', answer: 'Our BA English programme stands out due to its industry-aligned curriculum, emphasis on practical skills like digital content creation and journalism, dedicated language laboratory, expert learning facilitators with research experience, strong placement support, and focus on holistic development through co-curricular activities. The programme also offers specialization options in areas like Creative Writing, ELT, and Media Studies. Our Students are consistently publishing their creative outputs in social media and winning prizes.' },
+                { question: 'What makes this BA English programme unique?', answer: 'Our BA English programme stands out due to its industry-aligned curriculum, emphasis on practical skills like digital content creation and journalism, dedicated language laboratory, expert senior learners with research experience, strong placement support, and focus on holistic development through co-curricular activities. The programme also offers specialization options in areas like Creative Writing, ELT, and Media Studies. Our Students are consistently publishing their creative outputs in social media and winning prizes.' },
                 { question: 'Are internships mandatory in the BA English programme?', answer: 'Yes, the programme includes a mandatory internship component in the fifth semester. Learners gain practical experience in fields such as journalism, content writing, publishing, teaching, or corporate communications. The department assists in securing internship placements with reputed organizations, newspapers, magazines, and educational institutions.' }
               ].map((faq, idx) => (
                 <RevealSection key={idx} delay={idx * 60}>

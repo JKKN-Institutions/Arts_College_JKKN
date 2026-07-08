@@ -107,7 +107,7 @@ export default function MScChemistryPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function MScChemistryPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'UGC', title: 'Recognized Programme', desc: 'Quality postgraduate education' },
-              { icon: <Microscope className="w-7 h-7" />, stat: '10:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized research guidance' },
+              { icon: <Microscope className="w-7 h-7" />, stat: '10:1', title: 'Learners per Senior Learner', desc: 'Personalized research guidance' },
               { icon: <Award className="w-7 h-7" />, stat: 'Good', title: 'Research Placement', desc: 'Industry & academic positions' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '₹5.5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
@@ -244,21 +244,21 @@ export default function MScChemistryPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive syllabus covering all branches of chemistry with advanced topics
+                  Comprehensive learning pathway covering all branches of chemistry with advanced topics
                 </p>
               </div>
             </RevealSection>
@@ -284,7 +284,7 @@ export default function MScChemistryPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: [
                       { code: '24PCHC01', type: 'Core-I', name: 'Organic Reaction Mechanism-I' },
                       { code: '24PCHC02', type: 'Core-II', name: 'Structure and Bonding in Inorganic Compounds' },
@@ -294,7 +294,7 @@ export default function MScChemistryPage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: [
                       { code: '24PCHC03', type: 'Core-III', name: 'Organic Reaction Mechanism-II' },
                       { code: '24PCHC04', type: 'Core-IV', name: 'Physical Chemistry-I' },
@@ -334,7 +334,7 @@ export default function MScChemistryPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: [
                       { code: '24PCHC05', type: 'Core-V', name: 'Organic Synthesis and Photochemistry' },
                       { code: '24PCHC06', type: 'Core-VI', name: 'Coordination Chemistry-I' },
@@ -346,7 +346,7 @@ export default function MScChemistryPage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: [
                       { code: '24PCHC07', type: 'Core-VII', name: 'Coordination Chemistry-II' },
                       { code: '24PCHC08', type: 'Core-VIII', name: 'Physical Chemistry-II' },
@@ -503,7 +503,7 @@ export default function MScChemistryPage() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  State-of-the-art laboratories and research infrastructure
+                  State-of-the-art learning labs and research infrastructure
                 </p>
               </div>
             </RevealSection>
@@ -568,7 +568,7 @@ export default function MScChemistryPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'Advanced Research Infrastructure', description: 'State-of-the-art laboratories with modern instrumentation for cutting-edge research.' },
+                  { title: 'Advanced Research Infrastructure', description: 'State-of-the-art learning labs with modern instrumentation for cutting-edge research.' },
                   { title: 'Expert Research Supervisors', description: 'Highly qualified faculty members with Ph.D. degrees and active research publications.' },
                   { title: 'Industry Collaborations', description: 'Partnerships with pharmaceutical and chemical industries for internships and placements.' },
                   { title: 'Research Publication Support', description: 'Guidance and support for publishing research papers in reputed journals.' },
@@ -596,7 +596,7 @@ export default function MScChemistryPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Our Research{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">

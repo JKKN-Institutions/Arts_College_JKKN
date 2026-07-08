@@ -91,7 +91,7 @@ export default function BScPhysicsPage() {
     },
     {
       question: "What makes JKKN's B.Sc Physics programme unique?",
-      answer: "Our programme stands out through its industry-aligned curriculum, experienced Learning Facilitators with active research profiles, state-of-the-art laboratory facilities, strong placement support, and collaborations with research organizations. The progressive education philosophy ensures holistic development with emphasis on practical skills, computational proficiency, and research aptitude preparing Learners for both industry and academia."
+      answer: "Our programme stands out through its industry-aligned curriculum, experienced Senior Learners with active research profiles, state-of-the-art laboratory facilities, strong placement support, and collaborations with research organizations. The progressive education philosophy ensures holistic development with emphasis on practical skills, computational proficiency, and research aptitude preparing Learners for both industry and academia."
     }
   ];
 
@@ -137,7 +137,7 @@ export default function BScPhysicsPage() {
                     <ArrowRight className="w-4 h-4" />
                   </a>
                   <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                    View Curriculum
+                    View Learning Framework
                   </a>
                 </div>
               </div>
@@ -190,7 +190,7 @@ export default function BScPhysicsPage() {
                 </p>
 
                 <div className="grid sm:grid-cols-2 gap-3">
-                  {['Industry-Aligned Curriculum', 'Expert Learning Facilitators', 'Advanced Laboratory Training', 'Research Project Experience'].map((item, idx) => (
+                  {['Industry-Aligned Learning Framework', 'Expert Senior Learners', 'Advanced Laboratory Training', 'Research Project Experience'].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-gray-700">
                       <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                       <span>{item}</span>
@@ -275,21 +275,21 @@ export default function BScPhysicsPage() {
           </div>
         </section>
 
-        {/* Programme Curriculum */}
+        {/* Programme Learning Framework */}
         <section className="py-16 bg-brand-cream" id="curriculum">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <RevealSection>
                 <div className="text-center mb-12">
-                  <SectionBadge text="Curriculum" />
+                  <SectionBadge text="Learning Framework" />
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                     Programme{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                      Curriculum
+                      Learning Framework
                     </span>
                   </h2>
                   <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                    Comprehensive syllabus covering classical and modern physics with hands-on laboratory experience
+                    Comprehensive learning pathway covering classical and modern physics with hands-on laboratory experience
                   </p>
                 </div>
               </RevealSection>
@@ -315,7 +315,7 @@ export default function BScPhysicsPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
                     {
-                      title: 'Semester I',
+                      title: 'Learning Period I',
                       subjects: [
                         { name: 'General Tamil - I', code: '24UGTA01' },
                         { name: 'General English – I', code: '24UGEN01' },
@@ -329,7 +329,7 @@ export default function BScPhysicsPage() {
                       ]
                     },
                     {
-                      title: 'Semester II',
+                      title: 'Learning Period II',
                       subjects: [
                         { name: 'General Tamil – II', code: '24UGTA02' },
                         { name: 'General English – II', code: '24UGEN02' },
@@ -373,7 +373,7 @@ export default function BScPhysicsPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
                     {
-                      title: 'Semester III',
+                      title: 'Learning Period III',
                       subjects: [
                         { name: 'General Tamil - III', code: '24UGTA03' },
                         { name: 'General English – III', code: '24UGEN03' },
@@ -388,7 +388,7 @@ export default function BScPhysicsPage() {
                       ]
                     },
                     {
-                      title: 'Semester IV',
+                      title: 'Learning Period IV',
                       subjects: [
                         { name: 'General Tamil – IV', code: '24UGTA04' },
                         { name: 'General English – IV', code: '24UGEN04' },
@@ -430,7 +430,7 @@ export default function BScPhysicsPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
                     {
-                      title: 'Semester V',
+                      title: 'Learning Period V',
                       subjects: [
                         { name: 'Core – V, Atomic Physics and Lasers', code: '24UPHC05' },
                         { name: 'Core – VI, Relativity and Quantum Mechanics', code: '24UPHC06' },
@@ -443,7 +443,7 @@ export default function BScPhysicsPage() {
                       ]
                     },
                     {
-                      title: 'Semester VI',
+                      title: 'Learning Period VI',
                       subjects: [
                         { name: 'Core – VIII, Nuclear and Particle Physics', code: '24UPHC08' },
                         { name: 'Core Course – IX, Solid State Physics', code: '24UPHC09' },
@@ -658,7 +658,7 @@ export default function BScPhysicsPage() {
 
                 <div className="space-y-4">
                   {[
-                    { icon: <GraduationCap className="w-6 h-6" />, title: 'Expert Learning Facilitators', description: 'Learn from experienced faculty with doctoral degrees and active research in specialized physics fields.' },
+                    { icon: <GraduationCap className="w-6 h-6" />, title: 'Expert Senior Learners', description: 'Learn from experienced faculty with doctoral degrees and active research in specialized physics fields.' },
                     { icon: <Microscope className="w-6 h-6" />, title: 'Research-Oriented Learning', description: 'Engage in research projects with collaboration opportunities with national laboratories like ISRO and DRDO.' },
                     { icon: <Briefcase className="w-6 h-6" />, title: 'Excellent Placement Support', description: 'Strong industry connections ensuring placement opportunities in leading technology and research organizations.' },
                     { icon: <FlaskConical className="w-6 h-6" />, title: 'Modern Infrastructure', description: 'Access to well-equipped laboratories, computational facilities, and latest scientific instruments.' },
@@ -687,11 +687,11 @@ export default function BScPhysicsPage() {
             <div className="max-w-6xl mx-auto">
               <RevealSection>
                 <div className="text-center mb-12">
-                  <SectionBadge text="Faculty" />
+                  <SectionBadge text="Senior Learners" />
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                    Our Learning{' '}
+                    Our Senior{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                      Facilitators
+                      Learners
                     </span>
                   </h2>
                   <p className="text-lg text-gray-600 max-w-2xl mx-auto">

@@ -92,13 +92,13 @@ export default function MComPage() {
     setActiveFAQ(activeFAQ === index ? null : index);
   };
 
-  // Curriculum data
+  // Learning Framework data
   const curriculum = {
     1: {
       year: "First Year",
       semesters: [
         {
-          semester: "Semester I",
+          semester: "Learning Period I",
           subjects: [
             { code: "MCO101", name: "Business Finance" },
             { code: "MCO102", name: "Digital Marketing" },
@@ -108,7 +108,7 @@ export default function MComPage() {
           ]
         },
         {
-          semester: "Semester II",
+          semester: "Learning Period II",
           subjects: [
             { code: "MCO201", name: "Strategic Cost Management" },
             { code: "MCO202", name: "Corporate Accounting" },
@@ -125,7 +125,7 @@ export default function MComPage() {
       year: "Second Year",
       semesters: [
         {
-          semester: "Semester III",
+          semester: "Learning Period III",
           subjects: [
             { code: "MCO301", name: "Taxation" },
             { code: "MCO302", name: "Research Methodology" },
@@ -135,7 +135,7 @@ export default function MComPage() {
           ]
         },
         {
-          semester: "Semester IV",
+          semester: "Learning Period IV",
           subjects: [
             { code: "MCO401", name: "Corporate and Economic Law" },
             { code: "MCO402", name: "Human Resources Analysis" },
@@ -232,7 +232,7 @@ export default function MComPage() {
     },
     {
       question: "Is dissertation/project mandatory in M.Com?",
-      answer: "Yes, the programme includes a mandatory dissertation or project work in the final semester. Learners conduct research under the guidance of experienced Learning Facilitators on topics related to commerce, accounting, finance, or business management. This research component develops critical thinking, analytical skills, and prepares Learners for advanced academic pursuits or research-oriented careers."
+      answer: "Yes, the programme includes a mandatory dissertation or project work in the final semester. Learners conduct research under the guidance of experienced Senior Learners on topics related to commerce, accounting, finance, or business management. This research component develops critical thinking, analytical skills, and prepares Learners for advanced academic pursuits or research-oriented careers."
     }
   ];
 
@@ -276,7 +276,7 @@ export default function MComPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -290,7 +290,7 @@ export default function MComPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '12:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized mentoring' },
+              { icon: <Users className="w-7 h-7" />, stat: '12:1', title: 'Learners per Senior Learner', desc: 'Personalized mentoring' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Premium opportunities' },
               { icon: <Award className="w-7 h-7" />, stat: '₹7L', title: 'Average Package', desc: 'Competitive compensation' },
             ].map((card, idx) => (
@@ -329,7 +329,7 @@ export default function MComPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Research-Oriented Curriculum', 'UGC NET Preparation Support', 'Advanced Financial Analytics', 'Corporate Internship Programme'].map((item, idx) => (
+                {['Research-Oriented Learning Framework', 'UGC NET Preparation Support', 'Advanced Financial Analytics', 'Corporate Internship Programme'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -415,7 +415,7 @@ export default function MComPage() {
         </div>
       </section>
 
-      {/* Curriculum Section */}
+      {/* Learning Framework Section */}
       <section className="py-20 bg-gradient-to-br from-emerald-50 via-brand-cream to-blue-50 relative overflow-hidden" id="curriculum">
         <div className="absolute inset-0 bg-[url('/patterns/circuit.svg')] opacity-5"></div>
         <div className="container mx-auto px-4 md:px-6 relative">
@@ -423,11 +423,11 @@ export default function MComPage() {
             <div className="max-w-4xl mx-auto text-center mb-16">
               <SectionBadge text="Academic Structure" />
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-6">
-                Programme Curriculum
+                Programme Learning Framework
               </h2>
               <div className="w-24 h-1.5 bg-gradient-to-r from-brand-green to-emerald-500 mx-auto rounded-full mb-6"></div>
               <p className="text-lg text-gray-700">
-                Advanced syllabus designed to build expertise in commerce research, advanced accounting, and strategic management
+                Advanced learning pathway designed to build expertise in commerce research, advanced accounting, and strategic management
               </p>
             </div>
           </RevealSection>

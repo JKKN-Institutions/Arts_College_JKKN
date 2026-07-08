@@ -114,7 +114,7 @@ export default function BScVisualCommunicationAIPage() {
                 </div>
                 <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/80 text-gray-900">
                   <Cpu className="w-5 h-5 text-brand-green" />
-                  <span>AI-Integrated Curriculum</span>
+                  <span>AI-Integrated Learning Framework</span>
                 </div>
               </div>
 
@@ -124,7 +124,7 @@ export default function BScVisualCommunicationAIPage() {
                   Register Interest
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
               <p className="text-xs text-gray-600 mt-4 italic">
@@ -141,7 +141,7 @@ export default function BScVisualCommunicationAIPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
+              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '85%+', title: 'Placement Record', desc: 'AI-forward career pipeline' },
               { icon: <Brain className="w-7 h-7" />, stat: 'AI-First', title: 'Industry-First Focus', desc: 'Emerging-tech creative roles' },
             ].map((card, idx) => (
@@ -265,17 +265,17 @@ export default function BScVisualCommunicationAIPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -305,7 +305,7 @@ export default function BScVisualCommunicationAIPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: [
                       'Introduction to Human Communication',
                       'Visual Arts & Aesthetics',
@@ -316,7 +316,7 @@ export default function BScVisualCommunicationAIPage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: [
                       'Understanding Visual Communication',
                       'Photography & Videography (Practical)',
@@ -352,7 +352,7 @@ export default function BScVisualCommunicationAIPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: [
                       'Multimedia Technologies & Standards',
                       'Audio & Visual Editing (Practical)',
@@ -364,7 +364,7 @@ export default function BScVisualCommunicationAIPage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: [
                       'Film Appreciation & Analysis',
                       'Motion Graphics & VFX (Practical)',
@@ -401,7 +401,7 @@ export default function BScVisualCommunicationAIPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester V',
+                    title: 'Learning Period V',
                     subjects: [
                       'Advertising & Brand Communication with AI',
                       'AI-Augmented Product & UX Design (Practical)',
@@ -412,7 +412,7 @@ export default function BScVisualCommunicationAIPage() {
                     ]
                   },
                   {
-                    title: 'Semester VI',
+                    title: 'Learning Period VI',
                     subjects: [
                       'Media Culture in Tamil Nadu',
                       'AI Creative Entrepreneurship & Portfolio Studio',
@@ -631,7 +631,7 @@ export default function BScVisualCommunicationAIPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'First-Mover AI Curriculum', description: 'Region-first integration of Generative AI, prompt engineering, and AI-augmented design into a UGC-recognized UG degree.' },
+                  { title: 'First-Mover AI Learning Framework', description: 'Region-first integration of Generative AI, prompt engineering, and AI-augmented design into a UGC-recognized UG degree.' },
                   { title: 'GPU Infrastructure + AI Tool Stack', description: 'Dedicated GPU workstations, licensed creative software, and subscriptions to Midjourney, Firefly, Runway, and Figma AI.' },
                   { title: 'Hybrid Faculty — Design + Tech', description: 'Faculty with industry experience across design studios, production houses, and emerging AI-creative workflows.' },
                   { title: 'Live Client & Capstone Projects', description: 'Real brand briefs, AI-driven campaigns, and a final-year capstone designed for portfolio-grade impact.' },

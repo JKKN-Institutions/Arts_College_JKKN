@@ -112,7 +112,7 @@ export default function MScZoologyPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/20 hover:bg-white text-white hover:text-brand-green border-2 border-white/80 hover:border-white px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -126,7 +126,7 @@ export default function MScZoologyPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '10:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized mentorship' },
+              { icon: <Users className="w-7 h-7" />, stat: '10:1', title: 'Learners per Senior Learner', desc: 'Personalized mentorship' },
               { icon: <Microscope className="w-7 h-7" />, stat: '100%', title: 'Research Oriented', desc: 'Dissertation project' },
               { icon: <Award className="w-7 h-7" />, stat: '₹6.5L+', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
@@ -165,7 +165,7 @@ export default function MScZoologyPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Research-Intensive Curriculum', 'Specialized Electives', 'Dissertation Project', 'Industry Collaborations'].map((item, idx) => (
+                {['Research-Intensive Learning Framework', 'Specialized Electives', 'Dissertation Project', 'Industry Collaborations'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -249,21 +249,21 @@ export default function MScZoologyPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Advanced syllabus designed to develop specialized expertise in zoological sciences
+                  Advanced learning pathway designed to develop specialized expertise in zoological sciences
                 </p>
               </div>
             </RevealSection>
@@ -289,7 +289,7 @@ export default function MScZoologyPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     courses: [
                       { code: '24PZOC01', name: 'Core-I, Structure and Function of Invertebrates' },
                       { code: '24PZOC02', name: 'Core-II, Comparative Anatomy of Vertebrates' },
@@ -299,7 +299,7 @@ export default function MScZoologyPage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     courses: [
                       { code: '24PZOC03', name: 'Core-III, Cell and Molecular Biology' },
                       { code: '24PZOC04', name: 'Core-IV, Developmental Biology' },
@@ -344,7 +344,7 @@ export default function MScZoologyPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     courses: [
                       { code: '24PZOC05', name: 'Core-V, Genetics' },
                       { code: '24PZOC06', name: 'Core-VI, Evolution' },
@@ -356,7 +356,7 @@ export default function MScZoologyPage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     courses: [
                       { code: '24PZOC08', name: 'Core-VIII, Immunology' },
                       { code: '24PZOC09', name: 'Core-IX, Ecology' },
@@ -581,9 +581,9 @@ export default function MScZoologyPage() {
               <div className="space-y-4">
                 {[
                   { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured postgraduate education meeting national standards with excellent academic reputation.' },
-                  { title: 'Research-Focused Curriculum', description: 'Emphasis on hands-on research experience, dissertation projects, and scientific publication opportunities.' },
-                  { title: 'Expert Learning Facilitators', description: 'Highly qualified faculty with doctoral degrees, research publications, and specialized expertise in zoology.' },
-                  { title: 'Advanced Research Facilities', description: 'State-of-the-art laboratories, modern instrumentation, and access to global research databases.' },
+                  { title: 'Research-Focused Learning Framework', description: 'Emphasis on hands-on research experience, dissertation projects, and scientific publication opportunities.' },
+                  { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and specialized expertise in zoology.' },
+                  { title: 'Advanced Research Facilities', description: 'State-of-the-art learning labs, modern instrumentation, and access to global research databases.' },
                   { title: 'Excellent Career Outcomes', description: 'Strong placement support with connections to academic institutions, research organizations, and industries.' }
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:shadow-lg hover:-translate-y-0.5 transition-all">
@@ -608,11 +608,11 @@ export default function MScZoologyPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">

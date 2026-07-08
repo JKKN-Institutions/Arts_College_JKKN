@@ -112,7 +112,7 @@ export default function MComAidedPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -126,7 +126,7 @@ export default function MComAidedPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '12:1', title: 'Learner-Facilitator Ratio', desc: 'Enhanced personal attention' },
+              { icon: <Users className="w-7 h-7" />, stat: '12:1', title: 'Learners per Senior Learner', desc: 'Enhanced personal attention' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Premium career opportunities' },
               { icon: <Award className="w-7 h-7" />, stat: '₹6.5L', title: 'Average Package', desc: 'Higher starting salary' },
             ].map((card, idx) => (
@@ -165,7 +165,7 @@ export default function MComAidedPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Research-Oriented Curriculum', 'UGC NET Preparation Support', 'Advanced Financial Analytics', 'Corporate Internship Programme'].map((item, idx) => (
+                {['Research-Oriented Learning Framework', 'UGC NET Preparation Support', 'Advanced Financial Analytics', 'Corporate Internship Programme'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -249,21 +249,21 @@ export default function MComAidedPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Advanced syllabus designed to build expertise in commerce research, advanced accounting, and strategic management
+                  Advanced learning pathway designed to build expertise in commerce research, advanced accounting, and strategic management
                 </p>
               </div>
             </RevealSection>
@@ -289,7 +289,7 @@ export default function MComAidedPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: [
                       { name: 'Business Finance', code: '' },
                       { name: 'Digital Marketing', code: '' },
@@ -299,7 +299,7 @@ export default function MComAidedPage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: [
                       { name: 'Strategic Cost Management', code: '' },
                       { name: 'Corporate Accounting', code: '' },
@@ -339,7 +339,7 @@ export default function MComAidedPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: [
                       { name: 'Taxation', code: '' },
                       { name: 'Research Methodology', code: '' },
@@ -351,7 +351,7 @@ export default function MComAidedPage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: [
                       { name: 'Corporate and Economic Laws', code: '' },
                       { name: 'Human Resource Analytics', code: '' },
@@ -604,7 +604,7 @@ export default function MComAidedPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { title: 'Research Laboratory', description: 'Advanced research facilities with access to financial databases, statistical software, and analytical tools for commerce research.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Lab' },
-                { title: 'Digital Library', description: 'Comprehensive collection of commerce journals, e-books, and research publications with 24/7 digital access.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Library' },
+                { title: 'Digital Learning Commons', description: 'Comprehensive collection of commerce journals, e-books, and research publications with 24/7 digital access.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Library' },
                 { title: 'Conference Hall', description: 'State-of-the-art auditorium for seminars, guest lectures, and academic conferences with modern AV facilities.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Conference+Hall' },
                 { title: 'Finance Laboratory', description: 'Equipped with Bloomberg terminals, accounting software, and financial modeling tools for practical learning.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Finance+Lab' },
                 { title: 'Career Development Center', description: 'Dedicated placement cell with corporate tie-ups, interview preparation, and career counseling services.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Career+Center' },
@@ -690,11 +690,11 @@ export default function MComAidedPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">

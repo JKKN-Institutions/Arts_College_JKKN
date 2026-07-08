@@ -107,7 +107,7 @@ export default function MAEnglishPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function MAEnglishPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured postgraduate education' },
-              { icon: <Users className="w-7 h-7" />, stat: '10:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized mentorship' },
+              { icon: <Users className="w-7 h-7" />, stat: '10:1', title: 'Learners per Senior Learner', desc: 'Personalized mentorship' },
               { icon: <Award className="w-7 h-7" />, stat: '95%', title: 'Placement Rate', desc: 'Competitive exam preparation' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '₹5.5L', title: 'Average Package', desc: 'Enhanced career prospects' },
             ].map((card, idx) => (
@@ -160,7 +160,7 @@ export default function MAEnglishPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['UGC NET/SET Integrated Preparation', 'Research-Oriented Curriculum', 'Dissertation & Publication Support', 'Expert Learning Facilitators'].map((item, idx) => (
+                {['UGC NET/SET Integrated Preparation', 'Research-Oriented Learning Framework', 'Dissertation & Publication Support', 'Expert Senior Learners'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -244,21 +244,21 @@ export default function MAEnglishPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Advanced syllabus designed for scholarly expertise in English Studies
+                  Advanced learning pathway designed for scholarly expertise in English Studies
                 </p>
               </div>
             </RevealSection>
@@ -284,11 +284,11 @@ export default function MAEnglishPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: ['British Literature: Chaucer to the Restoration', 'American Literature: Origins to Civil War', 'Literary Criticism: Classical to New Criticism', 'Advanced Linguistics: Phonology & Morphology', 'Indian Writing in English: Poetry & Drama', 'Research Methodology & Academic Writing']
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: ['British Literature: Romantic Period to Modernism', 'American Literature: Post-Civil War to Contemporary', 'Literary Theory: Structuralism to Postmodernism', 'Advanced Linguistics: Syntax & Semantics', 'Indian Writing in English: Fiction & Prose', 'Elective I: Cultural Studies / Gender Studies']
                   }
                 ].map((sem, idx) => (
@@ -317,11 +317,11 @@ export default function MAEnglishPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: ['Postcolonial Literature & Theory', 'World Literature in Translation', 'Shakespeare: Texts & Contexts', 'English Language Teaching (ELT)', 'Elective II: Diaspora Studies / Film Studies', 'Dissertation Proposal & Methodology']
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: ['Contemporary Literary Trends', 'Commonwealth & New Literatures', 'Elective III: Translation Studies / Comparative Literature', 'UGC NET/SET Preparation Module', 'Dissertation (15,000 - 20,000 words)', 'Viva Voce & Defence']
                   }
                 ].map((sem, idx) => (
@@ -531,7 +531,7 @@ export default function MAEnglishPage() {
               <div className="space-y-4">
                 {[
                   { title: 'UGC NET Integrated Preparation', description: 'Dedicated NET/SET coaching modules with mock tests, previous year papers, and expert guidance for competitive exam success.' },
-                  { title: 'Expert Learning Facilitators', description: 'Faculty with doctoral degrees, international publications, and extensive research experience in diverse literary specializations.' },
+                  { title: 'Expert Senior Learners', description: 'Faculty with doctoral degrees, international publications, and extensive research experience in diverse literary specializations.' },
                   { title: 'Dissertation & Publication Support', description: 'Comprehensive guidance for thesis writing with opportunities for publication in peer-reviewed journals and conference presentations.' },
                   { title: 'Seminars & Guest Lectures', description: 'Regular interaction with eminent scholars, authors, and literary critics through national and international seminars.' },
                   { title: 'Ph.D. Pathway & Academic Careers', description: 'Strong foundation for doctoral studies with alumni successfully pursuing Ph.D. at premier institutions and working as university faculty.' }
@@ -558,7 +558,7 @@ export default function MAEnglishPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
@@ -622,11 +622,11 @@ export default function MAEnglishPage() {
             <div className="space-y-4">
               {[
                 { question: 'What is the duration and structure of the MA English programme?', answer: 'The MA English programme is a 2-year full-time postgraduate degree comprising four semesters. The first three semesters focus on coursework covering British, American, Indian, and World Literature along with Literary Theory, Linguistics, and specialized electives. The fourth semester is primarily dedicated to  research projects and defence. ' },
-                { question: 'Does the programme help in qualifying for UGC NET/SET examinations?', answer: 'Yes, our MA English programme is specifically designed with UGC NET/SET preparation integrated into the curriculum. We offer dedicated coaching modules covering all NET syllabus topics, regular mock tests based on previous year patterns, study materials, and expert guidance from Learning Facilitators who have experience as NET examiners. Over 85% of our eligible graduates have qualified NET/SET examinations.' },
+                { question: 'Does the programme help in qualifying for UGC NET/SET examinations?', answer: 'Yes, our MA English programme is specifically designed with UGC NET/SET preparation integrated into the curriculum. We offer dedicated coaching modules covering all NET syllabus topics, regular mock tests based on previous year patterns, study materials, and expert guidance from Senior Learners who have experience as NET examiners. Over 85% of our eligible graduates have qualified NET/SET examinations.' },
                 { question: 'What are the specialization options available in MA English?', answer: 'The programme offers multiple elective specializations including Cultural Studies, Gender Studies, Diaspora Studies, Film Studies, Translation Studies, and Comparative Literature. Learners can choose electives based on their research interests, and these specializations can form the basis for their dissertation topics and future doctoral research.' },
                 { question: 'What is the dissertation requirement in MA English?', answer: 'The dissertation is a mandatory component in the fourth semester. Learners work on an original research topic under the supervision of a designated faculty guide. The dissertation should be 15,000-20,000 words and must demonstrate independent research capability, critical analysis, and scholarly writing skills. Topics can span any area of English Studies including literature, linguistics, cultural studies, or ELT. The final evaluation includes a viva voce examination.' },
                 { question: 'Can I pursue Ph.D. after completing MA English?', answer: 'Yes, our MA English programme provides an excellent foundation for doctoral studies. After qualifying UGC NET-JRF or passing university entrance examinations, graduates can pursue Ph.D. in English at any recognized university. Our alumni have been admitted to premier institutions including central universities, IITs (for Humanities), and universities abroad. The research methodology training and dissertation experience gained during MA significantly helps in doctoral research.' },
-                { question: 'What makes your MA English programme different from other institutions?', answer: 'Our programme stands out due to its research-intensive curriculum, integrated NET preparation, strong publication support, and personalized mentorship with a 10:1 Learner-to-Learning Facilitator ratio. We offer access to extensive digital resources, regular seminars with eminent scholars, academic writing workshops, and opportunities for conference presentations. The programme combines rigorous theoretical training with practical applications, preparing graduates for diverse career paths in academia, publishing, and communication industries.' },
+                { question: 'What makes your MA English programme different from other institutions?', answer: 'Our programme stands out due to its research-intensive curriculum, integrated NET preparation, strong publication support, and personalized mentorship with a 10:1 Learner-to-Senior Learner ratio. We offer access to extensive digital resources, regular seminars with eminent scholars, academic writing workshops, and opportunities for conference presentations. The programme combines rigorous theoretical training with practical applications, preparing graduates for diverse career paths in academia, publishing, and communication industries.' },
                 { question: 'Are there opportunities for publication and conference participation?', answer: 'Yes, we actively encourage Learners to publish their research and present at conferences. The department organizes annual national seminars where PG Learners can present papers. We provide guidance for publishing in UGC-approved journals and support Learners in participating in external conferences. Many of our Learners have published research articles and book chapters during their MA programme, which strengthens their academic profile for Ph.D. admissions and teaching positions.' }
               ].map((faq, idx) => (
                 <RevealSection key={idx} delay={idx * 60}>

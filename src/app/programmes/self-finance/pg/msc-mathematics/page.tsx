@@ -107,7 +107,7 @@ export default function MScMathematicsPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -244,17 +244,17 @@ export default function MScMathematicsPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -284,7 +284,7 @@ export default function MScMathematicsPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: [
                       'Algebraic Structure',
                       'Real Analysis - I',
@@ -299,7 +299,7 @@ export default function MScMathematicsPage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: [
                       'Advanced Algebra',
                       'Real Analysis - II',
@@ -346,7 +346,7 @@ export default function MScMathematicsPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: [
                       'Complex Analysis',
                       'Probability Theory',
@@ -360,7 +360,7 @@ export default function MScMathematicsPage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: [
                       'Functional Analysis',
                       'Differential Geometry',
@@ -581,8 +581,8 @@ export default function MScMathematicsPage() {
               <div className="space-y-4">
                 {[
                   { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured postgraduate education meeting national standards with excellent academic reputation.' },
-                  { title: 'Research-Oriented Curriculum', description: 'Advanced coursework integrating pure mathematics with computational methods and real-world applications.' },
-                  { title: 'Expert Learning Facilitators', description: 'Highly qualified faculty with doctoral degrees, research publications, and expertise in specialized areas.' },
+                  { title: 'Research-Oriented Learning Framework', description: 'Advanced coursework integrating pure mathematics with computational methods and real-world applications.' },
+                  { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and expertise in specialized areas.' },
                   { title: 'Computational Excellence', description: 'State-of-the-art labs equipped with MATLAB, Python, and advanced mathematical software for hands-on learning.' },
                   { title: 'Competitive Exam Preparation', description: 'Specialized coaching and guidance for NET/SET/GATE examinations and civil services.' }
                 ].map((reason, idx) => (
@@ -608,11 +608,11 @@ export default function MScMathematicsPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">

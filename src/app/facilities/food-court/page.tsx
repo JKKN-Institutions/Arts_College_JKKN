@@ -72,7 +72,7 @@ export default function FoodCourtPage() {
         {/* Content Paragraphs */}
         <div className="space-y-6 text-base md:text-lg leading-relaxed text-gray-700 mb-8">
           <p className="text-justify">
-            Our canteen is more than just a place to grab a quick bite. It&apos;s a social hub where students can come together to relax, catch up with friends, and recharge before diving back into their studies. With comfortable seating and a warm and welcoming atmosphere, it&apos;s the perfect place to take a break and refuel.
+            Our canteen is more than just a place to grab a quick bite. It&apos;s a social hub where learners can come together to relax, catch up with friends, and recharge before diving back into their studies. With comfortable seating and a warm and welcoming atmosphere, it&apos;s the perfect place to take a break and refuel.
           </p>
           <p className="text-justify">
             And speaking of refueling, you won&apos;t be disappointed with the variety of options available in our canteen. From fresh salads and sandwiches to hearty hot meals and snacks, we&apos;ve got something for everyone. Our menu is designed to cater to a range of dietary needs and preferences, so you can feel confident that you&apos;ll find something delicious and satisfying no matter what your tastes.

@@ -107,7 +107,7 @@ export default function BScChemistryPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function BScChemistryPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
+              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
               { icon: <Briefcase className="w-7 h-7" />, stat: 'Good', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Award className="w-7 h-7" />, stat: '₹3.5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
@@ -160,7 +160,7 @@ export default function BScChemistryPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['State-of-the-art Labs', 'Expert Learning Facilitators', 'Research Opportunities', 'Industry Collaborations'].map((item, idx) => (
+                {['State-of-the-art Labs', 'Expert Senior Learners', 'Research Opportunities', 'Industry Collaborations'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -244,21 +244,21 @@ export default function BScChemistryPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive syllabus designed to build expertise in chemical sciences
+                  Comprehensive learning pathway designed to build expertise in chemical sciences
                 </p>
               </div>
             </RevealSection>
@@ -284,7 +284,7 @@ export default function BScChemistryPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: [
                       { code: '24UGTA01', name: 'General Tamil-I' },
                       { code: '24UGEN01', name: 'General English-I' },
@@ -297,7 +297,7 @@ export default function BScChemistryPage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: [
                       { code: '24UGTA02', name: 'General Tamil-II' },
                       { code: '24UGEN02', name: 'General English-II' },
@@ -343,7 +343,7 @@ export default function BScChemistryPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: [
                       { code: '24UGTA03', name: 'General Tamil-III' },
                       { code: '24UGEN03', name: 'General English-III' },
@@ -358,7 +358,7 @@ export default function BScChemistryPage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: [
                       { code: '24UGTA04', name: 'General Tamil-IV' },
                       { code: '24UGEN04', name: 'General English-IV' },
@@ -405,7 +405,7 @@ export default function BScChemistryPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester V',
+                    title: 'Learning Period V',
                     subjects: [
                       { code: '23UCHCC09', name: 'Organic Chemistry-I (CC9)' },
                       { code: '23UCHCC10', name: 'Inorganic Chemistry-I (CC10)' },
@@ -418,7 +418,7 @@ export default function BScChemistryPage() {
                     ]
                   },
                   {
-                    title: 'Semester VI',
+                    title: 'Learning Period VI',
                     subjects: [
                       { code: '23UCHCC14', name: 'Organic Chemistry-II (CC14)' },
                       { code: '23UCHCC15', name: 'Inorganic Chemistry-II (CC15)' },
@@ -649,8 +649,8 @@ export default function BScChemistryPage() {
               <div className="space-y-4">
                 {[
                   { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
-                  { title: 'Comprehensive Curriculum', description: 'Balance of theoretical knowledge and hands-on laboratory experience with modern equipment.' },
-                  { title: 'Expert Learning Facilitators', description: 'Highly qualified faculty with doctoral degrees, research publications, and industry experience.' },
+                  { title: 'Comprehensive Learning Framework', description: 'Balance of theoretical knowledge and hands-on laboratory experience with modern equipment.' },
+                  { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and industry experience.' },
                   { title: 'Advanced Laboratory Infrastructure', description: 'Well-equipped labs with suffficient instruments for organic, inorganic, physical, and practical.' },
                   { title: 'Industry Collaborations', description: 'Partnerships with chemical and pharmaceutical companies providing real-world exposure and placements.' }
                 ].map((reason, idx) => (
@@ -676,11 +676,11 @@ export default function BScChemistryPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -749,7 +749,7 @@ export default function BScChemistryPage() {
                 { question: 'What laboratory facilities are available?', answer: 'The department has well-equipped laboratories for Organic, Inorganic, Physical, and Analytical Chemistry with  pH meters, centrifuges, chromatography equipment for hands-on learning and research projects.' },
                 { question: 'Are there opportunities for research and projects?', answer: 'Yes, students undertake research projects in the end of 2nd year and are encouraged to participate in scientific research, paper presentations, and academic conferences. The department provides research facilities and guidance from experienced faculty members to develop research aptitude and analytical skills.' },
                 { question: 'Does the college provide placement assistance?', answer: 'Yes, our dedicated Placement Cell actively supports learners through campus recruitment drives, soft skills training, resume building workshops, mock interviews, and industry interaction sessions. We have partnerships with leading chemical, pharmaceutical, and research companies for internships and career opportunities.' },
-                { question: 'What makes this B.Sc Chemistry programme unique?', answer: 'Our programme stands out due to its comprehensive curriculum balancing theory and practice, state-of-the-art laboratory infrastructure, expert learning facilitators with research experience, strong industry collaborations, emphasis on research projects, and holistic development through co-curricular activities in chemistry clubs and scientific societies.' }
+                { question: 'What makes this B.Sc Chemistry programme unique?', answer: 'Our programme stands out due to its comprehensive curriculum balancing theory and practice, state-of-the-art laboratory infrastructure, expert senior learners with research experience, strong industry collaborations, emphasis on research projects, and holistic development through co-curricular activities in chemistry clubs and scientific societies.' }
               ].map((faq, idx) => (
                 <RevealSection key={idx} delay={idx * 60}>
                   <div className="bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:border-brand-green/20 transition-all overflow-hidden">

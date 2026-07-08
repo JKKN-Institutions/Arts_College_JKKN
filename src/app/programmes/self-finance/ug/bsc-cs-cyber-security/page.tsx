@@ -107,7 +107,7 @@ export default function BScCSCyberSecurityPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function BScCSCyberSecurityPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
+              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Excellent career opportunities' },
               { icon: <Award className="w-7 h-7" />, stat: '₹6L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
@@ -160,7 +160,7 @@ export default function BScCSCyberSecurityPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Certified Learning Facilitators', 'State-of-the-Art Security Labs', 'CEH & CompTIA+ Aligned Curriculum', 'Hands-on Practical Training'].map((item, idx) => (
+                {['Industry-Certified Senior Learners', 'State-of-the-Art Security Labs', 'CEH & CompTIA+ Aligned Learning Framework', 'Hands-on Practical Training'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -244,21 +244,21 @@ export default function BScCSCyberSecurityPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive syllabus designed with industry requirements and global standards
+                  Comprehensive learning pathway designed with industry requirements and global standards
                 </p>
               </div>
             </RevealSection>
@@ -284,7 +284,7 @@ export default function BScCSCyberSecurityPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     courses: [
                       { code: '24UGTA01', name: 'General Tamil – I' },
                       { code: '24UGEN01', name: 'General English – I' },
@@ -296,7 +296,7 @@ export default function BScCSCyberSecurityPage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     courses: [
                       { code: '24UGTA02', name: 'General Tamil – II' },
                       { code: '24UGEN02', name: 'General English – II' },
@@ -342,7 +342,7 @@ export default function BScCSCyberSecurityPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     courses: [
                       { code: '24UGTA03', name: 'General Tamil – III' },
                       { code: '24UGEN03', name: 'General English – III' },
@@ -356,7 +356,7 @@ export default function BScCSCyberSecurityPage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     courses: [
                       { code: '24UGTA04', name: 'General Tamil – IV' },
                       { code: '24UGEN04', name: 'General English – IV' },
@@ -403,7 +403,7 @@ export default function BScCSCyberSecurityPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester V',
+                    title: 'Learning Period V',
                     courses: [
                       { code: '24UCYC05', name: 'Core V - Relational Database Management System' },
                       { code: '24UCYCP05', name: 'Core Practical V - Practical: RDBMS using ORACLE Lab' },
@@ -416,7 +416,7 @@ export default function BScCSCyberSecurityPage() {
                     ]
                   },
                   {
-                    title: 'Semester VI',
+                    title: 'Learning Period VI',
                     courses: [
                       { code: '24UCYC06', name: 'Core VI - Ethical Hacking and Cyber Security' },
                       { code: '24UCYCP06', name: 'Core Practical VI - Practical: Ethical Hacking Lab' },
@@ -644,9 +644,9 @@ export default function BScCSCyberSecurityPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'Expert Learning Facilitators', description: 'Learn from industry-certified professionals with CEH, CISSP, OSCP certifications and active research in cybersecurity.' },
+                  { title: 'Expert Senior Learners', description: 'Learn from industry-certified professionals with CEH, CISSP, OSCP certifications and active research in cybersecurity.' },
                   { title: 'Hands-on Security Training', description: 'Extensive practical sessions in dedicated security labs with industry-standard tools like Nmap, Wireshark, Metasploit, and Burp Suite.' },
-                  { title: 'Industry Certification Preparation', description: 'Curriculum aligned with CEH, CompTIA Security+, and CCNA Security certifications for enhanced employability.' },
+                  { title: 'Industry Certification Preparation', description: 'Learning Framework aligned with CEH, CompTIA Security+, and CCNA Security certifications for enhanced employability.' },
                   { title: 'Industry Internships & CTF Competitions', description: 'Mandatory internships with IT companies and participation in Capture The Flag (CTF) cyber security competitions.' },
                   { title: 'Strong Placement Support', description: 'Dedicated placement cell with connections to top IT companies, banks, and government agencies ensuring excellent career opportunities.' }
                 ].map((reason, idx) => (
@@ -672,11 +672,11 @@ export default function BScCSCyberSecurityPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">

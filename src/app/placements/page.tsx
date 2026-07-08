@@ -108,7 +108,7 @@ const highlightStats = [
     icon: TrendingUp,
     value: "92%+",
     label: "Placement Rate",
-    description: "Across all eligible students",
+    description: "Across all eligible learners",
   },
   {
     icon: Building2,
@@ -255,7 +255,7 @@ export default function PlacementsPage() {
           </h1>
           <p className="text-white/80 text-base md:text-lg max-w-3xl mx-auto mb-8">
             92%+ placement rate with 60+ top recruiters. Our dedicated Placement
-            Cell prepares students from Day 1 for successful careers in IT,
+            Cell prepares learners from Day 1 for successful careers in IT,
             banking, healthcare, education, and more.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -380,7 +380,7 @@ export default function PlacementsPage() {
           <div className="w-16 h-1 bg-brand-yellow mx-auto mb-4" />
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
             Our Placement Cell conducts year-round training programmes to make
-            students industry-ready from Day 1.
+            learners industry-ready from Day 1.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -496,7 +496,7 @@ export default function PlacementsPage() {
             Start Your Career Journey with JKKN
           </h2>
           <p className="text-white/80 text-sm md:text-base mb-8 max-w-xl mx-auto">
-            Join a college where 92%+ students get placed. Our Placement Cell
+            Join a college where 92%+ learners get placed. Our Placement Cell
             supports you from admission to your first job and beyond.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

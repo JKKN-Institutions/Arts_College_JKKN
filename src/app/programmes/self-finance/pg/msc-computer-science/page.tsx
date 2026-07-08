@@ -107,7 +107,7 @@ export default function MScComputerSciencePage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function MScComputerSciencePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '10:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
+              { icon: <Users className="w-7 h-7" />, stat: '10:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Industry opportunities' },
               { icon: <Award className="w-7 h-7" />, stat: '₹6L+', title: 'Average Package', desc: 'Competitive salary' },
             ].map((card, idx) => (
@@ -160,7 +160,7 @@ export default function MScComputerSciencePage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Aligned Curriculum with Latest Technologies', 'Hands-on AI/ML and Data Science Projects', 'Research-Oriented Dissertation Work', 'Expert Learning Facilitators from Industry'].map((item, idx) => (
+                {['Industry-Aligned Learning Framework with Latest Technologies', 'Hands-on AI/ML and Data Science Projects', 'Research-Oriented Dissertation Work', 'Expert Senior Learners from Industry'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -244,17 +244,17 @@ export default function MScComputerSciencePage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -284,7 +284,7 @@ export default function MScComputerSciencePage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: [
                       '25PCSC01: Core I - Analysis and Design of Algorithms',
                       '25PCSC02: Core II - Object Oriented Programming using C++',
@@ -296,7 +296,7 @@ export default function MScComputerSciencePage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: [
                       '25PCSC04: Core IV - Data Mining and Warehousing',
                       '25PCSC05: Core V - Advanced Java Programming',
@@ -334,7 +334,7 @@ export default function MScComputerSciencePage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: [
                       '24PCSC06: Core VI - Digital Image Processing',
                       '24PCSC07: Core VII - Cloud Computing',
@@ -348,7 +348,7 @@ export default function MScComputerSciencePage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: [
                       '24PCSC10: Core X - PHP Programming',
                       '24PCSC11: Core XI - Advanced DBMS',
@@ -514,7 +514,7 @@ export default function MScComputerSciencePage() {
                 { title: 'Cloud Computing Lab', description: 'Access to AWS, Azure, and Google Cloud platforms with virtualization infrastructure for cloud-native application development and deployment.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Cloud+Lab' },
                 { title: 'Networking & Security Lab', description: 'Cisco networking equipment, firewall configurations, penetration testing tools, and security monitoring systems for practical cybersecurity training.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Networking+Lab' },
                 { title: 'Software Development Lab', description: 'Modern IDEs, version control systems, agile project management tools, and collaboration platforms for full-stack development projects.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Software+Lab' },
-                { title: 'Digital Library & Research Center', description: 'Access to IEEE, ACM digital libraries, research databases, online courses, and dedicated spaces for collaborative research work.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Library' }
+                { title: 'Digital Learning Commons & Research Center', description: 'Access to IEEE, ACM digital libraries, research databases, online courses, and dedicated spaces for collaborative research work.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Library' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -568,7 +568,7 @@ export default function MScComputerSciencePage() {
               <div className="space-y-4">
                 {[
                   { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
-                  { title: 'Industry-Expert Learning Facilitators', description: 'Highly qualified faculty with doctoral degrees, research publications, and industry experience in emerging technologies.' },
+                  { title: 'Industry-Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and industry experience in emerging technologies.' },
                   { title: 'Advanced Laboratory Facilities', description: 'State-of-the-art labs with GPU clusters, cloud access, and cutting-edge development tools.' },
                   { title: 'Strong Industry Partnerships', description: 'Internship opportunities with top tech companies, startups, and research institutions.' },
                   { title: 'Research & Innovation Focus', description: 'Opportunities for research publications, project presentations, and collaborative research work.' }
@@ -595,11 +595,11 @@ export default function MScComputerSciencePage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">

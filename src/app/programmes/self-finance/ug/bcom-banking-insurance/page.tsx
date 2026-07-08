@@ -145,7 +145,7 @@ export default function BComBankingInsurancePage() {
     },
     {
       question: "What makes this B.Com Banking and Insurance programme unique?",
-      answer: "Our B.Com Banking and Insurance programme stands out due to its industry-aligned curriculum, strong bank and insurance company tie-ups for placements, integrated professional certification training (IRDA, NISM, NCFM), dedicated banking simulation lab, expert Learning Facilitators with industry experience, specialized coaching for bank competitive exams, and focus on fintech and digital banking trends. The programme also offers electives in emerging areas like mutual funds, derivatives, and micro-insurance."
+      answer: "Our B.Com Banking and Insurance programme stands out due to its industry-aligned curriculum, strong bank and insurance company tie-ups for placements, integrated professional certification training (IRDA, NISM, NCFM), dedicated banking simulation lab, expert Senior Learners with industry experience, specialized coaching for bank competitive exams, and focus on fintech and digital banking trends. The programme also offers electives in emerging areas like mutual funds, derivatives, and micro-insurance."
     },
     {
       question: "What is the average salary package for B.Com Banking and Insurance graduates?",
@@ -195,7 +195,7 @@ export default function BComBankingInsurancePage() {
                     <ArrowRight className="w-4 h-4" />
                   </a>
                   <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                    View Curriculum
+                    View Learning Framework
                   </a>
                 </div>
               </div>
@@ -248,7 +248,7 @@ export default function BComBankingInsurancePage() {
                 </p>
 
                 <div className="grid sm:grid-cols-2 gap-3">
-                  {['Industry-Aligned Curriculum with Banking Software', 'Expert Learning Facilitators with Industry Background', 'Industrial Visits & Mandatory Internships', 'IRDA, NISM & NCFM Certification Training'].map((item, idx) => (
+                  {['Industry-Aligned Learning Framework with Banking Software', 'Expert Senior Learners with Industry Background', 'Industrial Visits & Mandatory Internships', 'IRDA, NISM & NCFM Certification Training'].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-gray-700">
                       <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                       <span>{item}</span>
@@ -350,15 +350,15 @@ export default function BComBankingInsurancePage() {
           </div>
         </section>
 
-        {/* Course Curriculum */}
+        {/* Course Learning Framework */}
         <section className="py-16 bg-brand-cream" id="curriculum">
           <div className="container mx-auto px-4">
             <RevealSection className="text-center mb-12">
-              <SectionBadge text="Curriculum" />
+              <SectionBadge text="Learning Framework" />
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                 Course{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                  Curriculum
+                  Learning Framework
                 </span>
               </h2>
             </RevealSection>
@@ -389,7 +389,7 @@ export default function BComBankingInsurancePage() {
                   <RevealSection>
                     <GlassCard hover={false} className="overflow-hidden">
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h3 className="text-xl font-bold">Semester I</h3>
+                        <h3 className="text-xl font-bold">Learning Period I</h3>
                       </div>
                       <div className="p-6 space-y-4">
                         {[
@@ -417,7 +417,7 @@ export default function BComBankingInsurancePage() {
                   <RevealSection delay={100}>
                     <GlassCard hover={false} className="overflow-hidden">
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h3 className="text-xl font-bold">Semester II</h3>
+                        <h3 className="text-xl font-bold">Learning Period II</h3>
                       </div>
                       <div className="p-6 space-y-4">
                         {[
@@ -449,7 +449,7 @@ export default function BComBankingInsurancePage() {
                   <RevealSection>
                     <GlassCard hover={false} className="overflow-hidden">
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h3 className="text-xl font-bold">Semester III</h3>
+                        <h3 className="text-xl font-bold">Learning Period III</h3>
                       </div>
                       <div className="p-6 space-y-4">
                         {[
@@ -477,7 +477,7 @@ export default function BComBankingInsurancePage() {
                   <RevealSection delay={100}>
                     <GlassCard hover={false} className="overflow-hidden">
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h3 className="text-xl font-bold">Semester IV</h3>
+                        <h3 className="text-xl font-bold">Learning Period IV</h3>
                       </div>
                       <div className="p-6 space-y-4">
                         {[
@@ -509,7 +509,7 @@ export default function BComBankingInsurancePage() {
                   <RevealSection>
                     <GlassCard hover={false} className="overflow-hidden">
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h3 className="text-xl font-bold">Semester V</h3>
+                        <h3 className="text-xl font-bold">Learning Period V</h3>
                       </div>
                       <div className="p-6 space-y-4">
                         {[
@@ -535,7 +535,7 @@ export default function BComBankingInsurancePage() {
                   <RevealSection delay={100}>
                     <GlassCard hover={false} className="overflow-hidden">
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h3 className="text-xl font-bold">Semester VI</h3>
+                        <h3 className="text-xl font-bold">Learning Period VI</h3>
                       </div>
                       <div className="p-6 space-y-4">
                         {[
@@ -730,7 +730,7 @@ export default function BComBankingInsurancePage() {
                     gradient: "from-brand-green to-emerald-500"
                   },
                   {
-                    title: "Digital Library",
+                    title: "Digital Learning Commons",
                     subtitle: "Digital Finance Library",
                     desc: "Extensive collection of banking, insurance, and finance journals, e-books, databases, and research materials with online access.",
                     gradient: "from-emerald-500 to-brand-green"
@@ -849,7 +849,7 @@ export default function BComBankingInsurancePage() {
                     {[
                       {
                         icon: <Users className="w-6 h-6" />,
-                        title: "Expert Learning Facilitators",
+                        title: "Expert Senior Learners",
                         desc: "Learn from experienced faculty with industry background in banking, insurance, and financial services."
                       },
                       {

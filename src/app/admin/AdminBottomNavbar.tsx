@@ -53,9 +53,9 @@ function getAdminNavGroups(isStaff: boolean, isSuperAdmin: boolean): NavGroup[] 
       },
       {
         id: 'faculty',
-        label: 'Faculty',
+        label: 'Senior Learners',
         icon: Users,
-        items: [{ href: '/admin/faculty', label: 'Faculty', icon: Users }],
+        items: [{ href: '/admin/faculty', label: 'Senior Learners', icon: Users }],
       },
       {
         id: 'blog',

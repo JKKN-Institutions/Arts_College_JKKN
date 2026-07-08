@@ -107,7 +107,7 @@ export default function MScComputerSciencePage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function MScComputerSciencePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '12:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized mentorship' },
+              { icon: <Users className="w-7 h-7" />, stat: '12:1', title: 'Learners per Senior Learner', desc: 'Personalized mentorship' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '95%+', title: 'Placement Record', desc: 'Industry-ready graduates' },
               { icon: <Award className="w-7 h-7" />, stat: '₹8L', title: 'Average Package', desc: 'Data science roles' },
             ].map((card, idx) => (
@@ -160,7 +160,7 @@ export default function MScComputerSciencePage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Aligned Curriculum', 'Expert Learning Facilitators', 'GPU-Powered Lab Infrastructure', 'Industry Internship Programme'].map((item, idx) => (
+                {['Industry-Aligned Learning Framework', 'Expert Senior Learners', 'GPU-Powered Lab Infrastructure', 'Industry Internship Programme'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -244,21 +244,21 @@ export default function MScComputerSciencePage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive syllabus designed to build expertise in data analytics and machine learning
+                  Comprehensive learning pathway designed to build expertise in data analytics and machine learning
                 </p>
               </div>
             </RevealSection>
@@ -284,11 +284,11 @@ export default function MScComputerSciencePage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: ['Advanced Data Structures & Algorithms', 'Statistical Methods for Data Analytics', 'Python for Data Science', 'Database Management Systems', 'Practical: Python & Statistics Lab', 'Research Methodology']
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: ['Machine Learning Fundamentals', 'Big Data Technologies', 'Data Visualization & Business Intelligence', 'R Programming for Analytics', 'Practical: ML & Big Data Lab', 'Soft Skills & Professional Communication']
                   }
                 ].map((sem, idx) => (
@@ -317,11 +317,11 @@ export default function MScComputerSciencePage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: ['Deep Learning & Neural Networks', 'Natural Language Processing', 'Cloud Computing & Data Engineering', 'Time Series Analysis & Forecasting', 'Practical: Deep Learning Lab', 'Elective: Computer Vision / Reinforcement Learning']
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: ['Advanced Analytics & AI Applications', 'Data Ethics & Privacy', 'Elective: IoT Analytics / Healthcare Analytics', 'Industry Internship', 'Dissertation & Research Project', 'Comprehensive Viva Voce']
                   }
                 ].map((sem, idx) => (
@@ -479,8 +479,8 @@ export default function MScComputerSciencePage() {
                 { title: 'Cloud Computing Infrastructure', description: 'Access to AWS, Azure, and Google Cloud Platform with dedicated educational credits for Learners to deploy and scale analytics solutions.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Cloud+Lab' },
                 { title: 'Big Data Analytics Cluster', description: 'Dedicated Hadoop and Spark cluster for processing terabytes of data, enabling hands-on experience with distributed computing frameworks.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Big+Data+Cluster' },
                 { title: 'Enterprise Software Suite', description: 'Licensed access to Tableau, Power BI, SAS, SPSS, MATLAB, and industry-standard analytics tools for comprehensive learning experience.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Software+Suite' },
-                { title: 'Research & Innovation Center', description: 'Dedicated space for dissertation work, industry collaborations, and research projects with mentorship from industry experts and Learning Facilitators.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Research+Center' },
-                { title: 'Digital Library & E-Resources', description: 'Access to IEEE Xplore, ACM Digital Library, Springer, and Coursera/edX subscriptions for continuous learning beyond the curriculum.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Library' }
+                { title: 'Research & Innovation Center', description: 'Dedicated space for dissertation work, industry collaborations, and research projects with mentorship from industry experts and Senior Learners.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Research+Center' },
+                { title: 'Digital Learning Commons & E-Resources', description: 'Access to IEEE Xplore, ACM Digital Learning Commons, Springer, and Coursera/edX subscriptions for continuous learning beyond the curriculum.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Library' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -533,7 +533,7 @@ export default function MScComputerSciencePage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'Expert Learning Facilitators', description: 'Learn from PhD-qualified Learning Facilitators with industry experience at companies like Google, Microsoft, and Amazon.' },
+                  { title: 'Expert Senior Learners', description: 'Learn from PhD-qualified Senior Learners with industry experience at companies like Google, Microsoft, and Amazon.' },
                   { title: 'Hands-on Practical Learning', description: '60% practical curriculum with real-world datasets, Kaggle competitions, and capstone projects on live business problems.' },
                   { title: 'Industry Partnerships', description: 'Collaborations with TCS, Infosys, Wipro, and startups for guest lectures, internships, and placement opportunities.' },
                   { title: 'Mandatory Internship Programme', description: '6-month industry internship with leading companies to gain real-world experience before graduation.' },
@@ -561,11 +561,11 @@ export default function MScComputerSciencePage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">

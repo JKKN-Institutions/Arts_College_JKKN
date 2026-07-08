@@ -107,7 +107,7 @@ export default function BSCMicrobiologyPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function BSCMicrobiologyPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
+              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Award className="w-7 h-7" />, stat: '₹4L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
@@ -160,7 +160,7 @@ export default function BSCMicrobiologyPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Aligned Curriculum', 'State-of-the-Art Laboratories', 'Expert Learning Facilitators', 'Research & Internship Opportunities'].map((item, idx) => (
+                {['Industry-Aligned Learning Framework', 'State-of-the-Art Laboratories', 'Expert Senior Learners', 'Research & Internship Opportunities'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -244,21 +244,21 @@ export default function BSCMicrobiologyPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive syllabus designed to develop expertise in microbiological sciences
+                  Comprehensive learning pathway designed to develop expertise in microbiological sciences
                 </p>
               </div>
             </RevealSection>
@@ -284,7 +284,7 @@ export default function BSCMicrobiologyPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: [
                       { name: 'Fundamental of Microbiology and Microbial Diversity', code: '24UMBC01' },
                       { name: 'Fundamental of Microbiology Practicals', code: '24UMBCP01' },
@@ -293,7 +293,7 @@ export default function BSCMicrobiologyPage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: [
                       { name: 'Microbial Physiology and Metabolism', code: '24UMBC02' },
                       { name: 'Microbial Physiology and Metabolism Practicals', code: '24UMBCP02' },
@@ -331,7 +331,7 @@ export default function BSCMicrobiologyPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: [
                       { name: 'Molecular Biology and Microbial Genetics', code: '24UMBC03' },
                       { name: 'Molecular Biology and Microbial Genetics Practicals', code: '24UMBCP03' },
@@ -341,7 +341,7 @@ export default function BSCMicrobiologyPage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: [
                       { name: 'Immunology and Immunotechnology', code: '24UMBC04' },
                       { name: 'Immunology and Immunotechnology Practicals', code: '24UMBCP04' },
@@ -380,7 +380,7 @@ export default function BSCMicrobiologyPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester V',
+                    title: 'Learning Period V',
                     subjects: [
                       { name: 'Bacteriology and Mycology', code: '24UMBC05' },
                       { name: 'Virology and Parasitology', code: '24UMBC06' },
@@ -393,7 +393,7 @@ export default function BSCMicrobiologyPage() {
                     ]
                   },
                   {
-                    title: 'Semester VI',
+                    title: 'Learning Period VI',
                     subjects: [
                       { name: 'Environmental and Agriculture Microbiology', code: '24UMBC07' },
                       { name: 'Food, Dairy and Probiotic Microbiology', code: '24UMBC08' },
@@ -618,7 +618,7 @@ export default function BSCMicrobiologyPage() {
                 {[
                   { title: 'NAAC Accredited Institution', description: 'Quality assured education with recognized academic standards and continuous improvement.' },
                   { title: 'Modern Laboratory Infrastructure', description: 'Well-equipped labs with latest instruments for hands-on practical training in all domains.' },
-                  { title: 'Experienced Learning Facilitators', description: 'Qualified and research-active Learning Facilitators with industry and academic experience.' },
+                  { title: 'Experienced Senior Learners', description: 'Qualified and research-active Senior Learners with industry and academic experience.' },
                   { title: 'Industry Internships & Placements', description: 'Mandatory industrial training and strong placement support with top companies.' },
                   { title: 'Research-Oriented Education', description: 'Emphasis on independent research with guided projects and publication opportunities.' }
                 ].map((reason, idx) => (
@@ -644,11 +644,11 @@ export default function BSCMicrobiologyPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">

@@ -46,12 +46,12 @@ const blogSubLinks = [
 ];
 
 const peopleLinks = [
-  { href: '/admin/faculty', label: 'Faculty', icon: Users },
+  { href: '/admin/faculty', label: 'Senior Learners', icon: Users },
 ];
 
 const staffLinks = [
   { href: '/admin/events', label: 'Events', icon: CalendarDays },
-  { href: '/admin/faculty', label: 'Faculty', icon: Users },
+  { href: '/admin/faculty', label: 'Senior Learners', icon: Users },
 ];
 
 interface College { id: string; name: string }

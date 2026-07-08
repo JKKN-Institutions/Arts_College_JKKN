@@ -107,7 +107,7 @@ export default function MCAPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function MCAPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Aligned Curriculum', 'Research-Oriented Learning', 'Mandatory Industry Internship', 'AI/ML & Cloud Specialization'].map((item, idx) => (
+                {['Industry-Aligned Learning Framework', 'Research-Oriented Learning', 'Mandatory Industry Internship', 'AI/ML & Cloud Specialization'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -287,17 +287,17 @@ export default function MCAPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-white" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -327,7 +327,7 @@ export default function MCAPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: [
                       { code: '24PCAC01', name: 'Core I: Discrete Mathematics' },
                       { code: '24PCAC02', name: 'Core II: Linux and Shell Programming' },
@@ -345,7 +345,7 @@ export default function MCAPage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: [
                       { code: '24PCAC04', name: 'Core VI: Data Structures and Algorithms' },
                       { code: '24PCAC05', name: 'Core VII: Data Mining and Warehousing' },
@@ -389,7 +389,7 @@ export default function MCAPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: [
                       { code: '24PCAC06', name: 'Core X: Advanced Java Programming' },
                       { code: '24PCAC07', name: 'Core XI: Web Technology' },
@@ -405,7 +405,7 @@ export default function MCAPage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: [
                       { code: '24PCAC09', name: 'Core XV: Dot Net Programming' },
                       { code: '24PCAC10', name: 'Core XVI: Big Data Analytics' },
@@ -625,9 +625,9 @@ export default function MCAPage() {
               <div className="space-y-4">
                 {[
                   { title: 'NAAC  Accredited Excellence', description: 'Top-tier recognition ensuring quality education, superior infrastructure, and academic standards' },
-                  { title: 'Industry-Driven Curriculum', description: 'Curriculum co-designed with tech industry leaders covering AI, cloud, and emerging technologies' },
+                  { title: 'Industry-Driven Learning Framework', description: 'Learning Framework co-designed with tech industry leaders covering AI, cloud, and emerging technologies' },
                   { title: 'Premium Placements', description: '95% placement rate with average packages of 6+ LPA and top recruiters from Fortune 500 companies' },
-                  { title: 'Expert Learning Facilitators', description: 'PhD-qualified and industry-experienced Learning Facilitators with active research contributions' },
+                  { title: 'Expert Senior Learners', description: 'PhD-qualified and industry-experienced Senior Learners with active research contributions' },
                   { title: 'Global Industry Connections', description: 'MoUs with leading tech companies, international certifications, and global internship opportunities' }
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:shadow-lg hover:-translate-y-0.5 transition-all">
@@ -652,11 +652,11 @@ export default function MCAPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">

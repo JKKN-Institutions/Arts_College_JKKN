@@ -288,7 +288,7 @@ export function getAdmissionContent(
       [
         "Affiliated to Periyar University, Salem",
         "NAAC-accredited autonomous institution",
-        "Experienced faculty with PhDs and industry exposure",
+        "Experienced senior learners with PhDs and industry exposure",
         "Strong placement support and recruiter network",
       ],
     importantDates: override?.importantDates ?? DEFAULT_IMPORTANT_DATES,

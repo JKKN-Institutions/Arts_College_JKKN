@@ -156,7 +156,7 @@ export default function PhDZoologyPage() {
                 The Doctor of Philosophy (Ph.D) in Zoology is a prestigious doctoral research programme designed to develop advanced research scholars with deep expertise in animal sciences, biodiversity conservation, molecular biology, and ecological research. This UGC-recognized programme offers comprehensive research training spanning animal physiology, genetics, entomology, environmental biology, wildlife conservation, and contemporary areas like bioinformatics and toxicology.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our progressive education philosophy ensures that Research Scholars receive rigorous academic training combined with practical laboratory skills under the guidance of experienced Learning Facilitators. The programme integrates traditional zoological sciences with modern research methodologies including molecular techniques, computational biology, and advanced microscopy, preparing scholars for distinguished careers in academia, research institutions, pharmaceutical industries, and conservation organizations.
+                Our progressive education philosophy ensures that Research Scholars receive rigorous academic training combined with practical laboratory skills under the guidance of experienced Senior Learners. The programme integrates traditional zoological sciences with modern research methodologies including molecular techniques, computational biology, and advanced microscopy, preparing scholars for distinguished careers in academia, research institutions, pharmaceutical industries, and conservation organizations.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
@@ -330,7 +330,7 @@ export default function PhDZoologyPage() {
               <div className="flex justify-center">
                 {[
                   {
-                    title: 'Semester',
+                    title: 'Learning Period',
                     subjects: [
                       'Aquaculture & Fishery Biology',
                       'Research Methodology',
@@ -650,7 +650,7 @@ export default function PhDZoologyPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'Expert Research Supervisors', description: 'Guidance from experienced Learning Facilitators with active research profiles and international collaborations.' },
+                  { title: 'Expert Research Supervisors', description: 'Guidance from experienced Senior Learners with active research profiles and international collaborations.' },
                   { title: 'Modern Research Infrastructure', description: 'Access to advanced laboratories, sophisticated instruments, and cutting-edge research technology.' },
                   { title: 'Diverse Research Opportunities', description: 'Wide range of specializations from molecular biology to wildlife conservation with interdisciplinary scope.' },
                   { title: 'Publication Support', description: 'Strong track record of publications in Scopus, UGC-CARE journals with mentorship for scholarly writing.' },
@@ -678,7 +678,7 @@ export default function PhDZoologyPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Research{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
@@ -686,7 +686,7 @@ export default function PhDZoologyPage() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  Distinguished Learning Facilitators guiding doctoral research
+                  Distinguished Senior Learners guiding doctoral research
                 </p>
               </div>
             </RevealSection>

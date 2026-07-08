@@ -539,19 +539,19 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
       menus: [
         {
           href: '/library',
-          label: 'Library',
+          label: 'Learning Commons',
           icon: BookOpen,
           active: pathname === '/library'
         },
         {
           href: '/facilities/labs',
-          label: 'Labs',
+          label: 'Learning Labs',
           icon: FlaskConical,
           active: pathname === '/facilities/labs'
         },
         {
           href: '/facilities/auditorium',
-          label: 'Auditorium',
+          label: 'Learning Auditorium',
           icon: Mic2,
           active: pathname === '/facilities/auditorium'
         },
@@ -563,7 +563,7 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
         },
         {
           href: '/facilities/classroom',
-          label: 'Classroom',
+          label: 'Learning Studio',
           icon: School,
           active: pathname === '/facilities/classroom'
         },
@@ -673,7 +673,7 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
         { id: 'committee-iqac', label: 'Internal Quality Assurance Cell', icon: LayoutGrid, href: '/documents/committees/Internal-Quality-Assurance-Cell-2024.pdf', active: false },
         { id: 'committee-anti-ragging', label: 'Anti-Ragging Committee', icon: LayoutGrid, href: '/documents/committees/2-Anti%20Ragging%20Committee%202025.pdf', active: false },
         { id: 'committee-grievance', label: 'Grievance Redressal Cell', icon: LayoutGrid, href: '/documents/committees/3-Grievance-Redressal%20cell.pdf', active: false },
-        { id: 'committee-grievance-form', label: 'Student Grievance Form', icon: LayoutGrid, href: 'https://docs.google.com/forms/d/e/1FAIpQLSdsEgswc7mGZIlP7NdedDOJd84J9Gqm9PG2_9RPXa6QMvusBQ/viewform', active: false },
+        { id: 'committee-grievance-form', label: 'Learner Grievance Form', icon: LayoutGrid, href: 'https://docs.google.com/forms/d/e/1FAIpQLSdsEgswc7mGZIlP7NdedDOJd84J9Gqm9PG2_9RPXa6QMvusBQ/viewform', active: false },
         { id: 'committee-icc', label: 'Internal Committee', icon: LayoutGrid, href: '/documents/committees/4-ICC-Merged.pdf', active: false },
         { id: 'committee-iic', label: 'Institution Industry Cell', icon: LayoutGrid, href: '/documents/committees/27-institution industry cell IIC 2025.pdf', active: false },
         { id: 'committee-scst', label: 'SC-ST Committee', icon: LayoutGrid, href: '/documents/committees/5-SCST Cell.pdf', active: false }

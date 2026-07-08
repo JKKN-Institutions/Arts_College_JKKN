@@ -135,7 +135,7 @@ export default function BScAIDSPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -188,7 +188,7 @@ export default function BScAIDSPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Specialized AI/ML Curriculum', 'GPU Computing Labs', 'Industry Capstone Projects', 'Cloud Platform Training'].map((item, idx) => (
+                {['Specialized AI/ML Learning Framework', 'GPU Computing Labs', 'Industry Capstone Projects', 'Cloud Platform Training'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -272,21 +272,21 @@ export default function BScAIDSPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive AI & Data Science syllabus covering foundational to advanced topics
+                  Comprehensive AI & Data Science learning pathway covering foundational to advanced topics
                 </p>
               </div>
             </RevealSection>
@@ -312,7 +312,7 @@ export default function BScAIDSPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: [
                       'General Tamil - I (24UGTA01)',
                       'General English - I (24UGEN01)',
@@ -324,7 +324,7 @@ export default function BScAIDSPage() {
                     ]
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: [
                       'General Tamil – II (24UGTA02)',
                       'General English – II (24UGEN02)',
@@ -362,7 +362,7 @@ export default function BScAIDSPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: [
                       'General Tamil - III (24UGTA03)',
                       'General English - III (24UGEN03)',
@@ -376,7 +376,7 @@ export default function BScAIDSPage() {
                     ]
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: [
                       'General Tamil - IV (24UGTA04)',
                       'General English - IV (24UGEN04)',
@@ -415,7 +415,7 @@ export default function BScAIDSPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester V',
+                    title: 'Learning Period V',
                     subjects: [
                       'Core V - Database Design and Management (24UADC05)',
                       'Core Practical VI - Data Science Lab (24UADCP05)',
@@ -428,7 +428,7 @@ export default function BScAIDSPage() {
                     ]
                   },
                   {
-                    title: 'Semester VI',
+                    title: 'Learning Period VI',
                     subjects: [
                       'Core VI - Natural Language Processing (24UADC06)',
                       'Core Practical VI - Practical: Programming in UI Path Automation Lab (24UADCP06)',
@@ -592,7 +592,7 @@ export default function BScAIDSPage() {
                 { title: 'Cloud Computing Lab', description: 'Access to AWS, Microsoft Azure, and Google Cloud Platform with credits for Learners to deploy and manage AI/ML applications in production cloud environments.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Cloud+Lab' },
                 { title: 'Innovation & Research Hub', description: 'Collaborative workspace for AI research projects, hackathons, and industry-sponsored challenges with mentorship from experts and research publication opportunities.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Hub' },
                 { title: 'IoT & Robotics Lab', description: 'Hands-on laboratory with sensors, microcontrollers, drones, and robotic kits for developing AI-powered IoT solutions and autonomous systems with practical integration.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=IoT+Lab' },
-                { title: 'Digital Library & Resources', description: 'Access to IEEE, ACM digital libraries, online courses (Coursera, edX), research papers, AI/ML documentation, and subscription to leading technical journals.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Library' }
+                { title: 'Digital Learning Commons & Resources', description: 'Access to IEEE, ACM digital libraries, online courses (Coursera, edX), research papers, AI/ML documentation, and subscription to leading technical journals.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Library' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -645,7 +645,7 @@ export default function BScAIDSPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'Specialized AI/ML Curriculum', description: '70% focus on AI, machine learning, deep learning, and data science technologies with industry-aligned projects and practical implementations.' },
+                  { title: 'Specialized AI/ML Learning Framework', description: '70% focus on AI, machine learning, deep learning, and data science technologies with industry-aligned projects and practical implementations.' },
                   { title: 'GPU-Accelerated Computing Labs', description: 'High-performance NVIDIA RTX GPU workstations for training deep neural networks, computer vision, and generative AI model development.' },
                   { title: 'Cloud Platform Integration', description: 'Hands-on training and credits for AWS, Azure, and Google Cloud Platform with real-world cloud deployment and MLOps implementation.' },
                   { title: 'Industry Partnerships & Placements', description: 'Tie-ups with 100+ companies including tech giants, AI startups, and research labs ensuring excellent placement opportunities with premium packages.' },
@@ -673,11 +673,11 @@ export default function BScAIDSPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">

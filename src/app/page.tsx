@@ -240,13 +240,13 @@ export default function Home() {
               {/* Description Paragraphs - keyword-rich with local landmarks */}
               <div className="space-y-4 text-[14px] sm:text-[18px] lg:text-[20px] leading-[20px] sm:leading-[29.25px] lg:leading-[28px] text-black font-normal">
                 <p>
-                  Located on <strong>NH-544 (Salem–Coimbatore Highway)</strong> in Komarapalayam, just 22 km from Erode and 15 km from Tiruchengode, JKKN College of Arts and Science is one of the most accessible and well-connected arts and science colleges in Tamil Nadu. The 15-acre campus serves students from Erode, Salem, Namakkal, Tiruchengode, Coimbatore, and Tiruppur districts.
+                  Located on <strong>NH-544 (Salem–Coimbatore Highway)</strong> in Komarapalayam, just 22 km from Erode and 15 km from Tiruchengode, JKKN College of Arts and Science is one of the most accessible and well-connected arts and science colleges in Tamil Nadu. The 15-acre campus serves learners from Erode, Salem, Namakkal, Tiruchengode, Coimbatore, and Tiruppur districts.
                 </p>
                 <p>
-                  Established in 1994 as part of <strong>J.K.K. Nattraja Educational Institutions</strong> (est. 1952), JKKN blends 74+ years of academic heritage with a modern, industry-integrated curriculum. Our NAAC accreditation and UGC-recognized autonomous status empower us to design programmes aligned with current industry demands.
+                  Established in 1994 as part of <strong>J.K.K. Nattraja Educational Institutions</strong> (est. 1952), JKKN blends 74+ years of academic heritage with a modern, industry-integrated learning framework. Our NAAC accreditation and UGC-recognized autonomous status empower us to design programmes aligned with current industry demands.
                 </p>
                 <p>
-                  With 150+ PhD-qualified Learning Facilitators, AI and IoT research labs, partnerships with NASSCOM and CII, and a 95% placement track record, we prepare Learners not just for jobs — but for successful careers across India and abroad.
+                  With 150+ PhD-qualified Senior Learners, AI and IoT research labs, partnerships with NASSCOM and CII, and a 95% placement track record, we prepare Learners not just for jobs — but for successful careers across India and abroad.
                 </p>
               </div>
 
@@ -266,7 +266,7 @@ export default function Home() {
                     <Users className="h-5 w-5 text-[#0b6d41]" />
                   </div>
                   <div>
-                    <div className="font-bold text-black text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] mb-0.5">150+ Learning Facilitators</div>
+                    <div className="font-bold text-black text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] mb-0.5">150+ Senior Learners</div>
                     <div className="text-[12px] sm:text-[14px] leading-[16px] sm:leading-[20px] text-black/60">PhD &amp; Industry Experts</div>
                   </div>
                 </div>
@@ -339,19 +339,19 @@ export default function Home() {
                 <li>NAAC Accredited Institution</li>
                 <li>95% Placement Rate — Highest Package ₹18 LPA</li>
                 <li>27+ UG, PG &amp; PhD Programmes</li>
-                <li>AI/IoT Labs + NASSCOM &amp; CII Industry Partnerships</li>
+                <li>AI/IoT Learning Labs + NASSCOM &amp; CII Industry Partnerships</li>
                 <li>50+ Recruiters Including TCS, Infosys, Wipro</li>
               </ol>
             </div>
 
             <p>
-              With over seven decades of academic heritage, JKKN College of Arts and Science has earned its reputation as one of the <strong>best arts and science colleges in Tamil Nadu</strong>. Located on the Salem–Coimbatore Highway in Komarapalayam, the college combines the strength of a well-established institution with a forward-looking, industry-aligned curriculum that prepares students for real-world careers.
+              With over seven decades of academic heritage, JKKN College of Arts and Science has earned its reputation as one of the <strong>best arts and science colleges in Tamil Nadu</strong>. Located on the Salem–Coimbatore Highway in Komarapalayam, the college combines the strength of a well-established institution with a forward-looking, industry-aligned learning framework that prepares learners for real-world careers.
             </p>
             <p>
-              What sets JKKN apart from other arts and science colleges in Tamil Nadu is the focus on measurable outcomes. A <strong>95% placement rate</strong>, a highest package of <strong>₹18 LPA</strong>, and partnerships with 50+ recruiters — including TCS, Infosys, Wipro, and Foxconn — demonstrate that academic quality here translates directly into career success. Students from across Tamil Nadu, Kerala, and Karnataka choose JKKN for this proven track record.
+              What sets JKKN apart from other arts and science colleges in Tamil Nadu is the focus on measurable outcomes. A <strong>95% placement rate</strong>, a highest package of <strong>₹18 LPA</strong>, and partnerships with 50+ recruiters — including TCS, Infosys, Wipro, and Foxconn — demonstrate that academic quality here translates directly into career success. Learners from across Tamil Nadu, Kerala, and Karnataka choose JKKN for this proven track record.
             </p>
             <p>
-              The college offers 27+ UG, PG, and doctoral programmes across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research labs, NASSCOM and CII collaborations, and in-built internship pathways make JKKN a <strong>top arts college near Erode</strong> for students seeking future-ready education in Tamil Nadu.
+              The college offers 27+ UG, PG, and doctoral programmes across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research learning labs, NASSCOM and CII collaborations, and in-built internship pathways make JKKN a <strong>top arts college near Erode</strong> for learners seeking future-ready education in Tamil Nadu.
             </p>
 
             {/* Key Differentiators Grid */}
@@ -424,8 +424,8 @@ export default function Home() {
                   <td className="px-4 py-3 text-gray-500">8–15</td>
                 </tr>
                 <tr className="bg-gray-50 border-b border-gray-100">
-                  <td className="px-4 py-3 font-medium">AI/IoT Labs</td>
-                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">Yes — Dedicated Research Lab</td>
+                  <td className="px-4 py-3 font-medium">AI/IoT Learning Labs</td>
+                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">Yes — Dedicated Research Learning Lab</td>
                   <td className="px-4 py-3 text-gray-500">Rare</td>
                 </tr>
                 <tr className="bg-white border-b border-gray-100">
@@ -496,9 +496,9 @@ export default function Home() {
               <div className="bg-[#0b6d41] p-4 rounded-xl w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Cpu className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Modern Labs</h3>
+              <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Modern Learning Labs</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                State-of-the-art computer labs, language laboratories, IoT lab, and AI/ML research facilities
+                State-of-the-art digital learning labs, language learning labs, IoT learning lab, and AI/ML research facilities
               </p>
             </div>
 
@@ -513,14 +513,14 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Card 5: Expert Learning Facilitators */}
+            {/* Card 5: Expert Senior Learners */}
             <div className="bg-white border border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition">
               <div className="bg-[#0b6d41] p-4 rounded-xl w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Expert Learning Facilitators</h3>
+              <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Expert Senior Learners</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                150+ experienced Learning Facilitators with PhD qualifications and industry experience
+                150+ experienced Senior Learners with PhD qualifications and industry experience
               </p>
             </div>
 
@@ -540,7 +540,7 @@ export default function Home() {
               <div className="bg-[#0b6d41] p-4 rounded-xl w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Digital Library</h3>
+              <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Digital Learning Commons</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
                 5,000+ books, e-journals, NPTEL courses, and online learning resources accessible 24/7
               </p>
@@ -709,7 +709,7 @@ export default function Home() {
               <div className="text-[14px] font-semibold text-[#0b6d41] uppercase tracking-wide mb-3">PG Programmes</div>
               <div className="text-[28px] md:text-[32px] font-bold text-[#0b6d41] leading-tight mb-2">₹20,000 – ₹50,000</div>
               <div className="text-[13px] text-gray-500 mb-3">per year</div>
-              <p className="text-[13px] leading-[18px] text-gray-600">Postgraduate programmes with industry-aligned curriculum and placement support.</p>
+              <p className="text-[13px] leading-[18px] text-gray-600">Postgraduate programmes with industry-aligned learning framework and placement support.</p>
             </div>
 
             {/* Doctoral / PhD */}
@@ -761,7 +761,7 @@ export default function Home() {
               <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl w-20 h-20 flex items-center justify-center mx-auto mb-6">
                 <Cpu className="h-10 w-10 text-[#0b6d41]" />
               </div>
-              <h3 className="text-[18px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold tracking-[-0.45px] md:tracking-[-0.6px] text-[#0b6d41] mb-4">Advanced Computer Labs</h3>
+              <h3 className="text-[18px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold tracking-[-0.45px] md:tracking-[-0.6px] text-[#0b6d41] mb-4">Advanced Digital Learning Labs</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
                 500+ high-performance systems with latest software, high-speed internet, and 24/7 access for project work
               </p>
@@ -772,9 +772,9 @@ export default function Home() {
               <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl w-20 h-20 flex items-center justify-center mx-auto mb-6">
                 <Target className="h-10 w-10 text-[#0b6d41]" />
               </div>
-              <h3 className="text-[18px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold tracking-[-0.45px] md:tracking-[-0.6px] text-[#0b6d41] mb-4">Science Laboratories</h3>
+              <h3 className="text-[18px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold tracking-[-0.45px] md:tracking-[-0.6px] text-[#0b6d41] mb-4">Science Learning Labs</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Well-equipped Physics, Chemistry, Microbiology, and Biotechnology labs with modern instruments
+                Well-equipped Physics, Chemistry, Microbiology, and Biotechnology learning labs with modern instruments
               </p>
             </div>
 
@@ -783,9 +783,9 @@ export default function Home() {
               <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl w-20 h-20 flex items-center justify-center mx-auto mb-6">
                 <Code className="h-10 w-10 text-[#0b6d41]" />
               </div>
-              <h3 className="text-[18px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold tracking-[-0.45px] md:tracking-[-0.6px] text-[#0b6d41] mb-4">AI & IoT Research Lab</h3>
+              <h3 className="text-[18px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold tracking-[-0.45px] md:tracking-[-0.6px] text-[#0b6d41] mb-4">AI & IoT Research Learning Lab</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Dedicated lab for AI/ML, IoT projects with Raspberry Pi, Arduino, sensors, and cloud computing access
+                Dedicated learning lab for AI/ML, IoT projects with Raspberry Pi, Arduino, sensors, and cloud computing access
               </p>
             </div>
 
@@ -794,7 +794,7 @@ export default function Home() {
               <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl w-20 h-20 flex items-center justify-center mx-auto mb-6">
                 <BookOpen className="h-10 w-10 text-[#0b6d41]" />
               </div>
-              <h3 className="text-[18px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold tracking-[-0.45px] md:tracking-[-0.6px] text-[#0b6d41] mb-4">Digital Library</h3>
+              <h3 className="text-[18px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold tracking-[-0.45px] md:tracking-[-0.6px] text-[#0b6d41] mb-4">Digital Learning Commons</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
                 5,000+ books, e-journals, NPTEL courses, and online databases with comfortable reading space
               </p>
@@ -807,7 +807,7 @@ export default function Home() {
               </div>
               <h3 className="text-[18px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold tracking-[-0.45px] md:tracking-[-0.6px] text-[#0b6d41] mb-4">Smart Learning Studios</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Technology-enabled classrooms with projectors, smart boards, and video conferencing facilities
+                Technology-enabled learning studios with projectors, smart boards, and video conferencing facilities
               </p>
             </div>
 
@@ -841,7 +841,7 @@ export default function Home() {
               What Our <span className="text-[#0b6d41]">Learners Say</span>
             </h2>
             <p className="text-[18px] md:text-[20px] leading-[29.25px] md:leading-[28px] font-normal text-gray-600 max-w-3xl mx-auto">
-              Hear from our students about their transformative experiences at JKKN College
+              Hear from our learners about their transformative experiences at JKKN College
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -919,7 +919,7 @@ export default function Home() {
                 at <span className="text-[#0b6d41]">JKKN College</span>
               </h2>
               <p className="text-[18px] md:text-[20px] leading-[29.25px] md:leading-[28px] font-normal text-gray-600 mb-8">
-                Join thousands of successful students who have transformed their careers through quality education at JKKN College
+                Join thousands of successful learners who have transformed their careers through quality education at JKKN College
               </p>
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -973,7 +973,7 @@ export default function Home() {
                     "Limited Seats Available",
                     "NAAC Accredited Programs",
                     "100% Scholarships for Merits",
-                    "Industry-Integrated Curriculum",
+                    "Industry-Integrated Learning Framework",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 text-[16px] leading-[24px] text-gray-700">
                       <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#e6f4ed] flex items-center justify-center">

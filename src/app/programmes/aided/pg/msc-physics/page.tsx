@@ -107,7 +107,7 @@ export default function MScPhysicsPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function MScPhysicsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
+              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '85%+', title: 'Placement Record', desc: 'Research & industry roles' },
               { icon: <Award className="w-7 h-7" />, stat: '₹6L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
@@ -160,7 +160,7 @@ export default function MScPhysicsPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Advanced Laboratory Facilities', 'Research-Oriented Curriculum', 'Computational Physics Training', 'Industry & Research Collaborations'].map((item, idx) => (
+                {['Advanced Laboratory Facilities', 'Research-Oriented Learning Framework', 'Computational Physics Training', 'Industry & Research Collaborations'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -244,21 +244,21 @@ export default function MScPhysicsPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive syllabus designed to build expertise in theoretical and experimental physics
+                  Comprehensive learning pathway designed to build expertise in theoretical and experimental physics
                 </p>
               </div>
             </RevealSection>
@@ -284,11 +284,11 @@ export default function MScPhysicsPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester I',
+                    title: 'Learning Period I',
                     subjects: ['Quantum Mechanics I', 'Classical Mechanics', 'Electrodynamics', 'Statistical Mechanics', 'Mathematical Physics', 'Advanced Physics Laboratory I']
                   },
                   {
-                    title: 'Semester II',
+                    title: 'Learning Period II',
                     subjects: ['Quantum Mechanics II', 'Condensed Matter Physics', 'Nuclear Physics', 'Electronics & Instrumentation', 'Computational Physics', 'Advanced Physics Laboratory II']
                   }
                 ].map((sem, idx) => (
@@ -317,11 +317,11 @@ export default function MScPhysicsPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
-                    title: 'Semester III',
+                    title: 'Learning Period III',
                     subjects: ['Advanced Quantum Theory', 'Solid State Physics', 'Particle Physics', 'Elective I (Astrophysics / Nanoscience)', 'Research Methodology', 'Advanced Physics Laboratory III']
                   },
                   {
-                    title: 'Semester IV',
+                    title: 'Learning Period IV',
                     subjects: ['Elective II (Plasma Physics / Quantum Computing)', 'Elective III (Medical Physics / Photonics)', 'Dissertation / Research Project', 'Comprehensive Viva Voce', 'Seminar & Presentation', 'Project Work']
                   }
                 ].map((sem, idx) => (
@@ -479,8 +479,8 @@ export default function MScPhysicsPage() {
                 { title: 'Computational Physics Lab', description: 'High-performance computing facilities with MATLAB, Python, and specialized physics simulation software for numerical analysis and modeling.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Computational+Lab' },
                 { title: 'Spectroscopy & Optics Lab', description: 'Advanced spectroscopic equipment including UV-Vis, FTIR, and optical instruments for studying electromagnetic radiation and material properties.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Spectroscopy+Lab' },
                 { title: 'Electronics Workshop', description: 'Dedicated workshop with oscilloscopes, function generators, and circuit design tools for experimental electronics and instrumentation projects.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Electronics+Workshop' },
-                { title: 'Digital Library & E-Resources', description: 'Access to IEEE, Nature Physics, Physical Review journals, and online resources including research papers and e-books for continuous learning.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Library' },
-                { title: 'Research & Innovation Center', description: 'Dedicated research space for M.Sc dissertations with mentorship from experienced learning facilitators and access to collaborative research projects.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Center' }
+                { title: 'Digital Learning Commons & E-Resources', description: 'Access to IEEE, Nature Physics, Physical Review journals, and online resources including research papers and e-books for continuous learning.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Library' },
+                { title: 'Research & Innovation Center', description: 'Dedicated research space for M.Sc dissertations with mentorship from experienced senior learners and access to collaborative research projects.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Center' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -534,7 +534,7 @@ export default function MScPhysicsPage() {
               <div className="space-y-4">
                 {[
                   { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation and research output.' },
-                  { title: 'Experienced Learning Facilitators', description: 'Learn from PhD-qualified faculty with research publications in international journals and extensive laboratory experience.' },
+                  { title: 'Experienced Senior Learners', description: 'Learn from PhD-qualified faculty with research publications in international journals and extensive laboratory experience.' },
                   { title: 'Advanced Laboratory Infrastructure', description: 'Access to state-of-the-art equipment and instruments for experimental physics and computational research.' },
                   { title: 'Research Opportunities', description: 'Engage in cutting-edge research projects with opportunities for paper publications and conference presentations.' },
                   { title: 'Strong Industry Connections', description: 'Collaborations with ISRO, DRDO, BARC, and leading research institutions for internships and placements.' }
@@ -561,11 +561,11 @@ export default function MScPhysicsPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -624,13 +624,13 @@ export default function MScPhysicsPage() {
 
             <div className="space-y-4">
               {[
-                { question: 'What is the duration of the M.Sc Physics programme?', answer: 'The M.Sc Physics programme is a 2-year full-time postgraduate degree comprising four semesters. Each academic year consists of two semesters with a combination of theoretical coursework, laboratory practicals, and research project work. The fourth semester includes a mandatory dissertation component where Learners conduct original research under the guidance of learning facilitators.' },
+                { question: 'What is the duration of the M.Sc Physics programme?', answer: 'The M.Sc Physics programme is a 2-year full-time postgraduate degree comprising four semesters. Each academic year consists of two semesters with a combination of theoretical coursework, laboratory practicals, and research project work. The fourth semester includes a mandatory dissertation component where Learners conduct original research under the guidance of senior learners.' },
                 { question: 'What are the career opportunities after M.Sc Physics?', answer: 'M.Sc Physics graduates have diverse career opportunities including Research Scientist positions at ISRO, DRDO, BARC, and TIFR; University Lecturer/Professor roles after NET/SLET qualification; Medical Physicist in hospitals; Nuclear Scientist in atomic energy sector; Data Scientist in IT companies; Quantum Computing Researcher; Space Research Engineer; and Electronics Engineer in semiconductor industries.' },
                 { question: 'What is the eligibility criteria for M.Sc Physics admission?', answer: 'Candidates must have completed B.Sc Physics or Physical Sciences from a recognized university with a minimum aggregate of 50% marks (45% for reserved categories). Mathematics or Statistics as an ancillary subject is preferred. Admission is based on entrance examination performance or merit in undergraduate studies, followed by a personal interview if required.' },
                 { question: 'What research facilities are available for M.Sc Physics Learners?', answer: 'The department offers advanced research facilities including a well-equipped Physics laboratory with modern experimental setups, Computational Physics lab with high-performance computing, Spectroscopy and Optics lab with UV-Vis and FTIR instruments, Electronics workshop, and access to digital libraries with IEEE and Physical Review journal subscriptions. Learners also receive guidance for research project work and paper publications.' },
                 { question: 'Can I pursue higher studies after M.Sc Physics?', answer: 'Yes, M.Sc Physics opens pathways to Ph.D. programmes in Physics, Applied Physics, Astrophysics, Material Science, or related fields at universities and research institutions worldwide. Graduates can also pursue research positions at premier institutes like IISc, IITs, TIFR, or international universities. Additionally, qualified candidates can pursue teaching careers in higher education after clearing NET/SLET examinations.' },
                 { question: 'Does the college provide placement assistance for Physics graduates?', answer: 'Yes, our dedicated Placement Cell actively supports M.Sc Physics Learners through campus recruitment drives, industry interaction sessions, and research internship opportunities. We have partnerships with organizations like ISRO, DRDO, IT companies, and academic institutions. The placement rate for M.Sc Physics graduates has consistently been above 85% with an average package of ₹6 lakhs per annum for research and data science roles.' },
-                { question: 'What makes this M.Sc Physics programme unique?', answer: 'Our M.Sc Physics programme stands out due to its research-oriented curriculum, advanced laboratory infrastructure, experienced PhD-qualified learning facilitators, strong emphasis on computational physics and data analysis, collaborations with premier research institutions, opportunities for paper publications, and comprehensive training in both theoretical and experimental physics preparing Learners for careers in research, academia, and industry.' },
+                { question: 'What makes this M.Sc Physics programme unique?', answer: 'Our M.Sc Physics programme stands out due to its research-oriented curriculum, advanced laboratory infrastructure, experienced PhD-qualified senior learners, strong emphasis on computational physics and data analysis, collaborations with premier research institutions, opportunities for paper publications, and comprehensive training in both theoretical and experimental physics preparing Learners for careers in research, academia, and industry.' },
                 { question: 'Are computational physics skills taught in the programme?', answer: 'Yes, computational physics is an integral part of the curriculum. Learners receive comprehensive training in numerical methods, simulation techniques, and programming using Python, MATLAB, and specialized physics software. The programme covers finite element methods, Monte Carlo simulations, molecular dynamics, and data analysis techniques. A dedicated Computational Physics lab with high-performance computing facilities supports this training.' }
               ].map((faq, idx) => (
                 <RevealSection key={idx} delay={idx * 60}>

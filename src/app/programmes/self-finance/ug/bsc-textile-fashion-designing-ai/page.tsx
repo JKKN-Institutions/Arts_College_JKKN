@@ -168,7 +168,7 @@ export default function BSCTextileFashionDesigningAIPage() {
                     Register Interest
                   </a>
                   <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/70 hover:bg-brand-green text-gray-900 hover:text-white border-2 border-white/80 hover:border-brand-green px-7 py-3 rounded-lg font-semibold backdrop-blur-sm transition-all">
-                    View Curriculum
+                    View Learning Framework
                   </a>
                 </div>
                 <p className="text-xs text-gray-600 mt-4 italic">
@@ -307,17 +307,17 @@ export default function BSCTextileFashionDesigningAIPage() {
           </div>
         </section>
 
-        {/* Programme Curriculum */}
+        {/* Programme Learning Framework */}
         <section className="py-16 bg-brand-cream" id="curriculum">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <RevealSection>
                 <div className="text-center mb-12">
-                  <SectionBadge text="Curriculum" />
+                  <SectionBadge text="Learning Framework" />
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                     Programme{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                      Curriculum
+                      Learning Framework
                     </span>
                   </h2>
                   <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -347,7 +347,7 @@ export default function BSCTextileFashionDesigningAIPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
                     {
-                      title: 'Semester I',
+                      title: 'Learning Period I',
                       subjects: [
                         { name: 'General Tamil - I', code: '24UGTA01' },
                         { name: 'General English - I', code: '24UGEN01' },
@@ -359,7 +359,7 @@ export default function BSCTextileFashionDesigningAIPage() {
                       ]
                     },
                     {
-                      title: 'Semester II',
+                      title: 'Learning Period II',
                       subjects: [
                         { name: 'General Tamil - II', code: '24UGTA02' },
                         { name: 'General English - II', code: '24UGEN02' },
@@ -400,7 +400,7 @@ export default function BSCTextileFashionDesigningAIPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
                     {
-                      title: 'Semester III',
+                      title: 'Learning Period III',
                       subjects: [
                         { name: 'General Tamil - III', code: '24UGTA03' },
                         { name: 'General English - III', code: '24UGEN03' },
@@ -413,7 +413,7 @@ export default function BSCTextileFashionDesigningAIPage() {
                       ]
                     },
                     {
-                      title: 'Semester IV',
+                      title: 'Learning Period IV',
                       subjects: [
                         { name: 'General Tamil - IV', code: '24UGTA04' },
                         { name: 'General English - IV', code: '24UGEN04' },
@@ -454,7 +454,7 @@ export default function BSCTextileFashionDesigningAIPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
                     {
-                      title: 'Semester V',
+                      title: 'Learning Period V',
                       subjects: [
                         { name: 'Core - IX, Apparel Costing and Merchandising', code: '24UTFC05' },
                         { name: 'Core - X, Knitting and Non-woven', code: '24UTFC06' },
@@ -467,7 +467,7 @@ export default function BSCTextileFashionDesigningAIPage() {
                       ]
                     },
                     {
-                      title: 'Semester VI',
+                      title: 'Learning Period VI',
                       subjects: [
                         { name: 'Core - XIII, Textile Testing and Quality Control', code: '24UTFC07' },
                         { name: 'Core - XIV, CAD in Garment Designing Practical', code: '24UTFCP07' },
@@ -685,8 +685,8 @@ export default function BSCTextileFashionDesigningAIPage() {
 
                 <div className="space-y-4">
                   {[
-                    { icon: <Users className="w-6 h-6" />, title: 'Industry-Experienced Learning Facilitators', description: 'Learn from faculty with extensive experience in fashion design, textile technology, and industry practices' },
-                    { icon: <Brain className="w-6 h-6" />, title: 'AI-First Curriculum', description: 'One of the first B.Sc. T&FD programmes in Tamil Nadu to integrate generative AI, computer vision, and trend analytics across semesters' },
+                    { icon: <Users className="w-6 h-6" />, title: 'Industry-Experienced Senior Learners', description: 'Learn from faculty with extensive experience in fashion design, textile technology, and industry practices' },
+                    { icon: <Brain className="w-6 h-6" />, title: 'AI-First Learning Framework', description: 'One of the first B.Sc. T&FD programmes in Tamil Nadu to integrate generative AI, computer vision, and trend analytics across semesters' },
                     { icon: <Building2 className="w-6 h-6" />, title: 'Strong Industry Partnerships', description: 'Collaborations with fashion brands, textile manufacturers, export houses, and fashion-tech startups for internships and placements' },
                     { icon: <Sparkles className="w-6 h-6" />, title: 'Annual Fashion Shows', description: 'Showcase your creativity through AI-curated college fashion shows, exhibitions, and national design competitions' },
                     { icon: <Globe className="w-6 h-6" />, title: 'Global Design Exposure', description: 'Access to international fashion trends, guest lectures from industry experts, and exposure to global design and fashion-tech practices' },
@@ -715,11 +715,11 @@ export default function BSCTextileFashionDesigningAIPage() {
             <div className="max-w-6xl mx-auto">
               <RevealSection>
                 <div className="text-center mb-12">
-                  <SectionBadge text="Faculty" />
+                  <SectionBadge text="Senior Learners" />
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                    Our Learning{' '}
+                    Our Senior{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                      Facilitators
+                      Learners
                     </span>
                   </h2>
                   <p className="text-lg text-gray-600 max-w-2xl mx-auto">

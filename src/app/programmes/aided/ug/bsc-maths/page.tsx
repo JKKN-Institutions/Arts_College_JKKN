@@ -107,7 +107,7 @@ export default function BScMathematicsPage() {
                   <ArrowRight className="w-4 h-4" />
                 </a>
                 <a href="#curriculum" className="inline-flex items-center gap-2 bg-white/90 hover:bg-white text-gray-900 border-2 border-white px-7 py-3 rounded-lg font-semibold backdrop-blur-sm shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-                  View Curriculum
+                  View Learning Framework
                 </a>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function BScMathematicsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learner-Facilitator Ratio', desc: 'Personalized attention' },
+              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Award className="w-7 h-7" />, stat: '₹3L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
@@ -244,21 +244,21 @@ export default function BScMathematicsPage() {
         </div>
       </section>
 
-      {/* Programme Curriculum */}
+      {/* Programme Learning Framework */}
       <section className="py-16 bg-brand-cream" id="curriculum">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Curriculum" />
+                <SectionBadge text="Learning Framework" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
                   Programme{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Curriculum
+                    Learning Framework
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Comprehensive syllabus covering fundamental to advanced topics in mathematics
+                  Comprehensive learning pathway covering fundamental to advanced topics in mathematics
                 </p>
               </div>
             </RevealSection>
@@ -317,7 +317,7 @@ export default function BScMathematicsPage() {
                   <RevealSection key={idx} delay={idx * 100}>
                     <GlassCard className="overflow-hidden" hover={false}>
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h4 className="text-xl font-bold">Semester {sem.semester}</h4>
+                        <h4 className="text-xl font-bold">Learning Period {sem.semester}</h4>
                       </div>
                       <div className="p-6">
                         <div className="space-y-4">
@@ -372,7 +372,7 @@ export default function BScMathematicsPage() {
                   <RevealSection key={idx} delay={idx * 100}>
                     <GlassCard className="overflow-hidden" hover={false}>
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h4 className="text-xl font-bold">Semester {sem.semester}</h4>
+                        <h4 className="text-xl font-bold">Learning Period {sem.semester}</h4>
                       </div>
                       <div className="p-6">
                         <div className="space-y-4">
@@ -423,7 +423,7 @@ export default function BScMathematicsPage() {
                   <RevealSection key={idx} delay={idx * 100}>
                     <GlassCard className="overflow-hidden" hover={false}>
                       <div className="bg-gradient-to-r from-brand-green to-emerald-500 text-white px-6 py-4">
-                        <h4 className="text-xl font-bold">Semester {sem.semester}</h4>
+                        <h4 className="text-xl font-bold">Learning Period {sem.semester}</h4>
                       </div>
                       <div className="p-6">
                         <div className="space-y-4">
@@ -574,7 +574,7 @@ export default function BScMathematicsPage() {
                 // { title: 'Computational Lab', description: 'Advanced computer lab with MATLAB, Mathematica, R, Python, and LaTeX software for numerical analysis and mathematical computing.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Computer+Lab' },
                 // { title: 'Smart Learning Studios', description: 'Technology-enabled learning spaces with interactive displays, graphing calculators, and multimedia tools for enhanced understanding.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Smart+Classroom' },
                 { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for mathematical discussions, guest lectures, and research presentations.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Seminar+Hall' },
-                // { title: 'Research Center', description: 'Dedicated research facility for Learners and Learning Facilitators engaged in mathematical research with access to global research networks.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Research+Center' },
+                // { title: 'Research Center', description: 'Dedicated research facility for Learners and Senior Learners engaged in mathematical research with access to global research networks.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Research+Center' },
                 // { title: 'Tutorial Rooms', description: 'Dedicated spaces for small group discussions, problem-solving sessions, and peer-to-peer learning with whiteboard facilities.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Tutorial+Room' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
@@ -629,7 +629,7 @@ export default function BScMathematicsPage() {
               <div className="space-y-4">
                 {[
                   { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
-                  { title: 'Expert Learning Facilitators', description: 'Highly qualified faculty with doctoral degrees, research publications, and industry experience in mathematics.' },
+                  { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and industry experience in mathematics.' },
                   { title: 'Strong Placement Support', description: 'Dedicated placement cell with tie-ups with leading companies for internships and career opportunities.' },
                   { title: 'Industry-Academia Collaboration', description: 'Regular workshops, seminars, and guest lectures by industry experts and renowned mathematicians.' },
                   { title: 'Modern Infrastructure', description: 'Well-equipped computational labs, mathematics library, and research facilities with latest software and resources.' }
@@ -656,11 +656,11 @@ export default function BScMathematicsPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Faculty" />
+                <SectionBadge text="Senior Learners" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Learning{' '}
+                  Our Senior{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilitators
+                    Learners
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">

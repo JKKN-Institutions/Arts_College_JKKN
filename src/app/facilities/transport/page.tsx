@@ -30,7 +30,7 @@ export default function TransportPage() {
     {
       number: 3,
       title: 'Affordable Fees',
-      description: 'The transport facility at JKKN Educational Institutions is available to all students and faculty members at an affordable fee. The fee is calculated based on the distance of the student\'s residence from the campus, ensuring that the transportation cost is reasonable for everyone.',
+      description: 'The transport facility at JKKN Educational Institutions is available to all learners and senior learners at an affordable fee. The fee is calculated based on the distance of the learner\'s residence from the campus, ensuring that the transportation cost is reasonable for everyone.',
     },
     {
       number: 4,
@@ -40,12 +40,12 @@ export default function TransportPage() {
     {
       number: 5,
       title: 'Timely Service',
-      description: 'The transport facility at JKKN Educational Institutions operates on a strict schedule, ensuring that the buses arrive and depart from the campus on time. This allows the students and faculty members to plan their day accordingly, without worrying about delays or missed buses.',
+      description: 'The transport facility at JKKN Educational Institutions operates on a strict schedule, ensuring that the buses arrive and depart from the campus on time. This allows the learners and senior learners to plan their day accordingly, without worrying about delays or missed buses.',
     },
     {
       number: 6,
       title: 'Accessibility',
-      description: 'The transport facility at JKKN Educational Institutions is accessible to all students, regardless of their physical abilities. The buses are equipped with wheelchair ramps and other accessibility features, making it easy for students with disabilities to use the service.',
+      description: 'The transport facility at JKKN Educational Institutions is accessible to all learners, regardless of their physical abilities. The buses are equipped with wheelchair ramps and other accessibility features, making it easy for learners with disabilities to use the service.',
     },
   ];
 
@@ -96,7 +96,7 @@ export default function TransportPage() {
 
         {/* Introductory Paragraph */}
         <p className="text-base md:text-lg text-gray-700 leading-relaxed text-justify mb-8 md:mb-12">
-          Transportation is an essential aspect of any educational institution. It provides students and faculty members with a convenient way to reach the campus and enhances the overall educational experience. JKKN Educational Institutions understands the importance of providing a safe and reliable means of travel for students and staff to and from the campus facilities. Here are some of the best features of the transport facility at JKKN Educational Institutions.
+          Transportation is an essential aspect of any educational institution. It provides learners and senior learners with a convenient way to reach the campus and enhances the overall educational experience. JKKN Educational Institutions understands the importance of providing a safe and reliable means of travel for learners and team members to and from the campus facilities. Here are some of the best features of the transport facility at JKKN Educational Institutions.
         </p>
 
         {/* Feature Cards */}
@@ -125,7 +125,7 @@ export default function TransportPage() {
 
         {/* Closing Paragraph */}
         <p className="text-base md:text-lg text-gray-700 leading-relaxed text-justify mt-8 md:mt-12">
-          The transport facility at JKKN Educational Institutions is well-equipped to provide safe, reliable, and affordable transportation to all its students and faculty members. The institution has taken significant steps to ensure that the bus transport facility is accessible, secure, and comfortable for everyone.
+          The transport facility at JKKN Educational Institutions is well-equipped to provide safe, reliable, and affordable transportation to all its learners and senior learners. The institution has taken significant steps to ensure that the bus transport facility is accessible, secure, and comfortable for everyone.
         </p>
       </div>
     </div>
