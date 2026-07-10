@@ -54,6 +54,8 @@ export const metadata: Metadata = {
     "B.Com college near Erode",
     "college near Erode NH-544",
     "affordable college near Erode",
+    "arts and science colleges in erode district",
+    "top arts and science colleges in erode district",
   ],
 
   robots: "index, follow",
@@ -129,6 +131,10 @@ export default function ErodePage() {
       q: "Why should Erode students choose JKKN CAS over colleges in Erode city?",
       a: "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 80%+ placements with national recruiters — advantages not uniformly available at Erode city colleges. The 22 km NH-544 route makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
     },
+    {
+      q: "How does JKKN CAS compare with other arts and science colleges in Erode district?",
+      a: "When students shortlist arts and science colleges across Erode district — from Bhavani and Gobichettipalayam to Perundurai — JKKN CAS stands out for NAAC accreditation, aided low-fee programmes, 34 courses, hostel, and 80%+ placements. The campus sits at Komarapalayam, just across the Cauvery from the Erode district border.",
+    },
   ];
 
   const schemaFaqs = [
@@ -181,6 +187,11 @@ export default function ErodePage() {
       question: "Why should Erode students choose JKKN CAS over colleges in Erode city?",
       answer:
         "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 80%+ placements with national recruiters — advantages not uniformly available at Erode city colleges. The 22 km NH-544 route makes daily commute viable.",
+    },
+    {
+      question: "How does JKKN CAS compare with other arts and science colleges in Erode district?",
+      answer:
+        "When students shortlist arts and science colleges across Erode district — from Bhavani and Gobichettipalayam to Perundurai — JKKN CAS stands out for NAAC accreditation, aided low-fee programmes, 34 courses, hostel, and 80%+ placements.",
     },
   ];
 
@@ -1254,8 +1265,16 @@ export default function ErodePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {[
-              { Icon: Home, name: "Namakkal", km: "5-10 km", href: "/namakkal" },
+              { Icon: Home, name: "Komarapalayam", km: "Campus town", href: "/komarapalayam" },
+              { Icon: MapPin, name: "Bhavani", km: "~4-5 km", href: "/bhavani" },
+              { Icon: MapPin, name: "Pallipalayam", km: "~14 km", href: "/pallipalayam" },
+              { Icon: MapPin, name: "Sankagiri", km: "~15-20 km", href: "/sankagiri" },
+              { Icon: MapPin, name: "Tiruchengode", km: "~20 km", href: "/tiruchengode" },
+              { Icon: MapPin, name: "Perundurai", km: "~27-30 km", href: "/perundurai" },
+              { Icon: MapPin, name: "Gobichettipalayam", km: "~35-40 km", href: "/gobichettipalayam" },
               { Icon: Bus, name: "Salem", km: "40-50 km", href: "/salem" },
+              { Icon: MapPin, name: "Namakkal", km: "~55-60 km", href: "/namakkal" },
+              { Icon: MapPin, name: "Rasipuram", km: "~60 km", href: "/rasipuram" },
               { Icon: Target, name: "Tiruppur", km: "80-90 km", href: "/tiruppur" },
               { Icon: Star, name: "Coimbatore", km: "100-110 km", href: "/coimbatore" },
             ].map((city) => (
