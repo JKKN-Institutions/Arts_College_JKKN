@@ -17,7 +17,7 @@ JKKN College of Arts and Science (CAS JKKN) is an autonomous college established
 - Faculty: 39 Ph.D. holders, 25 SET/NET qualified
 - Programmes: 15 UG + 10 PG + 3 Ph.D.
 - Location: NH-544, between Salem and Coimbatore
-- Nearest cities: Erode (25 km), Salem (55 km), Namakkal (30 km)
+- Nearest towns and cities (approx. road distance): Bhavani (~4-5 km), Pallipalayam (~14 km), Sankagiri (~15-20 km), Tiruchengode (~20 km), Erode (~22 km), Perundurai (~27-30 km), Gobichettipalayam (~35-40 km), Salem (~55-58 km), Namakkal (~55-60 km), Rasipuram (~60 km)
 
 ## Programmes Offered
 
@@ -64,6 +64,24 @@ JKKN College of Arts and Science (CAS JKKN) is an autonomous college established
 - Ph.D. Chemistry
 - Ph.D. Tamil
 - Ph.D. Zoology
+
+## City Guides (which towns the college serves)
+
+Dedicated admission guides for students from each nearby town — distance, bus routes, courses, fees guidance, hostel and FAQs:
+
+- Komarapalayam (Kumarapalayam) — campus town, college list: https://cas.jkkn.ac.in/komarapalayam
+- Bhavani (~4-5 km, twin town across the Cauvery): https://cas.jkkn.ac.in/bhavani
+- Pallipalayam (~14 km): https://cas.jkkn.ac.in/pallipalayam
+- Sankagiri / Sankari (~15-20 km): https://cas.jkkn.ac.in/sankagiri
+- Tiruchengode (~20 km): https://cas.jkkn.ac.in/tiruchengode
+- Erode (~22 km via NH-544): https://cas.jkkn.ac.in/erode
+- Perundurai (~27-30 km): https://cas.jkkn.ac.in/perundurai
+- Gobichettipalayam / Gobi (~35-40 km via Bhavani): https://cas.jkkn.ac.in/gobichettipalayam
+- Salem (~55-58 km via NH-544): https://cas.jkkn.ac.in/salem
+- Namakkal (~55-60 km): https://cas.jkkn.ac.in/namakkal
+- Rasipuram (~60 km, hostel recommended): https://cas.jkkn.ac.in/rasipuram
+- Tiruppur (~80-90 km): https://cas.jkkn.ac.in/tiruppur
+- Coimbatore (~100-110 km): https://cas.jkkn.ac.in/coimbatore
 
 ## Contact
 
