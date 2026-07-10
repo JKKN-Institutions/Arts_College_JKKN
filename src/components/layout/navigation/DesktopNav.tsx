@@ -1655,6 +1655,15 @@ export default function DesktopNav(props: DesktopNavProps) {
                 Events
               </Link>
 
+              <Link
+                href="/faculty"
+                role="menuitem"
+                tabIndex={0}
+                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+              >
+                Senior Learners
+              </Link>
+
               {/* NIRF Nested Submenu */}
               <div
                 className="relative"

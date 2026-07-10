@@ -1281,6 +1281,14 @@ export default function MobileNav(props: MobileNavProps) {
                       Events
                     </Link>
 
+                    <Link
+                      href="/faculty"
+                      onClick={toggleMobileMenu}
+                      className="block py-2 px-8 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                    >
+                      Senior Learners
+                    </Link>
+
                     {/* NIRF nested accordion */}
                     <div className="ml-4">
                       <button
