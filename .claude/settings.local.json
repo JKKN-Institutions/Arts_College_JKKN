@@ -131,7 +131,12 @@
       "Bash(del \".next\\\\dev\\\\lock\")",
       "mcp__Engineering_College_Supabase_Project__apply_migration",
       "mcp__next-devtools__init",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "mcp__seo-search-console__list_verified_sites",
+      "mcp__seo-search-console__search_analytics",
+      "mcp__analytics-mcp__get_account_summaries",
+      "mcp__serper__google_search_autocomplete",
+      "mcp__analytics-mcp__run_report"
     ],
     "deny": [],
     "ask": [],
