@@ -235,6 +235,62 @@ export default function MobileNav(props: MobileNavProps) {
                       >
                         Why Coimbatore Students?
                       </Link>
+                      <Link
+                        href="/komarapalayam"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                      >
+                        Why Komarapalayam Students?
+                      </Link>
+                      <Link
+                        href="/tiruchengode"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                      >
+                        Why Tiruchengode Students?
+                      </Link>
+                      <Link
+                        href="/bhavani"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                      >
+                        Why Bhavani Students?
+                      </Link>
+                      <Link
+                        href="/sankagiri"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                      >
+                        Why Sankagiri Students?
+                      </Link>
+                      <Link
+                        href="/pallipalayam"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                      >
+                        Why Pallipalayam Students?
+                      </Link>
+                      <Link
+                        href="/rasipuram"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                      >
+                        Why Rasipuram Students?
+                      </Link>
+                      <Link
+                        href="/perundurai"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                      >
+                        Why Perundurai Students?
+                      </Link>
+                      <Link
+                        href="/gobichettipalayam"
+                        onClick={toggleMobileMenu}
+                        className="block py-2 px-4 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                      >
+                        Why Gobichettipalayam Students?
+                      </Link>
                     </div>
                   </div>
                 )}

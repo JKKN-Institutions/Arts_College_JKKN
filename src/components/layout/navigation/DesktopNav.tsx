@@ -239,7 +239,7 @@ export default function DesktopNav(props: DesktopNavProps) {
                     Why Students Choose JKKN?
                     <ChevronRight className="w-4 h-4 flex-shrink-0" />
                   </button>
-                  <div className="absolute left-full top-0 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 hidden group-hover/why:block z-[200]">
+                  <div className="absolute left-full top-0 w-56 max-h-[70vh] overflow-y-auto bg-white rounded-lg shadow-lg border border-gray-200 py-2 hidden group-hover/why:block z-[200]">
                     <Link
                       href="/erode"
                       role="menuitem"
@@ -279,6 +279,70 @@ export default function DesktopNav(props: DesktopNavProps) {
                       className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
                     >
                       Why Coimbatore Students?
+                    </Link>
+                    <Link
+                      href="/komarapalayam"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      Why Komarapalayam Students?
+                    </Link>
+                    <Link
+                      href="/tiruchengode"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      Why Tiruchengode Students?
+                    </Link>
+                    <Link
+                      href="/bhavani"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      Why Bhavani Students?
+                    </Link>
+                    <Link
+                      href="/sankagiri"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      Why Sankagiri Students?
+                    </Link>
+                    <Link
+                      href="/pallipalayam"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      Why Pallipalayam Students?
+                    </Link>
+                    <Link
+                      href="/rasipuram"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      Why Rasipuram Students?
+                    </Link>
+                    <Link
+                      href="/perundurai"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      Why Perundurai Students?
+                    </Link>
+                    <Link
+                      href="/gobichettipalayam"
+                      role="menuitem"
+                      tabIndex={0}
+                      className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                    >
+                      Why Gobichettipalayam Students?
                     </Link>
                   </div>
                 </div>
