@@ -1045,8 +1045,16 @@ export default function NamakkalPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {[
+              { Icon: Home, name: "Komarapalayam", km: "Campus town", href: "/komarapalayam" },
+              { Icon: MapPin, name: "Bhavani", km: "~4-5 km", href: "/bhavani" },
+              { Icon: MapPin, name: "Pallipalayam", km: "~14 km", href: "/pallipalayam" },
+              { Icon: MapPin, name: "Sankagiri", km: "~15-20 km", href: "/sankagiri" },
+              { Icon: MapPin, name: "Tiruchengode", km: "~20 km", href: "/tiruchengode" },
+              { Icon: Mountain, name: "Erode", km: "~22 km", href: "/erode" },
+              { Icon: MapPin, name: "Perundurai", km: "~27-30 km", href: "/perundurai" },
+              { Icon: MapPin, name: "Gobichettipalayam", km: "~35-40 km", href: "/gobichettipalayam" },
               { Icon: Bus, name: "Salem", km: "40-50 km", href: "/salem" },
-              { Icon: Mountain, name: "Erode", km: "30-40 km", href: "/erode" },
+              { Icon: MapPin, name: "Rasipuram", km: "~60 km", href: "/rasipuram" },
               { Icon: Target, name: "Tiruppur", km: "80-90 km", href: "/tiruppur" },
               { Icon: Star, name: "Coimbatore", km: "100-110 km", href: "/coimbatore" },
             ].map((city) => (

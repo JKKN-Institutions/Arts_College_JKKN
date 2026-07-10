@@ -216,6 +216,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/salem`, "monthly", 0.8),
     s(`${SITE_URL}/tiruppur`, "monthly", 0.8),
     s(`${SITE_URL}/coimbatore`, "monthly", 0.8),
+    s(`${SITE_URL}/komarapalayam`, "monthly", 0.8),
+    s(`${SITE_URL}/tiruchengode`, "monthly", 0.8),
+    s(`${SITE_URL}/bhavani`, "monthly", 0.8),
+    s(`${SITE_URL}/sankagiri`, "monthly", 0.8),
+    s(`${SITE_URL}/pallipalayam`, "monthly", 0.8),
+    s(`${SITE_URL}/rasipuram`, "monthly", 0.8),
+    s(`${SITE_URL}/perundurai`, "monthly", 0.8),
+    s(`${SITE_URL}/gobichettipalayam`, "monthly", 0.8),
   ];
 
   // Dynamic routes from Supabase
