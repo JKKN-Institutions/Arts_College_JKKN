@@ -117,6 +117,14 @@ export default function SalemPage() {
       q: "Why should I choose JKKN CAS over colleges in Salem?",
       a: "JKKN CAS offers NAAC accreditation, 34 programmes, 80%+ placement, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~58 km from Salem.",
     },
+    {
+      q: "Which arts and science colleges in Salem should students compare?",
+      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC-accredited since 1952, with aided low-fee streams, 34 programmes, and 80%+ placements — is a strong option to include on that shortlist, ~58 km from Salem city on NH-544.",
+    },
+    {
+      q: "Is JKKN CAS a good option for students from Sankagiri, Edappadi, and Mettur?",
+      a: "Yes. For students from western Salem district — Sankagiri, Edappadi, and Mettur — JKKN CAS at Komarapalayam is often closer than Salem city colleges. Sankagiri is only ~15-20 km from the campus via the NH-544 corridor, making daily day-scholar commute straightforward.",
+    },
   ];
 
   return (
@@ -327,10 +335,20 @@ export default function SalemPage() {
 
           {/* Heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Best Arts and Science College Near
+            Arts and Science College in Salem Region —
             <br />
-            <span className="text-[#7cb983]">Salem</span>
+            <span className="text-[#7cb983]">JKKN CAS</span>
           </h1>
+
+          {/* Featured Snippet Paragraph */}
+          <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
+            Students comparing arts and science colleges in Salem also
+            shortlist JKKN College of Arts and Science — a NAAC-accredited
+            institution ~58 km from Salem on NH-544 with 34 UG, PG, and Ph.D
+            programmes, aided low-fee streams, hostel, and 80%+ placements.
+            For western Salem district — Sankagiri, Edappadi, Mettur — JKKN
+            is closer than Salem city colleges.
+          </p>
 
           {/* Description */}
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -1175,8 +1193,16 @@ export default function SalemPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {[
-              { Icon: Home, name: "Namakkal", km: "5-10 km", href: "/namakkal" },
-              { Icon: Mountain, name: "Erode", km: "30-40 km", href: "/erode" },
+              { Icon: Home, name: "Komarapalayam", km: "Campus town", href: "/komarapalayam" },
+              { Icon: MapPin, name: "Bhavani", km: "~4-5 km", href: "/bhavani" },
+              { Icon: MapPin, name: "Pallipalayam", km: "~14 km", href: "/pallipalayam" },
+              { Icon: MapPin, name: "Sankagiri", km: "~15-20 km", href: "/sankagiri" },
+              { Icon: MapPin, name: "Tiruchengode", km: "~20 km", href: "/tiruchengode" },
+              { Icon: Mountain, name: "Erode", km: "~22 km", href: "/erode" },
+              { Icon: MapPin, name: "Perundurai", km: "~27-30 km", href: "/perundurai" },
+              { Icon: MapPin, name: "Gobichettipalayam", km: "~35-40 km", href: "/gobichettipalayam" },
+              { Icon: MapPin, name: "Namakkal", km: "~55-60 km", href: "/namakkal" },
+              { Icon: MapPin, name: "Rasipuram", km: "~60 km", href: "/rasipuram" },
               { Icon: Target, name: "Tiruppur", km: "80-90 km", href: "/tiruppur" },
               { Icon: Star, name: "Coimbatore", km: "100-110 km", href: "/coimbatore" },
             ].map((city) => (
