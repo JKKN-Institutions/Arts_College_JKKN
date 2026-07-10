@@ -1266,6 +1266,7 @@ export default function TiruchengodePage() {
               { Icon: MapPin, name: "Gobichettipalayam", km: "~35-40 km", href: "/gobichettipalayam" },
               { Icon: MapPin, name: "Salem", km: "~40-50 km", href: "/salem" },
               { Icon: MapPin, name: "Namakkal", km: "~55-60 km", href: "/namakkal" },
+              { Icon: MapPin, name: "Rasipuram", km: "~60 km", href: "/rasipuram" },
               { Icon: MapPin, name: "Tiruppur", km: "~80-90 km", href: "/tiruppur" },
               { Icon: MapPin, name: "Coimbatore", km: "~100-110 km", href: "/coimbatore" },
             ].map((city) => (
