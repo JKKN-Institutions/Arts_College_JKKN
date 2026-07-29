@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server';
 import { getAdminCollegeId } from '@/lib/get-admin-college';
+import { createPreviewToken } from '@/lib/preview-token';
 import Link from 'next/link';
 import { Plus, FileText } from 'lucide-react';
 import BlogsTableClient from './BlogsTableClient';
@@ -21,6 +22,13 @@ export default async function AdminBlogsPage() {
       .eq('is_active', true)
       .order('name'),
   ]);
+
+  // Signed share tokens for draft preview links (empty when PREVIEW_SECRET is unset).
+  const previewTokens: Record<string, string> = {};
+  for (const blog of blogs ?? []) {
+    const token = createPreviewToken(blog.id);
+    if (token) previewTokens[blog.id] = token;
+  }
 
   return (
     <div className="p-4 sm:p-6 lg:p-8">
@@ -55,7 +63,7 @@ export default async function AdminBlogsPage() {
       </div>
 
       {/* Table Section */}
-      <BlogsTableClient blogs={blogs ?? []} categories={categories ?? []} />
+      <BlogsTableClient blogs={blogs ?? []} categories={categories ?? []} previewTokens={previewTokens} />
     </div>
   );
 }

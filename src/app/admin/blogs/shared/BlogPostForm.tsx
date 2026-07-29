@@ -337,7 +337,7 @@ export default function BlogPostForm({
     toast.success(`Estimated read time: ${mins} min`);
   }
 
-  async function handleSubmit(publish: boolean) {
+  async function handleSubmit(forceDraft: boolean) {
     if (!title.trim()) return toast.error('Title is required.');
     if (!slug.trim()) return toast.error('Slug is required.');
 
@@ -347,11 +347,8 @@ export default function BlogPostForm({
     // Create mode: abort if upload failed for a newly selected file
     if (!isEdit && coverImageFile && !coverUrl) { setSaving(false); return; }
 
-    const status = publish
-      ? 'published'
-      : isEdit
-        ? postStatus
-        : (postStatus === 'published' ? 'draft' : postStatus);
+    // The main button honours the Status dropdown; "Save as Draft" always drafts.
+    const status = forceDraft ? 'draft' : postStatus;
 
     if (isEdit && initialData) {
       // ── UPDATE existing post ──────────────────────────────────────────────
@@ -650,7 +647,7 @@ export default function BlogPostForm({
               <div className="flex gap-2 pt-1">
                 <button
                   type="button"
-                  onClick={() => handleSubmit(true)}
+                  onClick={() => handleSubmit(false)}
                   disabled={saving}
                   className="flex-1 flex items-center justify-center gap-2 bg-[#006837] text-white text-sm font-semibold py-2.5 rounded-xl hover:bg-[#005a2e] transition disabled:opacity-50"
                 >
@@ -660,12 +657,12 @@ export default function BlogPostForm({
                 </button>
                 <button
                   type="button"
-                  onClick={() => handleSubmit(false)}
+                  onClick={() => handleSubmit(true)}
                   disabled={saving}
-                  className="flex items-center justify-center gap-1.5 border border-gray-200 text-sm font-medium text-gray-600 px-3 py-2.5 rounded-xl hover:bg-gray-50 transition disabled:opacity-50"
+                  className="flex items-center justify-center gap-1.5 border border-gray-200 text-sm font-medium text-gray-600 px-3 py-2.5 rounded-xl hover:bg-gray-50 transition disabled:opacity-50 whitespace-nowrap"
                 >
                   <Eye className="w-3.5 h-3.5" />
-                  Save
+                  Save as Draft
                 </button>
               </div>
             </div>

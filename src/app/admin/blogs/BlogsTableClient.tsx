@@ -32,6 +32,7 @@ import {
   Loader2,
   EyeOff,
   Send,
+  Link2 as LinkIcon,
 } from 'lucide-react';
 import ConfirmModal from '../ConfirmModal';
 
@@ -59,6 +60,8 @@ interface Category {
 interface Props {
   blogs: Blog[];
   categories: Category[];
+  /** blog id → signed share token; empty when PREVIEW_SECRET is not configured */
+  previewTokens: Record<string, string>;
 }
 
 /* ─── Helpers ──────────────────────────────────────────────────────── */
@@ -111,6 +114,7 @@ function ActionMenu({
   onDelete,
   onTogglePublish,
   isDeleting,
+  previewToken,
 }: {
   blog: Blog;
   isOpen: boolean;
@@ -119,6 +123,7 @@ function ActionMenu({
   onDelete: () => void;
   onTogglePublish: () => void;
   isDeleting: boolean;
+  previewToken?: string;
 }) {
   const btnRef = useRef<HTMLButtonElement>(null);
   const [pos, setPos] = useState<{ top: number; left: number } | null>(null);
@@ -165,7 +170,7 @@ function ActionMenu({
               <Pencil className="w-3.5 h-3.5" />
               Edit
             </Link>
-            {blog.is_published && blog.slug && (
+            {blog.is_published && blog.slug ? (
               <Link
                 href={`/blog/campus/${blog.slug}`}
                 target="_blank"
@@ -175,6 +180,37 @@ function ActionMenu({
                 <ExternalLink className="w-3.5 h-3.5" />
                 View Live
               </Link>
+            ) : (
+              <>
+                <Link
+                  href={`/blog/preview/${blog.id}`}
+                  target="_blank"
+                  className="flex items-center gap-2.5 px-3.5 py-2 text-sm text-gray-700 hover:bg-gray-50 transition"
+                  onClick={onClose}
+                >
+                  <Eye className="w-3.5 h-3.5" />
+                  Preview
+                </Link>
+                <button
+                  onClick={() => {
+                    if (!previewToken) {
+                      toast.error('Share links are disabled — PREVIEW_SECRET is not configured.');
+                      onClose();
+                      return;
+                    }
+                    const url = `${window.location.origin}/blog/preview/${blog.id}?t=${previewToken}`;
+                    navigator.clipboard.writeText(url).then(
+                      () => toast.success('Preview link copied — anyone with it can view this draft.'),
+                      () => toast.error('Could not copy the link.')
+                    );
+                    onClose();
+                  }}
+                  className="w-full flex items-center gap-2.5 px-3.5 py-2 text-sm text-gray-700 hover:bg-gray-50 transition"
+                >
+                  <LinkIcon className="w-3.5 h-3.5" />
+                  Copy Preview Link
+                </button>
+              </>
             )}
             <button
               onClick={onTogglePublish}
@@ -214,7 +250,7 @@ const columnHelper = createColumnHelper<Blog>();
 
 /* ─── Main Component ───────────────────────────────────────────────── */
 
-export default function BlogsTableClient({ blogs, categories }: Props) {
+export default function BlogsTableClient({ blogs, categories, previewTokens }: Props) {
   const router = useRouter();
   const supabase = createClient();
 
@@ -263,6 +299,8 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
       .from('blogs')
       .update({
         is_published: newStatus,
+        // Keep post_status in sync — the editor's Status dropdown reads it.
+        post_status: newStatus ? 'published' : 'draft',
         published_at: newStatus ? new Date().toISOString() : null,
       })
       .eq('id', blog.id);
@@ -436,6 +474,7 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
               onDelete={() => { setOpenMenu(null); setPendingDeleteId(blog.id); }}
               onTogglePublish={() => togglePublish(blog)}
               isDeleting={deletingId === blog.id}
+              previewToken={previewTokens[blog.id]}
             />
           );
         },
@@ -444,7 +483,7 @@ export default function BlogsTableClient({ blogs, categories }: Props) {
       }),
     ],
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [openMenu, deletingId]
+    [openMenu, deletingId, previewTokens]
   );
 
   const table = useReactTable({
