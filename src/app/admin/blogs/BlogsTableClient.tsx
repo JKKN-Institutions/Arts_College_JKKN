@@ -60,7 +60,7 @@ interface Category {
 interface Props {
   blogs: Blog[];
   categories: Category[];
-  /** blog id → signed share token; empty when PREVIEW_SECRET is not configured */
+  /** blog id → that post's `preview_token`; empty until the migration has run */
   previewTokens: Record<string, string>;
 }
 
@@ -194,11 +194,11 @@ function ActionMenu({
                 <button
                   onClick={() => {
                     if (!previewToken) {
-                      toast.error('Share links are disabled — PREVIEW_SECRET is not configured.');
+                      toast.error('No preview token on this post yet — run the blog preview-token migration.');
                       onClose();
                       return;
                     }
-                    const url = `${window.location.origin}/blog/preview/${blog.id}?t=${previewToken}`;
+                    const url = `${window.location.origin}/blog/preview/${blog.id}?token=${previewToken}`;
                     navigator.clipboard.writeText(url).then(
                       () => toast.success('Preview link copied — anyone with it can view this draft.'),
                       () => toast.error('Could not copy the link.')

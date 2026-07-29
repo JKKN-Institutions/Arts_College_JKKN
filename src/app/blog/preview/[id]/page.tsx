@@ -2,26 +2,31 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
-import { createClient as createSupabaseClient } from '@supabase/supabase-js';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import CampusBlogContent from '../../campus/[slug]/CampusBlogContent';
 import { buildPostHtml } from '@/lib/blog-render';
-import { verifyPreviewToken } from '@/lib/preview-token';
 
 // Never cached, never prerendered — always reflects the latest draft.
 export const dynamic = 'force-dynamic';
 
-/**
- * Service-role Supabase client, or null when SUPABASE_SERVICE_ROLE_KEY is unset.
- * Only ever used after a share token has been verified.
- */
-function serviceRoleClient() {
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!key) return null;
-  return createSupabaseClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, key, {
-    auth: { persistSession: false, autoRefreshToken: false },
-  });
-}
+/** The blog row as this page consumes it (both read paths return the full row). */
+type PreviewPost = {
+  id: string;
+  title: string;
+  slug: string;
+  category: string | null;
+  author_name: string | null;
+  cover_image_url: string | null;
+  excerpt: string | null;
+  published_at: string | null;
+  created_at: string;
+  tags?: string | null;
+  read_time?: string | null;
+  content: string | null;
+  sections: unknown;
+  college_id: string;
+  preview_token?: string;
+};
 
 // Keep drafts out of Google entirely.
 export const metadata: Metadata = {
@@ -34,37 +39,43 @@ export default async function BlogDraftPreviewPage({
   searchParams,
 }: {
   params: Promise<{ id: string }>;
-  searchParams: Promise<{ t?: string }>;
+  searchParams: Promise<{ token?: string }>;
 }) {
   const { id } = await params;
-  const { t } = await searchParams;
+  const { token } = await searchParams;
   const supabase = await createClient();
-
-  // Two ways in — this route lives outside /admin, so middleware does not cover it:
-  //   1. a valid share token in the URL (works for anyone, no login), or
-  //   2. a logged-in admin session.
-  const hasValidToken = verifyPreviewToken(id, t);
-  const { data: { user } } = await supabase.auth.getUser();
-  const isAdmin = !!user;
-  if (!hasValidToken && !isAdmin) notFound();
-
   const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID!;
 
-  // A share-token visitor is anonymous, so RLS may hide unpublished rows from
-  // them. Read through the service role for that case when the key is set —
-  // the token has already been verified above. Falls back to the normal client
-  // (which is enough if the SELECT policy is not restricted by is_published).
-  const db = (!isAdmin && hasValidToken && serviceRoleClient()) || supabase;
+  const { data: { user } } = await supabase.auth.getUser();
+  const isAdmin = !!user;
 
-  // No is_published filter — that is the whole point of preview.
-  const { data: post } = await db
-    .from('blogs')
-    .select('*')
-    .eq('id', id)
-    .eq('college_id', collegeId)
-    .single();
+  // Two ways in — this route lives outside /admin, so middleware does not cover it:
+  //   1. the post's own share token in the URL (works for anyone, no login).
+  //      RLS hides unpublished rows from anon, so the token is checked inside a
+  //      SECURITY DEFINER function which returns the row only on an exact match.
+  //   2. a logged-in admin session, read normally through RLS.
+  let post: PreviewPost | null = null;
 
-  if (!post) notFound();
+  if (token) {
+    const { data } = await supabase.rpc('get_blog_preview', { p_id: id, p_token: token });
+    post = ((Array.isArray(data) ? data[0] : data) ?? null) as PreviewPost | null;
+  }
+
+  if (!post && isAdmin) {
+    // No is_published filter — that is the whole point of preview.
+    const { data } = await supabase
+      .from('blogs')
+      .select('*')
+      .eq('id', id)
+      .eq('college_id', collegeId)
+      .maybeSingle();
+    post = data ?? null;
+  }
+
+  if (!post || post.college_id !== collegeId) notFound();
+
+  // Never ship the share secret into the page's client payload.
+  delete post.preview_token;
 
   const [{ data: popularPosts }, { data: relatedPosts }] = await Promise.all([
     supabase

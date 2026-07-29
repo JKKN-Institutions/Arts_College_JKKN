@@ -1,6 +1,5 @@
 import { createClient } from '@/lib/supabase/server';
 import { getAdminCollegeId } from '@/lib/get-admin-college';
-import { createPreviewToken } from '@/lib/preview-token';
 import Link from 'next/link';
 import { Plus, FileText } from 'lucide-react';
 import BlogsTableClient from './BlogsTableClient';
@@ -12,7 +11,7 @@ export default async function AdminBlogsPage() {
   const [{ data: blogs }, { data: categories }] = await Promise.all([
     supabase
       .from('blogs')
-      .select('id, title, slug, category, author_name, is_published, created_at, published_at, view_count, read_time')
+      .select('id, title, slug, category, author_name, is_published, created_at, published_at, view_count, read_time, preview_token')
       .eq('college_id', collegeId)
       .order('created_at', { ascending: false }),
     supabase
@@ -23,11 +22,11 @@ export default async function AdminBlogsPage() {
       .order('name'),
   ]);
 
-  // Signed share tokens for draft preview links (empty when PREVIEW_SECRET is unset).
+  // Per-post share secrets (blogs.preview_token) behind the draft preview links.
+  // Empty until the 03-blog-preview-token.sql migration has been run.
   const previewTokens: Record<string, string> = {};
   for (const blog of blogs ?? []) {
-    const token = createPreviewToken(blog.id);
-    if (token) previewTokens[blog.id] = token;
+    if (blog.preview_token) previewTokens[blog.id] = blog.preview_token;
   }
 
   return (
