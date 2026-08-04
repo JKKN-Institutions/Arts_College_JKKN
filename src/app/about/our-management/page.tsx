@@ -6,11 +6,11 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Our Management",
-  description: "Meet the management team of JKKN College of Arts and Science (Autonomous). Leadership committed to academic excellence since 1994, Komarapalayam, Tamil Nadu.",
+  description: "Meet the management team of JKKN College of Arts and Science (Autonomous). Leadership committed to academic excellence since 1974, Komarapalayam, Tamil Nadu.",
   alternates: { canonical: "https://cas.jkkn.ac.in/about/our-management" },
   openGraph: {
     title: "Our Management | JKKN Arts & Science",
-    description: "Meet the management team of JKKN College of Arts and Science (Autonomous). Leadership committed to academic excellence since 1994, Komarapalayam, Tamil Nadu.",
+    description: "Meet the management team of JKKN College of Arts and Science (Autonomous). Leadership committed to academic excellence since 1974, Komarapalayam, Tamil Nadu.",
     url: "https://cas.jkkn.ac.in/about/our-management",
     siteName: "JKKN College of Arts and Science",
     type: "website",
