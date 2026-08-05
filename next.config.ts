@@ -119,6 +119,17 @@ const nextConfig: NextConfig = {
       { source: '/proud-moment', destination: '/', permanent: true },
       { source: '/proud-moment/', destination: '/', permanent: true },
 
+      // ── B.Ed consolidation → JKKN College of Education ─────────────────
+      // Arts & Science does not run B.Ed, but these two pages carry the estate's
+      // B.Ed search demand. The content is already Education's — the admission
+      // article names "JKKN College of Education" 31 times — it was simply
+      // published on this hostname. Sending it to the college that runs the course.
+      // Targets verified live 2026-08-05, both HTTP 200.
+      { source: '/blog/bed-admission-2026-tamil-nadu', destination: 'https://edu.jkkn.ac.in/admissions', permanent: true },
+      { source: '/blog/bed-admission-2026-tamil-nadu/', destination: 'https://edu.jkkn.ac.in/admissions', permanent: true },
+      { source: '/blog/top-10-career-options-after-bed-2026', destination: 'https://edu.jkkn.ac.in/blog/top-10-career-options-after-bed-2026', permanent: true },
+      { source: '/blog/top-10-career-options-after-bed-2026/', destination: 'https://edu.jkkn.ac.in/blog/top-10-career-options-after-bed-2026', permanent: true },
+
       // ── Old event / blog posts ────────────────────────────────────────
       { source: '/exposure-visit-to-tex-valley', destination: '/events', permanent: true },
       { source: '/exposure-visit-to-tex-valley/', destination: '/events', permanent: true },
