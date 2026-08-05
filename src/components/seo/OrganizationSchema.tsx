@@ -50,8 +50,6 @@ export function OrganizationSchema() {
       "https://www.instagram.com/jkknarts",
       "https://www.linkedin.com/school/jkknarts",
       "https://www.youtube.com/@jkknarts",
-      "https://en.wikipedia.org/wiki/J._K._K._Nattraja_Educational_Institutions",
-      "https://www.wikidata.org/wiki/Q115690880",
       "https://www.shiksha.com/college/jkkn-college-of-arts-and-science-namakkal-64693",
     ],
     hasCredential: [
