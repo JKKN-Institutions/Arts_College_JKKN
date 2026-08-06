@@ -114,7 +114,7 @@ export default function HeroSection() {
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl border border-white/20 sm:border-2">
                 <div className="aspect-[4/3] relative">
                   <Image
-                    src="/images/homepage/JKKN Arts - Homepage First Image (1).png"
+                    src="/images/homepage/JKKN Arts - Homepage First Image (1).webp"
                     alt="JKKN College Campus"
                     fill
                     className="object-cover"

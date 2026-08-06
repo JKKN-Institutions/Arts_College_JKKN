@@ -416,7 +416,7 @@ export default function BComCAPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/faculties/self/bcomca/JKKN B.Com CA (1).png"
+                  src="/images/faculties/self/bcomca/JKKN B.Com CA (1).webp"
                   alt="Commerce Computer Lab"
                   width={600}
                   height={450}

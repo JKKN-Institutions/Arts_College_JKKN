@@ -200,7 +200,7 @@ export default function BScAIDSPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/programmes/computerscience/JKKN B.Sc Artificial Intelligence and Data Science.png"
+                  src="/images/programmes/computerscience/JKKN B.Sc Artificial Intelligence and Data Science.webp"
                   alt="AI & Data Science Laboratory"
                   className="w-full h-auto"
                 width={2048}

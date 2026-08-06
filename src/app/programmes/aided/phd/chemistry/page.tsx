@@ -171,7 +171,7 @@ export default function PhDChemistryPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/programmes/chemistry/JKKN M.Sc Chemistry.png"
+                  src="/images/programmes/chemistry/JKKN M.Sc Chemistry.webp"
                   alt="Chemistry Research Lab"
                   className="w-full h-auto"
                 width={2048}

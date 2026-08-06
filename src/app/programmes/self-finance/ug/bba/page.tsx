@@ -227,7 +227,7 @@ export default function BBAPage() {
               <RevealSection className="lg:col-span-2" delay={200}>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/faculties/self/bba/JKKN BBA.png"
+                    src="/images/faculties/self/bba/JKKN BBA.webp"
                     alt="BBA - Business Administration Programme"
                     width={600}
                     height={450}

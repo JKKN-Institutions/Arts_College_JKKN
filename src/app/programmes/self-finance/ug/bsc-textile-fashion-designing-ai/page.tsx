@@ -236,7 +236,7 @@ export default function BSCTextileFashionDesigningAIPage() {
               <RevealSection className="lg:col-span-2" delay={200}>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="/images/programmes/tfd/JKKN B.Sc Textile and Fashion Designing.png"
+                    src="/images/programmes/tfd/JKKN B.Sc Textile and Fashion Designing.webp"
                     alt="AI-Powered Fashion Design"
                     className="w-full h-auto"
                 width={2048}

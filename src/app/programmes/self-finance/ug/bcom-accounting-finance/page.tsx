@@ -264,7 +264,7 @@ export default function BComAccountingFinancePage() {
               <RevealSection className="lg:col-span-2" delay={200}>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[450px]">
                   <Image
-                    src="/images/faculties/self/bcom A&F/JKKN B.Com Accounting and Finance (1).png"
+                    src="/images/faculties/self/bcom A&F/JKKN B.Com Accounting and Finance (1).webp"
                     alt="B.Com Accounting and Finance Programme"
                     fill
                     className="object-cover"

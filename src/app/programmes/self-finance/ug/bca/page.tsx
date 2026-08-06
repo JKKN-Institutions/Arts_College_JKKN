@@ -369,7 +369,7 @@ export default function BCAPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/programmes/bca/JKKN BCA.png"
+                  src="/images/programmes/bca/JKKN BCA.webp"
                   alt="BCA Computer Lab"
                   width={600}
                   height={450}

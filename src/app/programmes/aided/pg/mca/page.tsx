@@ -172,7 +172,7 @@ export default function MCAPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/programmes/mca/JKKN MCA.png"
+                  src="/images/programmes/mca/JKKN MCA.webp"
                   alt="MCA Programme Overview"
                   className="w-full h-auto"
                 width={2048}

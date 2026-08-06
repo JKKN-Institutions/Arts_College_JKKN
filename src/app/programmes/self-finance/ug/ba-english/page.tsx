@@ -171,7 +171,7 @@ export default function SFBAEnglishPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/programmes/ba-english/JKKN BA English copy.png"
+                  src="/images/programmes/ba-english/JKKN BA English copy.webp"
                   alt="BA English Programme"
                   className="w-full h-auto"
                 width={2048}

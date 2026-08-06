@@ -172,7 +172,7 @@ export default function MScComputerSciencePage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/programmes/computerscience/JKKN M.Sc Computer Science.png"
+                  src="/images/programmes/computerscience/JKKN M.Sc Computer Science.webp"
                   alt="Data Analytics Lab"
                   className="w-full h-auto"
                 width={2048}

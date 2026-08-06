@@ -171,7 +171,7 @@ export default function BScVisualCommunicationPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/programmes/visual/JKKN B.Sc Visual Communication.png"
+                  src="/images/programmes/visual/JKKN B.Sc Visual Communication.webp"
                   alt="Visual Communication Studio"
                   className="w-full h-auto"
                 width={2048}

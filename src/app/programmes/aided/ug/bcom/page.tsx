@@ -172,7 +172,7 @@ export default function BComPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/faculties/self/bcomca/JKKN B.Com CA (1).png"
+                  src="/images/faculties/self/bcomca/JKKN B.Com CA (1).webp"
                   alt="Commerce Learning Studio"
                   className="w-full h-auto"
                 width={2048}

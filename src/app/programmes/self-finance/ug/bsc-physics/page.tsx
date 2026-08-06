@@ -202,7 +202,7 @@ export default function BScPhysicsPage() {
               <RevealSection className="lg:col-span-2" delay={200}>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="/images/faculties/self/physics/JKKN B.Sc Physics.png"
+                    src="/images/faculties/self/physics/JKKN B.Sc Physics.webp"
                     alt="Physics Laboratory"
                     className="w-full h-auto"
                 width={2048}

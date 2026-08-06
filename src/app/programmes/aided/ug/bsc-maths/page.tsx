@@ -172,7 +172,7 @@ export default function BScMathematicsPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/programmes/bsc-maths/JKKN B.Sc Mathematics.png"
+                  src="/images/programmes/bsc-maths/JKKN B.Sc Mathematics.webp"
                   alt="Mathematics Laboratory"
                   className="w-full h-auto"
                 width={2048}

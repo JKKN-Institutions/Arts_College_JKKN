@@ -33,7 +33,7 @@ export default function LabsPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/facilities/JKKN Arts lab.png"
+              src="/images/facilities/JKKN Arts lab.webp"
               alt="JKKN Arts and Science College laboratory facilities"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
@@ -42,7 +42,7 @@ export default function LabsPage() {
           </div>
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/facilities/JKKN Arts lab - 1.png"
+              src="/images/facilities/JKKN Arts lab - 1.webp"
               alt="JKKN Arts and Science College laboratory equipment and workspace"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
@@ -51,7 +51,7 @@ export default function LabsPage() {
           </div>
           <div className="relative aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
             <Image
-              src="/images/facilities/JKKN Arts lab - 2.png"
+              src="/images/facilities/JKKN Arts lab - 2.webp"
               alt="JKKN Arts and Science College lab with students conducting experiments"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"

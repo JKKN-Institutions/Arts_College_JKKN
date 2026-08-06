@@ -200,7 +200,7 @@ export default function BScComputerSciencePage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/faculties/self/cs/JKKN B.Sc Computer Science.png"
+                  src="/images/faculties/self/cs/JKKN B.Sc Computer Science.webp"
                   alt="Computer Science Laboratory"
                   className="w-full h-auto"
                 width={2048}

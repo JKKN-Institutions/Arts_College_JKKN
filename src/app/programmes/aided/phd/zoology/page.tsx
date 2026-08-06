@@ -172,7 +172,7 @@ export default function PhDZoologyPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/programmes/zoology/JKKN Ph.D Zoology.png"
+                  src="/images/programmes/zoology/JKKN Ph.D Zoology.webp"
                   alt="Zoology Research Laboratory"
                   className="w-full h-auto"
                 width={2048}

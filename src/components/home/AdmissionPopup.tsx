@@ -32,7 +32,7 @@ export default function AdmissionPopup() {
           rel="noopener noreferrer"
         >
           <Image
-            src="/arts-pop-up-poster.jpg"
+            src="/arts-pop-up-poster.webp"
             alt="JKKN Admission 2026"
             width={500}
             height={700}
