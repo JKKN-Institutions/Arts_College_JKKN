@@ -22,7 +22,7 @@ export async function generateMetadata({
 
   const { data: post } = await supabase
     .from('blogs')
-    .select('title, excerpt, meta_description, cover_image_url')
+    .select('title, excerpt, cover_image_url')
     .eq('slug', slug)
     .eq('college_id', collegeId)
     .eq('is_published', true)
@@ -33,7 +33,7 @@ export async function generateMetadata({
   }
 
   const description =
-    post.meta_description ?? post.excerpt?.slice(0, 155) ?? `${post.title} — JKKN College of Arts and Science Blog`;
+    post.excerpt?.slice(0, 155) ?? `${post.title} — JKKN College of Arts and Science Blog`;
 
   return {
     title: post.title,
