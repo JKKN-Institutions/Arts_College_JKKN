@@ -175,7 +175,9 @@ export default function BScCSCyberSecurityPage() {
                   src="/images/programmes/computerscience/JKKN B.Sc Cyber Security.png"
                   alt="Cyber Security Laboratory"
                   className="w-full h-auto"
-                />
+                width={2048}
+                height={2048}
+              />
                 {/* <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
                   Since 2010
                 </span> */}

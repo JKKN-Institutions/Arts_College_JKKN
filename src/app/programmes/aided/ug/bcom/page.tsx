@@ -175,7 +175,9 @@ export default function BComPage() {
                   src="/images/faculties/self/bcomca/JKKN B.Com CA (1).png"
                   alt="Commerce Learning Studio"
                   className="w-full h-auto"
-                />
+                width={2048}
+                height={2048}
+              />
                 {/* <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
                   Since 1952
                 </span> */}

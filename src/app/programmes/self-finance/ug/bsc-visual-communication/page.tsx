@@ -174,7 +174,9 @@ export default function BScVisualCommunicationPage() {
                   src="/images/programmes/visual/JKKN B.Sc Visual Communication.png"
                   alt="Visual Communication Studio"
                   className="w-full h-auto"
-                />
+                width={2048}
+                height={2048}
+              />
                 {/* <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
                   Modern Facilities
                 </span> */}

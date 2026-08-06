@@ -239,7 +239,9 @@ export default function BSCTextileFashionDesigningAIPage() {
                     src="/images/programmes/tfd/JKKN B.Sc Textile and Fashion Designing.png"
                     alt="AI-Powered Fashion Design"
                     className="w-full h-auto"
-                  />
+                width={2048}
+                height={2048}
+              />
                 </div>
               </RevealSection>
             </div>

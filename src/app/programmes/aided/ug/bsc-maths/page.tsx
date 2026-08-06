@@ -175,7 +175,9 @@ export default function BScMathematicsPage() {
                   src="/images/programmes/bsc-maths/JKKN B.Sc Mathematics.png"
                   alt="Mathematics Laboratory"
                   className="w-full h-auto"
-                />
+                width={2048}
+                height={2048}
+              />
                 {/* <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
                   Since 1952
                 </span> */}

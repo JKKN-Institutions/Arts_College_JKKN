@@ -205,7 +205,9 @@ export default function BSCTextileFashionDesigningPage() {
                     src="/images/programmes/tfd/JKKN B.Sc Textile and Fashion Designing.png"
                     alt="Fashion Design"
                     className="w-full h-auto"
-                  />
+                width={2048}
+                height={2048}
+              />
                   {/* <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
                     Since 1952
                   </span> */}
