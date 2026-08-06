@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import { ArticleSchema } from '@/components/seo/ArticleSchema';
 import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 import BlogPostContent from './BlogPostContent';
@@ -24,6 +25,15 @@ const fallbackMeta = {
   description: 'Read the latest articles, guides and insights from JKKN College of Arts and Science — admissions, placements, campus life and career guidance.',
   date: '2026-03-01',
 };
+
+// Only the slugs in blogMeta exist. dynamicParams: false makes the router itself answer 404
+// for anything else, which is what this route needs: notFound() alone left the status at 200
+// because the route reads no request data and Next prerenders it as a static shell.
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  return Object.keys(blogMeta).map((slug) => ({ slug }));
+}
 
 export async function generateMetadata({
   params,
@@ -53,7 +63,11 @@ export default async function BlogDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const meta = blogMeta[slug] ?? fallbackMeta;
+  // BlogPostContent is one hardcoded article and ignores the slug, so an unknown slug was
+  // answering HTTP 200 with the wrong body AND canonicalising to itself - which offers the
+  // domain an unlimited supply of invented URLs to index. Only known posts may render.
+  if (!blogMeta[slug]) notFound();
+  const meta = blogMeta[slug];
 
   return (
     <>
