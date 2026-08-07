@@ -939,6 +939,8 @@ export default function Navigation() {
             <img
               src="/logo.svg"
               alt="JKKN College Logo"
+              width={1080}
+              height={781}
               className="h-12 md:h-20 w-auto"
             />
           </Link>

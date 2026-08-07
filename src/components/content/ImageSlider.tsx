@@ -6,6 +6,12 @@
  * Arrows + dots + optional autoplay + touch swipe. Rendered by RichContent
  * wherever a rich-text body contains an image-slider block. Shared by the
  * Events and Blog public pages.
+ *
+ * Every slide sits in a 16/9 box so the browser reserves the space before the
+ * image arrives — the src is a CMS URL, so a width/height pair cannot be known
+ * at build time and the ratio has to be fixed instead. Images are cropped to
+ * fill it (object-cover), which suits the landscape event photography these
+ * sliders carry.
  */
 
 import { useEffect, useRef, useState, useCallback } from 'react';
@@ -41,9 +47,9 @@ export default function ImageSlider({
 
   if (count === 1) {
     return (
-      <div className="my-6 rounded-xl overflow-hidden">
+      <div className="my-6 rounded-xl overflow-hidden bg-gray-100 aspect-[16/9]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={images[0]} alt="" className="w-full h-auto" />
+        <img src={images[0]} alt="" className="w-full h-full object-cover" />
       </div>
     );
   }
@@ -72,12 +78,12 @@ export default function ImageSlider({
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {images.map((src, i) => (
-          <div key={i} className="min-w-full">
+          <div key={i} className="min-w-full aspect-[16/9]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={src}
               alt={`Slide ${i + 1}`}
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover"
               draggable={false}
             />
           </div>
