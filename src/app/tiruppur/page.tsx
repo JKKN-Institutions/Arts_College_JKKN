@@ -37,9 +37,9 @@ import {
 
 
 export const metadata: Metadata = {
-  title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
+  title: { absolute: "Arts & Science College Near Tiruppur | JKKN CAS" },
   description:
-    "JKKN CAS — 67 km from Tiruppur via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.",
+    "JKKN College of Arts and Science, 67 km from Tiruppur on NH-544. Autonomous, NAAC accredited. B.Sc, B.Com, BBA and BCA. Admissions open.",
   keywords: [
     "arts and science college near Tiruppur",
     "best college near Tiruppur",

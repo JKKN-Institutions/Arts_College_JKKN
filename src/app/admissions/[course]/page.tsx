@@ -50,11 +50,17 @@ export async function generateMetadata({
 
   const { info } = match;
   const url = `https://${siteConfig.domain}/admissions/${info.slug}`;
-  const title = `${info.name} Admission 2026-27 | JKKN College of Arts & Science`;
-  const description = `Apply for ${info.fullName} (${info.category}) at JKKN College of Arts and Science (Autonomous). ${info.duration} programme — eligibility, fees, seats, dates and admission process. ${info.description.slice(0, 80)}`;
+  // `absolute` stops the root layout's "%s | JKKN College of Arts and Science" template from
+  // appending the college name a second time. Without it these titles render at 91-109 chars,
+  // well past where Google truncates, with the name printed twice.
+  // The suffix drops to "| JKKN" for the few long programme names, so every one of these pages
+  // stays inside 60 characters as programmes are added rather than needing a manual check.
+  const long = `${info.name} Admission 2026-27 | JKKN CAS`;
+  const title = long.length <= 60 ? long : `${info.name} Admission 2026-27 | JKKN`;
+  const description = `${info.fullName} at JKKN, Autonomous and NAAC accredited. ${info.duration} — eligibility, fees, seats and how to apply.`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     keywords: [
       ...info.keywords,
