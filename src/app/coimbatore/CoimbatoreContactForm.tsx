@@ -19,6 +19,25 @@ export default function CoimbatoreContactForm() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+
+    // DEP-14, 2026-08-08. This form has no server side - it hands the enquiry off to WhatsApp -
+    // so before this event fired, a submitted enquiry left NO trace anywhere: not in the CRM,
+    // not on a server, and not in GA4 (form_submit measured 0 across all six properties over
+    // the 28 days to 2026-08-08). This does not change what the form DOES; it only makes the
+    // submission countable.
+    // NO PII, and this is not a style preference: name and mobile are collected by this form
+    // and are deliberately NOT sent to GA4. Only city, programme and path leave the page.
+    const w = window as unknown as { gtag?: (...args: unknown[]) => void };
+    if (typeof w.gtag === "function") {
+      w.gtag("event", "lead_form_submit", {
+        form_name: "city_enquiry",
+        city: form.city,
+        programme: form.programme || "not_selected",
+        destination: "whatsapp",
+        page_path: window.location.pathname,
+      });
+    }
+
     const msg = encodeURIComponent(
       `Name: ${form.name}\nMobile: ${form.mobile}\nCity: ${form.city}\nProgramme: ${form.programme}\nQuestion: ${form.question}`
     );

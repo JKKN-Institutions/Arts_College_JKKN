@@ -7,6 +7,7 @@ import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
 import { WebSiteSchema } from "@/components/seo/WebSiteSchema";
 import { MetaPixel } from "@/components/analytics/MetaPixel";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { ConversionTracking } from "@/components/analytics/ConversionTracking";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -102,6 +103,7 @@ export default function RootLayout({
     <html lang="en-IN" className={poppins.variable}>
       <body className={poppins.className} suppressHydrationWarning>
         <GoogleAnalytics />
+        <ConversionTracking />
         <MetaPixel />
         <OrganizationSchema />
         <LocalBusinessSchema />
