@@ -51,20 +51,31 @@ export async function generateMetadata({
   };
 }
 
-export async function generateStaticParams() {
-  const { createClient: createSupabaseClient } = await import('@supabase/supabase-js');
-  const supabase = createSupabaseClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  );
-  const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts-science';
-  const { data } = await supabase
-    .from('blogs')
-    .select('slug')
-    .eq('college_id', collegeId)
-    .eq('is_published', true);
-  return (data ?? []).map((post) => ({ slug: post.slug }));
-}
+/**
+ * DEP-38, 2026-08-08. generateStaticParams was REMOVED from this route. That, together with the
+ * root src/app/loading.tsx deleted in e8c1dfa, is what makes an invented slug return a real 404
+ * instead of HTTP 200.
+ *
+ * Two faults were stacked here, and only the second was obvious:
+ *
+ * 1. PRERENDERING A ROUTE THAT READS COOKIES. generateMetadata and the page body below both call
+ *    createClient() from @/lib/supabase/server, which reads cookies - a dynamic API. Asking Next
+ *    to prerender that route is a contradiction, and it resolves it by throwing DYNAMIC_SERVER_USAGE.
+ *    Proven on the sister site: Vercel's runtime error log for education showed that exact digest
+ *    on /blog/campus/[slug], 168 occurrences, first seen 2026-06-16 - the route had been broken
+ *    for nearly two months and had never once served a campus post.
+ * 2. THE ROOT loading.tsx wrapped this route in a Suspense boundary, so notFound() streamed inside
+ *    it and the response status stayed 200 while the body said not-found. That is why this site
+ *    answered 200 rather than 500 - a softer symptom of the same defect.
+ *
+ * WHAT NOT TO DO, recorded because it was tried and was wrong: dynamicParams = false. It does not
+ * fix the status, and it only accepts slugs known at BUILD time - so a post published in the CMS
+ * would 404 until someone redeployed, defeating the entire point of a CMS-driven blog.
+ *
+ * Removing generateStaticParams makes this route honestly dynamic, which is exactly the shape
+ * dental, pharmacy and nursing already have - and is why those three always answered 404
+ * correctly. revalidate = 300 stays, so a newly published post is reachable without a deploy.
+ */
 
 export default async function CampusBlogPost({
   params,
