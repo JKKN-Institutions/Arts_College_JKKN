@@ -85,7 +85,7 @@ export default function HeroSection() {
             {/* CTA Buttons - Compact */}
             <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-3">
               <a
-                href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+                href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=components-herosection"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-brand-yellow text-brand-green px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold text-[14px] sm:text-[15px] hover:bg-yellow-300 transition-all duration-300 shadow-2xl hover:shadow-yellow-500/50 hover:scale-105 transform text-center inline-flex items-center justify-center gap-2"

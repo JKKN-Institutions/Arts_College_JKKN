@@ -522,7 +522,7 @@ function AdmissionSection({
   title: string;
   admissionUrl?: string;
 }) {
-  const defaultUrl = 'https://www.jkkn.ai/apply/jkkn-admission-2026';
+  const defaultUrl = 'https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=site';
 
   return (
     <section className={cn(responsive.section(), 'bg-brand-cream')} id="admission">

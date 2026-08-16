@@ -725,7 +725,7 @@ export default function Home() {
           <div className="text-center">
             <p className="text-[14px] text-gray-500 mb-4">Fee structures are subject to change. Contact admissions for the latest confirmed amounts.</p>
             <a
-              href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#0b6d41] hover:bg-[#095c37] text-white px-8 py-3 rounded-full text-[16px] leading-[24px] font-semibold transition"
@@ -987,7 +987,7 @@ export default function Home() {
                 </ul>
 
                 <a
-                  href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+                  href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-[#0b6d41] hover:bg-[#095c37] text-white text-center py-4 rounded-xl text-[16px] leading-[24px] font-semibold transition mb-6"
@@ -1199,7 +1199,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-brand-green text-white px-8 py-4 rounded-full text-[16px] leading-[24px] font-semibold hover:bg-[#095c37] transition text-center"

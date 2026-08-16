@@ -27,7 +27,7 @@ export default function AdmissionPopup() {
         </button>
 
         <a
-          href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+          href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=components-admissionpopup"
           target="_blank"
           rel="noopener noreferrer"
         >

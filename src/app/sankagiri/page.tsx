@@ -373,7 +373,7 @@ export default function SankagiriPage() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=sankagiri"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-8 py-3 rounded-full text-base transition-colors w-full sm:w-auto text-center"
@@ -859,7 +859,7 @@ export default function SankagiriPage() {
 
           <div className="mt-8 text-center flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=sankagiri"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-8 py-3 rounded-full text-base transition-colors"
