@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import { Phone, Mail, MapPin, ExternalLink } from 'lucide-react';
+import CityEnquiryForm from '@/components/lead/CityEnquiryForm';
 
 export default function ContactPage() {
   return (
@@ -91,21 +92,27 @@ export default function ContactPage() {
 
             {/* Right — Admission Form + Office Hours */}
             <div className="space-y-6">
-              {/* Online Admission CTA */}
+              {/* Online Admission — enquiry form, posts to the CRM (DEP-34) */}
               <div className="bg-brand-green rounded-xl p-8 text-white">
-                <h2 className="text-2xl font-bold mb-3">Online Admission</h2>
+                <h2 className="text-2xl font-bold mb-3">Get a Call Back</h2>
                 <p className="text-white/80 text-sm md:text-base mb-6">
-                  Ready to join us? Fill out our online admission form and start your journey with JKKN.
+                  Leave your details and our admission team will contact you within 24 hours.
                 </p>
-                <a
-                  href="https://www.jkkn.ai/apply/jkkn-admission-2026"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white text-brand-green font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors"
-                >
-                  Apply Now
-                  <ExternalLink className="w-4 h-4" />
-                </a>
+
+                <CityEnquiryForm city="Komarapalayam" />
+
+                <p className="text-white/70 text-sm mt-6 pt-6 border-t border-white/20">
+                  Prefer the full application form?{' '}
+                  <a
+                    href="https://www.jkkn.ai/apply/jkkn-admission-2026"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-white font-semibold underline"
+                  >
+                    Apply Now
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </p>
               </div>
 
               {/* Office Hours */}
