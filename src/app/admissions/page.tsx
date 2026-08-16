@@ -51,7 +51,7 @@ const admissionFAQs = [
   {
     question: "How can I apply for admission to JKKN CAS?",
     answer:
-      "You can apply online through the JKKN admissions portal at admission.jkkn.ac.in or visit the campus in person. Fill out the application form, upload required documents, and pay the application fee. Our admissions team will guide you through every step.",
+      "You can apply online through the JKKN admissions portal at jkkn.ai/apply/jkkn-admission-2026 or visit the campus in person. Fill out the application form, upload required documents, and pay the application fee. Our admissions team will guide you through every step.",
   },
   {
     question: "What documents are required for admission?",
@@ -88,7 +88,7 @@ const admissionSteps = [
     step: 2,
     title: "Fill Application Form",
     description:
-      "Complete the online application form at admission.jkkn.ac.in with your personal details, academic history, and programme preference. You can also apply in person at the campus.",
+      "Complete the online application form at jkkn.ai/apply/jkkn-admission-2026 with your personal details, academic history, and programme preference. You can also apply in person at the campus.",
     icon: FileText,
   },
   {

@@ -103,7 +103,7 @@ const LEVEL_DEFAULTS: Record<
       {
         question: "How do I apply?",
         answer:
-          "You can apply online at admission.jkkn.ac.in or visit the campus in person. Fill the application form, upload the required documents, and pay the application fee. Our admissions team will guide you through every step.",
+          "You can apply online at jkkn.ai/apply/jkkn-admission-2026 or visit the campus in person. Fill the application form, upload the required documents, and pay the application fee. Our admissions team will guide you through every step.",
       },
       {
         question: "Are scholarships available?",

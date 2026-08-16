@@ -679,7 +679,7 @@ export default function NamakkalPage() {
               {
                 step: 2,
                 title: "Fill the Application Form",
-                desc: "Apply online at admission.jkkn.ac.in or collect the application form from the campus admission office.",
+                desc: "Apply online at jkkn.ai/apply/jkkn-admission-2026 or collect the application form from the campus admission office.",
               },
               {
                 step: 3,

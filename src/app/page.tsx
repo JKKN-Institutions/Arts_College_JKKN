@@ -184,7 +184,7 @@ export default function Home() {
         description="Step-by-step guide to apply for UG, PG, and PhD programmes at JKKN College of Arts and Science, Komarapalayam, Tamil Nadu."
         steps={[
           { name: "Choose Your Program", text: "Browse 27+ UG, PG, and PhD programmes across Science, Commerce, IT, and Management streams. Check eligibility criteria and course details on the programmes page." },
-          { name: "Apply Online", text: "Fill out the online admission form at admission.jkkn.ac.in with your personal details, academic records, and preferred programme. Upload required documents." },
+          { name: "Apply Online", text: "Fill out the online admission form at jkkn.ai/apply/jkkn-admission-2026 with your personal details, academic records, and preferred programme. Upload required documents." },
           { name: "Get Admitted", text: "Receive your admission confirmation via email and SMS. Pay the admission fee online or at the campus office to secure your seat." },
           { name: "Start Learning", text: "Attend the orientation programme, collect your ID card, and begin classes at the JKKN campus on NH-544, Komarapalayam." },
         ]}
@@ -1069,7 +1069,7 @@ export default function Home() {
                 What are the admission requirements for undergraduate programs?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                For UG programmes (B.Sc, BCA, B.Com, BBA), candidates must have passed 12th standard (HSC) from a recognized board with a minimum of 50% aggregate in the relevant stream — Science, Commerce, or Arts. For B.Sc Computer Science and BCA, Mathematics or Computer Science in 12th is preferred. PG programmes require a relevant bachelor&apos;s degree with 50%+ aggregate. Apply online at admission.jkkn.ac.in or call +91-93458-55001 for guidance.
+                For UG programmes (B.Sc, BCA, B.Com, BBA), candidates must have passed 12th standard (HSC) from a recognized board with a minimum of 50% aggregate in the relevant stream — Science, Commerce, or Arts. For B.Sc Computer Science and BCA, Mathematics or Computer Science in 12th is preferred. PG programmes require a relevant bachelor&apos;s degree with 50%+ aggregate. Apply online at jkkn.ai/apply/jkkn-admission-2026 or call +91-93458-55001 for guidance.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">

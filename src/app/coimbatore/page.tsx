@@ -111,7 +111,7 @@ export default function CoimbatorePage() {
     },
     {
       q: "How can I apply for admission at JKKN CAS?",
-      a: "Apply online at cas.jkkn.ac.in or admission.jkkn.ac.in. Admissions for 2026–27 are open. Contact the admission office at +91 9345855001 for step-by-step guidance.",
+      a: "Apply online at cas.jkkn.ac.in or jkkn.ai/apply/jkkn-admission-2026. Admissions for 2026–27 are open. Contact the admission office at +91 9345855001 for step-by-step guidance.",
     },
     {
       q: "Is there a direct bus from Coimbatore to JKKN CAS?",
@@ -247,8 +247,8 @@ export default function CoimbatorePage() {
                 "@type": "HowToStep",
                 "position": 2,
                 "name": "Fill the Application Form",
-                "text": "Apply online at admission.jkkn.ac.in or collect the application form from the campus admission office.",
-                "url": "https://admission.jkkn.ac.in"
+                "text": "Apply online at jkkn.ai/apply/jkkn-admission-2026 or collect the application form from the campus admission office.",
+                "url": "https://www.jkkn.ai/apply/jkkn-admission-2026"
               },
               {
                 "@type": "HowToStep",
@@ -964,7 +964,7 @@ export default function CoimbatorePage() {
               {
                 step: 2,
                 title: "Fill the Application Form",
-                desc: "Apply online at admission.jkkn.ac.in or collect the application form from the campus admission office.",
+                desc: "Apply online at jkkn.ai/apply/jkkn-admission-2026 or collect the application form from the campus admission office.",
               },
               {
                 step: 3,

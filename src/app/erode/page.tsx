@@ -117,7 +117,7 @@ export default function ErodePage() {
     },
     {
       q: "How can I apply for admission at JKKN CAS?",
-      a: "Applications for JKKN CAS are submitted online at admission.jkkn.ac.in or in person at the campus admission office. Admissions for 2026–27 are currently open. Call +91 9345855001 for guidance on the application process.",
+      a: "Applications for JKKN CAS are submitted online at jkkn.ai/apply/jkkn-admission-2026 or in person at the campus admission office. Admissions for 2026–27 are currently open. Call +91 9345855001 for guidance on the application process.",
     },
     {
       q: "Is JKKN College of Arts and Science accredited?",
@@ -176,7 +176,7 @@ export default function ErodePage() {
     {
       question: "How can students from Erode apply to JKKN CAS?",
       answer:
-        "Applications for JKKN CAS are submitted online at admission.jkkn.ac.in or in person at the campus admission office. Admissions for 2026–27 are currently open. Call +91 9345855001 for guidance.",
+        "Applications for JKKN CAS are submitted online at jkkn.ai/apply/jkkn-admission-2026 or in person at the campus admission office. Admissions for 2026–27 are currently open. Call +91 9345855001 for guidance.",
     },
     {
       question: "Which courses are available at arts and science colleges near Erode?",
@@ -836,7 +836,7 @@ export default function ErodePage() {
               {
                 step: 2,
                 title: "Fill the Application Form",
-                desc: "Apply online at admission.jkkn.ac.in or collect the application form from the campus admission office.",
+                desc: "Apply online at jkkn.ai/apply/jkkn-admission-2026 or collect the application form from the campus admission office.",
               },
               {
                 step: 3,

@@ -26,7 +26,7 @@ export const DEFAULT_ADMISSION_STEPS: AdmissionStep[] = [
     step: 2,
     title: "Fill Application Form",
     description:
-      "Complete the online application form at admission.jkkn.ac.in with your personal details, academic history, and programme preference. You can also apply in person at the campus.",
+      "Complete the online application form at jkkn.ai/apply/jkkn-admission-2026 with your personal details, academic history, and programme preference. You can also apply in person at the campus.",
     icon: FileText,
   },
   {
