@@ -49,8 +49,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // Blog (parent + static posts)
     s(`${SITE_URL}/blog`, "weekly", 0.7),
-    s(`${SITE_URL}/blog/top-10-career-options-after-bed-2026`, "yearly", 0.7),
-    s(`${SITE_URL}/blog/bed-admission-2026-tamil-nadu`, "yearly", 0.7),
+    // The two B.Ed posts are NOT listed here, on purpose. Both 301 to JKKN College of
+    // Education (next.config, commit 85de03c, 2026-08-05):
+    //   /blog/bed-admission-2026-tamil-nadu        -> edu.jkkn.ac.in/admissions
+    //   /blog/top-10-career-options-after-bed-2026 -> edu.jkkn.ac.in/blog/...
+    // Re-verified live 2026-08-17: both answer 308, both targets answer 200.
+    //
+    // Listing a 301'd URL in a sitemap gives Google two contradicting instructions -
+    // the sitemap says "index this", the server says "it moved" - which slows the very
+    // migration the redirect exists to finish. Measured over the 10 days after the
+    // redirect went live: edu /admissions rose 63 -> 1,164 impressions and 2 -> 17
+    // clicks, while the Arts page fell 12,139 -> 9,547 and 377 -> 266. The transfer is
+    // real but roughly a fifth done, and this entry was pulling against it throughout.
 
     // Events parent
     s(`${SITE_URL}/events`, "weekly", 0.7),
