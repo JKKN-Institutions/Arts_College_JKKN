@@ -55,8 +55,14 @@ export async function generateMetadata({
   // well past where Google truncates, with the name printed twice.
   // The suffix drops to "| JKKN" for the few long programme names, so every one of these pages
   // stays inside 60 characters as programmes are added rather than needing a manual check.
-  const long = `${info.name} Admission 2026-27 | JKKN CAS`;
-  const title = long.length <= 60 ? long : `${info.name} Admission 2026-27 | JKKN`;
+  // GL1-08: searchers type "bsc zoology admission 2026", not "B.Sc. Zoology". The dotted
+  // form is the correct academic name and stays in info.name, the H1, the breadcrumb and
+  // the schema - only the SERP title drops the dots so it reads as the query is typed.
+  // Checked against all 37 programmes before shipping: every resulting title is <= 60
+  // characters, so the guard on the next line still holds and nothing regresses.
+  const searchName = info.name.replace(/\./g, "");
+  const long = `${searchName} Admission 2026-27 | JKKN CAS`;
+  const title = long.length <= 60 ? long : `${searchName} Admission 2026-27 | JKKN`;
   const description = `${info.fullName} at JKKN, Autonomous and NAAC accredited. ${info.duration} — eligibility, fees, seats and how to apply.`;
 
   return {

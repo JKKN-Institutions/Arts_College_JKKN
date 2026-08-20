@@ -5,16 +5,20 @@ import GalleryClient from './GalleryClient';
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Photo Gallery",
+  // GL1-08: the query is "jkkn college of arts and science photos" (57 impressions,
+  // position 1.75). Neither "photos" nor the college name was in the page title - the
+  // root layout supplied the name via its 35-character template. `absolute` carries
+  // both inside 56 characters.
+  title: { absolute: "JKKN College of Arts and Science Photos - Campus Gallery" },
   description:
-    "View campus photos, events and academic activities at JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
+    "Campus photos of JKKN College of Arts and Science (Autonomous), Komarapalayam — labs, library, classrooms, hostel, sports and college events.",
   alternates: {
     canonical: "https://cas.jkkn.ac.in/gallery",
   },
   openGraph: {
-    title: "Photo Gallery | JKKN Arts & Science",
+    title: "JKKN College of Arts and Science Photos - Campus Gallery",
     description:
-      "View campus photos, events and academic activities at JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
+      "Campus photos of JKKN College of Arts and Science (Autonomous), Komarapalayam — labs, library, classrooms, hostel, sports and college events.",
     url: "https://cas.jkkn.ac.in/gallery",
     siteName: "JKKN College of Arts and Science",
     type: "website",

@@ -48,10 +48,10 @@ import AdmissionPopup from '@/components/home/AdmissionPopup';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Best Arts and Science College in Tamil Nadu | JKKN College (Autonomous)',
+    absolute: 'JKKN College of Arts and Science (Autonomous), Komarapalayam',
   },
   description:
-    'JKKN College — the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited, 95% placement, ₹18 LPA highest package. 27+ UG, PG & PhD programmes near Erode.',
+    'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited, Periyar University. 27+ UG, PG & PhD programmes, 95% placement. Apply 2026-27.',
   keywords: [
     'best arts and science college in Tamil Nadu',
     'JKKN College of Arts and Science',
@@ -68,9 +68,9 @@ export const metadata: Metadata = {
     canonical: 'https://cas.jkkn.ac.in',
   },
   openGraph: {
-    title: 'Best Arts and Science College in Tamil Nadu | JKKN College (Autonomous)',
+    title: 'JKKN College of Arts and Science (Autonomous), Komarapalayam',
     description:
-      'JKKN College — the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited, 95% placement, ₹18 LPA highest package. 27+ UG, PG & PhD programmes near Erode.',
+      'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited, Periyar University. 27+ UG, PG & PhD programmes, 95% placement. Apply 2026-27.',
     url: 'https://cas.jkkn.ac.in',
     siteName: 'JKKN College of Arts and Science',
     type: 'website',
