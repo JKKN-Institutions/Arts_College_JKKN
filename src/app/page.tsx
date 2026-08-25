@@ -591,7 +591,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16" data-speakable>
             {/* Stat 1: Placement Rate */}
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
-              <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">95%</div>
+              <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">90%</div>
               <div className="text-[14px] leading-[20px] font-medium text-gray-600">Placement Rate</div>
             </div>
 
