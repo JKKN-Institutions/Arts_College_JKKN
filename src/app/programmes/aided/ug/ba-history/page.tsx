@@ -123,7 +123,7 @@ export default function BAHistoryPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Civil services & careers' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Placement Record', desc: 'Civil services & careers' },
               { icon: <Award className="w-7 h-7" />, stat: '500+', title: 'UPSC Selections', desc: 'Successful alumni' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>

@@ -150,7 +150,7 @@ export default function BScAIDSPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Cpu className="w-7 h-7" />, stat: 'GPU', title: 'High-Performance Labs', desc: 'NVIDIA RTX workstations' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'AI/ML career opportunities' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Placement Record', desc: 'AI/ML career opportunities' },
               { icon: <Award className="w-7 h-7" />, stat: '₹5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>

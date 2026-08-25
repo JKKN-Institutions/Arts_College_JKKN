@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   // 54 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited arts and science college ~14 km from Pallipalayam. 34 UG & PG programmes, 80%+ placements. Admissions open 2026–27.",
+    "JKKN CAS — NAAC-accredited arts and science college ~14 km from Pallipalayam. 34 UG & PG programmes, 90%+ placements. Admissions open 2026–27.",
   // 142 chars — within 155 limit
 
   keywords: [
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College near Pallipalayam — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 34 programmes, 80%+ placements. ~14 km from Pallipalayam. Admissions open 2026–27.",
+      "JKKN CAS — NAAC-accredited, 34 programmes, 90%+ placements. ~14 km from Pallipalayam. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/pallipalayam",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College near Pallipalayam — JKKN CAS",
     description:
-      "NAAC-accredited arts college ~14 km from Pallipalayam. 34 programmes, 80%+ placements, hostel available. Admissions 2026–27 open.",
+      "NAAC-accredited arts college ~14 km from Pallipalayam. 34 programmes, 90%+ placements, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -89,7 +89,7 @@ export default function PallipalayamPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Pallipalayam?",
-      a: "JKKN College of Arts and Science, located approximately 14 km from Pallipalayam at Komarapalayam on NH-544, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located approximately 14 km from Pallipalayam at Komarapalayam on NH-544, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Pallipalayam?",
@@ -121,11 +121,11 @@ export default function PallipalayamPage() {
     },
     {
       q: "What placement rate does JKKN CAS achieve for Pallipalayam students?",
-      a: "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
+      a: "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Why should Pallipalayam students choose JKKN CAS over colleges in Erode city?",
-      a: "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 80%+ placements with national recruiters — advantages not uniformly available at Erode city colleges. The ~14 km Cauvery-side route from Pallipalayam avoids Erode city traffic entirely, making daily day-scholar commute easy, and hostel facilities are available for those who prefer on-campus living.",
+      a: "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters — advantages not uniformly available at Erode city colleges. The ~14 km Cauvery-side route from Pallipalayam avoids Erode city traffic entirely, making daily day-scholar commute easy, and hostel facilities are available for those who prefer on-campus living.",
     },
   ];
 
@@ -133,7 +133,7 @@ export default function PallipalayamPage() {
     {
       question: "What is the best arts and science college near Pallipalayam?",
       answer:
-        "JKKN College of Arts and Science, located approximately 14 km from Pallipalayam at Komarapalayam on NH-544, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
+        "JKKN College of Arts and Science, located approximately 14 km from Pallipalayam at Komarapalayam on NH-544, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
     },
     {
       question: "How far is JKKN CAS from Pallipalayam?",
@@ -163,7 +163,7 @@ export default function PallipalayamPage() {
     {
       question: "What placement rate does JKKN CAS achieve for Pallipalayam students?",
       answer:
-        "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
+        "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
     },
     {
       question: "How can students from Pallipalayam apply to JKKN CAS?",
@@ -178,7 +178,7 @@ export default function PallipalayamPage() {
     {
       question: "Why should Pallipalayam students choose JKKN CAS over colleges in Erode city?",
       answer:
-        "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 80%+ placements with national recruiters — advantages not uniformly available at Erode city colleges. The ~14 km Cauvery-side route avoids Erode city traffic entirely.",
+        "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters — advantages not uniformly available at Erode city colleges. The ~14 km Cauvery-side route avoids Erode city traffic entirely.",
     },
   ];
 
@@ -197,7 +197,7 @@ export default function PallipalayamPage() {
             "@type": "WebPage",
             "name": "Arts and Science College near Pallipalayam — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/pallipalayam",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college approximately 14 km from Pallipalayam via Komarapalayam. 34 programmes, 80%+ placements, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college approximately 14 km from Pallipalayam via Komarapalayam. 34 programmes, 90%+ placements, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -305,7 +305,7 @@ export default function PallipalayamPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 80%+ placement rate at JKKN CAS, easily reachable from Pallipalayam."
+        description="3-year undergraduate IT programme with hands-on training and 90%+ placement rate at JKKN CAS, easily reachable from Pallipalayam."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -336,7 +336,7 @@ export default function PallipalayamPage() {
             14 km from Pallipalayam, is a NAAC-accredited institution offering
             34 UG and PG programmes including BCA, BBA, B.Com, and B.Sc
             specialisations. Affiliated to Periyar University and Bharathiar
-            University, it achieves 80%+ placement rates with recruiters
+            University, it achieves 90%+ placement rates with recruiters
             including TCS, Infosys, HDFC Bank, and Amazon.
           </p>
 
@@ -344,7 +344,7 @@ export default function PallipalayamPage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Pallipalayam to JKKN — a short ~20-25 minute ride along the
             Cauvery. JKKN College of Arts and Science offers NAAC-accredited
-            arts and science programmes with 80%+ placement support —
+            arts and science programmes with 90%+ placement support —
             approximately 14 km from Pallipalayam, with both towns in Namakkal
             district.
           </p>
@@ -352,7 +352,7 @@ export default function PallipalayamPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "80%+", label: "PLACEMENTS" },
+              { value: "90%+", label: "PLACEMENTS" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "14km", label: "FROM PALLIPALAYAM" },
               { value: "34", label: "PROGRAMMES" },
@@ -754,7 +754,7 @@ export default function PallipalayamPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "80%+", label: "PLACEMENT RATE — 2024–25" },
+              { value: "90%+", label: "PLACEMENT RATE — 2024–25" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },
@@ -1178,7 +1178,7 @@ export default function PallipalayamPage() {
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Placement Rate</td>
-                  <td className="p-3 text-gray-800 font-medium">80%+</td>
+                  <td className="p-3 text-gray-800 font-medium">90%+</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">

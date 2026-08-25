@@ -29,9 +29,9 @@
 
 | # | Task | File | Line(s) | Before | After | Effort | Depends On |
 |---|------|------|---------|--------|-------|--------|------------|
-| M-01 | Fix meta description: "45 km" → "~58 km" + enhance keyword framing | page.tsx | 43 | `"JKKN CAS — 45 km from Salem via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27."` | `"JKKN CAS — top arts and science college accessible from Salem (~58 km via NH-544). NAAC-accredited, BCA, BBA, B.Com, B.Sc. Admissions 2026-27."` | 5 min | None |
-| M-02 | Fix OG description: "45 km" → "~58 km" | page.tsx | 57–58 | `"JKKN CAS — 45 km from Salem. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27."` | `"JKKN CAS — ~58 km from Salem. NAAC-accredited, 80%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27."` | 3 min | None |
-| M-03 | Fix Twitter description: "45 km" → "~58 km" | page.tsx | 74 | `"JKKN CAS — 45 km from Salem. NAAC-accredited, 80%+ placements. Admissions open 2026-27."` | `"JKKN CAS — ~58 km from Salem. NAAC-accredited, 80%+ placements. Admissions open 2026-27."` | 3 min | None |
+| M-01 | Fix meta description: "45 km" → "~58 km" + enhance keyword framing | page.tsx | 43 | `"JKKN CAS — 45 km from Salem via NH-544. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27."` | `"JKKN CAS — top arts and science college accessible from Salem (~58 km via NH-544). NAAC-accredited, BCA, BBA, B.Com, B.Sc. Admissions 2026-27."` | 5 min | None |
+| M-02 | Fix OG description: "45 km" → "~58 km" | page.tsx | 57–58 | `"JKKN CAS — 45 km from Salem. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27."` | `"JKKN CAS — ~58 km from Salem. NAAC-accredited, 90%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27."` | 3 min | None |
+| M-03 | Fix Twitter description: "45 km" → "~58 km" | page.tsx | 74 | `"JKKN CAS — 45 km from Salem. NAAC-accredited, 90%+ placements. Admissions open 2026-27."` | `"JKKN CAS — ~58 km from Salem. NAAC-accredited, 90%+ placements. Admissions open 2026-27."` | 3 min | None |
 | M-04 | Verify meta title is unchanged (no edit needed) | page.tsx | 41 | `"Best Arts and Science College Near Salem \| JKKN CAS"` (55 chars) | No change — correct | 0 min | None |
 
 ---
@@ -64,14 +64,14 @@
 
 | # | Task | File | Line(s) | Before | After | Effort | Depends On |
 |---|------|------|---------|--------|-------|--------|------------|
-| F-01 | Rewrite FAQ Q1 answer: "best arts college" — trim 67 words → 28 words | page.tsx | 82–83 | `"JKKN College of Arts and Science, located just 40-50 km from Salem on NH-544, is widely regarded as one of the top arts and science colleges accessible from Salem. Approved by UGC, NAAC and affiliated to Periyar University / Bharathiar University, it offers excellent programmes with strong placement support."` | `"JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 34 programmes and 80%+ placement rate."` | 8 min | None |
+| F-01 | Rewrite FAQ Q1 answer: "best arts college" — trim 67 words → 28 words | page.tsx | 82–83 | `"JKKN College of Arts and Science, located just 40-50 km from Salem on NH-544, is widely regarded as one of the top arts and science colleges accessible from Salem. Approved by UGC, NAAC and affiliated to Periyar University / Bharathiar University, it offers excellent programmes with strong placement support."` | `"JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 34 programmes and 90%+ placement rate."` | 8 min | None |
 | F-02 | Rewrite FAQ Q2 answer: "how far" — fix distance + trim 61 words → 20 words | page.tsx | 86–87 | `"JKKN CAS is approximately 40-50 km from Salem city centre, which takes about 50-60 minutes by road via NH-544 (Salem-Coimbatore Highway) — direct route. Regular bus services are available from Salem New Bus Stand to Komarapalayam every 15-20 minutes."` | `"JKKN CAS is approximately 58 km from Salem via NH-544, taking 60–70 minutes by road."` | 8 min | None |
 | F-03 | Rewrite FAQ Q3 answer: "popular courses" — trim 63 words → 23 words | page.tsx | 90–91 | `"BCA and B.Com are the most popular choices among Salem students, given the city's industrial economy and growing IT sector. BBA is also in demand. JKKN CAS offers 34 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes."` | `"JKKN CAS offers BCA, BBA, B.Com, B.Sc (multiple specialisations), MCA, M.Com, M.Sc, and Ph.D — 34 programmes total across aided and self-finance streams."` | 8 min | None |
 | F-04 | Trim FAQ Q5 answer: "fees" — 47 words → 27 words | page.tsx | 98–99 | `"Yes. JKKN CAS fees are competitively priced — often 30-50% lower than private colleges in Salem city. Government scholarships (BC/MBC/SC/ST) and merit-based concessions are available. Contact the admission office at +91 9345855001 for the full fee structure."` | `"JKKN CAS fees are 30–50% lower than city-based private colleges. Government scholarships (BC, MBC, SC, ST) are available. Contact +91 9345855001 for the current fee structure."` | 8 min | None |
 | F-05 | Rewrite FAQ Q6 answer: "hostel" — trim 42 words → 22 words | page.tsx | 102–103 | `"Yes, JKKN CAS provides separate hostel facilities for boys and girls. Students from Salem can also opt for daily commute as the campus is just 50-60 minutes away. College transport services are available."` | `"Yes. JKKN CAS provides separate hostels for boys and girls with mess, WiFi, and 24/7 security. College buses also connect Salem."` | 8 min | None |
 | F-06 | Rewrite FAQ Q8 answer: "direct bus" — trim 55 words → 27 words | page.tsx | 109–110 | `"Yes. Regular TNSTC government buses and private buses run from Salem New Bus Stand towards Namakkal/Erode via NH-544. Get off at Komarapalayam — the campus is right on the highway. Journey time is approximately 50 to 60 minutes. College transport is also available for hostellers."` | `"Yes. TNSTC government buses from Salem New Bus Stand to Komarapalayam run every 15–20 minutes via NH-544, reaching the campus in under 70 minutes."` | 8 min | None |
 | F-07 | Trim FAQ Q9 answer: "hostel cost" — 63 words → ~35 words | page.tsx | 113–115 | `"Hostel fees at JKKN CAS are significantly lower than city PG accommodations. The fee includes furnished rooms, three meals a day, WiFi, and 24/7 security. Many Salem students prefer the hostel for a focused academic environment. Contact the admission office at +91 9345855001 for the current fee structure."` | `"Hostel fees are significantly lower than Salem city PG rates. Mess, WiFi, and security are included. Contact the admissions office for exact annual rates."` | 8 min | None |
-| F-08 | Trim FAQ Q10 answer: "why JKKN" — 72 words → ~40 words | page.tsx | 117–119 | `"JKKN CAS offers several advantages over Salem city colleges: fees are 30-50% lower, class sizes are smaller with personalised faculty attention, the 50+ acre green campus provides a distraction-free environment, and placement rates (80%+) are on par with city institutions. The same top recruiters — TCS, Infosys, HDFC, Amazon — visit JKKN CAS."` | `"JKKN CAS offers NAAC accreditation, 34 programmes, 80%+ placement, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~58 km from Salem."` | 8 min | None |
+| F-08 | Trim FAQ Q10 answer: "why JKKN" — 72 words → ~40 words | page.tsx | 117–119 | `"JKKN CAS offers several advantages over Salem city colleges: fees are 30-50% lower, class sizes are smaller with personalised faculty attention, the 50+ acre green campus provides a distraction-free environment, and placement rates (90%+) are on par with city institutions. The same top recruiters — TCS, Infosys, HDFC, Amazon — visit JKKN CAS."` | `"JKKN CAS offers NAAC accreditation, 34 programmes, 90%+ placement, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~58 km from Salem."` | 8 min | None |
 | F-09 | Add CSS class `faq-answer-voice` to each FAQ answer wrapper element in the Accordion | page.tsx | 1027–1029 (AccordionContent) | `<AccordionContent className="text-gray-500 text-sm leading-relaxed pb-5">` | `<AccordionContent className="text-gray-500 text-sm leading-relaxed pb-5 faq-answer-voice">` | 5 min | F-01 to F-08 done first |
 
 ---
@@ -137,7 +137,7 @@
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Salem | JKKN CAS",
   description:
-    "JKKN CAS — 45 km from Salem via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.",
+    "JKKN CAS — 45 km from Salem via NH-544. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.",
   keywords: [
     "arts and science college near Salem",
     "best college near Salem",
@@ -152,13 +152,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Salem | JKKN CAS",
     description:
-      "JKKN CAS — 45 km from Salem. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 45 km from Salem. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     // ...
   },
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Salem | JKKN CAS",
-    description: "JKKN CAS — 45 km from Salem. NAAC-accredited, 80%+ placements. Admissions open 2026-27.",
+    description: "JKKN CAS — 45 km from Salem. NAAC-accredited, 90%+ placements. Admissions open 2026-27.",
   },
 };
 ```
@@ -183,13 +183,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Salem | JKKN CAS",
     description:
-      "JKKN CAS — ~58 km from Salem. NAAC-accredited, 80%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27.",
+      "JKKN CAS — ~58 km from Salem. NAAC-accredited, 90%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27.",
     // ...
   },
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Salem | JKKN CAS",
-    description: "JKKN CAS — ~58 km from Salem. NAAC-accredited, 80%+ placements. Admissions open 2026-27.",
+    description: "JKKN CAS — ~58 km from Salem. NAAC-accredited, 90%+ placements. Admissions open 2026-27.",
   },
 };
 ```
@@ -203,7 +203,7 @@ export const metadata: Metadata = {
 ```tsx
 // BEFORE — lines 217–222
 {[
-  { value: "80%+", label: "PLACEMENTS" },
+  { value: "90%+", label: "PLACEMENTS" },
   { value: "5-7", label: "LPA HIGHEST" },
   { value: "45km", label: "FROM SALEM" },
   { value: "4", label: "PROGRAMMES" },
@@ -213,7 +213,7 @@ export const metadata: Metadata = {
 ```tsx
 // AFTER — C-01, C-02 applied
 {[
-  { value: "80%+", label: "PLACEMENTS" },
+  { value: "90%+", label: "PLACEMENTS" },
   { value: "5-7", label: "LPA HIGHEST" },
   { value: "~58km", label: "FROM SALEM" },
   { value: "34", label: "PROGRAMMES" },
@@ -311,7 +311,7 @@ const faqs = [
 const faqs = [
   {
     q: "What is the best arts and science college in Salem?",
-    a: "JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 34 programmes and 80%+ placement rate.",
+    a: "JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 34 programmes and 90%+ placement rate.",
   },
   {
     q: "How far is JKKN CAS from Salem?",

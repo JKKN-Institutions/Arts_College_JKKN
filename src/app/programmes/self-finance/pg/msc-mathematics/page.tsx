@@ -122,7 +122,7 @@ export default function MScMathematicsPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Award className="w-7 h-7" />, stat: 'NET/SET', title: 'Exam Preparation', desc: 'Competitive exam coaching' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Career opportunities assured' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <Brain className="w-7 h-7" />, stat: 'Research', title: 'Oriented Learning', desc: 'Dissertation & publications' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>

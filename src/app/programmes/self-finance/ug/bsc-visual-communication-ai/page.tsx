@@ -142,7 +142,7 @@ export default function BScVisualCommunicationAIPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '85%+', title: 'Placement Record', desc: 'AI-forward career pipeline' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '90%+', title: 'Placement Record', desc: 'AI-forward career pipeline' },
               { icon: <Brain className="w-7 h-7" />, stat: 'AI-First', title: 'Industry-First Focus', desc: 'Emerging-tech creative roles' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>

@@ -127,7 +127,7 @@ export default function MComAidedPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '12:1', title: 'Learners per Senior Learner', desc: 'Enhanced personal attention' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Premium career opportunities' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Placement Record', desc: 'Premium career opportunities' },
               { icon: <Award className="w-7 h-7" />, stat: '₹6.5L', title: 'Average Package', desc: 'Higher starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>

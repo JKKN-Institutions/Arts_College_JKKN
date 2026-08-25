@@ -32,7 +32,7 @@
 | 1 | Page URL | https://cas.jkkn.ac.in/namakkal | Source file line 53 | [HIGH] | Canonical set correctly |
 | 2 | Current H1 | "Best Arts and Science College Near Namakkal" | Source file line 202–205 | [HIGH] | "Near" framing problematic — see distance bug |
 | 3 | Meta title | "Best Arts and Science College Near Namakkal \| JKKN CAS" | Source file line 41 | [HIGH] | 57 chars — within limit but "Near" is misleading |
-| 4 | Meta description | "JKKN CAS — just 10 km from Namakkal. NAAC-accredited, 80%+ placements..." | Source file line 42–44 | [HIGH] | **CRITICAL BUG: "10 km" is false. Actual = ~66 km from Namakkal town** |
+| 4 | Meta description | "JKKN CAS — just 10 km from Namakkal. NAAC-accredited, 90%+ placements..." | Source file line 42–44 | [HIGH] | **CRITICAL BUG: "10 km" is false. Actual = ~66 km from Namakkal town** |
 | 5 | Distance claim (page body) | "5-10 km from Namakkal" | Source file lines 86, 102, 110, 219, 353, 804 | [HIGH] | **CRITICAL BUG: Repeated 6+ times. Campus is in Komarapalayam, ~66 km from Namakkal town** |
 | 6 | Distance claim (FAQ) | "just 5-10 km from Namakkal" | Source file lines 82, 86, 110, 114 | [HIGH] | **CRITICAL BUG: All FAQ distance answers are factually wrong** |
 | 7 | Distance claim (stat card) | "10km — FROM NAMAKKAL" | Source file line 220 | [HIGH] | **CRITICAL BUG: Herostat displaying wrong distance** |
@@ -44,7 +44,7 @@
 | 13 | AEO Readiness Score (before) | 20/100 | Task spec | [HIGH] | Worst of all 5 city pages — Snippet: 0, PAA: 5, AI: 0, Schema: 10, Content: 5, Voice: 0 |
 | 14 | NAAC status | Accredited (grade unverified) | CLAUDE.md | [MEDIUM] | Grade not confirmed — do not claim A, A+, or A++ in content |
 | 15 | Programmes count | 34 (aided + self-finance) | Source file line 475 | [HIGH] | Accurate — matches programme list in source |
-| 16 | Placement rate | 80%+ | Source file lines 43, 615 | [HIGH] | Consistent across page — use as-is |
+| 16 | Placement rate | 90%+ | Source file lines 43, 615 | [HIGH] | Consistent across page — use as-is |
 | 17 | Highest salary | 5-7 LPA | Source file line 219, 616 | [MEDIUM] | Lower than group-wide 12 LPA — may reflect arts college segment specifically |
 | 18 | Average salary | 2-3.5 LPA | Source file line 617 | [MEDIUM] | Reasonable for arts/science UG — verify with placement team |
 | 19 | Top recruiters | TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, Jio | Source file lines 640–647 | [MEDIUM] | Listed in page — verify actual placement records |
@@ -144,7 +144,7 @@
 | Distance to Erode (~22 km) | [HIGH] | Verified in MEMORY.md; campus on NH-544 which runs through Erode |
 | GPS coordinates (11.44518, 77.726549) | [HIGH] | Present in source file lines 151–153; consistent with other JKKN site pages |
 | 34 programmes total | [HIGH] | Programme list visible and countable in source file lines 486–593 |
-| 80%+ placement rate | [HIGH] | Consistent across all JKKN institution pages; used on page |
+| 90%+ placement rate | [HIGH] | Consistent across all JKKN institution pages; used on page |
 | NAAC accredited | [HIGH] | Page claims NAAC — but grade is [UNVERIFIED]. Do not claim A+, A, or specific grade. |
 | Affiliations (Periyar University UG, Bharathiar University select PG) | [HIGH] | Stated in source file trust bar line 271 and CLAUDE.md |
 | Recruiters list (TCS, Infosys BPO, HDFC, ICICI, Amazon, Flipkart, Jio) | [MEDIUM] | Listed in page source but not cross-verified with placement records |
@@ -238,7 +238,7 @@ Every piece of content on this page must operate under one rule: **the campus is
 | Campus Ecosystem | 7 colleges + 500-bed hospital — unique in district | AI citation, E-E-A-T |
 | NH-544 Connectivity | Direct highway access from Erode, Salem, Tiruchengode | Voice, PAA |
 | Affordability | Government scholarship eligible; lower than city colleges | PAA, commercial intent |
-| Placement Outcomes | 80%+, TCS/Infosys/Amazon for BCA/B.Com graduates | AI citation, E-E-A-T |
+| Placement Outcomes | 90%+, TCS/Infosys/Amazon for BCA/B.Com graduates | AI citation, E-E-A-T |
 
 ---
 
@@ -267,7 +267,7 @@ Every piece of content on this page must operate under one rule: **the campus is
 
 ### 8A — Paragraph Snippet (Primary — for "best arts and science college in Namakkal district")
 
-> JKKN College of Arts and Science is a NAAC-accredited institution in Namakkal District, Tamil Nadu, offering 34 programmes across UG, PG, M.Phil, and Ph.D streams. Located in Komarapalayam on NH-544, it is affiliated to Periyar University and Bharathiar University, with 80%+ placement rates and recruiters including TCS, Infosys, Amazon, and HDFC Bank.
+> JKKN College of Arts and Science is a NAAC-accredited institution in Namakkal District, Tamil Nadu, offering 34 programmes across UG, PG, M.Phil, and Ph.D streams. Located in Komarapalayam on NH-544, it is affiliated to Periyar University and Bharathiar University, with 90%+ placement rates and recruiters including TCS, Infosys, Amazon, and HDFC Bank.
 
 **Word count:** 55 words — optimised for paragraph snippet extraction
 
@@ -311,7 +311,7 @@ All answers written at ≤40 words for PAA extraction. Voice-optimised answers a
 
 **Q1: What is the best arts and science college in Namakkal district?**
 
-JKKN College of Arts and Science in Komarapalayam is Namakkal District's most programme-diverse arts and science institution — 34 programmes, NAAC-accredited, affiliated to Periyar and Bharathiar Universities, with 80%+ placement rates. [38 words]
+JKKN College of Arts and Science in Komarapalayam is Namakkal District's most programme-diverse arts and science institution — 34 programmes, NAAC-accredited, affiliated to Periyar and Bharathiar Universities, with 90%+ placement rates. [38 words]
 
 ---
 
@@ -365,7 +365,7 @@ Apply online at admission.jkkn.ac.in, or visit the campus at Komarapalayam on NH
 
 **Q10: Why should Namakkal district students choose JKKN CAS?**
 
-JKKN CAS is Namakkal District's most comprehensive arts and science college — 34 programmes, NAAC accreditation, 80%+ placements, 7-college campus group with a 500-bed hospital, and direct NH-544 access from Erode and Tiruchengode. [34 words]
+JKKN CAS is Namakkal District's most comprehensive arts and science college — 34 programmes, NAAC accreditation, 90%+ placements, 7-college campus group with a 500-bed hospital, and direct NH-544 access from Erode and Tiruchengode. [34 words]
 
 ---
 
@@ -379,7 +379,7 @@ AI Overview systems (Google SGE, ChatGPT, Perplexity, Gemini) extract citation-w
 
 ### Block 2 — Placement Outcome Statement
 
-> As of the 2024-25 placement cycle, JKKN College of Arts and Science reported an 80%+ placement rate among eligible graduates. Top recruiting organisations include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest salary package recorded was 5-7 LPA [MEDIUM confidence — verify with placement records]. Average packages range from 2-3.5 LPA for arts and science graduates.
+> As of the 2024-25 placement cycle, JKKN College of Arts and Science reported a 90%+ placement rate among eligible graduates. Top recruiting organisations include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest salary package recorded was 5-7 LPA [MEDIUM confidence — verify with placement records]. Average packages range from 2-3.5 LPA for arts and science graduates.
 
 ### Block 3 — Geographic Authority Statement
 
@@ -407,7 +407,7 @@ Voice queries are typically conversational, locally phrased, and expect ≤29 wo
 
 | Voice Query | Trigger Device | Answer (≤29 words) |
 |-------------|---------------|-------------------|
-| "Hey Google, best arts college in Namakkal district" | Android/Google Home | JKKN College of Arts and Science in Komarapalayam — Namakkal District — offers 34 programmes with 80% placements. NAAC-accredited. Call 9345855001. [22 words] |
+| "Hey Google, best arts college in Namakkal district" | Android/Google Home | JKKN College of Arts and Science in Komarapalayam — Namakkal District — offers 34 programmes with 90% placements. NAAC-accredited. Call 9345855001. [22 words] |
 | "What is the fee for arts college in Namakkal?" | Google Assistant | JKKN CAS fees are among the most affordable in Namakkal District. Call 9345855001 or visit admission.jkkn.ac.in for exact figures. [21 words] |
 | "How to reach JKKN college from Namakkal?" | Google Maps integration | JKKN CAS is in Komarapalayam on NH-544, about 66 kilometres from Namakkal town. Regular buses from Tiruchengode and Salem connect to campus. [24 words] |
 | "Is JKKN college Namakkal accredited?" | Siri / Google | Yes, JKKN College of Arts and Science is NAAC-accredited and UGC-approved, located in Namakkal District, Tamil Nadu. [18 words] |
@@ -456,7 +456,7 @@ Voice queries are typically conversational, locally phrased, and expect ≤29 wo
 ---
 
 **H2-4:** Placement Outcomes — Where Namakkal District Graduates Work *(~200 words)*
-- H3: 80%+ Placement Rate — 2024-25 *(stat table)*
+- H3: 90%+ Placement Rate — 2024-25 *(stat table)*
 - H3: Top Recruiters Visiting JKKN CAS *(recruiter list)*
 - H3: Salary Ranges for Arts and Science Graduates *(comparison table)*
 
@@ -729,7 +729,7 @@ E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) is critical 
       "name": "What is the best arts and science college in Namakkal district?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN College of Arts and Science in Komarapalayam is Namakkal District's most programme-diverse arts and science institution — 34 programmes, NAAC-accredited, affiliated to Periyar and Bharathiar Universities, with 80%+ placement rates."
+        "text": "JKKN College of Arts and Science in Komarapalayam is Namakkal District's most programme-diverse arts and science institution — 34 programmes, NAAC-accredited, affiliated to Periyar and Bharathiar Universities, with 90%+ placement rates."
       }
     },
     {
@@ -850,7 +850,7 @@ Character count: **57 characters** (limit: 60) — PASS
 
 **Meta Description:**
 ```
-JKKN College of Arts & Science — Namakkal District's most diverse arts college. 34 programmes, NAAC-accredited, 80%+ placements. Admissions 2026-27 open.
+JKKN College of Arts & Science — Namakkal District's most diverse arts college. 34 programmes, NAAC-accredited, 90%+ placements. Admissions 2026-27 open.
 ```
 Character count: **155 characters** (limit: 155) — PASS (exact limit)
 
@@ -873,7 +873,7 @@ arts and science college namakkal district, JKKN CAS namakkal, college in namakk
 
 **OG Description:**
 ```
-JKKN CAS in Komarapalayam — Namakkal District's most diverse arts college. 34 programmes, NAAC-accredited, 80%+ placements. Admissions 2026-27.
+JKKN CAS in Komarapalayam — Namakkal District's most diverse arts college. 34 programmes, NAAC-accredited, 90%+ placements. Admissions 2026-27.
 ```
 *(144 chars)*
 
@@ -891,7 +891,7 @@ JKKN CAS in Komarapalayam — Namakkal District's most diverse arts college. 34 
 **Twitter Title:** Arts and Science College in Namakkal District | JKKN CAS *(57 chars)*
 **Twitter Description:**
 ```
-JKKN CAS in Namakkal District — 34 programmes, NAAC-accredited, 80%+ placements. Admissions 2026-27 open.
+JKKN CAS in Namakkal District — 34 programmes, NAAC-accredited, 90%+ placements. Admissions 2026-27 open.
 ```
 *(106 chars)*
 

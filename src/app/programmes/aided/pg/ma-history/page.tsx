@@ -126,7 +126,7 @@ export default function MAHistoryPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '12:1', title: 'Learners per Senior Learner', desc: 'Personalized mentorship' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement & Higher Studies', desc: 'Career success rate' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Placement & Higher Studies', desc: 'Career success rate' },
               { icon: <Award className="w-7 h-7" />, stat: 'PhD', title: 'Research Pathway', desc: 'Direct doctoral eligibility' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>

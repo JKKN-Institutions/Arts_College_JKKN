@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   // 51 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited arts and science college ~15-20 km from Sankagiri on NH-544. 34 programmes, 80%+ placements. Admissions open 2026–27.",
+    "JKKN CAS — NAAC-accredited arts and science college ~15-20 km from Sankagiri on NH-544. 34 programmes, 90%+ placements. Admissions open 2026–27.",
   // ~145 chars — within 155 limit
 
   keywords: [
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College near Sankagiri — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 34 programmes, 80%+ placements. ~15-20 km from Sankagiri via NH-544. Admissions open 2026–27.",
+      "JKKN CAS — NAAC-accredited, 34 programmes, 90%+ placements. ~15-20 km from Sankagiri via NH-544. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/sankagiri",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College near Sankagiri — JKKN CAS",
     description:
-      "NAAC-accredited arts college near Sankagiri. 34 programmes, 80%+ placements, hostel available. Admissions 2026–27 open.",
+      "NAAC-accredited arts college near Sankagiri. 34 programmes, 90%+ placements, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -89,7 +89,7 @@ export default function SankagiriPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Sankagiri?",
-      a: "JKKN College of Arts and Science, located ~15-20 km from Sankagiri on the NH-544 corridor, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located ~15-20 km from Sankagiri on the NH-544 corridor, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Sankagiri?",
@@ -121,11 +121,11 @@ export default function SankagiriPage() {
     },
     {
       q: "What placement rate does JKKN CAS achieve for Sankagiri students?",
-      a: "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
+      a: "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Why do Sankari students choose JKKN CAS over colleges in Salem city?",
-      a: "For students from Sankagiri (also spelled Sankari), JKKN CAS is closer than Salem city — ~15-20 km via the direct NH-544 corridor versus ~35-40 km to Salem city colleges. Add lower fees, NAAC accreditation, a residential campus, and 80%+ placements with national recruiters, and the daily commute or hostel choice becomes easy.",
+      a: "For students from Sankagiri (also spelled Sankari), JKKN CAS is closer than Salem city — ~15-20 km via the direct NH-544 corridor versus ~35-40 km to Salem city colleges. Add lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters, and the daily commute or hostel choice becomes easy.",
     },
   ];
 
@@ -133,7 +133,7 @@ export default function SankagiriPage() {
     {
       question: "What is the best arts and science college near Sankagiri?",
       answer:
-        "JKKN College of Arts and Science, located ~15-20 km from Sankagiri on the NH-544 corridor, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
+        "JKKN College of Arts and Science, located ~15-20 km from Sankagiri on the NH-544 corridor, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
     },
     {
       question: "How far is JKKN CAS from Sankagiri?",
@@ -163,7 +163,7 @@ export default function SankagiriPage() {
     {
       question: "What placement rate does JKKN CAS achieve for Sankagiri students?",
       answer:
-        "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
+        "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
     },
     {
       question: "How can students from Sankagiri apply to JKKN CAS?",
@@ -178,7 +178,7 @@ export default function SankagiriPage() {
     {
       question: "Why do Sankari students choose JKKN CAS over colleges in Salem city?",
       answer:
-        "For students from Sankagiri (also spelled Sankari), JKKN CAS is closer than Salem city — ~15-20 km via the direct NH-544 corridor versus ~35-40 km to Salem city colleges — with lower fees, NAAC accreditation, and 80%+ placements.",
+        "For students from Sankagiri (also spelled Sankari), JKKN CAS is closer than Salem city — ~15-20 km via the direct NH-544 corridor versus ~35-40 km to Salem city colleges — with lower fees, NAAC accreditation, and 90%+ placements.",
     },
   ];
 
@@ -197,7 +197,7 @@ export default function SankagiriPage() {
             "@type": "WebPage",
             "name": "Arts and Science College near Sankagiri — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/sankagiri",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college accessible from Sankagiri via the NH-544 corridor (~15-20 km). 34 programmes, 80%+ placements, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college accessible from Sankagiri via the NH-544 corridor (~15-20 km). 34 programmes, 90%+ placements, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -305,7 +305,7 @@ export default function SankagiriPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 80%+ placement rate at JKKN CAS, easily reachable from Sankagiri."
+        description="3-year undergraduate IT programme with hands-on training and 90%+ placement rate at JKKN CAS, easily reachable from Sankagiri."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -336,7 +336,7 @@ export default function SankagiriPage() {
             15-20 km from Sankagiri, is a NAAC-accredited institution offering
             34 UG and PG programmes including BCA, BBA, B.Com, and B.Sc
             specialisations. Affiliated to Periyar University and Bharathiar
-            University, it achieves 80%+ placement rates with recruiters
+            University, it achieves 90%+ placement rates with recruiters
             including TCS, Infosys, HDFC Bank, and Amazon.
           </p>
 
@@ -344,14 +344,14 @@ export default function SankagiriPage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Sankagiri to JKKN — a short, smooth ride on the NH-544 corridor.
             JKKN College of Arts and Science offers NAAC-accredited arts and
-            science programmes with 80%+ placement support — approximately
+            science programmes with 90%+ placement support — approximately
             15-20 km from Sankagiri with excellent highway connectivity.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "80%+", label: "PLACEMENTS" },
+              { value: "90%+", label: "PLACEMENTS" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "18km", label: "FROM SANKAGIRI" },
               { value: "34", label: "PROGRAMMES" },
@@ -753,7 +753,7 @@ export default function SankagiriPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "80%+", label: "PLACEMENT RATE — 2024–25" },
+              { value: "90%+", label: "PLACEMENT RATE — 2024–25" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },
@@ -1177,7 +1177,7 @@ export default function SankagiriPage() {
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Placement Rate</td>
-                  <td className="p-3 text-gray-800 font-medium">80%+</td>
+                  <td className="p-3 text-gray-800 font-medium">90%+</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">

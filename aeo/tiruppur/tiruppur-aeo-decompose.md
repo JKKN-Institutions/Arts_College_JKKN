@@ -40,11 +40,11 @@
 | # | Task | File | Line(s) | Before | After | Effort | Depends On |
 |---|------|------|---------|--------|-------|--------|------------|
 | M-01 | Update `title` — remove "Best", make keyword-first | `src/app/tiruppur/page.tsx` | 40 | `Best Arts and Science College Near Tiruppur \| JKKN CAS` | `Arts and Science College Near Tiruppur \| JKKN CAS` (49 chars) | 5 min | None |
-| M-02 | Update `description` — correct 85 km to ~67 km, add textile programme, add "34 programmes" | `src/app/tiruppur/page.tsx` | 41–43 | `JKKN CAS — 85 km from Tiruppur via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.` | `JKKN CAS — ~67 km from Tiruppur via NH-544. NAAC-accredited. 34 programmes: B.Sc Textile, BBA, B.Com, BCA. 80%+ placements. Admissions 2026-27 open.` (150 chars) | 5 min | None |
+| M-02 | Update `description` — correct 85 km to ~67 km, add textile programme, add "34 programmes" | `src/app/tiruppur/page.tsx` | 41–43 | `JKKN CAS — 85 km from Tiruppur via NH-544. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.` | `JKKN CAS — ~67 km from Tiruppur via NH-544. NAAC-accredited. 34 programmes: B.Sc Textile, BBA, B.Com, BCA. 90%+ placements. Admissions 2026-27 open.` (150 chars) | 5 min | None |
 | M-03 | Update `openGraph.title` — remove "Best" to match updated title | `src/app/tiruppur/page.tsx` | 55 | `Best Arts and Science College Near Tiruppur \| JKKN CAS` | `Arts and Science College Near Tiruppur \| JKKN CAS` | 3 min | M-01 |
-| M-04 | Update `openGraph.description` — correct 85 km to ~67 km, add "34 programmes", add textile | `src/app/tiruppur/page.tsx` | 56–58 | `JKKN CAS — 85 km from Tiruppur. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.` | `JKKN CAS — ~67 km from Tiruppur. NAAC-accredited, 34 programmes, 80%+ placements. B.Sc Textile & Fashion Design, BBA, B.Com, BCA. Admissions 2026-27 open.` | 5 min | None |
+| M-04 | Update `openGraph.description` — correct 85 km to ~67 km, add "34 programmes", add textile | `src/app/tiruppur/page.tsx` | 56–58 | `JKKN CAS — 85 km from Tiruppur. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.` | `JKKN CAS — ~67 km from Tiruppur. NAAC-accredited, 34 programmes, 90%+ placements. B.Sc Textile & Fashion Design, BBA, B.Com, BCA. Admissions 2026-27 open.` | 5 min | None |
 | M-05 | Update `twitter.title` — remove "Best" to match M-01 | `src/app/tiruppur/page.tsx` | 72 | `Best Arts and Science College Near Tiruppur \| JKKN CAS` | `Arts and Science College Near Tiruppur \| JKKN CAS` | 3 min | M-01 |
-| M-06 | Update `twitter.description` — correct 85 km to ~67 km, add textile programme reference | `src/app/tiruppur/page.tsx` | 73 | `JKKN CAS — 85 km from Tiruppur. NAAC-accredited, 80%+ placements. Admissions open 2026-27.` | `JKKN CAS — ~67 km from Tiruppur. NAAC-accredited, 80%+ placements. 34 programmes including B.Sc Textile & Fashion Design. Admissions 2026-27 open.` (148 chars) | 5 min | None |
+| M-06 | Update `twitter.description` — correct 85 km to ~67 km, add textile programme reference | `src/app/tiruppur/page.tsx` | 73 | `JKKN CAS — 85 km from Tiruppur. NAAC-accredited, 90%+ placements. Admissions open 2026-27.` | `JKKN CAS — ~67 km from Tiruppur. NAAC-accredited, 90%+ placements. 34 programmes including B.Sc Textile & Fashion Design. Admissions 2026-27 open.` (148 chars) | 5 min | None |
 | M-07 | Add textile + voice keywords to `keywords` array — add "bsc textile fashion design college near tiruppur", "bba college near tiruppur", "arts and science college in tiruppur" | `src/app/tiruppur/page.tsx` | 43–50 | 6 keywords | 9 keywords with textile-specific and exact-match variants | 5 min | None |
 
 ---
@@ -83,7 +83,7 @@ All 10 FAQ items in the `faqs` array (lines 78–119) require answer replacement
 
 | # | Task | File | Line(s) | Before | After | Effort | Depends On |
 |---|------|------|---------|--------|-------|--------|------------|
-| F-01 | Rewrite FAQ Q1 — "What is the best arts and science college in Tiruppur?" | `src/app/tiruppur/page.tsx` | 80–82 | 68-word vague answer, no specific distance | "JKKN College of Arts and Science, located ~67 km from Tiruppur on NH-544, offers 34 programmes with NAAC accreditation and 80%+ placement support." (28 words) | 5 min | None |
+| F-01 | Rewrite FAQ Q1 — "What is the best arts and science college in Tiruppur?" | `src/app/tiruppur/page.tsx` | 80–82 | 68-word vague answer, no specific distance | "JKKN College of Arts and Science, located ~67 km from Tiruppur on NH-544, offers 34 programmes with NAAC accreditation and 90%+ placement support." (28 words) | 5 min | None |
 | F-02 | Rewrite FAQ Q2 — "How far is JKKN CAS from Tiruppur?" | `src/app/tiruppur/page.tsx` | 84–86 | `80-90 km`, `1.5-2 hours`, incorrect and vague | "JKKN CAS is approximately 67 km from Tiruppur city centre — about 1.5 hours via NH-544 through Erode. Regular buses connect both cities." (25 words) | 5 min | None |
 | F-03 | Rewrite FAQ Q3 — "Which courses are popular among Tiruppur students?" | `src/app/tiruppur/page.tsx` | 88–90 | Long answer, no voice optimization; misses textile angle | "BBA, B.Com, and BCA are most popular among Tiruppur students. B.Sc Textile and Fashion Design is uniquely suited to Tiruppur's knitwear industry." (25 words) | 5 min | None |
 | F-04 | Rewrite FAQ Q4 — "Can BCA students from Tiruppur get IT jobs?" | `src/app/tiruppur/page.tsx` | 92–94 | 60-word answer, exceeds voice limit | "Yes. BCA graduates from JKKN CAS are placed at TCS, Infosys BPO, Amazon, and Flipkart. Tiruppur's textile companies also hire IT graduates for digital operations." (27 words) | 5 min | None |
@@ -91,7 +91,7 @@ All 10 FAQ items in the `faqs` array (lines 78–119) require answer replacement
 | F-06 | Rewrite FAQ Q6 — "Does JKKN CAS provide hostel for Tiruppur students?" | `src/app/tiruppur/page.tsx` | 100–102 | 35-word answer, uses vague "1.5-2 hours away" | "Yes. JKKN CAS has separate hostels for boys and girls with meals, WiFi, and 24-hour security. Students can also commute daily from Tiruppur in ~1.5 hours." (28 words) | 5 min | None |
 | F-07 | Rewrite FAQ Q7 — "Is there a direct bus from Tiruppur to JKKN CAS?" | `src/app/tiruppur/page.tsx` | 108–110 | 49-word answer with "1.5 to 2 hours" vague range | "Yes. Buses run from Tiruppur New Bus Stand to Erode and onward to Komarapalayam via NH-544. Total journey is approximately 1.5 hours." (25 words) | 5 min | None |
 | F-08 | Replace FAQ Q8 — Change "How much does the hostel cost?" to "Which college near Tiruppur offers B.Sc Textile and Fashion Design?" + new answer | `src/app/tiruppur/page.tsx` | 112–114 | Q: hostel cost (not a PAA target); A: fee-specific but all [UNVERIFIED] | Q: "Which college near Tiruppur offers B.Sc Textile and Fashion Design?" A: "JKKN College of Arts and Science, located ~67 km from Tiruppur in Komarapalayam, offers B.Sc Textile and Fashion Design aligned with Tiruppur's export industry." (28 words) | 10 min | None |
-| F-09 | Rewrite FAQ Q9 — Repurpose "Why should I choose JKKN CAS over colleges in Tiruppur?" to "Why should Tiruppur students choose JKKN CAS over city colleges?" with voice-optimized answer | `src/app/tiruppur/page.tsx` | 116–118 | 70-word answer, vague "50+ acre" unverified | "JKKN CAS offers lower fees, smaller class sizes, 80%+ placement rate, a 50-acre green campus, and hostel facilities unavailable at most Tiruppur city colleges." (29 words) | 5 min | None |
+| F-09 | Rewrite FAQ Q9 — Repurpose "Why should I choose JKKN CAS over colleges in Tiruppur?" to "Why should Tiruppur students choose JKKN CAS over city colleges?" with voice-optimized answer | `src/app/tiruppur/page.tsx` | 116–118 | 70-word answer, vague "50+ acre" unverified | "JKKN CAS offers lower fees, smaller class sizes, 90%+ placement rate, a 50-acre green campus, and hostel facilities unavailable at most Tiruppur city colleges." (29 words) | 5 min | None |
 | F-10 | Add FAQ Q10 — New question "How can students from Tiruppur apply to JKKN CAS?" replacing or appending as 10th item | `src/app/tiruppur/page.tsx` | After line 118 (before closing `]`) | No dedicated application process FAQ | Q: "How can students from Tiruppur apply to JKKN CAS?" A: "Apply online at admission.jkkn.ac.in or visit the campus directly. Admissions for 2026-27 are open. Call +91 9345855001 for guidance." (20 words) | 5 min | None |
 
 **CSS class additions for voice/speakable:**
@@ -114,7 +114,7 @@ All 10 FAQ items in the `faqs` array (lines 78–119) require answer replacement
 | S-06 | Add `numberOfStudents` field — value 3000 (verify with admin first; omit if unconfirmed by deployment time) | `src/app/tiruppur/page.tsx` | Within S-01 block | `numberOfStudents` absent | `"numberOfStudents": {"@type": "QuantitativeValue", "value": 3000, "unitText": "students"}` — only if admin confirms | 5 min | S-01, P-04 |
 | S-07 | Add HowToApply schema — new `<script type="application/ld+json">` block after existing schema blocks | `src/app/tiruppur/page.tsx` | After line 190 (after CourseSchema blocks) | HowTo schema absent | 5-step HowToApply JSON-LD: Visit Website, Fill Application Form, Submit Documents, Counseling & Seat Allocation, Fee Payment & Enrollment (from spec Section 14.3) | 20 min | None |
 | S-08 | Update BBA CourseSchema description — correct "85 km from Tiruppur" to "~67 km from Tiruppur via NH-544" | `src/app/tiruppur/page.tsx` | 178 | `"...offered at JKKN CAS — 85 km from Tiruppur."` | `"...offered at JKKN CAS — ~67 km from Tiruppur via NH-544."` | 3 min | None |
-| S-09 | Update BCA CourseSchema description — correct "85 km" to "~67 km", add textile context | `src/app/tiruppur/page.tsx` | 185 | `"...80%+ placement rate at JKKN CAS, a quality alternative to Tiruppur city colleges."` | `"...80%+ placement rate at JKKN CAS (~67 km from Tiruppur via NH-544). Tiruppur's textile firms increasingly hire BCA graduates for digital operations."` | 5 min | None |
+| S-09 | Update BCA CourseSchema description — correct "85 km" to "~67 km", add textile context | `src/app/tiruppur/page.tsx` | 185 | `"...90%+ placement rate at JKKN CAS, a quality alternative to Tiruppur city colleges."` | `"...90%+ placement rate at JKKN CAS (~67 km from Tiruppur via NH-544). Tiruppur's textile firms increasingly hire BCA graduates for digital operations."` | 5 min | None |
 | S-10 | Add textile programme CourseSchema — new `<CourseSchema>` component for B.Sc Textile and Fashion Design with Tiruppur industry context | `src/app/tiruppur/page.tsx` | After line 190 | No CourseSchema for B.Sc Textile programme | `<CourseSchema name="B.Sc Textile and Fashion Design" description="3-year UG programme aligned with Tiruppur's knitwear export industry..." duration="PT3Y" educationalLevel="UG" category="Self-Finance" url="/programmes/self-finance/ug/bsc-textile-fashion-designing" />` | 10 min | None |
 | S-11 | Check if `/cities` page exists — if yes, update BreadcrumbSchema to 3 levels (Home > City Pages > Tiruppur) | `src/app/tiruppur/page.tsx` | 123–126 | 2-level: Home > Tiruppur | 3-level if `/cities` exists: Home > City Pages > Tiruppur; otherwise no change | 10 min | None |
 | S-12 | Run schema validation — Google Rich Results Test + schema.org validator + Mobile-Friendly Test | External tools | — | Pre-validation: unknown status | Zero errors on all three validators | 15 min | S-01 through S-11 |
@@ -241,7 +241,7 @@ All 10 FAQ items in the `faqs` array (lines 78–119) require answer replacement
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
   description:
-    "JKKN CAS — 85 km from Tiruppur via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.",
+    "JKKN CAS — 85 km from Tiruppur via NH-544. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.",
   keywords: [
     "arts and science college near Tiruppur",
     "best college near Tiruppur",
@@ -260,7 +260,7 @@ export const metadata: Metadata = {
 export const metadata: Metadata = {
   title: "Arts and Science College Near Tiruppur | JKKN CAS",
   description:
-    "JKKN CAS — ~67 km from Tiruppur via NH-544. NAAC-accredited. 34 programmes: B.Sc Textile, BBA, B.Com, BCA. 80%+ placements. Admissions 2026-27 open.",
+    "JKKN CAS — ~67 km from Tiruppur via NH-544. NAAC-accredited. 34 programmes: B.Sc Textile, BBA, B.Com, BCA. 90%+ placements. Admissions 2026-27 open.",
   keywords: [
     "arts and science college in tiruppur",
     "arts and science college near Tiruppur",
@@ -275,14 +275,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Tiruppur | JKKN CAS",
     description:
-      "JKKN CAS — ~67 km from Tiruppur. NAAC-accredited, 34 programmes, 80%+ placements. B.Sc Textile & Fashion Design, BBA, B.Com, BCA. Admissions 2026-27 open.",
+      "JKKN CAS — ~67 km from Tiruppur. NAAC-accredited, 34 programmes, 90%+ placements. B.Sc Textile & Fashion Design, BBA, B.Com, BCA. Admissions 2026-27 open.",
     // url, siteName, type, images — UNCHANGED
   },
   twitter: {
     card: "summary_large_image",
     title: "Arts and Science College Near Tiruppur | JKKN CAS",
     description:
-      "JKKN CAS — ~67 km from Tiruppur. NAAC-accredited, 80%+ placements. 34 programmes including B.Sc Textile & Fashion Design. Admissions 2026-27 open.",
+      "JKKN CAS — ~67 km from Tiruppur. NAAC-accredited, 90%+ placements. 34 programmes including B.Sc Textile & Fashion Design. Admissions 2026-27 open.",
   },
 };
 ```
@@ -313,7 +313,7 @@ export const metadata: Metadata = {
   Komarapalayam, Namakkal district, is a NAAC-accredited institution affiliated to
   Periyar University and Bharathiar University. Founded in 1952, it offers 34
   undergraduate, postgraduate, and research programmes — including B.Sc Textile and
-  Fashion Design, BBA, B.Com, and BCA — with an 80%+ placement rate. Students from
+  Fashion Design, BBA, B.Com, and BCA — with a 90%+ placement rate. Students from
   Tiruppur can reach the campus in approximately 1.5 hours by road or choose from
   dedicated hostel facilities.
 </p>
@@ -466,7 +466,7 @@ export const metadata: Metadata = {
       "url": "https://cas.jkkn.ac.in",
       "logo": "https://cas.jkkn.ac.in/images/jkkn-cas-logo.png",
       "image": "https://cas.jkkn.ac.in/images/facilities/JKKN%20Arts%20Classroom.png",
-      "description": "JKKN College of Arts and Science is a NAAC-accredited institution established in 1952, located at Komarapalayam, Namakkal district, Tamil Nadu. It offers 34 programmes affiliated to Periyar University and Bharathiar University, with an 80%+ placement rate. Approximately 67 km from Tiruppur via NH-544.",
+      "description": "JKKN College of Arts and Science is a NAAC-accredited institution established in 1952, located at Komarapalayam, Namakkal district, Tamil Nadu. It offers 34 programmes affiliated to Periyar University and Bharathiar University, with a 90%+ placement rate. Approximately 67 km from Tiruppur via NH-544.",
       "foundingDate": "1952",
       "address": {
         "@type": "PostalAddress",

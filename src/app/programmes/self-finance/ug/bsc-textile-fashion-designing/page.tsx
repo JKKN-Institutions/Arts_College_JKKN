@@ -152,7 +152,7 @@ export default function BSCTextileFashionDesigningPage() {
               {[
                 { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited', desc: 'Quality assured education' },
                 { icon: <Palette className="w-7 h-7" />, stat: 'Design', title: 'Studios', desc: 'State-of-art facilities' },
-                { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement', desc: 'Top fashion brands' },
+                { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Placement', desc: 'Top fashion brands' },
                 { icon: <Sparkles className="w-7 h-7" />, stat: 'Fashion', title: 'Shows & Events', desc: 'Annual exhibitions' },
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>

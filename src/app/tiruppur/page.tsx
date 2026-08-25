@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
     description:
-      "JKKN CAS — 67 km from Tiruppur. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 67 km from Tiruppur. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/tiruppur",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
-    description: "JKKN CAS — 67 km from Tiruppur. NAAC-accredited, 80%+ placements. Admissions open 2026-27.",
+    description: "JKKN CAS — 67 km from Tiruppur. NAAC-accredited, 90%+ placements. Admissions open 2026-27.",
   },
 };
 
@@ -114,7 +114,7 @@ export default function TiruppurPage() {
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Tiruppur?",
-      a: "JKKN CAS offers clear advantages over Tiruppur city colleges. Fees are 30-50% lower, class sizes are smaller, the 50+ acre green campus is distraction-free, and placement rates (80%+) match city institutions. The same top recruiters — TCS, Infosys, HDFC, Amazon — visit JKKN CAS.",
+      a: "JKKN CAS offers clear advantages over Tiruppur city colleges. Fees are 30-50% lower, class sizes are smaller, the 50+ acre green campus is distraction-free, and placement rates (90%+) match city institutions. The same top recruiters — TCS, Infosys, HDFC, Amazon — visit JKKN CAS.",
     },
   ];
 
@@ -195,7 +195,7 @@ export default function TiruppurPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 80%+ placement rate at JKKN CAS, a quality alternative to Tiruppur city colleges."
+        description="3-year undergraduate IT programme with hands-on training and 90%+ placement rate at JKKN CAS, a quality alternative to Tiruppur city colleges."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -223,14 +223,14 @@ export default function TiruppurPage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Tiruppur students — world-class education without the big-city
             hassle. JKKN College of Arts and Science offers top-tier arts and
-            science programmes with 80%+ placement support — no need to go to
+            science programmes with 90%+ placement support — no need to go to
             Coimbatore — quality education is closer than you think.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "80%+", label: "PLACEMENTS" },
+              { value: "90%+", label: "PLACEMENTS" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "67km", label: "FROM TIRUPPUR" },
               { value: "4", label: "PROGRAMMES" },
@@ -628,7 +628,7 @@ export default function TiruppurPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "80%+", label: "PLACEMENT RATE" },
+              { value: "90%+", label: "PLACEMENT RATE" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },

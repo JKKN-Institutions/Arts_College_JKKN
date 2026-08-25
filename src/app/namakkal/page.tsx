@@ -40,7 +40,7 @@ import {
 export const metadata: Metadata = {
   title: "Arts and Science College in Namakkal District | JKKN CAS",
   description:
-    "JKKN College of Arts & Science — Namakkal District's most diverse arts college. 34 programmes, NAAC-accredited, 80%+ placements. Admissions 2026-27 open.",
+    "JKKN College of Arts & Science — Namakkal District's most diverse arts college. 34 programmes, NAAC-accredited, 90%+ placements. Admissions 2026-27 open.",
   keywords: [
     "arts and science college in Namakkal district",
     "best college in Namakkal district",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College in Namakkal District | JKKN CAS",
     description:
-      "JKKN CAS in Komarapalayam — Namakkal District's most diverse arts college. 34 programmes, NAAC-accredited, 80%+ placements. Admissions 2026-27.",
+      "JKKN CAS in Komarapalayam — Namakkal District's most diverse arts college. 34 programmes, NAAC-accredited, 90%+ placements. Admissions 2026-27.",
     url: "https://cas.jkkn.ac.in/namakkal",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Arts and Science College in Namakkal District | JKKN CAS",
-    description: "JKKN CAS in Namakkal District — 34 programmes, NAAC-accredited, 80%+ placements. Admissions 2026-27 open.",
+    description: "JKKN CAS in Namakkal District — 34 programmes, NAAC-accredited, 90%+ placements. Admissions 2026-27 open.",
   },
 };
 
@@ -79,7 +79,7 @@ export default function NamakkalPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Namakkal district?",
-      a: "JKKN College of Arts and Science in Komarapalayam is Namakkal District's most programme-diverse arts and science institution — 34 programmes, NAAC-accredited, affiliated to Periyar and Bharathiar Universities, with 80%+ placement rates.",
+      a: "JKKN College of Arts and Science in Komarapalayam is Namakkal District's most programme-diverse arts and science institution — 34 programmes, NAAC-accredited, affiliated to Periyar and Bharathiar Universities, with 90%+ placement rates.",
     },
     {
       q: "How far is JKKN College from Namakkal?",
@@ -115,7 +115,7 @@ export default function NamakkalPage() {
     },
     {
       q: "Why should Namakkal district students choose JKKN CAS?",
-      a: "JKKN CAS is Namakkal District's most comprehensive arts and science college — 34 programmes, NAAC accreditation, 80%+ placements, 7-college campus group with a 500-bed hospital, and direct NH-544 access from Erode and Tiruchengode.",
+      a: "JKKN CAS is Namakkal District's most comprehensive arts and science college — 34 programmes, NAAC accreditation, 90%+ placements, 7-college campus group with a 500-bed hospital, and direct NH-544 access from Erode and Tiruchengode.",
     },
   ];
 
@@ -181,7 +181,7 @@ export default function NamakkalPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 80%+ placement rate at JKKN CAS, Namakkal District's most programme-diverse arts and science college."
+        description="3-year undergraduate IT programme with hands-on training and 90%+ placement rate at JKKN CAS, Namakkal District's most programme-diverse arts and science college."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -209,14 +209,14 @@ export default function NamakkalPage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             JKKN College of Arts and Science is Namakkal District's most
             programme-diverse institution — 34 UG, PG, M.Phil, and Ph.D
-            programmes, NAAC-accredited, on NH-544 at Komarapalayam with 80%+
+            programmes, NAAC-accredited, on NH-544 at Komarapalayam with 90%+
             placement support.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "80%+", label: "PLACEMENTS" },
+              { value: "90%+", label: "PLACEMENTS" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "34", label: "PROGRAMMES" },
               { value: "74+", label: "YEARS LEGACY" },
@@ -611,7 +611,7 @@ export default function NamakkalPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "80%+", label: "PLACEMENT RATE" },
+              { value: "90%+", label: "PLACEMENT RATE" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },

@@ -123,7 +123,7 @@ export default function PhDZoologyPage() {
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'UGC', title: 'Recognized Programme', desc: 'Quality doctoral education' },
               { icon: <Users className="w-7 h-7" />, stat: '8+', title: 'Research Supervisors', desc: 'Expert guidance available' },
               { icon: <BookOpen className="w-7 h-7" />, stat: '10+', title: 'Ph.D Awarded', desc: 'Strong research legacy' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '100%', title: 'Career Placement', desc: 'Academia & research positions' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Career Placement', desc: 'Academia & research positions' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">

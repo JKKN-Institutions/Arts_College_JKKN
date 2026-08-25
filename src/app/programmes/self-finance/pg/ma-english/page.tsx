@@ -122,7 +122,7 @@ export default function MAEnglishPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured postgraduate education' },
               { icon: <Users className="w-7 h-7" />, stat: '10:1', title: 'Learners per Senior Learner', desc: 'Personalized mentorship' },
-              { icon: <Award className="w-7 h-7" />, stat: '95%', title: 'Placement Rate', desc: 'Competitive exam preparation' },
+              { icon: <Award className="w-7 h-7" />, stat: '90%', title: 'Placement Rate', desc: 'Competitive exam preparation' },
               { icon: <Briefcase className="w-7 h-7" />, stat: '₹5.5L', title: 'Average Package', desc: 'Enhanced career prospects' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>

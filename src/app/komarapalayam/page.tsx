@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Colleges in Komarapalayam (Kumarapalayam) — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 34 programmes, 80%+ placements. Located in Komarapalayam on NH-544. Admissions open 2026–27.",
+      "JKKN CAS — NAAC-accredited, 34 programmes, 90%+ placements. Located in Komarapalayam on NH-544. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/komarapalayam",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Colleges in Komarapalayam (Kumarapalayam) — JKKN CAS",
     description:
-      "NAAC-accredited arts and science college in Komarapalayam on NH-544. 34 programmes, 80%+ placements, hostel available. Admissions 2026–27 open.",
+      "NAAC-accredited arts and science college in Komarapalayam on NH-544. 34 programmes, 90%+ placements, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -118,7 +118,7 @@ export default function KomarapalayamPage() {
     },
     {
       q: "What placement rate does JKKN CAS Komarapalayam achieve?",
-      a: "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
+      a: "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Can students from Erode, Salem, or Namakkal commute to JKKN CAS in Kumarapalayam?",
@@ -126,7 +126,7 @@ export default function KomarapalayamPage() {
     },
     {
       q: "Why should students choose JKKN CAS in Komarapalayam?",
-      a: "JKKN CAS is the arts and science college located in Komarapalayam town itself — no long commute needed for local students. It offers NAAC accreditation, 34 UG/PG/Ph.D programmes, affordable fees, hostel facilities, and 80%+ placements with national recruiters like TCS, Infosys BPO, and Amazon, all on an NH-544 campus that students from surrounding towns can reach easily.",
+      a: "JKKN CAS is the arts and science college located in Komarapalayam town itself — no long commute needed for local students. It offers NAAC accreditation, 34 UG/PG/Ph.D programmes, affordable fees, hostel facilities, and 90%+ placements with national recruiters like TCS, Infosys BPO, and Amazon, all on an NH-544 campus that students from surrounding towns can reach easily.",
     },
   ];
 
@@ -169,7 +169,7 @@ export default function KomarapalayamPage() {
     {
       question: "What placement rate does JKKN CAS Komarapalayam achieve?",
       answer:
-        "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
+        "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
     },
     {
       question: "Can students from Erode, Salem, or Namakkal commute to JKKN CAS?",
@@ -179,7 +179,7 @@ export default function KomarapalayamPage() {
     {
       question: "Why should students choose JKKN CAS in Komarapalayam?",
       answer:
-        "JKKN CAS is the arts and science college located in Komarapalayam town itself, offering NAAC accreditation, 34 UG/PG/Ph.D programmes, affordable fees, hostel facilities, and 80%+ placements with national recruiters — all on an easily reachable NH-544 campus.",
+        "JKKN CAS is the arts and science college located in Komarapalayam town itself, offering NAAC accreditation, 34 UG/PG/Ph.D programmes, affordable fees, hostel facilities, and 90%+ placements with national recruiters — all on an easily reachable NH-544 campus.",
     },
   ];
 
@@ -198,7 +198,7 @@ export default function KomarapalayamPage() {
             "@type": "WebPage",
             "name": "Colleges in Komarapalayam (Kumarapalayam) — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/komarapalayam",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college located in Komarapalayam (Kumarapalayam) on NH-544. 34 programmes, 80%+ placements, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college located in Komarapalayam (Kumarapalayam) on NH-544. 34 programmes, 90%+ placements, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -311,7 +311,7 @@ export default function KomarapalayamPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 80%+ placement rate at JKKN CAS, located in Komarapalayam town."
+        description="3-year undergraduate IT programme with hands-on training and 90%+ placement rate at JKKN CAS, located in Komarapalayam town."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -342,7 +342,7 @@ export default function KomarapalayamPage() {
             (Kumarapalayam) town itself, at Natarajapuram on NH-544. It is a
             NAAC-accredited institution offering 34 UG and PG programmes
             including BCA, BBA, B.Com, and B.Sc specialisations. Affiliated to
-            Periyar University and Bharathiar University, it achieves 80%+
+            Periyar University and Bharathiar University, it achieves 90%+
             placement rates with recruiters including TCS, Infosys, HDFC Bank,
             and Amazon.
           </p>
@@ -352,14 +352,14 @@ export default function KomarapalayamPage() {
             Searching for colleges in Komarapalayam? JKKN College of Arts and
             Science is right here in town — a NAAC-accredited campus on the
             Salem–Erode NH-544 stretch offering arts and science programmes
-            with 80%+ placement support, walkable or a short ride from the
+            with 90%+ placement support, walkable or a short ride from the
             Komarapalayam bus stop.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "80%+", label: "PLACEMENTS" },
+              { value: "90%+", label: "PLACEMENTS" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "34", label: "PROGRAMMES" },
               { value: "1952", label: "ESTD" },
@@ -849,7 +849,7 @@ export default function KomarapalayamPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "80%+", label: "PLACEMENT RATE — 2024–25" },
+              { value: "90%+", label: "PLACEMENT RATE — 2024–25" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },
@@ -1273,7 +1273,7 @@ export default function KomarapalayamPage() {
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Placement Rate</td>
-                  <td className="p-3 text-gray-800 font-medium">80%+</td>
+                  <td className="p-3 text-gray-800 font-medium">90%+</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">

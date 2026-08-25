@@ -66,7 +66,7 @@ export const DEFAULT_SECTIONS: BlogSections = {
   career_scope_title: 'Career Scope After B.Ed',
   mid_cta_heading: 'Ready to Start Your Teaching Career?',
   mid_cta_description:
-    'Apply for B.Ed 2026 at JKKN College of Education — 100 seats, NCTE approved, TNTEU affiliated, and 98% placement rate.',
+    'Apply for B.Ed 2026 at JKKN College of Education — 100 seats, NCTE approved, TNTEU affiliated, and 90% placement rate.',
   mid_cta_button1: 'Apply Now →',
   mid_cta_button2: 'Contact Admissions',
   why_jkkn: '',

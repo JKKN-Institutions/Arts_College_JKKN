@@ -72,7 +72,7 @@ The IT corridor angle (TIDEL Park, Elcot SEZ pipeline for BCA/CS graduates) is t
 
 | # | Task | File | Line(s) | Before (word count) | After (≤29 words) | Effort | Depends On |
 |---|------|------|---------|---------------------|-------------------|--------|------------|
-| F1 | Rewrite FAQ 1 answer — best college in Coimbatore | `page.tsx` | 85 | 62 words | 29 words — lead with NAAC, 105 km, 34 programmes, 80%+ placements | 10 min | — |
+| F1 | Rewrite FAQ 1 answer — best college in Coimbatore | `page.tsx` | 85 | 62 words | 29 words — lead with NAAC, 105 km, 34 programmes, 90%+ placements | 10 min | — |
 | F2 | Rewrite FAQ 2 answer — how far is JKKN from Coimbatore | `page.tsx` | 89 | 47 words | 28 words — 105 km, 2–2.5 hrs via NH-544, Gandhipuram buses | 10 min | — |
 | F3 | Rewrite FAQ 3 answer — popular courses for Coimbatore students | `page.tsx` | 93 | 61 words | 29 words — BCA, B.Sc CS, B.Sc AI DS; IT sector hook | 10 min | — |
 | F4 | Rewrite FAQ 4 answer — BCA students and IT jobs | `page.tsx` | 97 | 61 words | 29 words — TCS, Infosys BPO; TIDEL Park, Elcot SEZ | 10 min | — |
@@ -95,7 +95,7 @@ The IT corridor angle (TIDEL Park, Elcot SEZ pipeline for BCA/CS graduates) is t
 | S2 | Replace CollegeOrUniversity schema with enhanced version | `page.tsx` | 133–160 | Missing: sameAs, foundingDate, description, telephone, logo, hasOfferCatalog, parentOrganization, contactPoint | Full enhanced schema — 17 fields, areaServed expanded to include Komarapalayam | 45 min | — |
 | S3 | Add HowTo schema for admission process (new script tag) | `page.tsx` | After S1/S2 schema block | Not present — HowTo is confirmed FAIL in spec Section 17 Check #13 | 5-step HowTo schema with Coimbatore framing in step 1 and 5 | 30 min | — |
 | S4 | Validate FAQSchema auto-updates after FAQ rewrites (F1–F12) | `page.tsx` | 131 | FAQSchema reads from faqs array — currently long answers | After F1–F10 rewrites, FAQSchema auto-refreshes — no code change | 0 min (verify only) | F1–F10 |
-| S5 | Update BCA CourseSchema description with Coimbatore IT context | `page.tsx` | 186–192 | Generic: "hands-on training and 80%+ placement rate" | Specific: "105 km from Coimbatore, TIDEL Park/Elcot SEZ pipeline, 30–50% lower fees" | 15 min | — |
+| S5 | Update BCA CourseSchema description with Coimbatore IT context | `page.tsx` | 186–192 | Generic: "hands-on training and 90%+ placement rate" | Specific: "105 km from Coimbatore, TIDEL Park/Elcot SEZ pipeline, 30–50% lower fees" | 15 min | — |
 | S6 | Add Komarapalayam to areaServed in CollegeOrUniversity schema | `page.tsx` | 148–152 (inside S2) | areaServed: Coimbatore only | areaServed: [Coimbatore, Komarapalayam] | 0 min (included in S2) | S2 |
 
 ---
@@ -152,7 +152,7 @@ The IT corridor angle (TIDEL Park, Elcot SEZ pipeline for BCA/CS graduates) is t
             via NH-544. Founded in 1952 and affiliated to Periyar University and Bharathiar
             University, JKKN CAS offers 34 undergraduate, postgraduate, and research programmes
             spanning arts, science, commerce, and computer applications. The institution maintains
-            an 80%+ placement rate with recruiters including TCS, Infosys BPO, HDFC Bank, Amazon,
+            a 90%+ placement rate with recruiters including TCS, Infosys BPO, HDFC Bank, Amazon,
             and Flipkart. A 50+ acre residential campus with separate hostel facilities, digital
             library, modern laboratories, and weekend bus services to Coimbatore makes it an
             accessible choice for students from Coimbatore seeking affordable quality education.
@@ -173,7 +173,7 @@ The IT corridor angle (TIDEL Park, Elcot SEZ pipeline for BCA/CS graduates) is t
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
   description:
-    "JKKN CAS — 105 km from Coimbatore via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+    "JKKN CAS — 105 km from Coimbatore via NH-544. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
   keywords: [
     "arts and science college near Coimbatore",
     "best college near Coimbatore",
@@ -201,7 +201,7 @@ export const metadata: Metadata = {
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
   description:
-    "JKKN CAS — 105 km from Coimbatore. NAAC-accredited. Fees 30–50% lower than city colleges. BCA, B.Sc CS, BBA, B.Com. 80%+ placements. 2026-27 open.",
+    "JKKN CAS — 105 km from Coimbatore. NAAC-accredited. Fees 30–50% lower than city colleges. BCA, B.Sc CS, BBA, B.Com. 90%+ placements. 2026-27 open.",
   keywords: [
     "arts and science college near Coimbatore",
     "best college near Coimbatore",
@@ -399,7 +399,7 @@ The H1 "Best Arts and Science College Near Coimbatore" is already keyword-accura
 // AFTER
 {
   q: "What is the best arts and science college in Coimbatore?",
-  a: "JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC-accredited, 74-year-old institution with 34 programmes and 80%+ placements. Admissions open for 2026–27.",
+  a: "JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC-accredited, 74-year-old institution with 34 programmes and 90%+ placements. Admissions open for 2026–27.",
 },
 ```
 
@@ -423,13 +423,13 @@ The H1 "Best Arts and Science College Near Coimbatore" is already keyword-accura
 // BEFORE
 {
   q: "Why should I choose JKKN CAS over colleges in Coimbatore city?",
-  a: "JKKN CAS offers several advantages: fees are 30-50% lower than most Coimbatore city colleges, class sizes are smaller with more personal faculty attention, the 50+ acre green campus provides a distraction-free study environment, and placement rates (80%+) are on par with city institutions. The same top companies — TCS, Infosys, HDFC, Amazon — recruit from JKKN.",
+  a: "JKKN CAS offers several advantages: fees are 30-50% lower than most Coimbatore city colleges, class sizes are smaller with more personal faculty attention, the 50+ acre green campus provides a distraction-free study environment, and placement rates (90%+) are on par with city institutions. The same top companies — TCS, Infosys, HDFC, Amazon — recruit from JKKN.",
 },
 
 // AFTER
 {
   q: "Why should I choose JKKN CAS over colleges in Coimbatore city?",
-  a: "JKKN CAS offers 30–50% lower fees, smaller classes with personal attention, an 80%+ placement rate, and the same top recruiters — TCS, Infosys, Amazon — as Coimbatore city colleges. Hostel and weekend buses available.",
+  a: "JKKN CAS offers 30–50% lower fees, smaller classes with personal attention, a 90%+ placement rate, and the same top recruiters — TCS, Infosys, Amazon — as Coimbatore city colleges. Hostel and weekend buses available.",
 },
 ```
 

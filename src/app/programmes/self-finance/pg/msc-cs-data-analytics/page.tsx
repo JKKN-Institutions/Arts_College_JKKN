@@ -122,7 +122,7 @@ export default function MScCSDataAnalyticsPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Cpu className="w-7 h-7" />, stat: 'Advanced', title: 'Data Science Labs', desc: 'GPU-powered computing' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '95%+', title: 'Placement Record', desc: 'Top tech companies recruit' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '90%+', title: 'Placement Record', desc: 'Top tech companies recruit' },
               { icon: <Award className="w-7 h-7" />, stat: 'Industry', title: 'Live Projects', desc: 'Real-world data experience' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>

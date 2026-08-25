@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   // 52 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited college ~20 km from Tiruchengode. 34 programmes, 80%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
+    "JKKN CAS — NAAC-accredited college ~20 km from Tiruchengode. 34 programmes, 90%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
   // 140 chars — within 155 limit
 
   keywords: [
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Tiruchengode — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 34 programmes, 80%+ placements. ~20 km from Tiruchengode in Komarapalayam. Admissions open 2026–27.",
+      "JKKN CAS — NAAC-accredited, 34 programmes, 90%+ placements. ~20 km from Tiruchengode in Komarapalayam. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/tiruchengode",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Tiruchengode — JKKN CAS",
     description:
-      "NAAC-accredited arts college ~20 km from Tiruchengode. 34 programmes, 80%+ placements, hostel available. Admissions 2026–27 open.",
+      "NAAC-accredited arts college ~20 km from Tiruchengode. 34 programmes, 90%+ placements, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -91,7 +91,7 @@ export default function TiruchengodePage() {
   const faqs = [
     {
       q: "Which is the best arts and science college near Tiruchengode?",
-      a: "JKKN College of Arts and Science, located approximately 20 km from Tiruchengode in neighbouring Komarapalayam, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located approximately 20 km from Tiruchengode in neighbouring Komarapalayam, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Tiruchengode?",
@@ -123,11 +123,11 @@ export default function TiruchengodePage() {
     },
     {
       q: "What placement rate does JKKN CAS achieve for Tiruchengode students?",
-      a: "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
+      a: "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Why should JKKN CAS be on every Tiruchengode college list?",
-      a: "When students compare a Tiruchengode college list, JKKN CAS stands out even though it sits ~20 km away in neighbouring Komarapalayam — lower fees, NAAC accreditation, a residential campus, and 80%+ placements with national recruiters. The direct Tiruchengode–Komarapalayam road makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
+      a: "When students compare a Tiruchengode college list, JKKN CAS stands out even though it sits ~20 km away in neighbouring Komarapalayam — lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters. The direct Tiruchengode–Komarapalayam road makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
     },
   ];
 
@@ -135,7 +135,7 @@ export default function TiruchengodePage() {
     {
       question: "Which is the best arts and science college near Tiruchengode?",
       answer:
-        "JKKN College of Arts and Science, approximately 20 km from Tiruchengode in neighbouring Komarapalayam, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
+        "JKKN College of Arts and Science, approximately 20 km from Tiruchengode in neighbouring Komarapalayam, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
     },
     {
       question: "How far is JKKN CAS from Tiruchengode?",
@@ -165,7 +165,7 @@ export default function TiruchengodePage() {
     {
       question: "What placement rate does JKKN CAS achieve for Tiruchengode students?",
       answer:
-        "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
+        "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
     },
     {
       question: "How can students from Tiruchengode apply to JKKN CAS?",
@@ -180,7 +180,7 @@ export default function TiruchengodePage() {
     {
       question: "Why should JKKN CAS be on every Tiruchengode college list?",
       answer:
-        "On any Tiruchengode college list, JKKN CAS stands out even though it is approximately 20 km away in neighbouring Komarapalayam — lower fees, NAAC accreditation, a residential campus, and 80%+ placements with national recruiters. The direct road makes daily commute viable.",
+        "On any Tiruchengode college list, JKKN CAS stands out even though it is approximately 20 km away in neighbouring Komarapalayam — lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters. The direct road makes daily commute viable.",
     },
   ];
 
@@ -199,7 +199,7 @@ export default function TiruchengodePage() {
             "@type": "WebPage",
             "name": "Arts and Science College Near Tiruchengode — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/tiruchengode",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college approximately 20 km from Tiruchengode in Komarapalayam. 34 programmes, 80%+ placements, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college approximately 20 km from Tiruchengode in Komarapalayam. 34 programmes, 90%+ placements, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -307,7 +307,7 @@ export default function TiruchengodePage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 80%+ placement rate at JKKN CAS, easily reachable from Tiruchengode."
+        description="3-year undergraduate IT programme with hands-on training and 90%+ placement rate at JKKN CAS, easily reachable from Tiruchengode."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -338,7 +338,7 @@ export default function TiruchengodePage() {
             Tiruchengode in neighbouring Komarapalayam, is a NAAC-accredited
             institution offering 34 UG and PG programmes including BCA, BBA,
             B.Com, and B.Sc specialisations. Affiliated to Periyar University
-            and Bharathiar University, it achieves 80%+ placement rates with
+            and Bharathiar University, it achieves 90%+ placement rates with
             recruiters including TCS, Infosys, HDFC Bank, and Amazon.
           </p>
 
@@ -346,7 +346,7 @@ export default function TiruchengodePage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Tiruchengode to JKKN — a short, easy ride on the direct
             Tiruchengode–Komarapalayam road. JKKN College of Arts and Science
-            offers NAAC-accredited arts and science programmes with 80%+
+            offers NAAC-accredited arts and science programmes with 90%+
             placement support — approximately 20 km from Tiruchengode, with
             both towns in Namakkal district.
           </p>
@@ -354,7 +354,7 @@ export default function TiruchengodePage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "80%+", label: "PLACEMENTS" },
+              { value: "90%+", label: "PLACEMENTS" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "20km", label: "FROM TIRUCHENGODE" },
               { value: "34", label: "PROGRAMMES" },
@@ -757,7 +757,7 @@ export default function TiruchengodePage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "80%+", label: "PLACEMENT RATE — 2024–25" },
+              { value: "90%+", label: "PLACEMENT RATE — 2024–25" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },
@@ -1181,7 +1181,7 @@ export default function TiruchengodePage() {
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Placement Rate</td>
-                  <td className="p-3 text-gray-800 font-medium">80%+</td>
+                  <td className="p-3 text-gray-800 font-medium">90%+</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">

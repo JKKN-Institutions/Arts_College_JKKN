@@ -210,7 +210,7 @@ export default function BComBankingInsurancePage() {
               {[
                 { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
                 { icon: <CreditCard className="w-7 h-7" />, stat: 'BFSI', title: 'Industry Focus', desc: 'Banking & insurance sector' },
-                { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement Record', desc: 'Top BFSI recruiters' },
+                { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Placement Record', desc: 'Top BFSI recruiters' },
                 { icon: <Award className="w-7 h-7" />, stat: '₹4.5L', title: 'Average Package', desc: 'Competitive starting salary' },
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>

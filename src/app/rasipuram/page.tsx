@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   // 51 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited college near Rasipuram, Namakkal district. 34 programmes, boys & girls hostel, 80%+ placements. Admissions open 2026–27.",
+    "JKKN CAS — NAAC-accredited college near Rasipuram, Namakkal district. 34 programmes, boys & girls hostel, 90%+ placements. Admissions open 2026–27.",
   // ~147 chars — within 155 limit
 
   keywords: [
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College near Rasipuram — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 34 programmes, boys & girls hostel, 80%+ placements. ~60 km from Rasipuram, Namakkal district. Admissions open 2026–27.",
+      "JKKN CAS — NAAC-accredited, 34 programmes, boys & girls hostel, 90%+ placements. ~60 km from Rasipuram, Namakkal district. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/rasipuram",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College near Rasipuram — JKKN CAS",
     description:
-      "NAAC-accredited arts college near Rasipuram in Namakkal district. 34 programmes, 80%+ placements, hostel available. Admissions 2026–27 open.",
+      "NAAC-accredited arts college near Rasipuram in Namakkal district. 34 programmes, 90%+ placements, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -89,7 +89,7 @@ export default function RasipuramPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Rasipuram?",
-      a: "JKKN College of Arts and Science, located in the same Namakkal district approximately 60 km from Rasipuram, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams, with hostel facilities on campus.",
+      a: "JKKN College of Arts and Science, located in the same Namakkal district approximately 60 km from Rasipuram, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams, with hostel facilities on campus.",
     },
     {
       q: "How far is JKKN CAS from Rasipuram?",
@@ -121,11 +121,11 @@ export default function RasipuramPage() {
     },
     {
       q: "What placement rate does JKKN CAS achieve for Rasipuram students?",
-      a: "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
+      a: "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Why do Rasipuram students choose JKKN CAS in Namakkal district?",
-      a: "JKKN CAS is one of the strongest arts and science options in Namakkal district — NAAC-accredited, 34 programmes, and 80%+ placements with national recruiters. For Rasipuram students, the full residential campus with separate boys and girls hostels makes the ~60 km distance a non-issue: stay on campus, study more, travel less.",
+      a: "JKKN CAS is one of the strongest arts and science options in Namakkal district — NAAC-accredited, 34 programmes, and 90%+ placements with national recruiters. For Rasipuram students, the full residential campus with separate boys and girls hostels makes the ~60 km distance a non-issue: stay on campus, study more, travel less.",
     },
   ];
 
@@ -133,7 +133,7 @@ export default function RasipuramPage() {
     {
       question: "What is the best arts and science college near Rasipuram?",
       answer:
-        "JKKN College of Arts and Science, in the same Namakkal district approximately 60 km from Rasipuram, is a NAAC-accredited institution with 34 programmes, 80%+ placement rates, and campus hostels. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
+        "JKKN College of Arts and Science, in the same Namakkal district approximately 60 km from Rasipuram, is a NAAC-accredited institution with 34 programmes, 90%+ placement rates, and campus hostels. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
     },
     {
       question: "How far is JKKN CAS from Rasipuram?",
@@ -173,12 +173,12 @@ export default function RasipuramPage() {
     {
       question: "What placement rate does JKKN CAS achieve for Rasipuram students?",
       answer:
-        "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
+        "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
     },
     {
       question: "Why do Rasipuram students choose JKKN CAS in Namakkal district?",
       answer:
-        "JKKN CAS is NAAC-accredited with 34 programmes and 80%+ placements with national recruiters. For Rasipuram students, the full residential campus with separate boys and girls hostels makes the approximately 60 km distance a non-issue.",
+        "JKKN CAS is NAAC-accredited with 34 programmes and 90%+ placements with national recruiters. For Rasipuram students, the full residential campus with separate boys and girls hostels makes the approximately 60 km distance a non-issue.",
     },
   ];
 
@@ -197,7 +197,7 @@ export default function RasipuramPage() {
             "@type": "WebPage",
             "name": "Arts and Science College near Rasipuram — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/rasipuram",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college in Namakkal district, approximately 60 km from Rasipuram. 34 programmes, 80%+ placements, boys and girls hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college in Namakkal district, approximately 60 km from Rasipuram. 34 programmes, 90%+ placements, boys and girls hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -305,7 +305,7 @@ export default function RasipuramPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 80%+ placement rate at JKKN CAS, a residential campus option for Rasipuram students."
+        description="3-year undergraduate IT programme with hands-on training and 90%+ placement rate at JKKN CAS, a residential campus option for Rasipuram students."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -337,7 +337,7 @@ export default function RasipuramPage() {
             NAAC-accredited institution offering 34 UG and PG programmes
             including BCA, BBA, B.Com, and B.Sc specialisations, with separate
             boys and girls hostels on campus. Affiliated to Periyar University
-            and Bharathiar University, it achieves 80%+ placement rates with
+            and Bharathiar University, it achieves 90%+ placement rates with
             recruiters including TCS, Infosys, HDFC Bank, and Amazon.
           </p>
 
@@ -352,7 +352,7 @@ export default function RasipuramPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "80%+", label: "PLACEMENTS" },
+              { value: "90%+", label: "PLACEMENTS" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "34", label: "PROGRAMMES" },
               { value: "Hostel", label: "BOYS + GIRLS" },
@@ -754,7 +754,7 @@ export default function RasipuramPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "80%+", label: "PLACEMENT RATE — 2024–25" },
+              { value: "90%+", label: "PLACEMENT RATE — 2024–25" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },
@@ -1177,7 +1177,7 @@ export default function RasipuramPage() {
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Placement Rate</td>
-                  <td className="p-3 text-gray-800 font-medium">80%+</td>
+                  <td className="p-3 text-gray-800 font-medium">90%+</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">

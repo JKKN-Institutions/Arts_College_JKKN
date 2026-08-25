@@ -27,14 +27,14 @@
 | # | Task | File | Line(s) | Before | After | Effort | Depends On |
 |---|------|------|---------|--------|-------|--------|------------|
 | M1 | Change meta title from "Near Erode" to "in Erode" with exact-match primary keyword | `src/app/erode/page.tsx` | 40 | `"Best Arts and Science College Near Erode \| JKKN CAS"` | `"Arts and Science College in Erode \| JKKN CAS"` | XS | None |
-| M2 | Rewrite meta description — remove 35 km distance, add "34 programmes" and exact keyword | `src/app/erode/page.tsx` | 41–42 | `"JKKN CAS — 35 km from Erode via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27."` | `"JKKN CAS — NAAC-accredited arts and science college near Erode. 34 programmes, 80%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27."` | XS | T0 (distance verified) |
+| M2 | Rewrite meta description — remove 35 km distance, add "34 programmes" and exact keyword | `src/app/erode/page.tsx` | 41–42 | `"JKKN CAS — 35 km from Erode via NH-544. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27."` | `"JKKN CAS — NAAC-accredited arts and science college near Erode. 34 programmes, 90%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27."` | XS | T0 (distance verified) |
 | M3 | Replace keywords array — add "arts and science college in erode" as first keyword, add programme-specific keywords | `src/app/erode/page.tsx` | 43–50 | 6-item array starting with `"arts and science college near Erode"` | 9-item array starting with `"arts and science college in erode"`, adding `"BCA college near Erode"`, `"BBA college near Erode"`, `"B.Com college near Erode"` | XS | None |
 | M4 | Add `robots: "index, follow"` field to metadata export | `src/app/erode/page.tsx` | After line 50 (inside metadata object, before `alternates:`) | _(field absent)_ | `robots: "index, follow",` | XS | None |
 | M5 | Update OG title — change from "Near Erode" to match new title | `src/app/erode/page.tsx` | 55 | `"Best Arts and Science College Near Erode \| JKKN CAS"` | `"Arts and Science College Near Erode — JKKN CAS"` | XS | None |
-| M6 | Update OG description — remove 35 km, add "34 programmes" | `src/app/erode/page.tsx` | 56–57 | `"JKKN CAS — 35 km from Erode. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27."` | `"JKKN CAS — NAAC-accredited, 34 programmes, 80%+ placements. Near Erode via NH-544. Admissions open 2026–27."` | XS | None |
+| M6 | Update OG description — remove 35 km, add "34 programmes" | `src/app/erode/page.tsx` | 56–57 | `"JKKN CAS — 35 km from Erode. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27."` | `"JKKN CAS — NAAC-accredited, 34 programmes, 90%+ placements. Near Erode via NH-544. Admissions open 2026–27."` | XS | None |
 | M7 | Update OG image alt text — remove "modern classroom", add geographic context | `src/app/erode/page.tsx` | 66 | `"JKKN College of Arts and Science — modern classroom facility"` | `"JKKN College of Arts and Science — campus near Erode on NH-544"` | XS | None |
 | M8 | Update Twitter title — align with new meta title | `src/app/erode/page.tsx` | 72 | `"Best Arts and Science College Near Erode \| JKKN CAS"` | `"Arts and Science College Near Erode — JKKN CAS"` | XS | None |
-| M9 | Update Twitter description — remove 35 km, add programme count | `src/app/erode/page.tsx` | 73 | `"JKKN CAS — 35 km from Erode. NAAC-accredited, 80%+ placements. Admissions open 2026-27."` | `"NAAC-accredited arts college near Erode. 34 programmes, 80%+ placements, hostel available. Admissions 2026–27 open."` | XS | None |
+| M9 | Update Twitter description — remove 35 km, add programme count | `src/app/erode/page.tsx` | 73 | `"JKKN CAS — 35 km from Erode. NAAC-accredited, 90%+ placements. Admissions open 2026-27."` | `"NAAC-accredited arts college near Erode. 34 programmes, 90%+ placements, hostel available. Admissions 2026–27 open."` | XS | None |
 
 ---
 
@@ -44,7 +44,7 @@
 |---|------|------|---------|--------|-------|--------|------------|
 | C1 | Update H1 text — replace "Best Arts and Science College Near Erode" with "in Erode" variant | `src/app/erode/page.tsx` | 202–204 | `Best Arts and Science College Near`<br>`<br />`<br>`<span ...>Erode</span>` | `Arts and Science College in Erode — JKKN CAS` (single line, preserve all Tailwind classes) | XS | None |
 | C2 | Insert featured snippet H2 heading after H1 close tag (line 205), before stats grid (line 216) | `src/app/erode/page.tsx` | After 205 | _(H2 absent — stats grid starts immediately)_ | `<h2 className="text-xl font-semibold text-gray-800 mb-3">Arts and Science College Near Erode — JKKN CAS</h2>` | XS | None |
-| C3 | Insert 55-word featured snippet paragraph after new H2 (Task C2), with required CSS class | `src/app/erode/page.tsx` | After C2 insertion | _(paragraph absent)_ | `<p className="snippet-answer-paragraph text-gray-700 leading-relaxed mb-6">JKKN College of Arts and Science, located on NH-544 approximately 22 km from Erode, is a NAAC-accredited institution offering 34 UG and PG programmes including BCA, BBA, B.Com, and B.Sc specialisations. Affiliated to Periyar University and Bharathiar University, it achieves 80%+ placement rates with recruiters including TCS, Infosys, HDFC Bank, and Amazon.</p>` | S | T0, T1 (distance fixed) |
+| C3 | Insert 55-word featured snippet paragraph after new H2 (Task C2), with required CSS class | `src/app/erode/page.tsx` | After C2 insertion | _(paragraph absent)_ | `<p className="snippet-answer-paragraph text-gray-700 leading-relaxed mb-6">JKKN College of Arts and Science, located on NH-544 approximately 22 km from Erode, is a NAAC-accredited institution offering 34 UG and PG programmes including BCA, BBA, B.Com, and B.Sc specialisations. Affiliated to Periyar University and Bharathiar University, it achieves 90%+ placement rates with recruiters including TCS, Infosys, HDFC Bank, and Amazon.</p>` | S | T0, T1 (distance fixed) |
 | C4 | Fix distance stat card — change "35km" to verified distance | `src/app/erode/page.tsx` | 220 | `{ value: "35km", label: "FROM ERODE" }` | `{ value: "22km", label: "FROM ERODE" }` | XS | T0 |
 | C5 | Fix Distance Card large "35km" display number | `src/app/erode/page.tsx` | 283 | `35<span ...>km</span>` | `22<span ...>km</span>` | XS | T0 |
 | C6 | Fix Distance Card subtitle — change "40-50 minutes" to "35-40 minutes" matching verified travel time | `src/app/erode/page.tsx` | 290 | `"40-50 minutes via NH-544 — direct highway connectivity"` | `"35–40 minutes via NH-544 — direct highway connectivity"` | XS | T0 |
@@ -57,10 +57,10 @@
 | C13 | Fix railway station distance in How to Reach section | `src/app/erode/page.tsx` | 829 | `"Erode Junction (~35 km from campus)"` | `"Erode Junction (~22 km from campus)"` | XS | T0 |
 | C14 | Replace "top-tier" with "NAAC-accredited" in hero description paragraph | `src/app/erode/page.tsx` | 210 | `"top-tier arts and science programmes"` | `"NAAC-accredited arts and science programmes"` | XS | None |
 | C15 | Replace "world-class education experience" with "well-equipped education experience" in Campus & Facilities section subheading | `src/app/erode/page.tsx` | 871 | `"Everything you need for a world-class education experience"` | `"Everything you need for a well-equipped education experience"` | XS | None |
-| C16 | Update placement rate stat in Placement section — add batch year attribution | `src/app/erode/page.tsx` | 616 | `{ value: "80%+", label: "PLACEMENT RATE" }` | `{ value: "80%+", label: "PLACEMENT RATE — 2024–25" }` | XS | None |
+| C16 | Update placement rate stat in Placement section — add batch year attribution | `src/app/erode/page.tsx` | 616 | `{ value: "90%+", label: "PLACEMENT RATE" }` | `{ value: "90%+", label: "PLACEMENT RATE — 2024–25" }` | XS | None |
 | C17 | Insert "Last updated: March 2026" note at bottom of page, before closing `</main>` | `src/app/erode/page.tsx` | Before line 1074 | _(note absent)_ | `<p className="text-xs text-gray-400 text-center py-4">Page last updated: March 2026</p>` | XS | None |
 | C18 | Insert comparison table section — new section before FAQ section | `src/app/erode/page.tsx` | Before line 1003 | _(comparison table section absent)_ | New `<section>` with H2 "JKKN CAS vs Erode City Colleges — Quick Comparison" and 7-row comparison table (see Section 2 for full code block) | M | T0 |
-| C19 | Fix hero description paragraph — change "30-40 km" to verified distance | `src/app/erode/page.tsx` | 211 | `"80%+ placement support — just 30-40 km from Erode"` | `"80%+ placement support — approximately 22 km from Erode"` | XS | T0 |
+| C19 | Fix hero description paragraph — change "30-40 km" to verified distance | `src/app/erode/page.tsx` | 211 | `"90%+ placement support — just 30-40 km from Erode"` | `"90%+ placement support — approximately 22 km from Erode"` | XS | T0 |
 | C20 | Fix "Why Choose" section description paragraph — change "30-40 km" to verified distance | `src/app/erode/page.tsx` | 316–317 | `"JKKN is just 30-40 km away"` | `"JKKN is approximately 22 km away"` | XS | T0 |
 | C21 | Fix "Easy Commute" card description — change "30-40 km" to verified distance | `src/app/erode/page.tsx` | 354 | `"Just 30-40 km from Erode."` | `"Just 22 km from Erode."` | XS | T0 |
 
@@ -70,7 +70,7 @@
 
 | # | Task | File | Line(s) | Before | After | Effort | Depends On |
 |---|------|------|---------|--------|-------|--------|------------|
-| F1 | Rewrite FAQ Q1 answer — replace "widely regarded", fix to ≤29 word first sentence | `src/app/erode/page.tsx` | 81 | `"JKKN College of Arts and Science, located just 30-40 km from Erode on NH-544, is widely regarded as one of the top arts and science colleges..."` | `"JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates..."` (full answer from spec Section 9, Q1) | S | T0 |
+| F1 | Rewrite FAQ Q1 answer — replace "widely regarded", fix to ≤29 word first sentence | `src/app/erode/page.tsx` | 81 | `"JKKN College of Arts and Science, located just 30-40 km from Erode on NH-544, is widely regarded as one of the top arts and science colleges..."` | `"JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates..."` (full answer from spec Section 9, Q1) | S | T0 |
 | F2 | Rewrite FAQ Q2 answer — fix distance from "30-40 km" / "40-50 minutes", use verified values | `src/app/erode/page.tsx` | 85 | `"JKKN CAS is approximately 30-40 km from Erode city centre, which takes about 40-50 minutes by road via NH-544..."` | `"JKKN CAS is approximately 22 km from Erode city centre via NH-544, a journey of 35–40 minutes by road..."` (full answer from spec Section 9, Q2) | S | T0 |
 | F3 | Rewrite FAQ Q3 answer — add programme count, remove "34 programmes" mention was absent, add "all UGC-approved" | `src/app/erode/page.tsx` | 89 | `"BCA and B.Com are the most popular choices among students from Erode..."` | `"JKKN CAS near Erode offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 34 courses in total..."` (full answer from spec Section 9, Q3) | S | None |
 | F4 | Rewrite FAQ Q4 answer (Can BCA students get IT jobs) — rewrite as bus/transport question per spec PAA bank Q4 (Is there a direct bus from Erode to JKKN?) | `src/app/erode/page.tsx` | 92–94 | `q: "Can BCA students from Erode get IT jobs?", a: "Yes. BCA graduates from JKKN CAS are placed at companies like TCS..."` | `q: "Is there a direct bus from Erode to JKKN CAS?", a: "Regular TNSTC government buses run from Erode Central Bus Stand to Komarapalayam via NH-544; the journey takes 35–40 minutes..."` (full answer from spec Section 9, Q4) | S | None |
@@ -78,8 +78,8 @@
 | F6 | Rewrite FAQ Q6 answer — hostel Q, fix "40-50 minutes" to "35-40 minutes" | `src/app/erode/page.tsx` | 100–102 | `"...the campus is just 40-50 minutes away."` | `"JKKN CAS provides separate hostel accommodation for boys and girls on the main campus..."` (full answer from spec Section 9, Q5) | S | T0 |
 | F7 | Rewrite FAQ Q7 answer — how to apply, use spec Q9 voice-ready opener | `src/app/erode/page.tsx` | 104–106 | `"You can apply online through the official website at https://cas.jkkn.ac.in/ or visit the campus directly..."` | `"Applications for JKKN CAS are submitted online at admission.jkkn.ac.in or in person at the campus admission office..."` (full answer from spec Section 9, Q9) | S | None |
 | F8 | Rewrite FAQ Q8 answer — direct bus question already present but rewrite for ≤29 word first sentence and correct 40-50 → 35-40 minutes | `src/app/erode/page.tsx` | 108–110 | `"Yes. Regular TNSTC government buses...Journey time is approximately 40 to 50 minutes."` | Already covered by F4 — Q8 now maps to accreditation question (Q7 from spec) — `q: "Is JKKN College of Arts and Science accredited?", a: "JKKN College of Arts and Science is NAAC-accredited and UGC-approved..."` | S | None |
-| F9 | Rewrite FAQ Q9 answer — hostel cost, remove "significantly lower" claim, add factual structure | `src/app/erode/page.tsx` | 112–114 | `"Hostel fees at JKKN CAS are significantly lower than city PG accommodations..."` | Maps to spec Q8 placement rate — `q: "What placement rate does JKKN CAS achieve?", a: "JKKN CAS achieves an 80%+ placement rate for graduating students..."` | S | None |
-| F10 | Rewrite FAQ Q10 answer — remove "50+ acre" unverified claim, remove "30-50% lower" unverified claim, fix distance | `src/app/erode/page.tsx` | 116–118 | `"JKKN CAS offers several advantages...fees are 30-50% lower...50+ acre green campus..."` | `q: "Why should Erode students choose JKKN CAS over colleges in Erode city?", a: "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 80%+ placements with national recruiters — advantages not uniformly available at Erode city colleges..."` (spec Section 9, Q10 — without unverified claims) | S | T0 |
+| F9 | Rewrite FAQ Q9 answer — hostel cost, remove "significantly lower" claim, add factual structure | `src/app/erode/page.tsx` | 112–114 | `"Hostel fees at JKKN CAS are significantly lower than city PG accommodations..."` | Maps to spec Q8 placement rate — `q: "What placement rate does JKKN CAS achieve?", a: "JKKN CAS achieves a 90%+ placement rate for graduating students..."` | S | None |
+| F10 | Rewrite FAQ Q10 answer — remove "50+ acre" unverified claim, remove "30-50% lower" unverified claim, fix distance | `src/app/erode/page.tsx` | 116–118 | `"JKKN CAS offers several advantages...fees are 30-50% lower...50+ acre green campus..."` | `q: "Why should Erode students choose JKKN CAS over colleges in Erode city?", a: "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters — advantages not uniformly available at Erode city colleges..."` (spec Section 9, Q10 — without unverified claims) | S | T0 |
 | F11 | Create separate `schemaFaqs` array above the return statement — 10 short voice-optimized answers for FAQSchema component | `src/app/erode/page.tsx` | Before line 121 (before `return (`) | _(schemaFaqs array absent — FAQSchema uses full `faqs` array)_ | New `const schemaFaqs = [...]` array with 10 entries using ≤29 word first-sentence answers from spec Section 11.2 | M | F1–F10 |
 | F12 | Update FAQSchema component call — change `faqs={faqs.map(...)}` to use `schemaFaqs` | `src/app/erode/page.tsx` | 127 | `<FAQSchema faqs={faqs.map(f => ({ question: f.q, answer: f.a }))} />` | `<FAQSchema faqs={schemaFaqs} />` | XS | F11 |
 
@@ -142,7 +142,7 @@
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Erode | JKKN CAS",
   description:
-    "JKKN CAS — 35 km from Erode via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.",
+    "JKKN CAS — 35 km from Erode via NH-544. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27.",
   keywords: [
     "arts and science college near Erode",
     "best college near Erode",
@@ -157,7 +157,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Erode | JKKN CAS",
     description:
-      "JKKN CAS — 35 km from Erode. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 35 km from Erode. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/erode",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -173,7 +173,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Erode | JKKN CAS",
-    description: "JKKN CAS — 35 km from Erode. NAAC-accredited, 80%+ placements. Admissions open 2026-27.",
+    description: "JKKN CAS — 35 km from Erode. NAAC-accredited, 90%+ placements. Admissions open 2026-27.",
   },
 };
 ```
@@ -186,7 +186,7 @@ export const metadata: Metadata = {
   // 48 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited arts and science college near Erode. 34 programmes, 80%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
+    "JKKN CAS — NAAC-accredited arts and science college near Erode. 34 programmes, 90%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
   // 144 chars — within 155 limit
 
   keywords: [
@@ -210,7 +210,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Erode — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 34 programmes, 80%+ placements. Near Erode via NH-544. Admissions open 2026–27.",
+      "JKKN CAS — NAAC-accredited, 34 programmes, 90%+ placements. Near Erode via NH-544. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/erode",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -228,7 +228,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Erode — JKKN CAS",
     description:
-      "NAAC-accredited arts college near Erode. 34 programmes, 80%+ placements, hostel available. Admissions 2026–27 open.",
+      "NAAC-accredited arts college near Erode. 34 programmes, 90%+ placements, hostel available. Admissions 2026–27 open.",
   },
 };
 ```
@@ -270,7 +270,7 @@ export const metadata: Metadata = {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Erode to JKKN — a short, smooth ride on NH-544. JKKN College of
             Arts and Science offers top-tier arts and science programmes with
-            80%+ placement support — just 30-40 km from Erode with excellent
+            90%+ placement support — just 30-40 km from Erode with excellent
             highway connectivity.
           </p>
 
@@ -289,7 +289,7 @@ export const metadata: Metadata = {
             22 km from Erode, is a NAAC-accredited institution offering 34 UG
             and PG programmes including BCA, BBA, B.Com, and B.Sc
             specialisations. Affiliated to Periyar University and Bharathiar
-            University, it achieves 80%+ placement rates with recruiters
+            University, it achieves 90%+ placement rates with recruiters
             including TCS, Infosys, HDFC Bank, and Amazon.
           </p>
 
@@ -297,7 +297,7 @@ export const metadata: Metadata = {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Erode to JKKN — a short, smooth ride on NH-544. JKKN College of
             Arts and Science offers NAAC-accredited arts and science programmes
-            with 80%+ placement support — approximately 22 km from Erode with
+            with 90%+ placement support — approximately 22 km from Erode with
             excellent highway connectivity.
           </p>
 
@@ -326,7 +326,7 @@ export const metadata: Metadata = {
 ```tsx
     {
       q: "What is the best arts and science college near Erode?",
-      a: "JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
 ```
 
@@ -401,7 +401,7 @@ export const metadata: Metadata = {
     {
       question: "What is the best arts and science college near Erode?",
       answer:
-        "JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
+        "JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
     },
     {
       question: "How far is JKKN CAS from Erode?",
@@ -431,7 +431,7 @@ export const metadata: Metadata = {
     {
       question: "What placement rate does JKKN CAS achieve for Erode students?",
       answer:
-        "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
+        "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
     },
     {
       question: "How can students from Erode apply to JKKN CAS?",
@@ -446,7 +446,7 @@ export const metadata: Metadata = {
     {
       question: "Why should Erode students choose JKKN CAS over colleges in Erode city?",
       answer:
-        "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 80%+ placements with national recruiters — advantages not uniformly available at Erode city colleges. The 22 km NH-544 route makes daily commute viable.",
+        "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters — advantages not uniformly available at Erode city colleges. The 22 km NH-544 route makes daily commute viable.",
     },
   ];
 
@@ -590,7 +590,7 @@ export const metadata: Metadata = {
             "@type": "WebPage",
             "name": "Arts and Science College Near Erode — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/erode",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college accessible from Erode via NH-544. 34 programmes, 80%+ placements, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college accessible from Erode via NH-544. 34 programmes, 90%+ placements, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",

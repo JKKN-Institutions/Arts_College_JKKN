@@ -124,8 +124,8 @@ Zero instances of `45 km`, `45km`, or `40-50 km` remain in `src/app/salem/page.t
 | Tag | Current (Buggy) | Recommended (Fixed) | Char Count |
 |-----|-----------------|---------------------|-----------|
 | Meta description | `"JKKN CAS — 45 km from Salem via NH-544..."` | `"JKKN CAS — top arts and science college accessible from Salem (~58 km via NH-544). NAAC-accredited, BCA, BBA, B.Com, B.Sc. Admissions 2026-27."` | 143 chars ✓ |
-| OG description | `"JKKN CAS — 45 km from Salem..."` | `"JKKN CAS — ~58 km from Salem. NAAC-accredited, 80%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27."` | 112 chars ✓ |
-| Twitter description | `"JKKN CAS — 45 km from Salem..."` | `"JKKN CAS — ~58 km from Salem. NAAC-accredited, 80%+ placements. Admissions open 2026-27."` | 90 chars ✓ |
+| OG description | `"JKKN CAS — 45 km from Salem..."` | `"JKKN CAS — ~58 km from Salem. NAAC-accredited, 90%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27."` | 112 chars ✓ |
+| Twitter description | `"JKKN CAS — 45 km from Salem..."` | `"JKKN CAS — ~58 km from Salem. NAAC-accredited, 90%+ placements. Admissions open 2026-27."` | 90 chars ✓ |
 
 **Note on meta title:** Current title `"Best Arts and Science College Near Salem | JKKN CAS"` (55 chars) is correct and does not need changes.
 
@@ -231,7 +231,7 @@ Content to insert (52 words — do not shorten):
 JKKN College of Arts and Science (JKKN CAS) is a NAAC-accredited arts and science
 college located approximately 58 km from Salem via NH-544. It offers 34 UG, PG, and
 Ph.D programmes including BCA, BBA, B.Com, and B.Sc. Affiliated to Periyar University
-and Bharathiar University, the college has 80%+ placement rate with recruiters including
+and Bharathiar University, the college has 90%+ placement rate with recruiters including
 TCS, Infosys BPO, and HDFC Bank.
 ```
 
@@ -280,7 +280,7 @@ Content to insert (table format):
 | Fee Level | 30–50% lower than city colleges | Higher (metro cost) |
 | Campus Type | 50+ acre green campus | Urban / smaller campus |
 | Hostel | Available (boys + girls) | Limited / city PG |
-| Placement Rate | 80%+ | Varies |
+| Placement Rate | 90%+ | Varies |
 | Programmes | 34 (UG + PG + Ph.D) | Varies |
 | Transport | College bus from Salem | Own arrangement |
 
@@ -303,14 +303,14 @@ Replace the answer string for each FAQ in the `faqs` array or FAQ component prop
 
 | FAQ | Action | New Answer (verified ≤29 words) |
 |-----|--------|---------------------------------|
-| Q1 — best arts college near Salem | REWRITE | JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 34 programmes and 80%+ placement rate. |
+| Q1 — best arts college near Salem | REWRITE | JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 34 programmes and 90%+ placement rate. |
 | Q2 — how far is JKKN CAS from Salem | REWRITE | JKKN CAS is approximately 58 km from Salem via NH-544, taking 60–70 minutes by road. |
 | Q3 — popular courses | REWRITE | JKKN CAS offers BCA, BBA, B.Com, B.Sc (multiple specialisations), MCA, M.Com, M.Sc, and Ph.D — 34 programmes total across aided and self-finance streams. |
 | Q5 — fees | TRIM | JKKN CAS fees are 30–50% lower than city-based private colleges. Government scholarships (BC, MBC, SC, ST) are available. Contact +91 9345855001 for the current fee structure. |
 | Q6 — hostel | REWRITE | Yes. JKKN CAS provides separate hostels for boys and girls with mess, WiFi, and 24/7 security. College buses also connect Salem. |
 | Q8 — direct bus | REWRITE | Yes. TNSTC government buses from Salem New Bus Stand to Komarapalayam run every 15–20 minutes via NH-544, reaching the campus in under 70 minutes. |
 | Q9 — hostel cost | TRIM | Hostel fees are significantly lower than Salem city PG rates. Mess, WiFi, and security are included. Contact the admissions office for exact annual rates. |
-| Q10 — why JKKN | TRIM | JKKN CAS offers NAAC accreditation, 34 programmes, 80%+ placement, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~58 km from Salem. |
+| Q10 — why JKKN | TRIM | JKKN CAS offers NAAC accreditation, 34 programmes, 90%+ placement, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~58 km from Salem. |
 
 **FAQs that pass without changes:**
 - Q4 (BCA jobs) — 60 words, trimming optional (target ≤40 words)
@@ -357,7 +357,7 @@ MCA, M.Com, M.Sc, M.A., and Ph.D programmes in Chemistry, Tamil, and Zoology.
 #### Block C — Placements (for placement-related AI queries)
 
 ```
-JKKN CAS maintains an 80%+ placement rate. Campus recruiters include TCS, Infosys BPO, HDFC
+JKKN CAS maintains a 90%+ placement rate. Campus recruiters include TCS, Infosys BPO, HDFC
 Bank, ICICI Bank, Amazon, Flipkart, and Jio. The college provides placement training, aptitude
 coaching, and mock interviews. Graduates are employed across IT, banking, finance, and retail
 sectors.
@@ -645,7 +645,7 @@ Add the following 4 internal links at the specified sections. Do not alter exist
 | Link Target | Anchor Text | Insert At |
 |-------------|-------------|-----------|
 | `/facilities` | `"modern labs, digital library, and campus facilities"` | Campus Facilities section (approximately line 868 area) — wrap existing text reference with link |
-| `/placements` | `"80%+ placement rate"` | Placement section (approximately line 607 area) — convert existing stat text to link |
+| `/placements` | `"90%+ placement rate"` | Placement section (approximately line 607 area) — convert existing stat text to link |
 | `/admissions` | `"admission process"` | Admission section H2 heading area (approximately line 667) |
 | `/departments` | `"28 departments across arts, science, and commerce"` | Programmes section intro paragraph |
 
@@ -945,7 +945,7 @@ These actions require access to the JKKN CAS Google Business Profile (`maps.app.
 | Data Point | Why Needed | Who to Ask |
 |------------|-----------|------------|
 | NAAC grade (A or A+) | Cannot publish specific grade without confirmation | JKKN CAS Principal / Admin office |
-| CAS-specific placement rate | Currently using group rate 80%+ | Placement cell |
+| CAS-specific placement rate | Currently using group rate 90%+ | Placement cell |
 | CAS-specific highest salary (5–7 LPA) | Currently marked [UNVERIFIED] | Placement cell |
 | Campus size in acres (50+ acres) | FAQ answer uses this — needs confirmation | Campus administration |
 | Hostel capacity and exact fees | FAQ Q9 mentions hostel cost | Hostel / Student services |

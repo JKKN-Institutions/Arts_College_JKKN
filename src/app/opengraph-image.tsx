@@ -99,7 +99,7 @@ export default function Image() {
             lineHeight: 1.4,
           }}
         >
-          27+ Programmes in Arts, Science & Commerce | Highest Package ₹18 LPA
+          27+ Programmes in Arts, Science & Commerce | Highest Package ₹12 LPA
         </p>
 
         {/* Stats row */}

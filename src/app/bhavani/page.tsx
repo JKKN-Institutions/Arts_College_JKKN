@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   // 49 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited arts and science college ~4-5 km from Bhavani across the Cauvery bridge. 34 programmes, 80%+ placements. Admissions 2026–27.",
+    "JKKN CAS — NAAC-accredited arts and science college ~4-5 km from Bhavani across the Cauvery bridge. 34 programmes, 90%+ placements. Admissions 2026–27.",
   // ~151 chars — within 155 limit
 
   keywords: [
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Bhavani — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 34 programmes, 80%+ placements. Just ~4-5 km from Bhavani across the Cauvery bridge. Admissions open 2026–27.",
+      "JKKN CAS — NAAC-accredited, 34 programmes, 90%+ placements. Just ~4-5 km from Bhavani across the Cauvery bridge. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/bhavani",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Bhavani — JKKN CAS",
     description:
-      "NAAC-accredited arts college ~4-5 km from Bhavani. 34 programmes, 80%+ placements, easy day-scholar commute. Admissions 2026–27 open.",
+      "NAAC-accredited arts college ~4-5 km from Bhavani. 34 programmes, 90%+ placements, easy day-scholar commute. Admissions 2026–27 open.",
   },
 };
 
@@ -89,7 +89,7 @@ export default function BhavaniPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Bhavani?",
-      a: "JKKN College of Arts and Science, located just ~4-5 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. For Bhavani students it is effectively the nearest major arts and science college.",
+      a: "JKKN College of Arts and Science, located just ~4-5 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. For Bhavani students it is effectively the nearest major arts and science college.",
     },
     {
       q: "How far is JKKN CAS from Bhavani?",
@@ -121,11 +121,11 @@ export default function BhavaniPage() {
     },
     {
       q: "What placement rate does JKKN CAS achieve for Bhavani students?",
-      a: "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
+      a: "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Why should Bhavani students choose JKKN CAS over colleges in Erode city?",
-      a: "For Bhavani students, JKKN CAS is just ~4-5 km away across the Cauvery bridge, while Erode city colleges are ~15-20 km away. JKKN offers NAAC accreditation, affordable fees, 34 programmes, and 80%+ placements with national recruiters — without the long daily commute. Hostel facilities are also available for those who prefer on-campus living.",
+      a: "For Bhavani students, JKKN CAS is just ~4-5 km away across the Cauvery bridge, while Erode city colleges are ~15-20 km away. JKKN offers NAAC accreditation, affordable fees, 34 programmes, and 90%+ placements with national recruiters — without the long daily commute. Hostel facilities are also available for those who prefer on-campus living.",
     },
   ];
 
@@ -133,7 +133,7 @@ export default function BhavaniPage() {
     {
       question: "What is the best arts and science college near Bhavani?",
       answer:
-        "JKKN College of Arts and Science, located approximately 4-5 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
+        "JKKN College of Arts and Science, located approximately 4-5 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
     },
     {
       question: "How far is JKKN CAS from Bhavani?",
@@ -163,7 +163,7 @@ export default function BhavaniPage() {
     {
       question: "What placement rate does JKKN CAS achieve for Bhavani students?",
       answer:
-        "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA, with dedicated placement training and aptitude coaching provided.",
+        "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA, with dedicated placement training and aptitude coaching provided.",
     },
     {
       question: "How can students from Bhavani apply to JKKN CAS?",
@@ -178,7 +178,7 @@ export default function BhavaniPage() {
     {
       question: "Why should Bhavani students choose JKKN CAS over colleges in Erode city?",
       answer:
-        "For Bhavani students, JKKN CAS is approximately 4-5 km away across the Cauvery bridge, while Erode city colleges are approximately 15-20 km away. JKKN offers NAAC accreditation, affordable fees, 34 programmes, and 80%+ placements without the long daily commute.",
+        "For Bhavani students, JKKN CAS is approximately 4-5 km away across the Cauvery bridge, while Erode city colleges are approximately 15-20 km away. JKKN offers NAAC accreditation, affordable fees, 34 programmes, and 90%+ placements without the long daily commute.",
     },
   ];
 
@@ -197,7 +197,7 @@ export default function BhavaniPage() {
             "@type": "WebPage",
             "name": "Arts and Science College Near Bhavani — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/bhavani",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college approximately 4-5 km from Bhavani across the Cauvery bridge. 34 programmes, 80%+ placements, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college approximately 4-5 km from Bhavani across the Cauvery bridge. 34 programmes, 90%+ placements, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -305,7 +305,7 @@ export default function BhavaniPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 80%+ placement rate at JKKN CAS, easily reachable from Bhavani."
+        description="3-year undergraduate IT programme with hands-on training and 90%+ placement rate at JKKN CAS, easily reachable from Bhavani."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -336,7 +336,7 @@ export default function BhavaniPage() {
             from Bhavani across the Cauvery bridge in Komarapalayam, is a
             NAAC-accredited institution offering 34 UG and PG programmes
             including BCA, BBA, B.Com, and B.Sc specialisations. Affiliated
-            to Periyar University and Bharathiar University, it achieves 80%+
+            to Periyar University and Bharathiar University, it achieves 90%+
             placement rates with recruiters including TCS, Infosys, HDFC
             Bank, and Amazon.
           </p>
@@ -345,7 +345,7 @@ export default function BhavaniPage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Bhavani and Komarapalayam are twin towns facing each other across
             the Cauvery river — JKKN CAS is just a 10-15 minute ride over the
-            bridge. NAAC-accredited arts and science programmes with 80%+
+            bridge. NAAC-accredited arts and science programmes with 90%+
             placement support, effectively the nearest major college for
             Bhavani students.
           </p>
@@ -353,7 +353,7 @@ export default function BhavaniPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "80%+", label: "PLACEMENTS" },
+              { value: "90%+", label: "PLACEMENTS" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "5km", label: "FROM BHAVANI" },
               { value: "34", label: "PROGRAMMES" },
@@ -754,7 +754,7 @@ export default function BhavaniPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "80%+", label: "PLACEMENT RATE — 2024–25" },
+              { value: "90%+", label: "PLACEMENT RATE — 2024–25" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },
@@ -1178,7 +1178,7 @@ export default function BhavaniPage() {
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Placement Rate</td>
-                  <td className="p-3 text-gray-800 font-medium">80%+</td>
+                  <td className="p-3 text-gray-800 font-medium">90%+</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">

@@ -186,7 +186,7 @@ export default function BSCTextileFashionDesigningAIPage() {
               {[
                 { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited', desc: 'Quality assured education' },
                 { icon: <Brain className="w-7 h-7" />, stat: 'AI', title: 'Integrated Tools', desc: 'Generative + analytics AI' },
-                { icon: <Briefcase className="w-7 h-7" />, stat: '95%', title: 'Placement', desc: 'Top fashion-tech brands' },
+                { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Placement', desc: 'Top fashion-tech brands' },
                 { icon: <Sparkles className="w-7 h-7" />, stat: 'Fashion', title: 'Shows & Events', desc: 'AI-driven exhibitions' },
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>

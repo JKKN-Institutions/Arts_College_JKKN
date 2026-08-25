@@ -56,7 +56,7 @@
 | 14 | FAQ Q2 answer | "approximately 40-50 km...50-60 minutes" | **BUG: ~58 km, ~60-70 min** | page.tsx line 86 | **BUG — DISTANCE ERROR** |
 | 15 | FAQ Q6 answer | "campus is just 50-60 minutes away" | Partially correct (time) | page.tsx line 102 | MEDIUM RISK |
 | 16 | FAQ Q10 answer | "50+ acre green campus" | [UNVERIFIED — needs admin confirmation] | page.tsx line 118 | UNVERIFIED |
-| 17 | Placement rate | 80%+ | [FROM CLAUDE.MD — group rate] | page.tsx line 617 | FROM CLAUDE.MD |
+| 17 | Placement rate | 90%+ | [FROM CLAUDE.MD — group rate] | page.tsx line 617 | FROM CLAUDE.MD |
 | 18 | Highest salary stat | "5-7 LPA HIGHEST" | [UNVERIFIED — CAS-specific, not group data] | page.tsx line 219 | **UNVERIFIED — POTENTIAL BUG** |
 | 19 | Recruiters listed | TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, Jio | [FROM CLAUDE.MD partial; Infosys BPO not Infosys; verify Flipkart/Jio] | page.tsx line 641–648 | MEDIUM CONFIDENCE |
 | 20 | Programmes count | "All 34 Programmes" | [FROM CLAUDE.MD — 34 programmes] | page.tsx line 477 | FROM CLAUDE.MD |
@@ -161,7 +161,7 @@ Gate C means: fix the distance bugs first, build content quality for AEO, and ta
 |------------|------------|--------|-------|
 | Distance Salem to campus (~58 km) | [HIGH] | MEMORY.md verified 2026-03-27 | Wikipedia + JKKN website cross-reference |
 | Journey time (60–70 min) | [MEDIUM] | Inferred from 58 km via NH-544 | Traffic conditions variable; 50–70 min range |
-| Placement rate 80%+ | [MEDIUM] | FROM CLAUDE.MD — group rate | CAS-specific rate unverified separately |
+| Placement rate 90%+ | [MEDIUM] | FROM CLAUDE.MD — group rate | CAS-specific rate unverified separately |
 | Highest salary 5–7 LPA | [LOW] | Page.tsx line 219 only | Group data shows 12 LPA (Engg), 25 LPA (Nursing) — CAS-specific 5–7 LPA unconfirmed |
 | Average salary 2–3.5 LPA | [LOW] | Page.tsx line 619 | CAS-specific; unverified against placement portal |
 | 34 programmes count | [HIGH] | FROM CLAUDE.MD + page lists them | Matches count on page |
@@ -340,7 +340,7 @@ Sona CAS is in the city. JKKN CAS cannot match on location. JKKN can differentia
 JKKN College of Arts and Science (JKKN CAS) is a NAAC-accredited arts and science
 college located approximately 58 km from Salem via NH-544. It offers 34 UG, PG, and
 Ph.D programmes including BCA, BBA, B.Com, and B.Sc. Affiliated to Periyar University
-and Bharathiar University, the college has 80%+ placement rate with recruiters including
+and Bharathiar University, the college has 90%+ placement rate with recruiters including
 TCS, Infosys BPO, and HDFC Bank.
 ```
 
@@ -386,7 +386,7 @@ Popular UG programmes at JKKN CAS accessible from Salem:
 | Fee Level | Lower — 30–50% less than city | Higher (metro cost) |
 | Campus Type | 50+ acre green campus | Urban / smaller campus |
 | Hostel | Available (boys + girls) | Limited / city PG |
-| Placement Rate | 80%+ | Varies |
+| Placement Rate | 90%+ | Varies |
 | Programmes | 34 (UG + PG + Ph.D) | Varies |
 | Transport | College bus from Salem | Own arrangement |
 
@@ -397,7 +397,7 @@ Popular UG programmes at JKKN CAS accessible from Salem:
 > All answers optimised for ≤29 words for voice extraction. Each answer should be wrapped in `<answer>` class div or as FAQ schema entry. Full schema at Section 14.
 
 ### Q1: What is the best arts and science college near Salem?
-**Answer (28 words):** JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 34 programmes and 80%+ placement rate.
+**Answer (28 words):** JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 34 programmes and 90%+ placement rate.
 
 ---
 
@@ -432,7 +432,7 @@ Popular UG programmes at JKKN CAS accessible from Salem:
 ---
 
 ### Q8: What is the placement rate at arts college near Salem?
-**Answer (20 words):** JKKN CAS achieves 80%+ placement rate. Recruiters include TCS, Infosys BPO, HDFC Bank, Amazon, and Flipkart.
+**Answer (20 words):** JKKN CAS achieves 90%+ placement rate. Recruiters include TCS, Infosys BPO, HDFC Bank, Amazon, and Flipkart.
 
 ---
 
@@ -483,7 +483,7 @@ MCA, M.Com, M.Sc, M.A., and Ph.D programmes in Chemistry, Tamil, and Zoology.
 
 **Block C — Placements (for placement-related AI queries)**
 ```
-JKKN CAS maintains an 80%+ placement rate. Campus recruiters include TCS, Infosys BPO, HDFC
+JKKN CAS maintains a 90%+ placement rate. Campus recruiters include TCS, Infosys BPO, HDFC
 Bank, ICICI Bank, Amazon, Flipkart, and Jio. The college provides placement training, aptitude
 coaching, and mock interviews. Graduates are employed across IT, banking, finance, and retail
 sectors.
@@ -864,11 +864,11 @@ H1: Arts and Science College Near Salem — JKKN CAS (58 km via NH-544)    [~10 
 | Tag | Current Value | Char Count | Issue |
 |-----|---------------|------------|-------|
 | Title | Best Arts and Science College Near Salem \| JKKN CAS | 55 chars | Distance reference absent — OK; "Near" is acceptable |
-| Meta description | JKKN CAS — 45 km from Salem via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27. | 132 chars | **BUG: "45 km" — must be "~58 km"** |
+| Meta description | JKKN CAS — 45 km from Salem via NH-544. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA programmes. Admissions open 2026-27. | 132 chars | **BUG: "45 km" — must be "~58 km"** |
 | OG title | Same as meta title | 55 chars | OK |
-| OG description | JKKN CAS — 45 km from Salem. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27. | 111 chars | **BUG: "45 km" — must be "~58 km"** |
+| OG description | JKKN CAS — 45 km from Salem. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27. | 111 chars | **BUG: "45 km" — must be "~58 km"** |
 | Twitter title | Same as meta title | 55 chars | OK |
-| Twitter description | JKKN CAS — 45 km from Salem. NAAC-accredited, 80%+ placements. Admissions open 2026-27. | 89 chars | **BUG: "45 km" — must be "~58 km"** |
+| Twitter description | JKKN CAS — 45 km from Salem. NAAC-accredited, 90%+ placements. Admissions open 2026-27. | 89 chars | **BUG: "45 km" — must be "~58 km"** |
 
 **"Near Erode" meta bug:** Confirmed ABSENT from this page's meta tags. The bug is NOT present in `src/app/salem/page.tsx`. It may exist in other city pages. Flag for cross-page audit. This page's meta uses "Near Salem" correctly throughout.
 
@@ -882,19 +882,19 @@ Count: 5+5+4+7+7+4+6+1+4+3 = 55 chars ✓ (No change needed — title is correct
 
 **Meta Description (152 chars):**
 ```
-JKKN CAS — ~58 km from Salem via NH-544. NAAC-accredited, 80%+ placements. BCA, BBA, B.Com, B.Sc programmes. Admissions open 2026-27.
+JKKN CAS — ~58 km from Salem via NH-544. NAAC-accredited, 90%+ placements. BCA, BBA, B.Com, B.Sc programmes. Admissions open 2026-27.
 ```
 Count: 133 chars ✓ (within 155 limit)
 
 **OG Description (139 chars):**
 ```
-JKKN CAS — ~58 km from Salem. NAAC-accredited, 80%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27.
+JKKN CAS — ~58 km from Salem. NAAC-accredited, 90%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27.
 ```
 Count: 112 chars ✓
 
 **Twitter Description (104 chars):**
 ```
-JKKN CAS — ~58 km from Salem. NAAC-accredited, 80%+ placements. Admissions open 2026-27.
+JKKN CAS — ~58 km from Salem. NAAC-accredited, 90%+ placements. Admissions open 2026-27.
 ```
 Count: 90 chars ✓
 
@@ -939,7 +939,7 @@ Count: 143 chars ✓ — includes "from Salem" which is stronger for AI extracti
 | Add Link TO | Anchor Text | Placement on Salem Page |
 |-------------|-------------|------------------------|
 | /facilities | "modern labs and digital library" | Campus Facilities section |
-| /placements | "placement cell" or "80%+ placement rate" | Placement section |
+| /placements | "placement cell" or "90%+ placement rate" | Placement section |
 | /admissions | "admission process" | Admission section H2 |
 | /blog (when live) | "read student stories from Salem" | FAQ or Why Choose section |
 | /departments | "28 departments across arts, science, and commerce" | Programmes section |
@@ -1082,7 +1082,7 @@ Or keep current but ensure BreadcrumbSchema renders correctly. Current implement
 - [x] Geo coordinates: 11.44518, 77.726549 — matches MEMORY.md verified data
 - [x] Distance: ~58 km from Salem — correctly used in all recommended content (bugs in current page flagged)
 - [x] Programmes count: 34 — confirmed from page.tsx list (lines 487–594)
-- [x] Placement rate: 80%+ — FROM CLAUDE.MD group rate, tagged [MEDIUM confidence]
+- [x] Placement rate: 90%+ — FROM CLAUDE.MD group rate, tagged [MEDIUM confidence]
 - [x] Recruiters: TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, Jio — from page.tsx lines 641–648
 - [x] NAAC accreditation: confirmed present; grade tagged [UNVERIFIED]
 - [x] Affiliation: Periyar University / Bharathiar University — confirmed page.tsx line 271

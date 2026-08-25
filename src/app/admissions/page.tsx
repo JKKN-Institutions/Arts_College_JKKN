@@ -246,7 +246,7 @@ export default function AdmissionsPage() {
               {[
                 { label: "Programmes", value: "27+", icon: GraduationCap },
                 { label: "Highest Package", value: "₹18 LPA", icon: Award },
-                { label: "Placement Rate", value: "95%+", icon: Users },
+                { label: "Placement Rate", value: "90%+", icon: Users },
                 {
                   label: "Status",
                   value: "Autonomous",

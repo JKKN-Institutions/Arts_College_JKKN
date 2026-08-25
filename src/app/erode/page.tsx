@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   // 48 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited arts and science college near Erode. 34 programmes, 80%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
+    "JKKN CAS — NAAC-accredited arts and science college near Erode. 34 programmes, 90%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
   // 144 chars — within 155 limit
 
   keywords: [
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Erode — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 34 programmes, 80%+ placements. Near Erode via NH-544. Admissions open 2026–27.",
+      "JKKN CAS — NAAC-accredited, 34 programmes, 90%+ placements. Near Erode via NH-544. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/erode",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Erode — JKKN CAS",
     description:
-      "NAAC-accredited arts college near Erode. 34 programmes, 80%+ placements, hostel available. Admissions 2026–27 open.",
+      "NAAC-accredited arts college near Erode. 34 programmes, 90%+ placements, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -93,7 +93,7 @@ export default function ErodePage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Erode?",
-      a: "JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Erode?",
@@ -125,15 +125,15 @@ export default function ErodePage() {
     },
     {
       q: "What placement rate does JKKN CAS achieve for Erode students?",
-      a: "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
+      a: "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Why should Erode students choose JKKN CAS over colleges in Erode city?",
-      a: "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 80%+ placements with national recruiters — advantages not uniformly available at Erode city colleges. The 22 km NH-544 route makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
+      a: "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters — advantages not uniformly available at Erode city colleges. The 22 km NH-544 route makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
     },
     {
       q: "How does JKKN CAS compare with other arts and science colleges in Erode district?",
-      a: "When students shortlist arts and science colleges across Erode district — from Bhavani and Gobichettipalayam to Perundurai — JKKN CAS stands out for NAAC accreditation, aided low-fee programmes, 34 courses, hostel, and 80%+ placements. The campus sits at Komarapalayam, just across the Cauvery from the Erode district border.",
+      a: "When students shortlist arts and science colleges across Erode district — from Bhavani and Gobichettipalayam to Perundurai — JKKN CAS stands out for NAAC accreditation, aided low-fee programmes, 34 courses, hostel, and 90%+ placements. The campus sits at Komarapalayam, just across the Cauvery from the Erode district border.",
     },
   ];
 
@@ -141,7 +141,7 @@ export default function ErodePage() {
     {
       question: "What is the best arts and science college near Erode?",
       answer:
-        "JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC-accredited institution with 34 programmes and 80%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
+        "JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
     },
     {
       question: "How far is JKKN CAS from Erode?",
@@ -171,7 +171,7 @@ export default function ErodePage() {
     {
       question: "What placement rate does JKKN CAS achieve for Erode students?",
       answer:
-        "JKKN CAS achieves an 80%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
+        "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
     },
     {
       question: "How can students from Erode apply to JKKN CAS?",
@@ -186,12 +186,12 @@ export default function ErodePage() {
     {
       question: "Why should Erode students choose JKKN CAS over colleges in Erode city?",
       answer:
-        "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 80%+ placements with national recruiters — advantages not uniformly available at Erode city colleges. The 22 km NH-544 route makes daily commute viable.",
+        "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters — advantages not uniformly available at Erode city colleges. The 22 km NH-544 route makes daily commute viable.",
     },
     {
       question: "How does JKKN CAS compare with other arts and science colleges in Erode district?",
       answer:
-        "When students shortlist arts and science colleges across Erode district — from Bhavani and Gobichettipalayam to Perundurai — JKKN CAS stands out for NAAC accreditation, aided low-fee programmes, 34 courses, hostel, and 80%+ placements.",
+        "When students shortlist arts and science colleges across Erode district — from Bhavani and Gobichettipalayam to Perundurai — JKKN CAS stands out for NAAC accreditation, aided low-fee programmes, 34 courses, hostel, and 90%+ placements.",
     },
   ];
 
@@ -210,7 +210,7 @@ export default function ErodePage() {
             "@type": "WebPage",
             "name": "Arts and Science College Near Erode — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/erode",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college accessible from Erode via NH-544. 34 programmes, 80%+ placements, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college accessible from Erode via NH-544. 34 programmes, 90%+ placements, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -318,7 +318,7 @@ export default function ErodePage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 80%+ placement rate at JKKN CAS, easily reachable from Erode."
+        description="3-year undergraduate IT programme with hands-on training and 90%+ placement rate at JKKN CAS, easily reachable from Erode."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -349,7 +349,7 @@ export default function ErodePage() {
             22 km from Erode, is a NAAC-accredited institution offering 34 UG
             and PG programmes including BCA, BBA, B.Com, and B.Sc
             specialisations. Affiliated to Periyar University and Bharathiar
-            University, it achieves 80%+ placement rates with recruiters
+            University, it achieves 90%+ placement rates with recruiters
             including TCS, Infosys, HDFC Bank, and Amazon.
           </p>
 
@@ -357,14 +357,14 @@ export default function ErodePage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Erode to JKKN — a short, smooth ride on NH-544. JKKN College of
             Arts and Science offers NAAC-accredited arts and science programmes
-            with 80%+ placement support — approximately 22 km from Erode with
+            with 90%+ placement support — approximately 22 km from Erode with
             excellent highway connectivity.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "80%+", label: "PLACEMENTS" },
+              { value: "90%+", label: "PLACEMENTS" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "22km", label: "FROM ERODE" },
               { value: "4", label: "PROGRAMMES" },
@@ -765,7 +765,7 @@ export default function ErodePage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "80%+", label: "PLACEMENT RATE — 2024–25" },
+              { value: "90%+", label: "PLACEMENT RATE — 2024–25" },
               { value: "5-7", label: "LPA HIGHEST" },
               { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },
@@ -1189,7 +1189,7 @@ export default function ErodePage() {
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Placement Rate</td>
-                  <td className="p-3 text-gray-800 font-medium">80%+</td>
+                  <td className="p-3 text-gray-800 font-medium">90%+</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">

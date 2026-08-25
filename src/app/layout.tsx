@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | JKKN College of Arts and Science",
   },
   description:
-    "JKKN College — the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited, 95% placement, ₹18 LPA highest package. 27+ UG, PG & PhD programmes near Erode.",
+    "JKKN College — the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited, 90% placement, ₹12 LPA highest package. 27+ UG, PG & PhD programmes near Erode.",
   keywords: [
     "JKKN College of Arts and Science",
     "arts and science college near Erode",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title:
       "JKKN College of Arts and Science | Autonomous | 27+ Programmes",
     description:
-      "Autonomous institution offering 27+ UG, PG and PhD programmes. Highest package ₹18 LPA. Affiliated to Periyar University, near Erode, Tamil Nadu.",
+      "Autonomous institution offering 27+ UG, PG and PhD programmes. Highest package ₹12 LPA. Affiliated to Periyar University, near Erode, Tamil Nadu.",
     images: [
       {
         url: `${SITE_URL}/opengraph-image`,
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title:
       "JKKN College of Arts and Science | Autonomous | 27+ Programmes",
     description:
-      "Autonomous institution offering 27+ UG, PG and PhD programmes. Highest package ₹18 LPA. Near Erode, Tamil Nadu.",
+      "Autonomous institution offering 27+ UG, PG and PhD programmes. Highest package ₹12 LPA. Near Erode, Tamil Nadu.",
     images: [
       {
         url: `${SITE_URL}/opengraph-image`,

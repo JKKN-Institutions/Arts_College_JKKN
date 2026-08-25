@@ -102,7 +102,7 @@ JKKN College of Arts and Science is a NAAC-accredited, UGC-approved institution 
 in Komarapalayam, Namakkal district, Tamil Nadu — 105 km from Coimbatore via NH-544.
 Founded in 1952 and affiliated to Periyar University and Bharathiar University, JKKN CAS
 offers 34 undergraduate, postgraduate, and research programmes spanning arts, science,
-commerce, and computer applications. The institution maintains an 80%+ placement rate
+commerce, and computer applications. The institution maintains a 90%+ placement rate
 with recruiters including TCS, Infosys BPO, HDFC Bank, Amazon, and Flipkart. A 50+ acre
 residential campus with separate hostel facilities, digital library, modern laboratories,
 and weekend bus services to Coimbatore makes it an accessible choice for students from
@@ -294,10 +294,10 @@ This paragraph answers FAQ 8 (Is there a direct bus from Coimbatore to JKKN CAS?
 **Source File:** `src/app/coimbatore/page.tsx` lines 45–46
 
 **Current description (127 chars):**
-> JKKN CAS — 105 km from Coimbatore via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.
+> JKKN CAS — 105 km from Coimbatore via NH-544. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.
 
 **Recommended description (148 chars):**
-> JKKN CAS — 105 km from Coimbatore. NAAC-accredited. Fees 30–50% lower than city colleges. BCA, B.Sc CS, BBA, B.Com. 80%+ placements. 2026-27 open.
+> JKKN CAS — 105 km from Coimbatore. NAAC-accredited. Fees 30–50% lower than city colleges. BCA, B.Sc CS, BBA, B.Com. 90%+ placements. 2026-27 open.
 
 **Why this change:** The word "Fees" and the "30–50% lower" hook directly address the Coimbatore student's primary concern (cost). Adds BCA and B.Sc CS prominence for the IT audience. 148 characters — within the 155-character limit.
 
@@ -523,7 +523,7 @@ Full JSON-LD is provided in spec Section 14.4 — copy as-is, no modifications n
 **Current description (generic):** [Check current text at source file line ~164]
 
 **Updated description:**
-> "3-year undergraduate IT programme at JKKN CAS — 105 km from Coimbatore. Hands-on training, 80%+ placement rate, pipeline to Coimbatore's TIDEL Park and Elcot SEZ IT sector. Fees 30–50% lower than Coimbatore city BCA colleges."
+> "3-year undergraduate IT programme at JKKN CAS — 105 km from Coimbatore. Hands-on training, 90%+ placement rate, pipeline to Coimbatore's TIDEL Park and Elcot SEZ IT sector. Fees 30–50% lower than Coimbatore city BCA colleges."
 
 **For the other 3 CourseSchemas (B.Sc CS, BBA, B.Com):** Add "located 105 km from Coimbatore via NH-544, Tamil Nadu" to the provider address or description. This is lower priority — complete BCA first.
 

@@ -45,7 +45,7 @@
 | Current H1 | "Best Arts and Science College Near Coimbatore" | Source file lines 206–209 | [HIGH] |
 | Current meta title | "Best Arts and Science College Near Coimbatore \| JKKN CAS" | Source file line 44 | [HIGH] |
 | Meta title character count | 57 characters | Counted | [HIGH] |
-| Current meta description | "JKKN CAS — 105 km from Coimbatore via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27." | Source file lines 45–46 | [HIGH] |
+| Current meta description | "JKKN CAS — 105 km from Coimbatore via NH-544. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27." | Source file lines 45–46 | [HIGH] |
 | Meta description character count | 127 characters | Counted | [HIGH] |
 | Distance displayed on page | **105 km, 2–2.5 hours** (hero stat line 224; distance card lines 287–295; FAQ line 89; transport label lines 882–884) | Source file multiple locations | [HIGH] |
 | Distance — verified correct value | **~105 km, 2–2.5 hours via NH-544** | CLAUDE.md JKKN Campus Distances (verified 2026-03-27) | [HIGH] |
@@ -60,7 +60,7 @@
 | Geo coordinates | 11.44518, 77.726549 (lines 155–156) | Source file | [HIGH] |
 | Total programmes listed | 34 (line 553) | Source file | [HIGH] |
 | BCA / IT programme | BCA, B.Sc Computer Science, B.Sc AI & Data Science present | Source file lines 588–594 | [HIGH] |
-| Placement rate shown on page | 80%+ (lines 215, 693) | Source file | [HIGH] |
+| Placement rate shown on page | 90%+ (lines 215, 693) | Source file | [HIGH] |
 | Highest CTC shown on page | 5–7 LPA (lines 223, 694) | Source file | [MEDIUM] — conservative vs group-wide 12 LPA |
 | Average CTC shown on page | 2–3.5 LPA (line 695) | Source file | [MEDIUM] |
 | Named recruiters | TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, Jio (lines 718–731) | Source file | [HIGH] |
@@ -137,7 +137,7 @@
 | Meta "near Erode" bug | [HIGH] — NOT FOUND | Full review of source file lines 44–79 | Bug not present in current file. Either pre-fixed or the bug is in another asset (OG image alt text, external link text, GBP listing). Verify GBP description and OG alt text separately. |
 | FAQ count: 10 confirmed | [HIGH] | Source file lines 82–122 counted | No FAQ gap — task brief count of 8 was incorrect |
 | NAAC accredited | [MEDIUM] | Task brief (grade unverified) | Use "NAAC-accredited" without grade; add [UNVERIFIED] in admin notes |
-| Placement rate: 80%+ | [HIGH] | Source file lines 215, 693 + task brief | Consistent — use |
+| Placement rate: 90%+ | [HIGH] | Source file lines 215, 693 + task brief | Consistent — use |
 | Highest CTC: 5–7 LPA | [MEDIUM] | Source file only — JKKN group says 12 LPA domestic | Page shows conservative figure; verify with placement team before citing in AEO snippets |
 | Average CTC: 2–3.5 LPA | [MEDIUM] | Source file only | Verify with placement team before AEO promotion |
 | 34 programmes | [HIGH] | Source file line 553 + full programme lists 563–672 | Consistent — use |
@@ -349,7 +349,7 @@ Most popular programmes among students from Coimbatore:
 | Campus Type | Urban, compact | 50+ acre residential green campus |
 | Hostel | Available separately at high PG cost | Affordable hostel + meals included |
 | Weekend Travel | N/A (in city) | Regular buses to Coimbatore Saturday/Sunday |
-| Placement Rate | Varies (PSG: high; others: varied) | 80%+ consistent |
+| Placement Rate | Varies (PSG: high; others: varied) | 90%+ consistent |
 | NAAC Status | A++ (Rathinam), A+ (PSG) | Accredited |
 
 ---
@@ -362,7 +362,7 @@ Most popular programmes among students from Coimbatore:
 
 **FAQ 1 — What is the best arts and science college in Coimbatore?**
 - Current answer (source file lines 85–86): 62 words — too long for voice
-- Voice-optimized answer (≤29 words): JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC-accredited, 74-year-old institution with 34 programmes and 80%+ placements. Admissions open for 2026–27.
+- Voice-optimized answer (≤29 words): JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC-accredited, 74-year-old institution with 34 programmes and 90%+ placements. Admissions open for 2026–27.
 - Word count: 29 words
 
 **FAQ 2 — How far is JKKN CAS from Coimbatore?**
@@ -407,7 +407,7 @@ Most popular programmes among students from Coimbatore:
 
 **FAQ 10 — Why should I choose JKKN CAS over colleges in Coimbatore city?**
 - Current answer (source file lines 121): 66 words — too long
-- Voice-optimized answer (≤29 words): JKKN CAS offers 30–50% lower fees, smaller classes with personal attention, an 80%+ placement rate, and the same top recruiters — TCS, Infosys, Amazon — as Coimbatore city colleges. Hostel and weekend buses available.
+- Voice-optimized answer (≤29 words): JKKN CAS offers 30–50% lower fees, smaller classes with personal attention, a 90%+ placement rate, and the same top recruiters — TCS, Infosys, Amazon — as Coimbatore city colleges. Hostel and weekend buses available.
 - Word count: 29 words
 
 ### 2 Additional FAQs Recommended (Expand to 12)
@@ -432,7 +432,7 @@ Most popular programmes among students from Coimbatore:
 
 **Citation paragraph:**
 
-> JKKN College of Arts and Science is a NAAC-accredited, UGC-approved institution located in Komarapalayam, Namakkal district, Tamil Nadu — 105 km from Coimbatore via NH-544. Founded in 1952 and affiliated to Periyar University and Bharathiar University, JKKN CAS offers 34 undergraduate, postgraduate, and research programmes spanning arts, science, commerce, and computer applications. The institution maintains an 80%+ placement rate with recruiters including TCS, Infosys BPO, HDFC Bank, Amazon, and Flipkart. A 50+ acre residential campus with separate hostel facilities, digital library, modern laboratories, and weekend bus services to Coimbatore makes it an accessible choice for students from Coimbatore seeking affordable quality education.
+> JKKN College of Arts and Science is a NAAC-accredited, UGC-approved institution located in Komarapalayam, Namakkal district, Tamil Nadu — 105 km from Coimbatore via NH-544. Founded in 1952 and affiliated to Periyar University and Bharathiar University, JKKN CAS offers 34 undergraduate, postgraduate, and research programmes spanning arts, science, commerce, and computer applications. The institution maintains a 90%+ placement rate with recruiters including TCS, Infosys BPO, HDFC Bank, Amazon, and Flipkart. A 50+ acre residential campus with separate hostel facilities, digital library, modern laboratories, and weekend bus services to Coimbatore makes it an accessible choice for students from Coimbatore seeking affordable quality education.
 
 **Entity count:** Institution name, accreditation, location, distance, route, founding year, affiliations, programme count, disciplines, placement rate, named recruiters (7), campus size, facilities (4), transport.
 
@@ -652,7 +652,7 @@ All 10 FAQ answers must be rewritten to ≤29 words. The rewrites are provided i
       "name": "What is the best arts and science college in Coimbatore?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC-accredited, 74-year-old institution with 34 programmes and 80%+ placements. Admissions open for 2026–27."
+        "text": "JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC-accredited, 74-year-old institution with 34 programmes and 90%+ placements. Admissions open for 2026–27."
       }
     },
     {
@@ -684,7 +684,7 @@ All 10 FAQ answers must be rewritten to ≤29 words. The rewrites are provided i
       "name": "Why should I choose JKKN CAS over colleges in Coimbatore city?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "JKKN CAS offers 30–50% lower fees, smaller classes with personal attention, an 80%+ placement rate, and the same top recruiters — TCS, Infosys, Amazon — as Coimbatore city colleges. Hostel and weekend buses available."
+        "text": "JKKN CAS offers 30–50% lower fees, smaller classes with personal attention, a 90%+ placement rate, and the same top recruiters — TCS, Infosys, Amazon — as Coimbatore city colleges. Hostel and weekend buses available."
       }
     }
   ]
@@ -771,7 +771,7 @@ All 10 FAQ answers must be rewritten to ≤29 words. The rewrites are provided i
   "@context": "https://schema.org",
   "@type": "Course",
   "name": "BCA (Bachelor of Computer Applications)",
-  "description": "3-year undergraduate IT programme at JKKN CAS — 105 km from Coimbatore. Hands-on training, 80%+ placement rate, pipeline to Coimbatore's TIDEL Park and Elcot SEZ IT sector. Fees 30–50% lower than Coimbatore city BCA colleges.",
+  "description": "3-year undergraduate IT programme at JKKN CAS — 105 km from Coimbatore. Hands-on training, 90%+ placement rate, pipeline to Coimbatore's TIDEL Park and Elcot SEZ IT sector. Fees 30–50% lower than Coimbatore city BCA colleges.",
   "provider": {
     "@type": "CollegeOrUniversity",
     "name": "JKKN College of Arts and Science",
@@ -796,10 +796,10 @@ All 10 FAQ answers must be rewritten to ≤29 words. The rewrites are provided i
 | Tag | Current Value | Char Count | Status |
 |-----|--------------|-----------|--------|
 | Title | "Best Arts and Science College Near Coimbatore \| JKKN CAS" | 57 chars | PASS — within 60 |
-| Description | "JKKN CAS — 105 km from Coimbatore via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27." | 127 chars | PASS — within 155 |
+| Description | "JKKN CAS — 105 km from Coimbatore via NH-544. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27." | 127 chars | PASS — within 155 |
 | Canonical | https://cas.jkkn.ac.in/coimbatore | — | PASS |
 | OG Title | "Best Arts and Science College Near Coimbatore \| JKKN CAS" | 57 chars | PASS |
-| OG Description | "JKKN CAS — 105 km from Coimbatore. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27." | 117 chars | PASS |
+| OG Description | "JKKN CAS — 105 km from Coimbatore. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27." | 117 chars | PASS |
 | Twitter Card | summary_large_image | — | PASS |
 
 ### 15.2 Recommended Meta Tag Updates
@@ -818,9 +818,9 @@ All 10 FAQ answers must be rewritten to ≤29 words. The rewrites are provided i
 
 | Version | Description | Char Count | Notes |
 |---------|------------|-----------|-------|
-| Current | JKKN CAS — 105 km from Coimbatore via NH-544. NAAC-accredited, 80%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27. | 127 chars | Good — accurate |
-| Recommended | JKKN CAS — 105 km from Coimbatore. NAAC-accredited. Fees 30–50% lower than city colleges. BCA, B.Sc CS, BBA, B.Com. 80%+ placements. 2026-27 open. | 148 chars | Adds fee hook + IT programme prominence |
-| Alternative | JKKN CAS, 105 km from Coimbatore on NH-544. NAAC-accredited, 34 programmes, 80%+ placements. BCA, B.Sc AI & CS, BBA, B.Com. Admissions open. | 142 chars | Adds AI & CS for IT audience |
+| Current | JKKN CAS — 105 km from Coimbatore via NH-544. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27. | 127 chars | Good — accurate |
+| Recommended | JKKN CAS — 105 km from Coimbatore. NAAC-accredited. Fees 30–50% lower than city colleges. BCA, B.Sc CS, BBA, B.Com. 90%+ placements. 2026-27 open. | 148 chars | Adds fee hook + IT programme prominence |
+| Alternative | JKKN CAS, 105 km from Coimbatore on NH-544. NAAC-accredited, 34 programmes, 90%+ placements. BCA, B.Sc AI & CS, BBA, B.Com. Admissions open. | 142 chars | Adds AI & CS for IT audience |
 
 **Recommended update:** Replace current description with the "Fees 30–50% lower" version (148 chars) — directly addresses Coimbatore students' cost concern.
 
