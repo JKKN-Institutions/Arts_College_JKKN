@@ -7,25 +7,33 @@ import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
 
+// THE METADATA BELOW NAMED THE WRONG COLLEGE, and it was live. Confirmed 2026-08-31 on
+// cas.jkkn.ac.in/faculty: served title "Faculty | JKKN Dental College & Hospital | JKKN College
+// of Arts and Science", a description offering "specialists in BDS and MDS programmes" on an Arts
+// and Science site, og:site_name the dental college, and og:url pointing at a different domain.
 export const metadata: Metadata = {
-  title: 'Faculty | JKKN Dental College & Hospital',
+  // Bare 'Faculty' on purpose. layout.tsx sets template "%s | JKKN College of Arts and Science",
+  // so repeating the brand here printed it twice - measured live 2026-08-31, the served title was
+  // "Faculty | JKKN Dental College & Hospital | JKKN College of Arts and Science". openGraph and
+  // twitter below do not go through the template, so they keep the full name.
+  title: 'Faculty',
   description:
-    'Meet the experienced faculty of JKKN Dental College & Hospital, Komarapalayam. Qualified professors and specialists in BDS and MDS programmes.',
-  alternates: { canonical: '/faculty/' },
+    'Meet the experienced faculty of JKKN College of Arts and Science, Komarapalayam. Qualified professors across the arts, science and commerce programmes.',
+  alternates: { canonical: '/faculty' },
   openGraph: {
-    title: 'Faculty | JKKN Dental College & Hospital',
+    title: 'Faculty | JKKN College of Arts and Science',
     description:
-      'Meet the experienced faculty of JKKN Dental College & Hospital, Komarapalayam.',
-    url: 'https://dental.jkkn.ac.in/faculty/',
-    siteName: 'JKKN Dental College & Hospital',
+      'Meet the experienced faculty of JKKN College of Arts and Science, Komarapalayam.',
+    url: 'https://cas.jkkn.ac.in/faculty',
+    siteName: 'JKKN College of Arts and Science',
     type: 'website',
     locale: 'en_IN',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Faculty | JKKN Dental College & Hospital',
+    title: 'Faculty | JKKN College of Arts and Science',
     description:
-      'Meet the experienced faculty of JKKN Dental College & Hospital, Komarapalayam.',
+      'Meet the experienced faculty of JKKN College of Arts and Science, Komarapalayam.',
   },
 };
 
@@ -152,7 +160,11 @@ export default async function FacultyPage({
 
                 return (
                   <div key={m.id}>
-                    <a href={`/faculty/${m.id}/`} className="block">
+                    {/* Link by SLUG, matching what the sitemap publishes, and with no trailing
+                        slash - this site 308s /faculty/<x>/ to /faculty/<x>, so the old
+                        /faculty/<id>/ made every internal faculty link a redirect. Falls back to
+                        the id when a row has no slug. */}
+                    <a href={`/faculty/${m.slug ?? m.id}`} className="block">
                       {card}
                     </a>
                   </div>

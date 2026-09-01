@@ -8,6 +8,22 @@ import { ArrowLeft, ExternalLink } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';
 
+// A faculty URL can be a slug (dr-a-kavitha-12ae6a01) or a raw UUID. Both must resolve, and
+// before this neither pair could: the lookup was one `.or(slug.eq.X,id.eq.X)`, which asks
+// Postgres to compare the uuid column `id` against a value like "dr-a-kavitha-12ae6a01". That is
+// not a uuid, so the comparison errors and the WHOLE query fails - including the slug half that
+// would have matched.
+//
+// MEASURED LIVE 2026-08-31, the same person by both routes:
+//   /faculty/dr-a-kavitha-12ae6a01                 -> 404
+//   /faculty/12ae6a01-df0e-4f80-bc61-95c4aaf63707  -> 200
+// All 90 faculty URLs in the sitemap are the slug form, so all 90 answered 404 while every one of
+// those people had a live page under their UUID. The sitemap was never wrong; the lookup was.
+//
+// Querying by slug FIRST, and only using id when the value actually looks like a uuid, keeps both
+// forms working and never hands a non-uuid to a uuid column.
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 type AcademicQualification = { degree: string; specialisation: string; university: string; year: string };
@@ -29,25 +45,39 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const supabase = await createClient();
-  const { data } = await supabase
-    .from('faculty')
-    .select('name, designation, department')
-    .or(`slug.eq.${slug},id.eq.${slug}`)
-    .eq('college_id', process.env.NEXT_PUBLIC_COLLEGE_ID)
-    .eq('synced_from_api', true)
-    .single();
+  const metaQuery = (column: 'slug' | 'id') =>
+    supabase
+      .from('faculty')
+      .select('name, designation, department')
+      .eq(column, slug)
+      .eq('college_id', process.env.NEXT_PUBLIC_COLLEGE_ID)
+      .eq('synced_from_api', true)
+      .maybeSingle();
 
-  if (!data) return { title: 'Faculty | JKKN Dental College & Hospital' };
+  let { data } = await metaQuery('slug');
+  if (!data && UUID_RE.test(slug)) ({ data } = await metaQuery('id'));
 
-  const title = `${data.name} — ${data.designation} | JKKN Dental College & Hospital`;
-  const description = `Learn about ${data.name}, ${data.designation}${data.department ? ` in the ${data.department}` : ''} at JKKN Dental College & Hospital, Komarapalayam.`;
+  // THIS IS THE ARTS AND SCIENCE SITE. Every string below named the dental college and the
+  // openGraph url pointed at dental.jkkn.ac.in - copied from the dental repo and never renamed.
+  // Confirmed live 2026-08-31: cas.jkkn.ac.in served og:url = https://dental.jkkn.ac.in/faculty/
+  // and og:site_name = JKKN Dental College & Hospital.
+  if (!data) return { title: 'Faculty' };
+
+  // `title` feeds metadata.title and goes through layout.tsx's
+  // template "%s | JKKN College of Arts and Science", so it must NOT carry the brand or
+  // the brand prints twice. `socialTitle` is for openGraph and twitter, which skip the
+  // template and therefore need the full name.
+  const title = `${data.name} — ${data.designation}`;
+  const socialTitle = `${title} | JKKN College of Arts and Science`;
+  const description = `Learn about ${data.name}, ${data.designation}${data.department ? ` in the ${data.department}` : ''} at JKKN College of Arts and Science, Komarapalayam.`;
 
   return {
     title,
     description,
-    alternates: { canonical: `/faculty/${slug}/` },
-    openGraph: { title, description, url: `https://dental.jkkn.ac.in/faculty/${slug}/`, siteName: 'JKKN Dental College & Hospital', type: 'website', locale: 'en_IN' },
-    twitter: { card: 'summary_large_image', title, description },
+    // No trailing slash: this site 308s /faculty/<x>/ to /faculty/<x> - measured 2026-08-31.
+    alternates: { canonical: `/faculty/${slug}` },
+    openGraph: { title: socialTitle, description, url: `https://cas.jkkn.ac.in/faculty/${slug}`, siteName: 'JKKN College of Arts and Science', type: 'website', locale: 'en_IN' },
+    twitter: { card: 'summary_large_image', title: socialTitle, description },
   };
 }
 
@@ -74,11 +104,11 @@ export default async function FacultyProfilePage({
       experience, research_focus, publications, funded_research,
       certifications, awards, memberships, phd_scholars, faqs
     `)
-    .or(`slug.eq.${slug},id.eq.${slug}`)
+    .eq(UUID_RE.test(slug) ? 'id' : 'slug', slug)
     .eq('college_id', collegeId)
     .eq('is_active', true)
     .eq('synced_from_api', true) // website shows MyJKKN-synced faculty only
-    .single();
+    .maybeSingle();
 
   if (!m) notFound();
 
