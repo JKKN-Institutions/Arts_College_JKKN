@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       // General rules — all crawlers
       {
         userAgent: "*",
-        allow: "/",
+        allow: ["/", "/_next/static/", "/_next/image"],
         disallow: [
           "/admin/",
           "/admin",
@@ -49,14 +49,14 @@ export default function robots(): MetadataRoute.Robots {
       // Googlebot — full access, no crawl-delay
       {
         userAgent: "Googlebot",
-        allow: "/",
+        allow: ["/", "/_next/static/", "/_next/image"],
         disallow: ["/_next/", "/api/", "/admin/", "/preview/", "/draft/", "/search"],
       },
 
       // Bingbot — powers Copilot + DuckDuckGo
       {
         userAgent: "Bingbot",
-        allow: "/",
+        allow: ["/", "/_next/static/", "/_next/image"],
         disallow: ["/_next/", "/api/", "/admin/", "/search"],
       },
 
@@ -245,6 +245,14 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/admin/", "/api/"],
       },
 
+      // DataForSeoBot - our own SEO audit vendor; allowed with a polite delay
+      {
+        userAgent: "DataForSeoBot",
+        allow: "/",
+        disallow: ["/admin/", "/api/"],
+        crawlDelay: 3,
+      },
+
       // Block known spam/scraper bots
       {
         userAgent: [
@@ -253,7 +261,6 @@ export default function robots(): MetadataRoute.Robots {
           "SemrushBot-BA",
           "SemrushBot-OCOB",
           "BLEXBot",
-          "DataForSeoBot",
           "magpie-crawler",
           "AhrefsSiteAudit",
           "Sogou",
