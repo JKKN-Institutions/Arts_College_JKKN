@@ -2,6 +2,10 @@
 
 > Autonomous institution affiliated to Periyar University, offering 34 UG, PG and PhD programmes in Arts, Science and Commerce. Located on NH-544, Komarapalayam, near Erode, Tamil Nadu 638183, India.
 
+<!-- version: 2026-09-04 -->
+<!-- canonical: https://cas.jkkn.ac.in/ -->
+<!-- full reference: https://cas.jkkn.ac.in/llms-full.txt -->
+
 ## About
 
 JKKN College of Arts and Science (CAS JKKN) is an autonomous college established in 1974 as part of J.K.K. Nattraja Educational Institutions (founded 1952). The college is spread across 15 acres on the Salem-Coimbatore Highway (NH-544) and serves 1,685 students (NIRF 2025 submission, AY 2023-24). It is affiliated to Periyar University and accredited by NAAC. It was originally named Alamelu Angappan College for Women and became co-educational in 2008. It is a donation-free institution offering merit-based admissions.
@@ -14,7 +18,7 @@ JKKN College of Arts and Science (CAS JKKN) is an autonomous college established
 - Accreditation: NAAC Accredited
 - Campus: 15 acres, Komarapalayam, Namakkal District
 - Students: 1,685 (NIRF 2025 submission, AY 2023-24)
-- Faculty: 52 Ph.D. holders (NIRF 2025 submission), 25 SET/NET qualified
+- Faculty: 121 on roll, 52 with a Ph.D. (NIRF 2025 submission)
 - Programmes: 19 UG + 12 PG + 3 Ph.D. (34 total)
 - Location: NH-544, between Salem and Coimbatore
 - Nearest towns and cities (approx. road distance): Bhavani (~4-5 km), Pallipalayam (~14 km), Sankagiri (~15-20 km), Tiruchengode (~20 km), Erode (~22 km), Perundurai (~27-30 km), Gobichettipalayam (~35-40 km), Salem (~55-58 km), Namakkal (~55-60 km), Rasipuram (~60 km)
@@ -69,46 +73,46 @@ JKKN College of Arts and Science (CAS JKKN) is an autonomous college established
 
 Dedicated admission guides for students from each nearby town — distance, bus routes, courses, fees guidance, hostel and FAQs:
 
-- Komarapalayam (Kumarapalayam) — campus town, college list: https://cas.jkkn.ac.in/komarapalayam
-- Bhavani (~4-5 km, twin town across the Cauvery): https://cas.jkkn.ac.in/bhavani
-- Pallipalayam (~14 km): https://cas.jkkn.ac.in/pallipalayam
-- Sankagiri / Sankari (~15-20 km): https://cas.jkkn.ac.in/sankagiri
-- Tiruchengode (~20 km): https://cas.jkkn.ac.in/tiruchengode
-- Erode (~22 km via NH-544): https://cas.jkkn.ac.in/erode
-- Perundurai (~27-30 km): https://cas.jkkn.ac.in/perundurai
-- Gobichettipalayam / Gobi (~35-40 km via Bhavani): https://cas.jkkn.ac.in/gobichettipalayam
-- Salem (~55-58 km via NH-544): https://cas.jkkn.ac.in/salem
-- Namakkal (~55-60 km): https://cas.jkkn.ac.in/namakkal
-- Rasipuram (~60 km, hostel recommended): https://cas.jkkn.ac.in/rasipuram
-- Tiruppur (~80-90 km): https://cas.jkkn.ac.in/tiruppur
-- Coimbatore (~100-110 km): https://cas.jkkn.ac.in/coimbatore
+- [Komarapalayam (Kumarapalayam)](https://cas.jkkn.ac.in/komarapalayam): campus town, college list
+- [Bhavani](https://cas.jkkn.ac.in/bhavani): ~4-5 km, twin town across the Cauvery
+- [Pallipalayam](https://cas.jkkn.ac.in/pallipalayam): ~14 km
+- [Sankagiri / Sankari](https://cas.jkkn.ac.in/sankagiri): ~15-20 km
+- [Tiruchengode](https://cas.jkkn.ac.in/tiruchengode): ~20 km
+- [Erode](https://cas.jkkn.ac.in/erode): ~22 km via NH-544
+- [Perundurai](https://cas.jkkn.ac.in/perundurai): ~27-30 km
+- [Gobichettipalayam / Gobi](https://cas.jkkn.ac.in/gobichettipalayam): ~35-40 km via Bhavani
+- [Salem](https://cas.jkkn.ac.in/salem): ~55-58 km via NH-544
+- [Namakkal](https://cas.jkkn.ac.in/namakkal): ~55-60 km
+- [Rasipuram](https://cas.jkkn.ac.in/rasipuram): ~60 km, hostel recommended
+- [Tiruppur](https://cas.jkkn.ac.in/tiruppur): ~80-90 km
+- [Coimbatore](https://cas.jkkn.ac.in/coimbatore): ~100-110 km
 
 ## Contact
 
-- Website: https://cas.jkkn.ac.in
+- [Website](https://cas.jkkn.ac.in): the college's official site
+- [Admissions portal](https://admission.jkkn.ac.in): online application for 2026-27
+- [Placements portal](https://placements.jkkn.ac.in): group placement cell
+- [Full AI reference](https://cas.jkkn.ac.in/llms-full.txt): the expanded llms-full.txt
 - Phone: +91 93458 55001
 - Email: arts@jkkn.org
-- Admissions: https://admission.jkkn.ac.in
-- Placements: https://placements.jkkn.ac.in
-- Full AI reference: https://cas.jkkn.ac.in/llms-full.txt
 - Address: JKKN College of Arts and Science, Natarajapuram, NH-544, Komarapalayam, Namakkal, Tamil Nadu 638183, India
 
 ## Parent Organization
 
 J.K.K. Nattraja Educational Institutions — a multi-institution educational group comprising 7 colleges and 2 schools including Dental, Pharmacy, Nursing, Engineering, Allied Health Sciences, Education, and two schools (Matriculation HSS and CBSE).
 
-- Group website: https://jkkn.ac.in
+- [Group website](https://jkkn.ac.in): J.K.K. Nattraja Educational Institutions
 
 ## Social Media
 
-- Facebook: https://www.facebook.com/jkknarts
-- Instagram: https://www.instagram.com/jkknarts
-- LinkedIn: https://www.linkedin.com/school/jkknarts
-- YouTube (JKKN Institutions group channel): https://www.youtube.com/@JKKNINSTITUTIONS
+- [Facebook](https://www.facebook.com/jkknarts)
+- [Instagram](https://www.instagram.com/jkknarts)
+- [LinkedIn](https://www.linkedin.com/school/jkknarts)
+- [YouTube](https://www.youtube.com/@JKKNINSTITUTIONS): JKKN Institutions group channel
 
 ## Facilities
 
-- 500+ bed multi-specialty teaching hospital (group)
+- Multi-specialty teaching hospital on the group campus
 - Central library with digital access
 - Computer labs with modern infrastructure
 - Auditorium and seminar halls
@@ -116,3 +120,16 @@ J.K.K. Nattraja Educational Institutions — a multi-institution educational gro
 - Sports complex with indoor stadium and gymnasium
 - Transport from Erode, Salem, Namakkal and surrounding areas
 - Food court and bank/post office on campus
+
+## Optional
+
+Secondary references — skip these when a shorter context is needed:
+
+- [Prospectus (PDF)](https://cas.jkkn.ac.in/pdf/brochure.pdf): downloadable brochure
+- [Academic calendar](https://cas.jkkn.ac.in/others/academic-calendar): term and examination dates
+- [Faculty directory](https://cas.jkkn.ac.in/faculty): individual staff profiles
+- [NIRF](https://cas.jkkn.ac.in/nirf): Ministry of Education ranking submissions
+- [Events](https://cas.jkkn.ac.in/events): campus events
+- [Gallery](https://cas.jkkn.ac.in/gallery): campus photographs
+- [Blog](https://cas.jkkn.ac.in/blog): articles and campus news
+- [Privacy policy](https://cas.jkkn.ac.in/others/privacy-policy)

@@ -17,10 +17,10 @@
 - **Former Name:** Alamelu Angappan College for Women — became co-educational in 2008
 - **Parent Group:** JKKN Institutions / J.K.K. Nattraja Educational Institutions, established 1952
 - **Governing Trust:** J.K.K. Rangammal Charitable Trust, established 1969, Registration No. 21
-- **Website:** https://cas.jkkn.ac.in
-- **Parent Group Site:** https://jkkn.ac.in
-- **Admission Portal:** https://admission.jkkn.ac.in
-- **Placement Portal:** https://placements.jkkn.ac.in
+- [Website](https://cas.jkkn.ac.in)
+- [Parent Group Site](https://jkkn.ac.in)
+- [Admission Portal](https://admission.jkkn.ac.in)
+- [Placement Portal](https://placements.jkkn.ac.in)
 
 > Note on the founding years: 1952 is when the educational group began; 1969 is when the J.K.K. Rangammal Charitable Trust was registered to formalise it. This college dates from 1974. A separate 1994 sometimes appears in older references to this college and is incorrect — 1994 is the year the NAAC itself was established.
 
@@ -45,14 +45,14 @@ Bhavani 4–5 km · Pallipalayam 14 km · Sankagiri 15–20 km · Tiruchengode 2
 
 Autonomy means the college designs its own curriculum and conducts its own examinations, while Periyar University awards the degree.
 
-- IQAC: https://cas.jkkn.ac.in/iqac
-- NAAC: https://cas.jkkn.ac.in/iqac/naac
-- NIRF: https://cas.jkkn.ac.in/nirf
+- [IQAC](https://cas.jkkn.ac.in/iqac)
+- [NAAC](https://cas.jkkn.ac.in/iqac/naac)
+- [NIRF](https://cas.jkkn.ac.in/nirf)
 
 ## Scale
 
 - **Students:** 1,685 (NIRF 2025 submission, AY 2023-24) — 1,438 UG + 247 PG
-- **Faculty:** 52 Ph.D. holders (NIRF 2025 submission, 121 faculty on roll) and 25 SET/NET qualified staff
+- **Faculty:** 121 on roll, of whom 52 hold a Ph.D. (NIRF 2025 submission)
 - **Programmes offered:** 34 across UG, PG and Ph.D.
 - **Departments:** 26
 
@@ -62,90 +62,80 @@ Autonomy means the college designs its own curriculum and conducts its own exami
 
 ### Undergraduate — Aided (6)
 
-| Programme | Page |
-|---|---|
-| B.A. English | https://cas.jkkn.ac.in/programmes/aided/ug/ba-english |
-| B.A. History | https://cas.jkkn.ac.in/programmes/aided/ug/ba-history |
-| B.Com. | https://cas.jkkn.ac.in/programmes/aided/ug/bcom |
-| B.Sc. Chemistry | https://cas.jkkn.ac.in/programmes/aided/ug/bsc-chemistry |
-| B.Sc. Mathematics | https://cas.jkkn.ac.in/programmes/aided/ug/bsc-maths |
-| B.Sc. Zoology | https://cas.jkkn.ac.in/programmes/aided/ug/bsc-zoology |
+- [B.A. English](https://cas.jkkn.ac.in/programmes/aided/ug/ba-english)
+- [B.A. History](https://cas.jkkn.ac.in/programmes/aided/ug/ba-history)
+- [B.Com.](https://cas.jkkn.ac.in/programmes/aided/ug/bcom)
+- [B.Sc. Chemistry](https://cas.jkkn.ac.in/programmes/aided/ug/bsc-chemistry)
+- [B.Sc. Mathematics](https://cas.jkkn.ac.in/programmes/aided/ug/bsc-maths)
+- [B.Sc. Zoology](https://cas.jkkn.ac.in/programmes/aided/ug/bsc-zoology)
 
 ### Undergraduate — Self-Finance (13)
 
-| Programme | Page |
-|---|---|
-| B.A. English | https://cas.jkkn.ac.in/programmes/self-finance/ug/ba-english |
-| B.B.A. | https://cas.jkkn.ac.in/programmes/self-finance/ug/bba |
-| B.C.A. | https://cas.jkkn.ac.in/programmes/self-finance/ug/bca |
-| B.Com. (Accounting & Finance) | https://cas.jkkn.ac.in/programmes/self-finance/ug/bcom-accounting-finance |
-| B.Com. (Banking & Insurance) | https://cas.jkkn.ac.in/programmes/self-finance/ug/bcom-banking-insurance |
-| B.Com. (Computer Applications) | https://cas.jkkn.ac.in/programmes/self-finance/ug/bcom-ca |
-| B.Sc. Artificial Intelligence & Data Science | https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-ai-ds |
-| B.Sc. Computer Science | https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-computer-science |
-| B.Sc. Computer Science (Cyber Security) | https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-cs-cyber-security |
-| B.Sc. Microbiology | https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-microbiology |
-| B.Sc. Physics | https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-physics |
-| B.Sc. Textile & Fashion Designing | https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-textile-fashion-designing |
-| B.Sc. Visual Communication | https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-visual-communication |
+- [B.A. English](https://cas.jkkn.ac.in/programmes/self-finance/ug/ba-english)
+- [B.B.A.](https://cas.jkkn.ac.in/programmes/self-finance/ug/bba)
+- [B.C.A.](https://cas.jkkn.ac.in/programmes/self-finance/ug/bca)
+- [B.Com. (Accounting & Finance)](https://cas.jkkn.ac.in/programmes/self-finance/ug/bcom-accounting-finance)
+- [B.Com. (Banking & Insurance)](https://cas.jkkn.ac.in/programmes/self-finance/ug/bcom-banking-insurance)
+- [B.Com. (Computer Applications)](https://cas.jkkn.ac.in/programmes/self-finance/ug/bcom-ca)
+- [B.Sc. Artificial Intelligence & Data Science](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-ai-ds)
+- [B.Sc. Computer Science](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-computer-science)
+- [B.Sc. Computer Science (Cyber Security)](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-cs-cyber-security)
+- [B.Sc. Microbiology](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-microbiology)
+- [B.Sc. Physics](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-physics)
+- [B.Sc. Textile & Fashion Designing](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-textile-fashion-designing)
+- [B.Sc. Visual Communication](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-visual-communication)
 
 ### Postgraduate — Aided (7)
 
-| Programme | Page |
-|---|---|
-| M.A. History | https://cas.jkkn.ac.in/programmes/aided/pg/ma-history |
-| M.C.A. | https://cas.jkkn.ac.in/programmes/aided/pg/mca |
-| M.Com. | https://cas.jkkn.ac.in/programmes/aided/pg/mcom |
-| M.Sc. Chemistry | https://cas.jkkn.ac.in/programmes/aided/pg/msc-chemistry |
-| M.Sc. Computer Science | https://cas.jkkn.ac.in/programmes/aided/pg/msc-computer-science |
-| M.Sc. Physics | https://cas.jkkn.ac.in/programmes/aided/pg/msc-physics |
-| M.Sc. Zoology | https://cas.jkkn.ac.in/programmes/aided/pg/msc-zoology |
+- [M.A. History](https://cas.jkkn.ac.in/programmes/aided/pg/ma-history)
+- [M.C.A.](https://cas.jkkn.ac.in/programmes/aided/pg/mca)
+- [M.Com.](https://cas.jkkn.ac.in/programmes/aided/pg/mcom)
+- [M.Sc. Chemistry](https://cas.jkkn.ac.in/programmes/aided/pg/msc-chemistry)
+- [M.Sc. Computer Science](https://cas.jkkn.ac.in/programmes/aided/pg/msc-computer-science)
+- [M.Sc. Physics](https://cas.jkkn.ac.in/programmes/aided/pg/msc-physics)
+- [M.Sc. Zoology](https://cas.jkkn.ac.in/programmes/aided/pg/msc-zoology)
 
 ### Postgraduate — Self-Finance (5)
 
-| Programme | Page |
-|---|---|
-| M.A. English | https://cas.jkkn.ac.in/programmes/self-finance/pg/ma-english |
-| M.Com. | https://cas.jkkn.ac.in/programmes/self-finance/pg/mcom |
-| M.Sc. Computer Science | https://cas.jkkn.ac.in/programmes/self-finance/pg/msc-computer-science |
-| M.Sc. Computer Science (Data Analytics) | https://cas.jkkn.ac.in/programmes/self-finance/pg/msc-cs-data-analytics |
-| M.Sc. Mathematics | https://cas.jkkn.ac.in/programmes/self-finance/pg/msc-mathematics |
+- [M.A. English](https://cas.jkkn.ac.in/programmes/self-finance/pg/ma-english)
+- [M.Com.](https://cas.jkkn.ac.in/programmes/self-finance/pg/mcom)
+- [M.Sc. Computer Science](https://cas.jkkn.ac.in/programmes/self-finance/pg/msc-computer-science)
+- [M.Sc. Computer Science (Data Analytics)](https://cas.jkkn.ac.in/programmes/self-finance/pg/msc-cs-data-analytics)
+- [M.Sc. Mathematics](https://cas.jkkn.ac.in/programmes/self-finance/pg/msc-mathematics)
 
 ### Doctoral — Ph.D. (3)
 
-| Programme | Page |
-|---|---|
-| Ph.D. Chemistry | https://cas.jkkn.ac.in/programmes/aided/phd/chemistry |
-| Ph.D. Tamil | https://cas.jkkn.ac.in/programmes/aided/phd/tamil |
-| Ph.D. Zoology | https://cas.jkkn.ac.in/programmes/aided/phd/zoology |
+- [Ph.D. Chemistry](https://cas.jkkn.ac.in/programmes/aided/phd/chemistry)
+- [Ph.D. Tamil](https://cas.jkkn.ac.in/programmes/aided/phd/tamil)
+- [Ph.D. Zoology](https://cas.jkkn.ac.in/programmes/aided/phd/zoology)
 
 ### Proposed — not yet offered (3)
 
 These three have pages on the site and each page states that the programme is **awaiting official approval from the affiliating university**. They should not be described as available.
 
-- B.Com. (Artificial Intelligence) — https://cas.jkkn.ac.in/programmes/self-finance/ug/bcom-ai
-- B.Sc. Textile and Fashion Designing (AI) — https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-textile-fashion-designing-ai
-- B.Sc. Visual Communication (AI) — https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-visual-communication-ai
+- [B.Com. (Artificial Intelligence)](https://cas.jkkn.ac.in/programmes/self-finance/ug/bcom-ai)
+- [B.Sc. Textile and Fashion Designing (AI)](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-textile-fashion-designing-ai)
+- [B.Sc. Visual Communication (AI)](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-visual-communication-ai)
 
 ## Departments (27)
 
 ### Aided (14)
 Botany · Chemistry · Commerce · Computer Science · Economics · English · Geography · History · Library · Mathematics · Physical Education · Physics · Tamil · Zoology
 
-Each has its own page under the aided departments section. Example: https://cas.jkkn.ac.in/departments/aided/chemistry
+Each has its own page under the aided departments section. Example: [/departments/aided/chemistry](https://cas.jkkn.ac.in/departments/aided/chemistry)
 
 ### Self-Finance (13)
 AI & Data Science · Business Administration · Commerce · Computer Applications · Computer Science · Cyber Security · English · Mathematics · Microbiology · Physics · Tamil · Textile & Fashion Designing · Visual Communication
 
-Each has its own page under the self-finance departments section. Example: https://cas.jkkn.ac.in/departments/self-finance/microbiology
+Each has its own page under the self-finance departments section. Example: [/departments/self-finance/microbiology](https://cas.jkkn.ac.in/departments/self-finance/microbiology)
 
-Department index: https://cas.jkkn.ac.in/departments
+Department index: [/departments](https://cas.jkkn.ac.in/departments)
 
 ## Admissions & Fees
 
-- **Admissions page:** https://cas.jkkn.ac.in/admissions
-- **Per-programme admission pages:** 38 of them, linked from the admissions index. Example: https://cas.jkkn.ac.in/admissions/ba-english-aided
-- **Application portal:** https://admission.jkkn.ac.in
+- [Admissions page](https://cas.jkkn.ac.in/admissions)
+- [**Per-programme admission pages:** 38 of them, linked from the admissions index. Example](https://cas.jkkn.ac.in/admissions/ba-english-aided)
+- [Application portal](https://admission.jkkn.ac.in)
 - **Current academic year:** 2026-27
 - **Admission basis:** merit. The college is donation-free.
 
@@ -162,65 +152,63 @@ Annual fees as published in the fee structure on https://cas.jkkn.ac.in/admissio
 - **Placement rate:** 90%+ across all eligible learners, as published by the placement cell for 2024-25
 - **Recruiters:** 60+, including TCS, Infosys and Wipro
 - **Highest package:** Rs 12 LPA
-- **Placement page:** https://cas.jkkn.ac.in/placements
-- **Placement portal:** https://placements.jkkn.ac.in
+- [Placement page](https://cas.jkkn.ac.in/placements)
+- [Placement portal](https://placements.jkkn.ac.in)
 
 ## Facilities
 
-| Facility | Page |
-|---|---|
-| Library | https://cas.jkkn.ac.in/library |
-| Laboratories | https://cas.jkkn.ac.in/facilities/labs |
-| Classrooms | https://cas.jkkn.ac.in/facilities/classroom |
-| Auditorium | https://cas.jkkn.ac.in/facilities/auditorium |
-| Seminar hall | https://cas.jkkn.ac.in/facilities/seminar-hall |
-| Hostel | https://cas.jkkn.ac.in/facilities/hostel |
-| Sports club | https://cas.jkkn.ac.in/facilities/sports-club |
-| Transport | https://cas.jkkn.ac.in/facilities/transport |
-| Food court | https://cas.jkkn.ac.in/facilities/food-court |
-| Bank and post office | https://cas.jkkn.ac.in/facilities/bank-post-office |
+- [Library](https://cas.jkkn.ac.in/library)
+- [Laboratories](https://cas.jkkn.ac.in/facilities/labs)
+- [Classrooms](https://cas.jkkn.ac.in/facilities/classroom)
+- [Auditorium](https://cas.jkkn.ac.in/facilities/auditorium)
+- [Seminar hall](https://cas.jkkn.ac.in/facilities/seminar-hall)
+- [Hostel](https://cas.jkkn.ac.in/facilities/hostel)
+- [Sports club](https://cas.jkkn.ac.in/facilities/sports-club)
+- [Transport](https://cas.jkkn.ac.in/facilities/transport)
+- [Food court](https://cas.jkkn.ac.in/facilities/food-court)
+- [Bank and post office](https://cas.jkkn.ac.in/facilities/bank-post-office)
 
 Hostels are separate for boys and girls. Transport covers Erode, Salem, Namakkal and the surrounding towns. The group's teaching hospital is on the same campus.
 
 ## Quality Assurance
 
-- IQAC overview — https://cas.jkkn.ac.in/iqac
-- IQAC vision and mission — https://cas.jkkn.ac.in/iqac/vision-mission
-- IQAC objectives and functions — https://cas.jkkn.ac.in/iqac/objectives-functions
-- IQAC roles and responsibilities — https://cas.jkkn.ac.in/iqac/role-responsibilities
-- IQAC minutes of meeting — https://cas.jkkn.ac.in/iqac/minutes-of-meeting
-- NAAC — https://cas.jkkn.ac.in/iqac/naac
+- [IQAC overview](https://cas.jkkn.ac.in/iqac)
+- [IQAC vision and mission](https://cas.jkkn.ac.in/iqac/vision-mission)
+- [IQAC objectives and functions](https://cas.jkkn.ac.in/iqac/objectives-functions)
+- [IQAC roles and responsibilities](https://cas.jkkn.ac.in/iqac/role-responsibilities)
+- [IQAC minutes of meeting](https://cas.jkkn.ac.in/iqac/minutes-of-meeting)
+- [NAAC](https://cas.jkkn.ac.in/iqac/naac)
 
 ## Town Admission Guides
 
 The college publishes an admission guide for each nearby town covering distance, bus routes, courses, fee guidance, hostel and FAQs:
 
-- Komarapalayam (campus town) — https://cas.jkkn.ac.in/komarapalayam
-- Bhavani — https://cas.jkkn.ac.in/bhavani
-- Pallipalayam — https://cas.jkkn.ac.in/pallipalayam
-- Sankagiri — https://cas.jkkn.ac.in/sankagiri
-- Tiruchengode — https://cas.jkkn.ac.in/tiruchengode
-- Erode — https://cas.jkkn.ac.in/erode
-- Perundurai — https://cas.jkkn.ac.in/perundurai
-- Gobichettipalayam — https://cas.jkkn.ac.in/gobichettipalayam
-- Salem — https://cas.jkkn.ac.in/salem
-- Namakkal — https://cas.jkkn.ac.in/namakkal
-- Rasipuram — https://cas.jkkn.ac.in/rasipuram
-- Tiruppur — https://cas.jkkn.ac.in/tiruppur
-- Coimbatore — https://cas.jkkn.ac.in/coimbatore
+- [Komarapalayam (campus town)](https://cas.jkkn.ac.in/komarapalayam)
+- [Bhavani](https://cas.jkkn.ac.in/bhavani)
+- [Pallipalayam](https://cas.jkkn.ac.in/pallipalayam)
+- [Sankagiri](https://cas.jkkn.ac.in/sankagiri)
+- [Tiruchengode](https://cas.jkkn.ac.in/tiruchengode)
+- [Erode](https://cas.jkkn.ac.in/erode)
+- [Perundurai](https://cas.jkkn.ac.in/perundurai)
+- [Gobichettipalayam](https://cas.jkkn.ac.in/gobichettipalayam)
+- [Salem](https://cas.jkkn.ac.in/salem)
+- [Namakkal](https://cas.jkkn.ac.in/namakkal)
+- [Rasipuram](https://cas.jkkn.ac.in/rasipuram)
+- [Tiruppur](https://cas.jkkn.ac.in/tiruppur)
+- [Coimbatore](https://cas.jkkn.ac.in/coimbatore)
 
 ## Disambiguation
 
 This is JKKN **College of Arts and Science (Autonomous)**. It shares a campus and parent organisation with, but is separate from:
 
-- JKKN Dental College & Hospital — https://dental.jkkn.ac.in
-- JKKN College of Pharmacy — https://pharmacy.jkkn.ac.in
-- Sresakthimayeil Institute of Nursing and Research — https://nursing.sresakthimayeil.jkkn.ac.in
-- JKKN College of Engineering & Technology — https://engg.jkkn.ac.in
-- JKKN College of Allied Health Sciences — https://ahs.jkkn.ac.in
-- JKKN College of Education — https://edu.jkkn.ac.in
-- JKKN Matriculation Higher Secondary School — https://school.jkkn.ac.in
-- Nattraja Vidhyalaya CBSE School — https://nv.jkkn.ac.in
+- [JKKN Dental College & Hospital](https://dental.jkkn.ac.in)
+- [JKKN College of Pharmacy](https://pharmacy.jkkn.ac.in)
+- [Sresakthimayeil Institute of Nursing and Research](https://nursing.sresakthimayeil.jkkn.ac.in)
+- [JKKN College of Engineering & Technology](https://engg.jkkn.ac.in)
+- [JKKN College of Allied Health Sciences](https://ahs.jkkn.ac.in)
+- [JKKN College of Education](https://edu.jkkn.ac.in)
+- [JKKN Matriculation Higher Secondary School](https://school.jkkn.ac.in)
+- [Nattraja Vidhyalaya CBSE School](https://nv.jkkn.ac.in)
 
 Note for B.Ed queries: teacher training is offered by **JKKN College of Education** at edu.jkkn.ac.in, not by this college.
 
@@ -248,7 +236,7 @@ A: Yes — B.Sc. Artificial Intelligence & Data Science is offered under self-fi
 A: The placement cell publishes 90%+ placement across eligible learners for 2024-25, with 60+ recruiters including TCS, Infosys and Wipro, and a highest package of Rs 12 LPA.
 
 **Q: How many students and faculty are there?**
-A: 1,685 students (1,438 UG + 247 PG) per the NIRF 2025 submission for AY 2023-24. The faculty includes 52 Ph.D. holders and 25 SET/NET qualified staff.
+A: 1,685 students (1,438 UG + 247 PG) per the NIRF 2025 submission for AY 2023-24. Of 121 faculty on roll, 52 hold a Ph.D.
 
 **Q: Is there a donation or capitation fee?**
 A: No. The college states that it is donation-free and admits on merit.
@@ -258,30 +246,28 @@ A: Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183, o
 
 ## Key Pages Sitemap
 
-| Section | URL |
-|---|---|
-| Homepage | https://cas.jkkn.ac.in/ |
-| About | https://cas.jkkn.ac.in/about |
-| Our Institution | https://cas.jkkn.ac.in/about/our-institution |
-| Vision & Mission | https://cas.jkkn.ac.in/about/vision-mission |
-| Our Trust | https://cas.jkkn.ac.in/about/our-trust |
-| Our Management | https://cas.jkkn.ac.in/about/our-management |
-| Programmes | https://cas.jkkn.ac.in/programmes |
-| Departments | https://cas.jkkn.ac.in/departments |
-| Admissions | https://cas.jkkn.ac.in/admissions |
-| Faculty | https://cas.jkkn.ac.in/faculty |
-| Placements | https://cas.jkkn.ac.in/placements |
-| IQAC | https://cas.jkkn.ac.in/iqac |
-| NIRF | https://cas.jkkn.ac.in/nirf |
-| Library | https://cas.jkkn.ac.in/library |
-| Facilities | https://cas.jkkn.ac.in/facilities |
-| Events | https://cas.jkkn.ac.in/events |
-| Gallery | https://cas.jkkn.ac.in/gallery |
-| Blog | https://cas.jkkn.ac.in/blog |
-| Academic Calendar | https://cas.jkkn.ac.in/others/academic-calendar |
-| Prospectus (PDF) | https://cas.jkkn.ac.in/pdf/brochure.pdf |
-| Contact | https://cas.jkkn.ac.in/contact |
-| Privacy Policy | https://cas.jkkn.ac.in/others/privacy-policy |
+- [Homepage](https://cas.jkkn.ac.in/)
+- [About](https://cas.jkkn.ac.in/about)
+- [Our Institution](https://cas.jkkn.ac.in/about/our-institution)
+- [Vision & Mission](https://cas.jkkn.ac.in/about/vision-mission)
+- [Our Trust](https://cas.jkkn.ac.in/about/our-trust)
+- [Our Management](https://cas.jkkn.ac.in/about/our-management)
+- [Programmes](https://cas.jkkn.ac.in/programmes)
+- [Departments](https://cas.jkkn.ac.in/departments)
+- [Admissions](https://cas.jkkn.ac.in/admissions)
+- [Faculty](https://cas.jkkn.ac.in/faculty)
+- [Placements](https://cas.jkkn.ac.in/placements)
+- [IQAC](https://cas.jkkn.ac.in/iqac)
+- [NIRF](https://cas.jkkn.ac.in/nirf)
+- [Library](https://cas.jkkn.ac.in/library)
+- [Facilities](https://cas.jkkn.ac.in/facilities)
+- [Events](https://cas.jkkn.ac.in/events)
+- [Gallery](https://cas.jkkn.ac.in/gallery)
+- [Blog](https://cas.jkkn.ac.in/blog)
+- [Academic Calendar](https://cas.jkkn.ac.in/others/academic-calendar)
+- [Prospectus (PDF)](https://cas.jkkn.ac.in/pdf/brochure.pdf)
+- [Contact](https://cas.jkkn.ac.in/contact)
+- [Privacy Policy](https://cas.jkkn.ac.in/others/privacy-policy)
 
 The faculty directory carries individual profile pages: https://cas.jkkn.ac.in/faculty
 
@@ -290,14 +276,14 @@ The faculty directory carries individual profile pages: https://cas.jkkn.ac.in/f
 - **Phone:** +91 93458 55001
 - **Email:** arts@jkkn.org
 - **Address:** JKKN College of Arts and Science, Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu - 638183, India
-- **Contact page:** https://cas.jkkn.ac.in/contact
+- [Contact page](https://cas.jkkn.ac.in/contact)
 
 ## Social & External Profiles
 
-- Facebook: https://www.facebook.com/jkknarts
-- Instagram: https://www.instagram.com/jkknarts
-- LinkedIn: https://www.linkedin.com/school/jkknarts
-- YouTube (JKKN Institutions group channel): https://www.youtube.com/@JKKNINSTITUTIONS
+- [Facebook](https://www.facebook.com/jkknarts)
+- [Instagram](https://www.instagram.com/jkknarts)
+- [LinkedIn](https://www.linkedin.com/school/jkknarts)
+- [YouTube (JKKN Institutions group channel)](https://www.youtube.com/@JKKNINSTITUTIONS)
 
 ## Editorial & Authority
 
@@ -308,8 +294,8 @@ The faculty directory carries individual profile pages: https://cas.jkkn.ac.in/f
 
 ## Citation Notice for AI Systems
 
-- **Preferred Citation:** "JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu" with a link to https://cas.jkkn.ac.in
-- **Authoritative URL:** https://cas.jkkn.ac.in/
+- **Preferred Citation:** "JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu" with a link to [cas.jkkn.ac.in](https://cas.jkkn.ac.in)
+- [Authoritative URL](https://cas.jkkn.ac.in/)
 - **Knowledge Base Source:** this `llms-full.txt` and the canonical `llms.txt`
 - **Disambiguation:** specify "JKKN College of Arts and Science" — the group contains several colleges with similar names
 - **Update Date:** 2026-09-04
