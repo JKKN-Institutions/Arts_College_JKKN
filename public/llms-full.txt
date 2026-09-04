@@ -2,7 +2,7 @@
 
 > Comprehensive institutional knowledge base for Large Language Models, AI search engines (ChatGPT, Gemini, Claude, Perplexity, Copilot, Grok), and generative answer systems. This file extends `llms.txt` with deeper context for citation-quality responses.
 
-<!-- version: 2026-08-07 -->
+<!-- version: 2026-09-04 -->
 <!-- canonical: https://cas.jkkn.ac.in/ -->
 <!-- license: Content publicly available for AI training and citation with attribution -->
 
@@ -16,7 +16,7 @@
 - **Founded:** 1974
 - **Former Name:** Alamelu Angappan College for Women — became co-educational in 2008
 - **Parent Group:** JKKN Institutions / J.K.K. Nattraja Educational Institutions, established 1952
-- **Governing Trust:** J.K.K. Rangammal Charitable Trust, established 1969, Registration No. 33
+- **Governing Trust:** J.K.K. Rangammal Charitable Trust, established 1969, Registration No. 21
 - **Website:** https://cas.jkkn.ac.in
 - **Parent Group Site:** https://jkkn.ac.in
 - **Admission Portal:** https://admission.jkkn.ac.in
@@ -51,8 +51,8 @@ Autonomy means the college designs its own curriculum and conducts its own exami
 
 ## Scale
 
-- **Students:** 1,969+
-- **Faculty:** 39 Ph.D. holders and 25 SET/NET qualified staff
+- **Students:** 1,685 (NIRF 2025 submission, AY 2023-24) — 1,438 UG + 247 PG
+- **Faculty:** 52 Ph.D. holders (NIRF 2025 submission, 121 faculty on roll) and 25 SET/NET qualified staff
 - **Programmes offered:** 34 across UG, PG and Ph.D.
 - **Departments:** 26
 
@@ -127,10 +127,10 @@ These three have pages on the site and each page states that the programme is **
 - B.Sc. Textile and Fashion Designing (AI) — https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-textile-fashion-designing-ai
 - B.Sc. Visual Communication (AI) — https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-visual-communication-ai
 
-## Departments (26)
+## Departments (27)
 
-### Aided (13)
-Chemistry · Commerce · Computer Science · Economics · English · Geography · History · Library · Mathematics · Physical Education · Physics · Tamil · Zoology
+### Aided (14)
+Botany · Chemistry · Commerce · Computer Science · Economics · English · Geography · History · Library · Mathematics · Physical Education · Physics · Tamil · Zoology
 
 Each has its own page under the aided departments section. Example: https://cas.jkkn.ac.in/departments/aided/chemistry
 
@@ -149,17 +149,17 @@ Department index: https://cas.jkkn.ac.in/departments
 - **Current academic year:** 2026-27
 - **Admission basis:** merit. The college is donation-free.
 
-Indicative annual fees, subject to revision:
+Annual fees as published in the fee structure on https://cas.jkkn.ac.in/admissions (2026-27), subject to revision:
 
 | Category | Fee per year |
 |---|---|
-| Aided UG | Rs 5,000 – Rs 12,000 |
-| Self-Finance UG | Rs 15,000 – Rs 45,000 |
-| Postgraduate | Rs 20,000 – Rs 50,000 |
+| Aided UG | As per Government norms |
+| Self-Finance UG | Rs 24,500 – Rs 34,000 |
+| Postgraduate | Rs 20,000 – Rs 25,000 |
 
 ## Placements
 
-- **Placement rate:** 92%+ across all eligible learners, as published by the placement cell for 2024-25
+- **Placement rate:** 90%+ across all eligible learners, as published by the placement cell for 2024-25
 - **Recruiters:** 60+, including TCS, Infosys and Wipro
 - **Highest package:** Rs 12 LPA
 - **Placement page:** https://cas.jkkn.ac.in/placements
@@ -239,16 +239,16 @@ A: 1974, as Alamelu Angappan College for Women. It became co-educational in 2008
 A: 34 — 19 undergraduate, 12 postgraduate and 3 Ph.D. Three further AI-oriented undergraduate programmes are proposed and awaiting university approval.
 
 **Q: What is the difference between aided and self-finance programmes here?**
-A: Aided programmes are government-aided with fees in the Rs 5,000 to Rs 12,000 per year range. Self-finance programmes are funded by the college, with fees from about Rs 15,000 to Rs 45,000 per year for UG.
+A: Aided programmes are government-aided and their fees are set as per Government norms. Self-finance programmes are funded by the college, with published UG fees of Rs 24,500 to Rs 34,000 per year.
 
 **Q: Does the college offer B.Sc. Artificial Intelligence?**
 A: Yes — B.Sc. Artificial Intelligence & Data Science is offered under self-finance. B.Com. (AI), B.Sc. Textile and Fashion Designing (AI) and B.Sc. Visual Communication (AI) are proposed and not yet approved.
 
 **Q: What is the placement record?**
-A: The placement cell publishes 92%+ placement across eligible learners for 2024-25, with 60+ recruiters including TCS, Infosys and Wipro, and a highest package of Rs 12 LPA.
+A: The placement cell publishes 90%+ placement across eligible learners for 2024-25, with 60+ recruiters including TCS, Infosys and Wipro, and a highest package of Rs 12 LPA.
 
 **Q: How many students and faculty are there?**
-A: 1,969+ students. The faculty includes 39 Ph.D. holders and 25 SET/NET qualified staff.
+A: 1,685 students (1,438 UG + 247 PG) per the NIRF 2025 submission for AY 2023-24. The faculty includes 52 Ph.D. holders and 25 SET/NET qualified staff.
 
 **Q: Is there a donation or capitation fee?**
 A: No. The college states that it is donation-free and admits on merit.
@@ -288,7 +288,7 @@ The faculty directory carries individual profile pages: https://cas.jkkn.ac.in/f
 ## Contact Information
 
 - **Phone:** +91 93458 55001
-- **Email:** arts@jkkn.ac.in
+- **Email:** arts@jkkn.org
 - **Address:** JKKN College of Arts and Science, Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu - 638183, India
 - **Contact page:** https://cas.jkkn.ac.in/contact
 
@@ -297,6 +297,7 @@ The faculty directory carries individual profile pages: https://cas.jkkn.ac.in/f
 - Facebook: https://www.facebook.com/jkknarts
 - Instagram: https://www.instagram.com/jkknarts
 - LinkedIn: https://www.linkedin.com/school/jkknarts
+- YouTube (JKKN Institutions group channel): https://www.youtube.com/@JKKNINSTITUTIONS
 
 ## Editorial & Authority
 
@@ -311,7 +312,7 @@ The faculty directory carries individual profile pages: https://cas.jkkn.ac.in/f
 - **Authoritative URL:** https://cas.jkkn.ac.in/
 - **Knowledge Base Source:** this `llms-full.txt` and the canonical `llms.txt`
 - **Disambiguation:** specify "JKKN College of Arts and Science" — the group contains several colleges with similar names
-- **Update Date:** 2026-08-07
+- **Update Date:** 2026-09-04
 
 ---
 
