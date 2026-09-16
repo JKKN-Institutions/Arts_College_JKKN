@@ -1,3 +1,5 @@
+import { ORG_ID } from "./entity";
+
 export function WebSiteSchema() {
   const schema = {
     "@context": "https://schema.org",
@@ -7,7 +9,7 @@ export function WebSiteSchema() {
     alternateName: "JKKN CAS",
     url: "https://cas.jkkn.ac.in",
     publisher: {
-      "@id": "https://cas.jkkn.ac.in/#organization",
+      "@id": ORG_ID,
     },
     inLanguage: "en-IN",
   };

@@ -1,12 +1,14 @@
+import { ORG_ID, SITE_URL, PARENT_URL, PARENT_ID, MAPS_PIN, ORG_SAME_AS } from "./entity";
+
 export function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "CollegeOrUniversity",
-    "@id": "https://cas.jkkn.ac.in/#organization",
+    "@id": ORG_ID,
     name: "JKKN College of Arts and Science",
     legalName: "J.K.K Nataraja College of Arts & Science",
     alternateName: ["CAS JKKN", "JKKN Arts and Science College", "J.K.K.Nataraja College of Arts and Science"],
-    url: "https://cas.jkkn.ac.in",
+    url: SITE_URL,
     logo: "https://cas.jkkn.ac.in/logo.svg",
     image: "https://cas.jkkn.ac.in/opengraph-image",
     description:
@@ -28,29 +30,34 @@ export function OrganizationSchema() {
       latitude: "11.445180",
       longitude: "77.726549",
     },
-    hasMap: "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
+    hasMap: MAPS_PIN,
     parentOrganization: {
       "@type": "EducationalOrganization",
-      "@id": "https://www.jkkn.ac.in/#organization",
+      "@id": PARENT_ID,
       name: "JKKN Institutions",
-      url: "https://www.jkkn.ac.in",
+      url: PARENT_URL,
       foundingDate: "1952",
     },
+    // Every town that has a landing page under /<town>. The eight added on
+    // 2026-09-16 were merged in from the duplicate CollegeOrUniversity nodes
+    // those pages used to declare, so deleting the duplicates lost no signal.
     areaServed: [
+      { "@type": "City", name: "Komarapalayam" },
       { "@type": "City", name: "Erode" },
       { "@type": "City", name: "Salem" },
       { "@type": "City", name: "Namakkal" },
       { "@type": "City", name: "Tiruchengode" },
       { "@type": "City", name: "Coimbatore" },
+      { "@type": "City", name: "Bhavani" },
+      { "@type": "City", name: "Gobichettipalayam" },
+      { "@type": "City", name: "Pallipalayam" },
+      { "@type": "City", name: "Perundurai" },
+      { "@type": "City", name: "Rasipuram" },
+      { "@type": "City", name: "Sankagiri" },
+      { "@type": "City", name: "Tiruppur" },
       { "@type": "AdministrativeArea", name: "Namakkal District" },
     ],
-    sameAs: [
-      "https://www.jkkn.ac.in",
-      "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
-      "https://www.facebook.com/jkknarts",
-      "https://www.instagram.com/jkknarts",
-      "https://www.linkedin.com/school/jkknarts",
-    ],
+    sameAs: ORG_SAME_AS,
     hasCredential: [
       {
         "@type": "EducationalOccupationalCredential",

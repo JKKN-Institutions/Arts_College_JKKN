@@ -1,3 +1,5 @@
+import { ORG_ID, ORG_NAME, SITE_URL } from "./entity";
+
 interface EventSchemaProps {
   name: string;
   description: string;
@@ -41,9 +43,9 @@ export function EventSchema({
     },
     organizer: {
       "@type": "Organization",
-      "@id": "https://cas.jkkn.ac.in/#organization",
-      name: "JKKN College of Arts and Science",
-      url: "https://cas.jkkn.ac.in",
+      "@id": ORG_ID,
+      name: ORG_NAME,
+      url: SITE_URL,
     },
   };
 

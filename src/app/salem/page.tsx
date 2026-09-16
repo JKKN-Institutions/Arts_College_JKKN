@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { CourseSchema } from "@/components/seo/CourseSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
+import { ORG_REF } from "@/components/seo/entity";
 import ViewProgrammesButton from "@/components/ViewProgrammesButton";
 import {
   MapPin,
@@ -134,82 +135,6 @@ export default function SalemPage() {
         { name: "Salem", url: "https://cas.jkkn.ac.in/salem" },
       ]} />
       <FAQSchema faqs={faqs.map(f => ({ question: f.q, answer: f.a }))} />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "CollegeOrUniversity",
-            "@id": "https://cas.jkkn.ac.in/#organization",
-            "name": "JKKN College of Arts and Science",
-            "alternateName": "JKKN CAS",
-            "url": "https://cas.jkkn.ac.in",
-            "logo": "https://cas.jkkn.ac.in/images/logo/jkkn-cas-logo.png",
-            "image": "https://cas.jkkn.ac.in/images/facilities/JKKN%20Arts%20Classroom.png",
-            "telephone": "+919345855001",
-            "email": "info@jkkn.ac.in",
-            "foundingDate": "1974",
-            "description": "JKKN College of Arts and Science is a NAAC-accredited institution offering 34 UG, PG, and Ph.D programmes. Located at Komarapalayam, approximately 58 km from Salem via NH-544. Affiliated to Periyar University.",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
-              "addressLocality": "Komarapalayam",
-              "addressRegion": "Tamil Nadu",
-              "postalCode": "638183",
-              "addressCountry": "IN"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 11.44518,
-              "longitude": 77.726549
-            },
-            "areaServed": [
-              {
-                "@type": "City",
-                "name": "Salem",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              },
-              {
-                "@type": "City",
-                "name": "Erode",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              },
-              {
-                "@type": "City",
-                "name": "Namakkal",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              }
-            ],
-            "numberOfStudents": {
-              "@type": "QuantitativeValue",
-              "description": "Large student body across 34 programmes"
-            },
-            "accreditedBy": {
-              "@type": "Organization",
-              "name": "National Assessment and Accreditation Council",
-              "alternateName": "NAAC",
-              "url": "https://www.naac.gov.in"
-            },
-            "memberOf": {
-              "@type": "Organization",
-              "name": "University Grants Commission",
-              "alternateName": "UGC",
-              "url": "https://www.ugc.ac.in"
-            },
-            "sameAs": [
-              "https://www.facebook.com/jkkngroup",
-              "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
-              "https://jkkn.ac.in"
-            ],
-            "parentOrganization": {
-              "@type": "Organization",
-              "@id": "https://jkkn.ac.in/#organization",
-              "name": "JKKN Institutions",
-              "url": "https://jkkn.ac.in"
-            }
-          })
-        }}
-      />
       <CourseSchema
         name="B.Sc (Various Specialisations)"
         description="3-year undergraduate science programme with specialisations in Chemistry, Mathematics, Zoology, Physics, Microbiology, Computer Science, and more at JKKN CAS — approximately 58 km from Salem."
@@ -304,10 +229,7 @@ export default function SalemPage() {
               "name": "JKKN College of Arts and Science",
               "url": "https://cas.jkkn.ac.in"
             },
-            "about": {
-              "@type": "CollegeOrUniversity",
-              "@id": "https://cas.jkkn.ac.in/#organization"
-            },
+            "about": ORG_REF,
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { CourseSchema } from "@/components/seo/CourseSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
+import { ORG_REF } from "@/components/seo/entity";
 import ViewProgrammesButton from "@/components/ViewProgrammesButton";
 import {
   MapPin,
@@ -131,39 +132,26 @@ export default function TiruppurPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "CollegeOrUniversity",
-            "name": "JKKN College of Arts and Science",
-            "url": "https://cas.jkkn.ac.in",
-            "telephone": "+91-9345855001",
-            "sameAs": [
-              "https://www.facebook.com/jkkncas",
-              "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
-              "https://jkkn.ac.in"
-            ],
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
-              "addressLocality": "Komarapalayam",
-              "addressRegion": "Tamil Nadu",
-              "postalCode": "638183",
-              "addressCountry": "IN"
+            "@type": "WebPage",
+            "about": ORG_REF,
+            "@id": "https://cas.jkkn.ac.in/tiruppur#webpage",
+            "name": "Arts & Science College Near Tiruppur | JKKN CAS",
+            "url": "https://cas.jkkn.ac.in/tiruppur",
+            "description":
+              "JKKN College of Arts and Science, 70 km from Tiruppur on NH-544. Autonomous, NAAC accredited. B.Sc, B.Com, BBA and BCA.",
+            "inLanguage": "en-IN",
+            "isPartOf": {
+              "@type": "WebSite",
+              "@id": "https://cas.jkkn.ac.in/#website",
+              "name": "JKKN College of Arts and Science",
+              "url": "https://cas.jkkn.ac.in"
             },
-            "areaServed": [
-              {
-                "@type": "City",
-                "name": "Tiruppur",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              },
-              {
-                "@type": "City",
-                "name": "Erode",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              }
-            ],
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 11.44518,
-              "longitude": 77.726549
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://cas.jkkn.ac.in" },
+                { "@type": "ListItem", "position": 2, "name": "Tiruppur", "item": "https://cas.jkkn.ac.in/tiruppur" }
+              ]
             }
           })
         }}

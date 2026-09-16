@@ -1,3 +1,5 @@
+import { ORG_ID, ORG_NAME } from "./entity";
+
 import { programmeMetadata } from "@/data/programme-metadata";
 
 /**
@@ -24,8 +26,8 @@ export function AllCoursesSchema() {
     url: `https://cas.jkkn.ac.in/programmes/${path}`,
     provider: {
       "@type": "CollegeOrUniversity",
-      "@id": "https://cas.jkkn.ac.in/#organization",
-      name: "JKKN College of Arts and Science",
+      "@id": ORG_ID,
+      name: ORG_NAME,
     },
     timeRequired: prog.duration,
     educationalLevel: levelMap[prog.level],

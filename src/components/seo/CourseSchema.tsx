@@ -1,3 +1,5 @@
+import { ORG_ID, ORG_NAME, SITE_URL } from "./entity";
+
 interface CourseSchemaProps {
   name: string;
   description: string;
@@ -13,7 +15,7 @@ interface CourseSchemaProps {
 export function CourseSchema({
   name,
   description,
-  provider = "JKKN College of Arts and Science",
+  provider = ORG_NAME,
   duration,
   educationalLevel,
   category,
@@ -47,9 +49,9 @@ export function CourseSchema({
     url: `https://cas.jkkn.ac.in${url}`,
     provider: {
       "@type": "CollegeOrUniversity",
-      "@id": "https://cas.jkkn.ac.in/#organization",
+      "@id": ORG_ID,
       name: provider,
-      url: "https://cas.jkkn.ac.in",
+      url: SITE_URL,
     },
     timeRequired: duration,
     educationalLevel: levelMap[educationalLevel],

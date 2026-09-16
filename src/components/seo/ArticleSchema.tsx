@@ -1,3 +1,5 @@
+import { ORG_ID, ORG_NAME } from "./entity";
+
 interface ArticleSchemaProps {
   headline: string;
   description: string;
@@ -32,8 +34,8 @@ export function ArticleSchema({
     },
     publisher: {
       "@type": "Organization",
-      "@id": "https://cas.jkkn.ac.in/#organization",
-      name: "JKKN College of Arts and Science",
+      "@id": ORG_ID,
+      name: ORG_NAME,
       logo: {
         "@type": "ImageObject",
         url: "https://cas.jkkn.ac.in/opengraph-image",

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { CourseSchema } from "@/components/seo/CourseSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
+import { ORG_REF } from "@/components/seo/entity";
 import ViewProgrammesButton from "@/components/ViewProgrammesButton";
 import {
   MapPin,
@@ -147,71 +148,8 @@ export default function CoimbatorePage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "CollegeOrUniversity",
-            "name": "JKKN College of Arts and Science",
-            "alternateName": "JKKN CAS",
-            "description": "JKKN College of Arts and Science is a NAAC-accredited, UGC-approved institution in Komarapalayam, Namakkal district, Tamil Nadu, offering 35 programmes in arts, science, commerce, and computer applications. Founded in 1952, affiliated to Periyar University.",
-            "url": "https://cas.jkkn.ac.in",
-            "logo": "https://cas.jkkn.ac.in/images/logo.png",
-            "foundingDate": "1974",
-            "telephone": "+919345855001",
-            "email": "info@jkkn.ac.in",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
-              "addressLocality": "Komarapalayam",
-              "addressRegion": "Tamil Nadu",
-              "postalCode": "638183",
-              "addressCountry": "IN"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 11.44518,
-              "longitude": 77.726549
-            },
-            "areaServed": [
-              {
-                "@type": "City",
-                "name": "Coimbatore",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              },
-              {
-                "@type": "City",
-                "name": "Komarapalayam",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              }
-            ],
-            "accreditation": "NAAC",
-            "parentOrganization": {
-              "@type": "Organization",
-              "name": "JKKN Institutions",
-              "url": "https://jkkn.ac.in"
-            },
-            "sameAs": [
-              "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
-              "https://jkkn.ac.in"
-            ],
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "Academic Programmes",
-              "numberOfItems": 34
-            },
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+919345855001",
-              "contactType": "admissions",
-              "areaServed": "IN",
-              "availableLanguage": ["English", "Tamil"]
-            }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
             "@type": "WebPage",
+            "about": ORG_REF,
             "name": "Best Arts and Science College Near Coimbatore — JKKN CAS",
             "speakable": {
               "@type": "SpeakableSpecification",

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { CourseSchema } from "@/components/seo/CourseSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
+import { ORG_REF } from "@/components/seo/entity";
 import ViewProgrammesButton from "@/components/ViewProgrammesButton";
 import {
   MapPin,
@@ -196,6 +197,7 @@ export default function KomarapalayamPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
+            "about": ORG_REF,
             "name": "Colleges in Komarapalayam (Kumarapalayam) — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/komarapalayam",
             "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college located in Komarapalayam (Kumarapalayam) on NH-544. 34 programmes, 90%+ placements, hostel available.",
@@ -215,72 +217,6 @@ export default function KomarapalayamPage() {
               "@type": "SpeakableSpecification",
               "cssSelector": [".snippet-answer-paragraph", "#faq-section"]
             }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "CollegeOrUniversity",
-            "name": "JKKN College of Arts and Science",
-            "alternateName": "JKKN CAS",
-            "url": "https://cas.jkkn.ac.in",
-            "foundingDate": "1974",
-            "description": "JKKN College of Arts and Science is a NAAC-accredited institution located in Komarapalayam (Kumarapalayam) on NH-544, offering 34 UG, PG, and Ph.D programmes in arts, science, commerce, and computer applications, affiliated to Periyar University.",
-            "telephone": "+919345855001",
-            "email": "info@jkkn.ac.in",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
-              "addressLocality": "Komarapalayam",
-              "addressRegion": "Tamil Nadu",
-              "postalCode": "638183",
-              "addressCountry": "IN"
-            },
-            "areaServed": [
-              {
-                "@type": "City",
-                "name": "Komarapalayam",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              },
-              {
-                "@type": "City",
-                "name": "Bhavani",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              },
-              {
-                "@type": "City",
-                "name": "Pallipalayam",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              }
-            ],
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 11.44518,
-              "longitude": 77.726549
-            },
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "Programmes at JKKN CAS",
-              "numberOfItems": 34
-            },
-            "accreditation": "NAAC Accredited",
-            "memberOf": [
-              { "@type": "Organization", "name": "University Grants Commission (UGC)" },
-              { "@type": "Organization", "name": "Periyar University" }
-            ],
-            "parentOrganization": {
-              "@type": "Organization",
-              "name": "JKKN Group of Institutions",
-              "url": "https://jkkn.ac.in"
-            },
-            "sameAs": [
-              "https://cas.jkkn.ac.in",
-              "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
-              "https://jkkn.ac.in"
-            ]
           })
         }}
       />

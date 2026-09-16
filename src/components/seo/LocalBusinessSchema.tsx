@@ -1,3 +1,5 @@
+import { ORG_ID } from "./entity";
+
 export function LocalBusinessSchema() {
   const schema = {
     "@context": "https://schema.org",
@@ -38,7 +40,7 @@ export function LocalBusinessSchema() {
       },
     ],
     isPartOf: {
-      "@id": "https://cas.jkkn.ac.in/#organization",
+      "@id": ORG_ID,
     },
   };
 

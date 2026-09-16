@@ -1,6 +1,7 @@
 import React from 'react';
 import { Facebook, Instagram, Linkedin, Youtube, Phone, Mail, MapPin } from 'lucide-react';
 import Link from 'next/link';
+import { SOCIAL_PROFILES } from "@/components/seo/entity";
 
 export default function Footer() {
   return (
@@ -120,7 +121,7 @@ export default function Footer() {
               </h3>
               <div className="flex gap-4 mt-6">
                 <a
-                  href="https://www.facebook.com/jkknarts"
+                  href={SOCIAL_PROFILES.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded flex items-center justify-center hover:bg-brand-yellow hover:text-brand-green transition"
@@ -129,7 +130,7 @@ export default function Footer() {
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://www.instagram.com/jkknarts"
+                  href={SOCIAL_PROFILES.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded flex items-center justify-center hover:bg-brand-yellow hover:text-brand-green transition"
@@ -138,7 +139,7 @@ export default function Footer() {
                   <Instagram className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/school/jkknarts"
+                  href={SOCIAL_PROFILES.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded flex items-center justify-center hover:bg-brand-yellow hover:text-brand-green transition"
