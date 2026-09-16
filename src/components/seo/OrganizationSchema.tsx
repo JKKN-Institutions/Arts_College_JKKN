@@ -116,12 +116,18 @@ export function OrganizationSchema() {
       "Textile and Fashion Designing",
       "Microbiology",
     ],
+    // Source: this college's own Google Business Profile, read 2026-09-16 -
+    // "4.8, 524 Google reviews". Previous value 517 was the 2026-09-12 reading.
+    // GBP reports one count; it is used for both ratingCount and reviewCount.
+    // This is a self-reported aggregate about ourselves, so Google will not show
+    // it as a review rich result - the stars in local results come from GBP
+    // directly. Kept by user decision 2026-09-16. Re-read GBP when it is updated.
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.8",
       bestRating: "5",
-      ratingCount: "517",
-      reviewCount: "517",
+      ratingCount: "524",
+      reviewCount: "524",
     },
     speakable: {
       "@type": "SpeakableSpecification",
