@@ -6,14 +6,14 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Programmes",
   description:
-    "Explore 27+ UG, PG and PhD programmes in Arts, Science, Commerce and Management at JKKN College of Arts and Science.",
+    "Explore 35 UG, PG and PhD programmes in Arts, Science, Commerce and Management at JKKN College of Arts and Science.",
   alternates: {
     canonical: "https://cas.jkkn.ac.in/programmes",
   },
   openGraph: {
     title: "Programmes | JKKN College of Arts and Science",
     description:
-      "Explore 27+ UG, PG and PhD programmes in Arts, Science, Commerce and Management at JKKN College of Arts and Science.",
+      "Explore 35 UG, PG and PhD programmes in Arts, Science, Commerce and Management at JKKN College of Arts and Science.",
     url: "https://cas.jkkn.ac.in/programmes",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -52,6 +52,7 @@ const sfUG = [
   { name: "B.Sc. AI & Data Science", href: "/programmes/self-finance/ug/bsc-ai-ds" },
   { name: "B.Com (Computer Applications)", href: "/programmes/self-finance/ug/bcom-ca" },
   { name: "B.Sc. Physics", href: "/programmes/self-finance/ug/bsc-physics" },
+  { name: "B.Sc. Clinical Lab Technology", href: "/programmes/self-finance/ug/bsc-clinical-lab-technology" },
   { name: "B.Sc. Microbiology", href: "/programmes/self-finance/ug/bsc-microbiology" },
   { name: "B.Sc. Visual Communication", href: "/programmes/self-finance/ug/bsc-visual-communication" },
   { name: "B.Sc. Textile & Fashion Designing", href: "/programmes/self-finance/ug/bsc-textile-fashion-designing" },
@@ -93,7 +94,7 @@ const categories = [
   },
   {
     title: "Self-Finance UG Programmes",
-    badge: "13 Programmes",
+    badge: "14 Programmes",
     description: "Industry-focused undergraduate programmes in technology, management, and applied sciences.",
     programmes: sfUG,
     accent: "#0b6d41",
@@ -128,7 +129,7 @@ export default function ProgrammesPage() {
               Programmes Offered
             </h1>
             <p className="text-green-100 max-w-2xl mx-auto text-base sm:text-lg">
-              Explore 27+ UG, PG and Ph.D. programmes in Arts, Science, Commerce
+              Explore 35 UG, PG and Ph.D. programmes in Arts, Science, Commerce
               and Management — aided and self-finance streams available.
             </p>
           </div>

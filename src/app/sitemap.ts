@@ -160,6 +160,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-cs-cyber-security`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-microbiology`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-physics`, "monthly", 0.9),
+    s(`${SITE_URL}/programmes/self-finance/ug/bsc-clinical-lab-technology`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-textile-fashion-designing`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-textile-fashion-designing-ai`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-visual-communication`, "monthly", 0.9),

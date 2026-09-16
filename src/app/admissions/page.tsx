@@ -20,7 +20,7 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Admissions 2026 — Apply Now",
   description:
-    "Apply to JKKN College of Arts and Science (Autonomous). 27+ UG, PG & PhD programmes. Admission process, eligibility, documents & dates. Near Erode, TN.",
+    "Apply to JKKN College of Arts and Science (Autonomous). 35 UG, PG & PhD programmes. Admission process, eligibility, documents & dates. Near Erode, TN.",
   keywords: [
     "JKKN College admission",
     "arts and science college admission near Erode",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Admissions 2026 — Apply Now | JKKN Arts & Science",
     description:
-      "Apply to JKKN College of Arts and Science (Autonomous). 27+ programmes, step-by-step process, eligibility and documents.",
+      "Apply to JKKN College of Arts and Science (Autonomous). 34 programmes, step-by-step process, eligibility and documents.",
     url: "https://cas.jkkn.ac.in/admissions",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -46,7 +46,7 @@ const admissionFAQs = [
     question:
       "What are the eligibility criteria for UG programmes at JKKN College of Arts and Science?",
     answer:
-      "Candidates must have passed the Higher Secondary Examination (12th standard) from a recognized board with relevant subjects. Minimum percentage requirements vary by programme — typically 50% aggregate for aided programmes and 45% for self-finance programmes. Contact the admissions office for programme-specific eligibility details.",
+      "Candidates must have passed the Higher Secondary Examination (12th standard) from a recognized board with relevant subjects. Minimum 50% aggregate marks for the general category, 45% for OBC and 40% for SC/ST as per government norms; some programmes require specific subjects. Contact the admissions office for programme-specific eligibility details.",
   },
   {
     question: "How can I apply for admission to JKKN CAS?",
@@ -120,12 +120,6 @@ const howToSchema = {
   name: "How to Apply for Admission at JKKN College of Arts and Science",
   description:
     "Step-by-step guide to apply for admission at JKKN College of Arts and Science (Autonomous), affiliated to Periyar University, near Erode, Tamil Nadu.",
-  totalTime: "P7D",
-  estimatedCost: {
-    "@type": "MonetaryAmount",
-    currency: "INR",
-    value: "500",
-  },
   step: admissionSteps.map((s) => ({
     "@type": "HowToStep",
     position: s.step,
@@ -149,7 +143,6 @@ const feeStructure = [
       { name: "B.Sc. Comp. Sci. (Cyber Security)", fee: 32000 },
       { name: "B.Sc. Microbiology", fee: 34000 },
       { name: "B.Sc. Clinical Lab Technology", fee: 32000 },
-      { name: "B.Sc. Mathematics", fee: 26000 },
       { name: "B.Sc. Physics", fee: 25000 },
     ],
   },
@@ -157,6 +150,8 @@ const feeStructure = [
     category: "UG — Commerce & Management",
     programmes: [
       { name: "B.Com (CA)", fee: 34000 },
+      { name: "B.Com (Accounting & Finance)", fee: 34000 },
+      { name: "B.Com (Banking & Insurance)", fee: 34000 },
       { name: "B.C.A.", fee: 33000 },
       { name: "B.B.A.", fee: 25500 },
       { name: "B.Com (AI) *", fee: 34000 },
@@ -214,7 +209,7 @@ export default function AdmissionsPage() {
                 Admissions at JKKN College of Arts and Science
               </h1>
               <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-                Join an autonomous institution offering 27+ programmes in Arts,
+                Join an autonomous institution offering 35 programmes in Arts,
                 Science and Commerce. Affiliated to Periyar University with
                 strong placement support and campus facilities near Erode, Tamil
                 Nadu.
@@ -244,8 +239,8 @@ export default function AdmissionsPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                { label: "Programmes", value: "27+", icon: GraduationCap },
-                { label: "Highest Package", value: "₹18 LPA", icon: Award },
+                { label: "Programmes", value: "35", icon: GraduationCap },
+                { label: "Recruiters", value: "60+", icon: Award },
                 { label: "Placement Rate", value: "90%+", icon: Users },
                 {
                   label: "Status",
@@ -521,7 +516,7 @@ export default function AdmissionsPage() {
 
             <div className="mt-8 bg-[#0b6d41]/5 rounded-xl p-5 border border-[#0b6d41]/10">
               <p className="text-sm text-gray-600 leading-relaxed">
-                <strong className="text-gray-800">Note:</strong> GQ (Government Quota) fees are As Per Govt Norms. MQ fees shown are annual fees for the Management Quota category. Programmes marked with * are newly added courses. For detailed fee breakdowns, hostel charges, and scholarship information, contact the admissions office.
+                <strong className="text-gray-800">Note:</strong> GQ (Government Quota) fees are As Per Govt Norms. MQ fees shown are annual fees for the Management Quota category. Programmes marked with * are proposed and awaiting approval from Periyar University; their fees are indicative and apply only once approval is granted. For detailed fee breakdowns, hostel charges, and scholarship information, contact the admissions office.
               </p>
             </div>
           </div>
@@ -574,11 +569,11 @@ export default function AdmissionsPage() {
                 <div className="text-sm text-white/70 mt-1">Call Us</div>
               </a>
               <a
-                href="mailto:arts@jkkn.ac.in"
+                href="mailto:arts@jkkn.org"
                 className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition"
               >
                 <Mail className="w-6 h-6 mx-auto mb-3" />
-                <div className="font-semibold">arts@jkkn.ac.in</div>
+                <div className="font-semibold">arts@jkkn.org</div>
                 <div className="text-sm text-white/70 mt-1">Email Us</div>
               </a>
               <a

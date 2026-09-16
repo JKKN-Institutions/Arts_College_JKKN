@@ -29,7 +29,7 @@ const cards = [
     href: "/about/our-trust",
     label: "Our Trust",
     description:
-      "The foundation that supports our educational mission since 1952",
+      "The trust behind the college, registered in 1969 (group founded 1952)",
   },
   {
     href: "/about/vision-mission",

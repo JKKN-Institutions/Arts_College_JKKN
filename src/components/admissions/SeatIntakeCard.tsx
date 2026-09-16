@@ -1,7 +1,7 @@
 import { Users, Calendar, Award } from "lucide-react";
 
 interface SeatIntakeCardProps {
-  intakeSeats: number;
+  intakeSeats: number | null;
   programmeName: string;
   applicationDeadline: string;
 }
@@ -30,13 +30,31 @@ export function SeatIntakeCard({
         <div className="grid sm:grid-cols-3 gap-6">
           <div className="bg-white rounded-2xl p-8 text-center border border-gray-100 shadow-sm">
             <Users className="w-10 h-10 text-[#0b6d41] mx-auto mb-3" />
-            <div className="text-4xl font-bold text-[#0b6d41] mb-2">
-              {intakeSeats}
-            </div>
-            <div className="text-sm text-gray-600 font-medium">
-              Sanctioned Seats
-            </div>
-            <div className="text-xs text-gray-500 mt-1">2026-27 Intake</div>
+            {intakeSeats === null ? (
+              <>
+                <div className="text-xl font-bold text-[#0b6d41] mb-2">
+                  Contact Admissions
+                </div>
+                <div className="text-sm text-gray-600 font-medium">
+                  Sanctioned Seats
+                </div>
+                <div className="text-xs text-gray-500 mt-1">
+                  As per the Periyar University approval order
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="text-4xl font-bold text-[#0b6d41] mb-2">
+                  {intakeSeats}
+                </div>
+                <div className="text-sm text-gray-600 font-medium">
+                  Sanctioned Seats
+                </div>
+                <div className="text-xs text-gray-500 mt-1">
+                  AICTE approved intake, 2025-26
+                </div>
+              </>
+            )}
           </div>
 
           <div className="bg-white rounded-2xl p-8 text-center border border-gray-100 shadow-sm">
@@ -47,7 +65,9 @@ export function SeatIntakeCard({
             <div className="text-sm text-gray-600 font-medium">
               Application Deadline
             </div>
-            <div className="text-xs text-gray-500 mt-1">Apply before this date</div>
+            <div className="text-xs text-gray-500 mt-1">
+              Confirm the current cut-off with the admissions office
+            </div>
           </div>
 
           <div className="bg-white rounded-2xl p-8 text-center border border-gray-100 shadow-sm">

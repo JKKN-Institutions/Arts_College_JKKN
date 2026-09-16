@@ -79,7 +79,7 @@ export default function SalemPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Salem?",
-      a: "JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 34 programmes and 90%+ placement rate.",
+      a: "JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 35 programmes and 90%+ placement rate.",
     },
     {
       q: "How far is JKKN CAS from Salem?",
@@ -119,7 +119,7 @@ export default function SalemPage() {
     },
     {
       q: "Which arts and science colleges in Salem should students compare?",
-      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC-accredited since 1952, with aided low-fee streams, 34 programmes, and 90%+ placements — is a strong option to include on that shortlist, ~58 km from Salem city on NH-544.",
+      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC-accredited, established 1974, with aided low-fee streams, 34 programmes, and 90%+ placements — is a strong option to include on that shortlist, ~58 km from Salem city on NH-544.",
     },
     {
       q: "Is JKKN CAS a good option for students from Sankagiri, Edappadi, and Mettur?",
@@ -148,8 +148,8 @@ export default function SalemPage() {
             "image": "https://cas.jkkn.ac.in/images/facilities/JKKN%20Arts%20Classroom.png",
             "telephone": "+919345855001",
             "email": "info@jkkn.ac.in",
-            "foundingDate": "1952",
-            "description": "JKKN College of Arts and Science is a NAAC-accredited institution offering 34 UG, PG, and Ph.D programmes. Located at Komarapalayam, approximately 58 km from Salem via NH-544. Affiliated to Periyar University and Bharathiar University.",
+            "foundingDate": "1974",
+            "description": "JKKN College of Arts and Science is a NAAC-accredited institution offering 34 UG, PG, and Ph.D programmes. Located at Komarapalayam, approximately 58 km from Salem via NH-544. Affiliated to Periyar University.",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
@@ -361,9 +361,8 @@ export default function SalemPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "90%+", label: "PLACEMENTS" },
-              { value: "5-7", label: "LPA HIGHEST" },
               { value: "~58km", label: "FROM SALEM" },
-              { value: "34", label: "PROGRAMMES" },
+              { value: "35", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -413,7 +412,7 @@ export default function SalemPage() {
             </span>
             <span className="hidden sm:block text-gray-300">|</span>
             <span className="text-gray-500 text-xs sm:text-sm">
-              Affiliated to Periyar University / Bharathiar University
+              Affiliated to Periyar University
             </span>
           </div>
         </div>
@@ -619,7 +618,7 @@ export default function SalemPage() {
           {/* Complete Programme List */}
           <div className="mt-12 pt-10 border-t border-gray-200">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">
-              All 34 Programmes Available Near Salem
+              All 35 Programmes Available Near Salem
             </h3>
             <p className="text-gray-500 text-sm text-center mb-8">
               Grouped by stream — click any programme for full details
@@ -760,8 +759,6 @@ export default function SalemPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
               { value: "90%+", label: "PLACEMENT RATE" },
-              { value: "5-7", label: "LPA HIGHEST" },
-              { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },
             ].map((stat) => (
               <div

@@ -25,7 +25,7 @@ export const siteConfig = {
   /** Main tagline — shown on the hero / homepage */
   tagline:
     process.env.NEXT_PUBLIC_COLLEGE_TAGLINE ??
-    'Autonomous institution offering 27+ programmes in Arts, Science and Commerce',
+    'Autonomous institution offering 35 programmes in Arts, Science and Commerce',
 
   /** Primary brand color (hex) — used for buttons, headings, accents */
   primaryColor:
@@ -45,7 +45,7 @@ export const siteConfig = {
 
   /** Contact */
   phone: process.env.NEXT_PUBLIC_COLLEGE_PHONE ?? '+919345855001',
-  email: process.env.NEXT_PUBLIC_COLLEGE_EMAIL ?? 'arts@jkkn.ac.in',
+  email: process.env.NEXT_PUBLIC_COLLEGE_EMAIL ?? 'arts@jkkn.org',
   address:
     process.env.NEXT_PUBLIC_COLLEGE_ADDRESS ??
     'JKKN College of Arts and Science, Natarajapuram, NH-544 (Salem-Coimbatore Highway), Komarapalayam, Namakkal (DT), Tamil Nadu 638183.',

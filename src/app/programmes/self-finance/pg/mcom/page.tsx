@@ -228,7 +228,7 @@ export default function MComPage() {
     },
     {
       question: "What is the average salary after M.Com?",
-      answer: "M.Com graduates typically command higher salaries than B.Com graduates. The average starting package ranges from ₹5-7 LPA for entry-level positions. With experience and additional certifications like CA, CFA, or CMA, professionals can earn ₹10-20 LPA or more. Senior roles like CFO and Finance Directors in large corporations can command packages exceeding ₹50 LPA."
+      answer: "M.Com graduates typically command higher salaries than B.Com graduates. With experience and additional certifications like CA, CFA, or CMA, professionals can earn ₹10-20 LPA or more. Senior roles like CFO and Finance Directors in large corporations can command packages exceeding ₹50 LPA."
     },
     {
       question: "Is dissertation/project mandatory in M.Com?",
@@ -291,8 +291,6 @@ export default function MComPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '12:1', title: 'Learners per Senior Learner', desc: 'Personalized mentoring' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Placement Record', desc: 'Premium opportunities' },
-              { icon: <Award className="w-7 h-7" />, stat: '₹7L', title: 'Average Package', desc: 'Competitive compensation' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">

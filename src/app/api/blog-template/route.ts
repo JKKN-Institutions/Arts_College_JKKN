@@ -129,9 +129,9 @@ export async function GET() {
           h2('Why Choose JKKN College of Arts and Science?'),
           p('1. Autonomous Institution — JKKN College of Arts and Science holds Autonomous status granted by UGC and Periyar University, allowing independent curriculum design aligned with industry needs.'),
           p('2. NAAC Accredited — The institution is NAAC accredited, ensuring quality education standards recognized across India.'),
-          p('3. Strong Placement Record — 90% placement rate with 60+ recruiting companies. Highest package: ₹12 LPA.'),
+          p('3. Strong Placement Record — 90% placement rate with 60+ recruiting companies.'),
           p('4. Modern Infrastructure — Well-equipped laboratories, digital library, sports facilities, and separate hostels for boys and girls.'),
-          p('5. Location Advantage — Situated on NH-544 at Komarapalayam, easily accessible from Salem (45 km), Erode (30 km), Namakkal (20 km), and Tiruchengode (15 km).'),
+          p('5. Location Advantage — Situated on NH-544 at Komarapalayam, easily accessible from Erode (22 km), Tiruchengode (20 km), Salem (about 58 km) and Namakkal (about 55-60 km).'),
           p(''),
 
           // ── Section 7 ──

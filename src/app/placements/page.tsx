@@ -5,7 +5,6 @@ import {
   Users,
   GraduationCap,
   Building2,
-  IndianRupee,
   Target,
   Award,
   Phone,
@@ -21,7 +20,7 @@ import { WebPageSchema } from "@/components/seo/WebPageSchema";
 export const metadata: Metadata = {
   title: "Placements 2025 — 90%+ Rate, 60+ Recruiters | JKKN Arts & Science",
   description:
-    "JKKN College of Arts and Science Komarapalayam placement 2024-25 — 90%+ placement rate, 60+ recruiters (TCS, Infosys, Wipro, CTS), highest package 12 LPA, average 3.2–4.5 LPA. Career training from Year 1.",
+    "JKKN College of Arts and Science Komarapalayam placement 2024-25 — 90%+ placement rate, 60+ recruiters (TCS, Infosys, Wipro, CTS). Career training from Year 1.",
   keywords: [
     "JKKN College placements",
     "arts and science college placements near Erode",
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Placements 2025 — 90%+ Rate, 60+ Recruiters | JKKN Arts & Science",
     description:
-      "90%+ placement rate, 60+ recruiters, highest package 12 LPA. Career guidance and campus recruitment at JKKN College of Arts and Science, Komarapalayam.",
+      "90%+ placement rate, 60+ recruiters. Career guidance and campus recruitment at JKKN College of Arts and Science, Komarapalayam.",
     url: "https://cas.jkkn.ac.in/placements",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -63,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Placements 2025 — 90%+ Rate, 60+ Recruiters | JKKN Arts & Science",
     description:
-      "90%+ placement rate, 60+ recruiters, highest package 12 LPA. Campus recruitment at JKKN CAS Komarapalayam.",
+      "90%+ placement rate, 60+ recruiters. Campus recruitment at JKKN CAS Komarapalayam.",
     images: ["https://cas.jkkn.ac.in/opengraph-image"],
   },
 };
@@ -83,7 +82,7 @@ const placementFAQs = [
   {
     question: "What is the highest and average salary package offered?",
     answer:
-      "The highest package offered is 12 LPA (domestic). The average salary package ranges from 3.2 to 4.5 LPA depending on the programme and specialization. International placements through JKKN group institutions offer packages up to 25 LPA.",
+      "Package figures are published by the Placement Cell for each batch. Contact the Placement Cell at +91 93458 55001 for the latest batch-wise salary data.",
   },
   {
     question: "Does JKKN College provide placement training?",
@@ -99,7 +98,7 @@ const placementFAQs = [
   {
     question: "Which departments have the best placement records?",
     answer:
-      "Computer Science, BCA, B.Sc. IT, BBA, MBA, and B.Com CA consistently achieve high placement rates. Science and arts departments also have strong placement records in education, research, government services, and competitive exam selections.",
+      "Computer Science, BCA, MCA, BBA, and B.Com CA consistently achieve high placement rates. Science and arts departments also have strong placement records in education, research, government services, and competitive exam selections.",
   },
 ];
 
@@ -115,18 +114,6 @@ const highlightStats = [
     value: "60+",
     label: "Recruiters",
     description: "Top companies visit campus",
-  },
-  {
-    icon: IndianRupee,
-    value: "12 LPA",
-    label: "Highest Package",
-    description: "Domestic placement",
-  },
-  {
-    icon: IndianRupee,
-    value: "3.2–4.5 LPA",
-    label: "Average Package",
-    description: "Across programmes",
   },
 ];
 
@@ -437,7 +424,7 @@ export default function PlacementsPage() {
                   "Education, Government Services, Media, Content Writing, Civil Services",
               },
               {
-                dept: "BBA & MBA",
+                dept: "BBA",
                 sectors:
                   "Marketing, HR, Operations, Retail Management, Supply Chain, Consulting",
               },

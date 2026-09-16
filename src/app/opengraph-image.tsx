@@ -99,7 +99,7 @@ export default function Image() {
             lineHeight: 1.4,
           }}
         >
-          27+ Programmes in Arts, Science & Commerce | Highest Package ₹12 LPA
+          35 Programmes in Arts, Science & Commerce | Affiliated to Periyar University
         </p>
 
         {/* Stats row */}
@@ -142,7 +142,7 @@ export default function Image() {
           />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <span style={{ color: "#ffde59", fontSize: "36px", fontWeight: 800 }}>
-              150+
+              121
             </span>
             <span style={{ color: "rgba(255,255,255,0.7)", fontSize: "14px", fontWeight: 500 }}>
               Faculty

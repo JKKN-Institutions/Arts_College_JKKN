@@ -30,10 +30,17 @@ export function CourseHero({ programme }: CourseHeroProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <div className="flex flex-wrap gap-2 mb-6">
-            <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold border border-white/90 text-gray-900">
-              <Calendar className="w-4 h-4 text-[#0b6d41]" />
-              Admissions Open 2026-27
-            </span>
+            {programme.proposed ? (
+              <span className="inline-flex items-center gap-2 bg-amber-100 px-4 py-1.5 rounded-full text-sm font-semibold border border-amber-300 text-amber-900">
+                <Calendar className="w-4 h-4" />
+                Proposed Programme — awaiting Periyar University approval
+              </span>
+            ) : (
+              <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold border border-white/90 text-gray-900">
+                <Calendar className="w-4 h-4 text-[#0b6d41]" />
+                Admissions Open 2026-27
+              </span>
+            )}
             <span className="inline-flex items-center gap-2 bg-[#0b6d41]/10 px-4 py-1.5 rounded-full text-sm font-semibold border border-[#0b6d41]/15 text-[#0b6d41]">
               <GraduationCap className="w-4 h-4" />
               {programme.category}

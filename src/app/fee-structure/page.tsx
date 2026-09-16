@@ -34,7 +34,6 @@ const feeStructure = [
       { name: "B.Sc. Comp. Sci. (Cyber Security)", mq: 32000 },
       { name: "B.Sc. Microbiology", mq: 34000 },
       { name: "B.Sc. Clinical Lab Technology", mq: 32000 },
-      { name: "B.Sc. Mathematics", mq: 26000 },
       { name: "B.Sc. Physics", mq: 25000 },
     ],
   },
@@ -42,6 +41,8 @@ const feeStructure = [
     category: "UG — Commerce & Management",
     programmes: [
       { name: "B.Com (CA)", mq: 34000 },
+      { name: "B.Com (Accounting & Finance)", mq: 34000 },
+      { name: "B.Com (Banking & Insurance)", mq: 34000 },
       { name: "B.C.A.", mq: 33000 },
       { name: "B.B.A.", mq: 25500 },
       { name: "B.Com (AI) *", mq: 34000 },
@@ -167,8 +168,7 @@ export default function FeeStructurePage() {
               <p className="text-sm text-gray-600 leading-relaxed">
                 <strong className="text-gray-800">Note:</strong> GQ — Government
                 Quota fees are As Per Govt Norms. MQ fees shown are annual fees
-                for the Management Quota category. Programmes marked with * are
-                newly added courses. For hostel charges, transport fees, and
+                for the Management Quota category. Programmes marked with * are proposed and awaiting approval from Periyar University; their fees are indicative and apply only once approval is granted. For hostel charges, transport fees, and
                 scholarship information, contact the admissions office at{" "}
                 <a
                   href="tel:+919345855001"
@@ -178,10 +178,10 @@ export default function FeeStructurePage() {
                 </a>{" "}
                 or{" "}
                 <a
-                  href="mailto:arts@jkkn.ac.in"
+                  href="mailto:arts@jkkn.org"
                   className="text-[#0b6d41] font-medium hover:underline"
                 >
-                  arts@jkkn.ac.in
+                  arts@jkkn.org
                 </a>
                 .
               </p>

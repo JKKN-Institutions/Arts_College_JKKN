@@ -121,8 +121,6 @@ export default function SFBAEnglishPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Placement Record', desc: 'Career opportunities assured' },
-              { icon: <Award className="w-7 h-7" />, stat: '₹3.5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">

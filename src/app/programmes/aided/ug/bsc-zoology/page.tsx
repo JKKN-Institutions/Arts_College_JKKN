@@ -122,7 +122,6 @@ export default function BScZoologyPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Microscope className="w-7 h-7" />, stat: 'Labs', title: 'Specialized Labs', desc: 'Advanced research facilities' },
-              { icon: <TrendingUp className="w-7 h-7" />, stat: 'Good', title: 'Placement Record', desc: 'Career opportunities assured' },
               { icon: <MapPin className="w-7 h-7" />, stat: 'Annual', title: 'Field Study Trips', desc: 'Wildlife sanctuary visits' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>

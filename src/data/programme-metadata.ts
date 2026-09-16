@@ -9,6 +9,8 @@ export interface ProgrammeInfo {
   keywords: string[];
   /** Flat slug used for /admissions/{slug} URLs — always suffixed with category */
   slug: string;
+  /** True while the programme is awaiting Periyar University approval — never shown as open, in stock or seat-sanctioned */
+  proposed?: boolean;
 }
 
 export const programmeMetadata: Record<string, ProgrammeInfo> = {
@@ -391,6 +393,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "FinTech degree Namakkal",
     ],
     slug: "bcom-ai-self-finance",
+    proposed: true,
   },
   "self-finance/ug/bsc-ai-ds": {
     name: "B.Sc. AI & Data Science",
@@ -458,6 +461,22 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     ],
     slug: "bsc-microbiology-self-finance",
   },
+  "self-finance/ug/bsc-clinical-lab-technology": {
+    name: "B.Sc. Clinical Lab Technology",
+    fullName: "Bachelor of Science in Clinical Laboratory Technology",
+    degree: "B.Sc.",
+    duration: "3 Years",
+    level: "UG",
+    category: "Self-Finance",
+    description:
+      "Study B.Sc. Clinical Laboratory Technology (Self-Finance) at JKKN College of Arts and Science (Autonomous), affiliated to Periyar University. 3-year undergraduate programme near Erode, Tamil Nadu.",
+    keywords: [
+      "BSc Clinical Lab Technology",
+      "BSc CLT college near Erode",
+      "clinical laboratory technology degree Tamil Nadu",
+    ],
+    slug: "bsc-clinical-lab-technology-self-finance",
+  },
   "self-finance/ug/bsc-physics": {
     name: "B.Sc. Physics (SF)",
     fullName: "Bachelor of Science in Physics",
@@ -506,6 +525,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "AI textile design Namakkal",
     ],
     slug: "bsc-textile-fashion-designing-ai-self-finance",
+    proposed: true,
   },
   "self-finance/ug/bsc-visual-communication": {
     name: "B.Sc. Visual Communication",
@@ -541,6 +561,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "AI creative course JKKN",
     ],
     slug: "bsc-visual-communication-ai-self-finance",
+    proposed: true,
   },
   // ── Self-Finance PG ──
   "self-finance/pg/ma-english": {

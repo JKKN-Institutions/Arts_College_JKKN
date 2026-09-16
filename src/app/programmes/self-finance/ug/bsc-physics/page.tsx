@@ -152,7 +152,6 @@ export default function BScPhysicsPage() {
               {[
                 { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
                 { icon: <FlaskConical className="w-7 h-7" />, stat: 'Modern', title: 'Physics Labs', desc: 'State-of-the-art facilities' },
-                { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Placement Record', desc: 'Career opportunities assured' },
                 { icon: <Atom className="w-7 h-7" />, stat: 'ISRO', title: 'Industry Connect', desc: 'Research collaborations' },
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>

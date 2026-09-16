@@ -22,7 +22,7 @@ const schemaFaqs = [
   {
     question: "What is JKKN College of Arts and Science?",
     answer:
-      "JKKN College of Arts and Science is an autonomous institution founded by J.K.K. Rangammal Charitable Trust, Komarapalayam in 1974, affiliated to Periyar University. It offers 27+ programmes in Arts, Science, and Commerce and is located on NH-544 (Salem–Coimbatore Highway), Komarapalayam, Namakkal, Tamil Nadu.",
+      "JKKN College of Arts and Science is an autonomous institution founded by J.K.K. Rangammal Charitable Trust, Komarapalayam in 1974, affiliated to Periyar University. It offers 35 programmes in Arts, Science, and Commerce and is located on NH-544 (Salem–Coimbatore Highway), Komarapalayam, Namakkal, Tamil Nadu.",
   },
   {
     question: "Is JKKN College of Arts and Science an autonomous institution?",
@@ -32,7 +32,7 @@ const schemaFaqs = [
   {
     question: "How many programmes does JKKN College of Arts and Science offer?",
     answer:
-      "The college offers 27+ programmes including UG, PG, and PhD levels across Arts, Science, and Commerce disciplines in both Government-Aided and Self-Finance streams.",
+      "The college offers 35 programmes including UG, PG, and PhD levels across Arts, Science, and Commerce disciplines in both Government-Aided and Self-Finance streams.",
   },
   {
     question: "What are the eligibility criteria for UG programmes?",

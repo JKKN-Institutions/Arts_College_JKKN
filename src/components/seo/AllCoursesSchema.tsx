@@ -39,12 +39,17 @@ export function AllCoursesSchema() {
       courseMode: "Full-time",
       courseWorkload: prog.duration,
     },
-    offers: {
-      "@type": "Offer",
-      category: prog.category,
-      availability: "https://schema.org/InStock",
-      url: "https://www.jkkn.ai/apply/jkkn-admission-2026",
-    },
+    // A proposed programme is awaiting university approval, so it carries no Offer.
+    ...(prog.proposed
+      ? {}
+      : {
+          offers: {
+            "@type": "Offer",
+            category: prog.category,
+            availability: "https://schema.org/InStock",
+            url: "https://www.jkkn.ai/apply/jkkn-admission-2026",
+          },
+        }),
   }));
 
   const schema = {

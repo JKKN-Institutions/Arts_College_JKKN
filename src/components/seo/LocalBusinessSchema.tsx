@@ -6,7 +6,7 @@ export function LocalBusinessSchema() {
     name: "JKKN College of Arts and Science",
     url: "https://cas.jkkn.ac.in",
     telephone: "+91-93458-55001",
-    email: "arts@jkkn.ac.in",
+    email: "arts@jkkn.org",
     image: "https://cas.jkkn.ac.in/opengraph-image",
     priceRange: "$$",
     address: {

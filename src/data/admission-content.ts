@@ -24,7 +24,12 @@ export interface AdmissionOverride {
 
 export const admissionOverrides: Record<string, AdmissionOverride> = {
   "self-finance/ug/bcom-ai": {
-    intakeSeats: 60,
+    applicationDeadline: "Subject to University Approval",
+    importantDates: [
+      { label: "Programme Status", date: "Proposed — awaiting university approval" },
+      { label: "Register Interest", date: "Open year-round" },
+      { label: "Expected Admissions Open", date: "After approval" },
+    ],
     eligibilityCriteria: [
       "Pass in Higher Secondary (10+2) from a recognized board",
       "Open to Commerce, Science, and Arts streams",
@@ -84,7 +89,6 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
   },
 
   "self-finance/ug/bsc-ai-ds": {
-    intakeSeats: 60,
     careers: [
       "AI Engineer / Junior ML Engineer",
       "Data Scientist Trainee",
@@ -113,7 +117,6 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
   },
 
   "self-finance/ug/bsc-cs-cyber-security": {
-    intakeSeats: 60,
     careers: [
       "Cyber Security Analyst (entry-level)",
       "SOC Analyst (Tier 1)",
@@ -140,8 +143,29 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
     ],
   },
 
+  "self-finance/ug/bsc-textile-fashion-designing-ai": {
+    applicationDeadline: "Subject to University Approval",
+    importantDates: [
+      { label: "Programme Status", date: "Proposed — awaiting university approval" },
+      { label: "Register Interest", date: "Open year-round" },
+      { label: "Expected Admissions Open", date: "After approval" },
+    ],
+    highlights: [
+      "Proposed programme — currently awaiting official approval from Periyar University",
+      "Affiliated to Periyar University, Salem",
+      "NAAC-accredited autonomous institution",
+      "Register your interest via the Contact page; admissions open only after approval",
+    ],
+    faq: [
+      {
+        question: "Is B.Sc. Textile and Fashion Designing (AI) approved?",
+        answer:
+          "This is a proposed programme currently awaiting official approval from the affiliating university. Admissions will open once approval is received. Register your interest via the Contact page and we will keep you informed.",
+      },
+    ],
+  },
+
   "self-finance/ug/bsc-visual-communication-ai": {
-    intakeSeats: 40,
     applicationDeadline: "Subject to University Approval",
     importantDates: [
       { label: "Programme Status", date: "Proposed — awaiting university approval" },

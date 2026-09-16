@@ -4,11 +4,11 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Our Institution",
-  description: "JKKN College of Arts and Science (Autonomous), affiliated to Periyar University. 27+ programmes in Arts, Science & Commerce near Erode, TN.",
+  description: "JKKN College of Arts and Science (Autonomous), affiliated to Periyar University. 35 programmes in Arts, Science & Commerce near Erode, TN.",
   alternates: { canonical: "https://cas.jkkn.ac.in/about/our-institution" },
   openGraph: {
     title: "Our Institution | JKKN Arts & Science",
-    description: "JKKN College of Arts and Science (Autonomous), affiliated to Periyar University. 27+ programmes in Arts, Science & Commerce near Erode, TN.",
+    description: "JKKN College of Arts and Science (Autonomous), affiliated to Periyar University. 35 programmes in Arts, Science & Commerce near Erode, TN.",
     url: "https://cas.jkkn.ac.in/about/our-institution",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -110,7 +110,7 @@ export default function OurInstitutionPage() {
           </h2>
 
           <p className="text-sm md:text-base leading-relaxed">
-            J.K.K. Rangammal Charitable Trust, Komarapalayam was founded by a Philanthropist, Kodaivallal J.K.K.Nataraja Chettiyar with an aim to provide quality education to the economically downtrodden rural women. Our renowned institution, J.K.K.Nataraja College of Arts and Science was started as Alamelu Angappan College for Women in 1974, with Love, Learn and Serve as its motto. The total area of the College is 15 acres and it is situated on the National Highways-544 between Salem and Coimbatore. Komarapalayam, being weavers' hub, the College was established for the benefit of the wards of weavers for promoting the literacy and to provide a better living condition. The College originated with learners numbering up to just 100 and with a handful of senior learners. It was started as a Government-Aided College and it grew with various Departments during the past four and a half decades. To cater to the growing demands of the society, our College was converted as a Co-Educational Institution in 2008. At present, the institution offers 15 Under Graduate programmes, 10 Post Graduate programmes, 6 M.Phil and 7 Ph.D programmes with learners' strength of 1,969. The ideals of our Founding Father are scrupulously followed by his daughter Smt.N.Sendamaraai, our Secretary, a person of eminent skills and untiring enthusiasm; following the foot prints of her father with noble aspirations, she steers us as a beacon light. She is strengthened by her young, energetic and enthusiastic son Mr.Ommsharravana, our Managing Director who, with his innovative ideas always extend his support in all our endeavours. The College is proud in declaring itself as a donation-free Institution which offers merit based admission to learners.
+            J.K.K. Rangammal Charitable Trust, Komarapalayam was founded by a Philanthropist, Kodaivallal J.K.K.Nataraja Chettiyar with an aim to provide quality education to the economically downtrodden rural women. Our renowned institution, J.K.K.Nataraja College of Arts and Science was started as Alamelu Angappan College for Women in 1974, with Love, Learn and Serve as its motto. The total area of the College is 15 acres and it is situated on the National Highways-544 between Salem and Coimbatore. Komarapalayam, being weavers' hub, the College was established for the benefit of the wards of weavers for promoting the literacy and to provide a better living condition. The College originated with learners numbering up to just 100 and with a handful of senior learners. It was started as a Government-Aided College and it grew with various Departments during the past five decades. To cater to the growing demands of the society, our College was converted as a Co-Educational Institution in 2008. At present, the institution offers 19 Under Graduate programmes, 12 Post Graduate programmes and 3 Ph.D programmes, with a learner strength of 1,685 (NIRF 2025 submission, AY 2023-24). The ideals of our Founding Father are scrupulously followed by his daughter Smt.N.Sendamaraai, our Secretary, a person of eminent skills and untiring enthusiasm; following the foot prints of her father with noble aspirations, she steers us as a beacon light. She is strengthened by her young, energetic and enthusiastic son Mr.Ommsharravana, our Managing Director who, with his innovative ideas always extend his support in all our endeavours. The College is proud in declaring itself as a donation-free Institution which offers merit based admission to learners.
           </p>
 
           <p className="text-sm md:text-base leading-relaxed">
@@ -126,7 +126,7 @@ export default function OurInstitutionPage() {
           </p>
 
           <p className="text-sm md:text-base leading-relaxed">
-            Our senior learners are endowed with high potential and academic excellence. We have thirty-nine Ph.D holders, twenty-five senior learners have cleared SET and NET Examinations. We take pride in presenting the fact that we have received a sum of Rs.23,20,000/- as grant towards Minor Research Projects from University Grants Commission. The teaching and administrative members are dedicated and offer their ultimate support to the upliftment of the learners through education, co-curricular and extra-curricular activities.
+            Our senior learners are endowed with high potential and academic excellence. We have fifty-two Ph.D holders (NIRF 2025 submission), twenty-five senior learners have cleared SET and NET Examinations. We take pride in presenting the fact that we have received a sum of Rs.23,20,000/- as grant towards Minor Research Projects from University Grants Commission. The teaching and administrative members are dedicated and offer their ultimate support to the upliftment of the learners through education, co-curricular and extra-curricular activities.
           </p>
 
           <p className="text-sm md:text-base leading-relaxed">

@@ -177,7 +177,6 @@ export default function BBAPage() {
               {[
                 { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited', desc: 'Quality assured education' },
                 { icon: <Rocket className="w-7 h-7" />, stat: 'MBA', title: 'Pathway Ready', desc: 'Direct MBA preparation' },
-                { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Placement Rate', desc: 'Top corporate recruiters' },
                 { icon: <CheckCircle2 className="w-7 h-7" />, stat: 'Industry', title: 'Internships', desc: 'Real-world experience' },
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
@@ -681,7 +680,7 @@ export default function BBAPage() {
                     { icon: <GraduationCap className="w-6 h-6" />, title: '70+ Years of Academic Excellence', description: 'Part of J.K.K. Nattraja Educational Institutions with proven legacy in progressive education since 1954.' },
                     { icon: <CheckCircle2 className="w-6 h-6" />, title: 'Industry-Integrated Learning Framework', description: 'Learning Framework designed in consultation with business leaders and corporate professionals for real-world relevance.' },
                     { icon: <Users className="w-6 h-6" />, title: 'Expert Senior Learners', description: 'Faculty with MBA qualifications and industry experience providing practical insights and mentorship.' },
-                    { icon: <TrendingUp className="w-6 h-6" />, title: 'Strong Placement Record', description: '90%+ placement with leading MNCs, startups, and corporate giants recruiting from campus annually.' },
+                    { icon: <TrendingUp className="w-6 h-6" />, title: 'Strong Placement Record', description: 'Leading MNCs, startups and corporates recruit from campus; batch-wise data is published by the Placement Cell.' },
                     { icon: <Award className="w-6 h-6" />, title: 'MBA Preparation Support', description: 'In-house coaching for CAT, MAT, XAT, and other MBA entrance exams with dedicated preparation programs.' },
                     { icon: <Briefcase className="w-6 h-6" />, title: 'Industry Internships', description: 'Mandatory internship program with leading companies providing hands-on business experience and networking opportunities.' }
                   ].map((reason, idx) => (

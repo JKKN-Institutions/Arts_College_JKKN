@@ -6,11 +6,11 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "JKKN Trust",
-  description: "Learn about the JKKN Educational Trust established in 1952. The trust manages 10 institutions including JKKN College of Arts and Science near Erode, Tamil Nadu.",
+  description: "Learn about the J.K.K. Rangammal Charitable Trust, registered in 1969 (Regd. No. 21). The trust manages 9 institutions including JKKN College of Arts and Science near Erode, Tamil Nadu.",
   alternates: { canonical: "https://cas.jkkn.ac.in/about/our-trust" },
   openGraph: {
     title: "JKKN Trust | JKKN Arts & Science",
-    description: "Learn about the JKKN Educational Trust established in 1952. The trust manages 10 institutions including JKKN College of Arts and Science near Erode, Tamil Nadu.",
+    description: "Learn about the J.K.K. Rangammal Charitable Trust, registered in 1969 (Regd. No. 21). The trust manages 9 institutions including JKKN College of Arts and Science near Erode, Tamil Nadu.",
     url: "https://cas.jkkn.ac.in/about/our-trust",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -36,7 +36,7 @@ export default function OurTrust() {
           {/* Page Title */}
           <div className="text-center mb-12 md:mb-16">
             <div className="inline-block mb-4">
-              <span className="text-brand-yellow text-xs font-bold tracking-widest uppercase">EST. 1952</span>
+              <span className="text-brand-yellow text-xs font-bold tracking-widest uppercase">REGD. 1969</span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
               OUR TRUST
@@ -90,8 +90,8 @@ export default function OurTrust() {
               <div className="w-12 h-12 bg-brand-yellow rounded-lg flex items-center justify-center mx-auto mb-3 md:mb-4">
                 <Calendar className="w-5 h-5 md:w-6 md:h-6 text-brand-green" />
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-brand-yellow mb-1 md:mb-2">1952</h3>
-              <p className="text-white/80 text-[10px] md:text-xs uppercase tracking-wide font-semibold">Year Established</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-brand-yellow mb-1 md:mb-2">1969</h3>
+              <p className="text-white/80 text-[10px] md:text-xs uppercase tracking-wide font-semibold">Trust Registered</p>
             </div>
 
             {/* Institutions */}
@@ -144,11 +144,11 @@ export default function OurTrust() {
               </p>
 
               <p>
-                The Trust, J.K.K. Rangammal Charitable Trust (Regd.) No.21 was established in 1969. With the motto of providing literacy and an emphasis on women's empowerment, it was named after the mother of Shri. N. Mahalingam, Managing Trustee. Shri. N. Sendamaraai, his daughter and daughter of Shri. N. Mahalingam, Managing Trustee, expanded the service by providing multidisciplinary education to both genders so that rural India could also be competitive with the rest of the country.
+                The Trust, J.K.K. Rangammal Charitable Trust (Regd.) No.21 was established in 1969. With the motto of providing literacy and an emphasis on women's empowerment, it was named after the mother of Shri. N. Mahalingam, Managing Trustee. Smt. N. Sendamaraai, daughter of Shri. J.K.K. Natarajah Chettiar and Managing Trustee, expanded the service by providing multidisciplinary education to both genders so that rural India could also be competitive with the rest of the country.
               </p>
 
               <p>
-                With each phase, with the support of like-minded people, under the umbrella of the Trust, now there are ten institutions, inclusive of Dental College, Pharmacy College, Nursing College, Diploma College, Engineering Colleges, and Arts and Science Colleges. Through these colleges, various health camps are also held in rural areas. Study tours to gain field experience in management and teaching fields are conducted.
+                With each phase, with the support of like-minded people, under the umbrella of the Trust, now there are nine institutions, inclusive of Dental College, Pharmacy College, Nursing College, Diploma College, Engineering Colleges, and Arts and Science Colleges. Through these colleges, various health camps are also held in rural areas. Study tours to gain field experience in management and teaching fields are conducted.
               </p>
             </div>
           </div>
@@ -278,10 +278,10 @@ export default function OurTrust() {
                   <span className="text-brand-green font-bold text-lg">3</span>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-brand-yellow mb-2">1995</h3>
-                  <h4 className="text-lg font-semibold text-white mb-2">College Expansion</h4>
+                  <h3 className="text-2xl font-bold text-brand-yellow mb-2">1974</h3>
+                  <h4 className="text-lg font-semibold text-white mb-2">Arts and Science College Founded</h4>
                   <p className="text-white/80 text-sm">
-                    Expanded to include Arts and Science College, providing multidisciplinary education
+                    Alamelu Angappan College for Women opened in 1974; it became co-educational in 2008
                   </p>
                 </div>
               </div>

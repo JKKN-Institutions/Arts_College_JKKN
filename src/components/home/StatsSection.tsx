@@ -6,25 +6,25 @@ import CountUp from '@/components/ui/CountUp';
 const stats = [
   {
     icon: GraduationCap,
-    end: 95,
+    end: 90,
     suffix: '%+',
     label: 'Placement Rate',
   },
   {
     icon: BookOpen,
-    end: 27,
-    suffix: '+',
+    end: 35,
+    suffix: '',
     label: 'UG, PG & PhD Programmes',
   },
   {
     icon: Users,
-    end: 1300,
-    suffix: '+',
+    end: 1685,
+    suffix: '',
     label: 'Learners',
   },
   {
     icon: Briefcase,
-    end: 50,
+    end: 60,
     suffix: '+',
     label: 'Top Recruiters',
   },

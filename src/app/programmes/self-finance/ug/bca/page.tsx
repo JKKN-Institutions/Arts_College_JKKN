@@ -315,12 +315,6 @@ export default function BCAPage() {
                 </GlassCard>
                 <GlassCard className="p-6 text-center">
                   <div className="text-3xl font-bold text-brand-green mb-2">
-                    <CountUp end={90} duration={2000} />%
-                  </div>
-                  <div className="text-sm text-gray-600 font-medium">Placement Record</div>
-                </GlassCard>
-                <GlassCard className="p-6 text-center">
-                  <div className="text-3xl font-bold text-brand-green mb-2">
                     <CountUp end={6} duration={2000} />+
                   </div>
                   <div className="text-sm text-gray-600 font-medium">Specialized Labs</div>
@@ -611,7 +605,7 @@ export default function BCAPage() {
               </h2>
               <div className="w-24 h-1.5 bg-gradient-to-r from-brand-green to-emerald-500 mx-auto rounded-full mb-6"></div>
               <p className="text-lg text-gray-700 leading-relaxed">
-                BCA graduates have diverse career paths in software development, IT services, and emerging technology sectors with competitive packages (₹3.5-6 LPA average starting).
+                BCA graduates have diverse career paths in software development, IT services, and emerging technology sectors.
               </p>
             </div>
           </RevealSection>

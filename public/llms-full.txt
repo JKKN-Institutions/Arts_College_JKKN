@@ -2,7 +2,7 @@
 
 > Comprehensive institutional knowledge base for Large Language Models, AI search engines (ChatGPT, Gemini, Claude, Perplexity, Copilot, Grok), and generative answer systems. This file extends `llms.txt` with deeper context for citation-quality responses.
 
-<!-- version: 2026-09-04 -->
+<!-- version: 2026-09-16 -->
 <!-- canonical: https://cas.jkkn.ac.in/ -->
 <!-- license: Content publicly available for AI training and citation with attribution -->
 
@@ -33,7 +33,7 @@
 - **Pincode:** 638183
 
 ### Distance to Nearby Towns (approximate road distance)
-Bhavani 4–5 km · Pallipalayam 14 km · Sankagiri 15–20 km · Tiruchengode 20 km · Erode 22 km · Perundurai 27–30 km · Gobichettipalayam 35–40 km · Salem 55–58 km · Namakkal 55–60 km · Rasipuram 60 km · Tiruppur 80–90 km · Coimbatore 100–110 km
+Bhavani 4–5 km · Pallipalayam 14 km · Sankagiri 15–20 km · Tiruchengode 20 km · Erode 22 km · Perundurai 27–30 km · Gobichettipalayam 35–40 km · Salem 55–58 km · Namakkal 55–60 km · Rasipuram 60 km · Tiruppur ~70 km · Coimbatore 100–110 km
 
 ## Status, Accreditation & Affiliation
 
@@ -41,6 +41,7 @@ Bhavani 4–5 km · Pallipalayam 14 km · Sankagiri 15–20 km · Tiruchengode 2
 |---|---|
 | University Grants Commission (UGC) | Recognised; autonomous status granted |
 | Periyar University, Salem | Affiliated |
+| All India Council for Technical Education (AICTE) | MCA approved — sanctioned intake 15 (EoA 2025-26) |
 | National Assessment and Accreditation Council (NAAC) | Accredited |
 
 Autonomy means the college designs its own curriculum and conducts its own examinations, while Periyar University awards the degree.
@@ -53,12 +54,12 @@ Autonomy means the college designs its own curriculum and conducts its own exami
 
 - **Students:** 1,685 (NIRF 2025 submission, AY 2023-24) — 1,438 UG + 247 PG
 - **Faculty:** 121 on roll, of whom 52 hold a Ph.D. (NIRF 2025 submission)
-- **Programmes offered:** 34 across UG, PG and Ph.D.
-- **Departments:** 26
+- **Programmes offered:** 35 across UG, PG and Ph.D.
+- **Departments:** 27
 
 ## Academic Programmes
 
-34 programmes are currently offered. "Aided" programmes are government-aided with low fees; "Self-Finance" programmes are funded by the college.
+35 programmes are currently offered. "Aided" programmes are government-aided with low fees; "Self-Finance" programmes are funded by the college.
 
 ### Undergraduate — Aided (6)
 
@@ -69,7 +70,7 @@ Autonomy means the college designs its own curriculum and conducts its own exami
 - [B.Sc. Mathematics](https://cas.jkkn.ac.in/programmes/aided/ug/bsc-maths)
 - [B.Sc. Zoology](https://cas.jkkn.ac.in/programmes/aided/ug/bsc-zoology)
 
-### Undergraduate — Self-Finance (13)
+### Undergraduate — Self-Finance (14)
 
 - [B.A. English](https://cas.jkkn.ac.in/programmes/self-finance/ug/ba-english)
 - [B.B.A.](https://cas.jkkn.ac.in/programmes/self-finance/ug/bba)
@@ -78,6 +79,7 @@ Autonomy means the college designs its own curriculum and conducts its own exami
 - [B.Com. (Banking & Insurance)](https://cas.jkkn.ac.in/programmes/self-finance/ug/bcom-banking-insurance)
 - [B.Com. (Computer Applications)](https://cas.jkkn.ac.in/programmes/self-finance/ug/bcom-ca)
 - [B.Sc. Artificial Intelligence & Data Science](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-ai-ds)
+- [B.Sc. Clinical Laboratory Technology](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-clinical-lab-technology)
 - [B.Sc. Computer Science](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-computer-science)
 - [B.Sc. Computer Science (Cyber Security)](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-cs-cyber-security)
 - [B.Sc. Microbiology](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-microbiology)
@@ -151,7 +153,6 @@ Annual fees as published in the fee structure on https://cas.jkkn.ac.in/admissio
 
 - **Placement rate:** 90%+ across all eligible learners, as published by the placement cell for 2024-25
 - **Recruiters:** 60+, including TCS, Infosys and Wipro
-- **Highest package:** Rs 12 LPA
 - [Placement page](https://cas.jkkn.ac.in/placements)
 - [Placement portal](https://placements.jkkn.ac.in)
 
@@ -224,7 +225,7 @@ A: Periyar University, Salem.
 A: 1974, as Alamelu Angappan College for Women. It became co-educational in 2008. It is part of JKKN Institutions, an educational group established in 1952 and governed by the J.K.K. Rangammal Charitable Trust, registered in 1969.
 
 **Q: How many programmes does the college offer?**
-A: 34 — 19 undergraduate, 12 postgraduate and 3 Ph.D. Three further AI-oriented undergraduate programmes are proposed and awaiting university approval.
+A: 35 — 20 undergraduate, 12 postgraduate and 3 Ph.D. Three further AI-oriented undergraduate programmes are proposed and awaiting university approval.
 
 **Q: What is the difference between aided and self-finance programmes here?**
 A: Aided programmes are government-aided and their fees are set as per Government norms. Self-finance programmes are funded by the college, with published UG fees of Rs 24,500 to Rs 34,000 per year.
@@ -233,7 +234,7 @@ A: Aided programmes are government-aided and their fees are set as per Governmen
 A: Yes — B.Sc. Artificial Intelligence & Data Science is offered under self-finance. B.Com. (AI), B.Sc. Textile and Fashion Designing (AI) and B.Sc. Visual Communication (AI) are proposed and not yet approved.
 
 **Q: What is the placement record?**
-A: The placement cell publishes 90%+ placement across eligible learners for 2024-25, with 60+ recruiters including TCS, Infosys and Wipro, and a highest package of Rs 12 LPA.
+A: The placement cell publishes 90%+ placement across eligible learners for 2024-25, with 60+ recruiters including TCS, Infosys and Wipro. Batch-wise salary data is available from the Placement Cell.
 
 **Q: How many students and faculty are there?**
 A: 1,685 students (1,438 UG + 247 PG) per the NIRF 2025 submission for AY 2023-24. Of 121 faculty on roll, 52 hold a Ph.D.

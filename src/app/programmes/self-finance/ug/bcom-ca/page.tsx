@@ -334,8 +334,6 @@ export default function BComCAPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Placement Record', desc: 'Career opportunities assured' },
-              { icon: <Award className="w-7 h-7" />, stat: '₹4.5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">
@@ -363,12 +361,6 @@ export default function BComCAPage() {
                     <CountUp end={70} duration={2000} />+
                   </div>
                   <div className="text-sm text-gray-600 font-medium">Years of Excellence</div>
-                </GlassCard>
-                <GlassCard className="p-6 text-center">
-                  <div className="text-3xl font-bold text-brand-green mb-2">
-                    <CountUp end={90} duration={2000} />%
-                  </div>
-                  <div className="text-sm text-gray-600 font-medium">Placement Record</div>
                 </GlassCard>
                 <GlassCard className="p-6 text-center">
                   <div className="text-3xl font-bold text-brand-green mb-2">CA/CMA</div>

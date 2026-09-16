@@ -123,7 +123,6 @@ export default function MScChemistryPage() {
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'UGC', title: 'Recognized Programme', desc: 'Quality postgraduate education' },
               { icon: <Microscope className="w-7 h-7" />, stat: '10:1', title: 'Learners per Senior Learner', desc: 'Personalized research guidance' },
               { icon: <Award className="w-7 h-7" />, stat: 'Good', title: 'Research Placement', desc: 'Industry & academic positions' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '₹5.5L', title: 'Average Package', desc: 'Competitive starting salary' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">

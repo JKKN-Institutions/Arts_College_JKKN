@@ -4,16 +4,17 @@ export function OrganizationSchema() {
     "@type": "CollegeOrUniversity",
     "@id": "https://cas.jkkn.ac.in/#organization",
     name: "JKKN College of Arts and Science",
+    legalName: "J.K.K Nataraja College of Arts & Science",
     alternateName: ["CAS JKKN", "JKKN Arts and Science College", "J.K.K.Nataraja College of Arts and Science"],
     url: "https://cas.jkkn.ac.in",
     logo: "https://cas.jkkn.ac.in/logo.svg",
     image: "https://cas.jkkn.ac.in/opengraph-image",
     description:
-      "JKKN College of Arts and Science is an autonomous institution affiliated to Periyar University, offering 27+ undergraduate, postgraduate and doctoral programmes in Arts, Science and Commerce near Erode, Tamil Nadu. Founded in 1974 as part of J.K.K. Nattraja Educational Institutions (est. 1952), the college serves 1,300+ students across a 15-acre campus on NH-544.",
+      "JKKN College of Arts and Science is an autonomous institution affiliated to Periyar University, offering 35 undergraduate, postgraduate and doctoral programmes in Arts, Science and Commerce near Erode, Tamil Nadu. Founded in 1974 as part of J.K.K. Nattraja Educational Institutions (est. 1952), the college serves 1,685 students (NIRF 2025 submission, AY 2023-24) across a 15-acre campus on NH-544.",
     foundingDate: "1974",
     telephone: "+91-93458-55001",
-    email: "arts@jkkn.ac.in",
-    numberOfStudents: 1300,
+    email: "arts@jkkn.org",
+    numberOfStudents: 1685,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Natarajapuram, NH-544 (Salem-Coimbatore Highway)",
@@ -91,9 +92,9 @@ export function OrganizationSchema() {
       "@type": "OfferCatalog",
       name: "Academic Programmes 2026-27",
       itemListElement: [
-        { "@type": "OfferCatalog", name: "Undergraduate Programmes (UG)", numberOfItems: 18 },
-        { "@type": "OfferCatalog", name: "Postgraduate Programmes (PG)", numberOfItems: 7 },
-        { "@type": "OfferCatalog", name: "Doctoral Programmes (PhD)", numberOfItems: 2 },
+        { "@type": "OfferCatalog", name: "Undergraduate Programmes (UG)", numberOfItems: 20 },
+        { "@type": "OfferCatalog", name: "Postgraduate Programmes (PG)", numberOfItems: 12 },
+        { "@type": "OfferCatalog", name: "Doctoral Programmes (PhD)", numberOfItems: 3 },
       ],
     },
     knowsAbout: [
@@ -110,10 +111,10 @@ export function OrganizationSchema() {
     ],
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.3",
+      ratingValue: "4.8",
       bestRating: "5",
-      ratingCount: "76",
-      reviewCount: "76",
+      ratingCount: "517",
+      reviewCount: "517",
     },
     speakable: {
       "@type": "SpeakableSpecification",

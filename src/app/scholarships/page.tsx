@@ -221,10 +221,10 @@ export default function ScholarshipsPage() {
                 </a>{" "}
                 or{" "}
                 <a
-                  href="mailto:arts@jkkn.ac.in"
+                  href="mailto:arts@jkkn.org"
                   className="text-[#0b6d41] font-medium hover:underline"
                 >
-                  arts@jkkn.ac.in
+                  arts@jkkn.org
                 </a>
                 .
               </p>

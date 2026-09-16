@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     absolute: 'JKKN College of Arts and Science (Autonomous), Komarapalayam',
   },
   description:
-    'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited, Periyar University. 27+ UG, PG & PhD programmes, 90% placement. Apply 2026-27.',
+    'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited, Periyar University. 35 UG, PG & PhD programmes, 90% placement. Apply 2026-27.',
   keywords: [
     'best arts and science college in Tamil Nadu',
     'JKKN College of Arts and Science',
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'JKKN College of Arts and Science (Autonomous), Komarapalayam',
     description:
-      'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited, Periyar University. 27+ UG, PG & PhD programmes, 90% placement. Apply 2026-27.',
+      'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited, Periyar University. 35 UG, PG & PhD programmes, 90% placement. Apply 2026-27.',
     url: 'https://cas.jkkn.ac.in',
     siteName: 'JKKN College of Arts and Science',
     type: 'website',
@@ -81,17 +81,17 @@ const homepageFAQs = [
   {
     question: "Why is JKKN considered the best arts and science college in Tamil Nadu?",
     answer:
-      "JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation, UGC-recognized autonomous status, 90% placement rate with a highest package of ₹12 LPA, and industry partnerships with 60+ recruiters including TCS, Infosys, and Wipro. The college offers 27+ programmes with AI/IoT labs and in-built internship pathways.",
+      "JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation, UGC-recognized autonomous status, 90% placement rate and industry partnerships with 60+ recruiters including TCS, Infosys, and Wipro. The college offers 35 programmes with AI/IoT labs and in-built internship pathways.",
   },
   {
     question: "What makes JKKN different from other arts and science colleges in Tamil Nadu?",
     answer:
-      "Unlike many arts and science colleges in Tamil Nadu, JKKN offers an industry-integrated curriculum with collaborations from NASSCOM, CII, and leading MNCs. Students benefit from dedicated AI and IoT research labs, 150+ PhD-qualified faculty, and a training and placement cell that delivers measurable outcomes — 90% placement and career opportunities across India and abroad.",
+      "Unlike many arts and science colleges in Tamil Nadu, JKKN offers an industry-integrated curriculum with collaborations from NASSCOM, CII, and leading MNCs. Students benefit from dedicated AI and IoT research labs, 121 faculty on roll (52 with a PhD, NIRF 2025), and a training and placement cell that delivers measurable outcomes — 90% placement and career opportunities across India and abroad.",
   },
   {
     question: "What programmes does JKKN Arts and Science College offer in Tamil Nadu?",
     answer:
-      "JKKN College offers 27+ programmes including B.Sc Computer Science, BCA, B.Sc AI & Data Science, B.Com, BBA, B.Sc Cyber Security, B.Sc Visual Communication, B.Sc Microbiology, and more. Postgraduate options include M.Sc Computer Science, M.Com, and MA English. All programmes are affiliated to Periyar University and designed for career readiness.",
+      "JKKN College offers 35 programmes including B.Sc Computer Science, BCA, B.Sc AI & Data Science, B.Com, BBA, B.Sc Cyber Security, B.Sc Visual Communication, B.Sc Microbiology, and more. Postgraduate options include M.Sc Computer Science, M.Com, and MA English. All programmes are affiliated to Periyar University and designed for career readiness.",
   },
   {
     question: "What are the admission requirements for undergraduate programs?",
@@ -121,7 +121,7 @@ const homepageFAQs = [
   {
     question: "What are the fees at JKKN College of Arts and Science?",
     answer:
-      "JKKN College offers affordable education with fees varying by programme and type. Aided programme fees are government-regulated and among the lowest in Tamil Nadu. Self-finance programme fees are competitive, starting from approximately ₹15,000–₹45,000 per year depending on the course. Contact the admissions office at +91-93458-55001 for the latest fee structure.",
+      "JKKN College offers affordable education with fees varying by programme and type. Aided programme fees are government-regulated and among the lowest in Tamil Nadu. Self-finance programme fees are competitive, from ₹24,500 to ₹34,000 per year for 2026-27 depending on the course. Contact the admissions office at +91-93458-55001 for the latest fee structure.",
   },
   {
     question: "What is the cut-off for admission to JKKN College?",
@@ -131,7 +131,7 @@ const homepageFAQs = [
   {
     question: "How does JKKN compare to other arts and science colleges in Tamil Nadu?",
     answer:
-      "JKKN stands out with its autonomous status (UGC-recognized), NAAC accreditation, 90% placement rate, and ₹12 LPA highest package — metrics that match or exceed many top-ranked colleges. Unlike most arts colleges, JKKN offers AI/IoT research labs, NASSCOM and CII industry partnerships, and 27+ programmes. The 74+ year institutional legacy and 60+ recruiting companies further distinguish JKKN from peers.",
+      "JKKN stands out with its autonomous status (UGC-recognized), NAAC accreditation, 90% placement rate — metrics that match or exceed many top-ranked colleges. Unlike most arts colleges, JKKN offers AI/IoT research labs, NASSCOM and CII industry partnerships, and 34 programmes. The 74+ year institutional legacy and 60+ recruiting companies further distinguish JKKN from peers.",
   },
   {
     question: "What are the career options after completing a degree from JKKN?",
@@ -151,7 +151,7 @@ const homepageFAQs = [
   {
     question: "What is JKKN College's placement record and highest package?",
     answer:
-      "JKKN College maintains a consistent 90% placement rate across all programmes. The highest package offered is ₹12 LPA, with an average package of ₹3.2–4.5 LPA. Over 60 companies recruit from campus annually, including TCS, Infosys, Wipro, Foxconn, TVS, and Sakthi Group. The dedicated Training and Placement Cell provides aptitude training, mock interviews, and industry certifications year-round.",
+      "JKKN College maintains a consistent 90% placement rate across all programmes. Over 60 companies recruit from campus annually, including TCS, Infosys, Wipro, Foxconn, TVS, and Sakthi Group. The dedicated Training and Placement Cell provides aptitude training, mock interviews, and industry certifications year-round.",
   },
   {
     question: "Which top companies recruit from JKKN College?",
@@ -166,7 +166,7 @@ const homepageFAQs = [
   {
     question: "Does JKKN College offer distance education or online programmes?",
     answer:
-      "JKKN College currently focuses on full-time, on-campus programmes across 27+ UG, PG, and doctoral courses. The college does not offer distance education at present. However, students have access to NPTEL online courses, digital library resources, and SWAYAM platform integration as supplementary learning. For full-time programme details, visit the admissions portal or contact +91-93458-55001.",
+      "JKKN College currently focuses on full-time, on-campus programmes across 35 UG, PG, and doctoral courses. The college does not offer distance education at present. However, students have access to NPTEL online courses, digital library resources, and SWAYAM platform integration as supplementary learning. For full-time programme details, visit the admissions portal or contact +91-93458-55001.",
   },
 ];
 
@@ -183,7 +183,7 @@ export default function Home() {
         name="How to Apply for Admission at JKKN College of Arts and Science"
         description="Step-by-step guide to apply for UG, PG, and PhD programmes at JKKN College of Arts and Science, Komarapalayam, Tamil Nadu."
         steps={[
-          { name: "Choose Your Program", text: "Browse 27+ UG, PG, and PhD programmes across Science, Commerce, IT, and Management streams. Check eligibility criteria and course details on the programmes page." },
+          { name: "Choose Your Program", text: "Browse 34 UG, PG, and PhD programmes across Science, Commerce, IT, and Management streams. Check eligibility criteria and course details on the programmes page." },
           { name: "Apply Online", text: "Fill out the online admission form at jkkn.ai/apply/jkkn-admission-2026 with your personal details, academic records, and preferred programme. Upload required documents." },
           { name: "Get Admitted", text: "Receive your admission confirmation via email and SMS. Pay the admission fee online or at the campus office to secure your seat." },
           { name: "Start Learning", text: "Attend the orientation programme, collect your ID card, and begin classes at the JKKN campus on NH-544, Komarapalayam." },
@@ -193,19 +193,19 @@ export default function Home() {
         name="Top Programmes at JKKN College of Arts and Science"
         description="Most popular UG, PG, and PhD programmes offered at JKKN College, an autonomous institution affiliated to Periyar University, Tamil Nadu."
         items={[
-          { name: "B.Sc Computer Science", url: "https://cas.jkkn.ac.in/programmes/bsc-computer-science", description: "3-year UG programme in computer science with AI, ML, and cloud computing modules" },
-          { name: "BCA (Bachelor of Computer Applications)", url: "https://cas.jkkn.ac.in/programmes/bca", description: "3-year UG programme in computer applications with industry-integrated curriculum" },
-          { name: "B.Com (Bachelor of Commerce)", url: "https://cas.jkkn.ac.in/programmes/bcom", description: "3-year aided UG programme in commerce with accounting, finance, and taxation" },
-          { name: "B.Sc Data Analytics", url: "https://cas.jkkn.ac.in/programmes/bsc-data-analytics", description: "3-year UG programme in data analytics with Python, R, and big data tools" },
-          { name: "B.Sc Artificial Intelligence", url: "https://cas.jkkn.ac.in/programmes/bsc-artificial-intelligence", description: "3-year UG programme in AI with deep learning, NLP, and computer vision" },
-          { name: "B.Sc Visual Communication", url: "https://cas.jkkn.ac.in/programmes/bsc-visual-communication", description: "3-year UG programme in visual communication with graphic design, film making, and photography" },
-          { name: "M.Sc Computer Science", url: "https://cas.jkkn.ac.in/programmes/msc-computer-science", description: "2-year PG programme in computer science with advanced algorithms and research" },
-          { name: "MBA (Master of Business Administration)", url: "https://cas.jkkn.ac.in/programmes/mba", description: "2-year PG programme in business administration with specializations in HR, Finance, and Marketing" },
+          { name: "B.Sc Computer Science", url: "https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-computer-science", description: "3-year self-finance UG programme in computer science" },
+          { name: "BCA (Bachelor of Computer Applications)", url: "https://cas.jkkn.ac.in/programmes/self-finance/ug/bca", description: "3-year self-finance UG programme in computer applications" },
+          { name: "B.Com (Bachelor of Commerce)", url: "https://cas.jkkn.ac.in/programmes/aided/ug/bcom", description: "3-year aided UG programme in commerce with accounting, finance, and taxation" },
+          { name: "B.Sc Artificial Intelligence & Data Science", url: "https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-ai-ds", description: "3-year self-finance UG programme in AI and data science" },
+          { name: "B.Sc Computer Science (Cyber Security)", url: "https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-cs-cyber-security", description: "3-year self-finance UG programme in computer science with cyber security" },
+          { name: "B.Sc Visual Communication", url: "https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-visual-communication", description: "3-year self-finance UG programme in visual communication" },
+          { name: "M.Sc Computer Science", url: "https://cas.jkkn.ac.in/programmes/aided/pg/msc-computer-science", description: "2-year aided PG programme in computer science" },
+          { name: "BBA (Bachelor of Business Administration)", url: "https://cas.jkkn.ac.in/programmes/self-finance/ug/bba", description: "3-year self-finance UG programme in business administration" },
         ]}
       />
       <WebPageSchema
         name="Best Arts and Science College in Tamil Nadu — JKKN College (Autonomous)"
-        description="JKKN College of Arts and Science is the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited, 90% placement rate, 27+ UG, PG & PhD programmes near Erode."
+        description="JKKN College of Arts and Science is the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited, 90% placement rate, 35 UG, PG & PhD programmes near Erode."
         url="https://cas.jkkn.ac.in"
         lastReviewed="2026-03-28"
         speakable={["h1", ".hero-description", "[data-speakable]"]}
@@ -213,7 +213,7 @@ export default function Home() {
       <Suspense fallback={null}><ScrollToSection /></Suspense>
       {/* Screen-reader overview for voice assistants and AI crawlers */}
       <p className="sr-only">
-        JKKN College of Arts and Science is an autonomous, NAAC-accredited institution located on NH-544 in Komarapalayam, near Erode, Tamil Nadu. Affiliated to Periyar University and part of J.K.K. Nattraja Educational Institutions established in 1952, the college offers 27+ UG, PG, and PhD programmes across Science, Commerce, IT, and Management. With a 90% placement rate, highest package of ₹12 LPA, 60+ recruiters including TCS, Infosys, and Wipro, and 1,300+ students on a 15-acre campus, JKKN is widely regarded as one of the best arts and science colleges in Tamil Nadu.
+        JKKN College of Arts and Science is an autonomous, NAAC-accredited institution located on NH-544 in Komarapalayam, near Erode, Tamil Nadu. Affiliated to Periyar University and part of J.K.K. Nattraja Educational Institutions established in 1952, the college offers 34 UG, PG, and PhD programmes across Science, Commerce, IT, and Management. With a 90% placement rate, 60+ recruiters including TCS, Infosys, and Wipro, and 1,685 students on a 15-acre campus, JKKN is widely regarded as one of the best arts and science colleges in Tamil Nadu.
       </p>
       {/* Hero Section - Fits exactly one screen */}
       <HeroSection />
@@ -240,13 +240,13 @@ export default function Home() {
               {/* Description Paragraphs - keyword-rich with local landmarks */}
               <div className="space-y-4 text-[14px] sm:text-[18px] lg:text-[20px] leading-[20px] sm:leading-[29.25px] lg:leading-[28px] text-black font-normal">
                 <p>
-                  Located on <strong>NH-544 (Salem–Coimbatore Highway)</strong> in Komarapalayam, just 22 km from Erode and 15 km from Tiruchengode, JKKN College of Arts and Science is one of the most accessible and well-connected arts and science colleges in Tamil Nadu. The 15-acre campus serves learners from Erode, Salem, Namakkal, Tiruchengode, Coimbatore, and Tiruppur districts.
+                  Located on <strong>NH-544 (Salem–Coimbatore Highway)</strong> in Komarapalayam, just 22 km from Erode and 20 km from Tiruchengode, JKKN College of Arts and Science is one of the most accessible and well-connected arts and science colleges in Tamil Nadu. The 15-acre campus serves learners from Erode, Salem, Namakkal, Tiruchengode, Coimbatore, and Tiruppur districts.
                 </p>
                 <p>
                   Established in 1974 as part of <strong>J.K.K. Nattraja Educational Institutions</strong> (est. 1952), JKKN blends 74+ years of academic heritage with a modern, industry-integrated learning framework. Our NAAC accreditation and UGC-recognized autonomous status empower us to design programmes aligned with current industry demands.
                 </p>
                 <p>
-                  With 150+ PhD-qualified Senior Learners, AI and IoT research labs, partnerships with NASSCOM and CII, and a 90% placement track record, we prepare Learners not just for jobs — but for successful careers across India and abroad.
+                  With 121 Senior Learners, 52 of them PhD-qualified, AI and IoT research labs, partnerships with NASSCOM and CII, and a 90% placement track record, we prepare Learners not just for jobs — but for successful careers across India and abroad.
                 </p>
               </div>
 
@@ -257,7 +257,7 @@ export default function Home() {
                     <BookOpen className="h-5 w-5 text-[#0b6d41]" />
                   </div>
                   <div>
-                    <div className="font-bold text-black text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] mb-0.5">27+ Programmes</div>
+                    <div className="font-bold text-black text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] mb-0.5">35 Programmes</div>
                     <div className="text-[12px] sm:text-[14px] leading-[16px] sm:leading-[20px] text-black/60">Science, Commerce, IT &amp; Management</div>
                   </div>
                 </div>
@@ -266,7 +266,7 @@ export default function Home() {
                     <Users className="h-5 w-5 text-[#0b6d41]" />
                   </div>
                   <div>
-                    <div className="font-bold text-black text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] mb-0.5">150+ Senior Learners</div>
+                    <div className="font-bold text-black text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] mb-0.5">121 Senior Learners</div>
                     <div className="text-[12px] sm:text-[14px] leading-[16px] sm:leading-[20px] text-black/60">PhD &amp; Industry Experts</div>
                   </div>
                 </div>
@@ -285,7 +285,7 @@ export default function Home() {
                   </div>
                   <div>
                     <div className="font-bold text-black text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] mb-0.5">Global Alumni</div>
-                    <div className="text-[12px] sm:text-[14px] leading-[16px] sm:leading-[20px] text-black/60">25,000+ Successful Graduates</div>
+                    <div className="text-[12px] sm:text-[14px] leading-[16px] sm:leading-[20px] text-black/60">Alumni across India and abroad</div>
                   </div>
                 </div>
               </div>
@@ -327,18 +327,18 @@ export default function Home() {
           <div className="max-w-4xl mx-auto space-y-6 text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] text-gray-700">
             {/* Snippet definition paragraph — optimized for Google Featured Snippet */}
             <p>
-              <strong>JKKN College of Arts and Science</strong> is widely recognized as one of the best arts and science colleges in Tamil Nadu. With 74+ years of academic heritage, NAAC accreditation, UGC-recognized autonomous status, and a 90% placement rate reaching ₹18 LPA, JKKN offers 27+ industry-aligned programmes near Erode on the Salem–Coimbatore Highway.
+              <strong>JKKN College of Arts and Science</strong> is widely recognized as one of the best arts and science colleges in Tamil Nadu. With five decades of academic heritage, NAAC accreditation, UGC-recognized autonomous status, and a 90% placement rate, JKKN offers 35 industry-aligned programmes near Erode on the Salem–Coimbatore Highway.
             </p>
 
             {/* Numbered list — optimized for Google List Snippet */}
             <div>
               <p className="font-semibold text-gray-900 mb-3">Top 7 Reasons JKKN Is Tamil Nadu&apos;s Best Arts and Science College:</p>
               <ol className="list-decimal list-inside space-y-2 text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] text-gray-700 pl-2">
-                <li>74+ Years of Academic Heritage (Est. 1952)</li>
+                <li>College established 1974 — part of JKKN Institutions (Est. 1952)</li>
                 <li>Autonomous Status — UGC Recognized</li>
                 <li>NAAC Accredited Institution</li>
-                <li>90% Placement Rate — Highest Package ₹12 LPA</li>
-                <li>27+ UG, PG &amp; PhD Programmes</li>
+                <li>90% Placement Rate</li>
+                <li>35 UG, PG &amp; PhD Programmes</li>
                 <li>AI/IoT Learning Labs + NASSCOM &amp; CII Industry Partnerships</li>
                 <li>60+ Recruiters Including TCS, Infosys, Wipro</li>
               </ol>
@@ -348,24 +348,24 @@ export default function Home() {
               With over seven decades of academic heritage, JKKN College of Arts and Science has earned its reputation as one of the <strong>best arts and science colleges in Tamil Nadu</strong>. Located on the Salem–Coimbatore Highway in Komarapalayam, the college combines the strength of a well-established institution with a forward-looking, industry-aligned learning framework that prepares learners for real-world careers.
             </p>
             <p>
-              What sets JKKN apart from other arts and science colleges in Tamil Nadu is the focus on measurable outcomes. A <strong>90% placement rate</strong>, a highest package of <strong>₹18 LPA</strong>, and partnerships with 60+ recruiters — including TCS, Infosys, Wipro, and Foxconn — demonstrate that academic quality here translates directly into career success. Learners from across Tamil Nadu, Kerala, and Karnataka choose JKKN for this proven track record.
+              What sets JKKN apart from other arts and science colleges in Tamil Nadu is the focus on measurable outcomes. A <strong>90% placement rate</strong>, and partnerships with 60+ recruiters — including TCS, Infosys, Wipro, and Foxconn — demonstrate that academic quality here translates directly into career success. Learners from across Tamil Nadu, Kerala, and Karnataka choose JKKN for this proven track record.
             </p>
             <p>
-              The college offers 27+ UG, PG, and doctoral programmes across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research learning labs, NASSCOM and CII collaborations, and in-built internship pathways make JKKN a <strong>top arts college near Erode</strong> for learners seeking future-ready education in Tamil Nadu.
+              The college offers 35 UG, PG, and doctoral programmes across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research learning labs, NASSCOM and CII collaborations, and in-built internship pathways make JKKN a <strong>top arts college near Erode</strong> for learners seeking future-ready education in Tamil Nadu.
             </p>
 
             {/* Key Differentiators Grid */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
               <div className="bg-green-50 border border-green-200 rounded-xl p-5 text-center">
                 <div className="text-[24px] font-bold text-[#0b6d41] mb-1">74+</div>
-                <div className="text-[14px] text-gray-600">Years of Legacy (Est. 1952)</div>
+                <div className="text-[14px] text-gray-600">Years of Group Legacy (Est. 1952)</div>
               </div>
               <div className="bg-green-50 border border-green-200 rounded-xl p-5 text-center">
                 <div className="text-[24px] font-bold text-[#0b6d41] mb-1">Autonomous</div>
                 <div className="text-[14px] text-gray-600">UGC Recognized &amp; NAAC Accredited</div>
               </div>
               <div className="bg-green-50 border border-green-200 rounded-xl p-5 text-center">
-                <div className="text-[24px] font-bold text-[#0b6d41] mb-1">27+</div>
+                <div className="text-[24px] font-bold text-[#0b6d41] mb-1">35</div>
                 <div className="text-[14px] text-gray-600">Programmes in Arts, Science &amp; Commerce</div>
               </div>
             </div>
@@ -415,12 +415,12 @@ export default function Home() {
                 </tr>
                 <tr className="bg-gray-50 border-b border-gray-100">
                   <td className="px-4 py-3 font-medium">Highest Package</td>
-                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">₹18 LPA</td>
+                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">Published by the placement cell</td>
                   <td className="px-4 py-3 text-gray-500">₹3–5 LPA</td>
                 </tr>
                 <tr className="bg-white border-b border-gray-100">
                   <td className="px-4 py-3 font-medium">Programmes Offered</td>
-                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">27+ (UG, PG, PhD)</td>
+                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">35 (UG, PG, PhD)</td>
                   <td className="px-4 py-3 text-gray-500">8–15</td>
                 </tr>
                 <tr className="bg-gray-50 border-b border-gray-100">
@@ -435,7 +435,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="px-4 py-3 font-medium rounded-bl-lg">Institutional Legacy</td>
-                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">74+ Years (Est. 1952)</td>
+                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">College 1974 · Group 1952</td>
                   <td className="px-4 py-3 text-gray-500 rounded-br-lg">10–30 Years</td>
                 </tr>
               </tbody>
@@ -520,7 +520,7 @@ export default function Home() {
               </div>
               <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Expert Senior Learners</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                150+ experienced Senior Learners with PhD qualifications and industry experience
+                121 Senior Learners on roll, 52 with a PhD (NIRF 2025 submission)
               </p>
             </div>
 
@@ -542,7 +542,7 @@ export default function Home() {
               </div>
               <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Digital Learning Commons</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                5,000+ books, e-journals, NPTEL courses, and online learning resources accessible 24/7
+                27,000+ books, e-journals, NPTEL courses, and online learning resources accessible 24/7
               </p>
             </div>
 
@@ -561,7 +561,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 border-2 border-yellow-300 rounded-xl p-6 text-center hover:shadow-lg transition md:col-span-2 lg:col-span-4">
               <div className="text-[14px] font-semibold text-[#0b6d41] uppercase tracking-wide mb-2">Did You Know?</div>
               <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] text-gray-800 max-w-3xl mx-auto">
-                JKKN College of Arts and Science is part of <strong>J.K.K. Nattraja Educational Institutions</strong>, one of the oldest educational groups in Tamil Nadu with a <strong>74+ year legacy since 1952</strong>. The group operates 8 colleges and 2 schools — including Dental, Pharmacy, Nursing, Engineering, and Allied Health Sciences — all on a single integrated campus on NH-544.
+                JKKN College of Arts and Science is part of <strong>J.K.K. Nattraja Educational Institutions</strong>, one of the oldest educational groups in Tamil Nadu with a <strong>74+ year legacy since 1952</strong>. The group operates 7 colleges and 2 schools — including Dental, Pharmacy, Nursing, Engineering, and Allied Health Sciences — all on a single integrated campus on NH-544.
               </p>
             </div>
           </div>
@@ -595,21 +595,21 @@ export default function Home() {
               <div className="text-[14px] leading-[20px] font-medium text-gray-600">Placement Rate</div>
             </div>
 
-            {/* Stat 2: Highest Package */}
+            {/* Stat 2: Programmes (34 = 19 UG + 12 PG + 3 PhD) */}
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
-              <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">₹18 LPA</div>
-              <div className="text-[14px] leading-[20px] font-medium text-gray-600">Highest Package</div>
+              <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">35</div>
+              <div className="text-[14px] leading-[20px] font-medium text-gray-600">UG, PG &amp; PhD Programmes</div>
             </div>
 
-            {/* Stat 3: Average Package */}
+            {/* Stat 3: Learners (NIRF 2025 submission, AY 2023-24) */}
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
-              <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">₹4.5 LPA</div>
-              <div className="text-[14px] leading-[20px] font-medium text-gray-600">Average Package</div>
+              <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">1,685</div>
+              <div className="text-[14px] leading-[20px] font-medium text-gray-600">Learners</div>
             </div>
 
             {/* Stat 4: Recruiters */}
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
-              <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">50+</div>
+              <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">60+</div>
               <div className="text-[14px] leading-[20px] font-medium text-gray-600">Recruiters</div>
             </div>
           </div>
@@ -691,7 +691,7 @@ export default function Home() {
             {/* Aided UG */}
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
               <div className="text-[14px] font-semibold text-[#0b6d41] uppercase tracking-wide mb-3">Aided UG</div>
-              <div className="text-[28px] md:text-[32px] font-bold text-[#0b6d41] leading-tight mb-2">₹5,000 – ₹12,000</div>
+              <div className="text-[28px] md:text-[32px] font-bold text-[#0b6d41] leading-tight mb-2">As per Govt norms</div>
               <div className="text-[13px] text-gray-500 mb-3">per year</div>
               <p className="text-[13px] leading-[18px] text-gray-600">Government-regulated fees. Includes tuition and basic amenities. Scholarship eligible.</p>
             </div>
@@ -699,7 +699,7 @@ export default function Home() {
             {/* Self-Finance UG */}
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
               <div className="text-[14px] font-semibold text-[#0b6d41] uppercase tracking-wide mb-3">Self-Finance UG</div>
-              <div className="text-[28px] md:text-[32px] font-bold text-[#0b6d41] leading-tight mb-2">₹15,000 – ₹45,000</div>
+              <div className="text-[28px] md:text-[32px] font-bold text-[#0b6d41] leading-tight mb-2">₹24,500 – ₹34,000</div>
               <div className="text-[13px] text-gray-500 mb-3">per year</div>
               <p className="text-[13px] leading-[18px] text-gray-600">Competitive fees for self-finance UG programmes. Merit scholarships available.</p>
             </div>
@@ -707,7 +707,7 @@ export default function Home() {
             {/* PG Programmes */}
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
               <div className="text-[14px] font-semibold text-[#0b6d41] uppercase tracking-wide mb-3">PG Programmes</div>
-              <div className="text-[28px] md:text-[32px] font-bold text-[#0b6d41] leading-tight mb-2">₹20,000 – ₹50,000</div>
+              <div className="text-[28px] md:text-[32px] font-bold text-[#0b6d41] leading-tight mb-2">₹20,000 – ₹25,000</div>
               <div className="text-[13px] text-gray-500 mb-3">per year</div>
               <p className="text-[13px] leading-[18px] text-gray-600">Postgraduate programmes with industry-aligned learning framework and placement support.</p>
             </div>
@@ -796,7 +796,7 @@ export default function Home() {
               </div>
               <h3 className="text-[18px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold tracking-[-0.45px] md:tracking-[-0.6px] text-[#0b6d41] mb-4">Digital Learning Commons</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                5,000+ books, e-journals, NPTEL courses, and online databases with comfortable reading space
+                27,000+ books, e-journals, NPTEL courses, and online databases with comfortable reading space
               </p>
             </div>
 
@@ -972,7 +972,7 @@ export default function Home() {
                   {[
                     "Limited Seats Available",
                     "NAAC Accredited Programs",
-                    "100% Scholarships for Merits",
+                    "Merit Scholarships Available",
                     "Industry-Integrated Learning Framework",
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-3 text-[16px] leading-[24px] text-gray-700">
@@ -1019,7 +1019,7 @@ export default function Home() {
               Quick Answer: Best Arts and Science College in Tamil Nadu
             </h3>
             <p className="text-[15px] md:text-[16px] leading-[24px] md:leading-[26px] text-gray-700">
-              <strong>JKKN College of Arts and Science</strong> (Autonomous) in Komarapalayam, Tamil Nadu, is consistently ranked among the best arts and science colleges in the state. Key highlights: <strong>NAAC accredited</strong>, <strong>UGC-recognized autonomous status</strong>, <strong>90% placement rate</strong> with a highest package of <strong>₹18 LPA</strong>, <strong>27+ UG/PG/PhD programmes</strong>, and partnerships with <strong>60+ recruiters</strong> including TCS, Infosys, and Wipro. Affiliated to Periyar University with a 74+ year institutional legacy since 1952.
+              <strong>JKKN College of Arts and Science</strong> (Autonomous) in Komarapalayam, Tamil Nadu, is consistently ranked among the best arts and science colleges in the state. Key highlights: <strong>NAAC accredited</strong>, <strong>UGC-recognized autonomous status</strong>, <strong>90% placement rate</strong>, <strong>35 UG/PG/PhD programmes</strong>, and partnerships with <strong>60+ recruiters</strong> including TCS, Infosys, and Wipro. Affiliated to Periyar University; established 1974 within a group founded in 1952.
             </p>
           </div>
         </div>
@@ -1045,7 +1045,7 @@ export default function Home() {
                 Why is JKKN considered the best arts and science college in Tamil Nadu?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation, UGC-recognized autonomous status, 90% placement rate with a highest package of ₹12 LPA, and industry partnerships with 60+ recruiters including TCS, Infosys, and Wipro. The college offers 27+ programmes with AI/IoT labs and in-built internship pathways.
+                JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation, UGC-recognized autonomous status, 90% placement rate and industry partnerships with 60+ recruiters including TCS, Infosys, and Wipro. The college offers 35 programmes with AI/IoT labs and in-built internship pathways.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-best-2" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
@@ -1053,7 +1053,7 @@ export default function Home() {
                 What makes JKKN different from other arts and science colleges in Tamil Nadu?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Unlike many arts and science colleges in Tamil Nadu, JKKN offers an industry-integrated curriculum with collaborations from NASSCOM, CII, and leading MNCs. Students benefit from dedicated AI and IoT research labs, 150+ PhD-qualified faculty, and a training and placement cell that delivers measurable outcomes — 90% placement and career opportunities across India and abroad.
+                Unlike many arts and science colleges in Tamil Nadu, JKKN offers an industry-integrated curriculum with collaborations from NASSCOM, CII, and leading MNCs. Students benefit from dedicated AI and IoT research labs, 121 faculty on roll (52 with a PhD, NIRF 2025), and a training and placement cell that delivers measurable outcomes — 90% placement and career opportunities across India and abroad.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-best-3" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
@@ -1061,7 +1061,7 @@ export default function Home() {
                 What programmes does JKKN Arts and Science College offer in Tamil Nadu?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College offers 27+ programmes including B.Sc Computer Science, BCA, B.Sc AI &amp; Data Science, B.Com, BBA, B.Sc Cyber Security, B.Sc Visual Communication, B.Sc Microbiology, and more. Postgraduate options include M.Sc Computer Science, M.Com, and MA English. All programmes are affiliated to Periyar University and designed for career readiness.
+                JKKN College offers 35 programmes including B.Sc Computer Science, BCA, B.Sc AI &amp; Data Science, B.Com, BBA, B.Sc Cyber Security, B.Sc Visual Communication, B.Sc Microbiology, and more. Postgraduate options include M.Sc Computer Science, M.Com, and MA English. All programmes are affiliated to Periyar University and designed for career readiness.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-1" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
@@ -1077,7 +1077,7 @@ export default function Home() {
                 Does JKKN College provide placement assistance?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Yes. JKKN&apos;s dedicated Training and Placement Cell conducts year-round aptitude training, mock interviews, and resume workshops. In 2024–25, the college achieved a 90% placement rate with a highest package of ₹12 LPA and an average package of ₹3.2–4.5 LPA. Over 60 companies recruit from campus, including Foxconn, TVS, Infronex, Premier, Rinex, and Sakthi Group. Students in IT programmes also receive TCS and Infosys NQT preparation.
+                Yes. JKKN&apos;s dedicated Training and Placement Cell conducts year-round aptitude training, mock interviews, and resume workshops. In 2024–25, the college achieved a 90% placement rate. Over 60 companies recruit from campus, including Foxconn, TVS, Infronex, Premier, Rinex, and Sakthi Group. Students in IT programmes also receive TCS and Infosys NQT preparation.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
@@ -1085,7 +1085,7 @@ export default function Home() {
                 What facilities are available on campus?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN&apos;s 15-acre campus on NH-544 features 500+ computer systems in advanced labs, a dedicated AI and IoT research lab with Raspberry Pi and Arduino kits, a digital library with 5,000+ books and e-journals, smart classrooms with projectors and video conferencing, Physics/Chemistry/Microbiology/Biotechnology laboratories, indoor and outdoor sports facilities including a cricket ground and basketball court, separate hostels for men and women with Wi-Fi and 24/7 security, a cafeteria, and a yoga and meditation centre.
+                JKKN&apos;s 15-acre campus on NH-544 features 500+ computer systems in advanced labs, a dedicated AI and IoT research lab with Raspberry Pi and Arduino kits, a library of over 27,000 books and e-journals, smart classrooms with projectors and video conferencing, Physics/Chemistry/Microbiology/Biotechnology laboratories, indoor and outdoor sports facilities including a cricket ground and basketball court, separate hostels for men and women with Wi-Fi and 24/7 security, a cafeteria, and a yoga and meditation centre.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
@@ -1109,7 +1109,7 @@ export default function Home() {
                 What are the fees at JKKN College of Arts and Science?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College offers affordable education with fees varying by programme and type. Aided programme fees are government-regulated and among the lowest in Tamil Nadu. Self-finance programme fees are competitive, starting from approximately ₹15,000–₹45,000 per year depending on the course. Contact the admissions office at +91-93458-55001 for the latest fee structure.
+                JKKN College offers affordable education with fees varying by programme and type. Aided programme fees are government-regulated and among the lowest in Tamil Nadu. Self-finance programme fees are competitive, from ₹24,500 to ₹34,000 per year for 2026-27 depending on the course. Contact the admissions office at +91-93458-55001 for the latest fee structure.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-7" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
@@ -1125,7 +1125,7 @@ export default function Home() {
                 How does JKKN compare to other arts and science colleges in Tamil Nadu?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN stands out with its autonomous status (UGC-recognized), NAAC accreditation, 90% placement rate, and ₹12 LPA highest package — metrics that match or exceed many top-ranked colleges. Unlike most arts colleges, JKKN offers AI/IoT research labs, NASSCOM and CII industry partnerships, and 27+ programmes. The 74+ year institutional legacy and 60+ recruiting companies further distinguish JKKN from peers.
+                JKKN stands out with its autonomous status (UGC-recognized), NAAC accreditation, 90% placement rate — metrics that match or exceed many top-ranked colleges. Unlike most arts colleges, JKKN offers AI/IoT research labs, NASSCOM and CII industry partnerships, and 34 programmes. The 74+ year institutional legacy and 60+ recruiting companies further distinguish JKKN from peers.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-9" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
@@ -1157,7 +1157,7 @@ export default function Home() {
                 What is JKKN College&apos;s placement record and highest package?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College maintains a consistent 90% placement rate across all programmes. The highest package offered is ₹12 LPA, with an average package of ₹3.2–4.5 LPA. Over 60 companies recruit from campus annually, including TCS, Infosys, Wipro, Foxconn, TVS, and Sakthi Group. The dedicated Training and Placement Cell provides aptitude training, mock interviews, and industry certifications year-round.
+                JKKN College maintains a consistent 90% placement rate across all programmes. Over 60 companies recruit from campus annually, including TCS, Infosys, Wipro, Foxconn, TVS, and Sakthi Group. The dedicated Training and Placement Cell provides aptitude training, mock interviews, and industry certifications year-round.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-13" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
@@ -1181,7 +1181,7 @@ export default function Home() {
                 Does JKKN College offer distance education or online programmes?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College currently focuses on full-time, on-campus programmes across 27+ UG, PG, and doctoral courses. The college does not offer distance education at present. However, students have access to NPTEL online courses, digital library resources, and SWAYAM platform integration as supplementary learning. For full-time programme details, visit the admissions portal or contact +91-93458-55001.
+                JKKN College currently focuses on full-time, on-campus programmes across 35 UG, PG, and doctoral courses. The college does not offer distance education at present. However, students have access to NPTEL online courses, digital library resources, and SWAYAM platform integration as supplementary learning. For full-time programme details, visit the admissions portal or contact +91-93458-55001.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

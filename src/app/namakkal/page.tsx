@@ -40,7 +40,7 @@ import {
 export const metadata: Metadata = {
   title: "Arts and Science College in Namakkal District | JKKN CAS",
   description:
-    "JKKN College of Arts & Science — Namakkal District's most diverse arts college. 34 programmes, NAAC-accredited, 90%+ placements. Admissions 2026-27 open.",
+    "JKKN College of Arts & Science — Namakkal District's most diverse arts college. 35 programmes, NAAC-accredited, 90%+ placements. Admissions 2026-27 open.",
   keywords: [
     "arts and science college in Namakkal district",
     "best college in Namakkal district",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College in Namakkal District | JKKN CAS",
     description:
-      "JKKN CAS in Komarapalayam — Namakkal District's most diverse arts college. 34 programmes, NAAC-accredited, 90%+ placements. Admissions 2026-27.",
+      "JKKN CAS in Komarapalayam — Namakkal District's most diverse arts college. 35 programmes, NAAC-accredited, 90%+ placements. Admissions 2026-27.",
     url: "https://cas.jkkn.ac.in/namakkal",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Arts and Science College in Namakkal District | JKKN CAS",
-    description: "JKKN CAS in Namakkal District — 34 programmes, NAAC-accredited, 90%+ placements. Admissions 2026-27 open.",
+    description: "JKKN CAS in Namakkal District — 35 programmes, NAAC-accredited, 90%+ placements. Admissions 2026-27 open.",
   },
 };
 
@@ -79,7 +79,7 @@ export default function NamakkalPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Namakkal district?",
-      a: "JKKN College of Arts and Science in Komarapalayam is Namakkal District's most programme-diverse arts and science institution — 34 programmes, NAAC-accredited, affiliated to Periyar and Bharathiar Universities, with 90%+ placement rates.",
+      a: "JKKN College of Arts and Science in Komarapalayam is Namakkal District's most programme-diverse arts and science institution — 35 programmes, NAAC-accredited, affiliated to Periyar University, with 90%+ placement rates.",
     },
     {
       q: "How far is JKKN College from Namakkal?",
@@ -87,7 +87,7 @@ export default function NamakkalPage() {
     },
     {
       q: "Which courses are popular among Namakkal students at JKKN CAS?",
-      a: "B.Com and BCA are the most popular choices among Namakkal students, given the district's growing commercial activity. BBA and B.Sc programmes are also in high demand. JKKN CAS offers 34 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
+      a: "B.Com and BCA are the most popular choices among Namakkal students, given the district's growing commercial activity. BBA and B.Sc programmes are also in high demand. JKKN CAS offers 35 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
     },
     {
       q: "Can BCA students from Namakkal get IT jobs?",
@@ -217,8 +217,7 @@ export default function NamakkalPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "90%+", label: "PLACEMENTS" },
-              { value: "5-7", label: "LPA HIGHEST" },
-              { value: "34", label: "PROGRAMMES" },
+              { value: "35", label: "PROGRAMMES" },
               { value: "74+", label: "YEARS LEGACY" },
             ].map((stat) => (
               <div
@@ -269,7 +268,7 @@ export default function NamakkalPage() {
             </span>
             <span className="hidden sm:block text-gray-300">|</span>
             <span className="text-gray-500 text-xs sm:text-sm">
-              Affiliated to Periyar University / Bharathiar University
+              Affiliated to Periyar University
             </span>
           </div>
         </div>
@@ -286,7 +285,7 @@ export default function NamakkalPage() {
                   Namakkal District Campus
                 </div>
                 <div className="text-gray-500 text-sm mt-1">
-                  Komarapalayam, NH-544 — 22 km from Erode • 15 km from Tiruchengode
+                  Komarapalayam, NH-544 — 22 km from Erode • 20 km from Tiruchengode
                 </div>
               </div>
             </div>
@@ -471,7 +470,7 @@ export default function NamakkalPage() {
           {/* Complete Programme List */}
           <div className="mt-12 pt-10 border-t border-gray-200">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">
-              All 34 Programmes Available in Namakkal District
+              All 35 Programmes Available in Namakkal District
             </h3>
             <p className="text-gray-500 text-sm text-center mb-8">
               Grouped by stream — click any programme for full details
@@ -612,8 +611,6 @@ export default function NamakkalPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
               { value: "90%+", label: "PLACEMENT RATE" },
-              { value: "5-7", label: "LPA HIGHEST" },
-              { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },
             ].map((stat) => (
               <div

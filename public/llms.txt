@@ -1,8 +1,8 @@
 # JKKN College of Arts and Science
 
-> Autonomous institution affiliated to Periyar University, offering 34 UG, PG and PhD programmes in Arts, Science and Commerce. Located on NH-544, Komarapalayam, near Erode, Tamil Nadu 638183, India.
+> Autonomous institution affiliated to Periyar University, offering 35 UG, PG and PhD programmes in Arts, Science and Commerce. Located on NH-544, Komarapalayam, near Erode, Tamil Nadu 638183, India.
 
-<!-- version: 2026-09-04 -->
+<!-- version: 2026-09-16 -->
 <!-- canonical: https://cas.jkkn.ac.in/ -->
 <!-- full reference: https://cas.jkkn.ac.in/llms-full.txt -->
 
@@ -19,7 +19,7 @@ JKKN College of Arts and Science (CAS JKKN) is an autonomous college established
 - Campus: 15 acres, Komarapalayam, Namakkal District
 - Students: 1,685 (NIRF 2025 submission, AY 2023-24)
 - Faculty: 121 on roll, 52 with a Ph.D. (NIRF 2025 submission)
-- Programmes: 19 UG + 12 PG + 3 Ph.D. (34 total)
+- Programmes: 20 UG + 12 PG + 3 Ph.D. (35 total)
 - Location: NH-544, between Salem and Coimbatore
 - Nearest towns and cities (approx. road distance): Bhavani (~4-5 km), Pallipalayam (~14 km), Sankagiri (~15-20 km), Tiruchengode (~20 km), Erode (~22 km), Perundurai (~27-30 km), Gobichettipalayam (~35-40 km), Salem (~55-58 km), Namakkal (~55-60 km), Rasipuram (~60 km)
 
@@ -41,6 +41,7 @@ JKKN College of Arts and Science (CAS JKKN) is an autonomous college established
 - B.Com. (Banking & Insurance)
 - B.Com. (Computer Applications)
 - B.Sc. Artificial Intelligence & Data Science
+- B.Sc. Clinical Laboratory Technology
 - B.Sc. Computer Science
 - B.Sc. Computer Science (Cyber Security)
 - B.Sc. Microbiology
@@ -84,7 +85,7 @@ Dedicated admission guides for students from each nearby town — distance, bus 
 - [Salem](https://cas.jkkn.ac.in/salem): ~55-58 km via NH-544
 - [Namakkal](https://cas.jkkn.ac.in/namakkal): ~55-60 km
 - [Rasipuram](https://cas.jkkn.ac.in/rasipuram): ~60 km, hostel recommended
-- [Tiruppur](https://cas.jkkn.ac.in/tiruppur): ~80-90 km
+- [Tiruppur](https://cas.jkkn.ac.in/tiruppur): ~70 km
 - [Coimbatore](https://cas.jkkn.ac.in/coimbatore): ~100-110 km
 
 ## Contact

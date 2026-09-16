@@ -214,7 +214,6 @@ export default function BComAccountingFinancePage() {
               {[
                 { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
                 { icon: <DollarSign className="w-7 h-7" />, stat: 'CA/CMA', title: 'Foundation Ready', desc: 'Professional exam preparation' },
-                { icon: <Briefcase className="w-7 h-7" />, stat: '90%+', title: 'Placement Record', desc: 'Top corporate recruiters' },
                 { icon: <CheckCircle2 className="w-7 h-7" />, stat: 'Industry', title: 'Internships', desc: 'Real-world exposure' },
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>

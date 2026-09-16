@@ -89,7 +89,7 @@ export default function PerunduraiPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Perundurai?",
-      a: "JKKN College of Arts and Science, located approximately 27-30 km from Perundurai on NH-544 at Komarapalayam, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located approximately 27-30 km from Perundurai on NH-544 at Komarapalayam, is a NAAC-accredited institution with 35 programmes and 90%+ placement rates. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Perundurai?",
@@ -97,7 +97,7 @@ export default function PerunduraiPage() {
     },
     {
       q: "Which courses are popular among Perundurai students at JKKN CAS?",
-      a: "JKKN CAS near Perundurai offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 34 courses in total. All programmes are UGC-approved and affiliated to Periyar University or Bharathiar University. BCA and B.Com are the most popular among students from the Perundurai region.",
+      a: "JKKN CAS near Perundurai offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 35 courses in total. All programmes are UGC-approved and affiliated to Periyar University. BCA and B.Com are the most popular among students from the Perundurai region.",
     },
     {
       q: "Is there a direct bus from Perundurai to JKKN CAS?",
@@ -117,11 +117,11 @@ export default function PerunduraiPage() {
     },
     {
       q: "Is JKKN College of Arts and Science accredited?",
-      a: "JKKN College of Arts and Science is NAAC-accredited and UGC-approved. The college is affiliated to Periyar University and Bharathiar University. It is part of the JKKN Group of Institutions, which includes 7 colleges, 2 schools, and a 500-bed teaching hospital.",
+      a: "JKKN College of Arts and Science is NAAC-accredited and UGC-approved. The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions, which includes 7 colleges, 2 schools, and a 500-bed teaching hospital.",
     },
     {
       q: "What placement rate does JKKN CAS achieve for Perundurai students?",
-      a: "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA. The college provides dedicated placement training and aptitude coaching.",
+      a: "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio.. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Why should Perundurai students choose JKKN CAS?",
@@ -133,7 +133,7 @@ export default function PerunduraiPage() {
     {
       question: "What is the best arts and science college near Perundurai?",
       answer:
-        "JKKN College of Arts and Science, located approximately 27-30 km from Perundurai on NH-544 at Komarapalayam, is a NAAC-accredited institution with 34 programmes and 90%+ placement rates. It is affiliated to Periyar University and Bharathiar University and approved by UGC.",
+        "JKKN College of Arts and Science, located approximately 27-30 km from Perundurai on NH-544 at Komarapalayam, is a NAAC-accredited institution with 35 programmes and 90%+ placement rates. It is affiliated to Periyar University and approved by UGC.",
     },
     {
       question: "How far is JKKN CAS from Perundurai?",
@@ -158,12 +158,12 @@ export default function PerunduraiPage() {
     {
       question: "Is JKKN College of Arts and Science accredited?",
       answer:
-        "JKKN College of Arts and Science is NAAC-accredited and UGC-approved. The college is affiliated to Periyar University and Bharathiar University. It is part of the JKKN Group of Institutions.",
+        "JKKN College of Arts and Science is NAAC-accredited and UGC-approved. The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions.",
     },
     {
       question: "What placement rate does JKKN CAS achieve for Perundurai students?",
       answer:
-        "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. The highest package recorded is 5–7 LPA.",
+        "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio..",
     },
     {
       question: "How can students from Perundurai apply to JKKN CAS?",
@@ -173,7 +173,7 @@ export default function PerunduraiPage() {
     {
       question: "Which courses are available at arts and science colleges near Perundurai?",
       answer:
-        "JKKN CAS near Perundurai offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 34 courses in total. All programmes are UGC-approved and affiliated to Periyar University or Bharathiar University.",
+        "JKKN CAS near Perundurai offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 35 courses in total. All programmes are UGC-approved and affiliated to Periyar University.",
     },
     {
       question: "Why should Perundurai students choose JKKN CAS?",
@@ -226,8 +226,8 @@ export default function PerunduraiPage() {
             "name": "JKKN College of Arts and Science",
             "alternateName": "JKKN CAS",
             "url": "https://cas.jkkn.ac.in",
-            "foundingDate": "1952",
-            "description": "JKKN College of Arts and Science is a NAAC-accredited institution on NH-544 approximately 27-30 km from Perundurai, offering 34 UG, PG, and Ph.D programmes in arts, science, commerce, and computer applications, affiliated to Periyar University and Bharathiar University.",
+            "foundingDate": "1974",
+            "description": "JKKN College of Arts and Science is a NAAC-accredited institution on NH-544 approximately 27-30 km from Perundurai, offering 34 UG, PG, and Ph.D programmes in arts, science, commerce, and computer applications, affiliated to Periyar University.",
             "telephone": "+919345855001",
             "email": "info@jkkn.ac.in",
             "address": {
@@ -263,8 +263,7 @@ export default function PerunduraiPage() {
             "accreditation": "NAAC Accredited",
             "memberOf": [
               { "@type": "Organization", "name": "University Grants Commission (UGC)" },
-              { "@type": "Organization", "name": "Periyar University" },
-              { "@type": "Organization", "name": "Bharathiar University" }
+              { "@type": "Organization", "name": "Periyar University" }
             ],
             "parentOrganization": {
               "@type": "Organization",
@@ -334,9 +333,8 @@ export default function PerunduraiPage() {
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             JKKN College of Arts and Science, located on NH-544 approximately
             27-30 km from Perundurai, is a NAAC-accredited institution offering
-            34 UG and PG programmes including BCA, BBA, B.Com, and B.Sc
-            specialisations. Affiliated to Periyar University and Bharathiar
-            University, it achieves 90%+ placement rates with recruiters
+            35 UG and PG programmes including BCA, BBA, B.Com, and B.Sc
+            specialisations. Affiliated to Periyar University, it achieves 90%+ placement rates with recruiters
             including TCS, Infosys, HDFC Bank, and Amazon.
           </p>
 
@@ -353,9 +351,8 @@ export default function PerunduraiPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "90%+", label: "PLACEMENTS" },
-              { value: "5-7", label: "LPA HIGHEST" },
               { value: "28km", label: "FROM PERUNDURAI" },
-              { value: "34", label: "PROGRAMMES" },
+              { value: "35", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -405,7 +402,7 @@ export default function PerunduraiPage() {
             </span>
             <span className="hidden sm:block text-gray-300">|</span>
             <span className="text-gray-500 text-xs sm:text-sm">
-              Affiliated to Periyar University / Bharathiar University
+              Affiliated to Periyar University
             </span>
           </div>
         </div>
@@ -458,7 +455,7 @@ export default function PerunduraiPage() {
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1952, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and Bharathiar University and approved by UGC. It offers 34 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus.
+            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 35 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -613,7 +610,7 @@ export default function PerunduraiPage() {
           {/* Complete Programme List */}
           <div className="mt-12 pt-10 border-t border-gray-200">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">
-              All 34 Programmes Available Near Perundurai
+              All 35 Programmes Available Near Perundurai
             </h3>
             <p className="text-gray-500 text-sm text-center mb-8">
               Grouped by stream — click any programme for full details
@@ -754,8 +751,6 @@ export default function PerunduraiPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
               { value: "90%+", label: "PLACEMENT RATE — 2024–25" },
-              { value: "5-7", label: "LPA HIGHEST" },
-              { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },
             ].map((stat) => (
               <div

@@ -7,7 +7,7 @@ export interface AdmissionFAQ {
 }
 
 export interface AdmissionContent {
-  intakeSeats: number;
+  intakeSeats: number | null;
   eligibilityCriteria: string[];
   recommendedBackground: string[];
   documents: string[];
@@ -38,6 +38,7 @@ const SELF_FINANCE_FEES: Record<string, number> = {
   "self-finance/ug/bsc-computer-science": 34000,
   "self-finance/ug/bsc-cs-cyber-security": 32000,
   "self-finance/ug/bsc-microbiology": 34000,
+  "self-finance/ug/bsc-clinical-lab-technology": 32000,
   "self-finance/ug/bsc-physics": 25000,
   "self-finance/ug/bsc-textile-fashion-designing": 32000,
   "self-finance/ug/bsc-textile-fashion-designing-ai": 34000,
@@ -53,10 +54,18 @@ const SELF_FINANCE_FEES: Record<string, number> = {
 // ─────────────────────────────────────────────────────────────────────────
 // Default intake seats by level — used when override doesn't specify
 // ─────────────────────────────────────────────────────────────────────────
-const DEFAULT_SEATS: Record<ProgrammeInfo["level"], number> = {
-  UG: 60,
-  PG: 40,
-  PhD: 10,
+// Officially sanctioned intake — listed ONLY where a public approval order
+// states a number for that specific programme.
+//   MCA 15 — AICTE Extension of Approval 2025-26,
+//            F.No. Southern/1-44638793967/2025/EOA dated 03-Jan-2025
+//            ("Intake Approved for 2025-26: 15"), and the college's own
+//            AICTE Mandatory Disclosure 23-24 ("Sanctioned Intake 15").
+// No other programme has a per-course sanctioned intake published by Periyar
+// University, so those pages show no number at all rather than a placeholder.
+// The previous UG 60 / PG 40 / PhD 10 values were template defaults, not
+// sanctioned figures, and contradicted NIRF 2025 (UG 1,468 / PG 355 total).
+const OFFICIAL_INTAKE: Record<string, number> = {
+  "aided/pg/mca": 15,
 };
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -231,12 +240,13 @@ const LEVEL_CAREERS: Record<ProgrammeInfo["level"], string[]> = {
 // ─────────────────────────────────────────────────────────────────────────
 // Default important dates for 2026-27 admission cycle
 // ─────────────────────────────────────────────────────────────────────────
+// Dated milestones are published only when they are current. The previous
+// list (March–August 2026) had already lapsed while the pages still read
+// "Admissions Open", so it is replaced with guidance rather than stale dates.
 const DEFAULT_IMPORTANT_DATES = [
-  { label: "Applications Open", date: "March 2026" },
-  { label: "Last Date to Apply", date: "June 2026" },
-  { label: "Merit List Announcement", date: "Late June 2026" },
-  { label: "Counselling & Document Verification", date: "Early July 2026" },
-  { label: "Classes Begin", date: "August 2026" },
+  { label: "Applications", date: "Contact the admissions office" },
+  { label: "Merit List & Counselling", date: "Notified to applicants" },
+  { label: "Classes Begin", date: "As per the university academic calendar" },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -260,7 +270,7 @@ export function getAdmissionContent(
       : "As per Government Norms (GQ seats)";
 
   return {
-    intakeSeats: override?.intakeSeats ?? DEFAULT_SEATS[programme.level],
+    intakeSeats: OFFICIAL_INTAKE[programmePath] ?? null,
     eligibilityCriteria: override?.eligibilityCriteria ?? levelDefaults.eligibility,
     recommendedBackground:
       override?.recommendedBackground ?? levelDefaults.background,
@@ -271,7 +281,7 @@ export function getAdmissionContent(
       ...(override?.faq ?? []),
       ...levelDefaults.faq,
     ],
-    applicationDeadline: override?.applicationDeadline ?? "June 2026",
+    applicationDeadline: override?.applicationDeadline ?? "Contact Admissions",
     careers: override?.careers ?? LEVEL_CAREERS[programme.level],
     curriculumHighlights:
       override?.curriculumHighlights ??

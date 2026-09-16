@@ -39,7 +39,7 @@ import {
 export const metadata: Metadata = {
   title: { absolute: "Arts & Science College Near Tiruppur | JKKN CAS" },
   description:
-    "JKKN College of Arts and Science, 67 km from Tiruppur on NH-544. Autonomous, NAAC accredited. B.Sc, B.Com, BBA and BCA. Admissions open.",
+    "JKKN College of Arts and Science, 70 km from Tiruppur on NH-544. Autonomous, NAAC accredited. B.Sc, B.Com, BBA and BCA. Admissions open.",
   keywords: [
     "arts and science college near Tiruppur",
     "best college near Tiruppur",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
     description:
-      "JKKN CAS — 67 km from Tiruppur. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 70 km from Tiruppur. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/tiruppur",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
-    description: "JKKN CAS — 67 km from Tiruppur. NAAC-accredited, 90%+ placements. Admissions open 2026-27.",
+    description: "JKKN CAS — 70 km from Tiruppur. NAAC-accredited, 90%+ placements. Admissions open 2026-27.",
   },
 };
 
@@ -78,15 +78,15 @@ export default function TiruppurPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Tiruppur?",
-      a: "JKKN College of Arts and Science, ~67 km from Tiruppur on NH-544, is one of the top arts and science colleges accessible from Tiruppur. Approved by UGC, NAAC and affiliated to Periyar University / Bharathiar University, it offers excellent programmes with strong placement support.",
+      a: "JKKN College of Arts and Science, ~70 km from Tiruppur on NH-544, is one of the top arts and science colleges accessible from Tiruppur. Approved by UGC, NAAC and affiliated to Periyar University, it offers excellent programmes with strong placement support.",
     },
     {
       q: "How far is JKKN CAS from Tiruppur?",
-      a: "JKKN CAS is approximately 67 km from Tiruppur city centre, about 1.5 hours by road via NH-544 through Erode. Regular bus services are available from Tiruppur New Bus Stand towards Komarapalayam.",
+      a: "JKKN CAS is approximately 70 km from Tiruppur city centre, about 1.5 hours by road via NH-544 through Erode. Regular bus services are available from Tiruppur New Bus Stand towards Komarapalayam.",
     },
     {
       q: "Which courses are popular among Tiruppur students at JKKN CAS?",
-      a: "BBA and B.Com are the most popular choices among Tiruppur students, given the city's thriving knitwear export industry. BCA is also in high demand as textile companies digitalise. JKKN CAS offers 34 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
+      a: "BBA and B.Com are the most popular choices among Tiruppur students, given the city's thriving knitwear export industry. BCA is also in high demand as textile companies digitalise. JKKN CAS offers 35 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
     },
     {
       q: "Can BCA students from Tiruppur get IT jobs?",
@@ -187,7 +187,7 @@ export default function TiruppurPage() {
       />
       <CourseSchema
         name="BBA (Bachelor of Business Administration)"
-        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — 67 km from Tiruppur."
+        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — 70 km from Tiruppur."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -231,8 +231,7 @@ export default function TiruppurPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "90%+", label: "PLACEMENTS" },
-              { value: "5-7", label: "LPA HIGHEST" },
-              { value: "67km", label: "FROM TIRUPPUR" },
+              { value: "70km", label: "FROM TIRUPPUR" },
               { value: "4", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
@@ -283,7 +282,7 @@ export default function TiruppurPage() {
             </span>
             <span className="hidden sm:block text-gray-300">|</span>
             <span className="text-gray-500 text-xs sm:text-sm">
-              Affiliated to Periyar University / Bharathiar University
+              Affiliated to Periyar University
             </span>
           </div>
         </div>
@@ -295,7 +294,7 @@ export default function TiruppurPage() {
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-wrap sm:flex-nowrap items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
-                67<span className="text-2xl font-semibold text-[#006837]">km</span>
+                70<span className="text-2xl font-semibold text-[#006837]">km</span>
               </span>
               <div>
                 <div className="font-bold text-gray-800 text-base sm:text-lg">
@@ -366,7 +365,7 @@ export default function TiruppurPage() {
               {
                 Icon: Bus,
                 title: "Easy Commute",
-                desc: "Just ~67 km from Tiruppur. Daily commute or comfortable hostel — your choice.",
+                desc: "Just ~70 km from Tiruppur. Daily commute or comfortable hostel — your choice.",
               },
             ].map((item) => (
               <div
@@ -488,7 +487,7 @@ export default function TiruppurPage() {
           {/* Complete Programme List */}
           <div className="mt-12 pt-10 border-t border-gray-200">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">
-              All 34 Programmes Available Near Tiruppur
+              All 35 Programmes Available Near Tiruppur
             </h3>
             <p className="text-gray-500 text-sm text-center mb-8">
               Grouped by stream — click any programme for full details
@@ -629,8 +628,6 @@ export default function TiruppurPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
               { value: "90%+", label: "PLACEMENT RATE" },
-              { value: "5-7", label: "LPA HIGHEST" },
-              { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },
             ].map((stat) => (
               <div
@@ -817,7 +814,7 @@ export default function TiruppurPage() {
                   Tiruppur → JKKN CAS Campus
                 </div>
                 <div className="text-[#7cb983] text-sm">
-                  ~67 km • ~1.5 hours
+                  ~70 km • ~1.5 hours
                 </div>
               </div>
             </div>
@@ -828,7 +825,7 @@ export default function TiruppurPage() {
                 {
                   Icon: MapPin,
                   label: "ROUTE",
-                  info: "Tiruppur → Erode → NH-544 → Komarapalayam (~67 km)",
+                  info: "Tiruppur → Erode → NH-544 → Komarapalayam (~70 km)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -840,7 +837,7 @@ export default function TiruppurPage() {
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Tiruppur Junction (~67 km from campus)",
+                  info: "Tiruppur Junction (~70 km from campus)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {

@@ -74,7 +74,7 @@ const cards = [
     href: "/library",
     label: "Library",
     description:
-      "Digital library with 5,000+ books and e-resources",
+      "Library with over 27,000 books and e-resources",
   },
 ];
 

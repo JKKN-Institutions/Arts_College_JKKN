@@ -87,7 +87,7 @@ export default function CoimbatorePage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Coimbatore?",
-      a: "JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC-accredited, 74-year-old institution with 34 programmes and 90%+ placements. Admissions open for 2026–27.",
+      a: "JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC-accredited, 74-year-old institution with 35 programmes and 90%+ placements. Admissions open for 2026–27.",
     },
     {
       q: "How far is JKKN CAS from Coimbatore?",
@@ -131,7 +131,7 @@ export default function CoimbatorePage() {
     },
     {
       q: "Is JKKN CAS NAAC accredited and UGC approved?",
-      a: "Yes. JKKN College of Arts and Science is NAAC-accredited and UGC-approved. UG programmes are affiliated to Periyar University; select PG programmes are affiliated to Bharathiar University.",
+      a: "Yes. JKKN College of Arts and Science is NAAC-accredited and UGC-approved. All programmes are affiliated to Periyar University, Salem.",
     },
   ];
 
@@ -150,10 +150,10 @@ export default function CoimbatorePage() {
             "@type": "CollegeOrUniversity",
             "name": "JKKN College of Arts and Science",
             "alternateName": "JKKN CAS",
-            "description": "JKKN College of Arts and Science is a NAAC-accredited, UGC-approved institution in Komarapalayam, Namakkal district, Tamil Nadu, offering 34 programmes in arts, science, commerce, and computer applications. Founded in 1952, affiliated to Periyar University and Bharathiar University.",
+            "description": "JKKN College of Arts and Science is a NAAC-accredited, UGC-approved institution in Komarapalayam, Namakkal district, Tamil Nadu, offering 35 programmes in arts, science, commerce, and computer applications. Founded in 1952, affiliated to Periyar University.",
             "url": "https://cas.jkkn.ac.in",
             "logo": "https://cas.jkkn.ac.in/images/logo.png",
-            "foundingDate": "1952",
+            "foundingDate": "1974",
             "telephone": "+919345855001",
             "email": "info@jkkn.ac.in",
             "address": {
@@ -334,8 +334,7 @@ export default function CoimbatorePage() {
           <p className="aeo-citation-block text-white/70 text-sm max-w-2xl mx-auto mt-4 leading-relaxed">
             JKKN College of Arts and Science is a NAAC-accredited, UGC-approved institution
             located in Komarapalayam, Namakkal district, Tamil Nadu — 105 km from Coimbatore
-            via NH-544. Founded in 1952 and affiliated to Periyar University and Bharathiar
-            University, JKKN CAS offers 34 undergraduate, postgraduate, and research programmes
+            via NH-544. Founded in 1974 and affiliated to Periyar University, JKKN CAS offers 34 undergraduate, postgraduate, and research programmes
             spanning arts, science, commerce, and computer applications. The institution maintains
             a 90%+ placement rate with recruiters including TCS, Infosys BPO, HDFC Bank, Amazon,
             and Flipkart. A 50+ acre residential campus with separate hostel facilities, digital
@@ -347,7 +346,6 @@ export default function CoimbatorePage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "90%+", label: "PLACEMENTS" },
-              { value: "5-7", label: "LPA HIGHEST" },
               { value: "105km", label: "FROM COIMBATORE" },
               { value: "4", label: "PROGRAMMES" },
             ].map((stat) => (
@@ -399,7 +397,7 @@ export default function CoimbatorePage() {
             </span>
             <span className="hidden sm:block text-gray-300">|</span>
             <span className="text-gray-500 text-xs sm:text-sm">
-              Affiliated to Periyar University / Bharathiar University
+              Affiliated to Periyar University
             </span>
           </div>
         </div>
@@ -680,7 +678,7 @@ export default function CoimbatorePage() {
           {/* Complete Programme List */}
           <div className="mt-12 pt-10 border-t border-gray-200">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">
-              All 34 Programmes Accessible from Coimbatore
+              All 35 Programmes Accessible from Coimbatore
             </h3>
             <p className="text-gray-500 text-sm text-center mb-8">
               Grouped by stream — click any programme for full details
@@ -829,8 +827,6 @@ export default function CoimbatorePage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
               { value: "90%+", label: "PLACEMENT RATE" },
-              { value: "5-7", label: "LPA HIGHEST" },
-              { value: "2-3.5", label: "LPA AVERAGE" },
               { value: "7+", label: "TOP RECRUITERS" },
             ].map((stat) => (
               <div
