@@ -140,7 +140,7 @@ export default function HeroSection() {
                     <Star className="h-4 w-4 text-white" />
                   </div>
                   <div>
-                    <div className="text-brand-green font-bold text-xs">NAAC A+</div>
+                    <div className="text-brand-green font-bold text-xs">NAAC</div>
                     <div className="text-gray-600 text-[10px]">Accredited</div>
                   </div>
                 </div>

@@ -122,7 +122,7 @@ export default function MCAPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Excellence', desc: 'Top-tier quality education' },
               { icon: <Brain className="w-7 h-7" />, stat: 'AI/ML', title: 'Advanced Labs', desc: 'Cutting-edge research facilities' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '36%', title: 'Placement Success', desc: 'Premium IT recruiters' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '0 / 91', title: 'PG placed 2023-24', desc: 'NIRF 2025 submission' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">

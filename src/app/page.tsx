@@ -469,7 +469,7 @@ export default function Home() {
 
           {/* Cards Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Card 1: NAAC A+ Accredited */}
+            {/* Card 1: NAAC Accredited */}
             <div className="bg-white border border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition">
               <div className="bg-[#0b6d41] p-4 rounded-xl w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Award className="h-8 w-8 text-white" />
