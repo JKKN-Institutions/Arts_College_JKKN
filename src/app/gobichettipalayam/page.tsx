@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // 55 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited college near Gobichettipalayam, ~35-40 km via Bhavani. 34 programmes, 90%+ placements. Admissions open 2026–27.",
+    "JKKN CAS — NAAC-accredited college near Gobichettipalayam, ~35-40 km via Bhavani. 38 programmes, NIRF-published placement outcomes. Admissions open 2026–27.",
   // ~138 chars — within 155 limit
 
   keywords: [
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College near Gobichettipalayam — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 34 programmes, 90%+ placements. ~35-40 km from Gobichettipalayam via Bhavani. Admissions open 2026–27.",
+      "JKKN CAS — NAAC-accredited, 38 programmes, NIRF-published placement outcomes. ~35-40 km from Gobichettipalayam via Bhavani. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/gobichettipalayam",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College near Gobichettipalayam — JKKN CAS",
     description:
-      "NAAC-accredited arts college near Gobichettipalayam. 34 programmes, 90%+ placements, hostel available. Admissions 2026–27 open.",
+      "NAAC-accredited arts college near Gobichettipalayam. 38 programmes, NIRF-published placement outcomes, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -91,7 +91,7 @@ export default function GobichettipalayamPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Gobichettipalayam?",
-      a: "JKKN College of Arts and Science, located approximately 35-40 km from Gobichettipalayam via Bhavani, is a NAAC-accredited institution with 35 programmes and 90%+ placement rates. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located approximately 35-40 km from Gobichettipalayam via Bhavani, is a NAAC-accredited institution with 38 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Gobi?",
@@ -103,7 +103,7 @@ export default function GobichettipalayamPage() {
     },
     {
       q: "Which courses are popular among Gobichettipalayam students at JKKN CAS?",
-      a: "JKKN CAS near Gobichettipalayam offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 35 courses in total. All programmes are UGC-approved and affiliated to Periyar University. BCA and B.Com are the most popular among students from the Gobi region.",
+      a: "JKKN CAS near Gobichettipalayam offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 38 courses in total. All programmes are UGC-approved and affiliated to Periyar University. BCA and B.Com are the most popular among students from the Gobi region.",
     },
     {
       q: "Are JKKN CAS fees affordable compared to colleges in Gobichettipalayam?",
@@ -123,64 +123,11 @@ export default function GobichettipalayamPage() {
     },
     {
       q: "What placement rate does JKKN CAS achieve for Gobi students?",
-      a: "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio.. The college provides dedicated placement training and aptitude coaching.",
+      a: "JKKN CAS placed 135 of its 373 UG graduates in 2023-24 (NIRF 2025). Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio.. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Why should Gobichettipalayam students choose JKKN CAS over local colleges?",
-      a: "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters — advantages not uniformly available at colleges in the Gobi area. The ~35-40 km route via Bhavani makes daily commute viable with college transport, and hostel facilities are available for those who prefer on-campus living.",
-    },
-  ];
-
-  const schemaFaqs = [
-    {
-      question: "What is the best arts and science college near Gobichettipalayam?",
-      answer:
-        "JKKN College of Arts and Science, located approximately 35-40 km from Gobichettipalayam via Bhavani, is a NAAC-accredited institution with 35 programmes and 90%+ placement rates. It is affiliated to Periyar University and approved by UGC.",
-    },
-    {
-      question: "How far is JKKN CAS from Gobi?",
-      answer:
-        "JKKN CAS is approximately 35-40 km from Gobichettipalayam, a journey of about 1 hour by road via Bhavani. Buses from Gobi run through Bhavani to Komarapalayam, and the campus sits directly on NH-544 at Natarajapuram.",
-    },
-    {
-      question: "Is there a bus from Gobichettipalayam to JKKN CAS via Bhavani?",
-      answer:
-        "Buses from Gobichettipalayam run via Bhavani and reach Komarapalayam, where the JKKN campus sits directly on NH-544. At this distance of approximately 35-40 km, both daily commute with college transport and hostel stay are practical options.",
-    },
-    {
-      question: "Does JKKN CAS offer hostel facilities for students from Gobichettipalayam?",
-      answer:
-        "JKKN CAS provides separate hostel accommodation for boys and girls on the main campus. The hostel includes furnished rooms, three meals per day, WiFi, and 24/7 security. Learners from Gobichettipalayam can also commute daily via Bhavani with college transport.",
-    },
-    {
-      question: "Are fees at JKKN CAS affordable compared to colleges in Gobichettipalayam?",
-      answer:
-        "JKKN CAS fees are lower than most private colleges in the region. Tamil Nadu government scholarships for BC, MBC, SC, and ST students are available. Contact the admission office at +91 9345855001 for the current fee structure.",
-    },
-    {
-      question: "Is JKKN College of Arts and Science accredited?",
-      answer:
-        "JKKN College of Arts and Science is NAAC-accredited and UGC-approved. The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions, which includes 7 colleges, 2 schools, and a teaching hospital.",
-    },
-    {
-      question: "What placement rate does JKKN CAS achieve for Gobi students?",
-      answer:
-        "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio. with a 2–3.5 LPA average.",
-    },
-    {
-      question: "How can students from Gobichettipalayam apply to JKKN CAS?",
-      answer:
-        "Applications for JKKN CAS are submitted online at jkkn.ai/apply/jkkn-admission-2026 or in person at the campus admission office. Admissions for 2026–27 are currently open. Call +91 9345855001 for guidance on the application process.",
-    },
-    {
-      question: "Which courses are available at arts and science colleges near Gobichettipalayam?",
-      answer:
-        "JKKN CAS near Gobichettipalayam offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 35 courses in total. All programmes are UGC-approved and affiliated to Periyar University.",
-    },
-    {
-      question: "Why should Gobichettipalayam students choose JKKN CAS over local colleges?",
-      answer:
-        "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters — advantages not uniformly available at colleges in the Gobi area. The ~35-40 km route via Bhavani makes daily commute viable.",
+      a: "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and NIRF-published placement outcomes with national recruiters — advantages not uniformly available at colleges in the Gobi area. The ~35-40 km route via Bhavani makes daily commute viable with college transport, and hostel facilities are available for those who prefer on-campus living.",
     },
   ];
 
@@ -190,7 +137,7 @@ export default function GobichettipalayamPage() {
         { name: "Home", url: "https://cas.jkkn.ac.in" },
         { name: "Gobichettipalayam", url: "https://cas.jkkn.ac.in/gobichettipalayam" },
       ]} />
-      <FAQSchema faqs={schemaFaqs} />
+      <FAQSchema faqs={faqs.map((f) => ({ question: f.q, answer: f.a }))} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -200,7 +147,7 @@ export default function GobichettipalayamPage() {
             "about": ORG_REF,
             "name": "Arts and Science College near Gobichettipalayam — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/gobichettipalayam",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college accessible from Gobichettipalayam via Bhavani, approximately 35-40 km away. 34 programmes, 90%+ placements, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college accessible from Gobichettipalayam via Bhavani, approximately 35-40 km away. 38 programmes, NIRF-published placement outcomes, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -246,7 +193,7 @@ export default function GobichettipalayamPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 90%+ placement rate at JKKN CAS, easily reachable from Gobichettipalayam via Bhavani."
+        description="3-year undergraduate IT programme with hands-on training and a placement record published in NIRF 2025 at JKKN CAS, easily reachable from Gobichettipalayam via Bhavani."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -275,8 +222,8 @@ export default function GobichettipalayamPage() {
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             JKKN College of Arts and Science, located on NH-544 approximately
             35-40 km from Gobichettipalayam via Bhavani, is a NAAC-accredited
-            institution offering 35 UG and PG programmes including BCA, BBA,
-            B.Com, and B.Sc specialisations. Affiliated to Periyar University, it achieves 90%+ placement rates with
+            institution offering 38 UG and PG programmes including BCA, BBA,
+            B.Com, and B.Sc specialisations. Affiliated to Periyar University, it publishes its placement record in NIRF 2025 with
             recruiters including TCS, Infosys, HDFC Bank, and Amazon.
           </p>
 
@@ -284,16 +231,16 @@ export default function GobichettipalayamPage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Gobi to JKKN — about 1 hour by road via Bhavani. JKKN College of
             Arts and Science offers NAAC-accredited arts and science programmes
-            with 90%+ placement support — approximately 35-40 km from
+            with placement support — approximately 35-40 km from
             Gobichettipalayam with both hostel and day-scholar options.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "90%+", label: "PLACEMENTS" },
+              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "38km", label: "FROM GOBI" },
-              { value: "35", label: "PROGRAMMES" },
+              { value: "38", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -397,7 +344,7 @@ export default function GobichettipalayamPage() {
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 35 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus.
+            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 38 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -692,7 +639,7 @@ export default function GobichettipalayamPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "90%+", label: "PLACEMENT RATE — 2024–25" },
+              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "7+", label: "TOP RECRUITERS" },
             ].map((stat) => (
               <div
@@ -1114,7 +1061,7 @@ export default function GobichettipalayamPage() {
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Placement Rate</td>
-                  <td className="p-3 text-gray-800 font-medium">90%+</td>
+                  <td className="p-3 text-gray-800 font-medium">36%</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">

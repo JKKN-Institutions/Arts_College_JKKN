@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // 52 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited arts and science college ~27-30 km from Perundurai. 34 programmes, 90%+ placements. Admissions open 2026–27.",
+    "JKKN CAS — NAAC-accredited arts and science college ~27-30 km from Perundurai. 38 programmes, NIRF-published placement outcomes. Admissions open 2026–27.",
   // ~136 chars — within 155 limit
 
   keywords: [
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College near Perundurai — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 34 programmes, 90%+ placements. ~27-30 km from Perundurai. Admissions open 2026–27.",
+      "JKKN CAS — NAAC-accredited, 38 programmes, NIRF-published placement outcomes. ~27-30 km from Perundurai. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/perundurai",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College near Perundurai — JKKN CAS",
     description:
-      "NAAC-accredited arts college near Perundurai. 34 programmes, 90%+ placements, hostel available. Admissions 2026–27 open.",
+      "NAAC-accredited arts college near Perundurai. 38 programmes, NIRF-published placement outcomes, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -90,7 +90,7 @@ export default function PerunduraiPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Perundurai?",
-      a: "JKKN College of Arts and Science, located approximately 27-30 km from Perundurai on NH-544 at Komarapalayam, is a NAAC-accredited institution with 35 programmes and 90%+ placement rates. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located approximately 27-30 km from Perundurai on NH-544 at Komarapalayam, is a NAAC-accredited institution with 38 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Perundurai?",
@@ -98,7 +98,7 @@ export default function PerunduraiPage() {
     },
     {
       q: "Which courses are popular among Perundurai students at JKKN CAS?",
-      a: "JKKN CAS near Perundurai offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 35 courses in total. All programmes are UGC-approved and affiliated to Periyar University. BCA and B.Com are the most popular among students from the Perundurai region.",
+      a: "JKKN CAS near Perundurai offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 38 courses in total. All programmes are UGC-approved and affiliated to Periyar University. BCA and B.Com are the most popular among students from the Perundurai region.",
     },
     {
       q: "Is there a direct bus from Perundurai to JKKN CAS?",
@@ -122,64 +122,11 @@ export default function PerunduraiPage() {
     },
     {
       q: "What placement rate does JKKN CAS achieve for Perundurai students?",
-      a: "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio.. The college provides dedicated placement training and aptitude coaching.",
+      a: "JKKN CAS placed 135 of its 373 UG graduates in 2023-24 (NIRF 2025). Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio.. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Why should Perundurai students choose JKKN CAS?",
-      a: "Perundurai's SIPCOT industrial belt means families value education with strong placement outcomes. JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters. The ~27-30 km route via the Erode/Chithode side makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
-    },
-  ];
-
-  const schemaFaqs = [
-    {
-      question: "What is the best arts and science college near Perundurai?",
-      answer:
-        "JKKN College of Arts and Science, located approximately 27-30 km from Perundurai on NH-544 at Komarapalayam, is a NAAC-accredited institution with 35 programmes and 90%+ placement rates. It is affiliated to Periyar University and approved by UGC.",
-    },
-    {
-      question: "How far is JKKN CAS from Perundurai?",
-      answer:
-        "JKKN CAS is approximately 27-30 km from Perundurai, a journey of about 35 to 40 minutes by road via the Erode/Chithode side. Direct buses run between Perundurai and Komarapalayam, and the campus sits directly on NH-544.",
-    },
-    {
-      question: "Is there a direct bus from Perundurai to JKKN CAS?",
-      answer:
-        "Direct buses run between Perundurai and Komarapalayam, taking about 35 to 40 minutes. Frequent buses on the Erode corridor also connect the two towns. The JKKN campus sits directly on NH-544 at Natarajapuram, Komarapalayam.",
-    },
-    {
-      question: "Does JKKN CAS offer hostel facilities for students from Perundurai?",
-      answer:
-        "JKKN CAS provides separate hostel accommodation for boys and girls on the main campus. The hostel includes furnished rooms, three meals per day, WiFi, and 24/7 security. Perundurai students can also commute daily by direct bus.",
-    },
-    {
-      question: "Are fees at JKKN CAS affordable for Perundurai students?",
-      answer:
-        "JKKN CAS fees are lower than most private colleges in the Erode region. Tamil Nadu government scholarships for BC, MBC, SC, and ST students are available. Contact the admission office at +91 9345855001 for the current fee structure.",
-    },
-    {
-      question: "Is JKKN College of Arts and Science accredited?",
-      answer:
-        "JKKN College of Arts and Science is NAAC-accredited and UGC-approved. The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions.",
-    },
-    {
-      question: "What placement rate does JKKN CAS achieve for Perundurai students?",
-      answer:
-        "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio..",
-    },
-    {
-      question: "How can students from Perundurai apply to JKKN CAS?",
-      answer:
-        "Applications for JKKN CAS are submitted online at jkkn.ai/apply/jkkn-admission-2026 or in person at the campus admission office. Admissions for 2026–27 are currently open. Call +91 9345855001 for guidance.",
-    },
-    {
-      question: "Which courses are available at arts and science colleges near Perundurai?",
-      answer:
-        "JKKN CAS near Perundurai offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 35 courses in total. All programmes are UGC-approved and affiliated to Periyar University.",
-    },
-    {
-      question: "Why should Perundurai students choose JKKN CAS?",
-      answer:
-        "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters. The ~27-30 km route via the Erode/Chithode side makes daily commute viable, and hostel facilities are available.",
+      a: "Perundurai's SIPCOT industrial belt means families value education with strong placement outcomes. JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and NIRF-published placement outcomes with national recruiters. The ~27-30 km route via the Erode/Chithode side makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
     },
   ];
 
@@ -189,7 +136,7 @@ export default function PerunduraiPage() {
         { name: "Home", url: "https://cas.jkkn.ac.in" },
         { name: "Perundurai", url: "https://cas.jkkn.ac.in/perundurai" },
       ]} />
-      <FAQSchema faqs={schemaFaqs} />
+      <FAQSchema faqs={faqs.map((f) => ({ question: f.q, answer: f.a }))} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -199,7 +146,7 @@ export default function PerunduraiPage() {
             "about": ORG_REF,
             "name": "Arts and Science College near Perundurai — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/perundurai",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college approximately 27-30 km from Perundurai via the Erode/Chithode side. 34 programmes, 90%+ placements, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college approximately 27-30 km from Perundurai via the Erode/Chithode side. 38 programmes, NIRF-published placement outcomes, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -245,7 +192,7 @@ export default function PerunduraiPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 90%+ placement rate at JKKN CAS, easily reachable from Perundurai."
+        description="3-year undergraduate IT programme with hands-on training and a placement record published in NIRF 2025 at JKKN CAS, easily reachable from Perundurai."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -274,8 +221,8 @@ export default function PerunduraiPage() {
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             JKKN College of Arts and Science, located on NH-544 approximately
             27-30 km from Perundurai, is a NAAC-accredited institution offering
-            35 UG and PG programmes including BCA, BBA, B.Com, and B.Sc
-            specialisations. Affiliated to Periyar University, it achieves 90%+ placement rates with recruiters
+            38 UG and PG programmes including BCA, BBA, B.Com, and B.Sc
+            specialisations. Affiliated to Periyar University, it reports its placement outcomes in NIRF 2025, with recruiters
             including TCS, Infosys, HDFC Bank, and Amazon.
           </p>
 
@@ -283,7 +230,7 @@ export default function PerunduraiPage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Perundurai to JKKN — about 35-40 minutes by road via the
             Erode/Chithode side. JKKN College of Arts and Science offers
-            NAAC-accredited arts and science programmes with 90%+ placement
+            NAAC-accredited arts and science programmes with placement support
             support — approximately 27-30 km from Perundurai with direct bus
             connectivity.
           </p>
@@ -291,9 +238,9 @@ export default function PerunduraiPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "90%+", label: "PLACEMENTS" },
+              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "28km", label: "FROM PERUNDURAI" },
-              { value: "35", label: "PROGRAMMES" },
+              { value: "38", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -396,7 +343,7 @@ export default function PerunduraiPage() {
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 35 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus.
+            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 38 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -691,7 +638,7 @@ export default function PerunduraiPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "90%+", label: "PLACEMENT RATE — 2024–25" },
+              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "7+", label: "TOP RECRUITERS" },
             ].map((stat) => (
               <div
@@ -1113,7 +1060,7 @@ export default function PerunduraiPage() {
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Placement Rate</td>
-                  <td className="p-3 text-gray-800 font-medium">90%+</td>
+                  <td className="p-3 text-gray-800 font-medium">36%</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">
