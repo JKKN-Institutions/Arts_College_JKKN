@@ -18,9 +18,9 @@ import { HowToSchema } from "@/components/seo/HowToSchema";
 import { WebPageSchema } from "@/components/seo/WebPageSchema";
 
 export const metadata: Metadata = {
-  title: "Placements 2025 — 90%+ Rate, 60+ Recruiters | JKKN Arts & Science",
+  title: "Placements — NIRF 2025 Reported Outcomes | JKKN Arts & Science",
   description:
-    "JKKN College of Arts and Science Komarapalayam placement 2024-25 — 90%+ placement rate, 60+ recruiters (TCS, Infosys, Wipro, CTS). Career training from Year 1.",
+    "JKKN College of Arts and Science Komarapalayam placement 2024-25 — placement record published in NIRF 2025, 60+ recruiters (TCS, Infosys, Wipro, CTS). Career training from Year 1.",
   keywords: [
     "JKKN College placements",
     "arts and science college placements near Erode",
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Placements 2025 — 90%+ Rate, 60+ Recruiters | JKKN Arts & Science",
+    title: "Placements — NIRF 2025 Reported Outcomes | JKKN Arts & Science",
     description:
-      "90%+ placement rate, 60+ recruiters. Career guidance and campus recruitment at JKKN College of Arts and Science, Komarapalayam.",
+      "placement record published in NIRF 2025, 60+ recruiters. Career guidance and campus recruitment at JKKN College of Arts and Science, Komarapalayam.",
     url: "https://cas.jkkn.ac.in/placements",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Placements 2025 — 90%+ Rate, 60+ Recruiters | JKKN Arts & Science",
+    title: "Placements — NIRF 2025 Reported Outcomes | JKKN Arts & Science",
     description:
-      "90%+ placement rate, 60+ recruiters. Campus recruitment at JKKN CAS Komarapalayam.",
+      "placement record published in NIRF 2025, 60+ recruiters. Campus recruitment at JKKN CAS Komarapalayam.",
     images: ["https://cas.jkkn.ac.in/opengraph-image"],
   },
 };
@@ -72,7 +72,7 @@ const placementFAQs = [
     question:
       "What is the placement rate at JKKN College of Arts and Science?",
     answer:
-      "JKKN College of Arts and Science maintains a placement rate of over 90% across all eligible students. The Placement Cell actively coordinates with 60+ companies to provide diverse career opportunities in IT, banking, education, healthcare and other sectors.",
+      "JKKN College of Arts and Science reported 135 of 373 UG graduates placed for 2023-24 in its NIRF 2025 return. The Placement Cell actively coordinates with 60+ companies to provide diverse career opportunities in IT, banking, education, healthcare and other sectors.",
   },
   {
     question: "Which companies recruit from JKKN College of Arts and Science?",
@@ -105,7 +105,7 @@ const placementFAQs = [
 const highlightStats = [
   {
     icon: TrendingUp,
-    value: "90%+",
+    value: "36%",
     label: "Placement Rate",
     description: "Across all eligible learners",
   },
@@ -241,7 +241,7 @@ export default function PlacementsPage() {
             Placements at JKKN College of Arts and Science
           </h1>
           <p className="text-white/80 text-base md:text-lg max-w-3xl mx-auto mb-8">
-            90%+ placement rate with 60+ top recruiters. Our dedicated Placement
+            placement record published in NIRF 2025 with 60+ top recruiters. Our dedicated Placement
             Cell prepares learners from Day 1 for successful careers in IT,
             banking, healthcare, education, and more.
           </p>
@@ -483,7 +483,7 @@ export default function PlacementsPage() {
             Start Your Career Journey with JKKN
           </h2>
           <p className="text-white/80 text-sm md:text-base mb-8 max-w-xl mx-auto">
-            Join a college where 90%+ learners get placed. Our Placement Cell
+            Join a college that publishes its placement outcomes in the NIRF return. Our Placement Cell
             supports you from admission to your first job and beyond.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

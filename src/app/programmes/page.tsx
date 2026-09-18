@@ -6,14 +6,14 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Programmes",
   description:
-    "Explore 35 UG, PG and PhD programmes in Arts, Science, Commerce and Management at JKKN College of Arts and Science.",
+    "Explore 38 UG, PG and PhD programmes in Arts, Science, Commerce and Management at JKKN College of Arts and Science.",
   alternates: {
     canonical: "https://cas.jkkn.ac.in/programmes",
   },
   openGraph: {
     title: "Programmes | JKKN College of Arts and Science",
     description:
-      "Explore 35 UG, PG and PhD programmes in Arts, Science, Commerce and Management at JKKN College of Arts and Science.",
+      "Explore 38 UG, PG and PhD programmes in Arts, Science, Commerce and Management at JKKN College of Arts and Science.",
     url: "https://cas.jkkn.ac.in/programmes",
     siteName: "JKKN College of Arts and Science",
     type: "website",

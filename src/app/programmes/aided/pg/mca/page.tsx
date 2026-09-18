@@ -122,7 +122,7 @@ export default function MCAPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Excellence', desc: 'Top-tier quality education' },
               { icon: <Brain className="w-7 h-7" />, stat: 'AI/ML', title: 'Advanced Labs', desc: 'Cutting-edge research facilities' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '90%', title: 'Placement Success', desc: 'Premium IT recruiters' },
+              { icon: <Briefcase className="w-7 h-7" />, stat: '36%', title: 'Placement Success', desc: 'Premium IT recruiters' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">
@@ -627,7 +627,7 @@ export default function MCAPage() {
                 {[
                   { title: 'NAAC  Accredited Excellence', description: 'Top-tier recognition ensuring quality education, superior infrastructure, and academic standards' },
                   { title: 'Industry-Driven Learning Framework', description: 'Learning Framework co-designed with tech industry leaders covering AI, cloud, and emerging technologies' },
-                  { title: 'Premium Placements', description: '90% placement rate with average packages of 6+ LPA and top recruiters from Fortune 500 companies' },
+                  { title: 'Premium Placements', description: 'placement record published in NIRF 2025 with average packages of 6+ LPA and top recruiters from Fortune 500 companies' },
                   { title: 'Expert Senior Learners', description: 'PhD-qualified and industry-experienced Senior Learners with active research contributions' },
                   { title: 'Global Industry Connections', description: 'MoUs with leading tech companies, international certifications, and global internship opportunities' }
                 ].map((reason, idx) => (

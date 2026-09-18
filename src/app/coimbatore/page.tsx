@@ -44,7 +44,7 @@ import {
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
   description:
-    "JKKN CAS — 105 km from Coimbatore. NAAC-accredited. Fees 30–50% lower than city colleges. BCA, B.Sc CS, BBA, B.Com. 90%+ placements. 2026-27 open.",
+    "JKKN CAS — 105 km from Coimbatore. NAAC-accredited. Fees 30–50% lower than city colleges. BCA, B.Sc CS, BBA, B.Com. NIRF-published placement outcomes. 2026-27 open.",
   keywords: [
     "arts and science college near Coimbatore",
     "best college near Coimbatore",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
     description:
-      "JKKN CAS — 105 km from Coimbatore. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 105 km from Coimbatore. NAAC-accredited, NIRF-published placement outcomes. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/coimbatore",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
-    description: "JKKN CAS — 105 km from Coimbatore. NAAC-accredited, 90%+ placements. Admissions open 2026-27.",
+    description: "JKKN CAS — 105 km from Coimbatore. NAAC-accredited, NIRF-published placement outcomes. Admissions open 2026-27.",
   },
 };
 
@@ -88,7 +88,7 @@ export default function CoimbatorePage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Coimbatore?",
-      a: "JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC-accredited, 74-year-old institution with 35 programmes and 90%+ placements. Admissions open for 2026–27.",
+      a: "JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC-accredited, 74-year-old institution with 38 programmes and NIRF-published placement outcomes. Admissions open for 2026–27.",
     },
     {
       q: "How far is JKKN CAS from Coimbatore?",
@@ -124,7 +124,7 @@ export default function CoimbatorePage() {
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Coimbatore city?",
-      a: "JKKN CAS offers 30–50% lower fees, smaller classes with personal attention, a 90%+ placement rate, and the same top recruiters — TCS, Infosys, Amazon — as Coimbatore city colleges. Hostel and weekend buses available.",
+      a: "JKKN CAS offers 30–50% lower fees, smaller classes with personal attention, a placement record published in NIRF 2025, and the same top recruiters — TCS, Infosys, Amazon — as Coimbatore city colleges. Hostel and weekend buses available.",
     },
     {
       q: "Which IT companies recruit JKKN CAS graduates in Coimbatore?",
@@ -236,7 +236,7 @@ export default function CoimbatorePage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme at JKKN CAS — 105 km from Coimbatore. Pipeline to Coimbatore TIDEL Park and Elcot SEZ IT companies. Fees 30–50% lower than city colleges. 90%+ placement rate."
+        description="3-year undergraduate IT programme at JKKN CAS — 105 km from Coimbatore. Pipeline to Coimbatore TIDEL Park and Elcot SEZ IT companies. Fees 30–50% lower than city colleges. placement record published in NIRF 2025."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -264,7 +264,7 @@ export default function CoimbatorePage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Better value, better campus, better you — just 2 hours from
             Coimbatore. JKKN College of Arts and Science offers top-tier arts
-            and science programmes with 90%+ placement support — world-class
+            and science programmes with placement support — world-class
             education at a fraction of Coimbatore city college fees.
           </p>
 
@@ -274,7 +274,7 @@ export default function CoimbatorePage() {
             located in Komarapalayam, Namakkal district, Tamil Nadu — 105 km from Coimbatore
             via NH-544. Founded in 1974 and affiliated to Periyar University, JKKN CAS offers 34 undergraduate, postgraduate, and research programmes
             spanning arts, science, commerce, and computer applications. The institution maintains
-            a 90%+ placement rate with recruiters including TCS, Infosys BPO, HDFC Bank, Amazon,
+            a placement record published in NIRF 2025 with recruiters including TCS, Infosys BPO, HDFC Bank, Amazon,
             and Flipkart. A 50+ acre residential campus with separate hostel facilities, digital
             library, modern laboratories, and weekend bus services to Coimbatore makes it an
             accessible choice for students from Coimbatore seeking affordable quality education.
@@ -283,7 +283,7 @@ export default function CoimbatorePage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "90%+", label: "PLACEMENTS" },
+              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "105km", label: "FROM COIMBATORE" },
               { value: "4", label: "PROGRAMMES" },
             ].map((stat) => (
@@ -467,7 +467,7 @@ export default function CoimbatorePage() {
               { factor: "Class Size", city: "60-100+ students", jkkn: "40-60 students", icon: Users },
               { factor: "Campus", city: "Compact, urban", jkkn: "50+ acre green campus", icon: Leaf },
               { factor: "Faculty Access", city: "Limited one-on-one time", jkkn: "Personalised mentoring", icon: GraduationCap },
-              { factor: "Placement Rate", city: "Varies widely", jkkn: "90%+ consistent", icon: TrendingUp },
+              { factor: "Placement Rate", city: "Varies widely", jkkn: "36% UG, NIRF 2025", icon: TrendingUp },
               { factor: "Living Cost", city: "High PG/transport costs", jkkn: "Affordable hostel + meals included", icon: Home },
             ].map((row) => (
               <div key={row.factor} className="grid grid-cols-3 border-t border-gray-100 text-sm">
@@ -764,7 +764,7 @@ export default function CoimbatorePage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "90%+", label: "PLACEMENT RATE" },
+              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "7+", label: "TOP RECRUITERS" },
             ].map((stat) => (
               <div

@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
     description:
-      "JKKN CAS — 70 km from Tiruppur. NAAC-accredited, 90%+ placements. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 70 km from Tiruppur. NAAC-accredited, NIRF-published placement outcomes. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/tiruppur",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
-    description: "JKKN CAS — 70 km from Tiruppur. NAAC-accredited, 90%+ placements. Admissions open 2026-27.",
+    description: "JKKN CAS — 70 km from Tiruppur. NAAC-accredited, NIRF-published placement outcomes. Admissions open 2026-27.",
   },
 };
 
@@ -87,7 +87,7 @@ export default function TiruppurPage() {
     },
     {
       q: "Which courses are popular among Tiruppur students at JKKN CAS?",
-      a: "BBA and B.Com are the most popular choices among Tiruppur students, given the city's thriving knitwear export industry. BCA is also in high demand as textile companies digitalise. JKKN CAS offers 35 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
+      a: "BBA and B.Com are the most popular choices among Tiruppur students, given the city's thriving knitwear export industry. BCA is also in high demand as textile companies digitalise. JKKN CAS offers 38 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
     },
     {
       q: "Can BCA students from Tiruppur get IT jobs?",
@@ -115,7 +115,7 @@ export default function TiruppurPage() {
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Tiruppur?",
-      a: "JKKN CAS offers clear advantages over Tiruppur city colleges. Fees are 30-50% lower, class sizes are smaller, the 50+ acre green campus is distraction-free, and placement rates (90%+) match city institutions. The same top recruiters — TCS, Infosys, HDFC, Amazon — visit JKKN CAS.",
+      a: "JKKN CAS offers clear advantages over Tiruppur city colleges. Fees are 30-50% lower, class sizes are smaller, the 50+ acre green campus is distraction-free, and placement outcomes are published each year in the NIRF return for this college. The same top recruiters — TCS, Infosys, HDFC, Amazon — visit JKKN CAS.",
     },
   ];
 
@@ -183,7 +183,7 @@ export default function TiruppurPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 90%+ placement rate at JKKN CAS, a quality alternative to Tiruppur city colleges."
+        description="3-year undergraduate IT programme with hands-on training and a placement record published in NIRF 2025 at JKKN CAS, a quality alternative to Tiruppur city colleges."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -211,14 +211,14 @@ export default function TiruppurPage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Tiruppur students — world-class education without the big-city
             hassle. JKKN College of Arts and Science offers top-tier arts and
-            science programmes with 90%+ placement support — no need to go to
+            science programmes with placement support — no need to go to
             Coimbatore — quality education is closer than you think.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "90%+", label: "PLACEMENTS" },
+              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "70km", label: "FROM TIRUPPUR" },
               { value: "4", label: "PROGRAMMES" },
             ].map((stat) => (
@@ -615,7 +615,7 @@ export default function TiruppurPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "90%+", label: "PLACEMENT RATE" },
+              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "7+", label: "TOP RECRUITERS" },
             ].map((stat) => (
               <div

@@ -946,7 +946,7 @@ export default function BComCAPage() {
                           Strong Placement Record
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                          90%+ placement with top recruiters including Big 4 firms, banks, and MNCs visiting campus annually.
+                          placement support with top recruiters including Big 4 firms, banks, and MNCs visiting campus annually.
                         </p>
                       </div>
                     </div>

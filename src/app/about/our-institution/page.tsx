@@ -4,11 +4,11 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Our Institution",
-  description: "JKKN College of Arts and Science (Autonomous), affiliated to Periyar University. 35 programmes in Arts, Science & Commerce near Erode, TN.",
+  description: "JKKN College of Arts and Science (Autonomous), affiliated to Periyar University. 38 programmes in Arts, Science & Commerce near Erode, TN.",
   alternates: { canonical: "https://cas.jkkn.ac.in/about/our-institution" },
   openGraph: {
     title: "Our Institution | JKKN Arts & Science",
-    description: "JKKN College of Arts and Science (Autonomous), affiliated to Periyar University. 35 programmes in Arts, Science & Commerce near Erode, TN.",
+    description: "JKKN College of Arts and Science (Autonomous), affiliated to Periyar University. 38 programmes in Arts, Science & Commerce near Erode, TN.",
     url: "https://cas.jkkn.ac.in/about/our-institution",
     siteName: "JKKN College of Arts and Science",
     type: "website",
