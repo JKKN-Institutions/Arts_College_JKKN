@@ -21,6 +21,9 @@ export function AllCoursesSchema() {
 
   const courses = Object.entries(programmeMetadata).map(([path, prog]) => ({
     "@type": "Course",
+    // Same @id scheme as CourseSchema, so the homepage listing and the
+    // programme's own page describe ONE course, not two.
+    "@id": `https://cas.jkkn.ac.in/programmes/${path}#course`,
     name: prog.fullName,
     description: prog.description,
     url: `https://cas.jkkn.ac.in/programmes/${path}`,
