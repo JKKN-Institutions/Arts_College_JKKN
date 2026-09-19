@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ClientLayoutWrapper } from "@/components/layout/ClientLayoutWrapper";
 import { OrganizationSchema } from "@/components/seo/OrganizationSchema";
-import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
 import { WebSiteSchema } from "@/components/seo/WebSiteSchema";
 import { MetaPixel } from "@/components/analytics/MetaPixel";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | JKKN College of Arts and Science",
   },
   description:
-    "JKKN College — the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited, 90% placement. 35 UG, PG & PhD programmes near Erode.",
+    "JKKN College — the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited, placement record published in NIRF 2025. 38 UG, PG & PhD programmes near Erode.",
   keywords: [
     "JKKN College of Arts and Science",
     "arts and science college near Erode",
@@ -53,7 +52,7 @@ export const metadata: Metadata = {
     title:
       "JKKN College of Arts and Science | Autonomous | 34 Programmes",
     description:
-      "Autonomous institution offering 35 UG, PG and PhD programmes. Affiliated to Periyar University, near Erode, Tamil Nadu.",
+      "Autonomous institution offering 38 UG, PG and PhD programmes. Affiliated to Periyar University, near Erode, Tamil Nadu.",
     images: [
       {
         url: `${SITE_URL}/opengraph-image`,
@@ -68,7 +67,7 @@ export const metadata: Metadata = {
     title:
       "JKKN College of Arts and Science | Autonomous | 34 Programmes",
     description:
-      "Autonomous institution offering 35 UG, PG and PhD programmes. Near Erode, Tamil Nadu.",
+      "Autonomous institution offering 38 UG, PG and PhD programmes. Near Erode, Tamil Nadu.",
     images: [
       {
         url: `${SITE_URL}/opengraph-image`,
@@ -106,7 +105,6 @@ export default function RootLayout({
         <ConversionTracking />
         <MetaPixel />
         <OrganizationSchema />
-        <LocalBusinessSchema />
         <WebSiteSchema />
         <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
       </body>

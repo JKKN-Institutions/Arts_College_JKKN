@@ -1,3 +1,5 @@
+import { ORG_ID, ORG_NAME } from "./entity";
+
 import { programmeMetadata } from "@/data/programme-metadata";
 
 /**
@@ -19,13 +21,16 @@ export function AllCoursesSchema() {
 
   const courses = Object.entries(programmeMetadata).map(([path, prog]) => ({
     "@type": "Course",
+    // Same @id scheme as CourseSchema, so the homepage listing and the
+    // programme's own page describe ONE course, not two.
+    "@id": `https://cas.jkkn.ac.in/programmes/${path}#course`,
     name: prog.fullName,
     description: prog.description,
     url: `https://cas.jkkn.ac.in/programmes/${path}`,
     provider: {
       "@type": "CollegeOrUniversity",
-      "@id": "https://cas.jkkn.ac.in/#organization",
-      name: "JKKN College of Arts and Science",
+      "@id": ORG_ID,
+      name: ORG_NAME,
     },
     timeRequired: prog.duration,
     educationalLevel: levelMap[prog.level],

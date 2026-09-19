@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     absolute: 'JKKN College of Arts and Science (Autonomous), Komarapalayam',
   },
   description:
-    'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited, Periyar University. 35 UG, PG & PhD programmes, 90% placement. Apply 2026-27.',
+    'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited, Periyar University. 38 UG, PG & PhD programmes, placement record published in NIRF 2025. Apply 2026-27.',
   keywords: [
     'best arts and science college in Tamil Nadu',
     'JKKN College of Arts and Science',
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'JKKN College of Arts and Science (Autonomous), Komarapalayam',
     description:
-      'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited, Periyar University. 35 UG, PG & PhD programmes, 90% placement. Apply 2026-27.',
+      'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited, Periyar University. 38 UG, PG & PhD programmes, placement record published in NIRF 2025. Apply 2026-27.',
     url: 'https://cas.jkkn.ac.in',
     siteName: 'JKKN College of Arts and Science',
     type: 'website',
@@ -81,17 +81,17 @@ const homepageFAQs = [
   {
     question: "Why is JKKN considered the best arts and science college in Tamil Nadu?",
     answer:
-      "JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation, UGC-recognized autonomous status, 90% placement rate and industry partnerships with 60+ recruiters including TCS, Infosys, and Wipro. The college offers 35 programmes with AI/IoT labs and in-built internship pathways.",
+      "JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation, UGC-recognized autonomous status, placement record published in NIRF 2025 and industry partnerships with 60+ recruiters including TCS, Infosys, and Wipro. The college offers 38 programmes with AI/IoT labs and in-built internship pathways.",
   },
   {
     question: "What makes JKKN different from other arts and science colleges in Tamil Nadu?",
     answer:
-      "Unlike many arts and science colleges in Tamil Nadu, JKKN offers an industry-integrated curriculum with collaborations from NASSCOM, CII, and leading MNCs. Students benefit from dedicated AI and IoT research labs, 121 faculty on roll (52 with a PhD, NIRF 2025), and a training and placement cell that delivers measurable outcomes — 90% placement and career opportunities across India and abroad.",
+      "Unlike many arts and science colleges in Tamil Nadu, JKKN offers an industry-integrated curriculum with collaborations from NASSCOM, CII, and leading MNCs. Students benefit from dedicated AI and IoT research labs, 121 faculty on roll (52 with a PhD, NIRF 2025), and a training and placement cell that delivers measurable outcomes — placement support and career opportunities across India and abroad.",
   },
   {
     question: "What programmes does JKKN Arts and Science College offer in Tamil Nadu?",
     answer:
-      "JKKN College offers 35 programmes including B.Sc Computer Science, BCA, B.Sc AI & Data Science, B.Com, BBA, B.Sc Cyber Security, B.Sc Visual Communication, B.Sc Microbiology, and more. Postgraduate options include M.Sc Computer Science, M.Com, and MA English. All programmes are affiliated to Periyar University and designed for career readiness.",
+      "JKKN College offers 38 programmes including B.Sc Computer Science, BCA, B.Sc AI & Data Science, B.Com, BBA, B.Sc Cyber Security, B.Sc Visual Communication, B.Sc Microbiology, and more. Postgraduate options include M.Sc Computer Science, M.Com, and MA English. All programmes are affiliated to Periyar University and designed for career readiness.",
   },
   {
     question: "What are the admission requirements for undergraduate programs?",
@@ -101,7 +101,7 @@ const homepageFAQs = [
   {
     question: "Does JKKN College provide placement assistance?",
     answer:
-      "Yes, we have a dedicated placement cell that works year-round to connect students with top employers. We maintain strong industry partnerships and achieve a 90% placement rate across all programs.",
+      "Yes, we have a dedicated placement cell that works year-round to connect students with top employers. We maintain strong industry partnerships and publish our placement record each year in the NIRF submission.",
   },
   {
     question: "What facilities are available on campus?",
@@ -131,7 +131,7 @@ const homepageFAQs = [
   {
     question: "How does JKKN compare to other arts and science colleges in Tamil Nadu?",
     answer:
-      "JKKN stands out with its autonomous status (UGC-recognized), NAAC accreditation, 90% placement rate — metrics that match or exceed many top-ranked colleges. Unlike most arts colleges, JKKN offers AI/IoT research labs, NASSCOM and CII industry partnerships, and 34 programmes. The 74+ year institutional legacy and 60+ recruiting companies further distinguish JKKN from peers.",
+      "JKKN stands out with its autonomous status (UGC-recognized), NAAC accreditation, placement record published in NIRF 2025 — metrics that match or exceed many top-ranked colleges. Unlike most arts colleges, JKKN offers AI/IoT research labs, NASSCOM and CII industry partnerships, and 38 programmes. The 74+ year institutional legacy and 60+ recruiting companies further distinguish JKKN from peers.",
   },
   {
     question: "What are the career options after completing a degree from JKKN?",
@@ -151,7 +151,7 @@ const homepageFAQs = [
   {
     question: "What is JKKN College's placement record and highest package?",
     answer:
-      "JKKN College maintains a consistent 90% placement rate across all programmes. Over 60 companies recruit from campus annually, including TCS, Infosys, Wipro, Foxconn, TVS, and Sakthi Group. The dedicated Training and Placement Cell provides aptitude training, mock interviews, and industry certifications year-round.",
+      "JKKN College published a UG placement figure of 135 of 373 graduates for 2023-24 in NIRF 2025. Over 60 companies recruit from campus annually, including TCS, Infosys, Wipro, Foxconn, TVS, and Sakthi Group. The dedicated Training and Placement Cell provides aptitude training, mock interviews, and industry certifications year-round.",
   },
   {
     question: "Which top companies recruit from JKKN College?",
@@ -166,7 +166,7 @@ const homepageFAQs = [
   {
     question: "Does JKKN College offer distance education or online programmes?",
     answer:
-      "JKKN College currently focuses on full-time, on-campus programmes across 35 UG, PG, and doctoral courses. The college does not offer distance education at present. However, students have access to NPTEL online courses, digital library resources, and SWAYAM platform integration as supplementary learning. For full-time programme details, visit the admissions portal or contact +91-93458-55001.",
+      "JKKN College currently focuses on full-time, on-campus programmes across 38 UG, PG, and doctoral courses. The college does not offer distance education at present. However, students have access to NPTEL online courses, digital library resources, and SWAYAM platform integration as supplementary learning. For full-time programme details, visit the admissions portal or contact +91-93458-55001.",
   },
 ];
 
@@ -183,7 +183,7 @@ export default function Home() {
         name="How to Apply for Admission at JKKN College of Arts and Science"
         description="Step-by-step guide to apply for UG, PG, and PhD programmes at JKKN College of Arts and Science, Komarapalayam, Tamil Nadu."
         steps={[
-          { name: "Choose Your Program", text: "Browse 34 UG, PG, and PhD programmes across Science, Commerce, IT, and Management streams. Check eligibility criteria and course details on the programmes page." },
+          { name: "Choose Your Program", text: "Browse 38 UG, PG, and PhD programmes across Science, Commerce, IT, and Management streams. Check eligibility criteria and course details on the programmes page." },
           { name: "Apply Online", text: "Fill out the online admission form at jkkn.ai/apply/jkkn-admission-2026 with your personal details, academic records, and preferred programme. Upload required documents." },
           { name: "Get Admitted", text: "Receive your admission confirmation via email and SMS. Pay the admission fee online or at the campus office to secure your seat." },
           { name: "Start Learning", text: "Attend the orientation programme, collect your ID card, and begin classes at the JKKN campus on NH-544, Komarapalayam." },
@@ -205,7 +205,7 @@ export default function Home() {
       />
       <WebPageSchema
         name="Best Arts and Science College in Tamil Nadu — JKKN College (Autonomous)"
-        description="JKKN College of Arts and Science is the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited, 90% placement rate, 35 UG, PG & PhD programmes near Erode."
+        description="JKKN College of Arts and Science is the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited, placement record published in NIRF 2025, 38 UG, PG & PhD programmes near Erode."
         url="https://cas.jkkn.ac.in"
         lastReviewed="2026-03-28"
         speakable={["h1", ".hero-description", "[data-speakable]"]}
@@ -213,7 +213,7 @@ export default function Home() {
       <Suspense fallback={null}><ScrollToSection /></Suspense>
       {/* Screen-reader overview for voice assistants and AI crawlers */}
       <p className="sr-only">
-        JKKN College of Arts and Science is an autonomous, NAAC-accredited institution located on NH-544 in Komarapalayam, near Erode, Tamil Nadu. Affiliated to Periyar University and part of J.K.K. Nattraja Educational Institutions established in 1952, the college offers 34 UG, PG, and PhD programmes across Science, Commerce, IT, and Management. With a 90% placement rate, 60+ recruiters including TCS, Infosys, and Wipro, and 1,685 students on a 15-acre campus, JKKN is widely regarded as one of the best arts and science colleges in Tamil Nadu.
+        JKKN College of Arts and Science is an autonomous, NAAC-accredited institution located on NH-544 in Komarapalayam, near Erode, Tamil Nadu. Affiliated to Periyar University and part of J.K.K. Nattraja Educational Institutions established in 1952, the college offers 38 UG, PG, and PhD programmes across Science, Commerce, IT, and Management. With a placement record published in NIRF 2025, 60+ recruiters including TCS, Infosys, and Wipro, and 1,685 students on a 15-acre campus, JKKN is widely regarded as one of the best arts and science colleges in Tamil Nadu.
       </p>
       {/* Hero Section - Fits exactly one screen */}
       <HeroSection />
@@ -246,7 +246,7 @@ export default function Home() {
                   Established in 1974 as part of <strong>J.K.K. Nattraja Educational Institutions</strong> (est. 1952), JKKN blends 74+ years of academic heritage with a modern, industry-integrated learning framework. Our NAAC accreditation and UGC-recognized autonomous status empower us to design programmes aligned with current industry demands.
                 </p>
                 <p>
-                  With 121 Senior Learners, 52 of them PhD-qualified, AI and IoT research labs, partnerships with NASSCOM and CII, and a 90% placement track record, we prepare Learners not just for jobs — but for successful careers across India and abroad.
+                  With 121 Senior Learners, 52 of them PhD-qualified, AI and IoT research labs, partnerships with NASSCOM and CII, and a placement record published in NIRF 2025, we prepare Learners not just for jobs — but for successful careers across India and abroad.
                 </p>
               </div>
 
@@ -327,7 +327,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto space-y-6 text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] text-gray-700">
             {/* Snippet definition paragraph — optimized for Google Featured Snippet */}
             <p>
-              <strong>JKKN College of Arts and Science</strong> is widely recognized as one of the best arts and science colleges in Tamil Nadu. With five decades of academic heritage, NAAC accreditation, UGC-recognized autonomous status, and a 90% placement rate, JKKN offers 35 industry-aligned programmes near Erode on the Salem–Coimbatore Highway.
+              <strong>JKKN College of Arts and Science</strong> is widely recognized as one of the best arts and science colleges in Tamil Nadu. With five decades of academic heritage, NAAC accreditation, UGC-recognized autonomous status, and a placement record published in NIRF 2025, JKKN offers 38 industry-aligned programmes near Erode on the Salem–Coimbatore Highway.
             </p>
 
             {/* Numbered list — optimized for Google List Snippet */}
@@ -337,8 +337,8 @@ export default function Home() {
                 <li>College established 1974 — part of JKKN Institutions (Est. 1952)</li>
                 <li>Autonomous Status — UGC Recognized</li>
                 <li>NAAC Accredited Institution</li>
-                <li>90% Placement Rate</li>
-                <li>35 UG, PG &amp; PhD Programmes</li>
+                <li>Placement record published in NIRF 2025</li>
+                <li>38 UG, PG &amp; PhD Programmes</li>
                 <li>AI/IoT Learning Labs + NASSCOM &amp; CII Industry Partnerships</li>
                 <li>60+ Recruiters Including TCS, Infosys, Wipro</li>
               </ol>
@@ -348,10 +348,10 @@ export default function Home() {
               With over seven decades of academic heritage, JKKN College of Arts and Science has earned its reputation as one of the <strong>best arts and science colleges in Tamil Nadu</strong>. Located on the Salem–Coimbatore Highway in Komarapalayam, the college combines the strength of a well-established institution with a forward-looking, industry-aligned learning framework that prepares learners for real-world careers.
             </p>
             <p>
-              What sets JKKN apart from other arts and science colleges in Tamil Nadu is the focus on measurable outcomes. A <strong>90% placement rate</strong>, and partnerships with 60+ recruiters — including TCS, Infosys, Wipro, and Foxconn — demonstrate that academic quality here translates directly into career success. Learners from across Tamil Nadu, Kerala, and Karnataka choose JKKN for this proven track record.
+              What sets JKKN apart from other arts and science colleges in Tamil Nadu is the focus on measurable outcomes. A <strong>placement record published in NIRF 2025</strong>, and partnerships with 60+ recruiters — including TCS, Infosys, Wipro, and Foxconn — demonstrate that academic quality here translates directly into career success. Learners from across Tamil Nadu, Kerala, and Karnataka choose JKKN for this proven track record.
             </p>
             <p>
-              The college offers 35 UG, PG, and doctoral programmes across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research learning labs, NASSCOM and CII collaborations, and in-built internship pathways make JKKN a <strong>top arts college near Erode</strong> for learners seeking future-ready education in Tamil Nadu.
+              The college offers 38 UG, PG, and doctoral programmes across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research learning labs, NASSCOM and CII collaborations, and in-built internship pathways make JKKN a <strong>top arts college near Erode</strong> for learners seeking future-ready education in Tamil Nadu.
             </p>
 
             {/* Key Differentiators Grid */}
@@ -410,7 +410,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-white border-b border-gray-100">
                   <td className="px-4 py-3 font-medium">Placement Rate</td>
-                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">90%</td>
+                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">36%</td>
                   <td className="px-4 py-3 text-gray-500">40–60%</td>
                 </tr>
                 <tr className="bg-gray-50 border-b border-gray-100">
@@ -469,7 +469,7 @@ export default function Home() {
 
           {/* Cards Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Card 1: NAAC A+ Accredited */}
+            {/* Card 1: NAAC Accredited */}
             <div className="bg-white border border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition">
               <div className="bg-[#0b6d41] p-4 rounded-xl w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Award className="h-8 w-8 text-white" />
@@ -480,12 +480,12 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Card 2: 90%+ Placement */}
+            {/* Card 2: Placement record */}
             <div className="bg-white border border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition">
               <div className="bg-[#0b6d41] p-4 rounded-xl w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <TrendingUp className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">90% Placement</h3>
+              <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Placement Record</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
                 Exceptional placement record with 60+ recruiters across Tamil Nadu and India — TCS, Infosys, Wipro, and leading MNCs
               </p>
@@ -591,7 +591,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16" data-speakable>
             {/* Stat 1: Placement Rate */}
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
-              <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">90%</div>
+              <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">36%</div>
               <div className="text-[14px] leading-[20px] font-medium text-gray-600">Placement Rate</div>
             </div>
 
@@ -1019,7 +1019,7 @@ export default function Home() {
               Quick Answer: Best Arts and Science College in Tamil Nadu
             </h3>
             <p className="text-[15px] md:text-[16px] leading-[24px] md:leading-[26px] text-gray-700">
-              <strong>JKKN College of Arts and Science</strong> (Autonomous) in Komarapalayam, Tamil Nadu, is consistently ranked among the best arts and science colleges in the state. Key highlights: <strong>NAAC accredited</strong>, <strong>UGC-recognized autonomous status</strong>, <strong>90% placement rate</strong>, <strong>35 UG/PG/PhD programmes</strong>, and partnerships with <strong>60+ recruiters</strong> including TCS, Infosys, and Wipro. Affiliated to Periyar University; established 1974 within a group founded in 1952.
+              <strong>JKKN College of Arts and Science</strong> (Autonomous) in Komarapalayam, Tamil Nadu, is consistently ranked among the best arts and science colleges in the state. Key highlights: <strong>NAAC accredited</strong>, <strong>UGC-recognized autonomous status</strong>, <strong>placement record published in NIRF 2025</strong>, <strong>38 UG/PG/PhD programmes</strong>, and partnerships with <strong>60+ recruiters</strong> including TCS, Infosys, and Wipro. Affiliated to Periyar University; established 1974 within a group founded in 1952.
             </p>
           </div>
         </div>
@@ -1045,7 +1045,7 @@ export default function Home() {
                 Why is JKKN considered the best arts and science college in Tamil Nadu?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation, UGC-recognized autonomous status, 90% placement rate and industry partnerships with 60+ recruiters including TCS, Infosys, and Wipro. The college offers 35 programmes with AI/IoT labs and in-built internship pathways.
+                JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation, UGC-recognized autonomous status, placement record published in NIRF 2025 and industry partnerships with 60+ recruiters including TCS, Infosys, and Wipro. The college offers 38 programmes with AI/IoT labs and in-built internship pathways.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-best-2" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
@@ -1053,7 +1053,7 @@ export default function Home() {
                 What makes JKKN different from other arts and science colleges in Tamil Nadu?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Unlike many arts and science colleges in Tamil Nadu, JKKN offers an industry-integrated curriculum with collaborations from NASSCOM, CII, and leading MNCs. Students benefit from dedicated AI and IoT research labs, 121 faculty on roll (52 with a PhD, NIRF 2025), and a training and placement cell that delivers measurable outcomes — 90% placement and career opportunities across India and abroad.
+                Unlike many arts and science colleges in Tamil Nadu, JKKN offers an industry-integrated curriculum with collaborations from NASSCOM, CII, and leading MNCs. Students benefit from dedicated AI and IoT research labs, 121 faculty on roll (52 with a PhD, NIRF 2025), and a training and placement cell that delivers measurable outcomes — placement support and career opportunities across India and abroad.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-best-3" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
@@ -1061,7 +1061,7 @@ export default function Home() {
                 What programmes does JKKN Arts and Science College offer in Tamil Nadu?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College offers 35 programmes including B.Sc Computer Science, BCA, B.Sc AI &amp; Data Science, B.Com, BBA, B.Sc Cyber Security, B.Sc Visual Communication, B.Sc Microbiology, and more. Postgraduate options include M.Sc Computer Science, M.Com, and MA English. All programmes are affiliated to Periyar University and designed for career readiness.
+                JKKN College offers 38 programmes including B.Sc Computer Science, BCA, B.Sc AI &amp; Data Science, B.Com, BBA, B.Sc Cyber Security, B.Sc Visual Communication, B.Sc Microbiology, and more. Postgraduate options include M.Sc Computer Science, M.Com, and MA English. All programmes are affiliated to Periyar University and designed for career readiness.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-1" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
@@ -1077,7 +1077,7 @@ export default function Home() {
                 Does JKKN College provide placement assistance?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Yes. JKKN&apos;s dedicated Training and Placement Cell conducts year-round aptitude training, mock interviews, and resume workshops. In 2024–25, the college achieved a 90% placement rate. Over 60 companies recruit from campus, including Foxconn, TVS, Infronex, Premier, Rinex, and Sakthi Group. Students in IT programmes also receive TCS and Infosys NQT preparation.
+                Yes. JKKN&apos;s dedicated Training and Placement Cell conducts year-round aptitude training, mock interviews, and resume workshops. For 2023-24 the college reported 135 of 373 UG graduates placed in its NIRF 2025 submission. Over 60 companies recruit from campus, including Foxconn, TVS, Infronex, Premier, Rinex, and Sakthi Group. Students in IT programmes also receive TCS and Infosys NQT preparation.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
@@ -1125,7 +1125,7 @@ export default function Home() {
                 How does JKKN compare to other arts and science colleges in Tamil Nadu?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN stands out with its autonomous status (UGC-recognized), NAAC accreditation, 90% placement rate — metrics that match or exceed many top-ranked colleges. Unlike most arts colleges, JKKN offers AI/IoT research labs, NASSCOM and CII industry partnerships, and 34 programmes. The 74+ year institutional legacy and 60+ recruiting companies further distinguish JKKN from peers.
+                JKKN stands out with its autonomous status (UGC-recognized), NAAC accreditation, placement record published in NIRF 2025 — metrics that match or exceed many top-ranked colleges. Unlike most arts colleges, JKKN offers AI/IoT research labs, NASSCOM and CII industry partnerships, and 38 programmes. The 74+ year institutional legacy and 60+ recruiting companies further distinguish JKKN from peers.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-9" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
@@ -1157,7 +1157,7 @@ export default function Home() {
                 What is JKKN College&apos;s placement record and highest package?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College maintains a consistent 90% placement rate across all programmes. Over 60 companies recruit from campus annually, including TCS, Infosys, Wipro, Foxconn, TVS, and Sakthi Group. The dedicated Training and Placement Cell provides aptitude training, mock interviews, and industry certifications year-round.
+                JKKN College published a UG placement figure of 135 of 373 graduates for 2023-24 in NIRF 2025. Over 60 companies recruit from campus annually, including TCS, Infosys, Wipro, Foxconn, TVS, and Sakthi Group. The dedicated Training and Placement Cell provides aptitude training, mock interviews, and industry certifications year-round.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-13" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
@@ -1181,7 +1181,7 @@ export default function Home() {
                 Does JKKN College offer distance education or online programmes?
               </AccordionTrigger>
               <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College currently focuses on full-time, on-campus programmes across 35 UG, PG, and doctoral courses. The college does not offer distance education at present. However, students have access to NPTEL online courses, digital library resources, and SWAYAM platform integration as supplementary learning. For full-time programme details, visit the admissions portal or contact +91-93458-55001.
+                JKKN College currently focuses on full-time, on-campus programmes across 38 UG, PG, and doctoral courses. The college does not offer distance education at present. However, students have access to NPTEL online courses, digital library resources, and SWAYAM platform integration as supplementary learning. For full-time programme details, visit the admissions portal or contact +91-93458-55001.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

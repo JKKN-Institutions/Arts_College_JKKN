@@ -1,3 +1,6 @@
+import { ORG_ID, ORG_NAME, SITE_URL } from "./entity";
+import { programmeMetadata } from "@/data/programme-metadata";
+
 interface CourseSchemaProps {
   name: string;
   description: string;
@@ -8,19 +11,59 @@ interface CourseSchemaProps {
   url: string;
   programPrerequisites?: string;
   educationalCredentialAwarded?: string;
+  /**
+   * True while the programme is awaiting Periyar University approval.
+   * Leave it unset: it is read from programme-metadata by `url`, which is the
+   * one place the approval state is recorded. Pass it only to override.
+   */
+  proposed?: boolean;
 }
 
 export function CourseSchema({
   name,
   description,
-  provider = "JKKN College of Arts and Science",
+  provider = ORG_NAME,
   duration,
   educationalLevel,
   category,
   url,
   programPrerequisites,
   educationalCredentialAwarded,
+  proposed,
 }: CourseSchemaProps) {
+  // Call sites are inconsistent: the town pages pass an absolute URL, the
+  // programme layouts pass a path. Normalise, or the @id becomes
+  // "https://cas.jkkn.ac.inhttps://cas.jkkn.ac.in/..." and the register lookup
+  // misses - both of which the 2026-09-18 build check caught.
+  const path = url.replace(/^https?:\/\/cas\.jkkn\.ac\.in/, "");
+
+  // 52 call sites pass `url`; none of them should have to remember the approval
+  // state as well. Derive it from the register, and let an explicit prop win.
+  //
+  // Two URL shapes reach here for the SAME programme: /programmes/<funding>/<level>/<slug>
+  // and /admissions/<slug>. Until 2026-09-18 only the first was resolved, so the
+  // /admissions/ pages for the three programmes awaiting Periyar University
+  // approval published them as InStock, and every course held two @ids.
+  const metaKey = path.replace(/^\/programmes\//, "").replace(/^\//, "");
+  const byPath = programmeMetadata[metaKey];
+  const bySlug = byPath
+    ? undefined
+    : Object.entries(programmeMetadata).find(([, v]) => path === `/admissions/${v.slug}`);
+  const meta = byPath ?? bySlug?.[1];
+  // The programme's own page is the course entity's home, whichever page renders it.
+  const canonicalPath = byPath ? path : bySlug ? `/programmes/${bySlug[0]}` : path;
+  const isProposed = proposed ?? meta?.proposed ?? false;
+  const courseUrl = `https://cas.jkkn.ac.in${canonicalPath.startsWith("/") ? canonicalPath : `/${canonicalPath}`}`;
+
+  // One @id must carry one name. The town pages label the same programme
+  // differently from its own page - "B.Com (Bachelor of Commerce)" on /salem vs
+  // "Bachelor of Commerce" on /programmes/aided/ug/bcom, and a "B.Sc (Various
+  // Specialisations)" that is not a programme at all but points at the chemistry
+  // URL. Measured 2026-09-18: 39 distinct Course names for 38 programmes. The
+  // register wins; whatever the page passed is kept as an alternateName.
+  const canonicalName = meta?.fullName ?? name;
+  const alternateName = meta && meta.fullName !== name ? name : undefined;
+
   const levelMap = {
     UG: "Undergraduate",
     PG: "Postgraduate",
@@ -39,17 +82,22 @@ export function CourseSchema({
     PhD: "Doctor of Philosophy (Ph.D.)",
   };
 
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "Course",
-    name,
+    // A stable @id, so the same programme quoted on a town page and on its own
+    // page is ONE course in the graph rather than several anonymous copies.
+    "@id": `${courseUrl}#course`,
+    name: canonicalName,
+    ...(alternateName ? { alternateName } : {}),
     description,
-    url: `https://cas.jkkn.ac.in${url}`,
+    url: courseUrl,
     provider: {
       "@type": "CollegeOrUniversity",
-      "@id": "https://cas.jkkn.ac.in/#organization",
+      "@id": ORG_ID,
       name: provider,
-      url: "https://cas.jkkn.ac.in",
+      url: SITE_URL,
     },
     timeRequired: duration,
     educationalLevel: levelMap[educationalLevel],
@@ -67,12 +115,21 @@ export function CourseSchema({
         name: provider,
       },
     },
-    offers: {
-      "@type": "Offer",
-      category: category,
-      availability: "https://schema.org/InStock",
-      url: "https://www.jkkn.ai/apply/jkkn-admission-2026",
-    },
+    // A proposed programme is still awaiting university approval, so it carries
+    // no Offer: "InStock" would tell Google and every AI answer engine that a
+    // seat can be taken today. AllCoursesSchema has always honoured this flag;
+    // this component did not, so the three proposed programmes advertised
+    // themselves as available on their OWN pages until 2026-09-18.
+    ...(isProposed
+      ? {}
+      : {
+          offers: {
+            "@type": "Offer",
+            category: category,
+            availability: "https://schema.org/InStock",
+            url: "https://www.jkkn.ai/apply/jkkn-admission-2026",
+          },
+        }),
   };
 
   return (

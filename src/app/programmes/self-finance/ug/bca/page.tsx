@@ -231,7 +231,7 @@ export default function BCAPage() {
     },
     {
       question: "Is there placement support?",
-      answer: "Yes, we have a dedicated placement cell with 90%+ placement record. Top recruiters include TCS, Infosys, Wipro, Cognizant, Accenture, and various startups and product-based companies."
+      answer: "Yes, we have a dedicated placement cell with a placement record published in NIRF 2025. Top recruiters include TCS, Infosys, Wipro, Cognizant, Accenture, and various startups and product-based companies."
     },
     {
       question: "Can Commerce or Arts students join BCA?",
@@ -913,7 +913,7 @@ export default function BCAPage() {
                           Strong Placement Record
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                          90%+ placement rate with top IT companies including TCS, Infosys, Wipro, Cognizant, startups, and product-based companies.
+                          placement record published in NIRF 2025 with top IT companies including TCS, Infosys, Wipro, Cognizant, startups, and product-based companies.
                         </p>
                       </div>
                     </div>

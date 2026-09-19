@@ -872,7 +872,7 @@ export default function BComAccountingFinancePage() {
                       {
                         icon: <Target className="w-6 h-6" />,
                         title: "Strong Placement Record",
-                        desc: "90%+ placement with top recruiters including Big 4 firms, banks, and MNCs visiting campus annually."
+                        desc: "placement support with top recruiters including Big 4 firms, banks, and MNCs visiting campus annually."
                       },
                       {
                         icon: <Award className="w-6 h-6" />,

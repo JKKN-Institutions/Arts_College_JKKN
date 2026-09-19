@@ -1,3 +1,5 @@
+import { ORG_ID } from "./entity";
+
 interface WebPageSchemaProps {
   name: string;
   description: string;
@@ -23,7 +25,7 @@ export function WebPageSchema({
       "@id": "https://cas.jkkn.ac.in/#website",
     },
     about: {
-      "@id": "https://cas.jkkn.ac.in/#organization",
+      "@id": ORG_ID,
     },
     inLanguage: "en-IN",
   };

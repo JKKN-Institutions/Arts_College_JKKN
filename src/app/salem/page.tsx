@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { CourseSchema } from "@/components/seo/CourseSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
+import { ORG_REF } from "@/components/seo/entity";
 import ViewProgrammesButton from "@/components/ViewProgrammesButton";
 import {
   MapPin,
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Salem | JKKN CAS",
     description:
-      "JKKN CAS — ~58 km from Salem. NAAC-accredited, 90%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27.",
+      "JKKN CAS — ~58 km from Salem. NAAC-accredited, NIRF-published placement outcomes. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/salem",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -71,7 +72,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Salem | JKKN CAS",
-    description: "JKKN CAS — ~58 km from Salem. NAAC-accredited, 90%+ placements. Admissions open 2026-27.",
+    description: "JKKN CAS — ~58 km from Salem. NAAC-accredited, NIRF-published placement outcomes. Admissions open 2026-27.",
   },
 };
 
@@ -79,7 +80,7 @@ export default function SalemPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Salem?",
-      a: "JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 35 programmes and 90%+ placement rate.",
+      a: "JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 38 programmes and a placement record published in NIRF 2025.",
     },
     {
       q: "How far is JKKN CAS from Salem?",
@@ -87,7 +88,7 @@ export default function SalemPage() {
     },
     {
       q: "Which courses are popular among Salem students at JKKN CAS?",
-      a: "JKKN CAS offers BCA, BBA, B.Com, B.Sc (multiple specialisations), MCA, M.Com, M.Sc, and Ph.D — 34 programmes total across aided and self-finance streams.",
+      a: "JKKN CAS offers BCA, BBA, B.Com, B.Sc (multiple specialisations), MCA, M.Com, M.Sc, and Ph.D — 38 programmes total across aided and self-finance streams.",
     },
     {
       q: "Can BCA students from Salem get IT jobs?",
@@ -115,11 +116,11 @@ export default function SalemPage() {
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Salem?",
-      a: "JKKN CAS offers NAAC accreditation, 34 programmes, 90%+ placement, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~58 km from Salem.",
+      a: "JKKN CAS offers NAAC accreditation, 38 programmes, placement support, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~58 km from Salem.",
     },
     {
       q: "Which arts and science colleges in Salem should students compare?",
-      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC-accredited, established 1974, with aided low-fee streams, 34 programmes, and 90%+ placements — is a strong option to include on that shortlist, ~58 km from Salem city on NH-544.",
+      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC-accredited, established 1974, with aided low-fee streams, 38 programmes, and NIRF-published placement outcomes — is a strong option to include on that shortlist, ~58 km from Salem city on NH-544.",
     },
     {
       q: "Is JKKN CAS a good option for students from Sankagiri, Edappadi, and Mettur?",
@@ -134,82 +135,6 @@ export default function SalemPage() {
         { name: "Salem", url: "https://cas.jkkn.ac.in/salem" },
       ]} />
       <FAQSchema faqs={faqs.map(f => ({ question: f.q, answer: f.a }))} />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "CollegeOrUniversity",
-            "@id": "https://cas.jkkn.ac.in/#organization",
-            "name": "JKKN College of Arts and Science",
-            "alternateName": "JKKN CAS",
-            "url": "https://cas.jkkn.ac.in",
-            "logo": "https://cas.jkkn.ac.in/images/logo/jkkn-cas-logo.png",
-            "image": "https://cas.jkkn.ac.in/images/facilities/JKKN%20Arts%20Classroom.png",
-            "telephone": "+919345855001",
-            "email": "info@jkkn.ac.in",
-            "foundingDate": "1974",
-            "description": "JKKN College of Arts and Science is a NAAC-accredited institution offering 34 UG, PG, and Ph.D programmes. Located at Komarapalayam, approximately 58 km from Salem via NH-544. Affiliated to Periyar University.",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
-              "addressLocality": "Komarapalayam",
-              "addressRegion": "Tamil Nadu",
-              "postalCode": "638183",
-              "addressCountry": "IN"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 11.44518,
-              "longitude": 77.726549
-            },
-            "areaServed": [
-              {
-                "@type": "City",
-                "name": "Salem",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              },
-              {
-                "@type": "City",
-                "name": "Erode",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              },
-              {
-                "@type": "City",
-                "name": "Namakkal",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              }
-            ],
-            "numberOfStudents": {
-              "@type": "QuantitativeValue",
-              "description": "Large student body across 34 programmes"
-            },
-            "accreditedBy": {
-              "@type": "Organization",
-              "name": "National Assessment and Accreditation Council",
-              "alternateName": "NAAC",
-              "url": "https://www.naac.gov.in"
-            },
-            "memberOf": {
-              "@type": "Organization",
-              "name": "University Grants Commission",
-              "alternateName": "UGC",
-              "url": "https://www.ugc.ac.in"
-            },
-            "sameAs": [
-              "https://www.facebook.com/jkkngroup",
-              "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
-              "https://jkkn.ac.in"
-            ],
-            "parentOrganization": {
-              "@type": "Organization",
-              "@id": "https://jkkn.ac.in/#organization",
-              "name": "JKKN Institutions",
-              "url": "https://jkkn.ac.in"
-            }
-          })
-        }}
-      />
       <CourseSchema
         name="B.Sc (Various Specialisations)"
         description="3-year undergraduate science programme with specialisations in Chemistry, Mathematics, Zoology, Physics, Microbiology, Computer Science, and more at JKKN CAS — approximately 58 km from Salem."
@@ -236,52 +161,11 @@ export default function SalemPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 90%+ placement rate at JKKN CAS, easily reachable from Salem."
+        description="3-year undergraduate IT programme with hands-on training and a placement record published in NIRF 2025 at JKKN CAS, easily reachable from Salem."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
         url="/programmes/self-finance/ug/bca"
-      />
-
-      {/* LocalBusiness Schema — Salem */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "@id": "https://cas.jkkn.ac.in/salem#localbusiness",
-            "name": "JKKN College of Arts and Science — Salem Region",
-            "url": "https://cas.jkkn.ac.in/salem",
-            "telephone": "+919345855001",
-            "priceRange": "$$",
-            "currenciesAccepted": "INR",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
-              "addressLocality": "Komarapalayam",
-              "addressRegion": "Tamil Nadu",
-              "postalCode": "638183",
-              "addressCountry": "IN"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 11.44518,
-              "longitude": 77.726549
-            },
-            "areaServed": {
-              "@type": "City",
-              "name": "Salem"
-            },
-            "openingHoursSpecification": {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-              "opens": "09:00",
-              "closes": "17:00"
-            },
-            "hasMap": "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7"
-          })
-        }}
       />
 
       {/* WebPage + SpeakableSpecification Schema */}
@@ -304,10 +188,7 @@ export default function SalemPage() {
               "name": "JKKN College of Arts and Science",
               "url": "https://cas.jkkn.ac.in"
             },
-            "about": {
-              "@type": "CollegeOrUniversity",
-              "@id": "https://cas.jkkn.ac.in/#organization"
-            },
+            "about": ORG_REF,
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
@@ -345,7 +226,7 @@ export default function SalemPage() {
             Students comparing arts and science colleges in Salem also
             shortlist JKKN College of Arts and Science — a NAAC-accredited
             institution ~58 km from Salem on NH-544 with 34 UG, PG, and Ph.D
-            programmes, aided low-fee streams, hostel, and 90%+ placements.
+            programmes, aided low-fee streams, hostel, and NIRF-published placement outcomes.
             For western Salem district — Sankagiri, Edappadi, Mettur — JKKN
             is closer than Salem city colleges.
           </p>
@@ -354,15 +235,15 @@ export default function SalemPage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Under 1 hour from Salem — closer than you think. JKKN College of
             Arts and Science offers top-tier arts and science programmes with
-            90%+ placement support — just under 1 hour from Salem via NH-544.
+            placement support — just under 1 hour from Salem via NH-544.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "90%+", label: "PLACEMENTS" },
+              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "~58km", label: "FROM SALEM" },
-              { value: "35", label: "PROGRAMMES" },
+              { value: "38", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -758,7 +639,7 @@ export default function SalemPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "90%+", label: "PLACEMENT RATE" },
+              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "7+", label: "TOP RECRUITERS" },
             ].map((stat) => (
               <div

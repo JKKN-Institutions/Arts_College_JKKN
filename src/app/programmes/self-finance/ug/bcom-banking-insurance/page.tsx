@@ -868,7 +868,7 @@ export default function BComBankingInsurancePage() {
                       {
                         icon: <TrendingUp className="w-6 h-6" />,
                         title: "Strong Placement Support",
-                        desc: "Dedicated placement cell with 90%+ placement record in BFSI sector companies."
+                        desc: "Dedicated placement cell with a placement record published in NIRF 2025 in BFSI sector companies."
                       },
                       {
                         icon: <Target className="w-6 h-6" />,

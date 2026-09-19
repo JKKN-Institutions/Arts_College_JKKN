@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { CourseSchema } from "@/components/seo/CourseSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
+import { ORG_REF } from "@/components/seo/entity";
 import ViewProgrammesButton from "@/components/ViewProgrammesButton";
 import {
   MapPin,
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
   // 52 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited college ~20 km from Tiruchengode. 34 programmes, 90%+ placements. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
+    "JKKN CAS — NAAC-accredited college ~20 km from Tiruchengode. 38 programmes, NIRF-published placement outcomes. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
   // 140 chars — within 155 limit
 
   keywords: [
@@ -65,7 +66,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Tiruchengode — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 34 programmes, 90%+ placements. ~20 km from Tiruchengode in Komarapalayam. Admissions open 2026–27.",
+      "JKKN CAS — NAAC-accredited, 38 programmes, NIRF-published placement outcomes. ~20 km from Tiruchengode in Komarapalayam. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/tiruchengode",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -83,7 +84,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Tiruchengode — JKKN CAS",
     description:
-      "NAAC-accredited arts college ~20 km from Tiruchengode. 34 programmes, 90%+ placements, hostel available. Admissions 2026–27 open.",
+      "NAAC-accredited arts college ~20 km from Tiruchengode. 38 programmes, NIRF-published placement outcomes, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -91,7 +92,7 @@ export default function TiruchengodePage() {
   const faqs = [
     {
       q: "Which is the best arts and science college near Tiruchengode?",
-      a: "JKKN College of Arts and Science, located approximately 20 km from Tiruchengode in neighbouring Komarapalayam, is a NAAC-accredited institution with 35 programmes and 90%+ placement rates. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located approximately 20 km from Tiruchengode in neighbouring Komarapalayam, is a NAAC-accredited institution with 38 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Tiruchengode?",
@@ -99,7 +100,7 @@ export default function TiruchengodePage() {
     },
     {
       q: "Which courses are popular among Tiruchengode students at JKKN CAS?",
-      a: "JKKN CAS near Tiruchengode offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 35 courses in total. All programmes are UGC-approved and affiliated to Periyar University. BCA and B.Com are the most popular among students from the Tiruchengode region.",
+      a: "JKKN CAS near Tiruchengode offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 38 courses in total. All programmes are UGC-approved and affiliated to Periyar University. BCA and B.Com are the most popular among students from the Tiruchengode region.",
     },
     {
       q: "Is there a direct bus from Tiruchengode to JKKN CAS?",
@@ -123,64 +124,11 @@ export default function TiruchengodePage() {
     },
     {
       q: "What placement rate does JKKN CAS achieve for Tiruchengode students?",
-      a: "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio.. The college provides dedicated placement training and aptitude coaching.",
+      a: "JKKN CAS placed 135 of its 373 UG graduates in 2023-24 (NIRF 2025). Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio.. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Why should JKKN CAS be on every Tiruchengode college list?",
-      a: "When students compare a Tiruchengode college list, JKKN CAS stands out even though it sits ~20 km away in neighbouring Komarapalayam — lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters. The direct Tiruchengode–Komarapalayam road makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
-    },
-  ];
-
-  const schemaFaqs = [
-    {
-      question: "Which is the best arts and science college near Tiruchengode?",
-      answer:
-        "JKKN College of Arts and Science, approximately 20 km from Tiruchengode in neighbouring Komarapalayam, is a NAAC-accredited institution with 35 programmes and 90%+ placement rates. It is affiliated to Periyar University and approved by UGC.",
-    },
-    {
-      question: "How far is JKKN CAS from Tiruchengode?",
-      answer:
-        "JKKN CAS is approximately 20 km from Tiruchengode, a journey of 25 to 35 minutes via the direct Tiruchengode–Komarapalayam road. Both towns are in Namakkal district, and regular TNSTC and private buses run between Tiruchengode bus stand and Komarapalayam throughout the day.",
-    },
-    {
-      question: "Is there a direct bus from Tiruchengode to JKKN CAS?",
-      answer:
-        "Regular TNSTC government and private buses run between Tiruchengode bus stand and Komarapalayam throughout the day; the journey takes 25 to 35 minutes via the direct Tiruchengode–Komarapalayam road. The JKKN campus sits on NH-544 at Komarapalayam.",
-    },
-    {
-      question: "Does JKKN CAS offer hostel facilities for students from Tiruchengode?",
-      answer:
-        "JKKN CAS provides separate hostel accommodation for boys and girls on the main campus, with furnished rooms, three meals per day, WiFi, and 24/7 security. At approximately 20 km, students from Tiruchengode can also comfortably commute daily.",
-    },
-    {
-      question: "Are fees at JKKN CAS affordable compared to Tiruchengode-area colleges?",
-      answer:
-        "JKKN CAS fees are lower than most private colleges in the Tiruchengode area. Tamil Nadu government scholarships for BC, MBC, SC, and ST students are available. Contact the admission office at +91 9345855001 for the current fee structure.",
-    },
-    {
-      question: "Is JKKN College of Arts and Science accredited?",
-      answer:
-        "JKKN College of Arts and Science is NAAC-accredited and UGC-approved. The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions.",
-    },
-    {
-      question: "What placement rate does JKKN CAS achieve for Tiruchengode students?",
-      answer:
-        "JKKN CAS achieves a 90%+ placement rate for graduating students. Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio..",
-    },
-    {
-      question: "How can students from Tiruchengode apply to JKKN CAS?",
-      answer:
-        "Applications for JKKN CAS are submitted online at jkkn.ai/apply/jkkn-admission-2026 or in person at the campus admission office. Admissions for 2026–27 are currently open. Call +91 9345855001 for guidance.",
-    },
-    {
-      question: "Which courses are available at arts and science colleges near Tiruchengode?",
-      answer:
-        "JKKN CAS near Tiruchengode offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 35 courses in total. All programmes are UGC-approved and affiliated to Periyar University.",
-    },
-    {
-      question: "Why should JKKN CAS be on every Tiruchengode college list?",
-      answer:
-        "On any Tiruchengode college list, JKKN CAS stands out even though it is approximately 20 km away in neighbouring Komarapalayam — lower fees, NAAC accreditation, a residential campus, and 90%+ placements with national recruiters. The direct road makes daily commute viable.",
+      a: "When students compare a Tiruchengode college list, JKKN CAS stands out even though it sits ~20 km away in neighbouring Komarapalayam — lower fees, NAAC accreditation, a residential campus, and NIRF-published placement outcomes with national recruiters. The direct Tiruchengode–Komarapalayam road makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
     },
   ];
 
@@ -190,16 +138,17 @@ export default function TiruchengodePage() {
         { name: "Home", url: "https://cas.jkkn.ac.in" },
         { name: "Tiruchengode", url: "https://cas.jkkn.ac.in/tiruchengode" },
       ]} />
-      <FAQSchema faqs={schemaFaqs} />
+      <FAQSchema faqs={faqs.map((f) => ({ question: f.q, answer: f.a }))} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
+            "about": ORG_REF,
             "name": "Arts and Science College Near Tiruchengode — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/tiruchengode",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college approximately 20 km from Tiruchengode in Komarapalayam. 34 programmes, 90%+ placements, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college approximately 20 km from Tiruchengode in Komarapalayam. 38 programmes, NIRF-published placement outcomes, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -216,67 +165,6 @@ export default function TiruchengodePage() {
               "@type": "SpeakableSpecification",
               "cssSelector": [".snippet-answer-paragraph", "#faq-section"]
             }
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "CollegeOrUniversity",
-            "name": "JKKN College of Arts and Science",
-            "alternateName": "JKKN CAS",
-            "url": "https://cas.jkkn.ac.in",
-            "foundingDate": "1974",
-            "description": "JKKN College of Arts and Science is a NAAC-accredited institution on NH-544 at Komarapalayam, approximately 20 km from Tiruchengode, offering 34 UG, PG, and Ph.D programmes in arts, science, commerce, and computer applications, affiliated to Periyar University.",
-            "telephone": "+919345855001",
-            "email": "info@jkkn.ac.in",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Natarajapuram, NH-544, Komarapalayam",
-              "addressLocality": "Komarapalayam",
-              "addressRegion": "Tamil Nadu",
-              "postalCode": "638183",
-              "addressCountry": "IN"
-            },
-            "areaServed": [
-              {
-                "@type": "City",
-                "name": "Tiruchengode",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              },
-              {
-                "@type": "City",
-                "name": "Komarapalayam",
-                "containedInPlace": { "@type": "State", "name": "Tamil Nadu" }
-              }
-            ],
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 11.44518,
-              "longitude": 77.726549
-            },
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "Programmes at JKKN CAS",
-              "numberOfItems": 34
-            },
-            "accreditation": "NAAC Accredited",
-            "memberOf": [
-              { "@type": "Organization", "name": "University Grants Commission (UGC)" },
-              { "@type": "Organization", "name": "Periyar University" }
-            ],
-            "parentOrganization": {
-              "@type": "Organization",
-              "name": "JKKN Group of Institutions",
-              "url": "https://jkkn.ac.in"
-            },
-            "sameAs": [
-              "https://cas.jkkn.ac.in",
-              "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
-              "https://jkkn.ac.in"
-            ]
           })
         }}
       />
@@ -306,7 +194,7 @@ export default function TiruchengodePage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and 90%+ placement rate at JKKN CAS, easily reachable from Tiruchengode."
+        description="3-year undergraduate IT programme with hands-on training and a placement record published in NIRF 2025 at JKKN CAS, easily reachable from Tiruchengode."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -335,8 +223,8 @@ export default function TiruchengodePage() {
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             JKKN College of Arts and Science, located approximately 20 km from
             Tiruchengode in neighbouring Komarapalayam, is a NAAC-accredited
-            institution offering 35 UG and PG programmes including BCA, BBA,
-            B.Com, and B.Sc specialisations. Affiliated to Periyar University, it achieves 90%+ placement rates with
+            institution offering 38 UG and PG programmes including BCA, BBA,
+            B.Com, and B.Sc specialisations. Affiliated to Periyar University, it publishes its placement record in NIRF 2025 with
             recruiters including TCS, Infosys, HDFC Bank, and Amazon.
           </p>
 
@@ -344,17 +232,16 @@ export default function TiruchengodePage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Tiruchengode to JKKN — a short, easy ride on the direct
             Tiruchengode–Komarapalayam road. JKKN College of Arts and Science
-            offers NAAC-accredited arts and science programmes with 90%+
-            placement support — approximately 20 km from Tiruchengode, with
+            offers NAAC-accredited arts and science programmes with placement support — approximately 20 km from Tiruchengode, with
             both towns in Namakkal district.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "90%+", label: "PLACEMENTS" },
+              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "20km", label: "FROM TIRUCHENGODE" },
-              { value: "35", label: "PROGRAMMES" },
+              { value: "38", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -458,7 +345,7 @@ export default function TiruchengodePage() {
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 35 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus.
+            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 38 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -754,7 +641,7 @@ export default function TiruchengodePage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "90%+", label: "PLACEMENT RATE — 2024–25" },
+              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "7+", label: "TOP RECRUITERS" },
             ].map((stat) => (
               <div
@@ -1176,7 +1063,7 @@ export default function TiruchengodePage() {
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Placement Rate</td>
-                  <td className="p-3 text-gray-800 font-medium">90%+</td>
+                  <td className="p-3 text-gray-800 font-medium">36%</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">

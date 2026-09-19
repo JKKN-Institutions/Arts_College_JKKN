@@ -1,16 +1,22 @@
+import { ORG_ID, SITE_URL, PARENT_URL, PARENT_ID, MAPS_PIN, ORG_SAME_AS } from "./entity";
+
 export function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "CollegeOrUniversity",
-    "@id": "https://cas.jkkn.ac.in/#organization",
+    // One node, two types. Before 2026-09-18 this college was also declared a
+    // second time as "#localbusiness" on all 367 pages - same name, same address,
+    // same phone, different @id, so the graph carried two colleges. The
+    // LocalBusiness type and its properties are absorbed here instead.
+    "@type": ["CollegeOrUniversity", "LocalBusiness"],
+    "@id": ORG_ID,
     name: "JKKN College of Arts and Science",
     legalName: "J.K.K Nataraja College of Arts & Science",
     alternateName: ["CAS JKKN", "JKKN Arts and Science College", "J.K.K.Nataraja College of Arts and Science"],
-    url: "https://cas.jkkn.ac.in",
+    url: SITE_URL,
     logo: "https://cas.jkkn.ac.in/logo.svg",
     image: "https://cas.jkkn.ac.in/opengraph-image",
     description:
-      "JKKN College of Arts and Science is an autonomous institution affiliated to Periyar University, offering 35 undergraduate, postgraduate and doctoral programmes in Arts, Science and Commerce near Erode, Tamil Nadu. Founded in 1974 as part of J.K.K. Nattraja Educational Institutions (est. 1952), the college serves 1,685 students (NIRF 2025 submission, AY 2023-24) across a 15-acre campus on NH-544.",
+      "JKKN College of Arts and Science is an autonomous institution affiliated to Periyar University, offering 38 undergraduate, postgraduate and doctoral programmes in Arts, Science and Commerce near Erode, Tamil Nadu. Founded in 1974 as part of J.K.K. Nattraja Educational Institutions (est. 1952), the college serves 1,685 students (NIRF 2025 submission, AY 2023-24) across a 15-acre campus on NH-544.",
     foundingDate: "1974",
     telephone: "+91-93458-55001",
     email: "arts@jkkn.org",
@@ -28,29 +34,49 @@ export function OrganizationSchema() {
       latitude: "11.445180",
       longitude: "77.726549",
     },
-    hasMap: "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
+    hasMap: MAPS_PIN,
+    priceRange: "$$",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "17:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "09:00",
+        closes: "13:00",
+      },
+    ],
     parentOrganization: {
       "@type": "EducationalOrganization",
-      "@id": "https://www.jkkn.ac.in/#organization",
+      "@id": PARENT_ID,
       name: "JKKN Institutions",
-      url: "https://www.jkkn.ac.in",
+      url: PARENT_URL,
       foundingDate: "1952",
     },
+    // Every town that has a landing page under /<town>. The eight added on
+    // 2026-09-16 were merged in from the duplicate CollegeOrUniversity nodes
+    // those pages used to declare, so deleting the duplicates lost no signal.
     areaServed: [
+      { "@type": "City", name: "Komarapalayam" },
       { "@type": "City", name: "Erode" },
       { "@type": "City", name: "Salem" },
       { "@type": "City", name: "Namakkal" },
       { "@type": "City", name: "Tiruchengode" },
       { "@type": "City", name: "Coimbatore" },
+      { "@type": "City", name: "Bhavani" },
+      { "@type": "City", name: "Gobichettipalayam" },
+      { "@type": "City", name: "Pallipalayam" },
+      { "@type": "City", name: "Perundurai" },
+      { "@type": "City", name: "Rasipuram" },
+      { "@type": "City", name: "Sankagiri" },
+      { "@type": "City", name: "Tiruppur" },
       { "@type": "AdministrativeArea", name: "Namakkal District" },
     ],
-    sameAs: [
-      "https://www.jkkn.ac.in",
-      "https://maps.app.goo.gl/ya6SAYhWUBQWSvXe7",
-      "https://www.facebook.com/jkknarts",
-      "https://www.instagram.com/jkknarts",
-      "https://www.linkedin.com/school/jkknarts",
-    ],
+    sameAs: ORG_SAME_AS,
     hasCredential: [
       {
         "@type": "EducationalOccupationalCredential",
@@ -92,7 +118,7 @@ export function OrganizationSchema() {
       "@type": "OfferCatalog",
       name: "Academic Programmes 2026-27",
       itemListElement: [
-        { "@type": "OfferCatalog", name: "Undergraduate Programmes (UG)", numberOfItems: 20 },
+        { "@type": "OfferCatalog", name: "Undergraduate Programmes (UG)", numberOfItems: 23 },
         { "@type": "OfferCatalog", name: "Postgraduate Programmes (PG)", numberOfItems: 12 },
         { "@type": "OfferCatalog", name: "Doctoral Programmes (PhD)", numberOfItems: 3 },
       ],
@@ -109,12 +135,21 @@ export function OrganizationSchema() {
       "Textile and Fashion Designing",
       "Microbiology",
     ],
+    // Source: this college's own Google Business Profile, read 2026-09-18 via
+    // Google local results (tbm=lcl) - "4.8, 516 reviews". Readings so far:
+    // 517 (09-12), 524 (09-16), 516 (09-18). The count moves in BOTH directions
+    // as reviews are added and removed, so a number hard-coded here is stale the
+    // week after it is written - re-read GBP before quoting it anywhere.
+    // GBP reports one count; it is used for both ratingCount and reviewCount.
+    // This is a self-reported aggregate about ourselves, so Google will not show
+    // it as a review rich result - the stars in local results come from GBP
+    // directly. Kept by user decision 2026-09-16. Re-read GBP when it is updated.
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.8",
       bestRating: "5",
-      ratingCount: "517",
-      reviewCount: "517",
+      ratingCount: "516",
+      reviewCount: "516",
     },
     speakable: {
       "@type": "SpeakableSpecification",

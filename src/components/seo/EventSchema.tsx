@@ -1,7 +1,16 @@
+import { ORG_ID, ORG_NAME, SITE_URL } from "./entity";
+
 interface EventSchemaProps {
   name: string;
   description: string;
   startDate: string;
+  /**
+   * Optional and deliberately NOT defaulted to startDate. All 57 live Event
+   * nodes lacked an endDate on 2026-09-18; the honest fix is to let a caller
+   * supply the real one, not to invent a same-day end for events whose length
+   * nobody recorded. Google needs startDate, and treats endDate as optional.
+   */
+  endDate?: string;
   location?: string;
   imageUrl?: string;
   url: string;
@@ -12,6 +21,7 @@ export function EventSchema({
   name,
   description,
   startDate,
+  endDate,
   location,
   imageUrl,
   url,
@@ -23,10 +33,11 @@ export function EventSchema({
     name,
     description,
     startDate,
+    ...(endDate ? { endDate } : {}),
     url,
     eventStatus: `https://schema.org/${eventStatus}`,
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-    ...(imageUrl && { image: imageUrl }),
+    image: imageUrl || "https://cas.jkkn.ac.in/opengraph-image",
     location: {
       "@type": "Place",
       name: location ?? "JKKN College of Arts and Science",
@@ -41,9 +52,9 @@ export function EventSchema({
     },
     organizer: {
       "@type": "Organization",
-      "@id": "https://cas.jkkn.ac.in/#organization",
-      name: "JKKN College of Arts and Science",
-      url: "https://cas.jkkn.ac.in",
+      "@id": ORG_ID,
+      name: ORG_NAME,
+      url: SITE_URL,
     },
   };
 

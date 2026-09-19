@@ -25,7 +25,7 @@ export const siteConfig = {
   /** Main tagline — shown on the hero / homepage */
   tagline:
     process.env.NEXT_PUBLIC_COLLEGE_TAGLINE ??
-    'Autonomous institution offering 35 programmes in Arts, Science and Commerce',
+    'Autonomous institution offering 38 programmes in Arts, Science and Commerce',
 
   /** Primary brand color (hex) — used for buttons, headings, accents */
   primaryColor:
