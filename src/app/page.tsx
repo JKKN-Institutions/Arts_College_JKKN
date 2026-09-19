@@ -96,17 +96,17 @@ const homepageFAQs = [
   {
     question: "What are the admission requirements for undergraduate programs?",
     answer:
-      "Students must have completed their 12th standard with relevant subjects and minimum required percentage. Specific requirements vary by program. Please contact our admissions office for detailed eligibility criteria.",
+      "For UG programmes (B.Sc, BCA, B.Com, BBA), candidates must have passed 12th standard (HSC) from a recognized board with a minimum of 50% aggregate in the relevant stream — Science, Commerce, or Arts. For B.Sc Computer Science and BCA, Mathematics or Computer Science in 12th is preferred. PG programmes require a relevant bachelor's degree with 50%+ aggregate. Apply online at jkkn.ai/apply/jkkn-admission-2026 or call +91-93458-55001 for guidance.",
   },
   {
     question: "Does JKKN College provide placement assistance?",
     answer:
-      "Yes, we have a dedicated placement cell that works year-round to connect students with top employers. We maintain strong industry partnerships and publish our placement record each year in the NIRF submission.",
+      "Yes. JKKN's dedicated Training and Placement Cell conducts year-round aptitude training, mock interviews, and resume workshops. For 2023-24 the college reported 135 of 373 UG graduates placed in its NIRF 2025 submission. Over 60 companies recruit from campus, including Foxconn, TVS, Infronex, Premier, Rinex, and Sakthi Group. Students in IT programmes also receive TCS and Infosys NQT preparation.",
   },
   {
     question: "What facilities are available on campus?",
     answer:
-      "Our campus features modern computer labs, a well-stocked library, smart classrooms, research centers, sports facilities, hostel accommodation, cafeteria, and much more to support your academic and personal development.",
+      "JKKN's 15-acre campus on NH-544 features 500+ computer systems in advanced labs, a dedicated AI and IoT research lab with Raspberry Pi and Arduino kits, a library of over 27,000 books and e-journals, smart classrooms with projectors and video conferencing, Physics/Chemistry/Microbiology/Biotechnology laboratories, indoor and outdoor sports facilities including a cricket ground and basketball court, separate hostels for men and women with Wi-Fi and 24/7 security, a cafeteria, and a yoga and meditation centre.",
   },
   {
     question: "Are scholarships available for students?",
