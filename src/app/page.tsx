@@ -1039,151 +1039,31 @@ export default function Home() {
               Find answers to commonly asked questions about admissions, programs, and campus life at JKKN Arts and Science College, Tamil Nadu
             </p>
           </div>
+          {/*
+            Rendered from homepageFAQs, the same array that feeds FAQSchema above.
+
+            These 18 items used to be written out by hand here while the schema
+            read the array. The counts matched, so the drift was invisible - but
+            measured on the live site 2026-09-19, after the first fix shipped, 3
+            of the 18 answers in JSON-LD still had no counterpart in the page
+            text, because the hand-written copy said something different. One
+            array, one render: the two cannot diverge again.
+          */}
           <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-best-1" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                Why is JKKN considered the best arts and science college in Tamil Nadu?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation, UGC-recognized autonomous status, placement record published in NIRF 2025 and industry partnerships with 60+ recruiters including TCS, Infosys, and Wipro. The college offers 38 programmes with AI/IoT labs and in-built internship pathways.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-best-2" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                What makes JKKN different from other arts and science colleges in Tamil Nadu?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Unlike many arts and science colleges in Tamil Nadu, JKKN offers an industry-integrated curriculum with collaborations from NASSCOM, CII, and leading MNCs. Students benefit from dedicated AI and IoT research labs, 121 faculty on roll (52 with a PhD, NIRF 2025), and a training and placement cell that delivers measurable outcomes — placement support and career opportunities across India and abroad.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-best-3" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                What programmes does JKKN Arts and Science College offer in Tamil Nadu?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College offers 38 programmes including B.Sc Computer Science, BCA, B.Sc AI &amp; Data Science, B.Com, BBA, B.Sc Cyber Security, B.Sc Visual Communication, B.Sc Microbiology, and more. Postgraduate options include M.Sc Computer Science, M.Com, and MA English. All programmes are affiliated to Periyar University and designed for career readiness.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-1" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                What are the admission requirements for undergraduate programs?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                For UG programmes (B.Sc, BCA, B.Com, BBA), candidates must have passed 12th standard (HSC) from a recognized board with a minimum of 50% aggregate in the relevant stream — Science, Commerce, or Arts. For B.Sc Computer Science and BCA, Mathematics or Computer Science in 12th is preferred. PG programmes require a relevant bachelor&apos;s degree with 50%+ aggregate. Apply online at jkkn.ai/apply/jkkn-admission-2026 or call +91-93458-55001 for guidance.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                Does JKKN College provide placement assistance?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Yes. JKKN&apos;s dedicated Training and Placement Cell conducts year-round aptitude training, mock interviews, and resume workshops. For 2023-24 the college reported 135 of 373 UG graduates placed in its NIRF 2025 submission. Over 60 companies recruit from campus, including Foxconn, TVS, Infronex, Premier, Rinex, and Sakthi Group. Students in IT programmes also receive TCS and Infosys NQT preparation.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                What facilities are available on campus?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN&apos;s 15-acre campus on NH-544 features 500+ computer systems in advanced labs, a dedicated AI and IoT research lab with Raspberry Pi and Arduino kits, a library of over 27,000 books and e-journals, smart classrooms with projectors and video conferencing, Physics/Chemistry/Microbiology/Biotechnology laboratories, indoor and outdoor sports facilities including a cricket ground and basketball court, separate hostels for men and women with Wi-Fi and 24/7 security, a cafeteria, and a yoga and meditation centre.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-4" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                Are scholarships available for students?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Yes, we offer various merit-based and need-based scholarships to deserving students. Additionally, we assist students in applying for government scholarships and financial aid programs.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-5" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                How can I apply for admission?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                You can apply online through our website by filling out the admission form. Alternatively, you can visit our campus to complete the application process in person. Our admissions team is available to guide you through every step.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-6" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                What are the fees at JKKN College of Arts and Science?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College offers affordable education with fees varying by programme and type. Aided programme fees are government-regulated and among the lowest in Tamil Nadu. Self-finance programme fees are competitive, from ₹24,500 to ₹34,000 per year for 2026-27 depending on the course. Contact the admissions office at +91-93458-55001 for the latest fee structure.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-7" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                What is the cut-off for admission to JKKN College?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Admission to JKKN College is based on 12th standard marks. Cut-off percentages vary by programme — science programmes typically require 50–60% in relevant subjects, while commerce and arts programmes require 45–55%. As an autonomous institution, JKKN conducts its own admission process. Early application is recommended as seats fill quickly.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-8" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                How does JKKN compare to other arts and science colleges in Tamil Nadu?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN stands out with its autonomous status (UGC-recognized), NAAC accreditation, placement record published in NIRF 2025 — metrics that match or exceed many top-ranked colleges. Unlike most arts colleges, JKKN offers AI/IoT research labs, NASSCOM and CII industry partnerships, and 38 programmes. The 74+ year institutional legacy and 60+ recruiting companies further distinguish JKKN from peers.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-9" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                What are the career options after completing a degree from JKKN?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN graduates pursue diverse careers across IT (TCS, Infosys, Wipro), banking (ICICI, HDFC), manufacturing (Foxconn, TVS), healthcare, education, and government services. Computer science graduates enter software development, data analytics, and cybersecurity. Commerce graduates join accounting firms, banks, and corporate finance. Science graduates pursue research, pharmaceuticals, or higher education. Our placement cell supports all career paths.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-10" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                Does JKKN College have hostel facilities?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Yes, JKKN provides separate hostel facilities for men and women within the campus. Hostels feature modern amenities including Wi-Fi connectivity, 24/7 security, hygienic mess with nutritious meals, laundry service, and recreational areas. The campus location on NH-544 ensures easy accessibility from Erode, Salem, Namakkal, and Coimbatore. Contact the hostel office for availability and current fees.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-11" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                Is JKKN College of Arts and Science an autonomous college?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Yes, JKKN College holds autonomous status conferred by the University Grants Commission (UGC). This means the college designs its own curriculum, conducts examinations, and awards degrees through Periyar University. Autonomous status allows JKKN to update syllabi regularly to match industry requirements, introduce new-age subjects like AI and Data Science, and offer flexible credit-based programmes.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-12" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                What is JKKN College&apos;s placement record and highest package?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College published a UG placement figure of 135 of 373 graduates for 2023-24 in NIRF 2025. Over 60 companies recruit from campus annually, including TCS, Infosys, Wipro, Foxconn, TVS, and Sakthi Group. The dedicated Training and Placement Cell provides aptitude training, mock interviews, and industry certifications year-round.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-13" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                Which top companies recruit from JKKN College?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN&apos;s top recruiters include TCS, Infosys, Wipro, Foxconn, TVS, Sakthi Group, Cognizant, Premier, Rinex, and Infronex among 60+ companies. Recruitment spans IT services, manufacturing, BFSI, healthcare, and education sectors. The placement cell also facilitates internship opportunities with NASSCOM and CII partner companies, giving students industry exposure before graduation.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-14" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                How to reach JKKN College from Erode, Salem, or Coimbatore?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College is located at Natarajapuram on NH-544 (Salem–Coimbatore Highway) in Komarapalayam, Namakkal District. Distance from nearby cities: Erode — 22 km (35 minutes), Salem — 58 km (1 hour), Tiruchengode — 15 km (20 minutes), Coimbatore — 105 km (2 hours). Regular bus services from Erode and Salem stop near the campus. The nearest railway station is Erode Junction.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-15" className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6">
-              <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
-                Does JKKN College offer distance education or online programmes?
-              </AccordionTrigger>
-              <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
-                JKKN College currently focuses on full-time, on-campus programmes across 38 UG, PG, and doctoral courses. The college does not offer distance education at present. However, students have access to NPTEL online courses, digital library resources, and SWAYAM platform integration as supplementary learning. For full-time programme details, visit the admissions portal or contact +91-93458-55001.
-              </AccordionContent>
-            </AccordionItem>
+            {homepageFAQs.map((faq, i) => (
+              <AccordionItem
+                key={i}
+                value={`faq-${i}`}
+                className="bg-[#fbfbee] rounded-lg border border-gray-200 px-6"
+              >
+                <AccordionTrigger className="text-left text-[16px] leading-[24px] font-semibold text-gray-900 hover:text-[#0b6d41] hover:no-underline">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-[14px] leading-[20px] font-normal text-gray-600">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
           </Accordion>
         </div>
       </section>
