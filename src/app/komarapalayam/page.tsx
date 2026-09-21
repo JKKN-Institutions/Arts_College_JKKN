@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // 53 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited arts and science college in Komarapalayam (Kumarapalayam) on NH-544. 38 programmes. Admissions open 2026–27.",
+    "JKKN CAS — NAAC-accredited arts and science college in Komarapalayam (Kumarapalayam) on NH-544. 35 programmes. Admissions open 2026–27.",
   // ~135 chars — within 155 limit
 
   keywords: [
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Colleges in Komarapalayam (Kumarapalayam) — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 38 programmes, NIRF-published placement outcomes. Located in Komarapalayam on NH-544. Admissions open 2026–27.",
+      "JKKN CAS — NAAC-accredited, 35 programmes, NIRF-published placement outcomes. Located in Komarapalayam on NH-544. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/komarapalayam",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Colleges in Komarapalayam (Kumarapalayam) — JKKN CAS",
     description:
-      "NAAC-accredited arts and science college in Komarapalayam on NH-544. 38 programmes, NIRF-published placement outcomes, hostel available. Admissions 2026–27 open.",
+      "NAAC-accredited arts and science college in Komarapalayam on NH-544. 35 programmes, NIRF-published placement outcomes, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -99,7 +99,7 @@ export default function KomarapalayamPage() {
     },
     {
       q: "What courses does JKKN CAS Komarapalayam offer?",
-      a: "JKKN CAS in Komarapalayam offers 38 programmes: BCA, BBA, B.Com, B.A., and B.Sc across 8 specialisations at UG level, plus MCA, M.Com, M.A., M.Sc, and Ph.D programmes. All programmes are UGC-approved and affiliated to Periyar University. BCA and B.Com are among the most popular choices.",
+      a: "JKKN CAS in Komarapalayam offers 35 programmes: BCA, BBA, B.Com, B.A., and B.Sc across 8 specialisations at UG level, plus MCA, M.Com, M.A., M.Sc, and Ph.D programmes. All programmes are UGC-approved and affiliated to Periyar University. BCA and B.Com are among the most popular choices.",
     },
     {
       q: "What is the JKKN college Komarapalayam fees structure?",
@@ -127,7 +127,7 @@ export default function KomarapalayamPage() {
     },
     {
       q: "Why should students choose JKKN CAS in Komarapalayam?",
-      a: "JKKN CAS is the arts and science college located in Komarapalayam town itself — no long commute needed for local students. It offers NAAC accreditation, 38 UG/PG/Ph.D programmes, affordable fees, hostel facilities, and NIRF-published placement outcomes with national recruiters like TCS, Infosys BPO, and Amazon, all on an NH-544 campus that students from surrounding towns can reach easily.",
+      a: "JKKN CAS is the arts and science college located in Komarapalayam town itself — no long commute needed for local students. It offers NAAC accreditation, 35 UG/PG/Ph.D programmes, affordable fees, hostel facilities, and NIRF-published placement outcomes with national recruiters like TCS, Infosys BPO, and Amazon, all on an NH-544 campus that students from surrounding towns can reach easily.",
     },
   ];
 
@@ -147,7 +147,7 @@ export default function KomarapalayamPage() {
             "about": ORG_REF,
             "name": "Colleges in Komarapalayam (Kumarapalayam) — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/komarapalayam",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college located in Komarapalayam (Kumarapalayam) on NH-544. 38 programmes, NIRF-published placement outcomes, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college located in Komarapalayam (Kumarapalayam) on NH-544. 35 programmes, NIRF-published placement outcomes, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -222,7 +222,7 @@ export default function KomarapalayamPage() {
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             JKKN College of Arts and Science is located in Komarapalayam
             (Kumarapalayam) town itself, at Natarajapuram on NH-544. It is a
-            NAAC-accredited institution offering 38 UG and PG programmes
+            NAAC-accredited institution offering 35 UG and PG programmes
             including BCA, BBA, B.Com, and B.Sc specialisations. Affiliated to
             Periyar University, it reports its placement outcomes in NIRF 2025 with recruiters including TCS, Infosys, HDFC Bank,
             and Amazon.
@@ -241,7 +241,7 @@ export default function KomarapalayamPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
-              { value: "38", label: "PROGRAMMES" },
+              { value: "35", label: "PROGRAMMES" },
               { value: "1974", label: "ESTD" },
             ].map((stat) => (
               <div
@@ -344,7 +344,7 @@ export default function KomarapalayamPage() {
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 38 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus in Komarapalayam.
+            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 35 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus in Komarapalayam.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">

@@ -48,7 +48,7 @@ export const faqCategories: FaqCategory[] = [
     faqs: [
       {
         q: "How many programmes does JKKN College of Arts and Science offer?",
-        a: "The college offers 38 programmes across UG, PG, and PhD levels in Arts, Science, and Commerce disciplines — including both Government-Aided and Self-Finance streams.",
+        a: "The college offers 35 programmes across UG, PG, and PhD levels in Arts, Science, and Commerce disciplines — including both Government-Aided and Self-Finance streams.",
       },
       {
         q: "What Aided UG programmes are available?",

@@ -40,7 +40,7 @@ import {
 export const metadata: Metadata = {
   title: "Arts and Science College in Namakkal District | JKKN CAS",
   description:
-    "JKKN College of Arts & Science — Namakkal District's most diverse arts college. 38 programmes, NAAC-accredited, NIRF-published placement outcomes. Admissions 2026-27 open.",
+    "JKKN College of Arts & Science — Namakkal District's most diverse arts college. 35 programmes, NAAC-accredited, NIRF-published placement outcomes. Admissions 2026-27 open.",
   keywords: [
     "arts and science college in Namakkal district",
     "best college in Namakkal district",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College in Namakkal District | JKKN CAS",
     description:
-      "JKKN CAS in Komarapalayam — Namakkal District's most diverse arts college. 38 programmes, NAAC-accredited, NIRF-published placement outcomes. Admissions 2026-27.",
+      "JKKN CAS in Komarapalayam — Namakkal District's most diverse arts college. 35 programmes, NAAC-accredited, NIRF-published placement outcomes. Admissions 2026-27.",
     url: "https://cas.jkkn.ac.in/namakkal",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Arts and Science College in Namakkal District | JKKN CAS",
-    description: "JKKN CAS in Namakkal District — 38 programmes, NAAC-accredited, NIRF-published placement outcomes. Admissions 2026-27 open.",
+    description: "JKKN CAS in Namakkal District — 35 programmes, NAAC-accredited, NIRF-published placement outcomes. Admissions 2026-27 open.",
   },
 };
 
@@ -79,7 +79,7 @@ export default function NamakkalPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Namakkal district?",
-      a: "JKKN College of Arts and Science in Komarapalayam is Namakkal District's most programme-diverse arts and science institution — 38 programmes, NAAC-accredited, affiliated to Periyar University, with a placement record published in NIRF 2025.",
+      a: "JKKN College of Arts and Science in Komarapalayam is Namakkal District's most programme-diverse arts and science institution — 35 programmes, NAAC-accredited, affiliated to Periyar University, with a placement record published in NIRF 2025.",
     },
     {
       q: "How far is JKKN College from Namakkal?",
@@ -87,7 +87,7 @@ export default function NamakkalPage() {
     },
     {
       q: "Which courses are popular among Namakkal students at JKKN CAS?",
-      a: "B.Com and BCA are the most popular choices among Namakkal students, given the district's growing commercial activity. BBA and B.Sc programmes are also in high demand. JKKN CAS offers 38 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
+      a: "B.Com and BCA are the most popular choices among Namakkal students, given the district's growing commercial activity. BBA and B.Sc programmes are also in high demand. JKKN CAS offers 35 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
     },
     {
       q: "Can BCA students from Namakkal get IT jobs?",
@@ -115,7 +115,7 @@ export default function NamakkalPage() {
     },
     {
       q: "Why should Namakkal district students choose JKKN CAS?",
-      a: "JKKN CAS is Namakkal District's most comprehensive arts and science college — 38 programmes, NAAC accreditation, NIRF-published placement outcomes, 7-college campus group with a 500-bed hospital, and direct NH-544 access from Erode and Tiruchengode.",
+      a: "JKKN CAS is Namakkal District's most comprehensive arts and science college — 35 programmes, NAAC accreditation, NIRF-published placement outcomes, 7-college campus group with a 500-bed hospital, and direct NH-544 access from Erode and Tiruchengode.",
     },
   ];
 
@@ -187,7 +187,7 @@ export default function NamakkalPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
-              { value: "38", label: "PROGRAMMES" },
+              { value: "35", label: "PROGRAMMES" },
               { value: "74+", label: "YEARS LEGACY" },
             ].map((stat) => (
               <div

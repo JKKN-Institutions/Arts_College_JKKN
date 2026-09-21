@@ -20,7 +20,7 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "Admissions 2026 — Apply Now",
   description:
-    "Apply to JKKN College of Arts and Science (Autonomous). 38 UG, PG & PhD programmes. Admission process, eligibility, documents & dates. Near Erode, TN.",
+    "Apply to JKKN College of Arts and Science (Autonomous). 35 UG, PG & PhD programmes. Admission process, eligibility, documents & dates. Near Erode, TN.",
   keywords: [
     "JKKN College admission",
     "arts and science college admission near Erode",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Admissions 2026 — Apply Now | JKKN Arts & Science",
     description:
-      "Apply to JKKN College of Arts and Science (Autonomous). 38 programmes, step-by-step process, eligibility and documents.",
+      "Apply to JKKN College of Arts and Science (Autonomous). 35 programmes, step-by-step process, eligibility and documents.",
     url: "https://cas.jkkn.ac.in/admissions",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -209,7 +209,7 @@ export default function AdmissionsPage() {
                 Admissions at JKKN College of Arts and Science
               </h1>
               <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-                Join an autonomous institution offering 38 programmes in Arts,
+                Join an autonomous institution offering 35 programmes in Arts,
                 Science and Commerce. Affiliated to Periyar University with
                 strong placement support and campus facilities near Erode, Tamil
                 Nadu.

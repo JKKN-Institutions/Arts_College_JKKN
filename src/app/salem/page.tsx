@@ -80,7 +80,7 @@ export default function SalemPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Salem?",
-      a: "JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 38 programmes and a placement record published in NIRF 2025.",
+      a: "JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 35 programmes and a placement record published in NIRF 2025.",
     },
     {
       q: "How far is JKKN CAS from Salem?",
@@ -88,7 +88,7 @@ export default function SalemPage() {
     },
     {
       q: "Which courses are popular among Salem students at JKKN CAS?",
-      a: "JKKN CAS offers BCA, BBA, B.Com, B.Sc (multiple specialisations), MCA, M.Com, M.Sc, and Ph.D — 38 programmes total across aided and self-finance streams.",
+      a: "JKKN CAS offers BCA, BBA, B.Com, B.Sc (multiple specialisations), MCA, M.Com, M.Sc, and Ph.D — 35 programmes total across aided and self-finance streams.",
     },
     {
       q: "Can BCA students from Salem get IT jobs?",
@@ -116,11 +116,11 @@ export default function SalemPage() {
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Salem?",
-      a: "JKKN CAS offers NAAC accreditation, 38 programmes, placement support, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~58 km from Salem.",
+      a: "JKKN CAS offers NAAC accreditation, 35 programmes, placement support, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~58 km from Salem.",
     },
     {
       q: "Which arts and science colleges in Salem should students compare?",
-      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC-accredited, established 1974, with aided low-fee streams, 38 programmes, and NIRF-published placement outcomes — is a strong option to include on that shortlist, ~58 km from Salem city on NH-544.",
+      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC-accredited, established 1974, with aided low-fee streams, 35 programmes, and NIRF-published placement outcomes — is a strong option to include on that shortlist, ~58 km from Salem city on NH-544.",
     },
     {
       q: "Is JKKN CAS a good option for students from Sankagiri, Edappadi, and Mettur?",
@@ -243,7 +243,7 @@ export default function SalemPage() {
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "~58km", label: "FROM SALEM" },
-              { value: "38", label: "PROGRAMMES" },
+              { value: "35", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
                 key={stat.label}

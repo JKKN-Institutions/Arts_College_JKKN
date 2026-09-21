@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // 49 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited arts and science college ~4-5 km from Bhavani across the Cauvery bridge. 38 programmes, NIRF-published placement outcomes. Admissions 2026–27.",
+    "JKKN CAS — NAAC-accredited arts and science college ~4-5 km from Bhavani across the Cauvery bridge. 35 programmes, NIRF-published placement outcomes. Admissions 2026–27.",
   // ~151 chars — within 155 limit
 
   keywords: [
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Bhavani — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 38 programmes, NIRF-published placement outcomes. Just ~4-5 km from Bhavani across the Cauvery bridge. Admissions open 2026–27.",
+      "JKKN CAS — NAAC-accredited, 35 programmes, NIRF-published placement outcomes. Just ~4-5 km from Bhavani across the Cauvery bridge. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/bhavani",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Bhavani — JKKN CAS",
     description:
-      "NAAC-accredited arts college ~4-5 km from Bhavani. 38 programmes, NIRF-published placement outcomes, easy day-scholar commute. Admissions 2026–27 open.",
+      "NAAC-accredited arts college ~4-5 km from Bhavani. 35 programmes, NIRF-published placement outcomes, easy day-scholar commute. Admissions 2026–27 open.",
   },
 };
 
@@ -90,7 +90,7 @@ export default function BhavaniPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Bhavani?",
-      a: "JKKN College of Arts and Science, located just ~4-5 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC-accredited institution with 38 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. For Bhavani students it is effectively the nearest major arts and science college.",
+      a: "JKKN College of Arts and Science, located just ~4-5 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC-accredited institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. For Bhavani students it is effectively the nearest major arts and science college.",
     },
     {
       q: "How far is JKKN CAS from Bhavani?",
@@ -102,7 +102,7 @@ export default function BhavaniPage() {
     },
     {
       q: "Which courses are popular among Bhavani students at JKKN CAS?",
-      a: "JKKN CAS near Bhavani offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 38 programmes in total. All programmes are UGC-approved and affiliated to Periyar University. BCA and B.Com are the most popular among students from the Bhavani region.",
+      a: "JKKN CAS near Bhavani offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 35 programmes in total. All programmes are UGC-approved and affiliated to Periyar University. BCA and B.Com are the most popular among students from the Bhavani region.",
     },
     {
       q: "Are JKKN CAS fees affordable for Bhavani students?",
@@ -126,7 +126,7 @@ export default function BhavaniPage() {
     },
     {
       q: "Why should Bhavani students choose JKKN CAS over colleges in Erode city?",
-      a: "For Bhavani students, JKKN CAS is just ~4-5 km away across the Cauvery bridge, while Erode city colleges are ~15-20 km away. JKKN offers NAAC accreditation, affordable fees, 38 programmes, and NIRF-published placement outcomes with national recruiters — without the long daily commute. Hostel facilities are also available for those who prefer on-campus living.",
+      a: "For Bhavani students, JKKN CAS is just ~4-5 km away across the Cauvery bridge, while Erode city colleges are ~15-20 km away. JKKN offers NAAC accreditation, affordable fees, 35 programmes, and NIRF-published placement outcomes with national recruiters — without the long daily commute. Hostel facilities are also available for those who prefer on-campus living.",
     },
   ];
 
@@ -146,7 +146,7 @@ export default function BhavaniPage() {
             "about": ORG_REF,
             "name": "Arts and Science College Near Bhavani — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/bhavani",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college approximately 4-5 km from Bhavani across the Cauvery bridge. 38 programmes, NIRF-published placement outcomes, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college approximately 4-5 km from Bhavani across the Cauvery bridge. 35 programmes, NIRF-published placement outcomes, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -221,7 +221,7 @@ export default function BhavaniPage() {
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             JKKN College of Arts and Science, located approximately 4-5 km
             from Bhavani across the Cauvery bridge in Komarapalayam, is a
-            NAAC-accredited institution offering 38 UG and PG programmes
+            NAAC-accredited institution offering 35 UG and PG programmes
             including BCA, BBA, B.Com, and B.Sc specialisations. Affiliated
             to Periyar University, it reports its placement outcomes in NIRF 2025 with recruiters including TCS, Infosys, HDFC
             Bank, and Amazon.
@@ -240,7 +240,7 @@ export default function BhavaniPage() {
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "5km", label: "FROM BHAVANI" },
-              { value: "38", label: "PROGRAMMES" },
+              { value: "35", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -343,7 +343,7 @@ export default function BhavaniPage() {
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 38 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus.
+            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 35 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
