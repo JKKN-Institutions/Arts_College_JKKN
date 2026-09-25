@@ -87,7 +87,7 @@ export default function TiruppurPage() {
     },
     {
       q: "Which courses are popular among Tiruppur students at JKKN CAS?",
-      a: "BBA and B.Com are the most popular choices among Tiruppur students, given the city's thriving knitwear export industry. BCA is also in high demand as textile companies digitalise. JKKN CAS offers 38 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
+      a: "BBA and B.Com are the most popular choices among Tiruppur students, given the city's thriving knitwear export industry. BCA is also in high demand as textile companies digitalise. JKKN CAS offers 35 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
     },
     {
       q: "Can BCA students from Tiruppur get IT jobs?",

@@ -59,7 +59,7 @@ export function CourseSchema({
   // differently from its own page - "B.Com (Bachelor of Commerce)" on /salem vs
   // "Bachelor of Commerce" on /programmes/aided/ug/bcom, and a "B.Sc (Various
   // Specialisations)" that is not a programme at all but points at the chemistry
-  // URL. Measured 2026-09-18: 39 distinct Course names for 38 programmes. The
+  // URL. Measured 2026-09-18: 39 distinct Course names for 35 programmes. The
   // register wins; whatever the page passed is kept as an alternateName.
   const canonicalName = meta?.fullName ?? name;
   const alternateName = meta && meta.fullName !== name ? name : undefined;

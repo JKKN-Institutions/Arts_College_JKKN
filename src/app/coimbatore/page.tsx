@@ -88,7 +88,7 @@ export default function CoimbatorePage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Coimbatore?",
-      a: "JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC-accredited, 74-year-old institution with 38 programmes and NIRF-published placement outcomes. Admissions open for 2026–27.",
+      a: "JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC-accredited, 74-year-old institution with 35 programmes and NIRF-published placement outcomes. Admissions open for 2026–27.",
     },
     {
       q: "How far is JKKN CAS from Coimbatore?",

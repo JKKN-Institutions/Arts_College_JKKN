@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // 51 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited college near Rasipuram, Namakkal district. 38 programmes, boys & girls hostel, NIRF-published placement outcomes. Admissions open 2026–27.",
+    "JKKN CAS — NAAC-accredited college near Rasipuram, Namakkal district. 35 programmes, boys & girls hostel, NIRF-published placement outcomes. Admissions open 2026–27.",
   // ~147 chars — within 155 limit
 
   keywords: [
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College near Rasipuram — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 38 programmes, boys & girls hostel, NIRF-published placement outcomes. ~60 km from Rasipuram, Namakkal district. Admissions open 2026–27.",
+      "JKKN CAS — NAAC-accredited, 35 programmes, boys & girls hostel, NIRF-published placement outcomes. ~60 km from Rasipuram, Namakkal district. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/rasipuram",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College near Rasipuram — JKKN CAS",
     description:
-      "NAAC-accredited arts college near Rasipuram in Namakkal district. 38 programmes, NIRF-published placement outcomes, hostel available. Admissions 2026–27 open.",
+      "NAAC-accredited arts college near Rasipuram in Namakkal district. 35 programmes, NIRF-published placement outcomes, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -90,7 +90,7 @@ export default function RasipuramPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Rasipuram?",
-      a: "JKKN College of Arts and Science, located in the same Namakkal district approximately 60 km from Rasipuram, is a NAAC-accredited institution with 38 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams, with hostel facilities on campus.",
+      a: "JKKN College of Arts and Science, located in the same Namakkal district approximately 60 km from Rasipuram, is a NAAC-accredited institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams, with hostel facilities on campus.",
     },
     {
       q: "How far is JKKN CAS from Rasipuram?",
@@ -106,7 +106,7 @@ export default function RasipuramPage() {
     },
     {
       q: "Which courses are popular among Rasipuram students at JKKN CAS?",
-      a: "JKKN CAS near Rasipuram offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 38 courses in total. All programmes are UGC-approved and affiliated to Periyar University. BCA and B.Com are the most popular among students from the Rasipuram region.",
+      a: "JKKN CAS near Rasipuram offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 35 courses in total. All programmes are UGC-approved and affiliated to Periyar University. BCA and B.Com are the most popular among students from the Rasipuram region.",
     },
     {
       q: "Are JKKN CAS fees affordable for students from Rasipuram?",
@@ -126,7 +126,7 @@ export default function RasipuramPage() {
     },
     {
       q: "Why do Rasipuram students choose JKKN CAS in Namakkal district?",
-      a: "JKKN CAS is one of the strongest arts and science options in Namakkal district — NAAC-accredited, 38 programmes, and NIRF-published placement outcomes with national recruiters. For Rasipuram students, the full residential campus with separate boys and girls hostels makes the ~60 km distance a non-issue: stay on campus, study more, travel less.",
+      a: "JKKN CAS is one of the strongest arts and science options in Namakkal district — NAAC-accredited, 35 programmes, and NIRF-published placement outcomes with national recruiters. For Rasipuram students, the full residential campus with separate boys and girls hostels makes the ~60 km distance a non-issue: stay on campus, study more, travel less.",
     },
   ];
 
@@ -146,7 +146,7 @@ export default function RasipuramPage() {
             "about": ORG_REF,
             "name": "Arts and Science College near Rasipuram — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/rasipuram",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college in Namakkal district, approximately 60 km from Rasipuram. 38 programmes, NIRF-published placement outcomes, boys and girls hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college in Namakkal district, approximately 60 km from Rasipuram. 35 programmes, NIRF-published placement outcomes, boys and girls hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -221,7 +221,7 @@ export default function RasipuramPage() {
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             JKKN College of Arts and Science, located on NH-544 in the same
             Namakkal district approximately 60 km from Rasipuram, is a
-            NAAC-accredited institution offering 38 UG and PG programmes
+            NAAC-accredited institution offering 35 UG and PG programmes
             including BCA, BBA, B.Com, and B.Sc specialisations, with separate
             boys and girls hostels on campus. Affiliated to Periyar University, it publishes its placement record in NIRF 2025 with
             recruiters including TCS, Infosys, HDFC Bank, and Amazon.
@@ -239,7 +239,7 @@ export default function RasipuramPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
-              { value: "38", label: "PROGRAMMES" },
+              { value: "35", label: "PROGRAMMES" },
               { value: "Hostel", label: "BOYS + GIRLS" },
             ].map((stat) => (
               <div
@@ -344,7 +344,7 @@ export default function RasipuramPage() {
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 38 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus.
+            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 35 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges, 2 schools, and a 500-bed multi-specialty teaching hospital on a single campus.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
