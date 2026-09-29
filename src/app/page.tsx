@@ -86,7 +86,7 @@ const homepageFAQs = [
   {
     question: "What makes JKKN different from other arts and science colleges in Tamil Nadu?",
     answer:
-      "Unlike many arts and science colleges in Tamil Nadu, JKKN offers an industry-integrated curriculum with collaborations from NASSCOM, CII, and leading MNCs. Students benefit from dedicated AI and IoT research labs, 121 faculty on roll (52 with a PhD, NIRF 2025), and a training and placement cell that delivers measurable outcomes — placement support and career opportunities across India and abroad.",
+      "JKKN offers an industry-integrated curriculum with collaborations from NASSCOM, CII, and MNCs. Students benefit from dedicated AI and IoT research labs, 121 faculty on roll (52 with a PhD, NIRF 2025), and a training and placement cell that delivers measurable outcomes — placement support and career opportunities across India and abroad.",
   },
   {
     question: "What programmes does JKKN Arts and Science College offer in Tamil Nadu?",
@@ -131,7 +131,7 @@ const homepageFAQs = [
   {
     question: "How does JKKN compare to other arts and science colleges in Tamil Nadu?",
     answer:
-      "JKKN stands out with its autonomous status (UGC-recognized), NAAC accreditation, placement record published in NIRF 2025 — metrics that match or exceed many top-ranked colleges. Unlike most arts colleges, JKKN offers AI/IoT research labs, NASSCOM and CII industry partnerships, and 35 programmes. The 74+ year institutional legacy and 60+ recruiting companies further distinguish JKKN from peers.",
+      "JKKN holds UGC-recognized autonomous status and NAAC accreditation, and its placement record is published in NIRF 2025. JKKN offers AI/IoT research labs, NASSCOM and CII industry partnerships, and 35 programmes, backed by a 74+ year institutional legacy and 60+ recruiting companies.",
   },
   {
     question: "What are the career options after completing a degree from JKKN?",
@@ -348,7 +348,7 @@ export default function Home() {
               With over seven decades of academic heritage, JKKN College of Arts and Science has earned its reputation as one of the <strong>best arts and science colleges in Tamil Nadu</strong>. Located on the Salem–Coimbatore Highway in Komarapalayam, the college combines the strength of a well-established institution with a forward-looking, industry-aligned learning framework that prepares learners for real-world careers.
             </p>
             <p>
-              What sets JKKN apart from other arts and science colleges in Tamil Nadu is the focus on measurable outcomes. A <strong>placement record published in NIRF 2025</strong>, and partnerships with 60+ recruiters — including TCS, Infosys, Wipro, and Foxconn — demonstrate that academic quality here translates directly into career success. Learners from across Tamil Nadu, Kerala, and Karnataka choose JKKN for this proven track record.
+              JKKN College of Arts and Science focuses on measurable outcomes. A <strong>placement record published in NIRF 2025</strong>, and partnerships with 60+ recruiters — including TCS, Infosys, Wipro, and Foxconn — demonstrate that academic quality here translates directly into career success. Learners from across Tamil Nadu, Kerala, and Karnataka choose JKKN for this proven track record.
             </p>
             <p>
               The college offers 35 UG, PG, and doctoral programmes across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research learning labs, NASSCOM and CII collaborations, and in-built internship pathways make JKKN a <strong>top arts college near Erode</strong> for learners seeking future-ready education in Tamil Nadu.
@@ -401,42 +401,42 @@ export default function Home() {
                 <tr className="bg-white border-b border-gray-100">
                   <td className="px-4 py-3 font-medium">Autonomous Status</td>
                   <td className="px-4 py-3 text-[#0b6d41] font-semibold">Yes — UGC Recognized</td>
-                  <td className="px-4 py-3 text-gray-500">Mostly Affiliated</td>
+                  <td className="px-4 py-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="bg-gray-50 border-b border-gray-100">
                   <td className="px-4 py-3 font-medium">NAAC Accreditation</td>
                   <td className="px-4 py-3 text-[#0b6d41] font-semibold">Accredited</td>
-                  <td className="px-4 py-3 text-gray-500">Many Unaccredited</td>
+                  <td className="px-4 py-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="bg-white border-b border-gray-100">
                   <td className="px-4 py-3 font-medium">Placement Rate</td>
                   <td className="px-4 py-3 text-[#0b6d41] font-semibold">36%</td>
-                  <td className="px-4 py-3 text-gray-500">40–60%</td>
+                  <td className="px-4 py-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="bg-gray-50 border-b border-gray-100">
                   <td className="px-4 py-3 font-medium">Highest Package</td>
                   <td className="px-4 py-3 text-[#0b6d41] font-semibold">Published by the placement cell</td>
-                  <td className="px-4 py-3 text-gray-500">₹3–5 LPA</td>
+                  <td className="px-4 py-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="bg-white border-b border-gray-100">
                   <td className="px-4 py-3 font-medium">Programmes Offered</td>
                   <td className="px-4 py-3 text-[#0b6d41] font-semibold">35 (UG, PG, PhD)</td>
-                  <td className="px-4 py-3 text-gray-500">8–15</td>
+                  <td className="px-4 py-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="bg-gray-50 border-b border-gray-100">
                   <td className="px-4 py-3 font-medium">AI/IoT Learning Labs</td>
                   <td className="px-4 py-3 text-[#0b6d41] font-semibold">Yes — Dedicated Research Learning Lab</td>
-                  <td className="px-4 py-3 text-gray-500">Rare</td>
+                  <td className="px-4 py-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="bg-white border-b border-gray-100">
                   <td className="px-4 py-3 font-medium">Industry Partnerships</td>
                   <td className="px-4 py-3 text-[#0b6d41] font-semibold">NASSCOM, CII, 60+ Recruiters</td>
-                  <td className="px-4 py-3 text-gray-500">Limited</td>
+                  <td className="px-4 py-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="px-4 py-3 font-medium rounded-bl-lg">Institutional Legacy</td>
                   <td className="px-4 py-3 text-[#0b6d41] font-semibold">College 1974 · Group 1952</td>
-                  <td className="px-4 py-3 text-gray-500 rounded-br-lg">10–30 Years</td>
+                  <td className="px-4 py-3 text-gray-500 rounded-br-lg">Varies</td>
                 </tr>
               </tbody>
             </table>
@@ -463,7 +463,7 @@ export default function Home() {
             </h2>
             <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[29.25px] font-normal text-gray-600 max-w-3xl mx-auto">
               Experience the JKKN advantage — industry-aligned education, modern infrastructure,<br className="hidden md:block" />
-              and dedicated career support that sets us apart from other colleges in Tamil Nadu
+              and dedicated career support
             </p>
           </div>
 
@@ -682,7 +682,7 @@ export default function Home() {
               Affordable Quality Education in Tamil Nadu
             </h2>
             <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[29.25px] font-normal text-gray-600 max-w-3xl mx-auto">
-              JKKN College offers one of the most affordable fee structures among top arts and science colleges in Tamil Nadu — with government-aided programmes, scholarships, and flexible payment options to make quality education accessible to all.
+              JKKN College offers government-aided programmes, scholarships, and flexible payment options to make quality education accessible to all.
             </p>
           </div>
 

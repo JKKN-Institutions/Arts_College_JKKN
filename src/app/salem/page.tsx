@@ -96,7 +96,7 @@ export default function SalemPage() {
     },
     {
       q: "Are JKKN CAS fees affordable compared to Salem colleges?",
-      a: "JKKN CAS fees are 30–50% lower than city-based private colleges. Government scholarships (BC, MBC, SC, ST) are available. Contact +91 9345855001 for the current fee structure.",
+      a: "JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 per year, PG fees are ₹20,000 to ₹25,000 per year, and aided programme fees follow government norms. Government scholarships (BC, MBC, SC, ST) are available. Contact +91 9345855001 for the current fee structure.",
     },
     {
       q: "Does JKKN CAS provide hostel for Salem students?",
@@ -124,7 +124,7 @@ export default function SalemPage() {
     },
     {
       q: "Is JKKN CAS a good option for students from Sankagiri, Edappadi, and Mettur?",
-      a: "Yes. For students from western Salem district — Sankagiri, Edappadi, and Mettur — JKKN CAS at Komarapalayam is often closer than Salem city colleges. Sankagiri is only ~15-20 km from the campus via the NH-544 corridor, making daily day-scholar commute straightforward.",
+      a: "Yes. For students from western Salem district — Sankagiri, Edappadi, and Mettur — JKKN CAS at Komarapalayam offers both day-scholar and hostel options. Sankagiri is only ~15-20 km from the campus via the NH-544 corridor, making daily day-scholar commute straightforward.",
     },
   ];
 
@@ -341,8 +341,8 @@ export default function SalemPage() {
               Salem is one of the largest cities in central Tamil Nadu with
               excellent connectivity to JKKN via NH-544. The journey takes under
               1 hour, making daily commute a practical option. Students from
-              Salem get access to quality professional education without the
-              high costs of metro city colleges.
+              Salem can also stay in the separate on-campus hostels for boys
+              and girls.
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -793,8 +793,8 @@ export default function SalemPage() {
               <Banknote className="w-8 h-8 text-[#006837] mb-3" />
               <h3 className="font-bold text-gray-800 mb-2">Affordable Fee Structure</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                JKKN CAS fees are among the most affordable in the region — significantly
-                lower than city-based private colleges. EMI payment options available.
+                JKKN CAS self-finance UG fees are ₹24,500–₹34,000 per year for 2026-27, and
+                aided programme fees follow government norms. EMI payment options available.
                 Contact the admission office for the complete fee breakdown.
               </p>
             </div>

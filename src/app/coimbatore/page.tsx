@@ -44,7 +44,7 @@ import {
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
   description:
-    "JKKN CAS — 105 km from Coimbatore. NAAC-accredited. Fees 30–50% lower than city colleges. BCA, B.Sc CS, BBA, B.Com. NIRF-published placement outcomes. 2026-27 open.",
+    "JKKN CAS — 105 km from Coimbatore. NAAC-accredited. Self-finance UG fees ₹24,500–₹34,000 a year. BCA, B.Sc CS, BBA, B.Com. NIRF-published placement outcomes. 2026-27 open.",
   keywords: [
     "arts and science college near Coimbatore",
     "best college near Coimbatore",
@@ -104,7 +104,7 @@ export default function CoimbatorePage() {
     },
     {
       q: "Are JKKN CAS fees affordable compared to Coimbatore colleges?",
-      a: "Yes. JKKN CAS annual tuition is 30–50% lower than comparable private colleges in Coimbatore. Government scholarships for BC, MBC, SC, and ST students are available. Call +91 9345855001 for details.",
+      a: "JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 per year, PG fees are ₹20,000 to ₹25,000 per year, and aided programme fees follow government norms. Government scholarships for BC, MBC, SC, and ST students are available. Call +91 9345855001 for details.",
     },
     {
       q: "Does JKKN CAS provide hostel for Coimbatore students?",
@@ -124,7 +124,7 @@ export default function CoimbatorePage() {
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Coimbatore city?",
-      a: "JKKN CAS offers 30–50% lower fees, smaller classes with personal attention, a placement record published in NIRF 2025, and the same top recruiters — TCS, Infosys, Amazon — as Coimbatore city colleges. Hostel and weekend buses available.",
+      a: "JKKN CAS offers self-finance UG fees of ₹24,500 to ₹34,000 per year, a placement record published in NIRF 2025, and recruiters including TCS, Infosys, and Amazon. Hostel and weekend buses available.",
     },
     {
       q: "Which IT companies recruit JKKN CAS graduates in Coimbatore?",
@@ -236,7 +236,7 @@ export default function CoimbatorePage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme at JKKN CAS — 105 km from Coimbatore. Pipeline to Coimbatore TIDEL Park and Elcot SEZ IT companies. Fees 30–50% lower than city colleges. placement record published in NIRF 2025."
+        description="3-year undergraduate IT programme at JKKN CAS — 105 km from Coimbatore. Pipeline to Coimbatore TIDEL Park and Elcot SEZ IT companies. Fees ₹33,000 a year. placement record published in NIRF 2025."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -380,11 +380,9 @@ export default function CoimbatorePage() {
               Why Coimbatore Students Travel to JKKN CAS
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-              While Coimbatore has many colleges, JKKN offers a distinct
-              advantage: world-class education at significantly lower costs, a
-              peaceful campus away from city congestion, personalised attention
-              with smaller class sizes, and strong placement support. Hostel and
-              transport facilities make the transition easy.
+              JKKN CAS offers self-finance UG fees of ₹24,500–₹34,000 a year, a
+              peaceful campus away from city congestion, and placement support.
+              Hostel and transport facilities make the transition easy.
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -445,12 +443,10 @@ export default function CoimbatorePage() {
               Which is the Most Affordable Arts and Science College for Coimbatore Students?
             </h2>
             <p className="aeo-citation-block text-gray-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-              For students from Coimbatore evaluating arts and science colleges, JKKN CAS offers
-              a cost-effective residential alternative. Annual tuition at JKKN CAS is 30–50% lower
-              than comparable private colleges in Coimbatore city. When combined with affordable
-              on-campus hostel accommodation — which includes three meals daily, WiFi, and 24/7
-              security — the total three-year cost at JKKN CAS is substantially lower than attending
-              a city college while managing private PG accommodation.
+              JKKN CAS self-finance UG tuition for 2026-27 is ₹24,500–₹34,000 a year, and aided
+              programme fees follow government norms. For students from Coimbatore, the college
+              offers on-campus hostel accommodation that includes three meals daily, WiFi, and
+              24/7 security.
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -459,24 +455,24 @@ export default function CoimbatorePage() {
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden mb-8">
             <div className="grid grid-cols-3 bg-[#006837] text-white text-xs sm:text-sm font-semibold">
               <div className="px-4 py-3">Factor</div>
-              <div className="px-4 py-3 text-center">Coimbatore City Colleges</div>
               <div className="px-4 py-3 text-center">JKKN CAS</div>
+              <div className="px-4 py-3 text-center">Coimbatore City Colleges</div>
             </div>
             {[
-              { factor: "Tuition Fees", city: "Higher (city premium)", jkkn: "30-50% lower", icon: IndianRupee },
-              { factor: "Class Size", city: "60-100+ students", jkkn: "40-60 students", icon: Users },
+              { factor: "Tuition Fees", city: "Varies", jkkn: "₹24,500–₹34,000 a year (self-finance UG)", icon: IndianRupee },
+              { factor: "Class Size", city: "Varies", jkkn: "40-60 students", icon: Users },
               { factor: "Campus", city: "Compact, urban", jkkn: "50+ acre green campus", icon: Leaf },
-              { factor: "Faculty Access", city: "Limited one-on-one time", jkkn: "Personalised mentoring", icon: GraduationCap },
+              { factor: "Faculty Access", city: "Varies", jkkn: "Personalised mentoring", icon: GraduationCap },
               { factor: "Placement Rate", city: "Varies widely", jkkn: "36% UG, NIRF 2025", icon: TrendingUp },
-              { factor: "Living Cost", city: "High PG/transport costs", jkkn: "Affordable hostel + meals included", icon: Home },
+              { factor: "Living Cost", city: "Varies", jkkn: "Affordable hostel + meals included", icon: Home },
             ].map((row) => (
               <div key={row.factor} className="grid grid-cols-3 border-t border-gray-100 text-sm">
                 <div className="px-4 py-3 flex items-center gap-2 font-medium text-gray-800">
                   <row.icon className="w-4 h-4 text-[#006837] flex-shrink-0 hidden sm:block" />
                   {row.factor}
                 </div>
-                <div className="px-4 py-3 text-center text-gray-500">{row.city}</div>
                 <div className="px-4 py-3 text-center text-[#006837] font-medium">{row.jkkn}</div>
+                <div className="px-4 py-3 text-center text-gray-500">{row.city}</div>
               </div>
             ))}
           </div>
@@ -833,8 +829,7 @@ export default function CoimbatorePage() {
             creates consistent demand for BCA, B.Sc Computer Science, and B.Sc AI and Data Science
             graduates. JKKN CAS BCA and computer science alumni have been placed at IT companies
             operating in and around Coimbatore. Students from Coimbatore who enroll at JKKN CAS
-            benefit from JKKN&apos;s established corporate placement network while saving
-            significantly on total education costs compared to Coimbatore city private colleges.
+            benefit from JKKN&apos;s established corporate placement network.
           </p>
 
           {/* IT Programme List */}
@@ -986,8 +981,8 @@ export default function CoimbatorePage() {
               <Banknote className="w-8 h-8 text-[#006837] mb-3" />
               <h3 className="font-bold text-gray-800 mb-2">Affordable Fee Structure</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                JKKN CAS fees are among the most affordable in the region — significantly
-                lower than city-based private colleges. EMI payment options available.
+                JKKN CAS self-finance UG fees are ₹24,500–₹34,000 per year for 2026-27, and
+                aided programme fees follow government norms. EMI payment options available.
                 Contact the admission office for the complete fee breakdown.
               </p>
             </div>

@@ -90,7 +90,7 @@ export default function BhavaniPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Bhavani?",
-      a: "JKKN College of Arts and Science, located just ~4-5 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC-accredited institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. For Bhavani students it is effectively the nearest major arts and science college.",
+      a: "JKKN College of Arts and Science, located just ~4-5 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC-accredited institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC.",
     },
     {
       q: "How far is JKKN CAS from Bhavani?",
@@ -106,7 +106,7 @@ export default function BhavaniPage() {
     },
     {
       q: "Are JKKN CAS fees affordable for Bhavani students?",
-      a: "JKKN CAS fees are lower than most private colleges in Erode city. Tamil Nadu government scholarships for BC, MBC, SC, and ST students are available. Merit-based concessions are also offered. Contact the admission office at +91 9345855001 for the current fee structure.",
+      a: "JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 per year, PG fees are ₹20,000 to ₹25,000 per year, and aided programme fees follow government norms. Tamil Nadu government scholarships for BC, MBC, SC, and ST students are available. Merit-based concessions are also offered. Contact the admission office at +91 9345855001 for the current fee structure.",
     },
     {
       q: "Does JKKN CAS provide hostel for Bhavani students?",
@@ -231,8 +231,7 @@ export default function BhavaniPage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Bhavani and Komarapalayam are twin towns facing each other across
             the Cauvery river — JKKN CAS is just a 10-15 minute ride over the
-            bridge. NAAC-accredited arts and science programmes with placement support, effectively the nearest major college for
-            Bhavani students.
+            bridge. NAAC-accredited arts and science programmes with placement support.
           </p>
 
           {/* Stats */}
@@ -337,8 +336,7 @@ export default function BhavaniPage() {
               Bhavani — famous for Jamakkalam handloom carpet weaving and the
               Sangameshwarar Temple at Kooduthurai — sits directly across the
               Cauvery river from Komarapalayam. For Bhavani students, JKKN CAS
-              is effectively the nearest major arts and science college: just
-              ~4-5 km over the bridge, a trivial day-scholar commute.
+              is just ~4-5 km over the bridge, a trivial day-scholar commute.
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -795,8 +793,8 @@ export default function BhavaniPage() {
               <Banknote className="w-8 h-8 text-[#006837] mb-3" />
               <h3 className="font-bold text-gray-800 mb-2">Affordable Fee Structure</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                JKKN CAS fees are among the most affordable in the region — significantly
-                lower than city-based private colleges. EMI payment options available.
+                JKKN CAS self-finance UG fees are ₹24,500–₹34,000 per year for 2026-27, and
+                aided programme fees follow government norms. EMI payment options available.
                 Contact the admission office for the complete fee breakdown.
               </p>
             </div>
@@ -1066,17 +1064,17 @@ export default function BhavaniPage() {
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">
                   <td className="p-3 text-gray-600">Key Recruiters</td>
                   <td className="p-3 text-gray-800 font-medium">TCS, Infosys, HDFC, Amazon</td>
-                  <td className="p-3 text-gray-500">Local / regional</td>
+                  <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Campus Type</td>
                   <td className="p-3 text-gray-800 font-medium">Residential + Day Scholar</td>
-                  <td className="p-3 text-gray-500">Day Scholar only (most)</td>
+                  <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">
                   <td className="p-3 text-gray-600">Hostel</td>
                   <td className="p-3 text-gray-800 font-medium">Available (boys + girls)</td>
-                  <td className="p-3 text-gray-500">Limited</td>
+                  <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr>
                   <td className="p-3 text-gray-600">Programmes</td>
