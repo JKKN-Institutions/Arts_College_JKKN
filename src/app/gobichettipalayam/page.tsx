@@ -107,7 +107,7 @@ export default function GobichettipalayamPage() {
     },
     {
       q: "Are JKKN CAS fees affordable compared to colleges in Gobichettipalayam?",
-      a: "JKKN CAS fees are lower than most private colleges in the region. Tamil Nadu government scholarships for BC, MBC, SC, and ST students are available. Merit-based concessions are also offered. Contact the admission office at +91 9345855001 for the current fee structure.",
+      a: "JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 per year, PG fees are ₹20,000 to ₹25,000 per year, and aided programme fees follow government norms. Tamil Nadu government scholarships for BC, MBC, SC, and ST students are available. Merit-based concessions are also offered. Contact the admission office at +91 9345855001 for the current fee structure.",
     },
     {
       q: "Does JKKN CAS provide hostel for Gobichettipalayam students?",
@@ -127,7 +127,7 @@ export default function GobichettipalayamPage() {
     },
     {
       q: "Why should Gobichettipalayam students choose JKKN CAS over local colleges?",
-      a: "JKKN CAS offers lower fees, NAAC accreditation, a residential campus, and NIRF-published placement outcomes with national recruiters — advantages not uniformly available at colleges in the Gobi area. The ~35-40 km route via Bhavani makes daily commute viable with college transport, and hostel facilities are available for those who prefer on-campus living.",
+      a: "JKKN CAS offers NAAC accreditation, government-aided programmes, a residential campus, and NIRF-published placement outcomes with national recruiters. The ~35-40 km route via Bhavani makes daily commute viable with college transport, and hostel facilities are available for those who prefer on-campus living.",
     },
   ];
 
@@ -796,8 +796,8 @@ export default function GobichettipalayamPage() {
               <Banknote className="w-8 h-8 text-[#006837] mb-3" />
               <h3 className="font-bold text-gray-800 mb-2">Affordable Fee Structure</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                JKKN CAS fees are among the most affordable in the region — significantly
-                lower than city-based private colleges. EMI payment options available.
+                JKKN CAS self-finance UG fees are ₹24,500–₹34,000 per year for 2026-27, and
+                aided programme fees follow government norms. EMI payment options available.
                 Contact the admission office for the complete fee breakdown.
               </p>
             </div>
@@ -1067,17 +1067,17 @@ export default function GobichettipalayamPage() {
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">
                   <td className="p-3 text-gray-600">Key Recruiters</td>
                   <td className="p-3 text-gray-800 font-medium">TCS, Infosys, HDFC, Amazon</td>
-                  <td className="p-3 text-gray-500">Local / regional</td>
+                  <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Campus Type</td>
                   <td className="p-3 text-gray-800 font-medium">Residential + Day Scholar</td>
-                  <td className="p-3 text-gray-500">Day Scholar only (most)</td>
+                  <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">
                   <td className="p-3 text-gray-600">Hostel</td>
                   <td className="p-3 text-gray-800 font-medium">Available (boys + girls)</td>
-                  <td className="p-3 text-gray-500">Limited</td>
+                  <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr>
                   <td className="p-3 text-gray-600">Programmes</td>

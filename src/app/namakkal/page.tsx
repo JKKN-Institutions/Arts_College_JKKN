@@ -95,7 +95,7 @@ export default function NamakkalPage() {
     },
     {
       q: "Are JKKN CAS fees affordable for Namakkal families?",
-      a: "Yes. JKKN CAS fees are among the most affordable in Namakkal district — significantly lower than private colleges elsewhere. Government scholarships (BC/MBC/SC/ST) and merit-based concessions are available. Contact the admission office at +91 9345855001 for the full fee structure.",
+      a: "Yes. JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 per year, PG fees are ₹20,000 to ₹25,000 per year, and aided programme fees follow government norms. Government scholarships (BC/MBC/SC/ST) and merit-based concessions are available. Contact the admission office at +91 9345855001 for the full fee structure.",
     },
     {
       q: "Does JKKN CAS provide hostel for Namakkal district students?",
@@ -734,8 +734,8 @@ export default function NamakkalPage() {
               <Banknote className="w-8 h-8 text-[#006837] mb-3" />
               <h3 className="font-bold text-gray-800 mb-2">Affordable Fee Structure</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                JKKN CAS fees are among the most affordable in the region — significantly
-                lower than city-based private colleges. EMI payment options available.
+                JKKN CAS self-finance UG fees are ₹24,500–₹34,000 per year for 2026-27, and
+                aided programme fees follow government norms. EMI payment options available.
                 Contact the admission office for the complete fee breakdown.
               </p>
             </div>

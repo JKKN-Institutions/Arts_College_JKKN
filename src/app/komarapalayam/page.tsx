@@ -91,7 +91,7 @@ export default function KomarapalayamPage() {
   const faqs = [
     {
       q: "Which colleges are in Komarapalayam (Kumarapalayam)?",
-      a: "The JKKN Group of Institutions operates the major colleges in Komarapalayam (Kumarapalayam): JKKN College of Arts and Science, JKKN Dental College and Hospital, JKKN College of Pharmacy, Sresakthimayeil Institute of Nursing and Research, JKKN College of Engineering and Technology, JKKN College of Allied Health Sciences, and JKKN College of Education, plus JKKN Matriculation Higher Secondary School and Nattraja Vidhyalya (CBSE). All are located on the NH-544 stretch at Natarajapuram.",
+      a: "The JKKN Group of Institutions operates these colleges in Komarapalayam (Kumarapalayam): JKKN College of Arts and Science, JKKN Dental College and Hospital, JKKN College of Pharmacy, Sresakthimayeil Institute of Nursing and Research, JKKN College of Engineering and Technology, JKKN College of Allied Health Sciences, and JKKN College of Education, plus JKKN Matriculation Higher Secondary School and Nattraja Vidhyalya (CBSE). All are located on the NH-544 stretch at Natarajapuram.",
     },
     {
       q: "Is JKKN College of Arts and Science located in Komarapalayam?",
@@ -103,7 +103,7 @@ export default function KomarapalayamPage() {
     },
     {
       q: "What is the JKKN college Komarapalayam fees structure?",
-      a: "JKKN CAS fees are lower than most city-based private colleges in the region. Tamil Nadu government scholarships for BC, MBC, SC, and ST students are available, along with merit-based concessions. The fee varies by programme (aided vs self-finance). Contact the admission office at +91 9345855001 for the current programme-wise fee structure.",
+      a: "JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 per year, PG fees are ₹20,000 to ₹25,000 per year, and aided programme fees follow government norms. Tamil Nadu government scholarships for BC, MBC, SC, and ST students are available, along with merit-based concessions. The fee varies by programme (aided vs self-finance). Contact the admission office at +91 9345855001 for the current programme-wise fee structure.",
     },
     {
       q: "Does JKKN CAS in Kumarapalayam provide hostel facilities?",
@@ -886,8 +886,8 @@ export default function KomarapalayamPage() {
               <Banknote className="w-8 h-8 text-[#006837] mb-3" />
               <h3 className="font-bold text-gray-800 mb-2">Affordable Fee Structure</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
-                JKKN CAS fees are among the most affordable in the region — significantly
-                lower than city-based private colleges. EMI payment options available.
+                JKKN CAS self-finance UG fees are ₹24,500–₹34,000 per year for 2026-27, and
+                aided programme fees follow government norms. EMI payment options available.
                 Contact the admission office for the complete fee breakdown.
               </p>
             </div>
@@ -1157,17 +1157,17 @@ export default function KomarapalayamPage() {
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">
                   <td className="p-3 text-gray-600">Key Recruiters</td>
                   <td className="p-3 text-gray-800 font-medium">TCS, Infosys, HDFC, Amazon</td>
-                  <td className="p-3 text-gray-500">Local / regional</td>
+                  <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Campus Type</td>
                   <td className="p-3 text-gray-800 font-medium">Residential + Day Scholar</td>
-                  <td className="p-3 text-gray-500">Day Scholar only (most)</td>
+                  <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">
                   <td className="p-3 text-gray-600">Hostel</td>
                   <td className="p-3 text-gray-800 font-medium">Available (boys + girls)</td>
-                  <td className="p-3 text-gray-500">Limited</td>
+                  <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr>
                   <td className="p-3 text-gray-600">Programmes</td>
