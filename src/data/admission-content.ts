@@ -23,6 +23,50 @@ export interface AdmissionOverride {
 }
 
 export const admissionOverrides: Record<string, AdmissionOverride> = {
+  // Eligibility from the Periyar University B.Sc Physics regulations, 2023-24 onwards
+  // (periyaruniversity.ac.in/Documents/2023/CDC/Affiliated/ug/B.Sc PHYSICS  .pdf):
+  // "passed the Higher Secondary examination with Mathematics, Physics and Chemistry".
+  // The regulation states no minimum percentage, so none is published here.
+  "self-finance/ug/bsc-physics": {
+    eligibilityCriteria: [
+      "Pass in the Higher Secondary (+2) examination",
+      "Mathematics, Physics and Chemistry as subjects (Periyar University regulations)",
+      "Tamil Nadu State Board or an examination accepted as equivalent",
+      "Merit-based admission; community reservation as per Tamil Nadu Government norms",
+    ],
+    recommendedBackground: [
+      "+2 Mathematics-Physics-Chemistry-Biology or Mathematics-Physics-Chemistry-Computer Science group",
+      "Commerce and Arts streams are not eligible for B.Sc Physics",
+      "Comfort with mathematics helps in every semester",
+      "Interest in laboratory work - there is a practical course each semester",
+    ],
+    highlights: [
+      "Affiliated to Periyar University, Salem",
+      "NAAC-accredited autonomous institution",
+      "Six core physics practicals, an internship or field visit, and a final-year project",
+      "Aided M.Sc Physics available on the same campus",
+    ],
+    curriculumHighlights: [
+      "Semesters I-II: Properties of Matter and Sound; Heat, Thermodynamics and Statistical Physics",
+      "Semesters III-IV: General and Classical Mechanics; Optics and Spectroscopy; Electronic Devices",
+      "Semester V: Atomic Physics and Lasers; Relativity and Quantum Mechanics; Electricity and Magnetism",
+      "Semester VI: Nuclear and Particle Physics; Solid State Physics; Digital Electronics and Microprocessor 8085",
+      "A core practical course in every semester",
+      "Internship or field visit (Semester V) and a project (Semester VI)",
+    ],
+    faq: [
+      {
+        question: "Can a Commerce or Arts +2 student join B.Sc Physics?",
+        answer:
+          "No. The Periyar University B.Sc Physics regulations require a pass in the Higher Secondary examination with Mathematics, Physics and Chemistry. Commerce and Arts stream students can look at the college's other UG programmes.",
+      },
+      {
+        question: "What is the B.Sc Physics fee for 2026-27?",
+        answer:
+          "Rs 25,000 a year under the management quota. Government quota seats follow Government norms.",
+      },
+    ],
+  },
   "self-finance/ug/bcom-ai": {
     applicationDeadline: "Subject to University Approval",
     importantDates: [

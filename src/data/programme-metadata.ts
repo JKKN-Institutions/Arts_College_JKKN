@@ -485,7 +485,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     level: "UG",
     category: "Self-Finance",
     description:
-      "Study B.Sc. Physics (Self-Finance) at JKKN College of Arts and Science (Autonomous). 3-year programme with modern physics labs near Erode, Tamil Nadu.",
+      "B.Sc Physics (Self-Finance) at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Affiliated to Periyar University. 3 years, 6 semesters. Eligibility: +2 with Maths, Physics and Chemistry.",
     keywords: [
       "BSc Physics",
       "BSc Physics college near Erode",

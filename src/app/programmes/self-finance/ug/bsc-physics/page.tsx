@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Users, Award, Briefcase, GraduationCap, Building2, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, Atom, Microscope, FlaskConical, Database, Zap, Brain, Calendar, UserCheck, DollarSign, TrendingUp } from 'lucide-react';
 import CountUp from '@/components/ui/CountUp';
+import { bscPhysicsFaqs } from './faqs';
 
 /* ─── Scroll-reveal hook ─── */
 function useScrollReveal() {
@@ -64,36 +65,7 @@ export default function BScPhysicsPage() {
   const [activeYear, setActiveYear] = useState(1);
   const [activeFAQ, setActiveFAQ] = useState(0);
 
-  const faqs = [
-    {
-      question: "What is the duration of the B.Sc Physics programme?",
-      answer: "The B.Sc Physics programme is a 3-year full-time undergraduate degree comprising six semesters. Each academic year consists of two semesters with comprehensive theoretical instruction and extensive practical laboratory sessions. The programme includes a mandatory project work component in the final semester."
-    },
-    {
-      question: "What are the career opportunities after completing B.Sc Physics?",
-      answer: "B.Sc Physics graduates have diverse career options including scientific research at organizations like ISRO, DRDO, and BARC, teaching and academia, electronics and semiconductor industries, IT and data science roles, medical physics in healthcare, aerospace industry, nuclear energy sector, and government services through UPSC and state PSC examinations."
-    },
-    {
-      question: "What is the eligibility criteria for B.Sc Physics admission?",
-      answer: "Candidates must have completed Higher Secondary (10+2) from a recognized board with Physics,Chemistry and Mathematics as compulsory subjects. A minimum aggregate of 50% marks is required for general category candidates and 45% for reserved categories. "
-    },
-    {
-      question: "What higher studies options are available after B.Sc Physics?",
-      answer: "Graduates can pursue M.Sc Physics, M.Sc Applied Physics, M.Sc Electronics, Integrated PhD programmes at premier institutions like IITs and IISc, M.Tech in various specializations, MBA, and research positions. Competitive examinations like IIT-JAM, GATE, CSIR-NET/JRF, and JEST open doors to prestigious institutions and research fellowships."
-    },
-    {
-      question: "What is the expected salary package for B.Sc Physics graduates?",
-      answer: "Entry-level positions for B.Sc Physics graduates typically offer packages ranging from ₹3 to ₹5 lakhs per annum depending on the sector and role. Positions in research organizations, IT companies, and government services often offer higher packages. With experience and additional qualifications, salaries can increase significantly, with senior positions in research and technology commanding ₹10-20 lakhs per annum."
-    },
-    {
-      question: "Is there scope for research during the B.Sc programme?",
-      answer: "Yes, the department encourages research activities from the undergraduate level. Learners can participate in departmental research projects, present papers at seminars and conferences, and publish their work in academic journals. The final semester includes a mandatory project work component where Learners conduct independent research under faculty guidance. Summer research internship opportunities at national laboratories are also facilitated."
-    },
-    {
-      question: "What makes JKKN's B.Sc Physics programme unique?",
-      answer: "Our programme stands out through its industry-aligned curriculum, experienced Senior Learners with active research profiles, state-of-the-art laboratory facilities, strong placement support, and collaborations with research organizations. The progressive education philosophy ensures holistic development with emphasis on practical skills, computational proficiency, and research aptitude preparing Learners for both industry and academia."
-    }
-  ];
+  const faqs = bscPhysicsFaqs;
 
   return (
     <div className="min-h-screen bg-white">
@@ -150,9 +122,10 @@ export default function BScPhysicsPage() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
               {[
-                { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-                { icon: <FlaskConical className="w-7 h-7" />, stat: 'Modern', title: 'Physics Labs', desc: 'State-of-the-art facilities' },
-                { icon: <Atom className="w-7 h-7" />, stat: 'ISRO', title: 'Industry Connect', desc: 'Research collaborations' },
+                { icon: <DollarSign className="w-7 h-7" />, stat: '₹25,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
+                { icon: <Building2 className="w-7 h-7" />, stat: 'Periyar', title: 'University Affiliation', desc: 'Autonomous college, Salem region' },
+                { icon: <Atom className="w-7 h-7" />, stat: 'PCM', title: '+2 Eligibility', desc: 'Maths, Physics and Chemistry' },
+                { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Autonomous, UGC recognised' },
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <GlassCard className="p-6 text-center">
@@ -188,8 +161,13 @@ export default function BScPhysicsPage() {
                   Our progressive education philosophy ensures that Learners develop scientific temperament, analytical thinking, and problem-solving skills through experiential learning. The curriculum integrates classical physics with modern computational techniques, electronics, and material science, equipping graduates with skills demanded by research institutions, technology industries, and academic organizations worldwide.
                 </p>
 
+                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  JKKN College of Arts and Science is an autonomous college affiliated to Periyar University, on NH-544 at Komarapalayam in Namakkal district, Tamil Nadu, between Salem and Erode. B.Sc Physics here is a self-finance programme with an annual management-quota fee of ₹25,000 for 2026-27. Comparing options across the state? Read our{' '}
+                  <a href="/bsc-physics-colleges-in-tamil-nadu" className="text-brand-green font-semibold underline">guide to B.Sc Physics colleges in Tamil Nadu</a>, which lists the NIRF 2025 ranked colleges and the Namakkal district options.
+                </p>
+
                 <div className="grid sm:grid-cols-2 gap-3">
-                  {['Industry-Aligned Learning Framework', 'Expert Senior Learners', 'Advanced Laboratory Training', 'Research Project Experience'].map((item, idx) => (
+                  {['Six-semester autonomous syllabus', 'Six core physics practicals', 'Internship or field visit in Year 3', 'Final-year project'].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-gray-700">
                       <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                       <span>{item}</span>
@@ -230,7 +208,7 @@ export default function BScPhysicsPage() {
                     </span>
                   </h2>
                   <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Requirements for joining the B.Sc Physics programme
+                    Requirements for joining the B.Sc Physics programme, as set by the Periyar University B.Sc Physics regulations
                   </p>
                 </div>
               </RevealSection>
@@ -240,12 +218,12 @@ export default function BScPhysicsPage() {
                   {
                     icon: <GraduationCap className="w-8 h-8 text-white" />,
                     title: 'Academic Qualification',
-                    items: ['Higher Secondary (10+2) from recognized board', 'Physics,Chemistry & Mathematics as compulsory subjects', 'Minimum 50% aggregate marks', '45% for reserved categories']
+                    items: ['Pass in the Higher Secondary (+2) examination', 'Mathematics, Physics and Chemistry as subjects', 'Tamil Nadu State Board or an equivalent board', 'Merit-based admission; reservation as per Tamil Nadu Government norms']
                   },
                   {
                     icon: <BookOpen className="w-8 h-8 text-white" />,
                     title: 'Accepted Streams',
-                    items: ['Science stream with Physics mandatory', 'Physics,Biology, Chemistry & Mathematics (PCM)', 'Physics, Chemistry, Mathematics & Computer Science', 'Vocational Science courses with Physics']
+                    items: ['Mathematics, Physics, Chemistry, Biology group', 'Mathematics, Physics, Chemistry, Computer Science group', 'Any +2 group that includes Mathematics, Physics and Chemistry', 'Commerce and Arts streams are not eligible']
                   },
                   {
                     icon: <FileText className="w-8 h-8 text-white" />,
@@ -312,8 +290,8 @@ export default function BScPhysicsPage() {
                 </div>
               </RevealSection>
 
-              {activeYear === 1 && (
-                <div className="grid md:grid-cols-2 gap-6">
+              {/* All three years are rendered so crawlers see all six semesters; tabs only toggle visibility. */}
+              <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 1 ? '' : 'hidden'}`}>
                   {[
                     {
                       title: 'Learning Period I',
@@ -367,11 +345,9 @@ export default function BScPhysicsPage() {
                       </GlassCard>
                     </RevealSection>
                   ))}
-                </div>
-              )}
+              </div>
 
-              {activeYear === 2 && (
-                <div className="grid md:grid-cols-2 gap-6">
+              <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 2 ? '' : 'hidden'}`}>
                   {[
                     {
                       title: 'Learning Period III',
@@ -424,11 +400,9 @@ export default function BScPhysicsPage() {
                       </GlassCard>
                     </RevealSection>
                   ))}
-                </div>
-              )}
+              </div>
 
-              {activeYear === 3 && (
-                <div className="grid md:grid-cols-2 gap-6">
+              <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 3 ? '' : 'hidden'}`}>
                   {[
                     {
                       title: 'Learning Period V',
@@ -478,8 +452,7 @@ export default function BScPhysicsPage() {
                       </GlassCard>
                     </RevealSection>
                   ))}
-                </div>
-              )}
+              </div>
             </div>
           </div>
         </section>
@@ -548,13 +521,13 @@ export default function BScPhysicsPage() {
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                 {[
-                  { icon: <Microscope className="w-6 h-6" />, title: 'Research Scientist', desc: 'ISRO, DRDO, BARC, CSIR, and national laboratories' },
+                  { icon: <Microscope className="w-6 h-6" />, title: 'Research Scientist', desc: 'After an M.Sc or Ph.D.: ISRO, DRDO, BARC, CSIR and national laboratories' },
                   { icon: <GraduationCap className="w-6 h-6" />, title: 'Educator / Lecturer', desc: 'Schools, colleges, coaching institutes, and universities' },
                   { icon: <Zap className="w-6 h-6" />, title: 'Electronics Engineer', desc: 'Semiconductor industries, R&D labs, and tech companies' },
                   { icon: <Database className="w-6 h-6" />, title: 'Data Scientist', desc: 'IT companies, analytics firms, and research organizations' },
-                  { icon: <Target className="w-6 h-6" />, title: 'Medical Physicist', desc: 'Hospitals, diagnostic centers, and radiotherapy units' },
+                  { icon: <Target className="w-6 h-6" />, title: 'Medical Physics', desc: 'After an M.Sc in Medical Physics: hospitals and radiotherapy units' },
                   { icon: <Building2 className="w-6 h-6" />, title: 'Government Services', desc: 'UPSC, State PSC, Indian Forest Service, and regulatory bodies' },
-                  { icon: <Globe className="w-6 h-6" />, title: 'Aerospace Industry', desc: 'HAL, Boeing, Airbus, and space technology companies' },
+                  { icon: <Globe className="w-6 h-6" />, title: 'Space & Defence Research', desc: 'Scientific assistant and technical posts through recruitment exams' },
                   { icon: <Atom className="w-6 h-6" />, title: 'Energy Sector', desc: 'Nuclear power, renewable energy, and power corporations' }
                 ].map((career, idx) => (
                   <RevealSection key={idx} delay={idx * 80}>
@@ -596,27 +569,27 @@ export default function BScPhysicsPage() {
             <div className="max-w-6xl mx-auto">
               <RevealSection>
                 <div className="text-center mb-12">
-                  <SectionBadge text="Infrastructure" />
+                  <SectionBadge text="Laboratory Work" />
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                    Department{' '}
+                    Physics{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                      Facilities
+                      Practicals
                     </span>
                   </h2>
                   <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                    State-of-the-art infrastructure supporting world-class education
+                    The six core practical courses in the B.Sc Physics syllabus, one in each semester
                   </p>
                 </div>
               </RevealSection>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { title: 'Advanced Physics Laboratory', description: 'Fully equipped laboratory with precision instruments, spectrometers, interferometers, and modern experimental setups for hands-on learning.' },
-                  { title: 'Electronics Laboratory', description: 'Modern electronics lab with oscilloscopes, function generators, digital trainers, and microcontroller development boards for circuit design and analysis.' },
-                  { title: 'Computational Physics Lab', description: 'High-performance computing facility with specialized software for numerical simulations, data analysis, and scientific programming.' },
-                  { title: 'Optics & Laser Laboratory', description: 'Specialized lab equipped with lasers, optical benches, holography setups, and fiber optics equipment for advanced optical experiments.' },
-                  { title: 'Material Science Lab', description: 'Research facility for material characterization with XRD, spectroscopy equipment, and sample preparation facilities for advanced studies.' },
-                  { title: 'Departmental Library', description: 'Well-stocked library with physics textbooks, research journals, e-resources, and access to international physics databases for reference and research.' }
+                  { title: 'Core Practical I', description: 'Properties of Matter experiments (24UPHCP01), Semester I.' },
+                  { title: 'Core Practical II', description: 'Heat, Oscillations, Waves and Sound experiments (24UPHCP02), Semester II.' },
+                  { title: 'Core Practical III', description: 'Electricity experiments (24UPHCP03), Semester III.' },
+                  { title: 'Core Practical IV', description: 'Light experiments (24UPHCP04), Semester IV.' },
+                  { title: 'Core Practical V', description: 'General experiments (24UPHCP05), Semester V.' },
+                  { title: 'Core Practical VI', description: 'Electronics experiments (24UPHCP06), Semester VI.' }
                 ].map((facility, idx) => (
                   <RevealSection key={idx} delay={idx * 100}>
                     <GlassCard className="p-6 group h-full">
@@ -659,12 +632,12 @@ export default function BScPhysicsPage() {
 
                 <div className="space-y-4">
                   {[
-                    { icon: <GraduationCap className="w-6 h-6" />, title: 'Expert Senior Learners', description: 'Learn from experienced faculty with doctoral degrees and active research in specialized physics fields.' },
-                    { icon: <Microscope className="w-6 h-6" />, title: 'Research-Oriented Learning', description: 'Engage in research projects with collaboration opportunities with national laboratories like ISRO and DRDO.' },
-                    { icon: <Briefcase className="w-6 h-6" />, title: 'Excellent Placement Support', description: 'Strong industry connections ensuring placement opportunities in leading technology and research organizations.' },
-                    { icon: <FlaskConical className="w-6 h-6" />, title: 'Modern Infrastructure', description: 'Access to well-equipped laboratories, computational facilities, and latest scientific instruments.' },
-                    { icon: <TrendingUp className="w-6 h-6" />, title: 'Higher Education Pathways', description: 'Strong foundation for M.Sc Physics, integrated PhD programmes, and competitive exams like IIT-JAM, GATE, and CSIR-NET,M.Sc. Electronics,M.Sc. NanoScience,MBA,MCA,AstroPhysics,M.Sc. Medical Physics.' },
-                    { icon: <Award className="w-6 h-6" />, title: 'NAAC Accreditation', description: 'Quality-assured education with government recognition and industry partnerships ensuring excellent learning outcomes.' }
+                    { icon: <DollarSign className="w-6 h-6" />, title: 'Published Fee', description: '₹25,000 a year under the management quota for 2026-27; government quota seats follow Government norms. Every programme fee is on the Fee Structure page.' },
+                    { icon: <GraduationCap className="w-6 h-6" />, title: 'Autonomous, Periyar University Degree', description: 'The college sets its own syllabus and examinations as an autonomous institution; the degree is awarded by Periyar University, Salem.' },
+                    { icon: <TrendingUp className="w-6 h-6" />, title: 'M.Sc Physics on the Same Campus', description: 'The college also offers an aided M.Sc Physics, so B.Sc graduates have a postgraduate route without changing campus. Other routes include IIT-JAM, JEST and a B.Ed.' },
+                    { icon: <Microscope className="w-6 h-6" />, title: 'Project and Internship', description: 'The syllabus includes an internship, industrial visit or field visit in Semester V and a project in Semester VI.' },
+                    { icon: <Building2 className="w-6 h-6" />, title: 'Reachable from Five Districts', description: 'On NH-544 at Komarapalayam, with college transport from Erode, Salem, Namakkal, Tiruppur and Coimbatore, and separate hostels for boys and girls.' },
+                    { icon: <Award className="w-6 h-6" />, title: 'NAAC Accredited', description: 'The college is NAAC accredited and UGC recognised, and publishes its NIRF data on the NIRF page.' }
                   ].map((reason, idx) => (
                     <div key={idx} className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-white/40 backdrop-blur-xl rounded-lg flex items-center justify-center flex-shrink-0 border border-white/60 text-brand-green">
@@ -790,7 +763,7 @@ export default function BScPhysicsPage() {
                   </span>
                 </h2>
                 <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                  Join our B.Sc Physics programme and explore the fundamental laws that govern the universe with hands-on research experience
+                  Join our B.Sc Physics programme and explore the fundamental laws that govern the universe through six semesters of theory and laboratory work
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=programmes-self-finance-ug-bsc-physics" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
@@ -801,6 +774,13 @@ export default function BScPhysicsPage() {
                     Download Brochure
                   </a>
                 </div>
+                <p className="mt-6 text-gray-600">
+                  <a href="/admissions/bsc-physics-self-finance" className="text-brand-green underline">B.Sc Physics admission 2026-27</a>
+                  {' · '}
+                  <a href="/fee-structure" className="text-brand-green underline">Fee structure</a>
+                  {' · '}
+                  <a href="/bsc-physics-colleges-in-tamil-nadu" className="text-brand-green underline">B.Sc Physics colleges in Tamil Nadu</a>
+                </p>
               </div>
             </RevealSection>
           </div>
