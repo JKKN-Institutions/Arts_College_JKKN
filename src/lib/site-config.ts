@@ -63,10 +63,12 @@ export const siteConfig = {
    * fallback is dead code - measured live 2026-08-16, the site served the bare URL while
    * this file claimed it was tagged. Source said tagged, live said not.
    */
+  // 2026-09-30 (GL6-356): the user chose jkkn.ai/apply for every page. The Vercel env
+  // NEXT_PUBLIC_ADMISSION_FORM_URL pointed the admission pages at admission.jkkn.ac.in/form
+  // while the programme pages linked jkkn.ai - two intake paths for one college. jkkn.ai
+  // is the CRM intake (Goal 2), so it is fixed here and the env value is no longer read.
   admissionFormUrl: (() => {
-    const base =
-      process.env.NEXT_PUBLIC_ADMISSION_FORM_URL ??
-      'https://www.jkkn.ai/apply/jkkn-admission-2026'
+    const base = 'https://www.jkkn.ai/apply/jkkn-admission-2026'
     if (base.includes('utm_')) return base
     const utm = 'utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=site'
     return base + (base.includes('?') ? '&' : '?') + utm

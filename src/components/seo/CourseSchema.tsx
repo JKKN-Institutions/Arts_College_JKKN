@@ -17,6 +17,10 @@ interface CourseSchemaProps {
    * one place the approval state is recorded. Pass it only to override.
    */
   proposed?: boolean;
+  /** Annual MQ tuition fee in INR, published only where /fee-structure states it. */
+  offerPrice?: number;
+  /** What the price covers - quota, period, academic year. Required with offerPrice. */
+  offerDescription?: string;
 }
 
 export function CourseSchema({
@@ -30,6 +34,8 @@ export function CourseSchema({
   programPrerequisites,
   educationalCredentialAwarded,
   proposed,
+  offerPrice,
+  offerDescription,
 }: CourseSchemaProps) {
   // Call sites are inconsistent: the town pages pass an absolute URL, the
   // programme layouts pass a path. Normalise, or the @id becomes
@@ -128,6 +134,13 @@ export function CourseSchema({
             category: category,
             availability: "https://schema.org/InStock",
             url: "https://www.jkkn.ai/apply/jkkn-admission-2026",
+            ...(offerPrice
+              ? {
+                  price: offerPrice,
+                  priceCurrency: "INR",
+                  ...(offerDescription ? { description: offerDescription } : {}),
+                }
+              : {}),
           },
         }),
   };

@@ -88,7 +88,10 @@ const LEVEL_DEFAULTS: Record<
       "Subject prerequisites depend on the chosen programme",
     ],
     background: [
-      "Any +2 stream — Science, Commerce or Arts (programme-specific)",
+      // Was "Any +2 stream — Science, Commerce or Arts" on EVERY UG admission page until
+      // 2026-09-30, which told Commerce students they could join B.Sc Physics. Subject
+      // rules are programme-specific; state them in an admission-content override.
+      "Required +2 subjects differ by programme — see the programme page or ask the admissions office",
       "Basic command of English helps in coursework",
       "No prior college experience needed",
       "Interest in the chosen discipline matters most",
