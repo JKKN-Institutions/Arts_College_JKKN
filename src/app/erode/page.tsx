@@ -549,6 +549,7 @@ export default function ErodePage() {
                     { name: "B.Sc Computer Science", href: "/programmes/self-finance/ug/bsc-computer-science" },
                     { name: "B.Sc Computer Science colleges in Tamil Nadu (guide)", href: "/bsc-computer-science-colleges-in-tamil-nadu" },
                     { name: "B.Sc (Cyber Security)", href: "/programmes/self-finance/ug/bsc-cs-cyber-security" },
+                    { name: "B.Sc Cyber Security colleges in Tamil Nadu (guide)", href: "/bsc-cyber-security-colleges-in-tamil-nadu" },
                     { name: "B.Sc Microbiology", href: "/programmes/self-finance/ug/bsc-microbiology" },
                     { name: "B.Sc Physics", href: "/programmes/self-finance/ug/bsc-physics" },
                     { name: "B.Sc Physics colleges in Tamil Nadu (guide)", href: "/bsc-physics-colleges-in-tamil-nadu" },

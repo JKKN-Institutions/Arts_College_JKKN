@@ -23,6 +23,56 @@ export interface AdmissionOverride {
 }
 
 export const admissionOverrides: Record<string, AdmissionOverride> = {
+  // Eligibility from the Periyar University B.Sc Computer Science (Cyber Security) OBE regulations,
+  // 2023-24 onwards: +2 with Mathematics OR Business Mathematics OR Computer Science OR Statistics. GL6-375.
+  "self-finance/ug/bsc-cs-cyber-security": {
+    eligibilityCriteria: [
+      "Pass in the Higher Secondary (+2) examination",
+      "Any one of Mathematics, Business Mathematics, Computer Science or Statistics (Periyar University regulations)",
+      "Academic or vocational stream; Tamil Nadu board or an equivalent examination",
+      "Merit-based admission; community reservation as per Tamil Nadu Government norms",
+    ],
+    recommendedBackground: [
+      "Mathematics is not compulsory if the +2 had Computer Science, Statistics or Business Mathematics",
+      "Science and Commerce groups with one of those subjects both qualify",
+      "This is a 3-year B.Sc, not a B.E. or B.Tech engineering degree",
+      "Interest in lab work - each core subject has a practical",
+    ],
+    highlights: [
+      "Affiliated to Periyar University, Salem",
+      "NAAC-accredited autonomous institution",
+      "Cyber Security Lab, Ethical Hacking Lab and Network Security in the syllabus",
+      "M.Sc Computer Science and MCA available on the same campus",
+    ],
+    curriculumHighlights: [
+      "Year 1: Programming in C; Data Structures and Algorithms",
+      "Year 2: Java; Web Designing; PHP; Tools and Techniques for Cyber Security with Cyber Security Lab",
+      "Year 3: RDBMS with Oracle Lab; Essentials of Cyber Security; Ethical Hacking with lab; Network Security",
+      "A practical lab for each core subject",
+      "Project with viva voce in the final year",
+      "Summer internship or industrial training",
+    ],
+    careers: [
+      "Cyber Security Analyst (entry-level)",
+      "SOC Analyst (Tier 1)",
+      "Penetration Tester / Ethical Hacker (junior)",
+      "Network Security Trainee",
+      "Information Security Auditor (junior)",
+      "Higher studies: M.Sc Computer Science, M.Sc Cyber Security, MCA",
+    ],
+    faq: [
+      {
+        question: "Is Maths compulsory for B.Sc Cyber Security?",
+        answer:
+          "No. The Periyar University regulation accepts any one of Mathematics, Business Mathematics, Computer Science or Statistics in the +2.",
+      },
+      {
+        question: "What is the B.Sc Cyber Security fee for 2026-27?",
+        answer:
+          "Rs 32,000 a year under the management quota. Government quota seats follow Government norms.",
+      },
+    ],
+  },
   // Eligibility from the Periyar University B.Sc Computer Science OBE regulations, 2021-22
   // onwards (periyaruniversity.ac.in/Documents/2021/syllabus/2021/Affiliated/ug/B.Sc. COMPUTER SCIENCE.pdf):
   // +2 with Mathematics OR Business Mathematics OR Computer Science OR Statistics. GL6-363.
@@ -200,33 +250,6 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       "Hands-on tooling: Python, TensorFlow, PyTorch, SQL, Power BI",
       "Internship with AI / analytics firms",
       "Career pathway into MS Data Science, MBA Analytics",
-    ],
-  },
-
-  "self-finance/ug/bsc-cs-cyber-security": {
-    careers: [
-      "Cyber Security Analyst (entry-level)",
-      "SOC Analyst (Tier 1)",
-      "Penetration Tester / Ethical Hacker (junior)",
-      "Network Security Trainee",
-      "Information Security Auditor (junior)",
-      "Cloud Security Associate",
-      "Threat Intelligence Analyst",
-      "GRC (Governance, Risk & Compliance) Trainee",
-    ],
-    curriculumHighlights: [
-      "Networking and Operating Systems fundamentals",
-      "Ethical Hacking and Penetration Testing labs",
-      "Cryptography and Secure Coding",
-      "Cyber Law, Forensics, and Incident Response",
-      "Cloud Security and DevSecOps basics",
-      "Industry certifications mapping (CompTIA Security+, CEH)",
-    ],
-    highlights: [
-      "Specialised cyber security learning framework within a CS degree",
-      "Hands-on labs for ethical hacking and penetration testing",
-      "Industry certifications mapping",
-      "Career-ready for SOC, GRC, and security analyst roles",
     ],
   },
 

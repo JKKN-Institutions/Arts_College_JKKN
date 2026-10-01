@@ -2,9 +2,9 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { BookOpen, Users, Award, Briefcase, Library, GraduationCap, Building2, Lightbulb, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, Shield, Lock, Search, Server, Cloud, Code } from 'lucide-react';
+import { BookOpen, Users, Award, Briefcase, Library, GraduationCap, Building2, Lightbulb, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, Shield, Lock, Search, Server, Cloud, Code, DollarSign } from 'lucide-react';
 import CountUp from '@/components/ui/CountUp';
-import Marquee from '@/components/ui/Marquee';
+import { bscCyberFaqs } from './faqs';
 
 /* ─── Scroll-reveal hook ─── */
 function useScrollReveal() {
@@ -64,6 +64,7 @@ function SectionBadge({ text }: { text: string }) {
 export default function BScCSCyberSecurityPage() {
   const [activeYear, setActiveYear] = useState(1);
   const [activeFAQ, setActiveFAQ] = useState(0);
+  const faqs = bscCyberFaqs;
 
   return (
     <div className="min-h-screen bg-white">
@@ -83,7 +84,7 @@ export default function BScCSCyberSecurityPage() {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl font-medium mb-6 text-gray-700">
-                Master Ethical Hacking, Network Security & Digital Forensics
+                Ethical Hacking, Network Security and Cyber Security Tools
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -120,8 +121,10 @@ export default function BScCSCyberSecurityPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
-              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
+              { icon: <DollarSign className="w-7 h-7" />, stat: '₹32,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
+              { icon: <Building2 className="w-7 h-7" />, stat: 'Periyar', title: 'University Affiliation', desc: 'Autonomous college, Salem region' },
+              { icon: <Code className="w-7 h-7" />, stat: 'No Maths?', title: 'Still Eligible', desc: '+2 with CS, Statistics or Business Maths' },
+              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Autonomous, UGC recognised' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">
@@ -151,14 +154,15 @@ export default function BScCSCyberSecurityPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Bachelor of Science in Computer Science (Cyber Security) is a comprehensive three-year undergraduate programme designed to equip Learners with cutting-edge knowledge and practical skills in cybersecurity, network protection, ethical hacking, and digital forensics. This UGC-recognized programme combines theoretical foundations with extensive hands-on laboratory experience, preparing graduates for the rapidly growing cybersecurity industry.
+                The Bachelor of Science in Computer Science (Cyber Security) is a three-year undergraduate programme that builds programming foundations in C, Data Structures, Java and PHP, then moves to Tools and Techniques for Cyber Security, Essentials of Cyber Security, Ethical Hacking and Network Security, with a practical lab in each core subject. It is a B.Sc (arts and science) degree, not a B.E. or B.Tech.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our progressive education philosophy ensures that Learners develop critical thinking, technical expertise, and analytical skills through experiential learning. The curriculum integrates fundamental computer science concepts with advanced security techniques in cryptography, penetration testing, malware analysis, and cloud security, equipping graduates with skills demanded by leading IT companies, government agencies, and financial institutions worldwide.
+                JKKN College of Arts and Science is an autonomous college affiliated to Periyar University, on NH-544 at Komarapalayam in Namakkal district, Tamil Nadu, between Salem and Erode. B.Sc Cyber Security here is a self-finance programme with an annual management-quota fee of ₹32,000 for 2026-27. Comparing options across the state? Read our{' '}
+                <a href="/bsc-cyber-security-colleges-in-tamil-nadu" className="text-brand-green font-semibold underline">guide to B.Sc Cyber Security colleges in Tamil Nadu</a>.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Certified Senior Learners', 'State-of-the-Art Security Labs', 'CEH & CompTIA+ Aligned Learning Framework', 'Hands-on Practical Training'].map((item, idx) => (
+                {['Cyber Security Lab and Ethical Hacking Lab', 'Network Security in the final year', 'Project with viva voce', 'Summer internship or industrial training'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -199,7 +203,7 @@ export default function BScCSCyberSecurityPage() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  Requirements for joining the B.Sc CS (Cyber Security) programme
+                  Requirements for joining the B.Sc CS (Cyber Security) programme, as set by the Periyar University regulations
                 </p>
               </div>
             </RevealSection>
@@ -209,12 +213,12 @@ export default function BScCSCyberSecurityPage() {
                 {
                   icon: <GraduationCap className="w-8 h-8 text-white" />,
                   title: 'Academic Qualification',
-                  items: ['Higher Secondary (10+2) from recognized board', 'Mathematics or Computer Science required', 'Minimum 50% aggregate marks', '45% for reserved categories']
+                  items: ['Pass in the Higher Secondary (+2) examination', 'Any one of Mathematics, Business Mathematics, Computer Science or Statistics', 'Tamil Nadu board or an equivalent examination', 'Merit-based admission; reservation as per Tamil Nadu Government norms']
                 },
                 {
                   icon: <FileText className="w-8 h-8 text-white" />,
-                  title: 'Preferred Streams',
-                  items: ['Science stream (PCM/PCB with Maths)', 'Computer Science as optional', 'Commerce with Mathematics', 'Any stream with Computer Science/Maths']
+                  title: 'Accepted Streams',
+                  items: ['Science group with Mathematics or Computer Science', 'Commerce group with Business Mathematics or Statistics', 'Vocational stream with one of these subjects', 'Maths is not compulsory if +2 had Computer Science, Statistics or Business Maths']
                 },
                 {
                   icon: <BookOpen className="w-8 h-8 text-white" />,
@@ -280,8 +284,8 @@ export default function BScCSCyberSecurityPage() {
               </div>
             </RevealSection>
 
-            {activeYear === 1 && (
-              <div className="grid md:grid-cols-2 gap-6">
+            {/* All three years are rendered so crawlers see all six semesters; tabs only toggle visibility. */}
+            <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 1 ? '' : 'hidden'}`}>
                 {[
                   {
                     title: 'Learning Period I',
@@ -335,11 +339,9 @@ export default function BScCSCyberSecurityPage() {
                     </GlassCard>
                   </RevealSection>
                 ))}
-              </div>
-            )}
+            </div>
 
-            {activeYear === 2 && (
-              <div className="grid md:grid-cols-2 gap-6">
+            <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 2 ? '' : 'hidden'}`}>
                 {[
                   {
                     title: 'Learning Period III',
@@ -396,11 +398,9 @@ export default function BScCSCyberSecurityPage() {
                     </GlassCard>
                   </RevealSection>
                 ))}
-              </div>
-            )}
+            </div>
 
-            {activeYear === 3 && (
-              <div className="grid md:grid-cols-2 gap-6">
+            <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 3 ? '' : 'hidden'}`}>
                 {[
                   {
                     title: 'Learning Period V',
@@ -454,8 +454,7 @@ export default function BScCSCyberSecurityPage() {
                     </GlassCard>
                   </RevealSection>
                 ))}
-              </div>
-            )}
+            </div>
           </div>
         </div>
       </section>
@@ -481,12 +480,12 @@ export default function BScCSCyberSecurityPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { icon: <Shield className="w-6 h-6 text-white" />, title: 'Threat Analysis & Assessment', description: 'Identify, analyze, and evaluate cybersecurity threats, vulnerabilities, and risk factors to protect organizational assets.' },
-                { icon: <Lock className="w-6 h-6 text-white" />, title: 'Secure Coding & Development', description: 'Design and develop secure applications following industry best practices, OWASP guidelines, and secure software development lifecycle.' },
-                { icon: <Search className="w-6 h-6 text-white" />, title: 'Penetration Testing Expertise', description: 'Conduct authorized security assessments, ethical hacking, and vulnerability testing using industry-standard tools and methodologies.' },
-                { icon: <FileText className="w-6 h-6 text-white" />, title: 'Digital Forensics Skills', description: 'Investigate cyber crimes, collect and preserve digital evidence, and conduct forensic analysis following legal procedures.' },
-                { icon: <Server className="w-6 h-6 text-white" />, title: 'Network Security Proficiency', description: 'Configure firewalls, IDS/IPS systems, VPNs, and implement comprehensive network security architectures.' },
-                { icon: <Cloud className="w-6 h-6 text-white" />, title: 'Security Operations Management', description: 'Effectively manage security operations centers, coordinate incident response teams, and implement security policies.' }
+                { icon: <Code className="w-6 h-6 text-white" />, title: 'Programming Foundations', description: 'Write programs in C, Java and PHP, and work with data structures and algorithms.' },
+                { icon: <Shield className="w-6 h-6 text-white" />, title: 'Cyber Security Tools', description: 'Use security tools and techniques through the Tools and Techniques for Cyber Security course and its lab (Semester IV).' },
+                { icon: <Search className="w-6 h-6 text-white" />, title: 'Ethical Hacking', description: 'Understand authorised security testing through the Ethical Hacking and Cyber Security course and its lab (Semester VI).' },
+                { icon: <Server className="w-6 h-6 text-white" />, title: 'Network Security', description: 'Learn how networks are protected through the Network Security core course (Semester VI).' },
+                { icon: <Lock className="w-6 h-6 text-white" />, title: 'Databases', description: 'Design and query relational databases through the RDBMS course and its Oracle lab (Semester V).' },
+                { icon: <FileText className="w-6 h-6 text-white" />, title: 'Project Work', description: 'Carry out a project with viva voce and a summer internship or industrial training in the final year.' }
               ].map((outcome, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <GlassCard className="relative p-6 group h-full">
@@ -571,43 +570,33 @@ export default function BScCSCyberSecurityPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Infrastructure" />
+                <SectionBadge text="Laboratory Work" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Department{' '}
+                  Practical{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilities
+                    Labs
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  State-of-the-art infrastructure supporting world-class cyber security education
+                  The core practical courses in the B.Sc CS (Cyber Security) syllabus
                 </p>
               </div>
             </RevealSection>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Cyber Security Research Lab', description: 'Fully equipped laboratory with Kali Linux, security tools, virtualization platforms, and isolated network environments for penetration testing practice.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Cyber+Security+Lab' },
-                { title: 'Network Security Lab', description: 'Cisco routers, switches, firewalls, and IDS/IPS systems for hands-on network security configuration and monitoring experience.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Network+Lab' },
-                { title: 'Digital Forensics Lab', description: 'Equipped with forensic workstations, write blockers, EnCase, FTK, and mobile forensics tools for evidence analysis and recovery.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Forensics+Lab' },
-                { title: 'SOC Simulation Center', description: 'Simulated Security Operations Center with SIEM tools, threat intelligence platforms, and real-time monitoring dashboards.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=SOC+Simulation' },
-                { title: 'Cloud Security Lab', description: 'Access to AWS, Azure, and Google Cloud platforms for hands-on cloud security configuration, monitoring, and incident response training.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Cloud+Lab' },
-                { title: 'Smart Learning Studios', description: 'Modern Learning Studios equipped with interactive displays, video conferencing, and collaborative learning tools for effective teaching.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Smart+Classroom' }
+                { title: 'Programming in C Lab', description: 'Core Practical I (24UCYCP01), Semester I.' },
+                { title: 'Data Structures and Algorithms Lab', description: 'Core Practical II (24UCYCP02), Semester II.' },
+                { title: 'Java Programming Lab', description: 'Core Practical III (24UCYCP03), Semester III.' },
+                { title: 'Cyber Security Lab', description: 'Core Practical IV (24UCYCP04), Semester IV, with Tools and Techniques for Cyber Security.' },
+                { title: 'RDBMS using Oracle Lab', description: 'Core Practical V (24UCYCP05), Semester V.' },
+                { title: 'Ethical Hacking Lab', description: 'Core Practical VI (24UCYCP06), Semester VI.' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
-                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
-                    <div className="relative h-48 overflow-hidden">
-                      <img
-                        src={facility.image}
-                        alt={facility.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-brand-green/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-lg font-bold text-brand-green mb-2">{facility.title}</h3>
-                      <p className="text-gray-600 text-sm">{facility.description}</p>
-                    </div>
-                  </div>
+                  <GlassCard className="p-6 group h-full">
+                    <h3 className="text-lg font-bold text-brand-green mb-2">{facility.title}</h3>
+                    <p className="text-gray-600 text-sm">{facility.description}</p>
+                  </GlassCard>
                 </RevealSection>
               ))}
             </div>
@@ -639,16 +628,16 @@ export default function BScCSCyberSecurityPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Our progressive education approach ensures holistic development, preparing you for success in the cybersecurity industry.
+                Facts a family can check before choosing: fee, eligibility, affiliation and what the syllabus covers.
               </p>
 
               <div className="space-y-4">
                 {[
-                  { title: 'Expert Senior Learners', description: 'Learn from industry-certified professionals with CEH, CISSP, OSCP certifications and active research in cybersecurity.' },
-                  { title: 'Hands-on Security Training', description: 'Extensive practical sessions in dedicated security labs with industry-standard tools like Nmap, Wireshark, Metasploit, and Burp Suite.' },
-                  { title: 'Industry Certification Preparation', description: 'Learning Framework aligned with CEH, CompTIA Security+, and CCNA Security certifications for enhanced employability.' },
-                  { title: 'Industry Internships & CTF Competitions', description: 'Mandatory internships with IT companies and participation in Capture The Flag (CTF) cyber security competitions.' },
-                  { title: 'Strong Placement Support', description: 'Dedicated placement cell with connections to top IT companies, banks, and government agencies ensuring excellent career opportunities.' }
+                  { title: 'Published Fee', description: '₹32,000 a year under the management quota for 2026-27; government quota seats follow Government norms.' },
+                  { title: 'Maths Not Compulsory', description: '+2 with Computer Science, Statistics or Business Mathematics also qualifies under the Periyar University regulation.' },
+                  { title: 'Security Courses with Labs', description: 'Tools and Techniques for Cyber Security, Ethical Hacking and Network Security, each core course with a practical lab.' },
+                  { title: 'Autonomous, Periyar University Degree', description: 'The college sets its own syllabus and examinations; the degree is awarded by Periyar University, Salem.' },
+                  { title: 'PG on the Same Campus', description: 'M.Sc Computer Science (aided and self-finance) and an aided MCA are offered at the college.' }
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:shadow-lg hover:-translate-y-0.5 transition-all">
                     <div className="w-11 h-11 bg-gradient-to-br from-brand-green to-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md shadow-brand-green/15">
@@ -662,54 +651,6 @@ export default function BScCSCyberSecurityPage() {
                 ))}
               </div>
             </RevealSection>
-          </div>
-        </div>
-      </section>
-
-      {/* Faculty Section */}
-      <section className="py-16 bg-white" id="faculty">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <RevealSection>
-              <div className="text-center mb-12">
-                <SectionBadge text="Senior Learners" />
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Our Senior{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Learners
-                  </span>
-                </h2>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  Meet our experienced and certified department team
-                </p>
-              </div>
-            </RevealSection>
-
-            <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
-              {[
-                { name: 'Dr. Rajesh Kumar', designation: 'Head of Department', qualification: 'Ph.D., CEH, CISSP' },
-                { name: 'Mr. Arjun Prakash', designation: 'Associate Professor', qualification: 'M.Tech, OSCP, CEH' },
-                { name: 'Ms. Priya Malhotra', designation: 'Assistant Professor', qualification: 'M.Sc, CompTIA Security+' },
-                { name: 'Mr. Vikram Singh', designation: 'Assistant Professor', qualification: 'M.Tech, CCNA Security' }
-              ].map((faculty, idx) => (
-                <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
-                  <div className="relative h-56 overflow-hidden flex-shrink-0">
-                    <Image
-                      src="/images/faculties/placeholder-avatar.jpg"
-                      alt={faculty.name}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-brand-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  <div className="p-5 text-center flex-1 flex flex-col justify-center">
-                    <h4 className="text-lg font-bold text-brand-green mb-1">{faculty.name}</h4>
-                    <p className="text-sm font-semibold text-emerald-500 mb-1">{faculty.designation}</p>
-                    <p className="text-xs text-gray-600">{faculty.qualification}</p>
-                  </div>
-                </div>
-              ))}
-            </Marquee>
           </div>
         </div>
       </section>
@@ -734,16 +675,7 @@ export default function BScCSCyberSecurityPage() {
             </RevealSection>
 
             <div className="space-y-4">
-              {[
-                { question: 'What is the duration of the B.Sc Computer Science (Cyber Security) programme?', answer: 'The B.Sc Computer Science (Cyber Security) programme is a 3-year full-time undergraduate degree comprising six semesters with hands-on practical sessions in security labs.' },
-                { question: 'What are the career opportunities after B.Sc Computer Science (Cyber Security)?', answer: 'Graduates can pursue careers as Cyber Security Analyst, Ethical Hacker, Security Consultant, Network Security Engineer, Digital Forensics Investigator, Information Security Officer, SOC Analyst, and Penetration Tester in IT companies, banks, government agencies, and consulting firms.' },
-                { question: 'What is the eligibility criteria for B.Sc Computer Science (Cyber Security) admission?', answer: 'Candidates must have completed Higher Secondary (10+2) from a recognized board with Mathematics or Computer Science as a subject. Minimum aggregate marks requirement is typically 50% for general category and 45% for reserved categories.' },
-                { question: 'What certifications can I prepare for during this programme?', answer: 'The curriculum is aligned with industry certifications like Certified Ethical Hacker (CEH), CompTIA Security+, and CCNA Security. These certifications significantly enhance your employability and industry recognition.' },
-                { question: 'What tools and technologies will I learn?', answer: 'You will learn industry-standard tools including Kali Linux, Metasploit, Wireshark, Nmap, Burp Suite, security information and event management (SIEM) tools, and work with platforms like AWS, Azure, and Google Cloud for cloud security.' },
-                { question: 'Are internships mandatory in the programme?', answer: 'Yes, internships are mandatory and typically conducted in the fifth semester. Students gain practical experience with IT companies, security firms, or government agencies, working on real-world cybersecurity challenges.' },
-                { question: 'What makes this programme unique?', answer: 'Our programme stands out with dedicated cyber security labs, certified industry-expert faculty, hands-on penetration testing experience, participation in CTF competitions, industry internships, and alignment with global certification standards.' },
-                { question: 'Can I pursue higher studies after this programme?', answer: 'Yes, you can pursue M.Sc/M.Tech in Cyber Security, Information Security, or related fields. You can also opt for MBA or prepare for government exams. The programme provides a strong foundation for advanced studies and research.' }
-              ].map((faq, idx) => (
+              {faqs.map((faq, idx) => (
                 <RevealSection key={idx} delay={idx * 60}>
                   <div className="bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:border-brand-green/20 transition-all overflow-hidden">
                     <button
@@ -792,6 +724,13 @@ export default function BScCSCyberSecurityPage() {
                   Download Brochure
                 </a>
               </div>
+              <p className="text-gray-600">
+                <a href="/admissions/bsc-cs-cyber-security-self-finance" className="text-brand-green underline">B.Sc Cyber Security admission 2026-27</a>
+                {' · '}
+                <a href="/fee-structure" className="text-brand-green underline">Fee structure</a>
+                {' · '}
+                <a href="/bsc-cyber-security-colleges-in-tamil-nadu" className="text-brand-green underline">B.Sc Cyber Security colleges in Tamil Nadu</a>
+              </p>
             </div>
           </RevealSection>
         </div>
@@ -818,32 +757,22 @@ export default function BScCSCyberSecurityPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'BCA', description: 'Bachelor of Computer Applications with comprehensive IT training', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BCA' },
-                { title: 'B.Sc Computer Science', description: 'Core computer science programme with programming focus', duration: '3 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=BSc+CS' },
-                { title: 'B.Sc Microbiology', description: 'Study of microorganisms and their applications', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+Microbiology' }
+                { title: 'BCA', description: 'Bachelor of Computer Applications', href: '/programmes/self-finance/ug/bca' },
+                { title: 'B.Sc Computer Science', description: 'Python, Java, PHP, .NET and DBMS with labs', href: '/programmes/self-finance/ug/bsc-computer-science' },
+                { title: 'B.Sc CS (AI & Data Science)', description: 'Computer science with AI and data science', href: '/programmes/self-finance/ug/bsc-ai-ds' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
-                  <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
-                    <div className="relative h-44 overflow-hidden">
-                      <img
-                        src={programme.image}
-                        alt={programme.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-brand-green/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-brand-green mb-2 group-hover:text-emerald-500 transition-colors">{programme.title}</h3>
-                      <p className="text-gray-600 text-sm mb-4">{programme.description}</p>
-                      <div className="flex items-center gap-4 text-sm text-gray-500">
-                        <div className="flex items-center gap-1">
-                          <Clock className="w-4 h-4" />
-                          <span>{programme.duration}</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <Users className="w-4 h-4" />
-                          <span>Full-time</span>
-                        </div>
+                  <a href={programme.href} className="block bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
+                    <h3 className="text-xl font-bold text-brand-green mb-2 group-hover:text-emerald-500 transition-colors">{programme.title}</h3>
+                    <p className="text-gray-600 text-sm mb-4">{programme.description}</p>
+                    <div className="flex items-center gap-4 text-sm text-gray-500">
+                      <div className="flex items-center gap-1">
+                        <Clock className="w-4 h-4" />
+                        <span>3 Years</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <Users className="w-4 h-4" />
+                        <span>Full-time</span>
                       </div>
                     </div>
                   </a>

@@ -284,7 +284,8 @@ export default function BscComputerScienceCollegesTamilNaduPage() {
 
         <p className="text-sm text-gray-600">
           Lists change every year. Confirm seats and fees with each college before applying. Rankings: nirfindia.org, NIRF 2025. College list: careers360.com, read 1 October 2026. See also our{" "}
-          <Link href="/bsc-physics-colleges-in-tamil-nadu" className="text-brand-green underline">guide to B.Sc Physics colleges in Tamil Nadu</Link>.
+          <Link href="/bsc-physics-colleges-in-tamil-nadu" className="text-brand-green underline">guide to B.Sc Physics colleges in Tamil Nadu</Link> and our{" "}
+          <Link href="/bsc-cyber-security-colleges-in-tamil-nadu" className="text-brand-green underline">guide to B.Sc Cyber Security colleges in Tamil Nadu</Link>.
         </p>
       </div>
     </main>
