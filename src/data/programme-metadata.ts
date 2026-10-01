@@ -501,11 +501,12 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     level: "UG",
     category: "Self-Finance",
     description:
-      "Study B.Sc. Textile & Fashion Designing at JKKN College of Arts and Science (Autonomous). Creative programme with industry exposure near Erode, Tamil Nadu.",
+      "B.Sc Textile and Fashion Designing (B.Sc TFD), a three-year fashion design degree at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Periyar University. Any +2 group eligible; Rs 32,000 a year (MQ, 2026-27).",
     keywords: [
       "BSc Textile Fashion Designing",
-      "fashion design college near Erode",
-      "textile design degree Tamil Nadu",
+      "BSc Fashion Designing",
+      "fashion designing colleges in Tamil Nadu",
+      "BSc TFD full form",
     ],
     slug: "bsc-textile-fashion-designing-self-finance",
   },

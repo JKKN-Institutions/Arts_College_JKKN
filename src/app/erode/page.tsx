@@ -554,6 +554,7 @@ export default function ErodePage() {
                     { name: "B.Sc Physics", href: "/programmes/self-finance/ug/bsc-physics" },
                     { name: "B.Sc Physics colleges in Tamil Nadu (guide)", href: "/bsc-physics-colleges-in-tamil-nadu" },
                     { name: "B.Sc Textile & Fashion Design", href: "/programmes/self-finance/ug/bsc-textile-fashion-designing" },
+                    { name: "B.Sc Fashion Designing colleges in Tamil Nadu (guide)", href: "/bsc-fashion-designing-colleges-in-tamil-nadu" },
                     { name: "B.Sc Visual Communication", href: "/programmes/self-finance/ug/bsc-visual-communication" },
                   ].map((p) => (
                     <li key={p.href}>

@@ -35,6 +35,10 @@ import { ContactAdmissions } from "@/components/admissions/ContactAdmissions";
 
 export const dynamicParams = false;
 
+// Proposed programmes kept out of Google until university approval (GL6-379, 2026-10-01). The TFD (AI)
+// admission page was the only TFD admission page Google had indexed, ahead of the approved course.
+const NOINDEX_SLUGS = new Set(["bsc-textile-fashion-designing-ai-self-finance"]);
+
 export async function generateStaticParams() {
   return getAllAdmissionSlugs().map((slug) => ({ course: slug }));
 }
@@ -76,6 +80,7 @@ export async function generateMetadata({
       "JKKN admission Tamil Nadu",
     ],
     alternates: { canonical: url },
+    ...(NOINDEX_SLUGS.has(info.slug) ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
       title,
       description,

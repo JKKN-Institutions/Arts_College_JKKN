@@ -239,12 +239,12 @@ const nextConfig: NextConfig = {
       { source: '/m-phil-commerce/', destination: '/programmes', permanent: true },
 
       // ── Department redirects ──────────────────────────────────────────
-      { source: '/department-of-textile-and-fashion-designing', destination: '/departments/self-finance/textile-fashion-designing', permanent: true },
-      { source: '/department-of-textile-and-fashion-designing/', destination: '/departments/self-finance/textile-fashion-designing', permanent: true },
-      { source: '/department-of-textile-and-fashion-designing-sf', destination: '/departments/self-finance/textile-fashion-designing', permanent: true },
-      { source: '/department-of-textile-and-fashion-designing-sf/', destination: '/departments/self-finance/textile-fashion-designing', permanent: true },
-      { source: '/department-of-tfd', destination: '/departments/self-finance/textile-fashion-designing', permanent: true },
-      { source: '/department-of-tfd/', destination: '/departments/self-finance/textile-fashion-designing', permanent: true },
+      { source: '/department-of-textile-and-fashion-designing', destination: '/programmes/self-finance/ug/bsc-textile-fashion-designing', permanent: true },
+      { source: '/department-of-textile-and-fashion-designing/', destination: '/programmes/self-finance/ug/bsc-textile-fashion-designing', permanent: true },
+      { source: '/department-of-textile-and-fashion-designing-sf', destination: '/programmes/self-finance/ug/bsc-textile-fashion-designing', permanent: true },
+      { source: '/department-of-textile-and-fashion-designing-sf/', destination: '/programmes/self-finance/ug/bsc-textile-fashion-designing', permanent: true },
+      { source: '/department-of-tfd', destination: '/programmes/self-finance/ug/bsc-textile-fashion-designing', permanent: true },
+      { source: '/department-of-tfd/', destination: '/programmes/self-finance/ug/bsc-textile-fashion-designing', permanent: true },
       { source: '/department-of-visual-communication', destination: '/departments/self-finance/visual-communication', permanent: true },
       { source: '/department-of-visual-communication/', destination: '/departments/self-finance/visual-communication', permanent: true },
       { source: '/department-bsc-visual-communication', destination: '/departments/self-finance/visual-communication', permanent: true },

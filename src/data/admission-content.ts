@@ -253,6 +253,59 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
     ],
   },
 
+  // Eligibility from the Periyar University B.Sc Textile and Fashion Designing regulations, 2023-24
+  // onwards (periyaruniversity.ac.in/Documents/2026/syllabus/nanmudh/23-24even/
+  // B.Sc. TEXTILE AND FASHION DESIGNING.pdf): pass in any Higher Secondary course; a three-year
+  // Fashion/Costume/Textile/Apparel diploma qualifies for direct second-year admission. GL6-379.
+  "self-finance/ug/bsc-textile-fashion-designing": {
+    eligibilityCriteria: [
+      "Pass in any Higher Secondary (+2) course, academic or vocational",
+      "State Board, CBSE, ICSE or an equivalent examination (Periyar University regulations)",
+      "Diploma holders: a three-year Fashion, Costume, Textile or Apparel diploma qualifies for direct second-year admission",
+      "Merit-based admission; community reservation as per Tamil Nadu Government norms",
+    ],
+    recommendedBackground: [
+      "Science, Commerce, Arts and vocational groups are all eligible",
+      "No particular +2 subject is required",
+      "This is a 3-year B.Sc, not a B.Tech in Fashion or Textile Technology",
+      "Interest in drawing, garments and fabrics - every year has practicals",
+    ],
+    highlights: [
+      "Affiliated to Periyar University, Salem",
+      "NAAC-accredited autonomous institution",
+      "Apparel practicals every year and CAD in Garment Designing in Semester VI",
+      "Internship project and fashion portfolio presentation, both with viva voce",
+    ],
+    curriculumHighlights: [
+      "Year 1: Fiber and Yarn Science; Woven Fabric Science; Basic Apparel Designing; Illustration and Sketching",
+      "Year 2: Textile Wet Processing; Textile Finishing; Children's and Women's Apparel; Fashion Designing; Boutique Management",
+      "Year 3: Apparel Costing and Merchandising; Knitting and Non-woven; Men's Apparel; Textile Testing and Quality Control",
+      "CAD in Garment Designing Practical (Semester VI)",
+      "Internship project with viva voce",
+      "Fashion portfolio presentation with viva voce",
+    ],
+    careers: [
+      "Fashion Designer (entry-level)",
+      "Textile Designer",
+      "Apparel Merchandiser",
+      "Pattern Maker",
+      "Quality Controller in a garment unit",
+      "Higher studies: M.Sc in textiles, fashion or costume design; MBA",
+    ],
+    faq: [
+      {
+        question: "Can Commerce or Arts students join B.Sc Textile and Fashion Designing?",
+        answer:
+          "Yes. The Periyar University regulation accepts a pass in any Higher Secondary course, academic or vocational.",
+      },
+      {
+        question: "What is the B.Sc Textile and Fashion Designing fee for 2026-27?",
+        answer:
+          "Rs 32,000 a year under the management quota. Government quota seats follow Government norms.",
+      },
+    ],
+  },
+
   "self-finance/ug/bsc-textile-fashion-designing-ai": {
     applicationDeadline: "Subject to University Approval",
     importantDates: [
@@ -270,7 +323,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       {
         question: "Is B.Sc. Textile and Fashion Designing (AI) approved?",
         answer:
-          "This is a proposed programme currently awaiting official approval from the affiliating university. Admissions will open once approval is received. Register your interest via the Contact page and we will keep you informed.",
+          "This is a proposed programme currently awaiting official approval from the affiliating university. Admissions will open once approval is received. Register your interest via the Contact page and we will keep you informed. The approved B.Sc Textile and Fashion Designing (without AI) is open for 2026-27 admission.",
       },
     ],
   },
