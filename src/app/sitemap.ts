@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { createClient } from "@/lib/supabase/server";
 import { getAllAdmissionSlugs } from "@/data/programme-metadata";
+import { getCollegeJobs } from "@/lib/careers/api";
 
 const SITE_URL = "https://cas.jkkn.ac.in";
 
@@ -211,6 +212,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Faculty parent
     s(`${SITE_URL}/faculty`, "monthly", 0.7),
 
+    // Careers (openings live from MyJKKN)
+    s(`${SITE_URL}/careers`, "weekly", 0.6),
+
     // Facilities
     s(`${SITE_URL}/facilities`, "monthly", 0.7),
     s(`${SITE_URL}/facilities/auditorium`, "yearly", 0.7),
@@ -303,5 +307,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error("[sitemap] Supabase fetch failed:", err);
   }
 
-  return [...staticRoutes, ...dynamicRoutes];
+  // Open job postings from MyJKKN (empty if the API is unreachable)
+  const { jobs } = await getCollegeJobs();
+  const careerRoutes: MetadataRoute.Sitemap = jobs.map((job) => ({
+    url: `${SITE_URL}/careers/${job.id}`,
+    lastModified: job.posted_at ?? undefined,
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticRoutes, ...dynamicRoutes, ...careerRoutes];
 }

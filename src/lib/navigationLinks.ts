@@ -700,6 +700,12 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
           active: pathname === '/faculty' || pathname.startsWith('/faculty/')
         },
         {
+          href: '/careers',
+          label: 'Careers',
+          icon: Briefcase,
+          active: pathname === '/careers' || pathname.startsWith('/careers/')
+        },
+        {
           href: '/documents/nirf/J.K.K-Nataraja-College-of-Arts-Science20240313-.pdf',
           label: 'NIRF 2024',
           icon: LayoutGrid,

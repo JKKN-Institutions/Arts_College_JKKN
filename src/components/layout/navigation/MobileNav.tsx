@@ -1320,9 +1320,7 @@ export default function MobileNav(props: MobileNavProps) {
                     </Link>
 
                     <Link
-                      href="https://jobs.cvviz.com/jkkn_institutions"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="/careers"
                       onClick={toggleMobileMenu}
                       className="block py-2 px-8 text-gray-600 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                     >

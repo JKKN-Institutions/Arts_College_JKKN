@@ -97,6 +97,7 @@ src/
 | `middleware.ts` | Admin route protection (edge runtime) |
 | `tailwind.config.ts` | Brand colors, shadcn CSS variables, Poppins font |
 | `components.json` | shadcn/ui configuration |
+| `src/lib/careers/`, `src/app/careers/` | Careers — live openings from the MyJKKN Public Careers API (`https://www.jkkn.ai/api/public/careers`). Only this college's institutions are shown (fails closed if the ids are unset); ISR 300 s; job HTML sanitised; apply form posts from the **browser** straight to MyJKKN (CORS allows `https://cas.jkkn.ac.in` only, not localhost). Pure helpers unit-tested with Vitest — `npm test` |
 
 ---
 
@@ -199,4 +200,7 @@ NEXT_PUBLIC_COLLEGE_ID=arts-science
 NEXT_PUBLIC_COLLEGE_NAME=JKKN College of Arts and Science
 NEXT_PUBLIC_SUPABASE_URL=<supabase-url>
 NEXT_PUBLIC_SUPABASE_ANON_KEY=<anon-key>
+JKKN_ARTS_AIDED_INSTITUTION_ID=<myjkkn-institution-uuid>   # scopes faculty sync AND careers
+JKKN_ARTS_SELF_INSTITUTION_ID=<myjkkn-institution-uuid>    # careers shows zero jobs if both are unset
+NEXT_PUBLIC_MYJKKN_URL=https://www.jkkn.ai                 # optional; if changed, update connect-src in next.config.ts
 ```
