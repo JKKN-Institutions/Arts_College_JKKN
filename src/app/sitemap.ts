@@ -24,9 +24,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Admissions, Contact, Placements, Library, Gallery, IQAC
     s(`${SITE_URL}/admissions`, "monthly", 0.8),
     s(`${SITE_URL}/admissions/courses`, "monthly", 0.85),
-    ...getAllAdmissionSlugs().map((slug) =>
-      s(`${SITE_URL}/admissions/${slug}`, "monthly", 0.85)
-    ),
+    // The proposed TFD (AI) admission page is noindex until approval (GL6-379), so it is not listed.
+    ...getAllAdmissionSlugs()
+      .filter((slug) => slug !== "bsc-textile-fashion-designing-ai-self-finance")
+      .map((slug) => s(`${SITE_URL}/admissions/${slug}`, "monthly", 0.85)),
     s(`${SITE_URL}/contact`, "yearly", 0.6),
     s(`${SITE_URL}/placements`, "monthly", 0.8),
     s(`${SITE_URL}/library`, "monthly", 0.6),
@@ -167,8 +168,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { ...s(`${SITE_URL}/programmes/self-finance/ug/bsc-physics`, "monthly", 0.9), lastModified: "2026-09-30" },
     { ...s(`${SITE_URL}/bsc-physics-colleges-in-tamil-nadu`, "monthly", 0.8), lastModified: "2026-09-30" },
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-clinical-lab-technology`, "monthly", 0.9),
-    s(`${SITE_URL}/programmes/self-finance/ug/bsc-textile-fashion-designing`, "monthly", 0.9),
-    s(`${SITE_URL}/programmes/self-finance/ug/bsc-textile-fashion-designing-ai`, "monthly", 0.9),
+    // lastModified set 2026-10-01 (GL6-379); the proposed TFD (AI) page is noindex until approval and not listed.
+    { ...s(`${SITE_URL}/programmes/self-finance/ug/bsc-textile-fashion-designing`, "monthly", 0.9), lastModified: "2026-10-01" },
+    { ...s(`${SITE_URL}/bsc-fashion-designing-colleges-in-tamil-nadu`, "monthly", 0.8), lastModified: "2026-10-01" },
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-visual-communication`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-visual-communication-ai`, "monthly", 0.9),
 
@@ -209,7 +211,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/departments/self-finance/microbiology`, "monthly", 0.8),
     { ...s(`${SITE_URL}/departments/self-finance/physics`, "monthly", 0.8), lastModified: "2026-09-30" },
     s(`${SITE_URL}/departments/self-finance/tamil`, "monthly", 0.8),
-    s(`${SITE_URL}/departments/self-finance/textile-fashion-designing`, "monthly", 0.8),
+    { ...s(`${SITE_URL}/departments/self-finance/textile-fashion-designing`, "monthly", 0.8), lastModified: "2026-10-01" },
     s(`${SITE_URL}/departments/self-finance/visual-communication`, "monthly", 0.8),
 
     // Faculty parent

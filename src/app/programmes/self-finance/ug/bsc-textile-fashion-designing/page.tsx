@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Users, Award, Briefcase, GraduationCap, Building2, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, Palette, Scissors, Ruler, Shirt, PenTool, Layers, TrendingUp, Calendar, UserCheck, DollarSign, Database, LineChart } from 'lucide-react';
 import Marquee from '@/components/ui/Marquee';
+import { bscTfdFaqs } from './faqs';
 
 /* ─── Scroll-reveal hook ─── */
 function useScrollReveal() {
@@ -64,36 +65,7 @@ export default function BSCTextileFashionDesigningPage() {
   const [activeYear, setActiveYear] = useState(1);
   const [activeFAQ, setActiveFAQ] = useState(0);
 
-  const faqs = [
-    {
-      question: "What is the scope of B.Sc Textile and Fashion Design in India?",
-      answer: "The fashion and textile industry in India is booming with excellent career opportunities in fashion houses, export companies, textile mills, retail brands, and media. Graduates can work as fashion designers, textile designers, merchandisers, stylists, or start their own fashion ventures with growing demand in both domestic and international markets."
-    },
-    {
-      question: "Can I pursue this course after Commerce or Arts stream?",
-      answer: "Yes! While Science stream students are preferred, students from Commerce and Arts backgrounds can also apply if they have a genuine interest in design and creativity. The programme focuses on developing creative and technical skills rather than requiring advanced science knowledge."
-    },
-    {
-      question: "What software and technical skills will I learn?",
-      answer: "Students receive comprehensive training in industry-standard software including Adobe Photoshop, Adobe Illustrator, CorelDRAW for design, CAD software for pattern making, and 3D design tools. You'll also learn manual techniques like draping, pattern making, embroidery, and textile printing alongside digital skills."
-    },
-    {
-      question: "What is the average salary package for B.Sc TFD graduates?",
-      answer: "Entry-level salaries range from ₹2.5-4.5 lakhs per annum depending on the role and company. Fashion designers in established brands can earn ₹4-8 lakhs, while merchandisers and production managers earn ₹3-6 lakhs annually. Successful entrepreneurs and freelance designers can earn significantly higher based on their clientele and brand value."
-    },
-    {
-      question: "Are there industry internship opportunities during the course?",
-      answer: "Yes, the programme includes a mandatory industry internship in the final year. We have partnerships with leading fashion houses, textile mills, export companies, and retail brands. Students gain hands-on experience in design studios, production units, merchandising departments, and fashion events, which significantly enhances employability."
-    },
-    {
-      question: "Can I start my own fashion business after this course?",
-      answer: "Absolutely! The curriculum includes Fashion Entrepreneurship, Marketing & Branding, and Production Management modules specifically designed to equip students with business skills. Many of our graduates have successfully launched their own fashion labels, boutiques, online stores, and design studios. The college also provides incubation support for student entrepreneurs."
-    },
-    {
-      question: "What are the options for higher studies after B.Sc TFD?",
-      answer: "Graduates can pursue M.Sc in Fashion Design, MBA in Fashion Management, specialized courses in Fashion Technology, Textile Engineering, or Fashion Communication. International options include degrees from fashion institutes in Italy, France, UK, and USA. Some students also pursue certifications in specialized areas like sustainable fashion, luxury brand management, or fashion styling."
-    }
-  ];
+  const faqs = bscTfdFaqs;
 
   return (
     <div className="min-h-screen bg-white">
@@ -113,7 +85,10 @@ export default function BSCTextileFashionDesigningPage() {
                   </span>
                 </h1>
                 <p className="text-xl md:text-2xl font-medium mb-6 text-gray-700">
-                  Design Your Future in Fashion & Textile Innovation
+                  A three-year fashion design degree (B.Sc TFD) · Periyar University · Komarapalayam, Tamil Nadu
+                </p>
+                <p className="text-base text-gray-700 mb-6">
+                  TFD full form: Textile and Fashion Designing. Open to +2 students from any group.
                 </p>
 
                 <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -150,10 +125,10 @@ export default function BSCTextileFashionDesigningPage() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
               {[
-                { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited', desc: 'Quality assured education' },
-                { icon: <Palette className="w-7 h-7" />, stat: 'Design', title: 'Studios', desc: 'State-of-art facilities' },
-                { icon: <Briefcase className="w-7 h-7" />, stat: '36%', title: 'Placement', desc: 'Top fashion brands' },
-                { icon: <Sparkles className="w-7 h-7" />, stat: 'Fashion', title: 'Shows & Events', desc: 'Annual exhibitions' },
+                { icon: <DollarSign className="w-7 h-7" />, stat: '₹32,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
+                { icon: <BookOpen className="w-7 h-7" />, stat: 'Any +2', title: 'Group Eligible', desc: 'Science, Commerce, Arts or vocational' },
+                { icon: <Award className="w-7 h-7" />, stat: 'Diploma', title: 'Direct 2nd Year', desc: 'As per Periyar University regulation' },
+                { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited college' },
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <GlassCard className="p-6 text-center">
@@ -183,14 +158,15 @@ export default function BSCTextileFashionDesigningPage() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                  The B.Sc. in Textile and Fashion Designing  is a dynamic Undergraduate programme that blends creative artistry with technical expertise in textile science and fashion innovation. This comprehensive course equips students with the skills to conceptualize, design, and create fashion garments while understanding the science behind fabrics, production processes, and sustainable practices.
+                  B.Sc Textile and Fashion Designing (B.Sc TFD) is a three-year fashion design degree. It starts with Fiber and Yarn Science, Woven Fabric Science, illustration and basic apparel designing, moves to Textile Wet Processing, Textile Finishing and children&apos;s and women&apos;s apparel, and ends with Apparel Costing and Merchandising, Men&apos;s Apparel, Textile Testing and Quality Control, and CAD in Garment Designing. Every year has practicals, and the final year carries an internship project and a fashion portfolio presentation, both with viva voce.
                 </p>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                  Students gain hands-on experience through state-of-the-art design studios, CAD laboratories, and industry internships. The curriculum covers everything from fashion illustration and pattern making to merchandising, branding, and entrepreneurship, preparing graduates for diverse roles in the global fashion and textile industry.
+                  JKKN College of Arts and Science is an autonomous college affiliated to Periyar University, on NH-544 at Komarapalayam in Namakkal district, Tamil Nadu, between Salem and Erode. B.Sc Textile and Fashion Designing here is a self-finance programme with an annual management-quota fee of ₹32,000 for 2026-27. Comparing options across the state? Read our{' '}
+                  <a href="/bsc-fashion-designing-colleges-in-tamil-nadu" className="text-brand-green font-semibold underline">guide to B.Sc Fashion Designing colleges in Tamil Nadu</a>.
                 </p>
 
                 <div className="grid sm:grid-cols-2 gap-3">
-                  {['Creative & Technical Excellence', 'Industry-Standard Software Training', 'Sustainable Fashion Focus', 'Real-World Industry Exposure'].map((item, idx) => (
+                  {['Apparel practicals in every year', 'CAD in Garment Designing (Semester VI)', 'Internship project with viva voce', 'Fashion portfolio presentation'].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-gray-700">
                       <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                       <span>{item}</span>
@@ -203,7 +179,7 @@ export default function BSCTextileFashionDesigningPage() {
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <img
                     src="/images/programmes/tfd/JKKN B.Sc Textile and Fashion Designing.webp"
-                    alt="Fashion Design"
+                    alt="B.Sc Textile and Fashion Designing at JKKN College of Arts and Science, Komarapalayam"
                     className="w-full h-auto"
                 width={2048}
                 height={2048}
@@ -231,7 +207,8 @@ export default function BSCTextileFashionDesigningPage() {
                     </span>
                   </h2>
                   <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Requirements for joining the B.Sc Textile and Fashion Design programme
+                    Requirements for joining B.Sc Textile and Fashion Designing, as set by the{' '}
+                    <a href="https://www.periyaruniversity.ac.in/Documents/2026/syllabus/nanmudh/23-24even/B.Sc.%20TEXTILE%20AND%20FASHION%20DESIGNING.pdf" target="_blank" rel="noopener noreferrer" className="text-brand-green underline">Periyar University regulations</a>
                   </p>
                 </div>
               </RevealSection>
@@ -241,17 +218,17 @@ export default function BSCTextileFashionDesigningPage() {
                   {
                     icon: <Award className="w-8 h-8 text-white" />,
                     title: 'Basic Eligibility',
-                    items: ['10+2 or equivalent from a recognized board', 'Minimum Passing marks']
+                    items: ['Pass in any Higher Secondary (+2) course, academic or vocational', 'State Board, CBSE, ICSE or an equivalent examination', 'Merit-based admission; reservation as per Tamil Nadu Government norms']
                   },
                   {
                     icon: <BookOpen className="w-8 h-8 text-white" />,
                     title: 'Stream Acceptance',
-                    items: ['Students from Science, Commerce, Arts and Any streams are eligible to apply']
+                    items: ['Science, Commerce, Arts and vocational groups are all eligible', 'No particular +2 subject is required']
                   },
                   {
                     icon: <UserCheck className="w-8 h-8 text-white" />,
-                    title: 'Age Criteria',
-                    items: ['Candidates should be 17-45 years old at the time of admission']
+                    title: 'Diploma Holders',
+                    items: ['A pass in a three-year Diploma in a Fashion, Costume, Textile or Apparel course qualifies for direct admission to the second year, as per the Periyar University regulation', 'Contact the admissions office to confirm second-year seat availability']
                   },
 
 
@@ -314,8 +291,8 @@ export default function BSCTextileFashionDesigningPage() {
                 </div>
               </RevealSection>
 
-              {activeYear === 1 && (
-                <div className="grid md:grid-cols-2 gap-6">
+              {/* All three years are rendered so crawlers see all six semesters; tabs only toggle visibility. */}
+              <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 1 ? '' : 'hidden'}`}>
                   {[
                     {
                       title: 'Learning Period I',
@@ -363,11 +340,9 @@ export default function BSCTextileFashionDesigningPage() {
                       </GlassCard>
                     </RevealSection>
                   ))}
-                </div>
-              )}
+              </div>
 
-              {activeYear === 2 && (
-                <div className="grid md:grid-cols-2 gap-6">
+              <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 2 ? '' : 'hidden'}`}>
                   {[
                     {
                       title: 'Learning Period III',
@@ -417,11 +392,9 @@ export default function BSCTextileFashionDesigningPage() {
                       </GlassCard>
                     </RevealSection>
                   ))}
-                </div>
-              )}
+              </div>
 
-              {activeYear === 3 && (
-                <div className="grid md:grid-cols-2 gap-6">
+              <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 3 ? '' : 'hidden'}`}>
                   {[
                     {
                       title: 'Learning Period V',
@@ -470,8 +443,7 @@ export default function BSCTextileFashionDesigningPage() {
                       </GlassCard>
                     </RevealSection>
                   ))}
-                </div>
-              )}
+              </div>
             </div>
           </div>
         </section>
@@ -497,12 +469,12 @@ export default function BSCTextileFashionDesigningPage() {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { icon: <Palette className="w-6 h-6 text-white" />, title: 'Creative Design Thinking', description: 'Develop innovative design concepts and translate creative ideas into wearable fashion collections with aesthetic appeal and market relevance.' },
-                  { icon: <Ruler className="w-6 h-6 text-white" />, title: 'Technical Proficiency', description: 'Master garment construction, pattern making, draping techniques, and sewing skills to create professional-quality fashion products.' },
-                  { icon: <Layers className="w-6 h-6 text-white" />, title: 'Digital Design Skills', description: 'Gain expertise in CAD/CAM software, Adobe Creative Suite, and 3D design tools for digital fashion illustration and technical drawings.' },
-                  { icon: <Sparkles className="w-6 h-6 text-white" />, title: 'Textile Knowledge', description: 'Understand fiber science, fabric properties, textile testing, dyeing, printing techniques, and sustainable material sourcing.' },
-                  { icon: <PenTool className="w-6 h-6 text-white" />, title: 'Business Acumen', description: 'Learn fashion merchandising, marketing strategies, retail management, branding, and visual merchandising for commercial success.' },
-                  { icon: <Users className="w-6 h-6 text-white" />, title: 'Sustainable Practices', description: 'Apply eco-friendly design principles, ethical sourcing, zero-waste pattern making, and sustainable fashion business models.' }
+                  { icon: <Palette className="w-6 h-6 text-white" />, title: 'Illustration and Design', description: 'Sketch and illustrate garments, from Basic Illustration and Sketching in Semester I to the Fashion Designing course and the final-year fashion portfolio.' },
+                  { icon: <Ruler className="w-6 h-6 text-white" />, title: 'Pattern Making and Construction', description: 'Make patterns and construct children\'s, women\'s and men\'s apparel through the apparel practicals in each year.' },
+                  { icon: <Layers className="w-6 h-6 text-white" />, title: 'Computer-Aided Design', description: 'Use computers for garment design through E-Designing Practical (Semester I) and CAD in Garment Designing Practical (Semester VI).' },
+                  { icon: <Sparkles className="w-6 h-6 text-white" />, title: 'Textile Science', description: 'Understand fibres, yarns and fabrics, wet processing, finishing, knitting and non-wovens, and textile testing and quality control.' },
+                  { icon: <PenTool className="w-6 h-6 text-white" />, title: 'Merchandising and Business', description: 'Learn apparel costing and merchandising and boutique management, with electives such as Fashion Marketing and Apparel Brand Management.' },
+                  { icon: <Users className="w-6 h-6 text-white" />, title: 'Industry Exposure', description: 'Complete an internship project with viva voce in the final year.' }
                 ].map((outcome, idx) => (
                   <RevealSection key={idx} delay={idx * 100}>
                     <GlassCard className="relative p-6 group h-full">
@@ -588,26 +560,27 @@ export default function BSCTextileFashionDesigningPage() {
             <div className="max-w-6xl mx-auto">
               <RevealSection>
                 <div className="text-center mb-12">
-                  <SectionBadge text="Infrastructure" />
+                  <SectionBadge text="Practical Work" />
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                    Department{' '}
+                    Practical{' '}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                      Facilities
+                      Courses
                     </span>
                   </h2>
                   <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                    State-of-the-art infrastructure for hands-on learning
+                    The core practical courses in the B.Sc Textile and Fashion Designing syllabus
                   </p>
                 </div>
               </RevealSection>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { title: 'Fashion Design Studio', description: 'Spacious design studio with professional mannequins, dress forms, design boards, and individual workstations for creative exploration and collection development.' },
-                  { title: 'CAD/CAM Laboratory', description: 'Computer lab equipped with latest design software including Adobe Creative Suite, CorelDRAW, CAD pattern-making software, and 3D visualization tools.' },
-                  { title: 'Garment Construction Lab', description: 'Modern sewing lab with industrial sewing machines, overlock machines, button-hole machines, and specialized equipment for garment production.' },
-                  { title: 'Textile Testing Lab', description: 'Well-equipped lab for fabric analysis, fiber identification, quality testing, and textile performance evaluation with industry-standard instruments.' },
-                  { title: 'Embroidery & Print Studio', description: 'Specialized studio for surface ornamentation techniques including hand embroidery, machine embroidery, screen printing, and textile painting.' },
+                  { title: 'Basic Apparel Designing Practical', description: 'Core Practical (24UTFCP01), Semester I.' },
+                  { title: 'Fiber to Fabric Science Practical', description: 'Core Practical (24UTFCP02), Semester II.' },
+                  { title: "Children's Apparel Practical", description: 'Core Practical (24UTFCP03), Semester III, with the Textile Wet Processing Practical.' },
+                  { title: "Women's Apparel Practical", description: 'Core Practical (24UTFCP04), Semester IV.' },
+                  { title: "Surface Embellishment and Men's Apparel", description: 'Core Practicals (24UTFCP05, 24UTFCP06), Semester V.' },
+                  { title: 'CAD in Garment Designing Practical', description: 'Core Practical (24UTFCP07), Semester VI, with the Fashion Portfolio Presentation.' },
                 ].map((facility, idx) => (
                   <RevealSection key={idx} delay={idx * 100}>
                     <GlassCard className="p-6 group h-full">
@@ -650,12 +623,12 @@ export default function BSCTextileFashionDesigningPage() {
 
                 <div className="space-y-4">
                   {[
-                    { icon: <Users className="w-6 h-6" />, title: 'Industry-Experienced Senior Learners', description: 'Learn from faculty with extensive experience in fashion design, textile technology, and industry practices' },
-                    { icon: <Building2 className="w-6 h-6" />, title: 'Strong Industry Partnerships', description: 'Collaborations with leading fashion brands, textile manufacturers, and export houses for internships and placements' },
-                    { icon: <Sparkles className="w-6 h-6" />, title: 'Annual Fashion Shows', description: 'Showcase your creativity through college fashion shows, exhibitions, and participation in national design competitions' },
-                    { icon: <Globe className="w-6 h-6" />, title: 'Global Design Exposure', description: 'Access to international fashion trends, guest lectures from industry experts, and exposure to global design practices' },
-                    { icon: <TrendingUp className="w-6 h-6" />, title: 'Entrepreneurship Support', description: 'Incubation facilities and mentorship for students aspiring to launch their own fashion labels and businesses' },
-                    { icon: <Award className="w-6 h-6" />, title: 'NAAC Accreditation', description: 'Quality-assured education with government recognition and industry partnerships ensuring excellent learning outcomes' }
+                    { icon: <DollarSign className="w-6 h-6" />, title: 'Published Fee', description: '₹32,000 a year under the management quota for 2026-27; government quota seats follow Government norms.' },
+                    { icon: <BookOpen className="w-6 h-6" />, title: 'Any +2 Group Can Join', description: 'Science, Commerce, Arts and vocational students are all eligible under the Periyar University regulation.' },
+                    { icon: <Award className="w-6 h-6" />, title: 'Diploma Holders: Second Year', description: 'A three-year Fashion, Costume, Textile or Apparel diploma qualifies for direct second-year admission under the regulation.' },
+                    { icon: <Ruler className="w-6 h-6" />, title: 'Practicals Every Year', description: 'Children\'s, women\'s and men\'s apparel, textile processing and CAD in Garment Designing, each as a practical course.' },
+                    { icon: <Users className="w-6 h-6" />, title: 'Named Faculty', description: 'The department is led by Mr. G. Arulkumar, Head of Department, with the faculty listed below.' },
+                    { icon: <GraduationCap className="w-6 h-6" />, title: 'Autonomous, Periyar University Degree', description: 'The college sets its own syllabus and examinations; the degree is awarded by Periyar University, Salem.' }
                   ].map((reason, idx) => (
                     <div key={idx} className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-white/40 backdrop-blur-xl rounded-lg flex items-center justify-center flex-shrink-0 border border-white/60 text-brand-green">
@@ -734,7 +707,7 @@ export default function BSCTextileFashionDesigningPage() {
                     </span>
                   </h2>
                   <p className="text-lg text-gray-600">
-                    Common queries about the B.Sc Textile and Fashion Designing  programme
+                    Common queries about B.Sc Textile and Fashion Designing (B.Sc TFD)
                   </p>
                 </div>
               </RevealSection>
@@ -781,7 +754,7 @@ export default function BSCTextileFashionDesigningPage() {
                   </span>
                 </h2>
                 <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                  Join our B.Sc Textile and Fashion Designing  programme and turn your creative passion into a rewarding career
+                  B.Sc Textile and Fashion Designing admission for 2026-27 is open to +2 students from any group
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=programmes-self-finance-ug-bsc-textile-fashion-designing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-green/90 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
@@ -792,6 +765,13 @@ export default function BSCTextileFashionDesigningPage() {
                     Download Brochure
                   </a>
                 </div>
+                <p className="text-gray-600 mt-6">
+                  <a href="/admissions/bsc-textile-fashion-designing-self-finance" className="text-brand-green underline">B.Sc Textile and Fashion Designing admission 2026-27</a>
+                  {' · '}
+                  <a href="/fee-structure" className="text-brand-green underline">Fee structure</a>
+                  {' · '}
+                  <a href="/bsc-fashion-designing-colleges-in-tamil-nadu" className="text-brand-green underline">B.Sc Fashion Designing colleges in Tamil Nadu</a>
+                </p>
               </div>
             </RevealSection>
           </div>

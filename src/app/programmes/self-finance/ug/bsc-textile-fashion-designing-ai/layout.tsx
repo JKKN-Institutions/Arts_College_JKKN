@@ -24,6 +24,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: URL,
   },
+  // Proposed programme: kept out of Google until university approval (GL6-379, 2026-10-01).
+  robots: { index: false, follow: true },
   openGraph: {
     title: "B.Sc. Textile & Fashion Designing with AI | JKKN Arts & Science",
     description: META_DESCRIPTION,
