@@ -437,7 +437,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     level: "UG",
     category: "Self-Finance",
     description:
-      "Study B.Sc. Computer Science with Cyber Security at JKKN College of Arts and Science (Autonomous). Specialised programme in cybersecurity near Erode, Tamil Nadu.",
+      "B.Sc Computer Science (Cyber Security), Self-Finance, at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Affiliated to Periyar University. 3 years. Maths not compulsory: +2 with Maths, Business Maths, Computer Science or Statistics.",
     keywords: [
       "BSc Cyber Security",
       "cyber security degree near Erode",
