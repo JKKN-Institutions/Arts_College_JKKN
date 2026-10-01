@@ -17,6 +17,14 @@ describe('sanitizeJobDescription', () => {
     expect(sanitizeJobDescription('<a class="text-blue-600" href="http://M.Sc">M.Sc</a>')).toBe('M.Sc');
   });
 
+  it('closes a safe link correctly after an unwrapped junk link at the same depth', () => {
+    const out = sanitizeJobDescription(
+      '<p><a href="http://M.Sc">M.Sc</a> required. See <a href="https://jkkn.ac.in">site</a>.</p><p>Rest</p>',
+    );
+    expect(out).not.toContain('</span>');
+    expect(out).toContain('rel="noopener noreferrer nofollow">site</a>.</p><p>Rest</p>');
+  });
+
   it('keeps https links, opening them safely in a new tab', () => {
     expect(sanitizeJobDescription('<a href="https://jkkn.ac.in">site</a>')).toBe(
       '<a href="https://jkkn.ac.in" target="_blank" rel="noopener noreferrer nofollow">site</a>',

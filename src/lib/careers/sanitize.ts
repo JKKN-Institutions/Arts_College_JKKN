@@ -10,8 +10,11 @@ const SAFE_LINK = /^(https:|mailto:|tel:)/i;
  */
 export function sanitizeJobDescription(html: string | null | undefined): string {
   if (!html) return '';
-  return sanitizeHtml(html, {
-    allowedTags: ['p', 'br', 'strong', 'b', 'em', 'i', 'u', 'ul', 'ol', 'li', 'hr', 'h3', 'h4', 'blockquote', 'a'],
+  const clean = sanitizeHtml(html, {
+    // 'span' must be allowed: unsafe links are transformed to <span>, and sanitize-html
+    // mis-closes the next link at the same depth if the transformed tag is discarded.
+    // Attribute-less spans are then unwrapped below.
+    allowedTags: ['p', 'br', 'strong', 'b', 'em', 'i', 'u', 'ul', 'ol', 'li', 'hr', 'h3', 'h4', 'blockquote', 'a', 'span'],
     allowedAttributes: { a: ['href', 'target', 'rel'] },
     allowedSchemes: ['https', 'mailto', 'tel'],
     allowProtocolRelative: false,
@@ -28,6 +31,7 @@ export function sanitizeJobDescription(html: string | null | undefined): string 
       },
     },
   });
+  return clean.replace(/<\/?span>/g, '');
 }
 
 const ENTITIES: Record<string, string> = { '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&nbsp;': ' ' };
