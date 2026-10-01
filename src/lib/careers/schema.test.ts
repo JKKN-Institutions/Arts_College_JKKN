@@ -42,6 +42,20 @@ describe('buildJobPostingSchema', () => {
   });
 });
 
+describe('buildJobPostingSchema with bad salary data', () => {
+  it('omits baseSalary when the currency code is invalid', () => {
+    const schema = buildJobPostingSchema(
+      makeJob({
+        posted_at: '2026-09-01T00:00:00Z',
+        salary: { min: 15000, max: null, currency: 'rupees', duration: 'per_month' },
+      }),
+      URL,
+      '<p>x</p>',
+    );
+    expect(schema).not.toHaveProperty('baseSalary');
+  });
+});
+
 describe('serializeJsonLd', () => {
   it('escapes < so data cannot close the script tag, and stays valid JSON', () => {
     const data = { title: '</script><script>alert(1)</script>' };

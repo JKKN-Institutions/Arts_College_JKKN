@@ -1,5 +1,6 @@
 import { siteConfig } from '@/lib/site-config';
 import { SITE_URL } from './config';
+import { validCurrency } from './format';
 import type { PublicJob } from './types';
 
 /** Postal address — kept in sync with src/components/seo/OrganizationSchema.tsx. */
@@ -43,6 +44,7 @@ export function buildJobPostingSchema(
 ): Record<string, unknown> | null {
   if (!job.posted_at) return null;
   const salary = job.salary;
+  const currency = validCurrency(salary?.currency);
   return {
     '@context': 'https://schema.org',
     '@type': 'JobPosting',
@@ -69,11 +71,11 @@ export function buildJobPostingSchema(
     },
     directApply: true,
     url: pageUrl,
-    ...(salary && (salary.min != null || salary.max != null)
+    ...(salary && currency && (salary.min != null || salary.max != null)
       ? {
           baseSalary: {
             '@type': 'MonetaryAmount',
-            currency: salary.currency || 'INR',
+            currency,
             value: {
               '@type': 'QuantitativeValue',
               ...(salary.min != null ? { minValue: salary.min } : {}),

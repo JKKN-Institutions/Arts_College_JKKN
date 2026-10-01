@@ -50,6 +50,10 @@ describe('salaryLabel', () => {
     );
   });
 
+  it('returns null instead of throwing for an invalid currency code', () => {
+    expect(salaryLabel({ min: 15000, max: null, currency: 'Rs', duration: 'per_month' })).toBeNull();
+  });
+
   it('returns null when hidden or empty', () => {
     expect(salaryLabel(null)).toBeNull();
     expect(salaryLabel({ min: null, max: null, currency: 'INR', duration: 'per_month' })).toBeNull();

@@ -56,11 +56,25 @@ export function experienceLabel(min: number | null, max: number | null): string 
   return `Up to ${max} ${years(max as number)}`;
 }
 
+/** ISO 4217 code for a salary (default INR), or null when the API sends an invalid code. */
+export function validCurrency(code: string | null | undefined): string | null {
+  const currency = (code || 'INR').trim().toUpperCase();
+  if (!/^[A-Z]{3}$/.test(currency)) return null;
+  try {
+    new Intl.NumberFormat('en-IN', { style: 'currency', currency });
+    return currency;
+  } catch {
+    return null;
+  }
+}
+
 export function salaryLabel(salary: PublicJobSalary | null): string | null {
   if (!salary || (salary.min == null && salary.max == null)) return null;
+  const currency = validCurrency(salary.currency);
+  if (!currency) return null;
   const money = new Intl.NumberFormat('en-IN', {
     style: 'currency',
-    currency: salary.currency || 'INR',
+    currency,
     maximumFractionDigits: 0,
   });
   const per = DURATION_LABELS[salary.duration] ?? '';
