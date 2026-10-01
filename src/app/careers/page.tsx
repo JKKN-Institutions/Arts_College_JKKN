@@ -1,11 +1,9 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import { Mail, Phone } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { WebPageSchema } from "@/components/seo/WebPageSchema";
 import JobCard from "@/components/careers/JobCard";
 import { getCollegeJobs } from "@/lib/careers/api";
-import { siteConfig } from "@/lib/site-config";
 
 export const revalidate = 300;
 
@@ -37,7 +35,6 @@ function Notice({ children }: { children: ReactNode }) {
 
 export default async function CareersPage() {
   const { jobs, available } = await getCollegeJobs();
-  const phoneDisplay = siteConfig.phone.replace(/^\+91/, "+91 ");
 
   return (
     <>
@@ -66,7 +63,7 @@ export default async function CareersPage() {
         </section>
 
         {/* Current Openings — live from MyJKKN */}
-        <section aria-labelledby="openings-heading" className="max-w-6xl mx-auto px-4 pt-10 pb-6">
+        <section aria-labelledby="openings-heading" className="max-w-6xl mx-auto px-4 pt-10 pb-12">
           <div className="mb-5 flex flex-wrap items-baseline justify-between gap-2">
             <h2 id="openings-heading" className="text-2xl md:text-3xl font-bold text-brand-green">
               Current Openings
@@ -80,13 +77,11 @@ export default async function CareersPage() {
 
           {!available ? (
             <Notice>
-              We couldn&apos;t load the current openings right now. Please try again shortly, or contact us using the
-              details below.
+              We couldn&apos;t load the current openings right now. Please try again shortly.
             </Notice>
           ) : jobs.length === 0 ? (
             <Notice>
-              There are no open positions at the moment. Please check back soon, or contact us using the details
-              below.
+              There are no open positions at the moment. Please check back soon.
             </Notice>
           ) : (
             <ul className="grid gap-5 md:grid-cols-2">
@@ -97,33 +92,6 @@ export default async function CareersPage() {
               ))}
             </ul>
           )}
-        </section>
-
-        {/* Contact Details */}
-        <section aria-labelledby="careers-contact-heading" className="max-w-6xl mx-auto px-4 pb-12">
-          <div className="bg-white rounded-2xl shadow-sm border border-brand-green/20 overflow-hidden">
-            <div className="bg-brand-green px-6 py-4">
-              <h2 id="careers-contact-heading" className="text-white font-bold text-base md:text-lg">
-                For job-related enquiries, contact us:
-              </h2>
-            </div>
-            <div className="px-6 py-5 flex flex-col sm:flex-row gap-3">
-              <a
-                href={`tel:${siteConfig.phone}`}
-                className="inline-flex min-h-[44px] items-center gap-2 font-semibold text-[#002309] hover:text-brand-green"
-              >
-                <Phone className="h-4 w-4 text-brand-green" aria-hidden="true" />
-                {phoneDisplay}
-              </a>
-              <a
-                href={`mailto:${siteConfig.email}`}
-                className="inline-flex min-h-[44px] items-center gap-2 font-semibold text-[#002309] hover:text-brand-green sm:ml-6"
-              >
-                <Mail className="h-4 w-4 text-brand-green" aria-hidden="true" />
-                {siteConfig.email}
-              </a>
-            </div>
-          </div>
         </section>
       </div>
     </>
