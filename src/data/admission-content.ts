@@ -23,6 +23,49 @@ export interface AdmissionOverride {
 }
 
 export const admissionOverrides: Record<string, AdmissionOverride> = {
+  // Eligibility from the Periyar University B.Sc Computer Science OBE regulations, 2021-22
+  // onwards (periyaruniversity.ac.in/Documents/2021/syllabus/2021/Affiliated/ug/B.Sc. COMPUTER SCIENCE.pdf):
+  // +2 with Mathematics OR Business Mathematics OR Computer Science OR Statistics. GL6-363.
+  "self-finance/ug/bsc-computer-science": {
+    eligibilityCriteria: [
+      "Pass in the Higher Secondary (+2) examination",
+      "Any one of Mathematics, Business Mathematics, Computer Science or Statistics (Periyar University regulations)",
+      "Academic or vocational stream; Tamil Nadu board or an equivalent examination",
+      "Merit-based admission; community reservation as per Tamil Nadu Government norms",
+    ],
+    recommendedBackground: [
+      "Mathematics is not compulsory if the +2 had Computer Science, Statistics or Business Mathematics",
+      "Science and Commerce groups with one of those subjects both qualify",
+      "Logical thinking helps in programming courses",
+      "Interest in lab work - each core subject has a practical",
+    ],
+    highlights: [
+      "Affiliated to Periyar University, Salem",
+      "NAAC-accredited autonomous institution",
+      "Python, Java, PHP, .NET and DBMS with a lab for each core subject",
+      "M.Sc Computer Science and MCA available on the same campus",
+    ],
+    curriculumHighlights: [
+      "Year 1: Python Programming; Data Structures and Algorithms",
+      "Year 2: Microprocessor and Microcontroller; Web Designing; Java Programming; PHP Programming",
+      "Year 3: Software Engineering; Database Management Systems; Computer Networks; .NET Programming",
+      "A practical lab for each core subject",
+      "Project with viva voce in the final year",
+      "Internship or industrial training",
+    ],
+    faq: [
+      {
+        question: "Can I do B.Sc Computer Science without Maths?",
+        answer:
+          "Yes, if your +2 included Computer Science, Statistics or Business Mathematics. The Periyar University regulation accepts any one of Mathematics, Business Mathematics, Computer Science or Statistics.",
+      },
+      {
+        question: "What is the B.Sc Computer Science fee for 2026-27?",
+        answer:
+          "Rs 34,000 a year under the management quota. Government quota seats follow Government norms.",
+      },
+    ],
+  },
   // Eligibility from the Periyar University B.Sc Physics regulations, 2023-24 onwards
   // (periyaruniversity.ac.in/Documents/2023/CDC/Affiliated/ug/B.Sc PHYSICS  .pdf):
   // "passed the Higher Secondary examination with Mathematics, Physics and Chemistry".
