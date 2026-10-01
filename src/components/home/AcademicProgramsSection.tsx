@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { GraduationCap, ArrowRight, BookOpen, Briefcase, Code } from 'lucide-react';
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
 // Program categories
@@ -58,8 +58,6 @@ const programsByCategory = {
 export default function AcademicProgramsSection() {
   const [activeCategory, setActiveCategory] = useState<'science' | 'commerce' | 'computer'>('science');
 
-  const currentPrograms = programsByCategory[activeCategory];
-
   return (
     <section id="programs" className="py-16 md:py-24 bg-white scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -113,17 +111,18 @@ export default function AcademicProgramsSection() {
           })}
         </div>
 
-        {/* Programs Grid */}
-        <AnimatePresence mode="wait">
+        {/* Programs Grid. All three categories are rendered so every programme link is in the
+            served HTML (until 2026-10-01 only the active tab was, and the Commerce and Computer
+            programme pages had no crawlable link from the homepage); the tabs only toggle visibility. */}
+        {categories.map((category) => (
           <motion.div
-            key={activeCategory}
+            key={category.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+            className={cn('grid sm:grid-cols-2 lg:grid-cols-3 gap-6', activeCategory === category.id ? '' : 'hidden')}
           >
-            {currentPrograms.map((program, index) => (
+            {programsByCategory[category.id as 'science' | 'commerce' | 'computer'].map((program, index) => (
               <motion.div
                 key={program.href}
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -154,7 +153,7 @@ export default function AcademicProgramsSection() {
               </motion.div>
             ))}
           </motion.div>
-        </AnimatePresence>
+        ))}
 
         {/* View All Link */}
         <motion.div

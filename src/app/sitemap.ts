@@ -156,7 +156,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/programmes/self-finance/ug/bcom-ca`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bcom-ai`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-ai-ds`, "monthly", 0.9),
-    s(`${SITE_URL}/programmes/self-finance/ug/bsc-computer-science`, "monthly", 0.9),
+    // lastModified set 2026-10-01 (GL6-363): this page was "URL is unknown to Google".
+    { ...s(`${SITE_URL}/programmes/self-finance/ug/bsc-computer-science`, "monthly", 0.9), lastModified: "2026-10-01" },
+    { ...s(`${SITE_URL}/bsc-computer-science-colleges-in-tamil-nadu`, "monthly", 0.8), lastModified: "2026-10-01" },
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-cs-cyber-security`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-microbiology`, "monthly", 0.9),
     // lastModified set 2026-09-30 (GL6-356) so Google re-reads the rewritten physics pages.
@@ -198,7 +200,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/departments/self-finance/business-administration`, "monthly", 0.8),
     s(`${SITE_URL}/departments/self-finance/commerce`, "monthly", 0.8),
     s(`${SITE_URL}/departments/self-finance/computer-applications`, "monthly", 0.8),
-    s(`${SITE_URL}/departments/self-finance/computer-science`, "monthly", 0.8),
+    { ...s(`${SITE_URL}/departments/self-finance/computer-science`, "monthly", 0.8), lastModified: "2026-10-01" },
     s(`${SITE_URL}/departments/self-finance/cyber-security`, "monthly", 0.8),
     s(`${SITE_URL}/departments/self-finance/english`, "monthly", 0.8),
     s(`${SITE_URL}/departments/self-finance/mathematics`, "monthly", 0.8),

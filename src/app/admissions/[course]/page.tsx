@@ -203,6 +203,18 @@ export default async function CourseAdmissionPage({
                 </div>
               ))}
             </div>
+
+            {/* Every admission page links its programme page. Until 2026-10-01 none did, and
+                several programme pages (B.Sc Computer Science among them) were never discovered
+                by Google because no indexed page linked them. */}
+            <p className="text-center mt-8">
+              <a
+                href={`/programmes/${path}`}
+                className="inline-flex items-center gap-2 text-[#0b6d41] font-semibold underline"
+              >
+                Full {info.name} programme details: syllabus, labs and faculty
+              </a>
+            </p>
           </div>
         </section>
 

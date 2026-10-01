@@ -420,7 +420,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     level: "UG",
     category: "Self-Finance",
     description:
-      "Study B.Sc. Computer Science at JKKN College of Arts and Science (Autonomous). 3-year programme with modern labs and strong IT placements near Erode, Tamil Nadu.",
+      "B.Sc Computer Science (Self-Finance) at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Affiliated to Periyar University. 3 years, 6 semesters. Eligibility: +2 with Maths, Business Maths, Computer Science or Statistics.",
     keywords: [
       "BSc Computer Science",
       "BSc CS college near Erode",
