@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ChevronRight } from "lucide-react";
+import ApplyForm from "@/components/careers/ApplyForm";
 import JsonLd from "@/components/careers/JsonLd";
 import { getCollegeJob, getCollegeJobs } from "@/lib/careers/api";
 import { CAREERS_PATH, SITE_URL } from "@/lib/careers/config";
@@ -165,7 +166,7 @@ export default async function CareerDetailPage({ params }: CareerDetailPageProps
               <h2 id="apply-heading" className="mb-4 text-2xl font-bold text-brand-green">
                 Apply for this role
               </h2>
-              {/* ApplyForm is added in Task 5 */}
+              <ApplyForm jobId={job.id} jobTitle={job.title} />
             </section>
           </div>
         </div>
