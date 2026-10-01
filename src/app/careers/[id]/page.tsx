@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ChevronRight } from "lucide-react";
 import ApplyForm from "@/components/careers/ApplyForm";
 import JsonLd from "@/components/careers/JsonLd";
-import { getCollegeJob, getCollegeJobs } from "@/lib/careers/api";
+import { getCollegeJob } from "@/lib/careers/api";
 import { CAREERS_PATH, SITE_URL } from "@/lib/careers/config";
 import {
   educationLabel,
@@ -26,9 +26,10 @@ interface CareerDetailPageProps {
   params: Promise<{ id: string }>;
 }
 
+// Job pages render on first request and are then cached by ISR (dynamicParams defaults
+// to true). Not prerendering them keeps `next build` independent of MyJKKN uptime.
 export async function generateStaticParams() {
-  const { jobs } = await getCollegeJobs();
-  return jobs.map((job) => ({ id: job.id }));
+  return [];
 }
 
 export async function generateMetadata({ params }: CareerDetailPageProps): Promise<Metadata> {
