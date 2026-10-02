@@ -282,6 +282,58 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
     ],
   },
 
+  // Eligibility from the Periyar University B.Sc Microbiology regulations, 2023-24 onwards
+  // (periyaruniversity.ac.in/Documents/2023/CDC/Affiliated/ug/B.Sc. Microbiology.pdf), "Condition for admission":
+  // +2 pass in any one of Botany, Zoology or Biology, academic or vocational; no percentage. GL6-384.
+  "self-finance/ug/bsc-microbiology": {
+    dropDefaultEligibilityFaq: true,
+    eligibilityCriteria: [
+      "Pass in the Higher Secondary (+2) examination",
+      "Any one of Botany, Zoology or Biology (Periyar University regulations)",
+      "Academic or vocational stream (Agriculture, Home Science, Poultry)",
+      "Merit-based admission; community reservation as per Tamil Nadu Government norms",
+    ],
+    recommendedBackground: [
+      "Chemistry is not required by the regulation",
+      "No minimum percentage and no entrance test - NEET is not needed",
+      "This is a 3-year arts and science B.Sc",
+      "Interest in laboratory work - every core subject has a practical",
+    ],
+    highlights: [
+      "Affiliated to Periyar University, Salem",
+      "NAAC-accredited autonomous institution",
+      "A practical in every core subject",
+      "Project with viva voce and an internship or industrial visit",
+    ],
+    curriculumHighlights: [
+      "Year 1: Fundamentals of Microbiology; Microbial Physiology and Metabolism; Biochemistry; Bioinstrumentation",
+      "Year 2: Molecular Biology and Microbial Genetics; Immunology and Immunotechnology; Clinical Laboratory Technology",
+      "Year 3: Bacteriology and Mycology; Virology and Parasitology; Recombinant DNA Technology",
+      "Year 3: Environmental and Agriculture Microbiology; Food, Dairy and Probiotic Microbiology; Pharmaceutical Microbiology",
+      "Project with viva voce",
+      "Internship, industrial visit or field visit",
+    ],
+    careers: [
+      "Microbiology Laboratory Assistant",
+      "Quality Control Trainee (food / pharma)",
+      "Clinical Laboratory Assistant",
+      "Research Assistant",
+      "Higher studies: M.Sc Microbiology, M.Sc Biotechnology, MBA",
+    ],
+    faq: [
+      {
+        question: "Is Chemistry compulsory for B.Sc Microbiology?",
+        answer:
+          "No. The Periyar University regulation asks for any one of Botany, Zoology or Biology in the +2.",
+      },
+      {
+        question: "What is the B.Sc Microbiology fee for 2026-27?",
+        answer:
+          "Rs 34,000 a year under the management quota. Government quota seats follow Government norms.",
+      },
+    ],
+  },
+
   // Eligibility from the Periyar University B.Sc Textile and Fashion Designing regulations, 2023-24
   // onwards (periyaruniversity.ac.in/Documents/2026/syllabus/nanmudh/23-24even/
   // B.Sc. TEXTILE AND FASHION DESIGNING.pdf): pass in any Higher Secondary course; a three-year

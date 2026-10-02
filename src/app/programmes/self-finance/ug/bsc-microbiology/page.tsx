@@ -2,9 +2,10 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { BookOpen, Users, Award, Briefcase, Library, GraduationCap, Building2, Lightbulb, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, Microscope, FlaskConical, TestTube, Dna, Activity, Pill } from 'lucide-react';
+import { BookOpen, Users, Award, Briefcase, Library, GraduationCap, Building2, Lightbulb, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, Microscope, FlaskConical, TestTube, Dna, Activity, Pill, DollarSign } from 'lucide-react';
 import CountUp from '@/components/ui/CountUp';
 import Marquee from '@/components/ui/Marquee';
+import { bscMicrobiologyFaqs } from './faqs';
 
 /* ─── Scroll-reveal hook ─── */
 function useScrollReveal() {
@@ -64,6 +65,7 @@ function SectionBadge({ text }: { text: string }) {
 export default function BSCMicrobiologyPage() {
   const [activeYear, setActiveYear] = useState(1);
   const [activeFAQ, setActiveFAQ] = useState(0);
+  const faqs = bscMicrobiologyFaqs;
 
   return (
     <div className="min-h-screen bg-white">
@@ -83,7 +85,10 @@ export default function BSCMicrobiologyPage() {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl font-medium mb-6 text-gray-700">
-                Explore the Microscopic World & Life Sciences
+                A three-year Periyar University degree · Komarapalayam, Tamil Nadu
+              </p>
+              <p className="text-base text-gray-700 mb-6">
+                Open to +2 students with any one of Botany, Zoology or Biology. No entrance test, no NEET.
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -120,8 +125,10 @@ export default function BSCMicrobiologyPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
-              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
+              { icon: <DollarSign className="w-7 h-7" />, stat: '₹34,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
+              { icon: <Microscope className="w-7 h-7" />, stat: 'Any 1', title: 'Biology Subject', desc: 'Botany, Zoology or Biology in +2' },
+              { icon: <TestTube className="w-7 h-7" />, stat: 'Lab', title: 'Practical Every Core', desc: 'A practical in each core subject' },
+              { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited college' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">
@@ -151,14 +158,15 @@ export default function BSCMicrobiologyPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Bachelor of Science in Microbiology is a comprehensive three-year undergraduate programme offering in-depth study of microorganisms, immunology, molecular biology, industrial microbiology, and biotechnology. This UGC-recognized programme is designed to develop scientific expertise, laboratory skills, and professional competency for careers in healthcare, research, pharmaceuticals, and food industries.
+                B.Sc Microbiology is a three-year arts and science degree on microorganisms and their uses. Year 1 covers Fundamentals of Microbiology, Microbial Physiology and Metabolism, biochemistry and bioinstrumentation; Year 2 covers Molecular Biology and Microbial Genetics, Immunology and Immunotechnology, clinical laboratory technology and food processing; Year 3 covers Bacteriology and Mycology, Virology and Parasitology, Recombinant DNA Technology, environmental, agricultural, food and pharmaceutical microbiology, a project with viva voce and an internship or industrial visit.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our progressive education philosophy emphasizes practical learning and research orientation, enabling Learners to develop expertise in immunology, molecular biology, genetic engineering, industrial microbiology, and clinical diagnostics. The curriculum integrates theoretical foundations with extensive laboratory training, industry internships, and a final year research project that prepares graduates for immediate employment or advanced studies.
+                JKKN College of Arts and Science is an autonomous college affiliated to Periyar University, on NH-544 at Komarapalayam in Namakkal district, Tamil Nadu, between Salem and Erode. B.Sc Microbiology here is a self-finance programme with an annual management-quota fee of ₹34,000 for 2026-27. Comparing colleges across the state? Read our{' '}
+                <a href="/bsc-microbiology-colleges-in-tamil-nadu" className="text-brand-green font-semibold underline">guide to B.Sc Microbiology colleges in Tamil Nadu</a>.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Aligned Learning Framework', 'State-of-the-Art Laboratories', 'Expert Senior Learners', 'Research & Internship Opportunities'].map((item, idx) => (
+                {['A practical in every core subject', 'Project with viva voce', 'Internship or industrial visit', 'Any one biology subject in +2'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -171,7 +179,7 @@ export default function BSCMicrobiologyPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="/images/programmes/bsc-microbiology/Bachelor of Science in Microbiology.webp"
-                  alt="Microbiology Laboratory"
+                  alt="B.Sc Microbiology at JKKN College of Arts and Science, Komarapalayam"
                   className="w-full h-auto"
                 width={2048}
                 height={2048}
@@ -199,7 +207,8 @@ export default function BSCMicrobiologyPage() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  Requirements for joining the B.Sc Microbiology programme
+                  Requirements for joining B.Sc Microbiology, as set by the{' '}
+                  <a href="https://www.periyaruniversity.ac.in/Documents/2023/CDC/Affiliated/ug/B.Sc.%20Microbiology.pdf" target="_blank" rel="noopener noreferrer" className="text-brand-green underline">Periyar University regulations</a>
                 </p>
               </div>
             </RevealSection>
@@ -209,12 +218,12 @@ export default function BSCMicrobiologyPage() {
                 {
                   icon: <GraduationCap className="w-8 h-8 text-white" />,
                   title: 'Academic Qualification',
-                  items: ['Higher Secondary (10+2) from recognized board', 'Biology (Botany & Zoology) and Chemistry required', 'Minimum 50% aggregate marks', '45% for reserved categories']
+                  items: ['Pass in the Higher Secondary (+2) examination', 'Any one of Botany, Zoology or Biology', 'No minimum percentage in the regulation', 'Merit-based admission; reservation as per Tamil Nadu Government norms']
                 },
                 {
                   icon: <FileText className="w-8 h-8 text-white" />,
                   title: 'Accepted Streams',
-                  items: ['Science stream with Biology', 'PCB (Physics, Chemistry, Biology)', 'PCM with Biology as additional', 'Vocational courses with Biology']
+                  items: ['Academic stream with Botany, Zoology or Biology', 'Vocational stream: Agriculture, Home Science or Poultry', 'Chemistry is not required by the regulation', 'No entrance test - NEET is not needed']
                 },
                 {
                   icon: <BookOpen className="w-8 h-8 text-white" />,
@@ -280,8 +289,8 @@ export default function BSCMicrobiologyPage() {
               </div>
             </RevealSection>
 
-            {activeYear === 1 && (
-              <div className="grid md:grid-cols-2 gap-6">
+            {/* All three years are rendered so crawlers see all six semesters; tabs only toggle visibility. */}
+            <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 1 ? '' : 'hidden'}`}>
                 {[
                   {
                     title: 'Learning Period I',
@@ -324,11 +333,9 @@ export default function BSCMicrobiologyPage() {
                     </GlassCard>
                   </RevealSection>
                 ))}
-              </div>
-            )}
+            </div>
 
-            {activeYear === 2 && (
-              <div className="grid md:grid-cols-2 gap-6">
+            <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 2 ? '' : 'hidden'}`}>
                 {[
                   {
                     title: 'Learning Period III',
@@ -373,11 +380,9 @@ export default function BSCMicrobiologyPage() {
                     </GlassCard>
                   </RevealSection>
                 ))}
-              </div>
-            )}
+            </div>
 
-            {activeYear === 3 && (
-              <div className="grid md:grid-cols-2 gap-6">
+            <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 3 ? '' : 'hidden'}`}>
                 {[
                   {
                     title: 'Learning Period V',
@@ -426,8 +431,7 @@ export default function BSCMicrobiologyPage() {
                     </GlassCard>
                   </RevealSection>
                 ))}
-              </div>
-            )}
+            </div>
           </div>
         </div>
       </section>
@@ -454,11 +458,11 @@ export default function BSCMicrobiologyPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { icon: <Microscope className="w-6 h-6 text-white" />, title: 'Microbiological Expertise', description: 'Comprehensive understanding of bacteria, viruses, fungi, and parasites including their classification, morphology, physiology, genetics, and pathogenicity.' },
-                { icon: <TestTube className="w-6 h-6 text-white" />, title: 'Laboratory Proficiency', description: 'Master aseptic techniques, microscopy, culture methods, staining, biochemical tests, and modern diagnostic techniques including ELISA and PCR.' },
+                { icon: <TestTube className="w-6 h-6 text-white" />, title: 'Laboratory Practice', description: 'Work with aseptic technique, microscopy, culture methods, staining and biochemical tests through the practical in each core subject.' },
                 { icon: <Activity className="w-6 h-6 text-white" />, title: 'Immunological Knowledge', description: 'Understand immune system components, antigen-antibody reactions, immunological disorders, and vaccine development.' },
                 { icon: <FlaskConical className="w-6 h-6 text-white" />, title: 'Industrial Applications', description: 'Apply microbial processes in fermentation technology, antibiotic production, enzyme manufacturing, and quality control.' },
                 { icon: <Dna className="w-6 h-6 text-white" />, title: 'Molecular Biology Skills', description: 'Understand DNA/RNA structure, gene expression, recombinant DNA technology, cloning techniques, and genetic engineering.' },
-                { icon: <BookOpen className="w-6 h-6 text-white" />, title: 'Research & Communication', description: 'Design and execute research experiments, analyze data statistically, and communicate findings effectively.' }
+                { icon: <BookOpen className="w-6 h-6 text-white" />, title: 'Project Work', description: 'Carry out a project with viva voce and an internship, industrial visit or field visit in the final year.' }
               ].map((outcome, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <GlassCard className="relative p-6 group h-full">
@@ -543,38 +547,30 @@ export default function BSCMicrobiologyPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Infrastructure" />
+                <SectionBadge text="Practical Work" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Laboratory{' '}
+                  Practical{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilities
+                    Courses
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  State-of-the-art infrastructure supporting hands-on microbiological training
+                  The core practical courses in the B.Sc Microbiology syllabus
                 </p>
               </div>
             </RevealSection>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'General Microbiology Laboratory', description: 'Equipped with autoclaves, laminar flow hoods, BOD incubators, colony counters, and precision balances for basic microbiological techniques.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=General+Microbiology+Lab' },
-                { title: 'Molecular Biology Laboratory', description: 'PCR thermal cyclers, gel electrophoresis systems, UV transilluminators, and DNA extraction equipment for molecular diagnostic studies.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Molecular+Biology+Lab' },
-                { title: 'Immunology Laboratory', description: 'ELISA readers, microplate washers, serological testing equipment, and blood banking supplies for immunological assays and procedures.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Immunology+Lab' },
-                { title: 'Fermentation Technology Lab', description: 'Laboratory-scale bioreactors, fermenters, downstream processing equipment, and media preparation facilities for industrial training.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Fermentation+Lab' },
-                { title: 'Advanced Microscopy Center', description: 'Compound microscopes, phase contrast microscopes, dark field microscopy, and digital imaging systems for microbial observation.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Microscopy+Center' },
-                { title: 'Research Library', description: 'Comprehensive collection of microbiology journals, reference books, PubMed access, and e-resources supporting academic research.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Library' }
+                { title: 'Fundamentals of Microbiology Practicals', description: 'Core Practical (24UMBCP01), Semester I.' },
+                { title: 'Microbial Physiology and Metabolism Practicals', description: 'Core Practical (24UMBCP02), Semester II.' },
+                { title: 'Molecular Biology and Microbial Genetics Practicals', description: 'Core Practical (24UMBCP03), Semester III.' },
+                { title: 'Immunology and Immunotechnology Practicals', description: 'Core Practical (24UMBCP04), Semester IV.' },
+                { title: 'Core Practical V', description: 'Semester V (24UMBCP05), with Bacteriology and Mycology and Virology and Parasitology.' },
+                { title: 'Core Practical VI', description: 'Semester VI (24UMBCP06), with environmental, agricultural, food and dairy microbiology.' },
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
-                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
-                    <div className="relative h-48 overflow-hidden">
-                      <img
-                        src={facility.image}
-                        alt={facility.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-brand-green/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group h-full">
                     <div className="p-6">
                       <h3 className="text-lg font-bold text-brand-green mb-2">{facility.title}</h3>
                       <p className="text-gray-600 text-sm">{facility.description}</p>
@@ -611,16 +607,16 @@ export default function BSCMicrobiologyPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Our progressive education approach ensures holistic development, preparing you for success in healthcare, research, and biotechnology industries.
+                Facts a family can check before choosing: fee, eligibility, affiliation and what the syllabus covers.
               </p>
 
               <div className="space-y-4">
                 {[
-                  { title: 'NAAC Accredited Institution', description: 'Quality assured education with recognized academic standards and continuous improvement.' },
-                  { title: 'Modern Laboratory Infrastructure', description: 'Well-equipped labs with latest instruments for hands-on practical training in all domains.' },
-                  { title: 'Experienced Senior Learners', description: 'Qualified and research-active Senior Learners with industry and academic experience.' },
-                  { title: 'Industry Internships & Placements', description: 'Mandatory industrial training and strong placement support with top companies.' },
-                  { title: 'Research-Oriented Education', description: 'Emphasis on independent research with guided projects and publication opportunities.' }
+                  { title: 'Published Fee', description: '₹34,000 a year under the management quota for 2026-27; government quota seats follow Government norms.' },
+                  { title: 'Any One Biology Subject', description: 'Botany, Zoology or Biology in +2 qualifies under the Periyar University regulation; Chemistry and a minimum percentage are not required.' },
+                  { title: 'A Practical in Every Core Subject', description: 'From Fundamentals of Microbiology in Semester I to Core Practical VI in the final year.' },
+                  { title: 'Project and Internship', description: 'A project with viva voce and an internship, industrial visit or field visit in the final year.' },
+                  { title: 'Autonomous, Periyar University Degree', description: 'The college sets its own syllabus and examinations; the degree is awarded by Periyar University, Salem. NAAC accredited.' }
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:shadow-lg hover:-translate-y-0.5 transition-all">
                     <div className="w-11 h-11 bg-gradient-to-br from-brand-green to-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md shadow-brand-green/15">
@@ -657,6 +653,7 @@ export default function BSCMicrobiologyPage() {
               </div>
             </RevealSection>
 
+            {/* Department faculty, confirmed by the college 2026-10-02 (GL6-384). No photos yet, so initials are shown. */}
             <Marquee pauseOnHover draggable speed={30} className="[--gap:1.5rem]">
               {[
                 { name: 'Dr.D.Hemalatha', designation: 'Head of Department', qualification: 'P.hD., Microbial Genetics' },
@@ -665,12 +662,9 @@ export default function BSCMicrobiologyPage() {
               ].map((faculty, idx) => (
                 <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
                   <div className="relative h-56 overflow-hidden flex-shrink-0">
-                    <Image
-                      src="/images/faculties/placeholder-avatar.jpg"
-                      alt={faculty.name}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
+                    <div className="w-full h-full flex items-center justify-center bg-brand-green/10 text-brand-green text-4xl font-bold" aria-hidden="true">
+                      {faculty.name.replace(/^(Mrs?|Ms|Dr)\.\s*/, '').replace(/^[A-Z]\.\s*/, '').charAt(0)}
+                    </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   <div className="p-5 text-center flex-1 flex flex-col justify-center">
@@ -699,22 +693,13 @@ export default function BSCMicrobiologyPage() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600">
-                  Find answers to common queries about the B.Sc Microbiology programme
+                  Common queries about B.Sc Microbiology
                 </p>
               </div>
             </RevealSection>
 
             <div className="space-y-4">
-              {[
-                { question: 'What is the duration of the B.Sc Microbiology programme?', answer: 'The B.Sc Microbiology programme is a 3-year full-time undergraduate degree comprising six semesters with comprehensive coursework covering general microbiology, immunology, molecular biology, industrial microbiology, and biotechnology applications, along with extensive laboratory practical training and a final year project.' },
-                { question: 'What are the career opportunities after B.Sc Microbiology?', answer: 'B.Sc Microbiology graduates can pursue careers as Microbiologists, Quality Control Analysts, Clinical Laboratory Technicians, Research Associates, Food Microbiologists, Pharmaceutical Scientists, Environmental Microbiologists, and Biotechnology Executives in hospitals, diagnostic labs, pharmaceutical companies, food industries, research institutions, and government agencies.' },
-                { question: 'What is the eligibility criteria for B.Sc Microbiology admission?', answer: 'Candidates must have completed Higher Secondary (10+2) or equivalent examination with Biology (Botany and Zoology) and Chemistry as core subjects from a recognized board with minimum 50% aggregate marks (45% for reserved categories). Students with Physics, Chemistry, Mathematics (PCM) background with Biology as an additional subject may also be eligible.' },
-                { question: 'What competitive exams can I appear for after B.Sc Microbiology?', answer: 'After B.Sc Microbiology, you can appear for various competitive examinations including CSIR-NET (Life Sciences) for JRF and lecturership, GATE (Life Sciences) for M.Tech and PSU jobs, ICMR-JRF for research fellowships, DBT-JRF for biotechnology research, State SET for lectureship eligibility, and UPSC for civil services.' },
-                { question: 'What is the difference between B.Sc Microbiology and B.Sc Biotechnology?', answer: 'B.Sc Microbiology focuses specifically on the study of microorganisms including bacteria, viruses, fungi, and their applications in medicine, industry, and environment. B.Sc Biotechnology is broader, covering genetic engineering, tissue culture, bioinformatics, and industrial applications across plants, animals, and microbes.' },
-                { question: 'Are internship and placement opportunities available?', answer: 'Yes, the programme includes mandatory internship training with pharmaceutical companies, diagnostic laboratories, research institutions, and food processing industries. Our placement cell facilitates campus recruitment drives with top employers including Biocon, Dr. Reddy\'s Laboratories, Cipla, Apollo Hospitals, and CSIR laboratories.' },
-                { question: 'What is the scope of B.Sc Microbiology in India?', answer: 'B.Sc Microbiology has excellent scope in India with growing demand in pharmaceutical industries, healthcare sector, food processing, biotechnology companies, and research institutions. The expansion of diagnostic labs, vaccine manufacturing units, and increasing focus on food safety has created numerous job opportunities.' },
-                { question: 'What is the average salary for B.Sc Microbiology freshers?', answer: 'The starting salary for B.Sc Microbiology freshers typically ranges from ₹2.5 to ₹4.5 lakhs per annum depending on the sector and company. Quality Control Analysts in pharma companies may start at ₹3-4 lakhs, while clinical lab positions offer ₹2.5-3.5 lakhs. With experience and additional certifications, salaries can increase significantly.' }
-              ].map((faq, idx) => (
+              {faqs.map((faq, idx) => (
                 <RevealSection key={idx} delay={idx * 60}>
                   <div className="bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:border-brand-green/20 transition-all overflow-hidden">
                     <button
@@ -751,7 +736,7 @@ export default function BSCMicrobiologyPage() {
                 </span>
               </h2>
               <p className="text-lg mb-8 text-gray-600">
-                Join our B.Sc Microbiology programme and build a rewarding career in healthcare, pharmaceuticals, research, and biotechnology industries.
+                B.Sc Microbiology admission for 2026-27 is open to +2 students with any one of Botany, Zoology or Biology.
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -763,67 +748,18 @@ export default function BSCMicrobiologyPage() {
                   Download Brochure
                 </a>
               </div>
+              <p className="text-gray-600">
+                <a href="/admissions/bsc-microbiology-self-finance" className="text-brand-green underline">B.Sc Microbiology admission 2026-27</a>
+                {' · '}
+                <a href="/fee-structure" className="text-brand-green underline">Fee structure</a>
+                {' · '}
+                <a href="/bsc-microbiology-colleges-in-tamil-nadu" className="text-brand-green underline">B.Sc Microbiology colleges in Tamil Nadu</a>
+              </p>
             </div>
           </RevealSection>
         </div>
       </section>
 
-      {/* Related Programmes */}
-      {/* <section className="py-16 bg-brand-cream">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <RevealSection>
-              <div className="text-center mb-12">
-                <SectionBadge text="Explore More" />
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Explore Related{' '}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Programmes
-                  </span>
-                </h2>
-                <p className="text-lg text-gray-600">
-                  Discover other science programmes at our college
-                </p>
-              </div>
-            </RevealSection>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              {[
-                { title: 'B.Sc Chemistry', description: 'Advanced studies in organic, inorganic, analytical, and physical chemistry', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+Chemistry' },
-                { title: 'B.Sc Zoology', description: 'Comprehensive study of animal biology, physiology, and ecology', duration: '3 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=BSc+Zoology' },
-                { title: 'B.Sc Physics', description: 'Exploration of classical and modern physics with practical applications', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+Physics' }
-              ].map((programme, idx) => (
-                <RevealSection key={idx} delay={idx * 150}>
-                  <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
-                    <div className="relative h-44 overflow-hidden">
-                      <img
-                        src={programme.image}
-                        alt={programme.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-brand-green/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-brand-green mb-2 group-hover:text-emerald-500 transition-colors">{programme.title}</h3>
-                      <p className="text-gray-600 text-sm mb-4">{programme.description}</p>
-                      <div className="flex items-center gap-4 text-sm text-gray-500">
-                        <div className="flex items-center gap-1">
-                          <Clock className="w-4 h-4" />
-                          <span>{programme.duration}</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <Users className="w-4 h-4" />
-                          <span>Full-time</span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </RevealSection>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 }
