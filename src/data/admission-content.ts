@@ -230,31 +230,55 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
     ],
   },
 
+  // GL6-383, 2026-10-02. The Periyar B.Sc Computer Science (AI & DS) 2023-24 syllabus has no admission clause,
+  // so no subject or percentage rule is stated (user decision). The earlier block listed TensorFlow, PyTorch,
+  // Power BI, AWS / GCP and "internship with AI / analytics firms", none of which is in the syllabus.
   "self-finance/ug/bsc-ai-ds": {
-    careers: [
-      "AI Engineer / Junior ML Engineer",
-      "Data Scientist Trainee",
-      "Data Analyst",
-      "Business Intelligence Analyst",
-      "Python / Backend Developer",
-      "AI Research Assistant",
-      "MLOps Trainee",
-      "Computer Vision / NLP Associate",
+    dropDefaultEligibilityFaq: true,
+    eligibilityCriteria: [
+      "Pass in the Higher Secondary (+2) examination",
+      "Confirm the required +2 subjects with the admissions office",
+      "Merit-based admission; community reservation as per Tamil Nadu Government norms",
     ],
-    curriculumHighlights: [
-      "Python Programming, Statistics for Data Science",
-      "Machine Learning Foundations and Deep Learning",
-      "Natural Language Processing and Computer Vision",
-      "Data Engineering, SQL, Big Data fundamentals",
-      "AI Ethics, Responsible AI",
-      "Cloud platforms (AWS / GCP basics)",
-      "Capstone AI project with real-world dataset",
+    recommendedBackground: [
+      "No prior coding experience needed - Python is taught from Year 1",
+      "Mathematics electives in Year 1 and statistics in Year 2",
+      "This is a 3-year B.Sc, not a 4-year B.Tech AI & DS (TNEA)",
+      "Interest in programming and working with data",
     ],
     highlights: [
-      "Industry-aligned AI & Data Science learning framework",
-      "Hands-on tooling: Python, TensorFlow, PyTorch, SQL, Power BI",
-      "Internship with AI / analytics firms",
-      "Career pathway into MS Data Science, MBA Analytics",
+      "Affiliated to Periyar University, Salem",
+      "NAAC-accredited autonomous institution",
+      "A practical lab every semester, including a Data Science Lab and a UiPath Automation Lab",
+      "M.Sc Computer Science and MCA available on the same campus",
+    ],
+    curriculumHighlights: [
+      "Year 1: Fundamentals of Computer Programming; Data Structures; Introduction to Python; mathematics electives",
+      "Year 2: Foundation of Artificial Intelligence; Fundamentals of Data Science; statistics; web designing; PHP; database programming",
+      "Year 3: Database Design and Management; Data Science Lab; Ethics of Artificial Intelligence",
+      "Year 3: Natural Language Processing; Robotic Process Automation with a UiPath lab",
+      "Project with viva voce",
+      "Summer internship or industrial training",
+    ],
+    careers: [
+      "Data Analyst (entry-level)",
+      "Junior Python Developer",
+      "Data Science / AI Trainee",
+      "RPA (Automation) Developer Trainee",
+      "Web Developer",
+      "Higher studies: M.Sc Computer Science, M.Sc Data Science, MCA, MBA",
+    ],
+    faq: [
+      {
+        question: "Is B.Sc AI & DS the same as B.Tech AI & DS?",
+        answer:
+          "No. B.Sc Computer Science (AI & DS) is a three-year arts and science degree admitted on +2 marks; B.Tech AI & DS is a four-year engineering degree admitted through TNEA counselling.",
+      },
+      {
+        question: "What is the B.Sc AI & DS fee for 2026-27?",
+        answer:
+          "Rs 34,000 a year under the management quota. Government quota seats follow Government norms.",
+      },
     ],
   },
 

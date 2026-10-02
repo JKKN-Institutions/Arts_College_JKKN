@@ -546,6 +546,7 @@ export default function ErodePage() {
                     { name: "B.Com (Banking & Insurance)", href: "/programmes/self-finance/ug/bcom-banking-insurance" },
                     { name: "B.Com (CA)", href: "/programmes/self-finance/ug/bcom-ca" },
                     { name: "B.Sc (AI & Data Science)", href: "/programmes/self-finance/ug/bsc-ai-ds" },
+                    { name: "B.Sc AI & Data Science colleges in Tamil Nadu (guide)", href: "/bsc-ai-data-science-colleges-in-tamil-nadu" },
                     { name: "B.Sc Computer Science", href: "/programmes/self-finance/ug/bsc-computer-science" },
                     { name: "B.Sc Computer Science colleges in Tamil Nadu (guide)", href: "/bsc-computer-science-colleges-in-tamil-nadu" },
                     { name: "B.Sc (Cyber Security)", href: "/programmes/self-finance/ug/bsc-cs-cyber-security" },

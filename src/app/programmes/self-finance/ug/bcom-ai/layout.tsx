@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://cas.jkkn.ac.in/programmes/self-finance/ug/bcom-ai",
   },
+  // Proposed programme: kept out of Google until university approval (GL6-383, 2026-10-02).
+  robots: { index: false, follow: true },
   openGraph: {
     title: "B.Com — Artificial Intelligence | JKKN Arts & Science",
     description:

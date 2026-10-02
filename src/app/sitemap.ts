@@ -26,7 +26,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/admissions/courses`, "monthly", 0.85),
     // The proposed TFD (AI) admission page is noindex until approval (GL6-379), so it is not listed.
     ...getAllAdmissionSlugs()
-      .filter((slug) => !["bsc-textile-fashion-designing-ai-self-finance", "bsc-visual-communication-ai-self-finance"].includes(slug))
+      .filter((slug) => !["bsc-textile-fashion-designing-ai-self-finance", "bsc-visual-communication-ai-self-finance", "bcom-ai-self-finance"].includes(slug))
       .map((slug) => s(`${SITE_URL}/admissions/${slug}`, "monthly", 0.85)),
     s(`${SITE_URL}/contact`, "yearly", 0.6),
     s(`${SITE_URL}/placements`, "monthly", 0.8),
@@ -155,8 +155,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/programmes/self-finance/ug/bcom-accounting-finance`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bcom-banking-insurance`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bcom-ca`, "monthly", 0.9),
-    s(`${SITE_URL}/programmes/self-finance/ug/bcom-ai`, "monthly", 0.9),
-    s(`${SITE_URL}/programmes/self-finance/ug/bsc-ai-ds`, "monthly", 0.9),
+    // lastModified set 2026-10-02 (GL6-383); the proposed B.Com (AI) page is noindex until approval and not listed.
+    { ...s(`${SITE_URL}/programmes/self-finance/ug/bsc-ai-ds`, "monthly", 0.9), lastModified: "2026-10-02" },
+    { ...s(`${SITE_URL}/bsc-ai-data-science-colleges-in-tamil-nadu`, "monthly", 0.8), lastModified: "2026-10-02" },
     // lastModified set 2026-10-01 (GL6-363): this page was "URL is unknown to Google".
     { ...s(`${SITE_URL}/programmes/self-finance/ug/bsc-computer-science`, "monthly", 0.9), lastModified: "2026-10-01" },
     { ...s(`${SITE_URL}/bsc-computer-science-colleges-in-tamil-nadu`, "monthly", 0.8), lastModified: "2026-10-01" },
@@ -201,7 +202,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/departments/aided/zoology`, "monthly", 0.8),
 
     // Departments — Self-Finance
-    s(`${SITE_URL}/departments/self-finance/ai-data-science`, "monthly", 0.8),
+    { ...s(`${SITE_URL}/departments/self-finance/ai-data-science`, "monthly", 0.8), lastModified: "2026-10-02" },
     s(`${SITE_URL}/departments/self-finance/business-administration`, "monthly", 0.8),
     s(`${SITE_URL}/departments/self-finance/commerce`, "monthly", 0.8),
     s(`${SITE_URL}/departments/self-finance/computer-applications`, "monthly", 0.8),
