@@ -282,7 +282,9 @@ export function getAdmissionContent(
     feesMQ,
     faq: [
       ...(override?.faq ?? []),
-      ...levelDefaults.faq,
+      ...levelDefaults.faq.filter(
+        (f) => !(override?.dropDefaultEligibilityFaq && f.question.startsWith("What is the eligibility")),
+      ),
     ],
     applicationDeadline: override?.applicationDeadline ?? "Contact Admissions",
     careers: override?.careers ?? LEVEL_CAREERS[programme.level],

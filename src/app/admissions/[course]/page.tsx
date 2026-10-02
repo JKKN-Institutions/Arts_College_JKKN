@@ -37,7 +37,11 @@ export const dynamicParams = false;
 
 // Proposed programmes kept out of Google until university approval (GL6-379, 2026-10-01). The TFD (AI)
 // admission page was the only TFD admission page Google had indexed, ahead of the approved course.
-const NOINDEX_SLUGS = new Set(["bsc-textile-fashion-designing-ai-self-finance"]);
+// VisCom (AI) added 2026-10-02 (GL6-380): Perplexity was citing it in place of the approved course.
+const NOINDEX_SLUGS = new Set([
+  "bsc-textile-fashion-designing-ai-self-finance",
+  "bsc-visual-communication-ai-self-finance",
+]);
 
 export async function generateStaticParams() {
   return getAllAdmissionSlugs().map((slug) => ({ course: slug }));
