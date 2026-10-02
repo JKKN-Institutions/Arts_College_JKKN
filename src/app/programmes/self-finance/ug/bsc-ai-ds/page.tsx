@@ -2,9 +2,10 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { BookOpen, Users, Award, Briefcase, Library, GraduationCap, Building2, Lightbulb, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, Code2, Database, Brain, Cpu, TrendingUp, Eye, MessageSquare, BarChart, Radio } from 'lucide-react';
+import { BookOpen, Users, Award, Briefcase, Library, GraduationCap, Building2, Lightbulb, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, Code2, Database, Brain, Cpu, TrendingUp, Eye, MessageSquare, BarChart, Radio, DollarSign } from 'lucide-react';
 import CountUp from '@/components/ui/CountUp';
 import Marquee from '@/components/ui/Marquee';
+import { bscAiDsFaqs } from './faqs';
 
 /* ─── Scroll-reveal hook ─── */
 function useScrollReveal() {
@@ -64,8 +65,9 @@ function SectionBadge({ text }: { text: string }) {
 export default function BScAIDSPage() {
   const [activeYear, setActiveYear] = useState(1);
   const [activeFAQ, setActiveFAQ] = useState(0);
+  const faqs = bscAiDsFaqs;
 
-  // Faculty data (placeholder)
+  // Department faculty, confirmed by the college 2026-10-02 (GL6-383). A member without a photo shows initials.
   const facultyMembers = [
     {
       name: "Mrs.S.Priyanga",
@@ -89,7 +91,7 @@ export default function BScAIDSPage() {
       name: "Ms.P.Subashini",
       designation: "Assistant Professor",
       education: "MCA ",
-      image: "/images/faculties/placeholder-avatar.jpg"
+      image: ""
     }
   ];
 
@@ -107,11 +109,14 @@ export default function BScAIDSPage() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Bachelor of Science in{' '}
                 <span className="text-brand-green">
-                  Artificial Intelligence & Data Science
+                  Computer Science (Artificial Intelligence and Data Science)
                 </span>
               </h1>
               <p className="text-xl md:text-2xl font-medium mb-6 text-gray-700">
-                Shape the Future with AI, Machine Learning & Data Analytics
+                B.Sc AI &amp; DS · a three-year Periyar University degree · Komarapalayam, Tamil Nadu
+              </p>
+              <p className="text-base text-gray-700 mb-6">
+                An arts and science B.Sc, not a B.Tech engineering degree.
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -148,8 +153,10 @@ export default function BScAIDSPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
-              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Cpu className="w-7 h-7" />, stat: 'GPU', title: 'High-Performance Labs', desc: 'NVIDIA RTX workstations' },
+              { icon: <DollarSign className="w-7 h-7" />, stat: '₹34,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
+              { icon: <Code2 className="w-7 h-7" />, stat: 'Python', title: 'From Year 1', desc: 'No prior coding needed' },
+              { icon: <Brain className="w-7 h-7" />, stat: 'AI + NLP', title: 'Core Subjects', desc: 'Foundation of AI, Data Science, NLP' },
+              { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited college' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">
@@ -179,14 +186,15 @@ export default function BScAIDSPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Bachelor of Science in Artificial Intelligence and Data Science is a cutting-edge three-year undergraduate programme designed to prepare Learners for the rapidly evolving AI and data-driven industry. This UGC-recognized programme combines rigorous theoretical foundations with extensive hands-on training in machine learning, deep learning, natural language processing, computer vision, big data analytics, and cloud computing technologies.
+                B.Sc Computer Science (Artificial Intelligence and Data Science), B.Sc AI &amp; DS for short, is a three-year arts and science degree. Year 1 covers programming, Data Structures and Python with mathematics electives; Year 2 adds Foundation of Artificial Intelligence, Fundamentals of Data Science, statistics, web designing and database programming; Year 3 covers database design, a Data Science Lab, Ethics of Artificial Intelligence, Natural Language Processing and Robotic Process Automation, with a project and a summer internship.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our industry-aligned curriculum emphasizes practical skill development through GPU-accelerated computing labs, real-world projects, and capstone implementations. Learners master Python, R, Java programming languages along with AI/ML frameworks like TensorFlow, PyTorch, and cloud platforms (AWS, Azure, GCP). Graduates emerge as industry-ready professionals capable of designing intelligent systems, building predictive models, and solving complex data challenges across healthcare, finance, e-commerce, and autonomous technologies.
+                JKKN College of Arts and Science is an autonomous college affiliated to Periyar University, on NH-544 at Komarapalayam in Namakkal district, Tamil Nadu, between Salem and Erode. B.Sc AI &amp; DS here is a self-finance programme with an annual management-quota fee of ₹34,000 for 2026-27. It is a B.Sc, not the four-year B.Tech AI &amp; DS that engineering colleges offer through TNEA. Comparing colleges? Read our{' '}
+                <a href="/bsc-ai-data-science-colleges-in-tamil-nadu" className="text-brand-green font-semibold underline">guide to B.Sc AI &amp; Data Science colleges in Tamil Nadu</a>.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Specialized AI/ML Learning Framework', 'GPU Computing Labs', 'Industry Capstone Projects', 'Cloud Platform Training'].map((item, idx) => (
+                {['A practical lab every semester', 'Data Science Lab and UiPath Automation Lab', 'Project with viva voce', 'Summer internship or industrial training'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -199,14 +207,11 @@ export default function BScAIDSPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="/images/programmes/computerscience/JKKN B.Sc Artificial Intelligence and Data Science.webp"
-                  alt="AI & Data Science Laboratory"
+                  alt="B.Sc Computer Science (AI and Data Science) at JKKN College of Arts and Science, Komarapalayam"
                   className="w-full h-auto"
                 width={2048}
                 height={2048}
               />
-                <span className="absolute top-4 right-4 bg-gradient-to-r from-brand-green to-emerald-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">
-                  Since 1952
-                </span>
               </div>
             </RevealSection>
           </div>
@@ -227,7 +232,7 @@ export default function BScAIDSPage() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  Requirements for joining the B.Sc AI & Data Science programme
+                  Requirements for joining B.Sc Computer Science (AI &amp; DS)
                 </p>
               </div>
             </RevealSection>
@@ -237,12 +242,12 @@ export default function BScAIDSPage() {
                 {
                   icon: <GraduationCap className="w-8 h-8 text-white" />,
                   title: 'Academic Qualification',
-                  items: ['Higher Secondary (10+2) from recognized board', 'Mathematics as a compulsory subject', 'Minimum 50% aggregate marks', '45% for reserved categories']
+                  items: ['Pass in the Higher Secondary (+2) examination', 'Confirm the required +2 subjects with the admissions office', 'Merit-based admission; reservation as per Tamil Nadu Government norms']
                 },
                 {
                   icon: <FileText className="w-8 h-8 text-white" />,
-                  title: 'Accepted Streams',
-                  items: ['Science stream (PCM) preferred', 'Computer Science background advantageous', 'Commerce with Mathematics', 'Strong mathematical aptitude required']
+                  title: 'Good to Know',
+                  items: ['No prior coding experience needed - Python is taught from Year 1', 'Mathematics electives are part of Year 1', 'Statistics is part of Year 2']
                 },
                 {
                   icon: <BookOpen className="w-8 h-8 text-white" />,
@@ -308,8 +313,8 @@ export default function BScAIDSPage() {
               </div>
             </RevealSection>
 
-            {activeYear === 1 && (
-              <div className="grid md:grid-cols-2 gap-6">
+            {/* All three years are rendered so crawlers see all six semesters; tabs only toggle visibility. */}
+            <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 1 ? '' : 'hidden'}`}>
                 {[
                   {
                     title: 'Learning Period I',
@@ -355,11 +360,9 @@ export default function BScAIDSPage() {
                     </GlassCard>
                   </RevealSection>
                 ))}
-              </div>
-            )}
+            </div>
 
-            {activeYear === 2 && (
-              <div className="grid md:grid-cols-2 gap-6">
+            <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 2 ? '' : 'hidden'}`}>
                 {[
                   {
                     title: 'Learning Period III',
@@ -408,11 +411,9 @@ export default function BScAIDSPage() {
                     </GlassCard>
                   </RevealSection>
                 ))}
-              </div>
-            )}
+            </div>
 
-            {activeYear === 3 && (
-              <div className="grid md:grid-cols-2 gap-6">
+            <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 3 ? '' : 'hidden'}`}>
                 {[
                   {
                     title: 'Learning Period V',
@@ -456,8 +457,7 @@ export default function BScAIDSPage() {
                     </GlassCard>
                   </RevealSection>
                 ))}
-              </div>
-            )}
+            </div>
           </div>
         </div>
       </section>
@@ -483,12 +483,12 @@ export default function BScAIDSPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { icon: <Code2 className="w-6 h-6 text-white" />, title: 'Programming Mastery', description: 'Achieve proficiency in Python, R, Java, and SQL with expertise in data structures, algorithms, and object-oriented programming principles for scalable AI solutions.' },
-                { icon: <TrendingUp className="w-6 h-6 text-white" />, title: 'Machine Learning Expertise', description: 'Design, implement, and optimize machine learning models using supervised, unsupervised, and reinforcement learning techniques with industry-standard frameworks like TensorFlow and PyTorch.' },
-                { icon: <Brain className="w-6 h-6 text-white" />, title: 'Deep Learning & Neural Networks', description: 'Build and train neural networks including CNNs, RNNs, Transformers, and GANs for computer vision, NLP, and generative AI applications with real-world deployment.' },
-                { icon: <BarChart className="w-6 h-6 text-white" />, title: 'Data Analytics Proficiency', description: 'Extract actionable insights from complex datasets using statistical analysis, data visualization tools like Tableau and Power BI, and data storytelling techniques.' },
-                { icon: <Radio className="w-6 h-6 text-white" />, title: 'Cloud & Big Data Technologies', description: 'Deploy and manage AI/ML solutions on cloud platforms (AWS, Azure, GCP) and process large-scale data using Hadoop, Spark, and distributed computing frameworks.' },
-                { icon: <Users className="w-6 h-6 text-white" />, title: 'Industry-Ready AI Skills', description: 'Work effectively in agile teams, communicate technical concepts to stakeholders, and deliver production-ready AI solutions following MLOps best practices and industry standards.' }
+                { icon: <Code2 className="w-6 h-6 text-white" />, title: 'Programming', description: 'Write programs in Python, work with data structures, and build web pages and PHP applications through the core and skill courses.' },
+                { icon: <Brain className="w-6 h-6 text-white" />, title: 'Artificial Intelligence', description: 'Understand AI concepts through Foundation of Artificial Intelligence (Year 2) and Ethics of Artificial Intelligence (Year 3).' },
+                { icon: <BarChart className="w-6 h-6 text-white" />, title: 'Data Science and Statistics', description: 'Work with data through Fundamentals of Data Science, statistical methods and the Data Science Lab.' },
+                { icon: <Database className="w-6 h-6 text-white" />, title: 'Databases', description: 'Design and query databases through the Database Programming Lab and Database Design and Management.' },
+                { icon: <MessageSquare className="w-6 h-6 text-white" />, title: 'Language and Automation', description: 'Study Natural Language Processing and Robotic Process Automation, with a UiPath automation lab, in the final year.' },
+                { icon: <Users className="w-6 h-6 text-white" />, title: 'Project and Internship', description: 'Complete a project with viva voce and a summer internship or industrial training.' }
               ].map((outcome, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <GlassCard className="relative p-6 group h-full">
@@ -526,7 +526,7 @@ export default function BScAIDSPage() {
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               {[
-                { icon: <TrendingUp className="w-6 h-6" />, title: 'Data Scientist', desc: 'Analyze complex data and build predictive models at tech giants' },
+                { icon: <TrendingUp className="w-6 h-6" />, title: 'Data Scientist', desc: 'Analyze data and build predictive models' },
                 { icon: <Brain className="w-6 h-6" />, title: 'Machine Learning Engineer', desc: 'Design and deploy machine learning systems at scale' },
                 { icon: <Code2 className="w-6 h-6" />, title: 'AI Developer', desc: 'Build intelligent applications using cutting-edge AI technologies' },
                 { icon: <BarChart className="w-6 h-6" />, title: 'Data Analyst', desc: 'Transform business data into actionable insights and strategies' },
@@ -572,38 +572,30 @@ export default function BScAIDSPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Infrastructure" />
+                <SectionBadge text="Practical Work" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Department{' '}
+                  Practical{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilities
+                    Labs
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  State-of-the-art infrastructure supporting cutting-edge AI education
+                  The core practical courses in the B.Sc Computer Science (AI &amp; DS) syllabus
                 </p>
               </div>
             </RevealSection>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'AI & ML Computing Lab', description: 'Equipped with GPU workstations featuring NVIDIA RTX GPUs, high-RAM systems, and cloud computing access for training deep learning models and neural networks.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=AI+Computing+Lab' },
-                { title: 'Data Analytics Center', description: 'Modern workstations with Tableau, Power BI, Apache Spark, and big data tools for real-time analytics, visualization projects, and business intelligence applications.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Analytics+Center' },
-                { title: 'Cloud Computing Lab', description: 'Access to AWS, Microsoft Azure, and Google Cloud Platform with credits for Learners to deploy and manage AI/ML applications in production cloud environments.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Cloud+Lab' },
-                { title: 'Innovation & Research Hub', description: 'Collaborative workspace for AI research projects, hackathons, and industry-sponsored challenges with mentorship from experts and research publication opportunities.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Hub' },
-                { title: 'IoT & Robotics Lab', description: 'Hands-on laboratory with sensors, microcontrollers, drones, and robotic kits for developing AI-powered IoT solutions and autonomous systems with practical integration.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=IoT+Lab' },
-                { title: 'Digital Learning Commons & Resources', description: 'Access to IEEE, ACM digital libraries, online courses (Coursera, edX), research papers, AI/ML documentation, and subscription to leading technical journals.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Library' }
+                { title: 'Computer Programming Lab', description: 'Core Practical I (24UADCP01), Semester I.' },
+                { title: 'Python Programming Lab', description: 'Core Practical II (24UADCP02), Semester II.' },
+                { title: 'Internet Programming Lab', description: 'Core Practical III (24UADCP03), Semester III.' },
+                { title: 'Database Programming Lab', description: 'Practical IV (24UADCP04), Semester IV, with a Statistical Practical.' },
+                { title: 'Data Science Lab', description: 'Core Practical (24UADCP05), Semester V.' },
+                { title: 'UiPath Automation Lab', description: 'Core Practical (24UADCP06), Semester VI, with Robotic Process Automation.' },
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
-                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
-                    <div className="relative h-48 overflow-hidden">
-                      <img
-                        src={facility.image}
-                        alt={facility.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-brand-green/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group h-full">
                     <div className="p-6">
                       <h3 className="text-lg font-bold text-brand-green mb-2">{facility.title}</h3>
                       <p className="text-gray-600 text-sm">{facility.description}</p>
@@ -640,16 +632,16 @@ export default function BScAIDSPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Our specialized programme focuses 70% on AI/ML technologies, providing industry-ready skills and hands-on experience with cutting-edge tools and frameworks.
+                Facts a family can check before choosing: fee, affiliation, what the syllabus covers, and how it differs from a B.Tech.
               </p>
 
               <div className="space-y-4">
                 {[
-                  { title: 'Specialized AI/ML Learning Framework', description: '70% focus on AI, machine learning, deep learning, and data science technologies with industry-aligned projects and practical implementations.' },
-                  { title: 'GPU-Accelerated Computing Labs', description: 'High-performance NVIDIA RTX GPU workstations for training deep neural networks, computer vision, and generative AI model development.' },
-                  { title: 'Cloud Platform Integration', description: 'Hands-on training and credits for AWS, Azure, and Google Cloud Platform with real-world cloud deployment and MLOps implementation.' },
-                  { title: 'Industry Partnerships & Placements', description: 'Tie-ups with 100+ companies including tech giants, AI startups, and research labs ensuring excellent placement opportunities with premium packages.' },
-                  { title: 'Capstone Projects & Research', description: 'Industry-sponsored capstone projects, research paper publications, hackathons, and AI competitions for portfolio building and practical experience.' }
+                  { title: 'Published Fee', description: '₹34,000 a year under the management quota for 2026-27; government quota seats follow Government norms.' },
+                  { title: 'Three Years, Not Four', description: 'A B.Sc in the arts and science stream, admitted on +2 marks - not the four-year B.Tech AI & DS admitted through TNEA.' },
+                  { title: 'AI and Data Science Core', description: 'Foundation of Artificial Intelligence, Fundamentals of Data Science, Ethics of AI, Natural Language Processing and Robotic Process Automation.' },
+                  { title: 'A Lab Every Semester', description: 'From the Computer Programming Lab in Semester I to the Data Science Lab and UiPath Automation Lab in the final year.' },
+                  { title: 'PG on the Same Campus', description: 'M.Sc Computer Science, M.Sc Computer Science (Data Analytics) and an aided MCA are offered at the college.' }
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:shadow-lg hover:-translate-y-0.5 transition-all">
                     <div className="w-11 h-11 bg-gradient-to-br from-brand-green to-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md shadow-brand-green/15">
@@ -690,12 +682,18 @@ export default function BScAIDSPage() {
               {facultyMembers.map((faculty, idx) => (
                 <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
                   <div className="relative h-56 overflow-hidden flex-shrink-0">
-                    <Image
-                      src={faculty.image || '/images/faculties/placeholder-avatar.jpg'}
-                      alt={faculty.name}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
+                    {faculty.image ? (
+                      <Image
+                        src={faculty.image}
+                        alt={faculty.name}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center bg-brand-green/10 text-brand-green text-4xl font-bold" aria-hidden="true">
+                        {faculty.name.replace(/^(Mrs?|Ms|Dr)\.\s*/, '').replace(/^[A-Z]\.\s*/, '').charAt(0)}
+                      </div>
+                    )}
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   <div className="p-5 text-center flex-1 flex flex-col justify-center">
@@ -724,21 +722,13 @@ export default function BScAIDSPage() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600">
-                  Find answers to common queries about the B.Sc AI & Data Science programme
+                  Common queries about B.Sc Computer Science (AI &amp; DS)
                 </p>
               </div>
             </RevealSection>
 
             <div className="space-y-4">
-              {[
-                { question: 'What is the duration and structure of the B.Sc AI & Data Science programme?', answer: 'The B.Sc Artificial Intelligence and Data Science programme is a 3-year full-time undergraduate degree comprising six semesters. Each year includes two semesters with a combination of core AI/ML subjects, programming labs, practical projects, and skill-based electives. The final semester includes an industry capstone project for real-world implementation experience.' },
-                { question: 'What are the higher education options after B.Sc AI & Data Science?', answer: 'After completing B.Sc AI & Data Science, Learners can pursue M.Sc in Data Science, M.Tech in AI/ML, MCA, M.Sc in Computer Science, or specialized programmes in Machine Learning and Deep Learning. Additional options include MBA in Business Analytics, integrated Ph.D programmes in Computer Science, or professional courses in cloud computing and cybersecurity. Many Learners also pursue international masters programmes at top universities.' },
-                { question: 'Do I need prior coding experience to join this programme?', answer: 'No prior coding experience is required. The programme starts with foundational programming courses in Python, teaching Learners from scratch. However, having studied Computer Science in 12th grade or having basic programming knowledge can be beneficial. The curriculum is designed to take Learners from beginner to advanced level in programming and AI/ML concepts through structured learning.' },
-                { question: 'What is the expected salary for B.Sc AI & Data Science graduates?', answer: 'Entry-level positions for B.Sc AI & Data Science graduates typically offer packages ranging from ₹4 to ₹8 lakhs per annum depending on skills and company. Positions at top tech companies, product startups, and data science roles often offer ₹6-12 lakhs for freshers. With experience and specialization, salaries can increase significantly, with senior AI/ML roles commanding ₹15-40 lakhs per annum. Graduates with strong portfolios and certifications often receive premium offers.' },
-                { question: 'What programming languages and tools will I learn?', answer: 'The programme covers Python (primary language), R for statistical computing, Java for enterprise applications, and SQL for databases. You\'ll learn AI/ML frameworks including TensorFlow, PyTorch, Scikit-learn, Keras, and OpenCV. Big data tools like Apache Spark, Hadoop, and visualization tools like Tableau and Power BI are also covered. Cloud platforms (AWS, Azure, GCP) and version control (Git) are integral parts of the curriculum.' },
-                { question: 'Are there internship and placement opportunities?', answer: 'Yes, the programme includes mandatory internship components where Learners work with IT companies, startups, and research organizations. Our dedicated placement cell has tie-ups with 100+ companies including TCS, Infosys, Wipro, Cognizant, Accenture, Tech Mahindra, HCL, and numerous AI startups. We also facilitate participation in campus recruitment drives, hackathons, and industry networking events to maximize placement opportunities.' },
-                { question: 'What makes B.Sc AI & Data Science different from B.Sc Computer Science?', answer: 'While B.Sc Computer Science provides broad computing knowledge, B.Sc AI & Data Science is specifically designed for the AI and data science domain. Our curriculum has 70% focus on AI/ML, deep learning, data analytics, and related technologies. You\'ll work extensively with neural networks, NLP, computer vision, and big data tools that are not typically covered in depth in general CS programmes. The programme prepares you specifically for the booming AI industry with specialized skills and projects.' }
-              ].map((faq, idx) => (
+              {faqs.map((faq, idx) => (
                 <RevealSection key={idx} delay={idx * 60}>
                   <div className="bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:border-brand-green/20 transition-all overflow-hidden">
                     <button
@@ -775,7 +765,7 @@ export default function BScAIDSPage() {
                 </span>
               </h2>
               <p className="text-lg mb-8 text-gray-600">
-                Join our B.Sc AI & Data Science programme and become part of the AI revolution transforming industries worldwide.
+                B.Sc Computer Science (AI &amp; DS) admission for 2026-27 is open now.
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -787,6 +777,13 @@ export default function BScAIDSPage() {
                   Download Brochure
                 </a>
               </div>
+              <p className="text-gray-600">
+                <a href="/admissions/bsc-ai-ds-self-finance" className="text-brand-green underline">B.Sc AI &amp; DS admission 2026-27</a>
+                {' · '}
+                <a href="/fee-structure" className="text-brand-green underline">Fee structure</a>
+                {' · '}
+                <a href="/bsc-ai-data-science-colleges-in-tamil-nadu" className="text-brand-green underline">B.Sc AI &amp; Data Science colleges in Tamil Nadu</a>
+              </p>
             </div>
           </RevealSection>
         </div>

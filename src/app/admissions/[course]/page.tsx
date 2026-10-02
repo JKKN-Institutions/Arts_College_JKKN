@@ -41,6 +41,8 @@ export const dynamicParams = false;
 const NOINDEX_SLUGS = new Set([
   "bsc-textile-fashion-designing-ai-self-finance",
   "bsc-visual-communication-ai-self-finance",
+  // B.Com (AI) added 2026-10-02 (GL6-383).
+  "bcom-ai-self-finance",
 ]);
 
 export async function generateStaticParams() {
