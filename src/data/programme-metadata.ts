@@ -453,11 +453,11 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     level: "UG",
     category: "Self-Finance",
     description:
-      "Study B.Sc. Microbiology at JKKN College of Arts and Science (Autonomous). 3-year programme with lab facilities and research opportunities near Erode, Tamil Nadu.",
+      "B.Sc Microbiology, a three-year arts and science degree at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Periyar University. +2 with any one of Botany, Zoology or Biology; Rs 34,000 a year (MQ, 2026-27).",
     keywords: [
       "BSc Microbiology",
-      "BSc Microbiology college near Erode",
-      "microbiology degree Tamil Nadu",
+      "BSc Microbiology colleges in Tamil Nadu",
+      "microbiology colleges in Tamil Nadu",
     ],
     slug: "bsc-microbiology-self-finance",
   },
