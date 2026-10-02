@@ -536,11 +536,12 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     level: "UG",
     category: "Self-Finance",
     description:
-      "Study B.Sc. Visual Communication at JKKN College of Arts and Science (Autonomous). Creative media programme with industry projects near Erode, Tamil Nadu.",
+      "B.Sc Visual Communication (B.Sc Viscom), a three-year degree at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Periyar University. Any +2 group eligible; Rs 32,000 a year (MQ, 2026-27).",
     keywords: [
       "BSc Visual Communication",
-      "visual communication college near Erode",
-      "media studies Tamil Nadu",
+      "BSc Viscom",
+      "viscom colleges in Tamil Nadu",
+      "visual communication colleges in Tamil Nadu",
     ],
     slug: "bsc-visual-communication-self-finance",
   },

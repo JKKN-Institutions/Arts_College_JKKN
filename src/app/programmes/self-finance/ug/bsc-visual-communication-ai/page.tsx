@@ -73,7 +73,9 @@ export default function BScVisualCommunicationAIPage() {
             <span className="font-semibold">Proposed Programme:</span>{' '}
             This programme is currently awaiting official approval from the affiliating university. Admissions will open once approval is received. You are welcome to{' '}
             <a href="/contact" className="underline font-semibold hover:text-amber-950">register your interest</a>{' '}
-            and we will keep you informed.
+            and we will keep you informed. The approved{' '}
+            <a href="/programmes/self-finance/ug/bsc-visual-communication" className="underline font-semibold hover:text-amber-950">B.Sc Visual Communication</a>{' '}
+            is open for 2026-27 admission.
           </p>
         </div>
       </div>

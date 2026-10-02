@@ -20,6 +20,11 @@ export interface AdmissionOverride {
   highlights?: string[];
   importantDates?: { label: string; date: string }[];
   scholarshipNote?: string;
+  /**
+   * Drop the level-default "What is the eligibility for this UG programme?" FAQ, whose 50% / 45% / 40%
+   * figures have no source. Set only where eligibilityCriteria above carries the regulation (GL6-380).
+   */
+  dropDefaultEligibilityFaq?: boolean;
 }
 
 export const admissionOverrides: Record<string, AdmissionOverride> = {
@@ -328,6 +333,59 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
     ],
   },
 
+  // Eligibility from the Periyar University B.Sc Visual Communication regulations, effective 2021-22
+  // (periyaruniversity.ac.in/Documents/2021/syllabus/2021/Affiliated/ug1/B.Sc. Visual Communication.pdf),
+  // clause 1: a pass in Higher Secondary or an equivalent (10+2 or 10+3 year Diploma); no percentage. GL6-380.
+  "self-finance/ug/bsc-visual-communication": {
+    dropDefaultEligibilityFaq: true,
+    eligibilityCriteria: [
+      "Pass in the Higher Secondary (+2) examination or an equivalent examination",
+      "Or a 10+3 year Diploma (Periyar University regulations)",
+      "No minimum percentage and no particular +2 subject in the regulation",
+      "Merit-based admission; community reservation as per Tamil Nadu Government norms",
+    ],
+    recommendedBackground: [
+      "Science, Commerce, Arts and vocational groups are all eligible",
+      "No portfolio or entrance test",
+      "Interest in drawing, photography, video and design - every year has practicals",
+      "This is a 3-year B.Sc in the arts and science stream",
+    ],
+    highlights: [
+      "Affiliated to Periyar University, Salem",
+      "NAAC-accredited autonomous institution",
+      "Photography studio and editing lab for the practical courses",
+      "Internship in Semester V and a capstone project in Semester VI",
+    ],
+    curriculumHighlights: [
+      "Year 1: Graphic Design; Digital Drawing; Storytelling and Script Writing; Photography and Videography; Image Editing",
+      "Year 2: Audio and Visual Editing; 2D and 3D Modelling; Film Appreciation; Animation and Character Design; Visual Effects",
+      "Year 3: Advertising and Brand Communication; User Experience Design; 3D Environment Design; Immersive Media",
+      "Short film making and an internship in Semester V",
+      "Extended Reality Design and a capstone project in Semester VI",
+      "A practical course in every semester",
+    ],
+    careers: [
+      "Graphic Designer",
+      "Video Editor",
+      "Photographer",
+      "Animator / Motion Graphics Artist",
+      "UI / UX Designer (entry-level)",
+      "Higher studies: M.Sc Visual Communication, M.A. Mass Communication, MBA",
+    ],
+    faq: [
+      {
+        question: "Is there a minimum percentage for B.Sc Visual Communication?",
+        answer:
+          "The Periyar University regulation asks for a pass in +2 or an equivalent, or a 10+3 year Diploma, and sets no minimum percentage.",
+      },
+      {
+        question: "What is the B.Sc Visual Communication fee for 2026-27?",
+        answer:
+          "Rs 32,000 a year under the management quota. Government quota seats follow Government norms.",
+      },
+    ],
+  },
+
   "self-finance/ug/bsc-visual-communication-ai": {
     applicationDeadline: "Subject to University Approval",
     importantDates: [
@@ -339,7 +397,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       {
         question: "Is B.Sc. Visual Communication (AI) approved?",
         answer:
-          "This is a proposed programme currently awaiting official approval from the affiliating university. Admissions will open once approval is received. Register your interest via the Contact page and we will keep you informed.",
+          "This is a proposed programme currently awaiting official approval from the affiliating university. Admissions will open once approval is received. Register your interest via the Contact page and we will keep you informed. The approved B.Sc Visual Communication (without AI) is open for 2026-27 admission.",
       },
     ],
   },

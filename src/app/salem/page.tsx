@@ -550,6 +550,7 @@ export default function SalemPage() {
                     { name: "B.Sc Textile & Fashion Design", href: "/programmes/self-finance/ug/bsc-textile-fashion-designing" },
                     { name: "B.Sc Fashion Designing colleges in Tamil Nadu (guide)", href: "/bsc-fashion-designing-colleges-in-tamil-nadu" },
                     { name: "B.Sc Visual Communication", href: "/programmes/self-finance/ug/bsc-visual-communication" },
+                    { name: "B.Sc Visual Communication colleges in Tamil Nadu (guide)", href: "/bsc-visual-communication-colleges-in-tamil-nadu" },
                   ].map((p) => (
                     <li key={p.href}>
                       <Link href={p.href} className="text-sm text-gray-600 hover:text-[#006837] flex items-center gap-1.5 transition-colors">
