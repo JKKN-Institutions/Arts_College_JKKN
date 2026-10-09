@@ -396,19 +396,19 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     proposed: true,
   },
   "self-finance/ug/bsc-ai-ds": {
-    name: "B.Sc. AI & Data Science",
-    fullName: "Bachelor of Science in Artificial Intelligence and Data Science",
+    name: "B.Sc. CS (AI & Data Science)",
+    fullName: "Bachelor of Science in Computer Science (Artificial Intelligence and Data Science)",
     degree: "B.Sc.",
     duration: "3 Years",
     level: "UG",
     category: "Self-Finance",
     description:
-      "Study B.Sc. AI & Data Science at JKKN College of Arts and Science (Autonomous). Future-ready programme in artificial intelligence and data analytics near Erode.",
+      "B.Sc Computer Science (AI & DS), a three-year arts and science degree at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Periyar University. Rs 34,000 a year (MQ, 2026-27).",
     keywords: [
       "BSc AI Data Science",
-      "BSc AIDS college near Erode",
-      "artificial intelligence degree Tamil Nadu",
-      "data science Namakkal",
+      "BSc Computer Science AI and DS",
+      "BSc AI DS colleges in Tamil Nadu",
+      "artificial intelligence course arts and science college",
     ],
     slug: "bsc-ai-ds-self-finance",
   },
@@ -420,7 +420,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     level: "UG",
     category: "Self-Finance",
     description:
-      "Study B.Sc. Computer Science at JKKN College of Arts and Science (Autonomous). 3-year programme with modern labs and strong IT placements near Erode, Tamil Nadu.",
+      "B.Sc Computer Science (Self-Finance) at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Affiliated to Periyar University. 3 years, 6 semesters. Eligibility: +2 with Maths, Business Maths, Computer Science or Statistics.",
     keywords: [
       "BSc Computer Science",
       "BSc CS college near Erode",
@@ -437,7 +437,7 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     level: "UG",
     category: "Self-Finance",
     description:
-      "Study B.Sc. Computer Science with Cyber Security at JKKN College of Arts and Science (Autonomous). Specialised programme in cybersecurity near Erode, Tamil Nadu.",
+      "B.Sc Computer Science (Cyber Security), Self-Finance, at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Affiliated to Periyar University. 3 years. Maths not compulsory: +2 with Maths, Business Maths, Computer Science or Statistics.",
     keywords: [
       "BSc Cyber Security",
       "cyber security degree near Erode",
@@ -453,11 +453,11 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     level: "UG",
     category: "Self-Finance",
     description:
-      "Study B.Sc. Microbiology at JKKN College of Arts and Science (Autonomous). 3-year programme with lab facilities and research opportunities near Erode, Tamil Nadu.",
+      "B.Sc Microbiology, a three-year arts and science degree at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Periyar University. +2 with any one of Botany, Zoology or Biology; Rs 34,000 a year (MQ, 2026-27).",
     keywords: [
       "BSc Microbiology",
-      "BSc Microbiology college near Erode",
-      "microbiology degree Tamil Nadu",
+      "BSc Microbiology colleges in Tamil Nadu",
+      "microbiology colleges in Tamil Nadu",
     ],
     slug: "bsc-microbiology-self-finance",
   },
@@ -501,11 +501,12 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     level: "UG",
     category: "Self-Finance",
     description:
-      "Study B.Sc. Textile & Fashion Designing at JKKN College of Arts and Science (Autonomous). Creative programme with industry exposure near Erode, Tamil Nadu.",
+      "B.Sc Textile and Fashion Designing (B.Sc TFD), a three-year fashion design degree at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Periyar University. Any +2 group eligible; Rs 32,000 a year (MQ, 2026-27).",
     keywords: [
       "BSc Textile Fashion Designing",
-      "fashion design college near Erode",
-      "textile design degree Tamil Nadu",
+      "BSc Fashion Designing",
+      "fashion designing colleges in Tamil Nadu",
+      "BSc TFD full form",
     ],
     slug: "bsc-textile-fashion-designing-self-finance",
   },
@@ -535,11 +536,12 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     level: "UG",
     category: "Self-Finance",
     description:
-      "Study B.Sc. Visual Communication at JKKN College of Arts and Science (Autonomous). Creative media programme with industry projects near Erode, Tamil Nadu.",
+      "B.Sc Visual Communication (B.Sc Viscom), a three-year degree at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Periyar University. Any +2 group eligible; Rs 32,000 a year (MQ, 2026-27).",
     keywords: [
       "BSc Visual Communication",
-      "visual communication college near Erode",
-      "media studies Tamil Nadu",
+      "BSc Viscom",
+      "viscom colleges in Tamil Nadu",
+      "visual communication colleges in Tamil Nadu",
     ],
     slug: "bsc-visual-communication-self-finance",
   },

@@ -481,13 +481,19 @@ export default function NamakkalPage() {
                     { name: "B.Com (Banking & Insurance)", href: "/programmes/self-finance/ug/bcom-banking-insurance" },
                     { name: "B.Com (CA)", href: "/programmes/self-finance/ug/bcom-ca" },
                     { name: "B.Sc (AI & Data Science)", href: "/programmes/self-finance/ug/bsc-ai-ds" },
+                    { name: "B.Sc AI & Data Science colleges in Tamil Nadu (guide)", href: "/bsc-ai-data-science-colleges-in-tamil-nadu" },
                     { name: "B.Sc Computer Science", href: "/programmes/self-finance/ug/bsc-computer-science" },
+                    { name: "B.Sc Computer Science colleges in Tamil Nadu (guide)", href: "/bsc-computer-science-colleges-in-tamil-nadu" },
                     { name: "B.Sc (Cyber Security)", href: "/programmes/self-finance/ug/bsc-cs-cyber-security" },
+                    { name: "B.Sc Cyber Security colleges in Tamil Nadu (guide)", href: "/bsc-cyber-security-colleges-in-tamil-nadu" },
                     { name: "B.Sc Microbiology", href: "/programmes/self-finance/ug/bsc-microbiology" },
+                    { name: "B.Sc Microbiology colleges in Tamil Nadu (guide)", href: "/bsc-microbiology-colleges-in-tamil-nadu" },
                     { name: "B.Sc Physics", href: "/programmes/self-finance/ug/bsc-physics" },
                     { name: "B.Sc Physics colleges in Tamil Nadu (guide)", href: "/bsc-physics-colleges-in-tamil-nadu" },
                     { name: "B.Sc Textile & Fashion Design", href: "/programmes/self-finance/ug/bsc-textile-fashion-designing" },
+                    { name: "B.Sc Fashion Designing colleges in Tamil Nadu (guide)", href: "/bsc-fashion-designing-colleges-in-tamil-nadu" },
                     { name: "B.Sc Visual Communication", href: "/programmes/self-finance/ug/bsc-visual-communication" },
+                    { name: "B.Sc Visual Communication colleges in Tamil Nadu (guide)", href: "/bsc-visual-communication-colleges-in-tamil-nadu" },
                   ].map((p) => (
                     <li key={p.href}>
                       <Link href={p.href} className="text-sm text-gray-600 hover:text-[#006837] flex items-center gap-1.5 transition-colors">

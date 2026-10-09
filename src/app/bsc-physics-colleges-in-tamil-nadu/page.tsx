@@ -270,7 +270,8 @@ export default function BscPhysicsCollegesTamilNaduPage() {
         </section>
 
         <p className="text-sm text-gray-600">
-          Lists change every year. Confirm seats and fees with each college before applying. Rankings: nirfindia.org, NIRF 2025. College lists: collegedunia.com, read 30 September 2026.
+          Lists change every year. Confirm seats and fees with each college before applying. Rankings: nirfindia.org, NIRF 2025. College lists: collegedunia.com, read 30 September 2026. See also our{" "}
+          <Link href="/bsc-computer-science-colleges-in-tamil-nadu" className="text-brand-green underline">guide to B.Sc Computer Science colleges in Tamil Nadu</Link>.
         </p>
       </div>
     </main>

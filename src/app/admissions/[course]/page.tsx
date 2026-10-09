@@ -35,6 +35,16 @@ import { ContactAdmissions } from "@/components/admissions/ContactAdmissions";
 
 export const dynamicParams = false;
 
+// Proposed programmes kept out of Google until university approval (GL6-379, 2026-10-01). The TFD (AI)
+// admission page was the only TFD admission page Google had indexed, ahead of the approved course.
+// VisCom (AI) added 2026-10-02 (GL6-380): Perplexity was citing it in place of the approved course.
+const NOINDEX_SLUGS = new Set([
+  "bsc-textile-fashion-designing-ai-self-finance",
+  "bsc-visual-communication-ai-self-finance",
+  // B.Com (AI) added 2026-10-02 (GL6-383).
+  "bcom-ai-self-finance",
+]);
+
 export async function generateStaticParams() {
   return getAllAdmissionSlugs().map((slug) => ({ course: slug }));
 }
@@ -76,6 +86,7 @@ export async function generateMetadata({
       "JKKN admission Tamil Nadu",
     ],
     alternates: { canonical: url },
+    ...(NOINDEX_SLUGS.has(info.slug) ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
       title,
       description,
@@ -203,6 +214,18 @@ export default async function CourseAdmissionPage({
                 </div>
               ))}
             </div>
+
+            {/* Every admission page links its programme page. Until 2026-10-01 none did, and
+                several programme pages (B.Sc Computer Science among them) were never discovered
+                by Google because no indexed page linked them. */}
+            <p className="text-center mt-8">
+              <a
+                href={`/programmes/${path}`}
+                className="inline-flex items-center gap-2 text-[#0b6d41] font-semibold underline"
+              >
+                Full {info.name} programme details: syllabus, labs and faculty
+              </a>
+            </p>
           </div>
         </section>
 

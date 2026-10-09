@@ -2,8 +2,9 @@
 
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { BookOpen, Users, Award, Briefcase, GraduationCap, CheckCircle2, Clock, FileText, ChevronDown, ArrowRight, Sparkles, Camera, Video, Palette, Film, Monitor, Globe } from 'lucide-react';
+import { BookOpen, Users, Award, Briefcase, GraduationCap, CheckCircle2, Clock, FileText, ChevronDown, ArrowRight, Sparkles, Camera, Video, Palette, Film, Monitor, Globe, DollarSign } from 'lucide-react';
 import CountUp from '@/components/ui/CountUp';
+import { bscViscomFaqs } from './faqs';
 
 /* ─── Scroll-reveal hook ─── */
 function useScrollReveal() {
@@ -63,6 +64,7 @@ function SectionBadge({ text }: { text: string }) {
 export default function BScVisualCommunicationPage() {
   const [activeYear, setActiveYear] = useState(1);
   const [activeFAQ, setActiveFAQ] = useState(0);
+  const faqs = bscViscomFaqs;
 
   return (
     <div className="min-h-screen bg-white">
@@ -82,7 +84,10 @@ export default function BScVisualCommunicationPage() {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl font-medium mb-6 text-gray-700">
-                Transform Ideas into Compelling Visual Stories
+                B.Sc Viscom · a three-year Periyar University degree · Komarapalayam, Tamil Nadu
+              </p>
+              <p className="text-base text-gray-700 mb-6">
+                Viscom full form: Visual Communication. Open to +2 students from any group.
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -119,8 +124,10 @@ export default function BScVisualCommunicationPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
-              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
-              { icon: <Users className="w-7 h-7" />, stat: '15:1', title: 'Learners per Senior Learner', desc: 'Personalized attention' },
+              { icon: <DollarSign className="w-7 h-7" />, stat: '₹32,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
+              { icon: <BookOpen className="w-7 h-7" />, stat: 'Any +2', title: 'Group Eligible', desc: 'Science, Commerce, Arts or vocational' },
+              { icon: <Camera className="w-7 h-7" />, stat: 'Studio', title: 'Photography & Editing', desc: 'Practicals in every year' },
+              { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited college' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">
@@ -150,14 +157,15 @@ export default function BScVisualCommunicationPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Bachelor of Science in Visual Communication is a dynamic three-year undergraduate programme designed to nurture creative professionals who can effectively communicate ideas through visual media. This UGC-recognized programme offers comprehensive training in graphic design, photography, videography, animation, advertising, and digital media production, preparing graduates for exciting careers in the rapidly evolving creative industry.
+                B.Sc Visual Communication (B.Sc Viscom) is a three-year degree in graphic design, photography and videography, editing, animation, advertising and film. Year 1 covers communication, graphic design, digital drawing, storytelling, photography and image editing; Year 2 adds audio and visual editing, 2D and 3D modelling, animation and visual effects; Year 3 covers advertising and brand communication, user experience design, immersive and extended reality media, short film making, an internship and a capstone project.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Our progressive education philosophy emphasizes experiential learning through hands-on studio practice, industry projects, and creative collaboration. The curriculum integrates traditional design principles with cutting-edge digital technologies, equipping learners with both artistic sensibility and technical proficiency demanded by advertising agencies, media houses, film production companies, and digital marketing firms.
+                JKKN College of Arts and Science is an autonomous college affiliated to Periyar University, on NH-544 at Komarapalayam in Namakkal district, Tamil Nadu, between Salem and Erode. B.Sc Visual Communication here is a self-finance programme with an annual management-quota fee of ₹32,000 for 2026-27. Comparing Viscom colleges across the state? Read our{' '}
+                <a href="/bsc-visual-communication-colleges-in-tamil-nadu" className="text-brand-green font-semibold underline">guide to B.Sc Visual Communication colleges in Tamil Nadu</a>.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['Industry-Aligned Learning Framework', 'Expert Senior Learners', 'Professional Studio Training', 'Industry Internship Programme'].map((item, idx) => (
+                {['Practicals in every year', 'Internship in Semester V', 'Short film and capstone project', 'Photography studio and editing lab'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>
@@ -170,7 +178,7 @@ export default function BScVisualCommunicationPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="/images/programmes/visual/JKKN B.Sc Visual Communication.webp"
-                  alt="Visual Communication Studio"
+                  alt="B.Sc Visual Communication at JKKN College of Arts and Science, Komarapalayam"
                   className="w-full h-auto"
                 width={2048}
                 height={2048}
@@ -198,7 +206,8 @@ export default function BScVisualCommunicationPage() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  Requirements for joining the B.Sc Visual Communication programme
+                  Requirements for joining B.Sc Visual Communication, as set by the{' '}
+                  <a href="https://www.periyaruniversity.ac.in/Documents/2021/syllabus/2021/Affiliated/ug1/B.Sc.%20Visual%20Communication.pdf" target="_blank" rel="noopener noreferrer" className="text-brand-green underline">Periyar University regulations</a>
                 </p>
               </div>
             </RevealSection>
@@ -208,12 +217,12 @@ export default function BScVisualCommunicationPage() {
                 {
                   icon: <GraduationCap className="w-8 h-8 text-white" />,
                   title: 'Academic Qualification',
-                  items: ['Higher Secondary (10+2) from recognized board', 'Any stream (Arts/Science/Commerce)', 'Minimum 50% aggregate marks', '45% for reserved categories']
+                  items: ['Pass in the Higher Secondary (+2) examination or an equivalent', 'Or a 10+3 year Diploma', 'No minimum percentage in the regulation', 'Merit-based admission; reservation as per Tamil Nadu Government norms']
                 },
                 {
                   icon: <FileText className="w-8 h-8 text-white" />,
                   title: 'Accepted Streams',
-                  items: ['Arts stream with any combination', 'Commerce stream students']
+                  items: ['Science, Commerce, Arts and vocational groups are all eligible', 'No particular +2 subject is required', 'No portfolio or entrance test']
                 },
                 {
                   icon: <BookOpen className="w-8 h-8 text-white" />,
@@ -279,8 +288,8 @@ export default function BScVisualCommunicationPage() {
               </div>
             </RevealSection>
 
-            {activeYear === 1 && (
-              <div className="grid md:grid-cols-2 gap-6">
+            {/* All three years are rendered so crawlers see all six semesters; tabs only toggle visibility. */}
+            <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 1 ? '' : 'hidden'}`}>
                 {[
                   {
                     title: 'Learning Period I',
@@ -321,11 +330,9 @@ export default function BScVisualCommunicationPage() {
                     </GlassCard>
                   </RevealSection>
                 ))}
-              </div>
-            )}
+            </div>
 
-            {activeYear === 2 && (
-              <div className="grid md:grid-cols-2 gap-6">
+            <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 2 ? '' : 'hidden'}`}>
                 {[
                   {
                     title: 'Learning Period III',
@@ -368,11 +375,9 @@ export default function BScVisualCommunicationPage() {
                     </GlassCard>
                   </RevealSection>
                 ))}
-              </div>
-            )}
+            </div>
 
-            {activeYear === 3 && (
-              <div className="grid md:grid-cols-2 gap-6">
+            <div className={`grid md:grid-cols-2 gap-6 ${activeYear === 3 ? '' : 'hidden'}`}>
                 {[
                   {
                     title: 'Learning Period V',
@@ -416,8 +421,7 @@ export default function BScVisualCommunicationPage() {
                     </GlassCard>
                   </RevealSection>
                 ))}
-              </div>
-            )}
+            </div>
           </div>
         </div>
       </section>
@@ -444,7 +448,7 @@ export default function BScVisualCommunicationPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { icon: <Palette className="w-6 h-6 text-white" />, title: 'Design Thinking', description: 'Master systematic approaches to creative problem-solving, concept development, and visual research for effective communication solutions.' },
-                { icon: <Monitor className="w-6 h-6 text-white" />, title: 'Technical Proficiency', description: 'Develop comprehensive expertise in industry-standard software including Adobe Creative Suite and digital media tools.' },
+                { icon: <Monitor className="w-6 h-6 text-white" />, title: 'Digital Media Skills', description: 'Work on image editing, publication design, audio and visual editing, 2D and 3D modelling, and compositing and visual effects through the practical courses.' },
                 { icon: <Camera className="w-6 h-6 text-white" />, title: 'Visual Storytelling', description: 'Acquire expertise in crafting compelling narratives through photography, videography, and multimedia content creation.' },
                 { icon: <Video className="w-6 h-6 text-white" />, title: 'Brand Communication', description: 'Understand brand identity development, corporate communication strategies, and creating cohesive visual systems.' },
                 { icon: <Film className="w-6 h-6 text-white" />, title: 'Media Production', description: 'Apply modern production techniques for video, animation, motion graphics, and interactive media creation.' },
@@ -533,35 +537,30 @@ export default function BScVisualCommunicationPage() {
           <div className="max-w-6xl mx-auto">
             <RevealSection>
               <div className="text-center mb-12">
-                <SectionBadge text="Infrastructure" />
+                <SectionBadge text="Practical Work" />
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  Learning{' '}
+                  Studio and{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-emerald-500">
-                    Facilities
+                    Practicals
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  State-of-the-art infrastructure to support your creative journey
+                  The department has a photography studio and an editing lab. These are the practical courses in the syllabus.
                 </p>
               </div>
             </RevealSection>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Digital Design Studio', description: 'Fully equipped computer lab with high-performance workstations running Adobe Creative Suite, Autodesk, and other industry-standard software.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Design+Studio' },
-                { title: 'Photography Studio', description: 'Professional photography setup with DSLR cameras, studio lighting equipment, backdrops, and post-processing facilities for commercial shoots.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Photo+Studio' },
-                { title: 'Video Production Lab', description: 'Equipped with professional cameras, green screen facilities, audio recording equipment, and non-linear editing suites for film production.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Video+Lab' },
+                { title: 'Graphic Design & Aesthetics', description: 'Practical (24UVCDEP01), Semester I, with Digital Drawing and Painting.' },
+                { title: 'Photography & Videography', description: 'Practical (24UVCCP04), Semester II, with Image Editing and Colour Management.' },
+                { title: 'Audio & Visual Editing', description: 'Practical (24UVCCP06), Semester III, with 2D & 3D Modelling.' },
+                { title: 'Animation and Character Design', description: 'Practical (24UVCCP08), Semester IV, with Compositing and Visual Effects.' },
+                { title: 'Short Film Making and Internship', description: 'Semester V (24UVCDEP09, 24UVCSI01), with 3D Environment Design.' },
+                { title: 'Extended Reality Design and Capstone Project', description: 'Semester VI (24UVCCP15, 24UVCDEP08).' },
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
-                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
-                    <div className="relative h-48 overflow-hidden">
-                      <img
-                        src={facility.image}
-                        alt={facility.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-brand-green/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group h-full">
                     <div className="p-6">
                       <h3 className="text-lg font-bold text-brand-green mb-2">{facility.title}</h3>
                       <p className="text-gray-600 text-sm">{facility.description}</p>
@@ -598,16 +597,16 @@ export default function BScVisualCommunicationPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Our progressive education approach ensures holistic development, preparing you for success in the creative industry.
+                Facts a family can check before choosing: fee, eligibility, affiliation and what the syllabus covers.
               </p>
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
-                  { title: 'Expert Senior Learners', description: 'Highly qualified faculty with industry experience in advertising, film production, and digital media.' },
-                  { title: 'Strong Placement Support', description: 'Dedicated placement cell with industry partnerships ensuring excellent career opportunities.' },
-                  { title: 'Industry-Aligned Learning Framework', description: 'Regularly updated learning pathway incorporating current industry trends and creative skill requirements.' },
-                  { title: 'Professional Studio Training', description: 'Hands-on experience with professional equipment in photography, video production, and design studios.' }
+                  { title: 'Published Fee', description: '₹32,000 a year under the management quota for 2026-27; government quota seats follow Government norms.' },
+                  { title: 'Any +2 Group Can Join', description: 'The Periyar University regulation asks for a pass in +2 or a 10+3 year Diploma, with no minimum percentage and no subject rule.' },
+                  { title: 'Practicals Every Year', description: 'Photography and videography, editing, animation, visual effects, short film making and extended reality design, each as a practical course.' },
+                  { title: 'Internship and Capstone', description: 'An internship in Semester V and a capstone project in Semester VI.' },
+                  { title: 'Autonomous, Periyar University Degree', description: 'The college sets its own syllabus and examinations; the degree is awarded by Periyar University, Salem. NAAC accredited.' }
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:shadow-lg hover:-translate-y-0.5 transition-all">
                     <div className="w-11 h-11 bg-gradient-to-br from-brand-green to-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md shadow-brand-green/15">
@@ -684,22 +683,13 @@ export default function BScVisualCommunicationPage() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600">
-                  Find answers to common queries about the B.Sc Visual Communication programme
+                  Common queries about B.Sc Visual Communication (B.Sc Viscom)
                 </p>
               </div>
             </RevealSection>
 
             <div className="space-y-4">
-              {[
-                { question: 'What is the duration of the B.Sc Visual Communication programme?', answer: 'The B.Sc Visual Communication programme is a 3-year full-time undergraduate degree comprising six semesters. Each academic year consists of two semesters, with examinations conducted at the end of each semester. The programme includes theoretical courses, practical studio sessions, and hands-on projects.' },
-                { question: 'What are the career opportunities after B.Sc Visual Communication?', answer: 'B.Sc Visual Communication graduates have diverse career opportunities including Graphic Designer, Video Editor, UI/UX Designer, Photographer, Motion Graphics Artist, Digital Marketer, Art Director, Web Designer, and Animator. Opportunities exist in advertising agencies, film & television, digital marketing firms, animation studios, and as freelance creatives.' },
-                { question: 'What is the eligibility criteria for admission?', answer: 'Candidates must have completed Higher Secondary (10+2) from a recognized board from any stream (Arts, Science, or Commerce). A minimum aggregate of 50% marks is required for general category candidates, while 45% is required for reserved categories (SC/ST/OBC). No portfolio or entrance test is required for admission.' },
-                { question: 'What software and tools will I learn?', answer: 'The programme provides comprehensive training in industry-standard software including Adobe Creative Suite (Photoshop, Illustrator, InDesign, Premiere Pro, After Effects), 3D software (Maya, Blender), web design tools (Figma, Adobe XD), and video editing platforms. You\'ll also learn photography techniques using professional DSLR cameras and studio equipment.' },
-                { question: 'Can I pursue higher studies after B.Sc Visual Communication?', answer: 'Yes, B.Sc Visual Communication opens multiple pathways for higher education including M.Sc in Visual Communication, M.A. in Mass Communication, M.Des in Graphic Design, MBA in Marketing/Media Management, or specialized programmes in Animation, Film Studies, or Digital Media. Professional certifications in UI/UX Design, Motion Graphics, or Digital Marketing are also valuable additions.' },
-                { question: 'Does the college provide placement assistance?', answer: 'Yes, our dedicated Placement Cell actively supports learners through campus recruitment drives, portfolio development workshops, mock interviews, and industry interaction sessions. We have partnerships with leading companies in advertising, media, publishing, IT, and creative sectors. For 2023-24 the college reported 135 of 373 UG graduates placed across all programmes (NIRF 2025); it does not publish a separate B.Sc Visual Communication graduates rate.' },
-                { question: 'What makes this programme unique?', answer: 'Our B.Sc Visual Communication programme stands out due to its industry-aligned curriculum developed in consultation with creative professionals, emphasis on hands-on studio practice with professional equipment, mandatory industry internships, live client projects for portfolio building, expert senior learners with active industry experience, and strong placement support connecting graduates with leading creative agencies across India.' },
-                { question: 'Are internships mandatory?', answer: 'Yes, the programme includes a mandatory industry internship in the final semester. Learners gain practical experience at advertising agencies, production houses, design studios, or media companies. The department assists in securing internship placements with reputed organizations. This hands-on experience is crucial for building your professional portfolio and industry connections.' }
-              ].map((faq, idx) => (
+              {faqs.map((faq, idx) => (
                 <RevealSection key={idx} delay={idx * 60}>
                   <div className="bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:border-brand-green/20 transition-all overflow-hidden">
                     <button
@@ -736,7 +726,7 @@ export default function BScVisualCommunicationPage() {
                 </span>
               </h2>
               <p className="text-lg mb-8 text-gray-600">
-                Join our B.Sc Visual Communication programme and unlock a world of creative opportunities in design, media, and digital content.
+                B.Sc Visual Communication admission for 2026-27 is open to +2 students from any group.
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -748,6 +738,13 @@ export default function BScVisualCommunicationPage() {
                   Download Brochure
                 </a>
               </div>
+              <p className="text-gray-600">
+                <a href="/admissions/bsc-visual-communication-self-finance" className="text-brand-green underline">B.Sc Visual Communication admission 2026-27</a>
+                {' · '}
+                <a href="/fee-structure" className="text-brand-green underline">Fee structure</a>
+                {' · '}
+                <a href="/bsc-visual-communication-colleges-in-tamil-nadu" className="text-brand-green underline">B.Sc Visual Communication colleges in Tamil Nadu</a>
+              </p>
             </div>
           </RevealSection>
         </div>

@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-visual-communication-ai",
   },
+  // Proposed programme: kept out of Google until university approval (GL6-380, 2026-10-02).
+  robots: { index: false, follow: true },
   openGraph: {
     title: "B.Sc. Visual Communication (AI) | JKKN Arts & Science",
     description:
