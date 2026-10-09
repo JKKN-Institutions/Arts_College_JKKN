@@ -41,9 +41,6 @@ export const metadata: Metadata = {
   verification: {
     google: "ONbewRpXBBv1QVV7f0lrEarMUyhdD4n0X8xHflc77jc",
   },
-  icons: {
-    icon: "/logo.svg",
-  },
   openGraph: {
     type: "website",
     locale: "en_IN",
