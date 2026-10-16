@@ -93,9 +93,11 @@ export default function EventsCarousel({ events }: EventsCarouselProps) {
         })}
       </div>
 
-      {/* Arrows + Dots */}
+      {/* Arrows + Dots. The dots wrap (2026-10-16): with many events one row of dots was ~404 px wide,
+          which made the whole homepage 436 px wide on a 375 px phone and pushed the popup's close
+          button off the screen. */}
       {totalPages > 1 && (
-        <div className="flex items-center justify-center gap-6 mt-10">
+        <div className="flex items-center justify-center gap-3 sm:gap-6 mt-10">
           <button
             onClick={prev}
             className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 bg-white hover:bg-[#0b6d41] hover:text-white hover:border-[#0b6d41] transition-colors"
@@ -104,7 +106,7 @@ export default function EventsCarousel({ events }: EventsCarouselProps) {
             <ChevronLeft className="w-5 h-5" />
           </button>
 
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center justify-center gap-2 min-w-0">
             {Array.from({ length: totalPages }).map((_, i) => (
               <button
                 key={i}
