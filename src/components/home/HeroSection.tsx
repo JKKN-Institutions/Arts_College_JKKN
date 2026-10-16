@@ -1,5 +1,7 @@
 import { BookOpen, Sparkles, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import EnquiryButton from '@/components/lead/EnquiryButton';
+import ArtsEnquiryForm from '@/components/lead/ArtsEnquiryForm';
 
 export default function HeroSection() {
   return (
@@ -83,16 +85,17 @@ export default function HeroSection() {
             </div> */}
 
             {/* CTA Buttons - Compact */}
+            <p className="lg:hidden text-[13px] sm:text-[15px] text-white/90">Fill 3 details. Our admission team will call you within 24 hours.</p>
             <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-3">
-              <a
-                href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=components-herosection"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group bg-brand-yellow text-brand-green px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold text-[14px] sm:text-[15px] hover:bg-yellow-300 transition-all duration-300 shadow-2xl hover:shadow-yellow-500/50 hover:scale-105 transform text-center inline-flex items-center justify-center gap-2"
+              <EnquiryButton
+                sourcePage="home-hero-btn"
+                fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=components-herosection"
+                fallbackLabel="Apply for 2026-27"
+                className="group bg-brand-yellow text-brand-green px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold text-[14px] sm:text-[15px] hover:bg-yellow-300 transition-all duration-300 shadow-2xl hover:shadow-yellow-500/50 hover:scale-105 transform text-center inline-flex items-center justify-center gap-2 min-h-[44px]"
               >
-                Apply for 2026-27
+                Get a Call Back
                 <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </EnquiryButton>
               <a
                 href="#programs"
                 className="group bg-white/10 backdrop-blur-md border-2 border-white/40 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold text-[14px] sm:text-[15px] hover:bg-white/20 transition-all duration-300 shadow-xl inline-flex items-center justify-center gap-2"
@@ -103,8 +106,15 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right Content - Optimized Image Size */}
-          <div className="flex flex-col items-center justify-center mt-4 lg:mt-0 w-full">
+          {/* lg and up: the 3-box enquiry card takes the photo's place (2026-10-16) */}
+          <div className="hidden lg:block w-full rounded-2xl bg-[#0b3d1f]/60 border border-white/15 shadow-2xl p-6">
+            <h2 className="text-xl font-bold text-white leading-snug">Get UG / PG course fee and admission details</h2>
+            <p className="mt-1 mb-4 text-sm text-white/80">Fill 3 details. Our admission team will call you within 24 hours.</p>
+            <ArtsEnquiryForm sourcePage="home-hero" compact />
+          </div>
+
+          {/* Right Content - Optimized Image Size (phones and tablets) */}
+          <div className="lg:hidden flex flex-col items-center justify-center mt-4 lg:mt-0 w-full">
             {/* Main Image - Better Sized */}
             <div className="relative w-full max-w-[280px] sm:max-w-sm md:max-w-md xl:max-w-lg">
               {/* Glow Effect Behind - Hidden on mobile */}
@@ -118,8 +128,7 @@ export default function HeroSection() {
                     alt="JKKN College Campus"
                     fill
                     className="object-cover"
-                    priority
-                    sizes="(max-width: 640px) 280px, (max-width: 1024px) 400px, 40vw"
+                    sizes="(max-width: 640px) 280px, 400px"
                     quality={75}
                   />
                   {/* Subtle Overlay */}

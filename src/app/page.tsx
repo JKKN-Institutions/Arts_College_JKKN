@@ -45,6 +45,9 @@ import { ItemListSchema } from '@/components/seo/ItemListSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import ScrollToSection from '@/components/ScrollToSection';
 import AdmissionPopup from '@/components/home/AdmissionPopup';
+import { EnquiryModalProvider } from '@/components/lead/EnquiryModal';
+import EnquiryButton from '@/components/lead/EnquiryButton';
+import ArtsEnquiryForm from '@/components/lead/ArtsEnquiryForm';
 
 export const metadata: Metadata = {
   title: {
@@ -172,6 +175,7 @@ const homepageFAQs = [
 
 export default function Home() {
   return (
+    <EnquiryModalProvider>
     <main className="min-h-screen">
       <AdmissionPopup />
       <FAQSchema faqs={homepageFAQs} />
@@ -724,14 +728,14 @@ export default function Home() {
           {/* CTA */}
           <div className="text-center">
             <p className="text-[14px] text-gray-500 mb-4">Fee structures are subject to change. Contact admissions for the latest confirmed amounts.</p>
-            <a
-              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
-              target="_blank"
-              rel="noopener noreferrer"
+            <EnquiryButton
+              sourcePage="home-fees"
+              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
+              fallbackLabel="Apply Now — Check Eligibility"
               className="inline-block bg-[#0b6d41] hover:bg-[#095c37] text-white px-8 py-3 rounded-full text-[16px] leading-[24px] font-semibold transition"
             >
-              Apply Now — Check Eligibility
-            </a>
+              Get a Call Back
+            </EnquiryButton>
           </div>
         </div>
       </section>
@@ -986,14 +990,10 @@ export default function Home() {
                   ))}
                 </ul>
 
-                <a
-                  href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-[#0b6d41] hover:bg-[#095c37] text-white text-center py-4 rounded-xl text-[16px] leading-[24px] font-semibold transition mb-6"
-                >
-                  Apply Now – Admissions Open
-                </a>
+                <div className="bg-[#0b6d41] rounded-xl p-5 mb-6">
+                  <p className="text-white font-semibold mb-4">Fill 3 details. Our admission team will call you within 24 hours.</p>
+                  <ArtsEnquiryForm sourcePage="home-admissions" compact />
+                </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 text-[14px] text-gray-600">
                   <a href="tel:+919345855001" className="flex items-center gap-2 hover:text-[#0b6d41] transition">
@@ -1078,14 +1078,14 @@ export default function Home() {
             Join JKKN College today and start your journey towards a successful career
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
-              target="_blank"
-              rel="noopener noreferrer"
+            <EnquiryButton
+              sourcePage="home-cta"
+              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
+              fallbackLabel="Apply for Admission"
               className="bg-brand-green text-white px-8 py-4 rounded-full text-[16px] leading-[24px] font-semibold hover:bg-[#095c37] transition text-center"
             >
-              Apply for Admission
-            </a>
+              Get a Call Back
+            </EnquiryButton>
             <a href="/pdf/brochure.pdf" download className="bg-white text-brand-green px-8 py-4 rounded-full text-[16px] leading-[24px] font-semibold hover:bg-gray-100 transition border border-gray-300">
               Download Brochure
             </a>
@@ -1093,5 +1093,6 @@ export default function Home() {
         </div>
       </section>
     </main>
+    </EnquiryModalProvider>
   );
 }
