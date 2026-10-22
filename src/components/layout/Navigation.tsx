@@ -5,6 +5,11 @@ import { Menu } from 'lucide-react';
 import Link from 'next/link';
 import DesktopNav from './navigation/DesktopNav';
 import MobileNav from './navigation/MobileNav';
+import EnquiryButton from '@/components/lead/EnquiryButton';
+
+// "Enquire Now" opens the 3-box enquiry form in place (user's choice 2026-10-22; the modal provider
+// wraps every page). The jkkn.ai link is only the fallback for a page rendered without that provider.
+const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=components-header";
 
 export default function Navigation() {
   const [aboutOpen, setAboutOpen] = useState(false);
@@ -934,7 +939,7 @@ export default function Navigation() {
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between md:justify-between justify-center items-center py-2 md:py-4">
+        <div className="flex justify-between items-center gap-3 py-2 md:py-4">
           <Link href="/" className="flex items-center">
             <img
               src="/logo.svg"
@@ -954,6 +959,15 @@ export default function Navigation() {
           >
             <Menu className="h-6 w-6" />
           </button>
+
+          <EnquiryButton
+            sourcePage="header"
+            fallbackHref={APPLY_HREF}
+            fallbackLabel="Apply Now"
+            className="md:hidden bg-brand-green text-white px-4 py-2 rounded-md font-semibold hover:opacity-90 transition-opacity min-h-[44px] flex items-center justify-center touch-manipulation text-sm whitespace-nowrap"
+          >
+            Enquire Now
+          </EnquiryButton>
 
           <DesktopNav
             // About

@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { BottomNavMoreMenuProps, HierarchicalMenuItem } from './types';
+import EnquiryButton from '@/components/lead/EnquiryButton';
 import {
   Sheet,
   SheetContent,
@@ -121,6 +122,16 @@ export function BottomNavMoreMenu({
         <SheetHeader className="pb-2 flex-shrink-0">
           <SheetTitle className="text-lg font-semibold">All Menus</SheetTitle>
         </SheetHeader>
+
+        <EnquiryButton
+          sourcePage="header"
+          fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=components-header"
+          fallbackLabel="Apply Now"
+          onClick={onClose}
+          className="mx-4 mb-2 flex-shrink-0 py-3 px-4 bg-brand-green text-white font-semibold rounded-lg flex items-center justify-center min-h-[44px] touch-manipulation hover:opacity-90 transition-opacity text-sm"
+        >
+          Enquire Now
+        </EnquiryButton>
 
         {/* Custom scrollable area with hidden scrollbar */}
         <div
