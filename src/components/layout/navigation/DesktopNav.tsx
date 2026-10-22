@@ -3,6 +3,11 @@
 import React from 'react';
 import { ChevronDown, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import EnquiryButton from '@/components/lead/EnquiryButton';
+
+// "Enquire Now" opens the 3-box enquiry form in place (user's choice 2026-10-22; the modal provider
+// wraps every page). The jkkn.ai link is only the fallback for a page rendered without that provider.
+const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=components-header";
 
 interface DesktopNavProps {
   // About
@@ -1953,6 +1958,15 @@ export default function DesktopNav(props: DesktopNavProps) {
       <Link href="/contact" className="text-gray-700 hover:text-brand-green transition font-bold uppercase hover:underline text-sm">
         Contact
       </Link>
+
+      <EnquiryButton
+        sourcePage="header"
+        fallbackHref={APPLY_HREF}
+        fallbackLabel="Apply Now"
+        className="bg-brand-green text-white px-4 py-2 rounded-md font-semibold hover:opacity-90 transition-opacity min-h-[44px] flex items-center justify-center text-sm whitespace-nowrap"
+      >
+        Enquire Now
+      </EnquiryButton>
     </div>
   );
 }

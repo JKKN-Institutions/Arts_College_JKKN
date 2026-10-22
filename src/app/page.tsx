@@ -45,7 +45,6 @@ import { ItemListSchema } from '@/components/seo/ItemListSchema';
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 import ScrollToSection from '@/components/ScrollToSection';
 import AdmissionPopup from '@/components/home/AdmissionPopup';
-import { EnquiryModalProvider } from '@/components/lead/EnquiryModal';
 import EnquiryButton from '@/components/lead/EnquiryButton';
 import ArtsEnquiryForm from '@/components/lead/ArtsEnquiryForm';
 
@@ -175,7 +174,6 @@ const homepageFAQs = [
 
 export default function Home() {
   return (
-    <EnquiryModalProvider>
     <main className="min-h-screen">
       <AdmissionPopup />
       <FAQSchema faqs={homepageFAQs} />
@@ -1094,6 +1092,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-    </EnquiryModalProvider>
   );
 }
