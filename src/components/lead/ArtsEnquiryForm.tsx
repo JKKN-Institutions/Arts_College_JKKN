@@ -23,15 +23,14 @@ const ADMISSION_PHONE_DISPLAY = "+91 93458 55001"
 
 // Trust line, also read by CityEnquiryForm. Proof first (user's rule 2026-10-22): each item comes
 // from an official document, not from the site's own copy.
-// - NAAC: naac.gov.in "Institutions with valid accreditation as on 14-08-2025" (Colleges sheet,
-//   track TNCOGN101741): cycle 1, grade B, CGPA 2.37, declared 09-08-2019; its "Transition
-//   Autonomous Colleges" sheet (row 250) extends the validity to 31-12-2029. Worded "NAAC
-//   Accredited", as the site already says it; the grade is B, so "NAAC 'A' Grade" would be false.
-// - Periyar University: the affiliating university in the same NAAC list, and in the NAAC IIQA,
+// - Periyar University: the affiliating university in naac.gov.in "Institutions with valid
+//   accreditation as on 14-08-2025" (Colleges sheet, track TNCOGN101741), and in the NAAC IIQA,
 //   cycle 1 (public/documents/iqac/iiqa/cycle-1.pdf).
 // - 1974: "Date of establishment 19/07/1974" in that IIQA and in the cycle-1 SSR, page 9
 //   (public/documents/iqac/ssr/cycle-1-2013-2018.pdf). The group's 1952 is not this college's year.
-export const TRUST = ["NAAC Accredited", "Affiliated to Periyar University", "Since 1974"]
+// - No NAAC item, by the user's choice 2026-10-22: the same NAAC list shows cycle 1, grade B, CGPA
+//   2.37 (validity extended to 31-12-2029), and the user chose to leave NAAC out of this line.
+export const TRUST = ["Affiliated to Periyar University", "Since 1974"]
 
 type Props = {
   /** Which page this instance sits on, e.g. "bds". Tags the lead in the CRM. */
