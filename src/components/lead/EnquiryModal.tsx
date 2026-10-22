@@ -6,9 +6,11 @@
 // WHY NOT AN IFRAME OF THE jkkn.ai PAGE. jkkn.ai answers with X-Frame-Options: SAMEORIGIN
 // (checked 2026-10-16), so the browser refuses to show it inside this site.
 //
-// SCOPE. The provider is mounted on the homepage only. Outside it, useEnquiryModal() returns
-// null and every EnquiryButton falls back to its normal jkkn.ai link — every other page that
-// shares the Header keeps behaving exactly as before.
+// SCOPE. Since 2026-10-22 the provider wraps every page (ClientLayoutWrapper), user's choice:
+// every EnquiryButton and every jkkn.ai apply link opens this form on all pages. Outside a
+// provider (the /admin pages) useEnquiryModal() still returns null and EnquiryButton falls back
+// to its jkkn.ai link, so a page rendered without the wrapper degrades to the old behaviour
+// instead of breaking.
 
 "use client"
 
@@ -18,13 +20,15 @@ import { X } from "lucide-react"
 import ArtsEnquiryForm from "@/components/lead/ArtsEnquiryForm"
 import { sendGaEvent } from "@/lib/ga-event"
 
+const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic"
+
 type OpenOptions = { withPoster?: boolean }
 type EnquiryModalApi = { openEnquiry: (sourcePage: string, options?: OpenOptions) => void }
 type OpenState = { sourcePage: string; withPoster: boolean }
 
 const EnquiryModalContext = createContext<EnquiryModalApi | null>(null)
 
-/** null outside the homepage — callers must fall back to their ordinary link. */
+/** null outside the provider — callers must fall back to their ordinary link. */
 export function useEnquiryModal() {
   return useContext(EnquiryModalContext)
 }
@@ -49,6 +53,25 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
     document.addEventListener("keydown", onKey)
     return () => document.removeEventListener("keydown", onKey)
   }, [open, close])
+
+  // Every jkkn.ai/apply link on the site opens this form instead (user's choice 2026-10-22: the
+  // in-page "Apply Now" buttons open the 3-box form; the full application stays one tap away inside
+  // the dialog). One listener here rather than dozens of edited links: the links stay real
+  // <a href>s, so without JavaScript, or on a Ctrl / Shift / middle click, they still open jkkn.ai
+  // as before. A link marked data-full-application (the small one in the dialog) is never caught.
+  // The link's own onClick still runs, so the old apply_click GA event now counts dialog opens.
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
+      const link = (e.target as Element | null)?.closest?.('a[href*="jkkn.ai/apply"]')
+      if (!link || link.hasAttribute("data-full-application")) return
+      e.preventDefault()
+      const path = window.location.pathname.replace(/\/+$/, "").replace(/\//g, "-") || "-home"
+      openEnquiry(`apply-link${path}`.slice(0, 60))
+    }
+    document.addEventListener("click", onClick, true)
+    return () => document.removeEventListener("click", onClick, true)
+  }, [openEnquiry])
 
   return (
     <EnquiryModalContext.Provider value={api}>
@@ -134,6 +157,20 @@ function EnquiryDialog({
 
           <div className={withPoster ? "col-span-2 md:col-span-1 md:col-start-2 md:row-start-2 md:self-start" : ""}>
             <ArtsEnquiryForm sourcePage={sourcePage} compact bare />
+            {/* The full jkkn.ai application stays one tap away for people ready to apply now
+                (user's choice 2026-10-22: apply links open this form, jkkn.ai becomes a small link). */}
+            <p className="mt-3 text-center text-xs text-[#4b5563]">
+              Ready to apply now?{" "}
+              <a
+                href={`${APPLY_HREF}&utm_campaign=cas-${sourcePage}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-full-application
+                className="text-[#0b6d41] font-semibold underline"
+              >
+                Fill the full application form
+              </a>
+            </p>
           </div>
         </div>
       </div>
