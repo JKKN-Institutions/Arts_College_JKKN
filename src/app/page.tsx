@@ -990,8 +990,9 @@ export default function Home() {
                   ))}
                 </ul>
 
-                <div className="bg-[#0b6d41] rounded-xl p-5 mb-6">
-                  <p className="text-white font-semibold mb-4">Fill 3 details. Our admission team will call you within 24 hours.</p>
+                {/* The form is its own white card now (mockup #7, 2026-10-22) and its 3-step strip says
+                    what the old sub-line said; the green box stays as the frame inside this white card. */}
+                <div className="bg-[#0b6d41] rounded-xl p-3 sm:p-6 mb-6">
                   <ArtsEnquiryForm sourcePage="home-admissions" compact />
                 </div>
 
