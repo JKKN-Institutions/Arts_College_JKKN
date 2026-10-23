@@ -1035,13 +1035,13 @@ export default function NamakkalPage() {
               <Link
                 key={city.name}
                 href={city.href}
-                className="bg-white rounded-2xl border border-gray-100 px-5 py-4 flex items-center gap-3 hover:border-[#7cb983] transition-colors"
+                className="bg-white rounded-2xl border border-gray-100 px-5 sm:px-4 py-4 flex flex-wrap items-center gap-x-3 gap-y-1 hover:border-[#7cb983] transition-colors"
               >
                 <city.Icon className="w-5 h-5 text-[#006837] flex-shrink-0" />
                 <span className="font-bold text-gray-800 text-sm flex-1">
                   {city.name}
                 </span>
-                <span className="text-gray-400 text-sm">{city.km}</span>
+                <span className="text-gray-400 text-sm sm:basis-full sm:pl-8">{city.km}</span>
               </Link>
             ))}
           </div>
