@@ -145,7 +145,7 @@ export default async function EventPage({
               </h2>
               <RichContent
                 html={event.description}
-                className="event-content text-gray-700"
+                className="event-content text-gray-700 break-words"
               />
             </div>
           </section>
