@@ -237,7 +237,7 @@ export default function AdmissionsPage() {
         {/* Key Highlights */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
               {[
                 { label: "Programmes", value: "35", icon: GraduationCap },
                 { label: "Recruiters", value: "60+", icon: Award },
@@ -250,10 +250,10 @@ export default function AdmissionsPage() {
               ].map((item) => (
                 <div
                   key={item.label}
-                  className="bg-[#fbfbee] rounded-2xl p-6 text-center border border-gray-100"
+                  className="bg-[#fbfbee] rounded-2xl p-4 lg:p-6 text-center border border-gray-100"
                 >
                   <item.icon className="w-8 h-8 text-[#0b6d41] mx-auto mb-3" />
-                  <div className="text-2xl md:text-3xl font-bold text-[#0b6d41]">
+                  <div className="text-lg sm:text-3xl md:text-xl lg:text-2xl xl:text-3xl font-bold text-[#0b6d41]">
                     {item.value}
                   </div>
                   <div className="text-sm text-gray-600 mt-1">
