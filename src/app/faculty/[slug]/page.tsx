@@ -262,6 +262,7 @@ export default async function FacultyProfilePage({
                 <span className={`${iconBox} bg-yellow-50`}>🎓</span>
                 Academic Qualifications
               </h2>
+              <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-gray-100">
@@ -282,6 +283,7 @@ export default async function FacultyProfilePage({
                   ))}
                 </tbody>
               </table>
+              </div>
             </div>
           )}
 
@@ -429,6 +431,7 @@ export default async function FacultyProfilePage({
                     <span className="w-4 h-px bg-[#1B5E20] inline-block" />
                     FUNDED RESEARCH
                   </p>
+                  <div className="overflow-x-auto">
                   <table className="w-full text-sm">
                     <thead>
                       <tr className="border-b border-gray-100">
@@ -459,6 +462,7 @@ export default async function FacultyProfilePage({
                       ))}
                     </tbody>
                   </table>
+                  </div>
                 </div>
               )}
 
@@ -522,6 +526,7 @@ export default async function FacultyProfilePage({
                 <span className={`${iconBox} bg-yellow-50`}>🏆</span>
                 Awards &amp; Recognitions
               </h2>
+              <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-gray-100">
@@ -540,6 +545,7 @@ export default async function FacultyProfilePage({
                   ))}
                 </tbody>
               </table>
+              </div>
             </div>
           )}
 
@@ -550,6 +556,7 @@ export default async function FacultyProfilePage({
                 <span className={`${iconBox} bg-purple-50`}>👥</span>
                 Professional Memberships
               </h2>
+              <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-gray-100">
@@ -568,6 +575,7 @@ export default async function FacultyProfilePage({
                   ))}
                 </tbody>
               </table>
+              </div>
             </div>
           )}
 
@@ -589,6 +597,7 @@ export default async function FacultyProfilePage({
                     <span className="w-4 h-px bg-[#1B5E20] inline-block" />
                     PHD SCHOLARS
                   </p>
+                  <div className="overflow-x-auto">
                   <table className="w-full text-sm">
                     <thead>
                       <tr className="border-b border-gray-100">
@@ -615,6 +624,7 @@ export default async function FacultyProfilePage({
                       ))}
                     </tbody>
                   </table>
+                  </div>
                 </div>
               )}
 
