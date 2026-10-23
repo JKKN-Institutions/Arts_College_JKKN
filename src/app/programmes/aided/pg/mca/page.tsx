@@ -233,7 +233,7 @@ export default function MCAPage() {
                       {card.items.map((item, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <span className="text-emerald-500 mt-1">•</span>
-                          <span>{item}</span>
+                          <span className="wrap-anywhere">{item}</span>
                         </li>
                       ))}
                     </ul>
