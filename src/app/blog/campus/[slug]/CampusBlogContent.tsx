@@ -181,7 +181,7 @@ export default function CampusBlogContent({
 
         {/* Blog content from rich text editor */}
         {processedContent && (
-          <RichContent html={processedContent} className="blog-content mb-12" />
+          <RichContent html={processedContent} className="blog-content mb-12 max-sm:[&_table]:block max-sm:[&_table]:overflow-x-auto max-sm:[&_table]:max-w-full" />
         )}
 
         {/* Tags */}
