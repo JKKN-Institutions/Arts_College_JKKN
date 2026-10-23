@@ -683,7 +683,7 @@ export default function BScZoologyPage() {
                 { name: 'Dr. S. Kalaimani', designation: 'Assistant Professor', qualification: 'M.Sc., M.Phil., M.Ed., Ph.D., DCA., (SET)', image: '/images/faculties/aided/zoology/Dr.-S.-Kalaimani-240x300.png' },
                 { name: 'Mrs. S. Kowsalya', designation: 'Assistant Professor', qualification: 'M.Sc., M.Ed., (SET)', image: '/images/faculties/aided/zoology/Mrs.-S.-Kowsalya-240x300.png' }
               ].map((faculty, idx) => (
-                <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
+                <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col min-h-[340px]">
                   <div className="relative h-56 overflow-hidden flex-shrink-0">
                     <Image
                       src={faculty.image}

@@ -676,7 +676,7 @@ export default function BAHistoryPage() {
                 { name: 'Dr. S. Abirami', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., Ph.D., (SET)', image: '/images/faculties/aided/history/Dr.-S.-Abirami-240x300.png' },
                 { name: 'Mrs. C. Rathipriya', designation: 'Assistant Professor', qualification: 'M.A., M.Phil., (SET)', image: '/images/faculties/aided/history/Mrs.-C.-Rathipriya-240x300.png' }
               ].map((faculty, idx) => (
-                <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
+                <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col min-h-[340px]">
                   <div className="relative h-56 overflow-hidden flex-shrink-0">
                     <Image
                       src={faculty.image}

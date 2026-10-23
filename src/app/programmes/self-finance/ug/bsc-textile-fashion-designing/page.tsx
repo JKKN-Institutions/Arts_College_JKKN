@@ -671,7 +671,7 @@ export default function BSCTextileFashionDesigningPage() {
                   { name: 'Mrs. R.Sindhupriyadharshini', designation: 'Assistant Professor', qualification: 'M.Sc.,', image: '/images/programmes/tfd/Mrs.-R.Sindhupriyadharshini-300x199 (2).png' },
                   { name: 'Mrs.Keerthika', designation: 'Assistant Professor', qualification: 'M.SC (T&FD)', image: '/images/programmes/tfd/MRS.KEERTHIKA-300x199 (1).png' }
                 ].map((faculty, idx) => (
-                  <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col h-[340px]">
+                  <div key={idx} className="w-[260px] flex-shrink-0 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group flex flex-col min-h-[340px]">
                     <div className="relative h-56 overflow-hidden flex-shrink-0">
                       <Image
                         src={faculty.image || '/images/faculties/placeholder-avatar.jpg'}
