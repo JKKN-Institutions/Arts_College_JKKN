@@ -911,7 +911,7 @@ export default function Home() {
       {/* Journey Section */}
       <section className="py-20 bg-white" data-speakable>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="text-[#0b6d41] text-[14px] font-semibold leading-[20px] tracking-wide uppercase mb-4">
                 HOW TO APPLY
@@ -963,7 +963,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="bg-white rounded-2xl shadow-xl p-8">
+              <div className="bg-white rounded-2xl shadow-xl p-5 sm:p-8">
 
                 <div className="inline-flex items-center gap-2 bg-[#0b6d41] text-white text-[13px] font-semibold px-4 py-2 rounded-full mb-6">
                   <span>🎓</span>
