@@ -40,7 +40,7 @@ import {
 export const metadata: Metadata = {
   title: "Arts and Science College in Namakkal District | JKKN CAS",
   description:
-    "JKKN College of Arts & Science — Namakkal District's most diverse arts college. 35 programmes, NAAC-accredited, NIRF-published placement outcomes. Admissions 2026-27 open.",
+    "JKKN College of Arts and Science, Komarapalayam, Namakkal district: autonomous, NAAC Accredited (B), Periyar University. 35 programmes, UG fees from ₹24,500.",
   keywords: [
     "arts and science college in Namakkal district",
     "best college in Namakkal district",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College in Namakkal District | JKKN CAS",
     description:
-      "JKKN CAS in Komarapalayam — Namakkal District's most diverse arts college. 35 programmes, NAAC-accredited, NIRF-published placement outcomes. Admissions 2026-27.",
+      "JKKN CAS, Komarapalayam, Namakkal district: autonomous, NAAC Accredited (B), Periyar University. 35 programmes. Admissions 2026-27.",
     url: "https://cas.jkkn.ac.in/namakkal",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -71,19 +71,35 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Arts and Science College in Namakkal District | JKKN CAS",
-    description: "JKKN CAS in Namakkal District — 35 programmes, NAAC-accredited, NIRF-published placement outcomes. Admissions 2026-27 open.",
+    description: "JKKN CAS, Komarapalayam, Namakkal district: autonomous, NAAC Accredited (B), Periyar University. 35 programmes. Admissions 2026-27.",
   },
 };
 
+// S6 draft #8 (2026-10-28). Sources for every figure on this page:
+//  - NAAC Grade B, CGPA 2.37, declared 09-08-2019; affiliating university Periyar University: NAAC list
+//    "Institutions accredited by NAAC having valid accreditation as on 14-08-2025" (Colleges sheet). Its
+//    "Transition Autonomous Colleges" sheet lists the college with validity extended to 31-12-2029.
+//  - 35 programmes: /fee-structure (14 self-financing UG + 5 PG approved; the 3 marked * await Periyar
+//    University approval) plus 6 aided UG, 7 aided PG and 3 Ph.D. Fees: /fee-structure, 2026-27.
+//  - 135 of 373 UG graduates of 2023-24 placed, 105 to higher studies; sanctioned intake 2023-24 UG 1,468,
+//    PG 355: the college's NIRF 2025 return, public/documents/nirf/NIRF-2025-COLLEGE.pdf.
+//  - Distances: Erode 18 km and Namakkal Bus Stand 65 km / 1 hr 20 min (Google Maps, read by the user in
+//    September 2026), Salem 57 km, Salem Junction 55 km, Coimbatore airport 101 km, other towns OSRM road
+//    routing from the campus pin (same figures as the Pharmacy site, same campus). Tiruppur 64 km = OSRM to
+//    Tiruppur railway station, 2026-09-12. Pallipalayam stays 14 km (OSRM 15.7 km on 2026-10-28, inside the
+//    3 km rule used for the other towns).
+//  - No per-programme intake: Periyar University publishes none (affiliated-college pages read 2026-10-28).
+//  - No recruiter names: no year-wise placement list with employers exists; NIRF gives counts only.
 export default function NamakkalPage() {
-  const faqs = [
+  const faqs: { q: string; a: string; voice?: string }[] = [
     {
       q: "What is the best arts and science college in Namakkal district?",
-      a: "JKKN College of Arts and Science in Komarapalayam is Namakkal District's most programme-diverse arts and science institution — 35 programmes, NAAC-accredited, affiliated to Periyar University, with a placement record published in NIRF 2025.",
+      a: "It depends on the course you want, so compare accreditation, programmes and fees. JKKN College of Arts and Science at Komarapalayam is an autonomous college affiliated to Periyar University and accredited by NAAC with a B grade. It offers 35 aided and self-financing programmes, and its NIRF 2025 return lists 135 of 373 UG graduates of 2023-24 as placed.",
     },
     {
-      q: "How far is JKKN College from Namakkal?",
-      a: "JKKN College of Arts and Science is located in Komarapalayam, Namakkal District — approximately 66 kilometres from Namakkal town and 22 kilometres from Erode via NH-544.",
+      q: "How far is JKKN College of Arts and Science from Namakkal town?",
+      a: "The college is at Komarapalayam on NH-544, inside Namakkal district but about 65 km from Namakkal Bus Stand, roughly 1 hour 20 minutes by car via the Tiruchengode - Namakkal road. It is about 18 km from Erode. College transport serves nearby towns, and separate hostels for boys and girls are available.",
+      voice: "Namakkal town la irundhu JKKN Arts college evlo dooram?",
     },
     {
       q: "Which courses are popular among Namakkal students at JKKN CAS?",
@@ -91,7 +107,7 @@ export default function NamakkalPage() {
     },
     {
       q: "Can BCA students from Namakkal get IT jobs?",
-      a: "Yes. BCA graduates from JKKN CAS are placed at companies like TCS, Infosys BPO, and other IT firms. Namakkal's growing connectivity to Salem and Coimbatore IT hubs means BCA students have access to a wide job market. The college provides placement training, aptitude coaching, and mock interviews.",
+      a: "BCA graduates can apply for IT and IT-enabled jobs. The college's NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed across all UG programmes; it does not split the figure by course. The placement cell provides placement training, aptitude coaching and mock interviews.",
     },
     {
       q: "Are JKKN CAS fees affordable for Namakkal families?",
@@ -115,7 +131,17 @@ export default function NamakkalPage() {
     },
     {
       q: "Why should Namakkal district students choose JKKN CAS?",
-      a: "JKKN CAS is Namakkal District's most comprehensive arts and science college — 35 programmes, NAAC accreditation, NIRF-published placement outcomes, 7-college campus group with a 500-bed hospital, and direct NH-544 access from Erode and Tiruchengode.",
+      a: "JKKN CAS is an autonomous college, NAAC Accredited (B), affiliated to Periyar University, with 35 aided and self-financing programmes. Self-financing UG fees for 2026-27 are ₹24,500 to ₹34,000 a year, aided fees follow government norms, and the campus is on NH-544, about 18 km from Erode and 26 km from Tiruchengode.",
+    },
+    {
+      q: "Is JKKN College of Arts and Science autonomous?",
+      a: "Yes. JKKN College of Arts and Science at Komarapalayam, Namakkal district, is an autonomous college affiliated to Periyar University and accredited by NAAC with a B grade. It was founded in 1974 and offers undergraduate, postgraduate and Ph.D programmes in arts, science and commerce, in government-aided and self-financing streams.",
+      voice: "JKKN Arts college autonomous ah?",
+    },
+    {
+      q: "Does JKKN College of Arts and Science have government-aided courses?",
+      a: "Yes. Government-aided undergraduate courses are B.A. English, B.A. History, B.Com, B.Sc Chemistry, B.Sc Mathematics and B.Sc Zoology; aided postgraduate courses include M.A. History, MCA, M.Com and M.Sc Chemistry. Aided fees follow government norms, while self-financing UG fees are ₹24,500 to ₹34,000 a year.",
+      voice: "JKKN Arts la aided course irukka?",
     },
   ];
 
@@ -136,7 +162,7 @@ export default function NamakkalPage() {
       />
       <CourseSchema
         name="B.Com (Bachelor of Commerce)"
-        description="3-year undergraduate commerce programme with strong industry exposure and placement support at JKKN CAS, located in the heart of Namakkal district."
+        description="3-year undergraduate commerce programme with strong industry exposure and placement support at JKKN CAS, Komarapalayam, Namakkal district."
         duration="PT3Y"
         educationalLevel="UG"
         category="Aided"
@@ -152,7 +178,7 @@ export default function NamakkalPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and a placement record published in NIRF 2025 at JKKN CAS, Namakkal District's most programme-diverse arts and science college."
+        description="3-year undergraduate IT programme with hands-on training and a placement record published in NIRF 2025 at JKKN CAS, an autonomous arts and science college in Namakkal district."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -166,7 +192,7 @@ export default function NamakkalPage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 border border-white/30 rounded-full px-4 py-2 text-sm text-white/90 mb-8 bg-white/10 backdrop-blur-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>UGC, NAAC Approved • Admissions Open</span>
+            <span>NAAC Accredited (B) · Autonomous • Admissions Open</span>
           </div>
 
           {/* Heading */}
@@ -178,9 +204,11 @@ export default function NamakkalPage() {
 
           {/* Description */}
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-            JKKN College of Arts and Science is Namakkal District's most
-            programme-diverse institution — 34 UG, PG, M.Phil, and Ph.D
-            programmes, NAAC-accredited, on NH-544 at Komarapalayam with placement support.
+            JKKN College of Arts and Science, founded in 1974 at Komarapalayam,
+            Namakkal district, is an autonomous college affiliated to Periyar
+            University and accredited by NAAC (Grade B). It runs government-aided
+            and self-financing programmes, from B.A. English to Ph.D Chemistry;
+            self-financing UG fees for 2026-27 are ₹24,500 to ₹34,000 a year.
           </p>
 
           {/* Stats */}
@@ -233,13 +261,38 @@ export default function NamakkalPage() {
             </span>
             <span className="flex items-center gap-1.5">
               <span className="bg-[#FBFBEE] text-[#006837] font-semibold px-3 py-1 rounded-full text-xs">
-                ✓ NAAC
+                ✓ NAAC Accredited (B)
               </span>
             </span>
             <span className="hidden sm:block text-gray-300">|</span>
             <span className="text-gray-500 text-xs sm:text-sm">
               Affiliated to Periyar University
             </span>
+          </div>
+        </div>
+      </section>
+
+      {/* S6 draft #8, Change B (2026-10-28): facts box, each line from the sources listed above the component. */}
+      <section id="facts" aria-label="Facts at a glance" className="bg-white py-8 sm:py-10">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="rounded-2xl border border-gray-200 border-l-4 border-l-[#006837] bg-[#FBFBEE] p-5 sm:p-6">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#006837] mb-4">JKKN CAS at a Glance</h2>
+            <ul className="space-y-2 text-sm sm:text-base text-gray-700 leading-relaxed">
+              <li><span className="font-semibold text-[#006837]">Status:</span> founded 1974; autonomous; affiliated to Periyar University.</li>
+              <li><span className="font-semibold text-[#006837]">NAAC:</span> Accredited, Grade B (CGPA 2.37), declared 9 August 2019; NAAC&apos;s list of transition autonomous colleges shows the validity extended to 31 December 2029.</li>
+              <li><span className="font-semibold text-[#006837]">Government-aided:</span> UG B.A. English, B.A. History, B.Com, B.Sc Chemistry, B.Sc Mathematics, B.Sc Zoology; PG M.A. History, MCA, M.Com, M.Sc Chemistry, M.Sc Computer Science, M.Sc Physics, M.Sc Zoology.</li>
+              <li><span className="font-semibold text-[#006837]">Self-financing:</span> 14 UG and 5 PG programmes; Ph.D in Chemistry, Tamil and Zoology.</li>
+              <li><span className="font-semibold text-[#006837]">Fees 2026-27:</span> self-financing UG ₹24,500 to ₹34,000 a year, PG ₹20,000 to ₹25,000; aided fees as per government norms.</li>
+              <li><span className="font-semibold text-[#006837]">Placement (NIRF 2025 return):</span> 135 of 373 UG graduates of 2023-24 placed (36%); 105 went on to higher studies.</li>
+              <li><span className="font-semibold text-[#006837]">Where:</span> Komarapalayam on NH-544, Namakkal district; about 18 km from Erode and 65 km from Namakkal Bus Stand.</li>
+            </ul>
+            <p className="mt-4 text-xs text-gray-500 leading-relaxed">
+              Sources: NAAC list of accredited institutions (valid as on 14 August 2025);{" "}
+              <Link href="/fee-structure" className="text-[#006837] font-semibold underline underline-offset-2">fee structure 2026-27</Link>
+              ;{" "}
+              <Link href="/nirf" className="text-[#006837] font-semibold underline underline-offset-2">NIRF 2025 data</Link>
+              .
+            </p>
           </div>
         </div>
       </section>
@@ -255,7 +308,7 @@ export default function NamakkalPage() {
                   Namakkal District Campus
                 </div>
                 <div className="text-gray-500 text-sm mt-1">
-                  Komarapalayam, NH-544 — 22 km from Erode • 20 km from Tiruchengode
+                  Komarapalayam, NH-544 — 18 km from Erode • 26 km from Tiruchengode
                 </div>
               </div>
             </div>
@@ -277,13 +330,13 @@ export default function NamakkalPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-              Why JKKN CAS Is Namakkal's Top Choice
+              Why Namakkal District Students Choose JKKN CAS
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-              JKKN CAS is in Namakkal District at Komarapalayam on NH-544 — the
-              district's most programme-diverse arts and science institution.
-              Students from Tiruchengode, Sankari, and across Namakkal District
-              access world-class education with hostel or daily commute options.
+              JKKN CAS is in Namakkal District at Komarapalayam on NH-544, with
+              35 aided and self-financing programmes. Students from Tiruchengode,
+              Sankari, and across Namakkal District study here with hostel or
+              daily commute options.
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -356,7 +409,6 @@ export default function NamakkalPage() {
                 name: "B.Sc (various specialisations)",
                 duration: "3 years",
                 level: "UG",
-                intake: "200+ seats",
                 eligibility: "10+2 with relevant subjects",
                 href: "/programmes/aided/ug/bsc-chemistry",
               },
@@ -365,7 +417,6 @@ export default function NamakkalPage() {
                 name: "B.Com",
                 duration: "3 years",
                 level: "UG",
-                intake: "150 seats",
                 eligibility: "10+2 (Commerce preferred)",
                 href: "/programmes/aided/ug/bcom",
               },
@@ -374,7 +425,6 @@ export default function NamakkalPage() {
                 name: "BBA (Bachelor of Business Administration)",
                 duration: "3 years",
                 level: "UG",
-                intake: "60 seats",
                 eligibility: "10+2 (any stream)",
                 href: "/programmes/self-finance/ug/bba",
               },
@@ -383,7 +433,6 @@ export default function NamakkalPage() {
                 name: "BCA (Bachelor of Computer Applications)",
                 duration: "3 years",
                 level: "UG",
-                intake: "60 seats",
                 eligibility: "10+2 with Maths",
                 href: "/programmes/self-finance/ug/bca",
               },
@@ -409,12 +458,6 @@ export default function NamakkalPage() {
                     <span className="text-gray-400">Level</span>
                     <span className="text-gray-700 font-medium">
                       {prog.level}
-                    </span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-400">Intake</span>
-                    <span className="text-gray-700 font-medium">
-                      {prog.intake}
                     </span>
                   </div>
                 </div>
@@ -482,6 +525,7 @@ export default function NamakkalPage() {
                     { name: "B.Com (CA)", href: "/programmes/self-finance/ug/bcom-ca" },
                     { name: "B.Sc (AI & Data Science)", href: "/programmes/self-finance/ug/bsc-ai-ds" },
                     { name: "B.Sc AI & Data Science colleges in Tamil Nadu (guide)", href: "/bsc-ai-data-science-colleges-in-tamil-nadu" },
+                    { name: "B.Sc Clinical Lab Technology", href: "/programmes/self-finance/ug/bsc-clinical-lab-technology" },
                     { name: "B.Sc Computer Science", href: "/programmes/self-finance/ug/bsc-computer-science" },
                     { name: "B.Sc Computer Science colleges in Tamil Nadu (guide)", href: "/bsc-computer-science-colleges-in-tamil-nadu" },
                     { name: "B.Sc (Cyber Security)", href: "/programmes/self-finance/ug/bsc-cs-cyber-security" },
@@ -577,10 +621,10 @@ export default function NamakkalPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-              Where Namakkal Graduates Are Working Now
+              Placement Record (NIRF 2025 Return)
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Our placement cell connects you with India&apos;s top employers
+              What the college reported to NIRF for its 2023-24 UG graduates
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -588,7 +632,7 @@ export default function NamakkalPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
-              { value: "7+", label: "TOP RECRUITERS" },
+              { value: "105", label: "UG TO HIGHER STUDIES 2023–24 (NIRF)" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -604,29 +648,6 @@ export default function NamakkalPage() {
             ))}
           </div>
 
-          <div className="text-center">
-            <div className="text-xs text-gray-400 font-semibold tracking-widest mb-4">
-              COMPANIES THAT HIRE FROM US
-            </div>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                "TCS",
-                "Infosys BPO",
-                "HDFC Bank",
-                "ICICI Bank",
-                "Amazon",
-                "Flipkart",
-                "Jio",
-              ].map((company) => (
-                <span
-                  key={company}
-                  className="border border-gray-200 rounded-full px-4 py-1.5 text-sm text-gray-600"
-                >
-                  {company}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
@@ -791,19 +812,19 @@ export default function NamakkalPage() {
                 {
                   Icon: Bus,
                   label: "BY BUS",
-                  info: "Frequent local buses and auto-rickshaws available from Namakkal town to Komarapalayam",
+                  info: "65 km from Namakkal Bus Stand, about 1 hour 20 minutes by car via the Tiruchengode - Namakkal road (Google Maps, September 2026). Buses run from Namakkal to Tiruchengode and Komarapalayam through the day.",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Salem Junction (~40 km from campus)",
+                  info: "Salem Junction (about 55 km from campus)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
                   Icon: Plane,
                   label: "NEAREST AIRPORT",
-                  info: "Coimbatore International Airport (Code: CJB) (~110 km)",
+                  info: "Coimbatore International Airport (Code: CJB) (about 101 km)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -840,7 +861,7 @@ export default function NamakkalPage() {
               Campus &amp; Facilities
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Everything you need for a world-class education experience
+              Facilities on the Komarapalayam campus
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -850,7 +871,7 @@ export default function NamakkalPage() {
               {
                 Icon: FlaskConical,
                 title: "Modern Learning Labs",
-                desc: "State-of-the-art learning labs and smart learning studios",
+                desc: "Learning labs and smart learning studios",
                 bg: "bg-[#FBFBEE]",
               },
               {
@@ -868,7 +889,7 @@ export default function NamakkalPage() {
               {
                 Icon: Bus,
                 title: "Transport",
-                desc: "College buses connecting to Namakkal and surrounding areas",
+                desc: "College buses to nearby towns",
                 bg: "bg-[#FBFBEE]",
               },
               {
@@ -997,6 +1018,9 @@ export default function NamakkalPage() {
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-500 text-sm leading-relaxed pb-5">
                   {item.a}
+                  {item.voice && (
+                    <p className="mt-2 text-xs text-[#006837]">Also asked: {item.voice}</p>
+                  )}
                 </AccordionContent>
               </AccordionItem>
             ))}
@@ -1012,7 +1036,7 @@ export default function NamakkalPage() {
               Explore More Cities
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Find the best arts and science college near your city
+              Road distances from the Komarapalayam campus
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -1020,17 +1044,17 @@ export default function NamakkalPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {[
               { Icon: Home, name: "Komarapalayam", km: "Campus town", href: "/komarapalayam" },
-              { Icon: MapPin, name: "Bhavani", km: "~4-5 km", href: "/bhavani" },
+              { Icon: MapPin, name: "Bhavani", km: "~8 km", href: "/bhavani" },
               { Icon: MapPin, name: "Pallipalayam", km: "~14 km", href: "/pallipalayam" },
-              { Icon: MapPin, name: "Sankagiri", km: "~15-20 km", href: "/sankagiri" },
-              { Icon: MapPin, name: "Tiruchengode", km: "~20 km", href: "/tiruchengode" },
-              { Icon: Mountain, name: "Erode", km: "~22 km", href: "/erode" },
-              { Icon: MapPin, name: "Perundurai", km: "~27-30 km", href: "/perundurai" },
-              { Icon: MapPin, name: "Gobichettipalayam", km: "~35-40 km", href: "/gobichettipalayam" },
-              { Icon: Bus, name: "Salem", km: "40-50 km", href: "/salem" },
+              { Icon: MapPin, name: "Sankagiri", km: "~16 km", href: "/sankagiri" },
+              { Icon: Mountain, name: "Erode", km: "~18 km", href: "/erode" },
+              { Icon: MapPin, name: "Tiruchengode", km: "~26 km", href: "/tiruchengode" },
+              { Icon: MapPin, name: "Perundurai", km: "~29 km", href: "/perundurai" },
+              { Icon: MapPin, name: "Gobichettipalayam", km: "~37 km", href: "/gobichettipalayam" },
+              { Icon: Bus, name: "Salem", km: "~57 km", href: "/salem" },
               { Icon: MapPin, name: "Rasipuram", km: "~60 km", href: "/rasipuram" },
-              { Icon: Target, name: "Tiruppur", km: "80-90 km", href: "/tiruppur" },
-              { Icon: Star, name: "Coimbatore", km: "100-110 km", href: "/coimbatore" },
+              { Icon: Target, name: "Tiruppur", km: "~64 km", href: "/tiruppur" },
+              { Icon: Star, name: "Coimbatore", km: "~112 km", href: "/coimbatore" },
             ].map((city) => (
               <Link
                 key={city.name}
