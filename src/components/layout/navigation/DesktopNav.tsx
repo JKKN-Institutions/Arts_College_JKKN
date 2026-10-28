@@ -965,16 +965,6 @@ export default function DesktopNav(props: DesktopNavProps) {
                       >
                         Department of Library
                       </Link>
-                      <Link
-                        href="/departments/aided/botany"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        role="menuitem"
-                        tabIndex={0}
-                        className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
-                      >
-                        Department of Botany
-                      </Link>
                     </div>
                   </div>
                 )}

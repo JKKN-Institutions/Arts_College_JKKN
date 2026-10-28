@@ -774,13 +774,6 @@ export default function MobileNav(props: MobileNavProps) {
                           >
                             Department of Library
                           </Link>
-                          <Link
-                            href="/departments/aided/botany"
-                            onClick={toggleMobileMenu}
-                            className="block py-2 px-8 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
-                          >
-                            Department of Botany
-                          </Link>
                         </div>
                       )}
                     </div>

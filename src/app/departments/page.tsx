@@ -21,7 +21,6 @@ export const metadata: Metadata = {
 };
 
 const aidedDepartments = [
-  { name: "Botany", href: "/departments/aided/botany" },
   { name: "Chemistry", href: "/departments/aided/chemistry" },
   { name: "Commerce", href: "/departments/aided/commerce" },
   { name: "Computer Science", href: "/departments/aided/computer-science" },
