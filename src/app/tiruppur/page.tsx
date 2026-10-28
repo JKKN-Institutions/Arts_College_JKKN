@@ -390,7 +390,6 @@ export default function TiruppurPage() {
                 name: "B.Sc (various specialisations)",
                 duration: "3 years",
                 level: "UG",
-                intake: "200+ seats",
                 eligibility: "10+2 with relevant subjects",
                 href: "/programmes/aided/ug/bsc-chemistry",
               },
@@ -399,7 +398,6 @@ export default function TiruppurPage() {
                 name: "B.Com",
                 duration: "3 years",
                 level: "UG",
-                intake: "150 seats",
                 eligibility: "10+2 (Commerce preferred)",
                 href: "/programmes/aided/ug/bcom",
               },
@@ -408,7 +406,6 @@ export default function TiruppurPage() {
                 name: "BBA (Bachelor of Business Administration)",
                 duration: "3 years",
                 level: "UG",
-                intake: "60 seats",
                 eligibility: "10+2 (any stream)",
                 href: "/programmes/self-finance/ug/bba",
               },
@@ -417,7 +414,6 @@ export default function TiruppurPage() {
                 name: "BCA (Bachelor of Computer Applications)",
                 duration: "3 years",
                 level: "UG",
-                intake: "60 seats",
                 eligibility: "10+2 with Maths",
                 href: "/programmes/self-finance/ug/bca",
               },
@@ -443,12 +439,6 @@ export default function TiruppurPage() {
                     <span className="text-gray-400">Level</span>
                     <span className="text-gray-700 font-medium">
                       {prog.level}
-                    </span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-400">Intake</span>
-                    <span className="text-gray-700 font-medium">
-                      {prog.intake}
                     </span>
                   </div>
                 </div>
