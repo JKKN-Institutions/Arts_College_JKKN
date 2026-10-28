@@ -418,7 +418,7 @@ export default function KomarapalayamPage() {
                 JKKN College of Arts and Science
               </div>
               <div className="text-[#006837] text-xs font-semibold">
-                This campus — 34 UG, PG &amp; Ph.D programmes
+                This campus — 35 UG, PG &amp; Ph.D programmes
               </div>
             </Link>
             {[
@@ -629,6 +629,7 @@ export default function KomarapalayamPage() {
                     { name: "B.Com (Banking & Insurance)", href: "/programmes/self-finance/ug/bcom-banking-insurance" },
                     { name: "B.Com (CA)", href: "/programmes/self-finance/ug/bcom-ca" },
                     { name: "B.Sc (AI & Data Science)", href: "/programmes/self-finance/ug/bsc-ai-ds" },
+                    { name: "B.Sc Clinical Lab Technology", href: "/programmes/self-finance/ug/bsc-clinical-lab-technology" },
                     { name: "B.Sc Computer Science", href: "/programmes/self-finance/ug/bsc-computer-science" },
                     { name: "B.Sc (Cyber Security)", href: "/programmes/self-finance/ug/bsc-cs-cyber-security" },
                     { name: "B.Sc Microbiology", href: "/programmes/self-finance/ug/bsc-microbiology" },
@@ -1144,7 +1145,7 @@ export default function KomarapalayamPage() {
                 </tr>
                 <tr>
                   <td className="p-3 text-gray-600">Programmes</td>
-                  <td className="p-3 text-gray-800 font-medium">34 (UG + PG + Ph.D)</td>
+                  <td className="p-3 text-gray-800 font-medium">35 (UG + PG + Ph.D)</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
               </tbody>

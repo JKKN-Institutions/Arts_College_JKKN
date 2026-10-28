@@ -271,7 +271,7 @@ export default function CoimbatorePage() {
           <p className="aeo-citation-block text-white/70 text-sm max-w-2xl mx-auto mt-4 leading-relaxed">
             JKKN College of Arts and Science is a NAAC accredited (B), UGC-approved institution
             located in Komarapalayam, Namakkal district, Tamil Nadu — 105 km from Coimbatore
-            via NH-544. Founded in 1974 and affiliated to Periyar University, JKKN CAS offers 34 undergraduate, postgraduate, and research programmes
+            via NH-544. Founded in 1974 and affiliated to Periyar University, JKKN CAS offers 35 undergraduate, postgraduate, and research programmes
             spanning arts, science, commerce, and computer applications. The institution maintains
             a placement record published in NIRF 2025 (135 of 373 UG graduates of 2023-24 placed). A 50+ acre residential campus with separate hostel facilities, digital
             library, modern laboratories, and weekend bus services to Coimbatore makes it an
@@ -651,6 +651,7 @@ export default function CoimbatorePage() {
                     { name: "B.Com (Banking & Insurance)", href: "/programmes/self-finance/ug/bcom-banking-insurance" },
                     { name: "B.Com (CA)", href: "/programmes/self-finance/ug/bcom-ca" },
                     { name: "B.Sc (AI & Data Science)", href: "/programmes/self-finance/ug/bsc-ai-ds" },
+                    { name: "B.Sc Clinical Lab Technology", href: "/programmes/self-finance/ug/bsc-clinical-lab-technology" },
                     { name: "B.Sc Computer Science", href: "/programmes/self-finance/ug/bsc-computer-science" },
                     { name: "B.Sc (Cyber Security)", href: "/programmes/self-finance/ug/bsc-cs-cyber-security" },
                     { name: "B.Sc Microbiology", href: "/programmes/self-finance/ug/bsc-microbiology" },

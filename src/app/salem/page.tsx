@@ -225,7 +225,7 @@ export default function SalemPage() {
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             Students comparing arts and science colleges in Salem also
             shortlist JKKN College of Arts and Science — a NAAC accredited (B)
-            institution ~58 km from Salem on NH-544 with 34 UG, PG, and Ph.D
+            institution ~58 km from Salem on NH-544 with 35 UG, PG, and Ph.D
             programmes, aided low-fee streams, hostel, and NIRF-published placement outcomes.
             For western Salem district — Sankagiri, Edappadi, Mettur — JKKN
             is closer than Salem city colleges.
@@ -541,6 +541,7 @@ export default function SalemPage() {
                     { name: "B.Com (CA)", href: "/programmes/self-finance/ug/bcom-ca" },
                     { name: "B.Sc (AI & Data Science)", href: "/programmes/self-finance/ug/bsc-ai-ds" },
                     { name: "B.Sc AI & Data Science colleges in Tamil Nadu (guide)", href: "/bsc-ai-data-science-colleges-in-tamil-nadu" },
+                    { name: "B.Sc Clinical Lab Technology", href: "/programmes/self-finance/ug/bsc-clinical-lab-technology" },
                     { name: "B.Sc Computer Science", href: "/programmes/self-finance/ug/bsc-computer-science" },
                     { name: "B.Sc Computer Science colleges in Tamil Nadu (guide)", href: "/bsc-computer-science-colleges-in-tamil-nadu" },
                     { name: "B.Sc (Cyber Security)", href: "/programmes/self-finance/ug/bsc-cs-cyber-security" },

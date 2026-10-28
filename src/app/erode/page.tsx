@@ -546,6 +546,7 @@ export default function ErodePage() {
                     { name: "B.Com (CA)", href: "/programmes/self-finance/ug/bcom-ca" },
                     { name: "B.Sc (AI & Data Science)", href: "/programmes/self-finance/ug/bsc-ai-ds" },
                     { name: "B.Sc AI & Data Science colleges in Tamil Nadu (guide)", href: "/bsc-ai-data-science-colleges-in-tamil-nadu" },
+                    { name: "B.Sc Clinical Lab Technology", href: "/programmes/self-finance/ug/bsc-clinical-lab-technology" },
                     { name: "B.Sc Computer Science", href: "/programmes/self-finance/ug/bsc-computer-science" },
                     { name: "B.Sc Computer Science colleges in Tamil Nadu (guide)", href: "/bsc-computer-science-colleges-in-tamil-nadu" },
                     { name: "B.Sc (Cyber Security)", href: "/programmes/self-finance/ug/bsc-cs-cyber-security" },
@@ -1067,7 +1068,7 @@ export default function ErodePage() {
                 </tr>
                 <tr>
                   <td className="p-3 text-gray-600">Programmes</td>
-                  <td className="p-3 text-gray-800 font-medium">34 (UG + PG + Ph.D)</td>
+                  <td className="p-3 text-gray-800 font-medium">35 (UG + PG + Ph.D)</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
               </tbody>

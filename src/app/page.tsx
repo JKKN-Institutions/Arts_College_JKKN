@@ -329,7 +329,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto space-y-6 text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] text-gray-700">
             {/* Snippet definition paragraph — optimized for Google Featured Snippet */}
             <p>
-              <strong>JKKN College of Arts and Science</strong> is an autonomous arts and science college in Komarapalayam, Tamil Nadu. With five decades of academic heritage, NAAC accreditation (Grade B), UGC-recognized autonomous status, and a placement record published in NIRF 2025, JKKN offers 38 industry-aligned programmes near Erode on the Salem–Coimbatore Highway.
+              <strong>JKKN College of Arts and Science</strong> is an autonomous arts and science college in Komarapalayam, Tamil Nadu. With five decades of academic heritage, NAAC accreditation (Grade B), UGC-recognized autonomous status, and a placement record published in NIRF 2025, JKKN offers 35 industry-aligned programmes near Erode on the Salem–Coimbatore Highway.
             </p>
 
             {/* Numbered list — optimized for Google List Snippet */}
@@ -597,7 +597,7 @@ export default function Home() {
               <div className="text-[14px] leading-[20px] font-medium text-gray-600">UG Placed 2023-24 (NIRF)</div>
             </div>
 
-            {/* Stat 2: Programmes (34 = 19 UG + 12 PG + 3 PhD) */}
+            {/* Stat 2: Programmes (35 = 20 UG + 12 PG + 3 PhD, /fee-structure 2026-27; 3 more await Periyar University approval) */}
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
               <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">35</div>
               <div className="text-[14px] leading-[20px] font-medium text-gray-600">UG, PG &amp; PhD Programmes</div>
