@@ -123,7 +123,7 @@ export default function KomarapalayamPage() {
     },
     {
       q: "Can students from Erode, Salem, or Namakkal commute to JKKN CAS in Kumarapalayam?",
-      a: "Yes. The campus is on NH-544 in Komarapalayam town, and all buses on the Salem–Erode corridor stop at Komarapalayam. Erode is approximately 22 km away (35–40 minutes), Salem approximately 40–50 km, and Namakkal approximately 55–60 km. College transport and hostel accommodation are also available.",
+      a: "Yes. The campus is on NH-544 in Komarapalayam town, and all buses on the Salem–Erode corridor stop at Komarapalayam. Erode is about 18 km away (35–40 minutes), Salem about 57 km, and Namakkal Bus Stand about 65 km. College transport and hostel accommodation are also available.",
     },
     {
       q: "Why should students choose JKKN CAS in Komarapalayam?",
@@ -911,13 +911,13 @@ export default function KomarapalayamPage() {
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Erode Junction (~22 km from campus)",
+                  info: "Erode Junction (~21 km from campus)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
                   Icon: Plane,
                   label: "NEAREST AIRPORT",
-                  info: "Coimbatore International Airport (Code: CJB) (~80 km)",
+                  info: "Coimbatore International Airport (Code: CJB) (~101 km)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -1116,7 +1116,7 @@ export default function KomarapalayamPage() {
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">
                   <td className="p-3 text-gray-600">Location</td>
                   <td className="p-3 text-gray-800 font-medium">In Komarapalayam town, NH-544</td>
-                  <td className="p-3 text-gray-500">15-60 km away</td>
+                  <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Placement Rate</td>
@@ -1191,18 +1191,18 @@ export default function KomarapalayamPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {[
-              { Icon: MapPin, name: "Bhavani", km: "~4-5 km", href: "/bhavani" },
+              { Icon: MapPin, name: "Bhavani", km: "~8 km", href: "/bhavani" },
               { Icon: MapPin, name: "Pallipalayam", km: "~14 km", href: "/pallipalayam" },
-              { Icon: MapPin, name: "Sankagiri", km: "~15-20 km", href: "/sankagiri" },
-              { Icon: MapPin, name: "Tiruchengode", km: "~20 km", href: "/tiruchengode" },
-              { Icon: MapPin, name: "Erode", km: "~22 km", href: "/erode" },
-              { Icon: MapPin, name: "Perundurai", km: "~27-30 km", href: "/perundurai" },
-              { Icon: MapPin, name: "Gobichettipalayam", km: "~35-40 km", href: "/gobichettipalayam" },
-              { Icon: MapPin, name: "Salem", km: "~40-50 km", href: "/salem" },
-              { Icon: MapPin, name: "Namakkal", km: "~55-60 km", href: "/namakkal" },
+              { Icon: MapPin, name: "Sankagiri", km: "~16 km", href: "/sankagiri" },
+              { Icon: MapPin, name: "Tiruchengode", km: "~26 km", href: "/tiruchengode" },
+              { Icon: MapPin, name: "Erode", km: "~18 km", href: "/erode" },
+              { Icon: MapPin, name: "Perundurai", km: "~29 km", href: "/perundurai" },
+              { Icon: MapPin, name: "Gobichettipalayam", km: "~37 km", href: "/gobichettipalayam" },
+              { Icon: MapPin, name: "Salem", km: "~57 km", href: "/salem" },
+              { Icon: MapPin, name: "Namakkal", km: "~65 km", href: "/namakkal" },
               { Icon: MapPin, name: "Rasipuram", km: "~60 km", href: "/rasipuram" },
-              { Icon: MapPin, name: "Tiruppur", km: "~80-90 km", href: "/tiruppur" },
-              { Icon: MapPin, name: "Coimbatore", km: "~100-110 km", href: "/coimbatore" },
+              { Icon: MapPin, name: "Tiruppur", km: "~64 km", href: "/tiruppur" },
+              { Icon: MapPin, name: "Coimbatore", km: "~112 km", href: "/coimbatore" },
             ].map((city) => (
               <Link
                 key={city.name}

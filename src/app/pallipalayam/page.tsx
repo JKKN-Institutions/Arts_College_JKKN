@@ -821,13 +821,13 @@ export default function PallipalayamPage() {
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Erode Junction (~22 km from campus)",
+                  info: "Erode Junction (~21 km from campus)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
                   Icon: Plane,
                   label: "NEAREST AIRPORT",
-                  info: "Coimbatore International Airport (Code: CJB) (~80 km)",
+                  info: "Coimbatore International Airport (Code: CJB) (~101 km)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -1102,17 +1102,17 @@ export default function PallipalayamPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {[
               { Icon: MapPin, name: "Komarapalayam", km: "Campus town", href: "/komarapalayam" },
-              { Icon: MapPin, name: "Bhavani", km: "~4-5 km", href: "/bhavani" },
-              { Icon: MapPin, name: "Sankagiri", km: "~15-20 km", href: "/sankagiri" },
-              { Icon: MapPin, name: "Tiruchengode", km: "~20 km", href: "/tiruchengode" },
-              { Icon: MapPin, name: "Erode", km: "~22 km", href: "/erode" },
-              { Icon: MapPin, name: "Perundurai", km: "~27-30 km", href: "/perundurai" },
-              { Icon: MapPin, name: "Gobichettipalayam", km: "~35-40 km", href: "/gobichettipalayam" },
-              { Icon: MapPin, name: "Salem", km: "~40-50 km", href: "/salem" },
-              { Icon: MapPin, name: "Namakkal", km: "~55-60 km", href: "/namakkal" },
+              { Icon: MapPin, name: "Bhavani", km: "~8 km", href: "/bhavani" },
+              { Icon: MapPin, name: "Sankagiri", km: "~16 km", href: "/sankagiri" },
+              { Icon: MapPin, name: "Tiruchengode", km: "~26 km", href: "/tiruchengode" },
+              { Icon: MapPin, name: "Erode", km: "~18 km", href: "/erode" },
+              { Icon: MapPin, name: "Perundurai", km: "~29 km", href: "/perundurai" },
+              { Icon: MapPin, name: "Gobichettipalayam", km: "~37 km", href: "/gobichettipalayam" },
+              { Icon: MapPin, name: "Salem", km: "~57 km", href: "/salem" },
+              { Icon: MapPin, name: "Namakkal", km: "~65 km", href: "/namakkal" },
               { Icon: MapPin, name: "Rasipuram", km: "~60 km", href: "/rasipuram" },
-              { Icon: MapPin, name: "Tiruppur", km: "~80-90 km", href: "/tiruppur" },
-              { Icon: MapPin, name: "Coimbatore", km: "~100-110 km", href: "/coimbatore" },
+              { Icon: MapPin, name: "Tiruppur", km: "~64 km", href: "/tiruppur" },
+              { Icon: MapPin, name: "Coimbatore", km: "~112 km", href: "/coimbatore" },
             ].map((city) => (
               <Link
                 key={city.name}

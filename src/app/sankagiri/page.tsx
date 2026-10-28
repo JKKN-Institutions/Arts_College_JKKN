@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // 51 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC accredited (B) arts and science college ~15-20 km from Sankagiri on NH-544. 35 programmes, NIRF-published placement outcomes. Admissions open 2026–27.",
+    "JKKN CAS — NAAC accredited (B) arts and science college ~16 km from Sankagiri on NH-544. 35 programmes, NIRF-published placement outcomes. Admissions open 2026–27.",
   // ~145 chars — within 155 limit
 
   keywords: [
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College near Sankagiri — JKKN CAS",
     description:
-      "JKKN CAS — NAAC accredited (B), 35 programmes, NIRF-published placement outcomes. ~15-20 km from Sankagiri via NH-544. Admissions open 2026–27.",
+      "JKKN CAS — NAAC accredited (B), 35 programmes, NIRF-published placement outcomes. ~16 km from Sankagiri via NH-544. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/sankagiri",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -90,11 +90,11 @@ export default function SankagiriPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Sankagiri?",
-      a: "JKKN College of Arts and Science, located ~15-20 km from Sankagiri on the NH-544 corridor, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located ~16 km from Sankagiri on the NH-544 corridor, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Sankagiri?",
-      a: "JKKN CAS is approximately 15-20 km from Sankagiri via the NH-544 corridor, a journey of about 20-25 minutes by road. Buses on the Salem–Erode route via Sankagiri stop at Komarapalayam throughout the day. College transport is also available.",
+      a: "JKKN CAS is approximately 16 km from Sankagiri via the NH-544 corridor, a journey of about 20-25 minutes by road. Buses on the Salem–Erode route via Sankagiri stop at Komarapalayam throughout the day. College transport is also available.",
     },
     {
       q: "Which courses are popular among Sankari students at JKKN CAS?",
@@ -126,7 +126,7 @@ export default function SankagiriPage() {
     },
     {
       q: "Why do Sankari students choose JKKN CAS over colleges in Salem city?",
-      a: "For students from Sankagiri (also spelled Sankari), JKKN CAS is closer than Salem city — ~15-20 km via the direct NH-544 corridor versus ~35-40 km to Salem city colleges. Add NAAC accreditation (Grade B), government-aided programmes, a residential campus, and NIRF-published placement outcomes, and the daily commute or hostel choice becomes easy.",
+      a: "For students from Sankagiri (also spelled Sankari), JKKN CAS is closer than Salem city — ~16 km via the direct NH-544 corridor versus a longer trip to Salem city colleges. Add NAAC accreditation (Grade B), government-aided programmes, a residential campus, and NIRF-published placement outcomes, and the daily commute or hostel choice becomes easy.",
     },
   ];
 
@@ -146,7 +146,7 @@ export default function SankagiriPage() {
             "about": ORG_REF,
             "name": "Arts and Science College near Sankagiri — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/sankagiri",
-            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college accessible from Sankagiri via the NH-544 corridor (~15-20 km). 35 programmes, NIRF-published placement outcomes, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college accessible from Sankagiri via the NH-544 corridor (~16 km). 35 programmes, NIRF-published placement outcomes, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -184,7 +184,7 @@ export default function SankagiriPage() {
       />
       <CourseSchema
         name="BBA (Bachelor of Business Administration)"
-        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — approximately 15-20 km from Sankagiri."
+        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — approximately 16 km from Sankagiri."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -220,7 +220,7 @@ export default function SankagiriPage() {
           </h2>
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             JKKN College of Arts and Science, located on NH-544 approximately
-            15-20 km from Sankagiri, is a NAAC accredited (B) institution offering
+            16 km from Sankagiri, is a NAAC accredited (B) institution offering
             35 UG and PG programmes including BCA, BBA, B.Com, and B.Sc
             specialisations. Affiliated to Periyar University, it reports its placement outcomes in NIRF 2025: 135 of 373 UG graduates of 2023-24 were placed.
           </p>
@@ -230,14 +230,14 @@ export default function SankagiriPage() {
             Sankagiri to JKKN — a short, smooth ride on the NH-544 corridor.
             JKKN College of Arts and Science offers NAAC accredited (B) arts and
             science programmes with placement support — approximately
-            15-20 km from Sankagiri with excellent highway connectivity.
+            16 km from Sankagiri with excellent highway connectivity.
           </p>
 
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
-              { value: "18km", label: "FROM SANKAGIRI" },
+              { value: "16km", label: "FROM SANKAGIRI" },
               { value: "35", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
@@ -300,14 +300,14 @@ export default function SankagiriPage() {
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-wrap sm:flex-nowrap items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
-                18<span className="text-2xl font-semibold text-[#006837]">km</span>
+                16<span className="text-2xl font-semibold text-[#006837]">km</span>
               </span>
               <div>
                 <div className="font-bold text-gray-800 text-base sm:text-lg">
                   From Sankagiri to JKKN CAS
                 </div>
                 <div className="text-gray-500 text-sm mt-1">
-                  ~15-20 km, 20-25 minutes via NH-544 corridor
+                  ~16 km, 20-25 minutes via NH-544 corridor
                 </div>
               </div>
             </div>
@@ -335,7 +335,7 @@ export default function SankagiriPage() {
               Sankagiri (also spelled Sankari), in Salem district, is known for
               Sankagiri Fort and its truck and lorry transport industry —
               families here value practical, career-focused education. JKKN is
-              approximately 15-20 km away on the NH-544 corridor — closer than
+              approximately 16 km away on the NH-544 corridor — closer than
               colleges in Salem city — making daily commute comfortable and
               quick.
             </p>
@@ -375,7 +375,7 @@ export default function SankagiriPage() {
               {
                 Icon: Bus,
                 title: "Easy Commute",
-                desc: "Just ~15-20 km from Sankagiri. Daily commute or comfortable hostel — your choice.",
+                desc: "Just ~16 km from Sankagiri. Daily commute or comfortable hostel — your choice.",
               },
             ].map((item) => (
               <div
@@ -797,7 +797,7 @@ export default function SankagiriPage() {
                   Sankagiri → JKKN CAS Campus
                 </div>
                 <div className="text-[#7cb983] text-sm">
-                  ~15-20 km • 20-25 minutes
+                  ~16 km • 20-25 minutes
                 </div>
               </div>
             </div>
@@ -820,13 +820,13 @@ export default function SankagiriPage() {
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Sankaridurg station serves Sankagiri town; Erode Junction (~22 km from campus) for major trains",
+                  info: "Sankaridurg station serves Sankagiri town; Erode Junction (~21 km from campus) for major trains",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
                   Icon: Plane,
                   label: "NEAREST AIRPORT",
-                  info: "Coimbatore International Airport (Code: CJB) (~80 km)",
+                  info: "Coimbatore International Airport (Code: CJB) (~101 km)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -1024,8 +1024,8 @@ export default function SankagiriPage() {
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">
                   <td className="p-3 text-gray-600">Distance from Sankagiri</td>
-                  <td className="p-3 text-gray-800 font-medium">~15-20 km to JKKN via NH-544</td>
-                  <td className="p-3 text-gray-500">~35-40 km to Salem city</td>
+                  <td className="p-3 text-gray-800 font-medium">~16 km to JKKN via NH-544</td>
+                  <td className="p-3 text-gray-500">Longer trip to Salem city</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Placement Rate</td>
@@ -1101,17 +1101,17 @@ export default function SankagiriPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {[
               { Icon: MapPin, name: "Komarapalayam", km: "Campus town", href: "/komarapalayam" },
-              { Icon: MapPin, name: "Bhavani", km: "~4-5 km", href: "/bhavani" },
+              { Icon: MapPin, name: "Bhavani", km: "~8 km", href: "/bhavani" },
               { Icon: MapPin, name: "Pallipalayam", km: "~14 km", href: "/pallipalayam" },
-              { Icon: MapPin, name: "Tiruchengode", km: "~20 km", href: "/tiruchengode" },
-              { Icon: MapPin, name: "Erode", km: "~22 km", href: "/erode" },
-              { Icon: MapPin, name: "Perundurai", km: "~27-30 km", href: "/perundurai" },
-              { Icon: MapPin, name: "Gobichettipalayam", km: "~35-40 km", href: "/gobichettipalayam" },
-              { Icon: MapPin, name: "Salem", km: "~40-50 km", href: "/salem" },
-              { Icon: MapPin, name: "Namakkal", km: "~55-60 km", href: "/namakkal" },
+              { Icon: MapPin, name: "Tiruchengode", km: "~26 km", href: "/tiruchengode" },
+              { Icon: MapPin, name: "Erode", km: "~18 km", href: "/erode" },
+              { Icon: MapPin, name: "Perundurai", km: "~29 km", href: "/perundurai" },
+              { Icon: MapPin, name: "Gobichettipalayam", km: "~37 km", href: "/gobichettipalayam" },
+              { Icon: MapPin, name: "Salem", km: "~57 km", href: "/salem" },
+              { Icon: MapPin, name: "Namakkal", km: "~65 km", href: "/namakkal" },
               { Icon: MapPin, name: "Rasipuram", km: "~60 km", href: "/rasipuram" },
-              { Icon: MapPin, name: "Tiruppur", km: "~80-90 km", href: "/tiruppur" },
-              { Icon: MapPin, name: "Coimbatore", km: "~100-110 km", href: "/coimbatore" },
+              { Icon: MapPin, name: "Tiruppur", km: "~64 km", href: "/tiruppur" },
+              { Icon: MapPin, name: "Coimbatore", km: "~112 km", href: "/coimbatore" },
             ].map((city) => (
               <Link
                 key={city.name}

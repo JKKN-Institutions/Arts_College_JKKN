@@ -163,7 +163,7 @@ const homepageFAQs = [
   {
     question: "How to reach JKKN College from Erode, Salem, or Coimbatore?",
     answer:
-      "JKKN College is located at Natarajapuram on NH-544 (Salem–Coimbatore Highway) in Komarapalayam, Namakkal District. Distance from nearby cities: Erode — 22 km (35 minutes), Salem — 58 km (1 hour), Tiruchengode — 15 km (20 minutes), Coimbatore — 105 km (2 hours). Regular bus services from Erode and Salem stop near the campus. The nearest railway station is Erode Junction.",
+      "JKKN College is located at Natarajapuram on NH-544 (Salem–Coimbatore Highway) in Komarapalayam, Namakkal District. Distance from nearby cities: Erode — 18 km, Salem — 57 km, Tiruchengode — 26 km, Coimbatore — 112 km by road. Regular bus services from Erode and Salem stop near the campus. The nearest railway station is Erode Junction.",
   },
   {
     question: "Does JKKN College offer distance education or online programmes?",
@@ -242,7 +242,7 @@ export default function Home() {
               {/* Description Paragraphs - keyword-rich with local landmarks */}
               <div className="space-y-4 text-[14px] sm:text-[18px] lg:text-[20px] leading-[20px] sm:leading-[29.25px] lg:leading-[28px] text-black font-normal">
                 <p>
-                  Located on <strong>NH-544 (Salem–Coimbatore Highway)</strong> in Komarapalayam, just 22 km from Erode and 20 km from Tiruchengode, JKKN College of Arts and Science is one of the most accessible and well-connected arts and science colleges in Tamil Nadu. The 15-acre campus serves learners from Erode, Salem, Namakkal, Tiruchengode, Coimbatore, and Tiruppur districts.
+                  Located on <strong>NH-544 (Salem–Coimbatore Highway)</strong> in Komarapalayam, about 18 km from Erode and 26 km from Tiruchengode, JKKN College of Arts and Science is one of the most accessible and well-connected arts and science colleges in Tamil Nadu. The 15-acre campus serves learners from Erode, Salem, Namakkal, Tiruchengode, Coimbatore, and Tiruppur districts.
                 </p>
                 <p>
                   Established in 1974 as part of <strong>J.K.K. Nattraja Educational Institutions</strong> (est. 1952), JKKN blends 74+ years of academic heritage with a modern, industry-integrated learning framework. Our NAAC accreditation (Grade B) and UGC-recognized autonomous status empower us to design programmes aligned with current industry demands.

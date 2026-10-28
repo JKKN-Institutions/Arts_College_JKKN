@@ -44,7 +44,7 @@ import {
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
   description:
-    "JKKN CAS — 105 km from Coimbatore. NAAC accredited (B). Self-finance UG fees ₹24,500–₹34,000 a year. BCA, B.Sc CS, BBA, B.Com. NIRF-published placement outcomes. 2026-27 open.",
+    "JKKN CAS — 112 km from Coimbatore. NAAC accredited (B). Self-finance UG fees ₹24,500–₹34,000 a year. BCA, B.Sc CS, BBA, B.Com. NIRF-published placement outcomes. 2026-27 open.",
   keywords: [
     "arts and science college near Coimbatore",
     "best college near Coimbatore",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
     description:
-      "JKKN CAS — 105 km from Coimbatore. NAAC accredited (B), NIRF-published placement outcomes. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 112 km from Coimbatore. NAAC accredited (B), NIRF-published placement outcomes. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/coimbatore",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -73,14 +73,14 @@ export const metadata: Metadata = {
         url: "https://cas.jkkn.ac.in/images/facilities/JKKN%20Arts%20Classroom.png",
         width: 1200,
         height: 630,
-        alt: "JKKN College of Arts and Science — arts college 105 km from Coimbatore, Tamil Nadu",
+        alt: "JKKN College of Arts and Science — arts college 112 km from Coimbatore, Tamil Nadu",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
-    description: "JKKN CAS — 105 km from Coimbatore. NAAC accredited (B), NIRF-published placement outcomes. Admissions open 2026-27.",
+    description: "JKKN CAS — 112 km from Coimbatore. NAAC accredited (B), NIRF-published placement outcomes. Admissions open 2026-27.",
   },
 };
 
@@ -88,11 +88,11 @@ export default function CoimbatorePage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Coimbatore?",
-      a: "JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC accredited (B), 74-year-old institution with 35 programmes and NIRF-published placement outcomes. Admissions open for 2026–27.",
+      a: "JKKN College of Arts and Science, 112 km from Coimbatore on NH-544, is a NAAC accredited (B), 74-year-old institution with 35 programmes and NIRF-published placement outcomes. Admissions open for 2026–27.",
     },
     {
       q: "How far is JKKN CAS from Coimbatore?",
-      a: "JKKN CAS is 105 km from Coimbatore city centre — approximately 2 to 2.5 hours via NH-544. Direct TNSTC and private buses run from Gandhipuram and Ukkadam bus stands.",
+      a: "JKKN CAS is 112 km from Coimbatore city centre — approximately 2 to 2.5 hours via NH-544. Direct TNSTC and private buses run from Gandhipuram and Ukkadam bus stands.",
     },
     {
       q: "Which courses are popular among Coimbatore students at JKKN CAS?",
@@ -178,7 +178,7 @@ export default function CoimbatorePage() {
                 "@type": "HowToStep",
                 "position": 1,
                 "name": "Visit Website or Campus",
-                "text": "Explore programmes and campus life at cas.jkkn.ac.in or visit the campus in Komarapalayam, 105 km from Coimbatore.",
+                "text": "Explore programmes and campus life at cas.jkkn.ac.in or visit the campus in Komarapalayam, 112 km from Coimbatore.",
                 "url": "https://cas.jkkn.ac.in"
               },
               {
@@ -212,7 +212,7 @@ export default function CoimbatorePage() {
       />
       <CourseSchema
         name="B.Sc (Various Specialisations)"
-        description="3-year undergraduate science programme with specialisations in Chemistry, Mathematics, Zoology, Physics, Microbiology, Computer Science, and more at JKKN CAS — 105 km from Coimbatore."
+        description="3-year undergraduate science programme with specialisations in Chemistry, Mathematics, Zoology, Physics, Microbiology, Computer Science, and more at JKKN CAS — 112 km from Coimbatore."
         duration="PT3Y"
         educationalLevel="UG"
         category="Aided"
@@ -228,7 +228,7 @@ export default function CoimbatorePage() {
       />
       <CourseSchema
         name="BBA (Bachelor of Business Administration)"
-        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — 105 km from Coimbatore on NH-544."
+        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — 112 km from Coimbatore on NH-544."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -236,7 +236,7 @@ export default function CoimbatorePage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme at JKKN CAS — 105 km from Coimbatore. Pipeline to Coimbatore TIDEL Park and Elcot SEZ IT companies. Fees ₹33,000 a year. placement record published in NIRF 2025."
+        description="3-year undergraduate IT programme at JKKN CAS — 112 km from Coimbatore. Pipeline to Coimbatore TIDEL Park and Elcot SEZ IT companies. Fees ₹33,000 a year. placement record published in NIRF 2025."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -270,7 +270,7 @@ export default function CoimbatorePage() {
           {/* AEO Citation Block — AI Overview anchor paragraph */}
           <p className="aeo-citation-block text-white/70 text-sm max-w-2xl mx-auto mt-4 leading-relaxed">
             JKKN College of Arts and Science is a NAAC accredited (B), UGC-approved institution
-            located in Komarapalayam, Namakkal district, Tamil Nadu — 105 km from Coimbatore
+            located in Komarapalayam, Namakkal district, Tamil Nadu — 112 km from Coimbatore
             via NH-544. Founded in 1974 and affiliated to Periyar University, JKKN CAS offers 35 undergraduate, postgraduate, and research programmes
             spanning arts, science, commerce, and computer applications. The institution maintains
             a placement record published in NIRF 2025 (135 of 373 UG graduates of 2023-24 placed). A 50+ acre residential campus with separate hostel facilities, digital
@@ -282,7 +282,7 @@ export default function CoimbatorePage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
-              { value: "105km", label: "FROM COIMBATORE" },
+              { value: "112km", label: "FROM COIMBATORE" },
               { value: "4", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
@@ -345,7 +345,7 @@ export default function CoimbatorePage() {
           <div className="distance-card-summary bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-wrap sm:flex-nowrap items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
-                105<span className="text-2xl font-semibold text-[#006837]">km</span>
+                112<span className="text-2xl font-semibold text-[#006837]">km</span>
               </span>
               <div>
                 <div className="font-bold text-gray-800 text-base sm:text-lg">
@@ -415,7 +415,7 @@ export default function CoimbatorePage() {
               {
                 Icon: Bus,
                 title: "Easy Commute",
-                desc: "Just 100-110 km from Coimbatore. Daily commute or comfortable hostel — your choice.",
+                desc: "Just 112 km from Coimbatore. Daily commute or comfortable hostel — your choice.",
               },
             ].map((item) => (
               <div
@@ -433,7 +433,7 @@ export default function CoimbatorePage() {
         </div>
       </section>
 
-      {/* Why 105 km Is Worth It — Cost Comparison */}
+      {/* Why 112 km Is Worth It — Cost Comparison */}
       <section aria-label="Cost comparison with Coimbatore colleges" className="bg-[#FBFBEE] py-14 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
@@ -973,8 +973,7 @@ export default function CoimbatorePage() {
             buses depart regularly from Gandhipuram and Ukkadam bus stands toward Komarapalayam;
             the campus is on the highway. Students opting for hostel accommodation benefit from
             weekend bus services operated by the college, with Saturday departures from campus and
-            Sunday returns. Coimbatore International Airport (CJB) and Coimbatore Junction railway
-            station are both approximately 100–105 km from the campus.
+            Sunday returns. Coimbatore International Airport (CJB) is about 101 km and Coimbatore city about 112 km from the campus.
           </p>
 
           <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
@@ -988,7 +987,7 @@ export default function CoimbatorePage() {
                   Coimbatore → JKKN CAS Campus
                 </div>
                 <div className="text-[#7cb983] text-sm">
-                  100-110 km • 2-2.5 hours
+                  112 km • 2-2.5 hours
                 </div>
               </div>
             </div>
@@ -1011,13 +1010,13 @@ export default function CoimbatorePage() {
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Coimbatore Junction (~105 km from campus)",
+                  info: "Coimbatore Junction (~112 km from campus)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
                   Icon: Plane,
                   label: "NEAREST AIRPORT",
-                  info: "Coimbatore International Airport (Code: CJB) (~100 km)",
+                  info: "Coimbatore International Airport (Code: CJB) (~101 km)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -1320,17 +1319,17 @@ export default function CoimbatorePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {[
               { Icon: Home, name: "Komarapalayam", km: "Campus town", href: "/komarapalayam" },
-              { Icon: MapPin, name: "Bhavani", km: "~4-5 km", href: "/bhavani" },
+              { Icon: MapPin, name: "Bhavani", km: "~8 km", href: "/bhavani" },
               { Icon: MapPin, name: "Pallipalayam", km: "~14 km", href: "/pallipalayam" },
-              { Icon: MapPin, name: "Sankagiri", km: "~15-20 km", href: "/sankagiri" },
-              { Icon: MapPin, name: "Tiruchengode", km: "~20 km", href: "/tiruchengode" },
-              { Icon: Mountain, name: "Erode", km: "~22 km", href: "/erode" },
-              { Icon: MapPin, name: "Perundurai", km: "~27-30 km", href: "/perundurai" },
-              { Icon: MapPin, name: "Gobichettipalayam", km: "~35-40 km", href: "/gobichettipalayam" },
-              { Icon: Bus, name: "Salem", km: "40-50 km", href: "/salem" },
-              { Icon: MapPin, name: "Namakkal", km: "~55-60 km", href: "/namakkal" },
+              { Icon: MapPin, name: "Sankagiri", km: "~16 km", href: "/sankagiri" },
+              { Icon: MapPin, name: "Tiruchengode", km: "~26 km", href: "/tiruchengode" },
+              { Icon: Mountain, name: "Erode", km: "~18 km", href: "/erode" },
+              { Icon: MapPin, name: "Perundurai", km: "~29 km", href: "/perundurai" },
+              { Icon: MapPin, name: "Gobichettipalayam", km: "~37 km", href: "/gobichettipalayam" },
+              { Icon: Bus, name: "Salem", km: "~57 km", href: "/salem" },
+              { Icon: MapPin, name: "Namakkal", km: "~65 km", href: "/namakkal" },
               { Icon: MapPin, name: "Rasipuram", km: "~60 km", href: "/rasipuram" },
-              { Icon: Target, name: "Tiruppur", km: "80-90 km", href: "/tiruppur" },
+              { Icon: Target, name: "Tiruppur", km: "~64 km", href: "/tiruppur" },
             ].map((city) => (
               <Link
                 key={city.name}

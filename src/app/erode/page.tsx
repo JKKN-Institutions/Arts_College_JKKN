@@ -94,11 +94,11 @@ export default function ErodePage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Erode?",
-      a: "JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located 18 km from Erode on NH-544, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Erode?",
-      a: "JKKN CAS is approximately 22 km from Erode city centre via NH-544, a journey of 35–40 minutes by road. Regular TNSTC government buses run from Erode Central Bus Stand to Komarapalayam throughout the day. College transport is also available.",
+      a: "JKKN CAS is approximately 18 km from Erode city centre via NH-544, a journey of 35–40 minutes by road. Regular TNSTC government buses run from Erode Central Bus Stand to Komarapalayam throughout the day. College transport is also available.",
     },
     {
       q: "Which courses are popular among Erode students at JKKN CAS?",
@@ -130,7 +130,7 @@ export default function ErodePage() {
     },
     {
       q: "Why should Erode students choose JKKN CAS over colleges in Erode city?",
-      a: "JKKN CAS offers NAAC accreditation (Grade B), government-aided programmes, a residential campus, and NIRF-published placement outcomes. The 22 km NH-544 route makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
+      a: "JKKN CAS offers NAAC accreditation (Grade B), government-aided programmes, a residential campus, and NIRF-published placement outcomes. The 18 km NH-544 route makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
     },
     {
       q: "How does JKKN CAS compare with other arts and science colleges in Erode district?",
@@ -192,7 +192,7 @@ export default function ErodePage() {
       />
       <CourseSchema
         name="BBA (Bachelor of Business Administration)"
-        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — approximately 22 km from Erode."
+        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — approximately 18 km from Erode."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -228,7 +228,7 @@ export default function ErodePage() {
           </h2>
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             JKKN College of Arts and Science, located on NH-544 approximately
-            22 km from Erode, is a NAAC accredited (B) institution offering 35 UG
+            18 km from Erode, is a NAAC accredited (B) institution offering 35 UG
             and PG programmes including BCA, BBA, B.Com, and B.Sc
             specialisations. Affiliated to Periyar University, it reports its placement outcomes in NIRF 2025: 135 of 373 UG graduates of 2023-24 were placed.
           </p>
@@ -237,7 +237,7 @@ export default function ErodePage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Erode to JKKN — a short, smooth ride on NH-544. JKKN College of
             Arts and Science offers NAAC accredited (B) arts and science programmes
-            with placement support — approximately 22 km from Erode with
+            with placement support — approximately 18 km from Erode with
             excellent highway connectivity.
           </p>
 
@@ -245,7 +245,7 @@ export default function ErodePage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
-              { value: "22km", label: "FROM ERODE" },
+              { value: "18km", label: "FROM ERODE" },
               { value: "4", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
@@ -308,7 +308,7 @@ export default function ErodePage() {
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-wrap sm:flex-nowrap items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
-                22<span className="text-2xl font-semibold text-[#006837]">km</span>
+                18<span className="text-2xl font-semibold text-[#006837]">km</span>
               </span>
               <div>
                 <div className="font-bold text-gray-800 text-base sm:text-lg">
@@ -341,7 +341,7 @@ export default function ErodePage() {
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
               Erode&apos;s strong industrial base means families value quality
-              education with good placement outcomes. JKKN is approximately 22 km
+              education with good placement outcomes. JKKN is approximately 18 km
               away. The
               excellent NH-544 connectivity makes daily commute comfortable and
               quick.
@@ -382,7 +382,7 @@ export default function ErodePage() {
               {
                 Icon: Bus,
                 title: "Easy Commute",
-                desc: "Just 22 km from Erode. Daily commute or comfortable hostel — your choice.",
+                desc: "Just 18 km from Erode. Daily commute or comfortable hostel — your choice.",
               },
             ].map((item) => (
               <div
@@ -811,7 +811,7 @@ export default function ErodePage() {
                   Erode → JKKN CAS Campus
                 </div>
                 <div className="text-[#7cb983] text-sm">
-                  ~22 km • 35–40 minutes
+                  ~18 km • 35–40 minutes
                 </div>
               </div>
             </div>
@@ -834,13 +834,13 @@ export default function ErodePage() {
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Erode Junction (~22 km from campus)",
+                  info: "Erode Junction (~21 km from campus)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
                   Icon: Plane,
                   label: "NEAREST AIRPORT",
-                  info: "Coimbatore International Airport (Code: CJB) (~80 km)",
+                  info: "Coimbatore International Airport (Code: CJB) (~101 km)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -1038,7 +1038,7 @@ export default function ErodePage() {
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">
                   <td className="p-3 text-gray-600">Distance from Erode</td>
-                  <td className="p-3 text-gray-800 font-medium">~22 km via NH-544</td>
+                  <td className="p-3 text-gray-800 font-medium">~18 km via NH-544</td>
                   <td className="p-3 text-gray-500">0–10 km</td>
                 </tr>
                 <tr className="border-b border-gray-100">
@@ -1115,17 +1115,17 @@ export default function ErodePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {[
               { Icon: Home, name: "Komarapalayam", km: "Campus town", href: "/komarapalayam" },
-              { Icon: MapPin, name: "Bhavani", km: "~4-5 km", href: "/bhavani" },
+              { Icon: MapPin, name: "Bhavani", km: "~8 km", href: "/bhavani" },
               { Icon: MapPin, name: "Pallipalayam", km: "~14 km", href: "/pallipalayam" },
-              { Icon: MapPin, name: "Sankagiri", km: "~15-20 km", href: "/sankagiri" },
-              { Icon: MapPin, name: "Tiruchengode", km: "~20 km", href: "/tiruchengode" },
-              { Icon: MapPin, name: "Perundurai", km: "~27-30 km", href: "/perundurai" },
-              { Icon: MapPin, name: "Gobichettipalayam", km: "~35-40 km", href: "/gobichettipalayam" },
-              { Icon: Bus, name: "Salem", km: "40-50 km", href: "/salem" },
-              { Icon: MapPin, name: "Namakkal", km: "~55-60 km", href: "/namakkal" },
+              { Icon: MapPin, name: "Sankagiri", km: "~16 km", href: "/sankagiri" },
+              { Icon: MapPin, name: "Tiruchengode", km: "~26 km", href: "/tiruchengode" },
+              { Icon: MapPin, name: "Perundurai", km: "~29 km", href: "/perundurai" },
+              { Icon: MapPin, name: "Gobichettipalayam", km: "~37 km", href: "/gobichettipalayam" },
+              { Icon: Bus, name: "Salem", km: "~57 km", href: "/salem" },
+              { Icon: MapPin, name: "Namakkal", km: "~65 km", href: "/namakkal" },
               { Icon: MapPin, name: "Rasipuram", km: "~60 km", href: "/rasipuram" },
-              { Icon: Target, name: "Tiruppur", km: "80-90 km", href: "/tiruppur" },
-              { Icon: Star, name: "Coimbatore", km: "100-110 km", href: "/coimbatore" },
+              { Icon: Target, name: "Tiruppur", km: "~64 km", href: "/tiruppur" },
+              { Icon: Star, name: "Coimbatore", km: "~112 km", href: "/coimbatore" },
             ].map((city) => (
               <Link
                 key={city.name}

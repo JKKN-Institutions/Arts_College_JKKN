@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // 49 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC accredited (B) arts and science college ~4-5 km from Bhavani across the Cauvery bridge. 35 programmes, NIRF-published placement outcomes. Admissions 2026–27.",
+    "JKKN CAS — NAAC accredited (B) arts and science college ~8 km from Bhavani across the Cauvery bridge. 35 programmes, NIRF-published placement outcomes. Admissions 2026–27.",
   // ~151 chars — within 155 limit
 
   keywords: [
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Bhavani — JKKN CAS",
     description:
-      "JKKN CAS — NAAC accredited (B), 35 programmes, NIRF-published placement outcomes. Just ~4-5 km from Bhavani across the Cauvery bridge. Admissions open 2026–27.",
+      "JKKN CAS — NAAC accredited (B), 35 programmes, NIRF-published placement outcomes. Just ~8 km from Bhavani across the Cauvery bridge. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/bhavani",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Bhavani — JKKN CAS",
     description:
-      "NAAC accredited (B) arts college ~4-5 km from Bhavani. 35 programmes, NIRF-published placement outcomes, easy day-scholar commute. Admissions 2026–27 open.",
+      "NAAC accredited (B) arts college ~8 km from Bhavani. 35 programmes, NIRF-published placement outcomes, easy day-scholar commute. Admissions 2026–27 open.",
   },
 };
 
@@ -90,15 +90,15 @@ export default function BhavaniPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Bhavani?",
-      a: "JKKN College of Arts and Science, located just ~4-5 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC.",
+      a: "JKKN College of Arts and Science, located just ~8 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC.",
     },
     {
       q: "How far is JKKN CAS from Bhavani?",
-      a: "JKKN CAS is approximately 4-5 km from Bhavani — about 10-15 minutes by road. Bhavani and Komarapalayam are twin towns facing each other across the Cauvery river, connected by bridge. Town buses and autos cross the bridge continuously throughout the day, making the commute trivial.",
+      a: "JKKN CAS is approximately 8 km from Bhavani — about 10-15 minutes by road. Bhavani and Komarapalayam are twin towns facing each other across the Cauvery river, connected by bridge. Town buses and autos cross the bridge continuously throughout the day, making the commute trivial.",
     },
     {
       q: "Is there a direct bus or auto from Bhavani to JKKN CAS?",
-      a: "Yes. Continuous town buses and autos run between Bhavani and Komarapalayam across the Cauvery bridge throughout the day. All NH-544 corridor buses also stop at Komarapalayam. The JKKN campus sits directly on NH-544 at Natarajapuram, so the ~4-5 km journey takes just 10-15 minutes.",
+      a: "Yes. Continuous town buses and autos run between Bhavani and Komarapalayam across the Cauvery bridge throughout the day. All NH-544 corridor buses also stop at Komarapalayam. The JKKN campus sits directly on NH-544 at Natarajapuram, so the ~8 km journey takes just 10-15 minutes.",
     },
     {
       q: "Which courses are popular among Bhavani students at JKKN CAS?",
@@ -110,7 +110,7 @@ export default function BhavaniPage() {
     },
     {
       q: "Does JKKN CAS provide hostel for Bhavani students?",
-      a: "JKKN CAS provides separate hostel accommodation for boys and girls on the main campus, with furnished rooms, three meals per day, WiFi, and 24/7 security. That said, most Bhavani students commute daily as day scholars — the campus is just ~4-5 km away, a 10-15 minute ride across the Cauvery bridge.",
+      a: "JKKN CAS provides separate hostel accommodation for boys and girls on the main campus, with furnished rooms, three meals per day, WiFi, and 24/7 security. That said, most Bhavani students commute daily as day scholars — the campus is just ~8 km away, a 10-15 minute ride across the Cauvery bridge.",
     },
     {
       q: "How can I apply for admission at JKKN CAS?",
@@ -126,7 +126,7 @@ export default function BhavaniPage() {
     },
     {
       q: "Why should Bhavani students choose JKKN CAS over colleges in Erode city?",
-      a: "For Bhavani students, JKKN CAS is just ~4-5 km away across the Cauvery bridge, while Erode city colleges are ~15-20 km away. JKKN offers NAAC accreditation (Grade B), affordable fees, 35 programmes, and NIRF-published placement outcomes — without the long daily commute. Hostel facilities are also available for those who prefer on-campus living.",
+      a: "For Bhavani students, JKKN CAS is just ~8 km away across the Cauvery bridge, while colleges in Erode city are a longer trip. JKKN offers NAAC accreditation (Grade B), affordable fees, 35 programmes, and NIRF-published placement outcomes — without the long daily commute. Hostel facilities are also available for those who prefer on-campus living.",
     },
   ];
 
@@ -146,7 +146,7 @@ export default function BhavaniPage() {
             "about": ORG_REF,
             "name": "Arts and Science College Near Bhavani — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/bhavani",
-            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college approximately 4-5 km from Bhavani across the Cauvery bridge. 35 programmes, NIRF-published placement outcomes, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college approximately 8 km from Bhavani across the Cauvery bridge. 35 programmes, NIRF-published placement outcomes, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -184,7 +184,7 @@ export default function BhavaniPage() {
       />
       <CourseSchema
         name="BBA (Bachelor of Business Administration)"
-        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — approximately 4-5 km from Bhavani."
+        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — approximately 8 km from Bhavani."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -219,7 +219,7 @@ export default function BhavaniPage() {
             Arts and Science College Near Bhavani — JKKN CAS
           </h2>
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
-            JKKN College of Arts and Science, located approximately 4-5 km
+            JKKN College of Arts and Science, located approximately 8 km
             from Bhavani across the Cauvery bridge in Komarapalayam, is a
             NAAC accredited (B) institution offering 35 UG and PG programmes
             including BCA, BBA, B.Com, and B.Sc specialisations. Affiliated
@@ -237,7 +237,7 @@ export default function BhavaniPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
-              { value: "5km", label: "FROM BHAVANI" },
+              { value: "8km", label: "FROM BHAVANI" },
               { value: "35", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
@@ -300,14 +300,14 @@ export default function BhavaniPage() {
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-wrap sm:flex-nowrap items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
-                5<span className="text-2xl font-semibold text-[#006837]">km</span>
+                8<span className="text-2xl font-semibold text-[#006837]">km</span>
               </span>
               <div>
                 <div className="font-bold text-gray-800 text-base sm:text-lg">
                   From Bhavani to JKKN CAS
                 </div>
                 <div className="text-gray-500 text-sm mt-1">
-                  ~4-5 km • 10-15 minutes across the Cauvery bridge — Bhavani and Komarapalayam are twin towns
+                  ~8 km • 10-15 minutes across the Cauvery bridge — Bhavani and Komarapalayam are twin towns
                 </div>
               </div>
             </div>
@@ -335,7 +335,7 @@ export default function BhavaniPage() {
               Bhavani — famous for Jamakkalam handloom carpet weaving and the
               Sangameshwarar Temple at Kooduthurai — sits directly across the
               Cauvery river from Komarapalayam. For Bhavani students, JKKN CAS
-              is just ~4-5 km over the bridge, a trivial day-scholar commute.
+              is just ~8 km over the bridge, a trivial day-scholar commute.
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -373,7 +373,7 @@ export default function BhavaniPage() {
               {
                 Icon: Bus,
                 title: "Easy Commute",
-                desc: "Just ~4-5 km from Bhavani across the Cauvery bridge — town buses and autos run continuously.",
+                desc: "Just ~8 km from Bhavani across the Cauvery bridge — town buses and autos run continuously.",
               },
             ].map((item) => (
               <div
@@ -795,7 +795,7 @@ export default function BhavaniPage() {
                   Bhavani → JKKN CAS Campus
                 </div>
                 <div className="text-[#7cb983] text-sm">
-                  ~4-5 km • 10-15 minutes
+                  ~8 km • 10-15 minutes
                 </div>
               </div>
             </div>
@@ -818,13 +818,13 @@ export default function BhavaniPage() {
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Erode Junction (~22 km from campus)",
+                  info: "Erode Junction (~21 km from campus)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
                   Icon: Plane,
                   label: "NEAREST AIRPORT",
-                  info: "Coimbatore International Airport (Code: CJB) (~80 km)",
+                  info: "Coimbatore International Airport (Code: CJB) (~101 km)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -1022,8 +1022,8 @@ export default function BhavaniPage() {
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">
                   <td className="p-3 text-gray-600">Distance from Bhavani</td>
-                  <td className="p-3 text-gray-800 font-medium">~4-5 km across the Cauvery bridge</td>
-                  <td className="p-3 text-gray-500">~15-20 km</td>
+                  <td className="p-3 text-gray-800 font-medium">~8 km across the Cauvery bridge</td>
+                  <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Placement Rate</td>
@@ -1100,16 +1100,16 @@ export default function BhavaniPage() {
             {[
               { Icon: MapPin, name: "Komarapalayam", km: "Campus town", href: "/komarapalayam" },
               { Icon: MapPin, name: "Pallipalayam", km: "~14 km", href: "/pallipalayam" },
-              { Icon: MapPin, name: "Sankagiri", km: "~15-20 km", href: "/sankagiri" },
-              { Icon: MapPin, name: "Tiruchengode", km: "~20 km", href: "/tiruchengode" },
-              { Icon: MapPin, name: "Erode", km: "~22 km", href: "/erode" },
-              { Icon: MapPin, name: "Perundurai", km: "~27-30 km", href: "/perundurai" },
-              { Icon: MapPin, name: "Gobichettipalayam", km: "~35-40 km", href: "/gobichettipalayam" },
-              { Icon: MapPin, name: "Salem", km: "~40-50 km", href: "/salem" },
-              { Icon: MapPin, name: "Namakkal", km: "~55-60 km", href: "/namakkal" },
+              { Icon: MapPin, name: "Sankagiri", km: "~16 km", href: "/sankagiri" },
+              { Icon: MapPin, name: "Tiruchengode", km: "~26 km", href: "/tiruchengode" },
+              { Icon: MapPin, name: "Erode", km: "~18 km", href: "/erode" },
+              { Icon: MapPin, name: "Perundurai", km: "~29 km", href: "/perundurai" },
+              { Icon: MapPin, name: "Gobichettipalayam", km: "~37 km", href: "/gobichettipalayam" },
+              { Icon: MapPin, name: "Salem", km: "~57 km", href: "/salem" },
+              { Icon: MapPin, name: "Namakkal", km: "~65 km", href: "/namakkal" },
               { Icon: MapPin, name: "Rasipuram", km: "~60 km", href: "/rasipuram" },
-              { Icon: MapPin, name: "Tiruppur", km: "~80-90 km", href: "/tiruppur" },
-              { Icon: MapPin, name: "Coimbatore", km: "~100-110 km", href: "/coimbatore" },
+              { Icon: MapPin, name: "Tiruppur", km: "~64 km", href: "/tiruppur" },
+              { Icon: MapPin, name: "Coimbatore", km: "~112 km", href: "/coimbatore" },
             ].map((city) => (
               <Link
                 key={city.name}

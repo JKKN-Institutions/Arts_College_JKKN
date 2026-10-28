@@ -40,7 +40,7 @@ import {
 export const metadata: Metadata = {
   title: { absolute: "Arts & Science College Near Tiruppur | JKKN CAS" },
   description:
-    "JKKN College of Arts and Science, 70 km from Tiruppur on NH-544. Autonomous, NAAC accredited (B). B.Sc, B.Com, BBA and BCA. Admissions open.",
+    "JKKN College of Arts and Science, 64 km from Tiruppur on NH-544. Autonomous, NAAC accredited (B). B.Sc, B.Com, BBA and BCA. Admissions open.",
   keywords: [
     "arts and science college near Tiruppur",
     "best college near Tiruppur",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
     description:
-      "JKKN CAS — 70 km from Tiruppur. NAAC accredited (B), NIRF-published placement outcomes. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 64 km from Tiruppur. NAAC accredited (B), NIRF-published placement outcomes. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/tiruppur",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
-    description: "JKKN CAS — 70 km from Tiruppur. NAAC accredited (B), NIRF-published placement outcomes. Admissions open 2026-27.",
+    description: "JKKN CAS — 64 km from Tiruppur. NAAC accredited (B), NIRF-published placement outcomes. Admissions open 2026-27.",
   },
 };
 
@@ -79,11 +79,11 @@ export default function TiruppurPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Tiruppur?",
-      a: "JKKN College of Arts and Science, ~70 km from Tiruppur on NH-544, is an arts and science college reachable from Tiruppur. NAAC accredited (B), autonomous and affiliated to Periyar University, it offers 35 programmes and publishes its placement numbers in NIRF.",
+      a: "JKKN College of Arts and Science, ~64 km from Tiruppur on NH-544, is an arts and science college reachable from Tiruppur. NAAC accredited (B), autonomous and affiliated to Periyar University, it offers 35 programmes and publishes its placement numbers in NIRF.",
     },
     {
       q: "How far is JKKN CAS from Tiruppur?",
-      a: "JKKN CAS is approximately 70 km from Tiruppur city centre, about 1.5 hours by road via NH-544 through Erode. Regular bus services are available from Tiruppur New Bus Stand towards Komarapalayam.",
+      a: "JKKN CAS is approximately 64 km from Tiruppur city centre, about 1.5 hours by road via NH-544 through Erode. Regular bus services are available from Tiruppur New Bus Stand towards Komarapalayam.",
     },
     {
       q: "Which courses are popular among Tiruppur students at JKKN CAS?",
@@ -138,7 +138,7 @@ export default function TiruppurPage() {
             "name": "Arts & Science College Near Tiruppur | JKKN CAS",
             "url": "https://cas.jkkn.ac.in/tiruppur",
             "description":
-              "JKKN College of Arts and Science, 70 km from Tiruppur on NH-544. Autonomous, NAAC accredited (B). B.Sc, B.Com, BBA and BCA.",
+              "JKKN College of Arts and Science, 64 km from Tiruppur on NH-544. Autonomous, NAAC accredited (B). B.Sc, B.Com, BBA and BCA.",
             "inLanguage": "en-IN",
             "isPartOf": {
               "@type": "WebSite",
@@ -175,7 +175,7 @@ export default function TiruppurPage() {
       />
       <CourseSchema
         name="BBA (Bachelor of Business Administration)"
-        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — 70 km from Tiruppur."
+        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — 64 km from Tiruppur."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -218,7 +218,7 @@ export default function TiruppurPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
-              { value: "70km", label: "FROM TIRUPPUR" },
+              { value: "64km", label: "FROM TIRUPPUR" },
               { value: "4", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
@@ -281,7 +281,7 @@ export default function TiruppurPage() {
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-wrap sm:flex-nowrap items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
-                70<span className="text-2xl font-semibold text-[#006837]">km</span>
+                64<span className="text-2xl font-semibold text-[#006837]">km</span>
               </span>
               <div>
                 <div className="font-bold text-gray-800 text-base sm:text-lg">
@@ -352,7 +352,7 @@ export default function TiruppurPage() {
               {
                 Icon: Bus,
                 title: "Easy Commute",
-                desc: "Just ~70 km from Tiruppur. Daily commute or comfortable hostel — your choice.",
+                desc: "Just ~64 km from Tiruppur. Daily commute or comfortable hostel — your choice.",
               },
             ].map((item) => (
               <div
@@ -768,7 +768,7 @@ export default function TiruppurPage() {
                   Tiruppur → JKKN CAS Campus
                 </div>
                 <div className="text-[#7cb983] text-sm">
-                  ~70 km • ~1.5 hours
+                  ~64 km • ~1.5 hours
                 </div>
               </div>
             </div>
@@ -779,7 +779,7 @@ export default function TiruppurPage() {
                 {
                   Icon: MapPin,
                   label: "ROUTE",
-                  info: "Tiruppur → Erode → NH-544 → Komarapalayam (~70 km)",
+                  info: "Tiruppur → Erode → NH-544 → Komarapalayam (~64 km)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -791,13 +791,13 @@ export default function TiruppurPage() {
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Tiruppur Junction (~70 km from campus)",
+                  info: "Tiruppur Junction (~64 km from campus)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
                   Icon: Plane,
                   label: "NEAREST AIRPORT",
-                  info: "Coimbatore International Airport (Code: CJB) (~50 km)",
+                  info: "Coimbatore International Airport (Code: CJB) (~101 km)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -1014,17 +1014,17 @@ export default function TiruppurPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {[
               { Icon: Home, name: "Komarapalayam", km: "Campus town", href: "/komarapalayam" },
-              { Icon: MapPin, name: "Bhavani", km: "~4-5 km", href: "/bhavani" },
+              { Icon: MapPin, name: "Bhavani", km: "~8 km", href: "/bhavani" },
               { Icon: MapPin, name: "Pallipalayam", km: "~14 km", href: "/pallipalayam" },
-              { Icon: MapPin, name: "Sankagiri", km: "~15-20 km", href: "/sankagiri" },
-              { Icon: MapPin, name: "Tiruchengode", km: "~20 km", href: "/tiruchengode" },
-              { Icon: Mountain, name: "Erode", km: "~22 km", href: "/erode" },
-              { Icon: MapPin, name: "Perundurai", km: "~27-30 km", href: "/perundurai" },
-              { Icon: MapPin, name: "Gobichettipalayam", km: "~35-40 km", href: "/gobichettipalayam" },
-              { Icon: Bus, name: "Salem", km: "40-50 km", href: "/salem" },
-              { Icon: MapPin, name: "Namakkal", km: "~55-60 km", href: "/namakkal" },
+              { Icon: MapPin, name: "Sankagiri", km: "~16 km", href: "/sankagiri" },
+              { Icon: MapPin, name: "Tiruchengode", km: "~26 km", href: "/tiruchengode" },
+              { Icon: Mountain, name: "Erode", km: "~18 km", href: "/erode" },
+              { Icon: MapPin, name: "Perundurai", km: "~29 km", href: "/perundurai" },
+              { Icon: MapPin, name: "Gobichettipalayam", km: "~37 km", href: "/gobichettipalayam" },
+              { Icon: Bus, name: "Salem", km: "~57 km", href: "/salem" },
+              { Icon: MapPin, name: "Namakkal", km: "~65 km", href: "/namakkal" },
               { Icon: MapPin, name: "Rasipuram", km: "~60 km", href: "/rasipuram" },
-              { Icon: Star, name: "Coimbatore", km: "100-110 km", href: "/coimbatore" },
+              { Icon: Star, name: "Coimbatore", km: "~112 km", href: "/coimbatore" },
             ].map((city) => (
               <Link
                 key={city.name}

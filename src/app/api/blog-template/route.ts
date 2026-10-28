@@ -131,7 +131,7 @@ export async function GET() {
           p('2. NAAC Accredited (B) — The institution is NAAC accredited (B), ensuring quality education standards recognized across India.'),
           p('3. Strong Placement Record — placement record published in NIRF 2025 with 60+ recruiting companies.'),
           p('4. Modern Infrastructure — Well-equipped laboratories, digital library, sports facilities, and separate hostels for boys and girls.'),
-          p('5. Location Advantage — Situated on NH-544 at Komarapalayam, easily accessible from Erode (22 km), Tiruchengode (20 km), Salem (about 58 km) and Namakkal (about 55-60 km).'),
+          p('5. Location Advantage — Situated on NH-544 at Komarapalayam, easily accessible from Erode (18 km), Tiruchengode (26 km), Salem (about 57 km) and Namakkal Bus Stand (about 65 km).'),
           p(''),
 
           // ── Section 7 ──

@@ -41,7 +41,7 @@ import {
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Salem | JKKN CAS",
   description:
-    "JKKN CAS — top arts and science college accessible from Salem (~58 km via NH-544). NAAC accredited (B), BCA, BBA, B.Com, B.Sc. Admissions 2026-27.",
+    "JKKN CAS — top arts and science college accessible from Salem (~57 km via NH-544). NAAC accredited (B), BCA, BBA, B.Com, B.Sc. Admissions 2026-27.",
   keywords: [
     "arts and science college near Salem",
     "best college near Salem",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Salem | JKKN CAS",
     description:
-      "JKKN CAS — ~58 km from Salem. NAAC accredited (B), NIRF-published placement outcomes. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27.",
+      "JKKN CAS — ~57 km from Salem. NAAC accredited (B), NIRF-published placement outcomes. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/salem",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Salem | JKKN CAS",
-    description: "JKKN CAS — ~58 km from Salem. NAAC accredited (B), NIRF-published placement outcomes. Admissions open 2026-27.",
+    description: "JKKN CAS — ~57 km from Salem. NAAC accredited (B), NIRF-published placement outcomes. Admissions open 2026-27.",
   },
 };
 
@@ -80,11 +80,11 @@ export default function SalemPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Salem?",
-      a: "JKKN College of Arts and Science — NAAC accredited (B), 58 km from Salem via NH-544 — offers 35 programmes and a placement record published in NIRF 2025.",
+      a: "JKKN College of Arts and Science — NAAC accredited (B), 57 km from Salem via NH-544 — offers 35 programmes and a placement record published in NIRF 2025.",
     },
     {
       q: "How far is JKKN CAS from Salem?",
-      a: "JKKN CAS is approximately 58 km from Salem via NH-544, taking 60–70 minutes by road.",
+      a: "JKKN CAS is approximately 57 km from Salem via NH-544, taking 60–70 minutes by road.",
     },
     {
       q: "Which courses are popular among Salem students at JKKN CAS?",
@@ -116,15 +116,15 @@ export default function SalemPage() {
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Salem?",
-      a: "JKKN CAS offers NAAC accreditation (Grade B), 35 programmes, placement support, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~58 km from Salem.",
+      a: "JKKN CAS offers NAAC accreditation (Grade B), 35 programmes, placement support, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~57 km from Salem.",
     },
     {
       q: "Which arts and science colleges in Salem should students compare?",
-      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC accredited (B), established 1974, with aided low-fee streams, 35 programmes, and NIRF-published placement outcomes — is a strong option to include on that shortlist, ~58 km from Salem city on NH-544.",
+      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC accredited (B), established 1974, with aided low-fee streams, 35 programmes, and NIRF-published placement outcomes — is a strong option to include on that shortlist, ~57 km from Salem city on NH-544.",
     },
     {
       q: "Is JKKN CAS a good option for students from Sankagiri, Edappadi, and Mettur?",
-      a: "Yes. For students from western Salem district — Sankagiri, Edappadi, and Mettur — JKKN CAS at Komarapalayam offers both day-scholar and hostel options. Sankagiri is only ~15-20 km from the campus via the NH-544 corridor, making daily day-scholar commute straightforward.",
+      a: "Yes. For students from western Salem district — Sankagiri, Edappadi, and Mettur — JKKN CAS at Komarapalayam offers both day-scholar and hostel options. Sankagiri is only ~16 km from the campus via the NH-544 corridor, making daily day-scholar commute straightforward.",
     },
   ];
 
@@ -137,7 +137,7 @@ export default function SalemPage() {
       <FAQSchema faqs={faqs.map(f => ({ question: f.q, answer: f.a }))} />
       <CourseSchema
         name="B.Sc (Various Specialisations)"
-        description="3-year undergraduate science programme with specialisations in Chemistry, Mathematics, Zoology, Physics, Microbiology, Computer Science, and more at JKKN CAS — approximately 58 km from Salem."
+        description="3-year undergraduate science programme with specialisations in Chemistry, Mathematics, Zoology, Physics, Microbiology, Computer Science, and more at JKKN CAS — approximately 57 km from Salem."
         duration="PT3Y"
         educationalLevel="UG"
         category="Aided"
@@ -153,7 +153,7 @@ export default function SalemPage() {
       />
       <CourseSchema
         name="BBA (Bachelor of Business Administration)"
-        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — approximately 58 km from Salem on NH-544."
+        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — approximately 57 km from Salem on NH-544."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -178,7 +178,7 @@ export default function SalemPage() {
             "@id": "https://cas.jkkn.ac.in/salem#webpage",
             "name": "Arts and Science College Near Salem — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/salem",
-            "description": "JKKN CAS is a NAAC accredited (B) arts and science college approximately 58 km from Salem via NH-544. Offers BCA, BBA, B.Com, B.Sc and 30+ more programmes.",
+            "description": "JKKN CAS is a NAAC accredited (B) arts and science college approximately 57 km from Salem via NH-544. Offers BCA, BBA, B.Com, B.Sc and 30+ more programmes.",
             "datePublished": "2025-01-01",
             "dateModified": "2026-03-28",
             "inLanguage": "en-IN",
@@ -225,7 +225,7 @@ export default function SalemPage() {
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             Students comparing arts and science colleges in Salem also
             shortlist JKKN College of Arts and Science — a NAAC accredited (B)
-            institution ~58 km from Salem on NH-544 with 35 UG, PG, and Ph.D
+            institution ~57 km from Salem on NH-544 with 35 UG, PG, and Ph.D
             programmes, aided low-fee streams, hostel, and NIRF-published placement outcomes.
             For western Salem district — Sankagiri, Edappadi, Mettur — JKKN
             is closer than Salem city colleges.
@@ -242,7 +242,7 @@ export default function SalemPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
-              { value: "~58km", label: "FROM SALEM" },
+              { value: "~57km", label: "FROM SALEM" },
               { value: "35", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
@@ -305,7 +305,7 @@ export default function SalemPage() {
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-wrap sm:flex-nowrap items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
-                ~58<span className="text-2xl font-semibold text-[#006837]">km</span>
+                57<span className="text-2xl font-semibold text-[#006837]">km</span>
               </span>
               <div>
                 <div className="font-bold text-gray-800 text-base sm:text-lg">
@@ -377,7 +377,7 @@ export default function SalemPage() {
               {
                 Icon: Bus,
                 title: "Easy Commute",
-                desc: "Just ~58 km from Salem. Daily commute or comfortable hostel — your choice.",
+                desc: "Just ~57 km from Salem. Daily commute or comfortable hostel — your choice.",
               },
             ].map((item) => (
               <div
@@ -800,7 +800,7 @@ export default function SalemPage() {
                   Salem → JKKN CAS Campus
                 </div>
                 <div className="text-[#7cb983] text-sm">
-                  ~58 km • 60-70 minutes
+                  ~57 km • 60-70 minutes
                 </div>
               </div>
             </div>
@@ -823,13 +823,13 @@ export default function SalemPage() {
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Salem Junction (~58 km from campus)",
+                  info: "Salem Junction (~55 km from campus)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
                   Icon: Plane,
                   label: "NEAREST AIRPORT",
-                  info: "Salem Airport (limited flights) / Coimbatore International Airport (~15 km / ~110 km)",
+                  info: "Coimbatore International Airport (Code: CJB) (~101 km); Salem Airport has limited flights",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -1046,17 +1046,17 @@ export default function SalemPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {[
               { Icon: Home, name: "Komarapalayam", km: "Campus town", href: "/komarapalayam" },
-              { Icon: MapPin, name: "Bhavani", km: "~4-5 km", href: "/bhavani" },
+              { Icon: MapPin, name: "Bhavani", km: "~8 km", href: "/bhavani" },
               { Icon: MapPin, name: "Pallipalayam", km: "~14 km", href: "/pallipalayam" },
-              { Icon: MapPin, name: "Sankagiri", km: "~15-20 km", href: "/sankagiri" },
-              { Icon: MapPin, name: "Tiruchengode", km: "~20 km", href: "/tiruchengode" },
-              { Icon: Mountain, name: "Erode", km: "~22 km", href: "/erode" },
-              { Icon: MapPin, name: "Perundurai", km: "~27-30 km", href: "/perundurai" },
-              { Icon: MapPin, name: "Gobichettipalayam", km: "~35-40 km", href: "/gobichettipalayam" },
-              { Icon: MapPin, name: "Namakkal", km: "~55-60 km", href: "/namakkal" },
+              { Icon: MapPin, name: "Sankagiri", km: "~16 km", href: "/sankagiri" },
+              { Icon: MapPin, name: "Tiruchengode", km: "~26 km", href: "/tiruchengode" },
+              { Icon: Mountain, name: "Erode", km: "~18 km", href: "/erode" },
+              { Icon: MapPin, name: "Perundurai", km: "~29 km", href: "/perundurai" },
+              { Icon: MapPin, name: "Gobichettipalayam", km: "~37 km", href: "/gobichettipalayam" },
+              { Icon: MapPin, name: "Namakkal", km: "~65 km", href: "/namakkal" },
               { Icon: MapPin, name: "Rasipuram", km: "~60 km", href: "/rasipuram" },
-              { Icon: Target, name: "Tiruppur", km: "80-90 km", href: "/tiruppur" },
-              { Icon: Star, name: "Coimbatore", km: "100-110 km", href: "/coimbatore" },
+              { Icon: Target, name: "Tiruppur", km: "~64 km", href: "/tiruppur" },
+              { Icon: Star, name: "Coimbatore", km: "~112 km", href: "/coimbatore" },
             ].map((city) => (
               <Link
                 key={city.name}

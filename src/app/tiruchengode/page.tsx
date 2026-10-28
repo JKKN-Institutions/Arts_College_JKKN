@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // 52 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC accredited (B) college ~20 km from Tiruchengode. 35 programmes, NIRF-published placement outcomes. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
+    "JKKN CAS — NAAC accredited (B) college ~26 km from Tiruchengode. 35 programmes, NIRF-published placement outcomes. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
   // 140 chars — within 155 limit
 
   keywords: [
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Tiruchengode — JKKN CAS",
     description:
-      "JKKN CAS — NAAC accredited (B), 35 programmes, NIRF-published placement outcomes. ~20 km from Tiruchengode in Komarapalayam. Admissions open 2026–27.",
+      "JKKN CAS — NAAC accredited (B), 35 programmes, NIRF-published placement outcomes. ~26 km from Tiruchengode in Komarapalayam. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/tiruchengode",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Tiruchengode — JKKN CAS",
     description:
-      "NAAC accredited (B) arts college ~20 km from Tiruchengode. 35 programmes, NIRF-published placement outcomes, hostel available. Admissions 2026–27 open.",
+      "NAAC accredited (B) arts college ~26 km from Tiruchengode. 35 programmes, NIRF-published placement outcomes, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -92,11 +92,11 @@ export default function TiruchengodePage() {
   const faqs = [
     {
       q: "Which is the best arts and science college near Tiruchengode?",
-      a: "JKKN College of Arts and Science, located approximately 20 km from Tiruchengode in neighbouring Komarapalayam, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located approximately 26 km from Tiruchengode in neighbouring Komarapalayam, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Tiruchengode?",
-      a: "JKKN CAS is approximately 20 km from Tiruchengode, a journey of 25–35 minutes by road via the direct Tiruchengode–Komarapalayam road. Both towns are in Namakkal district, so the commute is short and familiar. Regular TNSTC and private buses run between Tiruchengode bus stand and Komarapalayam throughout the day. College transport is also available.",
+      a: "JKKN CAS is approximately 26 km from Tiruchengode, a journey of 25–35 minutes by road via the direct Tiruchengode–Komarapalayam road. Both towns are in Namakkal district, so the commute is short and familiar. Regular TNSTC and private buses run between Tiruchengode bus stand and Komarapalayam throughout the day. College transport is also available.",
     },
     {
       q: "Which courses are popular among Tiruchengode students at JKKN CAS?",
@@ -112,7 +112,7 @@ export default function TiruchengodePage() {
     },
     {
       q: "Does JKKN CAS provide hostel for Tiruchengode students?",
-      a: "JKKN CAS provides separate hostel accommodation for boys and girls on the main campus. The hostel includes furnished rooms, three meals per day, WiFi, and 24/7 security. At approximately 20 km, day-scholar commute from Tiruchengode is easy — just 25–35 minutes by road — so students can choose daily commute or hostel life.",
+      a: "JKKN CAS provides separate hostel accommodation for boys and girls on the main campus. The hostel includes furnished rooms, three meals per day, WiFi, and 24/7 security. At approximately 26 km, day-scholar commute from Tiruchengode is easy — just 25–35 minutes by road — so students can choose daily commute or hostel life.",
     },
     {
       q: "How can I apply for admission at JKKN CAS?",
@@ -128,7 +128,7 @@ export default function TiruchengodePage() {
     },
     {
       q: "Why should JKKN CAS be on every Tiruchengode college list?",
-      a: "JKKN CAS sits ~20 km from Tiruchengode in neighbouring Komarapalayam and offers NAAC accreditation (Grade B), government-aided programmes, a residential campus, and NIRF-published placement outcomes. The direct Tiruchengode–Komarapalayam road makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
+      a: "JKKN CAS sits ~26 km from Tiruchengode in neighbouring Komarapalayam and offers NAAC accreditation (Grade B), government-aided programmes, a residential campus, and NIRF-published placement outcomes. The direct Tiruchengode–Komarapalayam road makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
     },
   ];
 
@@ -148,7 +148,7 @@ export default function TiruchengodePage() {
             "about": ORG_REF,
             "name": "Arts and Science College Near Tiruchengode — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/tiruchengode",
-            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college approximately 20 km from Tiruchengode in Komarapalayam. 35 programmes, NIRF-published placement outcomes, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college approximately 26 km from Tiruchengode in Komarapalayam. 35 programmes, NIRF-published placement outcomes, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -178,7 +178,7 @@ export default function TiruchengodePage() {
       />
       <CourseSchema
         name="B.Com (Bachelor of Commerce)"
-        description="3-year undergraduate commerce programme with strong industry exposure and placement support at JKKN CAS, approximately 20 km from Tiruchengode via the direct Tiruchengode–Komarapalayam road."
+        description="3-year undergraduate commerce programme with strong industry exposure and placement support at JKKN CAS, approximately 26 km from Tiruchengode via the direct Tiruchengode–Komarapalayam road."
         duration="PT3Y"
         educationalLevel="UG"
         category="Aided"
@@ -186,7 +186,7 @@ export default function TiruchengodePage() {
       />
       <CourseSchema
         name="BBA (Bachelor of Business Administration)"
-        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — approximately 20 km from Tiruchengode."
+        description="3-year undergraduate management programme building future business leaders, offered at JKKN CAS — approximately 26 km from Tiruchengode."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -221,7 +221,7 @@ export default function TiruchengodePage() {
             Arts and Science College Near Tiruchengode — JKKN CAS
           </h2>
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
-            JKKN College of Arts and Science, located approximately 20 km from
+            JKKN College of Arts and Science, located approximately 26 km from
             Tiruchengode in neighbouring Komarapalayam, is a NAAC accredited (B)
             institution offering 35 UG and PG programmes including BCA, BBA,
             B.Com, and B.Sc specialisations. Affiliated to Periyar University, it publishes its placement record in NIRF 2025: 135 of 373 UG graduates of 2023-24 were placed.
@@ -231,7 +231,7 @@ export default function TiruchengodePage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Tiruchengode to JKKN — a short, easy ride on the direct
             Tiruchengode–Komarapalayam road. JKKN College of Arts and Science
-            offers NAAC accredited (B) arts and science programmes with placement support — approximately 20 km from Tiruchengode, with
+            offers NAAC accredited (B) arts and science programmes with placement support — approximately 26 km from Tiruchengode, with
             both towns in Namakkal district.
           </p>
 
@@ -239,7 +239,7 @@ export default function TiruchengodePage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
-              { value: "20km", label: "FROM TIRUCHENGODE" },
+              { value: "26km", label: "FROM TIRUCHENGODE" },
               { value: "35", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
@@ -302,7 +302,7 @@ export default function TiruchengodePage() {
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-wrap sm:flex-nowrap items-center justify-between gap-4 p-6">
             <div className="flex items-center gap-4">
               <span className="text-5xl sm:text-6xl font-bold text-[#006837] leading-none">
-                20<span className="text-2xl font-semibold text-[#006837]">km</span>
+                26<span className="text-2xl font-semibold text-[#006837]">km</span>
               </span>
               <div>
                 <div className="font-bold text-gray-800 text-base sm:text-lg">
@@ -337,7 +337,7 @@ export default function TiruchengodePage() {
               Tiruchengode — the temple town of the Arthanareeswarar Temple
               hill, known for its lorry-body building and borewell rig industry
               — sends many students to nearby colleges every day. JKKN is
-              approximately 20 km away via the direct
+              approximately 26 km away via the direct
               Tiruchengode–Komarapalayam road, and both towns are in Namakkal
               district, making the daily commute short and familiar.
             </p>
@@ -377,7 +377,7 @@ export default function TiruchengodePage() {
               {
                 Icon: Bus,
                 title: "Easy Commute",
-                desc: "Just ~20 km from Tiruchengode. Daily commute or comfortable hostel — your choice.",
+                desc: "Just ~26 km from Tiruchengode. Daily commute or comfortable hostel — your choice.",
               },
             ].map((item) => (
               <div
@@ -800,7 +800,7 @@ export default function TiruchengodePage() {
                   Tiruchengode → JKKN CAS Campus
                 </div>
                 <div className="text-[#7cb983] text-sm">
-                  ~20 km • 25–35 minutes
+                  ~26 km • 25–35 minutes
                 </div>
               </div>
             </div>
@@ -823,13 +823,13 @@ export default function TiruchengodePage() {
                 {
                   Icon: Train,
                   label: "NEAREST RAILWAY STATION",
-                  info: "Erode Junction (~22 km from campus)",
+                  info: "Erode Junction (~21 km from campus)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
                   Icon: Plane,
                   label: "NEAREST AIRPORT",
-                  info: "Coimbatore International Airport (Code: CJB) (~80 km)",
+                  info: "Coimbatore International Airport (Code: CJB) (~101 km)",
                   bg: "bg-[#FBFBEE]",
                 },
                 {
@@ -1027,7 +1027,7 @@ export default function TiruchengodePage() {
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">
                   <td className="p-3 text-gray-600">Distance from Tiruchengode</td>
-                  <td className="p-3 text-gray-800 font-medium">~20 km via the direct road</td>
+                  <td className="p-3 text-gray-800 font-medium">~26 km via the direct road</td>
                   <td className="p-3 text-gray-500">0–10 km</td>
                 </tr>
                 <tr className="border-b border-gray-100">
@@ -1104,17 +1104,17 @@ export default function TiruchengodePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {[
               { Icon: MapPin, name: "Komarapalayam", km: "Campus town", href: "/komarapalayam" },
-              { Icon: MapPin, name: "Bhavani", km: "~4-5 km", href: "/bhavani" },
+              { Icon: MapPin, name: "Bhavani", km: "~8 km", href: "/bhavani" },
               { Icon: MapPin, name: "Pallipalayam", km: "~14 km", href: "/pallipalayam" },
-              { Icon: MapPin, name: "Sankagiri", km: "~15-20 km", href: "/sankagiri" },
-              { Icon: MapPin, name: "Erode", km: "~22 km", href: "/erode" },
-              { Icon: MapPin, name: "Perundurai", km: "~27-30 km", href: "/perundurai" },
-              { Icon: MapPin, name: "Gobichettipalayam", km: "~35-40 km", href: "/gobichettipalayam" },
-              { Icon: MapPin, name: "Salem", km: "~40-50 km", href: "/salem" },
-              { Icon: MapPin, name: "Namakkal", km: "~55-60 km", href: "/namakkal" },
+              { Icon: MapPin, name: "Sankagiri", km: "~16 km", href: "/sankagiri" },
+              { Icon: MapPin, name: "Erode", km: "~18 km", href: "/erode" },
+              { Icon: MapPin, name: "Perundurai", km: "~29 km", href: "/perundurai" },
+              { Icon: MapPin, name: "Gobichettipalayam", km: "~37 km", href: "/gobichettipalayam" },
+              { Icon: MapPin, name: "Salem", km: "~57 km", href: "/salem" },
+              { Icon: MapPin, name: "Namakkal", km: "~65 km", href: "/namakkal" },
               { Icon: MapPin, name: "Rasipuram", km: "~60 km", href: "/rasipuram" },
-              { Icon: MapPin, name: "Tiruppur", km: "~80-90 km", href: "/tiruppur" },
-              { Icon: MapPin, name: "Coimbatore", km: "~100-110 km", href: "/coimbatore" },
+              { Icon: MapPin, name: "Tiruppur", km: "~64 km", href: "/tiruppur" },
+              { Icon: MapPin, name: "Coimbatore", km: "~112 km", href: "/coimbatore" },
             ].map((city) => (
               <Link
                 key={city.name}
