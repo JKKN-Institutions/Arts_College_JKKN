@@ -6,9 +6,9 @@ import CountUp from '@/components/ui/CountUp';
 const stats = [
   {
     icon: GraduationCap,
-    end: 90,
-    suffix: '%+',
-    label: 'Placement Rate',
+    end: 36,
+    suffix: '%',
+    label: 'UG Placed 2023-24 (NIRF)',
   },
   {
     icon: BookOpen,
@@ -24,9 +24,9 @@ const stats = [
   },
   {
     icon: Briefcase,
-    end: 60,
-    suffix: '+',
-    label: 'Top Recruiters',
+    end: 105,
+    suffix: '',
+    label: 'UG to Higher Studies (NIRF)',
   },
 ];
 

@@ -231,7 +231,7 @@ export default function BCAPage() {
     },
     {
       question: "Is there placement support?",
-      answer: "Yes, we have a dedicated placement cell with a placement record published in NIRF 2025. Top recruiters include TCS, Infosys, Wipro, Cognizant, Accenture, and various startups and product-based companies."
+      answer: "Yes, we have a dedicated placement cell with a placement record published in NIRF 2025. The NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed across all UG programmes."
     },
     {
       question: "Can Commerce or Arts students join BCA?",
@@ -702,20 +702,6 @@ export default function BCAPage() {
                 </GlassCard>
               </div>
 
-              {/* Top Recruiters */}
-              <GlassCard className="p-8" hover={false}>
-                <h3 className="text-2xl font-bold text-brand-green mb-6 text-center">Top Recruiting Companies</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                  <div className="text-gray-700 font-semibold">TCS</div>
-                  <div className="text-gray-700 font-semibold">Infosys</div>
-                  <div className="text-gray-700 font-semibold">Wipro</div>
-                  <div className="text-gray-700 font-semibold">Cognizant</div>
-                  <div className="text-gray-700 font-semibold">Accenture</div>
-                  <div className="text-gray-700 font-semibold">HCL Technologies</div>
-                  <div className="text-gray-700 font-semibold">Tech Mahindra</div>
-                  <div className="text-gray-700 font-semibold">Capgemini</div>
-                </div>
-              </GlassCard>
             </div>
           </RevealSection>
         </div>
@@ -913,7 +899,7 @@ export default function BCAPage() {
                           Strong Placement Record
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                          placement record published in NIRF 2025 with top IT companies including TCS, Infosys, Wipro, Cognizant, startups, and product-based companies.
+                          placement record published in NIRF 2025: 135 of 373 UG graduates of 2023-24 placed across all UG programmes.
                         </p>
                       </div>
                     </div>

@@ -119,7 +119,7 @@ export default function KomarapalayamPage() {
     },
     {
       q: "What placement rate does JKKN CAS Komarapalayam achieve?",
-      a: "JKKN CAS placed 135 of its 373 UG graduates in 2023-24 (NIRF 2025). Recruiters include TCS, Infosys BPO, HDFC Bank, ICICI Bank, Amazon, Flipkart, and Jio.. The college provides dedicated placement training and aptitude coaching.",
+      a: "JKKN CAS placed 135 of its 373 UG graduates in 2023-24 (NIRF 2025). The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Can students from Erode, Salem, or Namakkal commute to JKKN CAS in Kumarapalayam?",
@@ -127,7 +127,7 @@ export default function KomarapalayamPage() {
     },
     {
       q: "Why should students choose JKKN CAS in Komarapalayam?",
-      a: "JKKN CAS is the arts and science college located in Komarapalayam town itself — no long commute needed for local students. It offers NAAC accreditation, 35 UG/PG/Ph.D programmes, affordable fees, hostel facilities, and NIRF-published placement outcomes with national recruiters like TCS, Infosys BPO, and Amazon, all on an NH-544 campus that students from surrounding towns can reach easily.",
+      a: "JKKN CAS is the arts and science college located in Komarapalayam town itself — no long commute needed for local students. It offers NAAC accreditation, 35 UG/PG/Ph.D programmes, affordable fees, hostel facilities, and NIRF-published placement outcomes, all on an NH-544 campus that students from surrounding towns can reach easily.",
     },
   ];
 
@@ -224,8 +224,7 @@ export default function KomarapalayamPage() {
             (Kumarapalayam) town itself, at Natarajapuram on NH-544. It is a
             NAAC-accredited institution offering 35 UG and PG programmes
             including BCA, BBA, B.Com, and B.Sc specialisations. Affiliated to
-            Periyar University, it reports its placement outcomes in NIRF 2025 with recruiters including TCS, Infosys, HDFC Bank,
-            and Amazon.
+            Periyar University, it reports its placement outcomes in NIRF 2025: 135 of 373 UG graduates of 2023-24 were placed.
           </p>
 
           {/* Description */}
@@ -719,10 +718,10 @@ export default function KomarapalayamPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-              Where Komarapalayam Graduates Are Working Now
+              Placement Record (NIRF 2025 Return)
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Our placement cell connects you with India&apos;s top employers
+              What the college reported to NIRF for its 2023-24 UG graduates
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -730,7 +729,7 @@ export default function KomarapalayamPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
-              { value: "7+", label: "TOP RECRUITERS" },
+              { value: "105", label: "UG TO HIGHER STUDIES 2023–24 (NIRF)" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -747,27 +746,6 @@ export default function KomarapalayamPage() {
           </div>
 
           <div className="text-center">
-            <div className="text-xs text-gray-400 font-semibold tracking-widest mb-4">
-              COMPANIES THAT HIRE FROM US
-            </div>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                "TCS",
-                "Infosys BPO",
-                "HDFC Bank",
-                "ICICI Bank",
-                "Amazon",
-                "Flipkart",
-                "Jio",
-              ].map((company) => (
-                <span
-                  key={company}
-                  className="border border-gray-200 rounded-full px-4 py-1.5 text-sm text-gray-600"
-                >
-                  {company}
-                </span>
-              ))}
-            </div>
             <div className="text-center mt-8">
               <Link href="/placements" className="text-[#006837] hover:text-[#004d28] font-medium text-sm">View Full Placement Report →</Link>
             </div>
@@ -1152,11 +1130,6 @@ export default function KomarapalayamPage() {
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Placement Rate</td>
                   <td className="p-3 text-gray-800 font-medium">36%</td>
-                  <td className="p-3 text-gray-500">Varies</td>
-                </tr>
-                <tr className="border-b border-gray-100 bg-[#FBFBEE]">
-                  <td className="p-3 text-gray-600">Key Recruiters</td>
-                  <td className="p-3 text-gray-800 font-medium">TCS, Infosys, HDFC, Amazon</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100">

@@ -83,7 +83,7 @@ const homepageFAQs = [
   {
     question: "Why is JKKN considered the best arts and science college in Tamil Nadu?",
     answer:
-      "JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation, UGC-recognized autonomous status, placement record published in NIRF 2025 and industry partnerships with 60+ recruiters including TCS, Infosys, and Wipro. The college offers 35 programmes with AI/IoT labs and in-built internship pathways.",
+      "JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation, UGC-recognized autonomous status, and a placement record published in NIRF 2025 (135 of 373 UG graduates of 2023-24 placed). The college offers 35 programmes with AI/IoT labs and in-built internship pathways.",
   },
   {
     question: "What makes JKKN different from other arts and science colleges in Tamil Nadu?",
@@ -103,7 +103,7 @@ const homepageFAQs = [
   {
     question: "Does JKKN College provide placement assistance?",
     answer:
-      "Yes. JKKN's dedicated Training and Placement Cell conducts year-round aptitude training, mock interviews, and resume workshops. For 2023-24 the college reported 135 of 373 UG graduates placed in its NIRF 2025 submission. Over 60 companies recruit from campus, including Foxconn, TVS, Infronex, Premier, Rinex, and Sakthi Group. Students in IT programmes also receive TCS and Infosys NQT preparation.",
+      "Yes. JKKN's dedicated Training and Placement Cell conducts year-round aptitude training, mock interviews, and resume workshops. For 2023-24 the college reported 135 of 373 UG graduates placed in its NIRF 2025 submission. The same return lists 105 UG graduates who went on to higher studies.",
   },
   {
     question: "What facilities are available on campus?",
@@ -138,7 +138,7 @@ const homepageFAQs = [
   {
     question: "What are the career options after completing a degree from JKKN?",
     answer:
-      "JKKN graduates pursue diverse careers across IT (TCS, Infosys, Wipro), banking (ICICI, HDFC), manufacturing (Foxconn, TVS), healthcare, education, and government services. Computer science graduates enter software development, data analytics, and cybersecurity. Commerce graduates join accounting firms, banks, and corporate finance. Science graduates pursue research, pharmaceuticals, or higher education. Our placement cell supports all career paths.",
+      "JKKN graduates pursue careers in IT, banking, manufacturing, healthcare, education and government services. Computer science graduates enter software development, data analytics, and cybersecurity. Commerce graduates join accounting firms, banks, and corporate finance. Science graduates pursue research, pharmaceuticals, or higher education. Our placement cell supports all career paths.",
   },
   {
     question: "Does JKKN College have hostel facilities?",
@@ -153,12 +153,12 @@ const homepageFAQs = [
   {
     question: "What is JKKN College's placement record and highest package?",
     answer:
-      "JKKN College published a UG placement figure of 135 of 373 graduates for 2023-24 in NIRF 2025. Over 60 companies recruit from campus annually, including TCS, Infosys, Wipro, Foxconn, TVS, and Sakthi Group. The dedicated Training and Placement Cell provides aptitude training, mock interviews, and industry certifications year-round.",
+      "JKKN College published a UG placement figure of 135 of 373 graduates for 2023-24 in NIRF 2025. The same return lists 105 UG graduates who went on to higher studies; the college does not publish a highest package. The dedicated Training and Placement Cell provides aptitude training, mock interviews, and industry certifications year-round.",
   },
   {
     question: "Which top companies recruit from JKKN College?",
     answer:
-      "JKKN's top recruiters include TCS, Infosys, Wipro, Foxconn, TVS, Sakthi Group, Cognizant, Premier, Rinex, and Infronex among 60+ companies. Recruitment spans IT services, manufacturing, BFSI, healthcare, and education sectors. The placement cell also facilitates internship opportunities with NASSCOM and CII partner companies, giving students industry exposure before graduation.",
+      "The college does not publish a company-wise placement list. Its NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed and 105 who went on to higher studies. The Training and Placement Cell runs aptitude training, mock interviews and campus drives.",
   },
   {
     question: "How to reach JKKN College from Erode, Salem, or Coimbatore?",
@@ -215,7 +215,7 @@ export default function Home() {
       <Suspense fallback={null}><ScrollToSection /></Suspense>
       {/* Screen-reader overview for voice assistants and AI crawlers */}
       <p className="sr-only">
-        JKKN College of Arts and Science is an autonomous, NAAC-accredited institution located on NH-544 in Komarapalayam, near Erode, Tamil Nadu. Affiliated to Periyar University and part of J.K.K. Nattraja Educational Institutions established in 1952, the college offers 35 UG, PG, and PhD programmes across Science, Commerce, IT, and Management. With a placement record published in NIRF 2025, 60+ recruiters including TCS, Infosys, and Wipro, and 1,685 students on a 15-acre campus, JKKN is widely regarded as one of the best arts and science colleges in Tamil Nadu.
+        JKKN College of Arts and Science is an autonomous, NAAC-accredited institution located on NH-544 in Komarapalayam, near Erode, Tamil Nadu. Affiliated to Periyar University and part of J.K.K. Nattraja Educational Institutions established in 1952, the college offers 35 UG, PG, and PhD programmes across Science, Commerce, IT, and Management. With a placement record published in NIRF 2025 (135 of 373 UG graduates of 2023-24 placed) and 1,685 students on a 15-acre campus, JKKN is widely regarded as one of the best arts and science colleges in Tamil Nadu.
       </p>
       {/* Hero Section - Fits exactly one screen */}
       <HeroSection />
@@ -277,8 +277,8 @@ export default function Home() {
                     <Briefcase className="h-5 w-5 text-[#0b6d41]" />
                   </div>
                   <div>
-                    <div className="font-bold text-black text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] mb-0.5">Industry Partnerships</div>
-                    <div className="text-[12px] sm:text-[14px] leading-[16px] sm:leading-[20px] text-black/60">TCS, Infosys, Wipro &amp; More</div>
+                    <div className="font-bold text-black text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] mb-0.5">Placement Cell</div>
+                    <div className="text-[12px] sm:text-[14px] leading-[16px] sm:leading-[20px] text-black/60">Aptitude training &amp; campus drives</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -342,7 +342,7 @@ export default function Home() {
                 <li>Placement record published in NIRF 2025</li>
                 <li>35 UG, PG &amp; PhD Programmes</li>
                 <li>AI/IoT Learning Labs + NASSCOM &amp; CII Industry Partnerships</li>
-                <li>60+ Recruiters Including TCS, Infosys, Wipro</li>
+                <li>135 of 373 UG graduates placed in 2023-24 (NIRF 2025)</li>
               </ol>
             </div>
 
@@ -350,7 +350,7 @@ export default function Home() {
               With over seven decades of academic heritage, JKKN College of Arts and Science has earned its reputation as one of the <strong>best arts and science colleges in Tamil Nadu</strong>. Located on the Salem–Coimbatore Highway in Komarapalayam, the college combines the strength of a well-established institution with a forward-looking, industry-aligned learning framework that prepares learners for real-world careers.
             </p>
             <p>
-              JKKN College of Arts and Science focuses on measurable outcomes. A <strong>placement record published in NIRF 2025</strong>, and partnerships with 60+ recruiters — including TCS, Infosys, Wipro, and Foxconn — demonstrate that academic quality here translates directly into career success. Learners from across Tamil Nadu, Kerala, and Karnataka choose JKKN for this proven track record.
+              JKKN College of Arts and Science focuses on measurable outcomes. A <strong>placement record published in NIRF 2025</strong> gives the numbers: 135 of 373 UG graduates of 2023-24 placed and 105 gone on to higher studies. Learners from across Tamil Nadu, Kerala, and Karnataka choose JKKN for this proven track record.
             </p>
             <p>
               The college offers 35 UG, PG, and doctoral programmes across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research learning labs, NASSCOM and CII collaborations, and in-built internship pathways make JKKN a <strong>top arts college near Erode</strong> for learners seeking future-ready education in Tamil Nadu.
@@ -432,7 +432,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-white border-b border-gray-100">
                   <td className="px-4 py-3 font-medium">Industry Partnerships</td>
-                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">NASSCOM, CII, 60+ Recruiters</td>
+                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">NASSCOM, CII</td>
                   <td className="px-4 py-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="bg-gray-50">
@@ -489,7 +489,7 @@ export default function Home() {
               </div>
               <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Placement Record</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Exceptional placement record with 60+ recruiters across Tamil Nadu and India — TCS, Infosys, Wipro, and leading MNCs
+                135 of 373 UG graduates of 2023-24 placed and 105 gone on to higher studies, as reported in NIRF 2025
               </p>
             </div>
 
@@ -511,7 +511,7 @@ export default function Home() {
               </div>
               <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Industry Partnerships</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Collaborations with TCS, Infosys, NASSCOM, CII for internships, certifications, and placements
+                Collaborations with NASSCOM and CII for internships and certifications
               </p>
             </div>
 
@@ -581,11 +581,11 @@ export default function Home() {
               </span>
             </div>
             <h2 className="text-[24px] md:text-[30px] lg:text-[36px] leading-[32px] md:leading-[36px] lg:leading-[40px] font-bold tracking-[-0.75px] lg:tracking-[-0.9px] mb-6 text-brand-green">
-              Outstanding Placement Record
+              Placement Record (NIRF 2025 Return)
             </h2>
             <p className="text-[16px] md:text-[18px] leading-[24px] md:leading-[29.25px] font-normal text-gray-600 max-w-3xl mx-auto">
-              Our dedicated Training and Placement Cell ensures every Learner is industry-ready with<br className="hidden md:block" />
-              exceptional career opportunities across Tamil Nadu and beyond.
+              The Training and Placement Cell runs aptitude training, mock interviews and campus drives.<br className="hidden md:block" />
+              The figures below are from the college&apos;s NIRF 2025 return for 2023-24 UG graduates.
             </p>
           </div>
 
@@ -594,7 +594,7 @@ export default function Home() {
             {/* Stat 1: Placement Rate */}
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
               <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">36%</div>
-              <div className="text-[14px] leading-[20px] font-medium text-gray-600">Placement Rate</div>
+              <div className="text-[14px] leading-[20px] font-medium text-gray-600">UG Placed 2023-24 (NIRF)</div>
             </div>
 
             {/* Stat 2: Programmes (34 = 19 UG + 12 PG + 3 PhD) */}
@@ -609,63 +609,10 @@ export default function Home() {
               <div className="text-[14px] leading-[20px] font-medium text-gray-600">Learners</div>
             </div>
 
-            {/* Stat 4: Recruiters */}
+            {/* Stat 4: Higher studies (NIRF 2025 return, UG 2023-24) */}
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
-              <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">60+</div>
-              <div className="text-[14px] leading-[20px] font-medium text-gray-600">Recruiters</div>
-            </div>
-          </div>
-
-          {/* Top Recruiters */}
-          <div>
-            <h3 className="text-[24px] md:text-[30px] lg:text-[36px] leading-[32px] md:leading-[36px] lg:leading-[40px] font-bold tracking-[-0.75px] lg:tracking-[-0.9px] text-center mb-8 text-brand-green">Our Top Recruiters</h3>
-
-            {/* Marquee */}
-            <div className="overflow-hidden" role="marquee" aria-label="Logos of top recruiters at JKKN College including Foxconn, Infronex, Premier, Rinex, Sakthi, and TVS">
-              <style>{`
-                @keyframes marquee-scroll {
-                  0% { transform: translateX(0); }
-                  100% { transform: translateX(-50%); }
-                }
-                .marquee-track {
-                  display: flex;
-                  width: max-content;
-                  animation: marquee-scroll 18s linear infinite;
-                }
-                .marquee-track:hover {
-                  animation-play-state: paused;
-                }
-              `}</style>
-              <div className="marquee-track">
-                {[
-                  { src: '/images/recruiters/Foxconn.png', alt: 'Foxconn' },
-                  { src: '/images/recruiters/Infronex.jpg', alt: 'Infronex' },
-                  { src: '/images/recruiters/premier.png', alt: 'Premier' },
-                  { src: '/images/recruiters/Rinex (2).png', alt: 'Rinex' },
-                  { src: '/images/recruiters/sakthi.png', alt: 'Sakthi' },
-                  { src: '/images/recruiters/TVS.jpg', alt: 'TVS' },
-                  { src: '/images/recruiters/Foxconn.png', alt: 'Foxconn' },
-                  { src: '/images/recruiters/Infronex.jpg', alt: 'Infronex' },
-                  { src: '/images/recruiters/premier.png', alt: 'Premier' },
-                  { src: '/images/recruiters/Rinex (2).png', alt: 'Rinex' },
-                  { src: '/images/recruiters/sakthi.png', alt: 'Sakthi' },
-                  { src: '/images/recruiters/TVS.jpg', alt: 'TVS' },
-                ].map((logo, i) => (
-                  <div
-                    key={i}
-                    className="flex-shrink-0 mx-6 bg-white border border-gray-200 rounded-xl shadow-sm flex items-center justify-center"
-                    style={{ width: 160, height: 80 }}
-                  >
-                    <Image
-                      src={logo.src}
-                      alt={logo.alt}
-                      width={130}
-                      height={56}
-                      className="max-h-14 max-w-[130px] object-contain"
-                    />
-                  </div>
-                ))}
-              </div>
+              <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">105</div>
+              <div className="text-[14px] leading-[20px] font-medium text-gray-600">UG to Higher Studies</div>
             </div>
           </div>
         </div>
@@ -1018,7 +965,7 @@ export default function Home() {
               Quick Answer: Best Arts and Science College in Tamil Nadu
             </h3>
             <p className="text-[15px] md:text-[16px] leading-[24px] md:leading-[26px] text-gray-700">
-              <strong>JKKN College of Arts and Science</strong> (Autonomous) in Komarapalayam, Tamil Nadu, is consistently ranked among the best arts and science colleges in the state. Key highlights: <strong>NAAC accredited</strong>, <strong>UGC-recognized autonomous status</strong>, <strong>placement record published in NIRF 2025</strong>, <strong>35 UG/PG/PhD programmes</strong>, and partnerships with <strong>60+ recruiters</strong> including TCS, Infosys, and Wipro. Affiliated to Periyar University; established 1974 within a group founded in 1952.
+              <strong>JKKN College of Arts and Science</strong> (Autonomous) in Komarapalayam, Tamil Nadu, is consistently ranked among the best arts and science colleges in the state. Key highlights: <strong>NAAC accredited</strong>, <strong>UGC-recognized autonomous status</strong>, <strong>placement record published in NIRF 2025</strong>, <strong>35 UG/PG/PhD programmes</strong>, and <strong>135 of 373 UG graduates of 2023-24 placed</strong> (NIRF 2025). Affiliated to Periyar University; established 1974 within a group founded in 1952.
             </p>
           </div>
         </div>

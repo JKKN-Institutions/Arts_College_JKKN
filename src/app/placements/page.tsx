@@ -20,7 +20,7 @@ import { WebPageSchema } from "@/components/seo/WebPageSchema";
 export const metadata: Metadata = {
   title: "Placements — NIRF 2025 Reported Outcomes | JKKN Arts & Science",
   description:
-    "JKKN College of Arts and Science Komarapalayam placement 2024-25 — placement record published in NIRF 2025, 60+ recruiters (TCS, Infosys, Wipro, CTS). Career training from Year 1.",
+    "Placements at JKKN College of Arts and Science, Komarapalayam: the NIRF 2025 return lists 135 of 373 UG graduates of 2023-24 placed and 105 in higher studies.",
   keywords: [
     "JKKN College placements",
     "arts and science college placements near Erode",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Placements — NIRF 2025 Reported Outcomes | JKKN Arts & Science",
     description:
-      "placement record published in NIRF 2025, 60+ recruiters. Career guidance and campus recruitment at JKKN College of Arts and Science, Komarapalayam.",
+      "NIRF 2025 return: 135 of 373 UG graduates of 2023-24 placed. Career guidance and campus recruitment at JKKN College of Arts and Science, Komarapalayam.",
     url: "https://cas.jkkn.ac.in/placements",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Placements — NIRF 2025 Reported Outcomes | JKKN Arts & Science",
     description:
-      "placement record published in NIRF 2025, 60+ recruiters. Campus recruitment at JKKN CAS Komarapalayam.",
+      "NIRF 2025 return: 135 of 373 UG graduates of 2023-24 placed. Campus recruitment at JKKN CAS Komarapalayam.",
     images: ["https://cas.jkkn.ac.in/opengraph-image"],
   },
 };
@@ -72,12 +72,12 @@ const placementFAQs = [
     question:
       "What is the placement rate at JKKN College of Arts and Science?",
     answer:
-      "JKKN College of Arts and Science reported 135 of 373 UG graduates placed for 2023-24 in its NIRF 2025 return. The Placement Cell actively coordinates with 60+ companies to provide diverse career opportunities in IT, banking, education, healthcare and other sectors.",
+      "JKKN College of Arts and Science reported 135 of 373 UG graduates placed for 2023-24 in its NIRF 2025 return. The same return lists 105 UG graduates who went on to higher studies.",
   },
   {
     question: "Which companies recruit from JKKN College of Arts and Science?",
     answer:
-      "Top recruiters include TCS, Infosys, Wipro, Cognizant, HCL, Amazon, Zoho, Accenture, HDFC Bank, ICICI Bank, Apollo Hospitals, Byju's, and many more. Over 60 companies participate in campus recruitment drives every year.",
+      "The college does not publish a company-wise placement list. Its NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed across all UG programmes. Contact the Placement Cell at +91 93458 55001 for the employers of a particular batch.",
   },
   {
     question: "What is the highest and average salary package offered?",
@@ -93,12 +93,12 @@ const placementFAQs = [
     question:
       "Are internship opportunities available at JKKN College of Arts and Science?",
     answer:
-      "Yes, JKKN CAS facilitates internships with partner companies and organizations. Students get hands-on industry exposure through summer internships, industrial visits, and project-based learning. Many internships lead to pre-placement offers.",
+      "Yes, JKKN CAS facilitates internships with partner companies and organizations. Students get hands-on industry exposure through summer internships, industrial visits, and project-based learning.",
   },
   {
     question: "Which departments have the best placement records?",
     answer:
-      "Computer Science, BCA, MCA, BBA, and B.Com CA consistently achieve high placement rates. Science and arts departments also have strong placement records in education, research, government services, and competitive exam selections.",
+      "The college's NIRF 2025 return gives one UG figure for all departments together (135 of 373 graduates of 2023-24 placed) and does not split it by department. Ask the Placement Cell for department-wise data.",
   },
 ];
 
@@ -106,38 +106,15 @@ const highlightStats = [
   {
     icon: TrendingUp,
     value: "36%",
-    label: "Placement Rate",
-    description: "Across all eligible learners",
+    label: "UG Placed",
+    description: "135 of 373 UG graduates, 2023-24 (NIRF 2025)",
   },
   {
     icon: Building2,
-    value: "60+",
-    label: "Recruiters",
-    description: "Top companies visit campus",
+    value: "105",
+    label: "Higher Studies",
+    description: "UG graduates of 2023-24 (NIRF 2025)",
   },
-];
-
-const topRecruiters = [
-  { name: "TCS", sector: "IT" },
-  { name: "Infosys", sector: "IT" },
-  { name: "Wipro", sector: "IT" },
-  { name: "Cognizant", sector: "IT" },
-  { name: "HCL Technologies", sector: "IT" },
-  { name: "Accenture", sector: "IT" },
-  { name: "Amazon", sector: "E-Commerce" },
-  { name: "Zoho", sector: "IT" },
-  { name: "Capgemini", sector: "IT" },
-  { name: "Tech Mahindra", sector: "IT" },
-  { name: "HDFC Bank", sector: "Banking" },
-  { name: "ICICI Bank", sector: "Banking" },
-  { name: "Axis Bank", sector: "Banking" },
-  { name: "Federal Bank", sector: "Banking" },
-  { name: "Apollo Hospitals", sector: "Healthcare" },
-  { name: "Sun Pharma", sector: "Pharma" },
-  { name: "Byju's", sector: "EdTech" },
-  { name: "Foxconn", sector: "Manufacturing" },
-  { name: "Sutherland", sector: "BPO" },
-  { name: "Mphasis", sector: "IT" },
 ];
 
 const trainingModules = [
@@ -241,7 +218,7 @@ export default function PlacementsPage() {
             Placements at JKKN College of Arts and Science
           </h1>
           <p className="text-white/80 text-base md:text-lg max-w-3xl mx-auto mb-8">
-            placement record published in NIRF 2025 with 60+ top recruiters. Our dedicated Placement
+            The NIRF 2025 return lists 135 of 373 UG graduates of 2023-24 as placed. Our dedicated Placement
             Cell prepares learners from Day 1 for successful careers in IT,
             banking, healthcare, education, and more.
           </p>
@@ -293,36 +270,6 @@ export default function PlacementsPage() {
                 </div>
                 <div className="text-gray-500 text-xs md:text-sm mt-1">
                   {stat.description}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Top Recruiters */}
-      <section className="py-16 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-brand-green mb-2 text-center">
-            Our Top Recruiters
-          </h2>
-          <div className="w-16 h-1 bg-brand-yellow mx-auto mb-4" />
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-10">
-            Over 60 companies from IT, banking, healthcare, manufacturing, and
-            education sectors recruit from our campus every year.
-          </p>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-4">
-            {topRecruiters.map((recruiter) => (
-              <div
-                key={recruiter.name}
-                className="bg-gray-50 border border-gray-100 rounded-lg p-4 text-center hover:shadow-md transition-shadow"
-              >
-                <div className="font-semibold text-gray-800 text-sm md:text-base">
-                  {recruiter.name}
-                </div>
-                <div className="text-xs text-brand-green mt-1">
-                  {recruiter.sector}
                 </div>
               </div>
             ))}

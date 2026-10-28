@@ -100,7 +100,7 @@ export default function CoimbatorePage() {
     },
     {
       q: "Can BCA students from Coimbatore get IT jobs?",
-      a: "Yes. JKKN CAS BCA graduates are placed at TCS, Infosys BPO, and other IT firms. Coimbatore's TIDEL Park and Elcot SEZ provide strong local job prospects for IT graduates.",
+      a: "Yes. BCA graduates can apply for IT and IT-enabled roles; the college's NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed across all UG programmes. Coimbatore's TIDEL Park and Elcot SEZ provide strong local job prospects for IT graduates.",
     },
     {
       q: "Are JKKN CAS fees affordable compared to Coimbatore colleges?",
@@ -124,11 +124,11 @@ export default function CoimbatorePage() {
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Coimbatore city?",
-      a: "JKKN CAS offers self-finance UG fees of ₹24,500 to ₹34,000 per year, a placement record published in NIRF 2025, and recruiters including TCS, Infosys, and Amazon. Hostel and weekend buses available.",
+      a: "JKKN CAS offers self-finance UG fees of ₹24,500 to ₹34,000 per year, and a placement record published in NIRF 2025 (135 of 373 UG graduates of 2023-24 placed). Hostel and weekend buses available.",
     },
     {
       q: "Which IT companies recruit JKKN CAS graduates in Coimbatore?",
-      a: "TCS, Infosys BPO, Amazon, and other IT companies recruit JKKN CAS BCA and Computer Science graduates. TIDEL Park and Elcot SEZ in Coimbatore are key hiring destinations for the college's IT alumni.",
+      a: "The college does not publish a company-wise placement list; its NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed across all UG programmes. The Training and Placement Cell runs aptitude training and mock interviews for IT roles.",
     },
     {
       q: "Is JKKN CAS NAAC accredited and UGC approved?",
@@ -274,8 +274,7 @@ export default function CoimbatorePage() {
             located in Komarapalayam, Namakkal district, Tamil Nadu — 105 km from Coimbatore
             via NH-544. Founded in 1974 and affiliated to Periyar University, JKKN CAS offers 34 undergraduate, postgraduate, and research programmes
             spanning arts, science, commerce, and computer applications. The institution maintains
-            a placement record published in NIRF 2025 with recruiters including TCS, Infosys BPO, HDFC Bank, Amazon,
-            and Flipkart. A 50+ acre residential campus with separate hostel facilities, digital
+            a placement record published in NIRF 2025 (135 of 373 UG graduates of 2023-24 placed). A 50+ acre residential campus with separate hostel facilities, digital
             library, modern laboratories, and weekend bus services to Coimbatore makes it an
             accessible choice for students from Coimbatore seeking affordable quality education.
           </p>
@@ -486,8 +485,8 @@ export default function CoimbatorePage() {
               },
               {
                 Icon: Building2,
-                title: "Same Top Recruiters",
-                desc: "TCS, Infosys, HDFC Bank, Amazon, Flipkart — the same companies that recruit from Coimbatore colleges also visit JKKN CAS every year.",
+                title: "Published Placement Data",
+                desc: "The college reports its placement numbers to NIRF every year: 135 of 373 UG graduates of 2023-24 were placed.",
               },
               {
                 Icon: ShieldCheck,
@@ -753,7 +752,7 @@ export default function CoimbatorePage() {
               Placement Success for Coimbatore Students
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Our placement cell connects you with India&apos;s top employers
+              What the college reported to NIRF for its 2023-24 UG graduates
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -761,7 +760,7 @@ export default function CoimbatorePage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
-              { value: "7+", label: "TOP RECRUITERS" },
+              { value: "105", label: "UG TO HIGHER STUDIES 2023–24 (NIRF)" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -775,30 +774,6 @@ export default function CoimbatorePage() {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="text-center">
-            <div className="text-xs text-gray-400 font-semibold tracking-widest mb-4">
-              COMPANIES THAT HIRE FROM US
-            </div>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                "TCS",
-                "Infosys BPO",
-                "HDFC Bank",
-                "ICICI Bank",
-                "Amazon",
-                "Flipkart",
-                "Jio",
-              ].map((company) => (
-                <span
-                  key={company}
-                  className="border border-gray-200 rounded-full px-4 py-1.5 text-sm text-gray-600"
-                >
-                  {company}
-                </span>
-              ))}
-            </div>
           </div>
           <div className="mt-8 text-center">
             <a
