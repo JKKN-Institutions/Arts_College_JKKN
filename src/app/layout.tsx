@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | JKKN College of Arts and Science",
   },
   description:
-    "JKKN College — the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited (B), placement record published in NIRF 2025. 35 UG, PG & PhD programmes near Erode.",
+    "JKKN College of Arts and Science, Komarapalayam: autonomous, NAAC accredited (B), Periyar University. 35 UG, PG and PhD programmes near Erode, Tamil Nadu.",
   keywords: [
     "JKKN College of Arts and Science",
     "arts and science college near Erode",

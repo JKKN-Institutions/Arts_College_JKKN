@@ -263,9 +263,8 @@ export default function CoimbatorePage() {
           {/* Description */}
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Better value, better campus, better you — just 2 hours from
-            Coimbatore. JKKN College of Arts and Science offers top-tier arts
-            and science programmes with placement support — world-class
-            education at a fraction of Coimbatore city college fees.
+            Coimbatore. JKKN College of Arts and Science offers arts
+            and science programmes with placement support, and self-financing UG fees from ₹24,500 a year.
           </p>
 
           {/* AEO Citation Block — AI Overview anchor paragraph */}
@@ -1064,7 +1063,7 @@ export default function CoimbatorePage() {
               Campus &amp; Facilities
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Everything you need for a world-class education experience
+              Facilities on the Komarapalayam campus
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -1322,7 +1321,7 @@ export default function CoimbatorePage() {
               Explore More Cities
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Find the best arts and science college near your city
+              Road distances from the Komarapalayam campus
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>

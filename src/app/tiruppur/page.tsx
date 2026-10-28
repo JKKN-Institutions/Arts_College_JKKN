@@ -79,7 +79,7 @@ export default function TiruppurPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Tiruppur?",
-      a: "JKKN College of Arts and Science, ~70 km from Tiruppur on NH-544, is one of the top arts and science colleges accessible from Tiruppur. NAAC accredited (B), autonomous and affiliated to Periyar University, it offers excellent programmes with strong placement support.",
+      a: "JKKN College of Arts and Science, ~70 km from Tiruppur on NH-544, is an arts and science college reachable from Tiruppur. NAAC accredited (B), autonomous and affiliated to Periyar University, it offers 35 programmes and publishes its placement numbers in NIRF.",
     },
     {
       q: "How far is JKKN CAS from Tiruppur?",
@@ -209,8 +209,7 @@ export default function TiruppurPage() {
 
           {/* Description */}
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Tiruppur students — world-class education without the big-city
-            hassle. JKKN College of Arts and Science offers top-tier arts and
+            Tiruppur students — a full-time college education without the big-city hassle. JKKN College of Arts and Science offers arts and
             science programmes with placement support — no need to go to
             Coimbatore — quality education is closer than you think.
           </p>
@@ -844,7 +843,7 @@ export default function TiruppurPage() {
               Campus &amp; Facilities
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Everything you need for a world-class education experience
+              Facilities on the Komarapalayam campus
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -1016,7 +1015,7 @@ export default function TiruppurPage() {
               Explore More Cities
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Find the best arts and science college near your city
+              Road distances from the Komarapalayam campus
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>

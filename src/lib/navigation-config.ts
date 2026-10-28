@@ -81,27 +81,27 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
           {
             label: 'Why Erode Learners?',
             href: '/erode',
-            description: 'Best arts and science college near Erode',
+            description: 'Arts and science college near Erode',
           },
           {
             label: 'Why Salem Learners?',
             href: '/salem',
-            description: 'Best arts and science college near Salem',
+            description: 'Arts and science college near Salem',
           },
           {
             label: 'Why Tiruppur Learners?',
             href: '/tiruppur',
-            description: 'Best arts and science college near Tiruppur',
+            description: 'Arts and science college near Tiruppur',
           },
           {
             label: 'Why Namakkal Learners?',
             href: '/namakkal',
-            description: 'Best arts and science college near Namakkal',
+            description: 'Arts and science college near Namakkal',
           },
           {
             label: 'Why Coimbatore Learners?',
             href: '/coimbatore',
-            description: 'Best arts and science college near Coimbatore',
+            description: 'Arts and science college near Coimbatore',
           },
         ],
       },

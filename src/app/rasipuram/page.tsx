@@ -126,7 +126,7 @@ export default function RasipuramPage() {
     },
     {
       q: "Why do Rasipuram students choose JKKN CAS in Namakkal district?",
-      a: "JKKN CAS is one of the strongest arts and science options in Namakkal district — NAAC accredited (B), 35 programmes, and NIRF-published placement outcomes. For Rasipuram students, the full residential campus with separate boys and girls hostels makes the ~60 km distance a non-issue: stay on campus, study more, travel less.",
+      a: "JKKN CAS is an arts and science college in Namakkal district — NAAC accredited (B), 35 programmes, and NIRF-published placement outcomes. For Rasipuram students, the full residential campus with separate boys and girls hostels makes the ~60 km distance a non-issue: stay on campus, study more, travel less.",
     },
   ];
 
@@ -1102,7 +1102,7 @@ export default function RasipuramPage() {
               Explore More Cities
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Find the best arts and science college near your city
+              Road distances from the Komarapalayam campus
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>

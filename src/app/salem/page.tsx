@@ -80,7 +80,7 @@ export default function SalemPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Salem?",
-      a: "JKKN College of Arts and Science — NAAC accredited (B), 58 km from Salem via NH-544 — is a top-rated option with 35 programmes and a placement record published in NIRF 2025.",
+      a: "JKKN College of Arts and Science — NAAC accredited (B), 58 km from Salem via NH-544 — offers 35 programmes and a placement record published in NIRF 2025.",
     },
     {
       q: "How far is JKKN CAS from Salem?",
@@ -234,7 +234,7 @@ export default function SalemPage() {
           {/* Description */}
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Under 1 hour from Salem — closer than you think. JKKN College of
-            Arts and Science offers top-tier arts and science programmes with
+            Arts and Science offers arts and science programmes with
             placement support — just under 1 hour from Salem via NH-544.
           </p>
 
@@ -875,7 +875,7 @@ export default function SalemPage() {
               Campus &amp; Facilities
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Everything you need for a world-class education experience
+              Facilities on the Komarapalayam campus
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
@@ -1047,7 +1047,7 @@ export default function SalemPage() {
               Explore More Cities
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Find the best arts and science college near your city
+              Road distances from the Komarapalayam campus
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>

@@ -44,7 +44,7 @@ export default function HeroSection() {
 
             {/* Description - More Compact */}
             <p className="hero-description text-[13px] sm:text-[15px] lg:text-[16px] leading-[20px] sm:leading-[24px] lg:leading-[26px] text-white/90 font-normal max-w-xl">
-              Transform your career at Tamil Nadu&apos;s top-rated arts and science college with <span className="text-brand-yellow font-semibold">industry-integrated programs</span> in Science, Commerce, IT &amp; Management. Join <span className="text-brand-yellow font-semibold">1,685 learners</span> building successful careers since 1974. <span className="text-brand-yellow font-semibold">2026–27 admissions now open — limited seats.</span>
+              Transform your career at JKKN, an autonomous arts and science college in Komarapalayam, with <span className="text-brand-yellow font-semibold">industry-integrated programs</span> in Science, Commerce, IT &amp; Management. Join <span className="text-brand-yellow font-semibold">1,685 learners</span> building successful careers since 1974. <span className="text-brand-yellow font-semibold">2026–27 admissions now open — limited seats.</span>
             </p>
 
             {/* Stats Row - Compact */}

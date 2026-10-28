@@ -1103,7 +1103,7 @@ export default function PallipalayamPage() {
               Explore More Cities
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              Find the best arts and science college near your city
+              Road distances from the Komarapalayam campus
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
