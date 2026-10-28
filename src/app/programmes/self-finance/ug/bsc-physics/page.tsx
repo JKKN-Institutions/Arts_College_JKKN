@@ -637,7 +637,7 @@ export default function BScPhysicsPage() {
                     { icon: <TrendingUp className="w-6 h-6" />, title: 'M.Sc Physics on the Same Campus', description: 'The college also offers an aided M.Sc Physics, so B.Sc graduates have a postgraduate route without changing campus. Other routes include IIT-JAM, JEST and a B.Ed.' },
                     { icon: <Microscope className="w-6 h-6" />, title: 'Project and Internship', description: 'The syllabus includes an internship, industrial visit or field visit in Semester V and a project in Semester VI.' },
                     { icon: <Building2 className="w-6 h-6" />, title: 'Reachable from Five Districts', description: 'On NH-544 at Komarapalayam, with college transport from Erode, Salem, Namakkal, Tiruppur and Coimbatore, and separate hostels for boys and girls.' },
-                    { icon: <Award className="w-6 h-6" />, title: 'NAAC Accredited', description: 'The college is NAAC accredited and UGC recognised, and publishes its NIRF data on the NIRF page.' }
+                    { icon: <Award className="w-6 h-6" />, title: 'NAAC Accredited (B)', description: 'The college is NAAC accredited (B) and UGC recognised, and publishes its NIRF data on the NIRF page.' }
                   ].map((reason, idx) => (
                     <div key={idx} className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-white/40 backdrop-blur-xl rounded-lg flex items-center justify-center flex-shrink-0 border border-white/60 text-brand-green">

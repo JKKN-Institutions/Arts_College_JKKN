@@ -128,7 +128,7 @@ export default function BSCMicrobiologyPage() {
               { icon: <DollarSign className="w-7 h-7" />, stat: '₹34,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
               { icon: <Microscope className="w-7 h-7" />, stat: 'Any 1', title: 'Biology Subject', desc: 'Botany, Zoology or Biology in +2' },
               { icon: <TestTube className="w-7 h-7" />, stat: 'Lab', title: 'Practical Every Core', desc: 'A practical in each core subject' },
-              { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited college' },
+              { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited (B) college' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">
@@ -616,7 +616,7 @@ export default function BSCMicrobiologyPage() {
                   { title: 'Any One Biology Subject', description: 'Botany, Zoology or Biology in +2 qualifies under the Periyar University regulation; Chemistry and a minimum percentage are not required.' },
                   { title: 'A Practical in Every Core Subject', description: 'From Fundamentals of Microbiology in Semester I to Core Practical VI in the final year.' },
                   { title: 'Project and Internship', description: 'A project with viva voce and an internship, industrial visit or field visit in the final year.' },
-                  { title: 'Autonomous, Periyar University Degree', description: 'The college sets its own syllabus and examinations; the degree is awarded by Periyar University, Salem. NAAC accredited.' }
+                  { title: 'Autonomous, Periyar University Degree', description: 'The college sets its own syllabus and examinations; the degree is awarded by Periyar University, Salem. NAAC accredited (B).' }
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:shadow-lg hover:-translate-y-0.5 transition-all">
                     <div className="w-11 h-11 bg-gradient-to-br from-brand-green to-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md shadow-brand-green/15">

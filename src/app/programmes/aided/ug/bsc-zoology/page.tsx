@@ -630,7 +630,7 @@ export default function BScZoologyPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
                   { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, active research publications, and extensive field experience.' },
                   { title: 'Strong Placement Support', description: 'Dedicated placement cell with tie-ups with leading research institutes, pharmaceutical companies, and NGOs.' },
                   { title: 'Field Study Excursions', description: 'Annual trips to wildlife sanctuaries, marine biology stations, biodiversity parks, and research centers.' },

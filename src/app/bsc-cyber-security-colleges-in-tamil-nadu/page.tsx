@@ -158,7 +158,7 @@ export default function BscCyberSecurityCollegesTamilNaduPage() {
           <h2 className="text-2xl font-bold text-brand-green mb-3">B.Sc Cyber Security at JKKN College of Arts and Science, Komarapalayam</h2>
           <ul className="space-y-2 text-gray-700">
             <li><strong>Where:</strong> NH-544 (Salem to Coimbatore highway), Komarapalayam, Namakkal district, between Salem and Erode.</li>
-            <li><strong>Status:</strong> autonomous college, affiliated to Periyar University, Salem; NAAC accredited.</li>
+            <li><strong>Status:</strong> autonomous college, affiliated to Periyar University, Salem; NAAC accredited (B).</li>
             <li><strong>Fee 2026-27:</strong> ₹32,000 a year (management quota); government quota as per Government norms.</li>
             <li><strong>Eligibility:</strong> +2 pass with any one of Mathematics, Business Mathematics, Computer Science or Statistics (Periyar University regulations).</li>
             <li><strong>Course:</strong> 3 years, 6 semesters: C, Data Structures, Java, Web Designing, PHP, Tools and Techniques for Cyber Security with a Cyber Security Lab, RDBMS, Essentials of Cyber Security, Ethical Hacking with a lab, and Network Security; final-year project and internship.</li>

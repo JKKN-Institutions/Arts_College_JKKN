@@ -648,7 +648,7 @@ export default function BScChemistryPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
                   { title: 'Comprehensive Learning Framework', description: 'Balance of theoretical knowledge and hands-on laboratory experience with modern equipment.' },
                   { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and industry experience.' },
                   { title: 'Advanced Laboratory Infrastructure', description: 'Well-equipped labs with suffficient instruments for organic, inorganic, physical, and practical.' },

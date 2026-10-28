@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // 49 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited arts and science college ~4-5 km from Bhavani across the Cauvery bridge. 35 programmes, NIRF-published placement outcomes. Admissions 2026–27.",
+    "JKKN CAS — NAAC accredited (B) arts and science college ~4-5 km from Bhavani across the Cauvery bridge. 35 programmes, NIRF-published placement outcomes. Admissions 2026–27.",
   // ~151 chars — within 155 limit
 
   keywords: [
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Bhavani — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 35 programmes, NIRF-published placement outcomes. Just ~4-5 km from Bhavani across the Cauvery bridge. Admissions open 2026–27.",
+      "JKKN CAS — NAAC accredited (B), 35 programmes, NIRF-published placement outcomes. Just ~4-5 km from Bhavani across the Cauvery bridge. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/bhavani",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Bhavani — JKKN CAS",
     description:
-      "NAAC-accredited arts college ~4-5 km from Bhavani. 35 programmes, NIRF-published placement outcomes, easy day-scholar commute. Admissions 2026–27 open.",
+      "NAAC accredited (B) arts college ~4-5 km from Bhavani. 35 programmes, NIRF-published placement outcomes, easy day-scholar commute. Admissions 2026–27 open.",
   },
 };
 
@@ -90,7 +90,7 @@ export default function BhavaniPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Bhavani?",
-      a: "JKKN College of Arts and Science, located just ~4-5 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC-accredited institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC.",
+      a: "JKKN College of Arts and Science, located just ~4-5 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC.",
     },
     {
       q: "How far is JKKN CAS from Bhavani?",
@@ -118,7 +118,7 @@ export default function BhavaniPage() {
     },
     {
       q: "Is JKKN College of Arts and Science accredited?",
-      a: "JKKN College of Arts and Science is NAAC-accredited and UGC-approved. The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions, which includes 7 colleges and 2 schools.",
+      a: "JKKN College of Arts and Science is NAAC accredited (B) and UGC-approved. The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions, which includes 7 colleges and 2 schools.",
     },
     {
       q: "What placement rate does JKKN CAS achieve for Bhavani students?",
@@ -126,7 +126,7 @@ export default function BhavaniPage() {
     },
     {
       q: "Why should Bhavani students choose JKKN CAS over colleges in Erode city?",
-      a: "For Bhavani students, JKKN CAS is just ~4-5 km away across the Cauvery bridge, while Erode city colleges are ~15-20 km away. JKKN offers NAAC accreditation, affordable fees, 35 programmes, and NIRF-published placement outcomes — without the long daily commute. Hostel facilities are also available for those who prefer on-campus living.",
+      a: "For Bhavani students, JKKN CAS is just ~4-5 km away across the Cauvery bridge, while Erode city colleges are ~15-20 km away. JKKN offers NAAC accreditation (Grade B), affordable fees, 35 programmes, and NIRF-published placement outcomes — without the long daily commute. Hostel facilities are also available for those who prefer on-campus living.",
     },
   ];
 
@@ -146,7 +146,7 @@ export default function BhavaniPage() {
             "about": ORG_REF,
             "name": "Arts and Science College Near Bhavani — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/bhavani",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college approximately 4-5 km from Bhavani across the Cauvery bridge. 35 programmes, NIRF-published placement outcomes, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college approximately 4-5 km from Bhavani across the Cauvery bridge. 35 programmes, NIRF-published placement outcomes, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -206,7 +206,7 @@ export default function BhavaniPage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 border border-white/30 rounded-full px-4 py-2 text-sm text-white/90 mb-8 bg-white/10 backdrop-blur-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>UGC, NAAC Approved • Admissions Open</span>
+            <span>NAAC Accredited (B) · Autonomous • Admissions Open</span>
           </div>
 
           {/* Heading */}
@@ -221,7 +221,7 @@ export default function BhavaniPage() {
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             JKKN College of Arts and Science, located approximately 4-5 km
             from Bhavani across the Cauvery bridge in Komarapalayam, is a
-            NAAC-accredited institution offering 35 UG and PG programmes
+            NAAC accredited (B) institution offering 35 UG and PG programmes
             including BCA, BBA, B.Com, and B.Sc specialisations. Affiliated
             to Periyar University, it reports its placement outcomes in NIRF 2025: 135 of 373 UG graduates of 2023-24 were placed.
           </p>
@@ -230,7 +230,7 @@ export default function BhavaniPage() {
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Bhavani and Komarapalayam are twin towns facing each other across
             the Cauvery river — JKKN CAS is just a 10-15 minute ride over the
-            bridge. NAAC-accredited arts and science programmes with placement support.
+            bridge. NAAC accredited (B) arts and science programmes with placement support.
           </p>
 
           {/* Stats */}
@@ -283,7 +283,7 @@ export default function BhavaniPage() {
             </span>
             <span className="flex items-center gap-1.5">
               <span className="bg-[#FBFBEE] text-[#006837] font-semibold px-3 py-1 rounded-full text-xs">
-                ✓ NAAC
+                ✓ NAAC Accredited (B)
               </span>
             </span>
             <span className="hidden sm:block text-gray-300">|</span>
@@ -340,7 +340,7 @@ export default function BhavaniPage() {
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 35 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges and 2 schools on a single campus.
+            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC accredited (B) institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 35 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges and 2 schools on a single campus.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -1026,7 +1026,7 @@ export default function BhavaniPage() {
               <tbody>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Accreditation</td>
-                  <td className="p-3 text-gray-800 font-medium">NAAC Accredited, UGC Approved</td>
+                  <td className="p-3 text-gray-800 font-medium">NAAC Accredited (B), UGC Approved</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">

@@ -432,7 +432,7 @@ export default function PhDChemistryPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured doctoral education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured doctoral education meeting national standards with excellent academic reputation.' },
                   { title: 'Experienced Research Supervisors', description: 'Highly qualified guides with Ph.D., postdoctoral experience, and strong publication records.' },
                   { title: 'Advanced Research Infrastructure', description: 'Modern laboratories with sophisticated instruments for cutting-edge research.' },
                   { title: 'Publication & Presentation Support', description: 'Comprehensive assistance for publishing research in international journals and presenting at conferences.' },

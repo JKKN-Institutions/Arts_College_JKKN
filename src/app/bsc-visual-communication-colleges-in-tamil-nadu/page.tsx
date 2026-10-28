@@ -176,7 +176,7 @@ export default function BscVisualCommunicationCollegesTamilNaduPage() {
           <h2 className="text-2xl font-bold text-brand-green mb-3">B.Sc Visual Communication at JKKN College of Arts and Science, Komarapalayam</h2>
           <ul className="space-y-2 text-gray-700">
             <li><strong>Where:</strong> NH-544 (Salem to Coimbatore highway), Komarapalayam, Namakkal district, between Salem and Erode.</li>
-            <li><strong>Status:</strong> autonomous college, affiliated to Periyar University, Salem; NAAC accredited.</li>
+            <li><strong>Status:</strong> autonomous college, affiliated to Periyar University, Salem; NAAC accredited (B).</li>
             <li><strong>Fee 2026-27:</strong> ₹32,000 a year (management quota); government quota as per Government norms.</li>
             <li><strong>Eligibility:</strong> a pass in +2 or an equivalent, or a 10+3 year Diploma; no minimum percentage and no subject rule (<a href={REGULATION_URL} target="_blank" rel="noopener noreferrer" className="text-brand-green underline">Periyar University regulations</a>).</li>
             <li><strong>Course:</strong> 3 years, 6 semesters: graphic design, photography and videography, image and audio-visual editing, 2D and 3D modelling, animation and visual effects, advertising, user experience design, immersive and extended reality media, short film making, an internship and a capstone project. The department has a photography studio and an editing lab.</li>

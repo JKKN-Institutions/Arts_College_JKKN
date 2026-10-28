@@ -624,7 +624,7 @@ export default function BAHistoryPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
                   { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, archaeological experience, and research publications.' },
                   { title: 'UPSC & Competitive Exam Coaching', description: 'Dedicated coaching for civil services with proven track record of successful candidates.' },
                   { title: 'Heritage Tours & Fieldwork', description: 'Regular excursions to archaeological sites, museums, and historical monuments across India.' },

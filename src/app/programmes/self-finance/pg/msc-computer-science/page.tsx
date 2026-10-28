@@ -567,7 +567,7 @@ export default function MScComputerSciencePage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
                   { title: 'Industry-Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and industry experience in emerging technologies.' },
                   { title: 'Advanced Laboratory Facilities', description: 'State-of-the-art labs with GPU clusters, cloud access, and cutting-edge development tools.' },
                   { title: 'Strong Industry Partnerships', description: 'Internship opportunities with top tech companies, startups, and research institutions.' },

@@ -41,7 +41,7 @@ import {
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Salem | JKKN CAS",
   description:
-    "JKKN CAS — top arts and science college accessible from Salem (~58 km via NH-544). NAAC-accredited, BCA, BBA, B.Com, B.Sc. Admissions 2026-27.",
+    "JKKN CAS — top arts and science college accessible from Salem (~58 km via NH-544). NAAC accredited (B), BCA, BBA, B.Com, B.Sc. Admissions 2026-27.",
   keywords: [
     "arts and science college near Salem",
     "best college near Salem",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Salem | JKKN CAS",
     description:
-      "JKKN CAS — ~58 km from Salem. NAAC-accredited, NIRF-published placement outcomes. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27.",
+      "JKKN CAS — ~58 km from Salem. NAAC accredited (B), NIRF-published placement outcomes. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/salem",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Salem | JKKN CAS",
-    description: "JKKN CAS — ~58 km from Salem. NAAC-accredited, NIRF-published placement outcomes. Admissions open 2026-27.",
+    description: "JKKN CAS — ~58 km from Salem. NAAC accredited (B), NIRF-published placement outcomes. Admissions open 2026-27.",
   },
 };
 
@@ -80,7 +80,7 @@ export default function SalemPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Salem?",
-      a: "JKKN College of Arts and Science — NAAC-accredited, 58 km from Salem via NH-544 — is a top-rated option with 35 programmes and a placement record published in NIRF 2025.",
+      a: "JKKN College of Arts and Science — NAAC accredited (B), 58 km from Salem via NH-544 — is a top-rated option with 35 programmes and a placement record published in NIRF 2025.",
     },
     {
       q: "How far is JKKN CAS from Salem?",
@@ -116,11 +116,11 @@ export default function SalemPage() {
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Salem?",
-      a: "JKKN CAS offers NAAC accreditation, 35 programmes, placement support, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~58 km from Salem.",
+      a: "JKKN CAS offers NAAC accreditation (Grade B), 35 programmes, placement support, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~58 km from Salem.",
     },
     {
       q: "Which arts and science colleges in Salem should students compare?",
-      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC-accredited, established 1974, with aided low-fee streams, 35 programmes, and NIRF-published placement outcomes — is a strong option to include on that shortlist, ~58 km from Salem city on NH-544.",
+      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC accredited (B), established 1974, with aided low-fee streams, 35 programmes, and NIRF-published placement outcomes — is a strong option to include on that shortlist, ~58 km from Salem city on NH-544.",
     },
     {
       q: "Is JKKN CAS a good option for students from Sankagiri, Edappadi, and Mettur?",
@@ -178,7 +178,7 @@ export default function SalemPage() {
             "@id": "https://cas.jkkn.ac.in/salem#webpage",
             "name": "Arts and Science College Near Salem — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/salem",
-            "description": "JKKN CAS is a NAAC-accredited arts and science college approximately 58 km from Salem via NH-544. Offers BCA, BBA, B.Com, B.Sc and 30+ more programmes.",
+            "description": "JKKN CAS is a NAAC accredited (B) arts and science college approximately 58 km from Salem via NH-544. Offers BCA, BBA, B.Com, B.Sc and 30+ more programmes.",
             "datePublished": "2025-01-01",
             "dateModified": "2026-03-28",
             "inLanguage": "en-IN",
@@ -211,7 +211,7 @@ export default function SalemPage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 border border-white/30 rounded-full px-4 py-2 text-sm text-white/90 mb-8 bg-white/10 backdrop-blur-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>UGC, NAAC Approved • Admissions Open</span>
+            <span>NAAC Accredited (B) · Autonomous • Admissions Open</span>
           </div>
 
           {/* Heading */}
@@ -224,7 +224,7 @@ export default function SalemPage() {
           {/* Featured Snippet Paragraph */}
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             Students comparing arts and science colleges in Salem also
-            shortlist JKKN College of Arts and Science — a NAAC-accredited
+            shortlist JKKN College of Arts and Science — a NAAC accredited (B)
             institution ~58 km from Salem on NH-544 with 34 UG, PG, and Ph.D
             programmes, aided low-fee streams, hostel, and NIRF-published placement outcomes.
             For western Salem district — Sankagiri, Edappadi, Mettur — JKKN
@@ -288,7 +288,7 @@ export default function SalemPage() {
             </span>
             <span className="flex items-center gap-1.5">
               <span className="bg-[#FBFBEE] text-[#006837] font-semibold px-3 py-1 rounded-full text-xs">
-                ✓ NAAC
+                ✓ NAAC Accredited (B)
               </span>
             </span>
             <span className="hidden sm:block text-gray-300">|</span>

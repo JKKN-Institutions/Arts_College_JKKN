@@ -61,7 +61,7 @@ export default function Image() {
           }}
         >
           <span style={{ color: "#ffde59", fontSize: "18px", fontWeight: 700 }}>
-            NAAC Accredited
+            NAAC Accredited (B)
           </span>
           <span style={{ color: "rgba(255,255,255,0.5)", fontSize: "18px" }}>|</span>
           <span style={{ color: "#ffde59", fontSize: "18px", fontWeight: 700 }}>

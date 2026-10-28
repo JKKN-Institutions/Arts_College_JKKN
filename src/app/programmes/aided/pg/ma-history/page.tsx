@@ -565,7 +565,7 @@ export default function MAHistoryPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'NAAC Accredited Excellence', description: 'Top-tier recognition ensuring quality education, superior infrastructure, and academic standards' },
+                  { title: 'NAAC Accredited (B)', description: 'Accredited by NAAC with a B grade (CGPA 2.37), declared 9 August 2019' },
                   { title: 'Expert Senior Learners', description: 'PhD-qualified faculty with extensive research experience and active scholarly contributions' },
                   { title: 'Research-Focused Learning Framework', description: 'Comprehensive training in historiography, archival research, and field methodologies' },
                   { title: 'Field Study Opportunities', description: 'Regular visits to historical sites, museums, archives, and archaeological excavations' },

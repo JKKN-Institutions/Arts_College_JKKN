@@ -45,7 +45,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
     ],
     highlights: [
       "Affiliated to Periyar University, Salem",
-      "NAAC-accredited autonomous institution",
+      "NAAC accredited (B) autonomous institution",
       "Cyber Security Lab, Ethical Hacking Lab and Network Security in the syllabus",
       "M.Sc Computer Science and MCA available on the same campus",
     ],
@@ -96,7 +96,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
     ],
     highlights: [
       "Affiliated to Periyar University, Salem",
-      "NAAC-accredited autonomous institution",
+      "NAAC accredited (B) autonomous institution",
       "Python, Java, PHP, .NET and DBMS with a lab for each core subject",
       "M.Sc Computer Science and MCA available on the same campus",
     ],
@@ -140,7 +140,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
     ],
     highlights: [
       "Affiliated to Periyar University, Salem",
-      "NAAC-accredited autonomous institution",
+      "NAAC accredited (B) autonomous institution",
       "Six core physics practicals, an internship or field visit, and a final-year project",
       "Aided M.Sc Physics available on the same campus",
     ],
@@ -248,7 +248,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
     ],
     highlights: [
       "Affiliated to Periyar University, Salem",
-      "NAAC-accredited autonomous institution",
+      "NAAC accredited (B) autonomous institution",
       "A practical lab every semester, including a Data Science Lab and a UiPath Automation Lab",
       "M.Sc Computer Science and MCA available on the same campus",
     ],
@@ -301,7 +301,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
     ],
     highlights: [
       "Affiliated to Periyar University, Salem",
-      "NAAC-accredited autonomous institution",
+      "NAAC accredited (B) autonomous institution",
       "A practical in every core subject",
       "Project with viva voce and an internship or industrial visit",
     ],
@@ -353,7 +353,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
     ],
     highlights: [
       "Affiliated to Periyar University, Salem",
-      "NAAC-accredited autonomous institution",
+      "NAAC accredited (B) autonomous institution",
       "Apparel practicals every year and CAD in Garment Designing in Semester VI",
       "Internship project and fashion portfolio presentation, both with viva voce",
     ],
@@ -397,7 +397,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
     highlights: [
       "Proposed programme — currently awaiting official approval from Periyar University",
       "Affiliated to Periyar University, Salem",
-      "NAAC-accredited autonomous institution",
+      "NAAC accredited (B) autonomous institution",
       "Register your interest via the Contact page; admissions open only after approval",
     ],
     faq: [
@@ -428,7 +428,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
     ],
     highlights: [
       "Affiliated to Periyar University, Salem",
-      "NAAC-accredited autonomous institution",
+      "NAAC accredited (B) autonomous institution",
       "Photography studio and editing lab for the practical courses",
       "Internship in Semester V and a capstone project in Semester VI",
     ],

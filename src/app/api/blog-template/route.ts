@@ -85,7 +85,7 @@ export async function GET() {
               ['Duration', '[e.g. 3 Years / 2 Years]'],
               ['Type', '[Aided / Self-Finance]'],
               ['Affiliated To', 'Periyar University, Salem'],
-              ['Accreditation', 'NAAC Accredited — JKKN College of Arts and Science (Autonomous)'],
+              ['Accreditation', 'NAAC Accredited (B) — JKKN College of Arts and Science (Autonomous)'],
             ]
           ),
           p(''),
@@ -128,7 +128,7 @@ export async function GET() {
           // ── Section 6 ──
           h2('Why Choose JKKN College of Arts and Science?'),
           p('1. Autonomous Institution — JKKN College of Arts and Science holds Autonomous status granted by UGC and Periyar University, allowing independent curriculum design aligned with industry needs.'),
-          p('2. NAAC Accredited — The institution is NAAC accredited, ensuring quality education standards recognized across India.'),
+          p('2. NAAC Accredited (B) — The institution is NAAC accredited (B), ensuring quality education standards recognized across India.'),
           p('3. Strong Placement Record — placement record published in NIRF 2025 with 60+ recruiting companies.'),
           p('4. Modern Infrastructure — Well-equipped laboratories, digital library, sports facilities, and separate hostels for boys and girls.'),
           p('5. Location Advantage — Situated on NH-544 at Komarapalayam, easily accessible from Erode (22 km), Tiruchengode (20 km), Salem (about 58 km) and Namakkal (about 55-60 km).'),
@@ -161,7 +161,7 @@ export async function GET() {
 
           // ── Author Box ──
           h2('AUTHOR BOX'),
-          p('Author Bio: [Write a 2–3 sentence bio for the author. For institutional content, use: The content team at JKKN College of Arts and Science creates informative articles on academic programmes, career guidance, and campus life. The institution is affiliated to Periyar University and holds NAAC accreditation.]'),
+          p('Author Bio: [Write a 2–3 sentence bio for the author. For institutional content, use: The content team at JKKN College of Arts and Science creates informative articles on academic programmes, career guidance, and campus life. The institution is affiliated to Periyar University and holds NAAC accreditation (Grade B).]'),
           p(''),
 
           // ── Sidebar CTA ──

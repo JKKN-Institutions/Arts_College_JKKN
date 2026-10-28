@@ -128,7 +128,7 @@ export default function BSCTextileFashionDesigningPage() {
                 { icon: <DollarSign className="w-7 h-7" />, stat: '₹32,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
                 { icon: <BookOpen className="w-7 h-7" />, stat: 'Any +2', title: 'Group Eligible', desc: 'Science, Commerce, Arts or vocational' },
                 { icon: <Award className="w-7 h-7" />, stat: 'Diploma', title: 'Direct 2nd Year', desc: 'As per Periyar University regulation' },
-                { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited college' },
+                { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited (B) college' },
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <GlassCard className="p-6 text-center">

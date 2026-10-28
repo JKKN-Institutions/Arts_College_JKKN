@@ -156,7 +156,7 @@ export default function BScAIDSPage() {
               { icon: <DollarSign className="w-7 h-7" />, stat: '₹34,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
               { icon: <Code2 className="w-7 h-7" />, stat: 'Python', title: 'From Year 1', desc: 'No prior coding needed' },
               { icon: <Brain className="w-7 h-7" />, stat: 'AI + NLP', title: 'Core Subjects', desc: 'Foundation of AI, Data Science, NLP' },
-              { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited college' },
+              { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited (B) college' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">

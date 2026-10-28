@@ -531,7 +531,7 @@ export default function MScPhysicsPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation and research output.' },
+                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation and research output.' },
                   { title: 'Experienced Senior Learners', description: 'Learn from PhD-qualified faculty with research publications in international journals and extensive laboratory experience.' },
                   { title: 'Advanced Laboratory Infrastructure', description: 'Access to state-of-the-art equipment and instruments for experimental physics and computational research.' },
                   { title: 'Research Opportunities', description: 'Engage in cutting-edge research projects with opportunities for paper publications and conference presentations.' },

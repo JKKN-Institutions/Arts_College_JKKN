@@ -89,7 +89,7 @@ export function OrganizationSchema() {
       {
         "@type": "EducationalOccupationalCredential",
         credentialCategory: "NAAC Accreditation",
-        description: "NAAC Accredited Institution",
+        description: "NAAC Accredited, Grade B (CGPA 2.37), declared 9 August 2019",
         recognizedBy: {
           "@type": "Organization",
           name: "National Assessment and Accreditation Council (NAAC)",

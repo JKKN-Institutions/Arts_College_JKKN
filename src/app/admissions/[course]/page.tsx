@@ -73,7 +73,7 @@ export async function generateMetadata({
   const searchName = info.name.replace(/\./g, "");
   const long = `${searchName} Admission 2026-27 | JKKN CAS`;
   const title = long.length <= 60 ? long : `${searchName} Admission 2026-27 | JKKN`;
-  const description = `${info.fullName} at JKKN, Autonomous and NAAC accredited. ${info.duration} — eligibility, fees, seats and how to apply.`;
+  const description = `${info.fullName} at JKKN, Autonomous and NAAC accredited (B). ${info.duration} — eligibility, fees, seats and how to apply.`;
 
   return {
     title: { absolute: title },

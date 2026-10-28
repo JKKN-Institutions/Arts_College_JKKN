@@ -302,7 +302,7 @@ export function getAdmissionContent(
       override?.highlights ??
       [
         "Affiliated to Periyar University, Salem",
-        "NAAC-accredited autonomous institution",
+        "NAAC accredited (B) autonomous institution",
         "Experienced senior learners with PhDs and industry exposure",
         "Strong placement support and recruiter network",
       ],

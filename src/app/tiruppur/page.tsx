@@ -40,7 +40,7 @@ import {
 export const metadata: Metadata = {
   title: { absolute: "Arts & Science College Near Tiruppur | JKKN CAS" },
   description:
-    "JKKN College of Arts and Science, 70 km from Tiruppur on NH-544. Autonomous, NAAC accredited. B.Sc, B.Com, BBA and BCA. Admissions open.",
+    "JKKN College of Arts and Science, 70 km from Tiruppur on NH-544. Autonomous, NAAC accredited (B). B.Sc, B.Com, BBA and BCA. Admissions open.",
   keywords: [
     "arts and science college near Tiruppur",
     "best college near Tiruppur",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
     description:
-      "JKKN CAS — 70 km from Tiruppur. NAAC-accredited, NIRF-published placement outcomes. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 70 km from Tiruppur. NAAC accredited (B), NIRF-published placement outcomes. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/tiruppur",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
-    description: "JKKN CAS — 70 km from Tiruppur. NAAC-accredited, NIRF-published placement outcomes. Admissions open 2026-27.",
+    description: "JKKN CAS — 70 km from Tiruppur. NAAC accredited (B), NIRF-published placement outcomes. Admissions open 2026-27.",
   },
 };
 
@@ -79,7 +79,7 @@ export default function TiruppurPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Tiruppur?",
-      a: "JKKN College of Arts and Science, ~70 km from Tiruppur on NH-544, is one of the top arts and science colleges accessible from Tiruppur. Approved by UGC, NAAC and affiliated to Periyar University, it offers excellent programmes with strong placement support.",
+      a: "JKKN College of Arts and Science, ~70 km from Tiruppur on NH-544, is one of the top arts and science colleges accessible from Tiruppur. NAAC accredited (B), autonomous and affiliated to Periyar University, it offers excellent programmes with strong placement support.",
     },
     {
       q: "How far is JKKN CAS from Tiruppur?",
@@ -138,7 +138,7 @@ export default function TiruppurPage() {
             "name": "Arts & Science College Near Tiruppur | JKKN CAS",
             "url": "https://cas.jkkn.ac.in/tiruppur",
             "description":
-              "JKKN College of Arts and Science, 70 km from Tiruppur on NH-544. Autonomous, NAAC accredited. B.Sc, B.Com, BBA and BCA.",
+              "JKKN College of Arts and Science, 70 km from Tiruppur on NH-544. Autonomous, NAAC accredited (B). B.Sc, B.Com, BBA and BCA.",
             "inLanguage": "en-IN",
             "isPartOf": {
               "@type": "WebSite",
@@ -197,7 +197,7 @@ export default function TiruppurPage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 border border-white/30 rounded-full px-4 py-2 text-sm text-white/90 mb-8 bg-white/10 backdrop-blur-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>UGC, NAAC Approved • Admissions Open</span>
+            <span>NAAC Accredited (B) · Autonomous • Admissions Open</span>
           </div>
 
           {/* Heading */}
@@ -265,7 +265,7 @@ export default function TiruppurPage() {
             </span>
             <span className="flex items-center gap-1.5">
               <span className="bg-[#FBFBEE] text-[#006837] font-semibold px-3 py-1 rounded-full text-xs">
-                ✓ NAAC
+                ✓ NAAC Accredited (B)
               </span>
             </span>
             <span className="hidden sm:block text-gray-300">|</span>

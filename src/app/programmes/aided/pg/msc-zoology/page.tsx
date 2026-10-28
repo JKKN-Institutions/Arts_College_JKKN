@@ -579,7 +579,7 @@ export default function MScZoologyPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured postgraduate education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured postgraduate education meeting national standards with excellent academic reputation.' },
                   { title: 'Research-Focused Learning Framework', description: 'Emphasis on hands-on research experience, dissertation projects, and scientific publication opportunities.' },
                   { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and specialized expertise in zoology.' },
                   { title: 'Advanced Research Facilities', description: 'State-of-the-art learning labs, modern instrumentation, and access to global research databases.' },

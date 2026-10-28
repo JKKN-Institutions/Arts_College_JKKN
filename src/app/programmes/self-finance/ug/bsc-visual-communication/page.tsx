@@ -127,7 +127,7 @@ export default function BScVisualCommunicationPage() {
               { icon: <DollarSign className="w-7 h-7" />, stat: '₹32,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
               { icon: <BookOpen className="w-7 h-7" />, stat: 'Any +2', title: 'Group Eligible', desc: 'Science, Commerce, Arts or vocational' },
               { icon: <Camera className="w-7 h-7" />, stat: 'Studio', title: 'Photography & Editing', desc: 'Practicals in every year' },
-              { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited college' },
+              { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited (B) college' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">
@@ -606,7 +606,7 @@ export default function BScVisualCommunicationPage() {
                   { title: 'Any +2 Group Can Join', description: 'The Periyar University regulation asks for a pass in +2 or a 10+3 year Diploma, with no minimum percentage and no subject rule.' },
                   { title: 'Practicals Every Year', description: 'Photography and videography, editing, animation, visual effects, short film making and extended reality design, each as a practical course.' },
                   { title: 'Internship and Capstone', description: 'An internship in Semester V and a capstone project in Semester VI.' },
-                  { title: 'Autonomous, Periyar University Degree', description: 'The college sets its own syllabus and examinations; the degree is awarded by Periyar University, Salem. NAAC accredited.' }
+                  { title: 'Autonomous, Periyar University Degree', description: 'The college sets its own syllabus and examinations; the degree is awarded by Periyar University, Salem. NAAC accredited (B).' }
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:shadow-lg hover:-translate-y-0.5 transition-all">
                     <div className="w-11 h-11 bg-gradient-to-br from-brand-green to-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md shadow-brand-green/15">

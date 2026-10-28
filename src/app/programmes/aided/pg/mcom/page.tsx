@@ -102,7 +102,7 @@ export default function MComAidedPage() {
                 </div>
                 <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/80 text-gray-900">
                   <Award className="w-5 h-5 text-brand-green" />
-                  <span>NAAC Accredited</span>
+                  <span>NAAC Accredited (B)</span>
                 </div>
               </div>
 

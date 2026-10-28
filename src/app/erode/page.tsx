@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   // 48 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC-accredited arts and science college near Erode. 35 programmes, NIRF-published placement outcomes. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
+    "JKKN CAS — NAAC accredited (B) arts and science college near Erode. 35 programmes, NIRF-published placement outcomes. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
   // 144 chars — within 155 limit
 
   keywords: [
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Erode — JKKN CAS",
     description:
-      "JKKN CAS — NAAC-accredited, 35 programmes, NIRF-published placement outcomes. Near Erode via NH-544. Admissions open 2026–27.",
+      "JKKN CAS — NAAC accredited (B), 35 programmes, NIRF-published placement outcomes. Near Erode via NH-544. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/erode",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Erode — JKKN CAS",
     description:
-      "NAAC-accredited arts college near Erode. 35 programmes, NIRF-published placement outcomes, hostel available. Admissions 2026–27 open.",
+      "NAAC accredited (B) arts college near Erode. 35 programmes, NIRF-published placement outcomes, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -94,7 +94,7 @@ export default function ErodePage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Erode?",
-      a: "JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC-accredited institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located 22 km from Erode on NH-544, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC. The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Erode?",
@@ -122,7 +122,7 @@ export default function ErodePage() {
     },
     {
       q: "Is JKKN College of Arts and Science accredited?",
-      a: "JKKN College of Arts and Science is NAAC-accredited and UGC-approved. The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions, which includes 7 colleges and 2 schools.",
+      a: "JKKN College of Arts and Science is NAAC accredited (B) and UGC-approved. The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions, which includes 7 colleges and 2 schools.",
     },
     {
       q: "What placement rate does JKKN CAS achieve for Erode students?",
@@ -130,11 +130,11 @@ export default function ErodePage() {
     },
     {
       q: "Why should Erode students choose JKKN CAS over colleges in Erode city?",
-      a: "JKKN CAS offers NAAC accreditation, government-aided programmes, a residential campus, and NIRF-published placement outcomes. The 22 km NH-544 route makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
+      a: "JKKN CAS offers NAAC accreditation (Grade B), government-aided programmes, a residential campus, and NIRF-published placement outcomes. The 22 km NH-544 route makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
     },
     {
       q: "How does JKKN CAS compare with other arts and science colleges in Erode district?",
-      a: "JKKN CAS offers NAAC accreditation, government-aided programmes, 35 programmes, hostel, and NIRF-published placement outcomes to students shortlisting arts and science colleges across Erode district, from Bhavani and Gobichettipalayam to Perundurai. The campus sits at Komarapalayam, just across the Cauvery from the Erode district border.",
+      a: "JKKN CAS offers NAAC accreditation (Grade B), government-aided programmes, 35 programmes, hostel, and NIRF-published placement outcomes to students shortlisting arts and science colleges across Erode district, from Bhavani and Gobichettipalayam to Perundurai. The campus sits at Komarapalayam, just across the Cauvery from the Erode district border.",
     },
   ];
 
@@ -154,7 +154,7 @@ export default function ErodePage() {
             "about": ORG_REF,
             "name": "Arts and Science College Near Erode — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/erode",
-            "description": "JKKN College of Arts and Science — NAAC-accredited arts and science college accessible from Erode via NH-544. 35 programmes, NIRF-published placement outcomes, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college accessible from Erode via NH-544. 35 programmes, NIRF-published placement outcomes, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -214,7 +214,7 @@ export default function ErodePage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 border border-white/30 rounded-full px-4 py-2 text-sm text-white/90 mb-8 bg-white/10 backdrop-blur-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>UGC, NAAC Approved • Admissions Open</span>
+            <span>NAAC Accredited (B) · Autonomous • Admissions Open</span>
           </div>
 
           {/* Heading */}
@@ -228,7 +228,7 @@ export default function ErodePage() {
           </h2>
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             JKKN College of Arts and Science, located on NH-544 approximately
-            22 km from Erode, is a NAAC-accredited institution offering 35 UG
+            22 km from Erode, is a NAAC accredited (B) institution offering 35 UG
             and PG programmes including BCA, BBA, B.Com, and B.Sc
             specialisations. Affiliated to Periyar University, it reports its placement outcomes in NIRF 2025: 135 of 373 UG graduates of 2023-24 were placed.
           </p>
@@ -236,7 +236,7 @@ export default function ErodePage() {
           {/* Description */}
           <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
             Erode to JKKN — a short, smooth ride on NH-544. JKKN College of
-            Arts and Science offers NAAC-accredited arts and science programmes
+            Arts and Science offers NAAC accredited (B) arts and science programmes
             with placement support — approximately 22 km from Erode with
             excellent highway connectivity.
           </p>
@@ -291,7 +291,7 @@ export default function ErodePage() {
             </span>
             <span className="flex items-center gap-1.5">
               <span className="bg-[#FBFBEE] text-[#006837] font-semibold px-3 py-1 rounded-full text-xs">
-                ✓ NAAC
+                ✓ NAAC Accredited (B)
               </span>
             </span>
             <span className="hidden sm:block text-gray-300">|</span>
@@ -349,7 +349,7 @@ export default function ErodePage() {
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC-accredited institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 35 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges and 2 schools on a single campus.
+            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC accredited (B) institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 35 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges and 2 schools on a single campus.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -1042,7 +1042,7 @@ export default function ErodePage() {
               <tbody>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Accreditation</td>
-                  <td className="p-3 text-gray-800 font-medium">NAAC Accredited, UGC Approved</td>
+                  <td className="p-3 text-gray-800 font-medium">NAAC Accredited (B), UGC Approved</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">

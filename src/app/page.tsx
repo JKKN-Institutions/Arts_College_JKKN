@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     absolute: 'JKKN College of Arts and Science (Autonomous), Komarapalayam',
   },
   description:
-    'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited, Periyar University. 35 UG, PG & PhD programmes, placement record published in NIRF 2025. Apply 2026-27.',
+    'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited (B), Periyar University. 35 UG, PG & PhD programmes, placement record published in NIRF 2025. Apply 2026-27.',
   keywords: [
     'best arts and science college in Tamil Nadu',
     'JKKN College of Arts and Science',
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'JKKN College of Arts and Science (Autonomous), Komarapalayam',
     description:
-      'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited, Periyar University. 35 UG, PG & PhD programmes, placement record published in NIRF 2025. Apply 2026-27.',
+      'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited (B), Periyar University. 35 UG, PG & PhD programmes, placement record published in NIRF 2025. Apply 2026-27.',
     url: 'https://cas.jkkn.ac.in',
     siteName: 'JKKN College of Arts and Science',
     type: 'website',
@@ -83,7 +83,7 @@ const homepageFAQs = [
   {
     question: "Why is JKKN considered the best arts and science college in Tamil Nadu?",
     answer:
-      "JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation, UGC-recognized autonomous status, and a placement record published in NIRF 2025 (135 of 373 UG graduates of 2023-24 placed). The college offers 35 programmes with AI/IoT labs and in-built internship pathways.",
+      "JKKN College of Arts and Science stands out as a top arts and science college in Tamil Nadu due to its 74+ year legacy, NAAC accreditation (Grade B), UGC-recognized autonomous status, and a placement record published in NIRF 2025 (135 of 373 UG graduates of 2023-24 placed). The college offers 35 programmes with AI/IoT labs and in-built internship pathways.",
   },
   {
     question: "What makes JKKN different from other arts and science colleges in Tamil Nadu?",
@@ -133,7 +133,7 @@ const homepageFAQs = [
   {
     question: "How does JKKN compare to other arts and science colleges in Tamil Nadu?",
     answer:
-      "JKKN holds UGC-recognized autonomous status and NAAC accreditation, and its placement record is published in NIRF 2025. JKKN offers AI/IoT research labs, NASSCOM and CII industry partnerships, and 35 programmes, backed by a 74+ year institutional legacy and 60+ recruiting companies.",
+      "JKKN holds UGC-recognized autonomous status and NAAC accreditation (Grade B), and its placement record is published in NIRF 2025. JKKN offers AI/IoT research labs, NASSCOM and CII industry partnerships, and 35 programmes, backed by a 74+ year institutional legacy and 60+ recruiting companies.",
   },
   {
     question: "What are the career options after completing a degree from JKKN?",
@@ -207,7 +207,7 @@ export default function Home() {
       />
       <WebPageSchema
         name="Best Arts and Science College in Tamil Nadu — JKKN College (Autonomous)"
-        description="JKKN College of Arts and Science is the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited, placement record published in NIRF 2025, 35 UG, PG & PhD programmes near Erode."
+        description="JKKN College of Arts and Science is the best arts and science college in Tamil Nadu. Autonomous, NAAC accredited (B), placement record published in NIRF 2025, 35 UG, PG & PhD programmes near Erode."
         url="https://cas.jkkn.ac.in"
         lastReviewed="2026-03-28"
         speakable={["h1", ".hero-description", "[data-speakable]"]}
@@ -215,7 +215,7 @@ export default function Home() {
       <Suspense fallback={null}><ScrollToSection /></Suspense>
       {/* Screen-reader overview for voice assistants and AI crawlers */}
       <p className="sr-only">
-        JKKN College of Arts and Science is an autonomous, NAAC-accredited institution located on NH-544 in Komarapalayam, near Erode, Tamil Nadu. Affiliated to Periyar University and part of J.K.K. Nattraja Educational Institutions established in 1952, the college offers 35 UG, PG, and PhD programmes across Science, Commerce, IT, and Management. With a placement record published in NIRF 2025 (135 of 373 UG graduates of 2023-24 placed) and 1,685 students on a 15-acre campus, JKKN is widely regarded as one of the best arts and science colleges in Tamil Nadu.
+        JKKN College of Arts and Science is an autonomous, NAAC accredited (B) institution located on NH-544 in Komarapalayam, near Erode, Tamil Nadu. Affiliated to Periyar University and part of J.K.K. Nattraja Educational Institutions established in 1952, the college offers 35 UG, PG, and PhD programmes across Science, Commerce, IT, and Management. With a placement record published in NIRF 2025 (135 of 373 UG graduates of 2023-24 placed) and 1,685 students on a 15-acre campus, JKKN is widely regarded as one of the best arts and science colleges in Tamil Nadu.
       </p>
       {/* Hero Section - Fits exactly one screen */}
       <HeroSection />
@@ -245,7 +245,7 @@ export default function Home() {
                   Located on <strong>NH-544 (Salem–Coimbatore Highway)</strong> in Komarapalayam, just 22 km from Erode and 20 km from Tiruchengode, JKKN College of Arts and Science is one of the most accessible and well-connected arts and science colleges in Tamil Nadu. The 15-acre campus serves learners from Erode, Salem, Namakkal, Tiruchengode, Coimbatore, and Tiruppur districts.
                 </p>
                 <p>
-                  Established in 1974 as part of <strong>J.K.K. Nattraja Educational Institutions</strong> (est. 1952), JKKN blends 74+ years of academic heritage with a modern, industry-integrated learning framework. Our NAAC accreditation and UGC-recognized autonomous status empower us to design programmes aligned with current industry demands.
+                  Established in 1974 as part of <strong>J.K.K. Nattraja Educational Institutions</strong> (est. 1952), JKKN blends 74+ years of academic heritage with a modern, industry-integrated learning framework. Our NAAC accreditation (Grade B) and UGC-recognized autonomous status empower us to design programmes aligned with current industry demands.
                 </p>
                 <p>
                   With 121 Senior Learners, 52 of them PhD-qualified, AI and IoT research labs, partnerships with NASSCOM and CII, and a placement record published in NIRF 2025, we prepare Learners not just for jobs — but for successful careers across India and abroad.
@@ -329,7 +329,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto space-y-6 text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] text-gray-700">
             {/* Snippet definition paragraph — optimized for Google Featured Snippet */}
             <p>
-              <strong>JKKN College of Arts and Science</strong> is widely recognized as one of the best arts and science colleges in Tamil Nadu. With five decades of academic heritage, NAAC accreditation, UGC-recognized autonomous status, and a placement record published in NIRF 2025, JKKN offers 38 industry-aligned programmes near Erode on the Salem–Coimbatore Highway.
+              <strong>JKKN College of Arts and Science</strong> is widely recognized as one of the best arts and science colleges in Tamil Nadu. With five decades of academic heritage, NAAC accreditation (Grade B), UGC-recognized autonomous status, and a placement record published in NIRF 2025, JKKN offers 38 industry-aligned programmes near Erode on the Salem–Coimbatore Highway.
             </p>
 
             {/* Numbered list — optimized for Google List Snippet */}
@@ -338,7 +338,7 @@ export default function Home() {
               <ol className="list-decimal list-inside space-y-2 text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] text-gray-700 pl-2">
                 <li>College established 1974 — part of JKKN Institutions (Est. 1952)</li>
                 <li>Autonomous Status — UGC Recognized</li>
-                <li>NAAC Accredited Institution</li>
+                <li>NAAC Accredited (B) Institution</li>
                 <li>Placement record published in NIRF 2025</li>
                 <li>35 UG, PG &amp; PhD Programmes</li>
                 <li>AI/IoT Learning Labs + NASSCOM &amp; CII Industry Partnerships</li>
@@ -353,7 +353,7 @@ export default function Home() {
               JKKN College of Arts and Science focuses on measurable outcomes. A <strong>placement record published in NIRF 2025</strong> gives the numbers: 135 of 373 UG graduates of 2023-24 placed and 105 gone on to higher studies. Learners from across Tamil Nadu, Kerala, and Karnataka choose JKKN for this proven track record.
             </p>
             <p>
-              The college offers 35 UG, PG, and doctoral programmes across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research learning labs, NASSCOM and CII collaborations, and in-built internship pathways make JKKN a <strong>top arts college near Erode</strong> for learners seeking future-ready education in Tamil Nadu.
+              The college offers 35 UG, PG, and doctoral programmes across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation (Grade B)</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research learning labs, NASSCOM and CII collaborations, and in-built internship pathways make JKKN a <strong>top arts college near Erode</strong> for learners seeking future-ready education in Tamil Nadu.
             </p>
 
             {/* Key Differentiators Grid */}
@@ -364,7 +364,7 @@ export default function Home() {
               </div>
               <div className="bg-green-50 border border-green-200 rounded-xl p-5 text-center">
                 <div className="text-[24px] font-bold text-[#0b6d41] mb-1">Autonomous</div>
-                <div className="text-[14px] text-gray-600">UGC Recognized &amp; NAAC Accredited</div>
+                <div className="text-[14px] text-gray-600">UGC Recognized &amp; NAAC Accredited (B)</div>
               </div>
               <div className="bg-green-50 border border-green-200 rounded-xl p-5 text-center">
                 <div className="text-[24px] font-bold text-[#0b6d41] mb-1">35</div>
@@ -471,12 +471,12 @@ export default function Home() {
 
           {/* Cards Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Card 1: NAAC Accredited */}
+            {/* Card 1: NAAC Accredited (B) */}
             <div className="bg-white border border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition">
               <div className="bg-[#0b6d41] p-4 rounded-xl w-16 h-16 flex items-center justify-center mx-auto mb-4">
                 <Award className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">NAAC Accredited</h3>
+              <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">NAAC Accredited (B)</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
                 Nationally recognized excellence in teaching and infrastructure.
               </p>
@@ -920,7 +920,7 @@ export default function Home() {
                 <ul className="space-y-4 mb-8">
                   {[
                     "Limited Seats Available",
-                    "NAAC Accredited Programs",
+                    "NAAC Accredited (B) Institution",
                     "Merit Scholarships Available",
                     "Industry-Integrated Learning Framework",
                   ].map((item) => (
@@ -965,7 +965,7 @@ export default function Home() {
               Quick Answer: Best Arts and Science College in Tamil Nadu
             </h3>
             <p className="text-[15px] md:text-[16px] leading-[24px] md:leading-[26px] text-gray-700">
-              <strong>JKKN College of Arts and Science</strong> (Autonomous) in Komarapalayam, Tamil Nadu, is consistently ranked among the best arts and science colleges in the state. Key highlights: <strong>NAAC accredited</strong>, <strong>UGC-recognized autonomous status</strong>, <strong>placement record published in NIRF 2025</strong>, <strong>35 UG/PG/PhD programmes</strong>, and <strong>135 of 373 UG graduates of 2023-24 placed</strong> (NIRF 2025). Affiliated to Periyar University; established 1974 within a group founded in 1952.
+              <strong>JKKN College of Arts and Science</strong> (Autonomous) in Komarapalayam, Tamil Nadu, is consistently ranked among the best arts and science colleges in the state. Key highlights: <strong>NAAC accredited (B)</strong>, <strong>UGC-recognized autonomous status</strong>, <strong>placement record published in NIRF 2025</strong>, <strong>35 UG/PG/PhD programmes</strong>, and <strong>135 of 373 UG graduates of 2023-24 placed</strong> (NIRF 2025). Affiliated to Periyar University; established 1974 within a group founded in 1952.
             </p>
           </div>
         </div>

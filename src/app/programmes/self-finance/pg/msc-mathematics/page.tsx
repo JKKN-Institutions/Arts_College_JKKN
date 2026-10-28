@@ -581,7 +581,7 @@ export default function MScMathematicsPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured postgraduate education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured postgraduate education meeting national standards with excellent academic reputation.' },
                   { title: 'Research-Oriented Learning Framework', description: 'Advanced coursework integrating pure mathematics with computational methods and real-world applications.' },
                   { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and expertise in specialized areas.' },
                   { title: 'Computational Excellence', description: 'State-of-the-art labs equipped with MATLAB, Python, and advanced mathematical software for hands-on learning.' },

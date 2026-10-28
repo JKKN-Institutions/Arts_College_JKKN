@@ -140,7 +140,7 @@ export default function BscMicrobiologyCollegesTamilNaduPage() {
           <h2 className="text-2xl font-bold text-brand-green mb-3">B.Sc Microbiology at JKKN College of Arts and Science, Komarapalayam</h2>
           <ul className="space-y-2 text-gray-700">
             <li><strong>Where:</strong> NH-544 (Salem to Coimbatore highway), Komarapalayam, Namakkal district, between Salem and Erode.</li>
-            <li><strong>Status:</strong> autonomous college, affiliated to Periyar University, Salem; NAAC accredited.</li>
+            <li><strong>Status:</strong> autonomous college, affiliated to Periyar University, Salem; NAAC accredited (B).</li>
             <li><strong>Fee 2026-27:</strong> ₹34,000 a year (management quota); government quota as per Government norms.</li>
             <li><strong>Eligibility:</strong> +2 pass in any one of Botany, Zoology or Biology, academic or vocational; no minimum percentage (<a href={REGULATION_URL} target="_blank" rel="noopener noreferrer" className="text-brand-green underline">Periyar University regulations</a>).</li>
             <li><strong>Course:</strong> 3 years, 6 semesters: microbiology fundamentals, microbial physiology, molecular biology and genetics, immunology, bacteriology, virology, recombinant DNA technology, and environmental, agricultural, food and pharmaceutical microbiology, with a practical in every core subject, a project and an internship.</li>

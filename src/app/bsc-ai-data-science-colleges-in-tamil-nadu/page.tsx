@@ -179,7 +179,7 @@ export default function BscAiDataScienceCollegesTamilNaduPage() {
           <h2 className="text-2xl font-bold text-brand-green mb-3">B.Sc Computer Science (AI &amp; DS) at JKKN College of Arts and Science, Komarapalayam</h2>
           <ul className="space-y-2 text-gray-700">
             <li><strong>Where:</strong> NH-544 (Salem to Coimbatore highway), Komarapalayam, Namakkal district, between Salem and Erode.</li>
-            <li><strong>Status:</strong> autonomous college, affiliated to Periyar University, Salem; NAAC accredited.</li>
+            <li><strong>Status:</strong> autonomous college, affiliated to Periyar University, Salem; NAAC accredited (B).</li>
             <li><strong>Fee 2026-27:</strong> ₹34,000 a year (management quota); government quota as per Government norms.</li>
             <li><strong>Eligibility:</strong> a pass in +2; confirm the required +2 subjects with the admissions office.</li>
             <li><strong>Course:</strong> 3 years, 6 semesters: programming, Data Structures, Python, Foundation of Artificial Intelligence, Fundamentals of Data Science, statistics, databases, a Data Science Lab, Ethics of AI, Natural Language Processing, Robotic Process Automation, a project and a summer internship.</li>

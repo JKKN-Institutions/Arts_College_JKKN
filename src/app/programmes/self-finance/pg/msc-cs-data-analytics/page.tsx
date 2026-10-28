@@ -566,7 +566,7 @@ export default function MScCSDataAnalyticsPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
                   { title: 'Industry-Ready Learning Framework', description: 'Aligned with industry trends covering Python, R, machine learning, big data, and cloud computing.' },
                   { title: 'Advanced Lab Infrastructure', description: 'GPU-powered computing labs with access to AWS, Azure, and Google Cloud Platform.' },
                   { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees and industry experience in data science.' },

@@ -44,7 +44,7 @@ import {
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
   description:
-    "JKKN CAS — 105 km from Coimbatore. NAAC-accredited. Self-finance UG fees ₹24,500–₹34,000 a year. BCA, B.Sc CS, BBA, B.Com. NIRF-published placement outcomes. 2026-27 open.",
+    "JKKN CAS — 105 km from Coimbatore. NAAC accredited (B). Self-finance UG fees ₹24,500–₹34,000 a year. BCA, B.Sc CS, BBA, B.Com. NIRF-published placement outcomes. 2026-27 open.",
   keywords: [
     "arts and science college near Coimbatore",
     "best college near Coimbatore",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
     description:
-      "JKKN CAS — 105 km from Coimbatore. NAAC-accredited, NIRF-published placement outcomes. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 105 km from Coimbatore. NAAC accredited (B), NIRF-published placement outcomes. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/coimbatore",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
-    description: "JKKN CAS — 105 km from Coimbatore. NAAC-accredited, NIRF-published placement outcomes. Admissions open 2026-27.",
+    description: "JKKN CAS — 105 km from Coimbatore. NAAC accredited (B), NIRF-published placement outcomes. Admissions open 2026-27.",
   },
 };
 
@@ -88,7 +88,7 @@ export default function CoimbatorePage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Coimbatore?",
-      a: "JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC-accredited, 74-year-old institution with 35 programmes and NIRF-published placement outcomes. Admissions open for 2026–27.",
+      a: "JKKN College of Arts and Science, 105 km from Coimbatore on NH-544, is a NAAC accredited (B), 74-year-old institution with 35 programmes and NIRF-published placement outcomes. Admissions open for 2026–27.",
     },
     {
       q: "How far is JKKN CAS from Coimbatore?",
@@ -131,8 +131,8 @@ export default function CoimbatorePage() {
       a: "The college does not publish a company-wise placement list; its NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed across all UG programmes. The Training and Placement Cell runs aptitude training and mock interviews for IT roles.",
     },
     {
-      q: "Is JKKN CAS NAAC accredited and UGC approved?",
-      a: "Yes. JKKN College of Arts and Science is NAAC-accredited and UGC-approved. All programmes are affiliated to Periyar University, Salem.",
+      q: "Is JKKN CAS NAAC accredited (B) and UGC approved?",
+      a: "Yes. JKKN College of Arts and Science is NAAC accredited (B) and UGC-approved. All programmes are affiliated to Periyar University, Salem.",
     },
   ];
 
@@ -250,7 +250,7 @@ export default function CoimbatorePage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 border border-white/30 rounded-full px-4 py-2 text-sm text-white/90 mb-8 bg-white/10 backdrop-blur-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>UGC, NAAC Approved • Admissions Open</span>
+            <span>NAAC Accredited (B) · Autonomous • Admissions Open</span>
           </div>
 
           {/* Heading */}
@@ -270,7 +270,7 @@ export default function CoimbatorePage() {
 
           {/* AEO Citation Block — AI Overview anchor paragraph */}
           <p className="aeo-citation-block text-white/70 text-sm max-w-2xl mx-auto mt-4 leading-relaxed">
-            JKKN College of Arts and Science is a NAAC-accredited, UGC-approved institution
+            JKKN College of Arts and Science is a NAAC accredited (B), UGC-approved institution
             located in Komarapalayam, Namakkal district, Tamil Nadu — 105 km from Coimbatore
             via NH-544. Founded in 1974 and affiliated to Periyar University, JKKN CAS offers 34 undergraduate, postgraduate, and research programmes
             spanning arts, science, commerce, and computer applications. The institution maintains
@@ -329,7 +329,7 @@ export default function CoimbatorePage() {
             </span>
             <span className="flex items-center gap-1.5">
               <span className="bg-[#FBFBEE] text-[#006837] font-semibold px-3 py-1 rounded-full text-xs">
-                ✓ NAAC
+                ✓ NAAC Accredited (B)
               </span>
             </span>
             <span className="hidden sm:block text-gray-300">|</span>
