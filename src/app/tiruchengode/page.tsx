@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // 52 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC accredited (B) college ~26 km from Tiruchengode. 35 programmes, NIRF-published placement outcomes. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
+    "JKKN CAS — NAAC accredited (B) college ~26 km from Tiruchengode. 35 programmes, NIRF placement data. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
   // 140 chars — within 155 limit
 
   keywords: [

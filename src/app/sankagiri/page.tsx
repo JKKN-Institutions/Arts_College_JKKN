@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // 51 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC accredited (B) arts and science college ~16 km from Sankagiri on NH-544. 35 programmes, NIRF-published placement outcomes. Admissions open 2026–27.",
+    "JKKN CAS — NAAC accredited (B) arts and science college ~16 km from Sankagiri on NH-544. 35 programmes, NIRF placement data. Admissions open 2026–27.",
   // ~145 chars — within 155 limit
 
   keywords: [

@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // 51 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC accredited (B) college near Rasipuram, Namakkal district. 35 programmes, boys & girls hostel, NIRF-published placement outcomes. Admissions open 2026–27.",
+    "JKKN CAS — NAAC accredited (B) college near Rasipuram, Namakkal district. 35 programmes, boys & girls hostel, NIRF placement data. Admissions open 2026–27.",
   // ~147 chars — within 155 limit
 
   keywords: [

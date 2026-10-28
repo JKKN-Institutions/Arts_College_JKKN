@@ -44,7 +44,7 @@ import {
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
   description:
-    "JKKN CAS — 112 km from Coimbatore. NAAC accredited (B). Self-finance UG fees ₹24,500–₹34,000 a year. BCA, B.Sc CS, BBA, B.Com. NIRF-published placement outcomes. 2026-27 open.",
+    "JKKN CAS — 112 km from Coimbatore. NAAC accredited (B). Self-finance UG fees ₹24,500–₹34,000 a year. BCA, B.Sc CS, BBA, B.Com. NIRF placement data. 2026-27.",
   keywords: [
     "arts and science college near Coimbatore",
     "best college near Coimbatore",

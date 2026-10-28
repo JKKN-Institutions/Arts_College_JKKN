@@ -120,7 +120,7 @@ export default function BScZoologyPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
-              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
+              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited, Grade B', desc: 'Quality assured education' },
               { icon: <Microscope className="w-7 h-7" />, stat: 'Labs', title: 'Specialized Labs', desc: 'Advanced research facilities' },
               { icon: <MapPin className="w-7 h-7" />, stat: 'Annual', title: 'Field Study Trips', desc: 'Wildlife sanctuary visits' },
             ].map((card, idx) => (

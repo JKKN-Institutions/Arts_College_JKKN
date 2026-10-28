@@ -212,7 +212,7 @@ export default function BComAccountingFinancePage() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
               {[
-                { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured education' },
+                { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited, Grade B', desc: 'Quality assured education' },
                 { icon: <DollarSign className="w-7 h-7" />, stat: 'CA/CMA', title: 'Foundation Ready', desc: 'Professional exam preparation' },
                 { icon: <CheckCircle2 className="w-7 h-7" />, stat: 'Industry', title: 'Internships', desc: 'Real-world exposure' },
               ].map((card, idx) => (

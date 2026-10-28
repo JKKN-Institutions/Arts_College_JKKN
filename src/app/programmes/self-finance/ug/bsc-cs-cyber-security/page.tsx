@@ -124,7 +124,7 @@ export default function BScCSCyberSecurityPage() {
               { icon: <DollarSign className="w-7 h-7" />, stat: '₹32,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
               { icon: <Building2 className="w-7 h-7" />, stat: 'Periyar', title: 'University Affiliation', desc: 'Autonomous college, Salem region' },
               { icon: <Code className="w-7 h-7" />, stat: 'No Maths?', title: 'Still Eligible', desc: '+2 with CS, Statistics or Business Maths' },
-              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Autonomous, UGC recognised' },
+              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited, Grade B', desc: 'Autonomous, UGC recognised' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">

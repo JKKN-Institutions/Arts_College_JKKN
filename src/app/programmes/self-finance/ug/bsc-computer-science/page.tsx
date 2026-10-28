@@ -126,7 +126,7 @@ export default function BScComputerSciencePage() {
               { icon: <DollarSign className="w-7 h-7" />, stat: '₹34,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
               { icon: <Building2 className="w-7 h-7" />, stat: 'Periyar', title: 'University Affiliation', desc: 'Autonomous college, Salem region' },
               { icon: <Code2 className="w-7 h-7" />, stat: 'Maths / CS', title: '+2 Eligibility', desc: 'Or Business Maths or Statistics' },
-              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Autonomous, UGC recognised' },
+              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited, Grade B', desc: 'Autonomous, UGC recognised' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">

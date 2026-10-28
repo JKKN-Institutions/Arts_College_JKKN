@@ -120,7 +120,7 @@ export default function PhDTamilPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
-              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Institution', desc: 'Quality assured research' },
+              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited, Grade B', desc: 'Quality assured research' },
               { icon: <Users className="w-7 h-7" />, stat: '1:1', title: 'Supervisor-Scholar Ratio', desc: 'Personalized guidance' },
               { icon: <BookOpen className="w-7 h-7" />, stat: 'UGC', title: 'NET/SLET Exemption', desc: 'For qualified candidates' },
               { icon: <Award className="w-7 h-7" />, stat: '9+', title: 'Research Areas', desc: 'Diverse specializations' },

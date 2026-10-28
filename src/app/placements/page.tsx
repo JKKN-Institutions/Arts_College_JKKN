@@ -197,7 +197,7 @@ export default function PlacementsPage() {
       />
       <WebPageSchema
         name="Placements — JKKN College of Arts and Science"
-        description="Campus placement highlights, top recruiters, placement process, and training programmes at JKKN College of Arts and Science, Komarapalayam."
+        description="Placement numbers from the NIRF 2025 return, the placement process and training programmes at JKKN College of Arts and Science, Komarapalayam."
         url="https://cas.jkkn.ac.in/placements"
         lastReviewed="2025-03-26"
         speakable={["h1", ".hero-description"]}

@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     absolute: 'JKKN College of Arts and Science (Autonomous), Komarapalayam',
   },
   description:
-    'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited (B), Periyar University. 35 UG, PG & PhD programmes, placement record published in NIRF 2025. Apply 2026-27.',
+    'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited (B), Periyar University. 35 UG, PG & PhD programmes. Apply for 2026-27.',
   keywords: [
     'best arts and science college in Tamil Nadu',
     'JKKN College of Arts and Science',
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'JKKN College of Arts and Science (Autonomous), Komarapalayam',
     description:
-      'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited (B), Periyar University. 35 UG, PG & PhD programmes, placement record published in NIRF 2025. Apply 2026-27.',
+      'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited (B), Periyar University. 35 UG, PG & PhD programmes. Apply for 2026-27.',
     url: 'https://cas.jkkn.ac.in',
     siteName: 'JKKN College of Arts and Science',
     type: 'website',

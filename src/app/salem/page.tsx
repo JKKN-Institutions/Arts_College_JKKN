@@ -41,7 +41,7 @@ import {
 export const metadata: Metadata = {
   title: "Best Arts and Science College Near Salem | JKKN CAS",
   description:
-    "JKKN CAS — top arts and science college accessible from Salem (~57 km via NH-544). NAAC accredited (B), BCA, BBA, B.Com, B.Sc. Admissions 2026-27.",
+    "JKKN CAS — arts and science college reachable from Salem (~57 km via NH-544). NAAC accredited (B), BCA, BBA, B.Com, B.Sc. Admissions 2026-27.",
   keywords: [
     "arts and science college near Salem",
     "best college near Salem",

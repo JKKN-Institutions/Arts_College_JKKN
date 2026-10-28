@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   // 49 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC accredited (B) arts and science college ~8 km from Bhavani across the Cauvery bridge. 35 programmes, NIRF-published placement outcomes. Admissions 2026–27.",
+    "JKKN CAS — NAAC accredited (B) arts and science college ~8 km from Bhavani across the Cauvery bridge. 35 programmes, NIRF placement data. Admissions 2026–27.",
   // ~151 chars — within 155 limit
 
   keywords: [
