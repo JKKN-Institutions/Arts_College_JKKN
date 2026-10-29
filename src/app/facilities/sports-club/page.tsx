@@ -65,80 +65,80 @@ export default function SportsClubPage() {
 
         {/* Hero Intro */}
         <p className="text-base md:text-lg text-gray-700 text-justify leading-relaxed mb-8">
-          where fitness and fun come together! Our top-notch facility is designed to cater to all your sporting and fitness needs. Here's why our Sports Clubs stands out from the rest:
+          JKKN College of Arts and Science has two outdoor grounds, an indoor stadium and a three-floor gymnasium on its 15-acre campus at Komarapalayam. The details below are taken from the college's NAAC records.
         </p>
 
         {/* Feature Cards */}
         <div className="space-y-6 mb-8">
-          {/* Feature 1: World-class Facilities */}
+          {/* Outdoor grounds */}
           <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 space-y-3">
             <div className="flex items-start gap-3">
               <span className="text-brand-green text-xl font-bold">•</span>
               <h3 className="text-base md:text-lg font-bold text-brand-green">
-                World-class Facilities:
+                Outdoor Grounds:
               </h3>
             </div>
             <p className="text-base md:text-lg text-gray-700 text-justify leading-relaxed">
-              Our facility boasts world-class amenities including a fully equipped gym, swimming pool, basketball court, tennis court, football field, and more. Whether you're looking to pump some iron, practice your free throws, or perfect your backstroke, we've got you covered.
+              Ground I (6,300 sq m, 106 m × 60 m) and Ground II (4,700 sq m, 76 m × 62 m) are used for volleyball, basketball on a concrete court with flood lighting, tennis, handball, kabaddi, a 200-metre track, and field events such as long jump, high jump, shot put and discus throw.
             </p>
           </div>
 
-          {/* Feature 2: Expert Instructors */}
+          {/* Indoor stadium and games */}
           <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 space-y-3">
             <div className="flex items-start gap-3">
               <span className="text-brand-green text-xl font-bold">•</span>
               <h3 className="text-base md:text-lg font-bold text-brand-green">
-                Expert Instructors:
+                Indoor Stadium and Games:
               </h3>
             </div>
             <p className="text-base md:text-lg text-gray-700 text-justify leading-relaxed">
-              Our team of expert instructors is passionate about helping you achieve your fitness goals. They're certified, experienced, and always ready to provide guidance and support. They'll motivate you, push past your limits and achieve your potential.
+              An indoor stadium of 1,069 sq m (16.75 m high) was built with a UGC grant. Indoor games include carrom, chess and table tennis.
             </p>
           </div>
 
-          {/* Feature 3: Cutting-edge Equipment */}
+          {/* Gymnasium */}
           <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 space-y-3">
             <div className="flex items-start gap-3">
               <span className="text-brand-green text-xl font-bold">•</span>
               <h3 className="text-base md:text-lg font-bold text-brand-green">
-                Cutting-edge Equipment:
+                Gymnasium:
               </h3>
             </div>
             <p className="text-base md:text-lg text-gray-700 text-justify leading-relaxed">
-              We're proud to offer state-of-the-art equipment that's regularly maintained and updated. Our gym is packed with the latest cardio and weight training machines, and our outdoor sports facilities are built to the highest standards. You won't find better equipment anywhere else!
+              A 655 sq m gymnasium on three floors has fitness and wellness equipment, weight-training facilities and dumbbells, with separate gym facilities for boys and girls.
             </p>
           </div>
 
-          {/* Feature 4: Free Memberships */}
+          {/* Coaching */}
           <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 space-y-3">
             <div className="flex items-start gap-3">
               <span className="text-brand-green text-xl font-bold">•</span>
               <h3 className="text-base md:text-lg font-bold text-brand-green">
-                Free Memberships:
+                Coaching:
               </h3>
             </div>
             <p className="text-base md:text-lg text-gray-700 text-justify leading-relaxed">
-              We believe that everyone should have access to top-quality sports facilities, which is why we offer memberships for students, staff, and members of the community. Our flexible membership options make it easy for you to find the perfect package that suits your needs.
+              Students train under the college's physical directress and specialised coaches, and are given the sports equipment for the games they play.
             </p>
           </div>
 
-          {/* Feature 5: Community Spirit */}
+          {/* Tournaments */}
           <div className="bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 space-y-3">
             <div className="flex items-start gap-3">
               <span className="text-brand-green text-xl font-bold">•</span>
               <h3 className="text-base md:text-lg font-bold text-brand-green">
-                Community Spirit:
+                Tournaments and Sports Meet:
               </h3>
             </div>
             <p className="text-base md:text-lg text-gray-700 text-justify leading-relaxed">
-              We believe in building a strong community through sports and fitness. Our sports club is a place where you'll make friends, and have fun. We regularly organize events and competitions that bring people together and foster healthy competition and camaraderie.
+              Students take part in inter-collegiate, district, state and national-level tournaments, and an intramural sports meet is held every year. The college hosted the Periyar University inter-collegiate basketball tournament in 2013-14, 2014-15 and 2016-17.
             </p>
           </div>
         </div>
 
         {/* Closing Paragraph */}
         <p className="text-base md:text-lg text-gray-700 text-justify leading-relaxed">
-          So why wait? Join the Sports Club Facility at JKKN Educational Institutions and experience the ultimate fitness and sporting experience. Whether you're a beginner or a seasoned pro, we've got something for everyone. Come and join our vibrant community of sports enthusiasts today!
+          Source: NAAC <a href="/documents/iqac/ssr/cycle-1-2013-2018.pdf" className="text-brand-green underline">Self Study Report, cycle 1 (2013-2018)</a>, criterion 4.1.2, and AQAR <a href="/documents/iqac/aqar/aqar-2019-2020.pdf" className="text-brand-green underline">2019-20</a> and <a href="/documents/iqac/aqar/aqar-2022-2023.pdf" className="text-brand-green underline">2022-23</a>.
         </p>
       </div>
     </div>
