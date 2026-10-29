@@ -245,7 +245,7 @@ export default function Home() {
                   Located on <strong>NH-544 (Salem–Coimbatore Highway)</strong> in Komarapalayam, about 18 km from Erode and 26 km from Tiruchengode, JKKN College of Arts and Science is one of the most accessible and well-connected arts and science colleges in Tamil Nadu. The 15-acre campus serves learners from Erode, Salem, Namakkal, Tiruchengode, Coimbatore, and Tiruppur districts.
                 </p>
                 <p>
-                  Established in 1974 as part of <strong>J.K.K. Nattraja Educational Institutions</strong> (est. 1952), JKKN blends the group's 74+ years of academic heritage with a modern, industry-integrated learning framework. Our NAAC accreditation (Grade B) and the autonomous status conferred by UGC empower us to design programmes aligned with current industry demands.
+                  Established in 1974 as part of <strong>J.K.K. Nattraja Educational Institutions</strong> (est. 1952), JKKN blends the 74+ years of academic heritage of the group with a modern, industry-integrated learning framework. Our NAAC accreditation (Grade B) and the autonomous status conferred by UGC empower us to design programmes aligned with current industry demands.
                 </p>
                 <p>
                   With 121 Senior Learners, 52 of them PhD-qualified, AI and IoT research labs, industry MoUs with IBM India, Global Talent Track and AWE CARE, and a placement record published in NIRF 2025, we prepare Learners not just for jobs — but for successful careers across India and abroad.

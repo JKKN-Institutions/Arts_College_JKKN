@@ -65,7 +65,7 @@ export default function SportsClubPage() {
 
         {/* Hero Intro */}
         <p className="text-base md:text-lg text-gray-700 text-justify leading-relaxed mb-8">
-          JKKN College of Arts and Science has two outdoor grounds, an indoor stadium and a three-floor gymnasium on its 15-acre campus at Komarapalayam. The details below are taken from the college's NAAC records.
+          JKKN College of Arts and Science has two outdoor grounds, an indoor stadium and a three-floor gymnasium on its 15-acre campus at Komarapalayam. The details below come from the NAAC records of the college.
         </p>
 
         {/* Feature Cards */}
@@ -118,7 +118,7 @@ export default function SportsClubPage() {
               </h3>
             </div>
             <p className="text-base md:text-lg text-gray-700 text-justify leading-relaxed">
-              Students train under the college's physical directress and specialised coaches, and are given the sports equipment for the games they play.
+              Students train under the physical directress of the college and specialised coaches, and are given the sports equipment for the games they play.
             </p>
           </div>
 
