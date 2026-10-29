@@ -88,7 +88,7 @@ const homepageFAQs = [
   {
     question: "What makes JKKN different from other arts and science colleges in Tamil Nadu?",
     answer:
-      "JKKN offers an industry-integrated curriculum with collaborations from NASSCOM, CII, and MNCs. Students benefit from dedicated AI and IoT research labs, 121 faculty on roll (52 with a PhD, NIRF 2025), and a training and placement cell that delivers measurable outcomes — placement support and career opportunities across India and abroad.",
+      "JKKN offers an industry-linked curriculum, with MoUs signed with IBM India (2019), Global Talent Track (2019) and AWE CARE, Erode (2022-23), as reported in the college's NAAC AQARs. Students benefit from dedicated AI and IoT research labs, 121 faculty on roll (52 with a PhD, NIRF 2025), and a training and placement cell that delivers measurable outcomes — placement support and career opportunities across India and abroad.",
   },
   {
     question: "What programmes does JKKN Arts and Science College offer in Tamil Nadu?",
@@ -133,7 +133,7 @@ const homepageFAQs = [
   {
     question: "How does JKKN compare to other arts and science colleges in Tamil Nadu?",
     answer:
-      "JKKN is an autonomous college recognised by UGC under Section 2(f) and 12(B), with NAAC accreditation (Grade B), and its placement record is published in NIRF 2025. JKKN offers AI/IoT research labs, NASSCOM and CII industry partnerships, and 35 programmes, backed by a 74+ year institutional legacy and 60+ recruiting companies.",
+      "JKKN is an autonomous college recognised by UGC under Section 2(f) and 12(B), with NAAC accreditation (Grade B), and its placement record is published in NIRF 2025. JKKN offers AI/IoT research labs, industry MoUs with IBM India, Global Talent Track and AWE CARE (NAAC AQAR), and 35 programmes, backed by a 74+ year institutional legacy and 60+ recruiting companies.",
   },
   {
     question: "What are the career options after completing a degree from JKKN?",
@@ -248,7 +248,7 @@ export default function Home() {
                   Established in 1974 as part of <strong>J.K.K. Nattraja Educational Institutions</strong> (est. 1952), JKKN blends 74+ years of academic heritage with a modern, industry-integrated learning framework. Our NAAC accreditation (Grade B) and the autonomous status conferred by UGC empower us to design programmes aligned with current industry demands.
                 </p>
                 <p>
-                  With 121 Senior Learners, 52 of them PhD-qualified, AI and IoT research labs, partnerships with NASSCOM and CII, and a placement record published in NIRF 2025, we prepare Learners not just for jobs — but for successful careers across India and abroad.
+                  With 121 Senior Learners, 52 of them PhD-qualified, AI and IoT research labs, industry MoUs with IBM India, Global Talent Track and AWE CARE, and a placement record published in NIRF 2025, we prepare Learners not just for jobs — but for successful careers across India and abroad.
                 </p>
               </div>
 
@@ -341,7 +341,7 @@ export default function Home() {
                 <li>NAAC Accredited (B) Institution</li>
                 <li>Placement record published in NIRF 2025</li>
                 <li>35 UG, PG &amp; PhD Programmes</li>
-                <li>AI/IoT Learning Labs + NASSCOM &amp; CII Industry Partnerships</li>
+                <li>AI/IoT Learning Labs + Industry MoUs (IBM India, AWE CARE)</li>
                 <li>135 of 373 UG graduates placed in 2023-24 (NIRF 2025)</li>
               </ol>
             </div>
@@ -353,7 +353,7 @@ export default function Home() {
               JKKN College of Arts and Science focuses on measurable outcomes. A <strong>placement record published in NIRF 2025</strong> gives the numbers: 135 of 373 UG graduates of 2023-24 placed and 105 gone on to higher studies. Learners from across Tamil Nadu, Kerala, and Karnataka choose JKKN for this proven track record.
             </p>
             <p>
-              The college offers 35 UG, PG, and doctoral programmes across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation (Grade B)</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research learning labs, NASSCOM and CII collaborations, and in-built internship pathways make JKKN an <strong>arts college near Erode</strong> for learners seeking future-ready education in Tamil Nadu.
+              The college offers 35 UG, PG, and doctoral programmes across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation (Grade B)</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research learning labs, industry MoUs (IBM India, Global Talent Track, AWE CARE), and in-built internship pathways make JKKN an <strong>arts college near Erode</strong> for learners seeking future-ready education in Tamil Nadu.
             </p>
 
             {/* Key Differentiators Grid */}
@@ -432,7 +432,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-white border-b border-gray-100">
                   <td className="px-4 py-3 font-medium">Industry Partnerships</td>
-                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">NASSCOM, CII</td>
+                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">MoUs: IBM India, Global Talent Track, AWE CARE</td>
                   <td className="px-4 py-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="bg-gray-50">
@@ -511,7 +511,7 @@ export default function Home() {
               </div>
               <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Industry Partnerships</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                Collaborations with NASSCOM and CII for internships and certifications
+                MoUs with IBM India and Global Talent Track (2019) for training, and with AWE CARE, Erode (2022-23) for industry exposure
               </p>
             </div>
 
