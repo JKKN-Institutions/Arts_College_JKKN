@@ -43,6 +43,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/iqac/minutes-of-meeting`, "yearly", 0.5),
 
     // NIRF / Others
+    s(`${SITE_URL}/approvals`, "monthly", 0.7),
     s(`${SITE_URL}/nirf`, "yearly", 0.5),
     s(`${SITE_URL}/nirf/nirf-2025`, "yearly", 0.5),
     s(`${SITE_URL}/others`, "yearly", 0.4),
