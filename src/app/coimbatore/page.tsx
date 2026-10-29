@@ -273,7 +273,7 @@ export default function CoimbatorePage() {
             located in Komarapalayam, Namakkal district, Tamil Nadu — 112 km from Coimbatore
             via NH-544. Founded in 1974 and affiliated to Periyar University, JKKN CAS offers 35 undergraduate, postgraduate, and research programmes
             spanning arts, science, commerce, and computer applications. The institution maintains
-            a placement record published in NIRF 2025 (135 of 373 UG graduates of 2023-24 placed). A 50+ acre residential campus with separate hostel facilities, digital
+            a placement record published in NIRF 2025 (135 of 373 UG graduates of 2023-24 placed). A 15-acre residential campus with separate hostel facilities, digital
             library, modern laboratories, and weekend bus services to Coimbatore makes it an
             accessible choice for students from Coimbatore seeking affordable quality education.
           </p>
@@ -459,7 +459,7 @@ export default function CoimbatorePage() {
             {[
               { factor: "Tuition Fees", city: "Varies", jkkn: "₹24,500–₹34,000 a year (self-finance UG)", icon: IndianRupee },
               { factor: "Class Size", city: "Varies", jkkn: "40-60 students", icon: Users },
-              { factor: "Campus", city: "Compact, urban", jkkn: "50+ acre green campus", icon: Leaf },
+              { factor: "Campus", city: "Compact, urban", jkkn: "15-acre green campus", icon: Leaf },
               { factor: "Faculty Access", city: "Varies", jkkn: "Personalised mentoring", icon: GraduationCap },
               { factor: "Placement Rate", city: "Varies widely", jkkn: "36% UG, NIRF 2025", icon: TrendingUp },
               { factor: "Living Cost", city: "Varies", jkkn: "Affordable hostel + meals included", icon: Home },
