@@ -6,14 +6,14 @@ import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 export const metadata: Metadata = {
   title: "NIRF 2025",
   description:
-    "NIRF 2025 ranking data and institutional performance of JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
+    "Data submitted to NIRF 2025 by JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu: the Overall, SDG and College data files.",
   alternates: {
     canonical: "https://cas.jkkn.ac.in/nirf/nirf-2025",
   },
   openGraph: {
     title: "NIRF 2025 | JKKN Arts & Science",
     description:
-      "NIRF 2025 ranking data and institutional performance of JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu.",
+      "Data submitted to NIRF 2025 by JKKN College of Arts and Science (Autonomous), Komarapalayam, Tamil Nadu: the Overall, SDG and College data files.",
     url: "https://cas.jkkn.ac.in/nirf/nirf-2025",
     siteName: "JKKN College of Arts and Science",
     type: "website",
