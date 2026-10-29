@@ -851,10 +851,10 @@ export default function BCAPage() {
                       </div>
                       <div>
                         <h4 className="text-lg font-bold text-brand-green mb-2">
-                          70+ Years of Academic Excellence
+                          74+ Years of Group Legacy
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                          Part of J.K.K. Nattraja Educational Institutions with proven legacy in progressive education and technology training since 1954.
+                          Part of J.K.K. Nattraja Educational Institutions, founded in 1952; this college since 1974.
                         </p>
                       </div>
                     </div>

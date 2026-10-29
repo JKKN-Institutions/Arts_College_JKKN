@@ -216,7 +216,7 @@ export default function NamakkalPage() {
             {[
               { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
               { value: "35", label: "PROGRAMMES" },
-              { value: "74+", label: "YEARS LEGACY" },
+              { value: "74+", label: "YEARS GROUP LEGACY" },
             ].map((stat) => (
               <div
                 key={stat.label}

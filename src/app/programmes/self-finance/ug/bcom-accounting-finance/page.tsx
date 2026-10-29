@@ -856,8 +856,8 @@ export default function BComAccountingFinancePage() {
                     {[
                       {
                         icon: <GraduationCap className="w-6 h-6" />,
-                        title: "70+ Years of Academic Excellence",
-                        desc: "Part of J.K.K. Nattraja Educational Institutions with proven legacy in progressive education since 1954."
+                        title: "74+ Years of Group Legacy",
+                        desc: "Part of J.K.K. Nattraja Educational Institutions, founded in 1952; this college since 1974."
                       },
                       {
                         icon: <CheckCircle2 className="w-6 h-6" />,

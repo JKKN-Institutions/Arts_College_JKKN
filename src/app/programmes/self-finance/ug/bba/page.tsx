@@ -677,7 +677,7 @@ export default function BBAPage() {
 
                 <div className="space-y-4">
                   {[
-                    { icon: <GraduationCap className="w-6 h-6" />, title: '70+ Years of Academic Excellence', description: 'Part of J.K.K. Nattraja Educational Institutions with proven legacy in progressive education since 1954.' },
+                    { icon: <GraduationCap className="w-6 h-6" />, title: '74+ Years of Group Legacy', description: 'Part of J.K.K. Nattraja Educational Institutions, founded in 1952; this college since 1974.' },
                     { icon: <CheckCircle2 className="w-6 h-6" />, title: 'Industry-Integrated Learning Framework', description: 'Learning Framework designed in consultation with business leaders and corporate professionals for real-world relevance.' },
                     { icon: <Users className="w-6 h-6" />, title: 'Expert Senior Learners', description: 'Faculty with MBA qualifications and industry experience providing practical insights and mentorship.' },
                     { icon: <TrendingUp className="w-6 h-6" />, title: 'Strong Placement Record', description: 'Leading MNCs, startups and corporates recruit from campus; batch-wise data is published by the Placement Cell.' },
