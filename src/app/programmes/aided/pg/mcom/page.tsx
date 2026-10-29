@@ -74,7 +74,7 @@ export default function MComAidedPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Master of{' '}
@@ -156,7 +156,7 @@ export default function MComAidedPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Master of Commerce (M.Com) is an advanced two-year postgraduate programme designed to develop expert professionals with comprehensive knowledge in accounting, finance, taxation, business research, and strategic management. This UGC-recognized programme builds upon undergraduate foundations to create industry-ready leaders capable of driving organizational excellence.
+                The Master of Commerce (M.Com) is an advanced two-year postgraduate programme designed to develop expert professionals with comprehensive knowledge in accounting, finance, taxation, business research, and strategic management. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme builds upon undergraduate foundations to create industry-ready leaders capable of driving organizational excellence.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy ensures Learners receive specialized training through research-oriented learning, advanced case studies, and industry partnerships. The curriculum is aligned with professional certifications such as CA, CMA, CS, CFA, and UGC NET, preparing graduates for senior management positions, academic careers, and research-based roles in diverse sectors.

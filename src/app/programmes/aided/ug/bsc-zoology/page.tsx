@@ -74,7 +74,7 @@ export default function BScZoologyPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green drop-shadow-lg">
                 Bachelor of Science in{' '}
@@ -630,7 +630,7 @@ export default function BScZoologyPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC 2(f) & 12(B) Recognised, NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
                   { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, active research publications, and extensive field experience.' },
                   { title: 'Strong Placement Support', description: 'Dedicated placement cell with tie-ups with leading research institutes, pharmaceutical companies, and NGOs.' },
                   { title: 'Field Study Excursions', description: 'Annual trips to wildlife sanctuaries, marine biology stations, biodiversity parks, and research centers.' },

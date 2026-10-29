@@ -76,7 +76,7 @@ export default function BScPhysicsPage() {
               <div className="max-w-4xl mx-auto text-center">
                 <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                   <GraduationCap className="w-4 h-4 text-brand-green" />
-                  UGC Recognized Programme
+                  UGC 2(f) & 12(B) Recognised College
                 </span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                   Bachelor of Science in{' '}
@@ -125,7 +125,7 @@ export default function BScPhysicsPage() {
                 { icon: <DollarSign className="w-7 h-7" />, stat: '₹25,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
                 { icon: <Building2 className="w-7 h-7" />, stat: 'Periyar', title: 'University Affiliation', desc: 'Autonomous college, Salem region' },
                 { icon: <Atom className="w-7 h-7" />, stat: 'PCM', title: '+2 Eligibility', desc: 'Maths, Physics and Chemistry' },
-                { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited, Grade B', desc: 'Autonomous, UGC recognised' },
+                { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited, Grade B', desc: 'Autonomous, UGC 2(f) & 12(B)' },
               ].map((card, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <GlassCard className="p-6 text-center">
@@ -155,7 +155,7 @@ export default function BScPhysicsPage() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                  The Bachelor of Science in Physics is a comprehensive three-year undergraduate programme designed to provide Learners with in-depth knowledge of fundamental physics, quantum mechanics, electromagnetism, thermodynamics, and modern physics. This UGC-recognized programme offers a perfect blend of theoretical foundations and practical laboratory experience, preparing graduates for diverse career pathways in scientific research and technology.
+                  The Bachelor of Science in Physics is a comprehensive three-year undergraduate programme designed to provide Learners with in-depth knowledge of fundamental physics, quantum mechanics, electromagnetism, thermodynamics, and modern physics. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme offers a perfect blend of theoretical foundations and practical laboratory experience, preparing graduates for diverse career pathways in scientific research and technology.
                 </p>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                   Our progressive education philosophy ensures that Learners develop scientific temperament, analytical thinking, and problem-solving skills through experiential learning. The curriculum integrates classical physics with modern computational techniques, electronics, and material science, equipping graduates with skills demanded by research institutions, technology industries, and academic organizations worldwide.
@@ -637,7 +637,7 @@ export default function BScPhysicsPage() {
                     { icon: <TrendingUp className="w-6 h-6" />, title: 'M.Sc Physics on the Same Campus', description: 'The college also offers an aided M.Sc Physics, so B.Sc graduates have a postgraduate route without changing campus. Other routes include IIT-JAM, JEST and a B.Ed.' },
                     { icon: <Microscope className="w-6 h-6" />, title: 'Project and Internship', description: 'The syllabus includes an internship, industrial visit or field visit in Semester V and a project in Semester VI.' },
                     { icon: <Building2 className="w-6 h-6" />, title: 'Reachable from Five Districts', description: 'On NH-544 at Komarapalayam, with college transport from Erode, Salem, Namakkal, Tiruppur and Coimbatore, and separate hostels for boys and girls.' },
-                    { icon: <Award className="w-6 h-6" />, title: 'NAAC Accredited (B)', description: 'The college is NAAC accredited (B) and UGC recognised, and publishes its NIRF data on the NIRF page.' }
+                    { icon: <Award className="w-6 h-6" />, title: 'NAAC Accredited (B)', description: 'The college is NAAC accredited (B) and recognised by UGC under Section 2(f) and 12(B), and publishes its NIRF data on the NIRF page.' }
                   ].map((reason, idx) => (
                     <div key={idx} className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-white/40 backdrop-blur-xl rounded-lg flex items-center justify-center flex-shrink-0 border border-white/60 text-brand-green">

@@ -74,7 +74,7 @@ export default function BAEnglishPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Bachelor of Arts in{' '}
@@ -152,7 +152,7 @@ export default function BAEnglishPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Bachelor of Arts in English is a comprehensive three-year undergraduate programme designed to develop proficient communicators, critical thinkers, and creative writers. This UGC-recognized programme offers an in-depth exploration of English literature spanning various periods, genres, and cultural contexts while building strong foundations in language studies, linguistics, and professional communication.
+                The Bachelor of Arts in English is a comprehensive three-year undergraduate programme designed to develop proficient communicators, critical thinkers, and creative writers. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme offers an in-depth exploration of English literature spanning various periods, genres, and cultural contexts while building strong foundations in language studies, linguistics, and professional communication.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy ensures that Learners receive holistic development through experiential learning, industry exposure, and skill-based training. The curriculum integrates classical literary studies with contemporary communication needs, preparing graduates for diverse career pathways in education, media, corporate communications, and creative industries.
@@ -571,7 +571,7 @@ export default function BAEnglishPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC 2(f) & 12(B) Recognised, NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
                   { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and industry experience.' },
                   { title: 'Strong Placement Support', description: 'Dedicated placement cell with industry partnerships ensuring excellent career opportunities.' },
                   { title: 'Industry-Aligned Learning Framework', description: 'Regularly updated learning pathway incorporating current industry trends and skill requirements.' },

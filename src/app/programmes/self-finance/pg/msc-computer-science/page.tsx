@@ -74,7 +74,7 @@ export default function MScComputerSciencePage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Master of Science in{' '}
@@ -151,7 +151,7 @@ export default function MScComputerSciencePage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Master of Science in Computer Science is a rigorous two-year postgraduate programme designed to provide Learners with advanced knowledge in cutting-edge technologies including Artificial Intelligence, Machine Learning, Data Science, Cloud Computing, and Cybersecurity. This UGC-recognized programme offers an optimal blend of theoretical depth and practical application, preparing graduates for leadership roles in the technology industry.
+                The Master of Science in Computer Science is a rigorous two-year postgraduate programme designed to provide Learners with advanced knowledge in cutting-edge technologies including Artificial Intelligence, Machine Learning, Data Science, Cloud Computing, and Cybersecurity. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme offers an optimal blend of theoretical depth and practical application, preparing graduates for leadership roles in the technology industry.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy ensures that Learners develop advanced programming skills, research aptitude, and analytical thinking through experiential learning. The curriculum integrates core computer science fundamentals with emerging technologies, industry projects, and research opportunities, equipping graduates with competencies demanded by multinational corporations, research institutions, and technology startups.
@@ -567,7 +567,7 @@ export default function MScComputerSciencePage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC 2(f) & 12(B) Recognised, NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
                   { title: 'Industry-Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and industry experience in emerging technologies.' },
                   { title: 'Advanced Laboratory Facilities', description: 'State-of-the-art labs with GPU clusters, cloud access, and cutting-edge development tools.' },
                   { title: 'Strong Industry Partnerships', description: 'Internship opportunities with top tech companies, startups, and research institutions.' },

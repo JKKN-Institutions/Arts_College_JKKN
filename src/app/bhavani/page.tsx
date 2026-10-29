@@ -90,7 +90,7 @@ export default function BhavaniPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Bhavani?",
-      a: "JKKN College of Arts and Science, located just ~8 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and approved by UGC.",
+      a: "JKKN College of Arts and Science, located just ~8 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and recognised by UGC under Section 2(f) and 12(B).",
     },
     {
       q: "How far is JKKN CAS from Bhavani?",
@@ -102,7 +102,7 @@ export default function BhavaniPage() {
     },
     {
       q: "Which courses are popular among Bhavani students at JKKN CAS?",
-      a: "JKKN CAS near Bhavani offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 35 programmes in total. All programmes are UGC-approved and affiliated to Periyar University. BCA and B.Com are the most popular among students from the Bhavani region.",
+      a: "JKKN CAS near Bhavani offers BCA, BBA, B.Com, B.Sc across 8 specialisations, MCA, M.Com, M.Sc, and Ph.D programmes — 35 programmes in total. The college is recognised by UGC under Section 2(f) and 12(B) and affiliated to Periyar University. BCA and B.Com are the most popular among students from the Bhavani region.",
     },
     {
       q: "Are JKKN CAS fees affordable for Bhavani students?",
@@ -118,7 +118,7 @@ export default function BhavaniPage() {
     },
     {
       q: "Is JKKN College of Arts and Science accredited?",
-      a: "JKKN College of Arts and Science is NAAC accredited (B) and UGC-approved. The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions, which includes 7 colleges and 2 schools.",
+      a: "JKKN College of Arts and Science is NAAC accredited (B) and recognised by UGC under Section 2(f) and 12(B). The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions, which includes 7 colleges and 2 schools.",
     },
     {
       q: "What placement rate does JKKN CAS achieve for Bhavani students?",
@@ -340,7 +340,7 @@ export default function BhavaniPage() {
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
           <p className="text-gray-700 leading-relaxed mb-4">
-            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC accredited (B) institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and approved by UGC. It offers 35 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges and 2 schools on a single campus.
+            JKKN College of Arts and Science (cas.jkkn.ac.in) is a NAAC accredited (B) institution established in 1974, located on NH-544 at Natarajapuram, Komarapalayam, Namakkal District, Tamil Nadu 638183. The college is affiliated to Periyar University and recognised by UGC under Section 2(f) and 12(B). It offers 35 programmes spanning UG, PG, and Ph.D levels across arts, science, commerce, and computer applications. The college is part of the JKKN Group of Institutions, which operates 7 colleges and 2 schools on a single campus.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -1017,7 +1017,7 @@ export default function BhavaniPage() {
               <tbody>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Accreditation</td>
-                  <td className="p-3 text-gray-800 font-medium">NAAC Accredited (B), UGC Approved</td>
+                  <td className="p-3 text-gray-800 font-medium">NAAC Accredited (B), UGC 2(f) & 12(B)</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">

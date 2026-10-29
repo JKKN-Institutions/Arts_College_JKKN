@@ -162,7 +162,7 @@ export default function BComBankingInsurancePage() {
               <div className="max-w-4xl mx-auto text-center">
                 <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                   <GraduationCap className="w-4 h-4 text-brand-green" />
-                  UGC Recognized Programme
+                  UGC 2(f) & 12(B) Recognised College
                 </span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                   Bachelor of Commerce in{' '}
@@ -239,7 +239,7 @@ export default function BComBankingInsurancePage() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                  The Bachelor of Commerce in Banking and Insurance is a specialized three-year undergraduate programme designed to equip learners with comprehensive knowledge of banking operations, insurance principles, financial management, and risk assessment. This UGC-recognized programme offers an ideal foundation for careers in the rapidly growing Banking, Financial Services, and Insurance (BFSI) sector.
+                  The Bachelor of Commerce in Banking and Insurance is a specialized three-year undergraduate programme designed to equip learners with comprehensive knowledge of banking operations, insurance principles, financial management, and risk assessment. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme offers an ideal foundation for careers in the rapidly growing Banking, Financial Services, and Insurance (BFSI) sector.
                 </p>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                   Our progressive education philosophy ensures that learners develop analytical thinking, financial acumen, and professional competencies through experiential learning. The curriculum integrates theoretical foundations with practical applications in banking technology, investment management, and regulatory compliance, preparing graduates for diverse roles in commercial banks, insurance companies, NBFCs, and financial institutions.

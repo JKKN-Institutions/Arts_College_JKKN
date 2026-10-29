@@ -320,7 +320,7 @@ export default function MComPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Master of Commerce (M.Com) is an advanced two-year postgraduate programme designed to develop expert professionals with comprehensive knowledge in accounting, finance, taxation, business research, and strategic management. This UGC-recognized programme builds upon undergraduate foundations to create industry-ready leaders capable of driving organizational excellence.
+                The Master of Commerce (M.Com) is an advanced two-year postgraduate programme designed to develop expert professionals with comprehensive knowledge in accounting, finance, taxation, business research, and strategic management. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme builds upon undergraduate foundations to create industry-ready leaders capable of driving organizational excellence.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy ensures Learners receive specialized training through research-oriented learning, advanced case studies, and industry partnerships. The curriculum is aligned with professional certifications such as CA, CMA, CS, CFA, and UGC NET, preparing graduates for senior management positions, academic careers, and research-based roles in diverse sectors.

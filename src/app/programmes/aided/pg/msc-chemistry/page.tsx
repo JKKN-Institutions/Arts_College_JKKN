@@ -74,7 +74,7 @@ export default function MScChemistryPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Postgraduate Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Master of Science in{' '}
@@ -152,7 +152,7 @@ export default function MScChemistryPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Master of Science in Chemistry is a rigorous two-year postgraduate programme designed to provide Learners with advanced knowledge in Organic, Inorganic, Physical, and Analytical Chemistry. This UGC-recognized programme offers comprehensive training in modern chemical research methodologies, spectroscopic techniques, and industrial applications, preparing graduates for careers in research, academia, and chemical industries.
+                The Master of Science in Chemistry is a rigorous two-year postgraduate programme designed to provide Learners with advanced knowledge in Organic, Inorganic, Physical, and Analytical Chemistry. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme offers comprehensive training in modern chemical research methodologies, spectroscopic techniques, and industrial applications, preparing graduates for careers in research, academia, and chemical industries.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our programme emphasizes hands-on laboratory experience, research dissertation. The curriculum integrates theoretical concepts with practical applications, fostering scientific temper and research excellence.

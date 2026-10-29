@@ -129,7 +129,7 @@ export default function BBAPage() {
               <div className="max-w-4xl mx-auto text-center">
                 <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                   <GraduationCap className="w-4 h-4 text-brand-green" />
-                  UGC Recognized Programme
+                  UGC 2(f) & 12(B) Recognised College
                 </span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                   Bachelor of{' '}
@@ -207,7 +207,7 @@ export default function BBAPage() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                  The Bachelor of Business Administration (BBA) is a comprehensive three-year undergraduate programme designed to provide Learners with a solid foundation in business management, leadership, and entrepreneurship. This UGC-recognized programme offers an ideal blend of theoretical knowledge and practical application, preparing graduates for successful careers in corporate management, startups, and business consulting.
+                  The Bachelor of Business Administration (BBA) is a comprehensive three-year undergraduate programme designed to provide Learners with a solid foundation in business management, leadership, and entrepreneurship. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme offers an ideal blend of theoretical knowledge and practical application, preparing graduates for successful careers in corporate management, startups, and business consulting.
                 </p>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                   Our progressive education philosophy ensures that Learners develop strategic thinking, analytical capabilities, and leadership skills through experiential learning. The curriculum integrates core management disciplines with contemporary business practices including digital marketing, business analytics, e-commerce, and sustainable business strategies, equipping graduates with competencies demanded by multinational corporations, SMEs, and entrepreneurial ventures.

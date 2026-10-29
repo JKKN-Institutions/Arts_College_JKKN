@@ -74,7 +74,7 @@ export default function BComPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Bachelor of Commerce{' '}
@@ -151,7 +151,7 @@ export default function BComPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Bachelor of Commerce (B.Com) is a comprehensive three-year undergraduate programme designed to develop skilled professionals with expertise in accounting, finance, taxation, banking, and business management. This UGC-recognized programme provides a strong foundation in commerce principles while integrating practical skills essential for today&apos;s dynamic business environment.
+                The Bachelor of Commerce (B.Com) is a comprehensive three-year undergraduate programme designed to develop skilled professionals with expertise in accounting, finance, taxation, banking, and business management. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme provides a strong foundation in commerce principles while integrating practical skills essential for today&apos;s dynamic business environment.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy ensures that Learners receive holistic development through experiential learning, industry exposure, and professional skill-based training. The curriculum is aligned with industry requirements and professional certification needs such as CA, CMA, CS, and CFA, preparing graduates for diverse career pathways in corporate finance, banking, taxation, and entrepreneurship.
@@ -654,7 +654,7 @@ export default function BComPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC 2(f) & 12(B) Recognised, NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
                   { title: 'CA/CMA/CS Foundation Support', description: 'Integrated coaching for professional certification courses within the curriculum.' },
                   { title: 'Strong Placement Support', description: 'Dedicated placement cell with industry partnerships ensuring excellent career opportunities.' },
                   { title: 'Industry-Aligned Learning Framework', description: 'Regularly updated learning pathway incorporating current industry trends and skill requirements.' },

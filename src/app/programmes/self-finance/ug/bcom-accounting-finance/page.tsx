@@ -166,7 +166,7 @@ export default function BComAccountingFinancePage() {
               <div className="max-w-4xl mx-auto text-center">
                 <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                   <GraduationCap className="w-4 h-4 text-brand-green" />
-                  UGC Recognized Programme
+                  UGC 2(f) & 12(B) Recognised College
                 </span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                   Bachelor of Commerce in{' '}
@@ -244,7 +244,7 @@ export default function BComAccountingFinancePage() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                  The Bachelor of Commerce in Accounting and Finance is a comprehensive three-year undergraduate programme designed to provide learners with in-depth knowledge of financial accounting, corporate finance, taxation, auditing, and financial management. This UGC-recognized programme offers a perfect blend of theoretical foundations and practical business experience, preparing graduates for diverse career pathways in the financial sector.
+                  The Bachelor of Commerce in Accounting and Finance is a comprehensive three-year undergraduate programme designed to provide learners with in-depth knowledge of financial accounting, corporate finance, taxation, auditing, and financial management. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme offers a perfect blend of theoretical foundations and practical business experience, preparing graduates for diverse career pathways in the financial sector.
                 </p>
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                   Our progressive education philosophy ensures that learners develop analytical thinking, professional competence, and ethical values through experiential learning. The curriculum integrates classical accounting principles with modern financial technologies including Tally, SAP, and financial modeling software, equipping graduates with skills demanded by accounting firms, banks, corporations, and financial institutions.

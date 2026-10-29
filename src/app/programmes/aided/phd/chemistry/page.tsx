@@ -73,7 +73,7 @@ export default function PhDChemistryPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Doctoral Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Doctor of Philosophy (Ph.D) in{' '}
@@ -152,7 +152,7 @@ export default function PhDChemistryPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Doctor of Philosophy (Ph.D) in Chemistry is a prestigious doctoral research programme designed to develop advanced research scholars with deep expertise in organic, inorganic, physical, analytical, and applied chemistry. This UGC-recognized programme offers comprehensive research training spanning synthetic chemistry, materials science, nanochemistry, green chemistry, medicinal chemistry, and computational chemistry approaches.
+                The Doctor of Philosophy (Ph.D) in Chemistry is a prestigious doctoral research programme designed to develop advanced research scholars with deep expertise in organic, inorganic, physical, analytical, and applied chemistry. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme offers comprehensive research training spanning synthetic chemistry, materials science, nanochemistry, green chemistry, medicinal chemistry, and computational chemistry approaches.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy ensures that Research Scholars receive rigorous academic and laboratory training combined with practical research skills under the guidance of experienced Senior Learners. The programme integrates fundamental chemical principles with cutting-edge research methodologies, preparing scholars for distinguished careers in academia, research institutions, pharmaceutical industries, chemical manufacturing, and government research organizations.
@@ -432,7 +432,7 @@ export default function PhDChemistryPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured doctoral education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC 2(f) & 12(B) Recognised, NAAC Accredited (B)', description: 'Quality-assured doctoral education meeting national standards with excellent academic reputation.' },
                   { title: 'Experienced Research Supervisors', description: 'Highly qualified guides with Ph.D., postdoctoral experience, and strong publication records.' },
                   { title: 'Advanced Research Infrastructure', description: 'Modern laboratories with sophisticated instruments for cutting-edge research.' },
                   { title: 'Publication & Presentation Support', description: 'Comprehensive assistance for publishing research in international journals and presenting at conferences.' },

@@ -152,7 +152,7 @@ export default function MCAPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Master of Computer Applications (MCA) is an intensive two-year postgraduate programme designed to develop advanced computing professionals with expertise in software engineering, artificial intelligence, machine learning, cloud computing, and data science. This UGC-recognized programme transforms Learners into technology leaders capable of driving digital innovation across industries.
+                The Master of Computer Applications (MCA) is an intensive two-year postgraduate programme designed to develop advanced computing professionals with expertise in software engineering, artificial intelligence, machine learning, cloud computing, and data science. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme transforms Learners into technology leaders capable of driving digital innovation across industries.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our MCA curriculum integrates theoretical foundations with extensive hands-on experience through industry projects, research dissertations, and internship opportunities. Learners gain mastery in advanced programming paradigms, software architecture, enterprise systems, and emerging technologies while developing critical research and leadership competencies essential for senior technical roles.

@@ -46,7 +46,7 @@ export default function BscClinicalLabTechnologyPage() {
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold border border-white/90 text-gray-900">
                 <Sparkles className="w-4 h-4 text-[#0b6d41]" />
-                UGC Recognized Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <span className="inline-flex items-center gap-2 bg-[#0b6d41]/10 px-4 py-1.5 rounded-full text-sm font-semibold border border-[#0b6d41]/15 text-[#0b6d41]">
                 <GraduationCap className="w-4 h-4" />

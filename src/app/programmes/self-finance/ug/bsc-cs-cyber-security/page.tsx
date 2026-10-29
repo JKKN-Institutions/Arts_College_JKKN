@@ -75,7 +75,7 @@ export default function BScCSCyberSecurityPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Bachelor of Science in{' '}
@@ -124,7 +124,7 @@ export default function BScCSCyberSecurityPage() {
               { icon: <DollarSign className="w-7 h-7" />, stat: '₹32,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
               { icon: <Building2 className="w-7 h-7" />, stat: 'Periyar', title: 'University Affiliation', desc: 'Autonomous college, Salem region' },
               { icon: <Code className="w-7 h-7" />, stat: 'No Maths?', title: 'Still Eligible', desc: '+2 with CS, Statistics or Business Maths' },
-              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited, Grade B', desc: 'Autonomous, UGC recognised' },
+              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited, Grade B', desc: 'Autonomous, UGC 2(f) & 12(B)' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">

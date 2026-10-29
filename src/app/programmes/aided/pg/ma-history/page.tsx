@@ -74,7 +74,7 @@ export default function MAHistoryPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Postgraduate Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Master of Arts in{' '}
@@ -157,14 +157,14 @@ export default function MAHistoryPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Master of Arts in History is an advanced two-year postgraduate programme designed to provide comprehensive knowledge of Indian and World History, historiographical methods, and research methodologies. This UGC-recognized programme prepares scholars for careers in academia, research, civil services, heritage management, and museum studies through rigorous academic training and practical fieldwork.
+                The Master of Arts in History is an advanced two-year postgraduate programme designed to provide comprehensive knowledge of Indian and World History, historiographical methods, and research methodologies. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme prepares scholars for careers in academia, research, civil services, heritage management, and museum studies through rigorous academic training and practical fieldwork.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy emphasizes critical analysis of historical events, interpretation of primary sources, and development of independent research capabilities. Learners engage with diverse historical periods from ancient civilizations to contemporary global history, developing expertise in archival research, archaeological studies, and historical documentation.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
-                {['UGC Recognized Learning Framework', 'Research-Oriented Learning', 'Field Visit Opportunities', 'Heritage & Museum Studies'].map((item, idx) => (
+                {['Autonomous Curriculum Framework', 'Research-Oriented Learning', 'Field Visit Opportunities', 'Heritage & Museum Studies'].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                     <span>{item}</span>

@@ -74,7 +74,7 @@ export default function PhDTamilPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Doctoral Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Doctor of Philosophy (Ph.D) in{' '}
@@ -153,7 +153,7 @@ export default function PhDTamilPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Doctor of Philosophy (Ph.D) in Tamil is a prestigious doctoral research programme designed to develop advanced research scholars with deep expertise in Tamil language, literature, and linguistics. This UGC-recognized programme offers comprehensive research training spanning classical Sangam literature, medieval devotional poetry, modern Tamil prose and poetry, comparative Dravidian studies, and contemporary Tamil digital humanities.
+                The Doctor of Philosophy (Ph.D) in Tamil is a prestigious doctoral research programme designed to develop advanced research scholars with deep expertise in Tamil language, literature, and linguistics. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme offers comprehensive research training spanning classical Sangam literature, medieval devotional poetry, modern Tamil prose and poetry, comparative Dravidian studies, and contemporary Tamil digital humanities.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy ensures that Research Scholars receive rigorous academic training combined with practical research skills under the guidance of experienced Senior Learners. The programme integrates traditional textual scholarship with modern research methodologies, preparing scholars for distinguished careers in academia, research institutions, government language bodies, and cultural organizations.
@@ -551,7 +551,7 @@ export default function PhDTamilPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & Accredited', description: 'Quality-assured doctoral programme meeting national research standards.' },
+                  { title: 'UGC 2(f) & 12(B) Recognised, NAAC Accredited (B)', description: 'Quality-assured doctoral programme meeting national research standards.' },
                   { title: 'Experienced Research Guides', description: 'Highly qualified supervisors with Ph.D. degrees and extensive research publications.' },
                   { title: 'Publication Support', description: 'Guidance for publishing in UGC-CARE listed journals and international conferences.' },
                   { title: 'Comprehensive Library', description: 'Access to extensive Tamil literature collection and digital research databases.' },

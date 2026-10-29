@@ -74,7 +74,7 @@ export default function BAHistoryPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Bachelor of Arts in{' '}
@@ -153,7 +153,7 @@ export default function BAHistoryPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Bachelor of Arts in History is a comprehensive three-year undergraduate programme designed to develop critical thinking, analytical skills, and deep understanding of historical events, civilizations, and their impact on contemporary society. This UGC-recognized programme offers an in-depth study of ancient, medieval, and modern history with special focus on Indian and World History.
+                The Bachelor of Arts in History is a comprehensive three-year undergraduate programme designed to develop critical thinking, analytical skills, and deep understanding of historical events, civilizations, and their impact on contemporary society. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme offers an in-depth study of ancient, medieval, and modern history with special focus on Indian and World History.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Students engage with primary sources, archaeological evidence, and historiographical debates while developing research methodologies essential for historical scholarship. The curriculum combines theoretical knowledge with practical fieldwork, heritage site visits, and archival research training, preparing graduates for competitive examinations like UPSC Civil Services, careers in teaching, research, museums, archaeology, and heritage management.
@@ -624,7 +624,7 @@ export default function BAHistoryPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC 2(f) & 12(B) Recognised, NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
                   { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, archaeological experience, and research publications.' },
                   { title: 'UPSC & Competitive Exam Coaching', description: 'Dedicated coaching for civil services with proven track record of successful candidates.' },
                   { title: 'Heritage Tours & Fieldwork', description: 'Regular excursions to archaeological sites, museums, and historical monuments across India.' },

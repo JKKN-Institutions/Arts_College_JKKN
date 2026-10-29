@@ -79,7 +79,7 @@ export default function MScZoologyPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Master of Science in{' '}
@@ -157,7 +157,7 @@ export default function MScZoologyPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Master of Science in Zoology is a rigorous two-year postgraduate programme designed to provide advanced knowledge and specialized expertise in animal sciences, molecular biology, wildlife management, and research methodology. This UGC-recognized programme prepares Learners for leadership roles in academic institutions, research organizations, and industries through intensive coursework and independent research.
+                The Master of Science in Zoology is a rigorous two-year postgraduate programme designed to provide advanced knowledge and specialized expertise in animal sciences, molecular biology, wildlife management, and research methodology. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme prepares Learners for leadership roles in academic institutions, research organizations, and industries through intensive coursework and independent research.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy emphasizes research-driven learning, enabling Learners to develop expertise in specialized areas such as molecular genetics, animal biotechnology, conservation biology, and advanced animal physiology. The curriculum integrates theoretical foundations with hands-on research experience, culminating in a comprehensive dissertation project that contributes to scientific knowledge.
@@ -579,7 +579,7 @@ export default function MScZoologyPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured postgraduate education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC 2(f) & 12(B) Recognised, NAAC Accredited (B)', description: 'Quality-assured postgraduate education meeting national standards with excellent academic reputation.' },
                   { title: 'Research-Focused Learning Framework', description: 'Emphasis on hands-on research experience, dissertation projects, and scientific publication opportunities.' },
                   { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and specialized expertise in zoology.' },
                   { title: 'Advanced Research Facilities', description: 'State-of-the-art learning labs, modern instrumentation, and access to global research databases.' },

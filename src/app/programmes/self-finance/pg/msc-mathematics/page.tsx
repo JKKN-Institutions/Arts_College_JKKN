@@ -74,7 +74,7 @@ export default function MScMathematicsPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Postgraduate Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Master of Science in{' '}
@@ -152,7 +152,7 @@ export default function MScMathematicsPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Master of Science in Mathematics is a rigorous two-year postgraduate programme designed to provide Learners with advanced knowledge in pure and applied mathematics. This UGC-recognized programme offers comprehensive training in mathematical analysis, abstract algebra, topology, differential equations, and computational methods, preparing graduates for careers in research, academia, data science, and quantitative fields.
+                The Master of Science in Mathematics is a rigorous two-year postgraduate programme designed to provide Learners with advanced knowledge in pure and applied mathematics. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme offers comprehensive training in mathematical analysis, abstract algebra, topology, differential equations, and computational methods, preparing graduates for careers in research, academia, data science, and quantitative fields.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy ensures that Learners develop deep analytical thinking, rigorous proof-writing abilities, and problem-solving expertise through research-oriented learning. The curriculum integrates classical mathematical theories with modern computational techniques and applications in emerging fields such as machine learning, cryptography, and financial mathematics, equipping graduates with skills demanded by research institutions, technology companies, and financial organizations.
@@ -581,7 +581,7 @@ export default function MScMathematicsPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured postgraduate education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC 2(f) & 12(B) Recognised, NAAC Accredited (B)', description: 'Quality-assured postgraduate education meeting national standards with excellent academic reputation.' },
                   { title: 'Research-Oriented Learning Framework', description: 'Advanced coursework integrating pure mathematics with computational methods and real-world applications.' },
                   { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and expertise in specialized areas.' },
                   { title: 'Computational Excellence', description: 'State-of-the-art labs equipped with MATLAB, Python, and advanced mathematical software for hands-on learning.' },

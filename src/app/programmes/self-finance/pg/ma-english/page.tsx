@@ -74,7 +74,7 @@ export default function MAEnglishPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Postgraduate Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Master of Arts in{' '}
@@ -151,7 +151,7 @@ export default function MAEnglishPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Master of Arts in English is a rigorous two-year postgraduate programme designed to cultivate advanced scholars, researchers, and professionals in English Studies. This UGC-recognized programme offers comprehensive training in literary theory, critical analysis, linguistics, and research methodology, preparing Learners for academic careers, doctoral studies, and leadership roles in communication industries.
+                The Master of Arts in English is a rigorous two-year postgraduate programme designed to cultivate advanced scholars, researchers, and professionals in English Studies. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme offers comprehensive training in literary theory, critical analysis, linguistics, and research methodology, preparing Learners for academic careers, doctoral studies, and leadership roles in communication industries.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy ensures that Learners engage with diverse literary traditions spanning British, American, Indian, Postcolonial, and World Literature while developing specialized expertise in areas such as Cultural Studies, Gender Studies, Translation Studies, and English Language Teaching. The programme emphasizes original research, scholarly writing, and critical thinking essential for academic and professional excellence.

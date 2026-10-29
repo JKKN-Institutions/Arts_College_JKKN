@@ -131,8 +131,8 @@ export default function CoimbatorePage() {
       a: "The college does not publish a company-wise placement list; its NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed across all UG programmes. The Training and Placement Cell runs aptitude training and mock interviews for IT roles.",
     },
     {
-      q: "Is JKKN CAS NAAC accredited (B) and UGC approved?",
-      a: "Yes. JKKN College of Arts and Science is NAAC accredited (B) and UGC-approved. All programmes are affiliated to Periyar University, Salem.",
+      q: "Is JKKN CAS NAAC accredited (B) and recognised by UGC?",
+      a: "Yes. JKKN College of Arts and Science is NAAC accredited (B) and recognised by UGC under Section 2(f) and 12(B). The college is affiliated to Periyar University, Salem.",
     },
   ];
 
@@ -269,7 +269,7 @@ export default function CoimbatorePage() {
 
           {/* AEO Citation Block — AI Overview anchor paragraph */}
           <p className="aeo-citation-block text-white/70 text-sm max-w-2xl mx-auto mt-4 leading-relaxed">
-            JKKN College of Arts and Science is a NAAC accredited (B), UGC-approved institution
+            JKKN College of Arts and Science is a NAAC accredited (B) institution, recognised by UGC under Section 2(f) and 12(B),
             located in Komarapalayam, Namakkal district, Tamil Nadu — 112 km from Coimbatore
             via NH-544. Founded in 1974 and affiliated to Periyar University, JKKN CAS offers 35 undergraduate, postgraduate, and research programmes
             spanning arts, science, commerce, and computer applications. The institution maintains

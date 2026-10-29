@@ -174,7 +174,7 @@ export default function BScVisualCommunicationAIPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Bachelor of Science in Visual Communication (AI) is a pioneering three-year undergraduate programme that prepares creators for the age of generative intelligence. This UGC-recognized degree fuses core visual communication craft — design, typography, photography, videography, motion graphics — with an AI layer covering prompt engineering, generative image and video tools, AI-augmented UI/UX, and machine learning fundamentals for designers.
+                The Bachelor of Science in Visual Communication (AI) is a pioneering three-year undergraduate programme that prepares creators for the age of generative intelligence. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this degree fuses core visual communication craft — design, typography, photography, videography, motion graphics — with an AI layer covering prompt engineering, generative image and video tools, AI-augmented UI/UX, and machine learning fundamentals for designers.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our curriculum is built for the new creative economy where human imagination collaborates with AI systems. Learners graduate with a strong aesthetic foundation and practical mastery of industry-defining AI tools — Midjourney, Stable Diffusion, Adobe Firefly, Figma AI, Runway, Sora, Pika — positioning them for high-growth roles across advertising, OTT, product design, motion studios, and AI-first content platforms.
@@ -634,7 +634,7 @@ export default function BScVisualCommunicationAIPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'First-Mover AI Learning Framework', description: 'Region-first integration of Generative AI, prompt engineering, and AI-augmented design into a UGC-recognized UG degree.' },
+                  { title: 'First-Mover AI Learning Framework', description: 'Region-first integration of Generative AI, prompt engineering, and AI-augmented design into a UG degree offered by a UGC 2(f) & 12(B) recognised autonomous college.' },
                   { title: 'GPU Infrastructure + AI Tool Stack', description: 'Dedicated GPU workstations, licensed creative software, and subscriptions to Midjourney, Firefly, Runway, and Figma AI.' },
                   { title: 'Hybrid Faculty — Design + Tech', description: 'Faculty with industry experience across design studios, production houses, and emerging AI-creative workflows.' },
                   { title: 'Live Client & Capstone Projects', description: 'Real brand briefs, AI-driven campaigns, and a final-year capstone designed for portfolio-grade impact.' },

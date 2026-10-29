@@ -74,7 +74,7 @@ export default function PhDZoologyPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Doctoral Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Doctor of Philosophy (Ph.D) in{' '}
@@ -153,7 +153,7 @@ export default function PhDZoologyPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Doctor of Philosophy (Ph.D) in Zoology is a prestigious doctoral research programme designed to develop advanced research scholars with deep expertise in animal sciences, biodiversity conservation, molecular biology, and ecological research. This UGC-recognized programme offers comprehensive research training spanning animal physiology, genetics, entomology, environmental biology, wildlife conservation, and contemporary areas like bioinformatics and toxicology.
+                The Doctor of Philosophy (Ph.D) in Zoology is a prestigious doctoral research programme designed to develop advanced research scholars with deep expertise in animal sciences, biodiversity conservation, molecular biology, and ecological research. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme offers comprehensive research training spanning animal physiology, genetics, entomology, environmental biology, wildlife conservation, and contemporary areas like bioinformatics and toxicology.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy ensures that Research Scholars receive rigorous academic training combined with practical laboratory skills under the guidance of experienced Senior Learners. The programme integrates traditional zoological sciences with modern research methodologies including molecular techniques, computational biology, and advanced microscopy, preparing scholars for distinguished careers in academia, research institutions, pharmaceutical industries, and conservation organizations.

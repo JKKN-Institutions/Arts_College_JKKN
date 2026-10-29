@@ -74,7 +74,7 @@ export default function BScChemistryPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Bachelor of Science in{' '}
@@ -648,7 +648,7 @@ export default function BScChemistryPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC 2(f) & 12(B) Recognised, NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
                   { title: 'Comprehensive Learning Framework', description: 'Balance of theoretical knowledge and hands-on laboratory experience with modern equipment.' },
                   { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees, research publications, and industry experience.' },
                   { title: 'Advanced Laboratory Infrastructure', description: 'Well-equipped labs with suffficient instruments for organic, inorganic, physical, and practical.' },

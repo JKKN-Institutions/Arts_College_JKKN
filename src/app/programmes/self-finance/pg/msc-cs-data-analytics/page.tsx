@@ -74,7 +74,7 @@ export default function MScCSDataAnalyticsPage() {
             <div className="max-w-4xl mx-auto text-center">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-5 py-2 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <GraduationCap className="w-4 h-4 text-brand-green" />
-                UGC Recognized Programme
+                UGC 2(f) & 12(B) Recognised College
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-brand-green">
                 Master of Science in{' '}
@@ -152,7 +152,7 @@ export default function MScCSDataAnalyticsPage() {
                 </span>
               </h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                The Master of Science in Computer Science with specialization in Data Analytics is a comprehensive two-year postgraduate programme designed to transform Learners into skilled data professionals. This UGC-recognized programme offers an intensive blend of advanced computer science concepts, statistical analysis, machine learning algorithms, and cutting-edge big data technologies, preparing graduates for leadership roles in the rapidly evolving field of data science.
+                The Master of Science in Computer Science with specialization in Data Analytics is a comprehensive two-year postgraduate programme designed to transform Learners into skilled data professionals. Taught at a UGC 2(f) & 12(B) recognised autonomous college, this programme offers an intensive blend of advanced computer science concepts, statistical analysis, machine learning algorithms, and cutting-edge big data technologies, preparing graduates for leadership roles in the rapidly evolving field of data science.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Our progressive education philosophy emphasizes experiential learning through industry projects, research dissertations, and hands-on work with real-world datasets. The curriculum integrates theoretical foundations with practical applications using Python, R, SQL, TensorFlow, and cloud platforms like AWS and Azure, equipping graduates with the analytical skills demanded by leading technology companies, consulting firms, and research organizations worldwide.
@@ -566,7 +566,7 @@ export default function MScCSDataAnalyticsPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'UGC Recognized & NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
+                  { title: 'UGC 2(f) & 12(B) Recognised, NAAC Accredited (B)', description: 'Quality-assured education meeting national standards with excellent academic reputation.' },
                   { title: 'Industry-Ready Learning Framework', description: 'Aligned with industry trends covering Python, R, machine learning, big data, and cloud computing.' },
                   { title: 'Advanced Lab Infrastructure', description: 'GPU-powered computing labs with access to AWS, Azure, and Google Cloud Platform.' },
                   { title: 'Expert Senior Learners', description: 'Highly qualified faculty with doctoral degrees and industry experience in data science.' },
