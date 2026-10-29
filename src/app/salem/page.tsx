@@ -112,11 +112,11 @@ export default function SalemPage() {
     },
     {
       q: "How much does the hostel cost for Salem students at JKKN?",
-      a: "Hostel fees are significantly lower than Salem city PG rates. Mess, WiFi, and security are included. Contact the admissions office for exact annual rates.",
+      a: "The hostel fee includes mess, WiFi and security. Contact the admissions office for exact annual rates.",
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Salem?",
-      a: "JKKN CAS offers NAAC accreditation (Grade B), 35 programmes, placement support, lower fees than city colleges, and a 50+ acre green campus with hostel — all ~57 km from Salem.",
+      a: "JKKN CAS offers NAAC accreditation (Grade B), 35 programmes, placement support, self-finance UG fees of ₹24,500 to ₹34,000 a year (2026-27, Management Quota), and a 15-acre campus with hostel — all ~57 km from Salem.",
     },
     {
       q: "Which arts and science colleges in Salem should students compare?",

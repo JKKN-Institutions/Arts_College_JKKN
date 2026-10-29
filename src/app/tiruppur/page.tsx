@@ -111,11 +111,11 @@ export default function TiruppurPage() {
     },
     {
       q: "How much does the hostel cost for Tiruppur students at JKKN?",
-      a: "Hostel fees at JKKN CAS are significantly lower than city PG accommodations. The fee includes furnished rooms, three meals a day, WiFi, and 24/7 security. Many Tiruppur students prefer the hostel for a focused academic environment. Contact the admission office at +91 9345855001 for the current fee structure.",
+      a: "The JKKN CAS hostel fee includes furnished rooms, three meals a day, WiFi, and 24/7 security. Many Tiruppur students prefer the hostel for a focused academic environment. Contact the admission office at +91 9345855001 for the current fee structure.",
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Tiruppur?",
-      a: "JKKN CAS offers clear advantages over Tiruppur city colleges. Fees are 30-50% lower, class sizes are smaller, the 50+ acre green campus is distraction-free, and placement outcomes are published each year in the NIRF return for this college.",
+      a: "JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 a year (Management Quota), the 15-acre campus on NH-544 has hostels, and placement outcomes are published each year in the NIRF return for this college.",
     },
   ];
 

@@ -126,7 +126,7 @@ export default function PerunduraiPage() {
     },
     {
       q: "Why should Perundurai students choose JKKN CAS?",
-      a: "Perundurai's SIPCOT industrial belt means families value education with strong placement outcomes. JKKN CAS offers lower fees, NAAC accreditation (Grade B), a residential campus, and NIRF-published placement outcomes. The ~29 km route via the Erode/Chithode side makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
+      a: "Perundurai's SIPCOT industrial belt means families value education with strong placement outcomes. JKKN CAS offers self-finance UG fees of ₹24,500 to ₹34,000 a year (2026-27, Management Quota), NAAC accreditation (Grade B), a residential campus, and NIRF-published placement outcomes. The ~29 km route via the Erode/Chithode side makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
     },
   ];
 

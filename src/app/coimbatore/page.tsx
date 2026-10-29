@@ -120,7 +120,7 @@ export default function CoimbatorePage() {
     },
     {
       q: "How much does the hostel cost for Coimbatore students at JKKN?",
-      a: "JKKN CAS hostel fees are lower than Coimbatore city PG rates. The fee covers furnished rooms, three meals daily, WiFi, and 24/7 security. Call +91 9345855001 for the current fee structure.",
+      a: "The JKKN CAS hostel fee covers furnished rooms, three meals daily, WiFi, and 24/7 security. Call +91 9345855001 for the current fee structure.",
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Coimbatore city?",
