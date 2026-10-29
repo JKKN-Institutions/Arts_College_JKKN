@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
 
 type TabId =
@@ -60,6 +61,48 @@ export default function NAACPage() {
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-green mb-8 uppercase">
           {activeLabel}
         </h1>
+
+        {/* NAAC grade - as printed on NAAC's own lists (read 29-10-2026). */}
+        <section
+          aria-label="NAAC grade"
+          className="mb-8 rounded-lg border border-brand-green/30 bg-white p-5 md:p-6"
+        >
+          <p className="text-xs font-semibold uppercase tracking-widest text-brand-green mb-2">
+            NAAC Accredited
+          </p>
+          <p className="text-2xl md:text-3xl font-bold text-gray-900">
+            Grade B{' '}
+            <span className="text-lg md:text-xl font-semibold text-gray-600">(CGPA 2.37)</span>
+          </p>
+          <p className="mt-2 text-gray-700 text-sm md:text-base leading-relaxed">
+            First cycle, declared on 9 August 2019. NAAC&apos;s list of Transition Autonomous
+            Colleges extends the validity of this accreditation up to 31 December 2029.
+          </p>
+          <p className="mt-3 text-xs text-gray-500 leading-relaxed">
+            Source: NAAC,{' '}
+            <a
+              href="https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx"
+              className="underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Institutions having valid accreditation
+            </a>{' '}
+            (as on 14 August 2025) and{' '}
+            <a
+              href="https://naac.gov.in/images/docs/notification/Autonomous_Transition_Website_06082025.pdf"
+              className="underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Extension of validity for Transition Autonomous Colleges
+            </a>
+            .{' '}
+            <Link href="/approvals" className="underline text-brand-green font-medium">
+              All approvals and official data
+            </Link>
+          </p>
+        </section>
 
         {/* ── Mobile: Accordion ── */}
         <div className="flex flex-col gap-1 xl:hidden">
