@@ -183,7 +183,8 @@ export default function CityEnquiryForm({ city, bare = false }: Props) {
             name="phone"
             required
             inputMode="numeric"
-            pattern="[0-9]{10}"
+            pattern="[6-9][0-9]{9}"
+            title="10-digit mobile number starting with 6, 7, 8 or 9"
             placeholder="10-digit mobile number"
             aria-invalid={!!err?.phone}
             className={inputCls}
