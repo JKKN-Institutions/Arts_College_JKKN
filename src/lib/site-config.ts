@@ -70,7 +70,7 @@ export const siteConfig = {
   admissionFormUrl: (() => {
     const base = 'https://www.jkkn.ai/apply/jkkn-admission-2026'
     if (base.includes('utm_')) return base
-    const utm = 'utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=site'
+    const utm = 'utm_source=cas.jkkn.ac.in&utm_campaign=site'
     return base + (base.includes('?') ? '&' : '?') + utm
   })(),
 

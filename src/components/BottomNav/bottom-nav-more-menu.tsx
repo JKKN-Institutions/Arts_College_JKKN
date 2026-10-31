@@ -125,7 +125,7 @@ export function BottomNavMoreMenu({
 
         <EnquiryButton
           sourcePage="header"
-          fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=components-header"
+          fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_campaign=components-header"
           fallbackLabel="Apply Now"
           onClick={onClose}
           className="mx-4 mb-2 flex-shrink-0 py-3 px-4 bg-brand-green text-white font-semibold rounded-lg flex items-center justify-center min-h-[44px] touch-manipulation hover:opacity-90 transition-opacity text-sm"

@@ -166,7 +166,7 @@ export default function BscCyberSecurityCollegesTamilNaduPage() {
           <p className="mt-4 flex flex-wrap gap-4">
             <Link href="/programmes/self-finance/ug/bsc-cs-cyber-security" className="text-brand-green font-semibold underline">Programme details and syllabus</Link>
             <Link href="/admissions/bsc-cs-cyber-security-self-finance" className="text-brand-green font-semibold underline">Admission 2026-27</Link>
-            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=bsc-cyber-security-colleges-in-tamil-nadu" target="_blank" rel="noopener noreferrer" className="text-brand-green font-semibold underline">Apply online</a>
+            <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_campaign=bsc-cyber-security-colleges-in-tamil-nadu" target="_blank" rel="noopener noreferrer" className="text-brand-green font-semibold underline">Apply online</a>
           </p>
         </section>
 

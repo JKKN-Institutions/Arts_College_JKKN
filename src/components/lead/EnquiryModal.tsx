@@ -21,7 +21,7 @@ import ArtsEnquiryForm from "@/components/lead/ArtsEnquiryForm"
 import { sendGaEvent } from "@/lib/ga-event"
 import { campaignTagsSnapshot, parseCampaignTags, tagApplyHref } from "@/lib/campaign-tags"
 
-const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic"
+const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in"
 const SITE_HOST = "cas.jkkn.ac.in"
 
 type OpenOptions = { withPoster?: boolean }

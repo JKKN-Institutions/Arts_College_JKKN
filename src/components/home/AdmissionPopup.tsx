@@ -42,7 +42,7 @@ export default function AdmissionPopup() {
         >
           <X className="w-5 h-5 text-gray-700" />
         </button>
-        <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=components-admissionpopup" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_campaign=components-admissionpopup" target="_blank" rel="noopener noreferrer">
           <Image
             src="/arts-pop-up-poster.webp"
             alt="JKKN College of Arts and Science admission poster"

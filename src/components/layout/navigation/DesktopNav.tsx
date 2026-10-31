@@ -7,7 +7,7 @@ import EnquiryButton from '@/components/lead/EnquiryButton';
 
 // "Enquire Now" opens the 3-box enquiry form in place (user's choice 2026-10-22; the modal provider
 // wraps every page). The jkkn.ai link is only the fallback for a page rendered without that provider.
-const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=components-header";
+const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_campaign=components-header";
 
 interface DesktopNavProps {
   // About

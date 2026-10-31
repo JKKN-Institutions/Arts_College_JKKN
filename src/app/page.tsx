@@ -675,7 +675,7 @@ export default function Home() {
             <p className="text-[14px] text-gray-500 mb-4">Fee structures are subject to change. Contact admissions for the latest confirmed amounts.</p>
             <EnquiryButton
               sourcePage="home-fees"
-              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
+              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_campaign=home"
               fallbackLabel="Apply Now — Check Eligibility"
               className="inline-block bg-[#0b6d41] hover:bg-[#095c37] text-white px-8 py-3 rounded-full text-[16px] leading-[24px] font-semibold transition"
             >
@@ -1026,7 +1026,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <EnquiryButton
               sourcePage="home-cta"
-              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_medium=organic&utm_campaign=home"
+              fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_campaign=home"
               fallbackLabel="Apply for Admission"
               className="bg-brand-green text-white px-8 py-4 rounded-full text-[16px] leading-[24px] font-semibold hover:bg-[#095c37] transition text-center"
             >
