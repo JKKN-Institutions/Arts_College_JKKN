@@ -20,6 +20,7 @@ import {
   ARTS_INSTITUTION_ID,
   VALID_PROGRAMME_IDS,
 } from "@/lib/arts-programmes"
+import { crmCampaign } from "@/lib/campaign-tags"
 
 const CRM_SLUG = "jkkn-admission-2026"
 const CRM_SUBMIT = `https://www.jkkn.ai/api/public/forms/${CRM_SLUG}/submit`
@@ -78,9 +79,12 @@ export async function submitArtsEnquiry(
     sessionId: crypto.randomUUID(),
     // Tag the source so these leads are separable from jkkn.ai's own traffic inside the CRM.
     // Without this they are indistinguishable and the row cannot be proved to be ours.
-    utmSource: "cas.jkkn.ac.in",
-    utmMedium: "site-form",
-    utmCampaign: sourcePage ? `cas-${sourcePage}` : "cas-site",
+    // The visitor's own campaign tags win when they brought some (lib/campaign-tags.ts, 2026-10-31).
+    ...crmCampaign(formData, {
+      utmSource: "cas.jkkn.ac.in",
+      utmMedium: "site-form",
+      utmCampaign: sourcePage ? `cas-${sourcePage}` : "cas-site",
+    }),
     campaignLinkId: null,
     referrerUrl: question ? `question: ${question.slice(0, 300)}` : "",
   }

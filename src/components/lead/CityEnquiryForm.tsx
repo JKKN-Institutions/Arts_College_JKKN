@@ -29,6 +29,7 @@
 import { useActionState, useEffect, useRef } from 'react'
 import { CheckCircle2, ChevronDown } from 'lucide-react'
 import { submitCityEnquiry, type CityEnquiryState } from '@/app/actions/city-enquiry'
+import CampaignFields from '@/components/lead/CampaignFields'
 import { TRUST } from '@/components/lead/ArtsEnquiryForm'
 import { ARTS_PROGRAMMES } from '@/lib/arts-programmes'
 
@@ -127,6 +128,7 @@ export default function CityEnquiryForm({ city, bare = false }: Props) {
   return (
     <form action={formAction} className={`${surface} space-y-4 text-left`}>
       <input type="hidden" name="city" value={city} />
+      <CampaignFields />
 
       {/* Honeypot. Off-screen, not display:none - a real browser autofill will not
           reach it and a bot will. Never remove: the CRM scores it. */}

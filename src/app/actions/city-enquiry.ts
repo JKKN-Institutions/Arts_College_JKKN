@@ -17,6 +17,7 @@
 // export async functions. Keeping the programme array here made the build strip it
 // and /contact died with `j.map is not a function` (measured 2026-08-16).
 import { ARTS_INSTITUTION_ID, VALID_PROGRAMME_IDS } from '@/lib/arts-programmes'
+import { crmCampaign } from '@/lib/campaign-tags'
 
 const CRM_SLUG = 'jkkn-admission-2026'
 const CRM_SUBMIT = `https://www.jkkn.ai/api/public/forms/${CRM_SLUG}/submit`
@@ -78,9 +79,12 @@ export async function submitCityEnquiry(
     sessionId: crypto.randomUUID(),
     // Tag the source so these leads are separable from jkkn.ai's own traffic inside
     // the CRM. Without this they are indistinguishable and the row cannot be proved.
-    utmSource: 'cas.jkkn.ac.in',
-    utmMedium: 'city-page-form',
-    utmCampaign: `city-${city.toLowerCase()}`,
+    // The visitor's own campaign tags win when they brought some (lib/campaign-tags.ts, 2026-10-31).
+    ...crmCampaign(formData, {
+      utmSource: 'cas.jkkn.ac.in',
+      utmMedium: 'city-page-form',
+      utmCampaign: `city-${city.toLowerCase()}`,
+    }),
     campaignLinkId: null,
     referrerUrl: question ? `question: ${question.slice(0, 300)}` : '',
   }
