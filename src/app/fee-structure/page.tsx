@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IndianRupee } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import TopEnquiryCard from "@/components/lead/TopEnquiryCard";
 
 export const metadata: Metadata = {
   title: "Fee Structure 2026-27 — JKKN College of Arts and Science",
@@ -85,7 +86,8 @@ export default function FeeStructurePage() {
           className="relative py-20 md:py-28 overflow-hidden"
           style={{ backgroundColor: "#eaf1e2" }}
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Plan Step 3 (2026-11-02): enquiry card in the hero - the page had no form at all. */}
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_400px] lg:items-start">
             <div className="max-w-3xl">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <IndianRupee className="w-4 h-4 text-[#0b6d41]" />
@@ -99,6 +101,7 @@ export default function FeeStructurePage() {
                 Arts and Science (Autonomous), Komarapalayam.
               </p>
             </div>
+            <TopEnquiryCard sourcePage="fees-top" aidedNote />
           </div>
         </section>
 
