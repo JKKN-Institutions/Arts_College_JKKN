@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import TopEnquiryCard from "@/components/lead/TopEnquiryCard";
 
 export const metadata: Metadata = {
   title: "Admissions 2026 — Apply Now",
@@ -199,7 +200,8 @@ export default function AdmissionsPage() {
           className="relative py-20 md:py-28 overflow-hidden"
           style={{ backgroundColor: "#eaf1e2" }}
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Plan Step 3 (2026-11-02): enquiry card in the hero - the page had Apply / Call only. */}
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_400px] lg:items-start">
             <div className="max-w-3xl">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <Calendar className="w-4 h-4 text-[#0b6d41]" />
@@ -231,6 +233,7 @@ export default function AdmissionsPage() {
                 </a>
               </div>
             </div>
+            <TopEnquiryCard sourcePage="admissions-top" aidedNote />
           </div>
         </section>
 
