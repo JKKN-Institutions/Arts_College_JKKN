@@ -32,6 +32,9 @@ import { SeatIntakeCard } from "@/components/admissions/SeatIntakeCard";
 import { HostelTransportCard } from "@/components/admissions/HostelTransportCard";
 import { RelatedCourses } from "@/components/admissions/RelatedCourses";
 import { ContactAdmissions } from "@/components/admissions/ContactAdmissions";
+import TopEnquiryCard from "@/components/lead/TopEnquiryCard";
+import CallWhatsAppCard from "@/components/lead/CallWhatsAppCard";
+import { crmCanRecord, PRESELECT_BY_SLUG } from "@/lib/top-enquiry";
 
 export const dynamicParams = false;
 
@@ -139,6 +142,26 @@ export default async function CourseAdmissionPage({
       <main className="min-h-screen bg-white">
         {/* 1. Hero */}
         <CourseHero programme={info} />
+
+        {/* 1b. Enquiry high on the page - plan Step 3, 2026-11-02. Before this the page had no form, only
+            Apply links (0.8 and 16.6 phone screens down). Programmes the CRM cannot record yet (every
+            aided one + two B.Com SF, DEP-60) get the admission office's phone instead of a form that
+            would file them under a wrong course - see src/lib/top-enquiry.ts. */}
+        <section className="bg-white pt-8 md:pt-10">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            {crmCanRecord(info) ? (
+              <TopEnquiryCard
+                sourcePage={`course-${info.slug}`}
+                heading={`Get ${info.name} fee and admission details`}
+                defaultProgrammeId={PRESELECT_BY_SLUG[info.slug]}
+              />
+            ) : (
+              <CallWhatsAppCard
+                programmeName={info.category === "Aided" ? `${info.name} (Aided)` : info.name}
+              />
+            )}
+          </div>
+        </section>
 
         {/* 2. Quick Info Bar */}
         <section className="py-12 bg-white">
