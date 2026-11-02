@@ -90,13 +90,22 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Right — Admission Form + Office Hours */}
-            <div className="space-y-6">
+            {/* Right — Admission Form + Office Hours. order-first on phones (plan Step 3, 2026-11-02):
+                the form sat 1.4 screens down, under the three contact cards; desktop order unchanged. */}
+            <div className="space-y-6 order-first lg:order-none">
               {/* Online Admission — enquiry form, posts to the CRM (DEP-34) */}
               <div className="bg-brand-green rounded-xl p-8 text-white">
                 <h2 className="text-2xl font-bold mb-3">Get a Call Back</h2>
-                <p className="text-white/80 text-sm md:text-base mb-6">
+                <p className="text-white/80 text-sm md:text-base mb-3">
                   Leave your details and our admission team will contact you within 24 hours.
+                </p>
+                {/* The phone card now sits under this form on phones, so the number stays in the first
+                    screen here: /contact had 9 phone_click and 1 lead_form_submit in GA4 2026-08-01..11-01. */}
+                <p className="text-white/90 text-sm md:text-base mb-6">
+                  Prefer to call?{' '}
+                  <a href="tel:+919345855001" className="font-semibold text-white underline">
+                    +91 93458 55001
+                  </a>
                 </p>
 
                 <CityEnquiryForm city="Komarapalayam" />
