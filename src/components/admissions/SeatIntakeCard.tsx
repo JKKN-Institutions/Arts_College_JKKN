@@ -1,15 +1,24 @@
 import { Users, Calendar, Award } from "lucide-react";
 
+// Plan Step 4 (2026-11-02): every line under a number names where the number came from
+// (src/data/admission-facts.ts). Before this the empty-seat card cited "the Periyar University approval
+// order", which publishes no per-course seats, and the deadline card had no date and no last-checked day.
 interface SeatIntakeCardProps {
   intakeSeats: number | null;
+  intakeNote: string;
   programmeName: string;
   applicationDeadline: string;
+  applicationDeadlineNote: string;
+  admissionBasis: { title: string; note: string };
 }
 
 export function SeatIntakeCard({
   intakeSeats,
+  intakeNote,
   programmeName,
   applicationDeadline,
+  applicationDeadlineNote,
+  admissionBasis,
 }: SeatIntakeCardProps) {
   return (
     <section className="py-16 md:py-20 bg-[#fbfbee]">
@@ -39,7 +48,7 @@ export function SeatIntakeCard({
                   Sanctioned Seats
                 </div>
                 <div className="text-xs text-gray-500 mt-1">
-                  As per the Periyar University approval order
+                  {intakeNote}
                 </div>
               </>
             ) : (
@@ -51,7 +60,7 @@ export function SeatIntakeCard({
                   Sanctioned Seats
                 </div>
                 <div className="text-xs text-gray-500 mt-1">
-                  AICTE approved intake, 2025-26
+                  {intakeNote}
                 </div>
               </>
             )}
@@ -66,18 +75,18 @@ export function SeatIntakeCard({
               Application Deadline
             </div>
             <div className="text-xs text-gray-500 mt-1">
-              Confirm the current cut-off with the admissions office
+              {applicationDeadlineNote}
             </div>
           </div>
 
           <div className="bg-white rounded-2xl p-8 text-center border border-gray-100 shadow-sm">
             <Award className="w-10 h-10 text-[#0b6d41] mx-auto mb-3" />
-            <div className="text-2xl font-bold text-[#0b6d41] mb-2">Merit</div>
+            <div className="text-2xl font-bold text-[#0b6d41] mb-2">{admissionBasis.title}</div>
             <div className="text-sm text-gray-600 font-medium">
               Admission Basis
             </div>
             <div className="text-xs text-gray-500 mt-1">
-              Marks + Counselling
+              {admissionBasis.note}
             </div>
           </div>
         </div>

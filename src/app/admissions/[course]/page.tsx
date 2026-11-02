@@ -338,8 +338,11 @@ export default async function CourseAdmissionPage({
         {/* 6. Seat Intake */}
         <SeatIntakeCard
           intakeSeats={content.intakeSeats}
+          intakeNote={content.intakeNote}
           programmeName={info.name}
           applicationDeadline={content.applicationDeadline}
+          applicationDeadlineNote={content.applicationDeadlineNote}
+          admissionBasis={content.admissionBasis}
         />
 
         {/* 7. Admission Process */}
@@ -425,7 +428,7 @@ export default async function CourseAdmissionPage({
                 Important Dates
               </h2>
               <p className="text-lg text-gray-600">
-                2026-27 admission cycle calendar
+                {content.datesIntro}
               </p>
             </div>
 

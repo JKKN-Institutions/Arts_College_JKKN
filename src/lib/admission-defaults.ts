@@ -1,5 +1,13 @@
 import type { ProgrammeInfo } from "@/data/programme-metadata";
 import { admissionOverrides, type AdmissionOverride } from "@/data/admission-content";
+import {
+  DATES_DEFAULT,
+  DATES_PHD,
+  ELIGIBILITY_2026_27,
+  ELIGIBILITY_FALLBACK,
+  FACTS_CHECKED,
+  SANCTIONED_SEATS,
+} from "@/data/admission-facts";
 
 export interface AdmissionFAQ {
   question: string;
@@ -8,6 +16,8 @@ export interface AdmissionFAQ {
 
 export interface AdmissionContent {
   intakeSeats: number | null;
+  /** Source of the seat number, or what to do when no official number is published. */
+  intakeNote: string;
   eligibilityCriteria: string[];
   recommendedBackground: string[];
   documents: string[];
@@ -15,6 +25,10 @@ export interface AdmissionContent {
   feesMQ: number | null;
   faq: AdmissionFAQ[];
   applicationDeadline: string;
+  applicationDeadlineNote: string;
+  /** Third card in the seats block: how a seat is decided. */
+  admissionBasis: { title: string; note: string };
+  datesIntro: string;
   careers: string[];
   curriculumHighlights: string[];
   highlights: string[];
@@ -52,21 +66,10 @@ const SELF_FINANCE_FEES: Record<string, number> = {
 };
 
 // ─────────────────────────────────────────────────────────────────────────
-// Default intake seats by level — used when override doesn't specify
+// Sanctioned seats, eligibility and dates live in src/data/admission-facts.ts (plan Step 4,
+// 2026-11-02), each with its official source and the day it was read. Until then only MCA
+// (AICTE 15) had a number and every other page read "Contact Admissions".
 // ─────────────────────────────────────────────────────────────────────────
-// Officially sanctioned intake — listed ONLY where a public approval order
-// states a number for that specific programme.
-//   MCA 15 — AICTE Extension of Approval 2025-26,
-//            F.No. Southern/1-44638793967/2025/EOA dated 03-Jan-2025
-//            ("Intake Approved for 2025-26: 15"), and the college's own
-//            AICTE Mandatory Disclosure 23-24 ("Sanctioned Intake 15").
-// No other programme has a per-course sanctioned intake published by Periyar
-// University, so those pages show no number at all rather than a placeholder.
-// The previous UG 60 / PG 40 / PhD 10 values were template defaults, not
-// sanctioned figures, and contradicted NIRF 2025 (UG 1,468 / PG 355 total).
-const OFFICIAL_INTAKE: Record<string, number> = {
-  "aided/pg/mca": 15,
-};
 
 // ─────────────────────────────────────────────────────────────────────────
 // Level-based defaults
@@ -81,12 +84,7 @@ const LEVEL_DEFAULTS: Record<
   }
 > = {
   UG: {
-    eligibility: [
-      "Pass in Higher Secondary (10+2) from a recognized board",
-      "Minimum 50% aggregate marks (general category)",
-      "45% for OBC, 40% for SC/ST as per government norms",
-      "Subject prerequisites depend on the chosen programme",
-    ],
+    eligibility: [...ELIGIBILITY_FALLBACK.UG],
     background: [
       // Was "Any +2 stream — Science, Commerce or Arts" on EVERY UG admission page until
       // 2026-09-30, which told Commerce students they could join B.Sc Physics. Subject
@@ -108,11 +106,6 @@ const LEVEL_DEFAULTS: Record<
     ],
     faq: [
       {
-        question: "What is the eligibility for this UG programme?",
-        answer:
-          "Candidates must have passed the Higher Secondary Examination (10+2) from a recognized board with a minimum of 50% aggregate (45% for OBC and 40% for SC/ST as per government norms). Subject-specific prerequisites may apply for science and commerce streams.",
-      },
-      {
         question: "How do I apply?",
         answer:
           "You can apply online at jkkn.ai/apply/jkkn-admission-2026 or visit the campus in person. Fill the application form, upload the required documents, and pay the application fee. Our admissions team will guide you through every step.",
@@ -125,12 +118,7 @@ const LEVEL_DEFAULTS: Record<
     ],
   },
   PG: {
-    eligibility: [
-      "Bachelor's degree in a relevant discipline from a recognized university",
-      "Minimum 50% aggregate marks at UG level (general category)",
-      "45% for OBC, 40% for SC/ST as per government norms",
-      "Relevant subject background as per programme requirements",
-    ],
+    eligibility: [...ELIGIBILITY_FALLBACK.PG],
     background: [
       "Bachelor's degree in the relevant or allied discipline",
       "Familiarity with foundational concepts of the subject",
@@ -151,11 +139,6 @@ const LEVEL_DEFAULTS: Record<
     ],
     faq: [
       {
-        question: "What is the eligibility for this PG programme?",
-        answer:
-          "Candidates must hold a relevant Bachelor's degree from a recognized university with a minimum of 50% aggregate (45% for OBC and 40% for SC/ST as per government norms). Subject-specific prerequisites apply for science and computing streams.",
-      },
-      {
         question: "Are working professionals eligible?",
         answer:
           "Yes, working professionals can apply for full-time PG programmes provided they can attend classes regularly. Some programmes may have weekend or evening adjustments — contact the admissions office for details.",
@@ -168,12 +151,7 @@ const LEVEL_DEFAULTS: Record<
     ],
   },
   PhD: {
-    eligibility: [
-      "Master's degree in the relevant discipline with minimum 55% (50% for SC/ST)",
-      "Qualifying score in NET/SET/JRF or university entrance test",
-      "Research proposal aligned with the department's areas of focus",
-      "Interview with the department research committee",
-    ],
+    eligibility: [...ELIGIBILITY_FALLBACK.PhD],
     background: [
       "Strong subject foundation at PG level",
       "Demonstrated research aptitude (project work, publications)",
@@ -191,11 +169,6 @@ const LEVEL_DEFAULTS: Record<
       "Community Certificate (if applicable)",
     ],
     faq: [
-      {
-        question: "What is the eligibility for the Ph.D. programme?",
-        answer:
-          "Candidates must hold a Master's degree in the relevant discipline with a minimum of 55% marks (50% for SC/ST) and a qualifying score in NET/SET/JRF or the university entrance examination. A research proposal and an interview with the research committee are required.",
-      },
       {
         question: "Can I pursue Ph.D. part-time alongside my job?",
         answer:
@@ -241,16 +214,9 @@ const LEVEL_CAREERS: Record<ProgrammeInfo["level"], string[]> = {
 };
 
 // ─────────────────────────────────────────────────────────────────────────
-// Default important dates for 2026-27 admission cycle
+// Important dates: DATES_DEFAULT / DATES_PHD in src/data/admission-facts.ts. A dated milestone
+// is published only when official; 2027-28 reads "not announced yet" with a last-checked day.
 // ─────────────────────────────────────────────────────────────────────────
-// Dated milestones are published only when they are current. The previous
-// list (March–August 2026) had already lapsed while the pages still read
-// "Admissions Open", so it is replaced with guidance rather than stale dates.
-const DEFAULT_IMPORTANT_DATES = [
-  { label: "Applications", date: "Contact the admissions office" },
-  { label: "Merit List & Counselling", date: "Notified to applicants" },
-  { label: "Classes Begin", date: "As per the university academic calendar" },
-];
 
 // ─────────────────────────────────────────────────────────────────────────
 // Build the merged admission content for a programme
@@ -272,21 +238,40 @@ export function getAdmissionContent(
       ? "As per Government Norms"
       : "As per Government Norms (GQ seats)";
 
+  const seats = programme.proposed ? undefined : SANCTIONED_SEATS[programmePath];
+  const isPhd = programme.level === "PhD";
+
   return {
-    intakeSeats: OFFICIAL_INTAKE[programmePath] ?? null,
-    eligibilityCriteria: override?.eligibilityCriteria ?? levelDefaults.eligibility,
+    intakeSeats: seats?.seats ?? null,
+    intakeNote: seats
+      ? seats.source
+      : programme.proposed
+        ? "Proposed programme - awaiting university approval"
+        : "Ask the admissions office for the current sanctioned seats",
+    eligibilityCriteria: [
+      ...(override?.eligibilityCriteria ?? ELIGIBILITY_2026_27[programmePath] ?? levelDefaults.eligibility),
+    ],
     recommendedBackground:
       override?.recommendedBackground ?? levelDefaults.background,
     documents: override?.documents ?? levelDefaults.documents,
     feesGQ,
     feesMQ,
-    faq: [
-      ...(override?.faq ?? []),
-      ...levelDefaults.faq.filter(
-        (f) => !(override?.dropDefaultEligibilityFaq && f.question.startsWith("What is the eligibility")),
-      ),
-    ],
-    applicationDeadline: override?.applicationDeadline ?? "Contact Admissions",
+    faq: [...(override?.faq ?? []), ...levelDefaults.faq],
+    applicationDeadline:
+      override?.applicationDeadline ?? (isPhd ? "July / December" : "Not announced yet"),
+    applicationDeadlineNote: programme.proposed
+      ? "Admissions open only after university approval"
+      : isPhd
+        ? "Periyar University Ph.D. sessions"
+        : `2027-28 dates - last checked ${FACTS_CHECKED}`,
+    admissionBasis: isPhd
+      ? { title: "Entrance", note: "NET (UGC / CSIR) or Periyar University CET" }
+      : { title: "Merit", note: "Marks + Counselling" },
+    datesIntro: programme.proposed
+      ? "Programme status and next steps"
+      : isPhd
+        ? "Ph.D. admission sessions"
+        : "2027-28 admission cycle - dates are added here when officially announced",
     careers: override?.careers ?? LEVEL_CAREERS[programme.level],
     curriculumHighlights:
       override?.curriculumHighlights ??
@@ -306,7 +291,7 @@ export function getAdmissionContent(
         "Experienced senior learners with PhDs and industry exposure",
         "Strong placement support and recruiter network",
       ],
-    importantDates: override?.importantDates ?? DEFAULT_IMPORTANT_DATES,
+    importantDates: [...(override?.importantDates ?? (isPhd ? DATES_PHD : DATES_DEFAULT))],
     scholarshipNote:
       override?.scholarshipNote ??
       "Merit-based scholarships for academic toppers. All government scholarships (BC/MBC/SC/ST, first-generation graduate) supported. Submit income certificate during admission for review.",

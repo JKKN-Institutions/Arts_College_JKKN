@@ -20,25 +20,23 @@ export interface AdmissionOverride {
   highlights?: string[];
   importantDates?: { label: string; date: string }[];
   scholarshipNote?: string;
-  /**
-   * Drop the level-default "What is the eligibility for this UG programme?" FAQ, whose 50% / 45% / 40%
-   * figures have no source. Set only where eligibilityCriteria above carries the regulation (GL6-380).
-   */
-  dropDefaultEligibilityFaq?: boolean;
 }
 
 export const admissionOverrides: Record<string, AdmissionOverride> = {
-  // Eligibility from the Periyar University B.Sc Computer Science (Cyber Security) OBE regulations,
-  // 2023-24 onwards: +2 with Mathematics OR Business Mathematics OR Computer Science OR Statistics. GL6-375.
+  // Eligibility: Periyar University "Eligibility condition for admission to UG programmes 2026-2027"
+  // (Documents/2026/CDC/ug.pdf, row 19 - B.Sc Computer Science / BCA / Cyber Security / AI & DS), read
+  // 2026-11-02: +2 with Mathematics, or with Computer Science / Computer Applications / IT / Computer
+  // Technology / Business Mathematics / Statistics plus a 15-day Mathematics bridge course. Was the 2023-24
+  // OBE rule (Maths, Business Maths, CS or Statistics) until plan Step 4. GL6-375.
   "self-finance/ug/bsc-cs-cyber-security": {
     eligibilityCriteria: [
       "Pass in the Higher Secondary (+2) examination",
-      "Any one of Mathematics, Business Mathematics, Computer Science or Statistics (Periyar University regulations)",
-      "Academic or vocational stream; Tamil Nadu board or an equivalent examination",
+      "Mathematics, or Computer Science, Computer Applications, Information Technology, Computer Technology, Business Mathematics or Statistics (Periyar University eligibility, 2026-27)",
+      "Students who did not study Mathematics attend a bridge course in Mathematics of at least 15 days",
       "Merit-based admission; community reservation as per Tamil Nadu Government norms",
     ],
     recommendedBackground: [
-      "Mathematics is not compulsory if the +2 had Computer Science, Statistics or Business Mathematics",
+      "Mathematics is not compulsory if the +2 had Computer Science, Computer Applications, IT, Computer Technology, Business Mathematics or Statistics",
       "Science and Commerce groups with one of those subjects both qualify",
       "This is a 3-year B.Sc, not a B.E. or B.Tech engineering degree",
       "Interest in lab work - each core subject has a practical",
@@ -69,7 +67,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       {
         question: "Is Maths compulsory for B.Sc Cyber Security?",
         answer:
-          "No. The Periyar University regulation accepts any one of Mathematics, Business Mathematics, Computer Science or Statistics in the +2.",
+          "No. Periyar University's 2026-27 eligibility accepts a +2 with Mathematics, or with Computer Science, Computer Applications, Information Technology, Computer Technology, Business Mathematics or Statistics. A student without Mathematics attends a bridge course in Mathematics of at least 15 days.",
       },
       {
         question: "What is the B.Sc Cyber Security fee for 2026-27?",
@@ -78,18 +76,17 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       },
     ],
   },
-  // Eligibility from the Periyar University B.Sc Computer Science OBE regulations, 2021-22
-  // onwards (periyaruniversity.ac.in/Documents/2021/syllabus/2021/Affiliated/ug/B.Sc. COMPUTER SCIENCE.pdf):
-  // +2 with Mathematics OR Business Mathematics OR Computer Science OR Statistics. GL6-363.
+  // Eligibility: Periyar University UG eligibility 2026-27 (Documents/2026/CDC/ug.pdf, row 19), read
+  // 2026-11-02 - same rule as Cyber Security above. Was the 2021-22 OBE rule until plan Step 4. GL6-363.
   "self-finance/ug/bsc-computer-science": {
     eligibilityCriteria: [
       "Pass in the Higher Secondary (+2) examination",
-      "Any one of Mathematics, Business Mathematics, Computer Science or Statistics (Periyar University regulations)",
-      "Academic or vocational stream; Tamil Nadu board or an equivalent examination",
+      "Mathematics, or Computer Science, Computer Applications, Information Technology, Computer Technology, Business Mathematics or Statistics (Periyar University eligibility, 2026-27)",
+      "Students who did not study Mathematics attend a bridge course in Mathematics of at least 15 days",
       "Merit-based admission; community reservation as per Tamil Nadu Government norms",
     ],
     recommendedBackground: [
-      "Mathematics is not compulsory if the +2 had Computer Science, Statistics or Business Mathematics",
+      "Mathematics is not compulsory if the +2 had Computer Science, Computer Applications, IT, Computer Technology, Business Mathematics or Statistics",
       "Science and Commerce groups with one of those subjects both qualify",
       "Logical thinking helps in programming courses",
       "Interest in lab work - each core subject has a practical",
@@ -112,7 +109,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       {
         question: "Can I do B.Sc Computer Science without Maths?",
         answer:
-          "Yes, if your +2 included Computer Science, Statistics or Business Mathematics. The Periyar University regulation accepts any one of Mathematics, Business Mathematics, Computer Science or Statistics.",
+          "Yes, if your +2 included Computer Science, Computer Applications, Information Technology, Computer Technology, Business Mathematics or Statistics. Periyar University's 2026-27 eligibility asks such students to attend a bridge course in Mathematics of at least 15 days.",
       },
       {
         question: "What is the B.Sc Computer Science fee for 2026-27?",
@@ -124,7 +121,8 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
   // Eligibility from the Periyar University B.Sc Physics regulations, 2023-24 onwards
   // (periyaruniversity.ac.in/Documents/2023/CDC/Affiliated/ug/B.Sc PHYSICS  .pdf):
   // "passed the Higher Secondary examination with Mathematics, Physics and Chemistry".
-  // The regulation states no minimum percentage, so none is published here.
+  // The regulation states no minimum percentage, so none is published here. Same rule in Periyar's
+  // 2026-27 eligibility list (Documents/2026/CDC/ug.pdf, row 32), checked 2026-11-02.
   "self-finance/ug/bsc-physics": {
     eligibilityCriteria: [
       "Pass in the Higher Secondary (+2) examination",
@@ -172,14 +170,17 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       { label: "Register Interest", date: "Open year-round" },
       { label: "Expected Admissions Open", date: "After approval" },
     ],
+    // Periyar University UG eligibility 2026-27 (Documents/2026/CDC/ug.pdf, row 12 names
+    // B.Com (Artificial Intelligence)), read 2026-11-02. No percentage; Arts students qualify only with
+    // one of the listed subjects. The programme itself stays "proposed" on this site.
     eligibilityCriteria: [
-      "Pass in Higher Secondary (10+2) from a recognized board",
-      "Open to Commerce, Science, and Arts streams",
-      "Minimum 50% aggregate marks (general category)",
-      "45% for OBC, 40% for SC/ST as per government norms",
+      "Pass in the Higher Secondary (+2) examination",
+      "Commerce and Accountancy, or any one of Commerce, Accountancy, Mathematics, Business Mathematics, Statistics, Computer Science, Corporate Secretaryship, Information Technology, Computer Applications or Computer Technology (Periyar University eligibility, 2026-27)",
+      "Students who did not study Commerce or Accountancy attend a bridge course of at least 15 days",
+      "Merit-based admission; community reservation as per Tamil Nadu Government norms",
     ],
     recommendedBackground: [
-      "Any +2 stream is welcome — no programming background required",
+      "No programming background required",
       "Basic comfort with mathematics is helpful",
       "Curiosity about technology, finance, and business",
       "Willingness to learn Python, SQL, Power BI from scratch",
@@ -215,7 +216,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
         question:
           "Do I need a programming or science background to apply for B.Com (AI)?",
         answer:
-          "No. The programme is open to students from any stream (Commerce, Science, or Arts) with 50% aggregate in 10+2. Programming, Python, and AI concepts are taught from the basics — no prior coding experience is required.",
+          "No programming background is needed. Periyar University's 2026-27 eligibility asks for a +2 with Commerce and Accountancy, or with any one of Commerce, Accountancy, Mathematics, Business Mathematics, Statistics, Computer Science, Corporate Secretaryship, Information Technology, Computer Applications or Computer Technology. Programming, Python and AI are taught from the basics.",
       },
       {
         question: "What tools and technologies will I learn?",
@@ -231,13 +232,15 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
   },
 
   // GL6-383, 2026-10-02. The Periyar B.Sc Computer Science (AI & DS) 2023-24 syllabus has no admission clause,
-  // so no subject or percentage rule is stated (user decision). The earlier block listed TensorFlow, PyTorch,
-  // Power BI, AWS / GCP and "internship with AI / analytics firms", none of which is in the syllabus.
+  // so no rule was stated then. Plan Step 4 (2026-11-02): Periyar's UG eligibility list for 2026-27
+  // (Documents/2026/CDC/ug.pdf, row 19) now names it - same rule as Computer Science. The earlier block
+  // listed TensorFlow, PyTorch, Power BI, AWS / GCP and "internship with AI / analytics firms", none of
+  // which is in the syllabus.
   "self-finance/ug/bsc-ai-ds": {
-    dropDefaultEligibilityFaq: true,
     eligibilityCriteria: [
       "Pass in the Higher Secondary (+2) examination",
-      "Confirm the required +2 subjects with the admissions office",
+      "Mathematics, or Computer Science, Computer Applications, Information Technology, Computer Technology, Business Mathematics or Statistics (Periyar University eligibility, 2026-27)",
+      "Students who did not study Mathematics attend a bridge course in Mathematics of at least 15 days",
       "Merit-based admission; community reservation as per Tamil Nadu Government norms",
     ],
     recommendedBackground: [
@@ -285,8 +288,8 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
   // Eligibility from the Periyar University B.Sc Microbiology regulations, 2023-24 onwards
   // (periyaruniversity.ac.in/Documents/2023/CDC/Affiliated/ug/B.Sc. Microbiology.pdf), "Condition for admission":
   // +2 pass in any one of Botany, Zoology or Biology, academic or vocational; no percentage. GL6-384.
+  // Same rule in Periyar's 2026-27 eligibility list (Documents/2026/CDC/ug.pdf, row 22), checked 2026-11-02.
   "self-finance/ug/bsc-microbiology": {
-    dropDefaultEligibilityFaq: true,
     eligibilityCriteria: [
       "Pass in the Higher Secondary (+2) examination",
       "Any one of Botany, Zoology or Biology (Periyar University regulations)",
@@ -338,6 +341,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
   // onwards (periyaruniversity.ac.in/Documents/2026/syllabus/nanmudh/23-24even/
   // B.Sc. TEXTILE AND FASHION DESIGNING.pdf): pass in any Higher Secondary course; a three-year
   // Fashion/Costume/Textile/Apparel diploma qualifies for direct second-year admission. GL6-379.
+  // Same rule in Periyar's 2026-27 eligibility list (Documents/2026/CDC/ug.pdf, row 29), checked 2026-11-02.
   "self-finance/ug/bsc-textile-fashion-designing": {
     eligibilityCriteria: [
       "Pass in any Higher Secondary (+2) course, academic or vocational",
@@ -412,8 +416,8 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
   // Eligibility from the Periyar University B.Sc Visual Communication regulations, effective 2021-22
   // (periyaruniversity.ac.in/Documents/2021/syllabus/2021/Affiliated/ug1/B.Sc. Visual Communication.pdf),
   // clause 1: a pass in Higher Secondary or an equivalent (10+2 or 10+3 year Diploma); no percentage. GL6-380.
+  // Same rule in Periyar's 2026-27 eligibility list (Documents/2026/CDC/ug.pdf, row 40), checked 2026-11-02.
   "self-finance/ug/bsc-visual-communication": {
-    dropDefaultEligibilityFaq: true,
     eligibilityCriteria: [
       "Pass in the Higher Secondary (+2) examination or an equivalent examination",
       "Or a 10+3 year Diploma (Periyar University regulations)",
