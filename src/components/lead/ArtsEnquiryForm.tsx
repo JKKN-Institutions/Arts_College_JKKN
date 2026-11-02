@@ -2,7 +2,7 @@
 // built from the Dental component. Posts server-side into the same jkkn.ai form (jkkn-admission-2026).
 //
 // PII rule, and it is not a style preference: name and phone are collected here and NEVER sent to
-// GA4. Only the source page, the programme id and the path leave this component.
+// GA4. Only the source page, the programme name and the path leave this component.
 //
 // LOOK — mockup #7 "What Happens Next", the user's pick of 10 on 2026-10-22, live on Dental first
 // (PR #18) and ported here with the same Dental colours. The old see-through card sat on green with
@@ -16,7 +16,8 @@ import { useActionState, useEffect, useId, useRef } from "react"
 import { CheckCircle2, ChevronDown } from "lucide-react"
 import { submitArtsEnquiry, type ArtsEnquiryState } from "@/app/actions/arts-enquiry"
 import CampaignFields from "@/components/lead/CampaignFields"
-import { ARTS_PROGRAMMES } from "@/lib/arts-programmes"
+import { ARTS_PROGRAMMES, programmeLabel } from "@/lib/arts-programmes"
+import { sendGaEvent } from "@/lib/ga-event"
 import { ENQUIRY_DONE_KEY, writeStore } from "@/lib/enquiry-store"
 
 const ADMISSION_PHONE = "+919345855001"
@@ -68,29 +69,27 @@ export default function ArtsEnquiryForm({
     if (!state?.success || fired.current) return
     fired.current = true
     writeStore(ENQUIRY_DONE_KEY, new Date().toISOString())
-    const w = window as unknown as { gtag?: (...args: unknown[]) => void }
-    if (typeof w.gtag === "function") {
-      w.gtag("event", "lead_form_submit", {
-        form_name: "arts_enquiry",
-        source_page: sourcePage,
-        programme: state.tracking?.programme_id ?? "not_selected",
-        destination: "crm",
-        page_path: window.location.pathname,
-      })
-    }
+    // 2026-11-02 (plan Step 2). A 409 (phone already applied) is not a new CRM lead, so it gets its own
+    // event and lead_form_submit counts new leads only. "program" (not "programme") is the event-scoped
+    // custom dimension registered on GA4 371004015 - the old "programme" param read "(not set)" on all 6
+    // submits of 2026-10-24..30. sendGaEvent waits up to 10 s for gtag instead of dropping the event.
+    sendGaEvent(state.tracking?.duplicate ? "lead_form_duplicate" : "lead_form_submit", {
+      form_name: "arts_enquiry",
+      source_page: sourcePage,
+      program: programmeLabel(state.tracking?.programme_id),
+      destination: "crm",
+      page_path: window.location.pathname,
+    })
   }, [state, sourcePage])
 
   // A form that silently fails and a form nobody used both read 0. This is what separates them.
   useEffect(() => {
     if (!state || state.success || !state.error) return
-    const w = window as unknown as { gtag?: (...args: unknown[]) => void }
-    if (typeof w.gtag === "function") {
-      w.gtag("event", "lead_form_error", {
-        form_name: "arts_enquiry",
-        source_page: sourcePage,
-        page_path: window.location.pathname,
-      })
-    }
+    sendGaEvent("lead_form_error", {
+      form_name: "arts_enquiry",
+      source_page: sourcePage,
+      page_path: window.location.pathname,
+    })
   }, [state, sourcePage])
 
   const surface = bare

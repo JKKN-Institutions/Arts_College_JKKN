@@ -31,7 +31,8 @@ import { CheckCircle2, ChevronDown } from 'lucide-react'
 import { submitCityEnquiry, type CityEnquiryState } from '@/app/actions/city-enquiry'
 import CampaignFields from '@/components/lead/CampaignFields'
 import { TRUST } from '@/components/lead/ArtsEnquiryForm'
-import { ARTS_PROGRAMMES } from '@/lib/arts-programmes'
+import { ARTS_PROGRAMMES, programmeLabel } from '@/lib/arts-programmes'
+import { sendGaEvent } from '@/lib/ga-event'
 
 const ADMISSION_PHONE = '+919345855001'
 const ADMISSION_PHONE_DISPLAY = '+91 93458 55001'
@@ -61,30 +62,28 @@ export default function CityEnquiryForm({ city, bare = false }: Props) {
   useEffect(() => {
     if (!state?.success || fired.current) return
     fired.current = true
-    const w = window as unknown as { gtag?: (...args: unknown[]) => void }
-    if (typeof w.gtag === 'function') {
-      w.gtag('event', 'lead_form_submit', {
-        form_name: 'city_enquiry',
-        city,
-        programme: state.tracking?.programme_id ?? 'not_selected',
-        destination: 'crm', // was "whatsapp" while the form went nowhere
-        page_path: window.location.pathname,
-      })
-    }
+    // 2026-11-02 (plan Step 2). A 409 (phone already applied) is not a new CRM lead, so it gets its own
+    // event and lead_form_submit counts new leads only. "program" (not "programme") is the event-scoped
+    // custom dimension registered on GA4 371004015 - the old "programme" param read "(not set)".
+    // sendGaEvent waits up to 10 s for gtag instead of dropping the event.
+    sendGaEvent(state.tracking?.duplicate ? 'lead_form_duplicate' : 'lead_form_submit', {
+      form_name: 'city_enquiry',
+      city,
+      program: programmeLabel(state.tracking?.programme_id),
+      destination: 'crm', // was "whatsapp" while the form went nowhere
+      page_path: window.location.pathname,
+    })
   }, [state, city])
 
   // A form that silently fails looks identical to a form nobody used - both read 0.
   // This event is what tells the two apart.
   useEffect(() => {
     if (!state || state.success || !state.error) return
-    const w = window as unknown as { gtag?: (...args: unknown[]) => void }
-    if (typeof w.gtag === 'function') {
-      w.gtag('event', 'lead_form_error', {
-        form_name: 'city_enquiry',
-        city,
-        page_path: window.location.pathname,
-      })
-    }
+    sendGaEvent('lead_form_error', {
+      form_name: 'city_enquiry',
+      city,
+      page_path: window.location.pathname,
+    })
   }, [state, city])
 
   const surface = bare

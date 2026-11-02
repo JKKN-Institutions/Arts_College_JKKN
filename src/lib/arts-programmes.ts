@@ -52,3 +52,8 @@ export const ARTS_PROGRAMMES: ReadonlyArray<ArtsProgramme> = [
 export const VALID_PROGRAMME_IDS: ReadonlySet<string> = new Set(
   ARTS_PROGRAMMES.map((p) => p.id)
 )
+
+// GA4 wants a readable programme name in its "program" dimension, never the CRM uuid (2026-11-02).
+export function programmeLabel(id: string | undefined): string {
+  return ARTS_PROGRAMMES.find((p) => p.id === id)?.label ?? "not_selected"
+}

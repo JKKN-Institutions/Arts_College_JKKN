@@ -28,7 +28,8 @@ export type CityEnquiryState = {
   message?: string
   error?: string
   // echoed back so the client can fire the GA4 event with no PII in it
-  tracking?: { city: string; programme_id: string }
+  // duplicate: a 409 (this phone already applied) - GA4 counts it as lead_form_duplicate, not a new lead
+  tracking?: { city: string; programme_id: string; duplicate?: boolean }
   fieldErrors?: Partial<Record<'name' | 'phone' | 'programme', string>>
 }
 
@@ -107,7 +108,7 @@ export async function submitCityEnquiry(
         success: true,
         message:
           'You have already enquired with this number. Our admission team will call you — no need to submit again.',
-        tracking: { city, programme_id: programme },
+        tracking: { city, programme_id: programme, duplicate: true },
       }
     }
 
