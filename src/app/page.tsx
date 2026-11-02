@@ -31,6 +31,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import HeroSection from '@/components/home/HeroSection';
+import TopEnquiryCard from '@/components/lead/TopEnquiryCard';
 import StatsSection from '@/components/home/StatsSection';
 import AcademicProgramsSection from '@/components/home/AcademicProgramsSection';
 import ScrollOnLoad from '@/components/ScrollOnLoad';
@@ -219,6 +220,13 @@ export default function Home() {
       </p>
       {/* Hero Section - Fits exactly one screen */}
       <HeroSection />
+
+      {/* Phones: the 3-box form right under the hero (plan Step 3, 2026-11-02). Before this the first
+          inline form on a phone sat 23.5 screens down (live, 375 px); lg and up already show it in the
+          hero card, so this block is lg:hidden - one top form per screen size. */}
+      <section className="lg:hidden bg-[#fbfbee] px-4 py-6">
+        <TopEnquiryCard sourcePage="home-top-phone" />
+      </section>
 
       {/* Stats Section - Counting animation */}
       <StatsSection />
