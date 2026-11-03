@@ -52,8 +52,8 @@ Autonomy means the college designs its own curriculum and conducts its own exami
 
 ## Scale
 
-- **Students:** 1,685 (NIRF 2025 submission, AY 2023-24) — 1,438 UG + 247 PG
-- **Faculty:** 121 on roll, of whom 52 hold a Ph.D. (NIRF 2025 submission)
+- **Students:** 1,516 (NIRF 2026 submission, AY 2024-25) — 1,238 UG + 278 PG
+- **Faculty:** 110 on roll, of whom 52 hold a Ph.D. (NIRF 2026 submission)
 - **Programmes offered:** 35 across UG, PG and Ph.D.
 - **Departments:** 27
 
@@ -237,7 +237,7 @@ A: Yes — B.Sc. Artificial Intelligence & Data Science is offered under self-fi
 A: The placement cell publishes 90%+ placement across eligible learners for 2024-25, with 60+ recruiters including TCS, Infosys and Wipro. Batch-wise salary data is available from the Placement Cell.
 
 **Q: How many students and faculty are there?**
-A: 1,685 students (1,438 UG + 247 PG) per the NIRF 2025 submission for AY 2023-24. Of 121 faculty on roll, 52 hold a Ph.D.
+A: 1,516 students (1,238 UG + 278 PG) per the NIRF 2026 submission for AY 2024-25. Of 110 faculty on roll, 52 hold a Ph.D.
 
 **Q: Is there a donation or capitation fee?**
 A: No. The college states that it is donation-free and admits on merit.

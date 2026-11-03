@@ -5,9 +5,10 @@
 //
 // Regulator values were read on 29 October 2026 (/approvals). The key-facts box was
 // added on 3 November 2026 (plan Step 6, GEO): every value below was re-checked that
-// day, and the student / faculty figures were counted from the NIRF 2025 college data
-// PDF on this site (UG 1,438 + PG 247 = 1,685 students; 121 faculty currently working,
-// 52 of them with a Ph.D).
+// day, and the student / faculty figures were counted from the NIRF 2026 college data
+// PDF on this site, academic year 2024-25 (UG 1,238 + PG 278 = 1,516 students; 110 faculty
+// currently working, 52 of them with a Ph.D). User's choice 2026-11-03: the newest filing
+// everywhere, not the NIRF 2025 figures (1,685 / 121) the site carried before.
 
 export type Source = { label: string; href: string; date: string };
 
@@ -57,9 +58,9 @@ export const SRC = {
   },
   // The college's own documents and pages (used where no regulator prints the value).
   nirfData: {
-    label: "NIRF 2025 data submitted by the college (PDF)",
-    href: "/documents/nirf/NIRF-2025-COLLEGE.pdf",
-    date: "academic year 2023-24",
+    label: "NIRF 2026 data submitted by the college (PDF)",
+    href: "/documents/nirf/J.K.K%20Nataraja%20College%20of%20Arts%20%26%20Science20260402-college.pdf",
+    date: "academic year 2024-25",
   },
   ourInstitution: {
     label: "Our Institution",
@@ -111,13 +112,13 @@ export const KEY_FACTS: KeyFact[] = [
   },
   {
     label: "Students",
-    value: "1,685",
-    note: "UG 1,438 + PG 247",
+    value: "1,516",
+    note: "UG 1,238 + PG 278",
     sources: [SRC.nirfData],
   },
   {
     label: "Faculty",
-    value: "121, of whom 52 hold a Ph.D",
+    value: "110, of whom 52 hold a Ph.D",
     sources: [SRC.nirfData],
   },
   {

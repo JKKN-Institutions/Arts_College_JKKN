@@ -90,7 +90,7 @@ const homepageFAQs = [
   {
     question: "What makes JKKN different from other arts and science colleges in Tamil Nadu?",
     answer:
-      "JKKN offers an industry-linked curriculum, with MoUs signed with IBM India (2019), Global Talent Track (2019) and AWE CARE, Erode (2022-23), as reported in the college's NAAC AQARs. Students benefit from dedicated AI and IoT research labs, 121 faculty on roll (52 with a PhD, NIRF 2025), and a training and placement cell that delivers measurable outcomes — placement support and career opportunities across India and abroad.",
+      "JKKN offers an industry-linked curriculum, with MoUs signed with IBM India (2019), Global Talent Track (2019) and AWE CARE, Erode (2022-23), as reported in the college's NAAC AQARs. Students benefit from dedicated AI and IoT research labs, 110 faculty on roll (52 with a PhD, NIRF 2026), and a training and placement cell that delivers measurable outcomes — placement support and career opportunities across India and abroad.",
   },
   {
     question: "What programmes does JKKN Arts and Science College offer in Tamil Nadu?",
@@ -217,7 +217,7 @@ export default function Home() {
       <Suspense fallback={null}><ScrollToSection /></Suspense>
       {/* Screen-reader overview for voice assistants and AI crawlers */}
       <p className="sr-only">
-        JKKN College of Arts and Science is an autonomous, NAAC accredited (B) institution located on NH-544 in Komarapalayam, near Erode, Tamil Nadu. Affiliated to Periyar University and part of J.K.K. Nattraja Educational Institutions established in 1952, the college offers 35 UG, PG, and PhD programmes across Science, Commerce, IT, and Management. It has 1,685 students on a 15-acre campus, and its NIRF 2025 return lists 135 of 373 UG graduates of 2023-24 as placed.
+        JKKN College of Arts and Science is an autonomous, NAAC accredited (B) institution located on NH-544 in Komarapalayam, near Erode, Tamil Nadu. Affiliated to Periyar University and part of J.K.K. Nattraja Educational Institutions established in 1952, the college offers 35 UG, PG, and PhD programmes across Science, Commerce, IT, and Management. It has 1,516 students (NIRF 2026 submission, 2024-25) on a 15-acre campus, and its NIRF 2025 return lists 135 of 373 UG graduates of 2023-24 as placed.
       </p>
       {/* Hero Section - Fits exactly one screen */}
       <HeroSection />
@@ -257,7 +257,7 @@ export default function Home() {
                   Established in 1974 as part of <strong>J.K.K. Nattraja Educational Institutions</strong> (est. 1952), JKKN blends the 74+ years of academic heritage of the group with a modern, industry-integrated learning framework. Our NAAC accreditation (Grade B) and the autonomous status conferred by UGC empower us to design programmes aligned with current industry demands.
                 </p>
                 <p>
-                  With 121 Senior Learners, 52 of them PhD-qualified, AI and IoT research labs, industry MoUs with IBM India, Global Talent Track and AWE CARE, and a placement record published in NIRF 2025, we prepare Learners not just for jobs — but for successful careers across India and abroad.
+                  With 110 Senior Learners, 52 of them PhD-qualified, AI and IoT research labs, industry MoUs with IBM India, Global Talent Track and AWE CARE, and a placement record published in NIRF 2025, we prepare Learners not just for jobs — but for successful careers across India and abroad.
                 </p>
               </div>
 
@@ -277,7 +277,7 @@ export default function Home() {
                     <Users className="h-5 w-5 text-[#0b6d41]" />
                   </div>
                   <div>
-                    <div className="font-bold text-black text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] mb-0.5">121 Senior Learners</div>
+                    <div className="font-bold text-black text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] mb-0.5">110 Senior Learners</div>
                     <div className="text-[12px] sm:text-[14px] leading-[16px] sm:leading-[20px] text-black/60">PhD &amp; Industry Experts</div>
                   </div>
                 </div>
@@ -534,7 +534,7 @@ export default function Home() {
               </div>
               <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Expert Senior Learners</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                121 Senior Learners on roll, 52 with a PhD (NIRF 2025 submission)
+                110 Senior Learners on roll, 52 with a PhD (NIRF 2026 submission)
               </p>
             </div>
 
@@ -615,9 +615,9 @@ export default function Home() {
               <div className="text-[14px] leading-[20px] font-medium text-gray-600">UG, PG &amp; PhD Programmes</div>
             </div>
 
-            {/* Stat 3: Learners (NIRF 2025 submission, AY 2023-24) */}
+            {/* Stat 3: Learners (NIRF 2026 submission, AY 2024-25) */}
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
-              <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">1,685</div>
+              <div className="text-[20px] md:text-[24px] lg:text-[30px] leading-[28px] md:leading-[32px] lg:leading-[36px] font-bold tracking-[-0.75px] text-[#0b6d41] mb-2">1,516</div>
               <div className="text-[14px] leading-[20px] font-medium text-gray-600">Learners</div>
             </div>
 

@@ -22,8 +22,8 @@ describe("official key facts", () => {
     expect(byLabel["Established"]).toBe("1974")
     expect(byLabel["NAAC"]).toBe("Grade B, CGPA 2.37")
     expect(byLabel["Status"]).toBe("Autonomous, 2024-25 to 2028-29")
-    expect(byLabel["Students"]).toBe("1,685")
-    expect(byLabel["Faculty"]).toBe("121, of whom 52 hold a Ph.D")
+    expect(byLabel["Students"]).toBe("1,516")
+    expect(byLabel["Faculty"]).toBe("110, of whom 52 hold a Ph.D")
     expect(SRC.ugcAuto.href).toContain("8688705_List-of-Autonomous-Colleges.pdf")
   })
 
@@ -35,11 +35,19 @@ describe("official key facts", () => {
 
   it("says the same thing in llms.txt", () => {
     const llms = read("public/llms.txt")
-    for (const s of ["Grade B (CGPA 2.37)", "2024-25 to 2028-29", "Section 2(f) and 12(B)", "1,685", "121 on roll, 52 with a Ph.D.", "C-9494", "2180001"]) {
+    for (const s of ["Grade B (CGPA 2.37)", "2024-25 to 2028-29", "Section 2(f) and 12(B)", "1,516", "110 on roll, 52 with a Ph.D.", "C-9494", "2180001"]) {
       expect(llms, s).toContain(s)
     }
     expect(llms).not.toContain("Accreditation: NAAC Accredited\r\n")
     expect(llms).not.toContain("Accreditation: NAAC Accredited\n")
+  })
+
+  it("uses the NIRF 2026 student / faculty figures, not the NIRF 2025 ones", () => {
+    for (const rel of ["public/llms.txt", "public/llms-full.txt", "src/app/page.tsx", "src/components/home/HeroSection.tsx",
+      "src/components/home/StatsSection.tsx", "src/components/seo/OrganizationSchema.tsx", "src/app/about/our-institution/page.tsx"]) {
+      const t = read(rel)
+      expect(t, rel).not.toMatch(/1,685|\b1685\b|121 (faculty|Senior Learners|on roll)/)
+    }
   })
 
   it("no longer says 34 programmes anywhere in the shared layout", () => {
