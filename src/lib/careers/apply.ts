@@ -17,6 +17,8 @@ export interface ApplicationInput {
   experience_extra_months: string;
   current_job_title: string;
   current_company: string;
+  /** Optional; shown only on jobs with asks_github. A name or a github.com profile link. */
+  github_username: string;
   resume: File | null;
   consent: boolean;
   /** Honeypot — must stay empty. */
@@ -32,6 +34,7 @@ export const APPLICATION_FIELD_ORDER = [
   'experience_months',
   'current_job_title',
   'current_company',
+  'github_username',
   'resume',
   'consent',
 ] as const;
@@ -42,6 +45,16 @@ export type FieldErrors = Partial<Record<ApplicationField, string>>;
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_CHARS_RE = /^[\d\s+\-()]+$/;
 const RESUME_EXT_RE = /\.(pdf|docx?)$/i;
+const GITHUB_NAME_RE = /^[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?$/;
+
+/**
+ * The GitHub name inside what the candidate typed: a name, @name, or a
+ * github.com profile link (Director 3 Nov 2026). Same trimming as MyJKKN,
+ * which re-checks it.
+ */
+export function githubNameFrom(raw: string): string {
+  return raw.trim().replace(/^(https?:\/\/)?(www\.)?github\.com\//i, '').replace(/^@/, '').replace(/\/+$/, '');
+}
 
 function toWholeNumber(value: string): number {
   return value.trim() === '' ? Number.NaN : Number(value);
@@ -81,6 +94,10 @@ export function validateApplication(input: ApplicationInput): FieldErrors {
 
   if (input.current_job_title.trim().length > 150) errors.current_job_title = 'Must be 150 characters or fewer.';
   if (input.current_company.trim().length > 150) errors.current_company = 'Must be 150 characters or fewer.';
+  const gh = input.github_username.trim();
+  if (gh && (gh.length > 200 || !GITHUB_NAME_RE.test(githubNameFrom(gh)))) {
+    errors.github_username = 'Paste your GitHub profile link (github.com/your-name) or your GitHub username, or leave it empty.';
+  }
 
   const resume = input.resume;
   if (!resume) errors.resume = 'Attach your resume.';
@@ -103,6 +120,8 @@ export function buildApplicationFormData(input: ApplicationInput, utmSource: str
   fd.set('experience_months', String(toExperienceMonths(input.experience_years, input.experience_extra_months)));
   if (input.current_job_title.trim()) fd.set('current_job_title', input.current_job_title.trim());
   if (input.current_company.trim()) fd.set('current_company', input.current_company.trim());
+  // Sent as the bare name, so MyJKKN gets the same value however it was typed.
+  if (input.github_username.trim()) fd.set('github_username', githubNameFrom(input.github_username));
   if (input.resume) fd.set('resume', input.resume);
   fd.set('consent', input.consent ? 'true' : 'false');
   fd.set('utm_source', utmSource.slice(0, 100));
