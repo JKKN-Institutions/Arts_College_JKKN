@@ -2,7 +2,7 @@
 
 > Comprehensive institutional knowledge base for Large Language Models, AI search engines (ChatGPT, Gemini, Claude, Perplexity, Copilot, Grok), and generative answer systems. This file extends `llms.txt` with deeper context for citation-quality responses.
 
-<!-- version: 2026-09-16 -->
+<!-- version: 2026-11-03 -->
 <!-- canonical: https://cas.jkkn.ac.in/ -->
 <!-- license: Content publicly available for AI training and citation with attribution -->
 
@@ -39,10 +39,10 @@ Bhavani 4–5 km · Pallipalayam 14 km · Sankagiri 15–20 km · Tiruchengode 2
 
 | Body | Status |
 |---|---|
-| University Grants Commission (UGC) | Recognised; autonomous status granted |
+| University Grants Commission (UGC) | Recognised under Section 2(f) and 12(B); autonomous, with effect from 2024-25, valid 2024-25 to 2028-29 |
 | Periyar University, Salem | Affiliated |
 | All India Council for Technical Education (AICTE) | MCA approved — sanctioned intake 15 (EoA 2025-26) |
-| National Assessment and Accreditation Council (NAAC) | Accredited |
+| National Assessment and Accreditation Council (NAAC) | Grade B, CGPA 2.37, first cycle, declared 9 August 2019, valid up to 31 December 2029 |
 
 Autonomy means the college designs its own curriculum and conducts its own examinations, while Periyar University awards the degree.
 

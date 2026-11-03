@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: "JKKN College of Arts and Science",
     title:
-      "JKKN College of Arts and Science | Autonomous | 34 Programmes",
+      "JKKN College of Arts and Science | Autonomous | 35 Programmes",
     description:
       "Autonomous institution offering 35 UG, PG and PhD programmes. Affiliated to Periyar University, near Erode, Tamil Nadu.",
     images: [
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "JKKN College of Arts and Science | Autonomous | 34 Programmes",
+      "JKKN College of Arts and Science | Autonomous | 35 Programmes",
     description:
       "Autonomous institution offering 35 UG, PG and PhD programmes. Near Erode, Tamil Nadu.",
     images: [

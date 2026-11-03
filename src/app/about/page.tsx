@@ -2,16 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import KeyFactsBox from "@/components/seo/KeyFactsBox";
 
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about JKKN College of Arts and Science — our history, trust, vision, mission, and leadership driving academic excellence in Komarapalayam, Tamil Nadu.",
+    "JKKN College of Arts and Science, Komarapalayam: established 1974, autonomous 2024-25 to 2028-29, Periyar University, NAAC Grade B. Key facts with sources.",
   alternates: { canonical: "https://cas.jkkn.ac.in/about" },
   openGraph: {
     title: "About Us | JKKN Arts & Science",
     description:
-      "Learn about JKKN College of Arts and Science — our history, trust, vision, mission, and leadership driving academic excellence in Komarapalayam, Tamil Nadu.",
+      "JKKN College of Arts and Science, Komarapalayam: established 1974, autonomous 2024-25 to 2028-29, Periyar University, NAAC Grade B. Key facts with sources.",
     url: "https://cas.jkkn.ac.in/about",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -71,6 +72,9 @@ export default function AboutPage() {
             transforming lives through quality education since 1974.
           </p>
         </div>
+
+        {/* Key facts with their sources (plan Step 6, GEO, 2026-11-03) */}
+        <KeyFactsBox variant="table" />
 
         {/* Card Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

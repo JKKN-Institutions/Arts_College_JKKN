@@ -1,24 +1,27 @@
 # JKKN College of Arts and Science
 
-> Autonomous institution affiliated to Periyar University, offering 35 UG, PG and PhD programmes in Arts, Science and Commerce. Located on NH-544, Komarapalayam, near Erode, Tamil Nadu 638183, India.
+> Autonomous college (2024-25 to 2028-29) affiliated to Periyar University, Salem, accredited by NAAC with Grade B (CGPA 2.37), offering 35 UG, PG and PhD programmes in Arts, Science and Commerce. Located on NH-544, Komarapalayam, Namakkal district, near Erode, Tamil Nadu 638183, India.
 
-<!-- version: 2026-09-16 -->
+<!-- version: 2026-11-03 -->
 <!-- canonical: https://cas.jkkn.ac.in/ -->
 <!-- full reference: https://cas.jkkn.ac.in/llms-full.txt -->
 
 ## About
 
-JKKN College of Arts and Science (CAS JKKN) is an autonomous college established in 1974 as part of J.K.K. Nattraja Educational Institutions (founded 1952). The college is spread across 15 acres on the Salem-Coimbatore Highway (NH-544) and serves 1,685 students (NIRF 2025 submission, AY 2023-24). It is affiliated to Periyar University and accredited by NAAC. It was originally named Alamelu Angappan College for Women and became co-educational in 2008. It is a donation-free institution offering merit-based admissions.
+JKKN College of Arts and Science (CAS JKKN) is an autonomous college established in 1974 as part of J.K.K. Nattraja Educational Institutions (founded 1952). The college is spread across 15 acres on the Salem-Coimbatore Highway (NH-544) and serves 1,685 students (NIRF 2025 submission, AY 2023-24). It is affiliated to Periyar University, Salem, recognised by UGC under Section 2(f) and 12(B), and accredited by NAAC with Grade B (CGPA 2.37). It was originally named Alamelu Angappan College for Women and became co-educational in 2008. It is a donation-free institution offering merit-based admissions.
 
 ## Key Facts
 
-- Founded: 1974 (parent trust: 1952)
-- Status: Autonomous (UGC-granted)
-- Affiliation: Periyar University, Salem
-- Accreditation: NAAC Accredited
+- Founded: 1974 (the J.K.K. Nattraja group dates from 1952) - source: UGC list of colleges under Section 2(f) & 12(B), https://www.ugc.gov.in/colleges
+- Status: Autonomous, conferred with effect from 2024-25, valid 2024-25 to 2028-29 - source: UGC List of Approved Autonomous Colleges as on 28 February 2026, https://www.ugc.gov.in/pdfnews/8688705_List-of-Autonomous-Colleges.pdf
+- Affiliation: Periyar University, Salem - source: https://www.periyaruniversity.ac.in/Affiliated_Colleges.php
+- UGC recognition: Section 2(f) and 12(B) of the UGC Act
+- Accreditation: NAAC Grade B, CGPA 2.37, first cycle, declared 9 August 2019, valid up to 31 December 2029 - source: NAAC list of institutions having valid accreditation (as on 14 August 2025) and NAAC extension of validity for Transition Autonomous Colleges
 - Campus: 15 acres, Komarapalayam, Namakkal District
-- Students: 1,685 (NIRF 2025 submission, AY 2023-24)
+- Students: 1,685 (UG 1,438 + PG 247; NIRF 2025 submission, AY 2023-24)
 - Faculty: 121 on roll, 52 with a Ph.D. (NIRF 2025 submission)
+- Codes: AISHE C-9494; NIRF IR-C-C-9494; TN DCE college code 2180001
+- All approvals with their official documents: https://cas.jkkn.ac.in/approvals
 - Programmes: 20 UG + 12 PG + 3 Ph.D. (35 total)
 - Location: NH-544, between Salem and Coimbatore
 - Nearest towns and cities (approx. road distance): Bhavani (~4-5 km), Pallipalayam (~14 km), Sankagiri (~15-20 km), Tiruchengode (~20 km), Erode (~22 km), Perundurai (~27-30 km), Gobichettipalayam (~35-40 km), Salem (~55-58 km), Namakkal (~55-60 km), Rasipuram (~60 km)

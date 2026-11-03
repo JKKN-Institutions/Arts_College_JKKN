@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
+import { APPROVALS_CHECKED_ON, SRC, type Source } from "@/data/official-facts";
 
 // Every value on this page is copied as printed from the official source named
 // under it, read on 29 October 2026. Course-wise sanctioned seats are left out on
@@ -24,53 +25,9 @@ export const metadata: Metadata = {
   },
 };
 
-const CHECKED_ON = "29 October 2026";
+const CHECKED_ON = APPROVALS_CHECKED_ON;
 
-type Source = { label: string; href: string; date: string };
 type Fact = { id: string; title: string; value: string; detail: string; sources: Source[] };
-
-const SRC = {
-  ugc2f: {
-    label: "UGC, List of colleges under Section 2(f) & 12(B)",
-    href: "https://www.ugc.gov.in/colleges",
-    date: `checked on ${CHECKED_ON} (the list prints no date)`,
-  },
-  ugcAuto: {
-    label: "UGC, List of Approved Autonomous Colleges",
-    href: "https://www.ugc.gov.in/pdfnews/8688705_List-of-Autonomous-Colleges.pdf",
-    date: "as on 28 February 2026",
-  },
-  periyar: {
-    label: "Periyar University, Affiliated Colleges",
-    href: "https://www.periyaruniversity.ac.in/Affiliated_Colleges.php",
-    date: `checked on ${CHECKED_ON}`,
-  },
-  naacList: {
-    label: "NAAC, Institutions having valid accreditation",
-    href: "https://naac.gov.in/images/docs/ACCREDITATION_STATUS/Institutions_accredited_by_NAAC_having_valid_accreditation-as_on_14082025_1.xlsx",
-    date: "as on 14 August 2025",
-  },
-  naacTransition: {
-    label: "NAAC, Extension of validity for Transition Autonomous Colleges",
-    href: "https://naac.gov.in/images/docs/notification/Autonomous_Transition_Website_06082025.pdf",
-    date: "updated 22 July 2025",
-  },
-  aicte: {
-    label: "AICTE, Extension of Approval 2025-26 (copy of the letter)",
-    href: "/documents/committees/28-LOA_EOA_merged_2026.pdf",
-    date: "dated 3 January 2025",
-  },
-  nirf: {
-    label: "NIRF, India Rankings 2025 - participating institutions (College)",
-    href: "https://www.nirfindia.org/Rankings/2025/CollegeRankingALL.html",
-    date: `checked on ${CHECKED_ON}`,
-  },
-  dce: {
-    label: "Directorate of Collegiate Education, Tamil Nadu, course details",
-    href: "https://tndce.tn.gov.in/Home/course_details/2180001/1",
-    date: `checked on ${CHECKED_ON}`,
-  },
-} satisfies Record<string, Source>;
 
 const FACTS: Fact[] = [
   {

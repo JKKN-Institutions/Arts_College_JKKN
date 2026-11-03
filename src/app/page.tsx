@@ -48,6 +48,7 @@ import ScrollToSection from '@/components/ScrollToSection';
 import AdmissionPopup from '@/components/home/AdmissionPopup';
 import EnquiryButton from '@/components/lead/EnquiryButton';
 import ArtsEnquiryForm from '@/components/lead/ArtsEnquiryForm';
+import KeyFactsBox from '@/components/seo/KeyFactsBox';
 
 export const metadata: Metadata = {
   title: {
@@ -210,7 +211,7 @@ export default function Home() {
         name="Best Arts and Science College in Tamil Nadu — JKKN College (Autonomous)"
         description="JKKN College of Arts and Science is an arts and science college in Komarapalayam, Tamil Nadu. Autonomous, NAAC accredited (B), placement record published in NIRF 2025, 35 UG, PG & PhD programmes near Erode."
         url="https://cas.jkkn.ac.in"
-        lastReviewed="2026-03-28"
+        lastReviewed="2026-11-03"
         speakable={["h1", ".hero-description", "[data-speakable]"]}
       />
       <Suspense fallback={null}><ScrollToSection /></Suspense>
@@ -321,6 +322,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Key facts with their sources (plan Step 6, GEO, 2026-11-03) */}
+      <KeyFactsBox />
 
       {/* Why JKKN is the Best — Keyword-Rich Content Section */}
       <section className="py-16 md:py-24 bg-white">
