@@ -16,6 +16,8 @@ import {
 interface ApplyFormProps {
   jobId: string;
   jobTitle: string;
+  /** Technology job (MyJKKN `asks_github`): show the optional GitHub box. */
+  asksGitHub?: boolean;
 }
 
 type Status = 'idle' | 'submitting' | 'success' | 'error';
@@ -30,6 +32,7 @@ const EMPTY: ApplicationInput = {
   experience_extra_months: '0',
   current_job_title: '',
   current_company: '',
+  github_username: '',
   resume: null,
   consent: false,
   company_fax: '',
@@ -60,7 +63,7 @@ function FieldError({ id, message }: FieldErrorProps) {
 }
 
 interface TextFieldProps {
-  name: 'first_name' | 'last_name' | 'email' | 'phone' | 'qualification' | 'current_job_title' | 'current_company';
+  name: 'first_name' | 'last_name' | 'email' | 'phone' | 'qualification' | 'current_job_title' | 'current_company' | 'github_username';
   label: string;
   value: string;
   error?: string;
@@ -100,7 +103,7 @@ function TextField({ name, label, value, error, onChange, type = 'text', require
   );
 }
 
-export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
+export default function ApplyForm({ jobId, jobTitle, asksGitHub = false }: ApplyFormProps) {
   const [values, setValues] = useState<ApplicationInput>(EMPTY);
   const [errors, setErrors] = useState<FieldErrors>({});
   const [status, setStatus] = useState<Status>('idle');
@@ -133,7 +136,7 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
 
     setStatus('submitting');
     setMessage('');
-    const result = await submitApplication(jobId, buildApplicationFormData(values, window.location.hostname));
+    const result = await submitApplication(jobId, buildApplicationFormData(asksGitHub ? values : { ...values, github_username: '' }, window.location.hostname));
 
     if (result.ok) {
       setStatus('success');
@@ -234,6 +237,14 @@ export default function ApplyForm({ jobId, jobTitle }: ApplyFormProps) {
         <TextField name="current_company" label="Current organisation" value={values.current_company}
           error={errors.current_company} onChange={(v) => update('current_company', v, 'current_company')}
           maxLength={150} autoComplete="organization" />
+        {asksGitHub && (
+          <div className="md:col-span-2">
+            <TextField name="github_username" label="GitHub link" value={values.github_username}
+              error={errors.github_username} onChange={(v) => update('github_username', v, 'github_username')}
+              maxLength={200} autoComplete="off"
+              hint="Paste your profile link, like https://github.com/your-name. We read only public repositories. No GitHub? That is fine; it is never a reason to turn down an application." />
+          </div>
+        )}
 
         <div className="md:col-span-2">
           <label htmlFor="apply-resume" className="mb-1.5 block text-sm font-semibold text-[#002309]">

@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
 import {
   buildApplicationFormData,
+  githubNameFrom,
   submitApplication,
   toExperienceMonths,
   validateApplication,
@@ -19,6 +20,7 @@ const valid = (overrides: Partial<ApplicationInput> = {}): ApplicationInput => (
   experience_extra_months: '6',
   current_job_title: '',
   current_company: '',
+  github_username: '',
   resume: pdf(),
   consent: true,
   company_fax: '',
@@ -137,5 +139,28 @@ describe('submitApplication', () => {
     });
     const result = await submitApplication('abc', body, failing);
     expect(result).toMatchObject({ ok: false, status: 0 });
+  });
+});
+
+describe('optional GitHub link (Director 3 Nov 2026)', () => {
+  it.each(['https://github.com/vijaygeetha568-ctrl', 'github.com/octo-cat/', '@octo-cat', 'octo-cat', ''])(
+    'accepts %j',
+    (v) => {
+      expect(validateApplication(valid({ github_username: v })).github_username).toBeUndefined();
+    },
+  );
+
+  it.each(['not a user/name', 'https://gitlab.com/someone', '-bad-'])('refuses %j', (v) => {
+    expect(validateApplication(valid({ github_username: v })).github_username).toMatch(/GitHub/);
+  });
+
+  it('reads the name out of a profile link', () => {
+    expect(githubNameFrom('https://github.com/vijaygeetha568-ctrl')).toBe('vijaygeetha568-ctrl');
+  });
+
+  it('sends the link only when given', () => {
+    expect(buildApplicationFormData(valid(), 'arts.jkkn.ac.in').has('github_username')).toBe(false);
+    const fd = buildApplicationFormData(valid({ github_username: 'https://github.com/octo-cat' }), 'arts.jkkn.ac.in');
+    expect(fd.get('github_username')).toBe('octo-cat');
   });
 });

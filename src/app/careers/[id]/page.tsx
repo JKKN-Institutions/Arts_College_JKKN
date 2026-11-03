@@ -167,7 +167,7 @@ export default async function CareerDetailPage({ params }: CareerDetailPageProps
               <h2 id="apply-heading" className="mb-4 text-2xl font-bold text-brand-green">
                 Apply for this role
               </h2>
-              <ApplyForm jobId={job.id} jobTitle={job.title} />
+              <ApplyForm jobId={job.id} jobTitle={job.title} asksGitHub={job.asks_github === true} />
             </section>
           </div>
         </div>

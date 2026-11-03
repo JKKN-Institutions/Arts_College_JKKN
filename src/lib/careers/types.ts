@@ -39,6 +39,8 @@ export interface PublicJob {
   posted_at: string | null;
   closes_at: string | null;
   salary: PublicJobSalary | null;
+  /** MyJKKN 2026-11-02: technology job, show the optional GitHub box. Absent on older releases. */
+  asks_github?: boolean;
 }
 
 export interface PublicJobsResponse {
