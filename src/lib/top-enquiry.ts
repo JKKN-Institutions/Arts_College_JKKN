@@ -36,7 +36,7 @@ export const PRESELECT_BY_SLUG: Readonly<Record<string, string>> = {
 }
 
 /** Self-financing programmes the CRM has no row for (DEP-60). */
-const SELF_FINANCE_NOT_IN_CRM: ReadonlySet<string> = new Set([
+export const SELF_FINANCE_NOT_IN_CRM: ReadonlySet<string> = new Set([
   "bcom-accounting-finance-self-finance",
   "bcom-banking-insurance-self-finance",
 ])

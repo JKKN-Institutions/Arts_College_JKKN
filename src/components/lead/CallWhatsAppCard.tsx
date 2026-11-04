@@ -4,6 +4,8 @@
 // course, so the parent reaches the admission office directly (user's choice 2026-11-02).
 // No new tracking code: ConversionTracking already counts tel: as phone_click and wa.me as
 // whatsapp_click on every page. The WhatsApp text names the course only - no personal data.
+// data-no-gate (2026-11-04): this card exists because the course form cannot record these
+// programmes, so the Call / WhatsApp gate (lib/call-gate.ts) must never put that form in front of it.
 
 import { MessageCircle, Phone } from "lucide-react"
 
@@ -32,6 +34,7 @@ export default function CallWhatsAppCard({ programmeName, className = "" }: Prop
       <div className="flex flex-col sm:flex-row gap-3">
         <a
           href={`tel:${ADMISSION_PHONE}`}
+          data-no-gate
           className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full bg-[#0b6d41] px-5 py-2.5 text-sm sm:text-base font-semibold text-white hover:bg-[#095c37]"
         >
           <Phone className="h-4 w-4" aria-hidden="true" />
@@ -40,6 +43,7 @@ export default function CallWhatsAppCard({ programmeName, className = "" }: Prop
         {/* Dark text: white on WhatsApp green is 1.98:1, below the 4.5:1 text minimum. */}
         <a
           href={`https://wa.me/${ADMISSION_PHONE.slice(1)}?text=${text}`}
+          data-no-gate
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full bg-[#25d366] px-5 py-2.5 text-sm sm:text-base font-semibold text-[#032816]"

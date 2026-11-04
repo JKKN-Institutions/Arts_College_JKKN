@@ -17,6 +17,11 @@ const poppins = Poppins({
 
 const SITE_URL = "https://cas.jkkn.ac.in";
 
+// ANALYTICS_OFF=1 at build time is for a LOCAL test build only (the 2026-11-04 test of the Call /
+// WhatsApp gate runs `next start` on this laptop). Vercel never sets it.
+const IS_PRODUCTION_BUILD =
+  process.env.NODE_ENV === "production" && process.env.ANALYTICS_OFF !== "1";
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -77,6 +82,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
   },
+  // iPhone Safari turns any phone number in plain text into a dial link of its own, which skipped
+  // the Call / WhatsApp form gate (2026-11-04, same as the Dental site: those taps must also go
+  // form -> dialer). Off here; EnquiryModal's plain-number tap listener takes those taps instead.
+  formatDetection: { telephone: false },
   robots: {
     index: true,
     follow: true,
@@ -98,9 +107,12 @@ export default function RootLayout({
   return (
     <html lang="en-IN" className={poppins.variable}>
       <body className={poppins.className} suppressHydrationWarning>
-        <GoogleAnalytics />
+        {/* Analytics load only in a real production build (2026-11-04): a local test - the Call /
+            WhatsApp gate test included - must not write test taps into the live GA4 property or the
+            Meta pixel. Vercel production and preview builds are unaffected. */}
+        {IS_PRODUCTION_BUILD && <GoogleAnalytics />}
         <ConversionTracking />
-        <MetaPixel />
+        {IS_PRODUCTION_BUILD && <MetaPixel />}
         <OrganizationSchema />
         <WebSiteSchema />
         <ClientLayoutWrapper>{children}</ClientLayoutWrapper>

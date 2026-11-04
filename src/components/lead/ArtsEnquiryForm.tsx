@@ -8,7 +8,14 @@
 // (PR #18) and ported here with the same Dental colours. The old see-through card sat on green with
 // white labels; now the form is a white card of its own. The three-step strip answers the parent's
 // first doubt ("what happens after I give my number?") and the trust line answers the second ("is
-// this college genuine?"). Fields, labels, button text and the CRM payload are unchanged.
+// this college genuine?"). Fields, labels and the CRM payload are unchanged.
+//
+// CALL / WHATSAPP (2026-11-04, ported from the Dental site where the user tested it live): the old
+// "Get a Call Back" button ended on a "Thank you, 24 hours" screen. Now every form shows two
+// buttons, "Call Counsellor" and "Chat on WhatsApp"; ONE tap sends the lead (keepalive POST to
+// /api/enquiry, the same server code) and opens the dialer / WhatsApp (components/lead/GateSubmit).
+// Inside a Call / WhatsApp gate (lib/call-gate.ts) only the matching button shows. The server action
+// stays as the no-JS path.
 
 "use client"
 
@@ -16,9 +23,11 @@ import { useActionState, useEffect, useId, useRef } from "react"
 import { CheckCircle2, ChevronDown } from "lucide-react"
 import { submitArtsEnquiry, type ArtsEnquiryState } from "@/app/actions/arts-enquiry"
 import CampaignFields from "@/components/lead/CampaignFields"
+import { GateButtons, GateOpenedPanel, gateSteps, useGateSubmit } from "@/components/lead/GateSubmit"
 import { ARTS_PROGRAMMES, programmeLabel } from "@/lib/arts-programmes"
 import { sendGaEvent } from "@/lib/ga-event"
 import { ENQUIRY_DONE_KEY, writeStore } from "@/lib/enquiry-store"
+import type { GateIntent } from "@/lib/call-gate"
 
 const ADMISSION_PHONE = "+919345855001"
 const ADMISSION_PHONE_DISPLAY = "+91 93458 55001"
@@ -46,14 +55,19 @@ type Props = {
   compact?: boolean
   /** No white card of its own — for a host that already is the white card (homepage hero, popup). */
   bare?: boolean
+  /** Call / WhatsApp gate (lib/call-gate.ts): ONE button, "Call Counsellor" or "Chat on WhatsApp".
+   *  Left out (every page form and the Enquire Now popup): TWO buttons, "Call Counsellor" +
+   *  "Chat on WhatsApp". Either way ONE tap sends the lead and opens the app. */
+  gate?: GateIntent
 }
 
 export default function ArtsEnquiryForm({
   sourcePage,
   defaultProgrammeId,
-  heading = "Get a Call Back",
+  heading = "Call or WhatsApp our admission team",
   compact = false,
   bare = false,
+  gate,
 }: Props) {
   // Unique per instance: the homepage can show this form twice (hero card + popup).
   const uid = useId()
@@ -65,6 +79,7 @@ export default function ArtsEnquiryForm({
   const fired = useRef(false)
 
   // Fires once, only on a CRM-accepted submit — not on click, not before the round trip.
+  // (No-JS path only since 2026-11-04: with JavaScript the buttons go through useGateSubmit below.)
   useEffect(() => {
     if (!state?.success || fired.current) return
     fired.current = true
@@ -92,9 +107,44 @@ export default function ArtsEnquiryForm({
     })
   }, [state, sourcePage])
 
+  // Same-tap Call / WhatsApp submit. The GA4 lead events keep the 2026-11-02 shape above (same names,
+  // same params, "program" label, a 409 as lead_form_duplicate), so they stay one series.
+  const gateSubmit = useGateSubmit({
+    endpoint: "/api/enquiry",
+    gate,
+    gaParams: { source_page: sourcePage },
+    onAccepted: (answer) => {
+      sendGaEvent(answer.tracking?.duplicate ? "lead_form_duplicate" : "lead_form_submit", {
+        form_name: "arts_enquiry",
+        source_page: sourcePage,
+        program: programmeLabel(answer.tracking?.programme_id),
+        destination: "crm",
+        page_path: window.location.pathname,
+      })
+    },
+    onFailed: () => {
+      sendGaEvent("lead_form_error", {
+        form_name: "arts_enquiry",
+        source_page: sourcePage,
+        page_path: window.location.pathname,
+      })
+    },
+  })
+
   const surface = bare
     ? ""
     : "bg-white rounded-[20px] shadow-[0_18px_40px_rgba(3,40,22,0.35)] p-4 sm:p-6"
+
+  if (gateSubmit.phase.step === "opened") {
+    return (
+      <GateOpenedPanel
+        intent={gateSubmit.phase.intent}
+        result={gateSubmit.phase.result}
+        surface={surface}
+        onRetry={gateSubmit.retry}
+      />
+    )
+  }
 
   if (state?.success) {
     return (
@@ -130,11 +180,15 @@ export default function ArtsEnquiryForm({
     "w-full bg-white border-[1.5px] border-[#75867e] rounded-xl px-4 py-3 text-base text-[#1f2a24] placeholder:text-[#5f6b66] focus:outline-none focus:border-[#0b6d41] focus:ring-[3px] focus:ring-[#0b6d41]/20"
   const labelCls = "block text-[#032816] text-sm font-semibold mb-1.5"
   const errCls = "text-[#b42318] text-xs mt-1"
-  // No-break space keeps "24 hrs" on one line: at 375 px the strip box broke it as "24 / hrs".
-  const steps = [compact ? "Fill 3 details" : "Fill your details", "We call in 24 hrs", "Get fee and admission details"]
+  const steps = gateSteps(gate, compact ? "Fill 3 details" : "Fill your details")
 
   return (
-    <form action={formAction} className={`${surface} space-y-4 text-left`}>
+    <form
+      action={formAction}
+      onSubmit={gateSubmit.onSubmit}
+      onInput={gateSubmit.onInput}
+      className={`${surface} space-y-4 text-left`}
+    >
       <input type="hidden" name="source_page" value={sourcePage} />
       <CampaignFields />
 
@@ -149,7 +203,13 @@ export default function ArtsEnquiryForm({
         className="absolute left-[-9999px] h-0 w-0 opacity-0"
       />
 
-      <h2 className="sr-only">{heading}</h2>
+      <h2 className="sr-only">
+        {gate === "call"
+          ? "Call our admission counsellor"
+          : gate === "whatsapp"
+            ? "Chat with us on WhatsApp"
+            : heading}
+      </h2>
 
       <ol aria-label="What happens next" className="grid grid-cols-3 gap-1.5">
         {steps.map((step, i) => (
@@ -269,13 +329,10 @@ export default function ArtsEnquiryForm({
       </div>
       )}
 
-      <button
-        type="submit"
-        disabled={isPending}
-        className="w-full bg-[#0b6d41] hover:bg-[#095a36] disabled:opacity-60 text-white font-bold py-4 rounded-full text-base transition-colors"
-      >
-        {isPending ? "Submitting…" : compact ? "Get a Call Back" : "Submit Enquiry — Get a Call Back"}
-      </button>
+      {/* One tap = lead + app. Two buttons on every page form and the Enquire Now popup (the old
+          "Get a Call Back" ended on a 24-hour thank-you screen); one inside a Call / WhatsApp gate.
+          The "Or call us directly" links went with it (2026-11-04): the form is the way in. */}
+      <GateButtons gate={gate} disabled={isPending} onChoose={gateSubmit.choose} />
 
       {state && !state.success && state.error && (
         <p className="text-[#b42318] text-sm text-center" role="alert">
@@ -294,22 +351,6 @@ export default function ArtsEnquiryForm({
           </li>
         ))}
       </ul>
-
-      <p className="text-center text-[#4b5563] text-sm">
-        Or call us directly:{" "}
-        <a href={`tel:${ADMISSION_PHONE}`} className="text-[#0b6d41] font-semibold underline">
-          {ADMISSION_PHONE_DISPLAY}
-        </a>{" "}
-        •{" "}
-        <a
-          href={`https://wa.me/${ADMISSION_PHONE.replace("+", "")}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#0b6d41] font-semibold underline"
-        >
-          WhatsApp
-        </a>
-      </p>
 
       {compact && (
         <p className="text-center text-[#5f6b66] text-xs">

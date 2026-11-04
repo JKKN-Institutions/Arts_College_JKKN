@@ -23,6 +23,12 @@
 // LOOK — mockup #7 "What Happens Next" (user's pick 2026-10-22), the same white card, 3-step
 // strip, trust line and Dental colours as ArtsEnquiryForm, so the contact page and the homepage
 // show one form. The action (city-enquiry.ts), fields and GA4 events are unchanged.
+//
+// CALL / WHATSAPP (2026-11-04, same change as ArtsEnquiryForm): two buttons, "Call Counsellor" and
+// "Chat on WhatsApp"; ONE tap sends the lead (keepalive POST to /api/city-enquiry, the same server
+// code as submitCityEnquiry) and opens the dialer / WhatsApp (components/lead/GateSubmit). The
+// server action stays as the no-JS path. A CRM-accepted lead is now remembered on this browser
+// (enquiry-store), like the homepage form, so the Call / WhatsApp gate does not stop that parent again.
 
 'use client'
 
@@ -31,6 +37,7 @@ import { CheckCircle2, ChevronDown } from 'lucide-react'
 import { submitCityEnquiry, type CityEnquiryState } from '@/app/actions/city-enquiry'
 import CampaignFields from '@/components/lead/CampaignFields'
 import { TRUST } from '@/components/lead/ArtsEnquiryForm'
+import { GateButtons, GateOpenedPanel, gateSteps, useGateSubmit } from '@/components/lead/GateSubmit'
 import { ARTS_PROGRAMMES, programmeLabel } from '@/lib/arts-programmes'
 import { sendGaEvent } from '@/lib/ga-event'
 
@@ -38,8 +45,7 @@ const ADMISSION_PHONE = '+919345855001'
 const ADMISSION_PHONE_DISPLAY = '+91 93458 55001'
 
 // Full form, so step 1 is "Fill your details" (the compact form says "Fill 3 details").
-// No-break space keeps "24 hrs" on one line at 375 px.
-const STEPS = ['Fill your details', 'We call in 24 hrs', 'Get fee and admission details']
+const STEPS = gateSteps(undefined, 'Fill your details')
 
 type Props = {
   /** Display name of the city this page targets, e.g. "Namakkal". */
@@ -59,6 +65,7 @@ export default function CityEnquiryForm({ city, bare = false }: Props) {
   // NO PII, and that is not a style preference: name and phone are collected by this
   // form and deliberately never leave the page. Only city, programme and path go to
   // GA4 — the same rule the 2026-08-08 DEP-14 component was written under.
+  // (No-JS path only since 2026-11-04: with JavaScript the buttons go through useGateSubmit below.)
   useEffect(() => {
     if (!state?.success || fired.current) return
     fired.current = true
@@ -86,9 +93,42 @@ export default function CityEnquiryForm({ city, bare = false }: Props) {
     })
   }, [state, city])
 
+  // Same-tap Call / WhatsApp submit; the GA4 lead events keep the shape above (one series).
+  const gateSubmit = useGateSubmit({
+    endpoint: '/api/city-enquiry',
+    gaParams: { source_page: `city-${city.toLowerCase()}`, city },
+    onAccepted: (answer) => {
+      sendGaEvent(answer.tracking?.duplicate ? 'lead_form_duplicate' : 'lead_form_submit', {
+        form_name: 'city_enquiry',
+        city,
+        program: programmeLabel(answer.tracking?.programme_id),
+        destination: 'crm',
+        page_path: window.location.pathname,
+      })
+    },
+    onFailed: () => {
+      sendGaEvent('lead_form_error', {
+        form_name: 'city_enquiry',
+        city,
+        page_path: window.location.pathname,
+      })
+    },
+  })
+
   const surface = bare
     ? ''
     : 'bg-white rounded-[20px] shadow-[0_18px_40px_rgba(3,40,22,0.35)] p-4 sm:p-6'
+
+  if (gateSubmit.phase.step === 'opened') {
+    return (
+      <GateOpenedPanel
+        intent={gateSubmit.phase.intent}
+        result={gateSubmit.phase.result}
+        surface={surface}
+        onRetry={gateSubmit.retry}
+      />
+    )
+  }
 
   if (state?.success) {
     return (
@@ -125,7 +165,12 @@ export default function CityEnquiryForm({ city, bare = false }: Props) {
   const errCls = 'text-[#b42318] text-xs mt-1'
 
   return (
-    <form action={formAction} className={`${surface} space-y-4 text-left`}>
+    <form
+      action={formAction}
+      onSubmit={gateSubmit.onSubmit}
+      onInput={gateSubmit.onInput}
+      className={`${surface} space-y-4 text-left`}
+    >
       <input type="hidden" name="city" value={city} />
       <CampaignFields />
 
@@ -241,13 +286,9 @@ export default function CityEnquiryForm({ city, bare = false }: Props) {
         />
       </div>
 
-      <button
-        type="submit"
-        disabled={isPending}
-        className="w-full bg-[#0b6d41] hover:bg-[#095a36] disabled:opacity-60 text-white font-bold py-4 rounded-full text-base transition-colors"
-      >
-        {isPending ? 'Submitting…' : 'Submit Enquiry — Get a Call Back'}
-      </button>
+      {/* One tap = lead + app (2026-11-04). The "Or call us directly" links went with the old
+          "Get a Call Back" button: the form is the way in. */}
+      <GateButtons disabled={isPending} onChoose={gateSubmit.choose} />
 
       {state && !state.success && state.error && (
         <p className="text-[#b42318] text-sm text-center" role="alert">
@@ -266,22 +307,6 @@ export default function CityEnquiryForm({ city, bare = false }: Props) {
           </li>
         ))}
       </ul>
-
-      <p className="text-center text-[#4b5563] text-sm">
-        Or call us directly:{' '}
-        <a href={`tel:${ADMISSION_PHONE}`} className="text-[#0b6d41] font-semibold underline">
-          {ADMISSION_PHONE_DISPLAY}
-        </a>{' '}
-        •{' '}
-        <a
-          href={`https://wa.me/${ADMISSION_PHONE.replace('+', '')}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#0b6d41] font-semibold underline"
-        >
-          WhatsApp
-        </a>
-      </p>
     </form>
   )
 }

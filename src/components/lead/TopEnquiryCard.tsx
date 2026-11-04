@@ -35,7 +35,9 @@ export default function TopEnquiryCard({
       {aidedNote && (
         <p className="mt-4 text-sm text-gray-600">
           Looking for an aided programme? Call{" "}
-          <a href="tel:+919345855001" className="font-semibold text-[#0b6d41] underline">
+          {/* data-no-gate (2026-11-04): the CRM has no aided programme, so this call must not
+              open the Call / WhatsApp course form (lib/call-gate.ts) - it dials directly. */}
+          <a href="tel:+919345855001" data-no-gate className="font-semibold text-[#0b6d41] underline">
             +91 93458 55001
           </a>
         </p>
