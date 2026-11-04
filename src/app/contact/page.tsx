@@ -95,9 +95,9 @@ export default function ContactPage() {
             <div className="space-y-6 order-first lg:order-none">
               {/* Online Admission — enquiry form, posts to the CRM (DEP-34) */}
               <div className="bg-brand-green rounded-xl p-8 text-white">
-                <h2 className="text-2xl font-bold mb-3">Get a Call Back</h2>
+                <h2 className="text-2xl font-bold mb-3">Talk to Our Admission Team</h2>
                 <p className="text-white/80 text-sm md:text-base mb-3">
-                  Leave your details and our admission team will contact you within 24 hours.
+                  Leave your details, then call or WhatsApp our admission team right away.
                 </p>
                 {/* The phone card now sits under this form on phones, so the number stays in the first
                     screen here: /contact had 9 phone_click and 1 lead_form_submit in GA4 2026-08-01..11-01. */}
