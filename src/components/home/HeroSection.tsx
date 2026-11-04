@@ -85,15 +85,16 @@ export default function HeroSection() {
             </div> */}
 
             {/* CTA Buttons - Compact */}
-            <p className="lg:hidden text-[13px] sm:text-[15px] text-white/90">Fill 3 details. Our admission team will call you within 24 hours.</p>
+            <p className="lg:hidden text-[13px] sm:text-[15px] text-white/90">Fill 3 details, then talk to our admission counsellor right away.</p>
             <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-3">
               <EnquiryButton
-                sourcePage="home-hero-btn"
+                sourcePage="call-gate-home-hero"
+                intent="call"
                 fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_campaign=components-herosection"
                 fallbackLabel="Apply for 2026-27"
                 className="group bg-brand-yellow text-brand-green px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold text-[14px] sm:text-[15px] hover:bg-yellow-300 transition-all duration-300 shadow-2xl hover:shadow-yellow-500/50 hover:scale-105 transform text-center inline-flex items-center justify-center gap-2 min-h-[44px]"
               >
-                Get a Call Back
+                Call Counsellor
                 <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 group-hover:translate-x-1 transition-transform" />
               </EnquiryButton>
               <a

@@ -686,12 +686,13 @@ export default function Home() {
           <div className="text-center">
             <p className="text-[14px] text-gray-500 mb-4">Fee structures are subject to change. Contact admissions for the latest confirmed amounts.</p>
             <EnquiryButton
-              sourcePage="home-fees"
+              sourcePage="call-gate-home-fees"
+              intent="call"
               fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_campaign=home"
               fallbackLabel="Apply Now — Check Eligibility"
               className="inline-block bg-[#0b6d41] hover:bg-[#095c37] text-white px-8 py-3 rounded-full text-[16px] leading-[24px] font-semibold transition"
             >
-              Get a Call Back
+              Call Counsellor
             </EnquiryButton>
           </div>
         </div>
@@ -1037,12 +1038,13 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <EnquiryButton
-              sourcePage="home-cta"
+              sourcePage="call-gate-home-cta"
+              intent="call"
               fallbackHref="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_campaign=home"
               fallbackLabel="Apply for Admission"
               className="bg-brand-green text-white px-8 py-4 rounded-full text-[16px] leading-[24px] font-semibold hover:bg-[#095c37] transition text-center"
             >
-              Get a Call Back
+              Call Counsellor
             </EnquiryButton>
             <a href="/pdf/brochure.pdf" download className="bg-white text-brand-green px-8 py-4 rounded-full text-[16px] leading-[24px] font-semibold hover:bg-gray-100 transition border border-gray-300">
               Download Brochure
