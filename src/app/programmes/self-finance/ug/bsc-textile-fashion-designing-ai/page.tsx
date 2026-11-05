@@ -1,5 +1,6 @@
 'use client';
 
+import BrochureWhatsAppLink from "@/components/lead/BrochureWhatsAppLink";
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Users, Award, Briefcase, GraduationCap, Building2, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, Palette, Scissors, Ruler, Shirt, PenTool, Layers, TrendingUp, Calendar, UserCheck, DollarSign, Database, LineChart, Cpu, Brain, AlertCircle, MailQuestion } from 'lucide-react';
@@ -835,6 +836,7 @@ export default function BSCTextileFashionDesigningAIPage() {
                   <a href="/pdf/brochure.pdf" download className="bg-white border-2 border-brand-green hover:bg-brand-green text-brand-green hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1">
                     Download Brochure
                   </a>
+                  <BrochureWhatsAppLink className="bg-white border-2 border-brand-green hover:bg-brand-green text-brand-green hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1" />
                 </div>
               </div>
             </RevealSection>

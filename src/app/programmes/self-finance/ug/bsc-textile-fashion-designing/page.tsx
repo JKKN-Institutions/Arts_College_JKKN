@@ -1,5 +1,6 @@
 ﻿'use client';
 
+import BrochureWhatsAppLink from "@/components/lead/BrochureWhatsAppLink";
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Users, Award, Briefcase, GraduationCap, Building2, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, Palette, Scissors, Ruler, Shirt, PenTool, Layers, TrendingUp, Calendar, UserCheck, DollarSign, Database, LineChart } from 'lucide-react';
@@ -764,6 +765,7 @@ export default function BSCTextileFashionDesigningPage() {
                   <a href="/pdf/brochure.pdf" download className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-brand-green border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all">
                     Download Brochure
                   </a>
+                  <BrochureWhatsAppLink className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-brand-green border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all" />
                 </div>
                 <p className="text-gray-600 mt-6">
                   <a href="/admissions/bsc-textile-fashion-designing-self-finance" className="text-brand-green underline">B.Sc Textile and Fashion Designing admission 2026-27</a>

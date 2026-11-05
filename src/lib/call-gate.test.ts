@@ -1,6 +1,8 @@
 import { describe, expect, it } from "vitest"
 import {
+  BROCHURE_WHATSAPP_HREF,
   gateIntentForHref,
+  gateTopicFor,
   isAdminPath,
   isGateNumber,
   isUngatedPath,
@@ -124,6 +126,27 @@ describe("programmeForPath", () => {
     ]) {
       expect(VALID_PROGRAMME_IDS.has(programmeForPath(path) ?? "")).toBe(true)
     }
+  })
+})
+
+describe("brochure topic (lead option 4, 2026-11-05)", () => {
+  it("only the word brochure is a topic", () => {
+    expect(gateTopicFor("brochure")).toBe("brochure")
+    expect(gateTopicFor("Brochure")).toBeUndefined()
+    expect(gateTopicFor("fees")).toBeUndefined()
+    expect(gateTopicFor(null)).toBeUndefined()
+  })
+  it("asks for the brochure in the WhatsApp text, still with course + page ref only", () => {
+    const url = whatsappGateUrl(BCA, "/programmes/self-finance/ug/bca", "brochure")
+    const text = decodeURIComponent(url.split("?text=")[1])
+    expect(text.startsWith("Hi, BCA brochure and admission details venum. Ref: WEB-ARTS-")).toBe(true)
+  })
+  it("leaves the text unchanged without a topic", () => {
+    expect(decodeURIComponent(whatsappGateUrl(BCA, "/contact", undefined).split("?text=")[1])).toBe("Hi, BCA admission details venum. Ref: WEB-ARTS-contact")
+  })
+  it("the brochure link itself is a gated WhatsApp link", () => {
+    expect(gateIntentForHref(BROCHURE_WHATSAPP_HREF)).toBe("whatsapp")
+    expect(decodeURIComponent(BROCHURE_WHATSAPP_HREF.split("?text=")[1])).toBe("Hi, Arts and Science brochure venum. Ref: WEB-ARTS-brochure")
   })
 })
 

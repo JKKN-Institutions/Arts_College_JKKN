@@ -16,7 +16,7 @@
 import { useRef, useState, type FormEvent } from "react"
 import { ENQUIRY_DONE_KEY, writeStore } from "@/lib/enquiry-store"
 import { sendGaEvent } from "@/lib/ga-event"
-import { GATE_PHONE_DISPLAY, telGateUrl, whatsappGateUrl, type GateIntent } from "@/lib/call-gate"
+import { GATE_PHONE_DISPLAY, telGateUrl, whatsappGateUrl, type GateIntent, type GateTopic } from "@/lib/call-gate"
 
 /** What /api/enquiry and /api/city-enquiry answer - the same object their server actions return. */
 export type GateAnswer = {
@@ -32,12 +32,12 @@ type GatePhase =
 const eventFor = (intent: GateIntent) => (intent === "call" ? "gate_call" : "gate_wa")
 
 /** Opens the dialer / WhatsApp. Called inside the visitor's tap, and again from the fallback button. */
-function openApp(programmeId: string, intent: GateIntent) {
+function openApp(programmeId: string, intent: GateIntent, topic?: GateTopic) {
   if (intent === "call") {
     window.location.assign(telGateUrl)
     return
   }
-  const url = whatsappGateUrl(programmeId, window.location.pathname)
+  const url = whatsappGateUrl(programmeId, window.location.pathname, topic)
   // A new tab keeps this page (and the request still in flight) alive; a blocked tab falls back to
   // the same tab, where keepalive still lets the request finish.
   const tab = window.open(url, "_blank")
@@ -50,6 +50,8 @@ type Options = {
   endpoint: string
   /** Inside a Call / WhatsApp gate: the one app this form opens. Left out: the button decides. */
   gate?: GateIntent
+  /** What a WhatsApp gate was opened for (e.g. the brochure) - changes the WhatsApp text only. */
+  topic?: GateTopic
   /** Non-personal GA4 params the gate events carry (source_page or city). Never a name or phone. */
   gaParams: Record<string, string>
   /** The CRM accepted the lead - fire the form's own lead_form_submit / lead_form_duplicate. */
@@ -58,7 +60,7 @@ type Options = {
   onFailed: () => void
 }
 
-export function useGateSubmit({ endpoint, gate, gaParams, onAccepted, onFailed }: Options) {
+export function useGateSubmit({ endpoint, gate, topic, gaParams, onAccepted, onFailed }: Options) {
   const [phase, setPhase] = useState<GatePhase>({ step: "form" })
   // Which of the two buttons was pressed. Read from SubmitEvent.submitter where the browser has it;
   // this ref (set on the button's own click) covers the rest. Enter in a box = the first button, Call.
@@ -99,7 +101,7 @@ export function useGateSubmit({ endpoint, gate, gaParams, onAccepted, onFailed }
     const request = fetch(endpoint, { method: "POST", body, keepalive: true })
 
     sendGaEvent(`${gateEvent}_launch`, params)
-    openApp(programmeId, intent)
+    openApp(programmeId, intent, topic)
     setPhase({ step: "opened", result: "waiting", programmeId, intent })
 
     request
@@ -121,7 +123,7 @@ export function useGateSubmit({ endpoint, gate, gaParams, onAccepted, onFailed }
   const retry = () => {
     if (phase.step !== "opened") return
     sendGaEvent(`${eventFor(phase.intent)}_fallback`, { ...gaParams, page_path: window.location.pathname })
-    openApp(phase.programmeId, phase.intent)
+    openApp(phase.programmeId, phase.intent, topic)
   }
 
   return { phase, choose, onInput, onSubmit, retry }

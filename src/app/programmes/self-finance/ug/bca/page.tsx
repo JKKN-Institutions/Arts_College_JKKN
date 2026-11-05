@@ -1,5 +1,6 @@
 'use client';
 
+import BrochureWhatsAppLink from "@/components/lead/BrochureWhatsAppLink";
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import {
@@ -1049,6 +1050,7 @@ export default function BCAPage() {
                 <a href="/pdf/brochure.pdf" download className="bg-transparent bg-white hover:bg-brand-cream text-brand-green px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1">
                   Download Brochure
                 </a>
+                <BrochureWhatsAppLink className="bg-transparent bg-white hover:bg-brand-cream text-brand-green px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-2xl hover:-translate-y-1" />
               </div>
             </div>
           </RevealSection>

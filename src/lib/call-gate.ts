@@ -127,11 +127,27 @@ function courseShort(programmeId: string): string {
  * WhatsApp link with the course and a page reference typed into the box.
  * No name and no phone in it, ever: a link like this can end up in analytics or logs.
  */
-export function whatsappGateUrl(programmeId: string, pathname: string): string {
+// Lead option 4 (2026-11-05): a WhatsApp link can ask for something specific with data-gate-topic.
+// Only "brochure" today: the WhatsApp text then says so, and the CRM source tag reads wa-gate-brochure-<page>,
+// so the counsellor knows to send the brochure. Any other value is ignored.
+export type GateTopic = "brochure"
+
+export function gateTopicFor(value: string | null | undefined): GateTopic | undefined {
+  return value === "brochure" ? "brochure" : undefined
+}
+
+export function whatsappGateUrl(programmeId: string, pathname: string, topic?: GateTopic): string {
   const ref = pageTag(pathname).replace(/^-/, "").replace(/[^a-z0-9-]/gi, "").slice(0, 30) || "home"
-  const text = `Hi, ${courseShort(programmeId)} admission details venum. Ref: WEB-ARTS-${ref}`
+  const ask = topic === "brochure" ? "brochure and admission details" : "admission details"
+  const text = `Hi, ${courseShort(programmeId)} ${ask} venum. Ref: WEB-ARTS-${ref}`
   return `https://wa.me/${GATE_PHONE.replace("+", "")}?text=${encodeURIComponent(text)}`
 }
+
+/** href of a brochure WhatsApp link. The gate replaces it with its own text; it is used as it is only when
+ *  the gate steps aside (a visitor who already enquired on this browser). */
+export const BROCHURE_WHATSAPP_HREF = `https://wa.me/${GATE_PHONE.replace("+", "")}?text=${encodeURIComponent(
+  "Hi, Arts and Science brochure venum. Ref: WEB-ARTS-brochure",
+)}`
 
 export const telGateUrl = `tel:${GATE_PHONE}`
 

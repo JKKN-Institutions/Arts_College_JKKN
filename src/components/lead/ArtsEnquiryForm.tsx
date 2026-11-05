@@ -27,7 +27,7 @@ import { GateButtons, GateOpenedPanel, gateSteps, useGateSubmit } from "@/compon
 import { ARTS_PROGRAMMES, programmeLabel } from "@/lib/arts-programmes"
 import { sendGaEvent } from "@/lib/ga-event"
 import { ENQUIRY_DONE_KEY, writeStore } from "@/lib/enquiry-store"
-import type { GateIntent } from "@/lib/call-gate"
+import type { GateIntent, GateTopic } from "@/lib/call-gate"
 
 const ADMISSION_PHONE = "+919345855001"
 const ADMISSION_PHONE_DISPLAY = "+91 93458 55001"
@@ -59,6 +59,8 @@ type Props = {
    *  Left out (every page form and the Enquire Now popup): TWO buttons, "Call Counsellor" +
    *  "Chat on WhatsApp". Either way ONE tap sends the lead and opens the app. */
   gate?: GateIntent
+  /** What a WhatsApp gate was opened for (lib/call-gate.ts GateTopic), e.g. the brochure. */
+  topic?: GateTopic
 }
 
 export default function ArtsEnquiryForm({
@@ -68,6 +70,7 @@ export default function ArtsEnquiryForm({
   compact = false,
   bare = false,
   gate,
+  topic,
 }: Props) {
   // Unique per instance: the homepage can show this form twice (hero card + popup).
   const uid = useId()
@@ -112,6 +115,7 @@ export default function ArtsEnquiryForm({
   const gateSubmit = useGateSubmit({
     endpoint: "/api/enquiry",
     gate,
+    topic,
     gaParams: { source_page: sourcePage },
     onAccepted: (answer) => {
       sendGaEvent(answer.tracking?.duplicate ? "lead_form_duplicate" : "lead_form_submit", {

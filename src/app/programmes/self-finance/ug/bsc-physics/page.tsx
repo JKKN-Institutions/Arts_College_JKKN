@@ -1,5 +1,6 @@
 ﻿'use client';
 
+import BrochureWhatsAppLink from "@/components/lead/BrochureWhatsAppLink";
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Users, Award, Briefcase, GraduationCap, Building2, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, Atom, Microscope, FlaskConical, Database, Zap, Brain, Calendar, UserCheck, DollarSign, TrendingUp } from 'lucide-react';
@@ -773,6 +774,7 @@ export default function BScPhysicsPage() {
                   <a href="/pdf/brochure.pdf" download className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-brand-green border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all">
                     Download Brochure
                   </a>
+                  <BrochureWhatsAppLink className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-brand-green border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all" />
                 </div>
                 <p className="mt-6 text-gray-600">
                   <a href="/admissions/bsc-physics-self-finance" className="text-brand-green underline">B.Sc Physics admission 2026-27</a>

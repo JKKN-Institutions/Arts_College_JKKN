@@ -1,5 +1,6 @@
 ﻿'use client';
 
+import BrochureWhatsAppLink from "@/components/lead/BrochureWhatsAppLink";
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Users, Award, Briefcase, GraduationCap, CheckCircle2, Clock, FileText, ChevronDown, ArrowRight, Sparkles, Camera, Video, Palette, Film, Monitor, Globe, DollarSign } from 'lucide-react';
@@ -737,6 +738,7 @@ export default function BScVisualCommunicationPage() {
                 <a href="/pdf/brochure.pdf" download className="inline-flex items-center gap-2 bg-transparent hover:bg-brand-green text-brand-green hover:text-white border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all">
                   Download Brochure
                 </a>
+                <BrochureWhatsAppLink className="inline-flex items-center gap-2 bg-transparent hover:bg-brand-green text-brand-green hover:text-white border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all" />
               </div>
               <p className="text-gray-600">
                 <a href="/admissions/bsc-visual-communication-self-finance" className="text-brand-green underline">B.Sc Visual Communication admission 2026-27</a>

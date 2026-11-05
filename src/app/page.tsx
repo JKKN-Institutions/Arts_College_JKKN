@@ -1,3 +1,4 @@
+import BrochureWhatsAppLink from "@/components/lead/BrochureWhatsAppLink";
 import type { Metadata } from 'next';
 import {
   GraduationCap,
@@ -1049,6 +1050,7 @@ export default function Home() {
             <a href="/pdf/brochure.pdf" download className="bg-white text-brand-green px-8 py-4 rounded-full text-[16px] leading-[24px] font-semibold hover:bg-gray-100 transition border border-gray-300">
               Download Brochure
             </a>
+            <BrochureWhatsAppLink className="bg-white text-brand-green px-8 py-4 rounded-full text-[16px] leading-[24px] font-semibold hover:bg-gray-100 transition border border-gray-300" />
           </div>
         </div>
       </section>

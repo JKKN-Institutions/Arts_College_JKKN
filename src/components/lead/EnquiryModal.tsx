@@ -23,6 +23,7 @@ import { campaignTagsSnapshot, parseCampaignTags, tagApplyHref } from "@/lib/cam
 import { ENQUIRY_DONE_KEY, readStore } from "@/lib/enquiry-store"
 import {
   gateIntentForHref,
+  gateTopicFor,
   isAdminPath,
   isGateNumber,
   isUngatedPath,
@@ -31,6 +32,7 @@ import {
   programmeForPath,
   telUrlFor,
   type GateIntent,
+  type GateTopic,
 } from "@/lib/call-gate"
 
 /** The text node + character offset under a tap, in Chrome / Safari (caretRangeFromPoint) and
@@ -60,9 +62,9 @@ const EDITABLE =
 const APPLY_HREF = "https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in"
 const SITE_HOST = "cas.jkkn.ac.in"
 
-type OpenOptions = { withPoster?: boolean; programmeId?: string; intent?: GateIntent }
+type OpenOptions = { withPoster?: boolean; programmeId?: string; intent?: GateIntent; topic?: GateTopic }
 type EnquiryModalApi = { openEnquiry: (sourcePage: string, options?: OpenOptions) => void }
-type OpenState = { sourcePage: string; withPoster: boolean; programmeId?: string; intent?: GateIntent }
+type OpenState = { sourcePage: string; withPoster: boolean; programmeId?: string; intent?: GateIntent; topic?: GateTopic }
 
 /** GA4 event-name stem per gate: event NAMES split call from WhatsApp in every report, with no
  *  custom dimension to register first. */
@@ -88,6 +90,7 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
       withPoster: !!options?.withPoster,
       programmeId: options?.programmeId,
       intent: options?.intent,
+      topic: options?.topic,
     })
   }, [])
 
@@ -146,8 +149,10 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
         return
       }
       e.preventDefault()
-      const source = `${intent === "call" ? "call-gate" : "wa-gate"}${pageTag(pathname)}`.slice(0, 60)
-      openEnquiry(source, { intent, programmeId: programmeForPath(pathname) })
+      const topic = intent === "whatsapp" ? gateTopicFor(link.getAttribute("data-gate-topic")) : undefined
+      const kind = intent === "call" ? "call-gate" : topic ? `wa-gate-${topic}` : "wa-gate"
+      const source = `${kind}${pageTag(pathname)}`.slice(0, 60)
+      openEnquiry(source, { intent, programmeId: programmeForPath(pathname), topic })
     }
     document.addEventListener("click", onClick, true)
     return () => document.removeEventListener("click", onClick, true)
@@ -226,6 +231,7 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
           withPoster={open.withPoster}
           programmeId={open.programmeId}
           intent={open.intent}
+          topic={open.topic}
           onClose={close}
         />
       )}
@@ -246,12 +252,14 @@ function EnquiryDialog({
   withPoster,
   programmeId,
   intent,
+  topic,
   onClose,
 }: {
   sourcePage: string
   withPoster: boolean
   programmeId?: string
   intent?: GateIntent
+  topic?: GateTopic
   onClose: () => void
 }) {
   const title =
@@ -318,7 +326,7 @@ function EnquiryDialog({
           </div>
 
           <div className={withPoster ? "col-span-2 md:col-span-1 md:col-start-2 md:row-start-2 md:self-start" : ""}>
-            <ArtsEnquiryForm sourcePage={sourcePage} defaultProgrammeId={programmeId} compact bare gate={intent} />
+            <ArtsEnquiryForm sourcePage={sourcePage} defaultProgrammeId={programmeId} compact bare gate={intent} topic={topic} />
             {/* The full jkkn.ai application stays one tap away for people ready to apply now
                 (user's choice 2026-10-22: apply links open this form, jkkn.ai becomes a small link).
                 Not in a Call / WhatsApp gate: there the visitor came to talk, not to apply. */}

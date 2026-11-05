@@ -1,5 +1,6 @@
 'use client';
 
+import BrochureWhatsAppLink from "@/components/lead/BrochureWhatsAppLink";
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Users, Award, Briefcase, GraduationCap, Building2, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, TrendingUp, BarChart, DollarSign, UserCheck, LineChart, Lightbulb, ShoppingCart, Rocket, Package, Calendar } from 'lucide-react';
@@ -819,6 +820,7 @@ export default function BBAPage() {
                   <a href="/pdf/brochure.pdf" download className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-brand-green border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all">
                     Download Brochure
                   </a>
+                  <BrochureWhatsAppLink className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-brand-green border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all" />
                 </div>
               </div>
             </RevealSection>

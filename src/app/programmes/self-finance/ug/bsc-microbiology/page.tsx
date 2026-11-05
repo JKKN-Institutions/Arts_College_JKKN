@@ -1,5 +1,6 @@
 ﻿'use client';
 
+import BrochureWhatsAppLink from "@/components/lead/BrochureWhatsAppLink";
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Users, Award, Briefcase, Library, GraduationCap, Building2, Lightbulb, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, Microscope, FlaskConical, TestTube, Dna, Activity, Pill, DollarSign } from 'lucide-react';
@@ -747,6 +748,7 @@ export default function BSCMicrobiologyPage() {
                 <a href="/pdf/brochure.pdf" download className="inline-flex items-center gap-2 bg-transparent hover:bg-brand-green text-brand-green hover:text-white border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all">
                   Download Brochure
                 </a>
+                <BrochureWhatsAppLink className="inline-flex items-center gap-2 bg-transparent hover:bg-brand-green text-brand-green hover:text-white border-2 border-brand-green px-8 py-4 rounded-lg font-semibold transition-all" />
               </div>
               <p className="text-gray-600">
                 <a href="/admissions/bsc-microbiology-self-finance" className="text-brand-green underline">B.Sc Microbiology admission 2026-27</a>
