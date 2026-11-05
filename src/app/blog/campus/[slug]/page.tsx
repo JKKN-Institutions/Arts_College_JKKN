@@ -3,6 +3,7 @@ import { createClient } from '@/lib/supabase/server';
 import { notFound } from 'next/navigation';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import CampusBlogContent from './CampusBlogContent';
+import { inlineCtaFor } from '@/lib/blog-inline-cta';
 import { ArticleSchema } from '@/components/seo/ArticleSchema';
 import { BreadcrumbSchema } from '@/components/seo/BreadcrumbSchema';
 import { buildPostHtml } from '@/lib/blog-render';
@@ -156,6 +157,8 @@ export default async function CampusBlogPost({
         popularPosts={popularPosts ?? []}
         relatedPosts={relatedPosts ?? []}
         initialComments={initialComments ?? []}
+        /* Enquiry box inside every post (lead option 2, 2026-11-05) - place from lib/blog-inline-cta.ts. */
+        inlineCta={inlineCtaFor(slug, processedHtml)}
       />
       <ScrollToTop />
     </div>
