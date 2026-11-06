@@ -16,6 +16,7 @@
 import { useRef, useState, type FormEvent } from "react"
 import { ENQUIRY_DONE_KEY, writeStore } from "@/lib/enquiry-store"
 import { sendGaEvent } from "@/lib/ga-event"
+import { sendMetaLead } from "@/lib/meta-lead"
 import { GATE_PHONE_DISPLAY, telGateUrl, whatsappGateUrl, type GateIntent, type GateTopic } from "@/lib/call-gate"
 
 /** What /api/enquiry and /api/city-enquiry answer - the same object their server actions return. */
@@ -110,6 +111,9 @@ export function useGateSubmit({ endpoint, gate, topic, gaParams, onAccepted, onF
         if (!answer.success) throw new Error("not accepted")
         writeStore(ENQUIRY_DONE_KEY, new Date().toISOString())
         onAccepted(answer)
+        // Meta pixel "Lead" for a NEW lead only, not a 409 repeat (lib/meta-lead.ts). gaParams holds the
+        // page's CRM tag - never a name or phone.
+        if (!answer.tracking?.duplicate) sendMetaLead(gaParams.source_page ?? "unknown")
         sendGaEvent(`${gateEvent}_lead`, params)
         setPhase((p) => (p.step === "opened" ? { ...p, result: "saved" } : p))
       })
