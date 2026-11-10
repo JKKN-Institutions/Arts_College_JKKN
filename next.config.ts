@@ -43,6 +43,11 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      // ── Broken internal links (Link Guard run 2026-11-09, fixed 2026-11-10) ─────────────
+      // Internal links pointed at these dead URLs. Each destination answered HTTP 200 on 2026-11-10
+      // (live check). Both slash forms listed; Next's own trailing-slash 308 answers one of them first.
+      { source: '/departments/aided/botany', destination: '/departments', permanent: true },
+      { source: '/departments/aided/botany/', destination: '/departments', permanent: true },
       // ── WordPress wildcard patterns ──────────────────────────────────
       { source: '/author/:path*', destination: '/', permanent: true },
       { source: '/tag/:path*', destination: '/', permanent: true },
