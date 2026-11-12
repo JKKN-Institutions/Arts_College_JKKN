@@ -27,6 +27,7 @@ import { GateButtons, GateOpenedPanel, gateSteps, useGateSubmit } from "@/compon
 import { ARTS_PROGRAMMES, programmeLabel } from "@/lib/arts-programmes"
 import { sendGaEvent } from "@/lib/ga-event"
 import { ENQUIRY_DONE_KEY, writeStore } from "@/lib/enquiry-store"
+import { toTenDigitMobile } from "@/lib/phone-autofill"
 import type { GateIntent, GateTopic } from "@/lib/call-gate"
 
 const ADMISSION_PHONE = "+919345855001"
@@ -244,6 +245,7 @@ export default function ArtsEnquiryForm({
             id={fid("name")}
             type="text"
             name="name"
+            autoComplete="name"
             required
             minLength={2}
             placeholder="Enter your full name"
@@ -260,6 +262,12 @@ export default function ArtsEnquiryForm({
             id={fid("phone")}
             type="tel"
             name="phone"
+            autoComplete="tel-national"
+            onInput={(e) => {
+              const box = e.currentTarget
+              const tenDigits = toTenDigitMobile(box.value)
+              if (tenDigits !== box.value) box.value = tenDigits
+            }}
             required
             inputMode="numeric"
             pattern="[6-9][0-9]{9}"

@@ -40,6 +40,7 @@ import { TRUST } from '@/components/lead/ArtsEnquiryForm'
 import { GateButtons, GateOpenedPanel, gateSteps, useGateSubmit } from '@/components/lead/GateSubmit'
 import { ARTS_PROGRAMMES, programmeLabel } from '@/lib/arts-programmes'
 import { sendGaEvent } from '@/lib/ga-event'
+import { toTenDigitMobile } from '@/lib/phone-autofill'
 
 const ADMISSION_PHONE = '+919345855001'
 const ADMISSION_PHONE_DISPLAY = '+91 93458 55001'
@@ -214,6 +215,7 @@ export default function CityEnquiryForm({ city, bare = false }: Props) {
             id="enq-name"
             type="text"
             name="name"
+            autoComplete="name"
             required
             minLength={2}
             placeholder="Enter your full name"
@@ -230,6 +232,12 @@ export default function CityEnquiryForm({ city, bare = false }: Props) {
             id="enq-phone"
             type="tel"
             name="phone"
+            autoComplete="tel-national"
+            onInput={(e) => {
+              const box = e.currentTarget
+              const tenDigits = toTenDigitMobile(box.value)
+              if (tenDigits !== box.value) box.value = tenDigits
+            }}
             required
             inputMode="numeric"
             pattern="[6-9][0-9]{9}"
