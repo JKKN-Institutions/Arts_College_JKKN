@@ -174,13 +174,16 @@ export default function CityEnquiryForm({ city, bare = false }: Props) {
       <input type="hidden" name="city" value={city} />
       <CampaignFields />
 
-      {/* Honeypot. Off-screen, not display:none - a real browser autofill will not
-          reach it and a bot will. Never remove: the CRM scores it. */}
+      {/* Honeypot. Off-screen, not display:none, so a bot still fills it. Never remove: the CRM
+          scores it. autoComplete is a made-up token ON PURPOSE - measured 2026-11-12 on Chrome
+          156 (/contact): with "off", Chrome read it as Company name and filled a parent's saved
+          company into it, marking a real lead as a bot. Chrome does not fill a field whose token
+          it does not recognise. Do not change it back to "off". */}
       <input
         type="text"
         name="company_website"
         tabIndex={-1}
-        autoComplete="off"
+        autoComplete="hp-ignore"
         aria-hidden="true"
         className="absolute left-[-9999px] h-0 w-0 opacity-0"
       />
