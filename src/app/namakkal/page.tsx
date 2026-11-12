@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import CityEnquiryForm from "@/components/lead/CityEnquiryForm";
 import Link from "next/link";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
@@ -269,6 +270,19 @@ export default function NamakkalPage() {
               Affiliated to Periyar University
             </span>
           </div>
+        </div>
+      </section>
+
+      {/* Enquiry form on the page itself (user 2026-11-13: "Page la form podu"). Same form as /contact,
+          city preset to Namakkal; it carries the CRM payload, the Call / WhatsApp gate, the honeypot
+          fix and the phone-autofill fix. The header "Enquire Now" popup stays as well. */}
+      <section aria-label="Admission enquiry" id="enquiry" className="bg-white py-10 sm:py-12">
+        <div className="max-w-xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 text-center">
+            Get fee and admission details
+          </h2>
+          <p className="text-gray-600 text-center mb-6">Fill 3 details, then call or WhatsApp our admission team.</p>
+          <CityEnquiryForm city="Namakkal" />
         </div>
       </section>
 
