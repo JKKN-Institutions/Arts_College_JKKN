@@ -172,7 +172,7 @@ export default function PhDTamilPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=Tamil+Research+Library"
+                  src="/images/facilities/library-1.avif"
                   alt="Tamil Research Library"
                   className="w-full h-auto"
                 />
@@ -493,12 +493,12 @@ export default function PhDTamilPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Tamil Research Library', description: 'Extensive collection of classical Tamil texts, modern literature, and research journals with digital archive access.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Tamil+Library' },
-                { title: 'Manuscript Research Center', description: 'Specialized facility for studying palm-leaf manuscripts, inscriptions, and rare Tamil texts with preservation equipment.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Manuscript+Center' },
-                { title: 'Digital Humanities Lab', description: 'Equipped with tools for corpus linguistics, computational analysis, and digital archiving of Tamil literature.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Lab' },
-                { title: 'Research Scholar Rooms', description: 'Dedicated workspace for research scholars with computer facilities, internet access, and quiet study environment.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Scholar+Rooms' },
-                { title: 'Seminar Hall', description: 'Modern conference facility for research presentations, symposiums, guest lectures, and doctoral defenses.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Seminar+Hall' },
-                { title: 'Archive & Documentation', description: 'Comprehensive archival facility with microfilm readers, scanners, and preservation technology for rare documents.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Archive' }
+                { title: 'Tamil Research Library', description: 'Extensive collection of classical Tamil texts, modern literature, and research journals with digital archive access.', image: '/images/facilities/library-1.avif' },
+                { title: 'Manuscript Research Center', description: 'Specialized facility for studying palm-leaf manuscripts, inscriptions, and rare Tamil texts with preservation equipment.', image: '/images/illustrations/humanities.webp' },
+                { title: 'Digital Humanities Lab', description: 'Equipped with tools for corpus linguistics, computational analysis, and digital archiving of Tamil literature.', image: '/images/illustrations/computers.webp' },
+                { title: 'Research Scholar Rooms', description: 'Dedicated workspace for research scholars with computer facilities, internet access, and quiet study environment.', image: '/images/facilities/library-1.avif' },
+                { title: 'Seminar Hall', description: 'Modern conference facility for research presentations, symposiums, guest lectures, and doctoral defenses.', image: '/images/facilities/Seminar-hall-1.avif' },
+                { title: 'Archive & Documentation', description: 'Comprehensive archival facility with microfilm readers, scanners, and preservation technology for rare documents.', image: '/images/illustrations/humanities.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -725,9 +725,9 @@ export default function PhDTamilPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'M.A. Tamil', description: 'Advanced postgraduate studies in Tamil Literature and Linguistics', duration: '2 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=MA+Tamil' },
-                { title: 'M.Phil Tamil', description: 'Pre-doctoral research programme in Tamil studies', duration: '1 Year', image: 'https://placehold.co/400x180/059669/FFFFFF?text=MPhil+Tamil' },
-                { title: 'B.A. Tamil', description: 'Undergraduate programme in Tamil language and literature', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BA+Tamil' }
+                { title: 'M.A. Tamil', description: 'Advanced postgraduate studies in Tamil Literature and Linguistics', duration: '2 Years', image: '/images/illustrations/humanities.webp' },
+                { title: 'M.Phil Tamil', description: 'Pre-doctoral research programme in Tamil studies', duration: '1 Year', image: '/images/illustrations/humanities.webp' },
+                { title: 'B.A. Tamil', description: 'Undergraduate programme in Tamil language and literature', duration: '3 Years', image: '/images/illustrations/humanities.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

@@ -570,12 +570,12 @@ export default function BScMathematicsPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Mathematics Library', description: 'Extensive collection of mathematical journals, textbooks, reference materials, and access to digital resources including MathSciNet and JSTOR.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Library' },
-                // { title: 'Computational Lab', description: 'Advanced computer lab with MATLAB, Mathematica, R, Python, and LaTeX software for numerical analysis and mathematical computing.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Computer+Lab' },
-                // { title: 'Smart Learning Studios', description: 'Technology-enabled learning spaces with interactive displays, graphing calculators, and multimedia tools for enhanced understanding.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Smart+Classroom' },
-                { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for mathematical discussions, guest lectures, and research presentations.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Seminar+Hall' },
-                // { title: 'Research Center', description: 'Dedicated research facility for Learners and Senior Learners engaged in mathematical research with access to global research networks.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Research+Center' },
-                // { title: 'Tutorial Rooms', description: 'Dedicated spaces for small group discussions, problem-solving sessions, and peer-to-peer learning with whiteboard facilities.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Tutorial+Room' }
+                { title: 'Mathematics Library', description: 'Extensive collection of mathematical journals, textbooks, reference materials, and access to digital resources including MathSciNet and JSTOR.', image: '/images/facilities/library-1.avif' },
+                // { title: 'Computational Lab', description: 'Advanced computer lab with MATLAB, Mathematica, R, Python, and LaTeX software for numerical analysis and mathematical computing.', image: '/images/illustrations/computers.webp' },
+                // { title: 'Smart Learning Studios', description: 'Technology-enabled learning spaces with interactive displays, graphing calculators, and multimedia tools for enhanced understanding.', image: '/images/classroom/class_room-1.webp' },
+                { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for mathematical discussions, guest lectures, and research presentations.', image: '/images/facilities/Seminar-hall-1.avif' },
+                // { title: 'Research Center', description: 'Dedicated research facility for Learners and Senior Learners engaged in mathematical research with access to global research networks.', image: '/images/illustrations/research.webp' },
+                // { title: 'Tutorial Rooms', description: 'Dedicated spaces for small group discussions, problem-solving sessions, and peer-to-peer learning with whiteboard facilities.', image: '/images/classroom/class_room-1.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -797,9 +797,9 @@ export default function BScMathematicsPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'B.Sc Physics', description: 'Explore the fundamental principles of matter, energy, and the universe', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+Physics' },
-                { title: 'B.Sc Computer Science', description: 'Master programming, algorithms, and software development', duration: '3 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=BSc+CS' },
-                { title: 'B.Sc Statistics', description: 'Dive into data analysis, probability, and statistical modeling', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+Statistics' }
+                { title: 'B.Sc Physics', description: 'Explore the fundamental principles of matter, energy, and the universe', duration: '3 Years', image: '/images/illustrations/physics.webp' },
+                { title: 'B.Sc Computer Science', description: 'Master programming, algorithms, and software development', duration: '3 Years', image: '/images/illustrations/computers.webp' },
+                { title: 'B.Sc Statistics', description: 'Dive into data analysis, probability, and statistical modeling', duration: '3 Years', image: '/images/illustrations/maths.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

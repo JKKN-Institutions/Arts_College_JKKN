@@ -596,12 +596,12 @@ export default function BComPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Commerce Library', description: 'Over 10,000 books covering accounting, finance, taxation, and business management with digital access to journals.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Commerce+Library' },
-                { title: 'Digital Learning Lab with Tally', description: 'Advanced computer lab with Tally ERP, SAP, and other accounting software for practical training.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Computer+Lab' },
-                { title: 'Finance Lab', description: 'Stock market simulation lab with live trading terminals for investment analysis and portfolio management practice.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Finance+Lab' },
-                { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for guest lectures and workshops.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Seminar+Hall' },
-                { title: 'Research Center', description: 'Dedicated research facilities with access to business databases and research journals for project work.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Research+Center' },
-                { title: 'Smart Learning Studios', description: 'Technology-enabled learning studios with interactive boards, projectors, and high-speed internet connectivity.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Smart+Classroom' }
+                { title: 'Commerce Library', description: 'Over 10,000 books covering accounting, finance, taxation, and business management with digital access to journals.', image: '/images/facilities/library-1.avif' },
+                { title: 'Digital Learning Lab with Tally', description: 'Advanced computer lab with Tally ERP, SAP, and other accounting software for practical training.', image: '/images/illustrations/computers.webp' },
+                { title: 'Finance Lab', description: 'Stock market simulation lab with live trading terminals for investment analysis and portfolio management practice.', image: '/images/illustrations/commerce.webp' },
+                { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for guest lectures and workshops.', image: '/images/facilities/Seminar-hall-1.avif' },
+                { title: 'Research Center', description: 'Dedicated research facilities with access to business databases and research journals for project work.', image: '/images/illustrations/research.webp' },
+                { title: 'Smart Learning Studios', description: 'Technology-enabled learning studios with interactive boards, projectors, and high-speed internet connectivity.', image: '/images/classroom/class_room-1.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -832,9 +832,9 @@ export default function BComPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'M.Com', description: 'Advanced postgraduate studies in Commerce and Business Management', duration: '2 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=M.Com' },
-                { title: 'B.Com (CA)', description: 'B.Com with Computer Applications and IT skills', duration: '3 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=B.Com+CA' },
-                { title: 'BBA', description: 'Bachelor of Business Administration for management careers', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BBA' }
+                { title: 'M.Com', description: 'Advanced postgraduate studies in Commerce and Business Management', duration: '2 Years', image: '/images/illustrations/commerce.webp' },
+                { title: 'B.Com (CA)', description: 'B.Com with Computer Applications and IT skills', duration: '3 Years', image: '/images/illustrations/commerce.webp' },
+                { title: 'BBA', description: 'Bachelor of Business Administration for management careers', duration: '3 Years', image: '/images/illustrations/commerce.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

@@ -258,7 +258,7 @@ export default function BComBankingInsurancePage() {
               <RevealSection className="lg:col-span-2" delay={200}>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="https://placehold.co/600x450/0b6d41/FFFFFF?text=Banking+%26+Insurance"
+                    src="/images/illustrations/commerce.webp"
                     alt="Banking and Insurance"
                     className="w-full h-auto"
                   />

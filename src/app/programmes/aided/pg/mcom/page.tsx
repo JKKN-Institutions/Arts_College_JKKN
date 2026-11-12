@@ -175,7 +175,7 @@ export default function MComAidedPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=M.Com+Research+Studio"
+                  src="/images/illustrations/commerce.webp"
                   alt="M.Com Research Studio"
                   className="w-full h-auto"
                 />
@@ -601,12 +601,12 @@ export default function MComAidedPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Research Laboratory', description: 'Advanced research facilities with access to financial databases, statistical software, and analytical tools for commerce research.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Lab' },
-                { title: 'Digital Learning Commons', description: 'Comprehensive collection of commerce journals, e-books, and research publications with 24/7 digital access.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Library' },
-                { title: 'Conference Hall', description: 'State-of-the-art auditorium for seminars, guest lectures, and academic conferences with modern AV facilities.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Conference+Hall' },
-                { title: 'Finance Laboratory', description: 'Equipped with Bloomberg terminals, accounting software, and financial modeling tools for practical learning.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Finance+Lab' },
-                { title: 'Career Development Center', description: 'Dedicated placement cell with corporate tie-ups, interview preparation, and career counseling services.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Career+Center' },
-                { title: 'Smart Learning Studios', description: 'Technology-enabled classrooms with interactive boards, projectors, and collaborative learning spaces.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Smart+Classroom' }
+                { title: 'Research Laboratory', description: 'Advanced research facilities with access to financial databases, statistical software, and analytical tools for commerce research.', image: '/images/illustrations/research.webp' },
+                { title: 'Digital Learning Commons', description: 'Comprehensive collection of commerce journals, e-books, and research publications with 24/7 digital access.', image: '/images/illustrations/digital-library.webp' },
+                { title: 'Conference Hall', description: 'State-of-the-art auditorium for seminars, guest lectures, and academic conferences with modern AV facilities.', image: '/images/facilities/Seminar-hall-1.avif' },
+                { title: 'Finance Laboratory', description: 'Equipped with Bloomberg terminals, accounting software, and financial modeling tools for practical learning.', image: '/images/illustrations/commerce.webp' },
+                { title: 'Career Development Center', description: 'Dedicated placement cell with corporate tie-ups, interview preparation, and career counseling services.', image: '/images/illustrations/innovation.webp' },
+                { title: 'Smart Learning Studios', description: 'Technology-enabled classrooms with interactive boards, projectors, and collaborative learning spaces.', image: '/images/classroom/class_room-1.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -837,9 +837,9 @@ export default function MComAidedPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'B.Com (3 Years)', description: 'Comprehensive undergraduate programme in commerce, accounting, and business studies', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=B.Com' },
-                { title: 'MBA (2 Years)', description: 'Master of Business Administration with specializations in various management domains', duration: '2 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=MBA' },
-                { title: 'BBA (3 Years)', description: 'Bachelor of Business Administration focusing on management and entrepreneurship', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BBA' }
+                { title: 'B.Com (3 Years)', description: 'Comprehensive undergraduate programme in commerce, accounting, and business studies', duration: '3 Years', image: '/images/illustrations/commerce.webp' },
+                { title: 'MBA (2 Years)', description: 'Master of Business Administration with specializations in various management domains', duration: '2 Years', image: '/images/illustrations/commerce.webp' },
+                { title: 'BBA (3 Years)', description: 'Bachelor of Business Administration focusing on management and entrepreneurship', duration: '3 Years', image: '/images/illustrations/commerce.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

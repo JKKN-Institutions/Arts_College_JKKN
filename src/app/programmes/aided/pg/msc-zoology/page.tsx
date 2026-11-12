@@ -176,7 +176,7 @@ export default function MScZoologyPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=MSc+Zoology+Research+Lab"
+                  src="/images/illustrations/biology.webp"
                   alt="MSc Zoology Research Lab"
                   className="w-full h-auto"
                 />
@@ -526,7 +526,7 @@ export default function MScZoologyPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Research Lab', description: 'Extensive collection of journals, books, and digital resources with access to academic databases for literature review and research.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Research+Library' },
+                { title: 'Research Lab', description: 'Extensive collection of journals, books, and digital resources with access to academic databases for literature review and research.', image: '/images/facilities/library-1.avif' },
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -758,9 +758,9 @@ export default function MScZoologyPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'B.Sc Zoology', description: 'Undergraduate programme in Zoology with foundation in animal sciences', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+Zoology' },
-                { title: 'M.Sc Chemistry', description: 'Advanced postgraduate studies in Chemical Sciences and Research', duration: '2 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=MSc+Chemistry' },
-                { title: 'M.Sc Mathematics', description: 'Postgraduate programme in Pure and Applied Mathematics', duration: '2 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=MSc+Mathematics' }
+                { title: 'B.Sc Zoology', description: 'Undergraduate programme in Zoology with foundation in animal sciences', duration: '3 Years', image: '/images/illustrations/biology.webp' },
+                { title: 'M.Sc Chemistry', description: 'Advanced postgraduate studies in Chemical Sciences and Research', duration: '2 Years', image: '/images/illustrations/chemistry.webp' },
+                { title: 'M.Sc Mathematics', description: 'Postgraduate programme in Pure and Applied Mathematics', duration: '2 Years', image: '/images/illustrations/maths.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

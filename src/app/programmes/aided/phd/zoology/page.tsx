@@ -598,8 +598,8 @@ export default function PhDZoologyPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Advanced Research Laboratory', description: 'Fully equipped laboratory with PCR, electrophoresis, spectrophotometer, and advanced molecular biology instruments for cutting-edge research.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Lab' },
-                { title: 'Zoology Museum', description: 'Extensive collection of preserved specimens, taxidermy mounts, skeletal systems, and comparative anatomy exhibits for teaching and research.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Zoology+Museum' }
+                { title: 'Advanced Research Laboratory', description: 'Fully equipped laboratory with PCR, electrophoresis, spectrophotometer, and advanced molecular biology instruments for cutting-edge research.', image: '/images/illustrations/research.webp' },
+                { title: 'Zoology Museum', description: 'Extensive collection of preserved specimens, taxidermy mounts, skeletal systems, and comparative anatomy exhibits for teaching and research.', image: '/images/illustrations/biology.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -831,9 +831,9 @@ export default function PhDZoologyPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'M.Sc. Zoology', description: 'Advanced postgraduate studies in Zoology with research specializations', duration: '2 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=MSc+Zoology' },
-                { title: 'B.Sc. Zoology', description: 'Comprehensive undergraduate programme in animal sciences', duration: '3 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=BSc+Zoology' },
-                { title: 'Ph.D Botany', description: 'Doctoral research programme in plant sciences and biotechnology', duration: '3-5 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=PhD+Botany' }
+                { title: 'M.Sc. Zoology', description: 'Advanced postgraduate studies in Zoology with research specializations', duration: '2 Years', image: '/images/illustrations/biology.webp' },
+                { title: 'B.Sc. Zoology', description: 'Comprehensive undergraduate programme in animal sciences', duration: '3 Years', image: '/images/illustrations/biology.webp' },
+                { title: 'Ph.D Botany', description: 'Doctoral research programme in plant sciences and biotechnology', duration: '3-5 Years', image: '/images/illustrations/biology.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

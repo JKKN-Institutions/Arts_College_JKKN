@@ -524,12 +524,12 @@ export default function MScMathematicsPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Computational Mathematics Lab', description: 'Equipped with MATLAB, Mathematica, Python, R, LaTeX, and specialized mathematical software for numerical computations and research.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Computer+Lab' },
-                { title: 'Mathematics Library', description: 'Extensive collection of mathematics textbooks, research journals, digital resources, and access to online databases like MathSciNet and JSTOR.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Library' },
-                { title: 'Seminar Hall', description: 'Modern seminar facility for mathematical presentations, guest lectures, workshops, and academic conferences with smart board technology.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Seminar+Hall' },
-                { title: 'Research Center', description: 'Dedicated space for doctoral research, collaborative projects, and advanced mathematical investigations with high-performance computing resources.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Center' },
-                { title: 'Smart Learning Studios', description: 'Technology-enabled learning studios with interactive displays, digital whiteboards, and multimedia capabilities for enhanced mathematical instruction.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Smart+Classroom' },
-                { title: 'Discussion Rooms', description: 'Dedicated spaces for group studies, peer learning, problem-solving sessions, and collaborative research activities among Learners.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Discussion+Room' }
+                { title: 'Computational Mathematics Lab', description: 'Equipped with MATLAB, Mathematica, Python, R, LaTeX, and specialized mathematical software for numerical computations and research.', image: '/images/illustrations/computers.webp' },
+                { title: 'Mathematics Library', description: 'Extensive collection of mathematics textbooks, research journals, digital resources, and access to online databases like MathSciNet and JSTOR.', image: '/images/illustrations/digital-library.webp' },
+                { title: 'Seminar Hall', description: 'Modern seminar facility for mathematical presentations, guest lectures, workshops, and academic conferences with smart board technology.', image: '/images/facilities/Seminar-hall-1.avif' },
+                { title: 'Research Center', description: 'Dedicated space for doctoral research, collaborative projects, and advanced mathematical investigations with high-performance computing resources.', image: '/images/illustrations/research.webp' },
+                { title: 'Smart Learning Studios', description: 'Technology-enabled learning studios with interactive displays, digital whiteboards, and multimedia capabilities for enhanced mathematical instruction.', image: '/images/classroom/class_room-1.webp' },
+                { title: 'Discussion Rooms', description: 'Dedicated spaces for group studies, peer learning, problem-solving sessions, and collaborative research activities among Learners.', image: '/images/classroom/class_room-1.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -756,9 +756,9 @@ export default function MScMathematicsPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'B.Sc Mathematics', description: 'Undergraduate programme in pure and applied mathematics', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+Mathematics' },
-                { title: 'M.Sc Statistics', description: 'Advanced studies in statistical theory and data analytics', duration: '2 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=MSc+Statistics' },
-                { title: 'M.Sc Computer Science', description: 'Postgraduate programme in computational sciences and algorithms', duration: '2 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=MSc+CS' }
+                { title: 'B.Sc Mathematics', description: 'Undergraduate programme in pure and applied mathematics', duration: '3 Years', image: '/images/illustrations/maths.webp' },
+                { title: 'M.Sc Statistics', description: 'Advanced studies in statistical theory and data analytics', duration: '2 Years', image: '/images/illustrations/maths.webp' },
+                { title: 'M.Sc Computer Science', description: 'Postgraduate programme in computational sciences and algorithms', duration: '2 Years', image: '/images/illustrations/computers.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

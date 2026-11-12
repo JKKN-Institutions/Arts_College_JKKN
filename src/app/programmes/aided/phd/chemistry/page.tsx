@@ -374,12 +374,12 @@ export default function PhDChemistryPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Advanced Research Laboratories', description: 'Well-equipped organic, inorganic, physical, and analytical chemistry research labs with modern facilities and safety equipment.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Labs' },
-                { title: 'Instrumentation Centre', description: 'Access to UV-Vis, FTIR, NMR, GC-MS, HPLC, and other advanced analytical instruments for research characterization.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Instrumentation' },
-                { title: 'Computational Lab', description: 'High-performance computing facilities for molecular modeling, quantum chemistry calculations, and data analysis.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Computational+Lab' },
-                { title: 'Central Library', description: 'Comprehensive collection of chemistry journals, books, e-resources, and online databases including SciFinder and Web of Science.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Library' },
-                { title: 'Synthesis Laboratory', description: 'Dedicated synthesis labs with fume hoods, inert atmosphere facilities, and specialized equipment for organic and inorganic synthesis.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Synthesis+Lab' },
-                { title: 'Seminar Hall', description: 'Air-conditioned seminar hall for research presentations, invited lectures, conferences, and symposia.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Seminar+Hall' }
+                { title: 'Advanced Research Laboratories', description: 'Well-equipped organic, inorganic, physical, and analytical chemistry research labs with modern facilities and safety equipment.', image: '/images/illustrations/research.webp' },
+                { title: 'Instrumentation Centre', description: 'Access to UV-Vis, FTIR, NMR, GC-MS, HPLC, and other advanced analytical instruments for research characterization.', image: '/images/illustrations/chemistry.webp' },
+                { title: 'Computational Lab', description: 'High-performance computing facilities for molecular modeling, quantum chemistry calculations, and data analysis.', image: '/images/illustrations/computers.webp' },
+                { title: 'Central Library', description: 'Comprehensive collection of chemistry journals, books, e-resources, and online databases including SciFinder and Web of Science.', image: '/images/facilities/library-1.avif' },
+                { title: 'Synthesis Laboratory', description: 'Dedicated synthesis labs with fume hoods, inert atmosphere facilities, and specialized equipment for organic and inorganic synthesis.', image: '/images/illustrations/chemistry.webp' },
+                { title: 'Seminar Hall', description: 'Air-conditioned seminar hall for research presentations, invited lectures, conferences, and symposia.', image: '/images/facilities/Seminar-hall-1.avif' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -610,9 +610,9 @@ export default function PhDChemistryPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'M.Sc Chemistry', description: 'Postgraduate studies in organic, inorganic, physical, and analytical chemistry', duration: '2 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=MSc+Chemistry' },
-                { title: 'B.Sc Chemistry', description: 'Undergraduate foundation in chemistry with laboratory training', duration: '3 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=BSc+Chemistry' },
-                { title: 'M.Phil Chemistry', description: 'Pre-doctoral research programme in chemistry', duration: '1 Year', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=MPhil+Chemistry' }
+                { title: 'M.Sc Chemistry', description: 'Postgraduate studies in organic, inorganic, physical, and analytical chemistry', duration: '2 Years', image: '/images/illustrations/chemistry.webp' },
+                { title: 'B.Sc Chemistry', description: 'Undergraduate foundation in chemistry with laboratory training', duration: '3 Years', image: '/images/illustrations/chemistry.webp' },
+                { title: 'M.Phil Chemistry', description: 'Pre-doctoral research programme in chemistry', duration: '1 Year', image: '/images/illustrations/chemistry.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-brand-cream rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

@@ -566,12 +566,12 @@ export default function BAHistoryPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Historical Archives & Library', description: 'Over 20,000 books covering Indian, World, and Regional History with digital access to JSTOR, Project MUSE, and historical databases.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=History+Library' },
-                { title: 'Departmental Museum', description: 'Mini museum housing replicas, artifacts, numismatic collections, and historical models for hands-on learning experiences.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Museum' },
-                { title: 'Map Room & Resource Centre', description: 'Extensive collection of historical maps, charts, and geographical resources for spatial understanding of historical events.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Map+Room' },
-                { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for historical discussions, guest lectures, and workshops.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Seminar+Hall' },
-                { title: 'Digital History Lab', description: 'Computer lab with specialized historical software, GIS mapping tools, and access to digitized archival collections worldwide.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Lab' },
-                { title: 'Smart Learning Studios', description: 'Technology-enabled learning studios with interactive boards, documentary screening facilities, and high-speed internet connectivity.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Smart+Classroom' }
+                { title: 'Historical Archives & Library', description: 'Over 20,000 books covering Indian, World, and Regional History with digital access to JSTOR, Project MUSE, and historical databases.', image: '/images/facilities/library-1.avif' },
+                { title: 'Departmental Museum', description: 'Mini museum housing replicas, artifacts, numismatic collections, and historical models for hands-on learning experiences.', image: '/images/illustrations/humanities.webp' },
+                { title: 'Map Room & Resource Centre', description: 'Extensive collection of historical maps, charts, and geographical resources for spatial understanding of historical events.', image: '/images/illustrations/humanities.webp' },
+                { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for historical discussions, guest lectures, and workshops.', image: '/images/facilities/Seminar-hall-1.avif' },
+                { title: 'Digital History Lab', description: 'Computer lab with specialized historical software, GIS mapping tools, and access to digitized archival collections worldwide.', image: '/images/illustrations/computers.webp' },
+                { title: 'Smart Learning Studios', description: 'Technology-enabled learning studios with interactive boards, documentary screening facilities, and high-speed internet connectivity.', image: '/images/classroom/class_room-1.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -799,9 +799,9 @@ export default function BAHistoryPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'MA History', description: 'Advanced postgraduate studies in Indian and World History', duration: '2 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=MA+History' },
-                { title: 'BA English', description: 'Study of English literature, language, and communication skills', duration: '3 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=BA+English' },
-                { title: 'BA Political Science', description: 'Comprehensive study of governance, political theory, and international relations', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BA+Political+Science' }
+                { title: 'MA History', description: 'Advanced postgraduate studies in Indian and World History', duration: '2 Years', image: '/images/illustrations/humanities.webp' },
+                { title: 'BA English', description: 'Study of English literature, language, and communication skills', duration: '3 Years', image: '/images/illustrations/humanities.webp' },
+                { title: 'BA Political Science', description: 'Comprehensive study of governance, political theory, and international relations', duration: '3 Years', image: '/images/illustrations/humanities.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

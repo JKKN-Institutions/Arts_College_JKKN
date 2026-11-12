@@ -476,9 +476,9 @@ export default function MAEnglishPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Library', description: 'A well-equipped library with 2000+ books, offering a wide collection of world literature, academic resources, and reference materials to support learning, research, and intellectual growth.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Library' },
-                { title: 'Language Lab', description: 'A Digital Language Lab equipped with advanced text analysis software, digital archiving tools, and computational literary analysis resources, supporting modern research methods, language development, and technology-driven learning.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Lab' },
-                { title: 'Seminar Hall', description: 'Dedicated seminar space with presentation facilities for research presentations, guest lectures, and scholarly discussions.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Seminar+Room' }
+                { title: 'Library', description: 'A well-equipped library with 2000+ books, offering a wide collection of world literature, academic resources, and reference materials to support learning, research, and intellectual growth.', image: '/images/facilities/library-1.avif' },
+                { title: 'Language Lab', description: 'A Digital Language Lab equipped with advanced text analysis software, digital archiving tools, and computational literary analysis resources, supporting modern research methods, language development, and technology-driven learning.', image: '/images/illustrations/computers.webp' },
+                { title: 'Seminar Hall', description: 'Dedicated seminar space with presentation facilities for research presentations, guest lectures, and scholarly discussions.', image: '/images/facilities/Seminar-hall-1.avif' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -705,9 +705,9 @@ export default function MAEnglishPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'BA English (Honours)', description: 'Comprehensive undergraduate studies in English Literature and Language', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BA+English' },
-                { title: 'M.Phil English', description: 'Advanced research programme in English Literature and Linguistics', duration: '1 Year', image: 'https://placehold.co/400x180/059669/FFFFFF?text=M.Phil+English' },
-                { title: 'B.Ed (English)', description: 'Teacher education programme with English specialization', duration: '2 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=B.Ed+English' }
+                { title: 'BA English (Honours)', description: 'Comprehensive undergraduate studies in English Literature and Language', duration: '3 Years', image: '/images/illustrations/humanities.webp' },
+                { title: 'M.Phil English', description: 'Advanced research programme in English Literature and Linguistics', duration: '1 Year', image: '/images/illustrations/humanities.webp' },
+                { title: 'B.Ed (English)', description: 'Teacher education programme with English specialization', duration: '2 Years', image: '/images/illustrations/humanities.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

@@ -570,9 +570,9 @@ export default function MCAPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'AI/ML Research Lab', description: 'High-performance computing cluster with GPU workstations for deep learning, TensorFlow, and PyTorch development', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=AI+ML+Lab' },
-                { title: 'Digital Resource Center', description: 'Access to IEEE, ACM digital libraries, O\'Reilly Learning, and research databases for academic excellence', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Library' },
-                { title: 'Innovation & Startup Hub', description: 'Incubation center with mentorship programs, funding support, and industry collaboration opportunities', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Innovation+Hub' }
+                { title: 'AI/ML Research Lab', description: 'High-performance computing cluster with GPU workstations for deep learning, TensorFlow, and PyTorch development', image: '/images/illustrations/ai-data.webp' },
+                { title: 'Digital Resource Center', description: 'Access to IEEE, ACM digital libraries, O\'Reilly Learning, and research databases for academic excellence', image: '/images/illustrations/digital-library.webp' },
+                { title: 'Innovation & Startup Hub', description: 'Incubation center with mentorship programs, funding support, and industry collaboration opportunities', image: '/images/illustrations/innovation.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

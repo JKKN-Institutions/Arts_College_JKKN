@@ -513,12 +513,12 @@ export default function BAEnglishPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Dedicated English Library', description: 'Over 15,000 books covering British, American, Indian, and World Literature with digital access to JSTOR and other academic databases.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=English+Library' },
-                // { title: 'Language Laboratory', description: 'Advanced language lab with audio-visual equipment for phonetics training, accent improvement, and communication practice.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Language+Lab' },
-                // { title: 'Digital Content Studio', description: 'Equipped studio for podcasting, video creation, and multimedia content development for journalism and media courses.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Studio' },
-                { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for literary discussions, guest lectures, and workshops.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Seminar+Hall' },
-                // { title: 'Reading Room', description: 'Peaceful reading spaces with current periodicals, literary magazines, and research journals for focused academic study.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Reading+Room' },
-                { title: 'Smart Learning Studios', description: 'Technology-enabled learning studios with interactive boards, projectors, and high-speed internet connectivity.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Smart+Classroom' }
+                { title: 'Dedicated English Library', description: 'Over 15,000 books covering British, American, Indian, and World Literature with digital access to JSTOR and other academic databases.', image: '/images/facilities/library-1.avif' },
+                // { title: 'Language Laboratory', description: 'Advanced language lab with audio-visual equipment for phonetics training, accent improvement, and communication practice.', image: '/images/illustrations/language.webp' },
+                // { title: 'Digital Content Studio', description: 'Equipped studio for podcasting, video creation, and multimedia content development for journalism and media courses.', image: '/images/illustrations/media.webp' },
+                { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for literary discussions, guest lectures, and workshops.', image: '/images/facilities/Seminar-hall-1.avif' },
+                // { title: 'Reading Room', description: 'Peaceful reading spaces with current periodicals, literary magazines, and research journals for focused academic study.', image: '/images/facilities/library-1.avif' },
+                { title: 'Smart Learning Studios', description: 'Technology-enabled learning studios with interactive boards, projectors, and high-speed internet connectivity.', image: '/images/classroom/class_room-1.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -751,9 +751,9 @@ export default function BAEnglishPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'MA English', description: 'Advanced postgraduate studies in English Literature and Linguistics', duration: '2 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=MA+English' },
-                { title: 'BA History', description: 'Study of world civilizations, Indian history, and historiography', duration: '3 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=BA+History' },
-                { title: 'BA Economics', description: 'Comprehensive study of micro and macroeconomics with statistical analysis', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BA+Economics' }
+                { title: 'MA English', description: 'Advanced postgraduate studies in English Literature and Linguistics', duration: '2 Years', image: '/images/illustrations/humanities.webp' },
+                { title: 'BA History', description: 'Study of world civilizations, Indian history, and historiography', duration: '3 Years', image: '/images/illustrations/humanities.webp' },
+                { title: 'BA Economics', description: 'Comprehensive study of micro and macroeconomics with statistical analysis', duration: '3 Years', image: '/images/illustrations/humanities.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

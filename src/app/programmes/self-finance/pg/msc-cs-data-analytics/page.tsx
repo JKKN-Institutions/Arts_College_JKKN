@@ -172,7 +172,7 @@ export default function MScCSDataAnalyticsPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=Data+Analytics+Lab"
+                  src="/images/illustrations/ai-data.webp"
                   alt="Data Analytics Lab"
                   className="w-full h-auto"
                 />
@@ -509,12 +509,12 @@ export default function MScCSDataAnalyticsPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'High-Performance Computing Lab', description: 'GPU-powered workstations with NVIDIA Tesla cards, 128GB RAM systems, and high-speed SSD storage for deep learning and big data processing.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Data+Science+Lab' },
-                { title: 'Cloud Computing Infrastructure', description: 'Access to AWS, Azure, and Google Cloud Platform with dedicated educational credits for Learners to deploy and scale analytics solutions.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Cloud+Lab' },
-                { title: 'Big Data Analytics Cluster', description: 'Dedicated Hadoop and Spark cluster for processing terabytes of data, enabling hands-on experience with distributed computing frameworks.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Big+Data+Cluster' },
-                { title: 'Enterprise Software Suite', description: 'Licensed access to Tableau, Power BI, SAS, SPSS, MATLAB, and industry-standard analytics tools for comprehensive learning experience.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Software+Suite' },
-                { title: 'Research & Innovation Center', description: 'Dedicated space for dissertation work, industry collaborations, and research projects with mentorship from industry experts and Senior Learners.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Research+Center' },
-                { title: 'Digital Learning Commons & Resources', description: 'Access to IEEE, ACM, Springer, and other academic databases with thousands of research papers, journals, and e-books on data science topics.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Library' }
+                { title: 'High-Performance Computing Lab', description: 'GPU-powered workstations with NVIDIA Tesla cards, 128GB RAM systems, and high-speed SSD storage for deep learning and big data processing.', image: '/images/illustrations/ai-data.webp' },
+                { title: 'Cloud Computing Infrastructure', description: 'Access to AWS, Azure, and Google Cloud Platform with dedicated educational credits for Learners to deploy and scale analytics solutions.', image: '/images/illustrations/computers.webp' },
+                { title: 'Big Data Analytics Cluster', description: 'Dedicated Hadoop and Spark cluster for processing terabytes of data, enabling hands-on experience with distributed computing frameworks.', image: '/images/illustrations/ai-data.webp' },
+                { title: 'Enterprise Software Suite', description: 'Licensed access to Tableau, Power BI, SAS, SPSS, MATLAB, and industry-standard analytics tools for comprehensive learning experience.', image: '/images/illustrations/computers.webp' },
+                { title: 'Research & Innovation Center', description: 'Dedicated space for dissertation work, industry collaborations, and research projects with mentorship from industry experts and Senior Learners.', image: '/images/illustrations/research.webp' },
+                { title: 'Digital Learning Commons & Resources', description: 'Access to IEEE, ACM, Springer, and other academic databases with thousands of research papers, journals, and e-books on data science topics.', image: '/images/illustrations/digital-library.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -742,9 +742,9 @@ export default function MScCSDataAnalyticsPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'B.Sc Computer Science', description: 'Comprehensive undergraduate programme in computer science fundamentals', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+CS' },
-                { title: 'BCA', description: 'Bachelor of Computer Applications with focus on software development', duration: '3 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=BCA' },
-                { title: 'B.Sc Mathematics', description: 'Advanced mathematics with computational and analytical focus', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+Maths' }
+                { title: 'B.Sc Computer Science', description: 'Comprehensive undergraduate programme in computer science fundamentals', duration: '3 Years', image: '/images/illustrations/computers.webp' },
+                { title: 'BCA', description: 'Bachelor of Computer Applications with focus on software development', duration: '3 Years', image: '/images/illustrations/computers.webp' },
+                { title: 'B.Sc Mathematics', description: 'Advanced mathematics with computational and analytical focus', duration: '3 Years', image: '/images/illustrations/maths.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

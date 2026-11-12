@@ -511,12 +511,12 @@ export default function MScChemistryPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Organic Laboratory', description: 'Advanced organic lab with fume hoods, distillation units, and synthesis equipment for organic reactions and purification.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Organic+Lab' },
-                // { title: 'Analytical Instrumentation Lab', description: 'Equipped with HPLC, GC, UV-Vis, AAS, and other analytical instruments for chemical analysis and research.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Analytical+Lab' },
-                { title: 'Physical Chemistry Laboratory', description: 'Modern equipment for thermodynamics, kinetics, electrochemistry, and surface chemistry experiments.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Physical+Lab' },
-                { title: 'PG Research Laboratory', description: 'Dedicated research space for M.Sc students with individual workstations and advanced research equipment.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Lab' },
-                // { title: 'Spectroscopy Suite', description: 'NMR, FTIR, UV-Vis, and Mass spectrometry facilities for structural elucidation and molecular characterization.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Spectroscopy' },
-                // { title: 'Digital Library & Journals', description: 'Access to international chemistry journals, e-books, and research databases like SciFinder and PubChem.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Library' }
+                { title: 'Organic Laboratory', description: 'Advanced organic lab with fume hoods, distillation units, and synthesis equipment for organic reactions and purification.', image: '/images/illustrations/chemistry.webp' },
+                // { title: 'Analytical Instrumentation Lab', description: 'Equipped with HPLC, GC, UV-Vis, AAS, and other analytical instruments for chemical analysis and research.', image: '/images/illustrations/chemistry.webp' },
+                { title: 'Physical Chemistry Laboratory', description: 'Modern equipment for thermodynamics, kinetics, electrochemistry, and surface chemistry experiments.', image: '/images/illustrations/physics.webp' },
+                { title: 'PG Research Laboratory', description: 'Dedicated research space for M.Sc students with individual workstations and advanced research equipment.', image: '/images/illustrations/research.webp' },
+                // { title: 'Spectroscopy Suite', description: 'NMR, FTIR, UV-Vis, and Mass spectrometry facilities for structural elucidation and molecular characterization.', image: '/images/illustrations/chemistry.webp' },
+                // { title: 'Digital Library & Journals', description: 'Access to international chemistry journals, e-books, and research databases like SciFinder and PubChem.', image: '/images/illustrations/digital-library.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -747,9 +747,9 @@ export default function MScChemistryPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'B.Sc Chemistry', description: 'Comprehensive undergraduate programme in chemistry with laboratory training', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+Chemistry' },
-                { title: 'M.Sc Physics', description: 'Advanced postgraduate studies in theoretical and applied physics', duration: '2 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=MSc+Physics' },
-                { title: 'M.Sc Mathematics', description: 'Rigorous programme in pure and applied mathematics', duration: '2 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=MSc+Maths' }
+                { title: 'B.Sc Chemistry', description: 'Comprehensive undergraduate programme in chemistry with laboratory training', duration: '3 Years', image: '/images/illustrations/chemistry.webp' },
+                { title: 'M.Sc Physics', description: 'Advanced postgraduate studies in theoretical and applied physics', duration: '2 Years', image: '/images/illustrations/physics.webp' },
+                { title: 'M.Sc Mathematics', description: 'Rigorous programme in pure and applied mathematics', duration: '2 Years', image: '/images/illustrations/maths.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

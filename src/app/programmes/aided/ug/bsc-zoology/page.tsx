@@ -171,7 +171,7 @@ export default function BScZoologyPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=Zoology+Lab"
+                  src="/images/illustrations/biology.webp"
                   alt="Zoology Laboratory"
                   className="w-full h-auto"
                 />
@@ -576,8 +576,8 @@ export default function BScZoologyPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Zoology Laboratory', description: 'Advanced compound microscopes, stereo microscopes for dissection, specimen preservation units, and digital imaging systems for detailed study.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Zoology+Lab' },
-                { title: 'Zoological Museum', description: 'Preserved animal specimens, taxidermy collections, skeletal displays, and educational models for comprehensive taxonomic understanding.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Museum' }
+                { title: 'Zoology Laboratory', description: 'Advanced compound microscopes, stereo microscopes for dissection, specimen preservation units, and digital imaging systems for detailed study.', image: '/images/illustrations/biology.webp' },
+                { title: 'Zoological Museum', description: 'Preserved animal specimens, taxidermy collections, skeletal displays, and educational models for comprehensive taxonomic understanding.', image: '/images/illustrations/biology.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

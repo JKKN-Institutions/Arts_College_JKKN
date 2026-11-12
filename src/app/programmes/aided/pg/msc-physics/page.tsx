@@ -170,7 +170,7 @@ export default function MScPhysicsPage() {
             <RevealSection className="lg:col-span-2" delay={200}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://placehold.co/600x450/0b6d41/FFFFFF?text=Advanced+Physics+Lab"
+                  src="/images/illustrations/physics.webp"
                   alt="Advanced Physics Laboratory"
                   className="w-full h-auto"
                 />
@@ -473,12 +473,12 @@ export default function MScPhysicsPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Advanced Physics Laboratory', description: 'Fully equipped laboratory with modern experimental setups for quantum mechanics, optics, and solid state physics experiments with precision instrumentation.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Physics+Lab' },
-                { title: 'Computational Physics Lab', description: 'High-performance computing facilities with MATLAB, Python, and specialized physics simulation software for numerical analysis and modeling.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Computational+Lab' },
-                { title: 'Spectroscopy & Optics Lab', description: 'Advanced spectroscopic equipment including UV-Vis, FTIR, and optical instruments for studying electromagnetic radiation and material properties.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Spectroscopy+Lab' },
-                { title: 'Electronics Workshop', description: 'Dedicated workshop with oscilloscopes, function generators, and circuit design tools for experimental electronics and instrumentation projects.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Electronics+Workshop' },
-                { title: 'Digital Learning Commons & E-Resources', description: 'Access to IEEE, Nature Physics, Physical Review journals, and online resources including research papers and e-books for continuous learning.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Library' },
-                { title: 'Research & Innovation Center', description: 'Dedicated research space for M.Sc dissertations with mentorship from experienced senior learners and access to collaborative research projects.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Center' }
+                { title: 'Advanced Physics Laboratory', description: 'Fully equipped laboratory with modern experimental setups for quantum mechanics, optics, and solid state physics experiments with precision instrumentation.', image: '/images/illustrations/physics.webp' },
+                { title: 'Computational Physics Lab', description: 'High-performance computing facilities with MATLAB, Python, and specialized physics simulation software for numerical analysis and modeling.', image: '/images/illustrations/computers.webp' },
+                { title: 'Spectroscopy & Optics Lab', description: 'Advanced spectroscopic equipment including UV-Vis, FTIR, and optical instruments for studying electromagnetic radiation and material properties.', image: '/images/illustrations/chemistry.webp' },
+                { title: 'Electronics Workshop', description: 'Dedicated workshop with oscilloscopes, function generators, and circuit design tools for experimental electronics and instrumentation projects.', image: '/images/illustrations/physics.webp' },
+                { title: 'Digital Learning Commons & E-Resources', description: 'Access to IEEE, Nature Physics, Physical Review journals, and online resources including research papers and e-books for continuous learning.', image: '/images/illustrations/digital-library.webp' },
+                { title: 'Research & Innovation Center', description: 'Dedicated research space for M.Sc dissertations with mentorship from experienced senior learners and access to collaborative research projects.', image: '/images/illustrations/research.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -705,9 +705,9 @@ export default function MScPhysicsPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'M.Sc Mathematics', description: 'Advanced programme in pure and applied mathematics with research focus', duration: '2 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=MSc+Mathematics' },
-                { title: 'M.Sc Computer Science', description: 'Postgraduate programme in data analytics and machine learning', duration: '2 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=MSc+CS' },
-                { title: 'B.Sc Physics', description: 'Undergraduate programme building foundations in physics', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+Physics' }
+                { title: 'M.Sc Mathematics', description: 'Advanced programme in pure and applied mathematics with research focus', duration: '2 Years', image: '/images/illustrations/maths.webp' },
+                { title: 'M.Sc Computer Science', description: 'Postgraduate programme in data analytics and machine learning', duration: '2 Years', image: '/images/illustrations/computers.webp' },
+                { title: 'B.Sc Physics', description: 'Undergraduate programme building foundations in physics', duration: '3 Years', image: '/images/illustrations/physics.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

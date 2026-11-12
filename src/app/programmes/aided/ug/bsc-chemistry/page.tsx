@@ -591,11 +591,11 @@ export default function BScChemistryPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Advanced Laboratories', description: 'Modern chemistry labs with latest equipment for organic, inorganic, physical, and analytical chemistry with safety protocols.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Chemistry+Lab' },
-                { title: 'Department Library', description: 'Extensive chemistry research resources, journals, reference books, and digital databases for academic study.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Digital+Library' },
-                { title: 'Research Center', description: 'Dedicated research and project facilities with modern instruments for undergraduate and postgraduate research.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Center' },
-                // { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for academic discussions, guest lectures, and workshops.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Seminar+Hall' },
-                // { title: 'Smart Learning Studios', description: 'Technology-enabled learning spaces with interactive boards, projectors, and high-speed internet connectivity.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Smart+Classroom' }
+                { title: 'Advanced Laboratories', description: 'Modern chemistry labs with latest equipment for organic, inorganic, physical, and analytical chemistry with safety protocols.', image: '/images/illustrations/chemistry.webp' },
+                { title: 'Department Library', description: 'Extensive chemistry research resources, journals, reference books, and digital databases for academic study.', image: '/images/illustrations/digital-library.webp' },
+                { title: 'Research Center', description: 'Dedicated research and project facilities with modern instruments for undergraduate and postgraduate research.', image: '/images/illustrations/research.webp' },
+                // { title: 'Seminar Hall', description: 'Air-conditioned seminar hall with modern presentation facilities for academic discussions, guest lectures, and workshops.', image: '/images/facilities/Seminar-hall-1.avif' },
+                // { title: 'Smart Learning Studios', description: 'Technology-enabled learning spaces with interactive boards, projectors, and high-speed internet connectivity.', image: '/images/classroom/class_room-1.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -825,9 +825,9 @@ export default function BScChemistryPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'B.Sc Physics', description: 'Explore the fundamental laws of nature and physical phenomena', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+Physics' },
-                { title: 'B.Sc Mathematics', description: 'Master mathematical concepts and computational techniques', duration: '3 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=BSc+Mathematics' },
-                { title: 'B.Sc Zoology', description: 'Study animal biology, biodiversity, and life sciences', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+Zoology' }
+                { title: 'B.Sc Physics', description: 'Explore the fundamental laws of nature and physical phenomena', duration: '3 Years', image: '/images/illustrations/physics.webp' },
+                { title: 'B.Sc Mathematics', description: 'Master mathematical concepts and computational techniques', duration: '3 Years', image: '/images/illustrations/maths.webp' },
+                { title: 'B.Sc Zoology', description: 'Study animal biology, biodiversity, and life sciences', duration: '3 Years', image: '/images/illustrations/biology.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

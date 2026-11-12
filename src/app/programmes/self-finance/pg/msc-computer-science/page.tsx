@@ -510,12 +510,12 @@ export default function MScComputerSciencePage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Advanced Computing Laboratory', description: 'High-performance workstations with latest processors, GPUs for deep learning, and cutting-edge development environments for hands-on learning.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Computer+Lab' },
-                { title: 'AI & Machine Learning Lab', description: 'Dedicated laboratory with GPU clusters, TensorFlow, PyTorch frameworks, and specialized hardware for AI model training and deployment.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=AI+ML+Lab' },
-                { title: 'Cloud Computing Lab', description: 'Access to AWS, Azure, and Google Cloud platforms with virtualization infrastructure for cloud-native application development and deployment.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Cloud+Lab' },
-                { title: 'Networking & Security Lab', description: 'Cisco networking equipment, firewall configurations, penetration testing tools, and security monitoring systems for practical cybersecurity training.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Networking+Lab' },
-                { title: 'Software Development Lab', description: 'Modern IDEs, version control systems, agile project management tools, and collaboration platforms for full-stack development projects.', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Software+Lab' },
-                { title: 'Digital Learning Commons & Research Center', description: 'Access to IEEE, ACM digital libraries, research databases, online courses, and dedicated spaces for collaborative research work.', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Digital+Library' }
+                { title: 'Advanced Computing Laboratory', description: 'High-performance workstations with latest processors, GPUs for deep learning, and cutting-edge development environments for hands-on learning.', image: '/images/illustrations/computers.webp' },
+                { title: 'AI & Machine Learning Lab', description: 'Dedicated laboratory with GPU clusters, TensorFlow, PyTorch frameworks, and specialized hardware for AI model training and deployment.', image: '/images/illustrations/ai-data.webp' },
+                { title: 'Cloud Computing Lab', description: 'Access to AWS, Azure, and Google Cloud platforms with virtualization infrastructure for cloud-native application development and deployment.', image: '/images/illustrations/computers.webp' },
+                { title: 'Networking & Security Lab', description: 'Cisco networking equipment, firewall configurations, penetration testing tools, and security monitoring systems for practical cybersecurity training.', image: '/images/illustrations/computers.webp' },
+                { title: 'Software Development Lab', description: 'Modern IDEs, version control systems, agile project management tools, and collaboration platforms for full-stack development projects.', image: '/images/illustrations/computers.webp' },
+                { title: 'Digital Learning Commons & Research Center', description: 'Access to IEEE, ACM digital libraries, research databases, online courses, and dedicated spaces for collaborative research work.', image: '/images/illustrations/digital-library.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
@@ -745,9 +745,9 @@ export default function MScComputerSciencePage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'B.Sc Computer Science', description: 'Undergraduate programme in computer science fundamentals and programming', duration: '3 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=BSc+CS' },
-                { title: 'BCA', description: 'Bachelor of Computer Applications with focus on software development', duration: '3 Years', image: 'https://placehold.co/400x180/059669/FFFFFF?text=BCA' },
-                { title: 'M.Com', description: 'Postgraduate programme in commerce with IT applications', duration: '2 Years', image: 'https://placehold.co/400x180/0b6d41/FFFFFF?text=MCom' }
+                { title: 'B.Sc Computer Science', description: 'Undergraduate programme in computer science fundamentals and programming', duration: '3 Years', image: '/images/illustrations/computers.webp' },
+                { title: 'BCA', description: 'Bachelor of Computer Applications with focus on software development', duration: '3 Years', image: '/images/illustrations/computers.webp' },
+                { title: 'M.Com', description: 'Postgraduate programme in commerce with IT applications', duration: '2 Years', image: '/images/illustrations/commerce.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>
                   <a href="#" className="block bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">

@@ -510,9 +510,9 @@ export default function MAHistoryPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { title: 'Research Library', description: 'Extensive collection of rare books, manuscripts, journals, and digital resources for comprehensive historical research', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Research+Library' },
-                { title: 'Archive & Museum', description: 'Dedicated archival facility with historical documents, artifacts, and museum specimens for hands-on learning', image: 'https://placehold.co/400x200/059669/FFFFFF?text=Archive+Museum' },
-                { title: 'Field Study Programs', description: 'Regular field visits to historical sites, excavation sites, museums, and heritage locations for practical exposure', image: 'https://placehold.co/400x200/0b6d41/FFFFFF?text=Field+Studies' }
+                { title: 'Research Library', description: 'Extensive collection of rare books, manuscripts, journals, and digital resources for comprehensive historical research', image: '/images/facilities/library-1.avif' },
+                { title: 'Archive & Museum', description: 'Dedicated archival facility with historical documents, artifacts, and museum specimens for hands-on learning', image: '/images/illustrations/humanities.webp' },
+                { title: 'Field Study Programs', description: 'Regular field visits to historical sites, excavation sites, museums, and heritage locations for practical exposure', image: '/images/illustrations/humanities.webp' }
               ].map((facility, idx) => (
                 <RevealSection key={idx} delay={idx * 100}>
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-brand-cream group">
