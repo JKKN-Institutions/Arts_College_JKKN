@@ -152,7 +152,7 @@ export default function FeeStructurePage() {
                           {prog.name}
                         </td>
                         <td className="px-6 py-4 text-center text-gray-500 border-r border-gray-100 text-sm whitespace-nowrap">
-                          As Per Govt Norms
+                          As Per Government Norm
                         </td>
                         <td className="px-6 py-4 text-center font-semibold text-[#0b6d41] border-r border-gray-100 text-sm whitespace-nowrap">
                           ₹{prog.mq.toLocaleString("en-IN")}
@@ -170,7 +170,7 @@ export default function FeeStructurePage() {
             <div className="mt-6 bg-[#0b6d41]/5 rounded-xl p-5 border border-[#0b6d41]/10">
               <p className="text-sm text-gray-600 leading-relaxed">
                 <strong className="text-gray-800">Note:</strong> GQ — Government
-                Quota fees are As Per Govt Norms. MQ fees shown are annual fees
+                Quota fees are As Per Government Norm. MQ fees shown are annual fees
                 for the Management Quota category. Programmes marked with * are proposed and awaiting approval from Periyar University; their fees are indicative and apply only once approval is granted. For hostel charges, transport fees, and
                 scholarship information, contact the admissions office at{" "}
                 <a
