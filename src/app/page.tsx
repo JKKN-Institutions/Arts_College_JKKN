@@ -653,7 +653,7 @@ export default function Home() {
             {/* Aided UG */}
             <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
               <div className="text-[14px] font-semibold text-[#0b6d41] uppercase tracking-wide mb-3">Aided UG</div>
-              <div className="text-[28px] md:text-[32px] font-bold text-[#0b6d41] leading-tight mb-2">As per Govt norms</div>
+              <div className="text-[28px] md:text-[32px] font-bold text-[#0b6d41] leading-tight mb-2">As Per Government Norm</div>
               <div className="text-[13px] text-gray-500 mb-3">per year</div>
               <p className="text-[13px] leading-[18px] text-gray-600">Government-regulated fees. Includes tuition and basic amenities. Scholarship eligible.</p>
             </div>

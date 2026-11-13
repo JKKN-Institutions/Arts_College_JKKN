@@ -107,7 +107,7 @@ export default function PerunduraiPage() {
     },
     {
       q: "Are JKKN CAS fees affordable for Perundurai students?",
-      a: "JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 per year, PG fees are ₹20,000 to ₹25,000 per year, and aided programme fees follow government norms. Tamil Nadu government scholarships for BC, MBC, SC, and ST students are available. Merit-based concessions are also offered. Contact the admission office at +91 9345855001 for the current fee structure.",
+      a: "JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 per year, PG fees are ₹20,000 to ₹25,000 per year, and aided programme fees are As Per Government Norm. Tamil Nadu government scholarships for BC, MBC, SC, and ST students are available. Merit-based concessions are also offered. Contact the admission office at +91 9345855001 for the current fee structure.",
     },
     {
       q: "Does JKKN CAS provide hostel for Perundurai students?",
@@ -779,7 +779,7 @@ export default function PerunduraiPage() {
               <h3 className="font-bold text-gray-800 mb-2">Affordable Fee Structure</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
                 JKKN CAS self-finance UG fees are ₹24,500–₹34,000 per year for 2026-27, and
-                aided programme fees follow government norms. EMI payment options available.
+                aided programme fees are As Per Government Norm. EMI payment options available.
                 Contact the admission office for the complete fee breakdown.
               </p>
             </div>

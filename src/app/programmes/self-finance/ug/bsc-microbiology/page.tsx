@@ -127,7 +127,7 @@ export default function BSCMicrobiologyPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
-              { icon: <DollarSign className="w-7 h-7" />, stat: '₹34,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
+              { icon: <DollarSign className="w-7 h-7" />, stat: '₹34,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ: As Per Government Norm' },
               { icon: <Microscope className="w-7 h-7" />, stat: 'Any 1', title: 'Biology Subject', desc: 'Botany, Zoology or Biology in +2' },
               { icon: <TestTube className="w-7 h-7" />, stat: 'Lab', title: 'Practical Every Core', desc: 'A practical in each core subject' },
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited (B) college' },
@@ -617,7 +617,7 @@ export default function BSCMicrobiologyPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'Published Fee', description: '₹34,000 a year under the management quota for 2026-27; government quota seats follow Government norms.' },
+                  { title: 'Published Fee', description: '₹34,000 a year under the management quota for 2026-27; government quota fees are As Per Government Norm.' },
                   { title: 'Any One Biology Subject', description: 'Botany, Zoology or Biology in +2 qualifies under the Periyar University regulation; Chemistry and a minimum percentage are not required.' },
                   { title: 'A Practical in Every Core Subject', description: 'From Fundamentals of Microbiology in Semester I to Core Practical VI in the final year.' },
                   { title: 'Project and Internship', description: 'A project with viva voce and an internship, industrial visit or field visit in the final year.' },

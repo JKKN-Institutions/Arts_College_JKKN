@@ -52,7 +52,7 @@ export default function MicrobiologySFDepartmentPage() {
                   <tr className="border-b"><th className="p-3 font-semibold">Programme</th><td className="p-3"><Link href="/programmes/self-finance/ug/bsc-microbiology" className="text-brand-green underline">B.Sc Microbiology, Self-Finance</Link></td></tr>
                   <tr className="border-b"><th className="p-3 font-semibold">Duration</th><td className="p-3">3 years, 6 semesters, full-time</td></tr>
                   <tr className="border-b"><th className="p-3 font-semibold">Eligibility</th><td className="p-3">Pass in the Higher Secondary (+2) examination in any one of Botany, Zoology or Biology, academic or vocational stream (Periyar University regulations). No minimum percentage; Chemistry is not required.</td></tr>
-                  <tr><th className="p-3 font-semibold">Annual fee 2026-27</th><td className="p-3">₹34,000 (management quota); government quota as per Government norms</td></tr>
+                  <tr><th className="p-3 font-semibold">Annual fee 2026-27</th><td className="p-3">₹34,000 (management quota); government quota: As Per Government Norm</td></tr>
                 </tbody>
               </table>
             </div>

@@ -47,7 +47,7 @@ export default function VisualCommunicationSFDepartmentPage() {
                   <tr className="border-b"><th className="p-3 font-semibold">Programme</th><td className="p-3"><Link href="/programmes/self-finance/ug/bsc-visual-communication" className="text-brand-green underline">B.Sc Visual Communication, Self-Finance</Link></td></tr>
                   <tr className="border-b"><th className="p-3 font-semibold">Duration</th><td className="p-3">3 years, 6 semesters, full-time</td></tr>
                   <tr className="border-b"><th className="p-3 font-semibold">Eligibility</th><td className="p-3">Pass in the Higher Secondary (+2) examination or an equivalent, or a 10+3 year Diploma (Periyar University regulations). No minimum percentage and no subject rule; any group can apply.</td></tr>
-                  <tr className="border-b"><th className="p-3 font-semibold">Annual fee 2026-27</th><td className="p-3">₹32,000 (management quota); government quota as per Government norms</td></tr>
+                  <tr className="border-b"><th className="p-3 font-semibold">Annual fee 2026-27</th><td className="p-3">₹32,000 (management quota); government quota: As Per Government Norm</td></tr>
                   <tr><th className="p-3 font-semibold">Head of Department</th><td className="p-3">Mr. B. Baranidharan, M.Sc. (EM)</td></tr>
                 </tbody>
               </table>

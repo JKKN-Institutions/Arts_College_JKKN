@@ -25,7 +25,7 @@ export const bscCyberFaqs = [
   {
     question: "What is the B.Sc Cyber Security fee at JKKN College of Arts and Science?",
     answer:
-      "For 2026-27 the annual tuition fee is Rs 32,000 under the management quota. Government quota seats follow the fee fixed by Government norms. The full fee table is on the Fee Structure page.",
+      "For 2026-27 the annual tuition fee is Rs 32,000 under the management quota. Government quota fees are As Per Government Norm. The full fee table is on the Fee Structure page.",
   },
   {
     question: "Is this a B.Sc or a B.E. degree?",

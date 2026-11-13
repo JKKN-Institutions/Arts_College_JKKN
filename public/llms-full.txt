@@ -145,7 +145,7 @@ Annual fees as published in the fee structure on https://cas.jkkn.ac.in/admissio
 
 | Category | Fee per year |
 |---|---|
-| Aided UG | As per Government norms |
+| Aided UG | As Per Government Norm |
 | Self-Finance UG | Rs 24,500 – Rs 34,000 |
 | Postgraduate | Rs 20,000 – Rs 25,000 |
 
@@ -228,7 +228,7 @@ A: 1974, as Alamelu Angappan College for Women. It became co-educational in 2008
 A: 35 — 20 undergraduate, 12 postgraduate and 3 Ph.D. Three further AI-oriented undergraduate programmes are proposed and awaiting university approval.
 
 **Q: What is the difference between aided and self-finance programmes here?**
-A: Aided programmes are government-aided and their fees are set as per Government norms. Self-finance programmes are funded by the college, with published UG fees of Rs 24,500 to Rs 34,000 per year.
+A: Aided programmes are government-aided and their fees are As Per Government Norm. Self-finance programmes are funded by the college, with published UG fees of Rs 24,500 to Rs 34,000 per year.
 
 **Q: Does the college offer B.Sc. Artificial Intelligence?**
 A: Yes — B.Sc. Artificial Intelligence & Data Science is offered under self-finance. B.Com. (AI), B.Sc. Textile and Fashion Designing (AI) and B.Sc. Visual Communication (AI) are proposed and not yet approved.

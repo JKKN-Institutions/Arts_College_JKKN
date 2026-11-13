@@ -38,7 +38,7 @@ export const bscTfdFaqs = [
   {
     question: "What is the B.Sc Textile and Fashion Designing fee at JKKN College of Arts and Science?",
     answer:
-      "For 2026-27 the annual tuition fee is Rs 32,000 under the management quota. Government quota seats follow the fee fixed by Government norms. The full fee table is on the Fee Structure page.",
+      "For 2026-27 the annual tuition fee is Rs 32,000 under the management quota. Government quota fees are As Per Government Norm. The full fee table is on the Fee Structure page.",
   },
   {
     question: "Is B.Sc Textile and Fashion Designing the same as B.Tech Fashion Technology or a NIFT B.Des?",

@@ -233,10 +233,7 @@ export function getAdmissionContent(
       ? SELF_FINANCE_FEES[programmePath] ?? null
       : null;
 
-  const feesGQ =
-    programme.category === "Aided"
-      ? "As per Government Norms"
-      : "As per Government Norms (GQ seats)";
+  const feesGQ = "As Per Government Norm";
 
   const seats = programme.proposed ? undefined : SANCTIONED_SEATS[programmePath];
   const isPhd = programme.level === "PhD";

@@ -107,7 +107,7 @@ const faqs = [
   {
     question: "What does B.Sc Visual Communication cost at JKKN College of Arts and Science?",
     answer:
-      "For 2026-27 the annual tuition fee is Rs 32,000 under the management quota. Government quota seats follow Government norms. The programme is three years and six semesters, and the degree is awarded by Periyar University.",
+      "For 2026-27 the annual tuition fee is Rs 32,000 under the management quota. Government quota fees are As Per Government Norm. The programme is three years and six semesters, and the degree is awarded by Periyar University.",
   },
 ];
 
@@ -179,7 +179,7 @@ export default function BscVisualCommunicationCollegesTamilNaduPage() {
           <ul className="space-y-2 text-gray-700">
             <li><strong>Where:</strong> NH-544 (Salem to Coimbatore highway), Komarapalayam, Namakkal district, between Salem and Erode.</li>
             <li><strong>Status:</strong> autonomous college, affiliated to Periyar University, Salem; NAAC accredited (B).</li>
-            <li><strong>Fee 2026-27:</strong> ₹32,000 a year (management quota); government quota as per Government norms.</li>
+            <li><strong>Fee 2026-27:</strong> ₹32,000 a year (management quota); government quota: As Per Government Norm.</li>
             <li><strong>Eligibility:</strong> a pass in +2 or an equivalent, or a 10+3 year Diploma; no minimum percentage and no subject rule (<a href={REGULATION_URL} target="_blank" rel="noopener noreferrer" className="text-brand-green underline">Periyar University regulations</a>).</li>
             <li><strong>Course:</strong> 3 years, 6 semesters: graphic design, photography and videography, image and audio-visual editing, 2D and 3D modelling, animation and visual effects, advertising, user experience design, immersive and extended reality media, short film making, an internship and a capstone project. The department has a photography studio and an editing lab.</li>
           </ul>

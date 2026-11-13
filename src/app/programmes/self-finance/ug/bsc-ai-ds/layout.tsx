@@ -41,7 +41,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         url="/programmes/self-finance/ug/bsc-ai-ds"
         programPrerequisites="Pass in the Higher Secondary (+2) examination; confirm the required +2 subjects with the admissions office"
         offerPrice={34000}
-        offerDescription="Annual tuition fee, management quota, 2026-27. Government quota as per Government norms."
+        offerDescription="Annual tuition fee, management quota, 2026-27. Government quota fee: As Per Government Norm."
       />
       <BreadcrumbSchema
         items={[

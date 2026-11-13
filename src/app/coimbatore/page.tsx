@@ -105,7 +105,7 @@ export default function CoimbatorePage() {
     },
     {
       q: "Are JKKN CAS fees affordable compared to Coimbatore colleges?",
-      a: "JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 per year, PG fees are ₹20,000 to ₹25,000 per year, and aided programme fees follow government norms. Government scholarships for BC, MBC, SC, and ST students are available. Call +91 9345855001 for details.",
+      a: "JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 per year, PG fees are ₹20,000 to ₹25,000 per year, and aided programme fees are As Per Government Norm. Government scholarships for BC, MBC, SC, and ST students are available. Call +91 9345855001 for details.",
     },
     {
       q: "Does JKKN CAS provide hostel for Coimbatore students?",
@@ -456,7 +456,7 @@ export default function CoimbatorePage() {
             </h2>
             <p className="aeo-citation-block text-gray-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
               JKKN CAS self-finance UG tuition for 2026-27 is ₹24,500–₹34,000 a year, and aided
-              programme fees follow government norms. For students from Coimbatore, the college
+              programme fees are As Per Government Norm. For students from Coimbatore, the college
               offers on-campus hostel accommodation that includes three meals daily, WiFi, and
               24/7 security.
             </p>
@@ -961,7 +961,7 @@ export default function CoimbatorePage() {
               <h3 className="font-bold text-gray-800 mb-2">Affordable Fee Structure</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
                 JKKN CAS self-finance UG fees are ₹24,500–₹34,000 per year for 2026-27, and
-                aided programme fees follow government norms. EMI payment options available.
+                aided programme fees are As Per Government Norm. EMI payment options available.
                 Contact the admission office for the complete fee breakdown.
               </p>
             </div>

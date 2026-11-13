@@ -149,7 +149,7 @@ const faqs = [
   {
     question: "What does B.Sc Computer Science cost at JKKN College of Arts and Science?",
     answer:
-      "For 2026-27 the annual tuition fee is Rs 34,000 under the management quota. Government quota seats follow Government norms. The programme is three years and six semesters, and the degree is awarded by Periyar University.",
+      "For 2026-27 the annual tuition fee is Rs 34,000 under the management quota. Government quota fees are As Per Government Norm. The programme is three years and six semesters, and the degree is awarded by Periyar University.",
   },
 ];
 
@@ -220,7 +220,7 @@ export default function BscComputerScienceCollegesTamilNaduPage() {
           <ul className="space-y-2 text-gray-700">
             <li><strong>Where:</strong> NH-544 (Salem to Coimbatore highway), Komarapalayam, Namakkal district, between Salem and Erode.</li>
             <li><strong>Status:</strong> autonomous college, affiliated to Periyar University, Salem; NAAC accredited (B).</li>
-            <li><strong>Fee 2026-27:</strong> ₹34,000 a year (management quota); government quota as per Government norms.</li>
+            <li><strong>Fee 2026-27:</strong> ₹34,000 a year (management quota); government quota: As Per Government Norm.</li>
             <li><strong>Eligibility:</strong> +2 pass with any one of Mathematics, Business Mathematics, Computer Science or Statistics (Periyar University regulations).</li>
             <li><strong>Course:</strong> 3 years, 6 semesters: Python, Data Structures, Microprocessors, Web Designing, Java, PHP, Software Engineering, DBMS, Computer Networks and .NET, each core subject with a lab; final-year project and internship. M.Sc Computer Science and MCA on the same campus.</li>
           </ul>

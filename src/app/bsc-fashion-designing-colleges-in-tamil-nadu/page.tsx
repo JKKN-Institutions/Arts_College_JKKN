@@ -122,7 +122,7 @@ const faqs = [
   {
     question: "What does B.Sc Textile and Fashion Designing cost at JKKN College of Arts and Science?",
     answer:
-      "For 2026-27 the annual tuition fee is Rs 32,000 under the management quota. Government quota seats follow Government norms. The programme is three years and six semesters, and the degree is awarded by Periyar University.",
+      "For 2026-27 the annual tuition fee is Rs 32,000 under the management quota. Government quota fees are As Per Government Norm. The programme is three years and six semesters, and the degree is awarded by Periyar University.",
   },
 ];
 
@@ -194,7 +194,7 @@ export default function BscFashionDesigningCollegesTamilNaduPage() {
           <ul className="space-y-2 text-gray-700">
             <li><strong>Where:</strong> NH-544 (Salem to Coimbatore highway), Komarapalayam, Namakkal district, between Salem and Erode.</li>
             <li><strong>Status:</strong> autonomous college, affiliated to Periyar University, Salem; NAAC accredited (B).</li>
-            <li><strong>Fee 2026-27:</strong> ₹32,000 a year (management quota); government quota as per Government norms.</li>
+            <li><strong>Fee 2026-27:</strong> ₹32,000 a year (management quota); government quota: As Per Government Norm.</li>
             <li><strong>Eligibility:</strong> a pass in any +2 course, academic or vocational; a three-year Fashion, Costume, Textile or Apparel diploma qualifies for direct second-year admission (<a href={REGULATION_URL} target="_blank" rel="noopener noreferrer" className="text-brand-green underline">Periyar University regulations</a>).</li>
             <li><strong>Course:</strong> 3 years, 6 semesters: Fiber and Yarn Science, Woven Fabric Science, Textile Wet Processing and Finishing, children&apos;s, women&apos;s and men&apos;s apparel practicals, Apparel Costing and Merchandising, Textile Testing and Quality Control, and CAD in Garment Designing; final-year internship project and fashion portfolio.</li>
           </ul>

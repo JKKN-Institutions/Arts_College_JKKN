@@ -54,7 +54,7 @@ export default function TextileFashionDesigningSFDepartmentPage() {
                   <tr className="border-b"><th className="p-3 font-semibold">Duration</th><td className="p-3">3 years, 6 semesters, full-time</td></tr>
                   <tr className="border-b"><th className="p-3 font-semibold">Eligibility</th><td className="p-3">Pass in any Higher Secondary (+2) course, academic or vocational, of the State Board, CBSE, ICSE or an equivalent examination (Periyar University regulations). Any group can apply.</td></tr>
                   <tr className="border-b"><th className="p-3 font-semibold">Diploma holders</th><td className="p-3">A pass in a three-year Diploma in a Fashion, Costume, Textile or Apparel course qualifies for direct second-year admission under the regulation; contact the admissions office for seat availability.</td></tr>
-                  <tr><th className="p-3 font-semibold">Annual fee 2026-27</th><td className="p-3">₹32,000 (management quota); government quota as per Government norms</td></tr>
+                  <tr><th className="p-3 font-semibold">Annual fee 2026-27</th><td className="p-3">₹32,000 (management quota); government quota: As Per Government Norm</td></tr>
                 </tbody>
               </table>
             </div>

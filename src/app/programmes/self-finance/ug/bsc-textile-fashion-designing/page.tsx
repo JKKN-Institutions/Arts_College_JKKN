@@ -127,7 +127,7 @@ export default function BSCTextileFashionDesigningPage() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
               {[
-                { icon: <DollarSign className="w-7 h-7" />, stat: '₹32,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
+                { icon: <DollarSign className="w-7 h-7" />, stat: '₹32,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ: As Per Government Norm' },
                 { icon: <BookOpen className="w-7 h-7" />, stat: 'Any +2', title: 'Group Eligible', desc: 'Science, Commerce, Arts or vocational' },
                 { icon: <Award className="w-7 h-7" />, stat: 'Diploma', title: 'Direct 2nd Year', desc: 'As per Periyar University regulation' },
                 { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited (B) college' },
@@ -628,7 +628,7 @@ export default function BSCTextileFashionDesigningPage() {
 
                 <div className="space-y-4">
                   {[
-                    { icon: <DollarSign className="w-6 h-6" />, title: 'Published Fee', description: '₹32,000 a year under the management quota for 2026-27; government quota seats follow Government norms.' },
+                    { icon: <DollarSign className="w-6 h-6" />, title: 'Published Fee', description: '₹32,000 a year under the management quota for 2026-27; government quota fees are As Per Government Norm.' },
                     { icon: <BookOpen className="w-6 h-6" />, title: 'Any +2 Group Can Join', description: 'Science, Commerce, Arts and vocational students are all eligible under the Periyar University regulation.' },
                     { icon: <Award className="w-6 h-6" />, title: 'Diploma Holders: Second Year', description: 'A three-year Fashion, Costume, Textile or Apparel diploma qualifies for direct second-year admission under the regulation.' },
                     { icon: <Ruler className="w-6 h-6" />, title: 'Practicals Every Year', description: 'Children\'s, women\'s and men\'s apparel, textile processing and CAD in Garment Designing, each as a practical course.' },

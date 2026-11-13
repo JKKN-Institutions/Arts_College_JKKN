@@ -126,7 +126,7 @@ export default function BScVisualCommunicationPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
-              { icon: <DollarSign className="w-7 h-7" />, stat: '₹32,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
+              { icon: <DollarSign className="w-7 h-7" />, stat: '₹32,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ: As Per Government Norm' },
               { icon: <BookOpen className="w-7 h-7" />, stat: 'Any +2', title: 'Group Eligible', desc: 'Science, Commerce, Arts or vocational' },
               { icon: <Camera className="w-7 h-7" />, stat: 'Studio', title: 'Photography & Editing', desc: 'Practicals in every year' },
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited (B) college' },
@@ -607,7 +607,7 @@ export default function BScVisualCommunicationPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'Published Fee', description: '₹32,000 a year under the management quota for 2026-27; government quota seats follow Government norms.' },
+                  { title: 'Published Fee', description: '₹32,000 a year under the management quota for 2026-27; government quota fees are As Per Government Norm.' },
                   { title: 'Any +2 Group Can Join', description: 'The Periyar University regulation asks for a pass in +2 or a 10+3 year Diploma, with no minimum percentage and no subject rule.' },
                   { title: 'Practicals Every Year', description: 'Photography and videography, editing, animation, visual effects, short film making and extended reality design, each as a practical course.' },
                   { title: 'Internship and Capstone', description: 'An internship in Semester V and a capstone project in Semester VI.' },

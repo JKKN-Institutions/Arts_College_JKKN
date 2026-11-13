@@ -125,7 +125,7 @@ export default function BScComputerSciencePage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
-              { icon: <DollarSign className="w-7 h-7" />, stat: '₹34,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
+              { icon: <DollarSign className="w-7 h-7" />, stat: '₹34,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ: As Per Government Norm' },
               { icon: <Building2 className="w-7 h-7" />, stat: 'Periyar', title: 'University Affiliation', desc: 'Autonomous college, Salem region' },
               { icon: <Code2 className="w-7 h-7" />, stat: 'Maths / CS', title: '+2 Eligibility', desc: 'Or Business Maths or Statistics' },
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited, Grade B', desc: 'Autonomous, UGC 2(f) & 12(B)' },
@@ -614,7 +614,7 @@ export default function BScComputerSciencePage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'Published Fee', description: '₹34,000 a year under the management quota for 2026-27; government quota seats follow Government norms. Every programme fee is on the Fee Structure page.' },
+                  { title: 'Published Fee', description: '₹34,000 a year under the management quota for 2026-27; government quota fees are As Per Government Norm. Every programme fee is on the Fee Structure page.' },
                   { title: 'Autonomous, Periyar University Degree', description: 'The college sets its own syllabus and examinations as an autonomous institution; the degree is awarded by Periyar University, Salem.' },
                   { title: 'Open to +2 Computer Science Students', description: 'Mathematics is not compulsory: +2 with Computer Science, Statistics or Business Mathematics also qualifies under the Periyar University regulation.' },
                   { title: 'PG on the Same Campus', description: 'M.Sc Computer Science (aided and self-finance) and an aided MCA are offered at the college.' },

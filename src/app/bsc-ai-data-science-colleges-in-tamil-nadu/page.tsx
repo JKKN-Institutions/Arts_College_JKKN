@@ -87,7 +87,7 @@ const faqs = [
   {
     question: "What does B.Sc AI & DS cost at JKKN College of Arts and Science?",
     answer:
-      "For 2026-27 the annual tuition fee is Rs 34,000 under the management quota. Government quota seats follow Government norms. The programme is three years and six semesters, and the degree is awarded by Periyar University.",
+      "For 2026-27 the annual tuition fee is Rs 34,000 under the management quota. Government quota fees are As Per Government Norm. The programme is three years and six semesters, and the degree is awarded by Periyar University.",
   },
 ];
 
@@ -182,7 +182,7 @@ export default function BscAiDataScienceCollegesTamilNaduPage() {
           <ul className="space-y-2 text-gray-700">
             <li><strong>Where:</strong> NH-544 (Salem to Coimbatore highway), Komarapalayam, Namakkal district, between Salem and Erode.</li>
             <li><strong>Status:</strong> autonomous college, affiliated to Periyar University, Salem; NAAC accredited (B).</li>
-            <li><strong>Fee 2026-27:</strong> ₹34,000 a year (management quota); government quota as per Government norms.</li>
+            <li><strong>Fee 2026-27:</strong> ₹34,000 a year (management quota); government quota: As Per Government Norm.</li>
             <li><strong>Eligibility:</strong> a pass in +2; confirm the required +2 subjects with the admissions office.</li>
             <li><strong>Course:</strong> 3 years, 6 semesters: programming, Data Structures, Python, Foundation of Artificial Intelligence, Fundamentals of Data Science, statistics, databases, a Data Science Lab, Ethics of AI, Natural Language Processing, Robotic Process Automation, a project and a summer internship.</li>
           </ul>

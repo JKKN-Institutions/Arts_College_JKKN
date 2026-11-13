@@ -99,7 +99,7 @@ const faqs = [
   {
     question: "What does B.Sc Microbiology cost at JKKN College of Arts and Science?",
     answer:
-      "For 2026-27 the annual tuition fee is Rs 34,000 under the management quota. Government quota seats follow Government norms. The programme is three years and six semesters, and the degree is awarded by Periyar University.",
+      "For 2026-27 the annual tuition fee is Rs 34,000 under the management quota. Government quota fees are As Per Government Norm. The programme is three years and six semesters, and the degree is awarded by Periyar University.",
   },
 ];
 
@@ -143,7 +143,7 @@ export default function BscMicrobiologyCollegesTamilNaduPage() {
           <ul className="space-y-2 text-gray-700">
             <li><strong>Where:</strong> NH-544 (Salem to Coimbatore highway), Komarapalayam, Namakkal district, between Salem and Erode.</li>
             <li><strong>Status:</strong> autonomous college, affiliated to Periyar University, Salem; NAAC accredited (B).</li>
-            <li><strong>Fee 2026-27:</strong> ₹34,000 a year (management quota); government quota as per Government norms.</li>
+            <li><strong>Fee 2026-27:</strong> ₹34,000 a year (management quota); government quota: As Per Government Norm.</li>
             <li><strong>Eligibility:</strong> +2 pass in any one of Botany, Zoology or Biology, academic or vocational; no minimum percentage (<a href={REGULATION_URL} target="_blank" rel="noopener noreferrer" className="text-brand-green underline">Periyar University regulations</a>).</li>
             <li><strong>Course:</strong> 3 years, 6 semesters: microbiology fundamentals, microbial physiology, molecular biology and genetics, immunology, bacteriology, virology, recombinant DNA technology, and environmental, agricultural, food and pharmaceutical microbiology, with a practical in every core subject, a project and an internship.</li>
           </ul>

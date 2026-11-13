@@ -41,7 +41,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         url="/programmes/self-finance/ug/bsc-textile-fashion-designing"
         programPrerequisites="Pass in any Higher Secondary (+2) course, academic or vocational, of the State Board, CBSE, ICSE or an equivalent examination; a three-year Diploma in a Fashion, Costume, Textile or Apparel course qualifies for direct second-year admission (Periyar University B.Sc Textile and Fashion Designing regulations)"
         offerPrice={32000}
-        offerDescription="Annual tuition fee, management quota, 2026-27. Government quota as per Government norms."
+        offerDescription="Annual tuition fee, management quota, 2026-27. Government quota fee: As Per Government Norm."
       />
       <BreadcrumbSchema
         items={[

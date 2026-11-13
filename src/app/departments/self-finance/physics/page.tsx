@@ -47,7 +47,7 @@ export default function PhysicsSFDepartmentPage() {
                   <tr className="border-b"><th className="p-3 font-semibold">Programme</th><td className="p-3"><Link href="/programmes/self-finance/ug/bsc-physics" className="text-brand-green underline">B.Sc Physics (Self-Finance)</Link></td></tr>
                   <tr className="border-b"><th className="p-3 font-semibold">Duration</th><td className="p-3">3 years, 6 semesters, full-time</td></tr>
                   <tr className="border-b"><th className="p-3 font-semibold">Eligibility</th><td className="p-3">Pass in the Higher Secondary (+2) examination with Mathematics, Physics and Chemistry (Periyar University regulations)</td></tr>
-                  <tr className="border-b"><th className="p-3 font-semibold">Annual fee 2026-27</th><td className="p-3">₹25,000 (management quota); government quota as per Government norms</td></tr>
+                  <tr className="border-b"><th className="p-3 font-semibold">Annual fee 2026-27</th><td className="p-3">₹25,000 (management quota); government quota: As Per Government Norm</td></tr>
                   <tr><th className="p-3 font-semibold">Postgraduate route</th><td className="p-3"><Link href="/programmes/aided/pg/msc-physics" className="text-brand-green underline">M.Sc Physics (Aided)</Link> on the same campus</td></tr>
                 </tbody>
               </table>

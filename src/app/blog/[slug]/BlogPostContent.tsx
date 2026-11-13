@@ -504,16 +504,16 @@ export default function BlogPostContent() {
                   </thead>
                   <tbody>
                     {[
-                      ['Government B.Ed Colleges', '₹5,000 – ₹15,000', '₹10,000 – ₹30,000'],
+                      ['Government B.Ed Colleges', 'As Per Government Norm', 'As Per Government Norm'],
                       [
                         'Aided B.Ed Colleges',
-                        '₹20,000 – ₹40,000',
-                        '₹40,000 – ₹80,000',
+                        'As Per Government Norm',
+                        'As Per Government Norm',
                       ],
                       [
                         'Self-Financing (State Quota)',
-                        '₹40,000 – ₹70,000',
-                        '₹80,000 – ₹1,40,000',
+                        'As Per Government Norm',
+                        'As Per Government Norm',
                       ],
                       [
                         'Self-Financing (Management)',

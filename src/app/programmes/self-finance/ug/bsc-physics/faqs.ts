@@ -19,7 +19,7 @@ export const bscPhysicsFaqs = [
   {
     question: "What is the B.Sc Physics fee at JKKN College of Arts and Science?",
     answer:
-      "For 2026-27 the annual tuition fee is Rs 25,000 under the management quota. Government quota seats follow the fee fixed by Government norms. The full fee table for every programme is on the Fee Structure page.",
+      "For 2026-27 the annual tuition fee is Rs 25,000 under the management quota. Government quota fees are As Per Government Norm. The full fee table for every programme is on the Fee Structure page.",
   },
   {
     question: "Which university awards the B.Sc Physics degree?",

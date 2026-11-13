@@ -112,7 +112,7 @@ export default function NamakkalPage() {
     },
     {
       q: "Are JKKN CAS fees affordable for Namakkal families?",
-      a: "Yes. JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 per year, PG fees are ₹20,000 to ₹25,000 per year, and aided programme fees follow government norms. Government scholarships (BC/MBC/SC/ST) and merit-based concessions are available. Contact the admission office at +91 9345855001 for the full fee structure.",
+      a: "Yes. JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 per year, PG fees are ₹20,000 to ₹25,000 per year, and aided programme fees are As Per Government Norm. Government scholarships (BC/MBC/SC/ST) and merit-based concessions are available. Contact the admission office at +91 9345855001 for the full fee structure.",
     },
     {
       q: "Does JKKN CAS provide hostel for Namakkal district students?",
@@ -132,7 +132,7 @@ export default function NamakkalPage() {
     },
     {
       q: "Why should Namakkal district students choose JKKN CAS?",
-      a: "JKKN CAS is an autonomous college, NAAC Accredited (B), affiliated to Periyar University, with 35 aided and self-financing programmes. Self-financing UG fees for 2026-27 are ₹24,500 to ₹34,000 a year, aided fees follow government norms, and the campus is on NH-544, about 18 km from Erode and 26 km from Tiruchengode.",
+      a: "JKKN CAS is an autonomous college, NAAC Accredited (B), affiliated to Periyar University, with 35 aided and self-financing programmes. Self-financing UG fees for 2026-27 are ₹24,500 to ₹34,000 a year, aided fees are As Per Government Norm, and the campus is on NH-544, about 18 km from Erode and 26 km from Tiruchengode.",
     },
     {
       q: "Is JKKN College of Arts and Science autonomous?",
@@ -141,7 +141,7 @@ export default function NamakkalPage() {
     },
     {
       q: "Does JKKN College of Arts and Science have government-aided courses?",
-      a: "Yes. Government-aided undergraduate courses are B.A. English, B.A. History, B.Com, B.Sc Chemistry, B.Sc Mathematics and B.Sc Zoology; aided postgraduate courses include M.A. History, MCA, M.Com and M.Sc Chemistry. Aided fees follow government norms, while self-financing UG fees are ₹24,500 to ₹34,000 a year.",
+      a: "Yes. Government-aided undergraduate courses are B.A. English, B.A. History, B.Com, B.Sc Chemistry, B.Sc Mathematics and B.Sc Zoology; aided postgraduate courses include M.A. History, MCA, M.Com and M.Sc Chemistry. Aided fees are As Per Government Norm, while self-financing UG fees are ₹24,500 to ₹34,000 a year.",
       voice: "JKKN Arts la aided course irukka?",
     },
   ];
@@ -296,7 +296,7 @@ export default function NamakkalPage() {
               <li><span className="font-semibold text-[#006837]">NAAC:</span> Accredited, Grade B (CGPA 2.37), declared 9 August 2019; NAAC&apos;s list of transition autonomous colleges shows the validity extended to 31 December 2029.</li>
               <li><span className="font-semibold text-[#006837]">Government-aided:</span> UG B.A. English, B.A. History, B.Com, B.Sc Chemistry, B.Sc Mathematics, B.Sc Zoology; PG M.A. History, MCA, M.Com, M.Sc Chemistry, M.Sc Computer Science, M.Sc Physics, M.Sc Zoology.</li>
               <li><span className="font-semibold text-[#006837]">Self-financing:</span> 14 UG and 5 PG programmes; Ph.D in Chemistry, Tamil and Zoology.</li>
-              <li><span className="font-semibold text-[#006837]">Fees 2026-27:</span> self-financing UG ₹24,500 to ₹34,000 a year, PG ₹20,000 to ₹25,000; aided fees as per government norms.</li>
+              <li><span className="font-semibold text-[#006837]">Fees 2026-27:</span> self-financing UG ₹24,500 to ₹34,000 a year, PG ₹20,000 to ₹25,000; aided fees: As Per Government Norm.</li>
               <li><span className="font-semibold text-[#006837]">Placement (NIRF 2025 return):</span> 135 of 373 UG graduates of 2023-24 placed (36%); 105 went on to higher studies.</li>
               <li><span className="font-semibold text-[#006837]">Where:</span> Komarapalayam on NH-544, Namakkal district; about 18 km from Erode and 65 km from Namakkal Bus Stand.</li>
             </ul>
@@ -777,7 +777,7 @@ export default function NamakkalPage() {
               <h3 className="font-bold text-gray-800 mb-2">Affordable Fee Structure</h3>
               <p className="text-gray-500 text-sm leading-relaxed">
                 JKKN CAS self-finance UG fees are ₹24,500–₹34,000 per year for 2026-27, and
-                aided programme fees follow government norms. EMI payment options available.
+                aided programme fees are As Per Government Norm. EMI payment options available.
                 Contact the admission office for the complete fee breakdown.
               </p>
             </div>

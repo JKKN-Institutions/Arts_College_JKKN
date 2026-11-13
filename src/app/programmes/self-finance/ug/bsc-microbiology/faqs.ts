@@ -33,7 +33,7 @@ export const bscMicrobiologyFaqs = [
   {
     question: "What is the B.Sc Microbiology fee at JKKN College of Arts and Science?",
     answer:
-      "For 2026-27 the annual tuition fee is Rs 34,000 under the management quota. Government quota seats follow the fee fixed by Government norms. The full fee table is on the Fee Structure page.",
+      "For 2026-27 the annual tuition fee is Rs 34,000 under the management quota. Government quota fees are As Per Government Norm. The full fee table is on the Fee Structure page.",
   },
   {
     question: "Which subjects are taught in B.Sc Microbiology?",

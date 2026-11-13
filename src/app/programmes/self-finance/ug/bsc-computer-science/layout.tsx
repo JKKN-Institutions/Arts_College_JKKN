@@ -40,7 +40,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         url="/programmes/self-finance/ug/bsc-computer-science"
         programPrerequisites="Pass in the Higher Secondary (+2) examination with Mathematics, Business Mathematics, Computer Science or Statistics (Periyar University B.Sc Computer Science regulations)"
         offerPrice={34000}
-        offerDescription="Annual tuition fee, management quota, 2026-27. Government quota as per Government norms."
+        offerDescription="Annual tuition fee, management quota, 2026-27. Government quota fee: As Per Government Norm."
       />
       <BreadcrumbSchema
         items={[

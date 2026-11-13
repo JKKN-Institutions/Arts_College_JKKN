@@ -187,7 +187,7 @@ export default async function CourseAdmissionPage({
                   label: info.category === "Aided" ? "Annual Fee" : "MQ Fee",
                   value:
                     info.category === "Aided"
-                      ? "Govt Norms"
+                      ? "As Per Government Norm"
                       : content.feesMQ
                       ? `₹${content.feesMQ.toLocaleString("en-IN")}`
                       : "TBD",

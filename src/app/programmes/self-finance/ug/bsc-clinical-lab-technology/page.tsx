@@ -149,7 +149,7 @@ export default function BscClinicalLabTechnologyPage() {
               <tbody className="text-gray-700">
                 <tr className="border-t border-gray-100">
                   <td className="px-4 py-3">Government Quota (GQ)</td>
-                  <td className="px-4 py-3">As per Government Norms</td>
+                  <td className="px-4 py-3">As Per Government Norm</td>
                 </tr>
                 <tr className="border-t border-gray-100">
                   <td className="px-4 py-3">Management Quota (MQ)</td>

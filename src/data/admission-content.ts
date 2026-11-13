@@ -72,7 +72,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       {
         question: "What is the B.Sc Cyber Security fee for 2026-27?",
         answer:
-          "Rs 32,000 a year under the management quota. Government quota seats follow Government norms.",
+          "Rs 32,000 a year under the management quota. Government quota fees are As Per Government Norm.",
       },
     ],
   },
@@ -114,7 +114,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       {
         question: "What is the B.Sc Computer Science fee for 2026-27?",
         answer:
-          "Rs 34,000 a year under the management quota. Government quota seats follow Government norms.",
+          "Rs 34,000 a year under the management quota. Government quota fees are As Per Government Norm.",
       },
     ],
   },
@@ -159,7 +159,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       {
         question: "What is the B.Sc Physics fee for 2026-27?",
         answer:
-          "Rs 25,000 a year under the management quota. Government quota seats follow Government norms.",
+          "Rs 25,000 a year under the management quota. Government quota fees are As Per Government Norm.",
       },
     ],
   },
@@ -280,7 +280,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       {
         question: "What is the B.Sc AI & DS fee for 2026-27?",
         answer:
-          "Rs 34,000 a year under the management quota. Government quota seats follow Government norms.",
+          "Rs 34,000 a year under the management quota. Government quota fees are As Per Government Norm.",
       },
     ],
   },
@@ -332,7 +332,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       {
         question: "What is the B.Sc Microbiology fee for 2026-27?",
         answer:
-          "Rs 34,000 a year under the management quota. Government quota seats follow Government norms.",
+          "Rs 34,000 a year under the management quota. Government quota fees are As Per Government Norm.",
       },
     ],
   },
@@ -386,7 +386,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       {
         question: "What is the B.Sc Textile and Fashion Designing fee for 2026-27?",
         answer:
-          "Rs 32,000 a year under the management quota. Government quota seats follow Government norms.",
+          "Rs 32,000 a year under the management quota. Government quota fees are As Per Government Norm.",
       },
     ],
   },
@@ -461,7 +461,7 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       {
         question: "What is the B.Sc Visual Communication fee for 2026-27?",
         answer:
-          "Rs 32,000 a year under the management quota. Government quota seats follow Government norms.",
+          "Rs 32,000 a year under the management quota. Government quota fees are As Per Government Norm.",
       },
     ],
   },

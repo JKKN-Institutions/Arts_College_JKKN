@@ -155,7 +155,7 @@ export default function BScAIDSPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
-              { icon: <DollarSign className="w-7 h-7" />, stat: '₹34,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
+              { icon: <DollarSign className="w-7 h-7" />, stat: '₹34,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ: As Per Government Norm' },
               { icon: <Code2 className="w-7 h-7" />, stat: 'Python', title: 'From Year 1', desc: 'No prior coding needed' },
               { icon: <Brain className="w-7 h-7" />, stat: 'AI + NLP', title: 'Core Subjects', desc: 'Foundation of AI, Data Science, NLP' },
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'Periyar', title: 'University Degree', desc: 'Autonomous, NAAC accredited (B) college' },
@@ -642,7 +642,7 @@ export default function BScAIDSPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'Published Fee', description: '₹34,000 a year under the management quota for 2026-27; government quota seats follow Government norms.' },
+                  { title: 'Published Fee', description: '₹34,000 a year under the management quota for 2026-27; government quota fees are As Per Government Norm.' },
                   { title: 'Three Years, Not Four', description: 'A B.Sc in the arts and science stream, admitted on +2 marks - not the four-year B.Tech AI & DS admitted through TNEA.' },
                   { title: 'AI and Data Science Core', description: 'Foundation of Artificial Intelligence, Fundamentals of Data Science, Ethics of AI, Natural Language Processing and Robotic Process Automation.' },
                   { title: 'A Lab Every Semester', description: 'From the Computer Programming Lab in Semester I to the Data Science Lab and UiPath Automation Lab in the final year.' },

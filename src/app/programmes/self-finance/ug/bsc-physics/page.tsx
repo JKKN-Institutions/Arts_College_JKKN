@@ -124,7 +124,7 @@ export default function BScPhysicsPage() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
               {[
-                { icon: <DollarSign className="w-7 h-7" />, stat: '₹25,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ as per Govt norms' },
+                { icon: <DollarSign className="w-7 h-7" />, stat: '₹25,000', title: 'Annual Fee (MQ)', desc: '2026-27 · GQ: As Per Government Norm' },
                 { icon: <Building2 className="w-7 h-7" />, stat: 'Periyar', title: 'University Affiliation', desc: 'Autonomous college, Salem region' },
                 { icon: <Atom className="w-7 h-7" />, stat: 'PCM', title: '+2 Eligibility', desc: 'Maths, Physics and Chemistry' },
                 { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited, Grade B', desc: 'Autonomous, UGC 2(f) & 12(B)' },
@@ -637,7 +637,7 @@ export default function BScPhysicsPage() {
 
                 <div className="space-y-4">
                   {[
-                    { icon: <DollarSign className="w-6 h-6" />, title: 'Published Fee', description: '₹25,000 a year under the management quota for 2026-27; government quota seats follow Government norms. Every programme fee is on the Fee Structure page.' },
+                    { icon: <DollarSign className="w-6 h-6" />, title: 'Published Fee', description: '₹25,000 a year under the management quota for 2026-27; government quota fees are As Per Government Norm. Every programme fee is on the Fee Structure page.' },
                     { icon: <GraduationCap className="w-6 h-6" />, title: 'Autonomous, Periyar University Degree', description: 'The college sets its own syllabus and examinations as an autonomous institution; the degree is awarded by Periyar University, Salem.' },
                     { icon: <TrendingUp className="w-6 h-6" />, title: 'M.Sc Physics on the Same Campus', description: 'The college also offers an aided M.Sc Physics, so B.Sc graduates have a postgraduate route without changing campus. Other routes include IIT-JAM, JEST and a B.Ed.' },
                     { icon: <Microscope className="w-6 h-6" />, title: 'Project and Internship', description: 'The syllabus includes an internship, industrial visit or field visit in Semester V and a project in Semester VI.' },
