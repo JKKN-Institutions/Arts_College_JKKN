@@ -19,8 +19,10 @@
 import {
   ARTS_INSTITUTION_ID,
   VALID_PROGRAMME_IDS,
+  programmeLabel,
 } from "@/lib/arts-programmes"
 import { crmCampaign } from "@/lib/campaign-tags"
+import { scheduleServerLeadEvent } from "@/lib/ga4-server-event"
 
 const CRM_SLUG = "jkkn-admission-2026"
 const CRM_SUBMIT = `https://www.jkkn.ai/api/public/forms/${CRM_SLUG}/submit`
@@ -114,6 +116,14 @@ export async function submitArtsEnquiry(
     if (res.status === 409) {
       // 409 means this phone has already applied. That is not a failure for the parent —
       // they are in the system — so it must not read like an error.
+      // DEP-100 (2026-11-13): the server tells GA4 too (lib/ga4-server-event.ts); off until the secret is set.
+      if (!honeypot) {
+        await scheduleServerLeadEvent("lead_crm_duplicate", {
+          form_name: "arts_enquiry",
+          source_page: sourcePage,
+          program: programmeLabel(programme),
+        })
+      }
       return {
         success: true,
         message:
@@ -132,6 +142,14 @@ export async function submitArtsEnquiry(
       }
     }
 
+    // A filled honeypot means the CRM scores this as a bot - it is not a lead, so GA4 is not told one.
+    if (!honeypot) {
+      await scheduleServerLeadEvent("lead_crm_accepted", {
+        form_name: "arts_enquiry",
+        source_page: sourcePage,
+        program: programmeLabel(programme),
+      })
+    }
     return {
       success: true,
       message:

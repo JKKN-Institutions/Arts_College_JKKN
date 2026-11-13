@@ -16,8 +16,9 @@
 // Plain data lives OUTSIDE this file on purpose: a 'use server' module may only
 // export async functions. Keeping the programme array here made the build strip it
 // and /contact died with `j.map is not a function` (measured 2026-08-16).
-import { ARTS_INSTITUTION_ID, VALID_PROGRAMME_IDS } from '@/lib/arts-programmes'
+import { ARTS_INSTITUTION_ID, VALID_PROGRAMME_IDS, programmeLabel } from '@/lib/arts-programmes'
 import { crmCampaign } from '@/lib/campaign-tags'
+import { scheduleServerLeadEvent } from '@/lib/ga4-server-event'
 
 const CRM_SLUG = 'jkkn-admission-2026'
 const CRM_SUBMIT = `https://www.jkkn.ai/api/public/forms/${CRM_SLUG}/submit`
@@ -115,6 +116,14 @@ export async function submitCityEnquiry(
       // Measured in the CRM's own client bundle: 409 means this phone number has
       // already applied. That is not a failure for the parent - they are in the
       // system - so it must not read like an error.
+      // DEP-100 (2026-11-13): the server tells GA4 too (lib/ga4-server-event.ts); off until the secret is set.
+      if (!honeypot) {
+        await scheduleServerLeadEvent('lead_crm_duplicate', {
+          form_name: 'city_enquiry',
+          city,
+          program: programmeLabel(programme),
+        })
+      }
       return {
         success: true,
         message:
@@ -133,6 +142,14 @@ export async function submitCityEnquiry(
       }
     }
 
+    // A filled honeypot means the CRM scores this as a bot - it is not a lead, so GA4 is not told one.
+    if (!honeypot) {
+      await scheduleServerLeadEvent('lead_crm_accepted', {
+        form_name: 'city_enquiry',
+        city,
+        program: programmeLabel(programme),
+      })
+    }
     return {
       success: true,
       message:
