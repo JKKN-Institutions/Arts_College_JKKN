@@ -1,5 +1,6 @@
 'use client';
 
+import ProgrammeEnquirySection from "@/components/lead/ProgrammeEnquirySection";
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import {
@@ -306,6 +307,9 @@ export default function MComPage() {
           </div>
         </div>
       </section>
+
+      {/* Enquiry form high on the page (DEP-109, 2026-11-13) */}
+      <ProgrammeEnquirySection slug="mcom-self-finance" name={"M.Com (SF)"} category="Self-Finance" />
 
       {/* Programme Overview */}
       <section className="py-16 bg-brand-cream">

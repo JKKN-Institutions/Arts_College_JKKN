@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EnquirySection from "@/components/lead/EnquirySection";
 import { ArrowRight } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 
@@ -78,6 +79,9 @@ export default function DepartmentsPage() {
             </p>
           </div>
         </section>
+
+        {/* Enquiry form high on the page (DEP-109, 2026-11-13) */}
+        <EnquirySection sourcePage="departments-top" heading="Get UG / PG course fee and admission details" aidedNote />
 
         <div className="max-w-6xl mx-auto px-4 py-12 space-y-14">
           {/* Aided Departments */}

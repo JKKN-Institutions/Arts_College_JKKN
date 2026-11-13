@@ -1,5 +1,6 @@
 'use client';
 
+import ProgrammeEnquirySection from "@/components/lead/ProgrammeEnquirySection";
 import BrochureWhatsAppLink from "@/components/lead/BrochureWhatsAppLink";
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
@@ -331,6 +332,9 @@ export default function BCAPage() {
           </RevealSection>
         </div>
       </section> */}
+
+      {/* Enquiry form high on the page (DEP-109, 2026-11-13) */}
+      <ProgrammeEnquirySection slug="bca-self-finance" name={"BCA"} category="Self-Finance" />
 
       {/* Programme Overview */}
       <section className="py-16 bg-brand-cream">

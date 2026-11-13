@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { faqCategories } from "./faq-data";
+import TopEnquiryCard from "@/components/lead/TopEnquiryCard";
 
 
 
@@ -87,6 +88,10 @@ export default function FaqClient() {
             </div>
           ))}
         </div>
+
+        {/* Enquiry form after the answers, before the call box (DEP-109, 2026-11-13). Below the
+            questions, not above them: on a phone a form above the tabs pushes every answer down. */}
+        <TopEnquiryCard sourcePage="faq" heading="Ask our admission team" aidedNote className="mt-14 max-w-xl mx-auto" />
 
         {/* Contact CTA */}
         <div className="mt-14 bg-[#0b6d41] rounded-2xl p-8 text-center">

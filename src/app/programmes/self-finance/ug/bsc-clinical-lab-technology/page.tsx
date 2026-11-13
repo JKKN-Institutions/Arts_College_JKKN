@@ -1,3 +1,4 @@
+import ProgrammeEnquirySection from "@/components/lead/ProgrammeEnquirySection";
 import Link from "next/link";
 import {
   Clock,
@@ -96,6 +97,9 @@ export default function BscClinicalLabTechnologyPage() {
           </div>
         </div>
       </section>
+
+      {/* Enquiry form high on the page (DEP-109, 2026-11-13) */}
+      <ProgrammeEnquirySection slug="bsc-clinical-lab-technology-self-finance" name={"B.Sc. Clinical Lab Technology"} category="Self-Finance" />
 
       {/* Overview */}
       <section className="py-14 md:py-20 bg-white">

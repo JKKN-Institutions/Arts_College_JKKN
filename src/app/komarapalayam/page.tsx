@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ArtsEnquiryForm from "@/components/lead/ArtsEnquiryForm";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { CourseSchema } from "@/components/seo/CourseSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
@@ -294,6 +295,19 @@ export default function KomarapalayamPage() {
               Affiliated to Periyar University
             </span>
           </div>
+        </div>
+      </section>
+
+      {/* Enquiry form on the page itself (DEP-109, 2026-11-13), the same look as the five city pages.
+          It is the homepage form (ArtsEnquiryForm), not CityEnquiryForm: that one writes the page's town
+          into the CRM district field, and this town is not a district. The header popup stays. */}
+      <section aria-label="Admission enquiry" id="enquiry" className="bg-white py-10 sm:py-12">
+        <div className="max-w-xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2 text-center">
+            Get fee and admission details
+          </h2>
+          <p className="text-gray-600 text-center mb-6">Fill 3 details, then call or WhatsApp our admission team.</p>
+          <ArtsEnquiryForm sourcePage="city-komarapalayam" compact />
         </div>
       </section>
 

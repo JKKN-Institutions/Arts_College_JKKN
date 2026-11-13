@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import EnquirySection from "@/components/lead/EnquirySection";
 import { HowToSchema } from "@/components/seo/HowToSchema";
 import { WebPageSchema } from "@/components/seo/WebPageSchema";
 
@@ -242,6 +243,9 @@ export default function PlacementsPage() {
           </div>
         </div>
       </section>
+
+      {/* Enquiry form high on the page (DEP-109, 2026-11-13) */}
+      <EnquirySection sourcePage="placements-top" heading="Ask About Placements and Admission" aidedNote />
 
       {/* Placement Highlights */}
       <section className="py-16 px-4 bg-brand-cream">

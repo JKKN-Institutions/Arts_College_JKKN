@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import TopEnquiryCard from "@/components/lead/TopEnquiryCard";
+import { PRESELECT_BY_SLUG } from "@/lib/top-enquiry";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 
@@ -169,6 +171,9 @@ export default function BscCyberSecurityCollegesTamilNaduPage() {
             <a href="https://www.jkkn.ai/apply/jkkn-admission-2026?utm_source=cas.jkkn.ac.in&utm_campaign=bsc-cyber-security-colleges-in-tamil-nadu" target="_blank" rel="noopener noreferrer" className="text-brand-green font-semibold underline">Apply online</a>
           </p>
         </section>
+
+        {/* Enquiry form under the JKKN box (DEP-109, 2026-11-13) */}
+        <TopEnquiryCard sourcePage="list-bsc-cyber-security" heading={"Get B.Sc Cyber Security fee and admission details at JKKN"} defaultProgrammeId={PRESELECT_BY_SLUG["bsc-cs-cyber-security-self-finance"]} className="max-w-xl mx-auto" />
 
         <section>
           <h2 className="text-2xl font-bold text-brand-green mb-3">B.Sc or B.E.? Two different cyber security courses</h2>

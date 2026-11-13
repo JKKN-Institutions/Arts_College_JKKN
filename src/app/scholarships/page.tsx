@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Award, GraduationCap, Users, BookOpen, Trophy, Microscope } from "lucide-react";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import EnquirySection from "@/components/lead/EnquirySection";
 
 export const metadata: Metadata = {
   title: "Scholarships — JKKN College of Arts and Science",
@@ -152,6 +153,9 @@ export default function ScholarshipsPage() {
             </div>
           </div>
         </section>
+
+        {/* Enquiry form high on the page (DEP-109, 2026-11-13) */}
+        <EnquirySection sourcePage="scholarships-top" heading="Ask About Scholarships and Fees" aidedNote />
 
         {/* Scholarship Categories */}
         <section className="py-16 md:py-20 bg-white">
