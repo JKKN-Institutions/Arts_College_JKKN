@@ -1,5 +1,6 @@
 ﻿'use client';
 
+import ProgrammeEnquirySection from "@/components/lead/ProgrammeEnquirySection";
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Users, Award, Briefcase, Library, GraduationCap, Building2, Lightbulb, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, TrendingUp, BarChart3, Calculator, DollarSign, PieChart, Banknote } from 'lucide-react';
@@ -137,6 +138,9 @@ export default function BComPage() {
           </div>
         </div>
       </section>
+
+      {/* Call / WhatsApp card high on the page (DEP-109, 2026-11-13): the CRM has no row for this course (DEP-60) */}
+      <ProgrammeEnquirySection slug="bcom-aided" name={"B.Com"} category="Aided" />
 
       {/* Programme Overview */}
       <section className="py-16 bg-brand-cream">

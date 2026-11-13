@@ -1,5 +1,6 @@
 'use client';
 
+import ProgrammeEnquirySection from "@/components/lead/ProgrammeEnquirySection";
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import {
@@ -225,6 +226,9 @@ export default function BComBankingInsurancePage() {
             </div>
           </div>
         </section>
+
+        {/* Call / WhatsApp card high on the page (DEP-109, 2026-11-13): the CRM has no row for this course (DEP-60) */}
+        <ProgrammeEnquirySection slug="bcom-banking-insurance-self-finance" name={"B.Com (Banking & Insurance)"} category="Self-Finance" />
 
         {/* Programme Overview */}
         <section className="py-16 bg-brand-cream">

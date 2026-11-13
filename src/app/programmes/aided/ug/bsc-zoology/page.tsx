@@ -1,5 +1,6 @@
 ﻿'use client';
 
+import ProgrammeEnquirySection from "@/components/lead/ProgrammeEnquirySection";
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Users, Award, Briefcase, GraduationCap, CheckCircle2, Clock, FileText, ChevronDown, ArrowRight, Sparkles, Target, Microscope, FlaskConical, Fish, Database, Leaf, MapPin, Building2, Globe, Brain, TrendingUp, Atom } from 'lucide-react';
@@ -138,6 +139,9 @@ export default function BScZoologyPage() {
           </div>
         </div>
       </section>
+
+      {/* Call / WhatsApp card high on the page (DEP-109, 2026-11-13): the CRM has no row for this course (DEP-60) */}
+      <ProgrammeEnquirySection slug="bsc-zoology-aided" name={"B.Sc. Zoology"} category="Aided" />
 
       {/* Programme Overview */}
       <section className="py-16 bg-brand-cream">

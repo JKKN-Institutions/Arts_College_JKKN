@@ -1,5 +1,6 @@
 ﻿'use client';
 
+import ProgrammeEnquirySection from "@/components/lead/ProgrammeEnquirySection";
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, Users, Award, Briefcase, GraduationCap, CheckCircle2, Clock, FileText, ChevronDown, ArrowRight, Sparkles, Target, Calculator, LineChart, Code, BarChart3, Brain, Database, Atom, FlaskConical, PenTool, School, Building2 } from 'lucide-react';
@@ -137,6 +138,9 @@ export default function BScMathematicsPage() {
           </div>
         </div>
       </section>
+
+      {/* Call / WhatsApp card high on the page (DEP-109, 2026-11-13): the CRM has no row for this course (DEP-60) */}
+      <ProgrammeEnquirySection slug="bsc-maths-aided" name={"B.Sc. Mathematics"} category="Aided" />
 
       {/* Programme Overview */}
       <section className="py-16 bg-brand-cream">
