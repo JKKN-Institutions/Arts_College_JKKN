@@ -54,6 +54,9 @@ export async function submitCityEnquiry(
   const name = String(formData.get('name') ?? '')
   const phone = String(formData.get('phone') ?? '').replace(/\D/g, '')
   const city = String(formData.get('city') ?? '')
+  // The form sends its own district (CityEnquiryForm `district`, "" on /contact); an older cached page
+  // without that field falls back to the city, as before.
+  const district = formData.has('district') ? String(formData.get('district') ?? '') : city
   const programme = String(formData.get('programme') ?? '')
   const question = String(formData.get('question') ?? '')
   // Honeypot. The CRM expects this key and treats a non-empty value as a bot.
@@ -69,9 +72,9 @@ export async function submitCityEnquiry(
     formData: {
       first_name: name.trim(),
       phone,
-      // `district` is the CRM's own field for where the enquirer is from. The city
-      // page already knows it, so the parent never types it.
-      district: city,
+      // `district` is the CRM's own field for where the enquirer is from. A district page already
+      // knows it, so the parent never types it; /contact leaves it blank.
+      district,
       institution_program: {
         institution_id: ARTS_INSTITUTION_ID,
         program_id: programme,

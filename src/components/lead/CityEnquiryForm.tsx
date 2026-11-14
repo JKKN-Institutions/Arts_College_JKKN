@@ -51,11 +51,17 @@ const STEPS = gateSteps(undefined, 'Fill your details')
 type Props = {
   /** Display name of the city this page targets, e.g. "Namakkal". */
   city: string
+  /**
+   * What goes into the CRM `district` field. Defaults to `city`, which is right on a district page
+   * (Namakkal, Salem ...). /contact passes "" - its "Komarapalayam" is a town, and a /contact visitor
+   * can be from anywhere, so a blank district is the honest value (user's choice 2026-11-14, option A).
+   */
+  district?: string
   /** No white card of its own — for a host that already is the white card. */
   bare?: boolean
 }
 
-export default function CityEnquiryForm({ city, bare = false }: Props) {
+export default function CityEnquiryForm({ city, district, bare = false }: Props) {
   const [state, formAction, isPending] = useActionState<CityEnquiryState | null, FormData>(
     submitCityEnquiry,
     null
@@ -173,6 +179,7 @@ export default function CityEnquiryForm({ city, bare = false }: Props) {
       className={`${surface} space-y-4 text-left`}
     >
       <input type="hidden" name="city" value={city} />
+      <input type="hidden" name="district" value={district ?? city} />
       <CampaignFields />
 
       {/* Honeypot. Off-screen, not display:none, so a bot still fills it. Never remove: the CRM

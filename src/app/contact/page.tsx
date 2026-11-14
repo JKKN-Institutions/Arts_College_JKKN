@@ -108,7 +108,7 @@ export default function ContactPage() {
                   </a>
                 </p>
 
-                <CityEnquiryForm city="Komarapalayam" />
+                <CityEnquiryForm city="Komarapalayam" district="" />
 
                 <p className="text-white/70 text-sm mt-6 pt-6 border-t border-white/20">
                   Prefer the full application form?{' '}
