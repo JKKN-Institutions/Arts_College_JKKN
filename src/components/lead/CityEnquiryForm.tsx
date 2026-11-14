@@ -107,8 +107,8 @@ export default function CityEnquiryForm({ city, bare = false }: Props) {
         page_path: window.location.pathname,
       })
     },
-    onFailed: () => {
-      sendGaEvent('lead_form_error', {
+    onFailed: (refused) => {
+      sendGaEvent(refused ? 'lead_form_error' : 'lead_form_unconfirmed', {
         form_name: 'city_enquiry',
         city,
         page_path: window.location.pathname,

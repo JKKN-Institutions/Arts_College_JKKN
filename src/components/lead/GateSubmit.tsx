@@ -58,7 +58,8 @@ type Options = {
   /** The CRM accepted the lead - fire the form's own lead_form_submit / lead_form_duplicate. */
   onAccepted: (answer: GateAnswer) => void
   /** The lead did not land - fire the form's own lead_form_error. */
-  onFailed: () => void
+  /** refused: the server said no (true) or the browser lost the answer (false). */
+  onFailed: (refused: boolean) => void
 }
 
 export function useGateSubmit({ endpoint, gate, topic, gaParams, onAccepted, onFailed }: Options) {
@@ -106,7 +107,10 @@ export function useGateSubmit({ endpoint, gate, topic, gaParams, onAccepted, onF
     setPhase({ step: "opened", result: "waiting", programmeId, intent })
 
     request
-      .then((res) => res.json() as Promise<GateAnswer>)
+      .then((res) => {
+        if (!res.ok) throw new Error("not accepted")
+        return res.json() as Promise<GateAnswer>
+      })
       .then((answer) => {
         if (!answer.success) throw new Error("not accepted")
         writeStore(ENQUIRY_DONE_KEY, new Date().toISOString())
@@ -117,9 +121,14 @@ export function useGateSubmit({ endpoint, gate, topic, gaParams, onAccepted, onF
         sendGaEvent(`${gateEvent}_lead`, params)
         setPhase((p) => (p.step === "opened" ? { ...p, result: "saved" } : p))
       })
-      .catch(() => {
-        onFailed()
-        sendGaEvent(`${gateEvent}_fail`, params)
+      .catch((err: unknown) => {
+        // "not accepted" = the server answered no (422 / 400 / a non-JSON 5xx): a real failure. Anything else = the
+        // browser lost the answer - WhatsApp or the dialer took the screen, or the same-tab fallback left the page -
+        // and the keepalive request has usually reached the CRM anyway (2026-11-07 08:29 IST, Nursing: a B.Sc lead in
+        // the CRM and lead_form_error in GA4 the same minute). Counted apart, so lead_form_error stays a real failure.
+        const refused = err instanceof Error && err.message === "not accepted"
+        onFailed(refused)
+        sendGaEvent(`${gateEvent}_${refused ? "fail" : "unconfirmed"}`, params)
         setPhase((p) => (p.step === "opened" ? { ...p, result: "failed" } : p))
       })
   }

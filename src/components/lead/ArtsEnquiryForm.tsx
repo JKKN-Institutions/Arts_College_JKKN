@@ -127,8 +127,8 @@ export default function ArtsEnquiryForm({
         page_path: window.location.pathname,
       })
     },
-    onFailed: () => {
-      sendGaEvent("lead_form_error", {
+    onFailed: (refused) => {
+      sendGaEvent(refused ? "lead_form_error" : "lead_form_unconfirmed", {
         form_name: "arts_enquiry",
         source_page: sourcePage,
         page_path: window.location.pathname,
