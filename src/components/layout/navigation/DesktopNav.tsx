@@ -610,6 +610,14 @@ export default function DesktopNav(props: DesktopNavProps) {
                                 B.Sc. Physics
                               </Link>
                               <Link
+                                href="/programmes/self-finance/ug/bsc-maths"
+                                role="menuitem"
+                                tabIndex={0}
+                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                              >
+                                B.Sc. Mathematics
+                              </Link>
+                              <Link
                                 href="/programmes/self-finance/ug/bcom-ca"
                                 role="menuitem"
                                 tabIndex={0}

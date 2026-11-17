@@ -167,6 +167,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { ...s(`${SITE_URL}/bsc-microbiology-colleges-in-tamil-nadu`, "monthly", 0.8), lastModified: "2026-10-02" },
     // lastModified set 2026-09-30 (GL6-356) so Google re-reads the rewritten physics pages.
     { ...s(`${SITE_URL}/programmes/self-finance/ug/bsc-physics`, "monthly", 0.9), lastModified: "2026-09-30" },
+    s(`${SITE_URL}/programmes/self-finance/ug/bsc-maths`, "monthly", 0.9),
     { ...s(`${SITE_URL}/bsc-physics-colleges-in-tamil-nadu`, "monthly", 0.8), lastModified: "2026-09-30" },
     s(`${SITE_URL}/programmes/self-finance/ug/bsc-clinical-lab-technology`, "monthly", 0.9),
     // lastModified set 2026-10-01 (GL6-379); the proposed TFD (AI) page is noindex until approval and not listed.

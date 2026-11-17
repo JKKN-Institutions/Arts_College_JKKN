@@ -429,6 +429,22 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     ],
     slug: "bsc-physics-self-finance",
   },
+  "self-finance/ug/bsc-maths": {
+    name: "B.Sc. Mathematics (SF)",
+    fullName: "Bachelor of Science in Mathematics",
+    degree: "B.Sc.",
+    duration: "3 Years",
+    level: "UG",
+    category: "Self-Finance",
+    description:
+      "B.Sc Mathematics (Self-Finance) at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Affiliated to Periyar University. 3 years, 6 semesters. Eligibility: +2 with Mathematics, Statistics or Business Mathematics.",
+    keywords: [
+      "BSc Mathematics",
+      "BSc Maths self finance college near Erode",
+      "maths degree Tamil Nadu",
+    ],
+    slug: "bsc-maths-self-finance",
+  },
   "self-finance/ug/bsc-textile-fashion-designing": {
     name: "B.Sc. Textile & Fashion Designing",
     fullName: "Bachelor of Science in Textile and Fashion Designing",

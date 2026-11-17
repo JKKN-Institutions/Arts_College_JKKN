@@ -658,6 +658,7 @@ export default function CoimbatorePage() {
                     { name: "B.Sc (Cyber Security)", href: "/programmes/self-finance/ug/bsc-cs-cyber-security" },
                     { name: "B.Sc Microbiology", href: "/programmes/self-finance/ug/bsc-microbiology" },
                     { name: "B.Sc Physics", href: "/programmes/self-finance/ug/bsc-physics" },
+                    { name: "B.Sc Mathematics", href: "/programmes/self-finance/ug/bsc-maths" },
                     { name: "B.Sc Textile & Fashion Design", href: "/programmes/self-finance/ug/bsc-textile-fashion-designing" },
                     { name: "B.Sc Visual Communication", href: "/programmes/self-finance/ug/bsc-visual-communication" },
                   ].map((p) => (

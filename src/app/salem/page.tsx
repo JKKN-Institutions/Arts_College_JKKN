@@ -551,6 +551,7 @@ export default function SalemPage() {
                     { name: "B.Sc Microbiology", href: "/programmes/self-finance/ug/bsc-microbiology" },
                     { name: "B.Sc Microbiology colleges in Tamil Nadu (guide)", href: "/bsc-microbiology-colleges-in-tamil-nadu" },
                     { name: "B.Sc Physics", href: "/programmes/self-finance/ug/bsc-physics" },
+                    { name: "B.Sc Mathematics", href: "/programmes/self-finance/ug/bsc-maths" },
                     { name: "B.Sc Physics colleges in Tamil Nadu (guide)", href: "/bsc-physics-colleges-in-tamil-nadu" },
                     { name: "B.Sc Textile & Fashion Design", href: "/programmes/self-finance/ug/bsc-textile-fashion-designing" },
                     { name: "B.Sc Fashion Designing colleges in Tamil Nadu (guide)", href: "/bsc-fashion-designing-colleges-in-tamil-nadu" },

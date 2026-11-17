@@ -45,6 +45,7 @@ export const SANCTIONED_SEATS: Readonly<Record<string, { seats: number; source: 
   "self-finance/ug/bsc-cs-cyber-security": { seats: 40, source: DCE },
   "self-finance/ug/bsc-microbiology": { seats: 40, source: DCE },
   "self-finance/ug/bsc-physics": { seats: 40, source: DCE },
+  "self-finance/ug/bsc-maths": { seats: 40, source: DCE },
   "self-finance/ug/bsc-textile-fashion-designing": { seats: 80, source: DCE },
   "self-finance/ug/bsc-visual-communication": { seats: 40, source: DCE },
   "self-finance/pg/ma-english": { seats: 36, source: DCE },
@@ -132,6 +133,12 @@ export const ELIGIBILITY_2026_27: Readonly<Record<string, readonly string[]>> = 
   ],
   // ug.pdf row 34
   "aided/ug/bsc-maths": [
+    "Pass in the Higher Secondary (+2) examination",
+    `Mathematics, Statistics or Business Mathematics as one of the subjects ${PU}`,
+    "Tamil Nadu Higher Secondary Board or an examination accepted as equivalent",
+    MERIT,
+  ],
+  "self-finance/ug/bsc-maths": [
     "Pass in the Higher Secondary (+2) examination",
     `Mathematics, Statistics or Business Mathematics as one of the subjects ${PU}`,
     "Tamil Nadu Higher Secondary Board or an examination accepted as equivalent",

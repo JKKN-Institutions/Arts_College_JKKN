@@ -294,8 +294,8 @@ export default function NamakkalPage() {
             <ul className="space-y-2 text-sm sm:text-base text-gray-700 leading-relaxed">
               <li><span className="font-semibold text-[#006837]">Status:</span> founded 1974; autonomous; affiliated to Periyar University.</li>
               <li><span className="font-semibold text-[#006837]">NAAC:</span> Accredited, Grade B (CGPA 2.37), declared 9 August 2019; NAAC&apos;s list of transition autonomous colleges shows the validity extended to 31 December 2029.</li>
-              <li><span className="font-semibold text-[#006837]">Government-aided:</span> UG B.A. English, B.A. History, B.Com, B.Sc Chemistry, B.Sc Mathematics, B.Sc Zoology; PG M.A. History, MCA, M.Com, M.Sc Chemistry, M.Sc Zoology.</li>
-              <li><span className="font-semibold text-[#006837]">Self-financing:</span> 14 UG and 5 PG programmes; Ph.D in Chemistry, Tamil and Zoology.</li>
+              <li><span className="font-semibold text-[#006837]">Government-aided:</span> UG B.A. English, B.A. History, B.Com, B.Sc Chemistry, B.Sc Mathematics, B.Sc Zoology; PG M.A. History, MCA, M.Com, M.Sc Chemistry, M.Sc Zoology; Ph.D in Chemistry, Tamil and Zoology.</li>
+              <li><span className="font-semibold text-[#006837]">Self-financing:</span> 13 UG and 5 PG programmes.</li>
               <li><span className="font-semibold text-[#006837]">Fees 2026-27:</span> self-financing UG ₹24,500 to ₹34,000 a year, PG ₹20,000 to ₹25,000; aided fees: As Per Government Norm.</li>
               <li><span className="font-semibold text-[#006837]">Placement (NIRF 2025 return):</span> 135 of 373 UG graduates of 2023-24 placed (36%); 105 went on to higher studies.</li>
               <li><span className="font-semibold text-[#006837]">Where:</span> Komarapalayam on NH-544, Namakkal district; about 18 km from Erode and 65 km from Namakkal Bus Stand.</li>
@@ -545,6 +545,7 @@ export default function NamakkalPage() {
                     { name: "B.Sc Microbiology", href: "/programmes/self-finance/ug/bsc-microbiology" },
                     { name: "B.Sc Microbiology colleges in Tamil Nadu (guide)", href: "/bsc-microbiology-colleges-in-tamil-nadu" },
                     { name: "B.Sc Physics", href: "/programmes/self-finance/ug/bsc-physics" },
+                    { name: "B.Sc Mathematics", href: "/programmes/self-finance/ug/bsc-maths" },
                     { name: "B.Sc Physics colleges in Tamil Nadu (guide)", href: "/bsc-physics-colleges-in-tamil-nadu" },
                     { name: "B.Sc Textile & Fashion Design", href: "/programmes/self-finance/ug/bsc-textile-fashion-designing" },
                     { name: "B.Sc Fashion Designing colleges in Tamil Nadu (guide)", href: "/bsc-fashion-designing-colleges-in-tamil-nadu" },

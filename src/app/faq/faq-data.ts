@@ -56,7 +56,7 @@ export const faqCategories: FaqCategory[] = [
       },
       {
         q: "What Self-Finance UG programmes are available?",
-        a: "Self-Finance UG programmes include: BBA, BCA, B.Sc. Computer Science, B.Sc. AI & Data Science, B.Sc. CS (Cyber Security), B.Sc. Microbiology, B.Sc. Physics, B.Sc. Textile & Fashion Designing, B.Sc. Visual Communication, B.A. English and B.Com (Computer Applications) — all 3-year programmes.",
+        a: "Self-Finance UG programmes include: BBA, BCA, B.Sc. Computer Science, B.Sc. AI & Data Science, B.Sc. CS (Cyber Security), B.Sc. Microbiology, B.Sc. Physics, B.Sc. Mathematics, B.Sc. Textile & Fashion Designing, B.Sc. Visual Communication, B.A. English and B.Com (Computer Applications) — all 3-year programmes.",
       },
       {
         q: "What PG programmes are offered?",

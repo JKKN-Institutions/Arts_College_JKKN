@@ -51,6 +51,7 @@ const sfUG = [
   { name: "B.Sc. AI & Data Science", href: "/programmes/self-finance/ug/bsc-ai-ds" },
   { name: "B.Com (Computer Applications)", href: "/programmes/self-finance/ug/bcom-ca" },
   { name: "B.Sc. Physics", href: "/programmes/self-finance/ug/bsc-physics" },
+  { name: "B.Sc. Mathematics", href: "/programmes/self-finance/ug/bsc-maths" },
   { name: "B.Sc. Clinical Lab Technology", href: "/programmes/self-finance/ug/bsc-clinical-lab-technology" },
   { name: "B.Sc. Microbiology", href: "/programmes/self-finance/ug/bsc-microbiology" },
   { name: "B.Sc. Visual Communication", href: "/programmes/self-finance/ug/bsc-visual-communication" },

@@ -22,6 +22,7 @@ const programsByCategory = {
     { name: 'B.Sc. Zoology', href: '/programmes/aided/ug/bsc-zoology', level: 'UG', type: 'Aided' },
     { name: 'B.Sc. Microbiology', href: '/programmes/self-finance/ug/bsc-microbiology', level: 'UG', type: 'Self-Finance' },
     { name: 'B.Sc. Physics', href: '/programmes/self-finance/ug/bsc-physics', level: 'UG', type: 'Self-Finance' },
+    { name: 'B.Sc. Mathematics', href: '/programmes/self-finance/ug/bsc-maths', level: 'UG', type: 'Self-Finance' },
     // PG Science
     { name: 'M.Sc. Chemistry', href: '/programmes/aided/pg/msc-chemistry', level: 'PG', type: 'Aided' },
     { name: 'M.Sc. Zoology', href: '/programmes/aided/pg/msc-zoology', level: 'PG', type: 'Aided' },

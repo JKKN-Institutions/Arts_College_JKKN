@@ -285,6 +285,13 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
                   active: pathname === '/programmes/self-finance/ug/bsc-physics'
                 },
                 {
+                  id: 'self-finance-ug-bsc-maths',
+                  label: 'B.Sc. Mathematics',
+                  icon: GraduationCap,
+                  href: '/programmes/self-finance/ug/bsc-maths',
+                  active: pathname === '/programmes/self-finance/ug/bsc-maths'
+                },
+                {
                   id: 'self-finance-ug-bsc-textile-fashion-designing',
                   label: 'B.Sc. Textile and Fashion Design',
                   icon: GraduationCap,

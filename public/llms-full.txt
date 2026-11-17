@@ -82,6 +82,7 @@ Autonomy means the college designs its own curriculum and conducts its own exami
 - [B.Sc. Computer Science (Cyber Security)](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-cs-cyber-security)
 - [B.Sc. Microbiology](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-microbiology)
 - [B.Sc. Physics](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-physics)
+- [B.Sc. Mathematics](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-maths)
 - [B.Sc. Textile & Fashion Designing](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-textile-fashion-designing)
 - [B.Sc. Visual Communication](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-visual-communication)
 
