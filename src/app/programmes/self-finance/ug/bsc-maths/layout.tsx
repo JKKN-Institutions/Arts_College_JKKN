@@ -6,9 +6,9 @@ import { FAQSchema } from "@/components/seo/FAQSchema";
 // Added 2026-11-17: the user's final course list has B.Sc Mathematics in both streams; TN DCE (college code
 // 2180001) lists the self-finance stream with 40 sanctioned seats.
 export const metadata: Metadata = {
-  title: "B.Sc Mathematics (Self-Finance)",
+  title: "B.Sc Maths (Self-Finance)",
   description:
-    "B.Sc Mathematics (Self-Finance) at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Affiliated to Periyar University. 3 years, 6 semesters. Eligibility: +2 with Mathematics, Statistics or Business Mathematics.",
+    "B.Sc Mathematics (Self-Finance) at JKKN College of Arts and Science (Autonomous), Komarapalayam. Periyar University degree, 3 years, 40 sanctioned seats.",
   keywords: [
     "BSc Mathematics",
     "BSc Maths self finance college near Erode",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "B.Sc Mathematics (Self-Finance) | JKKN Arts & Science",
     description:
-      "B.Sc Mathematics (Self-Finance) at JKKN College of Arts and Science (Autonomous), Komarapalayam, Namakkal district, Tamil Nadu. Affiliated to Periyar University. 3 years, 6 semesters. Eligibility: +2 with Mathematics, Statistics or Business Mathematics.",
+      "B.Sc Mathematics (Self-Finance) at JKKN College of Arts and Science (Autonomous), Komarapalayam. Periyar University degree, 3 years, 40 sanctioned seats.",
     url: "https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-maths",
     siteName: "JKKN College of Arts and Science",
     type: "website",
