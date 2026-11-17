@@ -144,6 +144,7 @@ const feeStructure = [
       { name: "B.Sc. Comp. Sci. (Cyber Security)", fee: 32000 },
       { name: "B.Sc. Microbiology", fee: 34000 },
       { name: "B.Sc. Clinical Lab Technology", fee: 32000 },
+      { name: "B.Sc. Mathematics", fee: 26000 },
       { name: "B.Sc. Physics", fee: 25000 },
     ],
   },

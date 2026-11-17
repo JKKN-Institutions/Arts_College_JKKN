@@ -51,6 +51,7 @@ const SELF_FINANCE_FEES: Record<string, number> = {
   "self-finance/ug/bsc-cs-cyber-security": 32000,
   "self-finance/ug/bsc-microbiology": 34000,
   "self-finance/ug/bsc-clinical-lab-technology": 32000,
+  "self-finance/ug/bsc-maths": 26000,
   "self-finance/ug/bsc-physics": 25000,
   "self-finance/ug/bsc-textile-fashion-designing": 32000,
   "self-finance/ug/bsc-textile-fashion-designing-ai": 34000,

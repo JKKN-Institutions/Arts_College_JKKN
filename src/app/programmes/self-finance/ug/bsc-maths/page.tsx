@@ -123,6 +123,7 @@ export default function BScMathematicsSelfFinancePage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited, Grade B', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '40', title: 'Sanctioned Seats', desc: 'TN DCE sanctioned strength, self-finance stream' },
+              { icon: <Award className="w-7 h-7" />, stat: '₹26,000', title: 'Annual Fee 2026-27', desc: 'Management quota; government quota: As Per Government Norm' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
                 <GlassCard className="p-6 text-center">
@@ -725,7 +726,8 @@ export default function BScMathematicsSelfFinancePage() {
                 { question: 'What is the duration of the B.Sc Mathematics programme?', answer: 'The B.Sc Mathematics programme is a 3-year full-time undergraduate degree comprising six semesters.' },
                 { question: 'What are the career opportunities after B.Sc Mathematics?', answer: 'Graduates can pursue careers in data science, actuarial science, banking, teaching, research, financial analysis, software development, civil services, and quantitative analysis in various industries.' },
                 { question: 'What is the eligibility criteria for B.Sc Mathematics admission?', answer: 'A pass in the Higher Secondary (+2) examination with Mathematics, Statistics or Business Mathematics as one of the subjects, as per Periyar University regulations.' },
-                { question: 'Is B.Sc Mathematics offered in the self-finance stream?', answer: 'Yes. JKKN College of Arts and Science offers B.Sc Mathematics in both the aided and the self-finance streams. The self-finance stream has 40 sanctioned seats (TN DCE sanctioned strength).' }
+                { question: 'Is B.Sc Mathematics offered in the self-finance stream?', answer: 'Yes. JKKN College of Arts and Science offers B.Sc Mathematics in both the aided and the self-finance streams. The self-finance stream has 40 sanctioned seats (TN DCE sanctioned strength).' },
+                { question: 'What is the fee for B.Sc Mathematics (Self-Finance)?', answer: '₹26,000 a year under the management quota for 2026-27; government quota fees are As Per Government Norm. Every programme fee is on the Fee Structure page.' }
               ].map((faq, idx) => (
                 <RevealSection key={idx} delay={idx * 60}>
                   <div className="bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:border-brand-green/20 transition-all overflow-hidden">

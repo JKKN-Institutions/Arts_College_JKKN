@@ -35,6 +35,7 @@ const feeStructure = [
       { name: "B.Sc. Comp. Sci. (Cyber Security)", mq: 32000 },
       { name: "B.Sc. Microbiology", mq: 34000 },
       { name: "B.Sc. Clinical Lab Technology", mq: 32000 },
+      { name: "B.Sc. Mathematics", mq: 26000 },
       { name: "B.Sc. Physics", mq: 25000 },
     ],
   },
