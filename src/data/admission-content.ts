@@ -140,7 +140,6 @@ export const admissionOverrides: Record<string, AdmissionOverride> = {
       "Affiliated to Periyar University, Salem",
       "NAAC accredited (B) autonomous institution",
       "Six core physics practicals, an internship or field visit, and a final-year project",
-      "Aided M.Sc Physics available on the same campus",
     ],
     curriculumHighlights: [
       "Semesters I-II: Properties of Matter and Sound; Heat, Thermodynamics and Statistical Physics",

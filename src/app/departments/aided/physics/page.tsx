@@ -35,7 +35,6 @@ export default function PhysicsDepartmentPage() {
             <div className="text-base md:text-lg text-gray-700">
               <ul className="list-disc list-inside space-y-2">
                 <li>B.Sc. Physics (UG)</li>
-                <li>M.Sc. Physics (PG)</li>
               </ul>
             </div>
           </section>

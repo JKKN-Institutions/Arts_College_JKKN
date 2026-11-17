@@ -60,7 +60,7 @@ export const faqCategories: FaqCategory[] = [
       },
       {
         q: "What PG programmes are offered?",
-        a: "Aided PG programmes: M.A. History, MCA, M.Com, M.Sc. Chemistry, M.Sc. Computer Science, M.Sc. Physics, M.Sc. Zoology. Self-Finance PG programmes: M.A. English, M.Com, M.Sc. Computer Science, M.Sc. CS (Data Analytics), M.Sc. Mathematics — all 2-year programmes.",
+        a: "Aided PG programmes: M.A. History, MCA, M.Com, M.Sc. Chemistry, M.Sc. Zoology. Self-Finance PG programmes: M.A. English, M.Com, M.Sc. Computer Science, M.Sc. CS (Data Analytics), M.Sc. Mathematics — all 2-year programmes.",
       },
       {
         q: "Are PhD programmes available?",

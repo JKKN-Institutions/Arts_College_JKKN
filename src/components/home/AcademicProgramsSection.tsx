@@ -24,7 +24,6 @@ const programsByCategory = {
     { name: 'B.Sc. Physics', href: '/programmes/self-finance/ug/bsc-physics', level: 'UG', type: 'Self-Finance' },
     // PG Science
     { name: 'M.Sc. Chemistry', href: '/programmes/aided/pg/msc-chemistry', level: 'PG', type: 'Aided' },
-    { name: 'M.Sc. Physics', href: '/programmes/aided/pg/msc-physics', level: 'PG', type: 'Aided' },
     { name: 'M.Sc. Zoology', href: '/programmes/aided/pg/msc-zoology', level: 'PG', type: 'Aided' },
     { name: 'M.Sc. Mathematics', href: '/programmes/self-finance/pg/msc-mathematics', level: 'PG', type: 'Self-Finance' },
     // PhD Science
@@ -49,7 +48,6 @@ const programsByCategory = {
     { name: 'B.Sc. CS (Cyber Security)', href: '/programmes/self-finance/ug/bsc-cs-cyber-security', level: 'UG', type: 'Self-Finance' },
     // PG Computer Application
     { name: 'MCA', href: '/programmes/aided/pg/mca', level: 'PG', type: 'Aided' },
-    { name: 'M.Sc. Computer Science', href: '/programmes/aided/pg/msc-computer-science', level: 'PG', type: 'Aided' },
     { name: 'M.Sc. Computer Science', href: '/programmes/self-finance/pg/msc-computer-science', level: 'PG', type: 'Self-Finance' },
     { name: 'M.Sc. CS (Data Analytics)', href: '/programmes/self-finance/pg/msc-cs-data-analytics', level: 'PG', type: 'Self-Finance' }
   ]

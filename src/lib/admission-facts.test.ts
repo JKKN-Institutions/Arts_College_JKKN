@@ -20,8 +20,6 @@ describe("admission facts", () => {
   it("keeps the courses TN DCE does not list (or lists as 0 / another category) without a number", () => {
     for (const path of [
       "self-finance/ug/bsc-clinical-lab-technology",
-      "aided/pg/msc-computer-science",
-      "aided/pg/msc-physics",
       "self-finance/pg/msc-cs-data-analytics",
       "aided/phd/chemistry",
     ]) {

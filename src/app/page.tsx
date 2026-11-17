@@ -204,7 +204,7 @@ export default function Home() {
           { name: "B.Sc Artificial Intelligence & Data Science", url: "https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-ai-ds", description: "3-year self-finance UG programme in AI and data science" },
           { name: "B.Sc Computer Science (Cyber Security)", url: "https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-cs-cyber-security", description: "3-year self-finance UG programme in computer science with cyber security" },
           { name: "B.Sc Visual Communication", url: "https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-visual-communication", description: "3-year self-finance UG programme in visual communication" },
-          { name: "M.Sc Computer Science", url: "https://cas.jkkn.ac.in/programmes/aided/pg/msc-computer-science", description: "2-year aided PG programme in computer science" },
+          { name: "M.Sc Computer Science", url: "https://cas.jkkn.ac.in/programmes/self-finance/pg/msc-computer-science", description: "2-year self-finance PG programme in computer science" },
           { name: "BBA (Bachelor of Business Administration)", url: "https://cas.jkkn.ac.in/programmes/self-finance/ug/bba", description: "3-year self-finance UG programme in business administration" },
         ]}
       />

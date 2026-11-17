@@ -141,8 +141,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/programmes/aided/pg/mca`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/aided/pg/mcom`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/aided/pg/msc-chemistry`, "monthly", 0.9),
-    s(`${SITE_URL}/programmes/aided/pg/msc-computer-science`, "monthly", 0.9),
-    s(`${SITE_URL}/programmes/aided/pg/msc-physics`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/aided/pg/msc-zoology`, "monthly", 0.9),
 
     // Programmes — Aided PhD

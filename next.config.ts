@@ -218,8 +218,8 @@ const nextConfig: NextConfig = {
       { source: '/b-sc-chemistry/', destination: '/programmes/aided/ug/bsc-chemistry', permanent: true },
       { source: '/b-c-a', destination: '/programmes/self-finance/ug/bca', permanent: true },
       { source: '/b-c-a/', destination: '/programmes/self-finance/ug/bca', permanent: true },
-      { source: '/msc-physics', destination: '/programmes/aided/pg/msc-physics', permanent: true },
-      { source: '/msc-physics/', destination: '/programmes/aided/pg/msc-physics', permanent: true },
+      { source: '/msc-physics', destination: '/departments/self-finance/physics', permanent: true },
+      { source: '/msc-physics/', destination: '/departments/self-finance/physics', permanent: true },
       { source: '/m-sc-zoology', destination: '/programmes/aided/pg/msc-zoology', permanent: true },
       { source: '/m-sc-zoology/', destination: '/programmes/aided/pg/msc-zoology', permanent: true },
       { source: '/m-com', destination: '/programmes/aided/pg/mcom', permanent: true },
@@ -339,6 +339,12 @@ const nextConfig: NextConfig = {
       { source: '/department-of-botany/', destination: '/departments', permanent: true },
       { source: '/department-of-chemistry-sf', destination: '/departments', permanent: true },
       { source: '/department-of-chemistry-sf/', destination: '/departments', permanent: true },
+      // 2026-11-17: Aided M.Sc Computer Science and Aided M.Sc Physics taken off the site (user's final
+      // course list; neither is on the TN DCE course list). Old URLs go to the nearest live page.
+      { source: '/programmes/aided/pg/msc-computer-science', destination: '/programmes/self-finance/pg/msc-computer-science', permanent: true },
+      { source: '/programmes/aided/pg/msc-physics', destination: '/departments/self-finance/physics', permanent: true },
+      { source: '/admissions/msc-computer-science-aided', destination: '/admissions/msc-computer-science-self-finance', permanent: true },
+      { source: '/admissions/msc-physics-aided', destination: '/departments/self-finance/physics', permanent: true },
     ];
   },
   async headers() {

@@ -16,7 +16,7 @@ export const FACTS_CHECKED = "2 Nov 2026";
 // Read 2026-10-29 and again 2026-11-02, identical both times. The page prints no date of its own.
 // Left out on purpose, so their pages ask the parent to call the admissions office:
 //   - B.Sc Clinical Laboratory Technology: DCE shows 0 - the office has to confirm the current order
-//   - M.Sc Computer Science (Aided), M.Sc Physics (Aided), M.Sc CS (Data Analytics): not on the DCE list
+//   - M.Sc CS (Data Analytics): not on the DCE list
 //   - Ph.D Chemistry: DCE lists it as Self Financing (6), this site as Aided - the office has to confirm
 //   - the 3 proposed programmes (awaiting Periyar University approval)
 // MCA 15 is also the AICTE Extension of Approval 2025-26 intake (F.No. Southern/1-44638793967/2025/EOA).
@@ -173,7 +173,6 @@ export const ELIGIBILITY_2026_27: Readonly<Record<string, readonly string[]>> = 
   "aided/pg/mcom": MCOM_LIST,
   "self-finance/pg/mcom": MCOM_LIST,
   // pg.pdf row 17 - M.Sc Computer Science / Data Science / Computer Science - Data Analytics
-  "aided/pg/msc-computer-science": MSC_COMPUTING,
   "self-finance/pg/msc-computer-science": MSC_COMPUTING,
   "self-finance/pg/msc-cs-data-analytics": MSC_COMPUTING,
   // pg.pdf row 18 - the only PG rule here with a percentage
@@ -185,12 +184,6 @@ export const ELIGIBILITY_2026_27: Readonly<Record<string, readonly string[]>> = 
   // pg.pdf row 22
   "self-finance/pg/msc-mathematics": [
     `B.Sc Mathematics, B.Sc Mathematics (Computer Applications) or B.Sc B.Ed Mathematics (integrated) ${PU}`,
-    "Or a degree of another university accepted by the Periyar University Syndicate as equivalent",
-    MERIT,
-  ],
-  // pg.pdf row 25
-  "aided/pg/msc-physics": [
-    `B.Sc with Physics as the main subject, B.Sc Applied Physics, B.Sc Physics (Vocational) or B.Sc B.Ed Physics (integrated) ${PU}`,
     "Or a degree of another university accepted by the Periyar University Syndicate as equivalent",
     MERIT,
   ],

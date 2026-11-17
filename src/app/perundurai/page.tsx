@@ -570,8 +570,6 @@ export default function PerunduraiPage() {
                       { name: "MCA", href: "/programmes/aided/pg/mca" },
                       { name: "M.Com", href: "/programmes/aided/pg/mcom" },
                       { name: "M.Sc Chemistry", href: "/programmes/aided/pg/msc-chemistry" },
-                      { name: "M.Sc Computer Science", href: "/programmes/aided/pg/msc-computer-science" },
-                      { name: "M.Sc Physics", href: "/programmes/aided/pg/msc-physics" },
                       { name: "M.Sc Zoology", href: "/programmes/aided/pg/msc-zoology" },
                     ].map((p) => (
                       <li key={p.href}>

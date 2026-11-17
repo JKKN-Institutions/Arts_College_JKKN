@@ -34,7 +34,7 @@ export const bscPhysicsFaqs = [
   {
     question: "What can I do after B.Sc Physics?",
     answer:
-      "Common routes are M.Sc Physics or a related M.Sc (JKKN itself offers an aided M.Sc Physics), entrance examinations such as IIT-JAM and JEST, teaching after a B.Ed, government recruitment through TNPSC, SSC and UPSC, and technical roles in electronics, instrumentation and data analysis.",
+      "Common routes are M.Sc Physics or a related M.Sc, entrance examinations such as IIT-JAM and JEST, teaching after a B.Ed, government recruitment through TNPSC, SSC and UPSC, and technical roles in electronics, instrumentation and data analysis.",
   },
   {
     question: "What is the placement record for B.Sc Physics?",

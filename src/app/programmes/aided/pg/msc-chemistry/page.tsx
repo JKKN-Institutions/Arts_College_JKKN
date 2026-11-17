@@ -752,7 +752,7 @@ export default function MScChemistryPage() {
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 { title: 'B.Sc Chemistry', description: 'Comprehensive undergraduate programme in chemistry with laboratory training', duration: '3 Years', image: '/images/illustrations/chemistry.webp' },
-                { title: 'M.Sc Physics', description: 'Advanced postgraduate studies in theoretical and applied physics', duration: '2 Years', image: '/images/illustrations/physics.webp' },
+                { title: 'B.Sc Physics', description: 'Undergraduate programme in physics with a core practical every semester', duration: '3 Years', image: '/images/illustrations/physics.webp' },
                 { title: 'M.Sc Mathematics', description: 'Rigorous programme in pure and applied mathematics', duration: '2 Years', image: '/images/illustrations/maths.webp' }
               ].map((programme, idx) => (
                 <RevealSection key={idx} delay={idx * 150}>

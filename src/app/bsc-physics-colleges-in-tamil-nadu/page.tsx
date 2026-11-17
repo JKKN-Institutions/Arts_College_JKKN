@@ -210,7 +210,7 @@ export default function BscPhysicsCollegesTamilNaduPage() {
             <li><strong>Status:</strong> autonomous college, affiliated to Periyar University, Salem; NAAC accredited (B).</li>
             <li><strong>Fee 2026-27:</strong> ₹25,000 a year (management quota); government quota: As Per Government Norm.</li>
             <li><strong>Eligibility:</strong> +2 pass with Mathematics, Physics and Chemistry (Periyar University regulations).</li>
-            <li><strong>Course:</strong> 3 years, 6 semesters, a core practical every semester, internship or field visit in Semester V, project in Semester VI. Aided M.Sc Physics on the same campus.</li>
+            <li><strong>Course:</strong> 3 years, 6 semesters, a core practical every semester, internship or field visit in Semester V, project in Semester VI.</li>
           </ul>
           <p className="mt-4 flex flex-wrap gap-4">
             <Link href="/programmes/self-finance/ug/bsc-physics" className="text-brand-green font-semibold underline">Programme details and syllabus</Link>

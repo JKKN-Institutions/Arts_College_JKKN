@@ -180,38 +180,6 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     ],
     slug: "msc-chemistry-aided",
   },
-  "aided/pg/msc-computer-science": {
-    name: "M.Sc. Computer Science",
-    fullName: "Master of Science in Computer Science",
-    degree: "M.Sc.",
-    duration: "2 Years",
-    level: "PG",
-    category: "Aided",
-    description:
-      "Study M.Sc. Computer Science at JKKN College of Arts and Science (Autonomous). Aided programme with modern tech infrastructure and IT placements near Erode.",
-    keywords: [
-      "MSc Computer Science",
-      "MSc CS college near Erode",
-      "computer science postgraduate Tamil Nadu",
-    ],
-    slug: "msc-computer-science-aided",
-  },
-  "aided/pg/msc-physics": {
-    name: "M.Sc. Physics",
-    fullName: "Master of Science in Physics",
-    degree: "M.Sc.",
-    duration: "2 Years",
-    level: "PG",
-    category: "Aided",
-    description:
-      "Study M.Sc. Physics at JKKN College of Arts and Science (Autonomous). Aided postgraduate programme with advanced lab facilities near Erode, Tamil Nadu.",
-    keywords: [
-      "MSc Physics",
-      "MSc Physics college near Erode",
-      "postgraduate physics Tamil Nadu",
-    ],
-    slug: "msc-physics-aided",
-  },
   "aided/pg/msc-zoology": {
     name: "M.Sc. Zoology",
     fullName: "Master of Science in Zoology",

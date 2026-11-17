@@ -93,8 +93,6 @@ Autonomy means the college designs its own curriculum and conducts its own exami
 - [M.C.A.](https://cas.jkkn.ac.in/programmes/aided/pg/mca)
 - [M.Com.](https://cas.jkkn.ac.in/programmes/aided/pg/mcom)
 - [M.Sc. Chemistry](https://cas.jkkn.ac.in/programmes/aided/pg/msc-chemistry)
-- [M.Sc. Computer Science](https://cas.jkkn.ac.in/programmes/aided/pg/msc-computer-science)
-- [M.Sc. Physics](https://cas.jkkn.ac.in/programmes/aided/pg/msc-physics)
 - [M.Sc. Zoology](https://cas.jkkn.ac.in/programmes/aided/pg/msc-zoology)
 
 ### Postgraduate — Self-Finance (5)

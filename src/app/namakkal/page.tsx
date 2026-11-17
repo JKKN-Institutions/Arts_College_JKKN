@@ -294,7 +294,7 @@ export default function NamakkalPage() {
             <ul className="space-y-2 text-sm sm:text-base text-gray-700 leading-relaxed">
               <li><span className="font-semibold text-[#006837]">Status:</span> founded 1974; autonomous; affiliated to Periyar University.</li>
               <li><span className="font-semibold text-[#006837]">NAAC:</span> Accredited, Grade B (CGPA 2.37), declared 9 August 2019; NAAC&apos;s list of transition autonomous colleges shows the validity extended to 31 December 2029.</li>
-              <li><span className="font-semibold text-[#006837]">Government-aided:</span> UG B.A. English, B.A. History, B.Com, B.Sc Chemistry, B.Sc Mathematics, B.Sc Zoology; PG M.A. History, MCA, M.Com, M.Sc Chemistry, M.Sc Computer Science, M.Sc Physics, M.Sc Zoology.</li>
+              <li><span className="font-semibold text-[#006837]">Government-aided:</span> UG B.A. English, B.A. History, B.Com, B.Sc Chemistry, B.Sc Mathematics, B.Sc Zoology; PG M.A. History, MCA, M.Com, M.Sc Chemistry, M.Sc Zoology.</li>
               <li><span className="font-semibold text-[#006837]">Self-financing:</span> 14 UG and 5 PG programmes; Ph.D in Chemistry, Tamil and Zoology.</li>
               <li><span className="font-semibold text-[#006837]">Fees 2026-27:</span> self-financing UG ₹24,500 to ₹34,000 a year, PG ₹20,000 to ₹25,000; aided fees: As Per Government Norm.</li>
               <li><span className="font-semibold text-[#006837]">Placement (NIRF 2025 return):</span> 135 of 373 UG graduates of 2023-24 placed (36%); 105 went on to higher studies.</li>
@@ -573,8 +573,6 @@ export default function NamakkalPage() {
                       { name: "MCA", href: "/programmes/aided/pg/mca" },
                       { name: "M.Com", href: "/programmes/aided/pg/mcom" },
                       { name: "M.Sc Chemistry", href: "/programmes/aided/pg/msc-chemistry" },
-                      { name: "M.Sc Computer Science", href: "/programmes/aided/pg/msc-computer-science" },
-                      { name: "M.Sc Physics", href: "/programmes/aided/pg/msc-physics" },
                       { name: "M.Sc Zoology", href: "/programmes/aided/pg/msc-zoology" },
                     ].map((p) => (
                       <li key={p.href}>
