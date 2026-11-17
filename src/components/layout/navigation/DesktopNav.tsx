@@ -642,22 +642,6 @@ export default function DesktopNav(props: DesktopNavProps) {
                                 B.B.A
                               </Link>
                               <Link
-                                href="/programmes/self-finance/ug/bcom-banking-insurance"
-                                role="menuitem"
-                                tabIndex={0}
-                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
-                              >
-                                B.Com Banking and Insurance
-                              </Link>
-                              <Link
-                                href="/programmes/self-finance/ug/bcom-accounting-finance"
-                                role="menuitem"
-                                tabIndex={0}
-                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
-                              >
-                                B.Com Accounting and Finance
-                              </Link>
-                              <Link
                                 href="/programmes/self-finance/ug/bsc-computer-science"
                                 role="menuitem"
                                 tabIndex={0}

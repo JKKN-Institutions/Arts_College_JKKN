@@ -56,8 +56,6 @@ const sfUG = [
   { name: "B.Sc. Visual Communication", href: "/programmes/self-finance/ug/bsc-visual-communication" },
   { name: "B.Sc. Textile & Fashion Designing", href: "/programmes/self-finance/ug/bsc-textile-fashion-designing" },
   { name: "B.A. English", href: "/programmes/self-finance/ug/ba-english" },
-  { name: "B.Com Banking & Insurance", href: "/programmes/self-finance/ug/bcom-banking-insurance" },
-  { name: "B.Com Accounting & Finance", href: "/programmes/self-finance/ug/bcom-accounting-finance" },
   { name: "B.Sc. CS (Cyber Security)", href: "/programmes/self-finance/ug/bsc-cs-cyber-security" },
 ];
 

@@ -243,20 +243,6 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
                   active: pathname === '/programmes/self-finance/ug/bca'
                 },
                 {
-                  id: 'self-finance-ug-bcom-accounting-finance',
-                  label: 'B.Com Accounting and Finance',
-                  icon: GraduationCap,
-                  href: '/programmes/self-finance/ug/bcom-accounting-finance',
-                  active: pathname === '/programmes/self-finance/ug/bcom-accounting-finance'
-                },
-                {
-                  id: 'self-finance-ug-bcom-banking-insurance',
-                  label: 'B.Com Banking and Insurance',
-                  icon: GraduationCap,
-                  href: '/programmes/self-finance/ug/bcom-banking-insurance',
-                  active: pathname === '/programmes/self-finance/ug/bcom-banking-insurance'
-                },
-                {
                   id: 'self-finance-ug-bcom-ca',
                   label: 'B.Com CA',
                   icon: GraduationCap,

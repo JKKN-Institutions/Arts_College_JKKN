@@ -44,8 +44,6 @@ const SELF_FINANCE_FEES: Record<string, number> = {
   "self-finance/ug/ba-english": 24500,
   "self-finance/ug/bba": 25500,
   "self-finance/ug/bca": 33000,
-  "self-finance/ug/bcom-accounting-finance": 34000,
-  "self-finance/ug/bcom-banking-insurance": 34000,
   "self-finance/ug/bcom-ca": 34000,
   "self-finance/ug/bcom-ai": 34000,
   "self-finance/ug/bsc-ai-ds": 34000,

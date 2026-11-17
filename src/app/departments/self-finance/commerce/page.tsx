@@ -36,8 +36,6 @@ export default function CommerceSFDepartmentPage() {
               <ul className="list-disc list-inside space-y-2">
                 <li>B.Com (SF)</li>
                 <li>B.Com Computer Applications (SF)</li>
-                <li>B.Com Banking and Insurance (SF)</li>
-                <li>B.Com Accounting and Finance (SF)</li>
               </ul>
             </div>
           </section>

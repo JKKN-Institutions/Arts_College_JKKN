@@ -42,8 +42,6 @@ const feeStructure = [
     category: "UG — Commerce & Management",
     programmes: [
       { name: "B.Com (CA)", mq: 34000 },
-      { name: "B.Com (Accounting & Finance)", mq: 34000 },
-      { name: "B.Com (Banking & Insurance)", mq: 34000 },
       { name: "B.C.A.", mq: 33000 },
       { name: "B.B.A.", mq: 25500 },
       { name: "B.Com (AI) *", mq: 34000 },

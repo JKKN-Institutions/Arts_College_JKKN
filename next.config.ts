@@ -230,8 +230,8 @@ const nextConfig: NextConfig = {
       { source: '/master-of-computer-application/', destination: '/programmes/aided/pg/mca', permanent: true },
       { source: '/ba-history', destination: '/programmes/aided/ug/ba-history', permanent: true },
       { source: '/ba-history/', destination: '/programmes/aided/ug/ba-history', permanent: true },
-      { source: '/b-com-finance-and-analytics', destination: '/programmes/self-finance/ug/bcom-accounting-finance', permanent: true },
-      { source: '/b-com-finance-and-analytics/', destination: '/programmes/self-finance/ug/bcom-accounting-finance', permanent: true },
+      { source: '/b-com-finance-and-analytics', destination: '/programmes/self-finance/ug/bcom-ca', permanent: true },
+      { source: '/b-com-finance-and-analytics/', destination: '/programmes/self-finance/ug/bcom-ca', permanent: true },
       { source: '/m-phil-tamil', destination: '/programmes', permanent: true },
       { source: '/m-phil-tamil/', destination: '/programmes', permanent: true },
       { source: '/m-phil-zoology', destination: '/programmes', permanent: true },
@@ -299,8 +299,8 @@ const nextConfig: NextConfig = {
       // equivalent page are left as 404 on purpose - a redirect to the homepage is a soft 404.
       { source: '/b-a-of-english', destination: '/departments/aided/english', permanent: true },
       { source: '/b-a-of-english/', destination: '/departments/aided/english', permanent: true },
-      { source: '/b-com-accounting-and-finance', destination: '/programmes/self-finance/ug/bcom-accounting-finance', permanent: true },
-      { source: '/b-com-accounting-and-finance/', destination: '/programmes/self-finance/ug/bcom-accounting-finance', permanent: true },
+      { source: '/b-com-accounting-and-finance', destination: '/programmes/self-finance/ug/bcom-ca', permanent: true },
+      { source: '/b-com-accounting-and-finance/', destination: '/programmes/self-finance/ug/bcom-ca', permanent: true },
       { source: '/b-com', destination: '/programmes/aided/ug/bcom', permanent: true },
       { source: '/b-com/', destination: '/programmes/aided/ug/bcom', permanent: true },
       { source: '/msc-chemistry', destination: '/programmes/aided/pg/msc-chemistry', permanent: true },
@@ -313,8 +313,8 @@ const nextConfig: NextConfig = {
       { source: '/department-of-business-administration-bba-sf/', destination: '/departments/self-finance/business-administration', permanent: true },
       { source: '/department-of-computer-science-2', destination: '/departments/aided/computer-science', permanent: true },
       { source: '/department-of-computer-science-2/', destination: '/departments/aided/computer-science', permanent: true },
-      { source: '/b-com-banking-and-insurance', destination: '/programmes/self-finance/ug/bcom-banking-insurance', permanent: true },
-      { source: '/b-com-banking-and-insurance/', destination: '/programmes/self-finance/ug/bcom-banking-insurance', permanent: true },
+      { source: '/b-com-banking-and-insurance', destination: '/programmes/self-finance/ug/bcom-ca', permanent: true },
+      { source: '/b-com-banking-and-insurance/', destination: '/programmes/self-finance/ug/bcom-ca', permanent: true },
       { source: '/department-of-computer-science-sf', destination: '/departments/self-finance/computer-science', permanent: true },
       { source: '/department-of-computer-science-sf/', destination: '/departments/self-finance/computer-science', permanent: true },
       { source: '/department-of-commerce-ca-and-business-administration', destination: '/programmes/self-finance/ug/bcom-ca', permanent: true },
@@ -345,6 +345,12 @@ const nextConfig: NextConfig = {
       { source: '/programmes/aided/pg/msc-physics', destination: '/departments/self-finance/physics', permanent: true },
       { source: '/admissions/msc-computer-science-aided', destination: '/admissions/msc-computer-science-self-finance', permanent: true },
       { source: '/admissions/msc-physics-aided', destination: '/departments/self-finance/physics', permanent: true },
+      // 2026-11-17: B.Com Accounting & Finance and B.Com Banking & Insurance taken off the site (user's final
+      // course list). Old URLs go to B.Com (CA), the nearest self-finance commerce programme.
+      { source: '/programmes/self-finance/ug/bcom-accounting-finance', destination: '/programmes/self-finance/ug/bcom-ca', permanent: true },
+      { source: '/programmes/self-finance/ug/bcom-banking-insurance', destination: '/programmes/self-finance/ug/bcom-ca', permanent: true },
+      { source: '/admissions/bcom-accounting-finance-self-finance', destination: '/admissions/bcom-ca-self-finance', permanent: true },
+      { source: '/admissions/bcom-banking-insurance-self-finance', destination: '/admissions/bcom-ca-self-finance', permanent: true },
     ];
   },
   async headers() {

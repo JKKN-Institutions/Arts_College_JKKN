@@ -296,38 +296,6 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     ],
     slug: "bca-self-finance",
   },
-  "self-finance/ug/bcom-accounting-finance": {
-    name: "B.Com (Accounting & Finance)",
-    fullName: "Bachelor of Commerce in Accounting and Finance",
-    degree: "B.Com",
-    duration: "3 Years",
-    level: "UG",
-    category: "Self-Finance",
-    description:
-      "Study B.Com Accounting & Finance at JKKN College of Arts and Science (Autonomous). Specialised commerce programme with industry-aligned curriculum near Erode.",
-    keywords: [
-      "BCom Accounting Finance",
-      "BCom AF college near Erode",
-      "accounting degree Tamil Nadu",
-    ],
-    slug: "bcom-accounting-finance-self-finance",
-  },
-  "self-finance/ug/bcom-banking-insurance": {
-    name: "B.Com (Banking & Insurance)",
-    fullName: "Bachelor of Commerce in Banking and Insurance",
-    degree: "B.Com",
-    duration: "3 Years",
-    level: "UG",
-    category: "Self-Finance",
-    description:
-      "Study B.Com Banking & Insurance at JKKN College of Arts and Science (Autonomous). Specialised commerce programme with banking sector placements near Erode.",
-    keywords: [
-      "BCom Banking Insurance",
-      "BCom BI college near Erode",
-      "banking degree Tamil Nadu",
-    ],
-    slug: "bcom-banking-insurance-self-finance",
-  },
   "self-finance/ug/bcom-ca": {
     name: "B.Com (Computer Applications)",
     fullName: "Bachelor of Commerce with Computer Applications",

@@ -152,8 +152,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/programmes/self-finance/ug/ba-english`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bba`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bca`, "monthly", 0.9),
-    s(`${SITE_URL}/programmes/self-finance/ug/bcom-accounting-finance`, "monthly", 0.9),
-    s(`${SITE_URL}/programmes/self-finance/ug/bcom-banking-insurance`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/self-finance/ug/bcom-ca`, "monthly", 0.9),
     // lastModified set 2026-10-02 (GL6-383); the proposed B.Com (AI) page is noindex until approval and not listed.
     { ...s(`${SITE_URL}/programmes/self-finance/ug/bsc-ai-ds`, "monthly", 0.9), lastModified: "2026-10-02" },

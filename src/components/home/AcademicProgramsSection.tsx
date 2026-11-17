@@ -34,8 +34,6 @@ const programsByCategory = {
     // UG Commerce & Management
     { name: 'B.Com', href: '/programmes/aided/ug/bcom', level: 'UG', type: 'Aided' },
     { name: 'BBA', href: '/programmes/self-finance/ug/bba', level: 'UG', type: 'Self-Finance' },
-    { name: 'B.Com Accounting and Finance', href: '/programmes/self-finance/ug/bcom-accounting-finance', level: 'UG', type: 'Self-Finance' },
-    { name: 'B.Com Banking and Insurance', href: '/programmes/self-finance/ug/bcom-banking-insurance', level: 'UG', type: 'Self-Finance' },
     { name: 'B.Com CA', href: '/programmes/self-finance/ug/bcom-ca', level: 'UG', type: 'Self-Finance' },
     // PG Commerce
     { name: 'M.Com', href: '/programmes/aided/pg/mcom', level: 'PG', type: 'Aided' },

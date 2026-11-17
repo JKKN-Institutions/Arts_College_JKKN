@@ -529,20 +529,6 @@ export default function MobileNav(props: MobileNavProps) {
                                   B.B.A
                                 </Link>
                                 <Link
-                                  href="/programmes/self-finance/ug/bcom-banking-insurance"
-                                  onClick={toggleMobileMenu}
-                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
-                                >
-                                  B.Com Banking and Insurance
-                                </Link>
-                                <Link
-                                  href="/programmes/self-finance/ug/bcom-accounting-finance"
-                                  onClick={toggleMobileMenu}
-                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
-                                >
-                                  B.Com Accounting and Finance
-                                </Link>
-                                <Link
                                   href="/programmes/self-finance/ug/bsc-computer-science"
                                   onClick={toggleMobileMenu}
                                   className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"

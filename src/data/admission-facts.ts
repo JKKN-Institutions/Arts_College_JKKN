@@ -39,8 +39,6 @@ export const SANCTIONED_SEATS: Readonly<Record<string, { seats: number; source: 
   "self-finance/ug/ba-english": { seats: 120, source: DCE },
   "self-finance/ug/bba": { seats: 60, source: DCE },
   "self-finance/ug/bca": { seats: 40, source: DCE },
-  "self-finance/ug/bcom-accounting-finance": { seats: 60, source: DCE },
-  "self-finance/ug/bcom-banking-insurance": { seats: 60, source: DCE },
   "self-finance/ug/bcom-ca": { seats: 180, source: DCE },
   "self-finance/ug/bsc-ai-ds": { seats: 40, source: DCE },
   "self-finance/ug/bsc-computer-science": { seats: 120, source: DCE },
@@ -116,8 +114,6 @@ export const ELIGIBILITY_2026_27: Readonly<Record<string, readonly string[]>> = 
   "self-finance/ug/ba-english": BA_ANY_PLUS_TWO,
   // ug.pdf row 12 - B.Com and the related commerce programmes
   "aided/ug/bcom": BCOM_GROUP,
-  "self-finance/ug/bcom-accounting-finance": BCOM_GROUP,
-  "self-finance/ug/bcom-banking-insurance": BCOM_GROUP,
   "self-finance/ug/bcom-ca": BCOM_GROUP,
   // ug.pdf row 15
   "self-finance/ug/bba": [

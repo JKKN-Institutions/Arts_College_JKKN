@@ -40,8 +40,6 @@ JKKN College of Arts and Science (CAS JKKN) is an autonomous college established
 - B.A. English
 - B.B.A.
 - B.C.A.
-- B.Com. (Accounting & Finance)
-- B.Com. (Banking & Insurance)
 - B.Com. (Computer Applications)
 - B.Sc. Artificial Intelligence & Data Science
 - B.Sc. Clinical Laboratory Technology

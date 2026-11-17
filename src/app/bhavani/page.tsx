@@ -536,8 +536,6 @@ export default function BhavaniPage() {
                     { name: "B.A. English", href: "/programmes/self-finance/ug/ba-english" },
                     { name: "BBA", href: "/programmes/self-finance/ug/bba" },
                     { name: "BCA", href: "/programmes/self-finance/ug/bca" },
-                    { name: "B.Com (Accounting & Finance)", href: "/programmes/self-finance/ug/bcom-accounting-finance" },
-                    { name: "B.Com (Banking & Insurance)", href: "/programmes/self-finance/ug/bcom-banking-insurance" },
                     { name: "B.Com (CA)", href: "/programmes/self-finance/ug/bcom-ca" },
                     { name: "B.Sc (AI & Data Science)", href: "/programmes/self-finance/ug/bsc-ai-ds" },
                     { name: "B.Sc Clinical Lab Technology", href: "/programmes/self-finance/ug/bsc-clinical-lab-technology" },
