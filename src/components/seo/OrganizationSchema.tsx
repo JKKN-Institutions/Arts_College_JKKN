@@ -118,8 +118,8 @@ export function OrganizationSchema() {
       "@type": "OfferCatalog",
       name: "Academic Programmes 2026-27",
       itemListElement: [
-        { "@type": "OfferCatalog", name: "Undergraduate Programmes (UG)", numberOfItems: 23 },
-        { "@type": "OfferCatalog", name: "Postgraduate Programmes (PG)", numberOfItems: 12 },
+        { "@type": "OfferCatalog", name: "Undergraduate Programmes (UG)", numberOfItems: 22 },
+        { "@type": "OfferCatalog", name: "Postgraduate Programmes (PG)", numberOfItems: 10 },
         { "@type": "OfferCatalog", name: "Doctoral Programmes (PhD)", numberOfItems: 3 },
       ],
     },
