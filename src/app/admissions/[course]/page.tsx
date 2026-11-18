@@ -146,13 +146,15 @@ export default async function CourseAdmissionPage({
         {/* 1b. Enquiry high on the page - plan Step 3, 2026-11-02. Before this the page had no form, only
             Apply links (0.8 and 16.6 phone screens down). Programmes the CRM cannot record yet (every
             aided one + two B.Com SF, DEP-60) get the admission office's phone instead of a form that
-            would file them under a wrong course - see src/lib/top-enquiry.ts. */}
+            would file them under a wrong course - see src/lib/top-enquiry.ts. Since 2026-11-18 the
+            three aided programmes that also run as self-financing (B.A. English, B.Sc Maths, M.Com)
+            get the form too, filed under the CRM's self-financing row. */}
         <section className="bg-white pt-8 md:pt-10">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             {crmCanRecord(info) ? (
               <TopEnquiryCard
                 sourcePage={`course-${info.slug}`}
-                heading={`Get ${info.name} fee and admission details`}
+                heading={`Get ${info.category === "Aided" ? `${info.name} (Aided)` : info.name} fee and admission details`}
                 defaultProgrammeId={PRESELECT_BY_SLUG[info.slug]}
               />
             ) : (
