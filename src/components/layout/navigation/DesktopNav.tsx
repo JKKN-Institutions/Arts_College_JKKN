@@ -415,14 +415,6 @@ export default function DesktopNav(props: DesktopNavProps) {
                           <div className="absolute left-full top-0 pl-1 w-48 z-[120]">
                             <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
                               <Link
-                                href="/programmes/aided/ug/ba-english"
-                                role="menuitem"
-                                tabIndex={0}
-                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
-                              >
-                                B.A. English
-                              </Link>
-                              <Link
                                 href="/programmes/aided/ug/ba-history"
                                 role="menuitem"
                                 tabIndex={0}
@@ -437,14 +429,6 @@ export default function DesktopNav(props: DesktopNavProps) {
                                 className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
                               >
                                 B.Sc. Chemistry
-                              </Link>
-                              <Link
-                                href="/programmes/aided/ug/bsc-maths"
-                                role="menuitem"
-                                tabIndex={0}
-                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
-                              >
-                                B.Sc. Maths
                               </Link>
                               <Link
                                 href="/programmes/aided/ug/bsc-zoology"
@@ -488,14 +472,6 @@ export default function DesktopNav(props: DesktopNavProps) {
                                 className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
                               >
                                 M.C.A
-                              </Link>
-                              <Link
-                                href="/programmes/aided/pg/mcom"
-                                role="menuitem"
-                                tabIndex={0}
-                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
-                              >
-                                M.Com
                               </Link>
                               <Link
                                 href="/programmes/aided/pg/msc-zoology"
@@ -601,6 +577,14 @@ export default function DesktopNav(props: DesktopNavProps) {
                         {selfFinanceUgOpen && (
                           <div className="absolute left-full top-0 pl-1 w-72 z-[110]">
                             <div className="bg-white rounded-lg shadow-lg border border-gray-200 py-2">
+                              <Link
+                                href="/programmes/self-finance/ug/ba-english"
+                                role="menuitem"
+                                tabIndex={0}
+                                className="block px-4 py-2 text-gray-700 hover:bg-brand-green hover:text-white transition text-sm"
+                              >
+                                B.A. English
+                              </Link>
                               <Link
                                 href="/programmes/self-finance/ug/bsc-physics"
                                 role="menuitem"

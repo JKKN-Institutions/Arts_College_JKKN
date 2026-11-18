@@ -222,8 +222,8 @@ const nextConfig: NextConfig = {
       { source: '/msc-physics/', destination: '/departments/self-finance/physics', permanent: true },
       { source: '/m-sc-zoology', destination: '/programmes/aided/pg/msc-zoology', permanent: true },
       { source: '/m-sc-zoology/', destination: '/programmes/aided/pg/msc-zoology', permanent: true },
-      { source: '/m-com', destination: '/programmes/aided/pg/mcom', permanent: true },
-      { source: '/m-com/', destination: '/programmes/aided/pg/mcom', permanent: true },
+      { source: '/m-com', destination: '/programmes/self-finance/pg/mcom', permanent: true },
+      { source: '/m-com/', destination: '/programmes/self-finance/pg/mcom', permanent: true },
       { source: '/m-a-english', destination: '/programmes/self-finance/pg/ma-english', permanent: true },
       { source: '/m-a-english/', destination: '/programmes/self-finance/pg/ma-english', permanent: true },
       { source: '/master-of-computer-application', destination: '/programmes/aided/pg/mca', permanent: true },
@@ -323,8 +323,8 @@ const nextConfig: NextConfig = {
       { source: '/department-of-geography/', destination: '/departments/aided/geography', permanent: true },
       { source: '/bachelor-of-business-administration', destination: '/programmes/self-finance/ug/bba', permanent: true },
       { source: '/bachelor-of-business-administration/', destination: '/programmes/self-finance/ug/bba', permanent: true },
-      { source: '/department-of-mathematics-sf', destination: '/programmes/aided/ug/bsc-maths', permanent: true },
-      { source: '/department-of-mathematics-sf/', destination: '/programmes/aided/ug/bsc-maths', permanent: true },
+      { source: '/department-of-mathematics-sf', destination: '/programmes/self-finance/ug/bsc-maths', permanent: true },
+      { source: '/department-of-mathematics-sf/', destination: '/programmes/self-finance/ug/bsc-maths', permanent: true },
       { source: '/department-of-mathematics-sf-2', destination: '/departments/self-finance/mathematics', permanent: true },
       { source: '/department-of-mathematics-sf-2/', destination: '/departments/self-finance/mathematics', permanent: true },
       { source: '/department-of-cyber-security-sf', destination: '/departments/self-finance/cyber-security', permanent: true },
@@ -339,6 +339,14 @@ const nextConfig: NextConfig = {
       { source: '/department-of-botany/', destination: '/departments', permanent: true },
       { source: '/department-of-chemistry-sf', destination: '/departments', permanent: true },
       { source: '/department-of-chemistry-sf/', destination: '/departments', permanent: true },
+      // 2026-11-18: B.A. English, B.Sc Mathematics and M.Com run as Aided AND Self-Finance; the user's choice is one
+      // page per course - the Self-Finance URL, with one line about the aided seats. Aided URLs go to it.
+      { source: '/programmes/aided/ug/ba-english', destination: '/programmes/self-finance/ug/ba-english', permanent: true },
+      { source: '/admissions/ba-english-aided', destination: '/admissions/ba-english-self-finance', permanent: true },
+      { source: '/programmes/aided/ug/bsc-maths', destination: '/programmes/self-finance/ug/bsc-maths', permanent: true },
+      { source: '/admissions/bsc-maths-aided', destination: '/admissions/bsc-maths-self-finance', permanent: true },
+      { source: '/programmes/aided/pg/mcom', destination: '/programmes/self-finance/pg/mcom', permanent: true },
+      { source: '/admissions/mcom-aided', destination: '/admissions/mcom-self-finance', permanent: true },
       // 2026-11-17: Aided M.Sc Computer Science and Aided M.Sc Physics taken off the site (user's final
       // course list; neither is on the TN DCE course list). Old URLs go to the nearest live page.
       { source: '/programmes/aided/pg/msc-computer-science', destination: '/programmes/self-finance/pg/msc-computer-science', permanent: true },

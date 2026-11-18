@@ -15,23 +15,6 @@ export interface ProgrammeInfo {
 
 export const programmeMetadata: Record<string, ProgrammeInfo> = {
   // ── Aided UG ──
-  "aided/ug/ba-english": {
-    name: "B.A. English",
-    fullName: "Bachelor of Arts in English",
-    degree: "B.A.",
-    duration: "3 Years",
-    level: "UG",
-    category: "Aided",
-    description:
-      "Study B.A. English at JKKN College of Arts and Science (Autonomous), affiliated to Periyar University. 3-year aided programme with strong placement support near Erode, Tamil Nadu.",
-    keywords: [
-      "BA English",
-      "BA English college near Erode",
-      "English literature degree Tamil Nadu",
-      "arts college Namakkal",
-    ],
-    slug: "ba-english-aided",
-  },
   "aided/ug/ba-history": {
     name: "B.A. History",
     fullName: "Bachelor of Arts in History",
@@ -82,22 +65,6 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
     ],
     slug: "bsc-chemistry-aided",
   },
-  "aided/ug/bsc-maths": {
-    name: "B.Sc. Mathematics",
-    fullName: "Bachelor of Science in Mathematics",
-    degree: "B.Sc.",
-    duration: "3 Years",
-    level: "UG",
-    category: "Aided",
-    description:
-      "Study B.Sc. Mathematics at JKKN College of Arts and Science (Autonomous). Aided programme building strong analytical and problem-solving skills near Erode, Tamil Nadu.",
-    keywords: [
-      "BSc Mathematics",
-      "BSc Maths college near Erode",
-      "maths degree Tamil Nadu",
-    ],
-    slug: "bsc-maths-aided",
-  },
   "aided/ug/bsc-zoology": {
     name: "B.Sc. Zoology",
     fullName: "Bachelor of Science in Zoology",
@@ -147,22 +114,6 @@ export const programmeMetadata: Record<string, ProgrammeInfo> = {
       "MCA Namakkal",
     ],
     slug: "mca-aided",
-  },
-  "aided/pg/mcom": {
-    name: "M.Com",
-    fullName: "Master of Commerce",
-    degree: "M.Com",
-    duration: "2 Years",
-    level: "PG",
-    category: "Aided",
-    description:
-      "Study M.Com at JKKN College of Arts and Science (Autonomous). Aided postgraduate commerce programme with specialization options near Erode, Tamil Nadu.",
-    keywords: [
-      "MCom",
-      "MCom college near Erode",
-      "master of commerce Tamil Nadu",
-    ],
-    slug: "mcom-aided",
   },
   "aided/pg/msc-chemistry": {
     name: "M.Sc. Chemistry",

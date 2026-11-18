@@ -16,6 +16,11 @@ type Props = {
   defaultProgrammeId?: string
   /** A line under the form for pages that serve aided programmes too (the CRM has none yet). */
   aidedNote?: boolean
+  /**
+   * A self-financing course that also has aided seats (top-enquiry.ts, ALSO_HAS_AIDED_SEATS): one line
+   * under the form naming the course. User's choice 2026-11-18 - one page per course, SF details only.
+   */
+  aidedSeatsFor?: string
   className?: string
 }
 
@@ -24,6 +29,7 @@ export default function TopEnquiryCard({
   heading = "Get UG / PG course fee and admission details",
   defaultProgrammeId,
   aidedNote = false,
+  aidedSeatsFor,
   className = "",
 }: Props) {
   return (
@@ -37,6 +43,15 @@ export default function TopEnquiryCard({
           Looking for an aided programme? Call{" "}
           {/* data-no-gate (2026-11-04): the CRM has no aided programme, so this call must not
               open the Call / WhatsApp course form (lib/call-gate.ts) - it dials directly. */}
+          <a href="tel:+919345855001" data-no-gate className="font-semibold text-[#0b6d41] underline">
+            +91 93458 55001
+          </a>
+        </p>
+      )}
+      {aidedSeatsFor && (
+        <p className="mt-4 text-sm text-gray-600">
+          {aidedSeatsFor} also has Aided seats. For an aided seat, call{" "}
+          {/* data-no-gate: the CRM has no aided row, so this call dials directly (lib/call-gate.ts). */}
           <a href="tel:+919345855001" data-no-gate className="font-semibold text-[#0b6d41] underline">
             +91 93458 55001
           </a>

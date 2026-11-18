@@ -22,10 +22,8 @@ export const metadata: Metadata = {
 };
 
 const aidedUG = [
-  { name: "B.A. English", href: "/programmes/aided/ug/ba-english" },
   { name: "B.A. History", href: "/programmes/aided/ug/ba-history" },
   { name: "B.Sc. Chemistry", href: "/programmes/aided/ug/bsc-chemistry" },
-  { name: "B.Sc. Mathematics", href: "/programmes/aided/ug/bsc-maths" },
   { name: "B.Sc. Zoology", href: "/programmes/aided/ug/bsc-zoology" },
   { name: "B.Com", href: "/programmes/aided/ug/bcom" },
 ];
@@ -35,7 +33,6 @@ const aidedPG = [
   { name: "M.Sc. Chemistry", href: "/programmes/aided/pg/msc-chemistry" },
   { name: "M.Sc. Zoology", href: "/programmes/aided/pg/msc-zoology" },
   { name: "M.A. History", href: "/programmes/aided/pg/ma-history" },
-  { name: "M.Com", href: "/programmes/aided/pg/mcom" },
 ];
 
 const aidedPhD = [

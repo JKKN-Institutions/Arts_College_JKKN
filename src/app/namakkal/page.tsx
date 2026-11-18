@@ -509,11 +509,9 @@ export default function NamakkalPage() {
                 <h4 className="text-xs font-bold text-[#006837] tracking-wider mb-3 uppercase">Aided — UG</h4>
                 <ul className="space-y-1.5">
                   {[
-                    { name: "B.A. English", href: "/programmes/aided/ug/ba-english" },
                     { name: "B.A. History", href: "/programmes/aided/ug/ba-history" },
                     { name: "B.Com", href: "/programmes/aided/ug/bcom" },
                     { name: "B.Sc Chemistry", href: "/programmes/aided/ug/bsc-chemistry" },
-                    { name: "B.Sc Mathematics", href: "/programmes/aided/ug/bsc-maths" },
                     { name: "B.Sc Zoology", href: "/programmes/aided/ug/bsc-zoology" },
                   ].map((p) => (
                     <li key={p.href}>
@@ -570,7 +568,6 @@ export default function NamakkalPage() {
                     {[
                       { name: "M.A. History", href: "/programmes/aided/pg/ma-history" },
                       { name: "MCA", href: "/programmes/aided/pg/mca" },
-                      { name: "M.Com", href: "/programmes/aided/pg/mcom" },
                       { name: "M.Sc Chemistry", href: "/programmes/aided/pg/msc-chemistry" },
                       { name: "M.Sc Zoology", href: "/programmes/aided/pg/msc-zoology" },
                     ].map((p) => (

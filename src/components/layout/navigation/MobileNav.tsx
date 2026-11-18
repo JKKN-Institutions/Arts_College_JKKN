@@ -333,13 +333,6 @@ export default function MobileNav(props: MobileNavProps) {
                             {mobileAidedUgExpanded && (
                               <div className="pb-2">
                                 <Link
-                                  href="/programmes/aided/ug/ba-english"
-                                  onClick={toggleMobileMenu}
-                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
-                                >
-                                  B.A. English
-                                </Link>
-                                <Link
                                   href="/programmes/aided/ug/ba-history"
                                   onClick={toggleMobileMenu}
                                   className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
@@ -352,13 +345,6 @@ export default function MobileNav(props: MobileNavProps) {
                                   className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                                 >
                                   B.Sc. Chemistry
-                                </Link>
-                                <Link
-                                  href="/programmes/aided/ug/bsc-maths"
-                                  onClick={toggleMobileMenu}
-                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
-                                >
-                                  B.Sc. Maths
                                 </Link>
                                 <Link
                                   href="/programmes/aided/ug/bsc-zoology"
@@ -396,13 +382,6 @@ export default function MobileNav(props: MobileNavProps) {
                                   className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
                                 >
                                   M.C.A
-                                </Link>
-                                <Link
-                                  href="/programmes/aided/pg/mcom"
-                                  onClick={toggleMobileMenu}
-                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
-                                >
-                                  M.Com
                                 </Link>
                                 <Link
                                   href="/programmes/aided/pg/msc-zoology"
@@ -493,6 +472,13 @@ export default function MobileNav(props: MobileNavProps) {
 
                             {mobileSelfFinanceUgExpanded && (
                               <div className="pb-2">
+                                <Link
+                                  href="/programmes/self-finance/ug/ba-english"
+                                  onClick={toggleMobileMenu}
+                                  className="block py-2 px-12 text-gray-500 hover:bg-brand-cream hover:text-brand-green rounded-lg transition"
+                                >
+                                  B.A. English
+                                </Link>
                                 <Link
                                   href="/programmes/self-finance/ug/bsc-physics"
                                   onClick={toggleMobileMenu}

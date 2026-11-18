@@ -118,10 +118,8 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
         id: 'aided-ug',
         label: 'Aided UG',
         items: [
-          { label: 'B.A. English', href: '/programmes/aided/ug/ba-english' },
           { label: 'B.A. History', href: '/programmes/aided/ug/ba-history' },
           { label: 'B.Sc. Chemistry', href: '/programmes/aided/ug/bsc-chemistry' },
-          { label: 'B.Sc. Mathematics', href: '/programmes/aided/ug/bsc-maths' },
           { label: 'B.Sc. Zoology', href: '/programmes/aided/ug/bsc-zoology' },
           { label: 'B.Com', href: '/programmes/aided/ug/bcom' },
         ],
@@ -133,7 +131,6 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
           { label: 'MCA', href: '/programmes/aided/pg/mca' },
           { label: 'M.Sc. Chemistry', href: '/programmes/aided/pg/msc-chemistry' },
           { label: 'M.Sc. Mathematics', href: '/programmes/aided/pg/msc-maths' },
-          { label: 'M.Com', href: '/programmes/aided/pg/mcom' },
         ],
       },
       {

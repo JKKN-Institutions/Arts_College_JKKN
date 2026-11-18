@@ -63,11 +63,11 @@ Autonomy means the college designs its own curriculum and conducts its own exami
 
 ### Undergraduate — Aided (6)
 
-- [B.A. English](https://cas.jkkn.ac.in/programmes/aided/ug/ba-english)
+- [B.A. English](https://cas.jkkn.ac.in/programmes/self-finance/ug/ba-english) - aided seats too; one page with the Self-Finance course
 - [B.A. History](https://cas.jkkn.ac.in/programmes/aided/ug/ba-history)
 - [B.Com.](https://cas.jkkn.ac.in/programmes/aided/ug/bcom)
 - [B.Sc. Chemistry](https://cas.jkkn.ac.in/programmes/aided/ug/bsc-chemistry)
-- [B.Sc. Mathematics](https://cas.jkkn.ac.in/programmes/aided/ug/bsc-maths)
+- [B.Sc. Mathematics](https://cas.jkkn.ac.in/programmes/self-finance/ug/bsc-maths) - aided seats too; one page with the Self-Finance course
 - [B.Sc. Zoology](https://cas.jkkn.ac.in/programmes/aided/ug/bsc-zoology)
 
 ### Undergraduate — Self-Finance (14)
@@ -90,7 +90,7 @@ Autonomy means the college designs its own curriculum and conducts its own exami
 
 - [M.A. History](https://cas.jkkn.ac.in/programmes/aided/pg/ma-history)
 - [M.C.A.](https://cas.jkkn.ac.in/programmes/aided/pg/mca)
-- [M.Com.](https://cas.jkkn.ac.in/programmes/aided/pg/mcom)
+- [M.Com.](https://cas.jkkn.ac.in/programmes/self-finance/pg/mcom) - aided seats too; one page with the Self-Finance course
 - [M.Sc. Chemistry](https://cas.jkkn.ac.in/programmes/aided/pg/msc-chemistry)
 - [M.Sc. Zoology](https://cas.jkkn.ac.in/programmes/aided/pg/msc-zoology)
 
@@ -133,7 +133,7 @@ Department index: [/departments](https://cas.jkkn.ac.in/departments)
 ## Admissions & Fees
 
 - [Admissions page](https://cas.jkkn.ac.in/admissions)
-- [**Per-programme admission pages:** 38 of them, linked from the admissions index. Example](https://cas.jkkn.ac.in/admissions/ba-english-aided)
+- [**Per-programme admission pages:** 32 of them, linked from the admissions index. Example](https://cas.jkkn.ac.in/admissions/ba-english-self-finance)
 - [Application portal](https://admission.jkkn.ac.in)
 - **Current academic year:** 2026-27
 - **Admission basis:** merit. The college is donation-free.

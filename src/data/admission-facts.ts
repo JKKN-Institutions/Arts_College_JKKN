@@ -23,15 +23,12 @@ export const FACTS_CHECKED = "2 Nov 2026";
 const DCE = `TN DCE sanctioned strength, checked ${FACTS_CHECKED}`;
 
 export const SANCTIONED_SEATS: Readonly<Record<string, { seats: number; source: string }>> = {
-  "aided/ug/ba-english": { seats: 60, source: DCE },
   "aided/ug/ba-history": { seats: 60, source: DCE },
   "aided/ug/bcom": { seats: 60, source: DCE },
   "aided/ug/bsc-chemistry": { seats: 40, source: DCE },
-  "aided/ug/bsc-maths": { seats: 60, source: DCE },
   "aided/ug/bsc-zoology": { seats: 40, source: DCE },
   "aided/pg/ma-history": { seats: 36, source: DCE },
   "aided/pg/mca": { seats: 15, source: `AICTE 2025-26 and TN DCE, checked ${FACTS_CHECKED}` },
-  "aided/pg/mcom": { seats: 36, source: DCE },
   "aided/pg/msc-chemistry": { seats: 30, source: DCE },
   "aided/pg/msc-zoology": { seats: 30, source: DCE },
   "aided/phd/tamil": { seats: 4, source: DCE },
@@ -110,7 +107,6 @@ const TFD = [
 
 export const ELIGIBILITY_2026_27: Readonly<Record<string, readonly string[]>> = {
   // UG - ug.pdf rows 3 and 6 (one cell: "A pass in +2 examinations.")
-  "aided/ug/ba-english": BA_ANY_PLUS_TWO,
   "aided/ug/ba-history": BA_ANY_PLUS_TWO,
   "self-finance/ug/ba-english": BA_ANY_PLUS_TWO,
   // ug.pdf row 12 - B.Com and the related commerce programmes
@@ -132,12 +128,6 @@ export const ELIGIBILITY_2026_27: Readonly<Record<string, readonly string[]>> = 
     MERIT,
   ],
   // ug.pdf row 34
-  "aided/ug/bsc-maths": [
-    "Pass in the Higher Secondary (+2) examination",
-    `Mathematics, Statistics or Business Mathematics as one of the subjects ${PU}`,
-    "Tamil Nadu Higher Secondary Board or an examination accepted as equivalent",
-    MERIT,
-  ],
   "self-finance/ug/bsc-maths": [
     "Pass in the Higher Secondary (+2) examination",
     `Mathematics, Statistics or Business Mathematics as one of the subjects ${PU}`,
@@ -173,7 +163,6 @@ export const ELIGIBILITY_2026_27: Readonly<Record<string, readonly string[]>> = 
     MERIT,
   ],
   // pg.pdf row 9
-  "aided/pg/mcom": MCOM_LIST,
   "self-finance/pg/mcom": MCOM_LIST,
   // pg.pdf row 17 - M.Sc Computer Science / Data Science / Computer Science - Data Analytics
   "self-finance/pg/msc-computer-science": MSC_COMPUTING,

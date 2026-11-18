@@ -8,8 +8,8 @@
 //   unambiguous (PRESELECT_BY_SLUG);
 // - the CRM has no row for it (aided, B.Com A&F, B.Com B&I - DEP-60) -> the Call / WhatsApp card,
 //   so no lead is filed under a wrong self-financing course.
-// - 2026-11-18: the aided B.A. English, B.Sc Maths and M.Com also run as self-financing, so the CRM
-//   row exists; they get the form, headed "(Aided)" (AIDED_FILED_UNDER_SELF_FINANCE_ROW).
+// - 2026-11-18: B.A. English, B.Sc Maths and M.Com have ONE page each (the Self-Finance page); the
+//   form there carries one line about the course's aided seats (ALSO_HAS_AIDED_SEATS).
 // A proposed programme (awaiting Periyar University approval) is never pre-selected and its heading
 // reads "Register your interest", the words of its own approval-pending banner - never "admission".
 //
@@ -18,7 +18,7 @@
 
 import TopEnquiryCard from "@/components/lead/TopEnquiryCard"
 import CallWhatsAppCard from "@/components/lead/CallWhatsAppCard"
-import { crmCanRecord, PRESELECT_BY_SLUG } from "@/lib/top-enquiry"
+import { ALSO_HAS_AIDED_SEATS, crmCanRecord, PRESELECT_BY_SLUG } from "@/lib/top-enquiry"
 
 type Props = {
   /** The /admissions/<slug> slug, e.g. "bsc-ai-ds-self-finance" (programme-metadata.ts). */
@@ -31,20 +31,18 @@ type Props = {
 
 export default function ProgrammeEnquirySection({ slug, name, category, proposed = false }: Props) {
   const canRecord = crmCanRecord({ slug, category })
-  // An aided page that gets the form (top-enquiry.ts, AIDED_FILED_UNDER_SELF_FINANCE_ROW) says
-  // "(Aided)" in its heading too, so the parent never reads it as the self-financing course.
-  const shownName = category === "Aided" ? `${name} (Aided)` : name
   return (
     <section aria-label="Admission enquiry" id="enquiry" className="bg-white px-4 py-10 sm:py-12">
       <div className="mx-auto max-w-xl">
         {canRecord ? (
           <TopEnquiryCard
             sourcePage={`programme-${slug}`}
-            heading={proposed ? `Register your interest in ${shownName}` : `Get ${shownName} fee and admission details`}
+            heading={proposed ? `Register your interest in ${name}` : `Get ${name} fee and admission details`}
             defaultProgrammeId={proposed ? undefined : PRESELECT_BY_SLUG[slug]}
+            aidedSeatsFor={ALSO_HAS_AIDED_SEATS.has(slug) ? name.replace(/ \(SF\)$/, "") : undefined}
           />
         ) : (
-          <CallWhatsAppCard programmeName={shownName} />
+          <CallWhatsAppCard programmeName={category === "Aided" ? `${name} (Aided)` : name} />
         )}
       </div>
     </section>

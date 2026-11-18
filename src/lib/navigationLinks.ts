@@ -99,13 +99,6 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
               children: [
                 // Level 3: Individual courses
                 {
-                  id: 'aided-ug-ba-english',
-                  label: 'B.A. English',
-                  icon: GraduationCap,
-                  href: '/programmes/aided/ug/ba-english',
-                  active: pathname === '/programmes/aided/ug/ba-english'
-                },
-                {
                   id: 'aided-ug-ba-history',
                   label: 'B.A. History',
                   icon: GraduationCap,
@@ -118,13 +111,6 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
                   icon: GraduationCap,
                   href: '/programmes/aided/ug/bsc-chemistry',
                   active: pathname === '/programmes/aided/ug/bsc-chemistry'
-                },
-                {
-                  id: 'aided-ug-bsc-maths',
-                  label: 'B.Sc. Mathematics',
-                  icon: GraduationCap,
-                  href: '/programmes/aided/ug/bsc-maths',
-                  active: pathname === '/programmes/aided/ug/bsc-maths'
                 },
                 {
                   id: 'aided-ug-bsc-zoology',
@@ -154,13 +140,6 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
                   icon: GraduationCap,
                   href: '/programmes/aided/pg/mca',
                   active: pathname === '/programmes/aided/pg/mca'
-                },
-                {
-                  id: 'aided-pg-mcom',
-                  label: 'M.Com',
-                  icon: GraduationCap,
-                  href: '/programmes/aided/pg/mcom',
-                  active: pathname === '/programmes/aided/pg/mcom'
                 },
                 {
                   id: 'aided-pg-msc-chemistry',
@@ -228,6 +207,13 @@ export function getNavigationGroups(pathname: string): BottomNavGroup[] {
               label: 'UG',
               icon: GraduationCap,
               children: [
+                {
+                  id: 'self-finance-ug-ba-english',
+                  label: 'B.A. English',
+                  icon: GraduationCap,
+                  href: '/programmes/self-finance/ug/ba-english',
+                  active: pathname === '/programmes/self-finance/ug/ba-english'
+                },
                 {
                   id: 'self-finance-ug-bba',
                   label: 'BBA',

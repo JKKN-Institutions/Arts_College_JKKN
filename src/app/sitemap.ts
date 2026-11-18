@@ -130,17 +130,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     s(`${SITE_URL}/programmes`, "monthly", 0.8),
 
     // Programmes — Aided UG
-    s(`${SITE_URL}/programmes/aided/ug/ba-english`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/aided/ug/ba-history`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/aided/ug/bcom`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/aided/ug/bsc-chemistry`, "monthly", 0.9),
-    s(`${SITE_URL}/programmes/aided/ug/bsc-maths`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/aided/ug/bsc-zoology`, "monthly", 0.9),
 
     // Programmes — Aided PG
     s(`${SITE_URL}/programmes/aided/pg/ma-history`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/aided/pg/mca`, "monthly", 0.9),
-    s(`${SITE_URL}/programmes/aided/pg/mcom`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/aided/pg/msc-chemistry`, "monthly", 0.9),
     s(`${SITE_URL}/programmes/aided/pg/msc-zoology`, "monthly", 0.9),
 

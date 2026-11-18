@@ -18,7 +18,6 @@ const programsByCategory = {
   science: [
     // UG Science
     { name: 'B.Sc. Chemistry', href: '/programmes/aided/ug/bsc-chemistry', level: 'UG', type: 'Aided' },
-    { name: 'B.Sc. Mathematics', href: '/programmes/aided/ug/bsc-maths', level: 'UG', type: 'Aided' },
     { name: 'B.Sc. Zoology', href: '/programmes/aided/ug/bsc-zoology', level: 'UG', type: 'Aided' },
     { name: 'B.Sc. Microbiology', href: '/programmes/self-finance/ug/bsc-microbiology', level: 'UG', type: 'Self-Finance' },
     { name: 'B.Sc. Physics', href: '/programmes/self-finance/ug/bsc-physics', level: 'UG', type: 'Self-Finance' },
@@ -37,7 +36,6 @@ const programsByCategory = {
     { name: 'BBA', href: '/programmes/self-finance/ug/bba', level: 'UG', type: 'Self-Finance' },
     { name: 'B.Com CA', href: '/programmes/self-finance/ug/bcom-ca', level: 'UG', type: 'Self-Finance' },
     // PG Commerce
-    { name: 'M.Com', href: '/programmes/aided/pg/mcom', level: 'PG', type: 'Aided' },
     { name: 'M.Com', href: '/programmes/self-finance/pg/mcom', level: 'PG', type: 'Self-Finance' }
   ],
   computer: [

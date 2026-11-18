@@ -42,24 +42,21 @@ export const SELF_FINANCE_NOT_IN_CRM: ReadonlySet<string> = new Set([
 ])
 
 /**
- * Aided programmes that ALSO run as self-financing, so the CRM already holds a row for the course
- * (user's choice 2026-11-18: "crm form already erukuna apdiye vitru" + "intha moonu pages kum form
- * potru"). Their aided pages get the form; the lead is filed under the CRM's self-financing row
- * (ENGLISH e1478844 / MATHEMATICS b7b7f940 / COMMERCE 40633012, read live 2026-11-18), and its
- * utm_campaign "cas-programme-<slug>" / "cas-course-<slug>" ends in "-aided", which tells the
- * counsellor which stream the parent read about. The other 11 aided programmes have no CRM row at
- * all, so they keep the Call / WhatsApp card (DEP-60).
+ * Self-financing programmes that also have aided seats. User's choice 2026-11-18: one page per course -
+ * the Self-Finance page, SF details only, with one line about the aided seats (TopEnquiryCard
+ * aidedSeatsFor). Their aided programme and admissions pages 301 here (next.config.ts). The CRM holds
+ * the course only as its SF row (ENGLISH / MATHEMATICS / COMMERCE, read live 2026-11-18), so the form
+ * stays the SF form and the aided line dials the admission office directly.
  */
-export const AIDED_FILED_UNDER_SELF_FINANCE_ROW: ReadonlySet<string> = new Set([
-  "ba-english-aided",
-  "bsc-maths-aided",
-  "mcom-aided",
+export const ALSO_HAS_AIDED_SEATS: ReadonlySet<string> = new Set([
+  "ba-english-self-finance",
+  "bsc-maths-self-finance",
+  "mcom-self-finance",
 ])
 
 type CourseRef = { slug: string; category: "Aided" | "Self-Finance" }
 
 /** True when a lead for this programme can land in the CRM under the right course. */
 export function crmCanRecord(course: CourseRef): boolean {
-  if (course.category === "Aided") return AIDED_FILED_UNDER_SELF_FINANCE_ROW.has(course.slug)
-  return !SELF_FINANCE_NOT_IN_CRM.has(course.slug)
+  return course.category === "Self-Finance" && !SELF_FINANCE_NOT_IN_CRM.has(course.slug)
 }
