@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { createClient } from "@/lib/supabase/server";
 import { getAllAdmissionSlugs } from "@/data/programme-metadata";
 import { getCollegeJobs } from "@/lib/careers/api";
+import { blogFromMyJkkn, listAllPosts } from "@/lib/blog/myjkkn";
 
 const SITE_URL = "https://cas.jkkn.ac.in";
 
@@ -258,12 +259,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const supabase = await createClient();
     const collegeId = process.env.NEXT_PUBLIC_COLLEGE_ID ?? "arts-science";
 
+    // BLOG_SOURCE=myjkkn: the published posts come from MyJKKN (never throws; empty on an outage).
+    const blogRows = blogFromMyJkkn()
+      ? listAllPosts().then((posts) => ({
+          data: posts
+            .filter((p) => !p.seo.noindex)
+            .map((p) => ({ slug: p.slug, updated_at: p.updated_at, created_at: p.created_at })),
+        }))
+      : supabase
+          .from("blogs")
+          .select("slug, updated_at, created_at")
+          .eq("college_id", collegeId)
+          .eq("is_published", true);
+
     const [{ data: blogs }, { data: events }, { data: faculty }] = await Promise.all([
-      supabase
-        .from("blogs")
-        .select("slug, updated_at, created_at")
-        .eq("college_id", collegeId)
-        .eq("is_published", true),
+      blogRows,
       supabase
         .from("events")
         .select("slug, event_date, created_at")

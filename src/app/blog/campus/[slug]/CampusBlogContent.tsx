@@ -58,6 +58,13 @@ interface Props {
   initialComments: CommentItem[];
   /** Enquiry box inside the post (lib/blog-inline-cta.ts); null = no box. */
   inlineCta?: InlineCta | null;
+  /**
+   * Set when posts come from MyJKKN: a comment is then sent to the MyJKKN public
+   * API (saved as pending, approved in MyJKKN) instead of this site's own table.
+   */
+  commentsVia?: { api: string; site: string };
+  /** false hides the comment form (comments switched off for the post, or a draft preview). */
+  commentFormOpen?: boolean;
 }
 
 // ── Helpers ────────────────────────────────────────────────────────────────
@@ -86,6 +93,8 @@ export default function CampusBlogContent({
   relatedPosts,
   initialComments,
   inlineCta = null,
+  commentsVia,
+  commentFormOpen = true,
 }: Props) {
   const supabase = createClient();
   const [comments] = useState<CommentItem[]>(initialComments);
@@ -109,17 +118,39 @@ export default function CampusBlogContent({
     if (honeypot) return;
     if (!authorName.trim() || !commentText.trim()) return;
     setSubmitting(true);
-    const { error } = await supabase.from('blog_comments').insert({
-      blog_id: post.id,
-      author_name: authorName.trim(),
-      author_email: authorEmail.trim(),
-      content: commentText.trim(),
-      status: 'pending',
-      college_id: process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts-science',
-    });
+    let failed: string | null = null;
+    if (commentsVia) {
+      try {
+        const res = await fetch(commentsVia.api, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            site: commentsVia.site,
+            slug: post.slug,
+            author_name: authorName.trim(),
+            author_email: authorEmail.trim(),
+            content: commentText.trim(),
+          }),
+        });
+        if (res.status === 429) failed = 'Too many comments from this connection. Please try again later.';
+        else if (!res.ok) failed = 'Failed to submit comment. Please try again.';
+      } catch {
+        failed = 'Failed to submit comment. Please try again.';
+      }
+    } else {
+      const { error } = await supabase.from('blog_comments').insert({
+        blog_id: post.id,
+        author_name: authorName.trim(),
+        author_email: authorEmail.trim(),
+        content: commentText.trim(),
+        status: 'pending',
+        college_id: process.env.NEXT_PUBLIC_COLLEGE_ID ?? 'arts-science',
+      });
+      if (error) failed = 'Failed to submit comment. Please try again.';
+    }
     setSubmitting(false);
-    if (error) {
-      toast.error('Failed to submit comment. Please try again.');
+    if (failed) {
+      toast.error(failed);
       return;
     }
     setSubmitted(true);
@@ -267,7 +298,7 @@ export default function CampusBlogContent({
         </div>
 
         {/* ── Leave a Comment ───────────────────────────────────────────── */}
-        {submitted ? (
+        {!commentFormOpen ? null : submitted ? (
           <div className="flex items-center gap-3 bg-green-50 border border-green-100 rounded-2xl px-5 py-4 text-sm text-[#006837] font-medium mb-14">
             <Check className="w-4 h-4 flex-shrink-0" />
             Your comment is awaiting moderation. Thank you!
