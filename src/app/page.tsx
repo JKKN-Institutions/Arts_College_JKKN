@@ -896,12 +896,12 @@ export default function Home() {
 
                 <div className="inline-flex items-center gap-2 bg-[#0b6d41] text-white text-[13px] font-semibold px-4 py-2 rounded-full mb-6">
                   <span>🎓</span>
-                  <span>Admissions Open 2026–27</span>
+                  <span>Admission Enquiry</span>
                 </div>
 
                 <ul className="space-y-4 mb-8">
                   {[
-                    "Limited Seats Available",
+                    "Government-aided and Self-financing Seats",
                     "NAAC Accredited (B) Institution",
                     "Merit Scholarships Available",
                     "Industry-Integrated Learning Framework",

@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Bhavani — JKKN CAS",
     description:
-      "JKKN CAS — NAAC accredited (B), 35 programmes, placement cell support. Just ~8 km from Bhavani across the Cauvery bridge. Admissions open 2026–27.",
+      "JKKN CAS — NAAC accredited (B), 35 programmes, placement cell support. Just ~8 km from Bhavani across the Cauvery bridge. Admission enquiries welcome.",
     url: "https://cas.jkkn.ac.in/bhavani",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Bhavani — JKKN CAS",
     description:
-      "NAAC accredited (B) arts college ~8 km from Bhavani. 35 programmes, placement cell support, easy day-scholar commute. Admissions 2026–27 open.",
+      "NAAC accredited (B) arts college ~8 km from Bhavani. 35 programmes, placement cell support, easy day-scholar commute. Admission enquiries welcome.",
   },
 };
 
@@ -207,7 +207,7 @@ export default function BhavaniPage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 border border-white/30 rounded-full px-4 py-2 text-sm text-white/90 mb-8 bg-white/10 backdrop-blur-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>NAAC Accredited (B) · Autonomous • Admissions Open</span>
+            <span>NAAC Accredited (B) · Autonomous • Admission Enquiry</span>
           </div>
 
           {/* Heading */}

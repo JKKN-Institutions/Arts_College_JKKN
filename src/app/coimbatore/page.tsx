@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
     description:
-      "JKKN CAS — 112 km from Coimbatore. NAAC accredited (B), placement cell support. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 112 km from Coimbatore. NAAC accredited (B), placement cell support. B.Sc, B.Com, BBA, BCA. Admission enquiries welcome.",
     url: "https://cas.jkkn.ac.in/coimbatore",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
-    description: "JKKN CAS — 112 km from Coimbatore. NAAC accredited (B), placement cell support. Admissions open 2026-27.",
+    description: "JKKN CAS — 112 km from Coimbatore. NAAC accredited (B), placement cell support. Admission enquiries welcome.",
   },
 };
 
@@ -89,7 +89,7 @@ export default function CoimbatorePage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Coimbatore?",
-      a: "JKKN College of Arts and Science, 112 km from Coimbatore on NH-544, is a NAAC accredited (B), 74-year-old institution with 35 programmes and placement cell support. Admissions open for 2026–27.",
+      a: "JKKN College of Arts and Science, 112 km from Coimbatore on NH-544, is a NAAC accredited (B), 74-year-old institution with 35 programmes and placement cell support. Admission enquiries welcome.",
     },
     {
       q: "How far is JKKN CAS from Coimbatore?",
@@ -251,7 +251,7 @@ export default function CoimbatorePage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 border border-white/30 rounded-full px-4 py-2 text-sm text-white/90 mb-8 bg-white/10 backdrop-blur-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>NAAC Accredited (B) · Autonomous • Admissions Open</span>
+            <span>NAAC Accredited (B) · Autonomous • Admission Enquiry</span>
           </div>
 
           {/* Heading */}

@@ -192,7 +192,7 @@ export default function NamakkalPage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 border border-white/30 rounded-full px-4 py-2 text-sm text-white/90 mb-8 bg-white/10 backdrop-blur-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>NAAC Accredited (B) · Autonomous • Admissions Open</span>
+            <span>NAAC Accredited (B) · Autonomous • Admission Enquiry</span>
           </div>
 
           {/* Heading */}

@@ -41,7 +41,7 @@ import {
 export const metadata: Metadata = {
   title: { absolute: "Arts & Science College Near Tiruppur | JKKN CAS" },
   description:
-    "JKKN College of Arts and Science, 64 km from Tiruppur on NH-544. Autonomous, NAAC accredited (B). B.Sc, B.Com, BBA and BCA. Admissions open.",
+    "JKKN College of Arts and Science, 64 km from Tiruppur on NH-544. Autonomous, NAAC accredited (B). B.Sc, B.Com, BBA and BCA. Admission enquiries welcome.",
   keywords: [
     "arts and science college near Tiruppur",
     "best college near Tiruppur",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
     description:
-      "JKKN CAS — 64 km from Tiruppur. NAAC accredited (B), placement cell support. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 64 km from Tiruppur. NAAC accredited (B), placement cell support. B.Sc, B.Com, BBA, BCA. Admission enquiries welcome.",
     url: "https://cas.jkkn.ac.in/tiruppur",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
-    description: "JKKN CAS — 64 km from Tiruppur. NAAC accredited (B), placement cell support. Admissions open 2026-27.",
+    description: "JKKN CAS — 64 km from Tiruppur. NAAC accredited (B), placement cell support. Admission enquiries welcome.",
   },
 };
 
@@ -198,7 +198,7 @@ export default function TiruppurPage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 border border-white/30 rounded-full px-4 py-2 text-sm text-white/90 mb-8 bg-white/10 backdrop-blur-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>NAAC Accredited (B) · Autonomous • Admissions Open</span>
+            <span>NAAC Accredited (B) · Autonomous • Admission Enquiry</span>
           </div>
 
           {/* Heading */}

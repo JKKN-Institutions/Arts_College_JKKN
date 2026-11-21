@@ -204,7 +204,7 @@ export default function AdmissionsPage() {
             <div className="max-w-3xl">
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold mb-6 border border-white/90 text-gray-900">
                 <Calendar className="w-4 h-4 text-[#0b6d41]" />
-                Admissions Open 2026-27
+                Admission Enquiry
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#0b6d41] mb-6">
                 Admissions at JKKN College of Arts and Science

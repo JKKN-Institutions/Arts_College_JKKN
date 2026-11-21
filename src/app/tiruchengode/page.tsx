@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   // 52 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC accredited (B) college ~26 km from Tiruchengode. 35 programmes, NIRF placement data. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
+    "JKKN CAS — NAAC accredited (B) college ~26 km from Tiruchengode. 35 programmes, NIRF placement data. BCA, BBA, B.Com, B.Sc. Admission enquiries welcome.",
   // 140 chars — within 155 limit
 
   keywords: [
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Tiruchengode — JKKN CAS",
     description:
-      "JKKN CAS — NAAC accredited (B), 35 programmes, placement cell support. ~26 km from Tiruchengode in Komarapalayam. Admissions open 2026–27.",
+      "JKKN CAS — NAAC accredited (B), 35 programmes, placement cell support. ~26 km from Tiruchengode in Komarapalayam. Admission enquiries welcome.",
     url: "https://cas.jkkn.ac.in/tiruchengode",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Tiruchengode — JKKN CAS",
     description:
-      "NAAC accredited (B) arts college ~26 km from Tiruchengode. 35 programmes, placement cell support, hostel available. Admissions 2026–27 open.",
+      "NAAC accredited (B) arts college ~26 km from Tiruchengode. 35 programmes, placement cell support, hostel available. Admission enquiries welcome.",
   },
 };
 
@@ -209,7 +209,7 @@ export default function TiruchengodePage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 border border-white/30 rounded-full px-4 py-2 text-sm text-white/90 mb-8 bg-white/10 backdrop-blur-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>NAAC Accredited (B) · Autonomous • Admissions Open</span>
+            <span>NAAC Accredited (B) · Autonomous • Admission Enquiry</span>
           </div>
 
           {/* Heading */}

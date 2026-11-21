@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Salem | JKKN CAS",
     description:
-      "JKKN CAS — ~57 km from Salem. NAAC accredited (B), placement cell support. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27.",
+      "JKKN CAS — ~57 km from Salem. NAAC accredited (B), placement cell support. BCA, BBA, B.Com, B.Sc. Admission enquiries welcome.",
     url: "https://cas.jkkn.ac.in/salem",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Salem | JKKN CAS",
-    description: "JKKN CAS — ~57 km from Salem. NAAC accredited (B), placement cell support. Admissions open 2026-27.",
+    description: "JKKN CAS — ~57 km from Salem. NAAC accredited (B), placement cell support. Admission enquiries welcome.",
   },
 };
 
@@ -212,7 +212,7 @@ export default function SalemPage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 border border-white/30 rounded-full px-4 py-2 text-sm text-white/90 mb-8 bg-white/10 backdrop-blur-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>NAAC Accredited (B) · Autonomous • Admissions Open</span>
+            <span>NAAC Accredited (B) · Autonomous • Admission Enquiry</span>
           </div>
 
           {/* Heading */}

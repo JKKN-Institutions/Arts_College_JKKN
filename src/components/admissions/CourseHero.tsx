@@ -38,7 +38,7 @@ export function CourseHero({ programme }: CourseHeroProps) {
             ) : (
               <span className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-1.5 rounded-full text-sm font-semibold border border-white/90 text-gray-900">
                 <Calendar className="w-4 h-4 text-[#0b6d41]" />
-                Admissions Open 2026-27
+                Admission Enquiry
               </span>
             )}
             <span className="inline-flex items-center gap-2 bg-[#0b6d41]/10 px-4 py-1.5 rounded-full text-sm font-semibold border border-[#0b6d41]/15 text-[#0b6d41]">

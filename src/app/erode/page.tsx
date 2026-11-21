@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   // 48 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC accredited (B) arts and science college near Erode. 35 programmes, NIRF placement data. BCA, BBA, B.Com, B.Sc. Admissions open 2026–27.",
+    "JKKN CAS — NAAC accredited (B) arts and science college near Erode. 35 programmes, NIRF placement data. BCA, BBA, B.Com, B.Sc. Admission enquiries welcome.",
   // 144 chars — within 155 limit
 
   keywords: [
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Erode — JKKN CAS",
     description:
-      "JKKN CAS — NAAC accredited (B), 35 programmes, placement cell support. Near Erode via NH-544. Admissions open 2026–27.",
+      "JKKN CAS — NAAC accredited (B), 35 programmes, placement cell support. Near Erode via NH-544. Admission enquiries welcome.",
     url: "https://cas.jkkn.ac.in/erode",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Erode — JKKN CAS",
     description:
-      "NAAC accredited (B) arts college near Erode. 35 programmes, placement cell support, hostel available. Admissions 2026–27 open.",
+      "NAAC accredited (B) arts college near Erode. 35 programmes, placement cell support, hostel available. Admission enquiries welcome.",
   },
 };
 
@@ -215,7 +215,7 @@ export default function ErodePage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 border border-white/30 rounded-full px-4 py-2 text-sm text-white/90 mb-8 bg-white/10 backdrop-blur-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>NAAC Accredited (B) · Autonomous • Admissions Open</span>
+            <span>NAAC Accredited (B) · Autonomous • Admission Enquiry</span>
           </div>
 
           {/* Heading */}

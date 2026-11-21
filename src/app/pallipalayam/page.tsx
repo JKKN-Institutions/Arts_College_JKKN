@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   // 54 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC accredited (B) arts and science college ~14 km from Pallipalayam. 35 UG & PG programmes, NIRF placement data. Admissions open 2026–27.",
+    "JKKN CAS — NAAC accredited (B) arts and science college ~14 km from Pallipalayam. 35 UG & PG programmes, NIRF placement data. Admission enquiries welcome.",
   // 142 chars — within 155 limit
 
   keywords: [
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College near Pallipalayam — JKKN CAS",
     description:
-      "JKKN CAS — NAAC accredited (B), 35 programmes, placement cell support. ~14 km from Pallipalayam. Admissions open 2026–27.",
+      "JKKN CAS — NAAC accredited (B), 35 programmes, placement cell support. ~14 km from Pallipalayam. Admission enquiries welcome.",
     url: "https://cas.jkkn.ac.in/pallipalayam",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College near Pallipalayam — JKKN CAS",
     description:
-      "NAAC accredited (B) arts college ~14 km from Pallipalayam. 35 programmes, placement cell support, hostel available. Admissions 2026–27 open.",
+      "NAAC accredited (B) arts college ~14 km from Pallipalayam. 35 programmes, placement cell support, hostel available. Admission enquiries welcome.",
   },
 };
 
@@ -207,7 +207,7 @@ export default function PallipalayamPage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 border border-white/30 rounded-full px-4 py-2 text-sm text-white/90 mb-8 bg-white/10 backdrop-blur-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>NAAC Accredited (B) · Autonomous • Admissions Open</span>
+            <span>NAAC Accredited (B) · Autonomous • Admission Enquiry</span>
           </div>
 
           {/* Heading */}
