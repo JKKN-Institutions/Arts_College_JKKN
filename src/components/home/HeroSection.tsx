@@ -31,7 +31,7 @@ export default function HeroSection() {
             <div>
               <h1 className="font-bold leading-tight" data-speakable>
                 <span className="text-white text-[22px] sm:text-[34px] lg:text-[40px] xl:text-[44px] leading-[30px] sm:leading-[42px] lg:leading-[48px] xl:leading-[52px] block mb-1 sm:mb-1.5">
-                  Best Arts and Science College in Tamil Nadu — JKKN College (Autonomous)
+                  Autonomous Arts and Science College in Komarapalayam, near Erode — JKKN
                 </span>
                 {/* <span className="bg-gradient-to-r from-brand-yellow via-yellow-300 to-brand-yellow bg-clip-text text-transparent text-[30px] sm:text-[38px] lg:text-[44px] xl:text-[48px] leading-[38px] sm:leading-[46px] lg:leading-[52px] xl:leading-[56px] block mb-1.5">
                   JKKN College

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      "Best Arts and Science College in Tamil Nadu | JKKN College (Autonomous)",
+      "Autonomous Arts and Science College in Komarapalayam | JKKN",
     template: "%s | JKKN College of Arts and Science",
   },
   description:

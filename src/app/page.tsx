@@ -209,7 +209,7 @@ export default function Home() {
         ]}
       />
       <WebPageSchema
-        name="Best Arts and Science College in Tamil Nadu — JKKN College (Autonomous)"
+        name="Autonomous Arts and Science College in Komarapalayam, near Erode — JKKN"
         description="JKKN College of Arts and Science is an arts and science college in Komarapalayam, Tamil Nadu. Autonomous, NAAC accredited (B), placement cell support, 35 UG, PG & PhD programmes near Erode."
         url="https://cas.jkkn.ac.in"
         lastReviewed="2026-11-03"
@@ -944,7 +944,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white border-l-4 border-[#0b6d41] rounded-lg p-6 md:p-8 shadow-sm">
             <h3 className="text-[18px] md:text-[20px] font-bold text-[#0b6d41] mb-3">
-              Quick Answer: Best Arts and Science College in Tamil Nadu
+              Quick Answer: Autonomous Arts and Science College in Komarapalayam, near Erode
             </h3>
             <p className="text-[15px] md:text-[16px] leading-[24px] md:leading-[26px] text-gray-700">
               <strong>JKKN College of Arts and Science</strong> (Autonomous) in Komarapalayam, Tamil Nadu, is an autonomous arts and science college. Key highlights: <strong>NAAC accredited (B)</strong>, <strong>UGC 2(f) &amp; 12(B) recognition and autonomous status</strong>, <strong>placement cell support</strong>, <strong>35 UG/PG/PhD programmes</strong>. Affiliated to Periyar University; established 1974 within a group founded in 1952.
