@@ -101,7 +101,7 @@ const homepageFAQs = [
   {
     question: "What are the admission requirements for undergraduate programs?",
     answer:
-      "For UG programmes (B.Sc, BCA, B.Com, BBA), candidates must have passed 12th standard (HSC) from a recognized board with a minimum of 50% aggregate in the relevant stream — Science, Commerce, or Arts. For B.Sc Computer Science and BCA, Mathematics or Computer Science in 12th is preferred. PG programmes require a relevant bachelor's degree with 50%+ aggregate. Apply online at jkkn.ai/apply/jkkn-admission-2026 or call +91-93458-55001 for guidance.",
+      "For UG programmes, Periyar University's 2026-27 eligibility is a pass in +2 (HSC); some programmes need particular subjects - for example Mathematics (or Computer Science and related subjects) for B.Sc Computer Science and BCA, and a biological science for B.Sc Microbiology. PG programmes need a relevant bachelor's degree; MCA asks for at least 50% marks (45% for reserved categories). Full rules: Periyar University eligibility page, periyaruniversity.ac.in/Eligi.php. Apply online at jkkn.ai/apply/jkkn-admission-2026 or call +91-93458-55001 for guidance.",
   },
   {
     question: "Does JKKN College provide placement assistance?",

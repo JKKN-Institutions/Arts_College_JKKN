@@ -106,7 +106,7 @@ export default function BBAPage() {
     },
     {
       question: "What is the eligibility criteria for BBA admission?",
-      answer: "Candidates must have completed Higher Secondary (10+2) from any recognized board with a minimum of 50% aggregate marks. Students from any stream (Science, Commerce, or Arts) can apply for BBA admission."
+      answer: "Periyar University's 2026-27 eligibility for BBA is a pass in Higher Secondary (+2); commerce and accountancy streams get preference. Students from any stream (Science, Commerce, or Arts) can apply."
     },
     {
       question: "Is BBA better than B.Com for a management career?",
