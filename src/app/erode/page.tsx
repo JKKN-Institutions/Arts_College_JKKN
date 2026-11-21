@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   // 48 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC accredited (B) arts and science college near Erode. 35 programmes, NIRF placement data. BCA, BBA, B.Com, B.Sc. Admission enquiries welcome.",
+    "JKKN CAS — NAAC accredited (B) arts and science college near Erode. 35 programmes, placement cell support. BCA, BBA, B.Com, B.Sc. Admission enquiries welcome.",
   // 144 chars — within 155 limit
 
   keywords: [

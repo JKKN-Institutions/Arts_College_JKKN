@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   // 54 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC accredited (B) arts and science college ~14 km from Pallipalayam. 35 UG & PG programmes, NIRF placement data. Admission enquiries welcome.",
+    "JKKN CAS — NAAC accredited (B) arts and science college ~14 km from Pallipalayam. 35 UG & PG programmes, placement cell support. Admission enquiries welcome.",
   // 142 chars — within 155 limit
 
   keywords: [
