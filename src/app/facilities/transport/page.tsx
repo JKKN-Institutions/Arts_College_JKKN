@@ -20,7 +20,7 @@ export default function TransportPage() {
     {
       number: 1,
       title: 'Well-Maintained Buses',
-      description: 'The transport facility at JKKN Educational Institutions is equipped with a well-maintained fleet of buses. These buses are regularly serviced and inspected to ensure they meet the highest standards of safety. The buses are equipped with modern amenities like air-conditioning, comfortable seating, and GPS tracking.',
+      description: 'The transport facility at JKKN Educational Institutions is equipped with a well-maintained fleet of buses. These buses are regularly serviced and inspected to ensure they meet the highest standards of safety.',
     },
     {
       number: 2,
@@ -41,11 +41,6 @@ export default function TransportPage() {
       number: 5,
       title: 'Timely Service',
       description: 'The transport facility at JKKN Educational Institutions operates on a strict schedule, ensuring that the buses arrive and depart from the campus on time. This allows the learners and senior learners to plan their day accordingly, without worrying about delays or missed buses.',
-    },
-    {
-      number: 6,
-      title: 'Accessibility',
-      description: 'The transport facility at JKKN Educational Institutions is accessible to all learners, regardless of their physical abilities. The buses are equipped with wheelchair ramps and other accessibility features, making it easy for learners with disabilities to use the service.',
     },
   ];
 

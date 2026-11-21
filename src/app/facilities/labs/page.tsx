@@ -67,7 +67,7 @@ export default function LabsPage() {
           </p>
 
           <p className="text-justify">
-            We have various learning lab facilities that cover various topics, including physics, chemistry, biology, and engineering. Our learning labs are equipped with the latest technology and equipment, allowing our learners to conduct experiments and research in a safe and controlled environment. Our facilities are constantly updated to keep up with the latest developments in the field and ensure that our learners have access to the most advanced tools and techniques available.
+            We have various learning lab facilities that cover various topics, including physics, chemistry, life sciences and computer science. Our learning labs are equipped with the latest technology and equipment, allowing our learners to conduct experiments and research in a safe and controlled environment. Our facilities are constantly updated to keep up with the latest developments in the field and ensure that our learners have access to the most advanced tools and techniques available.
           </p>
 
           <p className="text-justify">

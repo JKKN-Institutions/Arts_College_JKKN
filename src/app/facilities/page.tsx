@@ -74,7 +74,7 @@ const cards = [
     href: "/library",
     label: "Library",
     description:
-      "Library with over 27,000 books and e-resources",
+      "Library with over 26,500 books (NAAC AQAR 2022-23) and e-resources",
   },
 ];
 

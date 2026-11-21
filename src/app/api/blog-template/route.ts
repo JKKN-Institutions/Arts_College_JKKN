@@ -129,7 +129,7 @@ export async function GET() {
           h2('Why Choose JKKN College of Arts and Science?'),
           p('1. Autonomous Institution — JKKN College of Arts and Science holds Autonomous status granted by UGC and Periyar University, allowing independent curriculum design aligned with industry needs.'),
           p('2. NAAC Accredited (B) — The institution is NAAC accredited (B), ensuring quality education standards recognized across India.'),
-          p('3. Strong Placement Record — placement cell support with 60+ recruiting companies.'),
+          p('3. Placement Support — a dedicated Training and Placement Cell.'),
           p('4. Modern Infrastructure — Well-equipped laboratories, digital library, sports facilities, and separate hostels for boys and girls.'),
           p('5. Location Advantage — Situated on NH-544 at Komarapalayam, easily accessible from Erode (18 km), Tiruchengode (26 km), Salem (about 57 km) and Namakkal Bus Stand (about 65 km).'),
           p(''),
@@ -156,7 +156,7 @@ export async function GET() {
           p('Q: Is JKKN College of Arts and Science affiliated to Periyar University?'),
           p('A: Yes, JKKN College of Arts and Science (Autonomous) is affiliated to Periyar University, Salem, Tamil Nadu. The institution holds Autonomous status granted by UGC.'),
           p('Q: What are the placement opportunities after [Programme Name]?'),
-          p("A: JKKN CAS has a Training and Placement Cell with 60+ recruiting companies. The Training and Placement Cell organizes on-campus recruitment drives, internships, and career guidance sessions throughout the academic year."),
+          p("A: JKKN CAS has a dedicated Training and Placement Cell. It organizes on-campus recruitment drives, internships, and career guidance sessions throughout the academic year."),
           p(''),
 
           // ── Author Box ──

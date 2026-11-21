@@ -29,7 +29,6 @@ export default function Footer() {
             </div>
 
             <div className="space-y-2">
-              <p className="font-semibold">Best Innovation Focused</p>
               <p className="font-semibold">Multi-Disciplinary Campus</p>
             </div>
           </div>

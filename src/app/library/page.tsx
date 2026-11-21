@@ -190,7 +190,7 @@ export default function LibraryPage() {
                 senior learners, fostering academic growth and intellectual exploration. Spanning an area of
                 3,328 square feet with a seating capacity for 130 readers, the learning commons is thoughtfully
                 designed to provide a comfortable and conducive environment for learning. It boasts a
-                remarkable collection of over 27,000 books across diverse disciplines, 23 esteemed national
+                collection of over 26,500 books (NAAC AQAR 2022-23) across diverse disciplines, 23 esteemed national
                 and international journals, 31 magazines, 4 newspapers, 636 back volumes, and a wealth of
                 e-resources. Recent publications and journals in the fields of arts, science, and social
                 sciences further enrich the learning commons&apos;s comprehensive offerings, along with access to online

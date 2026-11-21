@@ -39,7 +39,7 @@ export const faqCategories: FaqCategory[] = [
       },
       {
         q: "Is JKKN College a donation-free institution?",
-        a: "Yes. JKKN College of Arts and Science is a proud donation-free institution that offers merit-based admissions to all students.",
+        a: "Yes. The college declares itself a donation-free institution in its NAAC Self Study Report (cycle 1) and offers merit-based admissions.",
       },
     ],
   },

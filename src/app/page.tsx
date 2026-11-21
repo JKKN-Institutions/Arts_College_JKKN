@@ -111,7 +111,7 @@ const homepageFAQs = [
   {
     question: "What facilities are available on campus?",
     answer:
-      "JKKN's 15-acre campus on NH-544 features 500+ computer systems in advanced labs, a dedicated AI and IoT research lab with Raspberry Pi and Arduino kits, a library of over 27,000 books and e-journals, smart classrooms with projectors and video conferencing, Physics/Chemistry/Microbiology/Biotechnology laboratories, indoor and outdoor sports facilities including a cricket ground and basketball court, separate hostels for men and women with Wi-Fi and 24/7 security, a cafeteria, and a yoga and meditation centre.",
+      "JKKN's 15-acre campus on NH-544 features 500+ computer systems in advanced labs, a dedicated AI and IoT research lab with Raspberry Pi and Arduino kits, a library of over 26,500 books (NAAC AQAR 2022-23) and e-journals, smart classrooms with projectors and video conferencing, Physics/Chemistry/Microbiology/Biotechnology laboratories, indoor and outdoor sports facilities including a cricket ground and basketball court, separate hostels for men and women with Wi-Fi and 24/7 security, a cafeteria, and a yoga and meditation centre.",
   },
   {
     question: "Are scholarships available for students?",
@@ -136,7 +136,7 @@ const homepageFAQs = [
   {
     question: "How does JKKN compare to other arts and science colleges in Tamil Nadu?",
     answer:
-      "JKKN is an autonomous college recognised by UGC under Section 2(f) and 12(B), with NAAC accreditation (Grade B), and it runs a Training and Placement Cell. JKKN offers AI/IoT research labs, industry MoUs with IBM India, Global Talent Track and AWE CARE (NAAC AQAR), and 35 programmes, backed by its group's 74+ year legacy (since 1952) and 60+ recruiting companies.",
+      "JKKN is an autonomous college recognised by UGC under Section 2(f) and 12(B), with NAAC accreditation (Grade B), and it runs a Training and Placement Cell. JKKN offers AI/IoT research labs, industry MoUs with IBM India, Global Talent Track and AWE CARE (NAAC AQAR), and 35 programmes, backed by its group's 74+ year legacy (since 1952).",
   },
   {
     question: "What are the career options after completing a degree from JKKN?",
@@ -552,7 +552,7 @@ export default function Home() {
               </div>
               <h3 className="text-[18px] leading-[28px] font-bold tracking-[-0.45px] text-gray-900 mb-3">Digital Learning Commons</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                27,000+ books, e-journals, NPTEL courses, and online learning resources accessible 24/7
+                26,500+ books (NAAC AQAR 2022-23), e-journals, NPTEL courses, and online learning resources accessible 24/7
               </p>
             </div>
 
@@ -727,7 +727,7 @@ export default function Home() {
               </div>
               <h3 className="text-[18px] md:text-[24px] leading-[28px] md:leading-[32px] font-bold tracking-[-0.45px] md:tracking-[-0.6px] text-[#0b6d41] mb-4">Digital Learning Commons</h3>
               <p className="text-[14px] leading-[20px] font-normal text-gray-600">
-                27,000+ books, e-journals, NPTEL courses, and online databases with comfortable reading space
+                26,500+ books (NAAC AQAR 2022-23), e-journals, NPTEL courses, and online databases with comfortable reading space
               </p>
             </div>
 
