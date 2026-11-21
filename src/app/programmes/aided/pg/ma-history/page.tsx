@@ -3,7 +3,7 @@
 import ProgrammeEnquirySection from "@/components/lead/ProgrammeEnquirySection";
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { BookOpen, Users, Award, Briefcase, Library, GraduationCap, Building2, Lightbulb, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, BookMarked, Scroll, Landmark, Archive, Map, History } from 'lucide-react';
+import { BookOpen, Users, Award,  Library, GraduationCap, Building2, Lightbulb, CheckCircle2, Clock, FileText, Globe, ChevronDown, ArrowRight, Sparkles, Target, BookMarked, Scroll, Landmark, Archive, Map, History } from 'lucide-react';
 import CountUp from '@/components/ui/CountUp';
 import Marquee from '@/components/ui/Marquee';
 
