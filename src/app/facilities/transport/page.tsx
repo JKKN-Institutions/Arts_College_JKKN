@@ -30,7 +30,7 @@ export default function TransportPage() {
     {
       number: 3,
       title: 'Affordable Fees',
-      description: 'The transport facility at JKKN Educational Institutions is available to all learners and senior learners at an affordable fee. The fee is calculated based on the distance of the learner\'s residence from the campus, ensuring that the transportation cost is reasonable for everyone.',
+      description: 'The college bus fee is Rs 5,500 a year, the same for every route.',
     },
     {
       number: 4,

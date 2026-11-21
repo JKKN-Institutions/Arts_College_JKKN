@@ -170,7 +170,7 @@ export default function FeeStructurePage() {
               <p className="text-sm text-gray-600 leading-relaxed">
                 <strong className="text-gray-800">Note:</strong> GQ — Government
                 Quota fees are As Per Government Norm. MQ fees shown are annual fees
-                for the Management Quota category. Programmes marked with * are proposed and awaiting approval from Periyar University; their fees are indicative and apply only once approval is granted. For hostel charges, transport fees, and
+                for the Management Quota category. Programmes marked with * are proposed and awaiting approval from Periyar University; their fees are indicative and apply only once approval is granted. College bus fee: Rs 5,500 a year (all routes). For hostel charges and
                 scholarship information, contact the admissions office at{" "}
                 <a
                   href="tel:+919345855001"
