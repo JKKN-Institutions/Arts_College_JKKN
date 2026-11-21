@@ -10,26 +10,37 @@ interface CountUpProps {
 }
 
 export default function CountUp({ end, suffix = '', prefix = '', duration = 2000 }: CountUpProps) {
-  const [count, setCount] = useState(0);
+  // Start from the real number so the server HTML (what Google and AI crawlers read) shows it,
+  // not "0". The count-up only runs for a number that is still below the fold when the page
+  // loads; one already on screen, or a visitor who asked for reduced motion, keeps the real value.
+  const [count, setCount] = useState(end);
   const [hasStarted, setHasStarted] = useState(false);
   const ref = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
+    const el = ref.current;
+    if (!el || typeof IntersectionObserver === 'undefined') return;
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) return;
+
+    const resetId = requestAnimationFrame(() => setCount(0));
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !hasStarted) {
+        if (entry.isIntersecting) {
           setHasStarted(true);
+          observer.disconnect();
         }
       },
       { threshold: 0.3 }
     );
+    observer.observe(el);
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => observer.disconnect();
-  }, [hasStarted]);
+    return () => {
+      cancelAnimationFrame(resetId);
+      observer.disconnect();
+    };
+  }, []);
 
   useEffect(() => {
     if (!hasStarted) return;
