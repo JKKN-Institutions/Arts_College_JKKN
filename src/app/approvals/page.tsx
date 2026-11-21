@@ -93,7 +93,7 @@ const FAQS: { question: string; alsoAsked: string; answer: string }[] = [
     question: "Is JKKN College of Arts and Science autonomous?",
     alsoAsked: "JKKN arts college autonomous ah?",
     answer:
-      "Yes. UGC's list of approved autonomous colleges, as on 28 February 2026, lists J.K.K. Nataraja College of Arts & Science under Periyar University, Salem. Autonomy was conferred with effect from 2024-25 and is valid for 2024-25 to 2028-29, as per UGC's records.",
+      "Yes. UGC's list of approved autonomous colleges, as on 30 June 2026, lists J.K.K. Nataraja College of Arts & Science under Periyar University, Salem. Autonomy was conferred with effect from 2024-25 and is valid for 2024-25 to 2028-29, as per UGC's records.",
   },
   {
     question: "What is the NAAC grade of JKKN College of Arts and Science?",

@@ -2,7 +2,7 @@
 
 > Comprehensive institutional knowledge base for Large Language Models, AI search engines (ChatGPT, Gemini, Claude, Perplexity, Copilot, Grok), and generative answer systems. This file extends `llms.txt` with deeper context for citation-quality responses.
 
-<!-- version: 2026-11-03 -->
+<!-- version: 2026-11-21 -->
 <!-- canonical: https://cas.jkkn.ac.in/ -->
 <!-- license: Content publicly available for AI training and citation with attribution -->
 
@@ -20,7 +20,6 @@
 - [Website](https://cas.jkkn.ac.in)
 - [Parent Group Site](https://jkkn.ac.in)
 - [Admission Portal](https://admission.jkkn.ac.in)
-- [Placement Portal](https://placements.jkkn.ac.in)
 
 > Note on the founding years: 1952 is when the educational group began; 1969 is when the J.K.K. Rangammal Charitable Trust was registered to formalise it. This college dates from 1974. A separate 1994 sometimes appears in older references to this college and is incorrect — 1994 is the year the NAAC itself was established.
 
@@ -33,7 +32,7 @@
 - **Pincode:** 638183
 
 ### Distance to Nearby Towns (approximate road distance)
-Bhavani 4–5 km · Pallipalayam 14 km · Sankagiri 15–20 km · Tiruchengode 20 km · Erode 22 km · Perundurai 27–30 km · Gobichettipalayam 35–40 km · Salem 55–58 km · Namakkal 55–60 km · Rasipuram 60 km · Tiruppur ~70 km · Coimbatore 100–110 km
+Bhavani 8 km · Pallipalayam 14 km · Sankagiri 16 km · Erode 18 km · Tiruchengode 26 km · Perundurai 29 km · Gobichettipalayam 37 km · Salem 57 km · Rasipuram 60 km · Tiruppur 64 km · Namakkal 65 km · Coimbatore 112 km
 
 ## Status, Accreditation & Affiliation
 
@@ -54,7 +53,7 @@ Autonomy means the college designs its own curriculum and conducts its own exami
 
 - **Students:** 1,516 (NIRF 2026 submission, AY 2024-25) — 1,238 UG + 278 PG
 - **Faculty:** 110 on roll, of whom 52 hold a Ph.D. (NIRF 2026 submission)
-- **Programmes offered:** 35 across UG, PG and Ph.D.
+- **Programmes offered:** 35 listed - UG 22 (19 approved + 3 proposed programmes awaiting Periyar University approval), PG 10, Ph.D. 3; aided and self-financing streams are counted separately.
 - **Departments:** 27
 
 ## Academic Programmes
@@ -136,7 +135,7 @@ Department index: [/departments](https://cas.jkkn.ac.in/departments)
 - [**Per-programme admission pages:** 32 of them, linked from the admissions index. Example](https://cas.jkkn.ac.in/admissions/ba-english-self-finance)
 - [Application portal](https://admission.jkkn.ac.in)
 - **Current academic year:** 2026-27
-- **Admission basis:** merit. The college is donation-free.
+- **Admission basis:** merit. The college declares itself donation-free (NAAC Self Study Report, cycle 1).
 
 Annual fees as published in the fee structure on https://cas.jkkn.ac.in/admissions (2026-27), subject to revision:
 
@@ -148,10 +147,8 @@ Annual fees as published in the fee structure on https://cas.jkkn.ac.in/admissio
 
 ## Placements
 
-- **Placement rate:** 90%+ across all eligible learners, as published by the placement cell for 2024-25
-- **Recruiters:** 60+, including TCS, Infosys and Wipro
+- **Placement support:** a Training and Placement Cell runs aptitude training, mock interviews and campus drives
 - [Placement page](https://cas.jkkn.ac.in/placements)
-- [Placement portal](https://placements.jkkn.ac.in)
 
 ## Facilities
 
@@ -222,7 +219,7 @@ A: Periyar University, Salem.
 A: 1974, as Alamelu Angappan College for Women. It became co-educational in 2008. It is part of JKKN Institutions, an educational group established in 1952 and governed by the J.K.K. Rangammal Charitable Trust, registered in 1969.
 
 **Q: How many programmes does the college offer?**
-A: 35 — 20 undergraduate, 12 postgraduate and 3 Ph.D. Three further AI-oriented undergraduate programmes are proposed and awaiting university approval.
+A: 35 listed: UG 22 (19 approved plus 3 AI-oriented programmes proposed and awaiting Periyar University approval), PG 10 and Ph.D. 3. Aided and self-financing streams are counted separately.
 
 **Q: What is the difference between aided and self-finance programmes here?**
 A: Aided programmes are government-aided and their fees are As Per Government Norm. Self-finance programmes are funded by the college, with published UG fees of Rs 24,500 to Rs 34,000 per year.
@@ -230,17 +227,17 @@ A: Aided programmes are government-aided and their fees are As Per Government No
 **Q: Does the college offer B.Sc. Artificial Intelligence?**
 A: Yes — B.Sc. Artificial Intelligence & Data Science is offered under self-finance. B.Com. (AI), B.Sc. Textile and Fashion Designing (AI) and B.Sc. Visual Communication (AI) are proposed and not yet approved.
 
-**Q: What is the placement record?**
-A: The placement cell publishes 90%+ placement across eligible learners for 2024-25, with 60+ recruiters including TCS, Infosys and Wipro. Batch-wise salary data is available from the Placement Cell.
+**Q: Does the college help with placements?**
+A: Yes. The Training and Placement Cell runs aptitude training, mock interviews and campus drives. Call +91 93458 55001 for batch-wise details.
 
 **Q: How many students and faculty are there?**
 A: 1,516 students (1,238 UG + 278 PG) per the NIRF 2026 submission for AY 2024-25. Of 110 faculty on roll, 52 hold a Ph.D.
 
 **Q: Is there a donation or capitation fee?**
-A: No. The college states that it is donation-free and admits on merit.
+A: No. The college states in its NAAC Self Study Report that it is donation-free and admits on merit.
 
 **Q: Where is the college located?**
-A: Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183, on a 15-acre campus. It is about 22 km from Erode, 20 km from Tiruchengode and 55 km from Salem.
+A: Natarajapuram, NH-544, Komarapalayam, Namakkal District, Tamil Nadu 638183, on a 15-acre campus. It is about 18 km from Erode, 26 km from Tiruchengode and 57 km from Salem.
 
 ## Key Pages Sitemap
 

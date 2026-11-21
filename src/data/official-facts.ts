@@ -24,7 +24,7 @@ export const SRC = {
   ugcAuto: {
     label: "UGC, List of Approved Autonomous Colleges",
     href: "https://www.ugc.gov.in/pdfnews/8688705_List-of-Autonomous-Colleges.pdf",
-    date: "as on 28 February 2026",
+    date: "as on 30 June 2026",
   },
   periyar: {
     label: "Periyar University, Affiliated Colleges",
