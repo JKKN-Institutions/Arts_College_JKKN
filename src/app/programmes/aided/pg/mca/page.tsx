@@ -121,7 +121,7 @@ export default function MCAPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
-              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited Excellence', desc: 'Top-tier quality education' },
+              { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited, Grade B', desc: 'Autonomous college under UGC' },
               { icon: <Brain className="w-7 h-7" />, stat: 'AI/ML', title: 'Advanced Labs', desc: 'Cutting-edge research facilities' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>
@@ -628,10 +628,9 @@ export default function MCAPage() {
 
               <div className="space-y-4">
                 {[
-                  { title: 'NAAC  Accredited Excellence', description: 'Top-tier recognition ensuring quality education, superior infrastructure, and academic standards' },
-                  { title: 'Industry-Driven Learning Framework', description: 'Learning Framework co-designed with tech industry leaders covering AI, cloud, and emerging technologies' },
-                  { title: 'Expert Senior Learners', description: 'PhD-qualified and industry-experienced Senior Learners with active research contributions' },
-                  { title: 'Global Industry Connections', description: 'MoUs with leading tech companies, international certifications, and global internship opportunities' }
+                  { title: 'NAAC Accredited (Grade B)', description: 'Accredited by NAAC with Grade B (CGPA 2.37); autonomous college recognised by UGC under Section 2(f) and 12(B)' },
+                  { title: 'Industry-Driven Learning Framework', description: 'Learning Framework covering AI, cloud, and emerging technologies' },
+                  { title: 'Expert Senior Learners', description: 'PhD-qualified and industry-experienced Senior Learners with active research contributions' }
                 ].map((reason, idx) => (
                   <div key={idx} className="flex gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-white/80 hover:shadow-lg hover:-translate-y-0.5 transition-all">
                     <div className="w-11 h-11 bg-gradient-to-br from-brand-green to-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-md shadow-brand-green/15">
