@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College near Sankagiri — JKKN CAS",
     description:
-      "JKKN CAS — NAAC accredited (B), 35 programmes, NIRF-published placement outcomes. ~16 km from Sankagiri via NH-544. Admissions open 2026–27.",
+      "JKKN CAS — NAAC accredited (B), 35 programmes, placement cell support. ~16 km from Sankagiri via NH-544. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/sankagiri",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College near Sankagiri — JKKN CAS",
     description:
-      "NAAC accredited (B) arts college near Sankagiri. 35 programmes, NIRF-published placement outcomes, hostel available. Admissions 2026–27 open.",
+      "NAAC accredited (B) arts college near Sankagiri. 35 programmes, placement cell support, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -91,7 +91,7 @@ export default function SankagiriPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Sankagiri?",
-      a: "JKKN College of Arts and Science, located ~16 km from Sankagiri on the NH-544 corridor, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and recognised by UGC under Section 2(f) and 12(B). The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located ~16 km from Sankagiri on the NH-544 corridor, is a NAAC accredited (B) institution with 35 programmes and a Training and Placement Cell. It is affiliated to Periyar University and recognised by UGC under Section 2(f) and 12(B). The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Sankagiri?",
@@ -122,12 +122,12 @@ export default function SankagiriPage() {
       a: "JKKN College of Arts and Science is NAAC accredited (B) and recognised by UGC under Section 2(f) and 12(B). The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions, which includes 7 colleges and 2 schools.",
     },
     {
-      q: "What placement rate does JKKN CAS achieve for Sankagiri students?",
-      a: "JKKN CAS placed 135 of its 373 UG graduates in 2023-24 (NIRF 2025). The college provides dedicated placement training and aptitude coaching.",
+      q: "Does JKKN CAS offer placement support for Sankagiri students?",
+      a: "Yes. JKKN CAS has a Training and Placement Cell. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Why do Sankari students choose JKKN CAS over colleges in Salem city?",
-      a: "For students from Sankagiri (also spelled Sankari), JKKN CAS is closer than Salem city — ~16 km via the direct NH-544 corridor versus a longer trip to Salem city colleges. Add NAAC accreditation (Grade B), government-aided programmes, a residential campus, and NIRF-published placement outcomes, and the daily commute or hostel choice becomes easy.",
+      a: "For students from Sankagiri (also spelled Sankari), JKKN CAS is closer than Salem city — ~16 km via the direct NH-544 corridor versus a longer trip to Salem city colleges. Add NAAC accreditation (Grade B), government-aided programmes, a residential campus, and placement cell support, and the daily commute or hostel choice becomes easy.",
     },
   ];
 
@@ -147,7 +147,7 @@ export default function SankagiriPage() {
             "about": ORG_REF,
             "name": "Arts and Science College near Sankagiri — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/sankagiri",
-            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college accessible from Sankagiri via the NH-544 corridor (~16 km). 35 programmes, NIRF-published placement outcomes, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college accessible from Sankagiri via the NH-544 corridor (~16 km). 35 programmes, placement cell support, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -193,7 +193,7 @@ export default function SankagiriPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and a placement record published in NIRF 2025 at JKKN CAS, easily reachable from Sankagiri."
+        description="3-year undergraduate IT programme with hands-on training and placement cell support at JKKN CAS, easily reachable from Sankagiri."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -223,7 +223,7 @@ export default function SankagiriPage() {
             JKKN College of Arts and Science, located on NH-544 approximately
             16 km from Sankagiri, is a NAAC accredited (B) institution offering
             35 UG and PG programmes including BCA, BBA, B.Com, and B.Sc
-            specialisations. Affiliated to Periyar University, it reports its placement outcomes in NIRF 2025: 135 of 373 UG graduates of 2023-24 were placed.
+            specialisations. Affiliated to Periyar University, it runs a Training and Placement Cell for its learners.
           </p>
 
           {/* Description */}
@@ -237,7 +237,7 @@ export default function SankagiriPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "16km", label: "FROM SANKAGIRI" },
               { value: "35", label: "PROGRAMMES" },
             ].map((stat) => (
@@ -636,7 +636,7 @@ export default function SankagiriPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "105", label: "UG TO HIGHER STUDIES 2023–24 (NIRF)" },
             ].map((stat) => (
               <div
@@ -1034,11 +1034,6 @@ export default function SankagiriPage() {
                   <td className="p-3 text-gray-600">Distance from Sankagiri</td>
                   <td className="p-3 text-gray-800 font-medium">~16 km to JKKN via NH-544</td>
                   <td className="p-3 text-gray-500">Longer trip to Salem city</td>
-                </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="p-3 text-gray-600">Placement Rate</td>
-                  <td className="p-3 text-gray-800 font-medium">36%</td>
-                  <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Campus Type</td>

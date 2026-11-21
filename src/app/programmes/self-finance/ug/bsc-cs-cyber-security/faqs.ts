@@ -8,7 +8,7 @@
 //                 OR Business Mathematics OR Computer Science OR Statistics. No minimum % stated.
 //   Fee         - /fee-structure, 2026-27: Rs 32,000 a year, management quota.
 //   Subjects    - this page's own Learning Framework (course codes 24UCY..).
-//   Placement   - NIRF 2025 college return: 135 of 373 UG graduates placed in 2023-24, college-wide.
+//   Placement   - numbers removed from the site (user's choice 2026-11-21); NIRF filings stay on /nirf
 // Removed 2026-10-01 for want of a source: CEH/CompTIA/CCNA "alignment", certified faculty,
 // Kali/Cisco/forensics/SOC/cloud lab equipment, mandatory CTF, "connections to top companies".
 export const bscCyberFaqs = [
@@ -38,9 +38,9 @@ export const bscCyberFaqs = [
       "Programming in C and Data Structures in Year 1; Java, Web Designing, PHP, and Tools and Techniques for Cyber Security with a Cyber Security Lab in Year 2; Relational Database Management Systems, Essentials of Cyber Security, Ethical Hacking and Cyber Security with an Ethical Hacking Lab, and Network Security in Year 3, plus a project with viva voce and a summer internship or industrial training.",
   },
   {
-    question: "What is the placement record for B.Sc Cyber Security?",
+    question: "What placement support is there for B.Sc Cyber Security?",
     answer:
-      "The college does not publish a B.Sc Cyber Security-specific placement figure. Its NIRF 2025 return records 135 of 373 undergraduate graduates of 2023-24 placed, across all UG programmes.",
+      "The college's Training and Placement Cell supports B.Sc Cyber Security learners with aptitude training and placement guidance.",
   },
   {
     question: "What can I study after B.Sc Cyber Security?",

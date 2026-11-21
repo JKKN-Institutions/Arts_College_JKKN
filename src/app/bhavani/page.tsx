@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Bhavani — JKKN CAS",
     description:
-      "JKKN CAS — NAAC accredited (B), 35 programmes, NIRF-published placement outcomes. Just ~8 km from Bhavani across the Cauvery bridge. Admissions open 2026–27.",
+      "JKKN CAS — NAAC accredited (B), 35 programmes, placement cell support. Just ~8 km from Bhavani across the Cauvery bridge. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/bhavani",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Bhavani — JKKN CAS",
     description:
-      "NAAC accredited (B) arts college ~8 km from Bhavani. 35 programmes, NIRF-published placement outcomes, easy day-scholar commute. Admissions 2026–27 open.",
+      "NAAC accredited (B) arts college ~8 km from Bhavani. 35 programmes, placement cell support, easy day-scholar commute. Admissions 2026–27 open.",
   },
 };
 
@@ -91,7 +91,7 @@ export default function BhavaniPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Bhavani?",
-      a: "JKKN College of Arts and Science, located just ~8 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and recognised by UGC under Section 2(f) and 12(B).",
+      a: "JKKN College of Arts and Science, located just ~8 km from Bhavani across the Cauvery bridge in Komarapalayam, is a NAAC accredited (B) institution with 35 programmes and a Training and Placement Cell. It is affiliated to Periyar University and recognised by UGC under Section 2(f) and 12(B).",
     },
     {
       q: "How far is JKKN CAS from Bhavani?",
@@ -122,12 +122,12 @@ export default function BhavaniPage() {
       a: "JKKN College of Arts and Science is NAAC accredited (B) and recognised by UGC under Section 2(f) and 12(B). The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions, which includes 7 colleges and 2 schools.",
     },
     {
-      q: "What placement rate does JKKN CAS achieve for Bhavani students?",
-      a: "JKKN CAS placed 135 of its 373 UG graduates in 2023-24 (NIRF 2025). The college provides dedicated placement training and aptitude coaching.",
+      q: "Does JKKN CAS offer placement support for Bhavani students?",
+      a: "Yes. JKKN CAS has a Training and Placement Cell. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Why should Bhavani students choose JKKN CAS over colleges in Erode city?",
-      a: "For Bhavani students, JKKN CAS is just ~8 km away across the Cauvery bridge, while colleges in Erode city are a longer trip. JKKN offers NAAC accreditation (Grade B), affordable fees, 35 programmes, and NIRF-published placement outcomes — without the long daily commute. Hostel facilities are also available for those who prefer on-campus living.",
+      a: "For Bhavani students, JKKN CAS is just ~8 km away across the Cauvery bridge, while colleges in Erode city are a longer trip. JKKN offers NAAC accreditation (Grade B), affordable fees, 35 programmes, and placement cell support — without the long daily commute. Hostel facilities are also available for those who prefer on-campus living.",
     },
   ];
 
@@ -147,7 +147,7 @@ export default function BhavaniPage() {
             "about": ORG_REF,
             "name": "Arts and Science College Near Bhavani — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/bhavani",
-            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college approximately 8 km from Bhavani across the Cauvery bridge. 35 programmes, NIRF-published placement outcomes, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college approximately 8 km from Bhavani across the Cauvery bridge. 35 programmes, placement cell support, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -193,7 +193,7 @@ export default function BhavaniPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and a placement record published in NIRF 2025 at JKKN CAS, easily reachable from Bhavani."
+        description="3-year undergraduate IT programme with hands-on training and placement cell support at JKKN CAS, easily reachable from Bhavani."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -224,7 +224,7 @@ export default function BhavaniPage() {
             from Bhavani across the Cauvery bridge in Komarapalayam, is a
             NAAC accredited (B) institution offering 35 UG and PG programmes
             including BCA, BBA, B.Com, and B.Sc specialisations. Affiliated
-            to Periyar University, it reports its placement outcomes in NIRF 2025: 135 of 373 UG graduates of 2023-24 were placed.
+            to Periyar University, it runs a Training and Placement Cell for its learners.
           </p>
 
           {/* Description */}
@@ -237,7 +237,7 @@ export default function BhavaniPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "8km", label: "FROM BHAVANI" },
               { value: "35", label: "PROGRAMMES" },
             ].map((stat) => (
@@ -634,7 +634,7 @@ export default function BhavaniPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "105", label: "UG TO HIGHER STUDIES 2023–24 (NIRF)" },
             ].map((stat) => (
               <div
@@ -1031,11 +1031,6 @@ export default function BhavaniPage() {
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">
                   <td className="p-3 text-gray-600">Distance from Bhavani</td>
                   <td className="p-3 text-gray-800 font-medium">~8 km across the Cauvery bridge</td>
-                  <td className="p-3 text-gray-500">Varies</td>
-                </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="p-3 text-gray-600">Placement Rate</td>
-                  <td className="p-3 text-gray-800 font-medium">36%</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100">

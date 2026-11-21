@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import {
-  TrendingUp,
   Briefcase,
   Users,
   GraduationCap,
-  Building2,
   Target,
   Award,
   Phone,
@@ -19,9 +17,9 @@ import { HowToSchema } from "@/components/seo/HowToSchema";
 import { WebPageSchema } from "@/components/seo/WebPageSchema";
 
 export const metadata: Metadata = {
-  title: "Placements — NIRF 2025 Reported Outcomes | JKKN Arts & Science",
+  title: "Placements & Career Support | JKKN Arts & Science",
   description:
-    "Placements at JKKN College of Arts and Science, Komarapalayam: the NIRF 2025 return lists 135 of 373 UG graduates of 2023-24 placed and 105 in higher studies.",
+    "Placement training, mock interviews and campus drives at JKKN College of Arts and Science, Komarapalayam - the Training and Placement Cell supports learners from Year 1.",
   keywords: [
     "JKKN College placements",
     "arts and science college placements near Erode",
@@ -44,9 +42,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Placements — NIRF 2025 Reported Outcomes | JKKN Arts & Science",
+    title: "Placements & Career Support | JKKN Arts & Science",
     description:
-      "NIRF 2025 return: 135 of 373 UG graduates of 2023-24 placed. Career guidance and campus recruitment at JKKN College of Arts and Science, Komarapalayam.",
+      "Career guidance, placement training and campus recruitment at JKKN College of Arts and Science, Komarapalayam.",
     url: "https://cas.jkkn.ac.in/placements",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -61,9 +59,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Placements — NIRF 2025 Reported Outcomes | JKKN Arts & Science",
+    title: "Placements & Career Support | JKKN Arts & Science",
     description:
-      "NIRF 2025 return: 135 of 373 UG graduates of 2023-24 placed. Campus recruitment at JKKN CAS Komarapalayam.",
+      "Placement training and campus recruitment at JKKN CAS Komarapalayam.",
     images: ["https://cas.jkkn.ac.in/opengraph-image"],
   },
 };
@@ -71,14 +69,14 @@ export const metadata: Metadata = {
 const placementFAQs = [
   {
     question:
-      "What is the placement rate at JKKN College of Arts and Science?",
+      "What placement support does JKKN College of Arts and Science offer?",
     answer:
-      "JKKN College of Arts and Science reported 135 of 373 UG graduates placed for 2023-24 in its NIRF 2025 return. The same return lists 105 UG graduates who went on to higher studies.",
+      "The Training and Placement Cell prepares learners from Year 1 with aptitude training, soft skills, mock interviews and campus recruitment drives.",
   },
   {
     question: "Which companies recruit from JKKN College of Arts and Science?",
     answer:
-      "The college does not publish a company-wise placement list. Its NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed across all UG programmes. Contact the Placement Cell at +91 93458 55001 for the employers of a particular batch.",
+      "The college does not publish a company-wise placement list. Contact the Placement Cell at +91 93458 55001 for the employers of a particular batch.",
   },
   {
     question: "What is the highest and average salary package offered?",
@@ -97,26 +95,12 @@ const placementFAQs = [
       "Yes, JKKN CAS facilitates internships with partner companies and organizations. Students get hands-on industry exposure through summer internships, industrial visits, and project-based learning.",
   },
   {
-    question: "Which departments have the best placement records?",
+    question: "Can I get department-wise placement details?",
     answer:
-      "The college's NIRF 2025 return gives one UG figure for all departments together (135 of 373 graduates of 2023-24 placed) and does not split it by department. Ask the Placement Cell for department-wise data.",
+      "Ask the Placement Cell at +91 93458 55001 for department-wise details of a particular batch.",
   },
 ];
 
-const highlightStats = [
-  {
-    icon: TrendingUp,
-    value: "36%",
-    label: "UG Placed",
-    description: "135 of 373 UG graduates, 2023-24 (NIRF 2025)",
-  },
-  {
-    icon: Building2,
-    value: "105",
-    label: "Higher Studies",
-    description: "UG graduates of 2023-24 (NIRF 2025)",
-  },
-];
 
 const trainingModules = [
   {
@@ -198,7 +182,7 @@ export default function PlacementsPage() {
       />
       <WebPageSchema
         name="Placements — JKKN College of Arts and Science"
-        description="Placement numbers from the NIRF 2025 return, the placement process and training programmes at JKKN College of Arts and Science, Komarapalayam."
+        description="The placement process and training programmes at JKKN College of Arts and Science, Komarapalayam."
         url="https://cas.jkkn.ac.in/placements"
         lastReviewed="2025-03-26"
         speakable={["h1", ".hero-description"]}
@@ -219,7 +203,7 @@ export default function PlacementsPage() {
             Placements at JKKN College of Arts and Science
           </h1>
           <p className="text-white/80 text-base md:text-lg max-w-3xl mx-auto mb-8">
-            The NIRF 2025 return lists 135 of 373 UG graduates of 2023-24 as placed. Our dedicated Placement
+            Our dedicated Placement
             Cell prepares learners from Day 1 for successful careers in IT,
             banking, healthcare, education, and more.
           </p>
@@ -247,39 +231,6 @@ export default function PlacementsPage() {
       {/* Enquiry form high on the page (DEP-109, 2026-11-13) */}
       <EnquirySection sourcePage="placements-top" heading="Ask About Placements and Admission" aidedNote />
 
-      {/* Placement Highlights */}
-      <section className="py-16 px-4 bg-brand-cream">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-brand-green mb-2 text-center">
-            Placement Highlights
-          </h2>
-          <div className="w-16 h-1 bg-brand-yellow mx-auto mb-10" />
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            {highlightStats.map((stat) => (
-              <div
-                key={stat.label}
-                className="bg-white rounded-xl shadow-sm p-6 text-center"
-              >
-                <div className="flex justify-center mb-3">
-                  <div className="bg-brand-green/10 p-3 rounded-full">
-                    <stat.icon className="w-6 h-6 text-brand-green" />
-                  </div>
-                </div>
-                <div className="text-2xl md:text-3xl font-bold text-brand-green mb-1">
-                  {stat.value}
-                </div>
-                <div className="font-semibold text-gray-800 text-sm md:text-base">
-                  {stat.label}
-                </div>
-                <div className="text-gray-500 text-xs md:text-sm mt-1">
-                  {stat.description}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Placement Process */}
       <section className="py-16 px-4 bg-brand-cream">
@@ -434,7 +385,7 @@ export default function PlacementsPage() {
             Start Your Career Journey with JKKN
           </h2>
           <p className="text-white/80 text-sm md:text-base mb-8 max-w-xl mx-auto">
-            Join a college that publishes its placement outcomes in the NIRF return. Our Placement Cell
+            Our Placement Cell
             supports you from admission to your first job and beyond.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

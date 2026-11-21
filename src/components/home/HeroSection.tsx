@@ -50,9 +50,9 @@ export default function HeroSection() {
             {/* Stats Row - Compact */}
             <div className="grid grid-cols-4 gap-2 sm:gap-3" data-speakable>
               {/* Stat 1 */}
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105" aria-label="90 percent placement rate">
-                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">36%</div>
-                <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Placement</div>
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105" aria-label="320 government-aided UG seats (TN Directorate of Collegiate Education)">
+                <div className="text-brand-yellow text-lg sm:text-xl lg:text-2xl font-bold mb-0.5">320</div>
+                <div className="text-white/80 text-[9px] sm:text-[10px] font-medium">Aided Seats</div>
               </div>
               {/* Stat 2 */}
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/15 transition-all duration-300 hover:scale-105" aria-label="1516 learners enrolled">

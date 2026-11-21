@@ -233,7 +233,7 @@ export default function BCAPage() {
     },
     {
       question: "Is there placement support?",
-      answer: "Yes, we have a dedicated placement cell with a placement record published in NIRF 2025. The NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed across all UG programmes."
+      answer: "Yes, we have a dedicated Training and Placement Cell for aptitude training, mock interviews and placement guidance."
     },
     {
       question: "Can Commerce or Arts students join BCA?",
@@ -901,10 +901,10 @@ export default function BCAPage() {
                       </div>
                       <div>
                         <h4 className="text-lg font-bold text-brand-green mb-2">
-                          Strong Placement Record
+                          Placement Support
                         </h4>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                          placement record published in NIRF 2025: 135 of 373 UG graduates of 2023-24 placed across all UG programmes.
+                          A dedicated Training and Placement Cell runs aptitude training, mock interviews and campus drives.
                         </p>
                       </div>
                     </div>

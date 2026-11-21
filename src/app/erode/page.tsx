@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College Near Erode — JKKN CAS",
     description:
-      "JKKN CAS — NAAC accredited (B), 35 programmes, NIRF-published placement outcomes. Near Erode via NH-544. Admissions open 2026–27.",
+      "JKKN CAS — NAAC accredited (B), 35 programmes, placement cell support. Near Erode via NH-544. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/erode",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College Near Erode — JKKN CAS",
     description:
-      "NAAC accredited (B) arts college near Erode. 35 programmes, NIRF-published placement outcomes, hostel available. Admissions 2026–27 open.",
+      "NAAC accredited (B) arts college near Erode. 35 programmes, placement cell support, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -95,7 +95,7 @@ export default function ErodePage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Erode?",
-      a: "JKKN College of Arts and Science, located 18 km from Erode on NH-544, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and recognised by UGC under Section 2(f) and 12(B). The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located 18 km from Erode on NH-544, is a NAAC accredited (B) institution with 35 programmes and a Training and Placement Cell. It is affiliated to Periyar University and recognised by UGC under Section 2(f) and 12(B). The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Erode?",
@@ -126,16 +126,16 @@ export default function ErodePage() {
       a: "JKKN College of Arts and Science is NAAC accredited (B) and recognised by UGC under Section 2(f) and 12(B). The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions, which includes 7 colleges and 2 schools.",
     },
     {
-      q: "What placement rate does JKKN CAS achieve for Erode students?",
-      a: "JKKN CAS placed 135 of its 373 UG graduates in 2023-24 (NIRF 2025). The college provides dedicated placement training and aptitude coaching.",
+      q: "Does JKKN CAS offer placement support for Erode students?",
+      a: "Yes. JKKN CAS has a Training and Placement Cell. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Why should Erode students choose JKKN CAS over colleges in Erode city?",
-      a: "JKKN CAS offers NAAC accreditation (Grade B), government-aided programmes, a residential campus, and NIRF-published placement outcomes. The 18 km NH-544 route makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
+      a: "JKKN CAS offers NAAC accreditation (Grade B), government-aided programmes, a residential campus, and placement cell support. The 18 km NH-544 route makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
     },
     {
       q: "How does JKKN CAS compare with other arts and science colleges in Erode district?",
-      a: "JKKN CAS offers NAAC accreditation (Grade B), government-aided programmes, 35 programmes, hostel, and NIRF-published placement outcomes to students shortlisting arts and science colleges across Erode district, from Bhavani and Gobichettipalayam to Perundurai. The campus sits at Komarapalayam, just across the Cauvery from the Erode district border.",
+      a: "JKKN CAS offers NAAC accreditation (Grade B), government-aided programmes, 35 programmes, hostel, and placement cell support to students shortlisting arts and science colleges across Erode district, from Bhavani and Gobichettipalayam to Perundurai. The campus sits at Komarapalayam, just across the Cauvery from the Erode district border.",
     },
   ];
 
@@ -155,7 +155,7 @@ export default function ErodePage() {
             "about": ORG_REF,
             "name": "Arts and Science College Near Erode — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/erode",
-            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college accessible from Erode via NH-544. 35 programmes, NIRF-published placement outcomes, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college accessible from Erode via NH-544. 35 programmes, placement cell support, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -201,7 +201,7 @@ export default function ErodePage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and a placement record published in NIRF 2025 at JKKN CAS, easily reachable from Erode."
+        description="3-year undergraduate IT programme with hands-on training and placement cell support at JKKN CAS, easily reachable from Erode."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -231,7 +231,7 @@ export default function ErodePage() {
             JKKN College of Arts and Science, located on NH-544 approximately
             18 km from Erode, is a NAAC accredited (B) institution offering 35 UG
             and PG programmes including BCA, BBA, B.Com, and B.Sc
-            specialisations. Affiliated to Periyar University, it reports its placement outcomes in NIRF 2025: 135 of 373 UG graduates of 2023-24 were placed.
+            specialisations. Affiliated to Periyar University, it runs a Training and Placement Cell for its learners.
           </p>
 
           {/* Description */}
@@ -245,7 +245,7 @@ export default function ErodePage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "18km", label: "FROM ERODE" },
               { value: "4", label: "PROGRAMMES" },
             ].map((stat) => (
@@ -650,7 +650,7 @@ export default function ErodePage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "105", label: "UG TO HIGHER STUDIES 2023–24 (NIRF)" },
             ].map((stat) => (
               <div
@@ -1048,11 +1048,6 @@ export default function ErodePage() {
                   <td className="p-3 text-gray-600">Distance from Erode</td>
                   <td className="p-3 text-gray-800 font-medium">~18 km via NH-544</td>
                   <td className="p-3 text-gray-500">0–10 km</td>
-                </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="p-3 text-gray-600">Placement Rate</td>
-                  <td className="p-3 text-gray-800 font-medium">36%</td>
-                  <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="p-3 text-gray-600">Campus Type</td>

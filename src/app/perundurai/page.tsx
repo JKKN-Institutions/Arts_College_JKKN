@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   // 52 chars — within 60 limit
 
   description:
-    "JKKN CAS — NAAC accredited (B) arts and science college ~29 km from Perundurai. 35 programmes, NIRF-published placement outcomes. Admissions open 2026–27.",
+    "JKKN CAS — NAAC accredited (B) arts and science college ~29 km from Perundurai. 35 programmes, placement cell support. Admissions open 2026–27.",
   // ~136 chars — within 155 limit
 
   keywords: [
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College near Perundurai — JKKN CAS",
     description:
-      "JKKN CAS — NAAC accredited (B), 35 programmes, NIRF-published placement outcomes. ~29 km from Perundurai. Admissions open 2026–27.",
+      "JKKN CAS — NAAC accredited (B), 35 programmes, placement cell support. ~29 km from Perundurai. Admissions open 2026–27.",
     url: "https://cas.jkkn.ac.in/perundurai",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arts and Science College near Perundurai — JKKN CAS",
     description:
-      "NAAC accredited (B) arts college near Perundurai. 35 programmes, NIRF-published placement outcomes, hostel available. Admissions 2026–27 open.",
+      "NAAC accredited (B) arts college near Perundurai. 35 programmes, placement cell support, hostel available. Admissions 2026–27 open.",
   },
 };
 
@@ -91,7 +91,7 @@ export default function PerunduraiPage() {
   const faqs = [
     {
       q: "What is the best arts and science college near Perundurai?",
-      a: "JKKN College of Arts and Science, located approximately 29 km from Perundurai on NH-544 at Komarapalayam, is a NAAC accredited (B) institution with 35 programmes and a placement record published in NIRF 2025. It is affiliated to Periyar University and recognised by UGC under Section 2(f) and 12(B). The college offers both UG and PG programmes across arts, science, and commerce streams.",
+      a: "JKKN College of Arts and Science, located approximately 29 km from Perundurai on NH-544 at Komarapalayam, is a NAAC accredited (B) institution with 35 programmes and a Training and Placement Cell. It is affiliated to Periyar University and recognised by UGC under Section 2(f) and 12(B). The college offers both UG and PG programmes across arts, science, and commerce streams.",
     },
     {
       q: "How far is JKKN CAS from Perundurai?",
@@ -122,12 +122,12 @@ export default function PerunduraiPage() {
       a: "JKKN College of Arts and Science is NAAC accredited (B) and recognised by UGC under Section 2(f) and 12(B). The college is affiliated to Periyar University. It is part of the JKKN Group of Institutions, which includes 7 colleges and 2 schools.",
     },
     {
-      q: "What placement rate does JKKN CAS achieve for Perundurai students?",
-      a: "JKKN CAS placed 135 of its 373 UG graduates in 2023-24 (NIRF 2025). The college provides dedicated placement training and aptitude coaching.",
+      q: "Does JKKN CAS offer placement support for Perundurai students?",
+      a: "Yes. JKKN CAS has a Training and Placement Cell. The college provides dedicated placement training and aptitude coaching.",
     },
     {
       q: "Why should Perundurai students choose JKKN CAS?",
-      a: "Perundurai's SIPCOT industrial belt means families value education with strong placement outcomes. JKKN CAS offers self-finance UG fees of ₹24,500 to ₹34,000 a year (2026-27, Management Quota), NAAC accreditation (Grade B), a residential campus, and NIRF-published placement outcomes. The ~29 km route via the Erode/Chithode side makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
+      a: "Perundurai's SIPCOT industrial belt means families value education with strong placement outcomes. JKKN CAS offers self-finance UG fees of ₹24,500 to ₹34,000 a year (2026-27, Management Quota), NAAC accreditation (Grade B), a residential campus, and placement cell support. The ~29 km route via the Erode/Chithode side makes daily commute viable, and hostel facilities are available for those who prefer on-campus living.",
     },
   ];
 
@@ -147,7 +147,7 @@ export default function PerunduraiPage() {
             "about": ORG_REF,
             "name": "Arts and Science College near Perundurai — JKKN CAS",
             "url": "https://cas.jkkn.ac.in/perundurai",
-            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college approximately 29 km from Perundurai via the Erode/Chithode side. 35 programmes, NIRF-published placement outcomes, hostel available.",
+            "description": "JKKN College of Arts and Science — NAAC accredited (B) arts and science college approximately 29 km from Perundurai via the Erode/Chithode side. 35 programmes, placement cell support, hostel available.",
             "isPartOf": {
               "@type": "WebSite",
               "name": "JKKN College of Arts and Science",
@@ -193,7 +193,7 @@ export default function PerunduraiPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and a placement record published in NIRF 2025 at JKKN CAS, easily reachable from Perundurai."
+        description="3-year undergraduate IT programme with hands-on training and placement cell support at JKKN CAS, easily reachable from Perundurai."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -223,7 +223,7 @@ export default function PerunduraiPage() {
             JKKN College of Arts and Science, located on NH-544 approximately
             29 km from Perundurai, is a NAAC accredited (B) institution offering
             35 UG and PG programmes including BCA, BBA, B.Com, and B.Sc
-            specialisations. Affiliated to Periyar University, it reports its placement outcomes in NIRF 2025: 135 of 373 UG graduates of 2023-24 were placed.
+            specialisations. Affiliated to Periyar University, it runs a Training and Placement Cell for its learners.
           </p>
 
           {/* Description */}
@@ -238,7 +238,7 @@ export default function PerunduraiPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "29km", label: "FROM PERUNDURAI" },
               { value: "35", label: "PROGRAMMES" },
             ].map((stat) => (
@@ -636,7 +636,7 @@ export default function PerunduraiPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "105", label: "UG TO HIGHER STUDIES 2023–24 (NIRF)" },
             ].map((stat) => (
               <div
@@ -1033,11 +1033,6 @@ export default function PerunduraiPage() {
                 <tr className="border-b border-gray-100 bg-[#FBFBEE]">
                   <td className="p-3 text-gray-600">Distance from Perundurai</td>
                   <td className="p-3 text-gray-800 font-medium">~29 km via Erode/Chithode</td>
-                  <td className="p-3 text-gray-500">Varies</td>
-                </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="p-3 text-gray-600">Placement Rate</td>
-                  <td className="p-3 text-gray-800 font-medium">36%</td>
                   <td className="p-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="border-b border-gray-100">

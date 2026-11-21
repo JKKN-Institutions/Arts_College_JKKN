@@ -8,7 +8,7 @@
 //                 Examination or an equivalent (10+2 or 10+3 year Diploma). No minimum percentage.
 //   Fee         - /fee-structure, 2026-27: Rs 32,000 a year, management quota.
 //   Subjects    - this page's own Learning Framework (course codes 24UVC..).
-//   Placement   - NIRF 2025 college return: 135 of 373 UG graduates placed in 2023-24, college-wide.
+//   Placement   - numbers removed from the site (user's choice 2026-11-21); NIRF filings stay on /nirf
 // Removed 2026-10-02: "minimum 50% / 45%" (not in the regulation), "15:1", "partnerships with
 // leading companies", Maya / Blender / Figma / Adobe XD and DSLR / green-screen equipment lists,
 // "curriculum developed in consultation with creative professionals", "live client projects".
@@ -46,7 +46,7 @@ export const bscViscomFaqs = [
   {
     question: "Does the college provide placement assistance?",
     answer:
-      "The college placement cell runs campus recruitment drives, mock interviews and portfolio guidance. For 2023-24 the college reported 135 of 373 UG graduates placed across all programmes (NIRF 2025); it does not publish a separate B.Sc Visual Communication placement rate.",
+      "The college placement cell runs campus recruitment drives, mock interviews and portfolio guidance.",
   },
   {
     question: "Is B.Sc Visual Communication (AI) the same course?",

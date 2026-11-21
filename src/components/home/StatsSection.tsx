@@ -1,14 +1,15 @@
 'use client';
 
-import { GraduationCap, Users, BookOpen, Briefcase } from 'lucide-react';
+import { GraduationCap, Users, BookOpen, UserCheck } from 'lucide-react';
 import CountUp from '@/components/ui/CountUp';
 
 const stats = [
   {
-    icon: GraduationCap,
-    end: 36,
-    suffix: '%',
-    label: 'UG Placed 2023-24 (NIRF)',
+    // NIRF 2026 data submission (AY 2024-25): faculty rows marked "currently working".
+    icon: UserCheck,
+    end: 110,
+    suffix: '',
+    label: 'Faculty Members (NIRF 2026)',
   },
   {
     icon: BookOpen,
@@ -23,10 +24,11 @@ const stats = [
     label: 'Learners',
   },
   {
-    icon: Briefcase,
-    end: 105,
-    suffix: '',
-    label: 'UG to Higher Studies (NIRF)',
+    // NIRF 2026 data submission: 51 working faculty list a Ph.D. as highest qualification.
+    icon: GraduationCap,
+    end: 50,
+    suffix: '+',
+    label: 'Ph.D Faculty (NIRF 2026)',
   },
 ];
 

@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
     description:
-      "JKKN CAS — 64 km from Tiruppur. NAAC accredited (B), NIRF-published placement outcomes. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 64 km from Tiruppur. NAAC accredited (B), placement cell support. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/tiruppur",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Tiruppur | JKKN CAS",
-    description: "JKKN CAS — 64 km from Tiruppur. NAAC accredited (B), NIRF-published placement outcomes. Admissions open 2026-27.",
+    description: "JKKN CAS — 64 km from Tiruppur. NAAC accredited (B), placement cell support. Admissions open 2026-27.",
   },
 };
 
@@ -92,7 +92,7 @@ export default function TiruppurPage() {
     },
     {
       q: "Can BCA students from Tiruppur get IT jobs?",
-      a: "Yes. BCA graduates can apply for IT and IT-enabled roles; the college's NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed across all UG programmes. Tiruppur's textile industry is increasingly adopting digital platforms and e-commerce, creating new IT opportunities for BCA graduates. The college provides placement training, aptitude coaching, and mock interviews.",
+      a: "Yes. BCA graduates can apply for IT and IT-enabled roles; the college's Training and Placement Cell offers aptitude training and placement guidance. Tiruppur's textile industry is increasingly adopting digital platforms and e-commerce, creating new IT opportunities for BCA graduates. The college provides placement training, aptitude coaching, and mock interviews.",
     },
     {
       q: "Are JKKN CAS fees affordable compared to Tiruppur colleges?",
@@ -116,7 +116,7 @@ export default function TiruppurPage() {
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Tiruppur?",
-      a: "JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 a year (Management Quota), the 15-acre campus on NH-544 has hostels, and placement outcomes are published each year in the NIRF return for this college.",
+      a: "JKKN CAS self-finance UG fees for 2026-27 are ₹24,500 to ₹34,000 a year (Management Quota), the 15-acre campus on NH-544 has hostels, and a Training and Placement Cell supports learners.",
     },
   ];
 
@@ -184,7 +184,7 @@ export default function TiruppurPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and a placement record published in NIRF 2025 at JKKN CAS, a quality alternative to Tiruppur city colleges."
+        description="3-year undergraduate IT programme with hands-on training and placement cell support at JKKN CAS, a quality alternative to Tiruppur city colleges."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -218,7 +218,7 @@ export default function TiruppurPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "64km", label: "FROM TIRUPPUR" },
               { value: "4", label: "PROGRAMMES" },
             ].map((stat) => (
@@ -613,7 +613,7 @@ export default function TiruppurPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "105", label: "UG TO HIGHER STUDIES 2023–24 (NIRF)" },
             ].map((stat) => (
               <div

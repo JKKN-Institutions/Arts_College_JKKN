@@ -127,7 +127,6 @@ export default function MAHistoryPage() {
             {[
               { icon: <GraduationCap className="w-7 h-7" />, stat: 'NAAC', title: 'Accredited, Grade B', desc: 'Quality assured education' },
               { icon: <Users className="w-7 h-7" />, stat: '12:1', title: 'Learners per Senior Learner', desc: 'Personalized mentorship' },
-              { icon: <Briefcase className="w-7 h-7" />, stat: '0 / 91', title: 'PG placed 2023-24', desc: 'NIRF 2025 submission' },
               { icon: <Award className="w-7 h-7" />, stat: 'PhD', title: 'Research Pathway', desc: 'Direct doctoral eligibility' },
             ].map((card, idx) => (
               <RevealSection key={idx} delay={idx * 100}>

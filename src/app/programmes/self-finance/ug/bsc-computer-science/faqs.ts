@@ -9,8 +9,7 @@
 //                 restate the admission clause. No minimum percentage is stated.
 //   Fee         - /fee-structure, 2026-27: Rs 34,000 a year, management quota.
 //   Subjects    - this page's own Learning Framework (course codes 25U / 24U / 23U).
-//   Placement   - NIRF 2025 college return (/documents/nirf/NIRF-2025-COLLEGE.pdf):
-//                 135 of 373 UG graduates placed in 2023-24, college-wide.
+//   Placement   - numbers removed from the site (user's choice 2026-11-21); NIRF filings stay on /nirf
 export const bscCsFaqs = [
   {
     question: "What is the eligibility for B.Sc Computer Science at JKKN College of Arts and Science?",
@@ -38,9 +37,9 @@ export const bscCsFaqs = [
       "Python Programming and Data Structures and Algorithms in Year 1; Microprocessor and Microcontroller, Web Designing, Java Programming and PHP Programming in Year 2; Software Engineering, Database Management Systems, Computer Networks and .NET Programming in Year 3. Each core subject has a practical lab, and the final year includes a project with viva voce and an internship or industrial training.",
   },
   {
-    question: "What is the placement record for B.Sc Computer Science?",
+    question: "What placement support is there for B.Sc Computer Science?",
     answer:
-      "The college does not publish a B.Sc Computer Science-specific placement figure. Its NIRF 2025 return records 135 of 373 undergraduate graduates of 2023-24 placed, across all UG programmes.",
+      "The college's Training and Placement Cell supports B.Sc Computer Science learners with aptitude training and placement guidance.",
   },
   {
     question: "What can I study after B.Sc Computer Science?",

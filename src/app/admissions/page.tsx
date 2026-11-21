@@ -242,8 +242,8 @@ export default function AdmissionsPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
               {[
                 { label: "Programmes", value: "35", icon: GraduationCap },
-                { label: "Recruiters", value: "60+", icon: Award },
-                { label: "UG Placed 2023–24 (NIRF)", value: "36%", icon: Users },
+                { label: "Govt-aided UG Seats", value: "320", icon: Award },
+                { label: "Faculty Members", value: "110", icon: Users },
                 {
                   label: "Status",
                   value: "Autonomous",

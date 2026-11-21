@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
     description:
-      "JKKN CAS — 112 km from Coimbatore. NAAC accredited (B), NIRF-published placement outcomes. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
+      "JKKN CAS — 112 km from Coimbatore. NAAC accredited (B), placement cell support. B.Sc, B.Com, BBA, BCA. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/coimbatore",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Coimbatore | JKKN CAS",
-    description: "JKKN CAS — 112 km from Coimbatore. NAAC accredited (B), NIRF-published placement outcomes. Admissions open 2026-27.",
+    description: "JKKN CAS — 112 km from Coimbatore. NAAC accredited (B), placement cell support. Admissions open 2026-27.",
   },
 };
 
@@ -89,7 +89,7 @@ export default function CoimbatorePage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Coimbatore?",
-      a: "JKKN College of Arts and Science, 112 km from Coimbatore on NH-544, is a NAAC accredited (B), 74-year-old institution with 35 programmes and NIRF-published placement outcomes. Admissions open for 2026–27.",
+      a: "JKKN College of Arts and Science, 112 km from Coimbatore on NH-544, is a NAAC accredited (B), 74-year-old institution with 35 programmes and placement cell support. Admissions open for 2026–27.",
     },
     {
       q: "How far is JKKN CAS from Coimbatore?",
@@ -101,7 +101,7 @@ export default function CoimbatorePage() {
     },
     {
       q: "Can BCA students from Coimbatore get IT jobs?",
-      a: "Yes. BCA graduates can apply for IT and IT-enabled roles; the college's NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed across all UG programmes. Coimbatore's TIDEL Park and Elcot SEZ provide strong local job prospects for IT graduates.",
+      a: "Yes. BCA graduates can apply for IT and IT-enabled roles; the college's Training and Placement Cell offers aptitude training and placement guidance. Coimbatore's TIDEL Park and Elcot SEZ provide strong local job prospects for IT graduates.",
     },
     {
       q: "Are JKKN CAS fees affordable compared to Coimbatore colleges?",
@@ -125,11 +125,11 @@ export default function CoimbatorePage() {
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Coimbatore city?",
-      a: "JKKN CAS offers self-finance UG fees of ₹24,500 to ₹34,000 per year, and a placement record published in NIRF 2025 (135 of 373 UG graduates of 2023-24 placed). Hostel and weekend buses available.",
+      a: "JKKN CAS offers self-finance UG fees of ₹24,500 to ₹34,000 per year, and a Training and Placement Cell. Hostel and weekend buses available.",
     },
     {
       q: "Which IT companies recruit JKKN CAS graduates in Coimbatore?",
-      a: "The college does not publish a company-wise placement list; its NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed across all UG programmes. The Training and Placement Cell runs aptitude training and mock interviews for IT roles.",
+      a: "The college does not publish a company-wise placement list. The Training and Placement Cell runs aptitude training and mock interviews for IT roles.",
     },
     {
       q: "Is JKKN CAS NAAC accredited (B) and recognised by UGC?",
@@ -237,7 +237,7 @@ export default function CoimbatorePage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme at JKKN CAS — 112 km from Coimbatore. Pipeline to Coimbatore TIDEL Park and Elcot SEZ IT companies. Fees ₹33,000 a year. placement record published in NIRF 2025."
+        description="3-year undergraduate IT programme at JKKN CAS — 112 km from Coimbatore. Pipeline to Coimbatore TIDEL Park and Elcot SEZ IT companies. Fees ₹33,000 a year. Placement cell support."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -274,7 +274,7 @@ export default function CoimbatorePage() {
             located in Komarapalayam, Namakkal district, Tamil Nadu — 112 km from Coimbatore
             via NH-544. Founded in 1974 and affiliated to Periyar University, JKKN CAS offers 35 undergraduate, postgraduate, and research programmes
             spanning arts, science, commerce, and computer applications. The institution maintains
-            a placement record published in NIRF 2025 (135 of 373 UG graduates of 2023-24 placed). A 15-acre residential campus with separate hostel facilities, digital
+            a Training and Placement Cell. A 15-acre residential campus with separate hostel facilities, digital
             library, modern laboratories, and weekend bus services to Coimbatore makes it an
             accessible choice for students from Coimbatore seeking affordable quality education.
           </p>
@@ -282,7 +282,7 @@ export default function CoimbatorePage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "112km", label: "FROM COIMBATORE" },
               { value: "4", label: "PROGRAMMES" },
             ].map((stat) => (
@@ -475,7 +475,6 @@ export default function CoimbatorePage() {
               { factor: "Class Size", city: "Varies", jkkn: "40-60 students", icon: Users },
               { factor: "Campus", city: "Compact, urban", jkkn: "15-acre green campus", icon: Leaf },
               { factor: "Faculty Access", city: "Varies", jkkn: "Personalised mentoring", icon: GraduationCap },
-              { factor: "Placement Rate", city: "Varies widely", jkkn: "36% UG, NIRF 2025", icon: TrendingUp },
               { factor: "Living Cost", city: "Varies", jkkn: "Affordable hostel + meals included", icon: Home },
             ].map((row) => (
               <div key={row.factor} className="grid grid-cols-3 border-t border-gray-100 text-sm">
@@ -498,8 +497,8 @@ export default function CoimbatorePage() {
               },
               {
                 Icon: Building2,
-                title: "Published Placement Data",
-                desc: "The college reports its placement numbers to NIRF every year: 135 of 373 UG graduates of 2023-24 were placed.",
+                title: "Training and Placement Cell",
+                desc: "Aptitude training and mock interviews for IT and other roles, from Year 1.",
               },
               {
                 Icon: ShieldCheck,
@@ -757,7 +756,7 @@ export default function CoimbatorePage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "105", label: "UG TO HIGHER STUDIES 2023–24 (NIRF)" },
             ].map((stat) => (
               <div

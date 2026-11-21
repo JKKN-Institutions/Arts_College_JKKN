@@ -9,7 +9,7 @@
 //                 Science, Poultry). No Chemistry rule, no percentage, no entrance examination.
 //   Fee         - /fee-structure, 2026-27: Rs 34,000 a year, management quota.
 //   Subjects    - this page's own Learning Framework (course codes 24UMB..).
-//   Placement   - NIRF 2025 college return: 135 of 373 UG graduates placed in 2023-24, college-wide.
+//   Placement   - numbers removed from the site (user's choice 2026-11-21); NIRF filings stay on /nirf
 // Removed 2026-10-02 for want of a source: "Biology and Chemistry required", "minimum 50% / 45%", "15:1",
 // PCR / ELISA / bioreactor / phase-contrast / dark-field equipment lists, PubMed access, "top employers
 // including Biocon, Dr. Reddy's, Cipla, Apollo Hospitals and CSIR laboratories", salary bands,
@@ -48,7 +48,7 @@ export const bscMicrobiologyFaqs = [
   {
     question: "Does the college provide placement assistance?",
     answer:
-      "The college placement cell runs campus recruitment drives and interview preparation. For 2023-24 the college reported 135 of 373 UG graduates placed across all programmes (NIRF 2025); it does not publish a separate B.Sc Microbiology placement rate.",
+      "The college placement cell runs campus recruitment drives and interview preparation.",
   },
   {
     question: "What can I study after B.Sc Microbiology?",

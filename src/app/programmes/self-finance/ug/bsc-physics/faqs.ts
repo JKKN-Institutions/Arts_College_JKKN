@@ -7,8 +7,7 @@
 //                 (periyaruniversity.ac.in/Documents/2023/CDC/Affiliated/ug/B.Sc PHYSICS  .pdf):
 //                 Higher Secondary with Mathematics, Physics and Chemistry.
 //   Fee         - /fee-structure, 2026-27: Rs 25,000 a year, management quota.
-//   Placement   - NIRF 2025 college return (/documents/nirf/NIRF-2025-COLLEGE.pdf):
-//                 135 of 373 UG graduates placed in 2023-24, college-wide.
+//   Placement   - numbers removed from the site (user's choice 2026-11-21); NIRF filings stay on /nirf
 //                 No B.Sc Physics-specific figure is published.
 export const bscPhysicsFaqs = [
   {
@@ -37,9 +36,9 @@ export const bscPhysicsFaqs = [
       "Common routes are M.Sc Physics or a related M.Sc, entrance examinations such as IIT-JAM and JEST, teaching after a B.Ed, government recruitment through TNPSC, SSC and UPSC, and technical roles in electronics, instrumentation and data analysis.",
   },
   {
-    question: "What is the placement record for B.Sc Physics?",
+    question: "What placement support is there for B.Sc Physics?",
     answer:
-      "The college does not publish a B.Sc Physics-specific placement figure. Its NIRF 2025 return records 135 of 373 undergraduate graduates of 2023-24 placed, across all UG programmes. Many B.Sc Physics graduates continue to postgraduate study.",
+      "The college's Training and Placement Cell supports B.Sc Physics learners with aptitude training and placement guidance. Many B.Sc Physics graduates continue to postgraduate study.",
   },
   {
     question: "Where is the college located?",

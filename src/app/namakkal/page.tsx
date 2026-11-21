@@ -82,8 +82,7 @@ export const metadata: Metadata = {
 //    "Transition Autonomous Colleges" sheet lists the college with validity extended to 31-12-2029.
 //  - 35 programmes: /fee-structure (14 self-financing UG + 5 PG approved; the 3 marked * await Periyar
 //    University approval) plus 6 aided UG, 7 aided PG and 3 Ph.D. Fees: /fee-structure, 2026-27.
-//  - 135 of 373 UG graduates of 2023-24 placed, 105 to higher studies; sanctioned intake 2023-24 UG 1,468,
-//    PG 355: the college's NIRF 2025 return, public/documents/nirf/NIRF-2025-COLLEGE.pdf.
+//  - Placement numbers removed from the site by the user's choice 2026-11-21 (NIRF filings stay on /nirf).
 //  - Distances: Erode 18 km and Namakkal Bus Stand 65 km / 1 hr 20 min (Google Maps, read by the user in
 //    September 2026), Salem 57 km, Salem Junction 55 km, Coimbatore airport 101 km, other towns OSRM road
 //    routing from the campus pin (same figures as the Pharmacy site, same campus). Tiruppur 64 km = OSRM to
@@ -95,7 +94,7 @@ export default function NamakkalPage() {
   const faqs: { q: string; a: string; voice?: string }[] = [
     {
       q: "What is the best arts and science college in Namakkal district?",
-      a: "It depends on the course you want, so compare accreditation, programmes and fees. JKKN College of Arts and Science at Komarapalayam is an autonomous college affiliated to Periyar University and accredited by NAAC with a B grade. It offers 35 aided and self-financing programmes, and its NIRF 2025 return lists 135 of 373 UG graduates of 2023-24 as placed.",
+      a: "It depends on the course you want, so compare accreditation, programmes and fees. JKKN College of Arts and Science at Komarapalayam is an autonomous college affiliated to Periyar University and accredited by NAAC with a B grade. It offers 35 aided and self-financing programmes.",
     },
     {
       q: "How far is JKKN College of Arts and Science from Namakkal town?",
@@ -108,7 +107,7 @@ export default function NamakkalPage() {
     },
     {
       q: "Can BCA students from Namakkal get IT jobs?",
-      a: "BCA graduates can apply for IT and IT-enabled jobs. The college's NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed across all UG programmes; it does not split the figure by course. The placement cell provides placement training, aptitude coaching and mock interviews.",
+      a: "BCA graduates can apply for IT and IT-enabled jobs. The placement cell provides placement training, aptitude coaching and mock interviews.",
     },
     {
       q: "Are JKKN CAS fees affordable for Namakkal families?",
@@ -179,7 +178,7 @@ export default function NamakkalPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and a placement record published in NIRF 2025 at JKKN CAS, an autonomous arts and science college in Namakkal district."
+        description="3-year undergraduate IT programme with hands-on training and placement cell support at JKKN CAS, an autonomous arts and science college in Namakkal district."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -215,7 +214,7 @@ export default function NamakkalPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "35", label: "PROGRAMMES" },
               { value: "74+", label: "YEARS GROUP LEGACY" },
             ].map((stat) => (
@@ -297,7 +296,6 @@ export default function NamakkalPage() {
               <li><span className="font-semibold text-[#006837]">Government-aided:</span> UG B.A. English, B.A. History, B.Com, B.Sc Chemistry, B.Sc Mathematics, B.Sc Zoology; PG M.A. History, MCA, M.Com, M.Sc Chemistry, M.Sc Zoology; Ph.D in Chemistry, Tamil and Zoology.</li>
               <li><span className="font-semibold text-[#006837]">Self-financing:</span> 13 UG and 5 PG programmes.</li>
               <li><span className="font-semibold text-[#006837]">Fees 2026-27:</span> self-financing UG ₹24,500 to ₹34,000 a year, PG ₹20,000 to ₹25,000; aided fees: As Per Government Norm.</li>
-              <li><span className="font-semibold text-[#006837]">Placement (NIRF 2025 return):</span> 135 of 373 UG graduates of 2023-24 placed (36%); 105 went on to higher studies.</li>
               <li><span className="font-semibold text-[#006837]">Where:</span> Komarapalayam on NH-544, Namakkal district; about 18 km from Erode and 65 km from Namakkal Bus Stand.</li>
             </ul>
             <p className="mt-4 text-xs text-gray-500 leading-relaxed">
@@ -639,7 +637,7 @@ export default function NamakkalPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "105", label: "UG TO HIGHER STUDIES 2023–24 (NIRF)" },
             ].map((stat) => (
               <div

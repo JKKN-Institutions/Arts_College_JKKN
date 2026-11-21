@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Arts and Science College Near Salem | JKKN CAS",
     description:
-      "JKKN CAS — ~57 km from Salem. NAAC accredited (B), NIRF-published placement outcomes. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27.",
+      "JKKN CAS — ~57 km from Salem. NAAC accredited (B), placement cell support. BCA, BBA, B.Com, B.Sc. Admissions open 2026-27.",
     url: "https://cas.jkkn.ac.in/salem",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Arts and Science College Near Salem | JKKN CAS",
-    description: "JKKN CAS — ~57 km from Salem. NAAC accredited (B), NIRF-published placement outcomes. Admissions open 2026-27.",
+    description: "JKKN CAS — ~57 km from Salem. NAAC accredited (B), placement cell support. Admissions open 2026-27.",
   },
 };
 
@@ -81,7 +81,7 @@ export default function SalemPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Salem?",
-      a: "JKKN College of Arts and Science — NAAC accredited (B), 57 km from Salem via NH-544 — offers 35 programmes and a placement record published in NIRF 2025.",
+      a: "JKKN College of Arts and Science — NAAC accredited (B), 57 km from Salem via NH-544 — offers 35 programmes and a Training and Placement Cell.",
     },
     {
       q: "How far is JKKN CAS from Salem?",
@@ -93,7 +93,7 @@ export default function SalemPage() {
     },
     {
       q: "Can BCA students from Salem get IT jobs?",
-      a: "Yes. BCA graduates can apply for IT and IT-enabled roles; the college's NIRF 2025 return reports 135 of 373 UG graduates of 2023-24 placed across all UG programmes. Salem's growing IT park and proximity to Coimbatore's tech corridor means BCA students have strong job prospects. The college provides placement training, aptitude coaching, and mock interviews.",
+      a: "Yes. BCA graduates can apply for IT and IT-enabled roles; the college's Training and Placement Cell offers aptitude training and placement guidance. Salem's growing IT park and proximity to Coimbatore's tech corridor means BCA students have strong job prospects. The college provides placement training, aptitude coaching, and mock interviews.",
     },
     {
       q: "Are JKKN CAS fees affordable compared to Salem colleges?",
@@ -121,7 +121,7 @@ export default function SalemPage() {
     },
     {
       q: "Which arts and science colleges in Salem should students compare?",
-      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC accredited (B), established 1974, with aided low-fee streams, 35 programmes, and NIRF-published placement outcomes — is a strong option to include on that shortlist, ~57 km from Salem city on NH-544.",
+      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC accredited (B), established 1974, with aided low-fee streams, 35 programmes, and placement cell support — is a strong option to include on that shortlist, ~57 km from Salem city on NH-544.",
     },
     {
       q: "Is JKKN CAS a good option for students from Sankagiri, Edappadi, and Mettur?",
@@ -162,7 +162,7 @@ export default function SalemPage() {
       />
       <CourseSchema
         name="BCA (Bachelor of Computer Applications)"
-        description="3-year undergraduate IT programme with hands-on training and a placement record published in NIRF 2025 at JKKN CAS, easily reachable from Salem."
+        description="3-year undergraduate IT programme with hands-on training and placement cell support at JKKN CAS, easily reachable from Salem."
         duration="PT3Y"
         educationalLevel="UG"
         category="Self-Finance"
@@ -227,7 +227,7 @@ export default function SalemPage() {
             Students comparing arts and science colleges in Salem also
             shortlist JKKN College of Arts and Science — a NAAC accredited (B)
             institution ~57 km from Salem on NH-544 with 35 UG, PG, and Ph.D
-            programmes, aided low-fee streams, hostel, and NIRF-published placement outcomes.
+            programmes, aided low-fee streams, hostel, and placement cell support.
             For western Salem district — Sankagiri, Edappadi, Mettur — JKKN
             is closer than Salem city colleges.
           </p>
@@ -242,7 +242,7 @@ export default function SalemPage() {
           {/* Stats */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "~57km", label: "FROM SALEM" },
               { value: "35", label: "PROGRAMMES" },
             ].map((stat) => (
@@ -645,7 +645,7 @@ export default function SalemPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {[
-              { value: "36%", label: "UG PLACED 2023–24 (NIRF)" },
+              { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "105", label: "UG TO HIGHER STUDIES 2023–24 (NIRF)" },
             ].map((stat) => (
               <div

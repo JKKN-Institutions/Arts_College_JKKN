@@ -111,9 +111,9 @@ export default function Image() {
           }}
         >
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <span style={{ color: "#ffde59", fontSize: "36px", fontWeight: 800 }}>36%</span>
+            <span style={{ color: "#ffde59", fontSize: "36px", fontWeight: 800 }}>320</span>
             <span style={{ color: "rgba(255,255,255,0.7)", fontSize: "14px", fontWeight: 500 }}>
-              Placement Rate
+              Aided UG Seats
             </span>
           </div>
           <div
@@ -125,10 +125,10 @@ export default function Image() {
           />
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <span style={{ color: "#ffde59", fontSize: "36px", fontWeight: 800 }}>
-              50+
+              110
             </span>
             <span style={{ color: "rgba(255,255,255,0.7)", fontSize: "14px", fontWeight: 500 }}>
-              Recruiters
+              Faculty
             </span>
           </div>
           <div

@@ -9,7 +9,7 @@
 //                 no subject or percentage rule is stated here (user decision 2026-10-02).
 //   Fee         - /fee-structure, 2026-27: Rs 34,000 a year, management quota.
 //   Subjects    - this page's own Learning Framework (course codes 24UAD..).
-//   Placement   - NIRF 2025 college return: 135 of 373 UG graduates placed in 2023-24, college-wide.
+//   Placement   - numbers removed from the site (user's choice 2026-11-21); NIRF filings stay on /nirf
 // Removed 2026-10-02 for want of a source: "Mathematics compulsory", "minimum 50% / 45%", NVIDIA GPU labs,
 // cloud credits, IoT / robotics / drones lab, IEEE / ACM subscriptions, "tie-ups with 100+ companies",
 // salary bands, "70% focus", TensorFlow / PyTorch / Hadoop / Spark / Tableau lists, "Since 1952".
@@ -47,7 +47,7 @@ export const bscAiDsFaqs = [
   {
     question: "Does the college provide placement assistance?",
     answer:
-      "The college placement cell runs campus recruitment drives and interview preparation. For 2023-24 the college reported 135 of 373 UG graduates placed across all programmes (NIRF 2025); it does not publish a separate B.Sc AI & DS placement rate.",
+      "The college placement cell runs campus recruitment drives and interview preparation.",
   },
   {
     question: "What can I study after B.Sc AI & DS?",
