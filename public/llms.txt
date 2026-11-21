@@ -1,6 +1,6 @@
 # JKKN College of Arts and Science
 
-> Autonomous college (2024-25 to 2028-29) affiliated to Periyar University, Salem, accredited by NAAC with Grade B (CGPA 2.37), offering 35 UG, PG and PhD programmes in Arts, Science and Commerce. Located on NH-544, Komarapalayam, Namakkal district, near Erode, Tamil Nadu 638183, India.
+> Autonomous college (2024-25 to 2028-29) affiliated to Periyar University, Salem, accredited by NAAC with Grade B (CGPA 2.37), offering 32 UG, PG and PhD programmes (3 more proposed) in Arts, Science and Commerce. Located on NH-544, Komarapalayam, Namakkal district, near Erode, Tamil Nadu 638183, India.
 
 <!-- version: 2026-11-21 -->
 <!-- canonical: https://cas.jkkn.ac.in/ -->
@@ -22,7 +22,7 @@ JKKN College of Arts and Science (CAS JKKN) is an autonomous college established
 - Faculty: 110 on roll, 52 with a Ph.D. (NIRF 2026 submission)
 - Codes: AISHE C-9494; NIRF IR-C-C-9494; TN DCE college code 2180001
 - All approvals with their official documents: https://cas.jkkn.ac.in/approvals
-- Programmes: 35 listed - UG 22 (19 approved + 3 proposed programmes awaiting Periyar University approval), PG 10, Ph.D. 3; aided and self-financing streams are counted separately
+- Programmes: 32 approved - UG 19, PG 10, Ph.D. 3 (aided and self-financing streams counted separately) - plus 3 proposed UG programmes awaiting Periyar University approval
 - Location: NH-544, between Salem and Coimbatore
 - Nearest towns and cities (approx. road distance): Bhavani (~8 km), Pallipalayam (~14 km), Sankagiri (~16 km), Erode (~18 km), Tiruchengode (~26 km), Perundurai (~29 km), Gobichettipalayam (~37 km), Salem (~57 km), Rasipuram (~60 km), Namakkal (~65 km)
 

@@ -16,7 +16,7 @@ export function OrganizationSchema() {
     logo: "https://cas.jkkn.ac.in/logo.svg",
     image: "https://cas.jkkn.ac.in/opengraph-image",
     description:
-      "JKKN College of Arts and Science is an autonomous institution affiliated to Periyar University, offering 35 undergraduate, postgraduate and doctoral programmes in Arts, Science and Commerce near Erode, Tamil Nadu. Founded in 1974 as part of J.K.K. Nattraja Educational Institutions (est. 1952), the college serves 1,516 students (NIRF 2026 submission, AY 2024-25) across a 15-acre campus on NH-544.",
+      "JKKN College of Arts and Science is an autonomous institution affiliated to Periyar University, offering 32 undergraduate, postgraduate and doctoral programmes in Arts, Science and Commerce near Erode, Tamil Nadu. Founded in 1974 as part of J.K.K. Nattraja Educational Institutions (est. 1952), the college serves 1,516 students (NIRF 2026 submission, AY 2024-25) across a 15-acre campus on NH-544.",
     foundingDate: "1974",
     telephone: "+91-93458-55001",
     email: "arts@jkkn.org",
@@ -118,7 +118,7 @@ export function OrganizationSchema() {
       "@type": "OfferCatalog",
       name: "Academic Programmes 2026-27",
       itemListElement: [
-        { "@type": "OfferCatalog", name: "Undergraduate Programmes (UG)", numberOfItems: 22 },
+        { "@type": "OfferCatalog", name: "Undergraduate Programmes (UG)", numberOfItems: 19 },
         { "@type": "OfferCatalog", name: "Postgraduate Programmes (PG)", numberOfItems: 10 },
         { "@type": "OfferCatalog", name: "Doctoral Programmes (PhD)", numberOfItems: 3 },
       ],

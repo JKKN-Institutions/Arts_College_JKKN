@@ -80,7 +80,7 @@ export default function TiruppurPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Tiruppur?",
-      a: "JKKN College of Arts and Science, ~64 km from Tiruppur on NH-544, is an arts and science college reachable from Tiruppur. NAAC accredited (B), autonomous and affiliated to Periyar University, it offers 35 programmes and publishes its placement numbers in NIRF.",
+      a: "JKKN College of Arts and Science, ~64 km from Tiruppur on NH-544, is an arts and science college reachable from Tiruppur. NAAC accredited (B), autonomous and affiliated to Periyar University, it offers 32 programmes and publishes its placement numbers in NIRF.",
     },
     {
       q: "How far is JKKN CAS from Tiruppur?",
@@ -88,7 +88,7 @@ export default function TiruppurPage() {
     },
     {
       q: "Which courses are popular among Tiruppur students at JKKN CAS?",
-      a: "BBA and B.Com are the most popular choices among Tiruppur students, given the city's thriving knitwear export industry. BCA is also in high demand as textile companies digitalise. JKKN CAS offers 35 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
+      a: "BBA and B.Com are the most popular choices among Tiruppur students, given the city's thriving knitwear export industry. BCA is also in high demand as textile companies digitalise. JKKN CAS offers 32 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
     },
     {
       q: "Can BCA students from Tiruppur get IT jobs?",
@@ -478,7 +478,7 @@ export default function TiruppurPage() {
           {/* Complete Programme List */}
           <div className="mt-12 pt-10 border-t border-gray-200">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">
-              All 35 Programmes Available Near Tiruppur
+              All 32 Programmes Available Near Tiruppur
             </h3>
             <p className="text-gray-500 text-sm text-center mb-8">
               Grouped by stream — click any programme for full details

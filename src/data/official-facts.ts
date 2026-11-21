@@ -107,7 +107,7 @@ export const KEY_FACTS: KeyFact[] = [
   },
   {
     label: "Programmes",
-    value: "35: 20 UG, 12 PG, 3 Ph.D",
+    value: "32: 19 UG, 10 PG, 3 Ph.D (plus 3 proposed UG awaiting Periyar University approval)",
     sources: [SRC.ourInstitution],
   },
   {

@@ -13,7 +13,7 @@ const stats = [
   },
   {
     icon: BookOpen,
-    end: 35,
+    end: 32,
     suffix: '',
     label: 'UG, PG & PhD Programmes',
   },

@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     absolute: 'JKKN College of Arts and Science (Autonomous), Komarapalayam',
   },
   description:
-    'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited (B), Periyar University. 35 UG, PG & PhD programmes. Apply for 2026-27.',
+    'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited (B), Periyar University. 32 UG, PG & PhD programmes. Apply for 2026-27.',
   keywords: [
     'best arts and science college in Tamil Nadu',
     'JKKN College of Arts and Science',
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'JKKN College of Arts and Science (Autonomous), Komarapalayam',
     description:
-      'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited (B), Periyar University. 35 UG, PG & PhD programmes. Apply for 2026-27.',
+      'JKKN College of Arts and Science (Autonomous), Komarapalayam — NAAC accredited (B), Periyar University. 32 UG, PG & PhD programmes. Apply for 2026-27.',
     url: 'https://cas.jkkn.ac.in',
     siteName: 'JKKN College of Arts and Science',
     type: 'website',
@@ -86,7 +86,7 @@ const homepageFAQs = [
   {
     question: "What makes JKKN College of Arts and Science stand out in Tamil Nadu?",
     answer:
-      "JKKN College of Arts and Science (since 1974, part of the J.K.K. Nattraja group founded in 1952) stands out for its NAAC accreditation (Grade B), UGC 2(f) & 12(B) recognition, autonomous status, and a Training and Placement Cell. The college offers 35 programmes with AI/IoT labs and in-built internship pathways.",
+      "JKKN College of Arts and Science (since 1974, part of the J.K.K. Nattraja group founded in 1952) stands out for its NAAC accreditation (Grade B), UGC 2(f) & 12(B) recognition, autonomous status, and a Training and Placement Cell. The college offers 32 programmes with AI/IoT labs and in-built internship pathways.",
   },
   {
     question: "What makes JKKN different from other arts and science colleges in Tamil Nadu?",
@@ -96,7 +96,7 @@ const homepageFAQs = [
   {
     question: "What programmes does JKKN Arts and Science College offer in Tamil Nadu?",
     answer:
-      "JKKN College offers 35 programmes including B.Sc Computer Science, BCA, B.Sc AI & Data Science, B.Com, BBA, B.Sc Cyber Security, B.Sc Visual Communication, B.Sc Microbiology, and more. Postgraduate options include M.Sc Computer Science, M.Com, and MA English. All programmes are affiliated to Periyar University and designed for career readiness.",
+      "JKKN College offers 32 programmes including B.Sc Computer Science, BCA, B.Sc AI & Data Science, B.Com, BBA, B.Sc Cyber Security, B.Sc Visual Communication, B.Sc Microbiology, and more. Postgraduate options include M.Sc Computer Science, M.Com, and MA English. All programmes are affiliated to Periyar University and designed for career readiness.",
   },
   {
     question: "What are the admission requirements for undergraduate programs?",
@@ -136,7 +136,7 @@ const homepageFAQs = [
   {
     question: "How does JKKN compare to other arts and science colleges in Tamil Nadu?",
     answer:
-      "JKKN is an autonomous college recognised by UGC under Section 2(f) and 12(B), with NAAC accreditation (Grade B), and it runs a Training and Placement Cell. JKKN offers AI/IoT research labs, industry MoUs with IBM India, Global Talent Track and AWE CARE (NAAC AQAR), and 35 programmes, backed by its group's 74+ year legacy (since 1952).",
+      "JKKN is an autonomous college recognised by UGC under Section 2(f) and 12(B), with NAAC accreditation (Grade B), and it runs a Training and Placement Cell. JKKN offers AI/IoT research labs, industry MoUs with IBM India, Global Talent Track and AWE CARE (NAAC AQAR), and 32 programmes, backed by its group's 74+ year legacy (since 1952).",
   },
   {
     question: "What are the career options after completing a degree from JKKN?",
@@ -171,7 +171,7 @@ const homepageFAQs = [
   {
     question: "Does JKKN College offer distance education or online programmes?",
     answer:
-      "JKKN College currently focuses on full-time, on-campus programmes across 35 UG, PG, and doctoral courses. The college does not offer distance education at present. However, students have access to NPTEL online courses, digital library resources, and SWAYAM platform integration as supplementary learning. For full-time programme details, visit the admissions portal or contact +91-93458-55001.",
+      "JKKN College currently focuses on full-time, on-campus programmes across 32 UG, PG, and doctoral programmes. The college does not offer distance education at present. However, students have access to NPTEL online courses, digital library resources, and SWAYAM platform integration as supplementary learning. For full-time programme details, visit the admissions portal or contact +91-93458-55001.",
   },
 ];
 
@@ -188,7 +188,7 @@ export default function Home() {
         name="How to Apply for Admission at JKKN College of Arts and Science"
         description="Step-by-step guide to apply for UG, PG, and PhD programmes at JKKN College of Arts and Science, Komarapalayam, Tamil Nadu."
         steps={[
-          { name: "Choose Your Program", text: "Browse 35 UG, PG, and PhD programmes across Science, Commerce, IT, and Management streams. Check eligibility criteria and course details on the programmes page." },
+          { name: "Choose Your Program", text: "Browse 32 UG, PG and PhD programmes across Science, Commerce, IT, and Management streams. Check eligibility criteria and course details on the programmes page." },
           { name: "Apply Online", text: "Fill out the online admission form at jkkn.ai/apply/jkkn-admission-2026 with your personal details, academic records, and preferred programme. Upload required documents." },
           { name: "Get Admitted", text: "Receive your admission confirmation via email and SMS. Pay the admission fee online or at the campus office to secure your seat." },
           { name: "Start Learning", text: "Attend the orientation programme, collect your ID card, and begin classes at the JKKN campus on NH-544, Komarapalayam." },
@@ -210,7 +210,7 @@ export default function Home() {
       />
       <WebPageSchema
         name="Autonomous Arts and Science College in Komarapalayam, near Erode — JKKN"
-        description="JKKN College of Arts and Science is an arts and science college in Komarapalayam, Tamil Nadu. Autonomous, NAAC accredited (B), placement cell support, 35 UG, PG & PhD programmes near Erode."
+        description="JKKN College of Arts and Science is an arts and science college in Komarapalayam, Tamil Nadu. Autonomous, NAAC accredited (B), placement cell support, 32 UG, PG & PhD programmes near Erode."
         url="https://cas.jkkn.ac.in"
         lastReviewed="2026-11-03"
         speakable={["h1", ".hero-description", "[data-speakable]"]}
@@ -218,7 +218,7 @@ export default function Home() {
       <Suspense fallback={null}><ScrollToSection /></Suspense>
       {/* Screen-reader overview for voice assistants and AI crawlers */}
       <p className="sr-only">
-        JKKN College of Arts and Science is an autonomous, NAAC accredited (B) institution located on NH-544 in Komarapalayam, near Erode, Tamil Nadu. Affiliated to Periyar University and part of J.K.K. Nattraja Educational Institutions established in 1952, the college offers 35 UG, PG, and PhD programmes across Science, Commerce, IT, and Management. It has 1,516 students (NIRF 2026 submission, 2024-25) on a 15-acre campus.
+        JKKN College of Arts and Science is an autonomous, NAAC accredited (B) institution located on NH-544 in Komarapalayam, near Erode, Tamil Nadu. Affiliated to Periyar University and part of J.K.K. Nattraja Educational Institutions established in 1952, the college offers 32 UG, PG and PhD programmes across Science, Commerce, IT, and Management. It has 1,516 students (NIRF 2026 submission, 2024-25) on a 15-acre campus.
       </p>
       {/* Hero Section - Fits exactly one screen */}
       <HeroSection />
@@ -269,7 +269,7 @@ export default function Home() {
                     <BookOpen className="h-5 w-5 text-[#0b6d41]" />
                   </div>
                   <div>
-                    <div className="font-bold text-black text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] mb-0.5">35 Programmes</div>
+                    <div className="font-bold text-black text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] mb-0.5">32 Programmes</div>
                     <div className="text-[12px] sm:text-[14px] leading-[16px] sm:leading-[20px] text-black/60">Science, Commerce, IT &amp; Management</div>
                   </div>
                 </div>
@@ -342,7 +342,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto space-y-6 text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] text-gray-700">
             {/* Snippet definition paragraph — optimized for Google Featured Snippet */}
             <p>
-              <strong>JKKN College of Arts and Science</strong> is an autonomous arts and science college in Komarapalayam, Tamil Nadu. With five decades of academic heritage, NAAC accreditation (Grade B), UGC 2(f) & 12(B) recognition, autonomous status, and a Training and Placement Cell, JKKN offers 35 industry-aligned programmes near Erode on the Salem–Coimbatore Highway.
+              <strong>JKKN College of Arts and Science</strong> is an autonomous arts and science college in Komarapalayam, Tamil Nadu. With five decades of academic heritage, NAAC accreditation (Grade B), UGC 2(f) & 12(B) recognition, autonomous status, and a Training and Placement Cell, JKKN offers 32 industry-aligned programmes near Erode on the Salem–Coimbatore Highway.
             </p>
 
             {/* Numbered list — optimized for Google List Snippet */}
@@ -353,7 +353,7 @@ export default function Home() {
                 <li>Autonomous Status — conferred by UGC (2024-25 to 2028-29)</li>
                 <li>NAAC Accredited (B) Institution</li>
                 <li>Dedicated Training and Placement Cell</li>
-                <li>35 UG, PG &amp; PhD Programmes</li>
+                <li>32 UG, PG &amp; PhD Programmes, plus 3 proposed</li>
                 <li>AI/IoT Learning Labs + Industry MoUs (IBM India, AWE CARE)</li>
                 <li>320 government-aided UG seats (TN Directorate of Collegiate Education list)</li>
               </ol>
@@ -366,7 +366,7 @@ export default function Home() {
               JKKN College of Arts and Science supports every learner through a dedicated <strong>Training and Placement Cell</strong> that runs aptitude training, mock interviews and campus drives.
             </p>
             <p>
-              The college offers 35 UG, PG, and doctoral programmes across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation (Grade B)</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research learning labs, industry MoUs (IBM India, Global Talent Track, AWE CARE), and in-built internship pathways make JKKN an <strong>arts college near Erode</strong> for learners seeking future-ready education in Tamil Nadu.
+              The college offers 32 UG, PG, and doctoral programmes (3 more are proposed, awaiting Periyar University approval) across Science, Commerce, IT, and Management — all affiliated to Periyar University and backed by <strong>NAAC accreditation (Grade B)</strong> and <strong>UGC recognition</strong>. Industry-integrated features like AI/IoT research learning labs, industry MoUs (IBM India, Global Talent Track, AWE CARE), and in-built internship pathways make JKKN an <strong>arts college near Erode</strong> for learners seeking future-ready education in Tamil Nadu.
             </p>
 
             {/* Key Differentiators Grid */}
@@ -380,7 +380,7 @@ export default function Home() {
                 <div className="text-[14px] text-gray-600">UGC 2(f) &amp; 12(B), NAAC Accredited (B)</div>
               </div>
               <div className="bg-green-50 border border-green-200 rounded-xl p-5 text-center">
-                <div className="text-[24px] font-bold text-[#0b6d41] mb-1">35</div>
+                <div className="text-[24px] font-bold text-[#0b6d41] mb-1">32</div>
                 <div className="text-[14px] text-gray-600">Programmes in Arts, Science &amp; Commerce</div>
               </div>
             </div>
@@ -430,7 +430,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-white border-b border-gray-100">
                   <td className="px-4 py-3 font-medium">Programmes Offered</td>
-                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">35 (UG, PG, PhD)</td>
+                  <td className="px-4 py-3 text-[#0b6d41] font-semibold">32 (UG, PG, PhD) + 3 proposed</td>
                   <td className="px-4 py-3 text-gray-500">Varies</td>
                 </tr>
                 <tr className="bg-gray-50 border-b border-gray-100">
@@ -947,7 +947,7 @@ export default function Home() {
               Quick Answer: Autonomous Arts and Science College in Komarapalayam, near Erode
             </h3>
             <p className="text-[15px] md:text-[16px] leading-[24px] md:leading-[26px] text-gray-700">
-              <strong>JKKN College of Arts and Science</strong> (Autonomous) in Komarapalayam, Tamil Nadu, is an autonomous arts and science college. Key highlights: <strong>NAAC accredited (B)</strong>, <strong>UGC 2(f) &amp; 12(B) recognition and autonomous status</strong>, <strong>placement cell support</strong>, <strong>35 UG/PG/PhD programmes</strong>. Affiliated to Periyar University; established 1974 within a group founded in 1952.
+              <strong>JKKN College of Arts and Science</strong> (Autonomous) in Komarapalayam, Tamil Nadu, is an autonomous arts and science college. Key highlights: <strong>NAAC accredited (B)</strong>, <strong>UGC 2(f) &amp; 12(B) recognition and autonomous status</strong>, <strong>placement cell support</strong>, <strong>32 UG/PG/PhD programmes</strong>. Affiliated to Periyar University; established 1974 within a group founded in 1952.
             </p>
           </div>
         </div>

@@ -99,7 +99,7 @@ export default function Image() {
             lineHeight: 1.4,
           }}
         >
-          35 Programmes in Arts, Science & Commerce | Affiliated to Periyar University
+          32 Programmes in Arts, Science & Commerce | Affiliated to Periyar University
         </p>
 
         {/* Stats row */}

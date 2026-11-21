@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | JKKN College of Arts and Science",
   },
   description:
-    "JKKN College of Arts and Science, Komarapalayam: autonomous, NAAC accredited (B), Periyar University. 35 UG, PG and PhD programmes near Erode, Tamil Nadu.",
+    "JKKN College of Arts and Science, Komarapalayam: autonomous, NAAC accredited (B), Periyar University. 32 UG, PG and PhD programmes near Erode, Tamil Nadu.",
   keywords: [
     "JKKN College of Arts and Science",
     "arts and science college near Erode",
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: "JKKN College of Arts and Science",
     title:
-      "JKKN College of Arts and Science | Autonomous | 35 Programmes",
+      "JKKN College of Arts and Science | Autonomous | 32 Programmes",
     description:
-      "Autonomous institution offering 35 UG, PG and PhD programmes. Affiliated to Periyar University, near Erode, Tamil Nadu.",
+      "Autonomous institution offering 32 UG, PG and PhD programmes. Affiliated to Periyar University, near Erode, Tamil Nadu.",
     images: [
       {
         url: `${SITE_URL}/opengraph-image`,
@@ -67,9 +67,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "JKKN College of Arts and Science | Autonomous | 35 Programmes",
+      "JKKN College of Arts and Science | Autonomous | 32 Programmes",
     description:
-      "Autonomous institution offering 35 UG, PG and PhD programmes. Near Erode, Tamil Nadu.",
+      "Autonomous institution offering 32 UG, PG and PhD programmes. Near Erode, Tamil Nadu.",
     images: [
       {
         url: `${SITE_URL}/opengraph-image`,

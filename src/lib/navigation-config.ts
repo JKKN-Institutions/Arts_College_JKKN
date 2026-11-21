@@ -334,7 +334,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
           {
             label: 'Admissions 2026-27',
             href: '/admissions',
-            description: 'Apply now — 35 UG, PG & PhD programmes',
+            description: 'Apply now — 32 UG, PG & PhD programmes',
           },
           {
             label: 'Course-wise Admissions',

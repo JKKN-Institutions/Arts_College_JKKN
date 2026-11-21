@@ -41,7 +41,7 @@ import {
 export const metadata: Metadata = {
   title: "Arts and Science College in Namakkal District | JKKN CAS",
   description:
-    "JKKN College of Arts and Science, Komarapalayam, Namakkal district: autonomous, NAAC Accredited (B), Periyar University. 35 programmes, UG fees from ₹24,500.",
+    "JKKN College of Arts and Science, Komarapalayam, Namakkal district: autonomous, NAAC Accredited (B), Periyar University. 32 programmes, UG fees from ₹24,500.",
   keywords: [
     "arts and science college in Namakkal district",
     "best college in Namakkal district",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Arts and Science College in Namakkal District | JKKN CAS",
     description:
-      "JKKN CAS, Komarapalayam, Namakkal district: autonomous, NAAC Accredited (B), Periyar University. 35 programmes. Admissions 2026-27.",
+      "JKKN CAS, Komarapalayam, Namakkal district: autonomous, NAAC Accredited (B), Periyar University. 32 programmes. Admissions 2026-27.",
     url: "https://cas.jkkn.ac.in/namakkal",
     siteName: "JKKN College of Arts and Science",
     type: "website",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Arts and Science College in Namakkal District | JKKN CAS",
-    description: "JKKN CAS, Komarapalayam, Namakkal district: autonomous, NAAC Accredited (B), Periyar University. 35 programmes. Admissions 2026-27.",
+    description: "JKKN CAS, Komarapalayam, Namakkal district: autonomous, NAAC Accredited (B), Periyar University. 32 programmes. Admissions 2026-27.",
   },
 };
 
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
 //  - NAAC Grade B, CGPA 2.37, declared 09-08-2019; affiliating university Periyar University: NAAC list
 //    "Institutions accredited by NAAC having valid accreditation as on 14-08-2025" (Colleges sheet). Its
 //    "Transition Autonomous Colleges" sheet lists the college with validity extended to 31-12-2029.
-//  - 35 programmes: /fee-structure (14 self-financing UG + 5 PG approved; the 3 marked * await Periyar
+//  - 32 programmes: /fee-structure (14 self-financing UG + 5 PG approved; the 3 marked * await Periyar
 //    University approval) plus 6 aided UG, 7 aided PG and 3 Ph.D. Fees: /fee-structure, 2026-27.
 //  - Placement numbers removed from the site by the user's choice 2026-11-21 (NIRF filings stay on /nirf).
 //  - Distances: Erode 18 km and Namakkal Bus Stand 65 km / 1 hr 20 min (Google Maps, read by the user in
@@ -94,7 +94,7 @@ export default function NamakkalPage() {
   const faqs: { q: string; a: string; voice?: string }[] = [
     {
       q: "What is the best arts and science college in Namakkal district?",
-      a: "It depends on the course you want, so compare accreditation, programmes and fees. JKKN College of Arts and Science at Komarapalayam is an autonomous college affiliated to Periyar University and accredited by NAAC with a B grade. It offers 35 aided and self-financing programmes.",
+      a: "It depends on the course you want, so compare accreditation, programmes and fees. JKKN College of Arts and Science at Komarapalayam is an autonomous college affiliated to Periyar University and accredited by NAAC with a B grade. It offers 32 aided and self-financing programmes, plus 3 proposed.",
     },
     {
       q: "How far is JKKN College of Arts and Science from Namakkal town?",
@@ -103,7 +103,7 @@ export default function NamakkalPage() {
     },
     {
       q: "Which courses are popular among Namakkal students at JKKN CAS?",
-      a: "B.Com and BCA are the most popular choices among Namakkal students, given the district's growing commercial activity. BBA and B.Sc programmes are also in high demand. JKKN CAS offers 35 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
+      a: "B.Com and BCA are the most popular choices among Namakkal students, given the district's growing commercial activity. BBA and B.Sc programmes are also in high demand. JKKN CAS offers 32 programmes across aided and self-finance streams — including B.Sc specialisations, M.Sc, MCA, and Ph.D programmes.",
     },
     {
       q: "Can BCA students from Namakkal get IT jobs?",
@@ -131,7 +131,7 @@ export default function NamakkalPage() {
     },
     {
       q: "Why should Namakkal district students choose JKKN CAS?",
-      a: "JKKN CAS is an autonomous college, NAAC Accredited (B), affiliated to Periyar University, with 35 aided and self-financing programmes. Self-financing UG fees for 2026-27 are ₹24,500 to ₹34,000 a year, aided fees are As Per Government Norm, and the campus is on NH-544, about 18 km from Erode and 26 km from Tiruchengode.",
+      a: "JKKN CAS is an autonomous college, NAAC Accredited (B), affiliated to Periyar University, with 32 aided and self-financing programmes. Self-financing UG fees for 2026-27 are ₹24,500 to ₹34,000 a year, aided fees are As Per Government Norm, and the campus is on NH-544, about 18 km from Erode and 26 km from Tiruchengode.",
     },
     {
       q: "Is JKKN College of Arts and Science autonomous?",
@@ -215,7 +215,7 @@ export default function NamakkalPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 max-w-2xl mx-auto mb-10">
             {[
               { value: "320", label: "GOVT-AIDED UG SEATS" },
-              { value: "35", label: "PROGRAMMES" },
+              { value: "32", label: "PROGRAMMES" },
               { value: "74+", label: "YEARS GROUP LEGACY" },
             ].map((stat) => (
               <div
@@ -346,7 +346,7 @@ export default function NamakkalPage() {
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
               JKKN CAS is in Namakkal District at Komarapalayam on NH-544, with
-              35 aided and self-financing programmes. Students from Tiruchengode,
+              32 aided and self-financing programmes. Students from Tiruchengode,
               Sankari, and across Namakkal District study here with hostel or
               daily commute options.
             </p>
@@ -495,7 +495,7 @@ export default function NamakkalPage() {
           {/* Complete Programme List */}
           <div className="mt-12 pt-10 border-t border-gray-200">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">
-              All 35 Programmes Available in Namakkal District
+              All 32 Programmes Available in Namakkal District
             </h3>
             <p className="text-gray-500 text-sm text-center mb-8">
               Grouped by stream — click any programme for full details

@@ -53,12 +53,12 @@ Autonomy means the college designs its own curriculum and conducts its own exami
 
 - **Students:** 1,516 (NIRF 2026 submission, AY 2024-25) — 1,238 UG + 278 PG
 - **Faculty:** 110 on roll, of whom 52 hold a Ph.D. (NIRF 2026 submission)
-- **Programmes offered:** 35 listed - UG 22 (19 approved + 3 proposed programmes awaiting Periyar University approval), PG 10, Ph.D. 3; aided and self-financing streams are counted separately.
+- **Programmes offered:** 32 approved - UG 19, PG 10, Ph.D. 3 (aided and self-financing streams counted separately) - plus 3 proposed UG programmes awaiting Periyar University approval.
 - **Departments:** 27
 
 ## Academic Programmes
 
-35 programmes are currently offered. "Aided" programmes are government-aided with low fees; "Self-Finance" programmes are funded by the college.
+32 programmes are currently offered, and 3 more are proposed. "Aided" programmes are government-aided with low fees; "Self-Finance" programmes are funded by the college.
 
 ### Undergraduate — Aided (6)
 
@@ -219,7 +219,7 @@ A: Periyar University, Salem.
 A: 1974, as Alamelu Angappan College for Women. It became co-educational in 2008. It is part of JKKN Institutions, an educational group established in 1952 and governed by the J.K.K. Rangammal Charitable Trust, registered in 1969.
 
 **Q: How many programmes does the college offer?**
-A: 35 listed: UG 22 (19 approved plus 3 AI-oriented programmes proposed and awaiting Periyar University approval), PG 10 and Ph.D. 3. Aided and self-financing streams are counted separately.
+A: 32: UG 19, PG 10 and Ph.D. 3, with aided and self-financing streams counted separately. 3 more AI-oriented UG programmes are proposed and awaiting Periyar University approval.
 
 **Q: What is the difference between aided and self-finance programmes here?**
 A: Aided programmes are government-aided and their fees are As Per Government Norm. Self-finance programmes are funded by the college, with published UG fees of Rs 24,500 to Rs 34,000 per year.

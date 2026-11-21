@@ -81,7 +81,7 @@ export default function SalemPage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Salem?",
-      a: "JKKN College of Arts and Science — NAAC accredited (B), 57 km from Salem via NH-544 — offers 35 programmes and a Training and Placement Cell.",
+      a: "JKKN College of Arts and Science — NAAC accredited (B), 57 km from Salem via NH-544 — offers 32 programmes and a Training and Placement Cell.",
     },
     {
       q: "How far is JKKN CAS from Salem?",
@@ -89,7 +89,7 @@ export default function SalemPage() {
     },
     {
       q: "Which courses are popular among Salem students at JKKN CAS?",
-      a: "JKKN CAS offers BCA, BBA, B.Com, B.Sc (multiple specialisations), MCA, M.Com, M.Sc, and Ph.D — 35 programmes total across aided and self-finance streams.",
+      a: "JKKN CAS offers BCA, BBA, B.Com, B.Sc (multiple specialisations), MCA, M.Com, M.Sc, and Ph.D — 32 programmes total across aided and self-finance streams.",
     },
     {
       q: "Can BCA students from Salem get IT jobs?",
@@ -117,11 +117,11 @@ export default function SalemPage() {
     },
     {
       q: "Why should I choose JKKN CAS over colleges in Salem?",
-      a: "JKKN CAS offers NAAC accreditation (Grade B), 35 programmes, placement support, self-finance UG fees of ₹24,500 to ₹34,000 a year (2026-27, Management Quota), and a 15-acre campus with hostel — all ~57 km from Salem.",
+      a: "JKKN CAS offers NAAC accreditation (Grade B), 32 programmes, placement support, self-finance UG fees of ₹24,500 to ₹34,000 a year (2026-27, Management Quota), and a 15-acre campus with hostel — all ~57 km from Salem.",
     },
     {
       q: "Which arts and science colleges in Salem should students compare?",
-      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC accredited (B), established 1974, with aided low-fee streams, 35 programmes, and placement cell support — is a strong option to include on that shortlist, ~57 km from Salem city on NH-544.",
+      a: "When comparing arts and science colleges in Salem, students typically weigh accreditation, fees, placements, and hostel. JKKN CAS — NAAC accredited (B), established 1974, with aided low-fee streams, 32 programmes, and placement cell support — is a strong option to include on that shortlist, ~57 km from Salem city on NH-544.",
     },
     {
       q: "Is JKKN CAS a good option for students from Sankagiri, Edappadi, and Mettur?",
@@ -226,7 +226,7 @@ export default function SalemPage() {
           <p className="snippet-answer-paragraph text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
             Students comparing arts and science colleges in Salem also
             shortlist JKKN College of Arts and Science — a NAAC accredited (B)
-            institution ~57 km from Salem on NH-544 with 35 UG, PG, and Ph.D
+            institution ~57 km from Salem on NH-544 with 32 UG, PG, and Ph.D
             programmes, aided low-fee streams, hostel, and placement cell support.
             For western Salem district — Sankagiri, Edappadi, Mettur — JKKN
             is closer than Salem city colleges.
@@ -244,7 +244,7 @@ export default function SalemPage() {
             {[
               { value: "320", label: "GOVT-AIDED UG SEATS" },
               { value: "~57km", label: "FROM SALEM" },
-              { value: "35", label: "PROGRAMMES" },
+              { value: "32", label: "PROGRAMMES" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -503,7 +503,7 @@ export default function SalemPage() {
           {/* Complete Programme List */}
           <div className="mt-12 pt-10 border-t border-gray-200">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">
-              All 35 Programmes Available Near Salem
+              All 32 Programmes Available Near Salem
             </h3>
             <p className="text-gray-500 text-sm text-center mb-8">
               Grouped by stream — click any programme for full details

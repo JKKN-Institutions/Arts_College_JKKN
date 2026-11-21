@@ -89,7 +89,7 @@ export default function CoimbatorePage() {
   const faqs = [
     {
       q: "What is the best arts and science college in Coimbatore?",
-      a: "JKKN College of Arts and Science, 112 km from Coimbatore on NH-544, is a NAAC accredited (B), 74-year-old institution with 35 programmes and placement cell support. Admission enquiries welcome.",
+      a: "JKKN College of Arts and Science, 112 km from Coimbatore on NH-544, is a NAAC accredited (B), 74-year-old institution with 32 programmes and placement cell support. Admission enquiries welcome.",
     },
     {
       q: "How far is JKKN CAS from Coimbatore?",
@@ -272,7 +272,7 @@ export default function CoimbatorePage() {
           <p className="aeo-citation-block text-white/70 text-sm max-w-2xl mx-auto mt-4 leading-relaxed">
             JKKN College of Arts and Science is a NAAC accredited (B) institution, recognised by UGC under Section 2(f) and 12(B),
             located in Komarapalayam, Namakkal district, Tamil Nadu — 112 km from Coimbatore
-            via NH-544. Founded in 1974 and affiliated to Periyar University, JKKN CAS offers 35 undergraduate, postgraduate, and research programmes
+            via NH-544. Founded in 1974 and affiliated to Periyar University, JKKN CAS offers 32 undergraduate, postgraduate and research programmes
             spanning arts, science, commerce, and computer applications. The institution maintains
             a Training and Placement Cell. A 15-acre residential campus with separate hostel facilities, digital
             library, modern laboratories, and weekend bus services to Coimbatore makes it an
@@ -613,7 +613,7 @@ export default function CoimbatorePage() {
           {/* Complete Programme List */}
           <div className="mt-12 pt-10 border-t border-gray-200">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">
-              All 35 Programmes Accessible from Coimbatore
+              All 32 Programmes Accessible from Coimbatore
             </h3>
             <p className="text-gray-500 text-sm text-center mb-8">
               Grouped by stream — click any programme for full details
