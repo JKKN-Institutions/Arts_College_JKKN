@@ -40,7 +40,7 @@ export default function FaqClient() {
       </div>
 
       {/* Category Tabs */}
-      <div className="border-b border-gray-200 bg-white sticky top-0 z-10 shadow-sm">
+      <div className="border-b border-gray-200 bg-white md:sticky md:top-0 z-10 shadow-sm">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap gap-2 py-4">
             {tabs.map((tab) => (
