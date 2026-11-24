@@ -21,6 +21,7 @@
 
 import { useActionState, useEffect, useId, useRef } from "react"
 import { CheckCircle2, ChevronDown } from "lucide-react"
+import { useCutSelectLabel } from "@/lib/use-cut-select-label"
 import { submitArtsEnquiry, type ArtsEnquiryState } from "@/app/actions/arts-enquiry"
 import CampaignFields from "@/components/lead/CampaignFields"
 import { GateButtons, GateOpenedPanel, gateSteps, useGateSubmit } from "@/components/lead/GateSubmit"
@@ -76,6 +77,8 @@ export default function ArtsEnquiryForm({
   // Unique per instance: the homepage can show this form twice (hero card + popup).
   const uid = useId()
   const fid = (name: string) => `${uid}-${name}`
+  // The chosen course's full name, printed under the box only while the box cuts it (320 px phones).
+  const [programmeFull, programmeBox, measureProgramme] = useCutSelectLabel()
   const [state, formAction, isPending] = useActionState<ArtsEnquiryState | null, FormData>(
     submitArtsEnquiry,
     null
@@ -295,6 +298,8 @@ export default function ArtsEnquiryForm({
               name="programme"
               required
               defaultValue={defaultProgrammeId ?? ""}
+              ref={programmeBox}
+              onChange={measureProgramme}
               aria-invalid={!!err?.programme}
               aria-describedby={err?.programme ? fid("programme-error") : undefined}
               className={`${inputCls} appearance-none pr-10`}
@@ -313,6 +318,11 @@ export default function ArtsEnquiryForm({
               className="pointer-events-none absolute right-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-[#4b5563]"
             />
           </div>
+          {programmeFull && (
+            <p aria-hidden="true" className="mt-1 text-sm leading-snug text-[#4b5563]">
+              {programmeFull}
+            </p>
+          )}
           {err?.programme && <p id={fid("programme-error")} className={errCls}>{err.programme}</p>}
         </div>
         {!compact && (
