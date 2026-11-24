@@ -227,9 +227,10 @@ export default function CityEnquiryForm({ city, district, bare = false }: Props)
             minLength={2}
             placeholder="Enter your full name"
             aria-invalid={!!err?.name}
+            aria-describedby={err?.name ? 'enq-name-error' : undefined}
             className={inputCls}
           />
-          {err?.name && <p className={errCls}>{err.name}</p>}
+          {err?.name && <p id="enq-name-error" className={errCls}>{err.name}</p>}
         </div>
         <div>
           <label htmlFor="enq-phone" className={labelCls}>
@@ -251,9 +252,10 @@ export default function CityEnquiryForm({ city, district, bare = false }: Props)
             title="10-digit mobile number starting with 6, 7, 8 or 9"
             placeholder="10-digit mobile number"
             aria-invalid={!!err?.phone}
+            aria-describedby={err?.phone ? 'enq-phone-error' : undefined}
             className={inputCls}
           />
-          {err?.phone && <p className={errCls}>{err.phone}</p>}
+          {err?.phone && <p id="enq-phone-error" className={errCls}>{err.phone}</p>}
         </div>
       </div>
 
@@ -270,6 +272,7 @@ export default function CityEnquiryForm({ city, district, bare = false }: Props)
             required
             defaultValue=""
             aria-invalid={!!err?.programme}
+            aria-describedby={err?.programme ? 'enq-programme-error' : undefined}
             className={`${inputCls} appearance-none pr-10`}
           >
             <option value="" disabled>
@@ -286,7 +289,7 @@ export default function CityEnquiryForm({ city, district, bare = false }: Props)
             className="pointer-events-none absolute right-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-[#4b5563]"
           />
         </div>
-        {err?.programme && <p className={errCls}>{err.programme}</p>}
+        {err?.programme && <p id="enq-programme-error" className={errCls}>{err.programme}</p>}
       </div>
 
       <div>
