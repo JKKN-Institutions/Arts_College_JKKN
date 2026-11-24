@@ -250,9 +250,10 @@ export default function ArtsEnquiryForm({
             minLength={2}
             placeholder="Enter your full name"
             aria-invalid={!!err?.name}
+            aria-describedby={err?.name ? fid("name-error") : undefined}
             className={inputCls}
           />
-          {err?.name && <p className={errCls}>{err.name}</p>}
+          {err?.name && <p id={fid("name-error")} className={errCls}>{err.name}</p>}
         </div>
         <div>
           <label htmlFor={fid("phone")} className={labelCls}>
@@ -274,9 +275,10 @@ export default function ArtsEnquiryForm({
             title="10-digit mobile number starting with 6, 7, 8 or 9"
             placeholder="10-digit mobile number"
             aria-invalid={!!err?.phone}
+            aria-describedby={err?.phone ? fid("phone-error") : undefined}
             className={inputCls}
           />
-          {err?.phone && <p className={errCls}>{err.phone}</p>}
+          {err?.phone && <p id={fid("phone-error")} className={errCls}>{err.phone}</p>}
         </div>
       </div>
 
@@ -294,6 +296,7 @@ export default function ArtsEnquiryForm({
               required
               defaultValue={defaultProgrammeId ?? ""}
               aria-invalid={!!err?.programme}
+              aria-describedby={err?.programme ? fid("programme-error") : undefined}
               className={`${inputCls} appearance-none pr-10`}
             >
               <option value="" disabled>
@@ -310,7 +313,7 @@ export default function ArtsEnquiryForm({
               className="pointer-events-none absolute right-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-[#4b5563]"
             />
           </div>
-          {err?.programme && <p className={errCls}>{err.programme}</p>}
+          {err?.programme && <p id={fid("programme-error")} className={errCls}>{err.programme}</p>}
         </div>
         {!compact && (
         <div>
