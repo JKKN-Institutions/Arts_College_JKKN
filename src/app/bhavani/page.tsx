@@ -624,36 +624,17 @@ export default function BhavaniPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-              Placement Record (NIRF 2025 Return)
+              Placement Support
             </h2>
             <p className="text-gray-500 text-sm sm:text-base">
-              What the college reported to NIRF for its 2023-24 UG graduates
+              The Training and Placement Cell runs aptitude training, mock interviews and campus drives.
             </p>
             <div className="mx-auto mt-4 w-12 h-1 bg-[#7cb983] rounded-full" />
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
-            {[
-              { value: "320", label: "GOVT-AIDED UG SEATS" },
-              { value: "105", label: "UG TO HIGHER STUDIES 2023–24 (NIRF)" },
-            ].map((stat) => (
-              <div
-                key={stat.label}
-                className="border border-gray-100 rounded-2xl p-6 text-center"
-              >
-                <div className="text-3xl sm:text-4xl font-bold text-[#006837]">
-                  {stat.value}
-                </div>
-                <div className="text-xs text-gray-400 mt-2 tracking-wide font-medium">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-
           <div className="text-center">
             <div className="text-center mt-8">
-              <Link href="/placements" className="text-[#006837] hover:text-[#004d28] font-medium text-sm">View Full Placement Report →</Link>
+              <Link href="/placements" className="text-[#006837] hover:text-[#004d28] font-medium text-sm">Placement Support Details →</Link>
             </div>
           </div>
         </div>
