@@ -217,7 +217,7 @@ export default function BCAPage() {
     },
     {
       question: "What are the career prospects after BCA?",
-      answer: "BCA graduates can work as Software Developers, Web Developers, Mobile App Developers, Data Analysts, Cloud Engineers, DevOps Engineers, Database Administrators, and System Analysts. Average starting packages range from ₹3.5 to 6 LPA."
+      answer: "BCA graduates can work as Software Developers, Web Developers, Mobile App Developers, Data Analysts, Cloud Engineers, DevOps Engineers, Database Administrators, and System Analysts."
     },
     {
       question: "Does the programme include cloud computing and modern technologies?",

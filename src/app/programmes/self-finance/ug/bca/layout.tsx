@@ -51,7 +51,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       />
       <FAQSchema faqs={[
         { question: "What programming languages will I learn in BCA?", answer: "You'll learn C, C++, Java, Python, JavaScript, and modern frameworks like React, Node.js, and React Native. The curriculum covers both fundamental and advanced programming concepts." },
-        { question: "What are the career prospects after BCA?", answer: "BCA graduates can work as Software Developers, Web Developers, Mobile App Developers, Data Analysts, Cloud Engineers, DevOps Engineers, Database Administrators, and System Analysts. Average starting packages range from ₹3.5 to 6 LPA." },
+        { question: "What are the career prospects after BCA?", answer: "BCA graduates can work as Software Developers, Web Developers, Mobile App Developers, Data Analysts, Cloud Engineers, DevOps Engineers, Database Administrators, and System Analysts." },
         { question: "Does the programme include cloud computing and modern technologies?", answer: "Yes! The curriculum includes AWS, Azure, Cloud Computing, DevOps, Docker, Kubernetes, Machine Learning, AI, Blockchain, and Full Stack Development (MERN Stack)." },
         { question: "Are there internship opportunities?", answer: "Yes, internships are integrated into the programme in Semester VI. Students work on live industry projects and gain hands-on experience with leading tech companies and startups." },
         { question: "What certifications can I pursue alongside BCA?", answer: "We support preparation for AWS Certified Cloud Practitioner, Azure Fundamentals, Oracle Java SE Certification, MongoDB Certified Developer, and Google Cloud certifications through dedicated training." },

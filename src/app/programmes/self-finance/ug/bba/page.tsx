@@ -113,8 +113,8 @@ export default function BBAPage() {
       answer: "BBA offers a broader management-focused curriculum covering all business functions, making it ideal for those aiming for general management roles or entrepreneurship. B.Com is more focused on accounting and commerce. BBA provides better exposure to marketing, HR, and strategic management from the undergraduate level."
     },
     {
-      question: "What is the average salary after completing BBA?",
-      answer: "Entry-level positions for BBA graduates typically offer packages ranging from ₹3 to ₹6 lakhs per annum depending on the role and company. With experience and an MBA, salaries can significantly increase to ₹10-25 lakhs per annum in senior management positions."
+      question: "What decides the salary after BBA?",
+      answer: "Pay depends on the role, the company and experience. An MBA and work experience open senior management roles with higher pay."
     },
     {
       question: "Are internships part of the BBA programme?",

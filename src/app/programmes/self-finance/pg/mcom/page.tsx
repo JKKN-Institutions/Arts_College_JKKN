@@ -228,8 +228,8 @@ export default function MComPage() {
       answer: "Yes, M.Com is an excellent foundation for pursuing a Ph.D. in Commerce, Accounting, Finance, or related fields. After clearing the UGC NET examination, you become eligible for the position of Assistant Professor in colleges and universities. Many M.Com graduates pursue doctoral research in specialized areas like taxation, financial management, or business analytics."
     },
     {
-      question: "What is the average salary after M.Com?",
-      answer: "M.Com graduates typically command higher salaries than B.Com graduates. With experience and additional certifications like CA, CFA, or CMA, professionals can earn ₹10-20 LPA or more. Senior roles like CFO and Finance Directors in large corporations can command packages exceeding ₹50 LPA."
+      question: "What decides the salary after M.Com?",
+      answer: "M.Com graduates can move into finance, accounting, taxation, research and teaching roles. Pay depends on the role, the employer and experience, and certifications such as CA, CFA or CMA open higher-paying finance roles."
     },
     {
       question: "Is dissertation/project mandatory in M.Com?",
@@ -585,21 +585,20 @@ export default function MComPage() {
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                 {[
-                  { icon: <DollarSign className="w-7 h-7 text-white" />, title: 'Finance Manager', salary: '₹8-15 LPA' },
-                  { icon: <BarChart className="w-7 h-7 text-white" />, title: 'Investment Analyst', salary: '₹7-12 LPA' },
-                  { icon: <GraduationCap className="w-7 h-7 text-white" />, title: 'University Professor', salary: 'Academic Career' },
-                  { icon: <Award className="w-7 h-7 text-white" />, title: 'Chief Financial Officer', salary: '₹20-50 LPA' },
-                  { icon: <FileText className="w-7 h-7 text-white" />, title: 'Senior Tax Consultant', salary: '₹6-10 LPA' },
-                  { icon: <Lightbulb className="w-7 h-7 text-white" />, title: 'Management Consultant', salary: '₹10-18 LPA' },
-                  { icon: <Building className="w-7 h-7 text-white" />, title: 'Corporate Strategist', salary: '₹12-20 LPA' },
-                  { icon: <Target className="w-7 h-7 text-white" />, title: 'Research Analyst', salary: '₹5-9 LPA' }
+                  { icon: <DollarSign className="w-7 h-7 text-white" />, title: 'Finance Manager' },
+                  { icon: <BarChart className="w-7 h-7 text-white" />, title: 'Investment Analyst' },
+                  { icon: <GraduationCap className="w-7 h-7 text-white" />, title: 'University Professor' },
+                  { icon: <Award className="w-7 h-7 text-white" />, title: 'Chief Financial Officer' },
+                  { icon: <FileText className="w-7 h-7 text-white" />, title: 'Senior Tax Consultant' },
+                  { icon: <Lightbulb className="w-7 h-7 text-white" />, title: 'Management Consultant' },
+                  { icon: <Building className="w-7 h-7 text-white" />, title: 'Corporate Strategist' },
+                  { icon: <Target className="w-7 h-7 text-white" />, title: 'Research Analyst' }
                 ].map((career, idx) => (
                   <GlassCard key={idx} className="p-6 text-center">
                     <div className="w-14 h-14 bg-gradient-to-br from-brand-green to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                       {career.icon}
                     </div>
                     <h3 className="text-lg font-bold text-brand-green mb-2">{career.title}</h3>
-                    <p className="text-gray-600 text-sm">{career.salary}</p>
                   </GlassCard>
                 ))}
               </div>

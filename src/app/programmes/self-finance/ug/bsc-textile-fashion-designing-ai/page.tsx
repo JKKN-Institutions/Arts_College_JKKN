@@ -92,8 +92,8 @@ export default function BSCTextileFashionDesigningAIPage() {
       answer: "Students receive comprehensive training in industry-standard software including Adobe Photoshop, Adobe Illustrator, CorelDRAW, CAD software for pattern making, and 3D design tools — alongside AI platforms such as Adobe Firefly, Midjourney, Runway ML, Stable Diffusion, CLO 3D, and AI-powered trend analytics tools. Manual techniques like draping, pattern making, embroidery, and textile printing are also covered."
     },
     {
-      question: "What is the average salary package for B.Sc TFD (AI) graduates?",
-      answer: "Entry-level salaries range from ₹3-5 lakhs per annum, with AI-skilled designers commanding a premium over traditional graduates. AI fashion designers in established brands can earn ₹5-10 lakhs, while AI trend forecasters and generative design specialists earn ₹4-8 lakhs annually. Successful entrepreneurs and freelance AI-fashion designers can earn significantly higher."
+      question: "What decides the salary for B.Sc TFD (AI) graduates?",
+      answer: "Pay depends on the role, the brand and the portfolio a learner builds. AI-skilled designers, AI trend forecasters and generative design specialists are in demand, and successful entrepreneurs and freelance AI-fashion designers can earn more."
     },
     {
       question: "Are there industry internship opportunities during the course?",
