@@ -1,6 +1,7 @@
 import 'server-only';
 import { cache } from 'react';
 import { MYJKKN_URL } from '@/lib/careers/config';
+import { withoutPlacementFigures } from '@/lib/blog/placement-figures-override';
 
 /**
  * Blog posts read from MyJKKN (Website Blog) instead of this site's own
@@ -95,7 +96,8 @@ function toSitePost(p: ApiPost): SitePost {
     updated_at: p.updated_at,
     tags: p.tags.length ? p.tags.join(', ') : null,
     read_time: p.read_time_minutes ? `${p.read_time_minutes} min read` : null,
-    content: p.content_html ?? '',
+    // No placement numbers or salary amounts on this website (user's choice 2026-11-24).
+    content: withoutPlacementFigures(p.slug, p.content_html ?? ''),
     sections: null,
     allow_comments: p.allow_comments,
     seo: p.seo,
