@@ -34,6 +34,7 @@
 
 import { useActionState, useEffect, useRef } from 'react'
 import { CheckCircle2, ChevronDown } from 'lucide-react'
+import { useCutSelectLabel } from '@/lib/use-cut-select-label'
 import { submitCityEnquiry, type CityEnquiryState } from '@/app/actions/city-enquiry'
 import CampaignFields from '@/components/lead/CampaignFields'
 import { TRUST } from '@/components/lead/ArtsEnquiryForm'
@@ -66,6 +67,8 @@ export default function CityEnquiryForm({ city, district, bare = false }: Props)
     submitCityEnquiry,
     null
   )
+  // The chosen course's full name, printed under the box only while the box cuts it (320 px phones).
+  const [programmeFull, programmeBox, measureProgramme] = useCutSelectLabel()
   const fired = useRef(false)
 
   // GA4. Fires once, only on a CRM-accepted submit.
@@ -271,6 +274,8 @@ export default function CityEnquiryForm({ city, district, bare = false }: Props)
             name="programme"
             required
             defaultValue=""
+            ref={programmeBox}
+            onChange={measureProgramme}
             aria-invalid={!!err?.programme}
             aria-describedby={err?.programme ? 'enq-programme-error' : undefined}
             className={`${inputCls} appearance-none pr-10`}
@@ -289,6 +294,11 @@ export default function CityEnquiryForm({ city, district, bare = false }: Props)
             className="pointer-events-none absolute right-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-[#4b5563]"
           />
         </div>
+        {programmeFull && (
+          <p aria-hidden="true" className="mt-1 text-sm leading-snug text-[#4b5563]">
+            {programmeFull}
+          </p>
+        )}
         {err?.programme && <p id="enq-programme-error" className={errCls}>{err.programme}</p>}
       </div>
 
