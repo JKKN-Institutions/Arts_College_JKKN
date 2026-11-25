@@ -21,6 +21,7 @@ import { useDialogScrollLock } from "@/lib/use-dialog-scroll-lock"
 import Image from "next/image"
 import { X } from "lucide-react"
 import ArtsEnquiryForm from "@/components/lead/ArtsEnquiryForm"
+import CallWhatsAppCard from "@/components/lead/CallWhatsAppCard"
 import { sendGaEvent } from "@/lib/ga-event"
 import { CAMPAIGN_KEYS, campaignTagsSnapshot, parseCampaignTags, tagApplyHref } from "@/lib/campaign-tags"
 import { ENQUIRY_DONE_KEY, readStore } from "@/lib/enquiry-store"
@@ -90,9 +91,40 @@ function enquireHereUrl(): string {
   return url.toString()
 }
 
-type OpenOptions = { withPoster?: boolean; programmeId?: string; intent?: GateIntent; topic?: GateTopic }
+/**
+ * On a page whose course the CRM cannot record (lib/call-gate.ts isUngatedPath: every aided programme
+ * and department page, the /admissions page of an aided course, B.Com A&F / B&I, the SF Tamil
+ * department) an Apply click must NOT open the self-financing form - the parent would be filed under a
+ * wrong SF course (user's choice 2026-11-02, lib/top-enquiry.ts). Measured 2026-11-25: the Apply
+ * listener below skipped that rule, and 3 aided-page leads landed as B.Sc Microbiology / B.Sc Computer
+ * Science (10-29, 11-08, 11-14). Returns the course to name on the Call / WhatsApp card - read from the
+ * page's own card (CallWhatsAppCard data-course-name) - or undefined on an ordinary page (form opens).
+ */
+function directCourseHere(pathname: string): string | undefined {
+  if (!isUngatedPath(pathname)) return undefined
+  const onPage = document.querySelector<HTMLElement>("[data-course-name]")?.dataset.courseName
+  if (onPage) return onPage
+  const p = pathname.toLowerCase()
+  return p.startsWith("/programmes/aided") || p.startsWith("/departments/aided") ? "Aided programmes" : "this course"
+}
+
+type OpenOptions = {
+  withPoster?: boolean
+  programmeId?: string
+  intent?: GateIntent
+  topic?: GateTopic
+  /** Set = show the Call / WhatsApp card for this course instead of the form (directCourseHere). */
+  directCourse?: string
+}
 type EnquiryModalApi = { openEnquiry: (sourcePage: string, options?: OpenOptions) => void }
-type OpenState = { sourcePage: string; withPoster: boolean; programmeId?: string; intent?: GateIntent; topic?: GateTopic }
+type OpenState = {
+  sourcePage: string
+  withPoster: boolean
+  programmeId?: string
+  intent?: GateIntent
+  topic?: GateTopic
+  directCourse?: string
+}
 
 /** GA4 event-name stem per gate: event NAMES split call from WhatsApp in every report, with no
  *  custom dimension to register first. */
@@ -111,7 +143,12 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
   const openEnquiry = useCallback((source: string, options?: OpenOptions) => {
     // Only where the modal was opened from — no name, no phone. A gate open is counted under its
     // own name, so enquiry_open keeps meaning what it meant before 2026-11-04 (popup + Apply links).
-    const event = options?.intent ? `${GATE_EVENT[options.intent]}_open` : "enquiry_open"
+    // The Call / WhatsApp card (no form) has a name of its own, so enquiry_open stays "a form opened".
+    const event = options?.directCourse
+      ? "direct_contact_open"
+      : options?.intent
+        ? `${GATE_EVENT[options.intent]}_open`
+        : "enquiry_open"
     sendGaEvent(event, { source_page: source, page_path: window.location.pathname })
     setOpen({
       sourcePage: source,
@@ -119,6 +156,7 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
       programmeId: options?.programmeId,
       intent: options?.intent,
       topic: options?.topic,
+      directCourse: options?.directCourse,
     })
   }, [])
 
@@ -155,7 +193,9 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
         window.open(enquireHereUrl(), "_blank", "noopener")
         return
       }
-      openEnquiry(`apply-link${pathTag()}`.slice(0, 60))
+      openEnquiry(`apply-link${pathTag()}`.slice(0, 60), {
+        directCourse: directCourseHere(window.location.pathname),
+      })
     }
     // A middle click fires auxclick, not click; cancelling it stops the browser's own new tab.
     const onAuxClick = (e: MouseEvent) => {
@@ -186,7 +226,9 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
         "",
         `${window.location.pathname}${rest ? `?${rest}` : ""}${window.location.hash}`
       )
-      openEnquiry(`apply-newtab${pathTag()}`.slice(0, 60))
+      openEnquiry(`apply-newtab${pathTag()}`.slice(0, 60), {
+        directCourse: directCourseHere(window.location.pathname),
+      })
     }, 0)
     return () => window.clearTimeout(timer)
   }, [openEnquiry])
@@ -311,6 +353,7 @@ export function EnquiryModalProvider({ children }: { children: ReactNode }) {
           programmeId={open.programmeId}
           intent={open.intent}
           topic={open.topic}
+          directCourse={open.directCourse}
           onClose={close}
         />
       )}
@@ -332,6 +375,7 @@ function EnquiryDialog({
   programmeId,
   intent,
   topic,
+  directCourse,
   onClose,
 }: {
   sourcePage: string
@@ -339,6 +383,8 @@ function EnquiryDialog({
   programmeId?: string
   intent?: GateIntent
   topic?: GateTopic
+  /** Set on a page the CRM cannot record: the Call / WhatsApp card for this course, no form. */
+  directCourse?: string
   onClose: () => void
 }) {
   const dialogRef = useDialogFocus<HTMLDivElement>()
@@ -413,6 +459,8 @@ function EnquiryDialog({
             </button>
           )}
 
+          {/* A Call / WhatsApp card (directCourse) brings its own heading, which names the dialog. */}
+          {!directCourse && (
           <div className={withPoster ? "col-start-2 row-start-1 self-center md:self-end" : ""}>
             {/* The panel itself is the white card of mockup #7 (2026-10-22), so the form renders
                 bare and its 3-step strip replaces the old "Fill 3 details..." sub-line. */}
@@ -420,14 +468,23 @@ function EnquiryDialog({
               {title}
             </p>
           </div>
+          )}
 
           <div className={withPoster ? "col-span-2 md:col-span-1 md:col-start-2 md:row-start-2 md:self-start" : ""}>
-            <ArtsEnquiryForm sourcePage={sourcePage} defaultProgrammeId={programmeId} compact bare gate={intent} topic={topic} />
+            {/* 2026-11-25: on a page the CRM cannot record (aided, B.Com A&F / B&I), the card the page
+                itself shows - its links carry data-no-gate and sit inside the dialog, so neither gate
+                listener turns them back into the form. */}
+            {directCourse ? (
+              <CallWhatsAppCard programmeName={directCourse} bare headingId="enquiry-dialog-title" />
+            ) : (
+              <ArtsEnquiryForm sourcePage={sourcePage} defaultProgrammeId={programmeId} compact bare gate={intent} topic={topic} />
+            )}
             {/* The full jkkn.ai application, as a small link. Since
                 2026-11-18 (apply-first) it shows only AFTER this browser has an enquiry the CRM
                 accepted, so every lead comes through this form first. Not in a Call / WhatsApp gate:
-                there the visitor came to talk, not to apply. */}
-            {!intent && enquired && (
+                there the visitor came to talk, not to apply. Not on a direct card either: the jkkn.ai
+                form has no row for those courses. */}
+            {!intent && !directCourse && enquired && (
             <p className="mt-3 text-center text-xs text-[#4b5563]">
               Want to send the full application too?{" "}
               <a
